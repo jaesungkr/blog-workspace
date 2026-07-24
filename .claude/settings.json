@@ -1,0 +1,15 @@
+{
+    "permissions": {
+        "allow": [
+            "Bash(python3 scripts/md2tistory.py:*)",
+            "Bash(ls:*)",
+            "Bash(wc:*)",
+            "Read(//Users/ja2sng/dev/blog-workspace/**)",
+            "WebSearch",
+            "WebFetch"
+        ]
+    },
+    "enabledPlugins": {
+        "humanize-korean@im-not-ai": true
+    }
+}
