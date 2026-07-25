@@ -1,5 +1,9 @@
 # Blog image guide
 
+Read `standards/image-art-direction.md` with this file. The present guide
+defines delivery, placement, and factual constraints; the art-direction guide
+defines the concept and visual quality required for publication.
+
 ## Required deliverable
 
 - Generate at least one original raster image for every complete blog post. Do
@@ -8,8 +12,12 @@
 - Use the built-in image-generation workflow.
 - Generate after the article's angle and central message are stable so the image
   matches the published argument.
-- Inspect the result before delivery. Regenerate or make one targeted correction
-  if the subject, composition, factual implication, or constraints are wrong.
+- Inspect the result at thumbnail size and full resolution before delivery.
+  Apply the complete quality gate in `image-art-direction.md`.
+- Use a targeted correction only when the concept, medium, composition, and
+  finish are already strong and the defect is local. Regenerate from a new
+  direction when the result is generic, stiff, cheap, dated, plasticky,
+  cluttered, overly dark, or visibly AI-generated.
 - Save the selected final image in the post's `assets/` directory with a
   descriptive ASCII filename. Do not overwrite an existing file; add `-v2`
   when needed.
@@ -25,8 +33,10 @@ Unless the user specifies otherwise:
   margins for responsive cropping.
 - Prefer a natural editorial photograph for health, culture, sports, or
   everyday topics.
-- Prefer a polished editorial illustration or realistic workspace scene for
-  abstract technology and LLM topics.
+- Prefer one strong editorial metaphor for abstract technology and LLM topics.
+  Choose photography, a crafted still life, contemporary illustration, an
+  architectural/material study, or justified 3D deliberately. Do not default
+  to a generic workspace scene.
 - Prefer a restrained contemplative photograph or illustration for Reflections;
   avoid literal depictions of God or an identifiable real preacher unless the
   user supplies a reference and requests it.
@@ -35,6 +45,9 @@ Unless the user specifies otherwise:
 - Avoid clickbait expressions, medical fear imagery, fake product branding,
   fabricated interfaces, misleading before/after claims, and visuals that imply
   evidence the article does not establish.
+- Technology alone is not a reason to use a dark background. Avoid default
+  neon, glassmorphism, glowing circuits, symmetrical pods, floating dashboards,
+  and plastic 3D icons.
 
 ## Match image to article role
 
@@ -42,7 +55,7 @@ Choose one useful role:
 
 | Article need | Image role | Default approach |
 |---|---|---|
-| Search-entry overview | Hero image | One concrete scene embodying the main conclusion |
+| Search-entry overview | Hero image | One memorable scene or metaphor embodying the main conclusion |
 | Product or tool comparison | Comparison concept | Neutral side-by-side objects without fake logos or labels |
 | Mechanism explanation | Educational visual | Simple accurate composition; minimize text |
 | Tutorial | Result scene | Show the practical outcome rather than a generic laptop |
@@ -53,19 +66,26 @@ table in the article and a simpler supporting image instead.
 
 ## Prompt scaffold
 
-Shape the request using only relevant lines:
+Form two or three short concept directions internally, choose the least generic
+one that communicates the article's retained message, then shape the request
+using only relevant lines:
 
 ```text
 Use case: <photorealistic-natural | stylized-concept | scientific-educational>
 Asset type: Korean Tistory blog hero image
 Primary request: <one concrete visual expression of the article's core message>
+Creative intent: <one idea or feeling>
+Visual idea: <one metaphor or scene, not an object inventory>
+Art direction: <photography, crafted set, editorial illustration, material study, or justified 3D>
 Scene/backdrop: <specific environment>
 Subject: <main subject>
-Style/medium: <editorial photograph or polished illustration>
-Composition/framing: wide landscape, clear focal point, safe margins for responsive crop
-Lighting/mood: <topic-appropriate>
-Constraints: factually neutral, suitable for publication, no logos, no watermark, no embedded text
-Avoid: generic stock-photo look, clutter, sensationalism, unsupported claims
+Style/medium: <specific medium and visible finish>
+Composition/framing: wide landscape, immediate focal hierarchy, controlled depth, crop-safe negative space
+Lighting/mood: <plausible key light, fill, shadow character, emotional register>
+Color palette: <neutrals and intentional accents>
+Materials/textures: <specific believable surfaces>
+Constraints: factually neutral, publication-ready, no logos, no watermark, no unnecessary embedded text
+Avoid: topic-specific cliches, generic AI artifacts, clutter, sensationalism, unsupported claims
 ```
 
 ## Placement and accessibility

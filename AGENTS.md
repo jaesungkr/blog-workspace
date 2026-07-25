@@ -18,6 +18,9 @@ framework that belongs on this blog.
 - Read `standards/editorial-standard.md` for every writing or editing task.
 - Read only the additional category, image, memory, or Reflections guide that
   the repository skill routes you to.
+- Treat `standards/image-art-direction.md` as the Git-tracked source of truth
+  for public-facing blog image quality. A built-in or globally installed image
+  skill is an execution dependency, not the canonical blog standard.
 - Inspect the complete post bundle and user-provided material before planning.
 - Treat an unqualified request to write about a topic as an end-to-end
   complete-post request. Do not stop at research, an outline, or a text draft

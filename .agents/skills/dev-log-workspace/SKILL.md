@@ -60,7 +60,9 @@ in the resolved repository are the only editable source.
 3. Read `standards/blog-memory.md` for topic discovery, full-post planning,
    traffic strategy, AdSense discussion, or portfolio review. Dated metrics are
    snapshots.
-4. Read `standards/image-guide.md` for any complete-post or image task.
+4. Read `standards/image-guide.md` and
+   `standards/image-art-direction.md` in full for any complete-post or image
+   task.
 5. For sermon-based Reflections, also read `standards/reflections-guide.md` in
    full. For `Reflections > 성경 인물`, read
    `standards/bible-character-guide.md` in full instead.
@@ -117,8 +119,10 @@ Do not move files between draft and published trees. Update the article status:
 7. Revise twice: structure/evidence first, then Korean sentence hygiene/voice.
    Repair missing prerequisites earlier in the explanation chain.
 8. After the angle is stable, generate at least one publishable raster image for
-   a complete post. Inspect it, save it under `assets/`, and record placement,
-   alt text, and the final prompt in `audit.md`.
+   a complete post. Apply the Git-tracked art-direction quality gate at
+   thumbnail and full resolution. Reject a generic but technically valid
+   result; save only an inspected final under `assets/`, then record placement,
+   alt text, art direction, and the final prompt in `audit.md`.
 9. Complete `audit.md` from the actual article. Do not check an item without
    verifying it.
 10. Run:
