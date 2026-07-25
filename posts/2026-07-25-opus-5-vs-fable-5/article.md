@@ -7,7 +7,7 @@ subcategory: "AI 모델 · 비교"
 status: ready
 tags: [Claude, Opus 5, Fable 5, Claude Code, AI 모델 비교, Anthropic]
 summary: "Claude Opus 5와 Fable 5의 가격·벤치마크·실사용 테스트를 비교하고, 반값 단가가 실제 작업비로 이어지는 조건과 작업별 선택 기준을 정리합니다."
-hero_image: assets/opus-5-vs-fable-5-hero.png
+hero_image: assets/opus-5-vs-fable-5-hero-reference-style.png
 published_url: ""
 sources:
     - https://www.anthropic.com/news/claude-opus-5

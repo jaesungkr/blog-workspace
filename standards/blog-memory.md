@@ -124,10 +124,17 @@ scoring at least 8/10, with no zero for first-party evidence.
 - For head-to-head Claude posts, default to the title pattern
   `<Model A> vs <Model B> - 클로드 모델 비교`. Do not add a separate
   clickbait-style question unless the user requests it.
-- Use a consistent bright comparison thumbnail: cool-toned left half,
-  warm-toned right half, diagonal split, centered `VS` badge, large model
-  names, one short role subtitle per model, three concise feature rows, and
-  matching translucent AI objects.
+- Use a consistent split comparison thumbnail: a luminous ivory-and-gold left
+  world, a deep charcoal-and-violet right world, a thin glowing diagonal seam,
+  and a centered metallic `VS`.
+- Give each model one large equal-weight heading, one short Korean role line,
+  and one premium rounded-square 3D symbol. Choose different symbols that
+  express the models' roles; do not reuse a generic brain icon or copy a
+  reference image's exact emblem.
+- Keep the composition polished and cinematic with controlled reflections,
+  subtle background linework, clear hierarchy, and crop-safe margins. Omit
+  multi-row feature lists, benchmark numbers, winner marks, and decorative
+  clutter.
 - Keep both models visually equal in status. The thumbnail communicates a
   comparison rather than a fight, ranking podium, or predetermined winner.
 - In-image text is allowed for this recurring comparison series when it is
