@@ -78,10 +78,11 @@ them when decisions depend on current state.
   before -> tension -> encounter or choice -> after sequence. Supporting scenes
   stay short.
 - Use `쉬운성경` (YouVersion's `읽기 쉬운 성경`, KOERV) by default for the
-  public article unless the user requests another translation. Put
-  `책 장:절 (쉬운성경)` before the quoted text. Do not use a Bible link in
-  place of the text: quote only the few decisive verses, show their verse
-  numbers, and keep source URLs in frontmatter or evidence notes.
+  public article unless the user requests another translation. Keep
+  `책 장:절 (쉬운성경)`, one blank quote line, and the numbered verse text
+  inside the same blockquote. Do not use a Bible link in place of the text:
+  quote only the few decisive verses and keep source URLs in frontmatter or
+  evidence notes.
 
 ## Autonomous topic scoring
 

@@ -51,12 +51,15 @@ Do not use an apocryphal work or legend to fill a biblical gap.
 - Never substitute a Bible hyperlink for scripture text in the public article.
   When scripture is important enough to cite, write the selected verse text
   itself and label the book, chapter, verse, and translation.
-- Put the reference and translation before the quoted text. Use this public
-  format consistently:
+- Keep the reference, translation, blank quote line, and verse text inside one
+  blockquote. Use this public format consistently:
 
-  `요한복음 20:28-29 (쉬운성경)`
+  `> 요한복음 20:28-29 (쉬운성경)`
 
-  followed by a blockquote containing the verse numbers and text.
+  `>`
+
+  `> 28 구절 본문<br>`
+  `> 29 구절 본문`
 - Do not quote every supporting passage. Prefer one or two compact scripture
   blocks from the defining event and paraphrase the remaining context in plain
   Korean with a non-linked reference such as `(요한복음 11:16)`.
@@ -140,8 +143,8 @@ the article does not need to display its full complexity.
   church background.
 - Two or three passages add dimension without turning the post into an
   exhaustive study.
-- Quoted scripture appears after a `책 장:절 (쉬운성경)` label and includes
-  verse numbers, never as a link-only citation.
+- Quoted scripture keeps `책 장:절 (쉬운성경)`, one blank quote line, and
+  numbered verse text inside the same blockquote, never as a link-only citation.
 - The visible tone is curious and companionable rather than corrective.
 - Quotations match the named translation and linked passage.
 - Tradition and interpretation remain accurate even when their labels are kept
