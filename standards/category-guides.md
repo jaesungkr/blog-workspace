@@ -19,6 +19,7 @@ Use this category tree unless the user explicitly changes it:
   - `말씀 묵상`
   - `신앙 질문`
   - `성경 읽기`
+  - `성경 인물`
 
 Classify by the promise made to the reader, not by a noun in the title:
 
@@ -28,8 +29,8 @@ Classify by the promise made to the reader, not by a noun in the title:
   and general-interest trivia to `Trends`.
 - Route symptoms, diseases, medicines, supplements, nutrition, and diet guidance
   to `Health`.
-- Route sermons, meditation, faith questions, and Bible-reading material to
-  `Reflections`.
+- Route sermons, meditation, faith questions, Bible-reading material, and
+  scripture-grounded character studies to `Reflections`.
 - When two categories are plausible, use the question that most of the body
   answers. Use tags for the secondary topic.
 - Do not create a new subcategory for one isolated post. Prefer the nearest
@@ -137,9 +138,14 @@ findings or substitute generic disclaimers for precise risk information.
 
 ## Reflections
 
-Use for weekly sermon-based meditation. Read `standards/reflections-guide.md`
-before planning or writing. Unlike monetized posts, first person, exploratory
-flow, a roadmap sentence, and an unresolved question are allowed. Still apply
+Use for sermon meditation, faith questions, Bible reading, and
+scripture-grounded character studies. Read the guide that matches the format:
+
+- Sermon meditation: `standards/reflections-guide.md`
+- Bible character study: `standards/bible-character-guide.md`
+
+Unlike monetized posts, first person, exploratory flow, a roadmap sentence, and
+an unresolved question are allowed when the format calls for them. Still apply
 consistent 존대어, natural flow, and Korean sentence hygiene.
 
 Choose the subcategory by format:
@@ -150,3 +156,6 @@ Choose the subcategory by format:
   or reasoning is central.
 - `성경 읽기`: Bible text, chapter reading notes, and reference-oriented
   scripture material rather than a sermon meditation.
+- `성경 인물`: a connected series that reconstructs a biblical person's
+  actions, words, changes, and unknowns from multiple passages while separating
+  the canonical text from interpretation and later tradition.

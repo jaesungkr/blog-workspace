@@ -55,6 +55,20 @@ class BlogCheckerTests(unittest.TestCase):
 
         self.assertFalse([item for item in diagnostics if item.level == "ERROR"])
 
+    def test_bible_character_is_a_current_reflections_subcategory(self):
+        article = (
+            VALID_ARTICLE.replace('category: "Log"', 'category: "Reflections"')
+            .replace(
+                'subcategory: "개발 · 디지털"',
+                'subcategory: "성경 인물"',
+            )
+        )
+        with tempfile.TemporaryDirectory() as temp:
+            post = make_bundle(Path(temp), article)
+            diagnostics = blog.check_post(post)
+
+        self.assertFalse([item for item in diagnostics if item.level == "ERROR"])
+
     def test_title_and_h2_are_rejected(self):
         article = VALID_ARTICLE.replace(
             'title: "테스트 글의 선택 기준"',

@@ -27,7 +27,9 @@ content are historical.
    traffic strategy, AdSense discussion, or portfolio review. Dated metrics are
    snapshots.
 4. Read `standards/image-guide.md` for any complete-post or image task.
-5. For Reflections, also read `standards/reflections-guide.md` in full.
+5. For sermon-based Reflections, also read `standards/reflections-guide.md` in
+   full. For `Reflections > 성경 인물`, read
+   `standards/bible-character-guide.md` in full instead.
 6. Inspect the whole target post bundle and all user-provided material before
    planning.
 
