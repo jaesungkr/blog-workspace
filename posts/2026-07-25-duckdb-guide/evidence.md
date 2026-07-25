@@ -18,6 +18,7 @@
 | C08 | 500만 행 로컬 테스트에서 Parquet은 CSV보다 약 11.48배 작았고, 지정 쿼리 중앙값은 약 59.38배 빨랐습니다. | Codex 실행 | 확인 | `benchmark-results.json`, 포맷별 1회 워밍업 후 7회 교차 실행 | 날짜순 합성 데이터·웜 캐시·한 Mac·한 쿼리의 시나리오 결과 |
 | C09 | CSV와 Parquet은 같은 원본이어도 자동 추론 타입이 달라질 수 있습니다. | Codex 실행 | 확인 | `benchmark-failure.md`: CSV `DOUBLE`, Parquet `DECIMAL(38,2)` | DuckDB 1.4.5와 해당 데이터에 한정 |
 | C10 | Python 패키지는 `pip install duckdb`, CLI는 공식 설치 페이지에서 설치할 수 있습니다. | 공식 | 확인 | DuckDB installation, Python API | 최신 버전 번호를 본문에 고정하지 않음 |
+| C11 | 사용자는 주변에서 DuckDB가 편리하다는 이야기를 자주 들었고 이번 기회에 확인하고 싶었습니다. | 사용자 제공 | 확인 | 2026-07-26 사용자 메시지 | 개인적인 주제 선택 계기이며 일반적인 사용자 평가의 근거는 아님 |
 
 ## 직접 검증 설계
 

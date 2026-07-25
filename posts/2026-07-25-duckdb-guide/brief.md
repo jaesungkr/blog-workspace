@@ -31,6 +31,9 @@
   7회 교차 실행해 크기와 중앙값을 측정했습니다. 첫 비교에서 CSV
   `DOUBLE`과 Parquet `DECIMAL`의 결과 타입 차이로 검증이 실패한 기록도
   보존했습니다.
+- 주제 선택 계기: 사용자는 주변 개발자들에게 DuckDB의 편리한 사용성에
+  관한 이야기를 자주 들었고, 이번 기회에 장점과 한계를 확인하고 싶다고
+  밝혔습니다.
 - 실제 실행 주체: `Codex`
 - 보존할 원자료: `artifacts/benchmark_duckdb.py`,
   `artifacts/benchmark-results.json`, `artifacts/benchmark-failure.md`
