@@ -15,6 +15,9 @@ than a famous name or scene.
   beginner's perspective are welcome in this Reflections format.
 - Give the common Christian image of the person before adding two or three
   lesser-known scenes that make the introduction more rounded.
+- Choose one defining event for the narrative center. Tell what happened
+  before, what tension or choice arose, what changed in the encounter, and what
+  is recorded afterward.
 - Keep the conclusion modest. `이제 이름과 대표 장면을 연결했다` is enough;
   do not force a moral verdict or a complete personality profile.
 
@@ -41,9 +44,17 @@ Do not use an apocryphal work or legend to fill a biblical gap.
 
 ## Translation and quotation
 
-- Record the Korean translation used for every direct quotation.
-- Prefer two to four short, memorable quotations in a first article about a
-  person. Summarize the surrounding scene in plain Korean and link the passage.
+- Use `새번역` by default because this series is for readers new to the Bible.
+  Use another Korean translation only when the user requests it or a meaningful
+  wording issue requires comparison.
+- Never substitute a Bible hyperlink for scripture text in the public article.
+  When scripture is important enough to cite, write the selected verse text
+  itself and label the book, chapter, verse, and translation.
+- Do not quote every supporting passage. Prefer one or two compact scripture
+  blocks from the defining event and paraphrase the remaining context in plain
+  Korean with a non-linked reference such as `(요한복음 11:16)`.
+- Keep Bible URLs in article frontmatter, `evidence.md`, or source notes rather
+  than inline in the public prose.
 - Explain church vocabulary such as `열두 제자`, `부활`, and `사도` when the
   surrounding sentence does not already make it clear.
 - Do not splice separate verses into one continuous quotation.
@@ -56,10 +67,11 @@ Adapt the headings to the person. A useful default is:
 
 1. Why this person is the next person to meet
 2. A small `한눈에 보기` introduction
-3. The scene for which the person is best known
-4. Two or three other representative scenes
-5. A short note on later Christian tradition, only when widely encountered
-6. `이번에 알아간 인물`: a plain recap and the limit of what was learned
+3. The setup before the defining event
+4. The event's tension, encounter or choice, and resulting change
+5. One or two supporting scenes, kept shorter than the central story
+6. A short note on later Christian tradition, only when widely encountered
+7. `이번에 알아간 인물`: a plain recap and the limit of what was learned
 
 The article does not need every canonical reference, a comparison table, or a
 debate over every possible interpretation. Keep those details in `evidence.md`
@@ -76,6 +88,9 @@ and `artifacts/` when they do not help a beginner meet the person.
 - Use short paragraphs and no more than one compact overview table when a table
   genuinely lowers the reading burden.
 - Give context before a quotation, then explain it in one or two sentences.
+- Let scenes unfold in time instead of listing traits. Use concrete transitions
+  such as `그날`, `며칠 뒤`, and `그 이후` only when the passage supports
+  them.
 - Do not interrupt the flow repeatedly with uncertainty disclaimers. State a
   boundary once, naturally, where it matters.
 - Keep later tradition brief and conversational. It is an interesting
@@ -85,6 +100,9 @@ and `artifacts/` when they do not help a beginner meet the person.
 
 - Do not invent childhood, motives, appearance, temperament, private thoughts,
   relatives, or missing scenes.
+- Do not invent an initial conversion or calling story. If scripture does not
+  record how the person first came to believe or follow, say so and choose a
+  documented turning point instead.
 - Do not diagnose modern personality types, mental illness, trauma, or
   attachment styles from a few passages.
 - Do not turn a possible motive into fact.
@@ -109,10 +127,14 @@ the article does not need to display its full complexity.
 
 - A reader with almost no Bible knowledge can identify the person after one
   reading.
+- One central event provides a clear story arc without pretending to be the
+  person's undocumented conversion story.
 - The article explains the person's commonly known image without assuming
   church background.
 - Two or three passages add dimension without turning the post into an
   exhaustive study.
+- Quoted scripture appears as text with verse numbers and a translation label,
+  never as a link-only citation.
 - The visible tone is curious and companionable rather than corrective.
 - Quotations match the named translation and linked passage.
 - Tradition and interpretation remain accurate even when their labels are kept

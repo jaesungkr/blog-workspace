@@ -74,6 +74,13 @@ them when decisions depend on current state.
 - Keep the visible article warm, light, and easy to follow. Preserve exhaustive
   passage checks, disputed details, and evidence boundaries in the post bundle,
   but bring them into the article only when they prevent a misleading claim.
+- Build each post around one defining biblical event with a readable
+  before -> tension -> encounter or choice -> after sequence. Supporting scenes
+  stay short.
+- Use `새번역` by default for the public article unless the user requests
+  another translation. Do not use a Bible link in place of the text: quote only
+  the few decisive verses, show their verse numbers and translation, and keep
+  source URLs in frontmatter or evidence notes.
 
 ## Autonomous topic scoring
 
