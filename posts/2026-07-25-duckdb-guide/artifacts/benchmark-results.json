@@ -1,0 +1,108 @@
+{
+  "actor": "Codex",
+  "timestamp": "2026-07-25T19:05:54+0900",
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.9.6",
+    "duckdb": "1.4.5",
+    "cpu_count": 10,
+    "duckdb_threads": 4
+  },
+  "dataset": {
+    "rows": 5000000,
+    "columns": 6,
+    "sort_order": [
+      "event_date",
+      "event_id"
+    ],
+    "csv_bytes": 253348328,
+    "parquet_bytes": 22073817,
+    "parquet_compression": "zstd",
+    "parquet_row_group_size": 100000
+  },
+  "query": "July date filter, then exact-decimal SUM(amount) and COUNT(*) grouped by 10 regions",
+  "measurement": {
+    "warmup_runs_per_format": 1,
+    "measured_runs_per_format": 7,
+    "alternating_order": true,
+    "csv_seconds": [
+      0.18301362499999985,
+      0.1834732079999999,
+      0.182758875,
+      0.182716125,
+      0.18223183399999998,
+      0.18397529199999996,
+      0.18448900000000013
+    ],
+    "parquet_seconds": [
+      0.003081999999999807,
+      0.0029634579999999744,
+      0.0031758330000000168,
+      0.0028049169999999624,
+      0.0031317080000001773,
+      0.0029947079999996795,
+      0.0031135419999999137
+    ],
+    "csv_median_seconds": 0.18301362499999985,
+    "parquet_median_seconds": 0.003081999999999807,
+    "median_speedup_csv_over_parquet": 59.381448734591594,
+    "result_rows": [
+      [
+        "region_00",
+        "20476966.87",
+        41097
+      ],
+      [
+        "region_01",
+        "24001157.41",
+        47947
+      ],
+      [
+        "region_02",
+        "20535614.75",
+        41097
+      ],
+      [
+        "region_03",
+        "20569658.11",
+        41097
+      ],
+      [
+        "region_04",
+        "20663631.39",
+        41097
+      ],
+      [
+        "region_05",
+        "20590892.05",
+        41097
+      ],
+      [
+        "region_06",
+        "24126047.61",
+        47946
+      ],
+      [
+        "region_07",
+        "20514345.08",
+        41097
+      ],
+      [
+        "region_08",
+        "20499695.67",
+        41097
+      ],
+      [
+        "region_09",
+        "20518947.23",
+        41097
+      ]
+    ]
+  },
+  "limitations": [
+    "Synthetic, date-sorted local dataset rather than a general benchmark.",
+    "Warm-cache measurements on one Apple Silicon machine.",
+    "CSV and Parquet results depend on schema, compression, sort order, storage, and query shape."
+  ]
+}
