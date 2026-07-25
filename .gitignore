@@ -1,6 +1,7 @@
 dist/
+outputs/
 __pycache__/
 *.pyc
 .DS_Store
 .env
-.claude/settings.local.json
+.codex/settings.local.json

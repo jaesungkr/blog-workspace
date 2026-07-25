@@ -1,82 +1,119 @@
-# blog-workspace
+# dev.log blog workspace
 
-티스토리 블로그 **[dev.log](https://dop3n.tistory.com)** 글 작성 작업 공간.
-Claude Code로 리서치 → 초안 → 윤문 → 발행용 HTML 까지 처리한다.
+`dev.log`의 글을 기획하고, 근거를 모으고, 직접 검증하고, 원고와 이미지를 만든 뒤
+티스토리에 옮기기 직전까지 관리하는 Codex 작업공간입니다.
+
+핵심 기준은 하나입니다.
+
+> 추측 대신 검증(Tested, not guessed)
+
+자료를 매끈하게 요약하는 데서 끝내지 않습니다. 독자가 이 블로그에서만 얻을 수 있는
+실험, 로그, 스크린샷, 데이터, 관찰 또는 판단 기준을 글마다 남깁니다.
 
 ## 빠른 시작
 
-이 디렉토리에서 `claude`를 실행하면 아래 슬래시 명령을 쓸 수 있다.
+저장소 루트에서 Codex를 열고 자연어로 요청하면 `AGENTS.md`와 저장소 전용 스킬이
+자동으로 적용됩니다.
+
+```text
+Claude Code 비용을 줄이는 실험 글을 새로 준비해줘.
+이 글의 근거 표를 검토하고 빠진 1차 출처를 찾아줘.
+posts/2026-07-25-example 원고를 발행 전 감사해줘.
+```
+
+명시적으로 워크플로를 부르고 싶다면 `$dev-log-workspace`를 사용할 수 있습니다.
+
+새 글의 빈 작업 묶음은 명령으로도 만들 수 있습니다.
 
 ```bash
-cd ~/dev/blog-workspace
-claude
+python3 scripts/blog.py new claude-code-cost \
+  --title "Claude Code 비용 줄이기, 재시도부터 측정한 결과" \
+  --category Log \
+  --subcategory "개발 · 디지털"
 ```
 
-| 명령 | 하는 일 | 결과물 |
-|---|---|---|
-| `/research <주제>` | 웹·네이버 검색으로 소재 조사, 출처 정리 | `research/*.md` |
-| `/write-post <주제>` | 카테고리 판별 후 dop3n 문체로 초안 작성 | `drafts/*.md` |
-| `/polish <파일>` | AI 티 제거, 문체 교정 (내용은 불변) | 같은 파일 갱신 |
-| `/to-tistory <파일>` | 티스토리 붙여넣기용 HTML + 발행 체크리스트 | `dist/*.html` |
+## 글 한 편의 구조
 
-각 단계는 독립적이다. 이미 써둔 글을 변환만 해도 된다.
-
-## 구조
-
-```
-blog-workspace/
-├── CLAUDE.md              # 프로젝트 지침 (Claude가 매 세션 읽음)
-├── references/            # 규칙의 단일 진실 원천
-│   ├── voice.md           #   문체 가이드 — 글 쓰기 전 반드시 읽음
-│   ├── categories.md      #   카테고리 체계, 태그 규칙, 면책 문구
-│   └── seo.md             #   발행 전 체크리스트
-├── .claude/skills/        # 워크플로우 스킬
-│   ├── research/
-│   ├── write-post/        #   references/ 아래 카테고리별 구조 템플릿
-│   ├── polish/
-│   └── to-tistory/
-├── scripts/
-│   └── md2tistory.py      # 마크다운 → 티스토리 HTML 변환기
-├── research/              # 리서치 노트
-├── drafts/                # 작성 중
-├── published/             # 발행 완료
-├── tests/sample.md        # 변환기 회귀 테스트용
-└── dist/                  # 변환 결과 (git 미추적)
+```text
+posts/2026-07-25-claude-code-cost/
+├── brief.md       # 독자, 검색 의도, 핵심 메시지, 독창성, 설명 순서
+├── evidence.md    # 주장-출처-상태-한계, 실험 설계와 결과
+├── article.md     # 티스토리에 게시할 Markdown 원고와 발행 메타데이터
+├── audit.md       # 구조·근거·문체·이미지 최종 감사
+├── assets/        # 생성 후 직접 확인한 대표·본문 이미지
+└── artifacts/     # 코드, 입력, 원시 출력, 로그, 스크린샷
 ```
 
-## 변환기 단독 사용
+초안과 발행본을 다른 폴더로 옮기지 않습니다. 한 폴더를 유지하고 `article.md`의
+`status`만 다음 순서로 바꿉니다.
 
-Claude 없이도 쓸 수 있다. 외부 의존성 없음(Python 3 표준 라이브러리만).
+```text
+planning -> researching -> drafting -> reviewing -> ready -> published
+```
+
+이 방식은 어떤 근거와 실험에서 문장이 나왔는지 Git 이력과 함께 보존합니다.
+
+## 기본 워크플로
+
+1. `brief.md`에서 카테고리, 독자, 검색 의도, 한 문장 핵심과 first-party value를
+   먼저 고정합니다.
+2. `evidence.md`에 강한 주장과 출처, 확인 상태, 출처의 한계를 연결합니다.
+3. 직접 실행할 수 있는 실험이면 입력·환경·판정 규칙을 먼저 적고 원자료를
+   `artifacts/`에 보존합니다.
+4. `article.md`를 작성한 뒤 구조·근거와 한국어 문장을 두 차례 나눠 고칩니다.
+5. 글의 각도가 고정되면 대표 이미지를 생성하고 실제 결과를 확인한 후 `assets/`에
+   저장합니다.
+6. `audit.md`와 검사 명령으로 남은 위험만 확인합니다.
+7. HTML을 생성해 티스토리에 사람이 직접 붙여넣습니다.
+
+## 명령
 
 ```bash
-python3 scripts/md2tistory.py drafts/2026-07-25-my-post.md
+# 새 작업 묶음 만들기
+python3 scripts/blog.py new my-post --title "제목" --category Log --subcategory "개발 · 디지털"
+
+# 한 글 검사
+python3 scripts/blog.py check posts/2026-07-25-my-post
+
+# 전체 현재 글 검사
+python3 scripts/blog.py check --all
+
+# 티스토리 HTML 만들기
+python3 scripts/blog.py render posts/2026-07-25-my-post
+
+# 스크립트 회귀 테스트
+python3 -m unittest discover -s tests -v
 ```
 
-지원: 제목, 문단, 굵게/기울임/취소선, 인라인 코드, 코드블록, 표(정렬 포함),
-인용, 중첩 목록, 수평선, 링크, 이미지. HTML 주석은 제거된다.
-티스토리 스킨 CSS에 영향받지 않도록 모든 스타일을 인라인으로 넣는다.
+검사기는 자동으로 판단할 수 있는 형식 오류만 막습니다. 출처가 실제 주장을
+뒷받침하는지, 설명 순서가 비개발자에게 자연스러운지, 문장이 사람의 책임과 판단을
+담고 있는지는 `audit.md`를 읽고 직접 확인해야 합니다.
 
-변환기를 수정했으면 회귀 테스트를 돌린다:
+## 기준 문서
 
-```bash
-python3 scripts/md2tistory.py tests/sample.md --stdout
-```
+- `standards/editorial-standard.md`: 모든 글의 문체·구조·근거·최종 감사
+- `standards/category-guides.md`: 현재 카테고리와 유형별 구성
+- `standards/blog-memory.md`: 포트폴리오 현황과 주제 선정 우선순위
+- `standards/image-guide.md`: 이미지 생성·검수·보관 기준
+- `standards/reflections-guide.md`: 설교 묵상 글 전용 기준
 
-## 발행
+`standards/`만 편집 기준의 단일 진실 원천으로 사용합니다. 템플릿은 구조를 돕는
+빈 양식일 뿐, 모든 글에 같은 소제목이나 표를 강제하지 않습니다.
 
-**티스토리 Open API는 2024년 2월 완전 종료되어 자동 발행이 불가능하다.**
-마지막 단계는 직접 한다.
+## 티스토리 발행
 
-1. 티스토리 글쓰기 → 우측 상단 **기본모드 → HTML**
-2. `dist/*.html` 전체 복사 후 붙여넣기
-3. 다시 **기본모드**로 전환
-4. 이미지 업로드, 카테고리·태그 지정, 주소(slug)를 영문으로 변경
-5. 발행 후 `drafts/`의 원본을 `published/`로 이동
+`python3 scripts/blog.py render ...`는 `dist/<slug>.html`을 만듭니다.
 
-## 규칙을 고칠 때
+1. 티스토리 글쓰기에서 기본모드를 HTML로 바꿉니다.
+2. 생성된 HTML을 붙여넣고 기본모드로 돌아옵니다.
+3. `assets/`의 이미지를 직접 업로드하고 alt 텍스트를 넣습니다.
+4. 카테고리·태그·영문 slug·요약을 확인한 뒤 발행합니다.
+5. 발행 후 `status: published`와 `published_url`을 기록합니다.
 
-문체나 카테고리 규칙이 바뀌면 **`references/` 아래 파일만 고친다.**
-스킬 파일에 규칙을 복사해 두지 않았으므로 한 곳만 바꾸면 전체에 반영된다.
+자동 발행은 이 저장소의 범위가 아닙니다.
 
-새 문체 규칙을 추가할 때는 실제 발행글에서 관찰한 근거를 함께 적는다.
-추측으로 규칙을 늘리면 글이 점점 이 블로그와 멀어진다.
+## 과거 Claude 구조
+
+초기 Claude 기반 원고와 리서치는 `archive/legacy-claude/`에 원문 그대로
+보존했습니다. 현행 근거 기준을 통과한 자료가 아니므로 새 글의 템플릿이나 검증된
+출처로 사용하지 않습니다.

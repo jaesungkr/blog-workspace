@@ -3,9 +3,9 @@
 마크다운 초안을 티스토리 HTML 에디터에 붙여넣을 HTML로 변환한다.
 
 사용법:
-    python3 scripts/md2tistory.py drafts/2026-07-25-foo.md
-    python3 scripts/md2tistory.py drafts/2026-07-25-foo.md -o dist/foo.html
-    python3 scripts/md2tistory.py drafts/2026-07-25-foo.md --stdout
+    python3 scripts/md2tistory.py posts/2026-07-25-foo/article.md
+    python3 scripts/md2tistory.py posts/2026-07-25-foo/article.md -o dist/foo.html
+    python3 scripts/md2tistory.py posts/2026-07-25-foo/article.md --stdout
 
 티스토리는 스킨마다 CSS가 달라서 클래스를 쓸 수 없다. 모든 스타일을 인라인으로 넣는다.
 외부 의존성 없이 표준 라이브러리만 사용한다.
@@ -253,7 +253,8 @@ def convert(body):
         heading = re.match(r"^(#{1,6})\s+(.*)$", line)
         if heading:
             level = len(heading.group(1))
-            # H1은 티스토리 제목과 중복되므로 H2로 낮춘다
+            # H1은 티스토리 제목과 중복되므로 H2로 낮춘다.
+            # 현행 원고는 섹션에 H3(###)를 사용하므로 그대로 H3가 된다.
             tag = "h%d" % min(max(level, 2), 4)
             out.append('<%s style="%s">%s</%s>' % (tag, S[tag], inline(heading.group(2)), tag))
             i += 1
@@ -391,9 +392,7 @@ def main():
     if comments:
         print("주석 %d개를 제거했습니다. TODO가 남아 있는지 원본을 확인하세요." % len(comments), file=sys.stderr)
     if not tags:
-        print("경고: 태그가 없습니다. 3~6개를 붙이세요.", file=sys.stderr)
-    elif not 3 <= len(tags) <= 6:
-        print("경고: 태그가 %d개입니다. 3~6개를 권장합니다." % len(tags), file=sys.stderr)
+        print("경고: 태그가 없습니다.", file=sys.stderr)
 
     return 0
 
