@@ -16,6 +16,10 @@ framework that belongs on this blog.
 - Read only the additional category, image, memory, or Reflections guide that
   the repository skill routes you to.
 - Inspect the complete post bundle and user-provided material before planning.
+- Do not finish a complete dev.log post in a projectless scratch directory.
+  Create or update its bundle in this repository, run the checker, commit the
+  completed bundle, and push it to `origin/master` unless the user explicitly
+  requests local-only work or the push is blocked.
 
 ## Repository model
 
@@ -58,6 +62,9 @@ test suite and `python3 scripts/blog.py check --all`.
   mandatory number of headings, a mandatory table, or a generic disclaimer.
 - Do not auto-publish. Rendering stops at paste-ready HTML; the user publishes
   in Tistory and supplies the final URL.
+- A Git push to this workspace is part of the archive workflow and is not a
+  Tistory publication. Keep `status: ready` until the user supplies the live
+  Tistory URL.
 - Do not mark a post `ready` or `published` while TODOs, unresolved evidence,
   missing first-party value, or a missing final image remain.
 

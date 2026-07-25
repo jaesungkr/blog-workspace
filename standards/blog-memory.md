@@ -118,3 +118,17 @@ scoring at least 8/10, with no zero for first-party evidence.
   claims, and estimates.
 - When AI materially helped create a post, disclose the useful role when readers
   would reasonably ask; do not use disclosure as a substitute for verification.
+
+## Model-comparison series format
+
+- For head-to-head Claude posts, default to the title pattern
+  `<Model A> vs <Model B> - 클로드 모델 비교`. Do not add a separate
+  clickbait-style question unless the user requests it.
+- Use a consistent bright comparison thumbnail: cool-toned left half,
+  warm-toned right half, diagonal split, centered `VS` badge, large model
+  names, one short role subtitle per model, three concise feature rows, and
+  matching translucent AI objects.
+- Keep both models visually equal in status. The thumbnail communicates a
+  comparison rather than a fight, ranking podium, or predetermined winner.
+- In-image text is allowed for this recurring comparison series when it is
+  exact, concise, and inspected for spelling before delivery.
