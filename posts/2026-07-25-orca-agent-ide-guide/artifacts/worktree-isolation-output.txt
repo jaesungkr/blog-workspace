@@ -1,0 +1,34 @@
+[environment]
+Darwin 25.5.0 arm64
+git version 2.53.0
+
+[registered worktrees]
+worktree /private/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T/orca-worktree-test.SQyU62/repo
+HEAD 1d0198b5ffad2089420c889ba86ff2c9c627536b
+branch refs/heads/master
+
+worktree /private/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T/orca-worktree-test.SQyU62/agent-a
+HEAD 1d0198b5ffad2089420c889ba86ff2c9c627536b
+branch refs/heads/agent-a
+
+worktree /private/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T/orca-worktree-test.SQyU62/agent-b
+HEAD 1d0198b5ffad2089420c889ba86ff2c9c627536b
+branch refs/heads/agent-b
+
+[main checkout]
+content=mode=base status=
+[agent-a worktree]
+content=mode=agent-a status= M config.txt
+[agent-b worktree]
+content=mode=agent-b status= M config.txt
+[disk usage]
+180	/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T//orca-worktree-test.SQyU62/repo
+8	/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T//orca-worktree-test.SQyU62/agent-a
+8	/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T//orca-worktree-test.SQyU62/agent-b
+
+[merge collision]
+exit=1
+Auto-merging config.txt
+CONFLICT (content): Merge conflict in config.txt
+Automatic merge failed; fix conflicts and then commit the result.
+conflict_markers=3
