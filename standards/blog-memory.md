@@ -132,3 +132,7 @@ scoring at least 8/10, with no zero for first-party evidence.
   comparison rather than a fight, ranking podium, or predetermined winner.
 - In-image text is allowed for this recurring comparison series when it is
   exact, concise, and inspected for spelling before delivery.
+- End model-comparison articles with `### 참고 자료`, ordered as official
+  sources, independent evaluations, and hands-on tests. This series-level
+  reference list is required even when the same links already appear beside
+  claims in the body.

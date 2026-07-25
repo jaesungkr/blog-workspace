@@ -182,3 +182,19 @@ Opus 5에도 안전 분류기가 있지만 Anthropic은 Fable 5보다 개입 빈
 Opus 5는 Fable 5의 단순 하위 모델이 아닙니다. 코딩 에이전트, 컴퓨터 사용, 지식 노동, 업무 자동화에서는 더 좋은 결과를 내면서 작업당 비용도 낮출 수 있는 새로운 기본값입니다. 다만 더 자주 검증하고 더 많이 말하는 성향 때문에, 프롬프트가 모호하면 절반 단가를 긴 실행 시간과 추가 토큰으로 되돌려 줄 수 있습니다.
 
 한 문장으로 정리하면 **Opus 5는 기본 실행 모델이고, Fable 5는 실제 작업 로그로 필요성이 증명됐을 때만 올리는 최고 난도 모델**입니다. ‘가장 똑똑한 모델’을 고르는 것보다, 성공 조건을 만족한 뒤 제때 멈추는 모델을 고르는 편이 비용과 결과 모두에 더 중요합니다.
+
+### 참고 자료
+
+- [Introducing Claude Opus 5 - Anthropic](https://www.anthropic.com/news/claude-opus-5)
+- [Claude Opus 5 System Card - Anthropic](https://www.anthropic.com/claude-opus-5-system-card)
+- [Claude 모델 비교표 - Anthropic](https://platform.claude.com/docs/en/about-claude/models/overview)
+- [Prompting Claude Opus 5 - Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5)
+- [Claude API 데이터 보존 - Anthropic](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention)
+- [Claude API 거부와 폴백 - Anthropic](https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback)
+- [Introducing Claude Fable 5 and Mythos 5 - Anthropic](https://www.anthropic.com/news/claude-fable-5-mythos-5)
+- [Claude Opus 5 Intelligence, Performance & Price Analysis - Artificial Analysis](https://artificialanalysis.ai/articles/opus-5)
+- [Claude Opus 5 - Artificial Analysis](https://artificialanalysis.ai/models/claude-opus-5)
+- [Claude Fable 5 - Artificial Analysis](https://artificialanalysis.ai/models/claude-fable-5)
+- [Claude Opus 5 vs Fable 5 - Nate Herk](https://www.youtube.com/watch?v=2J3uX8iRNng)
+- [Claude Opus 5 vs Fable 5 - Duncan Rogoff](https://www.youtube.com/watch?v=yKu03nBC9yY)
+- [Claude Opus 5 vs Fable 5 - Alex Finn](https://www.youtube.com/watch?v=Vh1v2VSroes)

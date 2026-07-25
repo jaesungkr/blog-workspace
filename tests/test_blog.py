@@ -113,6 +113,52 @@ class BlogCheckerTests(unittest.TestCase):
 
         self.assertFalse([item for item in diagnostics if item.level == "ERROR"])
 
+    def test_model_comparison_requires_reference_section_when_ready(self):
+        article = (
+            VALID_ARTICLE.replace("status: drafting", "status: ready")
+            .replace(
+                'subcategory: "개발 · 디지털"',
+                'subcategory: "AI 모델 · 비교"',
+            )
+            .replace('summary: ""', 'summary: "검증된 모델 비교 글입니다."')
+            .replace("sources: []", "sources: [https://example.com/source]")
+        )
+        with tempfile.TemporaryDirectory() as temp:
+            post = make_bundle(Path(temp), article)
+            (post / "assets" / "hero.png").write_bytes(b"\x89PNG\r\n\x1a\n")
+            (post / "audit.md").write_text(
+                "# 감사\n\n- [x] 실제 원고를 확인했습니다.\n",
+                encoding="utf-8",
+            )
+            messages = [item.message for item in blog.check_post(post)]
+
+        self.assertTrue(
+            any("마지막 절에 `### 참고 자료`" in message for message in messages)
+        )
+
+    def test_model_comparison_reference_section_passes(self):
+        article = (
+            VALID_ARTICLE.replace("status: drafting", "status: ready")
+            .replace(
+                'subcategory: "개발 · 디지털"',
+                'subcategory: "AI 모델 · 비교"',
+            )
+            .replace('summary: ""', 'summary: "검증된 모델 비교 글입니다."')
+            .replace("sources: []", "sources: [https://example.com/source]")
+            + "\n### 참고 자료\n\n- [공식 자료](https://example.com/source)\n"
+        )
+        with tempfile.TemporaryDirectory() as temp:
+            post = make_bundle(Path(temp), article)
+            (post / "assets" / "hero.png").write_bytes(b"\x89PNG\r\n\x1a\n")
+            (post / "audit.md").write_text(
+                "# 감사\n\n- [x] 실제 원고를 확인했습니다.\n",
+                encoding="utf-8",
+            )
+            diagnostics = blog.check_post(post)
+
+        self.assertFalse([item for item in diagnostics if item.level == "ERROR"])
+        self.assertFalse([item for item in diagnostics if item.level == "WARN"])
+
     def test_new_command_copies_complete_template_bundle(self):
         with tempfile.TemporaryDirectory() as temp:
             posts_dir = Path(temp) / "posts"

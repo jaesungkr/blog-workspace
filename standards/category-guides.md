@@ -77,6 +77,10 @@ Choose the subcategory by intent:
   evidence allows, name one default starting choice. If showing a practical
   overall rank, state its criteria and keep it separate from rankings observed
   in one test scenario.
+- End every `AI 모델 · 비교` post with `### 참고 자료`. List the official
+  release and documentation first, independent benchmarks next, and hands-on
+  videos or community tests last. Keep inline links beside measured claims as
+  well.
 - A plain personal observation may close the post when a call to action feels
   forced.
 

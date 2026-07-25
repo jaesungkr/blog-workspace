@@ -32,6 +32,34 @@ python3 scripts/blog.py new claude-code-cost \
   --subcategory "개발 · 디지털"
 ```
 
+### Codex에서 작업을 시작하는 방법
+
+가장 확실한 방법은 이 저장소 루트를 Codex 프로젝트로 연 뒤 자연어로 요청하는
+것입니다. `AGENTS.md`가 저장소 전용 스킬과 검사·Git 워크플로를 자동으로
+적용합니다.
+
+```text
+Opus 5와 Fable 5 비교 글을 dev.log 워크플로로 작성해줘.
+근거, 원고, 대표 이미지, 감사를 글 묶음에 보존하고 검사 후 master에 올려줘.
+```
+
+스킬을 명시하고 싶다면 다음처럼 요청합니다.
+
+```text
+$dev-log-workspace를 사용해서 [주제] 글을 작성해줘.
+완성된 글 묶음을 검사하고 origin/master에 푸시해줘.
+```
+
+프로젝트 없는 새 대화에서 시작했다면 저장소까지 함께 지정합니다.
+
+```text
+GitHub jaesungkr/blog-workspace의 dev-log-workspace 워크플로로
+[주제] 글을 작성하고 검사·커밋·푸시해줘.
+```
+
+GitHub 푸시는 작업 아카이브이며 Tistory 자동 발행은 아닙니다. 실제 발행 URL을
+받기 전까지 글 상태는 `ready`로 유지합니다.
+
 ## 글 한 편의 구조
 
 ```text

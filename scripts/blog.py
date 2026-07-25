@@ -268,12 +268,31 @@ def check_post(post_dir: Path) -> list[Diagnostic]:
         level = "ERROR" if status in FINAL_STATUSES else "WARN"
         add(diagnostics, level, article, "본문에 편집용 HTML 주석이 남아 있습니다.")
 
-    if re.search(r"^###\s+(참고문헌|참고 자료|출처|References)\s*$", body, re.MULTILINE):
+    has_reference_appendix = re.search(
+        r"^###\s+(참고문헌|참고 자료|출처|References)\s*$",
+        body,
+        re.MULTILINE,
+    )
+    allows_reference_appendix = (
+        category == "Log" and subcategory == "AI 모델 · 비교"
+    )
+    if has_reference_appendix and not allows_reference_appendix:
         add(
             diagnostics,
             "WARN",
             article,
             "분리된 참고문헌보다 관련 문장에 출처와 한계를 붙이세요.",
+        )
+    has_required_reference_tail = bool(
+        headings and clean_heading(headings[-1][1]) == "참고 자료"
+    )
+    if allows_reference_appendix and not has_required_reference_tail:
+        level = "ERROR" if status in FINAL_STATUSES else "WARN"
+        add(
+            diagnostics,
+            level,
+            article,
+            "AI 모델 · 비교 글의 마지막 절에 `### 참고 자료`를 추가하세요.",
         )
 
     if "이 글은 일반적인 정보 정리이며" in body:

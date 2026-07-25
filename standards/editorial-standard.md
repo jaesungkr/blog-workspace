@@ -138,6 +138,10 @@
 - Weave attribution into the sentence. Omit detached footnotes, a references
   appendix, `※` disclaimers, and sponsorship boilerplate unless the user
   requests them or the publishing context legally requires them.
+- Exception: every `Log > AI 모델 · 비교` post ends with `### 참고 자료`.
+  Keep source links next to the claims they support, then repeat a curated list
+  of the official documents, independent evaluations, and hands-on tests at the
+  bottom so readers can open the original material in one place.
 
 ## Human signal and anti-template check
 
@@ -218,7 +222,9 @@ checks pass:
   personal experience.
 - The post passes the substitution check and has a clear reason to exist on
   dev.log.
-- No invented anecdote, detached disclaimer, or references appendix remains.
+- No invented anecdote, detached disclaimer, or unrequested references appendix
+  remains. `Log > AI 모델 · 비교` includes the required `### 참고 자료`
+  section without using it as a substitute for inline attribution.
 - Limitations and counterarguments are visible.
 - Closing follows the category rule.
 - Output is rendered Markdown without an outer code fence.
