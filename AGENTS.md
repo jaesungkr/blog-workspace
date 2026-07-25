@@ -11,6 +11,9 @@ framework that belongs on this blog.
 ## Start every blog task here
 
 - Use the repository skill at `.agents/skills/dev-log-workspace/SKILL.md`.
+- Treat that Git-tracked skill as the only editable copy. For global Codex
+  discovery, link it with `scripts/link_codex_skill.sh`; do not maintain a
+  separate copied skill under `~/.codex/skills/`.
 - Treat `standards/` as the editorial source of truth.
 - Read `standards/editorial-standard.md` for every writing or editing task.
 - Read only the additional category, image, memory, or Reflections guide that

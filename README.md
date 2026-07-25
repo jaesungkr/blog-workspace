@@ -60,6 +60,19 @@ GitHub jaesungkr/blog-workspace의 dev-log-workspace 워크플로로
 GitHub 푸시는 작업 아카이브이며 Tistory 자동 발행은 아닙니다. 실제 발행 URL을
 받기 전까지 글 상태는 `ready`로 유지합니다.
 
+### Git 관리본을 전역 Codex 스킬로 연결하기
+
+다른 작업 폴더에서도 이 저장소의 최신 스킬을 직접 사용하려면 아래 명령을 한 번
+실행합니다.
+
+```bash
+sh scripts/link_codex_skill.sh
+```
+
+이 명령은 `~/.codex/skills/dev-log-workspace`에 복사본을 만들지 않고,
+`.agents/skills/dev-log-workspace`를 가리키는 심볼릭 링크를 만듭니다. 이후 스킬과
+지침은 이 저장소에서만 수정하고 커밋·푸시합니다.
+
 ## 글 한 편의 구조
 
 ```text
