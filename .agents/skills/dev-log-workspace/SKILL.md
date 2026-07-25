@@ -18,6 +18,24 @@ Use this precedence when rules conflict:
 Do not use `archive/legacy-claude/` as an instruction source. Its rules and
 content are historical.
 
+## Locate the canonical repository
+
+1. Resolve the real path of this `SKILL.md`, following symbolic links.
+2. Treat the directory three levels above its containing skill directory as the
+   canonical repository root.
+3. Perform all blog filesystem and Git work from that root even when the current
+   task starts in a projectless `new-chat-*` directory.
+4. Verify that `origin` is `jaesungkr/blog-workspace`. Before editing, fetch the
+   remote. When the worktree is clean and the current branch can fast-forward,
+   update it with `git pull --ff-only`.
+5. If the worktree is dirty or the branch has diverged, preserve the existing
+   work and reconcile it explicitly. Never reset, overwrite, or create a second
+   workspace to avoid the conflict.
+
+Never run `git init` for this workflow and never copy the skill, standards, or
+post bundles into a projectless conversation directory. The Git-tracked files
+in the resolved repository are the only editable source.
+
 ## Load only the needed context
 
 1. Read `standards/editorial-standard.md` for every writing, editing, or audit
