@@ -136,6 +136,100 @@
   glossy CG sheen, clutter, cheap stock-photo styling, dated corporate
   illustration, obvious AI artifacts`
 
+### 추가 후보 - Orca 연관성 강화
+
+- [x] 1672x941 원본과 360px 썸네일을 각각 열어 확인했습니다.
+- [x] 흑백 오르카 조형물과 정확한 `ORCA` 표기가 썸네일에서도 즉시
+  식별됩니다.
+- [x] 오르카 아래의 분리된 작업 레일과 하나의 투명 검토 렌즈가 병렬
+  worktree와 diff review를 보조하므로 단순한 해양 이미지로 보이지 않습니다.
+- [x] 오르카의 등지느러미, 가슴지느러미, 꼬리, 흰색 무늬와 몸통 연결이
+  조형물이라는 표현 범위 안에서 자연스럽습니다.
+- [x] 원본에서 목재 결, 무광 도장, 종이 섬유, 금속 결, 아크릴 투과광,
+  접촉 그림자를 확인했습니다.
+- [x] 공식 제품 스크린샷은 worktree 목록, 병렬 pane, diff review라는 구조만
+  참고했으며 실제 UI·문구·로고를 복제하지 않았습니다.
+- [x] 제3자 agent 로고, 가짜 terminal 화면, 보안 상징, 워터마크,
+  과장된 성능 표현이 없습니다.
+
+- 후보 파일: `assets/orca-worktree-hero-v3.png`
+- 해상도: `1672x941`
+- SHA-256:
+  `eaf3e7db2d3a3afe5a2fa14a9511ecff8acaaefefdb7516e622c5d7d9d7e3a8b`
+- 추천 용도: `Orca 제품 연관성을 우선할 때 사용할 대표 이미지 후보`
+- 한국어 alt: `ORCA 표기 옆의 흑백 오르카 조형물 아래에서 여러 작업 레일이
+  하나의 투명 검토 렌즈로 이어지는 편집 스틸라이프`
+- 생성 방식: built-in image generation
+- 참고 이미지 역할:
+  - `https://www.onorca.dev/whats-new/posters/orca-split-screen.jpg`:
+    worktree 목록과 병렬 pane의 구조 참고
+  - `https://www.onorca.dev/whats-new/posters/annotate-ai-diff.jpg`:
+    결과를 한곳에서 비교하는 diff review 구조 참고
+- 아트 디렉션: 무광 흑백 오르카 조형물을 중심에 둔 밝은 건축 모형형
+  편집 스틸라이프. 따뜻한 흰색과 옅은 북극색 바탕, 비대칭 대각선 구도,
+  실물 목재·도자·종이·금속 질감을 사용했습니다.
+- 최종 생성 프롬프트:
+
+  `Use case: stylized-concept
+  Asset type: Korean Tistory technology article hero image, wide 16:9 landscape
+  Input images: Image 1 and Image 2 are official Orca product screenshots used
+  only as structural references for the ideas of a worktree sidebar, multiple
+  side-by-side agent panes, and a deliberate diff-review pane; do not reproduce
+  their text, exact UI, exact layout, or logos
+  Primary request: create a new publication hero that is unmistakably about
+  Orca, the Agent Development Environment that runs multiple CLI coding agents
+  in isolated Git worktrees and brings their results back to human diff review
+  Creative intent: Orca feels like a calm, powerful conductor of parallel
+  technical work; immediately recognizable as the Orca product topic, but
+  refined enough for a large enterprise technology campaign
+  Visual idea: a bold black-and-white orca sculpture arcs dynamically above a
+  luminous architectural tabletop; beneath its tail, one source channel divides
+  into two clearly isolated raised worktree lanes with different embossed line
+  rhythms; the two lanes run side by side and meet only beneath one circular
+  translucent inspection lens near the orca's head, expressing deliberate diff
+  review before merge
+  Art direction: commissioned contemporary editorial mixed-media campaign,
+  photographed practical set rather than glossy CGI; museum-catalog object study
+  combined with precise architectural model making; distinctive, confident,
+  tactile, current
+  Scene/backdrop: bright seamless warm-white studio with a very pale arctic-blue
+  floor plane and generous open space
+  Subject: one elegant, anatomically coherent stylized orca sculpture as the
+  dominant focal point; one source, two isolated physical lanes, one review lens
+  as supporting structure
+  Style/medium: photorealistic handcrafted sculpture and paper-relief set,
+  medium-format studio photography, subtle film grain and physical
+  imperfections; the orca is made from matte black painted wood and warm white
+  ceramic with believable seams and weight
+  Composition/framing: wide landscape, energetic asymmetric diagonal from
+  lower-left to upper-right, orca occupying roughly the central third with
+  generous crop-safe margins, one-second thumbnail hierarchy, layered
+  foreground depth; avoid mirrored symmetry
+  Lighting/mood: broad diffused daylight key from upper-left, quiet cool fill,
+  narrow warm raking light across paper and ceramic, shaped soft contact shadows;
+  bright, calm, precise, optimistic
+  Color palette: warm white, charcoal black, bone, brushed silver, pale arctic
+  blue, one small muted aqua status accent; no neon
+  Materials/textures: matte ceramic, painted wood grain, uncoated paper fibers,
+  brushed aluminum, softly frosted acrylic with plausible transmission and
+  refraction
+  Text (verbatim): "ORCA" exactly once, small but clearly legible in a restrained
+  black geometric sans-serif on a simple warm-white title card integrated into
+  the upper-left negative space; no other letters, words, labels, numbers,
+  pseudo-code, or pseudo-writing
+  Constraints: preserve the product concept from the official references
+  without copying their UI; make the orca animal and the
+  split-worktree-review mechanism both visible at thumbnail size;
+  publication-ready; no third-party agent logos; no fake terminal screens; no
+  product claims; no security symbols; no watermark
+  Avoid: wildlife documentary ocean scene, cute mascot treatment, cartoon whale,
+  aquarium imagery, dark navy or black background, neon cyan or orange,
+  glassmorphism boxes, floating dashboards, literal laptop, fake code, circuit
+  graphics, network wallpaper, symmetrical pods, plastic 3D icons, robot
+  imagery, excessive bloom, volumetric fog, lens flare, glossy CG sheen,
+  clutter, cheap stock styling, dated corporate illustration, malformed animal
+  anatomy, obvious AI artifacts`
+
 ## 검사와 남은 위험
 
 - 검사 명령:
