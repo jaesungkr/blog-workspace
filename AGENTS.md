@@ -19,9 +19,13 @@ framework that belongs on this blog.
 - Read only the additional category, image, memory, or Reflections guide that
   the repository skill routes you to.
 - Inspect the complete post bundle and user-provided material before planning.
+- Treat an unqualified request to write about a topic as an end-to-end
+  complete-post request. Do not stop at research, an outline, or a text draft
+  unless the user explicitly limits the scope.
 - Do not finish a complete dev.log post in a projectless scratch directory.
-  Create or update its bundle in this repository, run the checker, commit the
-  completed bundle, and push it to `origin/master` unless the user explicitly
+  Create or update its bundle in this repository, complete the image and audit,
+  run the checker, render the ready article, commit the completed bundle, push
+  it to `origin/master`, and verify the remote commit unless the user explicitly
   requests local-only work or the push is blocked.
 
 ## Repository model
@@ -76,4 +80,6 @@ test suite and `python3 scripts/blog.py check --all`.
 A complete-post request is done only when the article has passed the applicable
 editorial audit, strong claims have evidence and limitations, first-party value
 is visible, the final image exists and has placement/alt text recorded, the
-workspace checker passes, and remaining uncertainty is reported plainly.
+workspace checker passes, paste-ready HTML is rendered, the task is committed,
+`origin/master` contains that commit, and remaining uncertainty is reported
+plainly.

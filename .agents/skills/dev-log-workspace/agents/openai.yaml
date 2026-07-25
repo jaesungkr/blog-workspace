@@ -1,4 +1,7 @@
 interface:
   display_name: "dev.log Workspace"
-  short_description: "dev.log 글을 근거부터 발행 직전까지 관리"
-  default_prompt: "$dev-log-workspace를 사용해 이 저장소에서 검증 가능한 dev.log 글을 준비해 주세요."
+  short_description: "주제 선정부터 검사·커밋·푸시까지 자동으로 완성"
+  default_prompt: "$dev-log-workspace를 사용해 제가 말한 주제로 dev.log 글을 완성하고 검사·렌더·커밋·origin/master 푸시까지 완료해 주세요."
+
+policy:
+  allow_implicit_invocation: true

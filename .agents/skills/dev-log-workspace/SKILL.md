@@ -1,6 +1,6 @@
 ---
 name: dev-log-workspace
-description: Plan, research, draft, revise, illustrate, audit, render, or archive Korean Tistory posts inside this dev.log repository. Use for any task involving posts/, blog topics, evidence notes, article Markdown, blog images, Tistory HTML, publishing metadata, or editorial standards in this workspace.
+description: Run the end-to-end workflow for Korean Tistory posts in the dev.log repository. Use whenever the user says they want to write, create, prepare, revise, or publish a dev.log post, even when they provide only a topic or rough idea, and for any task involving posts/, evidence, article Markdown, blog images, Tistory HTML, publishing metadata, or editorial standards. Treat an unqualified writing request as a complete-post request that includes research, drafting, illustration, audit, validation, rendering, commit, and push to origin/master.
 ---
 
 # dev.log repository workflow
@@ -35,6 +35,22 @@ content are historical.
 Never run `git init` for this workflow and never copy the skill, standards, or
 post bundles into a projectless conversation directory. The Git-tracked files
 in the resolved repository are the only editable source.
+
+## Infer the requested scope
+
+- Treat a request such as `이 주제로 글을 쓰고 싶어`, `이 내용으로 포스팅해줘`,
+  or a topic by itself plus clear writing intent as a complete-post request.
+- For a complete-post request, run the full workflow without waiting for the
+  user to separately request research, an outline, an image, an audit, checks,
+  rendering, a commit, or a push.
+- Infer routine choices such as category, subcategory, working title, slug,
+  reader, search intent, and post structure from the topic and repository
+  standards. Ask only when missing information would materially change a
+  personal claim, supplied-source interpretation, or other consequential fact.
+- Respect an explicit scope such as `개요만`, `리서치만`, `이 문단만 수정`, or
+  `검토만`. Finish and archive that scope, then validate, commit, and push any
+  resulting repository changes unless the user explicitly requests local-only
+  work, no commit, or no push.
 
 ## Load only the needed context
 
@@ -76,8 +92,8 @@ Do not move files between draft and published trees. Update the article status:
 
 ## Run the workflow
 
-1. Identify the task: topic selection, research, outline, draft, local revision,
-   full revision, image, audit, render, or publication record.
+1. Infer whether the task is a complete post or an explicitly limited stage.
+   Default an unqualified writing request to a complete post.
 2. Classify by the reader promise, not a noun in the subject.
 3. In `brief.md`, establish:
    - one reader and search intent;
@@ -120,6 +136,28 @@ Do not move files between draft and published trees. Update the article status:
 12. The user publishes manually. Only after they provide the live URL should
     `status: published` and `published_url` be recorded.
 
+## Validate, commit, and push automatically
+
+For every task that changes tracked repository files, finish the applicable
+validation and Git workflow without waiting for a separate user request:
+
+1. Run `python3 scripts/blog.py check <post-directory>` for each changed post.
+2. Run `python3 -m unittest discover -s tests -v` and
+   `python3 scripts/blog.py check --all` when scripts, templates, standards, or
+   repository-wide behavior changes.
+3. Run `git diff --check`, inspect the actual diff, and confirm that only files
+   belonging to the task will be committed.
+4. Stage the task files and create a focused commit.
+5. Fetch `origin/master` again. Integrate new remote commits without force and
+   rerun affected checks if the integration changes relevant files.
+6. Push to `origin/master`, then verify that the remote branch contains the
+   local commit.
+
+Fix validation failures and repeat the gate. Never bypass checks, force-push, or
+discard existing work to manufacture a successful push. If an external blocker
+cannot be resolved safely, preserve the work and report the exact blocker.
+Skip commit or push only when the user explicitly requests that exception.
+
 ## Evidence integrity
 
 - Never invent a test, personal experience, sermon statement, quotation,
@@ -139,4 +177,5 @@ Do not move files between draft and published trees. Update the article status:
 
 For a complete post, do not stop at a text draft. The post is complete only when
 the article, evidence, first-party value, final image, alt text/placement,
-workspace check, and remaining-risk report are all present.
+workspace check, rendered Tistory HTML, and remaining-risk report are all
+present, the task commit exists, and `origin/master` contains that commit.
