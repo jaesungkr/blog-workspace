@@ -123,6 +123,15 @@ Do not move files between draft and published trees. Update the article status:
    thumbnail and full resolution. Reject a generic but technically valid
    result; save only an inspected final under `assets/`, then record placement,
    alt text, art direction, and the final prompt in `audit.md`.
+   - For a post centered on a named product, tool, person, place, or event,
+     define one subject-recognition cue before prompting. Prefer a distinctive
+     core action, native input/output, environment, object, or brand-safe motif
+     over an arbitrary logo or title.
+   - Apply the subject-swap test at full size and thumbnail size: if the named
+     subject can be replaced with an unrelated one while the image still works,
+     the visual is too generic. Regenerate or revise the concept.
+   - Record in `audit.md` why the selected cue makes the actual subject
+     recognizable without relying on the prompt explanation.
 9. Complete `audit.md` from the actual article. Do not check an item without
    verifying it.
 10. Run:

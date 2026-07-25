@@ -45,6 +45,14 @@ diff window, and magnifying glass` is an inventory. `Two precise paths split
 from one source and reunite only at a deliberate inspection surface` is a
 visual idea.
 
+For a named subject, a strong metaphor still needs subject identity. Choose one
+visible recognition cue grounded in what the subject uniquely does, consumes,
+produces, inhabits, or is commonly associated with. Apply a subject-swap test:
+if an unrelated tool, person, place, or event could replace the named subject
+without weakening the image, the concept is too generic. Strengthen the cue
+without turning the composition into a logo card, title slide, or feature
+inventory.
+
 ## Translate taste into visible choices
 
 Do not use `premium`, `polished`, `modern`, `cinematic`, or `elegant` as the
@@ -196,6 +204,9 @@ applicable checks:
 
 - Concept: one clear idea, not a feature inventory.
 - Article fit: visibly connected to the retained message and image role.
+- Topic recognition: a named subject remains identifiable at thumbnail size
+  through at least one specific, brand-safe cue. It does not depend only on the
+  prompt, alt text, embedded title, or logo.
 - Originality: no obvious stock or generative-technology cliche.
 - Hierarchy: focal point reads within one second at thumbnail size.
 - Composition: intentional balance, crop safety, and useful negative space.

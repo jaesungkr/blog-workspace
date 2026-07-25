@@ -53,58 +53,75 @@
 ## 이미지
 
 - [x] 1672×941 원본과 400px 썸네일을 각각 열어 확인했습니다.
-- [x] 큰 종이 원본이 금속 게이트를 지나 몇 개의 정돈된 열로 줄어드는
-  하나의 개념이 글의 입력-분석-작은 결과 흐름과 맞습니다.
+- [x] 노란 나무 오리가 표 격자 위를 지나며 일부 열만 세우는 한 장면이
+  DuckDB의 파일 입력-열 선택-작은 결과 흐름과 맞습니다.
+- [x] 400px 썸네일에서도 오리, 표 격자, 선택된 열이 함께 보여
+  범용 데이터 엔진이 아니라 DuckDB 주제로 식별됩니다.
 - [x] 로고·워터마크·제목·읽을 수 있는 문자·가짜 UI가 없습니다.
-- [x] 모든 변에 여백이 있고 중심 구조가 반응형 중앙 크롭 안에 남습니다.
-- [x] 종이 섬유, 금속 결, 두께, 접촉 그림자와 광원의 방향이 일관되며
+- [x] 모든 변에 여백이 있고 오리와 열의 흔적이 반응형 중앙 크롭 안에
+  남습니다.
+- [x] 종이 섬유, 나무 결, 종이 두께, 접촉 그림자와 광원의 방향이
+  일관되며
   어두운 네온·회로·플라스틱 3D 같은 기술 이미지 클리셰가 없습니다.
 
-- 최종 파일: `assets/duckdb-local-analytics-hero.png`
+- 최종 파일: `assets/duckdb-local-analytics-hero-v2.png`
+- 이전 파일: `assets/duckdb-local-analytics-hero.png`는 범용 데이터 엔진처럼
+  보인다는 사용자 피드백으로 대표 이미지에서 제외했습니다.
 - 권장 위치: `대표 이미지 - 제목 바로 아래`
-- 한국어 alt: `두꺼운 데이터 종이 묶음이 금속 분석 게이트를 지나 몇 개의 정돈된 열로 압축되는 편집 스틸라이프`
-- 선택한 아트 디렉션: 따뜻한 아이보리 스튜디오에서 종이와 브러시드
-  알루미늄으로 로컬 분석 과정을 표현한 실물 미니어처형 편집 스틸라이프
+- 한국어 alt: `노란 나무 오리가 표 격자 위를 지나며 선택한 데이터 열을 종이 띠로 세우는 편집 스틸라이프`
+- 선택한 아트 디렉션: 따뜻한 아이보리 스튜디오에서 나무 오리와 표
+  격자, 세워진 열을 하나의 동작으로 연결한 실물 미니어처형 편집
+  스틸라이프
 - 생성 방식: built-in image generation
 - 최종 생성 프롬프트:
 
 ```text
 Use case: stylized-concept
 Asset type: Korean Tistory blog hero image, wide 16:9 landscape
-Primary request: Create a crafted editorial still life expressing how a local
-analytical engine turns a large raw data file into a small, precise answer
-without a server room or cloud infrastructure.
-Creative intent: Quiet confidence, immediacy, and local control.
-Visual idea: One broad, slightly unruly band of densely ruled uncoated paper
-enters a compact brushed-aluminum analysis gate on a tabletop; on the other
-side only a few slim, perfectly aligned vellum columns emerge, making the
-transformation from bulky raw records to a concise analytical result readable
-in one glance. This is one continuous physical process, not a collection of
-feature icons.
-Art direction: Commissioned contemporary magazine still life photographed as
-a practical miniature set, tactile and plausible rather than glossy 3D.
-Scene/backdrop: Warm ivory seamless studio surface with generous quiet negative
-space and no visible room, screens, cables, servers, or dashboards.
-Subject: The paper-to-compact-columns transformation, placed slightly
-off-center with controlled depth and a low three-quarter viewpoint.
-Composition/framing: Wide landscape, strong single focal hierarchy at
-thumbnail size, controlled asymmetry, crop-safe margins on every side,
-foreground paper leading toward the gate, compact output clearly visible,
-generous negative space.
+Input image: style reference only. Preserve its luminous ivory studio, tactile
+paper-and-metal craft, restrained palette, soft daylight, controlled
+asymmetry, and commissioned editorial finish. Do not copy its metal gate or
+exact composition.
+Primary request: Create a subject-specific DuckDB editorial hero that
+immediately connects a duck, local tabular data, SQL-style selection, and
+columnar output without using a logo, title, or fake interface.
+Creative intent: Make DuckDB feel approachable, local, and precise rather than
+generic database infrastructure.
+Visual idea: A single small mustard-yellow carved wooden duck glides across a
+broad paper lake printed only with faint non-readable spreadsheet grid lines.
+Directly behind the duck, its wake physically transforms the dense row grid
+into four clean raised vertical paper columns, with most of the surrounding
+paper left untouched. The duck and its transforming wake are one continuous
+focal action: a playful but sophisticated metaphor for querying a local CSV
+and returning only selected columns in a compact columnar form.
+Art direction: Photographed practical miniature set for a contemporary
+data-engineering magazine, tactile editorial still life, believable physical
+construction, not glossy 3D.
+Scene/backdrop: Warm ivory seamless tabletop and backdrop, no room context, no
+computer, no cloud, no server racks.
+Subject: One refined carved duck with a simple natural silhouette and subtle
+wood grain, not a mascot character and not a rubber bath toy; its contact with
+the paper surface and the raised-column wake must be physically plausible.
+Composition/framing: Wide landscape, low three-quarter view, duck slightly
+left of center moving diagonally toward the right, raw grid paper entering from
+the left foreground, four selected column strips rising clearly in the wake,
+generous crop-safe quiet space, immediate focal hierarchy at thumbnail size.
 Lighting/mood: Large diffused daylight key from upper left, soft neutral fill,
-one narrow warm edge highlight on brushed metal, shaped contact shadows, calm
-and credible.
-Color palette: Warm ivory, graphite gray, brushed aluminum, and one restrained
-mustard-yellow accent used only on the compact result edges.
-Materials/textures: Visible uncoated paper fibers, lightly scored rules with no
-readable characters, finely brushed aluminum with believable thickness,
-translucent vellum edges, subtle imperfections and grounded contact shadows.
-Constraints: Factually neutral and publication-ready; no people; no duck
-mascot; no logos; no watermark; no title; no letters, numbers, code, labels,
-pseudo-writing, charts, fake UI, or branded product shapes.
-Avoid: dark navy, neon, glassmorphism, glowing circuits, floating panels,
-generic laptop scenes, database cylinder icons, plastic 3D sheen, excessive
-symmetry, clutter, sensational speed effects, or unsupported benchmark claims.
+narrow warm edge on the mustard duck and paper columns, grounded shaped
+contact shadows, calm and credible.
+Color palette: Warm ivory paper, graphite-gray grid, muted mustard yellow duck,
+very small charcoal accents; no saturated rainbow colors.
+Materials/textures: Uncoated paper fibers, precise scored folds, matte carved
+wood with slight tool marks, believable paper thickness and contact shadows.
+Constraints: Publication-ready; one duck only; no DuckDB logo; no trademark
+copy; no text, letters, numbers, SQL code, labels, pseudo-writing, charts, fake
+UI, screens, database cylinder icons, watermark, or unsupported speed claim.
+The duck-plus-tabular-data connection must remain unmistakable at thumbnail
+size.
+Avoid: childish mascot art, rubber duck toy appearance, literal pond water,
+generic office scene, dark navy, neon, circuits, holograms, floating panels,
+plastic sheen, excessive symmetry, clutter, or a generic data-compression
+machine.
 ```
 
 ## 검사와 남은 위험

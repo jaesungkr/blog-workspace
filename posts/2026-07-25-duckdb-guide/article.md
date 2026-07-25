@@ -7,7 +7,7 @@ subcategory: "개발 · 디지털"
 status: ready
 tags: [DuckDB, DuckDB 사용법, 데이터 분석, SQL, CSV, Parquet, Pandas, Python]
 summary: "DuckDB를 사람들이 쓰는 이유부터 설치, CSV·Parquet 직접 조회, Pandas 연동, 파일 DB 저장, 성능 팁과 한계까지 500만 행 실험과 함께 정리합니다."
-hero_image: assets/duckdb-local-analytics-hero.png
+hero_image: assets/duckdb-local-analytics-hero-v2.png
 published_url: ""
 sources:
     - https://duckdb.org/why_duckdb

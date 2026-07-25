@@ -14,6 +14,11 @@ defines the concept and visual quality required for publication.
   matches the published argument.
 - Inspect the result at thumbnail size and full resolution before delivery.
   Apply the complete quality gate in `image-art-direction.md`.
+- For a post about a named subject, verify that at least one visible cue
+  identifies that subject rather than only the broad category. The cue should
+  come from the subject's core action, native input/output, environment,
+  object, or a brand-safe motif. Do not use a logo or title as a shortcut when
+  the image can communicate the connection visually.
 - Use a targeted correction only when the concept, medium, composition, and
   finish are already strong and the defect is local. Regenerate from a new
   direction when the result is generic, stiff, cheap, dated, plasticky,
@@ -76,6 +81,7 @@ Asset type: Korean Tistory blog hero image
 Primary request: <one concrete visual expression of the article's core message>
 Creative intent: <one idea or feeling>
 Visual idea: <one metaphor or scene, not an object inventory>
+Subject-recognition cue: <the visible detail that identifies the named subject at thumbnail size>
 Art direction: <photography, crafted set, editorial illustration, material study, or justified 3D>
 Scene/backdrop: <specific environment>
 Subject: <main subject>
