@@ -7,7 +7,7 @@ subcategory: "AI 개념 · 실전"
 status: ready
 tags: [Orca, CLI 에이전트, AI 코딩 에이전트, Git worktree, Codex, Claude Code, 개발 도구]
 summary: "Orca가 여러 CLI 코딩 에이전트를 Git worktree로 격리하는 원리와 장점, 설치부터 첫 병렬 세션·diff 검토까지의 사용법, 권한과 병합 충돌의 한계를 정리합니다."
-hero_image: assets/orca-worktree-hero.png
+hero_image: assets/orca-worktree-hero-v2.png
 published_url: ""
 sources:
     - https://www.onorca.dev/docs

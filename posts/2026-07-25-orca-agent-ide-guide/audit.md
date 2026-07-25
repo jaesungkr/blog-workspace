@@ -57,47 +57,84 @@
 
 ## 이미지
 
-- [x] 최종 이미지를 생성한 뒤 1672x941 원본으로 열어 확인했습니다.
-- [x] 두 worktree가 분리되어 작업하고 중앙 diff 검토 지점으로 모이는
-  구도가 글의 핵심 메시지와 맞습니다.
-- [x] 초기 이미지의 자물쇠·방패가 보안 샌드박스를 암시할 수 있어 중립적인
-  branch 검토 checkpoint로 한 차례 수정했습니다.
-- [x] 로고, 워터마크, 제품명, 장식 텍스트, 실제 UI 모조 화면이 없습니다.
-- [x] 양쪽 worktree와 중앙 검토 지점에 반응형 크롭용 여백이 있습니다.
+- [x] 새 이미지를 생성한 뒤 1672x941 원본과 360px 썸네일로 각각 열어
+  확인했습니다.
+- [x] 한 장의 종이가 두 개의 독립된 경로로 나뉘고 밝은 검사대에서 겹쳐
+  비교되는 구도가 글의 `worktree 분리 -> diff 검토` 메시지와 맞습니다.
+- [x] 어두운 기술 배경, 네온, 좌우 대칭 유리 박스, 가짜 코드 UI, 플라스틱
+  3D 아이콘을 버리고 밝은 실물 편집 스틸라이프로 방향을 바꿨습니다.
+- [x] 썸네일에서도 분리된 두 경로와 하나의 검토면이 한눈에 읽힙니다.
+- [x] 원본에서 종이 섬유, 가공 흔적, 금속 결, 종이 두께, 접촉 그림자와
+  투과광이 물리적으로 자연스러운지 확인했습니다.
+- [x] 로고, 워터마크, 제품명, 글자, 코드, 실제 UI 모조 화면, 보안 상징,
+  자동 성공을 암시하는 표현이 없습니다.
+- [x] 비대칭 대각선 구도와 넓은 중성 배경에 반응형 크롭용 여백이 있습니다.
 
-- 최종 파일: `assets/orca-worktree-hero.png`
+- 최종 파일: `assets/orca-worktree-hero-v2.png`
 - 해상도: `1672x941`
 - SHA-256:
-  `d7b7272c9a7a156a110a0bf46f1d2f9a87630fc05add31f73aca98dad616d3ef`
+  `80713c612adf77f7fbc15e698bc00ab979b662b6253f16f140fc0d51c49be96e`
 - 권장 위치: `대표 이미지 - 제목 바로 아래`
-- 한국어 alt: `하나의 Git 저장소에서 청록색과 주황색 worktree 두 개로
-  작업을 나눈 뒤 중앙의 코드 diff를 검토하는 일러스트`
+- 한국어 alt: `한 장의 종이가 두 개의 독립된 경로로 나뉜 뒤 밝은 검사대에서
+  겹쳐 비교되는 편집 스틸라이프`
 - 생성 방식: built-in image generation
-- 최초 생성 프롬프트:
+- 아트 디렉션: 실제 제작한 종이·금속 미니어처 세트를 촬영한 현대적 편집
+  스틸라이프. 따뜻한 밝은 중성색, 절제한 울트라마린 포인트, 비대칭 대각선
+  흐름, 자연광 기반의 형태 잡힌 그림자와 재료 미세 질감을 사용했습니다.
+- 최종 생성 프롬프트:
 
-  `Use case: stylized-concept. Asset type: Korean Tistory blog hero image.
-  Visualize one software repository branching into two isolated Git worktree
-  environments where separate CLI coding agents work in parallel, then both
-  paths converge at a deliberate human diff-review checkpoint before merge.
-  Sophisticated dark developer workspace, polished premium editorial 3D
-  illustration, wide 16:9 landscape, deep navy with teal and warm amber,
-  generous crop-safe margins. Factually neutral, no humans, logos, branded
-  mascots, recognizable product UI, watermark, embedded text, labels, title,
-  numbers, stock laptop scene, dense infographic, winner symbolism, combat
-  imagery, or unsupported speed claims.`
-
-- 최종 수정 프롬프트:
-
-  `Preserve the full 16:9 composition, both isolated glass worktree pods, teal
-  and amber branch paths, terminal panels, central magnifying-glass diff review,
-  lighting, materials, camera, and all other details. Replace only the small
-  lock-and-shield security icon at the central junction with a neutral
-  code-review checkpoint symbol: a simple unbranded split-branch junction
-  passing through a small circular check marker. It must communicate human
-  review before merge, not cybersecurity, sandboxing, guaranteed safety, or
-  automatic success. Remove every lock, shield, or security emblem. Keep no
-  embedded words, letters, labels, logos, watermark, or recognizable product
-  UI.`
+  `Use case: stylized-concept
+  Asset type: Korean Tistory technology article hero image, wide 16:9 landscape
+  Primary request: communicate that one software repository is divided into two
+  independent Git worktree paths for parallel CLI-agent work, and that the two
+  results are deliberately compared at one review surface before anything is
+  merged
+  Creative intent: parallel work feels calm, precise, accountable, and
+  human-governed rather than chaotic, magical, or futuristic
+  Visual idea: a commissioned practical tabletop set photographed in a real
+  studio; one continuous strip of warm-white archival paper enters from the
+  upper-left, passes through a small precision-machined brushed-aluminum
+  divider, and becomes two clearly separated raised folded-paper lanes at
+  different depths; each lane develops a different restrained embossed and
+  die-cut pattern without any writing; the two lanes arrive at a softly
+  illuminated translucent inspection table in the lower-right where their
+  layers overlap for comparison, and only one clean paper strip continues
+  beyond the review surface
+  Art direction: contemporary international magazine still-life photography,
+  museum-catalog craft and high-end enterprise campaign finish; clearly a
+  physical set, not CGI; refined, tactile, current, intelligent, spacious
+  Scene/backdrop: seamless luminous warm-gray studio sweep with faint
+  uncoated-paper texture and no horizon clutter
+  Subject: the single paper source, two independently crafted physical lanes,
+  and the overlapping inspection surface as the immediate focal point
+  Style/medium: photorealistic practical miniature set photographed on a
+  medium-format camera; realistic lens behavior, subtle film grain, material
+  microtexture, slight hand-made imperfection
+  Composition/framing: wide landscape with a controlled asymmetric diagonal flow
+  from upper-left to lower-right; strong foreground-to-background depth; the
+  overlap on the inspection table is the sharpest focal point; meaningful quiet
+  negative space; generous crop-safe margins; no mirrored left-right layout
+  Lighting/mood: large diffused north-window key light from camera-left, soft
+  neutral fill, one narrow warm raking edge light that reveals paper fibers and
+  brushed-metal grain; shaped soft shadows and believable contact; bright,
+  calm, optimistic, meticulous
+  Color palette: ivory, bone, warm gray, graphite, brushed silver, and one
+  restrained muted ultramarine accent used sparingly along the inspection edge
+  Materials/textures: visible archival paper fibers, crisp but slightly human
+  cut edges, believable paper thickness and folds, brushed aluminum machining
+  marks, softly frosted acrylic with plausible light transmission, natural
+  contact shadows
+  Constraints: one clear editorial metaphor; immediately readable at thumbnail
+  size; publication-ready; visually connected to isolated parallel work and
+  deliberate review; no embedded title, letters, words, code, labels, logos,
+  brands, product UI, watermark, people, animals, winner trophy, security
+  symbols, or claims of automatic success
+  Avoid: dark navy or black technology background, neon cyan or orange,
+  glassmorphism boxes, glowing tubes, floating dashboards, fake terminal
+  screens, circuit graphics, network-node wallpaper, symmetrical pods, plastic
+  3D icons, robot or brain imagery, excessive bloom, volumetric fog, lens flare,
+  glossy CG sheen, clutter, cheap stock-photo styling, dated corporate
+  illustration, obvious AI artifacts`
 
 ## 검사와 남은 위험
 
