@@ -44,12 +44,19 @@ Do not use an apocryphal work or legend to fill a biblical gap.
 
 ## Translation and quotation
 
-- Use `새번역` by default because this series is for readers new to the Bible.
-  Use another Korean translation only when the user requests it or a meaningful
-  wording issue requires comparison.
+- Use `쉬운성경` (YouVersion's `읽기 쉬운 성경`, KOERV) by default because
+  this series is for readers new to the Bible. Use another Korean translation
+  only when the user requests it or a meaningful wording issue requires
+  comparison.
 - Never substitute a Bible hyperlink for scripture text in the public article.
   When scripture is important enough to cite, write the selected verse text
   itself and label the book, chapter, verse, and translation.
+- Put the reference and translation before the quoted text. Use this public
+  format consistently:
+
+  `요한복음 20:28-29 (쉬운성경)`
+
+  followed by a blockquote containing the verse numbers and text.
 - Do not quote every supporting passage. Prefer one or two compact scripture
   blocks from the defining event and paraphrase the remaining context in plain
   Korean with a non-linked reference such as `(요한복음 11:16)`.
@@ -133,8 +140,8 @@ the article does not need to display its full complexity.
   church background.
 - Two or three passages add dimension without turning the post into an
   exhaustive study.
-- Quoted scripture appears as text with verse numbers and a translation label,
-  never as a link-only citation.
+- Quoted scripture appears after a `책 장:절 (쉬운성경)` label and includes
+  verse numbers, never as a link-only citation.
 - The visible tone is curious and companionable rather than corrective.
 - Quotations match the named translation and linked passage.
 - Tradition and interpretation remain accurate even when their labels are kept

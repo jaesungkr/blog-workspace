@@ -77,10 +77,11 @@ them when decisions depend on current state.
 - Build each post around one defining biblical event with a readable
   before -> tension -> encounter or choice -> after sequence. Supporting scenes
   stay short.
-- Use `새번역` by default for the public article unless the user requests
-  another translation. Do not use a Bible link in place of the text: quote only
-  the few decisive verses, show their verse numbers and translation, and keep
-  source URLs in frontmatter or evidence notes.
+- Use `쉬운성경` (YouVersion's `읽기 쉬운 성경`, KOERV) by default for the
+  public article unless the user requests another translation. Put
+  `책 장:절 (쉬운성경)` before the quoted text. Do not use a Bible link in
+  place of the text: quote only the few decisive verses, show their verse
+  numbers, and keep source URLs in frontmatter or evidence notes.
 
 ## Autonomous topic scoring
 
