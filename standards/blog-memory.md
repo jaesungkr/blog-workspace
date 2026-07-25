@@ -61,6 +61,20 @@ them when decisions depend on current state.
 - Do not mass-delete existing posts solely to look fresh. Strengthen the best
   posts, author identity, navigation, internal links, and evidence first.
 
+## Current Reflections series direction
+
+- `Reflections > 성경 인물` is written from the stated position of a reader who
+  has not yet read the Bible cover to cover and does not know most biblical
+  figures.
+- Use the series name `성경 인물 알아가기`. Its purpose is to meet one person
+  at a time, not to produce a definitive personality analysis or revisionist
+  argument.
+- Explain first who the person is, what scene most Christians associate with
+  the person, and two or three other representative moments.
+- Keep the visible article warm, light, and easy to follow. Preserve exhaustive
+  passage checks, disputed details, and evidence boundaries in the post bundle,
+  but bring them into the article only when they prevent a misleading claim.
+
 ## Autonomous topic scoring
 
 Score each candidate from 0 to 2 on the five criteria below. Prefer topics

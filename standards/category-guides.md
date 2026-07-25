@@ -30,7 +30,7 @@ Classify by the promise made to the reader, not by a noun in the title:
 - Route symptoms, diseases, medicines, supplements, nutrition, and diet guidance
   to `Health`.
 - Route sermons, meditation, faith questions, Bible-reading material, and
-  scripture-grounded character studies to `Reflections`.
+  scripture-grounded character introductions to `Reflections`.
 - When two categories are plausible, use the question that most of the body
   answers. Use tags for the secondary topic.
 - Do not create a new subcategory for one isolated post. Prefer the nearest
@@ -156,6 +156,7 @@ Choose the subcategory by format:
   or reasoning is central.
 - `성경 읽기`: Bible text, chapter reading notes, and reference-oriented
   scripture material rather than a sermon meditation.
-- `성경 인물`: a connected series that reconstructs a biblical person's
-  actions, words, changes, and unknowns from multiple passages while separating
-  the canonical text from interpretation and later tradition.
+- `성경 인물`: a beginner-friendly connected series that introduces who a
+  biblical person is, why Christians commonly remember that person, and a few
+  representative passages. Detailed evidence checks stay behind the article so
+  the published prose can feel like learning one person at a time.
