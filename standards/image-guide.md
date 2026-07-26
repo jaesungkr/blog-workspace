@@ -4,11 +4,14 @@ Read `standards/image-art-direction.md` with this file. The present guide
 defines delivery, placement, and factual constraints; the art-direction guide
 defines the concept and visual quality required for publication.
 
-## Required deliverable
+## Required hero deliverable
 
 - Generate at least one original raster image for every complete blog post. Do
   not satisfy this requirement with a stock-image link, web-search result, SVG
   placeholder, or prompt alone.
+- Treat this required image as the hero image. Preserve its visual, editorial
+  role; do not add explanatory panels or turn it into an infographic merely
+  because the post also benefits from a supporting visual.
 - Use the built-in image-generation workflow.
 - Generate after the article's angle and central message are stable so the image
   matches the published argument.
@@ -29,7 +32,7 @@ defines the concept and visual quality required for publication.
 - Preview the image for the user and record its path, recommended article
   position, concise Korean alt text, and final generation prompt in `audit.md`.
 
-## Default visual
+## Default hero visual
 
 Unless the user specifies otherwise:
 
@@ -69,6 +72,27 @@ Choose one useful role:
 Do not generate a dense infographic when accuracy depends on many labels. Use a
 table in the article and a simpler supporting image instead.
 
+## Optional supporting infographic
+
+The hero and a supporting infographic have separate jobs. The hero earns
+attention and establishes the topic; the infographic reduces the effort needed
+to understand one important relationship.
+
+Consider a supporting infographic only after the article's explanation is
+stable. Add one when a process, mechanism, decision, comparison, experiment, or
+troubleshooting path becomes materially easier to scan than in prose alone.
+Skip it when it would only decorate, repeat a short list, or reproduce a table.
+
+- Default to none for Reflections. Use one only when explicitly requested or
+  indispensable to a relationship in the reflection.
+- Default to one for other categories when the gate passes.
+- Add more only when each image answers a distinct reader question and remains
+  legible on its own.
+- Place each image immediately after the core explanation it clarifies.
+- Read `standards/supporting-infographic-guide.md` before creating one.
+- Keep exact Korean copy, numbers, arrows, and factual labels deterministic.
+  Do not ask an image model to typeset publication copy.
+
 ## Prompt scaffold
 
 Form two or three short concept directions internally, choose the least generic
@@ -96,7 +120,7 @@ Avoid: topic-specific cliches, generic AI artifacts, clutter, sensationalism, un
 
 ## Placement and accessibility
 
-- Recommend `대표 이미지 - 제목 바로 아래` by default.
+- Recommend `대표 이미지 - 제목 바로 아래` for the hero by default.
 - If the visual explains a mechanism or comparison, recommend the relevant
   section instead.
 - Write alt text that describes what is visible and why it matters in one

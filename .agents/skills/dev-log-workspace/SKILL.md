@@ -63,6 +63,9 @@ in the resolved repository are the only editable source.
 4. Read `standards/image-guide.md` and
    `standards/image-art-direction.md` in full for any complete-post or image
    task.
+   Read `standards/supporting-infographic-guide.md` in full only when the
+   supporting-infographic gate passes or the user explicitly requests an
+   infographic.
 5. For sermon-based Reflections, also read `standards/reflections-guide.md` in
    full. For `Reflections > 성경 인물`, read
    `standards/bible-character-guide.md` in full instead.
@@ -108,7 +111,9 @@ Do not move files between draft and published trees. Update the article status:
    - the strongest limitation or counterargument;
    - likely non-specialist follow-up questions;
    - whether a ranking is scenario-specific, benchmark-wide, or a practical
-     adoption recommendation.
+     adoption recommendation;
+   - whether one supporting infographic would materially reduce the reader's
+     effort, what relationship it would show, and where it would appear.
 4. For unstable or high-stakes claims, research before drafting. Prefer primary
    and official sources. Record the claim, basis, status, and source limitation
    in `evidence.md`; preserve raw material in `artifacts/`.
@@ -119,7 +124,8 @@ Do not move files between draft and published trees. Update the article status:
 7. Revise twice: structure/evidence first, then Korean sentence hygiene/voice.
    Repair missing prerequisites earlier in the explanation chain.
 8. After the angle is stable, generate at least one publishable raster image for
-   a complete post. Apply the Git-tracked art-direction quality gate at
+   a complete post. This is the hero image; keep it visually led and do not turn
+   it into an infographic. Apply the Git-tracked art-direction quality gate at
    thumbnail and full resolution. Reject a generic but technically valid
    result; save only an inspected final under `assets/`, then record placement,
    alt text, art direction, and the final prompt in `audit.md`.
@@ -132,21 +138,40 @@ Do not move files between draft and published trees. Update the article status:
      the visual is too generic. Regenerate or revise the concept.
    - Record in `audit.md` why the selected cue makes the actual subject
      recognizable without relying on the prompt explanation.
-9. Complete `audit.md` from the actual article. Do not check an item without
+9. Apply the supporting-infographic gate after the explanation structure is
+   stable:
+   - Add one only when a process, mechanism, decision, comparison, experiment,
+     or troubleshooting path becomes materially easier to grasp at a glance.
+     A decorative recap does not pass.
+   - Default to no supporting infographic for Reflections. Add one there only
+     when the user explicitly asks or a visual relationship is indispensable
+     to understanding the reflection.
+   - Default to one supporting infographic. Add more only when each additional
+     image answers a different reader question that one image cannot carry
+     legibly.
+   - Place it immediately after the core explanation it clarifies, not
+     automatically at the top or bottom.
+   - If the gate passes, follow
+     `standards/supporting-infographic-guide.md`. Keep exact Korean copy and
+     factual labels deterministic; do not rely on an image model to typeset
+     them. Save and inspect the final raster under `assets/`, then record the
+     decision, placement, alt text, copy source, and mobile/full-size review in
+     `audit.md`.
+10. Complete `audit.md` from the actual article. Do not check an item without
    verifying it.
-10. Run:
+11. Run:
 
     ```bash
     python3 scripts/blog.py check <post-directory>
     ```
 
-11. Render only after the post is ready:
+12. Render only after the post is ready:
 
     ```bash
     python3 scripts/blog.py render <post-directory>
     ```
 
-12. The user publishes manually. Only after they provide the live URL should
+13. The user publishes manually. Only after they provide the live URL should
     `status: published` and `published_url` be recorded.
 
 ## Validate, commit, and push automatically

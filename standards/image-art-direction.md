@@ -86,7 +86,10 @@ Choose the medium from the message rather than defaulting to 3D:
 - 3D rendering: only when volume, impossible geometry, or a product-like object
   is essential. Require plausible materials, gravity, optics, and contact.
 - Diagram or infographic: when accuracy and labels matter more than mood. Do
-  not disguise a diagram as campaign art.
+  not disguise a diagram as campaign art. For an optional in-article
+  infographic, follow `standards/supporting-infographic-guide.md`; keep
+  publication copy deterministic and use generated illustration only as a
+  supporting layer when useful.
 
 For a hero image, ask whether a real creative team would photograph, build,
 illustrate, or render the idea. Choose that medium explicitly.
@@ -222,6 +225,11 @@ applicable checks:
 
 Record the actual visual inspection in `audit.md`; do not mark the image checks
 complete from the prompt alone.
+
+For a supporting infographic, thumbnail recognition is secondary to mobile
+reading. Inspect the final raster at 360 CSS pixels wide as well as full size.
+The headline, sequence, and primary relationship must remain clear without
+zooming; small evidence notes may be secondary but must still be legible.
 
 ## Edit or regenerate
 
