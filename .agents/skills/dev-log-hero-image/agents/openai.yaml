@@ -1,0 +1,7 @@
+interface:
+  display_name: "dev.log Hero Image"
+  short_description: "주제에 맞는 아이코닉한 캠페인급 대표 이미지를 제작"
+  default_prompt: "$dev-log-hero-image를 사용해 이 dev.log 글의 대표 이미지를 제작해 주세요."
+
+policy:
+  allow_implicit_invocation: true

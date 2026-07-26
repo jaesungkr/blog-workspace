@@ -21,7 +21,9 @@ Claude Code 비용을 줄이는 실험 글을 새로 준비해줘.
 posts/2026-07-25-example 원고를 발행 전 감사해줘.
 ```
 
-명시적으로 워크플로를 부르고 싶다면 `$dev-log-workspace`를 사용할 수 있습니다.
+명시적으로 전체 워크플로를 부르고 싶다면 `$dev-log-workspace`를 사용할 수
+있습니다. 이 스킬은 글 작성, 대표 이미지, 보조 인포그래픽과 세 검증 스킬을
+순서대로 호출하는 오케스트레이터입니다.
 
 새 글의 빈 작업 묶음은 명령으로도 만들 수 있습니다.
 
@@ -50,6 +52,17 @@ $dev-log-workspace를 사용해서 [주제] 글을 작성해줘.
 완성된 글 묶음을 검사하고 origin/master에 푸시해줘.
 ```
 
+특정 단계만 실행할 때는 하위 스킬을 직접 부를 수 있습니다.
+
+```text
+$dev-log-writing으로 원고와 근거만 작성해줘.
+$dev-log-hero-image로 대표 이미지 후보를 만들고
+$dev-log-hero-validation으로 캠페인급 품질을 검증해줘.
+$dev-log-infographic로 보조 인포그래픽을 만들고
+$dev-log-infographic-validation으로 360px 글자 겹침을 검증해줘.
+$dev-log-article-validation으로 본문과 티스토리 렌더만 검사해줘.
+```
+
 프로젝트 없는 새 대화에서 시작했다면 저장소까지 함께 지정합니다.
 
 ```text
@@ -69,9 +82,9 @@ GitHub 푸시는 작업 아카이브이며 Tistory 자동 발행은 아닙니다
 sh scripts/link_codex_skill.sh
 ```
 
-이 명령은 `~/.codex/skills/dev-log-workspace`에 복사본을 만들지 않고,
-`.agents/skills/dev-log-workspace`를 가리키는 심볼릭 링크를 만듭니다. 이후 스킬과
-지침은 이 저장소에서만 수정하고 커밋·푸시합니다.
+이 명령은 `.agents/skills/`의 모든 `dev-log-*` 스킬을
+`~/.codex/skills/`에 복사하지 않고 각각 심볼릭 링크로 연결합니다. 이후
+오케스트레이터와 하위 스킬은 이 저장소에서만 수정하고 커밋·푸시합니다.
 
 ## 글 한 편의 구조
 
@@ -96,16 +109,16 @@ planning -> researching -> drafting -> reviewing -> ready -> published
 
 ## 기본 워크플로
 
-1. `brief.md`에서 카테고리, 독자, 검색 의도, 한 문장 핵심과 first-party value를
-   먼저 고정합니다.
-2. `evidence.md`에 강한 주장과 출처, 확인 상태, 출처의 한계를 연결합니다.
-3. 직접 실행할 수 있는 실험이면 입력·환경·판정 규칙을 먼저 적고 원자료를
-   `artifacts/`에 보존합니다.
-4. `article.md`를 작성한 뒤 구조·근거와 한국어 문장을 두 차례 나눠 고칩니다.
-5. 글의 각도가 고정되면 대표 이미지를 생성하고 실제 결과를 확인한 후 `assets/`에
-   저장합니다.
-6. `audit.md`와 검사 명령으로 남은 위험만 확인합니다.
-7. HTML을 생성해 티스토리에 사람이 직접 붙여넣습니다.
+1. `dev-log-writing`이 `brief.md`, `evidence.md`, `article.md`를 작성합니다.
+2. `dev-log-article-validation`이 구조·근거·한국어 문장과 렌더를 검증합니다.
+3. `dev-log-hero-image`가 주제에 맞는 아이코닉한 대표 이미지 후보를 만듭니다.
+4. `dev-log-hero-validation`이 대기업 캠페인급 완성도와 주제 인식성을
+   독립적으로 검증합니다.
+5. `dev-log-infographic`이 설명상 필요한 경우에만 보조 인포그래픽을 만듭니다.
+6. `dev-log-infographic-validation`이 원본·360px·확대 크롭에서 글자와
+   화살표 겹침을 검증합니다.
+7. 오케스트레이터가 최종 검사·렌더·커밋·푸시를 마무리하고, 사람은 생성된
+   HTML과 이미지를 티스토리에 직접 올립니다.
 
 ## 명령
 

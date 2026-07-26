@@ -1,247 +1,118 @@
 ---
 name: dev-log-workspace
-description: Run the end-to-end workflow for Korean Tistory posts in the dev.log repository. Use whenever the user says they want to write, create, prepare, revise, or publish a dev.log post, even when they provide only a topic or rough idea, and for any task involving posts/, evidence, article Markdown, blog images, Tistory HTML, publishing metadata, or editorial standards. Treat an unqualified writing request as a complete-post request that includes research, drafting, illustration, audit, validation, rendering, commit, and push to origin/master.
+description: Orchestrate the complete Korean Tistory workflow in the dev.log repository by loading separate skills for writing, hero-image creation, supporting-infographic creation, and independent validation of the article, hero, and infographic. Use for any request involving a complete dev.log post, posts/, evidence, article Markdown, blog images, Tistory rendering, editorial standards, publishing metadata, or Git delivery. An unqualified post request includes all stages, validation, commit, and push to origin/master.
 ---
 
-# dev.log repository workflow
+# dev.log workspace orchestrator
 
-## Resolve instructions
+Coordinate the repository and stage skills. Do not duplicate their specialist
+instructions here.
 
-Use this precedence when rules conflict:
+## Resolve the repository
 
-1. The user's current request and supplied source material
-2. `standards/editorial-standard.md`
-3. The applicable category guide
-4. This workspace workflow
-5. General writing judgment
+1. Resolve this file's real path.
+2. Treat the directory three levels above this skill directory as the canonical
+   repository root.
+3. Work only from that repository, even when the task starts in a projectless
+   conversation directory.
+4. Verify `origin` is `jaesungkr/blog-workspace`, inspect the worktree, and fetch
+   `origin/master` before editing. Fast-forward a clean branch when possible.
+5. Preserve dirty or diverged work. Never reset, overwrite, initialize another
+   repository, or copy the workflow into a projectless directory.
 
-Do not use `archive/legacy-claude/` as an instruction source. Its rules and
-content are historical.
+Use this precedence:
 
-## Locate the canonical repository
+1. Current user request and supplied material
+2. Repository standards
+3. Applicable category guide
+4. Stage skill
+5. General judgment
 
-1. Resolve the real path of this `SKILL.md`, following symbolic links.
-2. Treat the directory three levels above its containing skill directory as the
-   canonical repository root.
-3. Perform all blog filesystem and Git work from that root even when the current
-   task starts in a projectless `new-chat-*` directory.
-4. Verify that `origin` is `jaesungkr/blog-workspace`. Before editing, fetch the
-   remote. When the worktree is clean and the current branch can fast-forward,
-   update it with `git pull --ff-only`.
-5. If the worktree is dirty or the branch has diverged, preserve the existing
-   work and reconcile it explicitly. Never reset, overwrite, or create a second
-   workspace to avoid the conflict.
+Never use `archive/legacy-claude/` as an instruction source.
 
-Never run `git init` for this workflow and never copy the skill, standards, or
-post bundles into a projectless conversation directory. The Git-tracked files
-in the resolved repository are the only editable source.
+## Stage skills
 
-## Infer the requested scope
+Read each selected sibling `SKILL.md` completely immediately before that stage:
 
-- Treat a request such as `이 주제로 글을 쓰고 싶어`, `이 내용으로 포스팅해줘`,
-  or a topic by itself plus clear writing intent as a complete-post request.
-- For a complete-post request, run the full workflow without waiting for the
-  user to separately request research, an outline, an image, an audit, checks,
-  rendering, a commit, or a push.
-- Infer routine choices such as category, subcategory, working title, slug,
-  reader, search intent, and post structure from the topic and repository
-  standards. Ask only when missing information would materially change a
-  personal claim, supplied-source interpretation, or other consequential fact.
-- Respect an explicit scope such as `개요만`, `리서치만`, `이 문단만 수정`, or
-  `검토만`. Finish and archive that scope, then validate, commit, and push any
-  resulting repository changes unless the user explicitly requests local-only
-  work, no commit, or no push.
+| Stage | Skill | Responsibility |
+|---|---|---|
+| Write | `../dev-log-writing/SKILL.md` | Brief, research, evidence, article, editorial revision |
+| Validate article | `../dev-log-article-validation/SKILL.md` | Source audit, checks, Tistory render, article QA |
+| Create hero | `../dev-log-hero-image/SKILL.md` | One iconic, topic-specific hero candidate |
+| Validate hero | `../dev-log-hero-validation/SKILL.md` | Campaign-grade quality and subject-recognition gate |
+| Create infographic | `../dev-log-infographic/SKILL.md` | Gate, plan, deterministic layout, final raster candidate |
+| Validate infographic | `../dev-log-infographic-validation/SKILL.md` | Text, overlap, connector, crop, and mobile-legibility gate |
 
-## Load only the needed context
+Stage skills do not commit or push. This orchestrator owns Git delivery.
 
-1. Read `standards/editorial-standard.md` for every writing, editing, or audit
-   task.
-2. Read `standards/category-guides.md` to classify or write a post.
-3. Read `standards/blog-memory.md` for topic discovery, full-post planning,
-   traffic strategy, AdSense discussion, or portfolio review. Dated metrics are
-   snapshots.
-4. Read `standards/image-guide.md` and
-   `standards/image-art-direction.md` in full for any complete-post or image
-   task.
-   Read `standards/supporting-infographic-guide.md` in full only when the
-   supporting-infographic gate passes or the user explicitly requests an
-   infographic.
-5. For sermon-based Reflections, also read `standards/reflections-guide.md` in
-   full. For `Reflections > 성경 인물`, read
-   `standards/bible-character-guide.md` in full instead.
-6. Inspect the whole target post bundle and all user-provided material before
-   planning.
+## Route the request
 
-## Use one stable post bundle
+Treat a topic plus clear writing intent as a complete-post request. Infer routine
+choices such as category, slug, reader, search intent, and structure. Ask only
+when missing information would materially change a personal claim, supplied
+source interpretation, or another consequential fact.
 
-Create a post with:
+For a complete post, run:
 
-```bash
-python3 scripts/blog.py new <slug> --title "<title>" \
-  --category "<parent>" --subcategory "<child>"
-```
+1. `dev-log-writing`
+2. `dev-log-article-validation` for a source-level editorial pass
+3. `dev-log-hero-image`
+4. `dev-log-hero-validation`, looping back to hero creation until it passes
+5. `dev-log-infographic` after the explanation structure is stable
+6. `dev-log-infographic-validation` when the gate produced an image, looping
+   back to infographic creation until it passes
+7. `dev-log-article-validation` again for the ready transition and rendered
+   Tistory candidate
 
-The bundle is `posts/YYYY-MM-DD-slug/`:
+For an explicitly limited request, load only the owning stage and its validator:
 
-- `brief.md`: reader, search intent, retained message, unfamiliar prerequisites,
-  explanation chain, first-party value, scope, and likely follow-up questions.
-- `evidence.md`: claim-source-status-limit map, test design, environment, raw
-  results, failures, and unresolved facts.
-- `article.md`: publishable Markdown and lifecycle metadata.
-- `audit.md`: the actual final review record, not a ceremonial checklist.
-- `assets/`: inspected final raster images and alt-text notes.
-- `artifacts/`: raw inputs, code, logs, outputs, screenshots, or datasets.
+| Request | Required stages |
+|---|---|
+| Outline, research, article edit | Writing + article validation |
+| Hero creation or revision | Hero creation + hero validation |
+| Supporting infographic | Infographic creation + infographic validation |
+| Review or preflight only | Relevant validator; use all three for a complete post |
+| Standards, scripts, or skill change | Article validation repository-wide tests plus every affected specialist validator |
 
-Do not move files between draft and published trees. Update the article status:
-`planning`, `researching`, `drafting`, `reviewing`, `ready`, then `published`.
+Respect `local only`, `no commit`, or `no push`. Otherwise every tracked change
+finishes through the Git delivery gate.
 
-## Run the workflow
+## Handoff contract
 
-1. Infer whether the task is a complete post or an explicitly limited stage.
-   Default an unqualified writing request to a complete post.
-2. Classify by the reader promise, not a noun in the subject.
-3. In `brief.md`, establish:
-   - one reader and search intent;
-   - one sentence the reader should retain;
-   - a familiar anchor for unfamiliar material;
-   - what the reader already knows;
-   - every prerequisite term or method to explain before results;
-   - the complete input-to-result or decision chain;
-   - the first-party contribution;
-   - the strongest limitation or counterargument;
-   - likely non-specialist follow-up questions;
-   - whether a ranking is scenario-specific, benchmark-wide, or a practical
-     adoption recommendation;
-   - whether one supporting infographic would materially reduce the reader's
-     effort, what relationship it would show, and where it would appear.
-4. For unstable or high-stakes claims, research before drafting. Prefer primary
-   and official sources. Record the claim, basis, status, and source limitation
-   in `evidence.md`; preserve raw material in `artifacts/`.
-5. If the user supplies no first-party result, choose a reproducible experiment
-   Codex can actually run, when appropriate. Record Codex as the actor.
-6. Draft rendered, Tistory-compatible Markdown in `article.md`. Keep metadata in
-   frontmatter and the publishable article below it.
-7. Revise twice: structure/evidence first, then Korean sentence hygiene/voice.
-   Repair missing prerequisites earlier in the explanation chain.
-8. After the angle is stable, generate at least one publishable raster image for
-   a complete post. This is the hero image; keep it visually led and do not turn
-   it into an infographic. Apply the Git-tracked art-direction quality gate at
-   thumbnail and full resolution. Reject a generic but technically valid
-   result; save only an inspected final under `assets/`, then record placement,
-   alt text, art direction, and the final prompt in `audit.md`.
-   - For a post centered on a named product, tool, person, place, or event,
-     define one subject-recognition cue before prompting. Prefer a distinctive
-     core action, native input/output, environment, object, or brand-safe motif
-     over an arbitrary logo or title.
-   - Apply the subject-swap test at full size and thumbnail size: if the named
-     subject can be replaced with an unrelated one while the image still works,
-     the visual is too generic. Regenerate or revise the concept.
-   - Record in `audit.md` why the selected cue makes the actual subject
-     recognizable without relying on the prompt explanation.
-9. Apply the supporting-infographic gate after the explanation structure is
-   stable:
-   - Add one only when a process, mechanism, decision, comparison, experiment,
-     or troubleshooting path becomes materially easier to grasp at a glance.
-     A decorative recap does not pass.
-   - Default to no supporting infographic for Reflections. Add one there only
-     when the user explicitly asks or a visual relationship is indispensable
-     to understanding the reflection.
-   - Default to one supporting infographic. Add more only when each additional
-     image answers a different reader question that one image cannot carry
-     legibly.
-   - Place it immediately after the core explanation it clarifies, not
-     automatically at the top or bottom.
-   - Reject a generic slide-deck or card-grid result whose meaning disappears
-     when the text is hidden. Require each primary block to communicate through
-     a specific scene, diagram, comparison, or data relationship.
-   - If the gate passes, follow
-     `standards/supporting-infographic-guide.md`. Keep exact Korean copy and
-     factual labels deterministic; do not rely on an image model to typeset
-     them. Save and inspect the final raster under `assets/`, then record the
-     decision, placement, alt text, copy source, and mobile/full-size review in
-     `audit.md`.
-10. Complete the source-level audit from the actual article, evidence, and
-    final image files. Do not check an item without verifying it. Set
-    `status: ready` only after this preflight review passes.
-11. Run:
+- Keep one bundle under `posts/YYYY-MM-DD-slug/`.
+- Preserve `brief.md`, `evidence.md`, `article.md`, `audit.md`, `assets/`, and
+  `artifacts/` as the shared state between stages.
+- Keep the article at `reviewing` while any validator reports
+  `revision_required`.
+- Set `ready` only after article validation passes, the hero validator passes,
+  and the infographic validator passes or records `not_applicable`.
+- Record every material issue as
+  `problem -> revision -> re-verification` in `audit.md`.
+- Do not insert local filesystem image links into `article.md`; the user uploads
+  images to Tistory manually.
+- Only after the user supplies the live URL set `published` and
+  `published_url`.
 
-    ```bash
-    python3 scripts/blog.py check <post-directory>
-    ```
+## Git delivery gate
 
-12. Render the ready candidate:
+After all required validators pass:
 
-    ```bash
-    python3 scripts/blog.py render <post-directory>
-    ```
+1. Run `git diff --check` and inspect the actual diff and untracked files.
+2. Confirm only task files will be committed.
+3. Stage exact files and create a focused commit.
+4. Fetch `origin/master` again.
+5. Integrate remote changes without force and rerun affected validators when
+   integration changes relevant files.
+6. Push to `origin/master`.
+7. Verify the remote contains the local commit and the worktree is clean.
 
-13. Run a final review-and-revision loop:
-   - Re-read the complete article as an outside reader and inspect the rendered
-     Tistory HTML, hero, and every supporting image. Review images at full size
-     and their required thumbnail or 360px mobile size; compare supplied visual
-     references side by side.
-   - For every supporting infographic, inspect the final raster in three views:
-     the whole image, the native 360px image, and enlarged crops around every
-     text block, connector, arrowhead, icon, and caveat. Check the full painted
-     area of SVG markers and shadows, not only path endpoints or source
-     coordinates. Do not approve an infographic from a whole-image preview
-     alone.
-   - Record each material issue in `audit.md` as
-     `problem -> revision -> re-verification`. A checkmark without the observed
-     basis is not a review record.
-   - When an issue exists, return the post to `status: reviewing`, revise the
-     source article, evidence, layout source, or image as appropriate, then
-     repeat the applicable audit, check, ready transition, render, and visual
-     inspection. Revisit dependent claims or placements when a central change
-     affects them.
-   - Finish only when the latest rendered candidate has no known material
-     editorial, factual, visual, mobile-legibility, or placement defect. Do not
-     rationalize a visible defect merely because an automated check passes.
-14. The user publishes manually. Only after they provide the live URL should
-    `status: published` and `published_url` be recorded.
+Never bypass failed validation, force-push, discard unrelated changes, or mark a
+post complete with a known editorial, factual, visual, mobile, or placement
+defect.
 
-## Validate, commit, and push automatically
+## Completion
 
-For every task that changes tracked repository files, finish the applicable
-validation and Git workflow without waiting for a separate user request:
-
-1. Run `python3 scripts/blog.py check <post-directory>` for each changed post.
-2. Run `python3 -m unittest discover -s tests -v` and
-   `python3 scripts/blog.py check --all` when scripts, templates, standards, or
-   repository-wide behavior changes.
-3. Run `git diff --check`, inspect the actual diff, and confirm that only files
-   belonging to the task will be committed.
-4. Stage the task files and create a focused commit.
-5. Fetch `origin/master` again. Integrate new remote commits without force and
-   rerun affected checks if the integration changes relevant files.
-6. Push to `origin/master`, then verify that the remote branch contains the
-   local commit.
-
-Fix validation failures and repeat the gate. Never bypass checks, force-push, or
-discard existing work to manufacture a successful push. If an external blocker
-cannot be resolved safely, preserve the work and report the exact blocker.
-Skip commit or push only when the user explicitly requests that exception.
-
-## Evidence integrity
-
-- Never invent a test, personal experience, sermon statement, quotation,
-  scripture, statistic, or source.
-- Distinguish user-reported facts, Codex-run work, official sources, vendor
-  claims, independent verification, estimates, and structural examples.
-- Keep inputs, environment, judging rule, representative raw output, and at
-  least one failure or limitation for original tests.
-- Put source and measurement context next to the supported sentence. Do not add
-  a detached references appendix unless the user asks.
-- Label unresolved facts in `evidence.md`; omit them from a ready article.
-- Run the substitution check: if another site's name can replace `dev.log`
-  without weakening the post, strengthen the evidence, judgment, or series
-  connection.
-
-## Completion gate
-
-For a complete post, do not stop at a text draft. The post is complete only when
-the article, evidence, first-party value, final image, alt text/placement,
-workspace check, rendered Tistory HTML, final review-and-revision record, and
-remaining-risk report are all present, the latest candidate has no known
-material defect, the task commit exists, and `origin/master` contains that
-commit.
+A complete post requires a validated article and evidence record, a validated
+hero, an infographic decision and validation when applicable, rendered Tistory
+HTML, an honest audit and remaining-risk record, a focused commit, and confirmed
+presence on `origin/master`.

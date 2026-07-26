@@ -10,14 +10,18 @@ framework that belongs on this blog.
 
 ## Start every blog task here
 
-- Use the repository skill at `.agents/skills/dev-log-workspace/SKILL.md`.
-- Treat that Git-tracked skill as the only editable copy. For global Codex
-  discovery, link it with `scripts/link_codex_skill.sh`; do not maintain a
-  separate copied skill under `~/.codex/skills/`.
+- Use `.agents/skills/dev-log-workspace/SKILL.md` as the orchestrator.
+- Let it load the separate writing, hero creation, infographic creation, article
+  validation, hero validation, and infographic validation skills under
+  `.agents/skills/`.
+- Treat every Git-tracked `.agents/skills/dev-log-*` directory as the only
+  editable copy. For global Codex discovery, link all of them with
+  `scripts/link_codex_skill.sh`; do not maintain copied skills under
+  `~/.codex/skills/`.
 - Treat `standards/` as the editorial source of truth.
 - Read `standards/editorial-standard.md` for every writing or editing task.
 - Read only the additional category, image, memory, or Reflections guide that
-  the repository skill routes you to.
+  the selected stage skill routes you to.
 - Treat `standards/image-art-direction.md` as the Git-tracked source of truth
   for public-facing blog image quality. A built-in or globally installed image
   skill is an execution dependency, not the canonical blog standard.
@@ -26,8 +30,8 @@ framework that belongs on this blog.
   complete-post request. Do not stop at research, an outline, or a text draft
   unless the user explicitly limits the scope.
 - Do not finish a complete dev.log post in a projectless scratch directory.
-  Create or update its bundle in this repository, complete the image and audit,
-  run the checker, render the ready article, commit the completed bundle, push
+  Create or update its bundle in this repository, pass all three independent
+  validation gates, render the ready article, commit the completed bundle, push
   it to `origin/master`, and verify the remote commit unless the user explicitly
   requests local-only work or the push is blocked.
 
@@ -80,9 +84,8 @@ test suite and `python3 scripts/blog.py check --all`.
 
 ## Definition of done
 
-A complete-post request is done only when the article has passed the applicable
-editorial audit, strong claims have evidence and limitations, first-party value
-is visible, the final image exists and has placement/alt text recorded, the
-workspace checker passes, paste-ready HTML is rendered, the task is committed,
-`origin/master` contains that commit, and remaining uncertainty is reported
-plainly.
+A complete-post request is done only when the article validator passes, strong
+claims have evidence and limitations, first-party value is visible, the hero
+validator passes, the infographic validator passes or records `not_applicable`,
+paste-ready HTML is rendered, the task is committed, `origin/master` contains
+that commit, and remaining uncertainty is reported plainly.
