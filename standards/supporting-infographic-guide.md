@@ -96,6 +96,26 @@ Choose another ratio only when the information structure clearly requires it.
 Prefer a calm editorial layout, strong reading order, restrained colors, and
 simple connectors over dense dashboard styling.
 
+Mobile legibility is a floor, not a reason to enlarge every text role. Convert
+source typography to its 360px-display equivalent with
+`source font px × 360 ÷ source canvas width`. Use these starting bands:
+
+- headline: `18-20px`;
+- primary labels: `12-14px`;
+- supporting copy: `10-12px`;
+- caveat: `9.5-11px`.
+
+Keep the headline zone near 22% or less of canvas height. Reduce copy or
+restructure the visual when a role falls outside its band; do not make the
+headline larger while shrinking body copy. At native 360px the relationship
+must have at least equal visual presence to the headline.
+
+Avoid enclosing the whole explanation in one large rounded card by default.
+Such a frame often makes the actual diagram feel like a small insert inside a
+poster. Use open space, meaningful regions, or boundaries that encode the
+relationship. Where a frame is necessary, preserve generous internal quiet
+space and keep text, badges, and icons from filling each region.
+
 ## Content integrity
 
 - Map every number, factual label, comparison, and conclusion to the article or
@@ -115,11 +135,19 @@ Inspect the final raster at full resolution and at 360 CSS pixels wide.
 
 - The headline and primary relationship are clear without zooming.
 - Inspect the 360px raster at its native display size, not a zoomed preview.
+- Record the 360px-equivalent size of each text role and the headline-height
+  share. Treat the default bands above as a release gate unless a semantic
+  exception is documented.
+- Look away and back for one second. Reject the image if it reads first as a
+  large headline over a small framed card, slide, or boxed text sheet instead
+  of the intended relationship.
 - Reading order is unambiguous.
 - The image has three to five primary blocks unless a simpler structure works.
 - With the labels mentally hidden, the scene or diagram still distinguishes the
   problem, transformation, and result. Reject interchangeable card grids.
 - Body copy is limited to one or two short lines per block where possible.
+- Every primary region retains visible quiet space. Readability alone does not
+  excuse oversized labels, crowded blocks, or weak typography-to-canvas scale.
 - Korean glyphs, numbers, units, arrows, and line breaks are exact.
 - Contrast, spacing, and touch-sized visual separation work on mobile.
 - Connectors point to the intended objects and do not cross confusingly.

@@ -1,6 +1,6 @@
 interface:
   display_name: "dev.log Infographic"
-  short_description: "글의 핵심 관계를 설명하는 보조 인포그래픽을 제작"
+  short_description: "모바일 타이포 균형을 갖춘 보조 인포그래픽을 제작"
   default_prompt: "$dev-log-infographic를 사용해 이 dev.log 글의 보조 인포그래픽을 판단하고 제작해 주세요."
 
 policy:

@@ -1,6 +1,6 @@
 ---
 name: dev-log-infographic-validation
-description: Independently validate dev.log supporting infographics with special emphasis on Korean text visibility and collision-free mobile reading. Use for full-raster, native 360px, and enlarged-crop QA; glyph accuracy; line, marker, icon, shadow, and crop overlap; connector meaning; factual copy checks; version approval; or revision decisions. Keep this gate separate from hero campaign quality and Git delivery.
+description: Independently validate dev.log supporting infographics with special emphasis on balanced typography-to-canvas scale, Korean text visibility, and collision-free mobile reading. Use for full-raster, native 360px, enlarged-crop and type-scale QA; framed-poster detection; glyph accuracy; overlap; connector meaning; factual copy checks; version approval; or revision decisions. Keep this gate separate from hero campaign quality and Git delivery.
 ---
 
 # dev.log infographic validation
@@ -39,6 +39,34 @@ Generate all views from the exact final candidate:
 3. Enlarged crops around every headline, primary block, icon-label pair,
    connector, arrowhead, footnote, result, and caveat.
 
+Before checking individual glyphs, audit the whole 360px composition:
+
+- calculate each text role's 360px equivalent with
+  `source font px × 360 ÷ source canvas width`;
+- use `18-20px` for the headline, `12-14px` for primary labels, `10-12px`
+  for supporting copy, and `9.5-11px` for caveats as the default bands;
+- require an explicit semantic reason in `audit.md` for a value outside a band;
+- reject a headline area that occupies much more than 22% of the canvas height
+  or makes the explanatory visual feel secondary;
+- reject a large decorative outer card when it makes the diagram look like a
+  small framed insert;
+- reject blocks whose words, badges, and labels visually fill the available
+  region. Require quiet space and a diagram-led shape before reading the text;
+- do not fix an oversized headline or crowded block by shrinking supporting
+  copy below its mobile floor. Reduce copy, change hierarchy, open the layout,
+  or increase useful diagram area.
+
+Run `scripts/check_mobile_type_scale.py` with the actual canvas, header, and
+source font sizes. Use repeated role flags when needed. A nonzero result is
+`revision_required` unless the exception is semantically necessary and recorded
+with a same-size visual comparison. The script checks scale only; it never
+replaces raster inspection or the framed-poster test.
+
+Run a first-impression test at native 360px: look away, then look back for one
+second. The relationship or mechanism must register with the headline. If the
+image reads first as a poster, slide, or boxed text sheet, return
+`revision_required` even when every word is legible.
+
 For every text block:
 
 - verify exact Korean glyphs, numbers, units, punctuation, and line breaks;
@@ -70,7 +98,11 @@ an automated check as a substitute for actual raster inspection.
 Record in `audit.md`:
 
 - candidate path, dimensions, hash, type, question, placement, and alt text;
+- 360px-equivalent sizes for headline, primary labels, supporting copy, and
+  caveat, plus the headline-height share;
 - full, 360px, and crop observations;
+- whether the composition passed the one-second relationship test and the
+  framed-poster rejection;
 - every `problem -> revision -> re-verification`;
 - final stage result.
 
