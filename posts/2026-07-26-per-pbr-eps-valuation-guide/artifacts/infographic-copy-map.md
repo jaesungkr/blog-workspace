@@ -9,6 +9,8 @@
 
 | 인포그래픽 문구 | 본문 근거 | 범위 |
 |---|---|---|
+| 세로축 · 이익 지속성 | `업종보다 먼저 볼 두 가지 질문`의 첫 번째 판단 축 | 위로 갈수록 높고 아래로 갈수록 낮음 |
+| 가로축 · 장부가치 설명력 | 같은 절의 두 번째 판단 축 | 오른쪽으로 갈수록 높고 왼쪽으로 갈수록 낮음 |
 | EPS 추세 + PER / PBR은 보조 | `업종보다 먼저 볼 두 가지 질문` 표의 이익 높음·장부 낮음 | 이익이 반복되는 기업 |
 | PER + PBR / ROE로 교차 확인 | 같은 표의 이익 높음·장부 높음 | 세 배수의 동일 기간·자본 기준 필요 |
 | PBR 먼저 / 자산의 질·정상 이익 | 같은 표의 이익 낮음·장부 높음 | PBR 단독 판정이 아님 |
@@ -21,9 +23,9 @@
 - 유형: 선택
 - 크기: 1080x1350, 4:5
 - 제작 방식: HTML 안의 결정론적 SVG 조판 후 Playwright 래스터 렌더
-- 최종 후보 소스: `per-pbr-eps-choice-map-infographic-v6.html`
-- 렌더 스크립트: `render-per-pbr-eps-infographic-v6.cjs`
-- QA 스크립트: `render-per-pbr-eps-infographic-qa-v6.cjs`
+- 최종 후보 소스: `per-pbr-eps-choice-map-infographic-v7.html`
+- 렌더 스크립트: `render-per-pbr-eps-infographic-v7.cjs`
+- QA 스크립트: `render-per-pbr-eps-infographic-qa-v7.cjs`
 - 한글 글꼴: Apple SD Gothic Neo, AppleGothic 대체
 - 권장 위치: `업종보다 먼저 볼 두 가지 질문` 절의 2축 표와 설명 바로 뒤
 - 숫자: 없음
@@ -32,6 +34,6 @@
 - 360px 환산 글자 크기:
   - 제목: 20px
   - 주요 제목·지표: 14px·12px
-  - 보조문·축: 10px·10.7px
+  - 보조문·축: 10px
   - 하단 한계: 10px
 - 헤더 점유율: 20%
