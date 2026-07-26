@@ -230,11 +230,57 @@
   clutter, cheap stock styling, dated corporate illustration, malformed animal
   anatomy, obvious AI artifacts`
 
+## 보조 인포그래픽
+
+- [x] 과정형 인포그래픽 1장으로 `기준 저장소 -> 두 worktree -> 동일 조건
+  검증 -> diff 비교 -> 선택적 반영` 관계를 표현했습니다.
+- [x] 글자를 숨겨도 한 개의 기준 노드가 파란색·주황색 두 경로로 분기한 뒤
+  검토 렌즈에서 합류하고 하나의 반영 경로로 내려가는 구조가 남습니다.
+- [x] 한글 문구, 숫자, 단계명, 화살표는 이미지 모델에 맡기지 않고
+  HTML/SVG에서 결정론적으로 배치했습니다.
+- [x] 완성 PNG와 편집 가능한 HTML, 재현 가능한 Playwright 렌더 스크립트를
+  함께 보존했습니다.
+- [x] 1080x1350 원본과 360px 모바일 축소본을 실제로 열어 문구, 화살표,
+  분기와 합류 관계를 확인했습니다.
+- [x] `worktree가 병합 충돌과 외부 상태까지 격리하지 않는다`는 한계를
+  하단 주의 영역에 포함했습니다.
+
+- 최종 파일: `assets/orca-worktree-flow-infographic.png`
+- 해상도: `1080x1350` (`4:5`)
+- SHA-256:
+  `d6da59d6e23ed3a21451562387f44ffaa792c5d5f2aaef859f6d1835826de612`
+- 유형: `과정`
+- 답하는 질문: `Orca에서 하나의 저장소가 어떻게 두 작업으로 나뉘고,
+  무엇을 거쳐 하나의 변경으로 채택되는가?`
+- 권장 위치: `1. Orca의 정확한 역할` 마지막 설명 뒤, 2절 앞
+- 한국어 alt: `기준 저장소에서 두 개의 독립 worktree로 나뉜 작업이 같은
+  조건으로 검증된 뒤 diff 검토를 거쳐 하나의 변경으로 반영되는 Orca 흐름
+  인포그래픽`
+- 본문 근거: 1~4절과 8~9절, `evidence.md`의 C02, C03, C08,
+  C11~C14
+- 편집 원본:
+  `artifacts/orca-worktree-flow-infographic.html`
+- 렌더 스크립트:
+  `artifacts/render-orca-worktree-infographic.cjs`
+- 제작 방식: Apple SD Gothic Neo를 사용하는 결정론적 HTML/SVG 도식과
+  Playwright 래스터 렌더. 이미지 생성 계층은 사용하지 않았습니다.
+
+## 최종 검토와 수정 이력
+
+| 검토 대상 | 발견한 문제 | 수정 | 재검증 |
+|---|---|---|---|
+| 360px 상단 배지 | `FLOW` 일부가 캡슐 밖으로 벗어남 | 배지 폭을 330px에서 430px로 확대 | 전체 문구가 캡슐 안에서 보임 |
+| 360px 최종 반영 영역 | 채택 문구가 우측 정리 박스와 겹침 | 주 반영 캡슐을 610px로 넓히고 글자 크기와 보조 연결선을 조정 | `commit · push · PR`과 `archive · 삭제`가 분리되어 보임 |
+| 전체·360px 흐름 | 분기·합류와 주의 문구의 판독성 | 파란색·주황색 경로, 중앙 검토 렌즈, 하단 주의 띠를 순서대로 확인 | 라벨을 숨겨도 `한 기준 -> 두 작업 -> 한 검토 -> 선택` 관계가 유지됨 |
+
 ## 검사와 남은 위험
 
 - 검사 명령:
   `python3 scripts/blog.py check posts/2026-07-25-orca-agent-ide-guide`
 - 검사 결과: ready 상태에서 오류 0개, 경고 0개
+- 렌더 검사:
+  `dist/orca-agent-ide-guide.html`을 생성하고 760px 폭의 헤드리스 Chrome에서
+  전체 문서를 열어 표, 목록, 코드 블록과 문단 순서를 확인했습니다.
 - 아직 남은 위험:
   - Orca 앱의 실제 UI 안정성·성능·병렬 agent의 비용과 속도는 직접
     측정하지 않았습니다.
@@ -244,6 +290,7 @@
     별도입니다.
 - 사람이 티스토리에서 확인할 항목:
   - 대표 이미지 업로드와 alt 입력
+  - 1절 뒤에 보조 인포그래픽 업로드와 alt 입력
   - 카테고리 `Log > AI 개념 · 실전`
   - 영문 주소 `orca-agent-ide-guide`
   - 표와 긴 코드 블록의 모바일 줄바꿈
