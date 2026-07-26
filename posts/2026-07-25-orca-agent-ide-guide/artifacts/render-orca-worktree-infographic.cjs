@@ -12,7 +12,7 @@ async function main() {
   const output = path.join(
     postRoot,
     "assets",
-    "orca-worktree-flow-infographic.png",
+    "orca-worktree-flow-infographic-v2.png",
   );
   const systemChrome =
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
