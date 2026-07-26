@@ -160,21 +160,38 @@ Do not move files between draft and published trees. Update the article status:
      them. Save and inspect the final raster under `assets/`, then record the
      decision, placement, alt text, copy source, and mobile/full-size review in
      `audit.md`.
-10. Complete `audit.md` from the actual article. Do not check an item without
-   verifying it.
+10. Complete the source-level audit from the actual article, evidence, and
+    final image files. Do not check an item without verifying it. Set
+    `status: ready` only after this preflight review passes.
 11. Run:
 
     ```bash
     python3 scripts/blog.py check <post-directory>
     ```
 
-12. Render only after the post is ready:
+12. Render the ready candidate:
 
     ```bash
     python3 scripts/blog.py render <post-directory>
     ```
 
-13. The user publishes manually. Only after they provide the live URL should
+13. Run a final review-and-revision loop:
+   - Re-read the complete article as an outside reader and inspect the rendered
+     Tistory HTML, hero, and every supporting image. Review images at full size
+     and their required thumbnail or 360px mobile size; compare supplied visual
+     references side by side.
+   - Record each material issue in `audit.md` as
+     `problem -> revision -> re-verification`. A checkmark without the observed
+     basis is not a review record.
+   - When an issue exists, return the post to `status: reviewing`, revise the
+     source article, evidence, layout source, or image as appropriate, then
+     repeat the applicable audit, check, ready transition, render, and visual
+     inspection. Revisit dependent claims or placements when a central change
+     affects them.
+   - Finish only when the latest rendered candidate has no known material
+     editorial, factual, visual, mobile-legibility, or placement defect. Do not
+     rationalize a visible defect merely because an automated check passes.
+14. The user publishes manually. Only after they provide the live URL should
     `status: published` and `published_url` be recorded.
 
 ## Validate, commit, and push automatically
@@ -218,5 +235,7 @@ Skip commit or push only when the user explicitly requests that exception.
 
 For a complete post, do not stop at a text draft. The post is complete only when
 the article, evidence, first-party value, final image, alt text/placement,
-workspace check, rendered Tistory HTML, and remaining-risk report are all
-present, the task commit exists, and `origin/master` contains that commit.
+workspace check, rendered Tistory HTML, final review-and-revision record, and
+remaining-risk report are all present, the latest candidate has no known
+material defect, the task commit exists, and `origin/master` contains that
+commit.

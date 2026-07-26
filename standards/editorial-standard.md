@@ -231,3 +231,24 @@ checks pass:
 - At least one final blog image is generated, inspected, saved under the post's
   `assets/` directory, previewed for the user, and accompanied by alt text and
   placement guidance.
+
+Treat this audit as a revision pass, not a ceremonial sign-off. After the
+source-level checks pass, render the ready article and inspect the actual
+Tistory HTML together with every final image:
+
+- read the rendered article from greeting to closing at its natural display
+  width;
+- inspect table wrapping, code scrolling, heading rhythm, link placement, and
+  the intended position of manually uploaded images;
+- inspect the hero at full and thumbnail size and supporting infographics at
+  full and 360px mobile size;
+- compare user-supplied visual references side by side when they exist;
+- record each material problem, the applied revision, and the re-verification
+  result in `audit.md`.
+
+If the final review finds a defect, return the article to `status: reviewing`,
+fix the source or asset, and repeat the applicable audit, check, ready
+transition, render, and inspection. Do not leave a known defect because the
+automated checker passes. The final candidate is ready only after this loop
+finds no remaining material editorial, factual, visual, legibility, or
+placement problem.
