@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PER PBR EPS 선택 지도 v6</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 1080px;
+      height: 1350px;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    body {
+      color: #172521;
+      font-family: "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+      background: #f4f0e7;
+    }
+
+    svg {
+      display: block;
+      width: 1080px;
+      height: 1350px;
+    }
+
+    .eyebrow {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .headline {
+      font-size: 60px;
+      font-weight: 850;
+      letter-spacing: -0.05em;
+    }
+
+    .subtitle {
+      fill: #58635f;
+      font-size: 32px;
+      font-weight: 650;
+      letter-spacing: -0.025em;
+    }
+
+    .axis-title,
+    .axis-end,
+    .zone-kicker,
+    .zone-copy {
+      font-size: 30px;
+      letter-spacing: -0.025em;
+    }
+
+    .axis-title {
+      fill: #263a34;
+      font-weight: 800;
+    }
+
+    .axis-end {
+      fill: #65716d;
+      font-weight: 700;
+    }
+
+    .zone-kicker {
+      font-weight: 760;
+    }
+
+    .zone-title {
+      font-size: 42px;
+      font-weight: 850;
+      letter-spacing: -0.04em;
+    }
+
+    .zone-copy {
+      fill: #4c5954;
+      font-weight: 620;
+    }
+
+    .metric {
+      font-size: 36px;
+      font-weight: 850;
+      letter-spacing: 0.02em;
+    }
+
+    .caveat {
+      fill: #34423d;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1080 1350" role="img"
+       aria-labelledby="infographic-title infographic-desc">
+    <title id="infographic-title">PER PBR EPS 선택 지도</title>
+    <desc id="infographic-desc">
+      이익 지속성과 장부가치 설명력의 높고 낮음에 따라 PER, PBR, EPS를
+      어디서부터 읽을지 보여 주는 열린 사분면 선택 지도
+    </desc>
+
+    <defs>
+      <linearGradient id="zone-tl" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#edf3e8"/>
+        <stop offset="100%" stop-color="#dce9d7"/>
+      </linearGradient>
+      <linearGradient id="zone-tr" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#e7f1ed"/>
+        <stop offset="100%" stop-color="#cfe2db"/>
+      </linearGradient>
+      <linearGradient id="zone-bl" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#efebe4"/>
+        <stop offset="100%" stop-color="#ddd8d0"/>
+      </linearGradient>
+      <linearGradient id="zone-br" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#f5ebdc"/>
+        <stop offset="100%" stop-color="#e8d5b8"/>
+      </linearGradient>
+      <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse">
+        <circle cx="4" cy="5" r="0.8" fill="#32443e" opacity="0.05"/>
+        <circle cx="19" cy="16" r="0.7" fill="#32443e" opacity="0.04"/>
+        <path d="M8 24h7" stroke="#32443e" stroke-width="0.7"
+              opacity="0.035"/>
+      </pattern>
+      <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="6" stdDeviation="8"
+                      flood-color="#263b34" flood-opacity="0.1"/>
+      </filter>
+      <marker id="axis-arrow" markerUnits="userSpaceOnUse"
+              markerWidth="20" markerHeight="20" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#2a4038"/>
+      </marker>
+      <marker id="exit-arrow" markerUnits="userSpaceOnUse"
+              markerWidth="18" markerHeight="18" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#6c746f"/>
+      </marker>
+    </defs>
+
+    <rect width="1080" height="1350" fill="#f4f0e7"/>
+    <circle cx="1040" cy="12" r="220" fill="#d9e7df" opacity="0.43"/>
+    <circle cx="8" cy="1330" r="190" fill="#eadcc5" opacity="0.38"/>
+
+    <!-- Compact header -->
+    <g transform="translate(72 48)">
+      <circle cx="12" cy="12" r="11" fill="#d6b46b"/>
+      <circle cx="31" cy="12" r="11" fill="none"
+              stroke="#315b52" stroke-width="3"/>
+      <circle cx="50" cy="12" r="11" fill="none"
+              stroke="#86a99c" stroke-width="3"/>
+      <text x="76" y="21" class="eyebrow" fill="#315b52">
+        기업가치 지표 선택 지도
+      </text>
+    </g>
+    <text x="72" y="151" class="headline" fill="#172521">
+      두 축으로 지표를 고릅니다
+    </text>
+    <text x="74" y="216" class="subtitle">
+      이익 지속성 × 장부가치 설명력
+    </text>
+    <path d="M72 262H1008" stroke="#c9ccc5" stroke-width="2"/>
+
+    <!-- Open decision field -->
+    <path d="M0 320H540V710H0Z" fill="url(#zone-tl)" opacity="0.86"/>
+    <path d="M540 320H1080V710H540Z" fill="url(#zone-tr)" opacity="0.86"/>
+    <path d="M0 710H540V1100H0Z" fill="url(#zone-bl)" opacity="0.86"/>
+    <path d="M540 710H1080V1100H540Z" fill="url(#zone-br)" opacity="0.86"/>
+    <rect y="320" width="1080" height="780" fill="url(#grain)"
+          opacity="0.42"/>
+
+    <!-- Axes -->
+    <path d="M70 710H1014" fill="none" stroke="#2a4038"
+          stroke-width="5" stroke-linecap="round"
+          marker-end="url(#axis-arrow)"/>
+    <path d="M540 1082V338" fill="none" stroke="#2a4038"
+          stroke-width="5" stroke-linecap="round"
+          marker-end="url(#axis-arrow)"/>
+    <circle cx="540" cy="710" r="14" fill="#f4f0e7"
+            stroke="#2a4038" stroke-width="5"/>
+
+    <text x="540" y="307" class="axis-title" text-anchor="middle">
+      이익 지속성
+    </text>
+    <text x="565" y="361" class="axis-end">높음</text>
+    <text x="565" y="1070" class="axis-end">낮음</text>
+    <text x="540" y="1152" class="axis-title" text-anchor="middle">
+      장부가치 설명력
+    </text>
+    <text x="78" y="689" class="axis-end">낮음</text>
+    <text x="944" y="689" class="axis-end">높음</text>
+
+    <!-- Top-left: earnings are useful, book value is weak -->
+    <g transform="translate(92 393)">
+      <text x="0" y="0" class="zone-kicker" fill="#527451">
+        이익 반복 · 장부 약함
+      </text>
+      <g transform="translate(0 58)" filter="url(#soft-shadow)">
+        <rect width="168" height="66" rx="33" fill="#ffffff"
+              stroke="#8bad83" stroke-width="2"/>
+        <text x="84" y="44" class="metric" fill="#315b35"
+              text-anchor="middle">EPS</text>
+      </g>
+      <path d="M188 91H245" stroke="#65855f" stroke-width="5"
+            stroke-linecap="round"/>
+      <circle cx="268" cy="91" r="22" fill="none"
+              stroke="#65855f" stroke-width="5"/>
+      <path d="M284 107l29 29" stroke="#65855f" stroke-width="5"
+            stroke-linecap="round"/>
+      <g transform="translate(314 58)" filter="url(#soft-shadow)">
+        <rect width="122" height="66" rx="33" fill="#315b35"/>
+        <text x="61" y="44" class="metric" fill="#ffffff"
+              text-anchor="middle">PER</text>
+      </g>
+      <text x="0" y="205" class="zone-title" fill="#233b2b">
+        EPS 추세 + PER
+      </text>
+      <text x="0" y="255" class="zone-copy">PBR은 보조</text>
+    </g>
+
+    <!-- Top-right: use both lenses -->
+    <g transform="translate(594 393)">
+      <text x="0" y="0" class="zone-kicker" fill="#3c7568">
+        이익 반복 · 장부 설명
+      </text>
+      <g transform="translate(6 52)">
+        <circle cx="78" cy="52" r="52" fill="#ffffff"
+                stroke="#4a8174" stroke-width="5"/>
+        <circle cx="142" cy="52" r="52" fill="#f6e9ca"
+                stroke="#b78b3f" stroke-width="5"/>
+        <text x="62" y="64" class="metric" fill="#2e6257"
+              text-anchor="middle">PER</text>
+        <text x="159" y="64" class="metric" fill="#7b581c"
+              text-anchor="middle">PBR</text>
+        <rect x="246" y="19" width="126" height="66" rx="33"
+              fill="#1f3e35"/>
+        <text x="309" y="63" class="metric" fill="#ffffff"
+              text-anchor="middle">ROE</text>
+      </g>
+      <text x="0" y="205" class="zone-title" fill="#20483e">
+        PER + PBR
+      </text>
+      <text x="0" y="255" class="zone-copy">ROE로 교차 확인</text>
+    </g>
+
+    <!-- Bottom-left: leave the three metrics -->
+    <g transform="translate(92 775)">
+      <text x="0" y="0" class="zone-kicker" fill="#6d746f">
+        이익 불안정 · 장부 약함
+      </text>
+      <g transform="translate(0 55)">
+        <circle cx="33" cy="52" r="28" fill="#f7f5f0"
+                stroke="#747b76" stroke-width="4"/>
+        <path d="M24 41l18 22M42 41L24 63"
+              stroke="#747b76" stroke-width="4" stroke-linecap="round"/>
+        <path d="M70 52H242" fill="none" stroke="#838984"
+              stroke-width="6" stroke-linecap="round"
+              marker-end="url(#exit-arrow)"/>
+        <rect x="270" y="19" width="168" height="66" rx="33"
+              fill="#535c57"/>
+        <text x="354" y="63" class="metric" fill="#ffffff"
+              text-anchor="middle">다음 지표</text>
+      </g>
+      <text x="0" y="205" class="zone-title" fill="#3f4743">
+        세 지표로 부족
+      </text>
+      <text x="0" y="255" class="zone-copy">현금 · 사업 지표부터</text>
+    </g>
+
+    <!-- Bottom-right: book value first -->
+    <g transform="translate(594 775)">
+      <text x="0" y="0" class="zone-kicker" fill="#8a6327">
+        이익 불안정 · 장부 설명
+      </text>
+      <g transform="translate(8 58)" filter="url(#soft-shadow)">
+        <rect x="0" y="70" width="224" height="34" rx="7"
+              fill="#d7c49f" stroke="#a68148" stroke-width="2"/>
+        <rect x="20" y="35" width="224" height="36" rx="7"
+              fill="#eee4d0" stroke="#a68148" stroke-width="2"/>
+        <rect x="40" y="0" width="224" height="36" rx="7"
+              fill="#fffaf0" stroke="#a68148" stroke-width="2"/>
+        <rect x="314" y="19" width="126" height="66" rx="33"
+              fill="#8a6327"/>
+        <text x="377" y="63" class="metric" fill="#ffffff"
+              text-anchor="middle">PBR</text>
+      </g>
+      <text x="0" y="205" class="zone-title" fill="#65451a">
+        PBR 먼저
+      </text>
+      <text x="0" y="255" class="zone-copy">자산의 질 · 정상 이익</text>
+    </g>
+
+    <!-- Caveat without an outer card -->
+    <g transform="translate(72 1207)">
+      <rect width="12" height="72" rx="6" fill="#d6b46b"/>
+      <text x="38" y="29" class="caveat">
+        <tspan x="38">업종은 출발점일 뿐입니다.</tspan>
+        <tspan x="38" dy="40">같은 업종도 사업 모델과 성장 단계에 따라 위치가 달라집니다.</tspan>
+      </text>
+    </g>
+  </svg>
+</body>
+</html>

@@ -178,14 +178,15 @@
 - [x] 최종 래스터를 전체 크기와 360px 모바일 너비에서 실제로 확인했습니다.
 - [x] 헤더, 네 사분면, 중앙 축, 화살표, 아이콘·라벨, 하단 한계 문구의
   확대 크롭을 모두 확인했습니다.
-- 최종 파일: `assets/per-pbr-eps-choice-map-infographic-v4.png`
+- 최종 파일: `assets/per-pbr-eps-choice-map-infographic-v6.png`
 - 최종 크기: `1080x1350`, PNG, RGB
 - 최종 SHA-256:
-  `0c74257624200affd7582a020da3ee056982c69a18f274cc0c6b2be9d04bcbba`
+  `d3b1d0b50e18f1f1880eba1da2b8bc045fbd66a73686e7677899a4a5086b07b6`
 - 제작 방식: HTML 안의 결정론적 SVG 조판 후 Playwright 래스터 렌더
 - 편집 소스:
-  - `artifacts/per-pbr-eps-choice-map-infographic-v4.html`
-  - `artifacts/render-per-pbr-eps-infographic-v4.cjs`
+  - `artifacts/per-pbr-eps-choice-map-infographic-v6.html`
+  - `artifacts/render-per-pbr-eps-infographic-v6.cjs`
+  - `artifacts/render-per-pbr-eps-infographic-qa-v6.cjs`
   - `artifacts/infographic-copy-map.md`
 - 권장 위치: `업종보다 먼저 볼 두 가지 질문` 절의 2축 표와 설명 바로 뒤
 - 한국어 alt: `이익 지속성과 장부가치 설명력의 높고 낮음에 따라 EPS와
@@ -193,19 +194,26 @@
 - 문구·수치 근거: `article.md`의 `업종보다 먼저 볼 두 가지 질문` 표와
   직후의 한계 문장, `brief.md`의 중앙 판단 사슬을 그대로 축약했습니다.
   별도 수치는 넣지 않았습니다.
-- 전체 해상도 관찰: 헤드라인에서 두 축, 네 선택 영역, 하단 한계 문구로
-  읽는 순서가 선명합니다. 네 영역은 연속 좌표장과 공통 축으로 연결되어
-  서로 바꿀 수 있는 카드 모음처럼 보이지 않습니다.
-- 360px 관찰: 제목, `EPS 추세 + PER`, `PER + PBR`, `세 지표만으로 부족`,
-  `PBR 먼저`가 확대 없이 읽힙니다. 두 줄 전제 라벨, 보조 문장, 축 제목,
-  하단 한계도 한글 획이 뭉개지지 않고 구분됩니다.
+- 360px 환산 글자 크기: 제목 `20px`, 주요 제목·지표 `14px·12px`,
+  보조문·축 `10px·10.7px`, 하단 한계 `10px`
+- 헤더 점유율: `20%`
+- 전체 해상도 관찰: 큰 외곽 카드 없이 네 색 영역이 캔버스에 직접 이어지고
+  두 축이 선택 관계를 가릅니다. 제목과 도식의 위계가 균형을 이루며 네
+  영역에는 아이콘·제목·짧은 보조문 사이의 빈 공간이 남습니다.
+- 360px 관찰: 제목, `EPS 추세 + PER`, `PER + PBR`, `세 지표로 부족`,
+  `PBR 먼저`가 확대 없이 읽힙니다. 보조문과 축도 10px 이상으로 남아
+  글자 획이 뭉개지지 않습니다.
+- 1초 관계 테스트: 제목을 읽는 동시에 중앙 축과 네 선택 결과가 함께
+  들어옵니다. 큰 제목 아래 작은 액자나 박스형 문서로 먼저 읽히지 않습니다.
+- 프레임 검사: 도식 전체를 감싸는 둥근 외곽 카드가 없고, 색 영역과 축이
+  직접 의미를 전달해 `pass`입니다.
 - 확대 크롭 관찰:
-  - 헤더의 태그·제목·부제와 세로축 제목 사이에 충분한 여백이 있습니다.
-  - 왼쪽 위의 확대경 선은 `EPS 추세`와 `PER` 캡슐만 연결하며 글자에
-    닿지 않습니다.
+  - 헤더의 태그·한 줄 제목·부제와 세로축 제목 사이에 충분한 여백이 있습니다.
+  - 왼쪽 위의 확대경 선은 `EPS`와 `PER` 캡슐만 연결하며 글자에 닿지
+    않고, `PER` 캡슐은 세로축에서 12px 떨어집니다.
   - 오른쪽 위의 PER·PBR 원과 ROE 캡슐은 각각의 라벨을 가리지 않습니다.
   - 왼쪽 아래의 화살표는 `다음 지표` 캡슐 앞에서 끝나며 화살촉이 글자나
-    아이콘에 겹치지 않습니다.
+    아이콘에 겹치지 않습니다. 캡슐은 세로축에서 10px 떨어집니다.
   - 오른쪽 아래 장부 층과 PBR 캡슐은 제목·보조 문장과 분리됩니다.
   - 중앙 축의 화살촉과 교차점, `높음/낮음` 라벨의 전체 도형 경계가 모든
     글자 영역 밖에 있습니다.
@@ -223,7 +231,7 @@
 
 | 최종 파일 | 유형 | 해결하는 독자 질문 | 권장 위치 | 한국어 alt | 문구·수치 근거 |
 |---|---|---|---|---|---|
-| `assets/per-pbr-eps-choice-map-infographic-v4.png` | 선택 | 어떤 지표부터 볼까? | `업종보다 먼저 볼 두 가지 질문` 절의 2축 설명 뒤 | 이익 지속성과 장부가치 설명력에 따라 출발 지표를 나눈 선택 지도 | 본문의 2축 표와 한계 문장 |
+| `assets/per-pbr-eps-choice-map-infographic-v6.png` | 선택 | 어떤 지표부터 볼까? | `업종보다 먼저 볼 두 가지 질문` 절의 2축 설명 뒤 | 이익 지속성과 장부가치 설명력에 따라 출발 지표를 나눈 선택 지도 | 본문의 2축 표와 한계 문장 |
 
 ## 최종 검토와 수정 이력
 
@@ -243,6 +251,8 @@
 | 5 | 인포그래픽 v2 모바일 | 사분면 전제 한 줄 라벨이 360px에서 약 7.7px로 줄어 읽기 부담이 큼 | 전제 문구를 두 줄로 나누고 27px 원본 글자로 키우며 하단 두 영역을 위로 이동한 v3 렌더 | v3 360px에서 네 전제 문구가 확대 없이 읽힘 |
 | 6 | 인포그래픽 v3 축 크롭 | 세로축 `높음` 라벨의 글자 경계가 오른쪽 위 전제 문구와 지나치게 가까움 | 세로축 `높음/낮음`을 축 왼쪽에 우측 정렬한 v4 렌더 | v4 전체·360px·헤더·네 사분면·중앙 축·하단 한계 크롭에서 글자, 선, 화살촉, 아이콘, 그림자 충돌 없음 |
 | 7 | 760px 티스토리 HTML | 도입부의 굵은 문장이 원고 줄바꿈을 사이에 두어 변환 결과에 `**`가 문자로 노출됨 | 강조 문장을 한 줄 안에 두고 HTML과 760px 미리보기를 다시 생성함 | `**` 노출이 사라지고 강조가 정상 적용됨. 760×6,931px 전체와 5개 구간에서 네 표, 6개 출처 링크, 목록, 소제목, 문단 흐름을 재확인함 |
+| 8 | 새 타이포 기준으로 본 v4 | 360px에서 제목 22.3px, 주요 라벨 14.3px, 보조문 8.3px, 헤더 25.9%였고 큰 외곽 카드 때문에 작은 액자처럼 보임 | 제목을 한 줄 20px로 줄이고 보조문을 10px 이상으로 올렸으며, 외곽 카드를 없애 축과 네 색 영역을 캔버스 전체에 펼친 v5 제작 | 타이포 검사 전 항목 통과. 전체·360px에서 제목과 관계 도식의 시각 비중이 균형을 이룸 |
+| 9 | 인포그래픽 v5 확대 크롭 | 왼쪽 위 `PER` 캡슐과 왼쪽 아래 `다음 지표` 캡슐이 세로축을 각각 10px 넘어 반대 영역에 들어감 | 두 캡슐을 왼쪽으로 22px·20px 이동한 v6 렌더 | v6 전체·360px·헤더·네 영역·중앙 축·하단 한계 크롭에서 글자와 도형 충돌이 없고 두 캡슐이 축에서 12px·10px 떨어짐 |
 
 - 중대한 문제가 없으면 `발견한 문제`에 `없음`이라고 쓰고 확인 근거를
   `재검증 결과`에 적습니다.
@@ -254,15 +264,15 @@
   - `audit.md`
   - `assets/per-pbr-eps-three-lenses-hero.png`
   - `artifacts/hero-thumbnail-480x270.png`
-  - `assets/per-pbr-eps-choice-map-infographic-v4.png`
-  - `artifacts/infographic-qa-v4/mobile-360x450.png`
-  - `artifacts/infographic-qa-v4/header.png`
-  - `artifacts/infographic-qa-v4/top-left.png`
-  - `artifacts/infographic-qa-v4/top-right.png`
-  - `artifacts/infographic-qa-v4/bottom-left.png`
-  - `artifacts/infographic-qa-v4/bottom-right.png`
-  - `artifacts/infographic-qa-v4/axes-center.png`
-  - `artifacts/infographic-qa-v4/caveat.png`
+  - `assets/per-pbr-eps-choice-map-infographic-v6.png`
+  - `artifacts/infographic-qa-v6/mobile-360x450.png`
+  - `artifacts/infographic-qa-v6/header.png`
+  - `artifacts/infographic-qa-v6/top-left.png`
+  - `artifacts/infographic-qa-v6/top-right.png`
+  - `artifacts/infographic-qa-v6/bottom-left.png`
+  - `artifacts/infographic-qa-v6/bottom-right.png`
+  - `artifacts/infographic-qa-v6/axes-center.png`
+  - `artifacts/infographic-qa-v6/caveat.png`
   - `dist/per-pbr-eps-valuation-guide.html`
   - `artifacts/article-preview-760/full.png`
   - `artifacts/article-preview-760/section-01.png`부터 `section-05.png`
@@ -282,7 +292,7 @@
 - 사람이 티스토리에서 확인할 항목:
   - 제목 바로 아래에 대표 이미지를 올리고 기록한 한국어 alt를 입력합니다.
   - `업종보다 먼저 볼 두 가지 질문` 절의 2축 설명 뒤에 최종 인포그래픽
-    v4를 올리고 기록한 한국어 alt를 입력합니다.
+    v6를 올리고 기록한 한국어 alt를 입력합니다.
   - 모바일 화면에서 세로 인포그래픽과 네 표의 줄바꿈을 다시 확인합니다.
   - 외부 링크가 새 창에서 열리고 이미지가 플랫폼 압축 뒤에도 선명한지
     게시 직전에 확인합니다.
