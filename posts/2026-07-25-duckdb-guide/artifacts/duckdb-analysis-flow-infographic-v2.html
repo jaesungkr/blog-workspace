@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DuckDB 분석 흐름 인포그래픽 v2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 1003px;
+      height: 1568px;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    body {
+      color: #102f61;
+      font-family: "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+      background: #f6f0e3;
+    }
+
+    .canvas {
+      position: relative;
+      width: 1003px;
+      height: 1568px;
+      overflow: hidden;
+      background:
+        url("./duckdb-analysis-flow-illustration-v2.png")
+        center / 100% 100% no-repeat;
+    }
+
+    .copy {
+      position: absolute;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .copy .tag {
+      display: inline-flex;
+      min-height: 34px;
+      padding: 6px 18px 7px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      box-shadow: 0 4px 0 rgba(28, 44, 68, 0.12);
+    }
+
+    .copy h1,
+    .copy h2 {
+      margin: 15px 0 0;
+      color: #123467;
+      font-weight: 800;
+      letter-spacing: -0.045em;
+    }
+
+    .copy h1 {
+      font-size: 43px;
+      line-height: 1.18;
+    }
+
+    .copy h2 {
+      font-size: 37px;
+      line-height: 1.2;
+    }
+
+    .copy p {
+      margin: 11px 0 0;
+      color: #4e5d6d;
+      font-size: 25px;
+      font-weight: 650;
+      line-height: 1.38;
+      letter-spacing: -0.025em;
+    }
+
+    .problem {
+      top: 74px;
+      left: 536px;
+      width: 390px;
+    }
+
+    .problem .tag {
+      background: #173b74;
+    }
+
+    .process {
+      top: 882px;
+      left: 58px;
+      width: 380px;
+    }
+
+    .process .tag {
+      color: #47320c;
+      background: #e7ae35;
+    }
+
+    .process h2 {
+      font-size: 35px;
+    }
+
+    .result {
+      top: 1232px;
+      left: 699px;
+      width: 258px;
+    }
+
+    .result .tag {
+      background: #317d83;
+    }
+
+    .result h2 {
+      font-size: 34px;
+      line-height: 1.18;
+    }
+
+    .result p {
+      font-size: 22px;
+    }
+
+    .duckdb-label {
+      position: absolute;
+      top: 650px;
+      left: 218px;
+      padding: 9px 17px 10px;
+      border: 2px solid rgba(124, 79, 9, 0.2);
+      border-radius: 16px;
+      color: #4c350c;
+      background: rgba(255, 243, 203, 0.92);
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      transform: rotate(-3deg);
+      box-shadow: 0 5px 12px rgba(78, 60, 25, 0.08);
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <section class="copy problem">
+      <span class="tag">1 · 문제</span>
+      <h1>큰 파일 전체를<br>올려야 할까요?</h1>
+      <p>필요한 답은 몇 줄뿐입니다</p>
+    </section>
+
+    <div class="duckdb-label">DuckDB</div>
+
+    <section class="copy process">
+      <span class="tag">2 · SQL 처리</span>
+      <h2>필요한 열과 행을<br>먼저 줄입니다</h2>
+      <p>열 선택 · 행 필터 · 집계</p>
+    </section>
+
+    <section class="copy result">
+      <span class="tag">3 · 결과</span>
+      <h2>필요한 답만<br>Python으로</h2>
+      <p>DataFrame · 새 파일</p>
+    </section>
+  </main>
+</body>
+</html>

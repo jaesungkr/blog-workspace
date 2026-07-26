@@ -151,6 +151,9 @@ Do not move files between draft and published trees. Update the article status:
      legibly.
    - Place it immediately after the core explanation it clarifies, not
      automatically at the top or bottom.
+   - Reject a generic slide-deck or card-grid result whose meaning disappears
+     when the text is hidden. Require each primary block to communicate through
+     a specific scene, diagram, comparison, or data relationship.
    - If the gate passes, follow
      `standards/supporting-infographic-guide.md`. Keep exact Korean copy and
      factual labels deterministic; do not rely on an image model to typeset

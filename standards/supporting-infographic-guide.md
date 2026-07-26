@@ -78,6 +78,19 @@ Use deterministic layout for all publication copy:
 - never accept pseudo-writing or ask an image model to reproduce exact copy;
 - keep editable copy or layout source in `artifacts/` when practical.
 
+Do not confuse deterministic typography with a finished visual concept. A
+layout made only from headings, rounded cards, generic icons, and arrows is a
+slide, not automatically a publishable infographic. Each primary block should
+carry meaning through a specific scene, diagram, comparison, transformation, or
+real data relationship before the labels are read.
+
+When a supplied reference succeeds through narrative illustration, character
+expression, or a visible mechanism, transfer those principles rather than only
+its palette and spacing. Use image generation for a text-free illustration
+layer when it materially improves the explanation, then add exact Korean copy
+deterministically. Do not copy the reference's characters, exact layout, or
+distinctive centerpiece.
+
 Use a portrait 3:4 or 4:5 canvas by default for in-article mobile reading.
 Choose another ratio only when the information structure clearly requires it.
 Prefer a calm editorial layout, strong reading order, restrained colors, and
@@ -101,8 +114,11 @@ simple connectors over dense dashboard styling.
 Inspect the final raster at full resolution and at 360 CSS pixels wide.
 
 - The headline and primary relationship are clear without zooming.
+- Inspect the 360px raster at its native display size, not a zoomed preview.
 - Reading order is unambiguous.
 - The image has three to five primary blocks unless a simpler structure works.
+- With the labels mentally hidden, the scene or diagram still distinguishes the
+  problem, transformation, and result. Reject interchangeable card grids.
 - Body copy is limited to one or two short lines per block where possible.
 - Korean glyphs, numbers, units, arrows, and line breaks are exact.
 - Contrast, spacing, and touch-sized visual separation work on mobile.
@@ -111,6 +127,9 @@ Inspect the final raster at full resolution and at 360 CSS pixels wide.
   supporting artwork remains.
 - The image still helps after surrounding prose is read and does not merely
   restate it.
+- When a visual reference exists, compare it side by side with the final at a
+  similar display size. Record the transferable qualities used and the largest
+  remaining gap.
 
 Record the decision even when it is `없음`. When an infographic exists, record
 its final path, type, reader question, placement, Korean alt text, copy/evidence

@@ -135,26 +135,41 @@ machine.
   `입력 -> 필요한 범위 선택 -> SQL 처리 -> 작은 결과` 관계를 한 화면에
   연결합니다.
 - [x] `1. DuckDB의 정체` 마지막 문단 뒤에 둘 위치를 정했습니다.
-- [x] 한글 문구·SQL·화살표를 HTML/CSS로 결정적으로 조판하고
-  `article.md` 1-3절 및 `evidence.md`의 C03·C05·C07과 대조했습니다.
-- [x] 1200×1500 전체 크기와 360×450 모바일 검수본을 실제로 열어
-  제목, 3단계 흐름, SQL, 하단 판단 기준이 잘림 없이 읽히는지
-  확인했습니다.
+- [x] 사람의 문제 장면, 긴 표에서 필요한 범위를 줄이는 물리적 변환,
+  작은 결과를 확인하는 장면이 문구 없이도 순서대로 구분됩니다.
+- [x] 한글 문구를 HTML/CSS로 결정적으로 조판하고 `article.md` 1-3절 및
+  `evidence.md`의 C03·C05·C07과 대조했습니다.
+- [x] 1003×1568 전체 크기와 360×562 모바일 검수본을 실제 크기로 열어
+  세 장면, 단계 표식, 핵심 문구가 잘림 없이 읽히는지 확인했습니다.
+- [x] 생성 시 4:5를 요청했지만 결과는 약 0.64:1의 더 긴 세로
+  비율이었습니다. 세 장면 중 하나를 자르지 않고 문제-처리-결과 흐름을
+  보존하는 편이 낫다고 판단해 실제 비율을 유지했습니다.
+- [x] 사용자 제공 PDF의 6·8페이지와 나란히 비교해 사람 중심 도입,
+  장면별 행동, 색으로 구분한 단계, 그림이 먼저 설명하는 구조를
+  반영했습니다. PDF보다 세부 예시 수는 적지만 블로그 본문용 한 장의
+  모바일 가독성을 위해 3단계로 제한했습니다.
 - [x] 인포그래픽은 1장이므로 추가 이미지 간 중복 검사는 해당 없습니다.
 
-- 최종 파일: `assets/duckdb-analysis-flow-infographic.png`
+- 최종 파일: `assets/duckdb-analysis-flow-infographic-v2.png`
+- 이전 파일: `assets/duckdb-analysis-flow-infographic.png`는 카드와 텍스트가
+  의미를 대부분 담당해 일반적인 개발 슬라이드처럼 보이고, 360px에서
+  하단 본문이 지나치게 작다는 사용자 피드백으로 최종에서 제외했습니다.
 - 유형: `과정`
 - 해결하는 독자 질문: 큰 로컬 파일이 DuckDB를 거쳐 필요한 결과로
   줄어드는 경로는 무엇인가요?
 - 권장 위치: `1. DuckDB의 정체` 마지막 문단 뒤,
   `2. 사람들이 쓰는 네 가지 이유` 앞
-- 한국어 alt: `CSV·Parquet·Pandas 입력이 DuckDB의 열 선택·행 필터·SQL 집계를 거쳐 작은 결과로 나오는 흐름과 실무 판단 기준을 정리한 인포그래픽`
+- 한국어 alt: `큰 표 앞에서 막막해하던 개발자가 오리 모양 안내 장치로 필요한 열과 행을 골라 작은 결과표를 확인하는 DuckDB 분석 흐름 인포그래픽`
 - 문구·수치 근거: `article.md` 1-3절, `evidence.md` C03·C05·C07.
   성능 배수나 실험 수치는 넣지 않았습니다.
-- 편집 원본: `artifacts/duckdb-analysis-flow-infographic.html`
-- 렌더 스크립트: `artifacts/render-duckdb-infographic.cjs`
-- 제작 방식: Apple SD Gothic Neo를 사용한 결정적 HTML/CSS 조판과
-  코드 기반 도형. 이미지 생성 모델이나 외부 로고는 사용하지 않았습니다.
+- 일러스트 원본: `artifacts/duckdb-analysis-flow-illustration-v2.png`
+- 편집 원본: `artifacts/duckdb-analysis-flow-infographic-v2.html`
+- 렌더 스크립트: `artifacts/render-duckdb-infographic-v2.cjs`
+- 생성 프롬프트: `artifacts/duckdb-infographic-v2-prompt.md`
+- 제작 방식: built-in image generation으로 글자가 없는 사람 중심
+  일러스트를 만든 뒤 Apple SD Gothic Neo로 정확한 한글을 조판했습니다.
+  사용자 PDF는 구성 리듬 참고, 기존 대표이미지는 색과 오리 모티프
+  참고로만 사용했으며 인물·배치·문구는 복제하지 않았습니다.
 
 ## 검사와 남은 위험
 
