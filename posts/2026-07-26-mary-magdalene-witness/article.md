@@ -1,9 +1,9 @@
 ---
-title: "막달라 마리아 - 성경 인물 알아가기 (2)"
+title: "부활을 전한 막달라 마리아"
 slug: mary-magdalene-witness
 date: 2026-07-26
 category: "Reflections"
-subcategory: "성경 인물"
+subcategory: "성경 인물 시리즈"
 status: ready
 tags: [막달라 마리아, 성경 인물, 요한복음, 부활, 성경 공부]
 summary: "예수님의 도움을 받은 뒤 사역을 따르고 도왔으며, 십자가와 빈 무덤 곁을 지나 부활 소식을 제자들에게 전한 막달라 마리아의 이야기를 따라갑니다."

@@ -23,7 +23,12 @@ TAXONOMY = {
     "Log": {"AI 개념 · 실전", "AI 모델 · 비교", "개발 · 디지털"},
     "Trends": {"AI 뉴스 · 테크 · 산업", "경제 · 금융", "사회 · 문화"},
     "Health": {"질환 · 의약품", "영양 · 식단"},
-    "Reflections": {"말씀 묵상", "신앙 질문", "성경 읽기", "성경 인물"},
+    "Reflections": {
+        "말씀 묵상",
+        "신앙 질문",
+        "성경 읽기",
+        "성경 인물 시리즈",
+    },
 }
 STATUSES = {
     "planning",
@@ -225,6 +230,21 @@ def check_post(post_dir: Path) -> list[Diagnostic]:
             "ERROR",
             article,
             f"`{category}`의 현재 하위 카테고리가 아닙니다: {choices}",
+        )
+
+    is_bible_character_series = (
+        category == "Reflections" and subcategory == "성경 인물 시리즈"
+    )
+    if is_bible_character_series and (
+        "성경 인물 알아가기" in title or re.search(r"\(\d+\)\s*$", title)
+    ):
+        level = "ERROR" if status in FINAL_STATUSES else "WARN"
+        add(
+            diagnostics,
+            level,
+            article,
+            "성경 인물 시리즈 제목은 짧은 수식어 뒤에 인물명을 쓰고 "
+            "시리즈명이나 회차를 붙이지 마세요.",
         )
 
     if status not in STATUSES:

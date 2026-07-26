@@ -1,9 +1,9 @@
 ---
-title: "도마 - 성경 인물 알아가기 (1)"
+title: "의심을 넘어 고백한 도마"
 slug: thomas-beyond-doubt
 date: 2026-07-25
 category: "Reflections"
-subcategory: "성경 인물"
+subcategory: "성경 인물 시리즈"
 status: ready
 tags: [도마, 열두 제자, 성경 인물, 요한복음, 성경 공부]
 summary: "부활을 믿지 못했던 도마가 예수님을 만나 믿음을 고백하고, 훗날 멀리 복음을 전한 사도로 기억되기까지의 이야기를 따라갑니다."

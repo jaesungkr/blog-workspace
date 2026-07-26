@@ -1,12 +1,21 @@
 # Bible character series guide
 
-Use this guide for `Reflections > 성경 인물`. The series is for a writer and
-reader who may not have read the Bible cover to cover and may know little more
-than a famous name or scene.
+Use this guide for `Reflections > 성경 인물 시리즈`. The series is for a
+writer and reader who may not have read the Bible cover to cover and may know
+little more than a famous name or scene.
 
 ## Editorial promise
 
 - Use the series name `성경 인물 알아가기`.
+- Use the public title form `[짧은 수식어] [인물명]`, with one concise
+  passage-grounded modifier before the person's name. For example,
+  `의심을 넘어 고백한 도마` or `부활을 전한 막달라 마리아`.
+- Keep the person's name near the front by limiting the modifier to one short
+  phrase. Do not append `성경 인물 알아가기`, an episode number such as
+  `(3)`, or another series label to the public title.
+- Choose the modifier from the defining event or the article's retained
+  message. Do not turn a disputed tradition, inferred motive, or familiar
+  stereotype into the person's fixed identity.
 - Introduce one person at a time rather than trying to complete, diagnose, or
   rehabilitate that person's character.
 - Begin with three beginner questions: `누구인가`, `왜 그렇게 알려졌는가`,
@@ -137,6 +146,8 @@ the article does not need to display its full complexity.
 
 - A reader with almost no Bible knowledge can identify the person after one
   reading.
+- The title uses one short, passage-grounded modifier before the person's name
+  and contains no series label or episode number.
 - One central event provides a clear story arc without pretending to be the
   person's undocumented conversion story.
 - The article explains the person's commonly known image without assuming

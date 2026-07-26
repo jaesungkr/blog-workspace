@@ -21,7 +21,8 @@ Act as an independent gate for the written post and its rendered HTML.
 
 Read the article from greeting to closing and verify:
 
-- title and headings match search intent and repository syntax;
+- title and headings match search intent, repository syntax, and the applicable
+  category-specific title pattern;
 - the opening gives context and the retained conclusion early;
 - unfamiliar terms, methods, metrics, and labels appear before dependent
   results;

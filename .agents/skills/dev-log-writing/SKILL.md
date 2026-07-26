@@ -45,7 +45,10 @@ the article validator owns that transition.
 ## Write the post
 
 1. Classify by the promise to the reader, not a noun in the topic.
-2. Establish in `brief.md`:
+2. Apply the current category name and any category-specific public-title
+   pattern from the applicable guide. Keep series labels and episode order out
+   of the title when that guide requires a modifier-led title.
+3. Establish in `brief.md`:
    - one reader and search intent;
    - one sentence the reader should retain;
    - a familiar anchor and every prerequisite;
@@ -56,16 +59,16 @@ the article validator owns that transition.
    - the scope of any ranking or recommendation;
    - whether an infographic materially reduces reading effort, the relationship
      it would show, and its exact placement.
-3. Research unstable, niche, high-stakes, or source-sensitive claims before
+4. Research unstable, niche, high-stakes, or source-sensitive claims before
    drafting. Prefer primary and official sources.
-4. If appropriate and no first-party result exists, run a reproducible
+5. If appropriate and no first-party result exists, run a reproducible
    experiment Codex can actually perform. Record Codex as the actor.
-5. Draft Tistory-compatible Markdown. Keep metadata in frontmatter and the
+6. Draft Tistory-compatible Markdown. Keep metadata in frontmatter and the
    publishable article below it.
-6. Revise once for structure and evidence, then again for natural Korean,
+7. Revise once for structure and evidence, then again for natural Korean,
    consistent 존대어, sentence hygiene, and voice.
-7. Repair missing terms and methods before the results that depend on them.
-8. Update the source-level portions of `audit.md` from the actual files, then
+8. Repair missing terms and methods before the results that depend on them.
+9. Update the source-level portions of `audit.md` from the actual files, then
    set the article to `reviewing`.
 
 ## Evidence integrity

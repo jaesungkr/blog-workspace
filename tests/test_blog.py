@@ -55,12 +55,12 @@ class BlogCheckerTests(unittest.TestCase):
 
         self.assertFalse([item for item in diagnostics if item.level == "ERROR"])
 
-    def test_bible_character_is_a_current_reflections_subcategory(self):
+    def test_bible_character_series_is_a_current_reflections_subcategory(self):
         article = (
             VALID_ARTICLE.replace('category: "Log"', 'category: "Reflections"')
             .replace(
                 'subcategory: "개발 · 디지털"',
-                'subcategory: "성경 인물"',
+                'subcategory: "성경 인물 시리즈"',
             )
         )
         with tempfile.TemporaryDirectory() as temp:
@@ -68,6 +68,27 @@ class BlogCheckerTests(unittest.TestCase):
             diagnostics = blog.check_post(post)
 
         self.assertFalse([item for item in diagnostics if item.level == "ERROR"])
+
+    def test_bible_character_series_rejects_legacy_numbered_title_when_ready(self):
+        article = (
+            VALID_ARTICLE.replace(
+                'title: "테스트 글의 선택 기준"',
+                'title: "도마 - 성경 인물 알아가기 (1)"',
+            )
+            .replace('category: "Log"', 'category: "Reflections"')
+            .replace(
+                'subcategory: "개발 · 디지털"',
+                'subcategory: "성경 인물 시리즈"',
+            )
+            .replace("status: drafting", "status: ready")
+        )
+        with tempfile.TemporaryDirectory() as temp:
+            post = make_bundle(Path(temp), article)
+            messages = [item.message for item in blog.check_post(post)]
+
+        self.assertTrue(
+            any("시리즈명이나 회차를 붙이지 마세요" in message for message in messages)
+        )
 
     def test_title_and_h2_are_rejected(self):
         article = VALID_ARTICLE.replace(

@@ -63,12 +63,15 @@ them when decisions depend on current state.
 
 ## Current Reflections series direction
 
-- `Reflections > 성경 인물` is written from the stated position of a reader who
-  has not yet read the Bible cover to cover and does not know most biblical
-  figures.
+- `Reflections > 성경 인물 시리즈` is written from the stated position of a
+  reader who has not yet read the Bible cover to cover and does not know most
+  biblical figures.
 - Use the series name `성경 인물 알아가기`. Its purpose is to meet one person
   at a time, not to produce a definitive personality analysis or revisionist
   argument.
+- Public titles use one short, passage-grounded modifier before the person's
+  name. Keep the series name and episode order in the article context or bundle,
+  not as a title suffix.
 - Explain first who the person is, what scene most Christians associate with
   the person, and two or three other representative moments.
 - Keep the visible article warm, light, and easy to follow. Preserve exhaustive

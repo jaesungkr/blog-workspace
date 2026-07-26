@@ -19,7 +19,7 @@ Use this category tree unless the user explicitly changes it:
   - `말씀 묵상`
   - `신앙 질문`
   - `성경 읽기`
-  - `성경 인물`
+  - `성경 인물 시리즈`
 
 Classify by the promise made to the reader, not by a noun in the title:
 
@@ -160,7 +160,9 @@ Choose the subcategory by format:
   or reasoning is central.
 - `성경 읽기`: Bible text, chapter reading notes, and reference-oriented
   scripture material rather than a sermon meditation.
-- `성경 인물`: a beginner-friendly connected series that introduces who a
-  biblical person is, why Christians commonly remember that person, and a few
-  representative passages. Detailed evidence checks stay behind the article so
-  the published prose can feel like learning one person at a time.
+- `성경 인물 시리즈`: a beginner-friendly connected series that introduces
+  who a biblical person is, why Christians commonly remember that person, and
+  a few representative passages. Use a short, passage-grounded modifier before
+  the person's name in the public title; do not append the series name or an
+  episode number. Detailed evidence checks stay behind the article so the
+  published prose can feel like learning one person at a time.
