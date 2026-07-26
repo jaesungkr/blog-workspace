@@ -49,6 +49,29 @@
 - Confirm preacher names, scripture range, and Bible translation before
   finalizing when the source material does not make them certain.
 
+## 말씀 묵상 hero image system
+
+- Default every `Reflections/말씀 묵상` hero to a bright, pale, pattern-led
+  abstract composition rather than a dark cinematic photograph or a literal
+  biblical scene.
+- Use a warm ivory or very light neutral field, subtle uncoated-paper grain,
+  extremely fine graphite-gray linework, low contrast, repeated geometric
+  marks, and generous quiet space.
+- Translate the passage into one restrained pattern transformation, such as
+  scattering becoming alignment, waves becoming calm, separation becoming
+  union, a threshold opening, or repeated marks growing toward a stable form.
+  Do not copy a reference's exact centerpiece or layout.
+- Keep the pattern readable at thumbnail size through a slightly denser or
+  darker focal region. Let most outer marks fade softly into the background.
+- Use a 16:9 landscape canvas for the Tistory hero unless the user explicitly
+  requests another ratio.
+- Do not embed a title, verse, Korean lettering, logo, watermark, person,
+  preacher, literal depiction of God, dramatic glowing cross, photo-real
+  scenery, saturated color, black field, neon, or glossy 3D object.
+- When the user supplies pattern references, transfer their tonal range,
+  line delicacy, repetition rhythm, paper texture, and negative space while
+  creating a new passage-specific geometry.
+
 ## Final checks
 
 - Polite endings remain consistent throughout the post and no 한다체 paragraph
@@ -61,3 +84,5 @@
 - The comparison table is concise and followed by a point of convergence.
 - `Thoughts` shows self-correction and lands on a concrete personal application.
 - Scripture context, preacher names, and translation are accurate.
+- The 말씀 묵상 hero follows the bright pale pattern system, remains legible at
+  thumbnail size, and avoids literal or dark cinematic imagery.

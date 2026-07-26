@@ -53,81 +53,91 @@
 
 ## 대표 이미지
 
-- [x] 최종 이미지를 생성한 뒤 전체 크기와 360px 썸네일로 열어 확인했습니다.
+- [x] 새 후보를 전체 크기와 360px 썸네일로 열어 확인했습니다.
 - [x] 이미지가 글의 핵심 메시지와 맞고 근거 이상의 내용을 암시하지 않습니다.
 - [x] 로고·워터마크·불필요한 내장 텍스트가 없습니다.
 - [x] 대표 이미지의 반응형 크롭을 고려한 안전 여백이 있습니다.
 
-- 최종 파일: `assets/hero.png`
-- 후보 파일과 크기: `assets/hero.png`, `1672 x 941`
+- 교체 전 후보: `assets/hero.png`
+- 최종 파일: `assets/hero-v2.png`
+- 새 후보 파일과 크기: `assets/hero-v2.png`, `1672 x 941`
 - SHA-256:
-  `7396c64019cc49fa7b6dfd8303c191f2f23dd010830ab87ac4b1b7881ccaeedd`
+  `92c71fe167966c5a0922bc965afa2f9c000833d7bb59a97cf4805b6cdd141728`
 - 권장 위치: `대표 이미지 - 제목 바로 아래`
-- 한국어 alt: `잔물결을 지나 십자가 모양의 빛을 향해 방향을 잡은 종이배`
-- 의도한 인식 단서: 에베소서 4장 14절의 파도에 흔들리는 배와 15절의
-  머리 되신 그리스도를, 방향을 되찾은 종이배와 십자가 모양의 빛으로
-  연결했습니다.
+- 한국어 alt: `흔들리는 곡선들이 중앙으로 갈수록 곧게 자라 하나의 안정된 형태를 이루는 연한 회색 패턴`
+- 의도한 인식 단서: 에베소서 4장 14절의 요동함을 양쪽의 작은 곡선으로,
+  그리스도의 장성한 분량과 하나 된 방향을 중앙으로 갈수록 곧고 높아지는
+  선의 흐름으로 표현했습니다.
 - 생성 방법: OpenAI 내장 이미지 생성 도구
-- 참고 역할과 제약: 기존 말씀 묵상 글처럼 차분한 단일 장면을 사용하고,
-  하나님이나 실제 설교자의 얼굴, 제목 문구, 로고는 넣지 않았습니다.
+- 참고 역할과 제약: 사용자 제공 네 이미지는 밝은 아이보리 바탕, 얇은
+  회색 선, 반복의 리듬, 중심부의 밀도, 넓은 여백만 참고했습니다. 각
+  레퍼런스의 정확한 배치와 중심 형상은 복제하지 않았습니다.
 - 최종 생성 프롬프트:
 
 ```text
-Use case: photorealistic-natural
-Asset type: Korean Tistory 말씀 묵상 blog hero image, wide landscape 16:9
-Primary request: Create a restrained contemplative editorial photograph
-expressing Ephesians 4:13-15: spiritual immaturity tossed by waves, then
-growing by turning back toward Christ.
-Creative intent: Maturity is not never being shaken; it is regaining direction
-toward Christ after being shaken.
-Visual idea: A single small handmade paper boat, visibly creased and slightly
-weathered but intact, has just crossed a band of restless rippling water in the
-foreground. It now points into a calm narrow path of water toward a distant
-warm cross-shaped opening formed naturally by light between two dark wooden
-architectural planes. The cross is subtle but immediately readable, made only
-by the negative space and light, not a separate religious ornament.
-Art direction: museum-catalog-quality crafted still life photographed as a
-practical miniature set; quiet, tactile, human-made, contemplative rather than
-dramatic or sentimental.
-Scene/backdrop: shallow water on a matte charcoal-gray stone surface,
-restrained pale plaster and aged wood in the distance, no sky spectacle.
-Subject-recognition cue: the wave-tossed paper boat from Ephesians 4:14 visibly
-reoriented toward the cross-shaped light representing the head, Christ, in
-verse 15.
-Composition/framing: wide asymmetrical landscape; paper boat in the lower-left
-third, its bow aimed diagonally toward the cross-shaped light in the
-upper-right third; clear focal hierarchy; generous crop-safe negative space
-around the central path; natural depth and believable contact with the water.
-Lighting/mood: broad cool daylight from the left with a narrow warm beam from
-the cross-shaped opening; controlled soft shadows and quiet hope after
-turbulence.
-Color palette: warm ivory paper, stone gray, muted slate blue, aged walnut
-brown, one restrained amber light accent.
-Materials/textures: fibrous uncoated paper with realistic folds and dampened
-edges, shallow real water with coherent ripples and reflections, matte mineral
-stone, worn wood grain.
+Use case: stylized-concept
+Asset type: 16:9 hero image for a Korean Tistory 말씀 묵상 post about
+Ephesians 4:13-15 and growing beyond spiritual infancy toward maturity in
+Christ.
+Input images: Image 1 is a reference for two-field dotted rhythm and restrained
+separation; Image 2 is a reference for delicate concentric precision and a
+quiet focal center; Image 3 is a reference for repeated crescent marks, soft
+fading, and generous negative space; Image 4 is a reference for a fine
+vertical-line arch and pale tonal restraint. Transfer only these visual
+principles. Do not reproduce any exact layout or centerpiece.
+Creative intent: show that spiritual maturity is not frantic motion but many
+wavering parts gradually finding one stable direction and growing into a calm,
+upright whole.
+Visual idea: On a warm ivory paper field, hundreds of tiny graphite-gray
+crescent marks begin loosely spaced and slightly misaligned near the far left
+and right edges, like gentle wave-tossed motion. Moving toward the center, the
+same marks progressively rotate upright, become more evenly spaced, and
+subtly lengthen into very fine vertical strokes. Together the central strokes
+form one broad, serene ascending arch with a clear highest point, suggesting
+mature stature and shared direction without depicting a person or literal
+religious object. A single small solid graphite dot sits quietly at the base
+of the highest central line as the visual anchor. The transformation must feel
+continuous, delicate, and contemplative.
+Art direction: minimalist pattern-based editorial abstraction; flat
+front-facing composition; precise but softly human linework; no photographic
+scene, no objects, no depth illusion.
+Composition/framing: true wide 16:9 landscape; motif occupies the middle 55
+percent of the height and about 82 percent of the width; large crop-safe ivory
+margins; slightly denser and darker center, outer marks fading softly;
+balanced but not mechanically mirrored.
+Color palette: warm off-white ivory background, pale warm gray, soft graphite
+gray, one slightly darker charcoal-gray focal dot; no other colors.
+Materials/textures: subtle uncoated cotton-paper grain, nearly invisible
+natural speckling, fine pencil or archival ink lines with restrained opacity.
+Lighting/mood: bright diffuse daylight impression, airy, quiet, gentle,
+meditative.
 Text: none.
-Constraints: publication-ready, factually neutral, no human figure, no
-depiction of God or an identifiable preacher, no logos, no watermark, no
-embedded typography, no extra religious symbols, no unsupported miracle
-imagery. Keep the boat intact and physically plausible.
-Avoid: generic sunrise landscape, floating objects, giant glowing cross,
-stock-photo sentimentality, storm spectacle, over-darkness, neon, plastic CGI
-sheen, excessive fog, lens flare, clutter, malformed paper folds,
-pseudo-writing.
+Constraints: no words, numbers, verse text, logos, watermark, frames, panels,
+icons, human figure, face, Bible, church, cross, boat, landscape, photographic
+objects, gradients that look digital, saturated color, black areas, hard
+shadows, or 3D rendering. Keep all geometry clean and intentional. Preserve
+very low contrast while ensuring the central transformation remains readable
+at thumbnail size.
+Avoid: copying the supplied references, poster design, infographic labels,
+generic spiritual stock art, dark cinematic mood, glowing effects, symmetry
+so perfect it feels computer-generated, malformed or broken line patterns,
+visual noise.
 ```
 
-- 전체 크기 관찰: 종이의 섬유와 접힌 면, 젖은 가장자리, 얕은 물의 잔물결과
-  반사, 돌과 나무의 접촉면이 자연스럽습니다. 배의 형태와 원근, 빛의 방향이
-  일관되고 글자·로고·워터마크·기형적인 세부는 보이지 않습니다.
-- 360px 썸네일 관찰: 왼쪽 아래 종이배와 오른쪽 위 십자가 모양의 빛이 즉시
-  구분되며, 배가 빛을 향하는 대각선 흐름도 유지됩니다.
-- 주제 인식과 교체 시험: `파도에 흔들리는 배`와 `그리스도를 향하는 방향`을
-  동시에 담아 에베소서 4장 14-15절과 직접 연결됩니다. 배나 빛 가운데 하나를
-  무관한 사물로 바꾸면 본문의 연결이 약해지므로 교체 시험을 통과했습니다.
-- 참고 비교: 사용자가 지정한 말씀 묵상 카테고리의 차분한 단일 설교 형식과
-  맞추되, 본문 안에 이미지를 반복 삽입하지 않고 제목 아래 대표 이미지 한
-  장으로 역할을 제한했습니다.
+- 전체 크기 관찰: 따뜻한 아이보리 바탕과 미세한 종이 질감이 균일하고,
+  양쪽의 작은 곡선이 중앙으로 갈수록 끊김 없이 곧은 선으로 전환됩니다.
+  선의 굵기와 간격이 안정적이며 글자, 로고, 워터마크, 깨진 패턴은 없습니다.
+- 360px 썸네일 관찰: 바깥의 흐린 곡선, 중앙의 또렷하고 높은 선, 아래의
+  작은 기준점이 모두 구분됩니다. 대비는 낮지만 중앙으로 모이며 곧게
+  자라는 핵심 변화는 한눈에 남습니다.
+- 주제 인식과 교체 시험: 흔들리는 곡선이 한 방향의 곧은 선과 장성한
+  높이로 바뀌는 변화가 에베소서 4장 14-15절의 `요동함 -> 모든 면의 성장`
+  흐름을 담습니다. 이 전환을 임의의 장식 패턴으로 바꾸면 본문 연결이
+  약해지므로 교체 시험을 통과했습니다.
+- 참고 비교: 네 레퍼런스와 같은 따뜻한 백색, 가는 회색 선, 반복 리듬,
+  중심부 밀도, 넓은 여백을 유지했습니다. 분리된 점군, 동심원, 원형 무리,
+  단순한 선형 아치라는 각 레퍼런스의 중심 배치는 그대로 복제하지 않고,
+  곡선이 곧은 선으로 자라는 새 기하 구조를 사용했습니다.
 - 대표 이미지 검증 결과: `pass`
 
 ## 보조 인포그래픽
@@ -168,16 +178,24 @@ pseudo-writing.
 | 8 | 마무리 | 행동 체크리스트가 독자를 가르치는 어조로 들릴 수 있음 | 잘못을 깨달았을 때 예수님께 방향을 돌리고 가까운 사람에게 변화가 드러나길 바라는 고백으로 교체 | 개인 묵상다운 여운과 설교의 중심 방향을 함께 살림 |
 | 9 | 대표 이미지 | 추상적인 성장을 일반적인 새싹이나 상승 화살표로 표현하면 본문 인식이 약함 | 에베소서 4장 14절의 종이배가 15절의 그리스도를 상징하는 십자가 모양의 빛을 향하도록 구성 | 전체 크기와 360px에서 종이배, 잔물결, 방향, 빛이 모두 구분됨 |
 | 10 | 최종 HTML | HTML 조각을 기본 로컬 서버로 열자 문자 인코딩 헤더가 없어 한글이 깨져 보임 | UTF-8 응답 헤더를 명시한 검수 서버에서 같은 생성 파일을 다시 열어 확인 | 대체문자 0개, 한글 본문·소제목·링크 텍스트가 정상 표시됨 |
+| 11 | 말씀 묵상 대표 이미지 | 사진형 후보가 사용자가 원하는 밝고 연한 패턴 시리즈와 맞지 않음 | 네 레퍼런스의 색조·선·반복·여백을 기준으로 곡선이 곧은 선으로 자라는 `hero-v2.png`를 새로 생성 | 1672 x 941 원본과 360 x 202 썸네일에서 중심 변화와 패턴 무결성을 재확인 |
 
 - 최종 종료 판단: `pass`
 - 다시 열어 확인한 파일: `article.md`, `evidence.md`,
-  `artifacts/sermon-transcript.txt`
+  `artifacts/sermon-transcript.txt`, `assets/hero-v2.png`,
+  `standards/image-guide.md`, `standards/reflections-guide.md`
 
 ## 검사와 남은 위험
 
 - 검사 명령:
   `python3 scripts/blog.py check posts/2026-07-26-ephesians-4-spiritual-maturity`
 - 검사 결과: 오류 0개, 경고 0개
+- 저장소 전체 검사:
+  `python3 scripts/blog.py check --all`
+- 저장소 전체 검사 결과: 7개 글, 오류 0개, 경고 0개
+- 회귀 테스트:
+  `python3 -m unittest discover -s tests -v`
+- 회귀 테스트 결과: 16개 테스트 통과
 - 최종 렌더 명령:
   `python3 scripts/blog.py render posts/2026-07-26-ephesians-4-spiritual-maturity`
 - 최종 HTML: `dist/ephesians-4-spiritual-maturity.html`, 본문 7,278자

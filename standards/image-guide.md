@@ -48,6 +48,10 @@ Unless the user specifies otherwise:
 - Prefer a restrained contemplative photograph or illustration for Reflections;
   avoid literal depictions of God or an identifiable real preacher unless the
   user supplies a reference and requests it.
+- For `Reflections/말씀 묵상`, use the category-specific visual system in
+  `standards/reflections-guide.md`: a bright, pale, pattern-led abstract image
+  is the default and takes precedence over the general Reflections photograph
+  option.
 - Use no embedded title, labels, logos, UI trademarks, watermark, or decorative
   Korean text unless exact in-image text is essential and explicitly requested.
 - Avoid clickbait expressions, medical fear imagery, fake product branding,

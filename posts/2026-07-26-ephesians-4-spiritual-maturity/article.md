@@ -7,7 +7,7 @@ subcategory: "말씀 묵상"
 status: ready
 tags: [에베소서 4장, 영적 성숙, 그리스도의 장성한 분량, 설교 정리, 묵상]
 summary: "에베소서 4장 13-15절을 따라 영적 유아기의 모습, 실패와 고난을 통과하는 성숙, 위와 바깥으로 자라는 믿음을 정리합니다."
-hero_image: assets/hero.png
+hero_image: assets/hero-v2.png
 published_url: ""
 sources:
     - artifacts/sermon-transcript.txt
