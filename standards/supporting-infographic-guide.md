@@ -131,6 +131,29 @@ Inspect the final raster at full resolution and at 360 CSS pixels wide.
   similar display size. Record the transferable qualities used and the largest
   remaining gap.
 
+## Final overlap audit
+
+Do not approve a supporting infographic from the whole-image preview alone.
+Perform this audit on the exact final raster:
+
+1. Open the full raster and the native 360px raster.
+2. Create enlarged crops around every headline, primary block, connector,
+   arrowhead, icon-label pair, footnote, and caveat.
+3. Trace a small clear zone around every text block. Reject any line,
+   arrowhead, marker, icon, shadow, texture, or crop boundary that enters the
+   glyph area or makes a word harder to read.
+4. For SVG output, inspect the complete painted bounds of markers and strokes.
+   Marker defaults may scale with stroke width, so source path endpoints alone
+   are not evidence that an arrow clears nearby text. Prefer explicit
+   `markerUnits="userSpaceOnUse"` and explicit marker dimensions when exact
+   clearance matters.
+5. Read the labels once in normal order and once by scanning only the text
+   blocks. This second pass catches words hidden by visually dominant arrows or
+   illustrations.
+6. After any correction, write a versioned final raster, regenerate the 360px
+   view and every affected crop from that raster, and repeat the audit. Record
+   `problem -> revision -> re-verification` in `audit.md`.
+
 Record the decision even when it is `없음`. When an infographic exists, record
 its final path, type, reader question, placement, Korean alt text, copy/evidence
 source, and full-size/mobile inspection in `audit.md`.

@@ -180,6 +180,12 @@ Do not move files between draft and published trees. Update the article status:
      Tistory HTML, hero, and every supporting image. Review images at full size
      and their required thumbnail or 360px mobile size; compare supplied visual
      references side by side.
+   - For every supporting infographic, inspect the final raster in three views:
+     the whole image, the native 360px image, and enlarged crops around every
+     text block, connector, arrowhead, icon, and caveat. Check the full painted
+     area of SVG markers and shadows, not only path endpoints or source
+     coordinates. Do not approve an infographic from a whole-image preview
+     alone.
    - Record each material issue in `audit.md` as
      `problem -> revision -> re-verification`. A checkmark without the observed
      basis is not a review record.
