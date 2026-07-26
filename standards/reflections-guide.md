@@ -63,6 +63,16 @@
   Do not copy a reference's exact centerpiece or layout.
 - Keep the pattern readable at thumbnail size through a slightly denser or
   darker focal region. Let most outer marks fade softly into the background.
+- For a 16:9 hero, let the main pattern normally occupy about `70-85%` of the
+  canvas height and `85-92%` of its width. Reject a small centered emblem that
+  leaves so much blank space that the transformation disappears at `360 x 202`.
+- Apply a reference-difference test before approval: if the new image can be
+  described mainly as one supplied reference's primitive placed inside
+  another reference's composition, regenerate with a new dominant geometry.
+  References define the visual language, not the motif to reuse.
+- At `360 x 202`, the dominant path or transformation must remain visible
+  without zooming. Preserve the pale palette, but increase motif scale, line
+  weight, or focal contrast before accepting a barely perceptible image.
 - Use a 16:9 landscape canvas for the Tistory hero unless the user explicitly
   requests another ratio.
 - Do not embed a title, verse, Korean lettering, logo, watermark, person,
@@ -86,3 +96,5 @@
 - Scripture context, preacher names, and translation are accurate.
 - The 말씀 묵상 hero follows the bright pale pattern system, remains legible at
   thumbnail size, and avoids literal or dark cinematic imagery.
+- The dominant geometry is visibly distinct from every supplied reference and
+  occupies enough of the 16:9 canvas to survive a `360 x 202` thumbnail.

@@ -58,86 +58,91 @@
 - [x] 로고·워터마크·불필요한 내장 텍스트가 없습니다.
 - [x] 대표 이미지의 반응형 크롭을 고려한 안전 여백이 있습니다.
 
-- 교체 전 후보: `assets/hero.png`
-- 최종 파일: `assets/hero-v2.png`
-- 새 후보 파일과 크기: `assets/hero-v2.png`, `1672 x 941`
+- 교체 전 후보: `assets/hero.png`, `assets/hero-v2.png`
+- 최종 파일: `assets/hero-v3.png`
+- 새 후보 파일과 크기: `assets/hero-v3.png`, `1672 x 941`
 - SHA-256:
-  `92c71fe167966c5a0922bc965afa2f9c000833d7bb59a97cf4805b6cdd141728`
+  `7a82ff9f5ce977ff9f354eea6a4c1d785a600cf328715487a769697bc01a092e`
 - 권장 위치: `대표 이미지 - 제목 바로 아래`
-- 한국어 alt: `흔들리는 곡선들이 중앙으로 갈수록 곧게 자라 하나의 안정된 형태를 이루는 연한 회색 패턴`
-- 의도한 인식 단서: 에베소서 4장 14절의 요동함을 양쪽의 작은 곡선으로,
-  그리스도의 장성한 분량과 하나 된 방향을 중앙으로 갈수록 곧고 높아지는
-  선의 흐름으로 표현했습니다.
+- 한국어 alt: `뒤엉킨 여러 선이 한 방향의 평행한 흐름으로 정돈되는 밝은 아이보리 패턴`
+- 의도한 인식 단서: 에베소서 4장 14절의 요동함을 왼쪽의 서로 엇갈리는
+  흐름으로, 장성한 분량을 향한 하나 된 방향을 오른쪽의 넓고 안정된
+  평행선으로 표현했습니다.
 - 생성 방법: OpenAI 내장 이미지 생성 도구
 - 참고 역할과 제약: 사용자 제공 네 이미지는 밝은 아이보리 바탕, 얇은
   회색 선, 반복의 리듬, 중심부의 밀도, 넓은 여백만 참고했습니다. 각
-  레퍼런스의 정확한 배치와 중심 형상은 복제하지 않았습니다.
+  레퍼런스의 점, 원, 초승달, 동심원, 아치 배치는 사용하지 않았습니다.
 - 최종 생성 프롬프트:
 
 ```text
 Use case: stylized-concept
-Asset type: 16:9 hero image for a Korean Tistory 말씀 묵상 post about
-Ephesians 4:13-15 and growing beyond spiritual infancy toward maturity in
-Christ.
-Input images: Image 1 is a reference for two-field dotted rhythm and restrained
-separation; Image 2 is a reference for delicate concentric precision and a
-quiet focal center; Image 3 is a reference for repeated crescent marks, soft
-fading, and generous negative space; Image 4 is a reference for a fine
-vertical-line arch and pale tonal restraint. Transfer only these visual
-principles. Do not reproduce any exact layout or centerpiece.
-Creative intent: show that spiritual maturity is not frantic motion but many
-wavering parts gradually finding one stable direction and growing into a calm,
-upright whole.
-Visual idea: On a warm ivory paper field, hundreds of tiny graphite-gray
-crescent marks begin loosely spaced and slightly misaligned near the far left
-and right edges, like gentle wave-tossed motion. Moving toward the center, the
-same marks progressively rotate upright, become more evenly spaced, and
-subtly lengthen into very fine vertical strokes. Together the central strokes
-form one broad, serene ascending arch with a clear highest point, suggesting
-mature stature and shared direction without depicting a person or literal
-religious object. A single small solid graphite dot sits quietly at the base
-of the highest central line as the visual anchor. The transformation must feel
-continuous, delicate, and contemplative.
-Art direction: minimalist pattern-based editorial abstraction; flat
-front-facing composition; precise but softly human linework; no photographic
-scene, no objects, no depth illusion.
-Composition/framing: true wide 16:9 landscape; motif occupies the middle 55
-percent of the height and about 82 percent of the width; large crop-safe ivory
-margins; slightly denser and darker center, outer marks fading softly;
-balanced but not mechanically mirrored.
-Color palette: warm off-white ivory background, pale warm gray, soft graphite
-gray, one slightly darker charcoal-gray focal dot; no other colors.
-Materials/textures: subtle uncoated cotton-paper grain, nearly invisible
-natural speckling, fine pencil or archival ink lines with restrained opacity.
-Lighting/mood: bright diffuse daylight impression, airy, quiet, gentle,
-meditative.
+Asset type: 16:9 Korean Tistory 말씀 묵상 hero for Ephesians 4:13-15,
+spiritual immaturity becoming mature direction in Christ.
+Input images: all four images are STYLE REFERENCES ONLY for warm ivory paper,
+fine graphite line quality, restrained low-saturation palette, subtle paper
+grain, and quiet editorial finish. Do not reuse their dots, circles, crescents,
+concentric rings, centered dome, arch, split-field layout, or exact
+compositions.
+Creative intent: make the change from wavering self-directed motion to one
+mature, steady direction unmistakable even in a 360 x 202 thumbnail.
+Visual idea: A large sweeping diagonal current made from 19 continuous
+graphite lines crosses almost the entire canvas from the lower-left edge toward
+the upper-right edge. In the left third, the lines wander independently in
+irregular shallow waves, overlap slightly, and point in conflicting
+directions. Through a broad central transition, the lines gradually untangle,
+turn together, and settle into evenly spaced, confident parallel paths. In the
+right third, the same lines continue calmly upward in one shared direction,
+with the middle path subtly darker and unbroken. The transformation is
+continuous, not divided into panels, and it should feel like many wavering
+paths maturing into one coherent course. No arrowhead and no recognizable
+object.
+Dominant geometry: an asymmetric full-canvas diagonal ribbon of continuous
+lines, never a centered emblem, circle, flock, mound, dome, arch, grid, or row
+of tiny marks.
+Art direction: minimalist pattern-based editorial abstraction, hand-drawn
+archival graphite lines on warm uncoated paper, flat frontal view, deliberate
+human irregularity, calm but clearly visible.
+Composition/framing: true 16:9. The diagonal line field must occupy 88-94% of
+the width and 72-82% of the height. Let several lines enter and leave through
+the crop edges so the motif feels expansive. Keep only modest crop-safe
+margins. Make the central/right transformation the strongest focal region. No
+huge empty upper half.
+Visibility: at 360 x 202, the overall diagonal current, the
+chaotic-to-parallel change, and the darker central path must be immediately
+visible. Use medium-light warm graphite rather than extremely faint hairlines;
+approximately twice the perceived stroke presence of the supplied references
+while remaining gentle and pale.
+Color palette: warm ivory background, warm medium-gray linework, one slightly
+darker graphite path. No color accents.
+Materials/textures: restrained cotton-paper fiber and faint natural speckling;
+clean continuous lines with subtle pressure variation.
+Lighting/mood: bright diffuse daylight impression, open, contemplative,
+hopeful, disciplined.
 Text: none.
-Constraints: no words, numbers, verse text, logos, watermark, frames, panels,
-icons, human figure, face, Bible, church, cross, boat, landscape, photographic
-objects, gradients that look digital, saturated color, black areas, hard
-shadows, or 3D rendering. Keep all geometry clean and intentional. Preserve
-very low contrast while ensuring the central transformation remains readable
-at thumbnail size.
-Avoid: copying the supplied references, poster design, infographic labels,
-generic spiritual stock art, dark cinematic mood, glowing effects, symmetry
-so perfect it feels computer-generated, malformed or broken line patterns,
-visual noise.
+Constraints: no words, numbers, verse text, logo, watermark, border, panel,
+icon, person, face, Bible, church, cross, boat, landscape, photo-real object,
+3D, hard shadow, dark field, saturated color, glow, or digital gradient.
+Avoid: visual similarity to any single supplied reference; combining the
+crescents from Image 3 with the arch from Image 4; small centered motifs;
+excessive blank space; barely visible strokes; perfect computer symmetry;
+bar-chart appearance; data visualization; arrow imagery; malformed breaks or
+accidental knots.
 ```
 
-- 전체 크기 관찰: 따뜻한 아이보리 바탕과 미세한 종이 질감이 균일하고,
-  양쪽의 작은 곡선이 중앙으로 갈수록 끊김 없이 곧은 선으로 전환됩니다.
-  선의 굵기와 간격이 안정적이며 글자, 로고, 워터마크, 깨진 패턴은 없습니다.
-- 360px 썸네일 관찰: 바깥의 흐린 곡선, 중앙의 또렷하고 높은 선, 아래의
-  작은 기준점이 모두 구분됩니다. 대비는 낮지만 중앙으로 모이며 곧게
-  자라는 핵심 변화는 한눈에 남습니다.
-- 주제 인식과 교체 시험: 흔들리는 곡선이 한 방향의 곧은 선과 장성한
-  높이로 바뀌는 변화가 에베소서 4장 14-15절의 `요동함 -> 모든 면의 성장`
-  흐름을 담습니다. 이 전환을 임의의 장식 패턴으로 바꾸면 본문 연결이
-  약해지므로 교체 시험을 통과했습니다.
-- 참고 비교: 네 레퍼런스와 같은 따뜻한 백색, 가는 회색 선, 반복 리듬,
-  중심부 밀도, 넓은 여백을 유지했습니다. 분리된 점군, 동심원, 원형 무리,
-  단순한 선형 아치라는 각 레퍼런스의 중심 배치는 그대로 복제하지 않고,
-  곡선이 곧은 선으로 자라는 새 기하 구조를 사용했습니다.
+- 전체 크기 관찰: 19개의 연속선이 왼쪽에서는 서로 엇갈리고 겹치다가,
+  중앙을 통과하며 끊김 없이 정돈되어 오른쪽 위의 평행한 흐름으로
+  이어집니다. 선의 압력 차이와 종이 질감이 자연스럽고, 글자·로고·워터마크·
+  비의도적 단절은 없습니다.
+- 360px 썸네일 관찰: 전체 폭을 가로지르는 대각선 띠와 `혼선 -> 평행`
+  변화가 즉시 보입니다. 중심선의 대비도 유지되며, 이전 후보처럼 모티프가
+  작은 중앙 장식으로 축소되지 않습니다.
+- 주제 인식과 교체 시험: 여러 방향으로 요동하던 선이 하나의 안정된
+  방향으로 정돈되는 전환이 에베소서 4장 14-15절의 `요동함 -> 하나 됨과
+  성장`을 담습니다. 단순한 평행선만 남기거나 왼쪽의 혼선을 제거하면
+  본문의 핵심 대비가 사라지므로 교체 시험을 통과했습니다.
+- 참고 비교: 따뜻한 아이보리, 연한 흑연선, 종이 질감과 절제된 분위기만
+  계승했습니다. 네 레퍼런스의 주된 도형인 점군, 원, 초승달 반복, 동심원,
+  중앙 아치는 사용하지 않았고, 비대칭의 연속 대각선 흐름을 새로 만들었습니다.
 - 대표 이미지 검증 결과: `pass`
 
 ## 보조 인포그래픽
@@ -178,11 +183,12 @@ visual noise.
 | 8 | 마무리 | 행동 체크리스트가 독자를 가르치는 어조로 들릴 수 있음 | 잘못을 깨달았을 때 예수님께 방향을 돌리고 가까운 사람에게 변화가 드러나길 바라는 고백으로 교체 | 개인 묵상다운 여운과 설교의 중심 방향을 함께 살림 |
 | 9 | 대표 이미지 | 추상적인 성장을 일반적인 새싹이나 상승 화살표로 표현하면 본문 인식이 약함 | 에베소서 4장 14절의 종이배가 15절의 그리스도를 상징하는 십자가 모양의 빛을 향하도록 구성 | 전체 크기와 360px에서 종이배, 잔물결, 방향, 빛이 모두 구분됨 |
 | 10 | 최종 HTML | HTML 조각을 기본 로컬 서버로 열자 문자 인코딩 헤더가 없어 한글이 깨져 보임 | UTF-8 응답 헤더를 명시한 검수 서버에서 같은 생성 파일을 다시 열어 확인 | 대체문자 0개, 한글 본문·소제목·링크 텍스트가 정상 표시됨 |
-| 11 | 말씀 묵상 대표 이미지 | 사진형 후보가 사용자가 원하는 밝고 연한 패턴 시리즈와 맞지 않음 | 네 레퍼런스의 색조·선·반복·여백을 기준으로 곡선이 곧은 선으로 자라는 `hero-v2.png`를 새로 생성 | 1672 x 941 원본과 360 x 202 썸네일에서 중심 변화와 패턴 무결성을 재확인 |
+| 11 | 말씀 묵상 대표 이미지 | 사진형 후보가 사용자가 원하는 밝고 연한 패턴 시리즈와 맞지 않음 | 네 레퍼런스의 색조·선·반복·여백을 기준으로 `hero-v2.png`를 생성 | 도형과 구성이 기존 레퍼런스 조합처럼 보이고 모티프가 작아 사용자 검토에서 재작업 결정 |
+| 12 | 패턴 차별성과 썸네일 가시성 | `hero-v2.png`가 초승달 반복과 중앙 아치를 재사용했고 360px에서 핵심 형상이 약함 | 기존 후보를 보정하지 않고, 전체 화면의 연속 대각선이 혼선에서 평행으로 바뀌는 `hero-v3.png`를 재생성 | 1672 x 941 원본과 360 x 202에서 전체 폭의 변화가 선명하고 네 레퍼런스의 중심 도형과 구별됨 |
 
 - 최종 종료 판단: `pass`
 - 다시 열어 확인한 파일: `article.md`, `evidence.md`,
-  `artifacts/sermon-transcript.txt`, `assets/hero-v2.png`,
+  `artifacts/sermon-transcript.txt`, `assets/hero-v3.png`,
   `standards/image-guide.md`, `standards/reflections-guide.md`
 
 ## 검사와 남은 위험
