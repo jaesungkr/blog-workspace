@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>manycode 단일 PTY 공유 구조</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      margin: 0;
+      overflow: hidden;
+    }
+    body {
+      color: #17231f;
+      background: #f4f0e8;
+      font-family: "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+    }
+    svg { display: block; width: 1080px; height: 1350px; }
+    .eyebrow { font-size: 30px; font-weight: 800; letter-spacing: 0.08em; }
+    .headline { font-size: 60px; font-weight: 850; letter-spacing: -0.055em; }
+    .subtitle { font-size: 32px; font-weight: 650; letter-spacing: -0.025em; }
+    .primary { font-size: 42px; font-weight: 850; letter-spacing: -0.045em; }
+    .primary-small { font-size: 36px; font-weight: 850; letter-spacing: -0.045em; }
+    .support { font-size: 32px; font-weight: 650; letter-spacing: -0.025em; }
+    .flow-label { font-size: 30px; font-weight: 800; letter-spacing: -0.025em; }
+    .caveat { font-size: 30px; font-weight: 750; letter-spacing: -0.025em; }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1080 1350" role="img"
+       aria-labelledby="infographic-title infographic-desc">
+    <title id="infographic-title">한 터미널을 여러 사람이 공유하는 manycode 구조</title>
+    <desc id="infographic-desc">
+      호스트 프로젝트의 Claude Code 또는 Codex가 하나의 PTY에서 실행되고,
+      같은 화면은 CLI와 브라우저 참가자에게 나가며 허용된 키 입력은 같은
+      PTY로 돌아온다. read-only, approve, no-tunnel이 입력과 연결 경계를 조절한다.
+    </desc>
+
+    <defs>
+      <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fbfaf6"/>
+        <stop offset="100%" stop-color="#ece7dc"/>
+      </linearGradient>
+      <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#28352f"/>
+        <stop offset="100%" stop-color="#17231f"/>
+      </linearGradient>
+      <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse">
+        <circle cx="4" cy="5" r="0.8" fill="#5e675f" opacity="0.07"/>
+        <circle cx="20" cy="17" r="0.7" fill="#5e675f" opacity="0.05"/>
+        <path d="M9 24h6" stroke="#5e675f" stroke-width="0.7" opacity="0.05"/>
+      </pattern>
+      <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12"
+                      flood-color="#26312c" flood-opacity="0.14"/>
+      </filter>
+      <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="5" stdDeviation="7"
+                      flood-color="#26312c" flood-opacity="0.1"/>
+      </filter>
+      <marker id="arrow-output" markerUnits="userSpaceOnUse"
+              markerWidth="22" markerHeight="22" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#3f7d6b"/>
+      </marker>
+      <marker id="arrow-input" markerUnits="userSpaceOnUse"
+              markerWidth="22" markerHeight="22" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#b36b35"/>
+      </marker>
+      <marker id="arrow-neutral" markerUnits="userSpaceOnUse"
+              markerWidth="20" markerHeight="20" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#59645f"/>
+      </marker>
+    </defs>
+
+    <rect width="1080" height="1350" fill="#f4f0e8"/>
+    <rect width="1080" height="1350" fill="url(#grain)"/>
+    <circle cx="1014" cy="112" r="250" fill="#dce8df" opacity="0.62"/>
+    <circle cx="72" cy="760" r="230" fill="#f0dfcf" opacity="0.38"/>
+
+    <!-- Header: 230px / 17.0% -->
+    <g transform="translate(70 58)">
+      <rect width="478" height="48" rx="24" fill="#26332d"/>
+      <circle cx="30" cy="24" r="8" fill="#8fba9e"/>
+      <circle cx="52" cy="24" r="8" fill="#d79b65"/>
+      <text x="78" y="34" class="eyebrow" fill="#ffffff">CCSHARE → MANYCODE</text>
+    </g>
+    <text x="70" y="154" class="headline" fill="#17231f">한 터미널, 여러 입력</text>
+    <text x="72" y="207" class="subtitle" fill="#5e675f">
+      같은 화면을 보고, 허용된 키 입력은 같은 PTY로 돌아옵니다
+    </text>
+
+    <!-- Host project -->
+    <g filter="url(#soft-shadow)">
+      <rect x="50" y="330" width="270" height="230" rx="32"
+            fill="url(#paper)" stroke="#c6bfb3" stroke-width="2"/>
+      <path d="M90 371h70l22 22h94v75H90Z"
+            fill="#e5ded2" stroke="#7b817d" stroke-width="5"
+            stroke-linejoin="round"/>
+      <path d="M112 419h116M112 443h76"
+            stroke="#7b817d" stroke-width="6" stroke-linecap="round"/>
+      <text x="185" y="514" class="primary-small" fill="#17231f"
+            text-anchor="middle">호스트 프로젝트</text>
+      <text x="185" y="548" class="support" fill="#626b66"
+            text-anchor="middle">실제 작업 폴더</text>
+    </g>
+
+    <!-- Project enters one PTY -->
+    <path d="M320 442H340" stroke="#59645f" stroke-width="8"
+          stroke-linecap="round" marker-end="url(#arrow-neutral)"/>
+
+    <!-- One live PTY: dominant relationship -->
+    <g filter="url(#shadow)">
+      <rect x="360" y="288" width="340" height="382" rx="42"
+            fill="#d9d5cb" stroke="#a7a49b" stroke-width="3"/>
+      <rect x="390" y="319" width="280" height="202" rx="24"
+            fill="url(#terminal)" stroke="#78847e" stroke-width="4"/>
+      <rect x="430" y="362" width="95" height="10" rx="5" fill="#8fba9e"/>
+      <rect x="430" y="390" width="154" height="10" rx="5" fill="#8fba9e"/>
+      <rect x="430" y="418" width="116" height="10" rx="5" fill="#8fba9e"/>
+      <rect x="430" y="455" width="16" height="30" rx="3" fill="#cfe8d6"/>
+      <text x="530" y="573" class="primary" fill="#17231f"
+            text-anchor="middle">단일 PTY</text>
+      <text x="530" y="615" class="support" fill="#4d5852"
+            text-anchor="middle">Claude Code · Codex</text>
+      <rect x="446" y="636" width="168" height="7" rx="3.5" fill="#8a918d"/>
+    </g>
+    <rect x="441" y="260" width="178" height="52" rx="26" fill="#26332d"/>
+    <text x="530" y="297" class="flow-label" fill="#ffffff"
+          text-anchor="middle">MANYCODE</text>
+
+    <!-- CLI participant -->
+    <g filter="url(#soft-shadow)">
+      <rect x="790" y="278" width="250" height="226" rx="32"
+            fill="#f8f6f0" stroke="#b9b5ab" stroke-width="2"/>
+      <rect x="832" y="318" width="166" height="92" rx="14"
+            fill="#26332d"/>
+      <path d="M857 353l18 18-18 18M893 389h70"
+            fill="none" stroke="#b9dec4" stroke-width="6"
+            stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="915" y="448" class="primary-small" fill="#17231f"
+            text-anchor="middle">CLI 참가자</text>
+      <text x="915" y="486" class="support" fill="#626b66"
+            text-anchor="middle">같은 터미널</text>
+    </g>
+
+    <!-- Browser participant -->
+    <g filter="url(#soft-shadow)">
+      <rect x="790" y="572" width="250" height="226" rx="32"
+            fill="#f8f6f0" stroke="#b9b5ab" stroke-width="2"/>
+      <rect x="825" y="594" width="180" height="95" rx="14"
+            fill="#ffffff" stroke="#6d7772" stroke-width="4"/>
+      <circle cx="846" cy="612" r="5" fill="#d79b65"/>
+      <circle cx="862" cy="612" r="5" fill="#8fba9e"/>
+      <rect x="848" y="638" width="122" height="9" rx="4" fill="#50615a"/>
+      <rect x="848" y="659" width="82" height="9" rx="4" fill="#8fba9e"/>
+      <text x="915" y="744" class="primary-small" fill="#17231f"
+            text-anchor="middle">브라우저 참가자</text>
+      <text x="915" y="784" class="support" fill="#626b66"
+            text-anchor="middle">설치 없이 접속</text>
+    </g>
+
+    <!-- Output lanes: PTY to both participants -->
+    <path d="M700 365C728 365 746 365 764 365"
+          fill="none" stroke="#3f7d6b" stroke-width="9"
+          stroke-linecap="round" marker-end="url(#arrow-output)"/>
+    <path d="M700 522C744 522 752 604 764 638"
+          fill="none" stroke="#3f7d6b" stroke-width="9"
+          stroke-linecap="round" marker-end="url(#arrow-output)"/>
+    <rect x="704" y="389" width="82" height="44" rx="22" fill="#dce9e1"/>
+    <text x="745" y="421" class="flow-label" fill="#2e6c59"
+          text-anchor="middle">출력</text>
+
+    <!-- Input lanes: participants back to same PTY -->
+    <path d="M770 460C746 460 730 460 707 460"
+          fill="none" stroke="#b36b35" stroke-width="9"
+          stroke-linecap="round" marker-end="url(#arrow-input)"/>
+    <path d="M770 718C734 718 726 610 700 588"
+          fill="none" stroke="#b36b35" stroke-width="9"
+          stroke-linecap="round" marker-end="url(#arrow-input)"/>
+    <rect x="704" y="478" width="82" height="44" rx="22" fill="#f1dfcf"/>
+    <text x="745" y="510" class="flow-label" fill="#8e4f25"
+          text-anchor="middle">입력</text>
+
+    <!-- Relationship note -->
+    <g>
+      <path d="M185 589V830H915V821" fill="none" stroke="#9da49f"
+            stroke-width="3" stroke-dasharray="9 12"/>
+      <text x="558" y="862" class="support" fill="#5e675f"
+            text-anchor="middle">독립 세션이 아니라 하나의 작업 상태를 함께 봅니다</text>
+    </g>
+
+    <!-- Security control rail -->
+    <text x="70" y="944" class="primary" fill="#17231f">입력권을 여는 세 경계</text>
+    <text x="70" y="987" class="support" fill="#626b66">
+      첫 시연은 읽기 전용과 로컬 전용부터 시작합니다
+    </text>
+    <path d="M128 1074H952" stroke="#aeb4b0" stroke-width="8"
+          stroke-linecap="round"/>
+
+    <g transform="translate(210 1074)">
+      <circle r="33" fill="#3f7d6b" stroke="#f4f0e8" stroke-width="9"/>
+      <path d="M-13 0h26" stroke="#ffffff" stroke-width="7"
+            stroke-linecap="round"/>
+      <text x="0" y="74" class="primary" fill="#17231f" text-anchor="middle">--read-only</text>
+      <text x="0" y="113" class="support" fill="#626b66" text-anchor="middle">키 입력 차단</text>
+    </g>
+
+    <g transform="translate(540 1074)">
+      <circle r="33" fill="#d79b65" stroke="#f4f0e8" stroke-width="9"/>
+      <path d="M-15 1l10 11 21-25" fill="none" stroke="#ffffff"
+            stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="0" y="74" class="primary" fill="#17231f" text-anchor="middle">--approve</text>
+      <text x="0" y="113" class="support" fill="#626b66" text-anchor="middle">참가 승인 · macOS</text>
+    </g>
+
+    <g transform="translate(870 1074)">
+      <circle r="33" fill="#59645f" stroke="#f4f0e8" stroke-width="9"/>
+      <path d="M-15-12l30 24M15-12l-30 24" stroke="#ffffff"
+            stroke-width="7" stroke-linecap="round"/>
+      <text x="0" y="74" class="primary" fill="#17231f" text-anchor="middle">--no-tunnel</text>
+      <text x="0" y="113" class="support" fill="#626b66" text-anchor="middle">인터넷 공개 차단</text>
+    </g>
+
+    <!-- Caveat -->
+    <g>
+      <rect x="70" y="1244" width="940" height="72" rx="24" fill="#3b312c"/>
+      <rect x="70" y="1244" width="128" height="72" rx="24" fill="#b36b35"/>
+      <text x="134" y="1291" class="caveat" fill="#ffffff"
+            text-anchor="middle">주의</text>
+      <text x="226" y="1291" class="caveat" fill="#ffffff">
+        초대 코드는 유일한 인증 · 신뢰하는 사람에게만 공유
+      </text>
+    </g>
+  </svg>
+</body>
+</html>
