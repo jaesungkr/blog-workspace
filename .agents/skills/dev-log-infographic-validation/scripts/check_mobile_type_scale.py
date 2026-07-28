@@ -7,10 +7,10 @@ import argparse
 
 
 BANDS = {
-    "headline": (18.0, 20.0),
-    "primary": (12.0, 14.0),
-    "support": (10.0, 12.0),
-    "caveat": (9.5, 11.0),
+    "headline": (20.0, 24.0),
+    "primary": (15.0, 18.0),
+    "support": (12.0, 14.0),
+    "caveat": (11.0, 12.0),
 }
 
 

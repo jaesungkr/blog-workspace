@@ -66,7 +66,10 @@ class SkillStructureTests(unittest.TestCase):
         self.assertIn("full-size and thumbnail", hero_validation)
 
         self.assertIn("dev-log-infographic-validation", infographic_creation)
-        self.assertIn("Native 360", infographic_validation)
+        self.assertIn("untouched full-resolution candidate", infographic_creation)
+        self.assertIn("Do not resize, re-encode, save, or commit", infographic_creation)
+        self.assertIn("same untouched raster", infographic_validation)
+        self.assertIn("Do not create, save, re-encode, or commit", infographic_validation)
         self.assertIn("Enlarged crops", infographic_validation)
         self.assertIn("painted bounds", infographic_validation)
 

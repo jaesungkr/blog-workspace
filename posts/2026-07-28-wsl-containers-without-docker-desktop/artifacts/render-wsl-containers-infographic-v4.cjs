@@ -1,3 +1,4 @@
+// Archived renderer for the v4 full-size raster.
 const fs = require("node:fs");
 const path = require("node:path");
 const { pathToFileURL } = require("node:url");
@@ -11,7 +12,7 @@ const source = path.join(
 const output = path.join(
   postRoot,
   "assets",
-  "wsl-containers-layers-infographic-v7.png",
+  "wsl-containers-layers-infographic-v4.png",
 );
 const macChrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const launchOptions = fs.existsSync(macChrome)
@@ -26,18 +27,10 @@ const launchOptions = fs.existsSync(macChrome)
   });
 
   await page.goto(pathToFileURL(source).href, { waitUntil: "load" });
-  await page.evaluate(() => document.fonts.ready);
   await page.screenshot({
     path: output,
     clip: { x: 0, y: 0, width: 1080, height: 1350 },
   });
 
-  console.log(JSON.stringify({
-    source,
-    output,
-    width: 1080,
-    height: 1350,
-    reducedRasterWritten: false,
-  }));
   await browser.close();
 })();

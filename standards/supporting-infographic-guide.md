@@ -96,19 +96,22 @@ Choose another ratio only when the information structure clearly requires it.
 Prefer a calm editorial layout, strong reading order, restrained colors, and
 simple connectors over dense dashboard styling.
 
-Mobile legibility is a floor, not a reason to enlarge every text role. Convert
-source typography to its 360px-display equivalent with
+Mobile legibility is a floor, not a reason to enlarge every text role. Keep one
+publication raster at its source dimensions; do not create a reduced-size
+mobile derivative. Convert source typography to its 360px CSS-display
+equivalent with
 `source font px × 360 ÷ source canvas width`. Use these starting bands:
 
-- headline: `18-20px`;
-- primary labels: `12-14px`;
-- supporting copy: `10-12px`;
-- caveat: `9.5-11px`.
+- headline: `20-24px`;
+- primary labels: `15-18px`;
+- supporting copy: `12-14px`;
+- caveat: `11-12px`.
 
 Keep the headline zone near 22% or less of canvas height. Reduce copy or
 restructure the visual when a role falls outside its band; do not make the
-headline larger while shrinking body copy. At native 360px the relationship
-must have at least equal visual presence to the headline.
+headline larger while shrinking body copy. In the original raster's 360px CSS
+display, the relationship must have at least equal visual presence to the
+headline.
 
 Avoid enclosing the whole explanation in one large rounded card by default.
 Such a frame often makes the actual diagram feel like a small insert inside a
@@ -131,10 +134,13 @@ space and keep text, badges, and icons from filling each region.
 
 ## Quality gate
 
-Inspect the final raster at full resolution and at 360 CSS pixels wide.
+Inspect the final raster at full resolution and display that same untouched
+raster in a browser at `width:360px`. Do not resize, re-encode, save, or commit
+a smaller QA raster.
 
 - The headline and primary relationship are clear without zooming.
-- Inspect the 360px raster at its native display size, not a zoomed preview.
+- Inspect the original raster at its 360px CSS display size, not a zoomed
+  preview or exported small copy.
 - Record the 360px-equivalent size of each text role and the headline-height
   share. Treat the default bands above as a release gate unless a semantic
   exception is documented.
@@ -164,7 +170,8 @@ Inspect the final raster at full resolution and at 360 CSS pixels wide.
 Do not approve a supporting infographic from the whole-image preview alone.
 Perform this audit on the exact final raster:
 
-1. Open the full raster and the native 360px raster.
+1. Open the full raster, then display that exact raster in a browser at
+   `width:360px` without creating a derivative file.
 2. Create enlarged crops around every headline, primary block, connector,
    arrowhead, icon-label pair, footnote, and caveat.
 3. Trace a small clear zone around every text block. Reject any line,
@@ -178,13 +185,14 @@ Perform this audit on the exact final raster:
 5. Read the labels once in normal order and once by scanning only the text
    blocks. This second pass catches words hidden by visually dominant arrows or
    illustrations.
-6. After any correction, write a versioned final raster, regenerate the 360px
-   view and every affected crop from that raster, and repeat the audit. Record
-   `problem -> revision -> re-verification` in `audit.md`.
+6. After any correction, write a versioned final raster, refresh its 360px CSS
+   browser display and every affected full-raster crop, and repeat the audit.
+   Record `problem -> revision -> re-verification` in `audit.md`.
 
 Record the decision even when it is `없음`. When an infographic exists, record
 its final path, type, reader question, placement, Korean alt text, copy/evidence
-source, and full-size/mobile inspection in `audit.md`.
+source, and full-size/360px CSS-display inspection in `audit.md`. Do not keep a
+downscaled mobile raster in the post bundle.
 
 Do not insert a local filesystem Markdown image link into `article.md`. The user
 uploads the raster to Tistory manually; record placement guidance separately.

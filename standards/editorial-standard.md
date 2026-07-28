@@ -240,8 +240,9 @@ Tistory HTML together with every final image:
   width;
 - inspect table wrapping, code scrolling, heading rhythm, link placement, and
   the intended position of manually uploaded images;
-- inspect the hero at full and thumbnail size and supporting infographics at
-  full and 360px mobile size;
+- inspect the hero at full and thumbnail size; inspect each supporting
+  infographic at full size and display that same untouched raster at
+  `width:360px` without creating a reduced derivative;
 - compare user-supplied visual references side by side when they exist;
 - record each material problem, the applied revision, and the re-verification
   result in `audit.md`.

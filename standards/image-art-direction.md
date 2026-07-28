@@ -227,9 +227,11 @@ Record the actual visual inspection in `audit.md`; do not mark the image checks
 complete from the prompt alone.
 
 For a supporting infographic, thumbnail recognition is secondary to mobile
-reading. Inspect the final raster at 360 CSS pixels wide as well as full size.
-The headline, sequence, and primary relationship must remain clear without
-zooming; small evidence notes may be secondary but must still be legible.
+reading. Inspect the untouched final raster at full size and display that same
+raster in a browser at `width:360px`; do not create or commit a reduced-size
+mobile derivative. The headline, sequence, and primary relationship must remain
+clear without zooming; small evidence notes may be secondary but must still be
+legible.
 
 ## Edit or regenerate
 

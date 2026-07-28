@@ -13,20 +13,20 @@
       overflow: hidden;
     }
     body {
-      color: #182027;
-      background: #f3efe7;
+      color: #172027;
+      background: #f5f1e9;
       font-family: "Apple SD Gothic Neo", "AppleGothic", sans-serif;
     }
     svg { display: block; width: 1080px; height: 1350px; }
-    .eyebrow { font-size: 30px; font-weight: 800; letter-spacing: 0.08em; }
-    .headline { font-size: 60px; font-weight: 850; letter-spacing: -0.055em; }
-    .subtitle { font-size: 32px; font-weight: 650; letter-spacing: -0.025em; }
-    .primary { font-size: 42px; font-weight: 850; letter-spacing: -0.045em; }
-    .primary-small { font-size: 38px; font-weight: 850; letter-spacing: -0.04em; }
-    .support { font-size: 32px; font-weight: 650; letter-spacing: -0.025em; }
-    .support-small { font-size: 30px; font-weight: 650; letter-spacing: -0.02em; }
-    .code { font-size: 30px; font-weight: 750; letter-spacing: -0.015em; }
-    .caveat { font-size: 30px; font-weight: 750; letter-spacing: -0.02em; }
+    .eyebrow { font-size: 36px; font-weight: 800; letter-spacing: 0.07em; }
+    .headline { font-size: 68px; font-weight: 850; letter-spacing: -0.055em; }
+    .subtitle { font-size: 40px; font-weight: 650; letter-spacing: -0.028em; }
+    .primary { font-size: 52px; font-weight: 850; letter-spacing: -0.045em; }
+    .primary-small { font-size: 48px; font-weight: 850; letter-spacing: -0.04em; }
+    .support { font-size: 40px; font-weight: 680; letter-spacing: -0.025em; }
+    .support-small { font-size: 36px; font-weight: 680; letter-spacing: -0.02em; }
+    .code { font-size: 40px; font-weight: 780; letter-spacing: -0.018em; }
+    .caveat { font-size: 36px; font-weight: 720; letter-spacing: -0.02em; }
   </style>
 </head>
 <body>
@@ -34,200 +34,167 @@
        aria-labelledby="infographic-title infographic-desc">
     <title id="infographic-title">WSL 컨테이너가 실행되는 네 층</title>
     <desc id="infographic-desc">
-      Windows 안의 WSL 2, Ubuntu 24.04, Docker Engine이 차례로 중첩되고,
-      Linux 컨테이너의 8080 포트가 Windows 브라우저의 localhost로 이어진다.
-      Docker Desktop은 이 직접 설치 경로에 포함되지 않는다.
+      Windows 안의 WSL 2와 Ubuntu, Docker Engine, Linux 컨테이너가 네 층으로
+      이어지고 Windows 브라우저는 localhost 8080을 통해 컨테이너 80번 포트에
+      접속한다. 이 구성은 Linux 컨테이너용이다.
     </desc>
 
     <defs>
       <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#faf8f3"/>
-        <stop offset="100%" stop-color="#eee8dd"/>
+        <stop offset="0%" stop-color="#fbf9f5"/>
+        <stop offset="100%" stop-color="#eee8de"/>
       </linearGradient>
-      <linearGradient id="wsl-field" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#e6ebef"/>
-        <stop offset="100%" stop-color="#d6dde2"/>
-      </linearGradient>
-      <linearGradient id="ubuntu-field" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#f1d6bf"/>
-        <stop offset="100%" stop-color="#e5b98f"/>
+      <linearGradient id="linux-field" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#f2d8c1"/>
+        <stop offset="100%" stop-color="#e6ba91"/>
       </linearGradient>
       <linearGradient id="engine" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#39434a"/>
-        <stop offset="100%" stop-color="#232d34"/>
+        <stop offset="0%" stop-color="#39454d"/>
+        <stop offset="100%" stop-color="#253038"/>
       </linearGradient>
       <linearGradient id="container" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#3e6f94"/>
-        <stop offset="100%" stop-color="#28506f"/>
+        <stop offset="0%" stop-color="#41769c"/>
+        <stop offset="100%" stop-color="#285574"/>
       </linearGradient>
       <pattern id="grain" width="30" height="30" patternUnits="userSpaceOnUse">
-        <circle cx="5" cy="7" r="0.8" fill="#33404a" opacity="0.055"/>
-        <circle cx="23" cy="18" r="0.7" fill="#33404a" opacity="0.045"/>
-        <path d="M10 26h7" stroke="#33404a" stroke-width="0.7" opacity="0.045"/>
+        <circle cx="5" cy="7" r="0.8" fill="#33404a" opacity="0.05"/>
+        <circle cx="23" cy="18" r="0.7" fill="#33404a" opacity="0.04"/>
       </pattern>
       <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-        <feDropShadow dx="0" dy="10" stdDeviation="13"
-                      flood-color="#26323a" flood-opacity="0.14"/>
+        <feDropShadow dx="0" dy="9" stdDeviation="12"
+                      flood-color="#26323a" flood-opacity="0.13"/>
       </filter>
       <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="170%">
         <feDropShadow dx="0" dy="5" stdDeviation="7"
                       flood-color="#26323a" flood-opacity="0.1"/>
       </filter>
       <marker id="arrow-request" markerUnits="userSpaceOnUse"
-              markerWidth="22" markerHeight="22" viewBox="0 0 10 10"
+              markerWidth="24" markerHeight="24" viewBox="0 0 10 10"
               refX="9" refY="5" orient="auto">
-        <path d="M0 0L10 5L0 10Z" fill="#ba6237"/>
+        <path d="M0 0L10 5L0 10Z" fill="#b75d34"/>
       </marker>
-      <marker id="arrow-response" markerUnits="userSpaceOnUse"
+      <marker id="arrow-build" markerUnits="userSpaceOnUse"
               markerWidth="22" markerHeight="22" viewBox="0 0 10 10"
               refX="9" refY="5" orient="auto">
-        <path d="M0 0L10 5L0 10Z" fill="#3d7664"/>
+        <path d="M0 0L10 5L0 10Z" fill="#6b8fa4"/>
       </marker>
     </defs>
 
     <rect width="1080" height="1350" fill="url(#background)"/>
     <rect width="1080" height="1350" fill="url(#grain)"/>
-    <circle cx="1010" cy="86" r="240" fill="#dce7e4" opacity="0.55"/>
-    <circle cx="66" cy="920" r="260" fill="#f0d8c4" opacity="0.32"/>
+    <circle cx="1014" cy="85" r="225" fill="#dae6e2" opacity="0.5"/>
+    <circle cx="60" cy="1060" r="240" fill="#f0d7c2" opacity="0.28"/>
 
-    <!-- Header: 225px / 16.7% -->
-    <g transform="translate(64 48)">
-      <rect width="530" height="48" rx="24" fill="#263139"/>
-      <circle cx="30" cy="24" r="8" fill="#cf7444"/>
-      <circle cx="52" cy="24" r="8" fill="#6d95aa"/>
-      <text x="78" y="34" class="eyebrow" fill="#ffffff">WSL 2 · DOCKER ENGINE</text>
+    <!-- Header: 230px / 17.0% -->
+    <g transform="translate(64 42)">
+      <rect width="594" height="58" rx="29" fill="#263139"/>
+      <circle cx="32" cy="29" r="9" fill="#cf7444"/>
+      <circle cx="57" cy="29" r="9" fill="#6d95aa"/>
+      <text x="88" y="41" class="eyebrow" fill="#ffffff">
+        WSL 2 · DOCKER ENGINE
+      </text>
     </g>
-    <text x="64" y="151" class="headline" fill="#182027">WSL 컨테이너의 네 층</text>
-    <text x="66" y="207" class="subtitle" fill="#5b666d">
-      Docker Desktop 없이 Engine은 Ubuntu 안에서 직접 실행됩니다
+    <text x="64" y="174" class="headline" fill="#172027">
+      WSL 컨테이너의 네 층
+    </text>
+    <text x="66" y="226" class="subtitle" fill="#59666d">
+      Docker Desktop 없이 Ubuntu 안에서 직접 실행
     </text>
 
-    <!-- Windows boundary -->
+    <!-- 1. Windows boundary -->
     <g filter="url(#shadow)">
-      <path d="M52 322Q52 274 100 274H980Q1028 274 1028 322V1085
-               Q1028 1127 986 1127H94Q52 1127 52 1085Z"
-            fill="#f9f7f2" stroke="#aeb8c0" stroke-width="4"/>
+      <path d="M52 330Q52 282 100 282H980Q1028 282 1028 330V1084
+               Q1028 1124 988 1124H92Q52 1124 52 1084Z"
+            fill="#faf8f4" stroke="#aab6be" stroke-width="4"/>
     </g>
-    <g transform="translate(82 302)">
-      <rect width="244" height="58" rx="29" fill="#263139"/>
-      <text x="122" y="41" class="primary-small" fill="#ffffff"
+    <g transform="translate(84 314)">
+      <rect width="276" height="68" rx="34" fill="#263139"/>
+      <text x="138" y="48" class="primary-small" fill="#ffffff"
             text-anchor="middle">1 · WINDOWS</text>
     </g>
 
-    <!-- Windows browser -->
+    <!-- Windows browser stays outside the Linux boundary -->
     <g filter="url(#soft-shadow)">
-      <rect x="680" y="304" width="296" height="128" rx="28"
-            fill="#ffffff" stroke="#aeb8c0" stroke-width="3"/>
-      <rect x="708" y="326" width="72" height="78" rx="13"
+      <rect x="600" y="310" width="386" height="144" rx="30"
+            fill="#ffffff" stroke="#aab6be" stroke-width="3"/>
+      <rect x="622" y="336" width="80" height="88" rx="14"
             fill="#edf1f3" stroke="#66747d" stroke-width="4"/>
-      <path d="M708 351H780" stroke="#66747d" stroke-width="4"/>
-      <circle cx="723" cy="338" r="5" fill="#cf7444"/>
-      <circle cx="740" cy="338" r="5" fill="#6d95aa"/>
-      <path d="M725 373h38M725 389h26" stroke="#73848d"
+      <path d="M622 362H702" stroke="#66747d" stroke-width="4"/>
+      <circle cx="638" cy="349" r="6" fill="#cf7444"/>
+      <circle cx="658" cy="349" r="6" fill="#6d95aa"/>
+      <path d="M642 386h40M642 405h27" stroke="#73848d"
             stroke-width="6" stroke-linecap="round"/>
-      <text x="870" y="354" class="primary-small" fill="#182027"
+      <text x="850" y="368" class="primary-small" fill="#172027"
             text-anchor="middle">브라우저</text>
-      <text x="870" y="396" class="support-small" fill="#5b666d"
-            text-anchor="middle">Windows 접속</text>
+      <text x="850" y="414" class="support-small" fill="#8a4225"
+            text-anchor="middle">localhost:8080</text>
     </g>
 
-    <!-- WSL 2 boundary -->
-    <path d="M106 497Q106 449 154 449H866Q914 449 914 497V1043
-             Q914 1083 874 1083H146Q106 1083 106 1043Z"
-          fill="url(#wsl-field)" stroke="#82909a" stroke-width="4"/>
-    <g transform="translate(140 477)">
-      <rect width="212" height="58" rx="29" fill="#687985"/>
-      <text x="106" y="41" class="primary-small" fill="#ffffff"
-            text-anchor="middle">2 · WSL 2</text>
+    <!-- 2. WSL 2 + Ubuntu boundary -->
+    <path d="M112 520Q112 474 158 474H922Q968 474 968 520V1042
+             Q968 1080 930 1080H150Q112 1080 112 1042Z"
+          fill="url(#linux-field)" stroke="#bf7148" stroke-width="4"/>
+    <g transform="translate(148 506)">
+      <rect width="540" height="76" rx="38" fill="#b65f37"/>
+      <text x="270" y="54" class="primary" fill="#ffffff"
+            text-anchor="middle">2 · WSL 2 + UBUNTU</text>
     </g>
-    <text x="380" y="518" class="support-small" fill="#4f5d66">
-      Linux 커널
+    <text x="156" y="628" class="support" fill="#7c482f">
+      Linux 커널 · systemd
     </text>
 
-    <!-- Ubuntu boundary -->
-    <path d="M168 594Q168 550 212 550H716Q760 550 760 594V1000
-             Q760 1039 721 1039H207Q168 1039 168 1000Z"
-          fill="url(#ubuntu-field)" stroke="#bf7148" stroke-width="4"/>
-    <g transform="translate(202 577)">
-      <rect width="300" height="58" rx="29" fill="#b65f37"/>
-      <text x="150" y="41" class="primary-small" fill="#ffffff"
-            text-anchor="middle">3 · UBUNTU 24.04</text>
-    </g>
-    <text x="712" y="653" class="support-small" fill="#7e472d"
-          text-anchor="end">systemd가 서비스 관리</text>
-
-    <!-- Docker Engine -->
+    <!-- 3. Docker Engine -->
     <g filter="url(#soft-shadow)">
-      <rect x="230" y="685" width="462" height="192" rx="38"
+      <rect x="216" y="682" width="548" height="202" rx="40"
             fill="url(#engine)" stroke="#111a20" stroke-width="3"/>
-      <text x="461" y="753" class="primary" fill="#ffffff"
-            text-anchor="middle">4 · Docker Engine</text>
-      <text x="461" y="807" class="support" fill="#cfd8dc"
-            text-anchor="middle">dockerd · 이미지 · 수명주기</text>
-      <circle cx="296" cy="839" r="13" fill="#f0b080"/>
-      <circle cx="626" cy="839" r="13" fill="#7fa798"/>
-      <path d="M318 839H604" stroke="#71848e" stroke-width="8"
+      <text x="490" y="758" class="primary" fill="#ffffff"
+            text-anchor="middle">3 · Docker Engine</text>
+      <text x="490" y="818" class="support" fill="#ced7dc"
+            text-anchor="middle">dockerd가 실행·관리</text>
+      <circle cx="286" cy="851" r="14" fill="#f0b080"/>
+      <circle cx="694" cy="851" r="14" fill="#7fa798"/>
+      <path d="M312 851H668" stroke="#71848e" stroke-width="9"
             stroke-linecap="round"/>
     </g>
 
-    <!-- Linux container -->
+    <!-- Engine creates and manages the container -->
+    <path d="M490 884V920" fill="none" stroke="#6b8fa4" stroke-width="8"
+          stroke-linecap="round" marker-end="url(#arrow-build)"/>
+
+    <!-- 4. Linux container -->
     <g filter="url(#soft-shadow)">
-      <rect x="315" y="910" width="330" height="96" rx="12"
+      <rect x="292" y="936" width="396" height="116" rx="14"
             fill="url(#container)" stroke="#17384f" stroke-width="4"/>
-      <path d="M347 923V993M379 923V993M411 923V993M443 923V993
-               M475 923V993M507 923V993M539 923V993M571 923V993
-               M603 923V993"
-            stroke="#88a8bb" stroke-width="4" opacity="0.58"/>
-      <rect x="356" y="934" width="246" height="54" rx="27"
-            fill="#2d5a79" opacity="0.97"/>
-      <text x="480" y="973" class="primary-small" fill="#ffffff"
-            text-anchor="middle">Linux 컨테이너</text>
+      <path d="M330 950V1038M368 950V1038M406 950V1038M444 950V1038
+               M482 950V1038M520 950V1038M558 950V1038M596 950V1038
+               M634 950V1038"
+            stroke="#8baabd" stroke-width="4" opacity="0.55"/>
+      <rect x="332" y="961" width="316" height="68" rx="34"
+            fill="#2b5877" opacity="0.98"/>
+      <text x="490" y="1010" class="primary-small" fill="#ffffff"
+            text-anchor="middle">4 · Linux 컨테이너</text>
     </g>
 
-    <!-- Browser request and response paths -->
-    <path d="M842 432V626Q842 652 816 652H792V934
-             Q792 958 768 958H670"
-          fill="none" stroke="#ba6237" stroke-width="9"
+    <!-- Browser request path -->
+    <path d="M842 454V710Q842 734 818 734H802V966
+             Q802 994 774 994H712"
+          fill="none" stroke="#b75d34" stroke-width="10"
           stroke-linecap="round" stroke-linejoin="round"
           marker-end="url(#arrow-request)"/>
-    <path d="M670 992H736Q756 992 756 972V676
-             Q756 660 772 660H790Q806 660 806 644V456"
-          fill="none" stroke="#3d7664" stroke-width="7"
-          stroke-linecap="round" stroke-linejoin="round"
-          marker-end="url(#arrow-response)"/>
-    <g transform="translate(690 523)">
-      <rect width="286" height="62" rx="31" fill="#ffffff"
-            stroke="#d0a082" stroke-width="3"/>
-      <text x="143" y="42" class="code" fill="#8b4325"
-            text-anchor="middle">localhost:8080</text>
-    </g>
-    <g transform="translate(742 735)">
-      <rect width="238" height="58" rx="29" fill="#f5e3d7"/>
-      <text x="119" y="40" class="code" fill="#8b4325"
+    <g transform="translate(772 760)">
+      <rect width="184" height="68" rx="34" fill="#f6e5da"/>
+      <text x="92" y="47" class="support-small" fill="#8a4225"
             text-anchor="middle">8080 → 80</text>
     </g>
 
-    <!-- CLI locations -->
-    <text x="74" y="1185" class="primary" fill="#182027">명령을 보내는 두 입구</text>
-    <g transform="translate(74 1210)">
-      <rect width="438" height="66" rx="22" fill="#ffffff"
-            stroke="#aeb8c0" stroke-width="2"/>
-      <text x="24" y="44" class="code" fill="#28343b">Ubuntu 셸 · docker ps</text>
-    </g>
-    <g transform="translate(534 1210)">
-      <rect width="472" height="66" rx="22" fill="#ffffff"
-            stroke="#aeb8c0" stroke-width="2"/>
-      <text x="24" y="44" class="code" fill="#28343b">PowerShell · wsl docker ps</text>
-    </g>
-
-    <!-- Scope caveat -->
-    <g>
-      <rect x="0" y="1302" width="1080" height="48" fill="#263139"/>
-      <rect x="0" y="1302" width="164" height="48" fill="#b65f37"/>
-      <text x="82" y="1336" class="caveat" fill="#ffffff"
-            text-anchor="middle">범위</text>
-      <text x="194" y="1336" class="caveat" fill="#ffffff">
-        Linux 컨테이너 · Windows 컨테이너와 GUI는 별도
+    <!-- Scope -->
+    <g transform="translate(64 1170)">
+      <rect width="10" height="116" rx="5" fill="#b65f37"/>
+      <text x="38" y="48" class="primary-small" fill="#172027">
+        Linux 컨테이너용 구성
+      </text>
+      <text x="38" y="101" class="caveat" fill="#59666d">
+        Windows 컨테이너 · GUI는 별도
       </text>
     </g>
   </svg>

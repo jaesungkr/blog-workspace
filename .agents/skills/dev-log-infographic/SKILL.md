@@ -53,10 +53,10 @@ Record `not_applicable` in `audit.md` when the gate fails.
 7. Keep connectors simple and reserve clear space around text. For SVG markers,
    prefer explicit `markerUnits="userSpaceOnUse"` and explicit dimensions.
 8. Treat mobile legibility as both a minimum and a maximum. Before finalizing,
-   convert source font sizes to their 360px-display equivalents:
+   convert source font sizes to their 360px CSS-display equivalents:
    `source font px × 360 ÷ source canvas width`. Start with these bands:
-   headline `18-20px`, primary labels `12-14px`, supporting copy `10-12px`,
-   and caveats `9.5-11px`. Deviate only when the visual role clearly
+   headline `20-24px`, primary labels `15-18px`, supporting copy `12-14px`,
+   and caveats `11-12px`. Deviate only when the visual role clearly
    requires it and record why.
 9. Keep the headline area at about 22% or less of canvas height. The relationship
    or diagram must remain the dominant visual, not a large title sitting above
@@ -69,17 +69,19 @@ Record `not_applicable` in `audit.md` when the gate fails.
     consume most of a block, shorten the copy, simplify the structure, or
     increase useful diagram area. Do not solve crowding by shrinking supporting
     copy below the mobile floor.
-12. Render a 360px draft early. Reject it when the first impression is
-    `headline + boxed text` instead of the intended relationship, even if every
-    word is technically readable.
+12. Preview the untouched full-resolution candidate in a browser at
+   `width:360px` early. Do not resize, re-encode, save, or commit a smaller
+   raster derivative for mobile QA. Reject the browser display when the first
+   impression is `headline + boxed text` instead of the intended relationship,
+   even if every word is technically readable.
 
 Before handoff, run the validator's deterministic type-scale checker with the
 actual source values:
 
 ```bash
 python3 ../dev-log-infographic-validation/scripts/check_mobile_type_scale.py \
-  --canvas-width 1080 --canvas-height 1350 --header-height 290 \
-  --headline 60 --primary 42 --support 30 --caveat 30
+  --canvas-width 1080 --canvas-height 1350 --header-height 260 \
+  --headline 64 --primary 52 --support 40 --caveat 36
 ```
 
 Use repeated flags when a role has multiple sizes. Treat a failure as a layout
@@ -92,8 +94,9 @@ Save:
 - practical editable source and render code under `artifacts/`;
 - placement, alt text, type, copy source, production method, and candidate hash
   in `audit.md`;
-- the 360px-equivalent type scale, headline-height share, and any justified
-  deviation from the default bands in `audit.md`.
+- the 360px CSS-display-equivalent type scale, headline-height share, and any
+  justified deviation from the default bands in `audit.md`. Do not save a
+  reduced-size QA raster under the post bundle.
 
 Do not add a local filesystem image link to `article.md`.
 

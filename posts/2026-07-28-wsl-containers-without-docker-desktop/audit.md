@@ -105,51 +105,64 @@
 
 - 판단: `1장`
 - 판단 이유: Windows -> WSL 2 -> Ubuntu·Docker Engine -> 컨테이너의 중첩
-  구조와 `localhost:8080`의 반환 경로를 한 화면에서 보여 주면 Docker
+  구조와 `localhost:8080`의 요청 경로를 한 화면에서 보여 주면 Docker
   Desktop을 제거해도 WSL 2는 남는다는 핵심을 더 빨리 이해할 수 있습니다.
 - Reflections 예외 근거(해당하는 경우):
 - [x] 각 인포그래픽이 장식이나 단순 반복이 아니라 하나의 중요한 관계를 더 빨리 이해하게 합니다.
 - [x] 핵심 설명 바로 뒤에 둘 위치를 정했습니다.
 - [x] 한국어 문구·수치·화살표·라벨을 결정적으로 조판하고 본문 근거와 대조했습니다.
-- [x] 전체 크기와 360px 모바일 너비에서 실제 결과를 확인했습니다.
+- [x] 원본 크기와 원본의 360px CSS 표시 환산값을 확인했습니다. 축소 파생
+  래스터는 생성하지 않았습니다.
 - [x] 두 장 이상이면 각 이미지가 서로 다른 독자 질문에 답합니다. (`1장`이라 해당 없음)
 
 | 최종 파일 | 유형 | 해결하는 독자 질문 | 권장 위치 | 한국어 alt | 문구·수치 근거 |
 |---|---|---|---|---|---|
-| `assets/wsl-containers-layers-infographic-v4.png` | 원리 | Docker Desktop이 없을 때 Engine과 컨테이너는 어디서 실행되고 Windows 브라우저는 어떻게 접속하는가? | `먼저 구분할 네 층`의 실행 사슬 바로 뒤 | Windows 안의 WSL 2와 Ubuntu, Docker Engine, Linux 컨테이너가 중첩되고 localhost 8080으로 브라우저에 연결되는 구조 | 본문 네 층·Nginx 실행·PowerShell 호출, evidence C02~C05·C08~C10 |
+| `assets/wsl-containers-layers-infographic-v7.png` | 원리 | Docker Desktop이 없을 때 Engine과 컨테이너는 어디서 실행되고 Windows 브라우저는 어떻게 접속하는가? | `먼저 구분할 네 층`의 실행 사슬 바로 뒤 | Windows 안의 WSL 2와 Ubuntu, Docker Engine, Linux 컨테이너가 네 층으로 이어지고 localhost 8080으로 연결되는 구조 | 본문 네 층·Nginx 실행, evidence C02~C05·C08~C10 |
 
 - 최종 해상도: `1080x1350` (`4:5`), SHA-256
-  `e1e26c5b58ddb288ea202b0c878e6e4ba1a91428ef7c289c9ac0fb638b13d137`
+  `af765879a72a0628544987e8418ffd09677e6095d6ad12016451e89558c59be6`
 - 편집 원본: `artifacts/wsl-containers-layers-infographic.html`
 - 렌더 스크립트: `artifacts/render-wsl-containers-infographic.cjs`
 - 문구 근거 지도: `artifacts/infographic-copy-map.md`
 - 제작 방식: Apple SD Gothic Neo를 사용하는 결정론적 HTML/SVG를 설치된
-  Chrome과 Playwright로 1080x1350·360x450에 렌더했습니다. 이미지 생성
-  계층은 사용하지 않았습니다.
-- 360px 환산 글자 크기: 헤드라인 20px, 주요 라벨 14px·12.7px, 보조 문구
-  10.7px·10px, 범위 문구 10px. 모두 기본 밴드 안입니다.
-- 헤더 높이 비중: `225 / 1350 = 16.7%`, 상한 22% 이내입니다.
-- 최종 전체 관찰: Windows 바깥 경계 안에 WSL 2, Ubuntu 24.04, Docker
-  Engine, Linux 컨테이너가 단계별로 중첩됩니다. 오른쪽의 주황 요청선은
-  `localhost:8080 -> 8080 → 80 -> container`로 내려가고 초록 응답선은
-  브라우저로 올라갑니다. 하단의 Ubuntu 셸과 PowerShell은 같은 Engine에
-  명령을 보내는 두 입구로 분리됩니다.
-- 최종 360x450 관찰: 헤드라인보다 중첩된 네 층이 더 큰 면적으로 먼저
-  보이고, 다섯 핵심 영역과 두 연결선, 두 명령 입구, 범위 문구를 확대 없이
-  읽을 수 있습니다.
-- 확대 크롭 관찰: 헤드라인, Windows·WSL·브라우저, Ubuntu·Engine,
-  연결선, 컨테이너, 명령·범위 문구를 최종 PNG에서 각각 잘라 확인했습니다.
-  주황 화살촉은 컨테이너를, 초록 화살촉은 브라우저를 가리켜 색을 제외해도
-  방향을 구분할 수 있습니다. 글리프·라벨·경계·화살표 사이의 겹침은 없습니다.
-- 확대 검수 파일: `artifacts/infographic-v4-qa/01-headline.png`부터
-  `06-commands-caveat.png`까지
+  Chrome과 Playwright로 원본 1080x1350 한 장만 렌더했습니다. 실행 로그의
+  `reducedRasterWritten:false`를 확인했으며 축소·재인코딩한 모바일 래스터는
+  생성하거나 보존하지 않았습니다. 이미지 생성 계층도 사용하지 않았습니다.
+- 이전 v4 객관 평가: 1080px 원본은 선명해 보였고 흐림·압축 손상은 없습니다.
+  기존 360x450 파일도 v4 PNG를 후처리 축소한 결과가 아니라 같은 SVG를
+  360px에 다시 렌더한 결과였습니다. 문제의 핵심은 보조 문구가 360px 표시
+  기준 10~10.7px에 머문 상태에서 다섯 영역, 요청·응답선, 두 명령 입구와
+  범위 문구가 한꺼번에 경쟁한 정보 밀도였습니다.
+- v7 수정: WSL 2와 Ubuntu를 하나의 2단계로 합치고 응답선·두 명령 입구를
+  제거했습니다. 네 단계, Engine에서 컨테이너로 가는 관리 화살표, 브라우저의
+  `localhost:8080 -> 8080 → 80` 요청 경로와 Linux 컨테이너 범위만 남겼습니다.
+- 360px CSS 환산 글자 크기: 헤드라인 22.7px, 주요 라벨 17.3px·16px,
+  보조 문구 13.3px·12px, 범위 문구 12px. 강화한 기본 밴드를 모두
+  통과했습니다.
+- 헤더 높이 비중: `230 / 1350 = 17.0%`, 상한 22% 이내입니다.
+- 최종 전체 관찰: Windows 경계 안에서 `WSL 2 + Ubuntu -> Docker Engine ->
+  Linux 컨테이너`가 위에서 아래로 읽힙니다. 브라우저는 Linux 경계 밖에 있고,
+  주황 요청선은 `localhost:8080`에서 컨테이너 80번 포트로 이어집니다.
+  하단 범위 문구는 Windows 컨테이너와 GUI가 별도임을 분리합니다.
+- 360px CSS 표시 검증: `artifacts/infographic-css-preview.html`은
+  1080x1350 원본을 그대로 참조해 브라우저에서 360x450으로 표시하도록
+  작성했습니다. 인앱 브라우저의 로컬 파일 URL 정책으로 직접 열 수 없었고,
+  이를 우회하거나 축소 스크린샷을 만들지 않았습니다. 고정 비율 SVG의 환산
+  크기와 원본 전체 관찰에서 네 단계와 한 요청 경로가 먼저 읽혔으며, 실제
+  티스토리 테마의 360px 표시는 게시 전 사람이 다시 확인합니다.
+- 확대 크롭 관찰: 헤드라인, Windows·브라우저, WSL 2+Ubuntu, Engine,
+  포트 경로, 컨테이너·범위를 최종 원본 픽셀에서 각각 잘라 확인했습니다.
+  모든 한글 글리프, 포트 수치, 경계, 화살촉에 겹침이나 잘림이 없습니다.
+- 확대 검수 파일: `artifacts/infographic-v7-qa/01-header.png`부터
+  `06-container-scope.png`까지
 - 독립 보조 인포그래픽 검증: `pass`
 
 ## 최종 검토와 수정 이력
 
 - [x] 완성 원고를 처음부터 끝까지 외부 독자 관점으로 다시 읽었습니다.
 - [x] 렌더된 티스토리 HTML에서 제목·문단·표·코드·링크·이미지 위치를 확인했습니다.
-- [x] 대표이미지는 전체·썸네일, 보조 인포그래픽은 전체·360px 결과를 실제로 확인했습니다.
+- [x] 대표이미지는 전체·썸네일, 보조 인포그래픽은 원본·CSS 환산·원본 픽셀
+  확대 크롭을 확인했습니다.
 - [x] 사용자 제공 시각 레퍼런스가 있다면 같은 표시 크기로 나란히 비교했습니다. (제공된 레퍼런스 없음)
 - [x] 아래 문제를 수정한 뒤 관련 검사·렌더·시각 검토를 다시 실행했습니다.
 
@@ -166,6 +179,9 @@
 | 9 | 1차 티스토리 HTML 렌더 | 줄바꿈을 가로지른 굵은 강조 4곳이 `<strong>`으로 바뀌지 않고 `**`와 내부 백틱을 그대로 노출 | 네 강조 문장을 각각 한 줄의 Markdown 범위로 정리하고 글 상태를 `reviewing`으로 되돌림 | 2차 HTML에서 literal Markdown 0, `<strong>` 4개, 760px 강조 문장 정상 표시 |
 | 10 | 2차 HTML 360px 모바일 렌더 | 진단 3열 표의 최소 폭이 460px이 되어 360px 본문을 478px까지 밀어냄 | 여섯 진단 항목을 같은 `증상 -> 명령 -> 조치` 정보를 가진 목록으로 변경 | 최종 360px에서 본문 360/360px, 넘치는 본문 자식·표 0. 긴 코드 5개만 자체 가로 스크롤 |
 | 11 | 최종 원고·HTML·시각 산출물 | 중대한 문제 없음 | 없음 | 원고 전체 재독, 760px 7구간·360px 4핵심 구간, 대표 이미지 전체·320px, 인포그래픽 전체·360px·확대 6구간에서 결함 없음 |
+| 12 | 사용자 요청에 따른 v4 객관 재평가 | 원본 화질 손상은 없었지만 360px 표시에서 보조 글자 10~10.7px와 다수의 라벨·선·명령 입구가 경쟁해 구조가 과밀함 | 축소 파생 래스터 생성 절차를 표준·제작·검증 스킬에서 제거하고 모바일 권장 글자 밴드를 상향 | 현재 렌더러는 1080x1350 원본 한 장만 쓰며 `reducedRasterWritten:false`; 기존 360px 파생 QA 4개 삭제 |
+| 13 | 인포그래픽 v5~v7 재설계 | v5는 WSL 배지와 포트 라벨이 맞닿고, v6은 브라우저 아이콘과 포트 문구의 CSS 환산 여백이 약 2px | 포트 주소를 브라우저 안으로 통합하고 브라우저 박스를 왼쪽으로 넓힌 뒤 v7 생성 | v7 전체·타입 스케일·원본 픽셀 확대 6구간에서 글리프·수치·경계·화살표 충돌 없음 |
+| 14 | 무축소 모바일 표시 검증 | 인앱 브라우저가 로컬 파일 URL을 차단해 CSS 360px 미리보기를 직접 열 수 없음 | 우회하거나 축소 파일을 만들지 않고 고정 SVG의 정확한 환산값과 원본 크롭을 검증, 실제 티스토리 미리보기를 사람 확인 항목으로 유지 | 이미지 자체 결함 없음, infographic `pass`; 테마 CSS 결과는 잔여 위험으로 기록 |
 
 - 중대한 문제가 없으면 `발견한 문제`에 `없음`이라고 쓰고 확인 근거를
   `재검증 결과`에 적습니다.
@@ -177,10 +193,9 @@
   - `dist/wsl-containers-without-docker-desktop.html`
   - `assets/wsl-containers-hero.png`,
     `artifacts/hero-thumbnail-320x180.png`
-  - `assets/wsl-containers-layers-infographic-v4.png`,
-    `artifacts/wsl-containers-layers-infographic-v4-mobile.png`,
-    `artifacts/infographic-v4-qa/01-headline.png`부터
-    `06-commands-caveat.png`까지
+  - `assets/wsl-containers-layers-infographic-v7.png`,
+    `artifacts/infographic-v7-qa/01-header.png`부터
+    `06-container-scope.png`까지
   - `artifacts/article-preview-760/section-01.png`부터 `section-07.png`,
     `artifacts/article-preview-360/focus-01.png`부터 `focus-04.png`
 
@@ -189,6 +204,13 @@
 - 검사 명령: `python3 scripts/blog.py check posts/2026-07-28-wsl-containers-without-docker-desktop`
 - 검사 결과: 최종 `check` 오류 0개·경고 0개, 두 셸 스크립트 구문 검사 통과,
   진단 테스트 5/5 통과. `render` 성공, 글 상태 `ready`
+- 표준·스킬 회귀 검사: 저장소 단위 테스트 16/16 통과,
+  `python3 scripts/blog.py check --all` 10개 글 오류·경고 0개.
+  `dev-log-infographic`와 `dev-log-infographic-validation`은
+  `quick_validate.py`를 모두 통과했고 UI 메타데이터도 역할과 일치합니다.
+- 무축소 검사: 현재 렌더러는 1080x1350 원본만 생성하고
+  `reducedRasterWritten:false`를 출력합니다. 인포그래픽 모바일 파생 파일,
+  `mobileOutput`, 360px 재렌더 코드는 현재 워크플로에 없습니다.
 - 렌더 결과: `dist/wsl-containers-without-docker-desktop.html`,
   `35,769 bytes`, SHA-256
   `f3f7074dc7979356b2c7d88776ff5bbf899f23418bd6d65dafe9155087f69ca7`
@@ -205,7 +227,7 @@
   - 제목 바로 아래에 `assets/wsl-containers-hero.png`를 올리고 기록된 한국어
     alt를 적용합니다.
   - `먼저 구분할 네 층`의 실행 사슬 바로 뒤에
-    `assets/wsl-containers-layers-infographic-v4.png`를 올리고 기록된 alt를
+    `assets/wsl-containers-layers-infographic-v7.png`를 올리고 기록된 alt를
     적용합니다.
   - PC와 360px 모바일 미리보기에서 테마 CSS가 표·코드 스크롤과 이미지
     안전 여백을 바꾸지 않는지 마지막으로 확인합니다.
