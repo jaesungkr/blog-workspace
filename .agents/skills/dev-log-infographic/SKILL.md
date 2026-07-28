@@ -58,6 +58,11 @@ Record `not_applicable` in `audit.md` when the gate fails.
    headline `20-24px`, primary labels `15-18px`, supporting copy `12-14px`,
    and caveats `11-12px`. Deviate only when the visual role clearly
    requires it and record why.
+   Default to the lower half when no semantic emphasis requires more:
+   headline `20-21px`, primary labels `15-16px`, supporting copy `12-13px`,
+   and caveats `11-11.5px`. If text still feels large relative to the visual,
+   reduce the hierarchy by about `4-8%` without crossing the mobile floor and
+   rerender a versioned candidate.
 9. Keep the headline area at about 22% or less of canvas height. The relationship
    or diagram must remain the dominant visual, not a large title sitting above
    a small framed panel.
@@ -73,7 +78,8 @@ Record `not_applicable` in `audit.md` when the gate fails.
    `width:360px` early. Do not resize, re-encode, save, or commit a smaller
    raster derivative for mobile QA. Reject the browser display when the first
    impression is `headline + boxed text` instead of the intended relationship,
-   even if every word is technically readable.
+   even if every word is technically readable. Treat direct user feedback that
+   type dominates the image as a required revision, not a stylistic note.
 
 Before handoff, run the validator's deterministic type-scale checker with the
 actual source values:

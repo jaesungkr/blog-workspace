@@ -107,6 +107,14 @@ equivalent with
 - supporting copy: `12-14px`;
 - caveat: `11-12px`.
 
+Unless the visual role clearly needs stronger type, start in the lower half of
+those bands: headline `20-21px`, primary labels `15-16px`, supporting copy
+`12-13px`, and caveats `11-11.5px`. Passing the broad band is necessary but not
+sufficient. When words feel large relative to the mechanism or illustration,
+reduce the affected hierarchy by about `4-8%` while staying above the mobile
+floor, then reopen the quiet space around labels. Do not treat a previous
+upper-band value as the default for a new canvas.
+
 Keep the headline zone near 22% or less of canvas height. Reduce copy or
 restructure the visual when a role falls outside its band; do not make the
 headline larger while shrinking body copy. In the original raster's 360px CSS
@@ -154,6 +162,9 @@ a smaller QA raster.
 - Body copy is limited to one or two short lines per block where possible.
 - Every primary region retains visible quiet space. Readability alone does not
   excuse oversized labels, crowded blocks, or weak typography-to-canvas scale.
+- Treat user feedback that the type dominates the image as release-blocking.
+  Revise the hierarchy and rerun the full-size, 360px, crop, and type-scale
+  checks before approval.
 - Korean glyphs, numbers, units, arrows, and line breaks are exact.
 - Contrast, spacing, and touch-sized visual separation work on mobile.
 - Connectors point to the intended objects and do not cross confusingly.

@@ -46,13 +46,22 @@ Before checking individual glyphs, audit the whole 360px browser display:
   `source font px × 360 ÷ source canvas width`;
 - use `20-24px` for the headline, `15-18px` for primary labels, `12-14px`
   for supporting copy, and `11-12px` for caveats as the default bands;
+- expect new work without a semantic exception to begin in the lower half:
+  headline `20-21px`, primary labels `15-16px`, supporting copy `12-13px`,
+  and caveats `11-11.5px`;
 - require an explicit semantic reason in `audit.md` for a value outside a band;
+- treat the lower-half preference as visual direction rather than a substitute
+  for judgment. Reject upper-half values when labels dominate the mechanism,
+  and require a recorded reason when upper-half values are intentionally kept;
 - reject a headline area that occupies much more than 22% of the canvas height
   or makes the explanatory visual feel secondary;
 - reject a large decorative outer card when it makes the diagram look like a
   small framed insert;
 - reject blocks whose words, badges, and labels visually fill the available
   region. Require quiet space and a diagram-led shape before reading the text;
+- treat user feedback that text is too large relative to the image as
+  release-blocking. Require a versioned revision, fresh 360px display, and
+  refreshed crops even when the type-scale script already passes;
 - do not fix an oversized headline or crowded block by shrinking supporting
   copy below its mobile floor. Reduce copy, change hierarchy, open the layout,
   or increase useful diagram area.
