@@ -22,7 +22,8 @@ Act as an independent gate for the written post and its rendered HTML.
 Read the article from greeting to closing and verify:
 
 - title and headings match search intent, repository syntax, and the applicable
-  category-specific title pattern;
+  category-specific title pattern; their sequence follows this post's actual
+  event or argument and does not rely on reusable labels alone;
 - the opening gives context and the retained conclusion early;
 - unfamiliar terms, methods, metrics, and labels appear before dependent
   results;
@@ -31,15 +32,24 @@ Read the article from greeting to closing and verify:
 - claims map to `evidence.md` and primary sources where needed;
 - Codex-run work is not presented as the user's personal experience;
 - the first-party contribution is verifiable;
-- 존대어, Korean sentence hygiene, paragraph flow, tables, emphasis, and closing
-  follow the editorial standard;
+- headings pass the subject-substitution test unless a conventional label
+  genuinely improves navigation;
+- each paragraph seam carries a concrete cause, consequence, contrast, time,
+  example, question, or deliberate reset instead of a connector-only bridge;
+- 존대어, Korean sentence hygiene, paragraph flow, sentence rhythm, tables,
+  emphasis, and closing follow the editorial standard;
+- prose polishing did not change numbers, sources, code, tables, test
+  authorship, uncertainty, or limitations and did not invent human signals;
 - unresolved facts, TODOs, invented details, and unsupported certainty are
   absent;
 - image decisions, validator results, placement, alt text, and remaining risks
   are honestly recorded in `audit.md`.
 
-Report `revision_required` with exact evidence when a defect exists. The writing
-stage revises it; then rerun the full affected audit.
+Report `revision_required` with exact evidence when a defect exists. Return
+evidence, method, or explanation-structure defects to the writing stage and
+title, heading, flow, rhythm, or empty-prose defects to the prose-polishing
+stage. Rerun prose polish after any material writing revision, then rerun the
+full affected audit.
 
 ## Automated and rendered validation
 

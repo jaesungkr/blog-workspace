@@ -1,7 +1,7 @@
 interface:
   display_name: "dev.log Writing"
-  short_description: "근거 기반 기획·리서치·본문 작성과 편집 단계를 수행"
-  default_prompt: "$dev-log-writing를 사용해 dev.log 글의 기획, 근거, 본문과 편집 감사를 완성해 주세요."
+  short_description: "근거 기반 기획·리서치·본문 작성과 구조 편집을 수행"
+  default_prompt: "$dev-log-writing를 사용해 dev.log 글의 기획, 근거, 본문과 구조 편집을 완성한 뒤 문체 폴리싱 단계로 넘겨 주세요."
 
 policy:
   allow_implicit_invocation: true

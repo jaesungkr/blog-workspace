@@ -1,0 +1,7 @@
+interface:
+  display_name: "dev.log Prose Polish"
+  short_description: "제목·소제목과 문장 흐름의 템플릿 티를 걷어내는 편집"
+  default_prompt: "$dev-log-prose-polish를 사용해 근거는 유지하고 제목·소제목과 문장 흐름을 자연스럽게 다듬어 주세요."
+
+policy:
+  allow_implicit_invocation: true

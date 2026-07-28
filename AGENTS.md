@@ -11,9 +11,9 @@ framework that belongs on this blog.
 ## Start every blog task here
 
 - Use `.agents/skills/dev-log-workspace/SKILL.md` as the orchestrator.
-- Let it load the separate writing, hero creation, infographic creation, article
-  validation, hero validation, and infographic validation skills under
-  `.agents/skills/`.
+- Let it load the separate writing, prose-polishing, hero creation, infographic
+  creation, article validation, hero validation, and infographic validation
+  skills under `.agents/skills/`.
 - Treat every Git-tracked `.agents/skills/dev-log-*` directory as the only
   editable copy. For global Codex discovery, link all of them with
   `scripts/link_codex_skill.sh`; do not maintain copied skills under
@@ -72,8 +72,9 @@ test suite and `python3 scripts/blog.py check --all`.
   other unstable claims before drafting. Prefer primary and official sources.
 - Keep body prose in consistent Korean honorific style. Titles and headings
   must not end in `~다`.
-- Do not reintroduce rigid legacy rules such as a fixed character count, a
-  mandatory number of headings, a mandatory table, or a generic disclaimer.
+- Do not reintroduce rigid legacy rules such as a fixed character count,
+  uniform paragraph or sentence lengths, a mandatory number or shape of
+  headings, a bold-emphasis quota, a mandatory table, or a generic disclaimer.
 - Do not auto-publish. Rendering stops at paste-ready HTML; the user publishes
   in Tistory and supplies the final URL.
 - A Git push to this workspace is part of the archive workflow and is not a
@@ -84,8 +85,10 @@ test suite and `python3 scripts/blog.py check --all`.
 
 ## Definition of done
 
-A complete-post request is done only when the article validator passes, strong
-claims have evidence and limitations, first-party value is visible, the hero
-validator passes, the infographic validator passes or records `not_applicable`,
-paste-ready HTML is rendered, the task is committed, `origin/master` contains
-that commit, and remaining uncertainty is reported plainly.
+A complete-post request is done only when the prose-polishing stage has removed
+reusable title, heading, and paragraph-flow templates without changing the
+evidence, the article validator passes, strong claims have evidence and
+limitations, first-party value is visible, the hero validator passes, the
+infographic validator passes or records `not_applicable`, paste-ready HTML is
+rendered, the task is committed, `origin/master` contains that commit, and
+remaining uncertainty is reported plainly.

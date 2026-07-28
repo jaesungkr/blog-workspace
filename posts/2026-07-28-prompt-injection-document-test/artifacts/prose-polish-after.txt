@@ -1,0 +1,61 @@
+Title: 프롬프트 인젝션이란? 문서 속 숨은 명령 6회 실험과 방어 방법
+Summary: 7 headings, 0 generic-heading signals, 79 prose sentences, average 37.3 chars
+Density: 7.4 abstract nouns / 1,000 Hangul, 1.6 corrective frames / 1,000 Hangul
+Long sentences: 14 over 50 chars, 3 over 70 chars
+
+Headings:
+- L28 H3: 프롬프트 인젝션 뜻: 직접·간접 공격과 탈옥의 차이
+- L49 H3: 문서 속 공격 명령이 AI 에이전트의 파일 생성·메일 전송으로 이어지는 과정
+- L72 H3: Codex 실험 방법: 공격 문장 배치 3종 × 작업 지시 2종
+- L107 H3: Codex 실험 결과: 공격 행동 0/6, 정상 요약 7/7
+- L130 H3: 저장소 작업 지침이 섞인 첫 실험 폐기와 전체 7회 재실행
+- L141 H3: 공격 행동 0/6의 의미와 이번 실험에서 확인하지 못한 공격 범위
+- L158 H3: 프롬프트 인젝션 방어 방법: 작업 범위·신뢰 경계·최소 권한·행동 확인
+
+Stock phrases:
+- none
+
+Abstract nouns:
+- 범위: 5
+- 경계: 1
+- 결과: 5
+- 경우: 2
+- 의미: 1
+- 관계: 1
+- 설명: 4
+
+Corrective frames:
+- 아니라: 2
+- 하지만: 1
+- 반면: 1
+
+Sentence endings:
+- other: 21
+- 입니다: 15
+- 합니다: 14
+- 했습니다: 13
+- 있습니다: 8
+- 없습니다: 3
+- 됩니다: 3
+- 였습니다: 1
+- 바랍니다: 1
+
+Repeated paragraph openers:
+- none
+
+Matched lines:
+- L25 corrective_frame:아니라: AI에게는 새로운 명령처럼 보일 수 있습니다. 이번 단순 실험에서는 문서 속 한 줄이 Codex를 속이지 못했습니다. 하지만 공격 성공 0/6만으로 안전을 증명할 수는 없습니다. 그래서 살펴볼 것은 한 문장을 걸러 냈는지가 아니라, 모델이
+- L25 corrective_frame:하지만: AI에게는 새로운 명령처럼 보일 수 있습니다. 이번 단순 실험에서는 문서 속 한 줄이 Codex를 속이지 못했습니다. 하지만 공격 성공 0/6만으로 안전을 증명할 수는 없습니다. 그래서 살펴볼 것은 한 문장을 걸러 냈는지가 아니라, 모델이
+- L45 corrective_frame:반면: 탈옥은 모델의 안전 규칙 자체를 무시하게 만드는 공격을 주로 뜻합니다. 반면
+- L127 corrective_frame:아니라: 명시하라는 권고는 이 3/3 대 3/3 비교가 아니라, 허용 파일과 행동을 고정하는
+
+Signals are review prompts, not pass/fail rules. Generic-heading signals fell
+from 5 to 0, corrective-frame density fell from 4.5 to 1.6 per 1,000 Hangul,
+and sentences over 50 characters fell from 16 to 14. These changes support the
+human title, seam, and evidence review; they are not a target score.
+
+The analyzer was then hardened to ignore heading syntax inside fenced code and
+to emit source-line context for abstract nouns, long sentences, ending samples,
+and repeated paragraph openers. A final rerun kept every headline metric above
+unchanged; the contextual output was reviewed from the source rather than used
+as another optimization target.

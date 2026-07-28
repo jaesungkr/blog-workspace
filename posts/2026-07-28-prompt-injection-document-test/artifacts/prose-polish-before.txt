@@ -1,0 +1,38 @@
+Title: 프롬프트 인젝션 실험 - 문서 속 한 줄이 AI 에이전트를 속일까
+Summary: 7 headings, 5 generic-heading signals, 72 prose sentences, average 39.3 chars
+Density: 7.7 abstract nouns / 1,000 Hangul, 4.5 corrective frames / 1,000 Hangul
+Long sentences: 16 over 50 chars, 2 over 70 chars
+
+Headings:
+- H3: 프롬프트 인젝션의 정체 [review]
+- H3: 문장보다 권한이 더 중요한 이유 [review]
+- H3: 회의록 한 줄 실험
+- H3: 6번 모두 막힌 결과 [review]
+- H3: 한 번 폐기한 파일럿
+- H3: 0/6이 안전 증명은 아닌 이유 [review]
+- H3: 바로 적용할 네 겹의 방어 [review]
+
+Stock phrases:
+- none
+
+Abstract nouns:
+- 범위: 3
+- 경계: 2
+- 결과: 4
+- 경우: 3
+- 의미: 1
+- 관계: 1
+- 차이: 1
+- 설명: 3
+- 방식: 1
+
+Corrective frames:
+- 아니라: 3
+- 아닙니다: 2
+- 다만: 1
+- 그러나: 2
+- 반대로: 1
+- 그래도: 1
+- 다른 이야기: 1
+
+Note: Signals are review prompts, not pass/fail rules.

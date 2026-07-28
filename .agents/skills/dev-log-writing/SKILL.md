@@ -1,12 +1,13 @@
 ---
 name: dev-log-writing
-description: Plan, research, draft, and revise Korean Tistory articles in the dev.log repository. Use for topic planning, briefs, evidence maps, source research, original tests, article Markdown, metadata, editorial revisions, or any request focused on the written content of a dev.log post. This stage hands a reviewing candidate to the independent article validator and does not create images or perform Git delivery.
+description: Plan, research, draft, and structurally revise Korean Tistory articles in the dev.log repository. Use for topic planning, briefs, evidence maps, source research, original tests, article Markdown, metadata, evidence-backed explanation, or substantive editorial revisions. This stage hands a reviewing candidate to the prose polisher and then the independent article validator; it does not create images or perform Git delivery.
 ---
 
 # dev.log writing
 
-Produce the written post bundle. Leave image creation, final validation, commit,
-and push to their owning skills.
+Produce the evidence-complete written post bundle. Leave the focused
+title-heading-flow pass, image creation, final validation, commit, and push to
+their owning skills.
 
 ## Load context
 
@@ -65,8 +66,10 @@ the article validator owns that transition.
    experiment Codex can actually perform. Record Codex as the actor.
 6. Draft Tistory-compatible Markdown. Keep metadata in frontmatter and the
    publishable article below it.
-7. Revise once for structure and evidence, then again for natural Korean,
-   consistent 존대어, sentence hygiene, and voice.
+7. Revise once for structure and evidence, then establish clear baseline Korean,
+   consistent 존대어, sentence hygiene, and source-grounded voice. Do not force
+   the recent title skeleton, a uniform paragraph size, or a bold takeaway for
+   every section; `dev-log-prose-polish` owns the focused final prose pass.
 8. Repair missing terms and methods before the results that depend on them.
 9. Update the source-level portions of `audit.md` from the actual files, then
    set the article to `reviewing`.
@@ -87,7 +90,8 @@ the article validator owns that transition.
 
 ## Handoff
 
-Return a `reviewing` bundle with no unresolved publishable claim. Report the
-changed files, evidence limitations, infographic gate decision, and any issue
-the article validator must inspect. Do not create or validate images, set
-`ready`, commit, or push.
+Return a `reviewing` bundle with no unresolved publishable claim to
+`dev-log-prose-polish`, then `dev-log-article-validation`. Report the changed
+files, evidence limitations, infographic gate decision, and any issue the prose
+polisher or article validator must inspect. Do not create or validate images,
+set `ready`, commit, or push.

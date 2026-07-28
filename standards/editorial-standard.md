@@ -25,12 +25,27 @@
 ## Titles and headings
 
 - Put the likely search keyword near the front, then add a differentiating hook.
+- When search traffic is the stated top priority, inspect current search intent
+  before choosing the public title. Distinguish a qualitative result-page
+  review from actual query-volume data and do not promise ranking or traffic.
 - Connect unfamiliar subjects to something the reader already knows.
 - Avoid bland concept lists.
-- End titles and headings with a noun, phrase, contrast, or reason form. Do not
-  end them with `~다`.
+- End titles and headings with a noun, phrase, contrast, question, or reason
+  form. Do not end them with `~다`.
 - Make headings short and informative enough that scanning them reveals the
   argument.
+- Build the heading sequence from the post's concrete event, observation,
+  decision, or explanation turn. Do not use `정체 -> 이유 -> 결과 -> 정리` as
+  a default skeleton.
+- Apply the subject-substitution test. If changing only the topic leaves a
+  heading equally plausible, make it more specific. Keep a conventional label
+  when it genuinely improves navigation; do not enforce a keyword blacklist.
+- Apply the scan-only clarity test. A heading should identify its subject and
+  the section's explanation, comparison, measurement, or change without
+  requiring the body. Fractions must name what they count; discarded attempts
+  must name the invalidating condition or rerun.
+- Prefer concise headings, but do not shorten away the subject, measured
+  object, or causal detail.
 
 ## Opening and structure
 
@@ -81,14 +96,16 @@
   implementation cost. Include measured evidence and a limitation for each
   rank, and state whether it is a benchmark rank or a practical adoption
   priority.
-- Keep paragraphs to roughly 3-4 sentences and change paragraphs with the
-  subject.
+- Change paragraphs with the subject and let their length follow the thought.
+  Two to five sentences is common, not a quota; avoid making every paragraph
+  the same size.
 - Define a technical term in plain Korean at first use.
 - Use one everyday analogy per difficult concept at most.
 - Turn three or more comparable items into bullets or a table.
 - Use Markdown tables for comparisons, tradeoffs, levels, or decision criteria.
   Keep 3-4 columns, short cells, and a one-line introduction above each table.
-- For explanations, prefer definition -> structure -> mechanism -> example.
+- For explanations, use definition -> structure -> mechanism -> example only
+  when that is the clearest causal path. Do not reuse it as a mandatory outline.
 - For tutorials and reviews, consider scene/problem -> pain -> solution ->
   Before/After -> real use -> limitation -> close.
 
@@ -121,7 +138,9 @@
 - Remove hype, sarcasm, emotional intensifiers, generic reassurance, and filler.
 - Avoid habitual summary constructions such as `~인 셈이다`, `~하게 된다`, and
   `~해진 셈이다`.
-- Use about one inline bold sentence or phrase per section, not per paragraph.
+- Use inline bold only for a conclusion or phrase readers may need to find
+  again. Do not target one per section or end neighboring sections with a
+  quota-like bold maxim.
 - Keep humor to one place when it fits.
 
 ## Evidence hygiene
@@ -152,6 +171,11 @@
 - Avoid repeating the same greeting-plus-summary-table-plus-conclusion skeleton
   when the subject calls for a narrative test, troubleshooting sequence,
   annotated example, or failure analysis.
+- Read the title and headings alone. They should expose this post's own line of
+  thought rather than a reusable editorial checklist.
+- Read every paragraph ending beside the next paragraph opening. Carry a
+  concrete noun, action, result, or unanswered question across the seam; adding
+  a connector does not repair a missing relationship.
 - Explain material AI assistance when readers would reasonably ask how the work
   was produced. Keep responsibility for facts, tests, and judgment explicit.
 - Apply the substitution check: if another blog name can replace `dev.log`
@@ -209,8 +233,9 @@ checks pass:
   and limits.
 - A non-developer can understand the main conclusion without reading code or
   already knowing the technical terms.
-- Headings are short, phrase-like, and scannable.
-- Bold emphasis averages about one per section.
+- Headings are short, scannable, article-specific, and not repetitions of one
+  grammatical mold.
+- Bold emphasis marks only material retrieval points and follows no quota.
 - Sentences flow naturally rather than forming a staccato list.
 - Terms are defined and comparisons use concise tables where useful.
 - First person, hype, filler, translationese, double passive, nominalization,

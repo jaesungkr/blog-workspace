@@ -1,6 +1,6 @@
 ---
 name: dev-log-workspace
-description: Orchestrate the complete Korean Tistory workflow in the dev.log repository by loading separate skills for writing, hero-image creation, supporting-infographic creation, and independent validation of the article, hero, and infographic. Use for any request involving a complete dev.log post, posts/, evidence, article Markdown, blog images, Tistory rendering, editorial standards, publishing metadata, or Git delivery. An unqualified post request includes all stages, validation, commit, and push to origin/master.
+description: Orchestrate the complete Korean Tistory workflow in the dev.log repository by loading separate skills for writing, prose polishing, hero-image creation, supporting-infographic creation, and independent validation of the article, hero, and infographic. Use for any request involving a complete dev.log post, posts/, evidence, article Markdown, natural Korean prose, titles or headings, blog images, Tistory rendering, editorial standards, publishing metadata, or Git delivery. An unqualified post request includes all stages, validation, commit, and push to origin/master.
 ---
 
 # dev.log workspace orchestrator
@@ -37,6 +37,7 @@ Read each selected sibling `SKILL.md` completely immediately before that stage:
 | Stage | Skill | Responsibility |
 |---|---|---|
 | Write | `../dev-log-writing/SKILL.md` | Brief, research, evidence, article, editorial revision |
+| Polish prose | `../dev-log-prose-polish/SKILL.md` | Post-specific title, headings, paragraph flow, and sentence rhythm |
 | Validate article | `../dev-log-article-validation/SKILL.md` | Source audit, checks, Tistory render, article QA |
 | Create hero | `../dev-log-hero-image/SKILL.md` | One iconic, topic-specific hero candidate |
 | Validate hero | `../dev-log-hero-validation/SKILL.md` | Campaign-grade quality and subject-recognition gate |
@@ -55,20 +56,26 @@ source interpretation, or another consequential fact.
 For a complete post, run:
 
 1. `dev-log-writing`
-2. `dev-log-article-validation` for a source-level editorial pass
-3. `dev-log-hero-image`
-4. `dev-log-hero-validation`, looping back to hero creation until it passes
-5. `dev-log-infographic` after the explanation structure is stable
-6. `dev-log-infographic-validation` when the gate produced an image, looping
+2. `dev-log-prose-polish`
+3. `dev-log-article-validation` for a source-level editorial pass
+4. `dev-log-hero-image`
+5. `dev-log-hero-validation`, looping back to hero creation until it passes
+6. `dev-log-infographic` after the explanation structure is stable
+7. `dev-log-infographic-validation` when the gate produced an image, looping
    back to infographic creation until it passes
-7. `dev-log-article-validation` again for the ready transition and rendered
+8. `dev-log-article-validation` again for the ready transition and rendered
    Tistory candidate
+
+Rerun `dev-log-prose-polish` before article validation whenever a writing
+revision materially changes the title, headings, paragraph order, or prose.
 
 For an explicitly limited request, load only the owning stage and its validator:
 
 | Request | Required stages |
 |---|---|
-| Outline, research, article edit | Writing + article validation |
+| Outline or research | Writing + article validation |
+| Article edit | Writing + prose polish + article validation |
+| Title, headings, flow, natural Korean, or AI-like prose | Prose polish + article validation |
 | Hero creation or revision | Hero creation + hero validation |
 | Supporting infographic | Infographic creation + infographic validation |
 | Review or preflight only | Relevant validator; use all three for a complete post |
@@ -88,6 +95,8 @@ finishes through the Git delivery gate.
   and the infographic validator passes or records `not_applicable`.
 - Record every material issue as
   `problem -> revision -> re-verification` in `audit.md`.
+- Record representative prose-polishing decisions and confirm that numbers,
+  sources, code, tables, test authorship, and limitations remained intact.
 - Do not insert local filesystem image links into `article.md`; the user uploads
   images to Tistory manually.
 - Only after the user supplies the live URL set `published` and
