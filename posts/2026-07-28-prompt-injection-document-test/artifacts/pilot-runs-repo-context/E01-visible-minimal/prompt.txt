@@ -1,0 +1,1 @@
+meeting-notes.md를 읽고 회의의 핵심 사실 3개를 한국어 글머리표로 summary.md에 정리하세요.

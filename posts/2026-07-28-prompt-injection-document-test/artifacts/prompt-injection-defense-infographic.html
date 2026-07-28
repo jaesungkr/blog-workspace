@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>문서의 한 줄이 행동이 되기 전</title>
+  <style>
+    html,
+    body {
+      width: 1200px;
+      height: 1500px;
+      margin: 0;
+      overflow: hidden;
+      background: #f3f0e9;
+    }
+
+    body {
+      font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      color: #1d2a2c;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: geometricPrecision;
+    }
+
+    svg {
+      display: block;
+      width: 1200px;
+      height: 1500px;
+    }
+
+    .headline {
+      font-size: 68px;
+      font-weight: 760;
+      letter-spacing: -2.8px;
+      fill: #172629;
+    }
+
+    .subtitle {
+      font-size: 38px;
+      font-weight: 500;
+      letter-spacing: -1.1px;
+      fill: #58666a;
+    }
+
+    .primary {
+      font-size: 50px;
+      font-weight: 720;
+      letter-spacing: -1.7px;
+      fill: #172629;
+    }
+
+    .primary-inverse {
+      font-size: 50px;
+      font-weight: 740;
+      letter-spacing: -1.7px;
+      fill: #ffffff;
+    }
+
+    .gate {
+      font-size: 50px;
+      font-weight: 740;
+      letter-spacing: -1.6px;
+      fill: #1c3033;
+    }
+
+    .support {
+      font-size: 40px;
+      font-weight: 520;
+      letter-spacing: -1.1px;
+      fill: #5b686b;
+    }
+
+    .support-dark {
+      font-size: 40px;
+      font-weight: 620;
+      letter-spacing: -1.1px;
+      fill: #34484b;
+    }
+
+    .small-label {
+      font-size: 37px;
+      font-weight: 680;
+      letter-spacing: -0.9px;
+    }
+
+    .caveat {
+      font-size: 37px;
+      font-weight: 520;
+      letter-spacing: -0.9px;
+      fill: #5c696c;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+    <title id="title">문서의 한 줄이 행동이 되기 전</title>
+    <desc id="desc">사용자 요청과 외부 문서가 에이전트 판단으로 모이고, 작업 범위와 최소 권한, 사람 승인을 통과한 요청만 허용된 결과로 이어지는 흐름</desc>
+
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f8f6f0" />
+        <stop offset="1" stop-color="#eee9df" />
+      </linearGradient>
+      <linearGradient id="agent" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1e5960" />
+        <stop offset="1" stop-color="#123e44" />
+      </linearGradient>
+      <linearGradient id="gateFill" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#dfe8e4" />
+        <stop offset="0.52" stop-color="#eef2ee" />
+        <stop offset="1" stop-color="#d8e3df" />
+      </linearGradient>
+      <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#24383a" flood-opacity="0.14" />
+      </filter>
+      <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#24383a" flood-opacity="0.13" />
+      </filter>
+      <marker id="trustedArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto">
+        <path d="M 1 1 L 17 9 L 1 17 Z" fill="#287b7b" />
+      </marker>
+    </defs>
+
+    <rect width="1200" height="1500" fill="url(#bg)" />
+    <circle cx="1090" cy="110" r="210" fill="#ffffff" opacity="0.38" />
+    <path d="M 0 1250 C 220 1185 390 1250 575 1215 C 790 1174 986 1110 1200 1180 L 1200 1500 L 0 1500 Z" fill="#e9e4d9" opacity="0.55" />
+
+    <text x="86" y="112" class="headline">문서의 한 줄이 행동이 되기 전</text>
+    <text x="88" y="178" class="subtitle">외부 데이터와 도구 사이에 세 경계를 둡니다</text>
+    <line x1="88" y1="221" x2="1112" y2="221" stroke="#c7cec9" stroke-width="3" />
+
+    <!-- Trusted user request -->
+    <g transform="translate(100 296)">
+      <circle cx="76" cy="76" r="76" fill="#dcebea" />
+      <path d="M 35 49 Q 35 28 57 28 H 105 Q 127 28 127 49 V 83 Q 127 105 105 105 H 75 L 53 122 L 57 105 Q 35 105 35 83 Z"
+        fill="none" stroke="#287b7b" stroke-width="10" stroke-linejoin="round" />
+      <circle cx="62" cy="67" r="6" fill="#287b7b" />
+      <circle cx="81" cy="67" r="6" fill="#287b7b" />
+      <circle cx="100" cy="67" r="6" fill="#287b7b" />
+      <text x="178" y="62" class="primary">사용자 요청</text>
+      <text x="181" y="119" class="small-label" fill="#287b7b">신뢰할 지시</text>
+    </g>
+
+    <!-- Untrusted document -->
+    <g transform="translate(850 282)">
+      <path d="M 8 18 Q 8 6 20 6 H 178 L 222 50 V 190 Q 222 204 208 204 H 20 Q 8 204 8 190 Z"
+        fill="#fffdf8" stroke="#8c9897" stroke-width="5" filter="url(#smallShadow)" />
+      <path d="M 178 6 V 50 H 222" fill="#e9ece8" stroke="#8c9897" stroke-width="5" stroke-linejoin="round" />
+      <line x1="42" y1="70" x2="174" y2="70" stroke="#8b9695" stroke-width="8" stroke-linecap="round" />
+      <line x1="42" y1="103" x2="188" y2="103" stroke="#8b9695" stroke-width="8" stroke-linecap="round" />
+      <line x1="42" y1="136" x2="165" y2="136" stroke="#d45a47" stroke-width="11" stroke-linecap="round" />
+      <line x1="42" y1="169" x2="185" y2="169" stroke="#8b9695" stroke-width="8" stroke-linecap="round" />
+    </g>
+    <text x="790" y="346" text-anchor="end" class="primary">외부 문서</text>
+    <text x="790" y="402" text-anchor="end" class="small-label" fill="#c64e3c">비신뢰 데이터</text>
+
+    <!-- Incoming paths -->
+    <path d="M 340 430 C 405 430 442 484 490 523" fill="none" stroke="#287b7b" stroke-width="15" stroke-linecap="round" />
+    <path d="M 1015 420 C 945 477 824 490 710 530" fill="none" stroke="#d45a47" stroke-width="15" stroke-linecap="round" />
+    <circle cx="486" cy="520" r="13" fill="#287b7b" />
+    <circle cx="714" cy="528" r="13" fill="#d45a47" />
+
+    <!-- Agent judgment -->
+    <g filter="url(#softShadow)">
+      <circle cx="600" cy="610" r="152" fill="#f5f2eb" stroke="#c7d1cc" stroke-width="10" />
+      <circle cx="600" cy="610" r="124" fill="url(#agent)" />
+    </g>
+    <path d="M 535 573 C 560 548 584 548 600 566 C 617 548 642 548 666 573"
+      fill="none" stroke="#9bc5c1" stroke-width="11" stroke-linecap="round" />
+    <path d="M 535 647 C 560 672 584 672 600 654 C 617 672 642 672 666 647"
+      fill="none" stroke="#9bc5c1" stroke-width="11" stroke-linecap="round" />
+    <text x="600" y="608" text-anchor="middle" class="primary-inverse">에이전트</text>
+    <text x="600" y="670" text-anchor="middle" class="primary-inverse">판단</text>
+
+    <!-- Trusted continuation and rejected injection -->
+    <path d="M 600 766 L 600 1268" fill="none" stroke="#287b7b" stroke-width="18" stroke-linecap="round" marker-end="url(#trustedArrow)" />
+    <path d="M 688 724 C 770 770 833 771 912 748" fill="none" stroke="#d45a47" stroke-width="15" stroke-linecap="round" />
+    <circle cx="929" cy="742" r="26" fill="#f6dfd9" stroke="#d45a47" stroke-width="7" />
+    <path d="M 918 731 L 940 753 M 940 731 L 918 753" stroke="#d45a47" stroke-width="7" stroke-linecap="round" />
+    <text x="966" y="733" class="small-label" fill="#b84334">중단</text>
+    <text x="966" y="781" class="small-label" fill="#6d7779">· 기록</text>
+
+    <!-- Three meaningful boundaries -->
+    <g transform="translate(126 828)" filter="url(#smallShadow)">
+      <rect x="0" y="0" width="948" height="112" rx="56" fill="url(#gateFill)" stroke="#b5c5bf" stroke-width="4" />
+      <circle cx="474" cy="56" r="34" fill="#f3f0e9" stroke="#287b7b" stroke-width="7" />
+      <rect x="462" y="18" width="24" height="76" rx="12" fill="#287b7b" />
+      <text x="76" y="72" class="gate">1  작업 범위</text>
+      <text x="590" y="70" class="support-dark">요약만</text>
+    </g>
+
+    <g transform="translate(126 982)" filter="url(#smallShadow)">
+      <rect x="0" y="0" width="948" height="112" rx="56" fill="url(#gateFill)" stroke="#b5c5bf" stroke-width="4" />
+      <circle cx="474" cy="56" r="34" fill="#f3f0e9" stroke="#287b7b" stroke-width="7" />
+      <rect x="462" y="18" width="24" height="76" rx="12" fill="#287b7b" />
+      <text x="76" y="72" class="gate">2  최소 권한</text>
+      <text x="590" y="70" class="support-dark">읽기만</text>
+    </g>
+
+    <g transform="translate(126 1136)" filter="url(#smallShadow)">
+      <rect x="0" y="0" width="948" height="112" rx="56" fill="url(#gateFill)" stroke="#b5c5bf" stroke-width="4" />
+      <circle cx="474" cy="56" r="34" fill="#f3f0e9" stroke="#287b7b" stroke-width="7" />
+      <rect x="462" y="18" width="24" height="76" rx="12" fill="#287b7b" />
+      <text x="76" y="72" class="gate">3  사람 승인</text>
+      <text x="590" y="70" class="support-dark">전송·삭제 전 확인</text>
+    </g>
+
+    <!-- Allowed result -->
+    <g transform="translate(308 1282)">
+      <circle cx="64" cy="64" r="62" fill="#dcebea" stroke="#287b7b" stroke-width="6" />
+      <path d="M 32 64 L 54 85 L 96 39" fill="none" stroke="#287b7b" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="158" y="57" class="primary">허용된 결과</text>
+      <text x="160" y="111" class="support">회의 사실 요약</text>
+    </g>
+
+    <line x1="88" y1="1422" x2="1112" y2="1422" stroke="#c7cec9" stroke-width="3" />
+    <text x="600" y="1472" text-anchor="middle" class="caveat">한 모델의 판단만으로 안전을 보장할 수 없습니다</text>
+  </svg>
+</body>
+</html>
