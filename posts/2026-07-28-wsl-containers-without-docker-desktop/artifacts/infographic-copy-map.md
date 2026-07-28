@@ -9,15 +9,15 @@ Docker Desktop을 설치하지 않을 때 Docker Engine과 Linux 컨테이너는
 
 | 인포그래픽 문구 | 본문·근거 |
 |---|---|
-| `WSL 컨테이너의 네 층` | 본문 `먼저 구분할 네 층` |
-| `Docker Desktop 없이 Ubuntu 안에서 직접 실행` | 본문 도입부·`먼저 구분할 네 층`, evidence C09·C10 |
+| `WSL 컨테이너의 네 층` | 본문 `WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너` |
+| `Docker Desktop 없이 Ubuntu 안에서 직접 실행` | 본문 도입부·`WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너`, evidence C09·C10 |
 | `1 · WINDOWS` | 본문 실행 흐름의 Windows 호스트 |
 | `브라우저` | 본문 `첫 웹 컨테이너 실행`, evidence C08 |
 | `localhost:8080` | 본문 Nginx 예시, evidence C08 |
 | `2 · WSL 2 + UBUNTU` | 본문 네 층 표·실행 흐름, evidence C02·C03 |
 | `Linux 커널 · systemd` | 본문 네 층 표·2절, evidence C02·C03 |
 | `3 · Docker Engine` | 본문 네 층 설명, evidence C04·C05 |
-| `dockerd가 실행·관리` | 본문 `먼저 구분할 네 층`, evidence C04·C05 |
+| `dockerd가 실행·관리` | 본문 `WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너`, evidence C04·C05 |
 | `4 · Linux 컨테이너` | 본문 전체 범위, evidence C10 |
 | `8080 → 80` | 본문 `-p 127.0.0.1:8080:80` 명령의 포트 매핑 |
 | `Linux 컨테이너용 구성` | 본문 도입부·선택 표, evidence C10 |
@@ -37,6 +37,8 @@ Docker Desktop을 설치하지 않을 때 Docker Engine과 Linux 컨테이너는
 ## 배치
 
 - 유형: `원리`
-- 권장 위치: `먼저 구분할 네 층` 절의 실행 사슬 바로 뒤
+- 권장 위치:
+  `WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너` 절의 실행 사슬
+  바로 뒤
 - 한국어 alt: Windows 안의 WSL 2와 Ubuntu, Docker Engine, Linux 컨테이너가
   중첩되고 localhost 8080으로 브라우저에 연결되는 구조

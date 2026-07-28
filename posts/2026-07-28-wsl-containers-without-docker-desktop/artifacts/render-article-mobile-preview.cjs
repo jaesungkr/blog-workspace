@@ -87,10 +87,10 @@ const fragment = fs.readFileSync(fragmentPath, "utf8");
   });
 
   const targetHeadings = [
-    "먼저 구분할 네 층",
-    "3. Docker Engine 설치",
-    "7. 실패 지점을 가르는 진단",
-    "보안과 운영의 경계",
+    "WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너",
+    "3. Ubuntu에 Docker Engine·Buildx·Compose 설치",
+    "7. WSL2 Docker 오류를 WSL·서비스·권한·경로로 진단",
+    "WSL2 Docker 보안: docker 그룹·포트·업데이트 관리",
   ];
   for (const [index, heading] of targetHeadings.entries()) {
     const locator = page.getByRole("heading", { name: heading, exact: true });

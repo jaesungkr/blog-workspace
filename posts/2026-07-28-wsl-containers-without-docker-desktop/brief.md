@@ -1,4 +1,4 @@
-# 기획: WSL Containers 사용법 - Docker Desktop 없이 Windows에서 컨테이너 실행
+# 기획: WSL2 Docker 설치: Docker Desktop 없이 Ubuntu에서 컨테이너 실행
 
 ## 분류와 독자
 
@@ -9,6 +9,10 @@
 - 검색 의도: `WSL Containers`, `WSL Docker`, `Docker Desktop 없이 Docker`,
   `WSL2 Docker Engine 설치`를 검색해 설치 순서, 실행 명령, 실패 원인과 한계를
   한 번에 확인함
+- 검색 결과 판단: 2026-07-28 현재 `WSL Docker`, `WSL2 Docker 설치`,
+  `Docker Desktop 없이 Docker` 검색 결과에서 WSL 2·Docker 설치와 Desktop
+  제외 의도가 반복됨. 검색량 도구를 사용하지 않은 정성 판단이며 순위나 유입을
+  보장하지 않음
 - 독자가 이미 아는 것: PowerShell과 터미널에서 명령을 복사해 실행할 수 있음.
   WSL 2, Docker Engine, daemon, systemd는 쉬운 설명이 필요함
 
@@ -79,7 +83,9 @@
   없앤다는 뜻으로 오해되기 쉽습니다. 네 층과 요청 흐름을 한 화면에 놓으면
   설치 위치와 오류 경계를 더 빨리 이해할 수 있음
 - 유형: `원리`
-- 핵심 설명 뒤 권장 위치: `먼저 구분할 네 층` 절의 실행 사슬 바로 뒤
+- 핵심 설명 뒤 권장 위치:
+  `WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너` 절의 실행 사슬
+  바로 뒤
 - 추가 이미지가 있다면 각 이미지가 답할 서로 다른 질문: 1장으로 충분함
 
 ## 독자가 이어서 물을 질문
@@ -99,9 +105,11 @@
 
 ## 제목 후보
 
-1. WSL Containers 사용법 - Docker Desktop 없이 Windows에서 컨테이너 실행 (선택)
-2. WSL2 Docker 설치 - Ubuntu에 Docker Engine 직접 구성
-3. Docker Desktop 없이 Docker - WSL 2 설치와 오류 해결
+1. WSL2 Docker 설치: Docker Desktop 없이 Ubuntu에서 컨테이너 실행 (선택)
+2. Docker Desktop 없이 Docker 설치: WSL2 Ubuntu 구성과 오류 해결
+3. WSL2 Docker Engine 설치: Ubuntu 24.04 준비부터 권한 오류 진단
 
-선택 이유: 사용자가 지정한 제목을 그대로 유지하고, `WSL Containers`와
-`Docker Desktop 없이`라는 두 검색 의도를 앞부분에서 바로 연결합니다.
+선택 이유: 가장 넓고 직접적인 검색 표현인 `WSL2 Docker 설치`를 앞에 두고,
+글의 실제 차별점인 `Docker Desktop 없이`와 설치 위치인 Ubuntu를 이어
+붙였습니다. 제목만 읽어도 설치 대상과 실행 결과를 알 수 있고, 본문이 다루지
+않는 Windows 컨테이너나 실기기 성공률은 약속하지 않습니다.

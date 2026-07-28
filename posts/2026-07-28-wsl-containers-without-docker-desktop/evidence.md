@@ -1,4 +1,4 @@
-# 근거 지도: WSL Containers 사용법 - Docker Desktop 없이 Windows에서 컨테이너 실행
+# 근거 지도: WSL2 Docker 설치: Docker Desktop 없이 Ubuntu에서 컨테이너 실행
 
 ## 주장별 상태
 

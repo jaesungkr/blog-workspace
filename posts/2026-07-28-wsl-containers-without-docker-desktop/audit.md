@@ -1,4 +1,4 @@
-# 최종 감사: WSL Containers 사용법 - Docker Desktop 없이 Windows에서 컨테이너 실행
+# 최종 감사: WSL2 Docker 설치: Docker Desktop 없이 Ubuntu에서 컨테이너 실행
 
 검토한 사실만 체크합니다. 아직 해당하지 않는 항목은 비워 두고 이유를 적습니다.
 
@@ -31,9 +31,67 @@
 - [x] 번역투, 이중 피동, 명사화, 상투적인 요약 표현을 걷어냈습니다.
 - [x] 과장, 감정 부사, 기계적인 병렬, 불필요한 1인칭이 없습니다.
 - [x] 문단은 주제에 따라 자연스럽게 나뉘고 문장 리듬이 기계적이지 않습니다.
-- [x] 굵은 강조가 문단마다 반복되지 않습니다.
+- [x] 굵은 강조가 할당량처럼 반복되거나 매 절의 격언형 결론을 만들지 않습니다.
 - [x] em dash(`—`), 분리된 참고문헌 부록, 관성적인 면책 문구가 없습니다.
 - [x] 카테고리별 마무리 기준을 따릅니다.
+
+## 제목·문체 폴리싱
+
+- [x] 제목과 소제목만 읽어도 WSL2 Docker 구성, Desktop과의 선택, 설치,
+  실행, 오류 진단, 보안 관리의 흐름이 보입니다.
+- [x] 현재 검색 결과에서 `WSL Docker`, `WSL2 Docker 설치`,
+  `Docker Desktop 없이 Docker` 의도를 비교했습니다. 검색량 도구를 사용하지
+  않은 정성 판단임을 `brief.md`에 기록했습니다.
+- [x] 다른 기술 글에도 붙일 수 있던 범용 소제목을 실제 설치 위치·확인 대상·
+  오류 범위가 드러나는 표현으로 바꿨습니다.
+- [x] 각 소제목만 읽어도 Windows·Ubuntu·Engine·컨테이너 중 무엇을 설치하거나
+  확인하는지 알 수 있습니다.
+- [x] 문단 사이에서 앞 문단의 실행 위치, 관리 주체, 권한, 오류 문구를 다음
+  판단이 이어받도록 연결했습니다.
+- [x] 명령·URL·표·수치·Codex 실행 주체·실기기 미검증 한계를 폴리싱 전
+  원고와 대조했습니다.
+- [x] 자연스러움을 위해 사용자 경험·감정·대화·실패를 새로 만들지 않았습니다.
+
+- 비교 표본(대상 슬러그 제외):
+  - 같은 하위 카테고리 `개발 · 디지털`:
+    `ccshare-manycode-guide` (`ready`), `duckdb-guide` (`ready`)
+  - 대체 표본: `orca-agent-ide-guide` (`ready`),
+    `prompt-injection-document-test` (`ready`)
+- 대체 기준: 같은 하위 카테고리의 완성 글이 2편뿐이어서 설치·도구 사용법
+  형태가 가까운 Orca 글과, 새 폴리싱 기준이 적용된 최근 기술 실험 글을
+  보충해 총 4편을 비교했습니다.
+- 대표 제목 변경:
+  `WSL Containers 사용법 - Docker Desktop 없이 Windows에서 컨테이너 실행`
+  -> `WSL2 Docker 설치: Docker Desktop 없이 Ubuntu에서 컨테이너 실행`
+- 대표 소제목 변경:
+  - `먼저 구분할 네 층` ->
+    `WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너`
+  - `직접 설치가 맞는 경우` ->
+    `Docker Desktop과 WSL2 Docker 직접 설치의 차이와 선택 기준`
+  - `3. Docker Engine 설치` ->
+    `3. Ubuntu에 Docker Engine·Buildx·Compose 설치`
+  - `4. 서비스와 사용자 권한 확인` ->
+    `4. docker.service와 Docker socket 권한 확인`
+  - `5. 첫 웹 컨테이너 실행` ->
+    `5. Nginx 컨테이너를 127.0.0.1:8080으로 실행`
+  - `7. 실패 지점을 가르는 진단` ->
+    `7. WSL2 Docker 오류를 WSL·서비스·권한·경로로 진단`
+  - `보안과 운영의 경계` ->
+    `WSL2 Docker 보안: docker 그룹·포트·업데이트 관리`
+- 대표 문단 연결 수정: 도입부의 기계적인 글 순서 안내를 없애고 공식 문서와
+  Codex 진단 검증의 역할을 바로 구분했습니다. Docker Desktop과 직접 설치의
+  관리 주체, `docker` 그룹의 편의와 root급 권한, 오류 문구와 첫 확인 명령이
+  앞뒤 문단에서 같은 대상을 이어받도록 고쳤습니다.
+- 삭제한 빈 문구 또는 반복: `이 글에서는 ... 함께 살펴보겠습니다`,
+  `Docker Desktop 없이 시작할 기본 경로는 분명합니다`, 추상적인
+  `다음 경계`, `다음 지점` 표현
+- 보존 확인한 핵심 사실: Windows 10 2004·빌드 19041 이상 또는 Windows 11,
+  Ubuntu 24.04 LTS 예시, Docker 공식 저장소 명령, `docker` 그룹의 root급
+  권한, `127.0.0.1:8080:80`, 진단 시나리오 5개와 5/5 통과, Codex 실행 주체,
+  실제 WSL 장비에서 설치·성능·VPN 호환성을 검증하지 않은 한계
+- 남은 문체·근거 위험: 제목과 소제목을 검색 의도에 맞춰 구체화했지만 실제
+  검색량 자료는 없습니다. 제품 설치 성공 여부를 실기기로 확인하지 못한
+  근거 한계는 그대로 남아 있으며 본문 도입부와 진단 결과에 명시했습니다.
 
 ## 대표 이미지
 
@@ -117,7 +175,7 @@
 
 | 최종 파일 | 유형 | 해결하는 독자 질문 | 권장 위치 | 한국어 alt | 문구·수치 근거 |
 |---|---|---|---|---|---|
-| `assets/wsl-containers-layers-infographic-v7.png` | 원리 | Docker Desktop이 없을 때 Engine과 컨테이너는 어디서 실행되고 Windows 브라우저는 어떻게 접속하는가? | `먼저 구분할 네 층`의 실행 사슬 바로 뒤 | Windows 안의 WSL 2와 Ubuntu, Docker Engine, Linux 컨테이너가 네 층으로 이어지고 localhost 8080으로 연결되는 구조 | 본문 네 층·Nginx 실행, evidence C02~C05·C08~C10 |
+| `assets/wsl-containers-layers-infographic-v7.png` | 원리 | Docker Desktop이 없을 때 Engine과 컨테이너는 어디서 실행되고 Windows 브라우저는 어떻게 접속하는가? | `WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너`의 실행 사슬 바로 뒤 | Windows 안의 WSL 2와 Ubuntu, Docker Engine, Linux 컨테이너가 네 층으로 이어지고 localhost 8080으로 연결되는 구조 | 본문 네 층·Nginx 실행, evidence C02~C05·C08~C10 |
 
 - 최종 해상도: `1080x1350` (`4:5`), SHA-256
   `af765879a72a0628544987e8418ffd09677e6095d6ad12016451e89558c59be6`
@@ -182,10 +240,12 @@
 | 12 | 사용자 요청에 따른 v4 객관 재평가 | 원본 화질 손상은 없었지만 360px 표시에서 보조 글자 10~10.7px와 다수의 라벨·선·명령 입구가 경쟁해 구조가 과밀함 | 축소 파생 래스터 생성 절차를 표준·제작·검증 스킬에서 제거하고 모바일 권장 글자 밴드를 상향 | 현재 렌더러는 1080x1350 원본 한 장만 쓰며 `reducedRasterWritten:false`; 기존 360px 파생 QA 4개 삭제 |
 | 13 | 인포그래픽 v5~v7 재설계 | v5는 WSL 배지와 포트 라벨이 맞닿고, v6은 브라우저 아이콘과 포트 문구의 CSS 환산 여백이 약 2px | 포트 주소를 브라우저 안으로 통합하고 브라우저 박스를 왼쪽으로 넓힌 뒤 v7 생성 | v7 전체·타입 스케일·원본 픽셀 확대 6구간에서 글리프·수치·경계·화살표 충돌 없음 |
 | 14 | 무축소 모바일 표시 검증 | 인앱 브라우저가 로컬 파일 URL을 차단해 CSS 360px 미리보기를 직접 열 수 없음 | 우회하거나 축소 파일을 만들지 않고 고정 SVG의 정확한 환산값과 원본 크롭을 검증, 실제 티스토리 미리보기를 사람 확인 항목으로 유지 | 이미지 자체 결함 없음, infographic `pass`; 테마 CSS 결과는 잔여 위험으로 기록 |
+| 15 | 제목·소제목·문단 흐름 | 제목이 최근 기술 글과 같은 `키워드 - 설명` 패턴이고, 범용 소제목과 기계적인 글 순서 안내가 남아 있음 | 검색 의도를 `WSL2 Docker 설치`부터 드러내고, 소제목에 설치 위치·확인 대상·오류 범위를 명시했습니다. 문단은 실행 위치·관리 주체·권한·오류 문구를 이어받도록 수정 | 코드 블록 18개·표 14줄·URL 19개·본문 수치 토큰의 폴리싱 전후 SHA-256 일치. 상투 문구 1→0, 50자 초과 문장 33→28, 교정형 표현 밀도 5.0→2.3. 독립 소스 검증·공식 문서 재대조·개별 check·재렌더·760px·360px 화면 검수 통과 |
 
 - 중대한 문제가 없으면 `발견한 문제`에 `없음`이라고 쓰고 확인 근거를
   `재검증 결과`에 적습니다.
-- 최종 종료 판단: `pass`, 글 상태 `ready`
+- 현재 종료 판단: `pass`, 글 상태 `ready`. 회차 15 수정본은 독립 소스 검증,
+  잠근 내용 대조, Tistory HTML 재렌더, 760px·360px 화면 검수를 통과했습니다.
 - 다시 열어 확인한 파일:
   - `article.md`, `evidence.md`, `brief.md`, `audit.md`
   - `artifacts/source-notes.md`, `checker-test-log.txt`,
@@ -204,16 +264,16 @@
 - 검사 명령: `python3 scripts/blog.py check posts/2026-07-28-wsl-containers-without-docker-desktop`
 - 검사 결과: 최종 `check` 오류 0개·경고 0개, 두 셸 스크립트 구문 검사 통과,
   진단 테스트 5/5 통과. `render` 성공, 글 상태 `ready`
-- 표준·스킬 회귀 검사: 저장소 단위 테스트 16/16 통과,
-  `python3 scripts/blog.py check --all` 10개 글 오류·경고 0개.
+- 표준·스킬 회귀 검사: 저장소 단위 테스트 22/22 통과,
+  `python3 scripts/blog.py check --all` 11개 글 오류·경고 0개.
   `dev-log-infographic`와 `dev-log-infographic-validation`은
   `quick_validate.py`를 모두 통과했고 UI 메타데이터도 역할과 일치합니다.
 - 무축소 검사: 현재 렌더러는 1080x1350 원본만 생성하고
   `reducedRasterWritten:false`를 출력합니다. 인포그래픽 모바일 파생 파일,
   `mobileOutput`, 360px 재렌더 코드는 현재 워크플로에 없습니다.
 - 렌더 결과: `dist/wsl-containers-without-docker-desktop.html`,
-  `35,769 bytes`, SHA-256
-  `f3f7074dc7979356b2c7d88776ff5bbf899f23418bd6d65dafe9155087f69ca7`
+  `36,213 bytes`, SHA-256
+  `6d820218f70ca252802e35328d85e6a7049f4187c2af524d196eb9d568410a13`
 - HTML 구조 검사: H3 10개, 표 2개, 코드 블록 18개, 외부 링크 7개,
   `<strong>` 4개, literal Markdown·TODO·FIXME 0개
 - 레이아웃 검사: 760px에서 본문 760/760px·표 넘침 0·가로 스크롤 코드
@@ -226,7 +286,8 @@
 - 사람이 티스토리에서 확인할 항목:
   - 제목 바로 아래에 `assets/wsl-containers-hero.png`를 올리고 기록된 한국어
     alt를 적용합니다.
-  - `먼저 구분할 네 층`의 실행 사슬 바로 뒤에
+  - `WSL2 Docker 구성: Windows·Ubuntu·Docker Engine·컨테이너`의 실행 사슬
+    바로 뒤에
     `assets/wsl-containers-layers-infographic-v7.png`를 올리고 기록된 alt를
     적용합니다.
   - PC와 360px 모바일 미리보기에서 테마 CSS가 표·코드 스크롤과 이미지
