@@ -1,0 +1,33 @@
+WSL Docker checker branch test
+Actor: Codex
+Date: 2026-07-28
+Environment: macOS 26.5.2 arm64, Bash 3.2.57
+
+Initial run
+PASS healthy                exit=0 contains=[PASS] Compose 플러그인
+PASS windows_mount_warning  exit=0 contains=[WARN] 프로젝트를 ~/projects
+PASS socket_permission      exit=1 contains=[FAIL] Docker daemon socket 권한이 없습니다
+PASS systemd_inactive       exit=2 contains=[FAIL] docker.service가 active가 아닙니다
+FAIL docker_cli_missing     expected_exit=4 actual_exit=3 expected_text=[FAIL] Docker CLI를 찾지 못했습니다
+SUMMARY passed=4 failed=1 total=5
+
+Diagnosis
+The docker_cli_missing fixture intentionally leaves docker.service active.
+The checker correctly reports three failures: CLI, daemon access, and Compose.
+The test expectation incorrectly counted the active service as a fourth failure.
+
+Revision
+Changed the docker_cli_missing expected exit code from 4 to 3. No production
+checker logic changed.
+
+Final run
+PASS healthy                exit=0 contains=[PASS] Compose 플러그인
+PASS windows_mount_warning  exit=0 contains=[WARN] 프로젝트를 ~/projects
+PASS socket_permission      exit=1 contains=[FAIL] Docker daemon socket 권한이 없습니다
+PASS systemd_inactive       exit=2 contains=[FAIL] docker.service가 active가 아닙니다
+PASS docker_cli_missing     exit=3 contains=[FAIL] Docker CLI를 찾지 못했습니다
+SUMMARY passed=5 failed=0 total=5
+
+Scope
+This validates diagnostic branching against controlled command outputs. It is
+not an end-to-end installation or performance test on a Windows WSL host.
