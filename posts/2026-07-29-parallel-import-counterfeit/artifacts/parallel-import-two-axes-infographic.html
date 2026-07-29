@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>병행수입의 두 축</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      margin: 0;
+      overflow: hidden;
+      background: #f6f2e9;
+    }
+    body {
+      font-family: "Apple SD Gothic Neo", "AppleGothic", "Noto Sans KR", sans-serif;
+      color: #1d2b28;
+    }
+    svg { display: block; width: 1080px; height: 1350px; }
+    .eyebrow {
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+    }
+    .headline {
+      font-size: 60px;
+      font-weight: 850;
+      letter-spacing: -0.05em;
+    }
+    .axis-title {
+      font-size: 39px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+    }
+    .support {
+      font-size: 39px;
+      font-weight: 660;
+      letter-spacing: -0.035em;
+    }
+    .primary {
+      font-size: 48px;
+      font-weight: 850;
+      letter-spacing: -0.045em;
+    }
+    .caveat {
+      font-size: 34px;
+      font-weight: 720;
+      letter-spacing: -0.03em;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1080 1350" role="img"
+       aria-labelledby="graphic-title graphic-desc">
+    <title id="graphic-title">병행수입은 정품 여부와 수입 경로를 나눠서 판단</title>
+    <desc id="graphic-desc">
+      정품이 공식 유통망으로 들어오면 공식수입품, 공식망 밖 수입자로 들어오면
+      병행수입품입니다. 가품은 어떤 경로를 주장해도 위조상품이며, 진위가
+      확인되지 않으면 판정을 보류해야 합니다.
+    </desc>
+
+    <defs>
+      <pattern id="paper-grain" width="34" height="34"
+               patternUnits="userSpaceOnUse">
+        <circle cx="6" cy="8" r="0.9" fill="#394843" opacity="0.045"/>
+        <circle cx="25" cy="21" r="0.8" fill="#394843" opacity="0.035"/>
+        <path d="M10 29h8" stroke="#394843" stroke-width="0.8"
+              opacity="0.03"/>
+      </pattern>
+      <filter id="object-shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="10"
+                      flood-color="#1f312b" flood-opacity="0.14"/>
+      </filter>
+      <marker id="route-arrow" markerUnits="userSpaceOnUse"
+              markerWidth="18" markerHeight="18" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#52645e"/>
+      </marker>
+      <symbol id="parcel" viewBox="0 0 180 130">
+        <path d="M25 38L90 10l65 28-65 30z"
+              fill="#fffaf0" stroke="currentColor" stroke-width="5"
+              stroke-linejoin="round"/>
+        <path d="M25 38v58l65 28V68z"
+              fill="#e9dfcd" stroke="currentColor" stroke-width="5"
+              stroke-linejoin="round"/>
+        <path d="M155 38v58l-65 28V68z"
+              fill="#f5ebd8" stroke="currentColor" stroke-width="5"
+              stroke-linejoin="round"/>
+        <path d="M58 24l65 28v57M58 24l65 28 32-14"
+              fill="none" stroke="currentColor" stroke-width="4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="magnifier" viewBox="0 0 120 120">
+        <circle cx="48" cy="48" r="31" fill="none"
+                stroke="currentColor" stroke-width="9"/>
+        <path d="M71 72l34 34" fill="none" stroke="currentColor"
+              stroke-width="11" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+
+    <rect width="1080" height="1350" fill="#f6f2e9"/>
+    <circle cx="1046" cy="40" r="210" fill="#e3ede8" opacity="0.68"/>
+    <circle cx="38" cy="1288" r="190" fill="#ead9bd" opacity="0.48"/>
+    <rect width="1080" height="1350" fill="url(#paper-grain)"/>
+
+    <!-- Header: 238px, 17.6% of canvas -->
+    <g transform="translate(74 50)">
+      <path d="M0 14h42" stroke="#b98334" stroke-width="8"
+            stroke-linecap="round"/>
+      <text x="62" y="24" class="eyebrow" fill="#52645e">
+        병행수입의 핵심
+      </text>
+    </g>
+    <text x="74" y="145" class="headline" fill="#1d2b28">
+      정품 여부와 수입 경로는
+    </text>
+    <text x="74" y="212" class="headline" fill="#1d2b28">
+      서로 다른 축
+    </text>
+    <path d="M74 244H1006" stroke="#c9cec8" stroke-width="2"/>
+
+    <!-- Route axis -->
+    <g transform="translate(190 298)">
+      <text x="350" y="0" text-anchor="middle"
+            class="axis-title" fill="#52645e">수입 경로</text>
+      <path d="M350 48H0" fill="none" stroke="#52645e"
+            stroke-width="5" stroke-linecap="round"
+            marker-end="url(#route-arrow)"/>
+      <path d="M350 48H700" fill="none" stroke="#52645e"
+            stroke-width="5" stroke-linecap="round"
+            marker-end="url(#route-arrow)"/>
+      <circle cx="350" cy="48" r="11" fill="#f6f2e9"
+              stroke="#52645e" stroke-width="5"/>
+      <text x="0" y="103" class="support" fill="#315e55">
+        공식 유통망
+      </text>
+      <text x="700" y="103" text-anchor="end"
+            class="support" fill="#9a6b25">공식망 밖 수입자</text>
+    </g>
+
+    <!-- Authentic product field -->
+    <path d="M128 444H524V794H128Z" fill="#e2eeea"/>
+    <path d="M556 444H952V794H556Z" fill="#f1e4c8"/>
+    <path d="M128 444H952" stroke="#899a94" stroke-width="3"/>
+    <path d="M128 794H952" stroke="#899a94" stroke-width="3"/>
+    <path d="M540 424V814" stroke="#899a94" stroke-width="3"
+          stroke-dasharray="12 14"/>
+
+    <g transform="translate(52 555)">
+      <text x="0" y="0" class="axis-title" fill="#315e55">정품</text>
+      <path d="M38 30v118" stroke="#315e55" stroke-width="5"
+            stroke-linecap="round"/>
+      <circle cx="38" cy="178" r="10" fill="#315e55"/>
+    </g>
+
+    <!-- Official import region -->
+    <g transform="translate(164 485)">
+      <g color="#315e55" filter="url(#object-shadow)">
+        <use href="#parcel" width="160" height="116" x="96" y="0"/>
+      </g>
+      <text x="180" y="176" text-anchor="middle"
+            class="support" fill="#486b63">정품 + 공식 유통망</text>
+      <text x="180" y="245" text-anchor="middle"
+            class="primary" fill="#234d45">공식수입품</text>
+    </g>
+
+    <!-- Parallel import region -->
+    <g transform="translate(592 485)">
+      <g color="#9a6b25" filter="url(#object-shadow)">
+        <use href="#parcel" width="160" height="116" x="96" y="0"/>
+      </g>
+      <text x="180" y="176" text-anchor="middle"
+            class="support" fill="#8a652c">정품 + 공식망 밖</text>
+      <text x="180" y="245" text-anchor="middle"
+            class="primary" fill="#7c5318">병행수입품</text>
+    </g>
+
+    <!-- Counterfeit spans both route columns -->
+    <path d="M128 844H952V1070H128Z" fill="#f1ddda"/>
+    <path d="M128 844H952" stroke="#bd8680" stroke-width="3"/>
+    <path d="M128 1070H952" stroke="#bd8680" stroke-width="3"/>
+    <g transform="translate(52 914)">
+      <text x="0" y="0" class="axis-title" fill="#873f3b">가품</text>
+      <path d="M38 30v72" stroke="#873f3b" stroke-width="5"
+            stroke-linecap="round"/>
+      <circle cx="38" cy="132" r="10" fill="#873f3b"/>
+    </g>
+    <g transform="translate(180 890)">
+      <path d="M0 42H310" stroke="#9e5651" stroke-width="7"
+            stroke-linecap="round"/>
+      <path d="M18 18l48 48M66 18L18 66" stroke="#9e5651"
+            stroke-width="7" stroke-linecap="round"/>
+      <text x="352" y="56" class="support" fill="#7c4b48">
+        어떤 경로를 주장해도
+      </text>
+      <text x="0" y="147" class="primary" fill="#7b3431">
+        위조상품
+      </text>
+      <text x="250" y="147" class="support" fill="#7c4b48">
+        병행수입품이 아님
+      </text>
+    </g>
+
+    <!-- Unresolved state -->
+    <g transform="translate(128 1126)">
+      <g color="#52645e">
+        <use href="#magnifier" width="96" height="96" x="0" y="0"/>
+      </g>
+      <text x="128" y="37" class="primary" fill="#344943">판정 보류</text>
+      <text x="128" y="91" class="support" fill="#52645e">
+        ‘병행수입’ 문구만 있고 정품 근거가 없을 때
+      </text>
+    </g>
+
+    <g transform="translate(128 1278)">
+      <rect width="12" height="42" rx="6" fill="#b98334"/>
+      <text x="34" y="32" class="caveat" fill="#3d4d48">
+        모델 · 판매자 · 정품 근거 · A/S 주체를 따로 확인
+      </text>
+    </g>
+  </svg>
+</body>
+</html>
