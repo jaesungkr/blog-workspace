@@ -7,7 +7,7 @@ subcategory: "질환 · 의약품"
 status: ready
 tags: [수유 중 감기약, 모유 수유, 종합감기약, 아세트아미노펜, 슈도에페드린, 항히스타민제]
 summary: "수유 중 집에 있는 감기약을 먹어도 되는지 세 단계로 나눕니다. 아세트아미노펜, 판피린티정, 액티피드정처럼 자주 묻는 약도 바로 확인할 수 있습니다."
-hero_image: assets/hero-v2.png
+hero_image: assets/hero-v3.png
 published_url: ""
 sources:
   - "https://www.mfds.go.kr/webzine/202506/sub04.html"
