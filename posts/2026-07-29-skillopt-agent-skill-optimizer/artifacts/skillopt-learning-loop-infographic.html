@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillOpt의 검증 기반 스킬 학습 루프</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 1080px;
+      height: 1700px;
+      margin: 0;
+      overflow: hidden;
+    }
+    body {
+      color: #1d2924;
+      background: #f5f1e8;
+      font-family: "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+    }
+    svg { display: block; width: 1080px; height: 1700px; }
+    .eyebrow { font-size: 34px; font-weight: 800; letter-spacing: 0.05em; }
+    .headline { font-size: 62px; font-weight: 850; letter-spacing: -0.055em; }
+    .subtitle { font-size: 38px; font-weight: 650; letter-spacing: -0.025em; }
+    .primary { font-size: 46px; font-weight: 850; letter-spacing: -0.045em; }
+    .support { font-size: 38px; font-weight: 650; letter-spacing: -0.025em; }
+    .caveat { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
+    .micro { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1080 1700" role="img"
+       aria-labelledby="infographic-title infographic-desc">
+    <title id="infographic-title">작은 편집과 엄격한 게이트로 학습하는 SkillOpt</title>
+    <desc id="infographic-desc">
+      현재 skill.md와 훈련 작업에서 실행 궤적을 모으고, 옵티마이저가
+      추가·삭제·교체 편집을 제안한다. 텍스트 학습률이 최대 네 개를 골라
+      후보 스킬을 만들고, 분리한 selection 작업에서 점수가 오르면
+      best_skill.md로 채택한다. 동점이나 하락이면 거절 버퍼로 돌아간다.
+    </desc>
+
+    <defs>
+      <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fffdf7"/>
+        <stop offset="100%" stop-color="#e9e3d7"/>
+      </linearGradient>
+      <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#d8d7d1"/>
+        <stop offset="48%" stop-color="#9d9f9b"/>
+        <stop offset="100%" stop-color="#d5d1c7"/>
+      </linearGradient>
+      <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse">
+        <circle cx="6" cy="8" r="0.8" fill="#506058" opacity="0.06"/>
+        <circle cx="25" cy="21" r="0.7" fill="#506058" opacity="0.05"/>
+        <path d="M12 27h7" stroke="#506058" stroke-width="0.8" opacity="0.045"/>
+      </pattern>
+      <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="8" stdDeviation="10"
+                      flood-color="#24302b" flood-opacity="0.14"/>
+      </filter>
+      <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6"
+                      flood-color="#24302b" flood-opacity="0.1"/>
+      </filter>
+      <marker id="arrow-dark" markerUnits="userSpaceOnUse"
+              markerWidth="22" markerHeight="22" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#495750"/>
+      </marker>
+      <marker id="arrow-green" markerUnits="userSpaceOnUse"
+              markerWidth="22" markerHeight="22" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#52785f"/>
+      </marker>
+      <marker id="arrow-rust" markerUnits="userSpaceOnUse"
+              markerWidth="22" markerHeight="22" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#a45f48"/>
+      </marker>
+    </defs>
+
+    <rect width="1080" height="1700" fill="#f5f1e8"/>
+    <rect width="1080" height="1700" fill="url(#grain)"/>
+    <circle cx="1020" cy="104" r="245" fill="#dce7dc" opacity="0.72"/>
+    <circle cx="30" cy="736" r="220" fill="#ead9ca" opacity="0.42"/>
+
+    <!-- Header: 218px / 16.1% -->
+    <g transform="translate(70 55)">
+      <rect width="500" height="50" rx="25" fill="#23322b"/>
+      <circle cx="31" cy="25" r="8" fill="#7da184"/>
+      <text x="58" y="36" class="eyebrow" fill="#ffffff">
+        SKILLOPT · 논문식 기본 경로
+      </text>
+    </g>
+    <text x="70" y="158" class="headline" fill="#1d2924">
+      작은 편집, 엄격한 게이트
+    </text>
+    <text x="72" y="209" class="subtitle" fill="#5a665f">
+      가중치는 고정하고 skill.md의 절차만 바꿉니다
+    </text>
+
+    <!-- Stage 1: rollout evidence -->
+    <g transform="translate(70 270)">
+      <text x="0" y="42" class="primary" fill="#1d2924">1  실행 궤적 수집</text>
+      <text x="0" y="88" class="support" fill="#5a665f">
+        훈련 작업 + 현재 skill.md
+      </text>
+
+      <g transform="translate(8 126)" filter="url(#soft-shadow)">
+        <rect x="0" y="0" width="214" height="116" rx="24"
+              fill="#e4d8c9" stroke="#b8aa98" stroke-width="2"/>
+        <circle cx="43" cy="42" r="15" fill="#be895c"/>
+        <circle cx="83" cy="42" r="15" fill="#d4aa7f"/>
+        <circle cx="123" cy="42" r="15" fill="#8ca18c"/>
+        <path d="M38 81h136" stroke="#897e72" stroke-width="7"
+              stroke-linecap="round"/>
+        <text x="107" y="153" class="micro" fill="#5a554f"
+              text-anchor="middle">훈련 작업</text>
+      </g>
+
+      <g transform="translate(253 113)" filter="url(#shadow)">
+        <path d="M0 0H206L250 44V162H0Z" fill="url(#paper)"
+              stroke="#999991" stroke-width="3"/>
+        <path d="M206 0V44H250" fill="#ded8ca" stroke="#999991"
+              stroke-width="3"/>
+        <rect x="34" y="42" width="126" height="11" rx="5.5" fill="#7a8f76"/>
+        <rect x="34" y="76" width="172" height="9" rx="4.5" fill="#b7b5ad"/>
+        <rect x="34" y="106" width="142" height="9" rx="4.5" fill="#b7b5ad"/>
+        <text x="125" y="204" class="micro" fill="#394740"
+              text-anchor="middle">현재 skill.md</text>
+      </g>
+
+      <path d="M510 190H655" fill="none" stroke="#495750"
+            stroke-width="8" stroke-linecap="round"
+            marker-end="url(#arrow-dark)"/>
+      <g transform="translate(690 105)" filter="url(#shadow)">
+        <rect width="250" height="170" rx="42" fill="url(#metal)"
+              stroke="#777d79" stroke-width="3"/>
+        <rect x="34" y="30" width="182" height="78" rx="20" fill="#26352e"/>
+        <path d="M67 57h110M67 82h76" stroke="#a6c4aa"
+              stroke-width="9" stroke-linecap="round"/>
+        <circle cx="125" cy="135" r="11" fill="#b88351"/>
+        <text x="125" y="215" class="micro" fill="#394740"
+              text-anchor="middle">대상 모델 실행</text>
+      </g>
+    </g>
+
+    <path d="M540 620V668" fill="none" stroke="#495750"
+          stroke-width="8" stroke-linecap="round"
+          marker-end="url(#arrow-dark)"/>
+
+    <!-- Stage 2: reflection and edit proposals -->
+    <g transform="translate(70 670)">
+      <text x="0" y="42" class="primary" fill="#1d2924">2  성공·실패를 함께 반영</text>
+      <text x="0" y="88" class="support" fill="#5a665f">
+        옵티마이저가 반복 패턴을 편집 후보로 바꿉니다
+      </text>
+
+      <g transform="translate(26 121)">
+        <path d="M0 30C92 30 116 0 212 0" fill="none"
+              stroke="#6d9277" stroke-width="13" stroke-linecap="round"/>
+        <circle cx="0" cy="30" r="20" fill="#52785f"/>
+        <text x="54" y="83" class="micro" fill="#52785f">성공</text>
+        <path d="M0 132C92 132 116 162 212 162" fill="none"
+              stroke="#b27058" stroke-width="13" stroke-linecap="round"/>
+        <circle cx="0" cy="132" r="20" fill="#a45f48"/>
+        <text x="54" y="139" class="micro" fill="#a45f48">실패</text>
+      </g>
+
+      <g transform="translate(290 112)" filter="url(#shadow)">
+        <circle cx="112" cy="92" r="86" fill="#26352e"/>
+        <circle cx="112" cy="92" r="58" fill="#f1ede4"
+                stroke="#c28c57" stroke-width="12"/>
+        <path d="M153 133l58 58" stroke="#c28c57"
+              stroke-width="20" stroke-linecap="round"/>
+        <text x="112" y="232" class="micro" fill="#394740"
+              text-anchor="middle">옵티마이저</text>
+      </g>
+
+      <path d="M528 204H620" fill="none" stroke="#495750"
+            stroke-width="8" stroke-linecap="round"
+            marker-end="url(#arrow-dark)"/>
+
+      <g transform="translate(655 113)" filter="url(#soft-shadow)">
+        <path d="M0 0h240v74H0Z" fill="#dce7dc"/>
+        <path d="M18 91h240v74H18Z" fill="#ead9ca"/>
+        <path d="M0 182h240v74H0Z" fill="#d8d8d1"/>
+        <text x="120" y="51" class="primary" fill="#385444"
+              text-anchor="middle">추가</text>
+        <text x="138" y="142" class="primary" fill="#7e4637"
+              text-anchor="middle">삭제</text>
+        <text x="120" y="233" class="primary" fill="#4c5752"
+              text-anchor="middle">교체</text>
+      </g>
+    </g>
+
+    <path d="M540 1050V1098" fill="none" stroke="#495750"
+          stroke-width="8" stroke-linecap="round"
+          marker-end="url(#arrow-dark)"/>
+
+    <!-- Stage 3: edit budget -->
+    <g transform="translate(70 1110)">
+      <text x="0" y="42" class="primary" fill="#1d2924">3  편집 예산으로 보폭 제한</text>
+      <text x="0" y="88" class="support" fill="#5a665f">
+        중복을 합치고 순위화 · 기본 최대 4개
+      </text>
+
+      <g transform="translate(610 2)">
+        <path d="M0 0H330L240 105V175H90V105Z"
+              fill="#e3ddd1" stroke="#8f928e" stroke-width="4"
+              stroke-linejoin="round"/>
+        <circle cx="58" cy="43" r="17" fill="#7da184"/>
+        <circle cx="112" cy="43" r="17" fill="#c28c57"/>
+        <circle cx="166" cy="43" r="17" fill="#8e9590"/>
+        <circle cx="220" cy="43" r="17" fill="#b27058"/>
+        <rect x="92" y="118" width="146" height="14" rx="7" fill="#69736e"/>
+        <text x="165" y="180" class="micro" fill="#394740"
+              text-anchor="middle">후보 skill.md</text>
+      </g>
+    </g>
+
+    <path d="M540 1318V1346" fill="none" stroke="#495750"
+          stroke-width="8" stroke-linecap="round"
+          marker-end="url(#arrow-dark)"/>
+
+    <!-- Stage 4: held-out validation -->
+    <g>
+      <path d="M70 1356H1010" stroke="#78917d" stroke-width="4"/>
+      <rect x="70" y="1374" width="408" height="48" rx="24" fill="#26352e"/>
+      <text x="274" y="1409" class="eyebrow" fill="#ffffff"
+            text-anchor="middle">분리한 SELECTION 작업</text>
+
+      <path d="M540 1400l150 94-150 94-150-94Z"
+            fill="#fffdf7" stroke="#6f7772" stroke-width="4"
+            filter="url(#shadow)"/>
+      <text x="540" y="1470" class="micro" fill="#26352e"
+            text-anchor="middle">현재보다</text>
+      <text x="540" y="1530" class="primary" fill="#26352e"
+            text-anchor="middle">점수가 높은가?</text>
+
+      <path d="M690 1494H760" fill="none" stroke="#52785f"
+            stroke-width="9" stroke-linecap="round"
+            marker-end="url(#arrow-green)"/>
+      <text x="725" y="1472" class="caveat" fill="#52785f"
+            text-anchor="middle">상승</text>
+      <g transform="translate(790 1419)" filter="url(#soft-shadow)">
+        <path d="M0 0H220V128H0Z" fill="#dce7dc"
+              stroke="#52785f" stroke-width="4"/>
+        <path d="M28 34h164M28 68h126" stroke="#52785f"
+              stroke-width="9" stroke-linecap="round"/>
+        <text x="110" y="111" class="micro" fill="#385444"
+              text-anchor="middle">best_skill.md</text>
+      </g>
+
+      <path d="M390 1494H310" fill="none" stroke="#a45f48"
+            stroke-width="9" stroke-linecap="round"
+            marker-end="url(#arrow-rust)"/>
+      <text x="350" y="1472" class="caveat" fill="#a45f48"
+            text-anchor="middle">동점·하락</text>
+      <g transform="translate(40 1434)">
+        <rect width="240" height="120" rx="28" fill="#ead9ca"
+              stroke="#a45f48" stroke-width="4"/>
+        <path d="M48 38h144M48 68h104" stroke="#a45f48"
+              stroke-width="9" stroke-linecap="round"/>
+        <text x="120" y="105" class="micro" fill="#7e4637"
+              text-anchor="middle">거절 편집 버퍼</text>
+      </g>
+
+      <path d="M40 1494H28Q8 1494 8 1474V1328Q8 1308 28 1308H260C420 1308 560 1250 700 1200"
+            fill="none" stroke="#a45f48" stroke-width="7"
+            stroke-dasharray="13 14" stroke-linecap="round"
+            marker-end="url(#arrow-rust)"/>
+    </g>
+
+    <!-- Test split caveat -->
+    <g>
+      <rect x="70" y="1628" width="940" height="48" rx="24" fill="#d9d5cb"/>
+      <text x="540" y="1663" class="caveat" fill="#4f5a54"
+            text-anchor="middle">
+        TEST 데이터는 고른 스킬의 최종 성능 보고에만 사용
+      </text>
+    </g>
+  </svg>
+</body>
+</html>
