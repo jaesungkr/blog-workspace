@@ -15,9 +15,9 @@ fs.mkdirSync(qaRoot, { recursive: true });
 
 const targets = [
   "집에 있는 약은 세 칸으로 먼저 분류",
-  "기침·콧물·코막힘약에서 먼저 볼 성분",
+  "기침·콧물·코막힘약은 증상별로 선택",
   "판피린티정은 먼저 확인, 액티피드정은 복용하지 않기",
-  "이미 먹었다면 제품명·성분·시간부터 기록",
+  "이미 먹었다면 제품명·먹은 양·시간부터 기록",
 ];
 
 async function renderAt(browser, width, height, padding) {
