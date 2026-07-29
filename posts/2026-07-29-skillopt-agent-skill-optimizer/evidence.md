@@ -1,4 +1,4 @@
-# 근거 지도: SkillOpt 사용법: 자동 테스트 557개 통과와 동점 거절 게이트
+# 근거 지도: SkillOpt 사용법: 에이전트의 반복 실수를 스킬로 고치는 방법
 
 ## 주장별 상태
 
@@ -23,6 +23,7 @@
 | C13 | 연구 엔진과 SkillOpt-Sleep은 별도 진입점·설정·안전 경계를 가짐 | 공식 | 확인 | `docs/index.md`, `docs/sleep/README.md` | Sleep은 preview이며 실제 세션 데이터의 외부 전송 경계를 검토해야 함 |
 | C14 | 현재 커밋의 전체 테스트는 기본 macOS 임시 경로에서 555 pass·6 skip·2 fail, `/private/tmp` 재실행에서 557 pass·6 skip임 | Codex 실행 | 확인 | `artifacts/test-log.md` | 실제 모델 API와 전체 논문 벤치마크를 호출하지 않는 저장소 테스트 범위 |
 | C15 | 기본 임시 경로의 2개 실패는 `/var/...`와 실제 경로 `/private/var/...` 비교 때문에 Superpowers overlay 경로가 작업공간 밖으로 잘못 판정된 경우임 | Codex 실행 + 소스 분석 | 확인 | pytest traceback, `skillopt_sleep/adapters/superpowers.py:721` | 현재 macOS 환경의 경로 별칭 사례이며 다른 OS에서는 재현되지 않을 수 있음 |
+| C16 | 테스트를 빼먹는 가상 에이전트에서 현재 스킬 6/10, 테스트 확인 후보 8/10, 동점 후보 6/10으로 채택·거절을 설명함 | 구조 예시 | 확인 | C02의 편집 흐름과 C04의 엄격한 점수 상승 게이트를 단순화해 구성 | 실제 SkillOpt 실행·공식 벤치마크·Codex 측정값이 아니며 본문에서 가상 예시로 명시 |
 
 ## 직접 검증 설계
 
