@@ -30,6 +30,32 @@ little more than a famous name or scene.
 - Keep the conclusion modest. `이제 이름과 대표 장면을 연결했다` is enough;
   do not force a moral verdict or a complete personality profile.
 
+## Passage-anchored opening
+
+Use this pattern for new installments and for Bible-character articles whose
+opening is being materially revised:
+
+1. Start with the standard greeting.
+2. Add one or two natural, character-specific sentences that connect the
+   reader to the person, a familiar scene, or the previous installment. Make
+   the bridge understandable to a search reader who has not read the series.
+3. Move into one canonical passage that gives the opening its context. Quote a
+   compact block when the wording itself carries the scene or tension;
+   otherwise paraphrase the documented scene and name its reference.
+4. Draw out one concrete observation, contrast, or unanswered question from
+   that passage, then state the article's modest promise without resolving the
+   whole person in advance.
+
+Choose the anchor from the first appearance, defining event, or a later scene
+that points back to an earlier encounter. Use whichever passage creates the
+clearest question for this person's article; do not force every installment to
+open with the same type of scene.
+
+Do not place a scripture block immediately after the greeting without a short
+bridge. Do not replace the bridge with generic small talk, a full biography, or
+a section-by-section roadmap. Keep motives, emotions, and missing actions out
+of the setup unless the passage states them.
+
 ## Evidence behind the prose
 
 The research bundle still separates:
@@ -148,6 +174,12 @@ the article does not need to display its full complexity.
   reading.
 - The title uses one short, passage-grounded modifier before the person's name
   and contains no series label or episode number.
+- After the greeting, a short character-specific bridge prepares the selected
+  canonical passage; the passage then raises one concrete question or tension
+  that the article can carry forward.
+- The opening remains understandable without reading the previous installment,
+  avoids an abrupt greeting-to-quotation jump, and does not reveal the whole
+  conclusion before the body.
 - One central event provides a clear story arc without pretending to be the
   person's undocumented conversion story.
 - The article explains the person's commonly known image without assuming

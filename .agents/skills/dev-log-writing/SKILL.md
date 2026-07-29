@@ -53,6 +53,9 @@ the article validator owns that transition.
    - one reader and search intent;
    - one sentence the reader should retain;
    - a familiar anchor and every prerequisite;
+   - for a Bible-character article, the opening's canonical passage, the short
+     character-specific bridge that prepares it, and the single textual
+     question or tension that will carry into the body;
    - the complete input-to-result or decision chain;
    - a verifiable first-party contribution;
    - the strongest limitation or counterargument;
@@ -65,7 +68,12 @@ the article validator owns that transition.
 5. If appropriate and no first-party result exists, run a reproducible
    experiment Codex can actually perform. Record Codex as the actor.
 6. Draft Tistory-compatible Markdown. Keep metadata in frontmatter and the
-   publishable article below it.
+   publishable article below it. For a new or materially revised
+   Bible-character opening, follow the applicable guide's sequence: standard
+   greeting -> one or two natural bridge sentences -> compact scripture block
+   or passage-grounded scene -> one concrete observation or question -> modest
+   article promise. Keep the bridge useful to readers who did not see the
+   previous installment, and do not invent scene details to make it vivid.
 7. Revise once for structure and evidence, then establish clear baseline Korean,
    consistent 존대어, sentence hygiene, and source-grounded voice. Do not force
    the recent title skeleton, a uniform paragraph size, or a bold takeaway for

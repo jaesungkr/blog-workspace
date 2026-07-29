@@ -92,7 +92,7 @@ Treat every signal as a review prompt, never as a score or automatic failure.
 Use the reported line and sentence excerpts to inspect each match in context.
 The sentence-ending distribution is a cadence overview, not a defect list; read
 its samples and then the whole passage. Do not rewrite from a count alone.
-Then perform four human checks:
+Then perform five human checks:
 
 1. Read only the public title and headings. Confirm they reveal this post's
    event, decision, observation, or useful navigation.
@@ -104,6 +104,11 @@ Then perform four human checks:
    question, or deliberate reset.
 4. Find smooth but empty lines that preview, summarize, or balance both sides
    without adding information.
+5. For a new or materially revised Bible-character opening, read from the
+   greeting through the passage and its follow-up question. Confirm that one or
+   two natural, character-specific sentences prepare the scripture, the passage
+   gives the setup a real textual anchor, and the resulting question carries
+   into the body without giving away the whole conclusion.
 
 ## Rewrite titles and headings
 
@@ -147,6 +152,14 @@ Then perform four human checks:
   `그렇다고` defenses when one precise boundary can do the work.
 - Remove mechanical roadmaps and repeated takeaways. A section does not need a
   bold maxim merely because neighboring sections have one.
+- In a Bible-character opening, make each seam earn its place: the bridge
+  should lead into this person's selected passage, and the first sentence after
+  the passage should pick up a concrete word, action, contrast, or unanswered
+  point from it. Do not cut the bridge so aggressively that the greeting jumps
+  straight into a quotation.
+- Keep a previous-installment connection only when a first-time search reader
+  can understand it. Replace generic series chatter with the character or
+  scene that actually prepares the passage.
 - Vary sentence length only when the thought calls for it. Join choppy clauses;
   split a long sentence when its actor, action, and consequence become hard to
   follow.

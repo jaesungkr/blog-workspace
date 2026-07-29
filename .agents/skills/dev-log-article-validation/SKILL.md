@@ -25,6 +25,14 @@ Read the article from greeting to closing and verify:
   category-specific title pattern; their sequence follows this post's actual
   event or argument and does not rely on reusable labels alone;
 - the opening gives context and the retained conclusion early;
+- a new or materially revised Bible-character opening uses a short,
+  character-specific bridge before its canonical passage, remains clear to a
+  reader who missed earlier installments, and carries one passage-grounded
+  observation or question into the body without an abrupt greeting-to-quote
+  jump or a complete answer in the setup;
+- any scripture used for that opening matches the named translation and
+  immediate context, follows the applicable quotation format, and introduces
+  no motive, emotion, or missing action that the passage does not state;
 - unfamiliar terms, methods, metrics, and labels appear before dependent
   results;
 - the full explanation or decision chain is present;
@@ -47,9 +55,10 @@ Read the article from greeting to closing and verify:
 
 Report `revision_required` with exact evidence when a defect exists. Return
 evidence, method, or explanation-structure defects to the writing stage and
-title, heading, flow, rhythm, or empty-prose defects to the prose-polishing
-stage. Rerun prose polish after any material writing revision, then rerun the
-full affected audit.
+title, heading, opening-bridge flow, rhythm, or empty-prose defects to the
+prose-polishing stage. Return an unsupported opening scene, quotation, or
+textual question to the writing stage. Rerun prose polish after any material
+writing revision, then rerun the full affected audit.
 
 ## Automated and rendered validation
 
