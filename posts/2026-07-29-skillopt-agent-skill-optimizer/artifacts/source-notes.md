@@ -82,3 +82,30 @@ update를 selection gate 없이 current/best skill에 반영하는 출시 후 �
 - Sleep의 실제 backend는 세션에서 뽑은 내용을 공급자에게 보낼 수 있으므로
   민감한 프로젝트에서는 source, provider policy, redaction, evidence log를
   먼저 검토해야 합니다.
+
+## 사용자 입력과 산출물 경계
+
+`docs/guide/first-experiment.md`, `docs/guide/new-benchmark.md`,
+`skillopt/envs/base.py`, `scripts/train.py`, `skillopt/engine/trainer.py`를
+대조했습니다.
+
+연구 엔진으로 사용자 고유 업무를 최적화하려면 다음 항목이 먼저 필요합니다.
+
+1. 출발점이 될 스킬 문서
+2. train/selection/test로 나눈 작업 데이터
+3. 작업을 실행하고 `id`, `hard`, `soft` 점수와 대화 기록을 남기는 환경 어댑터
+4. 대상 모델·옵티마이저 모델, 인증, 학습 설정
+
+내장 벤치마크는 데이터 로더와 실행·채점 어댑터를 제공합니다. 새로운 회사 업무는
+`SplitDataLoader`, rollout/scoring helper, `EnvAdapter`, YAML config를 직접
+연결해야 합니다.
+
+훈련 결과 디렉터리에는 `best_skill.md` 외에도 `config.json`,
+`runtime_state.json`, `history.json`, `summary.json`, 버전별 스킬, 단계별 후보와
+실행 기록이 저장됩니다. 별도 평가 명령과 실제 스킬 경로로의 배포는 사용자가
+수행합니다.
+
+`docs/sleep/README.md`는 Sleep을 별도 흐름으로 설명합니다. 세션 수집은
+`dry-run` 또는 `run`을 실행하거나 스케줄을 설치했을 때 일어나며, 전체 사이클은
+제안을 staging한 뒤 사용자가 `adopt`하는 것으로 끝납니다. 일반 에이전트 요청에
+연구 엔진이 자동으로 붙거나 스킬을 조용히 바꾸는 동작은 아닙니다.
