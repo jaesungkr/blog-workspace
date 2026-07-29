@@ -14,10 +14,10 @@ const qaRoot = "/tmp/breastfeeding-cold-article-qa";
 fs.mkdirSync(qaRoot, { recursive: true });
 
 const targets = [
-  "증상별로 달라지는 수유 중 감기약 성분",
-  "편의점 종합감기약 한 정을 성분으로 풀어보면",
-  "약 상자 앞에서 확인할 세 단계",
-  "이미 감기약을 먹었다면 확인할 기록",
+  "집에 있는 약은 세 칸으로 먼저 분류",
+  "기침·콧물·코막힘약에서 먼저 볼 성분",
+  "판피린티정은 먼저 확인, 액티피드정은 복용하지 않기",
+  "이미 먹었다면 제품명·성분·시간부터 기록",
 ];
 
 async function renderAt(browser, width, height, padding) {

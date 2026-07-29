@@ -8,10 +8,10 @@ async function main() {
   const imagePath = path.join(
     postRoot,
     "assets",
-    "breastfeeding-cold-selection-flow-v4.png",
+    "breastfeeding-cold-selection-flow-v6.png",
   );
   const imageUrl = pathToFileURL(imagePath).href;
-  const qaRoot = "/tmp/breastfeeding-cold-selection-flow-qa";
+  const qaRoot = "/tmp/breastfeeding-cold-selection-flow-v6-qa";
   fs.mkdirSync(qaRoot, { recursive: true });
 
   const systemChrome =
@@ -28,9 +28,12 @@ async function main() {
     });
     await mobile.goto(imageUrl, { waitUntil: "load" });
     await mobile.evaluate(() => {
+      document.documentElement.style.margin = "0";
       document.documentElement.style.background = "#ffffff";
       document.body.style.margin = "20px";
       document.body.style.width = "360px";
+      document.body.style.background = "#ffffff";
+      document.body.style.lineHeight = "0";
       const image = document.querySelector("img");
       image.style.width = "360px";
       image.style.height = "auto";
@@ -55,11 +58,13 @@ async function main() {
     });
 
     const crops = [
-      ["header", { x: 40, y: 30, width: 1000, height: 230 }],
-      ["step-1", { x: 50, y: 260, width: 980, height: 350 }],
-      ["step-2", { x: 50, y: 620, width: 980, height: 405 }],
-      ["step-3", { x: 50, y: 1020, width: 980, height: 273 }],
-      ["caveat", { x: 0, y: 1288, width: 1080, height: 62 }],
+      ["header", { x: 38, y: 28, width: 1004, height: 225 }],
+      ["source-and-branch", { x: 42, y: 255, width: 340, height: 735 }],
+      ["green-lane", { x: 350, y: 260, width: 690, height: 235 }],
+      ["amber-lane", { x: 350, y: 512, width: 690, height: 235 }],
+      ["red-lane", { x: 350, y: 764, width: 690, height: 235 }],
+      ["exceptions", { x: 50, y: 1040, width: 980, height: 260 }],
+      ["aspirin-caveat", { x: 0, y: 1305, width: 1080, height: 45 }],
     ];
     for (const [name, clip] of crops) {
       await full.screenshot({

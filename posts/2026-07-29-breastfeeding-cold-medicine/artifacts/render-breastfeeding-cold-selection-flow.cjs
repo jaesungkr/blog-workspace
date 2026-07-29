@@ -12,7 +12,7 @@ async function main() {
   const output = path.join(
     postRoot,
     "assets",
-    "breastfeeding-cold-selection-flow-v4.png",
+    "breastfeeding-cold-selection-flow-v6.png",
   );
   const systemChrome =
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";

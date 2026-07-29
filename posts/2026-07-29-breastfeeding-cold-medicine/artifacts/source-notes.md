@@ -66,3 +66,41 @@
   - 클로르페니라민말레산염 2mg
 - 표시 용법: 성인 1회 1정, 1일 3회 식후 30분
 - 한계: 제조사 제품 정보는 효능·허가사항의 출처로만 사용. 수유 중 적합성은 독립 공공 자료로 교차 확인
+
+## 8. LactMed - Oxymetazoline
+
+- 최종 갱신: 2025-02-15
+- URL: https://www.ncbi.nlm.nih.gov/sites/books/NBK501364/
+- 요지: 국소 투여와 제한된 전신 흡수 때문에 모유로 전달되는 양이 매우 적을 것으로 예상하며, 수유 중 경구 슈도에페드린보다 우선 추천
+- 한계: 수유부 사용과 수유아 영향에 대한 직접 연구는 없음
+
+## 9. LactMed - Guaifenesin
+
+- 최종 갱신: 2026-04-15
+- URL: https://www.ncbi.nlm.nih.gov/books/NBK501455/
+- 요지: 모유 이동과 수유아 영향은 연구되지 않았지만 통상 용량이 특히 생후 2개월을 지난 영아에게 해를 줄 가능성은 낮음
+- 한계: 생후 2개월 이하 영아는 먼저 확인하고 고알코올 제품은 피함
+
+## 10. LactMed - Aspirin
+
+- 최종 갱신: 2026-04-15
+- URL: https://www.ncbi.nlm.nih.gov/books/NBK501196/
+- 요지: 고용량일수록 모유의 살리실산 농도가 불균형하게 높아지며 지속적 고용량에는 대체약이 선호됨
+- 한계: 의사가 처방한 저용량 아스피린 75~325mg은 모유 중 살리실산이 낮은 별도 상황이므로 임의 중단하지 않음
+
+## 11. FDA - Codeine and tramadol
+
+- URL: https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/codeine-information
+- 보완 URL: https://www.fda.gov/Drugs/DrugSafety/ucm590435.htm
+- 요지: FDA는 코데인·트라마돌 사용 중 수유를 권하지 않으며, 코데인 함유 기침약과 트라마돌 진통제는 영아의 과도한 졸림·수유 곤란·호흡 문제를 일으킬 수 있다고 경고
+- 한계: 미국 규제기관 안내. 국내 처방약은 제품 허가사항과 처방 의료진의 대체 지시를 함께 확인
+
+## 12. 약학정보원 - 액티피드정 허가정보
+
+- 확인일: 2026-07-29
+- URL: https://www.health.kr/searchDrug/result_drug.asp?drug_cd=A11A0500A0068
+- 1정 유효성분:
+  - 슈도에페드린염산염 60mg
+  - 트리프롤리딘염산염수화물 2.5mg
+- 허가정보: `다음과 같은 사람은 이 약을 복용하지 말 것`에 수유부가 포함됨
+- 한계: 액티피드정 해당 제형의 현재 허가사항이며 슈도에페드린 또는 트리프롤리딘 전체를 절대 금기로 일반화하지 않음
