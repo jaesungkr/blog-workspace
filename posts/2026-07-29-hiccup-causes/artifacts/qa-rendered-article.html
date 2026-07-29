@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>딸꾹질 원인 글 렌더링 검수</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { background: #e8ebef; }
+    body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px;
+      overflow-wrap: break-word;
+      color: #202124;
+      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+        "Noto Sans KR", sans-serif;
+      font-size: 17px;
+      line-height: 1.78;
+      word-break: keep-all;
+    }
+    a {
+      color: #1967d2;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    strong { color: #111; }
+    .qa-slot {
+      margin: 0 0 30px;
+      padding: 20px 12px;
+      border: 2px dashed #a7adb4;
+      color: #59636e;
+      background: #f7f8fa;
+      font-size: 14px;
+      text-align: center;
+    }
+    .qa-slot b {
+      display: block;
+      color: #303840;
+      font-size: 16px;
+    }
+    .qa-info { margin: 30px 0; }
+    .qa-error {
+      color: #b3261e;
+      white-space: pre-wrap;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 18px;
+        font-size: 16px;
+        line-height: 1.72;
+      }
+      .qa-slot {
+        margin-bottom: 24px;
+        padding: 14px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="qa-slot qa-hero">
+    <b>대표 이미지</b>
+    제목 바로 아래 · assets/hero.png
+  </div>
+  <main id="article" aria-live="polite">렌더링 결과를 불러오는 중입니다.</main>
+  <script>
+    fetch("/dist/hiccup-causes.html")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`렌더링 결과를 불러오지 못했습니다: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then((html) => {
+        const article = document.querySelector("#article");
+        article.innerHTML = html;
+        const headings = [...article.querySelectorAll("h3")];
+        const mechanismHeading = headings.find((heading) =>
+          heading.textContent.includes("딸꾹") &&
+          heading.textContent.includes("횡격막")
+        );
+        if (mechanismHeading) {
+          let cursor = mechanismHeading.nextElementSibling;
+          while (cursor && cursor.tagName !== "H3") {
+            cursor = cursor.nextElementSibling;
+          }
+          const slot = document.createElement("div");
+          slot.className = "qa-slot qa-info";
+          slot.innerHTML =
+            "<b>보조 인포그래픽</b>횡격막 반사 설명 뒤 · assets/hiccup-reflex-infographic-v2.png";
+          if (cursor) {
+            cursor.before(slot);
+          } else {
+            article.append(slot);
+          }
+        }
+      })
+      .catch((error) => {
+        document.querySelector("#article").innerHTML =
+          `<p class="qa-error">${error.message}</p>`;
+      });
+  </script>
+</body>
+</html>

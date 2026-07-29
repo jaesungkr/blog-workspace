@@ -1,0 +1,12 @@
+claim_id,claim,asan,mayo,nhs,msd,statpearls,cochrane,scope_note
+C01,diaphragm_spasm_then_glottis_closure,yes,yes,not_addressed,yes,yes,partial,"Cochrane summary mentions involuntary breathing-muscle contraction but not glottic closure"
+C02,acute_hiccups_are_often_self_limited,yes,yes,yes,yes,yes,yes,"Cochrane statement is contextual to persistent-hiccup review"
+C03,gastric_distension_or_large_meal_can_trigger,not_addressed,yes,partial,yes,yes,not_addressed,"NHS groups eating and drinking without naming gastric distension"
+C04,carbonated_drinks_or_alcohol_can_trigger,not_addressed,yes,yes,yes,yes,not_addressed,"NHS lists these as things to avoid"
+C05,stress_or_excitement_can_trigger,not_addressed,yes,yes,not_addressed,yes,not_addressed,"Trigger not a diagnosis"
+C06,over_48_hours_is_persistent_boundary,yes,yes,yes,yes,yes,yes,"Cochrane uses this as the review population threshold"
+C07,over_one_month_is_intractable_boundary,yes,not_addressed,not_addressed,yes,yes,yes,"Terminology can vary in Korean translation"
+C08,persistent_hiccups_warrant_cause_or_medication_review,yes,yes,yes,yes,yes,partial,"Cochrane focuses on burden and treatment evidence rather than diagnostic workup"
+C09,brief_breath_hold_or_cold_water_may_be_tried,yes,yes,yes,yes,yes,not_addressed,"Suggestions do not establish comparative efficacy"
+C10,no_home_method_is_universally_proven_or_evidence_is_limited,not_addressed,yes,yes,yes,yes,partial,"Cochrane evidence limitation applies to persistent and intractable adult hiccups"
+C11,eating_sleeping_breathing_or_neurologic_impact_changes_response,partial,yes,partial,yes,yes,yes,"Specific red-flag wording differs by source"

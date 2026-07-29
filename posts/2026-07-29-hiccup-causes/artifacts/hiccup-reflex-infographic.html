@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>딸꾹질 반사와 48시간 대응 경계</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      margin: 0;
+      overflow: hidden;
+    }
+    body {
+      color: #24302d;
+      background: #f6f2e9;
+      font-family: "Apple SD Gothic Neo", "AppleGothic", sans-serif;
+    }
+    svg { display: block; width: 1080px; height: 1350px; }
+    .eyebrow { font-size: 30px; font-weight: 800; letter-spacing: 0.08em; }
+    .headline { font-size: 64px; font-weight: 850; letter-spacing: -0.055em; }
+    .subtitle { font-size: 38px; font-weight: 650; letter-spacing: -0.03em; }
+    .primary { font-size: 48px; font-weight: 850; letter-spacing: -0.045em; }
+    .support { font-size: 38px; font-weight: 650; letter-spacing: -0.025em; }
+    .caveat { font-size: 34px; font-weight: 700; letter-spacing: -0.025em; }
+    .step { font-size: 34px; font-weight: 850; }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1080 1350" role="img"
+       aria-labelledby="infographic-title infographic-desc">
+    <title id="infographic-title">딸꾹질 반사와 48시간 대응 경계</title>
+    <desc id="infographic-desc">
+      위와 식도 등의 자극이 반사 신호로 전달된 뒤 횡격막이 갑자기 수축하고
+      성문이 닫히며 딸꾹 소리가 난다. 짧게 끝나면 무리 없는 방법을 시도할 수
+      있지만 48시간 이상 지속되면 원인과 복용약을 확인해야 한다. 먹기, 잠자기,
+      호흡을 방해하면 48시간 전에도 진료가 필요하다.
+    </desc>
+
+    <defs>
+      <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#fffdf8"/>
+        <stop offset="100%" stop-color="#eee7da"/>
+      </linearGradient>
+      <linearGradient id="coral" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#df755f"/>
+        <stop offset="100%" stop-color="#b84d43"/>
+      </linearGradient>
+      <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse">
+        <circle cx="7" cy="9" r="0.9" fill="#33443e" opacity="0.045"/>
+        <circle cx="27" cy="24" r="0.8" fill="#33443e" opacity="0.04"/>
+        <path d="M13 29h8" stroke="#33443e" stroke-width="0.8" opacity="0.035"/>
+      </pattern>
+      <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="8" stdDeviation="10"
+                      flood-color="#26352f" flood-opacity="0.12"/>
+      </filter>
+      <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6"
+                      flood-color="#26352f" flood-opacity="0.1"/>
+      </filter>
+      <marker id="arrow-coral" markerUnits="userSpaceOnUse"
+              markerWidth="20" markerHeight="20" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#bd594b"/>
+      </marker>
+      <marker id="arrow-green" markerUnits="userSpaceOnUse"
+              markerWidth="20" markerHeight="20" viewBox="0 0 10 10"
+              refX="9" refY="5" orient="auto">
+        <path d="M0 0L10 5L0 10Z" fill="#4d7567"/>
+      </marker>
+    </defs>
+
+    <rect width="1080" height="1350" fill="#f6f2e9"/>
+    <rect width="1080" height="1350" fill="url(#grain)"/>
+    <circle cx="1032" cy="90" r="220" fill="#dae8df" opacity="0.75"/>
+    <circle cx="34" cy="790" r="190" fill="#efd9cc" opacity="0.42"/>
+
+    <!-- Header: 230px / 17.0% -->
+    <g transform="translate(68 48)">
+      <rect width="430" height="48" rx="24" fill="#263b34"/>
+      <circle cx="29" cy="24" r="8" fill="#d87962"/>
+      <text x="52" y="35" class="eyebrow" fill="#fffdf8">횡격막 반사 한눈에 보기</text>
+    </g>
+    <text x="68" y="160" class="headline" fill="#21312b">
+      딸꾹질, 횡격막 수축에서 시작
+    </text>
+    <text x="70" y="210" class="subtitle" fill="#5a6962">
+      자극에서 소리까지, 그리고 48시간 뒤의 대응
+    </text>
+
+    <!-- Anatomical mechanism field -->
+    <g transform="translate(55 250)">
+      <path d="M134 42
+               C95 102 72 173 70 254
+               L54 544
+               C52 612 92 658 164 675
+               L372 675
+               C444 657 483 610 480 544
+               L464 254
+               C460 173 438 102 400 42
+               C350 18 184 18 134 42Z"
+            fill="url(#paper)" stroke="#b8b3aa" stroke-width="4"
+            filter="url(#soft-shadow)"/>
+      <path d="M234 22V129M300 22V129" stroke="#d0c9bb" stroke-width="26"
+            stroke-linecap="round"/>
+      <path d="M267 42V164" stroke="#9aa99f" stroke-width="15"
+            stroke-linecap="round"/>
+      <path d="M260 99h14" stroke="#bd594b" stroke-width="13"
+            stroke-linecap="round"/>
+
+      <path d="M245 187
+               C188 147 116 193 112 312
+               C110 413 155 480 238 449
+               C256 405 260 249 245 187Z"
+            fill="#e4e8df" stroke="#96a79d" stroke-width="4"/>
+      <path d="M289 187
+               C347 147 419 193 423 312
+               C425 413 380 480 297 449
+               C279 405 274 249 289 187Z"
+            fill="#e4e8df" stroke="#96a79d" stroke-width="4"/>
+      <g fill="none" stroke="#bbc8bf" stroke-width="8" opacity="0.9">
+        <path d="M136 226C184 205 218 212 246 241"/>
+        <path d="M125 280C179 255 215 263 248 291"/>
+        <path d="M124 337C178 311 216 319 248 345"/>
+        <path d="M398 226C350 205 316 212 288 241"/>
+        <path d="M409 280C355 255 319 263 286 291"/>
+        <path d="M410 337C356 311 318 319 286 345"/>
+      </g>
+
+      <path d="M97 490 Q267 388 437 490"
+            fill="none" stroke="url(#coral)" stroke-width="42"
+            stroke-linecap="round"/>
+      <path d="M113 492 Q267 414 421 492"
+            fill="none" stroke="#f5b2a0" stroke-width="5" opacity="0.9"/>
+      <path d="M198 548
+               C223 513 287 508 318 541
+               C340 566 331 618 284 635
+               C228 641 181 602 198 548Z"
+            fill="#e7d1bf" stroke="#b59a88" stroke-width="4"/>
+
+      <!-- reflex signal -->
+      <path d="M263 579
+               C208 538 185 487 188 423
+               C193 327 237 287 268 242
+               C295 204 294 164 274 122"
+            fill="none" stroke="#c6a36b" stroke-width="10"
+            stroke-linecap="round" stroke-dasharray="3 25"/>
+      <circle cx="263" cy="579" r="16" fill="#d8a95e"/>
+      <circle cx="274" cy="122" r="16" fill="#d8a95e"/>
+
+      <!-- Numbered anatomical cues -->
+      <g>
+        <circle cx="360" cy="579" r="22" fill="#8d7552"/>
+        <text x="360" y="591" class="step" text-anchor="middle" fill="#fffdf8">1</text>
+        <circle cx="171" cy="361" r="22" fill="#8d7552"/>
+        <text x="171" y="373" class="step" text-anchor="middle" fill="#fffdf8">2</text>
+        <circle cx="439" cy="482" r="22" fill="#bd594b"/>
+        <text x="439" y="494" class="step" text-anchor="middle" fill="#fffdf8">3</text>
+        <circle cx="320" cy="99" r="22" fill="#bd594b"/>
+        <text x="320" y="111" class="step" text-anchor="middle" fill="#fffdf8">4</text>
+      </g>
+    </g>
+
+    <!-- Numbered mechanism labels, open field rather than cards -->
+    <g transform="translate(610 278)">
+      <path d="M22 58V525" stroke="#c5cec8" stroke-width="6"
+            stroke-linecap="round"/>
+
+      <g transform="translate(0 0)">
+        <circle cx="22" cy="58" r="22" fill="#8d7552"/>
+        <text x="22" y="70" class="step" text-anchor="middle" fill="#fffdf8">1</text>
+        <text x="66" y="49" class="primary" fill="#24342e">위·식도 등의 자극</text>
+        <text x="68" y="94" class="support" fill="#65736d">식사·음료·감정이 계기</text>
+      </g>
+
+      <g transform="translate(0 150)">
+        <circle cx="22" cy="58" r="22" fill="#8d7552"/>
+        <text x="22" y="70" class="step" text-anchor="middle" fill="#fffdf8">2</text>
+        <text x="66" y="49" class="primary" fill="#24342e">반사 신호 전달</text>
+        <text x="68" y="94" class="support" fill="#65736d">신경계가 신호를 처리</text>
+      </g>
+
+      <g transform="translate(0 300)">
+        <circle cx="22" cy="58" r="22" fill="#bd594b"/>
+        <text x="22" y="70" class="step" text-anchor="middle" fill="#fffdf8">3</text>
+        <text x="66" y="49" class="primary" fill="#9f4038">횡격막이 갑자기 수축</text>
+        <text x="68" y="94" class="support" fill="#65736d">공기가 빠르게 들어옴</text>
+      </g>
+
+      <g transform="translate(0 450)">
+        <circle cx="22" cy="58" r="22" fill="#bd594b"/>
+        <text x="22" y="70" class="step" text-anchor="middle" fill="#fffdf8">4</text>
+        <text x="66" y="49" class="primary" fill="#9f4038">성문이 닫히며 ‘딸꾹’</text>
+        <text x="68" y="94" class="support" fill="#65736d">공기 흐름이 순간 끊김</text>
+      </g>
+    </g>
+
+    <!-- Decision timeline -->
+    <g transform="translate(68 948)">
+      <text x="0" y="40" class="primary" fill="#24342e">지속 시간이 다음 행동을 바꿉니다</text>
+
+      <path d="M18 120H922" stroke="#61726b" stroke-width="8"
+            stroke-linecap="round" marker-end="url(#arrow-green)"/>
+      <circle cx="18" cy="120" r="13" fill="#4d7567"/>
+      <path d="M590 87V153" stroke="#bd594b" stroke-width="8"
+            stroke-linecap="round"/>
+      <rect x="514" y="66" width="152" height="50" rx="25" fill="#bd594b"/>
+      <text x="590" y="102" class="caveat" text-anchor="middle"
+            fill="#fffdf8">48시간</text>
+
+      <text x="0" y="208" class="primary" fill="#355d50">짧게 끝남</text>
+      <text x="0" y="253" class="support" fill="#607169">대개 자연 소실 · 무리 없는 시도</text>
+
+      <text x="610" y="208" class="primary" fill="#9f4038">48시간 이상</text>
+      <text x="610" y="253" class="support" fill="#6f655f">지속성 · 원인과 복용약 확인</text>
+    </g>
+
+    <!-- Exception and evidence limit -->
+    <g transform="translate(68 1228)">
+      <path d="M0 0H944" stroke="#d8c4b5" stroke-width="3"/>
+      <circle cx="18" cy="49" r="12" fill="#bd594b"/>
+      <text x="48" y="61" class="caveat" fill="#4b514e">
+        먹기·잠자기·호흡을 방해하면 48시간 전에도 진료
+      </text>
+      <text x="48" y="95" class="caveat" fill="#776e67">
+        숨 참기·찬물은 시도할 수 있지만 효과가 보장되지는 않습니다
+      </text>
+    </g>
+  </svg>
+</body>
+</html>
