@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>SkillOpt 제안과 실제 반영 시점</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      margin: 0;
+      overflow: hidden;
+    }
+    body {
+      color: #1d2a24;
+      background:
+        radial-gradient(circle at 85% 8%, rgba(47, 137, 88, 0.12), transparent 27%),
+        linear-gradient(180deg, #faf8f1 0%, #f3f4ed 100%);
+      font-family: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    }
+    .canvas {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 60px 64px 48px;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 0 0 18px;
+      color: #2f8958;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+    .eyebrow::before {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #2f8958;
+      content: "";
+    }
+    h1 {
+      max-width: 930px;
+      margin: 0;
+      color: #17241e;
+      font-size: 60px;
+      font-weight: 850;
+      letter-spacing: -0.045em;
+      line-height: 1.16;
+      word-break: keep-all;
+    }
+    .sub {
+      margin: 18px 0 0;
+      color: #667169;
+      font-size: 38px;
+      font-weight: 560;
+      letter-spacing: -0.025em;
+    }
+    .change {
+      position: relative;
+      display: grid;
+      grid-template-columns: 390px 116px 446px;
+      align-items: center;
+      margin-top: 46px;
+    }
+    .sheet {
+      position: relative;
+      min-height: 468px;
+      padding: 40px 36px 34px;
+      border: 2px solid #d5d9d3;
+      border-radius: 22px 22px 18px 18px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 18px 50px rgba(41, 55, 47, 0.09);
+    }
+    .sheet::before {
+      position: absolute;
+      top: -16px;
+      left: 34px;
+      width: 150px;
+      height: 28px;
+      border: 2px solid #d5d9d3;
+      border-bottom: 0;
+      border-radius: 12px 12px 0 0;
+      background: #fff;
+      content: "";
+    }
+    .sheet.after {
+      border-color: #9bc6aa;
+      background: rgba(248, 255, 250, 0.96);
+      box-shadow: 0 22px 58px rgba(47, 137, 88, 0.14);
+    }
+    .sheet.after::before {
+      border-color: #9bc6aa;
+      background: #f8fffa;
+    }
+    .state {
+      margin-bottom: 20px;
+      color: #748078;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: 0.055em;
+    }
+    .state strong {
+      display: block;
+      margin-top: 8px;
+      color: #1d2a24;
+      font-size: 48px;
+      letter-spacing: -0.04em;
+    }
+    .code-title {
+      margin: 20px 0 14px;
+      color: #2e3b34;
+      font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+      font-size: 37px;
+      font-weight: 760;
+      line-height: 1.35;
+    }
+    .blank {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 38px;
+    }
+    .blank span {
+      height: 14px;
+      border-radius: 20px;
+      background: #e7e9e5;
+    }
+    .blank span:nth-child(2) { width: 76%; }
+    .blank span:nth-child(3) { width: 52%; }
+    .empty {
+      margin: 46px 0 0;
+      color: #8a938d;
+      font-size: 39px;
+      font-weight: 680;
+      text-align: center;
+    }
+    .rules {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .rule {
+      position: relative;
+      padding: 18px 18px 18px 48px;
+      border-left: 8px solid #43a46b;
+      border-radius: 0 14px 14px 0;
+      color: #1d3427;
+      background: #e8f5ec;
+      font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+      font-size: 36px;
+      font-weight: 650;
+      line-height: 1.34;
+      overflow-wrap: anywhere;
+    }
+    .rule::before {
+      position: absolute;
+      left: 14px;
+      top: 18px;
+      color: #2f8958;
+      content: "+";
+      font-weight: 900;
+    }
+    .arrow {
+      position: relative;
+      height: 8px;
+      margin: 0 20px;
+      border-radius: 8px;
+      background: #2f8958;
+    }
+    .arrow::after {
+      position: absolute;
+      right: -4px;
+      top: 50%;
+      width: 28px;
+      height: 28px;
+      border-top: 8px solid #2f8958;
+      border-right: 8px solid #2f8958;
+      content: "";
+      transform: translateY(-50%) rotate(45deg);
+    }
+    .arrow span {
+      position: absolute;
+      left: 50%;
+      bottom: 26px;
+      width: 150px;
+      color: #2f8958;
+      font-size: 36px;
+      font-weight: 820;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+    .score {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      height: 84px;
+      margin: 34px 0 40px;
+      color: #f9fff9;
+      background: #244f38;
+      border-radius: 18px;
+      font-size: 39px;
+      font-weight: 720;
+    }
+    .score strong {
+      color: #9de0b5;
+      font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+      font-size: 48px;
+    }
+    .flow-title {
+      margin: 0 0 24px;
+      color: #243128;
+      font-size: 48px;
+      font-weight: 820;
+      letter-spacing: -0.035em;
+    }
+    .flow {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 56px;
+      padding: 0 22px;
+    }
+    .flow::before {
+      position: absolute;
+      top: 28px;
+      left: 120px;
+      right: 120px;
+      height: 5px;
+      background: #bac2bc;
+      content: "";
+    }
+    .step {
+      position: relative;
+      padding-top: 62px;
+      text-align: center;
+    }
+    .step::before {
+      position: absolute;
+      top: 11px;
+      left: 50%;
+      width: 38px;
+      height: 38px;
+      border: 8px solid #f4f5ef;
+      border-radius: 50%;
+      background: #7b8980;
+      box-shadow: 0 0 0 3px #aeb8b0;
+      content: "";
+      transform: translateX(-50%);
+    }
+    .step.active::before {
+      background: #d97839;
+      box-shadow: 0 0 0 3px #d97839;
+    }
+    .step-name {
+      color: #223128;
+      font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+      font-size: 48px;
+      font-weight: 850;
+    }
+    .step-copy {
+      margin-top: 10px;
+      color: #606c64;
+      font-size: 38px;
+      font-weight: 620;
+      line-height: 1.35;
+      word-break: keep-all;
+    }
+    .step-copy strong {
+      display: block;
+      margin-top: 6px;
+      color: #536159;
+      font-size: 36px;
+    }
+    .step.active .step-copy strong {
+      color: #b45e2c;
+    }
+    .note {
+      position: absolute;
+      left: 64px;
+      right: 64px;
+      bottom: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 2px solid #d8dcd7;
+      color: #59655d;
+      font-size: 34px;
+      font-weight: 620;
+    }
+    .note strong { color: #2f8958; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <p class="eyebrow">공식 MOCK 실행에서 확인한 변경</p>
+    <h1>제안은 어디에 남고,<br>파일은 언제 바뀔까?</h1>
+    <p class="sub">SkillOpt-Sleep은 검증된 후보를 먼저 보여 줍니다.</p>
+
+    <section class="change" aria-label="빈 관리 블록에서 두 규칙 후보로 바뀌는 과정">
+      <article class="sheet before">
+        <div class="state">BEFORE<strong>빈 관리 블록</strong></div>
+        <div class="code-title">## Learned preferences<br>&amp; procedures</div>
+        <div class="blank" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <p class="empty">학습된 규칙 없음</p>
+      </article>
+
+      <div class="arrow" aria-hidden="true"><span>검증 통과</span></div>
+
+      <article class="sheet after">
+        <div class="state">CANDIDATE<strong>두 규칙 추가</strong></div>
+        <div class="rules">
+          <div class="rule">Always wrap the final answer in &lt;answer&gt; tags.</div>
+          <div class="rule">Report arXiv IDs as arXiv:XXXX.XXXXX.</div>
+        </div>
+      </article>
+    </section>
+
+    <div class="score">
+      held-out <strong>0.3333 → 1.0000</strong> · 편집 2개 채택
+    </div>
+
+    <h2 class="flow-title">실제 프로젝트의 기본 반영 순서</h2>
+    <section class="flow" aria-label="run status adopt 순서">
+      <article class="step">
+        <div class="step-name">run</div>
+        <div class="step-copy">후보를 검토함에 저장<strong>원본 유지</strong></div>
+      </article>
+      <article class="step">
+        <div class="step-name">status</div>
+        <div class="step-copy">내용과 근거 확인<strong>원본 유지</strong></div>
+      </article>
+      <article class="step active">
+        <div class="step-name">adopt</div>
+        <div class="step-copy">백업 후 실제 반영<strong>파일 변경</strong></div>
+      </article>
+    </section>
+
+    <footer class="note">
+      <span>mock은 임시 후보를 확인한 실험입니다.</span>
+      <strong>--auto-adopt는 사용자가 켠 경우만</strong>
+    </footer>
+  </main>
+</body>
+</html>

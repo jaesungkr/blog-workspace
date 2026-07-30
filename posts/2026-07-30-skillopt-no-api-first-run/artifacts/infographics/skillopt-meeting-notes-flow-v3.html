@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>SkillOpt 회의록 스킬 수정 흐름 v3</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      margin: 0;
+      overflow: hidden;
+    }
+    body {
+      font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      color: #17241d;
+      background:
+        radial-gradient(circle at 88% 8%, rgba(66, 151, 99, .13), transparent 25%),
+        linear-gradient(155deg, #fbfaf5 0%, #f2f5ee 100%);
+    }
+    .canvas {
+      position: relative;
+      width: 1080px;
+      height: 1350px;
+      padding: 52px 64px 46px;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: #2e8a59;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -.8px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #2e8a59;
+    }
+    h1 {
+      margin: 0 0 10px;
+      max-width: 920px;
+      font-size: 58px;
+      line-height: 1.18;
+      letter-spacing: -2.8px;
+    }
+    .subtitle {
+      margin: 0;
+      color: #617068;
+      font-size: 32px;
+      line-height: 1.35;
+      font-weight: 650;
+      letter-spacing: -1.1px;
+    }
+    .workbench {
+      position: relative;
+      display: grid;
+      grid-template-columns: 442px 96px 414px;
+      align-items: start;
+      margin-top: 28px;
+      height: 625px;
+    }
+    .input-zone {
+      position: relative;
+      height: 625px;
+    }
+    .zone-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #66726c;
+      font-size: 38px;
+      line-height: 1;
+      font-weight: 850;
+      letter-spacing: 1px;
+    }
+    .paper {
+      position: absolute;
+      width: 408px;
+      height: 180px;
+      padding: 24px 30px 20px;
+      border: 2px solid #d6ddd7;
+      border-radius: 18px;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 16px 34px rgba(26, 46, 34, .08);
+    }
+    .paper::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 26px;
+      width: 70px;
+      height: 12px;
+      border-radius: 0 0 7px 7px;
+      background: #dce5de;
+    }
+    .paper-one { top: 52px; left: 0; }
+    .paper-two { top: 242px; left: 20px; }
+    .paper-three { top: 432px; left: 0; }
+    .paper-title {
+      margin-bottom: 13px;
+      color: #2f8d5b;
+      font-size: 40px;
+      line-height: 1.1;
+      font-weight: 850;
+      letter-spacing: -1.2px;
+    }
+    .paper-copy {
+      color: #26372e;
+      font-size: 32px;
+      line-height: 1.25;
+      font-weight: 680;
+      letter-spacing: -.7px;
+    }
+    .arrow-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 590px;
+      margin-top: 18px;
+      color: #2f8d5b;
+    }
+    .arrow-label {
+      margin-bottom: 14px;
+      font-size: 36px;
+      line-height: 1.15;
+      font-weight: 850;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+    .arrow {
+      position: relative;
+      width: 74px;
+      height: 8px;
+      border-radius: 8px;
+      background: #2f8d5b;
+    }
+    .arrow::after {
+      content: "";
+      position: absolute;
+      top: -13px;
+      right: -2px;
+      width: 30px;
+      height: 30px;
+      border-top: 8px solid #2f8d5b;
+      border-right: 8px solid #2f8d5b;
+      transform: rotate(45deg);
+    }
+    .candidate {
+      position: relative;
+      height: 590px;
+      margin-top: 18px;
+      padding: 30px 28px 26px;
+      border: 3px solid #72b88d;
+      border-radius: 22px;
+      background: rgba(244, 252, 247, .94);
+      box-shadow: 0 22px 46px rgba(29, 86, 53, .12);
+    }
+    .candidate::before {
+      content: "";
+      position: absolute;
+      top: -17px;
+      left: 30px;
+      width: 104px;
+      height: 30px;
+      border: 3px solid #72b88d;
+      border-bottom: none;
+      border-radius: 13px 13px 0 0;
+      background: #f4fcf7;
+    }
+    .candidate-kicker {
+      color: #607168;
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 850;
+      letter-spacing: 1px;
+    }
+    .candidate-title {
+      margin: 16px 0 18px;
+      font-size: 42px;
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: -1.8px;
+    }
+    .rule {
+      position: relative;
+      margin-top: 13px;
+      padding: 12px 14px 12px 44px;
+      border-left: 8px solid #37a269;
+      border-radius: 0 14px 14px 0;
+      background: #e4f3e9;
+      color: #20362a;
+      font-size: 32px;
+      line-height: 1.25;
+      font-weight: 760;
+      letter-spacing: -.7px;
+    }
+    .rule::before {
+      content: "+";
+      position: absolute;
+      top: 15px;
+      left: 14px;
+      color: #2c9a61;
+      font-size: 38px;
+      font-weight: 900;
+    }
+    .gate {
+      position: relative;
+      height: 194px;
+      margin-top: 10px;
+      padding: 24px 42px;
+      border-top: 2px solid #cdd6d0;
+      border-bottom: 2px solid #cdd6d0;
+    }
+    .gate-line {
+      position: absolute;
+      top: 96px;
+      left: 124px;
+      right: 124px;
+      height: 7px;
+      border-radius: 7px;
+      background: #bdc9c1;
+    }
+    .gate-line::after {
+      content: "";
+      position: absolute;
+      right: -2px;
+      top: -10px;
+      width: 22px;
+      height: 22px;
+      border-top: 7px solid #bdc9c1;
+      border-right: 7px solid #bdc9c1;
+      transform: rotate(45deg);
+    }
+    .gate-node {
+      position: absolute;
+      top: 25px;
+      width: 250px;
+      text-align: center;
+    }
+    .gate-start { left: 20px; }
+    .gate-check { left: 351px; }
+    .gate-result { right: 8px; }
+    .node-dot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      margin: 0 auto 12px;
+      border: 5px solid #f4f6f1;
+      border-radius: 50%;
+      background: #91a49a;
+      box-shadow: 0 0 0 3px #aebdb4;
+      color: white;
+      font-size: 32px;
+      font-weight: 900;
+    }
+    .gate-check .node-dot {
+      background: #2f8d5b;
+      box-shadow: 0 0 0 3px #65aa80;
+    }
+    .gate-result .node-dot {
+      background: #e6752f;
+      box-shadow: 0 0 0 3px #ef9a65;
+    }
+    .node-title {
+      font-size: 42px;
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -1.4px;
+    }
+    .node-copy {
+      margin-top: 8px;
+      color: #65736b;
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -.8px;
+    }
+    .gate-result .node-copy { color: #b95820; }
+    .footnote {
+      margin-top: 18px;
+      text-align: center;
+      color: #5f6d65;
+      font-size: 32px;
+      line-height: 1.3;
+      font-weight: 700;
+      letter-spacing: -.8px;
+    }
+    .footnote strong { color: #2f8d5b; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <h1>SKILL.md 하나가 아니라<br>사례와 검사 기준까지 함께 봅니다</h1>
+    <p class="subtitle">현재 규칙에서 반복 실수를 줄일 수정 후보를 만듭니다.</p>
+
+    <section class="workbench" aria-label="입력 세 가지에서 수정 후보가 만들어지는 과정">
+      <div class="input-zone">
+        <div class="zone-label">INPUT · 판단 재료 3가지</div>
+        <div class="paper paper-one">
+          <div class="paper-title">현재 SKILL.md</div>
+          <div class="paper-copy">회의 내용을 짧고<br>명확하게 요약</div>
+        </div>
+        <div class="paper paper-two">
+          <div class="paper-title">반복 작업 사례</div>
+          <div class="paper-copy">담당자 누락<br>결정과 할 일 혼합</div>
+        </div>
+        <div class="paper paper-three">
+          <div class="paper-title">성공 기준</div>
+          <div class="paper-copy">항목 구분 · 담당자<br>날짜 없으면 ‘미정’</div>
+        </div>
+      </div>
+
+      <div class="arrow-zone" aria-hidden="true">
+        <div class="arrow-label">후보<br>생성</div>
+        <div class="arrow"></div>
+      </div>
+
+      <div class="candidate">
+        <div class="candidate-kicker">CANDIDATE</div>
+        <div class="candidate-title">SKILL.md<br>수정 후보</div>
+        <div class="rule">결정사항 / 할 일<br>항목 분리</div>
+        <div class="rule">담당자와 마감일<br>항상 표시</div>
+        <div class="rule">날짜가 없으면<br>‘미정’으로 표시</div>
+      </div>
+    </section>
+
+    <section class="gate" aria-label="수정 후보 검증과 파일 반영 순서">
+      <div class="gate-line"></div>
+      <div class="gate-node gate-start">
+        <div class="node-dot">1</div>
+        <div class="node-title">run</div>
+        <div class="node-copy">후보 생성</div>
+      </div>
+      <div class="gate-node gate-check">
+        <div class="node-dot">✓</div>
+        <div class="node-title">별도 사례 검사</div>
+        <div class="node-copy">통과하면 검토함</div>
+      </div>
+      <div class="gate-node gate-result">
+        <div class="node-dot">3</div>
+        <div class="node-title">adopt</div>
+        <div class="node-copy">실제 파일 반영</div>
+      </div>
+    </section>
+
+    <div class="footnote">
+      <strong>status</strong>로 후보를 읽은 뒤 사용자가 adopt합니다.<br>
+      이 그림은 작동 방식을 설명하는 가상 예시이며 실제 실행 결과가 아닙니다.
+    </div>
+  </main>
+</body>
+</html>

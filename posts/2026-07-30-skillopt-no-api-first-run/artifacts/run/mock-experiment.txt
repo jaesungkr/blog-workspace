@@ -1,0 +1,73 @@
+SkillOpt no-API acceptance run
+
+Checked source
+- Repository: https://github.com/microsoft/SkillOpt
+- Commit: 7da46ae693ee0329b80225c0128a37d65db10e9e
+- Commit time: 2026-07-30T04:57:41+08:00
+- Python: 3.12.13
+- Environment: fresh virtualenv at /private/tmp/skillopt-guide-venv-20260730-py312
+- Actor: Codex
+- Date: 2026-07-30
+
+Install
+
+python -m pip install -e .
+
+Command
+
+python -m skillopt_sleep.experiments.run_experiment \
+  --persona researcher \
+  --assert-improves \
+  --json
+
+Observed output
+
+{
+  "persona": "researcher",
+  "backend": "mock",
+  "model": "(default)",
+  "n_tasks": 12,
+  "nights_run": 1,
+  "baseline_holdout": 0.3333,
+  "after_holdout": 1.0,
+  "lift": 0.6667,
+  "improved": true,
+  "gate_blocks_harmful": true,
+  "tokens_used": 0,
+  "final_skill_excerpt": "rences and procedures learned from your past local agent sessions.\n\n<!-- SKILLOPT-SLEEP:LEARNED START -->\n## Learned preferences & procedures\n\n_This block is maintained by SkillOpt-Sleep. Edits here are proposed offline, validated against your past tasks, and adopted only after you approve them. Hand-edits outside this block are never touched._\n\n- Always wrap the final answer in <answer>...</answer> tags.\n- Report arXiv ids in the exact form arXiv:XXXX.XXXXX.\n<!-- SKILLOPT-SLEEP:LEARNED END -->\n",
+  "trace": [
+    {
+      "night": 0,
+      "holdout_score": 0.3333,
+      "action": "baseline",
+      "n_edits": 0
+    },
+    {
+      "night": 1,
+      "holdout_score": 1.0,
+      "action": "accept_new_best",
+      "accepted": true,
+      "n_edits": 2,
+      "edits": [
+        "Always wrap the final answer in <answer>...</answer> tags.",
+        "Report arXiv ids in the exact form arXiv:XXXX.XXXXX."
+      ],
+      "n_rejected": 0
+    }
+  ]
+}
+
+PASS: nightly consolidation improves held-out score AND gate blocks regressions.
+
+Timing
+
+real 0.04
+user 0.03
+sys 0.00
+
+Interpretation boundary
+
+- This is the official deterministic MockBackend acceptance experiment.
+- It verifies control flow, held-out gating, bounded skill edits, and harmful-edit rejection.
+- It makes no provider calls and does not prove that a real model improved on the reader's work.
+- The 0.3333 to 1.0 score belongs only to the repository's 12 fixed researcher-persona fixtures.
