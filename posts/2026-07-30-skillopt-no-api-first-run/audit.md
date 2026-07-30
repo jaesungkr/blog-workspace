@@ -83,6 +83,7 @@
 | 24 | 독립 출처 검수에서 `run`·`status`가 후보가 없는 실행까지 후보 파일을 보여 주는 것처럼 읽히고, 폐기한 arXiv·점수 PNG가 공개 `assets/`에 남아 있음을 발견 | `run`은 최신 보고서를 항상 저장하고 통과 후보가 있을 때 후보 파일도 저장한다고 수정. `status`도 최신 보고서와 조건부 후보를 표시한다고 수정. 폐기 PNG 3개는 `artifacts/archive/deprecated-public-assets/`로 이동 | 독립 출처 재검수 PASS. 공개 article·media·assets에서 arXiv·0.3333·1.0000 검색 0건, 공개 assets에는 현재 회의록 PNG 1개만 남음 |
 | 25 | 로컬 `file://` 미리보기의 브라우저 캡처가 Browser URL 정책으로 차단됨 | 정책을 우회하지 않고 렌더된 HTML 구조·목차 앵커·반응형 CSS·이미지 경로·크기·해시를 정적으로 검사 | H1 1개, H2·목차 7개와 앵커 전부 일치, 이미지 1080×1350·publish 해시 일치, 금지 문자열과 로컬 절대 경로 0건 |
 | 26 | `작업 사례`만으로는 독자가 결과 파일 하나를 넘기면 되는지, 요청·결과·판정 기준까지 필요한지 구분하기 어려움 | 도입에 `현재 스킬 + 사용자가 남긴 과거 작업 기록 + 잘됐는지 판단할 기준 -> 후보 -> 다른 사례 테스트 -> adopt` 문장을 그대로 추가하고, 과거 작업 기록의 범위를 요청·결과·잘된 점과 잘못된 점으로 설명 | 회의록 입력 표와 한 줄 흐름까지 같은 용어로 맞춤. 독립 출처 재검수에서 세션 기록 범위·held-out gate·조건부 staging·status·adopt 설명 모두 PASS |
+| 27 | 티스토리 HTML에는 이미지 CDN 주소가 없어 붙여넣기 직전에 자리표시자를 바꿔야 했음 | 사용자가 업로드해 준 `skillopt-meeting-notes-flow` CDN URL을 매니페스트에 연결하고 remote media record를 생성 | CDN GET 200, PNG 1080×1350, remote preview의 이미지 로드와 1280·390·360 문서 폭·목차·H1 구조 PASS. 실제 CDN PNG도 전체 래스터로 재확인 |
 
 ## 현재 검수 결과
 
@@ -92,9 +93,13 @@
 - current infographic: creator full-raster·type-scale PASS, independent
   full-raster·360 CSS px validation PASS
 - current bundle check: `blog.py` 오류 0·경고 0, rich-post PASS
-- current render: preview·Tistory fragment 재생성, packaged output 구조 PASS
-- current article browser QA: 로컬 `file://` URL 정책 차단. 우회하지 않고
-  정적 구조·반응형 CSS 검사로 범위를 제한했으며 remote QA는 pending
+- current remote media: creator fetch PASS. CDN 응답은 PNG 1080×1350이며
+  `artifacts/qa/remote-media.json`에 기록
+- current render: CDN URL이 들어간 preview·Tistory fragment 재생성,
+  user-facing `.txt`와 fragment SHA-256 일치
+- current article browser QA: creator remote Chrome capture에서 1280·390·360
+  모두 이미지 로드·문서 폭·목차·H1 구조 PASS. 전체 페이지의 human
+  readability record와 independent QA는 pending
 
 ## 제목·소제목·문체 폴리싱
 
@@ -131,14 +136,12 @@
 
 ## 남은 게이트
 
-- 1280·390·360 article browser capture와 human readability decision
-  (현재 로컬 `file://` Browser 정책으로 차단)
-- Tistory image upload and `tistory_url` mapping
-- two independent remote media fetches
-- remote-media creator and independent responsive QA
+- creator human readability decision과 `rich-post.json` 기록
+- second independent remote media fetch
+- independent responsive QA와 final-page record
 - lifecycle `ready`
-- focused Git commit and origin/master push
+- URL mapping 반영 focused Git commit and origin/master push
 
-현재 사용자는 새 Tistory draft 생성이나 이미지 업로드를 명시적으로
-허용하지 않았습니다. 로컬 후보가 완성된 뒤 이 원격 쓰기 경계에서
+사용자가 직접 업로드한 CDN URL만 매핑했습니다. 티스토리 편집·붙여넣기·
+최종 공개는 사용자가 수행하며, independent remote/page QA 전까지는
 `reviewing`을 유지합니다.
