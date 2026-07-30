@@ -1,0 +1,26 @@
+{
+  "basis": "MoonshotAI/Kimi-K3 official README and Hugging Face model metadata",
+  "coding_benchmark_count": 9,
+  "kimi_k3_rank_distribution": {
+    "1": 2,
+    "2": 6,
+    "3": 1,
+    "4": 0,
+    "5": 0,
+    "6": 0
+  },
+  "weight_files": {
+    "repository": "moonshotai/Kimi-K3",
+    "revision": "9f62e4e9fffbd0a83ddd60e1c209d828994b3569",
+    "last_modified": "2026-07-27T16:29:18.000Z",
+    "shard_count": 96,
+    "total_bytes": 1560936091448,
+    "decimal_tb": 1.561,
+    "binary_tib": 1.42
+  },
+  "limitations": [
+    "Vendor-reported benchmark table, not an independent rerun.",
+    "Scores may use different agent harnesses and fallback or cyberguard behavior.",
+    "Shard size is storage metadata, not measured inference memory."
+  ]
+}

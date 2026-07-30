@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "lead_id": "kimi-k3-official-hero",
+  "items": [
+    {
+      "id": "kimi-k3-official-hero",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": ["C01", "C03"],
+      "actor": "Moonshot AI",
+      "captured_at": "2026-07-30",
+      "environment": "Kimi K3 official tech blog responsive image, 1440px WebP source",
+      "source_url": "https://www.kimi.com/blog/kimi-k3",
+      "raw_path": "artifacts/captures/official/kimi-k3-hero.webp",
+      "publish_path": "assets/screenshots/kimi-k3-official-hero.webp",
+      "tistory_url": "",
+      "width": 1440,
+      "height": 659,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "Moonshot AI official release artwork reproduced with source attribution for editorial commentary",
+      "alt": "책상 위에서 철가루가 K 형태의 자기장 무늬를 이루는 Kimi K3 공식 대표 이미지",
+      "caption": "Kimi K3 공식 발표의 대표 이미지입니다. 2.8조 규모 모델이지만 실제 선택은 사용 경로와 운영 조건에서 갈립니다.",
+      "processing": ["downloaded from the official responsive 1440px WebP source"],
+      "redactions": [],
+      "sha256": "a5d662f7bc71028e723b6fde6c581d8ac6e6b9f3d201ec4b7a450b830952dc7f",
+      "status": "validated"
+    }
+  ]
+}
