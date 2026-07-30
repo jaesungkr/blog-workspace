@@ -6,9 +6,15 @@ defines the concept and visual quality required for publication.
 
 ## Required hero deliverable
 
-- Generate at least one original raster image for every complete blog post. Do
-  not satisfy this requirement with a stock-image link, web-search result, SVG
-  placeholder, or prompt alone.
+- This required-hero contract applies to standard posts. For
+  `format: rich-post`, a validated first-party screenshot or
+  provenance-checked official, user-supplied, or simulated raster may serve as
+  the lead visual; an original generated hero is optional. If the selected
+  rich-post lead is generated, apply this entire guide and the normal hero
+  validation gate.
+- Generate at least one original raster image for every complete standard post.
+  Do not satisfy this requirement with a stock-image link, web-search result,
+  SVG placeholder, or prompt alone.
 - Treat this required image as the hero image. Preserve its visual, editorial
   role; do not add explanatory panels or turn it into an infographic merely
   because the post also benefits from a supporting visual.

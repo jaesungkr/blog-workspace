@@ -6,8 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / ".agents" / "skills"
 
-EXPECTED_SKILLS = {
-    "dev-log-workspace",
+STANDARD_SPECIALISTS = {
     "dev-log-writing",
     "dev-log-prose-polish",
     "dev-log-hero-image",
@@ -16,6 +15,11 @@ EXPECTED_SKILLS = {
     "dev-log-hero-validation",
     "dev-log-infographic-validation",
 }
+ORCHESTRATORS = {
+    "dev-log-workspace",
+    "dev-log-rich-post-workspace",
+}
+EXPECTED_SKILLS = STANDARD_SPECIALISTS | ORCHESTRATORS
 
 
 class SkillStructureTests(unittest.TestCase):
@@ -35,16 +39,56 @@ class SkillStructureTests(unittest.TestCase):
                 self.assertIn(f"${name}", ui)
                 self.assertIn("allow_implicit_invocation: true", ui)
 
-    def test_orchestrator_loads_every_specialist(self):
+    def test_standard_orchestrator_loads_every_standard_specialist(self):
         orchestrator = (
             SKILLS / "dev-log-workspace" / "SKILL.md"
         ).read_text(encoding="utf-8")
 
-        for name in EXPECTED_SKILLS - {"dev-log-workspace"}:
+        for name in STANDARD_SPECIALISTS:
             with self.subTest(skill=name):
                 self.assertIn(f"../{name}/SKILL.md", orchestrator)
 
         self.assertIn("Stage skills do not commit or push", orchestrator)
+        self.assertIn("This orchestrator owns Git delivery", orchestrator)
+        self.assertIn("../dev-log-rich-post-workspace/SKILL.md", orchestrator)
+
+    def test_rich_orchestrator_owns_media_render_and_git_delivery(self):
+        rich_skill_dir = SKILLS / "dev-log-rich-post-workspace"
+        orchestrator = (rich_skill_dir / "SKILL.md").read_text(encoding="utf-8")
+
+        for name in {
+            "dev-log-writing",
+            "dev-log-prose-polish",
+            "dev-log-article-validation",
+        }:
+            with self.subTest(skill=name):
+                self.assertIn(f"../{name}/SKILL.md", orchestrator)
+
+        for relative in {
+            "references/rich-post-format.md",
+            "references/media-manifest.md",
+            "references/remote-media.md",
+            "references/responsive-qa.md",
+            "references/tistory-upload.md",
+            "scripts/capture_rich_qa.py",
+            "scripts/check_rich_post.py",
+            "scripts/record_rich_qa.py",
+            "scripts/record_rich_final_validation.py",
+            "scripts/remote_media.py",
+            "scripts/render_rich_post.py",
+            "scripts/tistory_media_map.py",
+            "assets/rich-post.css",
+            "assets/capture-plan-template.md",
+            "assets/media-template.json",
+            "assets/qa-template.json",
+            "assets/independent-qa-template.json",
+        }:
+            with self.subTest(resource=relative):
+                self.assertTrue((rich_skill_dir / relative).is_file())
+
+        self.assertIn("format: rich-post", orchestrator)
+        self.assertIn("full local preview", orchestrator)
+        self.assertIn("Tistory fragment", orchestrator)
         self.assertIn("This orchestrator owns Git delivery", orchestrator)
 
     def test_creation_and_validation_roles_stay_separate(self):

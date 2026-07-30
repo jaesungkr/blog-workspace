@@ -15,7 +15,14 @@ Act as an independent gate for the written post and its rendered HTML.
    `standards/category-guides.md` completely.
 3. Read every file in the target post bundle that affects publication.
 4. Read applicable category-specific guides.
-5. Treat existing checkmarks as claims to verify, not evidence.
+5. If `article.md` uses `format: rich-post`, also read
+   `../dev-log-rich-post-workspace/references/rich-post-format.md`,
+   `../dev-log-rich-post-workspace/references/media-manifest.md`,
+   `../dev-log-rich-post-workspace/references/remote-media.md`, and
+   `../dev-log-rich-post-workspace/references/responsive-qa.md`. Independently
+   validate the prose and evidence first, then the final media and responsive
+   candidate before reporting a final pass.
+6. Treat existing checkmarks as claims to verify, not evidence.
 
 ## Source audit
 
@@ -62,16 +69,58 @@ writing revision, then rerun the full affected audit.
 
 ## Automated and rendered validation
 
-For each changed post run:
+For each changed standard post run:
 
 ```bash
 python3 scripts/blog.py check <post-directory>
 python3 scripts/blog.py render <post-directory>
 ```
 
+For a `rich-post`, run the normal bundle check and its dedicated source-to-page
+renderer while the article remains `reviewing`:
+
+```bash
+python3 scripts/blog.py check <post-directory>
+python3 .agents/skills/dev-log-rich-post-workspace/scripts/check_rich_post.py \
+  <post-directory>
+python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py \
+  <post-directory>
+```
+
+After final HTTPS media URLs and responsive QA artifacts exist, independently
+verify the actual CDN bytes, rerun the strict rich-post gate, and render a fresh
+remote-media candidate into the independent directory:
+
+```bash
+python3 .agents/skills/dev-log-rich-post-workspace/scripts/remote_media.py \
+  verify <post-directory> --by "<actual independent reviewer>"
+python3 .agents/skills/dev-log-rich-post-workspace/scripts/check_rich_post.py \
+  <post-directory> \
+  --require-publish-urls --require-remote-verification
+python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py \
+  <post-directory> \
+  --require-publish-urls \
+  --preview-media-source remote \
+  --output-dir <post-directory>/artifacts/qa/independent-rendered
+python3 .agents/skills/dev-log-rich-post-workspace/scripts/capture_rich_qa.py \
+  <post-directory> \
+  --mode independent \
+  --by "<same actual independent reviewer>"
+```
+
 Inspect the actual rendered Tistory HTML at a natural reading width. Verify
 heading rhythm, paragraphs, table wrapping, code scrolling, links, and intended
-manual image positions.
+manual image positions. For a final `rich-post` candidate, reopen the recorded
+1280, 390, and 360 CSS-pixel views; compare the page with
+`artifacts/qa/rich-post.json`; inspect every figure and GIF fallback; verify
+page overflow, heading-targeted TOC links, one preview H1, zero fragment H1s,
+and the absence of local paths or placeholders. The capture helper must create
+the separate independent screenshots and browser receipt; record only the
+remaining human visual decisions, then run
+`record_rich_final_validation.py` and the rich checker with
+`--require-independent-pass`. Do not accept the orchestrator's recorded pass
+without reproducing it. If a real browser or network is unavailable, return
+`revision_required`; never infer a pass.
 
 When scripts, templates, standards, or skills change, also run:
 
@@ -85,12 +134,19 @@ affected skill and confirm `agents/openai.yaml` still matches its purpose.
 
 ## Ready decision
 
-Set `status: ready` only when:
+For a standard post, set `status: ready` only when:
 
 - the article source and rendered HTML pass;
 - `dev-log-hero-validation` records `pass`;
 - `dev-log-infographic-validation` records `pass` or `not_applicable`;
 - the audit contains observed review evidence and no known material defect.
+
+For a `rich-post`, first return a source-level `pass` while it remains
+`reviewing`. Return a separate final-page `pass` only after independently
+reproducing the strict media and responsive checks above and writing
+`artifacts/qa/independent-final-page.json`. The rich-post orchestrator may set
+`ready` only after that final-page pass, generated-lead hero validation when
+applicable, and infographic validation or `not_applicable`.
 
 Otherwise keep `reviewing`. Record each finding as
 `problem -> revision -> re-verification`.
@@ -98,5 +154,5 @@ Otherwise keep `reviewing`. Record each finding as
 ## Handoff
 
 Return the commands, results, rendered artifact, remaining risks, and stage
-result (`pass` or `revision_required`) to `dev-log-workspace`. Do not create
-images, commit, or push.
+result (`pass` or `revision_required`) to the selected workspace orchestrator.
+Do not create images, commit, or push.

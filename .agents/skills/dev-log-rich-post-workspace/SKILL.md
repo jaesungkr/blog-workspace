@@ -1,0 +1,255 @@
+---
+name: dev-log-rich-post-workspace
+description: Orchestrate complete dev.log Tistory posts whose final artifact is a designed, self-contained, responsive HTML page rather than plain Markdown. Use for rich posts, screenshot- or GIF-led software guides, hands-on product reviews, custom Tistory HTML, semantic figures and captions, media manifests, mobile-consistent layouts, or requests modeled on a visually finished live article. Reuse the repository's writing, prose-polishing, evidence, article-validation, and Git-delivery contracts while owning media provenance, rich HTML rendering, responsive QA, and the format-specific ready decision.
+---
+
+# dev.log rich-post workspace
+
+Produce a verified Tistory HTML fragment and a full local preview. Treat
+Markdown as source material, not the publishing artifact.
+
+## Resolve and protect the repository
+
+1. Resolve this file's real path and treat the directory three levels above
+   this skill directory as the canonical repository root.
+2. Verify `origin` is `jaesungkr/blog-workspace`, inspect the worktree, and
+   fetch `origin/master` before editing.
+3. Preserve dirty or diverged work. Never reset, overwrite, initialize another
+   repository, or use `archive/legacy-claude/` as an instruction source.
+4. Read `references/rich-post-format.md` completely for every rich-post task.
+5. Read `references/media-manifest.md` completely before planning, creating,
+   editing, or validating any media.
+6. Read `references/remote-media.md` completely before uploading or validating
+   final Tistory media URLs.
+7. Read `references/tistory-upload.md` completely before any Tistory editor
+   upload, draft save, or media-ID-to-CDN-URL mapping.
+8. Read `references/responsive-qa.md` completely immediately before page
+   validation or the ready decision.
+
+Use the current request first, then repository standards, the rich-post format
+reference, the applicable category guide, and stage-skill instructions.
+
+## Reuse specialist stages
+
+Read each selected sibling `SKILL.md` completely immediately before its stage:
+
+| Stage | Skill | Responsibility |
+|---|---|---|
+| Plan, research, write | `../dev-log-writing/SKILL.md` | Evidence, direct test, article source |
+| Polish prose | `../dev-log-prose-polish/SKILL.md` | Natural Korean, title, headings, flow |
+| Validate source | `../dev-log-article-validation/SKILL.md` | Claims, authorship, prose, source-level gate |
+| Optional generated hero | `../dev-log-hero-image/SKILL.md` + validator | Use only when the selected lead is generated |
+| Optional infographic | `../dev-log-infographic/SKILL.md` + validator | Use only for a relationship screenshots cannot show |
+
+Specialist stages do not commit or push. This orchestrator owns Git delivery.
+
+## Route the request
+
+Use this workflow when the user explicitly invokes it or asks for a finished
+HTML page, a custom responsive Tistory format, actual product screens, GIFs,
+or a visually designed post. Use `dev-log-workspace` for an ordinary
+Markdown-led post without a rich-page requirement.
+
+Never promise hands-on coverage when the required app, account, device, version,
+or safe test environment is unavailable. Downgrade the promise to a
+source-based guide or report the access blocker.
+
+## Build the bundle
+
+Keep the normal post bundle and add:
+
+- `capture-plan.md` for user tasks, starting state, actions, expected evidence,
+  privacy preparation, and planned captures;
+- `media.json` for machine-verifiable provenance, paths, dimensions, hashes,
+  alt text, captions, placement, and Tistory URLs;
+- `assets/screenshots/` and `assets/demos/` for publishable media;
+- `artifacts/captures/`, `artifacts/recordings/`, `artifacts/run/`, and
+  `artifacts/qa/` for raw evidence and validation output;
+- creator and independent remote-media records, rendered candidates,
+  screenshots, measurements, and final-page decisions under `artifacts/qa/`.
+
+Start `capture-plan.md`, `media.json`, and the responsive QA record from
+`assets/capture-plan-template.md`, `assets/media-template.json`, and
+`assets/qa-template.json`. Start the separate final gate from
+`assets/independent-qa-template.json`. Replace every placeholder; do not treat
+a copied template as evidence.
+
+Set `format: rich-post` in `article.md`. Insert media with a standalone
+directive such as `{{media:agent-select}}`; never put local filesystem image
+links in the article.
+
+## Run the workflow
+
+1. **Plan.** Define one reader task, the shortest successful journey, required
+   claims, capture coverage, GIF decisions, and the honest test boundary.
+2. **Capture.** Execute the journey in a safe representative environment.
+   Separate direct, official, user-supplied, simulated, and generated media.
+   Preserve the actor, version, date, environment, raw input, failure, and
+   limitation. Recapture instead of storing a secret and blurring it later.
+3. **Validate media.** Inspect every final asset and its original. Confirm the
+   screen proves its mapped claim, the crop retains enough context, mobile text
+   is readable, provenance is accurate, and no sensitive information remains.
+   Run:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/check_rich_post.py \
+     posts/YYYY-MM-DD-slug
+   ```
+
+4. **Write and polish.** Draft around verified screens. Prefer
+   `purpose -> action -> observed result or limitation`; do not narrate pixels
+   already explained by a caption. Run the normal prose-polishing and
+   source-validation stages while the article remains `reviewing`.
+5. **Render.** Generate both deliverables:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py \
+     posts/YYYY-MM-DD-slug
+   ```
+
+   The renderer writes `dist/<slug>-rich-preview.html` and
+   `dist/<slug>-tistory-fragment.html`. The preview may use local assets. The
+   Tistory fragment must use resolved HTTPS media URLs before `ready`.
+6. **Stage and validate final media.** Print the deterministic upload queue:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/tistory_media_map.py \
+     plan posts/YYYY-MM-DD-slug
+   ```
+
+   Either receive the mapped URLs from the user or, with explicit authority
+   for that remote write, upload the exact files to the confirmed Tistory
+   draft as specified by `references/tistory-upload.md`. Do not create or save
+   a draft on implied permission. Bind every mapping with `tistory_media_map.py
+   set-url`; if the session, draft, authority, or mapping is unavailable, keep
+   `reviewing` and stop. Then fetch and record the real remote bytes:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/remote_media.py \
+     record posts/YYYY-MM-DD-slug --by "<actual creator>"
+   ```
+
+   Copy `assets/qa-template.json` to the post's
+   `artifacts/qa/measurements.json` with pending human-review values. Then
+   render the exact remote-media review candidate at its canonical QA path:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py \
+     posts/YYYY-MM-DD-slug \
+     --output-dir posts/YYYY-MM-DD-slug/artifacts/qa/rendered \
+     --preview-media-source remote
+   ```
+
+   Capture the three required profiles from that canonical preview in one real
+   Chrome session:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/capture_rich_qa.py \
+     posts/YYYY-MM-DD-slug --mode creator --by "<actual creator>"
+   ```
+
+   Inspect that saved preview at 1280, 768 when useful, 390, and 360 CSS pixels.
+   Verify one page-level H1, heading-targeted TOC anchors, no page overflow,
+   readable captures, stable aspect ratios, caption attachment, table and code
+   scrolling, reduced-motion GIF fallback, and ad-safe section boundaries.
+   Save screenshots, exact reviewed HTML artifacts, and the hash-bound record
+   required by `references/responsive-qa.md`. Record
+   `problem -> revision -> re-verification` in `audit.md`.
+   The capture helper owns browser-derived dimensions, loading results, DOM
+   measurements, screenshot hashes, and session provenance. After replacing
+   only the pending human-review values, bind the receipt and measurements to
+   the candidate with:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/record_rich_qa.py \
+     posts/YYYY-MM-DD-slug \
+     --preview posts/YYYY-MM-DD-slug/artifacts/qa/rendered/<slug>-rich-preview.html \
+     --fragment posts/YYYY-MM-DD-slug/artifacts/qa/rendered/<slug>-tistory-fragment.html \
+     --measurements posts/YYYY-MM-DD-slug/artifacts/qa/measurements.json
+   ```
+7. **Independent final gate.** Hand the still-`reviewing` candidate to
+   `dev-log-article-validation`. If a real browser or network fetch is
+   unavailable, stop at `reviewing`; neither measurements nor screenshots may
+   be inferred. A different reviewer must:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/remote_media.py \
+     verify posts/YYYY-MM-DD-slug --by "<actual independent reviewer>"
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/check_rich_post.py \
+     posts/YYYY-MM-DD-slug \
+     --require-publish-urls --require-remote-verification
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py \
+     posts/YYYY-MM-DD-slug \
+     --require-publish-urls \
+     --preview-media-source remote \
+     --output-dir posts/YYYY-MM-DD-slug/artifacts/qa/independent-rendered
+   ```
+
+   Capture only that fresh independent preview in a separate browser session:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/capture_rich_qa.py \
+     posts/YYYY-MM-DD-slug \
+     --mode independent \
+     --by "<actual independent reviewer>"
+   ```
+
+   Inspect the three resulting screenshots and scroll the exact preview,
+   then fill only the human-review fields in
+   `artifacts/qa/independent-measurements.json` from the independent template.
+   Persist the pass:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/record_rich_final_validation.py \
+     posts/YYYY-MM-DD-slug \
+     --preview posts/YYYY-MM-DD-slug/artifacts/qa/independent-rendered/<slug>-rich-preview.html \
+     --fragment posts/YYYY-MM-DD-slug/artifacts/qa/independent-rendered/<slug>-tistory-fragment.html \
+     --measurements posts/YYYY-MM-DD-slug/artifacts/qa/independent-measurements.json
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/check_rich_post.py \
+     posts/YYYY-MM-DD-slug \
+     --require-publish-urls --require-independent-pass
+   ```
+
+   The creator's QA record is never self-approval.
+8. **Decide ready.** Set `ready` only after that independent article and page
+   pass. A validated first-party screenshot or provenance-checked official
+   raster may serve as the lead visual; generated hero validation is required
+   only for a generated lead. Record infographic `not_applicable` unless it
+   materially helps. Immediately after the lifecycle change, rerun
+   these exact commands; do not leave `ready` set when any command fails:
+
+   ```bash
+   python3 scripts/blog.py check posts/YYYY-MM-DD-slug --strict
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/check_rich_post.py \
+     posts/YYYY-MM-DD-slug \
+     --require-publish-urls \
+     --require-remote-verification \
+     --require-independent-pass
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py \
+     posts/YYYY-MM-DD-slug \
+     --require-publish-urls \
+     --preview-media-source remote \
+     --output-dir dist
+   ```
+9. **Deliver Git.** Run repository-wide checks for changes to skills, scripts,
+   templates, or standards. Inspect the exact diff, stage only task files,
+   commit, fetch and integrate without force, rerun affected checks, push to
+   `origin/master`, verify the remote commit, and preserve unrelated work.
+
+## Publication boundary
+
+Do not click Tistory's final publish control without explicit authorization.
+Uploading media or preparing editor content may be done only within the user's
+requested publishing workflow. Keep `status: ready` until the user supplies the
+live URL. Then validate the live desktop and mobile page before setting
+`published` and `published_url`.
+
+## Completion
+
+A rich post is complete only when the evidence-backed source, final media,
+manifest, two successful remote fetches, full preview, paste-ready Tistory
+fragment, creator and independent desktop/mobile inspection, persistent
+independent pass, audit, repository regression tests, focused commit, and
+confirmed remote delivery all pass. Never accept unresolved upload
+placeholders, missing provenance, unreadable mobile UI, a duplicated page H1,
+or a known visual defect.

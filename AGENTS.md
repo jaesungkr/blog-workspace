@@ -10,10 +10,17 @@ framework that belongs on this blog.
 
 ## Start every blog task here
 
-- Use `.agents/skills/dev-log-workspace/SKILL.md` as the orchestrator.
+- Use `.agents/skills/dev-log-rich-post-workspace/SKILL.md` when the request
+  explicitly calls for a finished responsive HTML page, actual product
+  screenshots, GIFs, semantic figures, or a visually designed Tistory post.
+- Otherwise use `.agents/skills/dev-log-workspace/SKILL.md` as the
+  orchestrator.
 - Let it load the separate writing, prose-polishing, hero creation, infographic
   creation, article validation, hero validation, and infographic validation
   skills under `.agents/skills/`.
+- Let the rich-post orchestrator reuse the applicable writing and validation
+  stages while owning its media manifest, full preview, paste fragment,
+  responsive QA, and format-specific ready decision.
 - Treat every Git-tracked `.agents/skills/dev-log-*` directory as the only
   editable copy. For global Codex discovery, link all of them with
   `scripts/link_codex_skill.sh`; do not maintain copied skills under
@@ -30,10 +37,10 @@ framework that belongs on this blog.
   complete-post request. Do not stop at research, an outline, or a text draft
   unless the user explicitly limits the scope.
 - Do not finish a complete dev.log post in a projectless scratch directory.
-  Create or update its bundle in this repository, pass all three independent
-  validation gates, render the ready article, commit the completed bundle, push
-  it to `origin/master`, and verify the remote commit unless the user explicitly
-  requests local-only work or the push is blocked.
+  Create or update its bundle in this repository, pass every independent gate
+  required by the selected format, render the ready article, commit the
+  completed bundle, push it to `origin/master`, and verify the remote commit
+  unless the user explicitly requests local-only work or the push is blocked.
 
 ## Repository model
 
@@ -88,7 +95,11 @@ test suite and `python3 scripts/blog.py check --all`.
 A complete-post request is done only when the prose-polishing stage has removed
 reusable title, heading, and paragraph-flow templates without changing the
 evidence, the article validator passes, strong claims have evidence and
-limitations, first-party value is visible, the hero validator passes, the
-infographic validator passes or records `not_applicable`, paste-ready HTML is
-rendered, the task is committed, `origin/master` contains that commit, and
-remaining uncertainty is reported plainly.
+limitations, first-party value is visible, paste-ready HTML is rendered, the
+task is committed, `origin/master` contains that commit, and remaining
+uncertainty is reported plainly. A standard post also requires a validated hero
+and an infographic pass or `not_applicable`. A `rich-post` instead requires a
+validated lead visual, resolved media manifest, full preview and Tistory
+fragment, two verified CDN fetches, and separate creator and independent
+responsive inspection at the required desktop and mobile profiles; a generated
+lead still requires the hero validator.

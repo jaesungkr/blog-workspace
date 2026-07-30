@@ -48,6 +48,13 @@ Stage skills do not commit or push. This orchestrator owns Git delivery.
 
 ## Route the request
 
+If the user explicitly asks for a finished responsive HTML page, actual product
+screens, GIF-led explanation, semantic figures, or a visually designed Tistory
+post, hand the complete request to
+`../dev-log-rich-post-workspace/SKILL.md`. Do not run this orchestrator's
+mandatory generated-hero sequence for that profile unless the rich-post
+orchestrator selects a generated lead.
+
 Treat a topic plus clear writing intent as a complete-post request. Infer routine
 choices such as category, slug, reader, search intent, and structure. Ask only
 when missing information would materially change a personal claim, supplied
@@ -121,7 +128,8 @@ defect.
 
 ## Completion
 
-A complete post requires a validated article and evidence record, a validated
-hero, an infographic decision and validation when applicable, rendered Tistory
-HTML, an honest audit and remaining-risk record, a focused commit, and confirmed
-presence on `origin/master`.
+A complete standard post requires a validated article and evidence record, a
+validated hero, an infographic decision and validation when applicable,
+rendered Tistory HTML, an honest audit and remaining-risk record, a focused
+commit, and confirmed presence on `origin/master`. A rich-post request is
+handed to its own orchestrator and completion contract.

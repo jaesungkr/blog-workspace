@@ -1,0 +1,33 @@
+{
+  "result": "pending",
+  "viewports": [
+    {
+      "width": 1280,
+      "readable_media": false,
+      "status": "pending"
+    },
+    {
+      "width": 390,
+      "readable_media": false,
+      "status": "pending"
+    },
+    {
+      "width": 360,
+      "readable_media": false,
+      "status": "pending"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pending"
+  },
+  "checks": {
+    "captions_attached": false,
+    "table_code_scroll": false,
+    "content_order_preserved": false,
+    "reduced_motion_fallback": "not_applicable",
+    "gif_poster_matches_frame": "not_applicable"
+  }
+}

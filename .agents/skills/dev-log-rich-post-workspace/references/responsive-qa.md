@@ -1,0 +1,170 @@
+# Responsive QA record
+
+Inspect the full preview and Tistory fragment in a real browser. Use this exact
+order:
+
+1. Render with `--preview-media-source remote --output-dir
+   posts/<bundle>/artifacts/qa/rendered`.
+2. Run `scripts/capture_rich_qa.py <bundle> --mode creator --by <reviewer>`.
+   It opens that canonical file in one real Chrome session, scrolls the page to
+   load lazy media, measures the DOM, and writes the three actual screenshots
+   plus `artifacts/qa/browser-capture.json`.
+3. Copy `assets/qa-template.json` to
+   `posts/<bundle>/artifacts/qa/measurements.json`.
+4. Scroll the same exact preview and inspect each screenshot. Replace only the
+   pending human decisions: `readable_media`, viewport `status`, and fragment
+   results.
+5. Run `scripts/record_rich_qa.py` to bind both inputs and create
+   `artifacts/qa/rich-post.json`.
+
+Do not infer a pass from CSS or HTML source. The recorder rejects candidates
+from any other directory.
+
+## Required record
+
+```json
+{
+  "version": 1,
+  "checked_at": "2026-07-30",
+  "checked_by": "Codex browser run",
+  "browser": "Google Chrome/<version derived from CDP>",
+  "session": "UUID derived from the capture run",
+  "capture_receipt_path": "artifacts/qa/browser-capture.json",
+  "capture_receipt_sha256": "exact browser receipt SHA-256",
+  "capture_tool_sha256": "current capture_rich_qa.py SHA-256",
+  "article_content_sha256": "lifecycle-normalized article.md SHA-256",
+  "media_sha256": "current media.json SHA-256",
+  "renderer_sha256": "current render_rich_post.py SHA-256",
+  "css_sha256": "current rich-post.css SHA-256",
+  "markdown_renderer_sha256": "current md2tistory.py SHA-256",
+  "remote_media_sha256": "current remote-media.json SHA-256",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa/rendered/slug-rich-preview.html",
+  "preview_sha256": "exact reviewed preview SHA-256",
+  "preview_structure_sha256": "reviewed preview with local img src normalized",
+  "fragment_path": "artifacts/qa/rendered/slug-tistory-fragment.html",
+  "fragment_sha256": "exact reviewed Tistory fragment SHA-256",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "readable_media": true,
+      "screenshot": "artifacts/qa/desktop-1280.png",
+      "screenshot_sha256": "derived by record_rich_qa.py",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "status": "pass"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "client_width": 390,
+      "scroll_width": 390,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "readable_media": true,
+      "screenshot": "artifacts/qa/mobile-390.png",
+      "screenshot_sha256": "derived by record_rich_qa.py",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "status": "pass"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "readable_media": true,
+      "screenshot": "artifacts/qa/mobile-360.png",
+      "screenshot_sha256": "derived by record_rich_qa.py",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "status": "pass"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  }
+}
+```
+
+Use the exact required profiles `1280×900`, `390×844`, and `360×800`; add 768px
+when a layout, table, or media transition needs a tablet check. `width` and
+`height` are the actual CSS viewport dimensions. `client_width` and
+`scroll_width` are document-element measurements, not table or code
+measurements. A table or code block may scroll inside its own wrapper, but the
+page must not. The capture helper records each screenshot's hash and exact
+pixel dimensions in the same browser receipt; the recorder re-derives and
+checks them. Each viewport requires a different canonical screenshot path and
+different screenshot content.
+
+`images_loaded` is not a self-entered judgment. The capture helper waits for
+every preview `<img>` to report complete, positive natural dimensions in real
+Chrome, and an allowed Tistory CDN source. It records those per-image
+observations. A missing or undecodable remote image fails before the human
+review.
+
+`readable_media` is a visual decision. Set it to true only after opening each
+figure at that viewport and confirming that the important control, label,
+state, and caption are readable without zoom. Recapture or add a focused crop
+when the answer is no.
+
+The screenshots must show the actual reviewed page and live under
+`artifacts/qa/`. The checker binds their canonical paths, browser receipt,
+capture-tool hash, browser version, session, reviewer, and exact preview to the
+current article content and exact `media.json`. It ignores only the
+frontmatter fields `status` and `published_url`, because those lifecycle values
+change after the independent pass without changing the rendered candidate.
+Every other article or manifest edit invalidates the QA pass.
+
+Keep the exact reviewed preview and fragment under `artifacts/qa/rendered/`.
+The checker binds them to the current CSS, rich renderer, and Markdown renderer.
+The preview must load the recorded Tistory CDN URLs, so the visual pass covers
+the same remote files used by the paste fragment.
+The strict remote renderer then reproduces both the fragment and the preview
+byte-for-byte. Any renderer, CSS, source, remote URL, or fragment change
+therefore requires a new capture, viewport inspection, and QA record.
+
+Do not hand-edit browser-derived DOM values, image-load results, hashes,
+screenshot dimensions, session data, or reviewed-artifact fields shown above.
+`capture_rich_qa.py` produces them and `record_rich_qa.py` validates them
+against the exact candidate, screenshots, and current toolchain.
+
+The article validator must independently reopen the recorded candidate,
+compare these measurements with the screenshots, and then create a second,
+fresh candidate and evidence set. It must:
+
+1. independently verify `remote-media.json`;
+2. strict-render with `--preview-media-source remote` into
+   `artifacts/qa/independent-rendered/`;
+3. run `capture_rich_qa.py --mode independent --by <reviewer>` to open that
+   fresh preview at `1280×900`, `390×844`, and `360×800`;
+4. inspect the separate screenshots and receipt under
+   `artifacts/qa/independent/`;
+5. record its observations from `assets/independent-qa-template.json` with
+   `record_rich_final_validation.py`.
+
+The independent reviewer and browser-session identifier must differ from the
+creator QA. Inspect reduced-motion GIF fallbacks and compare the poster with an
+actual GIF frame. Return `revision_required` when any record and page differ.
+A browser-less or network-less run cannot produce either pass.
+
+`record_rich_final_validation.py` derives the creator-QA hash, remote baseline
+and verification hashes, article and toolchain hashes, exact independent HTML
+hashes, and screenshot hashes. The measurements input must set `result` to
+`pass`, the three general checks to `true`, and both GIF checks to `pass` when a
+GIF exists or `not_applicable` otherwise. It writes
+`artifacts/qa/independent-final-page.json` atomically only after the fresh
+renderer output and every independent observation agree.

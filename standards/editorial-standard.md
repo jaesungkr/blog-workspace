@@ -13,14 +13,19 @@
 - Use consistent 존대어 in all body prose, including introductions,
   explanations, tables, captions, and closings. Prefer natural
   `~습니다/~입니다/~해 보겠습니다` forms and do not mix them with 한다체.
-- Deliver finished posts as rendered Markdown, not inside an outer code fence.
-  Article code blocks may use normal fences.
+- Deliver standard posts as rendered Markdown, not inside an outer code fence.
+  Article code blocks may use normal fences. For `format: rich-post`, keep
+  Markdown as the source and deliver both a full local preview document and a
+  self-contained Tistory HTML fragment.
 - Use `###` for section headings. Number major sections when it improves
   navigation.
 - Do not use an em dash (`—`); use a hyphen (`-`).
-- Include at least one generated, publishable image with every complete post.
-  Follow `image-guide.md` and record its recommended placement and alt text
-  outside the article body.
+- Include at least one generated, publishable hero with every complete standard
+  post. For `format: rich-post`, a validated first-party screenshot or
+  provenance-checked official, user-supplied, or simulated raster may instead
+  serve as the lead visual. A generated rich-post lead remains subject to the
+  normal hero workflow. Follow `image-guide.md` for generated images and keep
+  every rich-post visual in `media.json`.
 
 ## Titles and headings
 
@@ -252,10 +257,16 @@ checks pass:
   section without using it as a substitute for inline attribution.
 - Limitations and counterarguments are visible.
 - Closing follows the category rule.
-- Output is rendered Markdown without an outer code fence.
-- At least one final blog image is generated, inspected, saved under the post's
-  `assets/` directory, previewed for the user, and accompanied by alt text and
+- Standard output is rendered Markdown without an outer code fence. A
+  `rich-post` keeps clean Markdown source and delivers the required HTML
+  preview and fragment as separate artifacts.
+- A standard post has at least one generated final blog image that is inspected,
+  saved under `assets/`, previewed for the user, and accompanied by alt text and
   placement guidance.
+- A `rich-post` has a validated lead visual and a complete media manifest; its
+  full preview contains one H1, its Tistory fragment contains none, every media
+  URL is resolved and independently fetched twice, and the page passes separate
+  creator and independent desktop and mobile gates.
 
 Treat this audit as a revision pass, not a ceremonial sign-off. After the
 source-level checks pass, render the ready article and inspect the actual
@@ -265,9 +276,10 @@ Tistory HTML together with every final image:
   width;
 - inspect table wrapping, code scrolling, heading rhythm, link placement, and
   the intended position of manually uploaded images;
-- inspect the hero at full and thumbnail size; inspect each supporting
-  infographic at full size and display that same untouched raster at
-  `width:360px` without creating a reduced derivative;
+- inspect a standard hero at full and thumbnail size; for a `rich-post`, inspect
+  the lead and every evidence asset at its intended desktop and 360px display;
+  inspect each supporting infographic at full size and display that same
+  untouched raster at `width:360px` without creating a reduced derivative;
 - compare user-supplied visual references side by side when they exist;
 - record each material problem, the applied revision, and the re-verification
   result in `audit.md`.

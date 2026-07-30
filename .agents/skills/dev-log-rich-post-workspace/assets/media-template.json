@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "lead_id": "replace-with-lead-id",
+  "items": [
+    {
+      "id": "replace-with-lead-id",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": ["C01"],
+      "actor": "replace-with-actual-actor",
+      "captured_at": "YYYY-MM-DD",
+      "environment": "OS, browser or app, exact version",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/lead.png",
+      "publish_path": "assets/screenshots/lead.png",
+      "tistory_url": "",
+      "width": 0,
+      "height": 0,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original capture",
+      "alt": "replace with concise visible description",
+      "caption": "replace with what to notice and why it matters",
+      "processing": [],
+      "redactions": [],
+      "sha256": "replace with 64 lowercase hexadecimal characters",
+      "status": "planned"
+    }
+  ]
+}
