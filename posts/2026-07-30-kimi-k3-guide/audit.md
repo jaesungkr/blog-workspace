@@ -95,8 +95,8 @@
 - [x] 폴리싱 원고를 외부 독자 관점에서 다시 읽었습니다.
 - [x] 로컬 리치 프리뷰의 제목·문단·표·링크·이미지 위치를 확인했습니다.
 - [x] 1280·390·360px에서 대표 이미지와 표를 확인했습니다.
-- [ ] Tistory CDN URL을 연결한 원격 프리뷰를 확인합니다.
-- [ ] 별도 검토자가 독립 최종 페이지 검사를 통과합니다.
+- [x] Tistory CDN URL을 연결한 원격 프리뷰를 확인했습니다.
+- [x] 별도 검토자가 독립 최종 페이지 검사를 통과했습니다.
 
 | 회차 | 검토 대상 | 발견한 문제 | 반영한 수정 | 재검증 결과 |
 |---|---|---|---|---|
@@ -106,16 +106,19 @@
 | 4 | 주장별 링크 | 강한 주장 일부가 하단 참고 자료에만 연결 | 코딩표·라이선스·샤드·64+ 가속기·API·한계 문장 옆에 공식 링크 추가 | inline 링크와 하단 자료를 함께 확인 |
 | 5 | 벤치마크 설명 | 낯선 이름 9개와 행별 판정 규칙이 결과표보다 늦음 | 결과표 앞에 용도별 지도와 `행 안에서만 순위 계산` 규칙 추가 | 절대 점수를 합치지 않았다는 범위 확인 |
 | 6 | 캡처 provenance | `.png` 확장자 파일 3개가 실제 JPEG 바이트 | `.jpg`로 이름과 기록 통일 | `file` 서명과 1280×900 크기 재확인 |
+| 7 | Tistory 원격 미디어 | 사용자가 제공한 주소가 1280px 썸네일 프록시 | `fname`에서 1440×659 원본 CDN URL을 추출해 media ID에 연결 | 원격 GET 200, WebP, 67,188바이트, 로컬 SHA-256과 일치 |
+| 8 | 최종 페이지 | creator 결과만으로는 독립 승인 불가 | 별도 검토자가 CDN 재수신·strict 렌더·새 Chrome 세션으로 세 뷰포트를 재검사 | creator와 independent QA 모두 pass, 오류·경고 0 |
 
 - 로컬 브라우저 사전 QA: 1280×900, 390×844, 360×800에서
   `clientWidth == scrollWidth`, H1 1개, 목차 대상 7개 고유, 대표 이미지
   1440×659 정상 로드를 확인했습니다. 모바일 표는 페이지가 아니라 620px
   내부 래퍼만 가로 스크롤합니다. 390px에서 대표 이미지·캡션과 표도 직접
   열어 읽었습니다.
-- 로컬 fragment 확인: H1 0개, 로컬 경로 0개, Tistory 미디어
-  플레이스홀더 1개입니다.
-- 최종 종료 판단: `reviewing` 유지. Tistory 미디어 URL을 연결한 원격
-  프리뷰와 별도 검토자의 최종 페이지 검증이 남았습니다.
+- 초기 로컬 fragment는 H1 0개, 로컬 경로 0개, Tistory 미디어
+  플레이스홀더 1개였습니다. 원격 URL 연결 뒤 최종 fragment는 H1 0개,
+  로컬 경로 0개, 플레이스홀더 0개입니다.
+- 최종 종료 판단: `ready`. 원격 미디어 2회 검증, creator QA,
+  independent final-page QA가 모두 통과했습니다.
 - 다시 열어 확인한 파일: `article.md`, `brief.md`, `evidence.md`,
   `capture-plan.md`, `media.json`, 공식 WebP 대표 이미지
 
@@ -126,15 +129,20 @@
   - `python3 .agents/skills/dev-log-rich-post-workspace/scripts/check_rich_post.py posts/2026-07-30-kimi-k3-guide`
   - `python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py posts/2026-07-30-kimi-k3-guide`
   - `python3 posts/2026-07-30-kimi-k3-guide/artifacts/run/audit_kimi_k3.py`
-- 검사 결과: 일반·리치 번들 검사와 로컬 렌더 통과. 근거 재계산은 Python
-  3.9.6에서 통과했고 기존 JSON·CSV·Markdown 결과와 일치합니다. 로컬
-  반응형 사전 검사는 세 필수 뷰포트에서 통과했습니다. 원격 CDN 후보에
-  대한 정식 creator QA와 독립 final-page QA는 아직 시작하지 않았습니다.
+- 원격 검사 명령:
+  - `remote_media.py record`와 별도 검토자의 `remote_media.py verify`
+  - `capture_rich_qa.py --mode creator`와 `--mode independent`
+  - `record_rich_qa.py`와 `record_rich_final_validation.py`
+  - `check_rich_post.py --require-publish-urls --require-independent-pass`
+- 검사 결과: 일반·리치 번들 검사와 근거 재계산이 통과했습니다. 원격
+  WebP 1440×659는 두 차례 같은 SHA-256으로 수신됐습니다. 서로 다른
+  Chrome 세션에서 1280×900, 390×844, 360×800 화면의 페이지 넘침,
+  H1, 목차, 이미지 로딩, 캡션, 표 내부 스크롤, fragment를 확인했습니다.
 - 아직 남은 위험:
-  - Tistory CDN URL이 비어 있어 paste-ready fragment가 아님
+  - 현재 CDN 서명 URL의 `expires` 값은 2026-07-31 23:59:59 KST입니다.
+    그 뒤 붙여넣는다면 새 URL을 받아 원격 QA를 다시 실행해야 합니다.
   - 공식 출시 직후라 제품 기능과 가격이 바뀔 수 있음
   - Kimi K3 자체를 직접 실행하지 않아 실제 체감 품질을 판단하지 않음
 - 사람이 티스토리에서 확인할 항목:
-  - 공식 대표 이미지 업로드 뒤 실제 CDN URL
   - HTML 모드 붙여넣기 뒤 광고 삽입 경계와 표 가로 스크롤
   - 최종 발행은 사용자 명시 승인 뒤 별도 수행

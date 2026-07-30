@@ -4,7 +4,7 @@ slug: kimi-k3-guide
 date: 2026-07-30
 category: "Log"
 subcategory: "AI 모델 · 비교"
-status: reviewing
+status: ready
 format: rich-post
 tags: [Kimi K3, Moonshot AI, 오픈웨이트, MoE, AI 코딩, Kimi Code, AI 모델 비교]
 summary: "Kimi K3의 2.8조 파라미터 구조와 100만 토큰 문맥, 공식 코딩 벤치마크를 다시 계산한 결과, 1.56TB 공개 가중치 규모를 바탕으로 웹·Kimi Code·API·자체 배포 중 현실적인 시작점을 정리합니다."
