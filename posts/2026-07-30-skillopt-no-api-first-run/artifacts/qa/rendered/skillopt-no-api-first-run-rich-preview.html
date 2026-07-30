@@ -87,12 +87,19 @@
 .devlog-rich__section > ul,
 .devlog-rich__section > ol,
 .devlog-rich__section > blockquote,
-.devlog-rich__section > pre,
 .devlog-rich__section > .rich-table-wrap,
 .devlog-rich__toc {
   width: min(100%, var(--rich-reading));
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .devlog-rich__section > h2 {
