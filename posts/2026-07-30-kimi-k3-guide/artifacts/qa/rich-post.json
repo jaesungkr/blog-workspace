@@ -1,24 +1,24 @@
 {
   "version": 1,
   "checked_at": "2026-07-30",
-  "checked_by": "Codex creator QA",
+  "checked_by": "Codex creator SEO revision final v2",
   "browser": "Chrome/150.0.7871.187",
-  "session": "48bacebb-2a1c-4bdc-ba0b-66ea98def070",
+  "session": "8e8c7ae8-74cb-42af-97e0-c6f80dde0dc7",
   "capture_receipt_path": "artifacts/qa/browser-capture.json",
-  "capture_receipt_sha256": "aab1f917255c76139e7a4715906721d2585f708d71e5ba00031cd57822ecdc93",
+  "capture_receipt_sha256": "37ac90f0efbcdb64829624eb84c72f69be82a754b689c4a92e3bf56a6a3a5e78",
   "capture_tool_sha256": "6de6cef94d30413a365118492b4ecb26fc926ebe1ace7fefa519a1f8e7dfc726",
-  "article_content_sha256": "0d8b2f61fe78bff4504e2f9f990f0ec0c1f32ff5db84c907d5dd579fec1f8372",
+  "article_content_sha256": "95ddc12b605f87f5a22a93b392ab0ddbdf471843df55fcdde83f18ed08a71f30",
   "media_sha256": "505a2eba384d85d6c13669776ddbb7c29a34e5d1a8dd05628d6eb1bd4f79cbb6",
-  "renderer_sha256": "deeab2a864a363ad562105dbfa1f9f259a23262b5d506d7bd0ae816ac7e022ac",
-  "css_sha256": "6b7ae70a921af906f6c0b409de0bd1874adcc98b1c6c277e4af3fc5d00ab1331",
+  "renderer_sha256": "ed4f2943cd18536bf9031f0d59b11dbc4afcfc54270068840d30d95d6f8cb23f",
+  "css_sha256": "112ee87866f1e875e6fa1bca50e1241fb30123536d5210fc29dc5d54e220118b",
   "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
-  "remote_media_sha256": "ac83719bacadc42a5ce832fe336a9706243fbaa0760d6203dd4bae4b6c92f11b",
+  "remote_media_sha256": "7f38c7cf84cb6947b8317043e145b18cb164fa607d9ab7b356d0d8d9dd250e20",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa/rendered/kimi-k3-guide-rich-preview.html",
-  "preview_sha256": "4aaf265a4f1af27d98c0ae9db850627456277271f95e2e1aa5eea8d156f00802",
-  "preview_structure_sha256": "8ff81aea83cc6c7c25308234609963d96e1329262e00ca0078590365b0b0ae49",
+  "preview_sha256": "245c4910e27c897e92accc5f520717000801ecd27bb173ae17d78cf3fb1148b5",
+  "preview_structure_sha256": "df2a1b8eb821f3aae30c03e3c9af0e3367f8c88d9fa8790ccabcd454fc2ed4c3",
   "fragment_path": "artifacts/qa/rendered/kimi-k3-guide-tistory-fragment.html",
-  "fragment_sha256": "0d14fc45df014ad1856cb0b76e51c1778e1a69bfc8b6b65873f2f92108679859",
+  "fragment_sha256": "2e48b282cdc7500e71756504a44405e45672e5382acb7403bb0a6c97e91b0bd5",
   "viewports": [
     {
       "width": 1280,
@@ -33,7 +33,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "f1021054de0698112a7928308a8efe0bc156d601a4ddd455f66841bd968820b7"
+      "screenshot_sha256": "faee5eba9c28ea81088f9c98822dad667f05228bdc57cb83ca7b45cf481f96f4"
     },
     {
       "width": 390,
@@ -48,7 +48,7 @@
       "status": "pass",
       "screenshot_pixel_width": 390,
       "screenshot_pixel_height": 844,
-      "screenshot_sha256": "e303c8dcc3751ca08f073fa6a5a33471f19cc34413cec4f1335c813a24f202b4"
+      "screenshot_sha256": "074ba335642be407fefaaf2c1ed4a14da1f8ac20f6c5fb76d2fe025e82ff5de5"
     },
     {
       "width": 360,
@@ -63,7 +63,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "8c0a1eb6763e509b526d5b2781269c11d540e1987260905f6e7735f8d7ef2ed1"
+      "screenshot_sha256": "924e585b43c7fc172066d224a5fafc8ad27c759f497ba89957f1826da0000b4c"
     }
   ],
   "fragment": {

@@ -2,16 +2,16 @@
   "version": 1,
   "status": "pass",
   "mode": "creator",
-  "checked_at": "2026-07-30T06:22:42.004346Z",
-  "checked_by": "Codex creator QA",
+  "checked_at": "2026-07-30T07:00:53.186399Z",
+  "checked_by": "Codex creator SEO revision final v2",
   "tool_sha256": "6de6cef94d30413a365118492b4ecb26fc926ebe1ace7fefa519a1f8e7dfc726",
   "preview_path": "artifacts/qa/rendered/kimi-k3-guide-rich-preview.html",
-  "preview_sha256": "4aaf265a4f1af27d98c0ae9db850627456277271f95e2e1aa5eea8d156f00802",
+  "preview_sha256": "245c4910e27c897e92accc5f520717000801ecd27bb173ae17d78cf3fb1148b5",
   "screenshot_root": "artifacts/qa",
   "receipt_path": "artifacts/qa/browser-capture.json",
   "browser_version": "Chrome/150.0.7871.187",
   "protocol_version": "1.3",
-  "session": "48bacebb-2a1c-4bdc-ba0b-66ea98def070",
+  "session": "8e8c7ae8-74cb-42af-97e0-c6f80dde0dc7",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,7 +21,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 6546,
+      "scroll_height": 6605,
       "h1_count": 1,
       "toc_anchor_count": 7,
       "toc_targets_unique": true,
@@ -35,7 +35,7 @@
           "natural_height": 659
         }
       ],
-      "screenshot_sha256": "f1021054de0698112a7928308a8efe0bc156d601a4ddd455f66841bd968820b7",
+      "screenshot_sha256": "faee5eba9c28ea81088f9c98822dad667f05228bdc57cb83ca7b45cf481f96f4",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -51,7 +51,7 @@
       "client_width": 390,
       "client_height": 844,
       "scroll_width": 390,
-      "scroll_height": 8760,
+      "scroll_height": 8869,
       "h1_count": 1,
       "toc_anchor_count": 7,
       "toc_targets_unique": true,
@@ -65,7 +65,7 @@
           "natural_height": 659
         }
       ],
-      "screenshot_sha256": "e303c8dcc3751ca08f073fa6a5a33471f19cc34413cec4f1335c813a24f202b4",
+      "screenshot_sha256": "074ba335642be407fefaaf2c1ed4a14da1f8ac20f6c5fb76d2fe025e82ff5de5",
       "screenshot_pixel_width": 390,
       "screenshot_pixel_height": 844,
       "width": 390,
@@ -81,7 +81,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 9356,
+      "scroll_height": 9503,
       "h1_count": 1,
       "toc_anchor_count": 7,
       "toc_targets_unique": true,
@@ -95,7 +95,7 @@
           "natural_height": 659
         }
       ],
-      "screenshot_sha256": "8c0a1eb6763e509b526d5b2781269c11d540e1987260905f6e7735f8d7ef2ed1",
+      "screenshot_sha256": "924e585b43c7fc172066d224a5fafc8ad27c759f497ba89957f1826da0000b4c",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,

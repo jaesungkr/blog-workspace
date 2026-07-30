@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import argparse
 import html
-import math
 import os
 import re
 import sys
@@ -75,14 +74,6 @@ def split_sections(body: str) -> tuple[list[str], list[dict[str, Any]]]:
 def clean_converted(markup: str) -> str:
     markup = STYLE_STRIP_RE.sub(r"<\1", markup)
     return TABLE_RE.sub(r'<div class="rich-table-wrap">\1</div>', markup)
-
-
-def reading_minutes(body: str) -> int:
-    source = re.sub(r"(?ms)^```.*?^```\s*", "", body)
-    source = re.sub(r"\{\{media:[^}]+\}\}", "", source)
-    source = re.sub(r"[#*`_>|~\[\](){}-]", "", source)
-    count = len(re.sub(r"\s+", "", source))
-    return max(1, math.ceil(count / 900))
 
 
 def media_src(
@@ -234,10 +225,6 @@ def build_article(
     parts = [f"<style>\n{css}\n</style>", '<article class="devlog-rich">']
     parts.append('<section class="devlog-rich__section is-intro">')
     parts.append(
-        f'<p class="devlog-rich__eyebrow">읽는 데 약 '
-        f"{reading_minutes(body)}분 · RICH POST</p>"
-    )
-    parts.append(
         render_lines(
             intro_lines,
             items_by_id,
@@ -296,6 +283,8 @@ def preview_document(fragment: str, meta: dict[str, Any]) -> str:
   <title>{title}</title>
   <meta name="description" content="{summary}">
   <style>
+    html {{ scrollbar-width:none; }}
+    html::-webkit-scrollbar {{ display:none; }}
     body {{ margin:0; background:#ffffff; color:#1d1d1f; }}
     .rich-preview-header {{ width:min(calc(100% - 40px), 1040px); margin:0 auto;
       padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",

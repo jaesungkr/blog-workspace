@@ -6,6 +6,7 @@
 
 | 로컬 파일 | SHA-256 | 원본 URL | 용도 |
 |---|---|---|---|
+| `sources/moonshot-about.txt` | `0500d0420daee92317a516153800c6d151d4ddc5bfae6d9e9c70e780e99ed21f` | https://www.moonshot.ai/about | 회사 소재지와 Kimi 개발사 확인 |
 | `sources/kimi-k3-tech-blog.html` | `878b6bc788c2762b533a391376d8a7bc55b9ae36a9aefcfbcc52ddf6966a5348` | https://www.kimi.com/blog/kimi-k3 | 출시 설명·인프라 권장·공식 한계 |
 | `sources/kimi-k3-readme.md` | `46bb1354d6d5352b3e791e120667d386dbfb12b3f78b7916b4f31d49a0400443` | https://raw.githubusercontent.com/MoonshotAI/Kimi-K3/main/README.md | 모델 사양·벤치마크·사용법 |
 | `sources/kimi-k3-license.txt` | `f45c677fa7f42405512b67f9b18b4ccd6927c6787492867763d80368631b7c54` | https://raw.githubusercontent.com/MoonshotAI/Kimi-K3/main/LICENSE | 공개 가중치 라이선스 |

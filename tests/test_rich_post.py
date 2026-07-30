@@ -987,6 +987,10 @@ summary: "설정부터 확인까지 실제 화면으로 짚습니다."
         self.assertIn("__TISTORY_MEDIA_LEAD_SCREEN__", fragment)
         self.assertNotIn("{{media:", preview)
         self.assertNotIn(str(self.post.resolve()), preview)
+        self.assertNotIn("읽는 데 약", preview)
+        self.assertNotIn("읽는 데 약", fragment)
+        self.assertNotIn("RICH POST", preview)
+        self.assertNotIn("RICH POST", fragment)
 
     def test_renderer_uses_final_tistory_url_in_strict_mode(self):
         final_url = "https://blog.kakaocdn.net/example/lead.png"

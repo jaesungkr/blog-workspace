@@ -1,9 +1,9 @@
 {
   "version": 1,
   "status": "pass",
-  "record_id": "174bea4f-d807-4c5d-99ca-e2bc777cddf8",
-  "recorded_at": "2026-07-30T06:22:14.044763Z",
-  "recorded_by": "Codex creator QA",
+  "record_id": "ace22aa2-7f8e-4788-96e8-99707e4bac73",
+  "recorded_at": "2026-07-30T06:51:48.445502Z",
+  "recorded_by": "Codex creator rerun 2026-07-30",
   "media_sha256": "505a2eba384d85d6c13669776ddbb7c29a34e5d1a8dd05628d6eb1bd4f79cbb6",
   "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
   "fetcher_files": {
@@ -23,7 +23,7 @@
       "requested_url": "https://blog.kakaocdn.net/dna/cWXEgI/dJMcahSLXPj/AAAAAAAAAAAAAAAAAAAAANdl0VwaI3kjchtV4o-6cvo_o5hmlBg7YXFOa8SmdGse/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1785509999&allow_ip=&allow_referer=&signature=GbEE9nQhZUIK7vOD6YFE71aYVtc%3D",
       "final_url": "https://blog.kakaocdn.net/dna/cWXEgI/dJMcahSLXPj/AAAAAAAAAAAAAAAAAAAAANdl0VwaI3kjchtV4o-6cvo_o5hmlBg7YXFOa8SmdGse/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1785509999&allow_ip=&allow_referer=&signature=GbEE9nQhZUIK7vOD6YFE71aYVtc%3D",
       "redirect_chain": [],
-      "observed_at": "2026-07-30T06:22:14.044489Z",
+      "observed_at": "2026-07-30T06:51:48.445298Z",
       "http_status": 200,
       "content_type": "image/webp",
       "content_encoding": "",
