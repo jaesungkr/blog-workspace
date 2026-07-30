@@ -20,6 +20,40 @@ order:
 Do not infer a pass from CSS or HTML source. The recorder rejects candidates
 from any other directory.
 
+## Focused evidence for changed components
+
+The three canonical screenshots can show only the first viewport after the
+capture helper scrolls the page. They do not prove that a changed table, code
+block, long link, or below-fold control is readable.
+
+When a changed component is outside those screenshots, or when its
+`scrollWidth` exceeds its mobile wrapper:
+
+1. Reopen the exact canonical preview under the same creator or independent
+   review role. If the canonical capture process has exited, use a fresh real
+   browser session and record its identifier with the supplemental evidence.
+2. At both 390 and 360 CSS pixels, record the document client and scroll
+   widths, component wrapper client and scroll widths, `overflow-x`, text size,
+   line height, headers, and a representative first row or state.
+3. Inspect the component at `scrollLeft = 0` and at its maximum horizontal
+   scroll. Save focused screenshots for both ends when different columns or
+   controls become visible.
+4. Confirm the document itself does not move horizontally, labels do not
+   collide, and every column or control can be reached without zoom.
+5. Save supplemental measurements and images under
+   `artifacts/qa/component-details/` for creator review or
+   `artifacts/qa/independent/component-details/` for independent review.
+   Include the exact preview hash, browser session, browser version, viewport,
+   and screenshot paths.
+6. Record the direct observation in `audit.md` and, when accepted by the
+   measurement schema, the human-review measurement file.
+
+Focused evidence supplements the canonical browser receipt; it never replaces
+the required three screenshots or the hash-bound creator and independent
+records. A table passes only after its left and right mobile states are read in
+the browser. Do not award a pass merely because the stylesheet contains
+`overflow-x: auto`.
+
 ## Required record
 
 ```json
@@ -128,6 +162,11 @@ current article content and exact `media.json`. It ignores only the
 frontmatter fields `status` and `published_url`, because those lifecycle values
 change after the independent pass without changing the rendered candidate.
 Every other article or manifest edit invalidates the QA pass.
+
+When a material edit invalidates the pass, reset the current QA decisions and
+describe old receipts as historical evidence only. Do not leave checked audit
+items or unqualified current-tense pass language that refers to the previous
+article hash.
 
 Keep the exact reviewed preview and fragment under `artifacts/qa/rendered/`.
 The checker binds them to the current CSS, rich renderer, and Markdown renderer.

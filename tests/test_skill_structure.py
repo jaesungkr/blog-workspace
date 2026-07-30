@@ -66,6 +66,7 @@ class SkillStructureTests(unittest.TestCase):
 
         for relative in {
             "references/rich-post-format.md",
+            "references/reader-first-editorial.md",
             "references/media-manifest.md",
             "references/remote-media.md",
             "references/responsive-qa.md",
@@ -90,6 +91,26 @@ class SkillStructureTests(unittest.TestCase):
         self.assertIn("full local preview", orchestrator)
         self.assertIn("Tistory fragment", orchestrator)
         self.assertIn("This orchestrator owns Git delivery", orchestrator)
+
+        reader_gate = (
+            rich_skill_dir / "references" / "reader-first-editorial.md"
+        ).read_text(encoding="utf-8")
+        responsive_qa = (
+            rich_skill_dir / "references" / "responsive-qa.md"
+        ).read_text(encoding="utf-8")
+        rich_format = (
+            rich_skill_dir / "references" / "rich-post-format.md"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("plain-language identity", reader_gate)
+        self.assertIn("Overload test", reader_gate)
+        self.assertIn("target value | target rank | row leader", reader_gate)
+        self.assertIn("missing entitlement", reader_gate)
+        self.assertIn("Label old passes as historical", reader_gate)
+        self.assertIn("Focused evidence for changed components", responsive_qa)
+        self.assertIn("scrollLeft = 0", responsive_qa)
+        self.assertIn("overflow-x: auto", responsive_qa)
+        self.assertIn("estimated reading time", rich_format)
 
     def test_creation_and_validation_roles_stay_separate(self):
         hero_creation = (

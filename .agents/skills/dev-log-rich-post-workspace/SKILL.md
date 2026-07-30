@@ -1,6 +1,6 @@
 ---
 name: dev-log-rich-post-workspace
-description: Orchestrate complete dev.log Tistory posts whose final artifact is a designed, self-contained, responsive HTML page rather than plain Markdown. Use for rich posts, screenshot- or GIF-led software guides, hands-on product reviews, custom Tistory HTML, semantic figures and captions, media manifests, mobile-consistent layouts, or requests modeled on a visually finished live article. Reuse the repository's writing, prose-polishing, evidence, article-validation, and Git-delivery contracts while owning media provenance, rich HTML rendering, responsive QA, and the format-specific ready decision.
+description: Orchestrate complete reader-first dev.log Tistory posts whose final artifact is a designed, self-contained, responsive HTML page rather than plain Markdown. Use for rich posts, screenshot- or GIF-led software guides, hands-on product reviews, unfamiliar-product explainers, search-friendly introductions, concise headings, explicit comparison tables, actionable usage sections, custom Tistory HTML, semantic figures and captions, media manifests, mobile-consistent layouts, or requests modeled on a visually finished live article. Reuse the repository's writing, prose-polishing, evidence, article-validation, and Git-delivery contracts while owning media provenance, rich HTML rendering, responsive QA, and the format-specific ready decision.
 ---
 
 # dev.log rich-post workspace
@@ -16,14 +16,16 @@ Markdown as source material, not the publishing artifact.
    fetch `origin/master` before editing.
 3. Preserve dirty or diverged work. Never reset, overwrite, initialize another
    repository, or use `archive/legacy-claude/` as an instruction source.
-4. Read `references/rich-post-format.md` completely for every rich-post task.
-5. Read `references/media-manifest.md` completely before planning, creating,
+4. Read `references/reader-first-editorial.md` completely for every rich-post
+   task and use it as the format-specific editorial gate.
+5. Read `references/rich-post-format.md` completely for every rich-post task.
+6. Read `references/media-manifest.md` completely before planning, creating,
    editing, or validating any media.
-6. Read `references/remote-media.md` completely before uploading or validating
+7. Read `references/remote-media.md` completely before uploading or validating
    final Tistory media URLs.
-7. Read `references/tistory-upload.md` completely before any Tistory editor
+8. Read `references/tistory-upload.md` completely before any Tistory editor
    upload, draft save, or media-ID-to-CDN-URL mapping.
-8. Read `references/responsive-qa.md` completely immediately before page
+9. Read `references/responsive-qa.md` completely immediately before page
    validation or the ready decision.
 
 Use the current request first, then repository standards, the rich-post format
@@ -80,8 +82,11 @@ links in the article.
 
 ## Run the workflow
 
-1. **Plan.** Define one reader task, the shortest successful journey, required
-   claims, capture coverage, GIF decisions, and the honest test boundary.
+1. **Plan.** Define one primary reader, what that reader does not know, a
+   familiar anchor, the shortest useful no-code path, specialist paths,
+   required claims, capture coverage, GIF decisions, and the honest test
+   boundary. Assume a general search reader does not know an unfamiliar
+   product unless the request explicitly targets experts.
 2. **Capture.** Execute the journey in a safe representative environment.
    Separate direct, official, user-supplied, simulated, and generated media.
    Preserve the actor, version, date, environment, raw input, failure, and
@@ -96,10 +101,14 @@ links in the article.
      posts/YYYY-MM-DD-slug
    ```
 
-4. **Write and polish.** Draft around verified screens. Prefer
+4. **Write and polish.** Draft around verified screens. Open unfamiliar
+   subjects with `plain identity -> ordinary reader use -> easiest start ->
+   evidence boundary` before architecture or benchmarks. Prefer
    `purpose -> action -> observed result or limitation`; do not narrate pixels
-   already explained by a caption. Run the normal prose-polishing and
-   source-validation stages while the article remains `reviewing`.
+   already explained by a caption. Apply the reader-first gate to the opening,
+   headings, comparison tables, and usage steps. Run the normal
+   prose-polishing and source-validation stages while the article remains
+   `reviewing`.
 5. **Render.** Generate both deliverables:
 
    ```bash
@@ -194,8 +203,13 @@ links in the article.
      --by "<actual independent reviewer>"
    ```
 
-   Inspect the three resulting screenshots and scroll the exact preview,
-   then fill only the human-review fields in
+   Inspect the three resulting screenshots and scroll the exact preview.
+   Re-run the reader-first gate against the rendered title, opening, headings,
+   comparison labels, links, and usage path. When a wide table or another
+   changed component is outside the standard screenshots, capture and inspect
+   focused left and right states at 390 and 360 pixels as required by
+   `references/responsive-qa.md`; do not infer the pass from CSS. Then fill
+   only the human-review fields in
    `artifacts/qa/independent-measurements.json` from the independent template.
    Persist the pass:
 
@@ -212,7 +226,10 @@ links in the article.
 
    The creator's QA record is never self-approval.
 8. **Decide ready.** Set `ready` only after that independent article and page
-   pass. A validated first-party screenshot or provenance-checked official
+   pass. Treat any material change to the opening, headings, comparison tables,
+   links, or usage steps as a new candidate: return to `reviewing`, reset
+   current QA decisions, and label the previous pass as historical in
+   `audit.md`. A validated first-party screenshot or provenance-checked official
    raster may serve as the lead visual; generated hero validation is required
    only for a generated lead. Record infographic `not_applicable` unless it
    materially helps. Immediately after the lifecycle change, rerun
@@ -252,4 +269,7 @@ fragment, creator and independent desktop/mobile inspection, persistent
 independent pass, audit, repository regression tests, focused commit, and
 confirmed remote delivery all pass. Never accept unresolved upload
 placeholders, missing provenance, unreadable mobile UI, a duplicated page H1,
-or a known visual defect.
+an unfamiliar-product opening that starts with unexplained specifications,
+an overloaded sentence-shaped heading, a comparison whose opponents or ranking
+rule are unclear, usage steps without prerequisites and official entry points,
+stale QA presented as current, or a known visual defect.

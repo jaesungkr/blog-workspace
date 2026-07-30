@@ -5,7 +5,10 @@ page rather than a generic Markdown conversion.
 
 ## Editorial model
 
-- Lead with the product, reader task, and retained result.
+- Apply `reader-first-editorial.md` before treating the page as an editorial
+  candidate.
+- Lead with the product's plain identity, the reader task, the easiest useful
+  start, and the retained result.
 - Follow the real user journey. A common sequence is
   `concept -> setup -> action -> result -> failure or limitation -> decision`.
 - Give each paragraph one job and each visual one evidence role.
@@ -23,6 +26,8 @@ page rather than a generic Markdown conversion.
 - Emit a full preview document and a Tistory paste fragment.
 - Namespace every selector under `.devlog-rich`.
 - Put no page-level H1 inside the Tistory fragment; the Tistory skin owns it.
+- Do not surface internal labels such as `RICH POST`, lifecycle status, or an
+  estimated reading time unless the user explicitly asks for them.
 - Use semantic `article`, `nav`, `section`, `figure`, `figcaption`, headings,
   lists, tables, and links.
 - Generate stable, unique heading IDs and a TOC that targets every major
@@ -134,3 +139,8 @@ Pass only when:
 - media without alt, caption, provenance, dimensions, or a claim role;
 - an infinite-motion experience with no static equivalent;
 - a paste fragment containing local paths, media IDs, or upload placeholders.
+- an unfamiliar subject whose opening assumes unexplained product knowledge;
+- a heading that compresses the subject, source, sample count, and conclusion;
+- a comparison table that hides the compared set, ranking rule, or row leader;
+- a usage section without an exact entry point, prerequisites, identifiers,
+  and nearby official documentation.
