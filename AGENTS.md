@@ -82,8 +82,10 @@ test suite and `python3 scripts/blog.py check --all`.
 - Do not reintroduce rigid legacy rules such as a fixed character count,
   uniform paragraph or sentence lengths, a mandatory number or shape of
   headings, a bold-emphasis quota, a mandatory table, or a generic disclaimer.
-- Do not auto-publish. Rendering stops at paste-ready HTML; the user publishes
-  in Tistory and supplies the final URL.
+- Never publish a post or click Tistory's final publish control. This boundary
+  does not change even when the user authorizes other editor work. Rendering
+  stops at paste-ready HTML; the user always pastes, previews, and publishes
+  in Tistory, then supplies the final URL.
 - A Git push to this workspace is part of the archive workflow and is not a
   Tistory publication. Keep `status: ready` until the user supplies the live
   Tistory URL.

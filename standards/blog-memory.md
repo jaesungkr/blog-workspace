@@ -61,6 +61,16 @@ them when decisions depend on current state.
 - Do not mass-delete existing posts solely to look fresh. Strengthen the best
   posts, author identity, navigation, internal links, and evidence first.
 
+## Tistory publication ownership
+
+- Codex never performs Tistory's final public-publish action. The user always
+  pastes the delivered HTML, checks the Tistory preview, and publishes the post.
+- This is a permanent workflow boundary, not an approval question. Do not ask
+  whether Codex should publicly publish a post.
+- Codex may prepare paste-ready HTML, validate mapped CDN media, and complete
+  repository delivery at `ready`. After the user publishes and supplies the
+  live URL, Codex may validate the live page and update publication metadata.
+
 ## Current Reflections series direction
 
 - `Reflections > 성경 인물 시리즈` is written from the stated position of a

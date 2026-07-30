@@ -2,8 +2,8 @@
 
 Uploading files or saving an editor draft changes the user's Tistory account.
 Do it only when the user has authorized that remote write and the intended blog
-and draft are unambiguous. Final publication is a separate action and always
-requires explicit authorization.
+and draft are unambiguous. Codex never performs final publication; the user
+always pastes, previews, and publishes the finished HTML.
 
 ## Prepare the exact queue
 
@@ -55,5 +55,6 @@ That GET is the first proof that every mapping resolves to an image with the
 expected format, aspect ratio, size, and animation behavior. The independent
 reviewer performs the second GET later.
 
-Uploading assets is not permission to paste the article, save unrelated editor
-changes, or click Tistory's final publish control.
+Uploading assets is not permission to paste the article or save unrelated
+editor changes. Never click Tistory's final publish control; only the user
+publishes.

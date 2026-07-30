@@ -255,11 +255,13 @@ links in the article.
 
 ## Publication boundary
 
-Do not click Tistory's final publish control without explicit authorization.
-Uploading media or preparing editor content may be done only within the user's
-requested publishing workflow. Keep `status: ready` until the user supplies the
-live URL. Then validate the live desktop and mobile page before setting
-`published` and `published_url`.
+Never click Tistory's final publish control, even when the user authorizes
+other editor work. The user always pastes the final HTML, checks the Tistory
+preview, and publishes the post. Do not ask the user to authorize Codex to
+publicly publish. Uploading media or preparing unpublished editor content may
+be done only within the user's requested workflow. Keep `status: ready` until
+the user supplies the live URL. Then validate the live desktop and mobile page
+before setting `published` and `published_url`.
 
 ## Completion
 

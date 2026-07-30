@@ -124,9 +124,12 @@ Pass only when:
      --preview-media-source remote \
      --output-dir dist
    ```
-9. Paste into Tistory HTML mode and inspect the actual preview.
-10. Let the user perform the final publish action unless explicitly authorized.
-11. Validate the supplied live URL and CDN bytes before setting `published`.
+9. Deliver the paste-ready fragment to the user.
+10. The user pastes it into Tistory HTML mode, inspects the preview, and
+    performs the final publish action. Codex never performs this step and does
+    not ask for permission to do it.
+11. Validate the user-supplied live URL and CDN bytes before setting
+    `published`.
 
 ## Reject these defects
 
