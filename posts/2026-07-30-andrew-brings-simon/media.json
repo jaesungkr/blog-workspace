@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "lead_id": "andrew-brothers-hero",
+  "items": [
+    {
+      "id": "andrew-brothers-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C03",
+        "C06"
+      ],
+      "actor": "OpenAI image generation under Codex art direction",
+      "captured_at": "2026-07-30",
+      "environment": "OpenAI built-in image generation; generated as a 1672×941 PNG from a versioned prompt and local series references",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/andrew-brothers-hero-source.png",
+      "publish_path": "assets/screenshots/andrew-brothers-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbC5VCD%2FdJMcadJBolx%2FAAAAAAAAAAAAAAAAAAAAAHbZJdnSDVAZSlBTbZ2cbwhfECMTsIIpjz_cL8No1k3k%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1785509999%26allow_ip%3D%26allow_referer%3D%26signature%3D7TXYfE%252FJsIwLQCCBVPrJGxk9hmM%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "갈릴리 호숫가에서 그물과 배를 뒤로하고 시몬과 함께 길을 나서는 안드레",
+      "caption": "요한복음 1장에서 안드레가 시몬을 예수님께 데려온 일과 마태복음·마가복음에서 두 형제가 그물을 두고 따른 일을 한 장면으로 합친 상징적 이미지입니다.",
+      "processing": [
+        "generated from an original art-direction prompt",
+        "selected after rejecting a Jesus-coded first composition"
+      ],
+      "redactions": [],
+      "sha256": "84214ec632b29dc5eba63edba8d37a9e9119b2896eee2179c28ce5349fbd5909",
+      "status": "validated"
+    }
+  ]
+}

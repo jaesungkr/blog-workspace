@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "status": "pass",
+  "checked_at": "2026-07-30T12:42:08Z",
+  "checked_by": "Codex browser run",
+  "session": "cdfcbe25-c717-490c-852c-50f947ab7160",
+  "browser_id": "-2ad5-4057-8264-f2bac7a30943",
+  "browser": "Codex in-app Chrome; canonical capture browser Chrome/150.0.7871.187",
+  "preview_path": "artifacts/qa/rendered/andrew-brings-simon-rich-preview.html",
+  "preview_sha256": "49583b3e72e2f0c152e0974c4c72735e1affdc1a5c8ed015a9170aa2763bf123",
+  "document": {
+    "390": {
+      "client_width": 390,
+      "scroll_width": 390
+    },
+    "360": {
+      "client_width": 360,
+      "scroll_width": 360
+    }
+  },
+  "tables": [
+    {
+      "index": 1,
+      "headers": [
+        "구분",
+        "성경에 기록된 내용"
+      ],
+      "first_row": [
+        "가족",
+        "시몬 베드로의 형제"
+      ],
+      "width": 620,
+      "font_size": "15px",
+      "line_height": "24px",
+      "overflow_x": "auto",
+      "viewports": [
+        {
+          "width": 390,
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "left_scroll": 0,
+          "right_scroll": 270,
+          "left_screenshot": "artifacts/qa/component-details/table-1-390-left.png",
+          "left_screenshot_sha256": "0c92f25060a869c1dce2a2c9fe05b8cdb61608655a80ea28d5d4f6fa68a43c63",
+          "right_screenshot": "artifacts/qa/component-details/table-1-390-right.png",
+          "right_screenshot_sha256": "4c6b3a11f03003890c9bfaecf0a168ca64fe23f42aacc01a4560844b8b673c85"
+        },
+        {
+          "width": 360,
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "left_scroll": 0,
+          "right_scroll": 300,
+          "left_screenshot": "artifacts/qa/component-details/table-1-360-left.png",
+          "left_screenshot_sha256": "91bac79441229eede1c8b2ee0da8d1e748ce3150b7f59673fbb6b48f9756dd17",
+          "right_screenshot": "artifacts/qa/component-details/table-1-360-right.png",
+          "right_screenshot_sha256": "92168672328da49e4caf3b3ea0aab0e92da78d27c92c0c54a9237b72d166aff7"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "headers": [
+        "장면",
+        "안드레가 한 일",
+        "본문이 말하지 않는 것"
+      ],
+      "first_row": [
+        "시몬",
+        "만난 분을 알리고 예수님께 데려감",
+        "시몬의 미래를 미리 알았는지"
+      ],
+      "width": 620,
+      "font_size": "15px",
+      "line_height": "24px",
+      "overflow_x": "auto",
+      "viewports": [
+        {
+          "width": 390,
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "left_scroll": 0,
+          "right_scroll": 270,
+          "left_screenshot": "artifacts/qa/component-details/table-2-390-left.png",
+          "left_screenshot_sha256": "acb58e0e8fd4392e6250b66a4a9fd515de473e56b54bb10ecbb3a7e89b6e93b0",
+          "right_screenshot": "artifacts/qa/component-details/table-2-390-right.png",
+          "right_screenshot_sha256": "b572ce4d0597ed8616637c65833ac2f755191527e49ac387de12db3d0aabb79a"
+        },
+        {
+          "width": 360,
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "left_scroll": 0,
+          "right_scroll": 300,
+          "left_screenshot": "artifacts/qa/component-details/table-2-360-left.png",
+          "left_screenshot_sha256": "bcab899a0423fd2b5aee3115f8f014597889d1e082f1c9e46e7c336b1810c3a8",
+          "right_screenshot": "artifacts/qa/component-details/table-2-360-right.png",
+          "right_screenshot_sha256": "eb8e78fa07b8268a8437d553543ce9f268ce1543feeb7403230ceb31b1459555"
+        }
+      ]
+    }
+  ],
+  "observations": {
+    "all_columns_reachable_without_zoom": true,
+    "labels_collide": false,
+    "document_moves_horizontally": false,
+    "caption_attached": true
+  }
+}
