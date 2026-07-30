@@ -215,6 +215,10 @@ def build_article(
     css: str,
 ) -> str:
     body = result["body"]
+    use_alternate_sections = (
+        result["meta"].get("section_backgrounds", "alternate")
+        != "plain"
+    )
     intro_lines, sections = split_sections(body)
     items_by_id = result["items_by_id"]
     lead_id = result["manifest"]["lead_id"]
@@ -248,7 +252,9 @@ def build_article(
         parts.append("</ol></nav></section>")
 
     for index, section in enumerate(sections):
-        alt_class = " is-alt" if index % 2 else ""
+        alt_class = (
+            " is-alt" if use_alternate_sections and index % 2 else ""
+        )
         parts.append(
             f'<section class="devlog-rich__section{alt_class}" '
             f'aria-labelledby="{section["id"]}">'

@@ -6,6 +6,7 @@ category: "Log"
 subcategory: "AI 개념 · 실전"
 status: reviewing
 format: rich-post
+section_backgrounds: plain
 tags: [SkillOpt, SkillOpt 사용법, 스킬 최적화, SKILL.md, Codex, Claude Code, AI 에이전트]
 summary: "SkillOpt가 현재 SKILL.md와 사용자가 남긴 과거 작업 기록, 성공 기준으로 수정 후보를 만들고 검증한 뒤 adopt에서 실제 파일에 반영하는 과정을 회의록 예시로 설명합니다."
 hero_image: assets/infographics/skillopt-meeting-notes-flow-v5.png

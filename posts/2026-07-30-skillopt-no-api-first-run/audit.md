@@ -84,6 +84,7 @@
 | 25 | 로컬 `file://` 미리보기의 브라우저 캡처가 Browser URL 정책으로 차단됨 | 정책을 우회하지 않고 렌더된 HTML 구조·목차 앵커·반응형 CSS·이미지 경로·크기·해시를 정적으로 검사 | H1 1개, H2·목차 7개와 앵커 전부 일치, 이미지 1080×1350·publish 해시 일치, 금지 문자열과 로컬 절대 경로 0건 |
 | 26 | `작업 사례`만으로는 독자가 결과 파일 하나를 넘기면 되는지, 요청·결과·판정 기준까지 필요한지 구분하기 어려움 | 도입에 `현재 스킬 + 사용자가 남긴 과거 작업 기록 + 잘됐는지 판단할 기준 -> 후보 -> 다른 사례 테스트 -> adopt` 문장을 그대로 추가하고, 과거 작업 기록의 범위를 요청·결과·잘된 점과 잘못된 점으로 설명 | 회의록 입력 표와 한 줄 흐름까지 같은 용어로 맞춤. 독립 출처 재검수에서 세션 기록 범위·held-out gate·조건부 staging·status·adopt 설명 모두 PASS |
 | 27 | 티스토리 HTML에는 이미지 CDN 주소가 없어 붙여넣기 직전에 자리표시자를 바꿔야 했음 | 사용자가 업로드해 준 `skillopt-meeting-notes-flow` CDN URL을 매니페스트에 연결하고 remote media record를 생성 | CDN GET 200, PNG 1080×1350, remote preview의 이미지 로드와 1280·390·360 문서 폭·목차·H1 구조 PASS. 실제 CDN PNG도 전체 래스터로 재확인 |
+| 28 | 티스토리 미리보기에서 교차 회색 섹션이 제목보다 앞쪽부터 넓게 보이며, 빈 회색 박스처럼 읽힘 | 이 글에 `section_backgrounds: plain`을 지정해 섹션의 교차 배경을 끔. 코드 블록·표의 회색 표면은 유지 | 원격 미디어를 넣은 rich fragment를 다시 렌더해 모든 본문 section에 `is-alt` 클래스가 없음을 확인. 사용자가 보낸 티스토리 캡처의 문제 위치와 비교 |
 
 ## 현재 검수 결과
 
@@ -96,7 +97,8 @@
 - current remote media: creator fetch PASS. CDN 응답은 PNG 1080×1350이며
   `artifacts/qa/remote-media.json`에 기록
 - current render: CDN URL이 들어간 preview·Tistory fragment 재생성,
-  user-facing `.txt`와 fragment SHA-256 일치
+  user-facing `.txt`와 fragment SHA-256 일치. 회차 28 뒤 creator Chrome
+  capture도 1280·390·360에서 이미지 로드·문서 폭·목차·H1 구조 PASS
 - current article browser QA: creator remote Chrome capture에서 1280·390·360
   모두 이미지 로드·문서 폭·목차·H1 구조 PASS. 전체 페이지의 human
   readability record와 independent QA는 pending
