@@ -112,6 +112,26 @@ class SkillStructureTests(unittest.TestCase):
         self.assertIn("overflow-x: auto", responsive_qa)
         self.assertIn("estimated reading time", rich_format)
 
+    def test_orchestrators_deliver_raw_tistory_fragment_txt(self):
+        for name in ORCHESTRATORS:
+            with self.subTest(skill=name):
+                orchestrator = (SKILLS / name / "SKILL.md").read_text(
+                    encoding="utf-8"
+                )
+                normalized = " ".join(orchestrator.split())
+                self.assertIn("<slug>-tistory-fragment.txt", orchestrator)
+                self.assertIn("byte-for-byte", orchestrator)
+                self.assertRegex(normalized, r"primary (?:final )?link")
+
+        rich_format = (
+            SKILLS
+            / "dev-log-rich-post-workspace"
+            / "references"
+            / "rich-post-format.md"
+        ).read_text(encoding="utf-8")
+        self.assertIn("<slug>-tistory-fragment.txt", rich_format)
+        self.assertIn("raw HTML only", rich_format)
+
     def test_creation_and_validation_roles_stay_separate(self):
         hero_creation = (
             SKILLS / "dev-log-hero-image" / "SKILL.md"

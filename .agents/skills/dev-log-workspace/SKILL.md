@@ -126,10 +126,21 @@ Never bypass failed validation, force-push, discard unrelated changes, or mark a
 post complete with a known editorial, factual, visual, mobile, or placement
 defect.
 
+## Final user handoff
+
+After validation, rendering, and Git delivery, copy the exact final Tistory HTML
+byte-for-byte to the current task's user-facing outputs directory as
+`<slug>-tistory-fragment.txt`. Put only raw paste-ready HTML in the file: no
+title, Markdown fence, explanation, or instructions. Verify the `.txt` hash
+matches the renderer output, then make the `.txt` file the primary final link
+and state the Tistory title separately. The user always pastes, previews, and
+publishes it.
+
 ## Completion
 
 A complete standard post requires a validated article and evidence record, a
 validated hero, an infographic decision and validation when applicable,
 rendered Tistory HTML, an honest audit and remaining-risk record, a focused
-commit, and confirmed presence on `origin/master`. A rich-post request is
-handed to its own orchestrator and completion contract.
+commit, confirmed presence on `origin/master`, and a byte-identical user-facing
+`<slug>-tistory-fragment.txt` handoff. A rich-post request is handed to its own
+orchestrator and completion contract.

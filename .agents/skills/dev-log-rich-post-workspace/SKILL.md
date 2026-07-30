@@ -252,6 +252,15 @@ links in the article.
    templates, or standards. Inspect the exact diff, stage only task files,
    commit, fetch and integrate without force, rerun affected checks, push to
    `origin/master`, verify the remote commit, and preserve unrelated work.
+10. **Deliver the paste file.** After the final strict render and Git delivery,
+    copy `dist/<slug>-tistory-fragment.html` byte-for-byte to the current
+    task's user-facing outputs directory as
+    `<slug>-tistory-fragment.txt`. Put only the raw HTML fragment in the text
+    file: no title, Markdown fence, explanation, or copy instructions. Verify
+    that the `.html` and `.txt` SHA-256 values match, the fragment has no H1,
+    unresolved media placeholder, or local path, and all publishable media use
+    final HTTPS URLs. Make the `.txt` file the primary link in the final
+    response and state the Tistory title separately.
 
 ## Publication boundary
 
@@ -268,8 +277,9 @@ before setting `published` and `published_url`.
 A rich post is complete only when the evidence-backed source, final media,
 manifest, two successful remote fetches, full preview, paste-ready Tistory
 fragment, creator and independent desktop/mobile inspection, persistent
-independent pass, audit, repository regression tests, focused commit, and
-confirmed remote delivery all pass. Never accept unresolved upload
+independent pass, audit, repository regression tests, focused commit,
+confirmed remote delivery, and the byte-identical user-facing
+`<slug>-tistory-fragment.txt` handoff all pass. Never accept unresolved upload
 placeholders, missing provenance, unreadable mobile UI, a duplicated page H1,
 an unfamiliar-product opening that starts with unexplained specifications,
 an overloaded sentence-shaped heading, a comparison whose opponents or ranking

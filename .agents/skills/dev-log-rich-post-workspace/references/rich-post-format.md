@@ -124,7 +124,10 @@ Pass only when:
      --preview-media-source remote \
      --output-dir dist
    ```
-9. Deliver the paste-ready fragment to the user.
+9. Copy the exact final fragment byte-for-byte to a user-facing
+   `<slug>-tistory-fragment.txt` file containing raw HTML only. Verify that its
+   SHA-256 matches the rendered `.html` fragment, then deliver the `.txt` as
+   the primary final artifact and state the title separately.
 10. The user pastes it into Tistory HTML mode, inspects the preview, and
     performs the final publish action. Codex never performs this step and does
     not ask for permission to do it.

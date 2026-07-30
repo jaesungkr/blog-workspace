@@ -86,6 +86,10 @@ test suite and `python3 scripts/blog.py check --all`.
   does not change even when the user authorizes other editor work. Rendering
   stops at paste-ready HTML; the user always pastes, previews, and publishes
   in Tistory, then supplies the final URL.
+- End every completed-post handoff with a user-facing
+  `<slug>-tistory-fragment.txt` file containing only the exact paste-ready HTML.
+  Make this `.txt` file the primary final link and provide the Tistory title
+  separately.
 - A Git push to this workspace is part of the archive workflow and is not a
   Tistory publication. Keep `status: ready` until the user supplies the live
   Tistory URL.

@@ -70,6 +70,9 @@ them when decisions depend on current state.
 - Codex may prepare paste-ready HTML, validate mapped CDN media, and complete
   repository delivery at `ready`. After the user publishes and supplies the
   live URL, Codex may validate the live page and update publication metadata.
+- The user's preferred final handoff is a `.txt` file containing only the raw
+  paste-ready Tistory HTML, matching the Kimi K3 delivery. Always provide this
+  file as the primary final artifact and give the title separately.
 
 ## Current Reflections series direction
 
