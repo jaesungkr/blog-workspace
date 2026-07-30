@@ -1,0 +1,20 @@
+Source URL: https://www.kimi.com/code/docs/en/kimi-code/models.html
+Retrieved: 2026-07-30
+Retrieved by: Codex
+
+Extracted official page text:
+
+Model Configuration
+
+Official Kimi Code CLI: type /model to switch models.
+
+Model ID: k3
+
+K3 availability: Moderato membership and above.
+
+The full 1M context window is available to Allegretto and higher tiers.
+
+Start a new session when switching model IDs.
+
+If the latest model is not listed yet and the account has access, /logout and sign in
+again with /login to refresh the list.

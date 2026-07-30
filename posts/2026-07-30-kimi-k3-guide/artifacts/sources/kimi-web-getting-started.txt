@@ -1,0 +1,15 @@
+Source URL: https://www.kimi.com/help/getting-started/agentic-chat
+Retrieved: 2026-07-30
+Retrieved by: Codex
+
+Extracted official page text:
+
+Getting started with Kimi
+
+Open kimi.com and try sending a message.
+
+Click the model switch button above the input box to switch.
+
+K3 | Low / High / Max | Chat and Agent tasks; the most capable overall
+
+K3 and K3 Swarm are billed by credits.

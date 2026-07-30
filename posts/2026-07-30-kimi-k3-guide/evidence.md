@@ -28,6 +28,9 @@
 | C12 | 모호한 상황에서 예상 밖의 선제 결정을 할 수 있음 | 공식 한계 | 확인 | 공식 기술 블로그 Limitations | 빈도와 심각도 미측정 |
 | C13 | 공식 보고서는 Claude Fable 5·GPT-5.6 Sol 대비 UX 격차를 인정함 | 공식 한계 | 확인 | 공식 기술 블로그 Limitations | 독립 사용자 연구 아님 |
 | C14 | Kimi K3 License는 사용·복제·수정·배포를 허용하되 대형 MaaS·상용 서비스 조건을 둠 | 공식 | 확인 | 공식 GitHub LICENSE | 법률 자문이 아닌 문서 요약 |
+| C15 | Kimi 웹은 입력창 위 모델 선택 버튼에서 K3를 고르며 Low·High·Max를 지원하고 크레딧을 사용함 | 공식 | 확인 | Kimi Help Center Getting started with Kimi | 계정·멤버십에 따라 이용 가능 범위가 달라질 수 있음 |
+| C16 | Kimi Code CLI는 활성 멤버십 또는 호출 가능한 API Key가 필요하고, Kimi 계정의 `k3`는 Moderato 이상에서 `/model`로 선택하며 모델 전환 때 새 세션을 권장함 | 공식 | 확인 | Kimi Code CLI Getting started, Model Configuration | CLI를 직접 설치·실행하지 않음. 100만 토큰 문맥은 Allegretto 이상 |
+| C17 | Kimi K3 API는 최소 1달러 충전 뒤 API Key를 만들고 모델 ID `kimi-k3`로 호출함 | 공식 | 확인 | Kimi K3 API Quickstart | API 호출·결제는 직접 수행하지 않음 |
 
 ## 직접 검증 설계
 

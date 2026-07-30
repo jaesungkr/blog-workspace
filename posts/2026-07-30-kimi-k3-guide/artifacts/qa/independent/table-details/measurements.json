@@ -1,0 +1,274 @@
+{
+  "browser": "Chrome/150.0.7871.187",
+  "preview": "artifacts/qa/independent-rendered/kimi-k3-guide-rich-preview.html",
+  "records": [
+    {
+      "figure_left": 20,
+      "figure_right": 370,
+      "figure_top": 308.40625,
+      "figure_bottom": 535.03125,
+      "image_loaded": true,
+      "image_natural_width": 1440,
+      "image_natural_height": 659,
+      "alt": "책상 위에서 철가루가 K 형태의 자기장 무늬를 이루는 Kimi K3 공식 대표 이미지",
+      "caption": "Kimi K3 공식 발표의 대표 이미지입니다. 2.8조 규모 모델이지만 실제 선택은 사용 경로와 운영 조건에서 갈립니다. · 공식 자료",
+      "width": 390,
+      "height": 844,
+      "screenshot": "hero-390.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"코딩-평가-결과\"] .rich-table-wrap",
+      "edge": "left",
+      "document_client_width": 390,
+      "document_scroll_width": 390,
+      "wrapper_client_width": 350,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 0,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 370,
+      "header_texts": [
+        "코딩 시험",
+        "Kimi K3 점수",
+        "Kimi K3 순위",
+        "공식 표 1위"
+      ],
+      "first_row_texts": [
+        "DeepSWE",
+        "67.5",
+        "3위",
+        "GPT-5.6 Sol (73.0)"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "코딩 시험\tKimi K3 점수\tKimi K3 순위\t공식 표 1위\nDeepSWE\t67.5\t3위\tGPT-5.6 Sol (73.0)\nProgramBench\t77.8\t1위\tKimi K3 (77.8)\nTerminal-Bench 2.1\t88.3\t2위\tGPT-5.6 Sol (88.8)\nFrontierSWE\t81.2\t2위\tClaude Fable 5 (86.6)\nSWE-Marathon\t42.0\t1위\tKimi K3 (42.0)\nPostTrainBench\t36.6\t2위\tClaude Fable 5 (41.4)\nMLS-Bench-Lite\t48.3\t2위\tClaude Fable 5 (49.9)\nSciCode\t58.7\t2위\tClaude Fable 5 (60.2)\nKimi Code Bench 2.0\t72.9\t2위\tClaude Fable 5 (76.9)",
+      "width": 390,
+      "height": 844,
+      "screenshot": "coding-390-left.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"코딩-평가-결과\"] .rich-table-wrap",
+      "edge": "right",
+      "document_client_width": 390,
+      "document_scroll_width": 390,
+      "wrapper_client_width": 350,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 270,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 370,
+      "header_texts": [
+        "코딩 시험",
+        "Kimi K3 점수",
+        "Kimi K3 순위",
+        "공식 표 1위"
+      ],
+      "first_row_texts": [
+        "DeepSWE",
+        "67.5",
+        "3위",
+        "GPT-5.6 Sol (73.0)"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "코딩 시험\tKimi K3 점수\tKimi K3 순위\t공식 표 1위\nDeepSWE\t67.5\t3위\tGPT-5.6 Sol (73.0)\nProgramBench\t77.8\t1위\tKimi K3 (77.8)\nTerminal-Bench 2.1\t88.3\t2위\tGPT-5.6 Sol (88.8)\nFrontierSWE\t81.2\t2위\tClaude Fable 5 (86.6)\nSWE-Marathon\t42.0\t1위\tKimi K3 (42.0)\nPostTrainBench\t36.6\t2위\tClaude Fable 5 (41.4)\nMLS-Bench-Lite\t48.3\t2위\tClaude Fable 5 (49.9)\nSciCode\t58.7\t2위\tClaude Fable 5 (60.2)\nKimi Code Bench 2.0\t72.9\t2위\tClaude Fable 5 (76.9)",
+      "width": 390,
+      "height": 844,
+      "screenshot": "coding-390-right.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"kimi-k3-사용법\"] .rich-table-wrap",
+      "edge": "left",
+      "document_client_width": 390,
+      "document_scroll_width": 390,
+      "wrapper_client_width": 350,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 0,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 370,
+      "header_texts": [
+        "하고 싶은 일",
+        "시작 방법",
+        "공식 안내"
+      ],
+      "first_row_texts": [
+        "저장소의 코드 읽기·수정",
+        "이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택",
+        "Kimi Code 설치, 모델 선택"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "하고 싶은 일\t시작 방법\t공식 안내\n저장소의 코드 읽기·수정\t이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택\tKimi Code 설치, 모델 선택\n앱이나 서비스에 연결\tOpen Platform에서 1달러 이상 충전 → API Key 생성 → 모델 ID kimi-k3로 호출\tKimi K3 API 빠른 시작\n가중치를 직접 운영\tHugging Face에서 가중치를 받고 vLLM·SGLang 같은 추론 엔진으로 배포\t공식 모델 저장소, vLLM 배포 예시",
+      "width": 390,
+      "height": 844,
+      "screenshot": "developer-390-left.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"kimi-k3-사용법\"] .rich-table-wrap",
+      "edge": "right",
+      "document_client_width": 390,
+      "document_scroll_width": 390,
+      "wrapper_client_width": 350,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 270,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 370,
+      "header_texts": [
+        "하고 싶은 일",
+        "시작 방법",
+        "공식 안내"
+      ],
+      "first_row_texts": [
+        "저장소의 코드 읽기·수정",
+        "이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택",
+        "Kimi Code 설치, 모델 선택"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "하고 싶은 일\t시작 방법\t공식 안내\n저장소의 코드 읽기·수정\t이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택\tKimi Code 설치, 모델 선택\n앱이나 서비스에 연결\tOpen Platform에서 1달러 이상 충전 → API Key 생성 → 모델 ID kimi-k3로 호출\tKimi K3 API 빠른 시작\n가중치를 직접 운영\tHugging Face에서 가중치를 받고 vLLM·SGLang 같은 추론 엔진으로 배포\t공식 모델 저장소, vLLM 배포 예시",
+      "width": 390,
+      "height": 844,
+      "screenshot": "developer-390-right.png"
+    },
+    {
+      "figure_left": 20,
+      "figure_right": 340,
+      "figure_top": 282.5,
+      "figure_bottom": 517.078125,
+      "image_loaded": true,
+      "image_natural_width": 1440,
+      "image_natural_height": 659,
+      "alt": "책상 위에서 철가루가 K 형태의 자기장 무늬를 이루는 Kimi K3 공식 대표 이미지",
+      "caption": "Kimi K3 공식 발표의 대표 이미지입니다. 2.8조 규모 모델이지만 실제 선택은 사용 경로와 운영 조건에서 갈립니다. · 공식 자료",
+      "width": 360,
+      "height": 800,
+      "screenshot": "hero-360.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"코딩-평가-결과\"] .rich-table-wrap",
+      "edge": "left",
+      "document_client_width": 360,
+      "document_scroll_width": 360,
+      "wrapper_client_width": 320,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 0,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 340,
+      "header_texts": [
+        "코딩 시험",
+        "Kimi K3 점수",
+        "Kimi K3 순위",
+        "공식 표 1위"
+      ],
+      "first_row_texts": [
+        "DeepSWE",
+        "67.5",
+        "3위",
+        "GPT-5.6 Sol (73.0)"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "코딩 시험\tKimi K3 점수\tKimi K3 순위\t공식 표 1위\nDeepSWE\t67.5\t3위\tGPT-5.6 Sol (73.0)\nProgramBench\t77.8\t1위\tKimi K3 (77.8)\nTerminal-Bench 2.1\t88.3\t2위\tGPT-5.6 Sol (88.8)\nFrontierSWE\t81.2\t2위\tClaude Fable 5 (86.6)\nSWE-Marathon\t42.0\t1위\tKimi K3 (42.0)\nPostTrainBench\t36.6\t2위\tClaude Fable 5 (41.4)\nMLS-Bench-Lite\t48.3\t2위\tClaude Fable 5 (49.9)\nSciCode\t58.7\t2위\tClaude Fable 5 (60.2)\nKimi Code Bench 2.0\t72.9\t2위\tClaude Fable 5 (76.9)",
+      "width": 360,
+      "height": 800,
+      "screenshot": "coding-360-left.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"코딩-평가-결과\"] .rich-table-wrap",
+      "edge": "right",
+      "document_client_width": 360,
+      "document_scroll_width": 360,
+      "wrapper_client_width": 320,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 300,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 340,
+      "header_texts": [
+        "코딩 시험",
+        "Kimi K3 점수",
+        "Kimi K3 순위",
+        "공식 표 1위"
+      ],
+      "first_row_texts": [
+        "DeepSWE",
+        "67.5",
+        "3위",
+        "GPT-5.6 Sol (73.0)"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "코딩 시험\tKimi K3 점수\tKimi K3 순위\t공식 표 1위\nDeepSWE\t67.5\t3위\tGPT-5.6 Sol (73.0)\nProgramBench\t77.8\t1위\tKimi K3 (77.8)\nTerminal-Bench 2.1\t88.3\t2위\tGPT-5.6 Sol (88.8)\nFrontierSWE\t81.2\t2위\tClaude Fable 5 (86.6)\nSWE-Marathon\t42.0\t1위\tKimi K3 (42.0)\nPostTrainBench\t36.6\t2위\tClaude Fable 5 (41.4)\nMLS-Bench-Lite\t48.3\t2위\tClaude Fable 5 (49.9)\nSciCode\t58.7\t2위\tClaude Fable 5 (60.2)\nKimi Code Bench 2.0\t72.9\t2위\tClaude Fable 5 (76.9)",
+      "width": 360,
+      "height": 800,
+      "screenshot": "coding-360-right.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"kimi-k3-사용법\"] .rich-table-wrap",
+      "edge": "left",
+      "document_client_width": 360,
+      "document_scroll_width": 360,
+      "wrapper_client_width": 320,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 0,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 340,
+      "header_texts": [
+        "하고 싶은 일",
+        "시작 방법",
+        "공식 안내"
+      ],
+      "first_row_texts": [
+        "저장소의 코드 읽기·수정",
+        "이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택",
+        "Kimi Code 설치, 모델 선택"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "하고 싶은 일\t시작 방법\t공식 안내\n저장소의 코드 읽기·수정\t이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택\tKimi Code 설치, 모델 선택\n앱이나 서비스에 연결\tOpen Platform에서 1달러 이상 충전 → API Key 생성 → 모델 ID kimi-k3로 호출\tKimi K3 API 빠른 시작\n가중치를 직접 운영\tHugging Face에서 가중치를 받고 vLLM·SGLang 같은 추론 엔진으로 배포\t공식 모델 저장소, vLLM 배포 예시",
+      "width": 360,
+      "height": 800,
+      "screenshot": "developer-360-left.png"
+    },
+    {
+      "selector": ".devlog-rich__section[aria-labelledby=\"kimi-k3-사용법\"] .rich-table-wrap",
+      "edge": "right",
+      "document_client_width": 360,
+      "document_scroll_width": 360,
+      "wrapper_client_width": 320,
+      "wrapper_scroll_width": 620,
+      "wrapper_scroll_left": 300,
+      "table_scroll_width": 620,
+      "overflow_x": "auto",
+      "wrapper_left": 20,
+      "wrapper_right": 340,
+      "header_texts": [
+        "하고 싶은 일",
+        "시작 방법",
+        "공식 안내"
+      ],
+      "first_row_texts": [
+        "저장소의 코드 읽기·수정",
+        "이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택",
+        "Kimi Code 설치, 모델 선택"
+      ],
+      "min_font_size": 15,
+      "min_line_height": 24,
+      "visible_text": "하고 싶은 일\t시작 방법\t공식 안내\n저장소의 코드 읽기·수정\t이용 조건 확인 → Kimi Code 설치 → kimi 실행 → /login → /model에서 k3 선택\tKimi Code 설치, 모델 선택\n앱이나 서비스에 연결\tOpen Platform에서 1달러 이상 충전 → API Key 생성 → 모델 ID kimi-k3로 호출\tKimi K3 API 빠른 시작\n가중치를 직접 운영\tHugging Face에서 가중치를 받고 vLLM·SGLang 같은 추론 엔진으로 배포\t공식 모델 저장소, vLLM 배포 예시",
+      "width": 360,
+      "height": 800,
+      "screenshot": "developer-360-right.png"
+    }
+  ]
+}

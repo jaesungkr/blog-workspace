@@ -1,0 +1,19 @@
+Source URL: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
+Retrieved: 2026-07-30
+Retrieved by: Codex
+
+Extracted official page text:
+
+Access requirements
+
+Kimi K3 is unlocked after a successful top-up (minimum $1).
+
+Get started
+
+Playground
+
+Get an API Key
+
+base_url="https://api.moonshot.ai/v1"
+
+model="kimi-k3"

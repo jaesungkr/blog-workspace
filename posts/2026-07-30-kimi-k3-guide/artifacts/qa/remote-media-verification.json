@@ -1,9 +1,9 @@
 {
   "version": 1,
   "status": "pass",
-  "verified_at": "2026-07-30T07:02:09.780228Z",
-  "verified_by": "Mencius independent QA",
-  "remote_media_sha256": "7f38c7cf84cb6947b8317043e145b18cb164fa607d9ab7b356d0d8d9dd250e20",
+  "verified_at": "2026-07-30T07:43:10.138325Z",
+  "verified_by": "Codex independent article validator",
+  "remote_media_sha256": "63aa2da656c419b1ee36beb437f4147fc52327124841ccdb71567a93130d725d",
   "media_sha256": "505a2eba384d85d6c13669776ddbb7c29a34e5d1a8dd05628d6eb1bd4f79cbb6",
   "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
   "fetcher_files": {

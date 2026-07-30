@@ -7,12 +7,15 @@ subcategory: "AI 모델 · 비교"
 status: ready
 format: rich-post
 tags: [Kimi K3, Moonshot AI, 오픈웨이트, MoE, AI 코딩, Kimi Code, AI 모델 비교]
-summary: "Kimi K3가 어떤 AI인지부터 2.8조 파라미터 구조, 코딩 성능, 오픈웨이트의 의미와 웹·Kimi Code·API·자체 배포 중 현실적인 사용 방법까지 쉽게 설명합니다."
+summary: "Kimi K3가 어떤 AI인지, 어떤 모델과 코딩 성능을 비교했는지, 웹에서 K3를 선택하는 법과 Kimi Code·API 사용 경로까지 쉽게 설명합니다."
 hero_image: assets/screenshots/kimi-k3-official-hero.webp
 published_url: ""
 sources:
     - https://www.moonshot.ai/about
     - https://www.kimi.com/blog/kimi-k3
+    - https://www.kimi.com/help/getting-started/agentic-chat
+    - https://www.kimi.com/code/docs/en/kimi-code/models.html
+    - https://www.kimi.com/help/kimi-code/cli-getting-started
     - https://github.com/MoonshotAI/Kimi-K3
     - https://huggingface.co/moonshotai/Kimi-K3
     - https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
@@ -47,21 +50,25 @@ sources:
 
 Moonshot AI는 Kimi Delta Attention과 Attention Residuals를 함께 적용했다고 설명합니다. 전자는 긴 문맥에서 주의 계산을 효율화합니다. 후자는 층이 깊어질 때 앞선 표현을 모두 똑같이 누적하지 않고 필요한 표현을 골라 가져옵니다. 이는 벤더가 밝힌 설계 목적이며, 독립적으로 효율을 재현한 결과는 아닙니다.
 
-### Kimi K3 공식 코딩 평가 9개 모두 3위 안
+### 코딩 평가 결과
 
-모델 발표 자료의 막대그래프에서는 Kimi K3가 파란색으로 강조됩니다. 행마다 순위를 다시 계산하자 그림이 조금 달라졌습니다.
+Moonshot AI의 [공식 평가표](https://github.com/MoonshotAI/Kimi-K3#3-evaluation-results)는 6개 모델을 비교합니다. 대상은 Kimi K3, Claude Fable 5, GPT-5.6 Sol, Claude Opus 4.8, GPT-5.5, GLM-5.2입니다. 아래 표는 코딩 관련 시험 9개만 떼어, Kimi K3가 몇 위였고 어느 모델이 1위였는지 다시 정리한 것입니다.
 
-계산 전에 9개 이름을 용도별로 묶었습니다. 저장소 변경 과제는 DeepSWE·FrontierSWE·SWE-Marathon, 명령행 작업은 Terminal-Bench 2.1, 프로그램 작성은 ProgramBench입니다. PostTrainBench·MLS-Bench-Lite·SciCode는 모델 학습과 과학 연구에 가까운 코딩을 다루고, Kimi Code Bench 2.0은 Moonshot AI의 사내 종합 평가입니다. 이 분류는 [공식 README의 평가 설명](https://github.com/MoonshotAI/Kimi-K3#3-evaluation-results)을 독자가 읽기 쉽게 묶은 것입니다.
+시험마다 점수 단위가 다르므로 서로 다른 행의 점수를 더하거나 평균내지 않았습니다. 같은 시험 안에서 점수가 높을수록 앞 순위로 셌습니다.
 
-판정은 단순합니다. **같은 벤치마크 행 안에서만 높은 점수 순으로 모델의 위치를 셌습니다.** 척도가 다른 행의 절대 점수를 더하거나 평균내지 않았습니다. 이 규칙으로 코딩 영역 9개를 세었더니 Kimi K3는 1위 2개, 2위 6개, 3위 1개였습니다.
+| 코딩 시험 | Kimi K3 점수 | Kimi K3 순위 | 공식 표 1위 |
+|---|---:|---:|---|
+| DeepSWE | 67.5 | 3위 | GPT-5.6 Sol (73.0) |
+| ProgramBench | 77.8 | 1위 | Kimi K3 (77.8) |
+| Terminal-Bench 2.1 | 88.3 | 2위 | GPT-5.6 Sol (88.8) |
+| FrontierSWE | 81.2 | 2위 | Claude Fable 5 (86.6) |
+| SWE-Marathon | 42.0 | 1위 | Kimi K3 (42.0) |
+| PostTrainBench | 36.6 | 2위 | Claude Fable 5 (41.4) |
+| MLS-Bench-Lite | 48.3 | 2위 | Claude Fable 5 (49.9) |
+| SciCode | 58.7 | 2위 | Claude Fable 5 (60.2) |
+| Kimi Code Bench 2.0 | 72.9 | 2위 | Claude Fable 5 (76.9) |
 
-| Kimi K3 위치 | 벤치마크 수 | 해당 항목 |
-|---|---:|---|
-| 1위 | 2개 | ProgramBench, SWE-Marathon |
-| 2위 | 6개 | Terminal-Bench 2.1, FrontierSWE, PostTrainBench, MLS-Bench-Lite, SciCode, Kimi Code Bench 2.0 |
-| 3위 | 1개 | DeepSWE |
-
-K3가 코딩에서 항상 1위는 아니었습니다. 그래도 9개 모두 3위 안에 들었으므로 공식 표 안에서는 상위권을 꾸준히 유지했습니다. **한두 개 최고점보다 여러 코딩 과제에서 순위가 크게 흔들리지 않은 점이 Kimi K3의 더 정확한 강점입니다.**
+Kimi K3는 ProgramBench와 SWE-Marathon에서 1위, DeepSWE에서 3위, 나머지 6개에서 2위였습니다. 이 표를 보면 어느 시험에서 누구에게 앞서거나 뒤졌는지까지 확인할 수 있습니다.
 
 재계산에는 발표 시점의 공식 숫자를 그대로 사용했습니다. [공식 평가표의 주석](https://github.com/MoonshotAI/Kimi-K3#3-evaluation-results)을 보면 모델별 하네스가 다릅니다. Claude Fable 5에는 fallback이 포함될 수 있고, GPT-5.6 Sol에는 cyberguard가 작동한 항목이 있습니다. `Kimi Code Bench 2.0`은 Moonshot AI의 사내 벤치마크입니다. 그러므로 2·6·1이라는 분포는 **벤더 표를 읽기 쉽게 다시 정리한 결과**이며 독립 성능 검증으로 볼 수 없습니다.
 
@@ -83,18 +90,28 @@ K3가 코딩에서 항상 1위는 아니었습니다. 그래도 9개 모두 3위
 
 Kimi K3의 공개 가중치는 개인 PC 설치 편의보다 **대규모 연구·추론 사업자가 모델을 직접 검토하고 배치할 선택권**에 더 큰 의미가 있습니다. 로컬 실행이 목적이라면 모델 품질만큼 저장 용량, 가속기 토폴로지, 서빙 엔진 지원을 먼저 확인해야 합니다.
 
-### Kimi K3 사용법: 웹·Kimi Code·API·자체 배포
+### Kimi K3 사용법
 
-사용 경로는 네 가지로 나뉩니다. 같은 모델이라도 필요한 준비와 검증 항목이 다릅니다.
+처음이라면 별도 설치 없이 웹에서 시작하면 됩니다. [Kimi 웹사이트](https://www.kimi.com/)를 열고 로그인한 뒤 다음 순서로 진행합니다.
 
-| 목적 | 먼저 선택할 경로 | 확인할 것 |
+1. 입력창 위의 모델 선택 버튼을 누릅니다.
+2. 모델 목록에서 `K3`를 고릅니다. `K3 Swarm`은 대량 조사나 병렬 작업용이므로 처음에는 일반 `K3`면 충분합니다.
+3. 생각 강도는 `Low`, `High`, `Max` 중에서 고릅니다. 처음에는 `High`, 빠른 답은 `Low`, 어려운 분석은 `Max`로 시작하면 무난합니다.
+4. 질문을 입력하거나 PDF·Word·Excel·이미지 파일을 올립니다.
+
+예를 들어 PDF를 올린 뒤 `이 문서의 핵심 내용을 처음 보는 사람도 이해하도록 다섯 항목으로 정리하고, 각 항목의 근거 페이지를 표시해 줘`라고 요청할 수 있습니다. 공식 [Kimi 시작 안내](https://www.kimi.com/help/getting-started/agentic-chat)에 따르면 K3는 크레딧을 사용하므로 계정이나 멤버십에 따라 선택 가능 여부와 사용량이 달라질 수 있습니다.
+
+개발 목적이라면 아래 경로를 고르면 됩니다.
+
+| 하고 싶은 일 | 시작 방법 | 공식 안내 |
 |---|---|---|
-| 긴 문서 조사·일반 작업 | Kimi.com 또는 Kimi Work | 한국어 품질, 출처 추적, 결과 수정 비용 |
-| 저장소 단위 코딩 | Kimi Code | 긴 세션 안정성, diff 품질, 권한 범위 |
-| 제품 기능에 연결 | Kimi API | reasoning history 보존, 도구 호출, 비용·지연 |
-| 가중치 통제·사내 배포 | vLLM·SGLang 등 자체 서빙 | 1.56TB 파일, 64+ 가속기 구성, 라이선스 |
+| 저장소의 코드 읽기·수정 | 이용 조건 확인 → Kimi Code 설치 → `kimi` 실행 → `/login` → `/model`에서 `k3` 선택 | [Kimi Code 설치](https://www.kimi.com/help/kimi-code/cli-getting-started), [모델 선택](https://www.kimi.com/code/docs/en/kimi-code/models.html) |
+| 앱이나 서비스에 연결 | Open Platform에서 1달러 이상 충전 → API Key 생성 → 모델 ID `kimi-k3`로 호출 | [Kimi K3 API 빠른 시작](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart) |
+| 가중치를 직접 운영 | Hugging Face에서 가중치를 받고 vLLM·SGLang 같은 추론 엔진으로 배포 | [공식 모델 저장소](https://huggingface.co/moonshotai/Kimi-K3), [vLLM 배포 예시](https://recipes.vllm.ai/moonshotai/Kimi-K3) |
 
-일반 사용자는 웹에서 실제 문서 한 건을 넣어 보는 것이 가장 짧은 경로입니다. 코딩이 목적이면 Kimi Code에서 작은 저장소와 명확한 테스트를 먼저 주는 편이 낫습니다. 둘 다 만족한 뒤 API로 옮기면 모델의 가능성과 제품 통합 문제를 분리해서 볼 수 있습니다.
+Kimi Code CLI는 활성 Kimi 멤버십 또는 호출 가능한 API Key가 있어야 쓸 수 있습니다. Kimi 계정으로 로그인해 `k3`를 고르려면 Moderato 이상 멤버십이 필요하고, 100만 토큰 문맥은 Allegretto 이상에서 열립니다.
+
+모델을 바꿀 때는 새 세션을 여는 편이 좋습니다. [공식 모델 선택 문서](https://www.kimi.com/code/docs/en/kimi-code/models.html)는 모델을 바꾸면 기존 문맥 캐시가 무효화되므로 새 세션에서 시작하라고 안내합니다. 목록에 K3가 없다면 먼저 이용 조건을 충족하는지 확인해야 합니다. 이용 권한이 있는데 최신 모델만 보이지 않을 때 `/logout` 뒤 `/login`으로 다시 로그인하면 목록을 새로 불러올 수 있습니다.
 
 API 통합에는 Kimi K3 특유의 주의점이 있습니다. [공식 모델 사용법](https://github.com/MoonshotAI/Kimi-K3#6-model-usage)에 따르면 이 모델은 항상 추론하며 `reasoning_effort`를 `low`, `high`, `max`로 조절합니다. 여러 차례 대화하거나 도구를 호출했다면 API가 돌려준 assistant 메시지를 통째로 다음 요청에 전달해야 합니다. `reasoning_content`와 `tool_calls`도 빠뜨리면 안 됩니다. 공식 문서는 중간 기록을 잘라낼 때 모델 품질이 크게 흔들릴 수 있다고 경고합니다.
 
@@ -122,6 +139,8 @@ Kimi K3의 기술적 의미는 분명합니다. 2.8조 규모의 네이티브 �
 
 - [Moonshot AI 회사 소개](https://www.moonshot.ai/about)
 - [Kimi K3 공식 발표](https://www.kimi.com/blog/kimi-k3)
+- [Kimi 웹 사용 시작 안내](https://www.kimi.com/help/getting-started/agentic-chat)
+- [Kimi Code 모델 선택 안내](https://www.kimi.com/code/docs/en/kimi-code/models.html)
 - [MoonshotAI/Kimi-K3 공식 GitHub 저장소와 기술 요약](https://github.com/MoonshotAI/Kimi-K3)
 - [Kimi K3 공식 Hugging Face 모델 저장소](https://huggingface.co/moonshotai/Kimi-K3)
 - [Kimi K3 API 빠른 시작](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)

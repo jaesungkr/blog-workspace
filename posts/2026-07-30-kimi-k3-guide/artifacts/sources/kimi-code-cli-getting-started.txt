@@ -1,0 +1,14 @@
+Source URL: https://www.kimi.com/help/kimi-code/cli-getting-started
+Retrieved: 2026-07-30
+Retrieved by: Codex
+
+Extracted official page text:
+
+Before you start
+
+Kimi account: an active Kimi membership subscription, or a callable API key.
+
+On first launch, run /login and choose either Kimi Code (OAuth) or Kimi Platform
+API key.
+
+Use /model to switch the current model.
