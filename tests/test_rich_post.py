@@ -992,6 +992,37 @@ summary: "설정부터 확인까지 실제 화면으로 짚습니다."
         self.assertNotIn("RICH POST", preview)
         self.assertNotIn("RICH POST", fragment)
 
+    def test_renderer_supports_dark_preview_theme_without_changing_fragment(self):
+        output_dir = Path(self.temp.name) / "dark-preview"
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(SCRIPTS / "render_rich_post.py"),
+                str(self.post),
+                "--output-dir",
+                str(output_dir),
+                "--preview-theme",
+                "dark",
+            ],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(0, completed.returncode, completed.stderr)
+
+        preview = (output_dir / "rich-test-rich-preview.html").read_text(
+            encoding="utf-8"
+        )
+        fragment = (output_dir / "rich-test-tistory-fragment.html").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn('<html lang="ko" class="dark">', preview)
+        self.assertIn(".dark .devlog-rich", preview)
+        self.assertIn("--rich-surface: #1e1f21", preview)
+        self.assertNotIn('<html lang="ko" class="dark">', fragment)
+        self.assertIn(".dark .devlog-rich", fragment)
+
     def test_renderer_uses_final_tistory_url_in_strict_mode(self):
         final_url = "https://blog.kakaocdn.net/example/lead.png"
         self.manifest["items"][0]["tistory_url"] = final_url

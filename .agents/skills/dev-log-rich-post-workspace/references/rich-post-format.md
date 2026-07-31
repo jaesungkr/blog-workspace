@@ -37,6 +37,13 @@ page rather than a generic Markdown conversion.
   a paragraph, figure, or grid dependency.
 - Keep critical styles inside the fragment. Do not depend on a particular
   Tistory skin class.
+- Support the hELLO skin's explicit dark state with CSS variables on
+  `.devlog-rich` and a scoped `.dark .devlog-rich` override. Cover article
+  surfaces, text, muted text, links, borders, alternate sections, TOC, tables,
+  inline code, and code blocks.
+- Treat preserved inline styles from Markdown or Tistory as part of the
+  fragment contract: dark overrides must cover `a[style]`, inline `code[style]`,
+  and `pre[style]` without changing image pixels.
 - Never emit a local absolute path or unresolved media directive.
 
 ## Layout system
@@ -59,6 +66,10 @@ Use these defaults unless the subject requires a documented exception:
 | Link | `#0066cc` |
 | Section backgrounds | `#ffffff` and `#f5f5f7` |
 | Mobile breakpoint | `735px` |
+
+Light values are the default palette. The dark palette is selected by the
+ancestor `.dark` state supplied by the hELLO skin; do not hard-code a second
+page wrapper or emit `html.dark` in the Tistory fragment.
 
 Keep prose on the reading measure while allowing an evidence image to use the
 media canvas. Set an intentional `display_width` for narrow dialogs, mobile
@@ -96,7 +107,10 @@ Pass only when:
 ## Publication flow
 
 1. Render a local preview with publishable local assets.
-2. Perform a preliminary desktop and mobile inspection.
+2. Render a second local preview with `--preview-theme dark` and perform a
+   preliminary desktop and mobile inspection of both themes. Check that
+   inline-styled links, code, and preformatted blocks do not restore light
+   colors.
 3. Run `tistory_media_map.py plan`; upload only with explicit authority, or
    receive the final CDN URLs from the user.
 4. Bind each HTTPS URL to its media ID with

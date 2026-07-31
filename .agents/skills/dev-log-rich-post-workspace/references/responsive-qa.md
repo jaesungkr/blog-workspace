@@ -20,6 +20,25 @@ order:
 Do not infer a pass from CSS or HTML source. The recorder rejects candidates
 from any other directory.
 
+## Dark-mode supplemental pass
+
+Rich posts used with the hELLO skin must receive a separate dark-theme visual
+pass. Render the full preview with `--preview-theme dark`; the renderer adds
+the same `dark` ancestor state that the Tistory skin uses. Inspect at the
+canonical `1280×900`, `390×844`, and `360×800` widths, and add `768px` when a
+layout or media transition needs it.
+
+Confirm directly in the browser that the article surface, alternate sections,
+TOC, headings, body text, links, table headers and cells, inline code,
+preformatted blocks, borders, captions, and image surrounds remain readable.
+Pay special attention to `style` attributes preserved by Tistory: a link,
+inline code token, or code block with a light inline background must not revert
+to a white or low-contrast state. Do not recolor or invert the image pixels.
+
+This supplemental pass is recorded in `audit.md` as theme-specific evidence;
+it does not replace the canonical light-theme hash-bound QA record. If the
+fragment or shared CSS changes after the pass, repeat both theme inspections.
+
 ## Focused evidence for changed components
 
 The three canonical screenshots can show only the first viewport after the

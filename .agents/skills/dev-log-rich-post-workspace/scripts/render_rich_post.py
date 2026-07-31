@@ -277,12 +277,17 @@ def build_article(
     return "\n".join(parts)
 
 
-def preview_document(fragment: str, meta: dict[str, Any]) -> str:
+def preview_document(
+    fragment: str,
+    meta: dict[str, Any],
+    preview_theme: str = "light",
+) -> str:
     title = html.escape(meta.get("title", "dev.log rich post"))
     category = html.escape(meta.get("category", "dev.log"))
     summary = html.escape(meta.get("summary", ""))
+    theme_attr = ' class="dark"' if preview_theme == "dark" else ""
     return f"""<!doctype html>
-<html lang="ko">
+<html lang="ko"{theme_attr}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -292,11 +297,14 @@ def preview_document(fragment: str, meta: dict[str, Any]) -> str:
     html {{ scrollbar-width:none; }}
     html::-webkit-scrollbar {{ display:none; }}
     body {{ margin:0; background:#ffffff; color:#1d1d1f; }}
+    html.dark {{ color-scheme: dark; }}
+    html.dark body {{ background:#1e1f21; color:#f5f5f7; }}
     .rich-preview-header {{ width:min(calc(100% - 40px), 1040px); margin:0 auto;
       padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
       system-ui,sans-serif; }}
     .rich-preview-header p {{ margin:0 0 10px; color:#0066cc; font-size:15px;
       font-weight:700; }}
+    html.dark .rich-preview-header p {{ color:#66b3ff; }}
     .rich-preview-header h1 {{ margin:0; font-size:42px; line-height:1.2;
       letter-spacing:-0.025em; word-break:keep-all; }}
     @media (max-width:735px) {{
@@ -320,6 +328,7 @@ def render_outputs(
     result: dict[str, Any],
     output_dir: Path,
     preview_media_source: str = "local",
+    preview_theme: str = "light",
 ) -> tuple[str, str]:
     css = (SKILL_DIR / "assets" / "rich-post.css").read_text(encoding="utf-8")
     preview_mode = (
@@ -328,7 +337,7 @@ def render_outputs(
     preview_fragment = build_article(result, preview_mode, output_dir, css)
     tistory_fragment = build_article(result, "fragment", output_dir, css)
     return (
-        preview_document(preview_fragment, result["meta"]),
+        preview_document(preview_fragment, result["meta"], preview_theme),
         tistory_fragment + "\n",
     )
 
@@ -353,6 +362,15 @@ def main() -> int:
         choices=("local", "remote"),
         default="local",
         help="Use local bundle assets or final CDN URLs in the full preview.",
+    )
+    parser.add_argument(
+        "--preview-theme",
+        choices=("light", "dark"),
+        default="light",
+        help=(
+            "Render the full preview in the selected theme. "
+            "The Tistory fragment always keeps the skin-controlled theme."
+        ),
     )
     args = parser.parse_args()
 
@@ -381,6 +399,7 @@ def main() -> int:
         result,
         output_dir,
         preview_media_source=args.preview_media_source,
+        preview_theme=args.preview_theme,
     )
     if result["require_publish_urls"]:
         qa_record = result["qa_record"]

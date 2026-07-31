@@ -6,19 +6,37 @@
 .devlog-rich {
   --rich-canvas: 980px;
   --rich-reading: 760px;
+  --rich-surface: #ffffff;
   --rich-text: #1d1d1f;
   --rich-body: #333333;
   --rich-muted: #636366;
   --rich-link: #0066cc;
   --rich-border: #e0e0e0;
   --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
   width: min(100%, var(--rich-canvas));
   margin: 0 auto;
-  background: #ffffff;
+  background: var(--rich-surface);
   color: var(--rich-text);
   font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
     BlinkMacSystemFont, sans-serif;
   line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
 }
 
 .devlog-rich a {
@@ -33,7 +51,7 @@
 
 .devlog-rich__section {
   padding: 56px 32px;
-  background: #ffffff;
+  background: var(--rich-surface);
 }
 
 .devlog-rich__section.is-alt {
@@ -112,6 +130,8 @@
 }
 
 .devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
   overflow-wrap: anywhere;
   word-break: break-word;
 }
@@ -120,7 +140,7 @@
   padding: 24px 26px;
   border: 1px solid var(--rich-border);
   border-radius: 18px;
-  background: #ffffff;
+  background: var(--rich-surface);
 }
 
 .devlog-rich__toc-title {
@@ -149,7 +169,7 @@
   overflow: clip;
   border: 1px solid var(--rich-border);
   border-radius: 18px;
-  background: #ffffff;
+  background: var(--rich-surface);
 }
 
 .devlog-rich__poster {
@@ -194,7 +214,7 @@
 }
 
 .devlog-rich .rich-table-wrap th {
-  background: #eeeef0;
+  background: var(--rich-alt);
   color: var(--rich-text);
   font-weight: 700;
 }
@@ -202,6 +222,24 @@
 .devlog-rich pre {
   max-width: var(--rich-reading);
   overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

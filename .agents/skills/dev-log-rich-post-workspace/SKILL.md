@@ -80,6 +80,34 @@ Set `format: rich-post` in `article.md`. Insert media with a standalone
 directive such as `{{media:agent-select}}`; never put local filesystem image
 links in the article.
 
+### Dark-mode contract
+
+Every rich-post fragment must support the hELLO Tistory skin's explicit dark
+theme. The skin adds a `dark` class to an ancestor of the fragment, so the
+shared `assets/rich-post.css` contract is:
+
+- Keep all article surfaces, text, muted text, links, borders, alternate
+  sections, inline code, and code blocks on `--rich-*` variables.
+- Define the light values on `.devlog-rich` and the dark values under
+  `.dark .devlog-rich`; do not depend on a page-level `body` or Tistory-only
+  selector for the fragment itself.
+- Do not leave `#ffffff`, light gray text, or light code/pre backgrounds on
+  section, TOC, table, image, inline-code, or code-block rules when a variable
+  can express the same role.
+- Markdown and Tistory may preserve inline `style` attributes. The shared CSS
+  must keep scoped dark overrides for `a[style]`, inline `code[style]`, and
+  `pre[style]` so a pasted article cannot revert to a white panel or unreadable
+  gray text.
+- Do not apply an image color transform. Use a dark neutral image background
+  and border only where the image itself needs a surrounding surface.
+
+Before the ready decision, render a dark local preview with
+`--preview-theme dark`, inspect it at the required desktop and mobile widths,
+and confirm the same fragment changes under the actual hELLO theme toggle.
+Record any theme-specific revision and re-verification in `audit.md`. The
+Tistory fragment must not emit its own `html.dark` wrapper; the skin owns that
+state.
+
 ## Run the workflow
 
 1. **Plan.** Define one primary reader, what that reader does not know, a
@@ -119,6 +147,17 @@ links in the article.
    The renderer writes `dist/<slug>-rich-preview.html` and
    `dist/<slug>-tistory-fragment.html`. The preview may use local assets. The
    Tistory fragment must use resolved HTTPS media URLs before `ready`.
+   For the required dark-mode pass, render a second local preview with:
+
+   ```bash
+   python3 .agents/skills/dev-log-rich-post-workspace/scripts/render_rich_post.py \
+     posts/YYYY-MM-DD-slug \
+     --preview-theme dark \
+     --output-dir posts/YYYY-MM-DD-slug/artifacts/qa/dark-preview
+   ```
+
+   This theme option changes only the full preview document. The Tistory
+   fragment remains skin-controlled and continues to use the same CSS.
 6. **Stage and validate final media.** Print the deterministic upload queue:
 
    ```bash
@@ -161,6 +200,10 @@ links in the article.
    Verify one page-level H1, heading-targeted TOC anchors, no page overflow,
    readable captures, stable aspect ratios, caption attachment, table and code
    scrolling, reduced-motion GIF fallback, and ad-safe section boundaries.
+   Repeat the visual pass for the dark preview: verify the article canvas,
+   alternate sections, TOC, headings, body text, links, tables, inline code,
+   code blocks, borders, captions, and image surrounds. The dark pass does not
+   replace the canonical light QA record; it is an additional theme check.
    Save screenshots, exact reviewed HTML artifacts, and the hash-bound record
    required by `references/responsive-qa.md`. Record
    `problem -> revision -> re-verification` in `audit.md`.

@@ -91,6 +91,16 @@ class SkillStructureTests(unittest.TestCase):
         self.assertIn("full local preview", orchestrator)
         self.assertIn("Tistory fragment", orchestrator)
         self.assertIn("This orchestrator owns Git delivery", orchestrator)
+        self.assertIn("--preview-theme dark", orchestrator)
+
+        rich_css = (rich_skill_dir / "assets" / "rich-post.css").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("--rich-surface", rich_css)
+        self.assertIn(".dark .devlog-rich", rich_css)
+        self.assertIn("a[style]", rich_css)
+        self.assertIn("code[style]", rich_css)
+        self.assertIn("pre[style]", rich_css)
 
         reader_gate = (
             rich_skill_dir / "references" / "reader-first-editorial.md"
