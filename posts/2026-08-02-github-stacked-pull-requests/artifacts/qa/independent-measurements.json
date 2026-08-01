@@ -1,0 +1,33 @@
+{
+  "result": "pass",
+  "viewports": [
+    {
+      "width": 1280,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 390,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 360,
+      "readable_media": true,
+      "status": "pass"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "checks": {
+    "captions_attached": true,
+    "table_code_scroll": true,
+    "content_order_preserved": true,
+    "reduced_motion_fallback": "not_applicable",
+    "gif_poster_matches_frame": "not_applicable"
+  }
+}

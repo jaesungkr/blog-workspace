@@ -1,0 +1,1234 @@
+{
+  "version": 1,
+  "checked_at": "2026-08-01T17:08:22.636404Z",
+  "checked_by": "Codex independent validator",
+  "preview": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/artifacts/qa/independent-rendered/github-stacked-pull-requests-rich-preview.html",
+  "preview_sha256": "79ba6a4afecd30fcb6b126d46b8b95ed9097b4be45384f4500a7da74e486cff9",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "page": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/artifacts/qa/independent-rendered/github-stacked-pull-requests-rich-preview.html",
+        "inner_width": 1280,
+        "inner_height": 900,
+        "client_width": 1280,
+        "client_height": 900,
+        "scroll_width": 1280,
+        "scroll_height": 7735,
+        "h1_count": 1,
+        "toc_anchor_count": 6,
+        "toc_targets_unique": true,
+        "image_count": 4,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdqiZG5%2FdJMcaf1L5A3%2FAAAAAAAAAAAAAAAAAAAAAGOKm87GiOkrwz5cEbLab_t_i5-x7SD6PHpKUIbowT2U%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYchQioyvO3qbuc61buToPbCZ9SI%253D",
+            "complete": true,
+            "natural_width": 1080,
+            "natural_height": 560
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FboY17e%2FdJMcajpvwoi%2FAAAAAAAAAAAAAAAAAAAAABUi-6zPeBAfQYoRcGSMhlkt8q60GrviAJrDC2wtCEWK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D3La8XmGmQa2gBIkTZNcKAFB%252Fgcg%253D",
+            "complete": true,
+            "natural_width": 520,
+            "natural_height": 340
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbkLp7W%2FdJMcajpvwoh%2FAAAAAAAAAAAAAAAAAAAAAM1V38OPZikrDH-SGY3IT3fMomgKu1bTYjHijGYSDdgq%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dt3Zpg%252BYzRZogLcazIbcPsIXaavs%253D",
+            "complete": true,
+            "natural_width": 440,
+            "natural_height": 260
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhHxO2%2FdJMcacD7jWw%2FAAAAAAAAAAAAAAAAAAAAADy-IoVUW6li8BCm7pGpHsgbHrgpnyJx-9ydVb0fLkYo%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWW24uBI4%252BiAn7SzHFWtkm%252BzQE%252F4%253D",
+            "complete": true,
+            "natural_width": 520,
+            "natural_height": 240
+          }
+        ]
+      },
+      "dom": {
+        "figures": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 182,
+              "top": 766.78125,
+              "right": 1098,
+              "bottom": 1308.078125,
+              "width": 916,
+              "height": 541.296875
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 1080,
+              "naturalHeight": 560,
+              "clientWidth": 914,
+              "clientHeight": 474,
+              "alt": "GitHub Stacked pull requests 공개 미리보기 제목과 여러 PR을 한 스택으로 병합하는 UI"
+            },
+            "caption": "GitHub는 2026년 7월 30일 Stacked pull requests의 public preview를 발표했습니다. 제목 아래 대표 화면은 여러 PR이 하나의 병합 단위로 연결된 모습을 보여 줍니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 380,
+              "top": 3764.890625,
+              "right": 900,
+              "bottom": 4192.640625,
+              "width": 520,
+              "height": 427.75
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 520,
+              "naturalHeight": 340,
+              "clientWidth": 518,
+              "clientHeight": 339,
+              "alt": "GitHub 변경 로그의 gh stack init과 add 명령 데모 화면"
+            },
+            "caption": "공식 페이지의 CLI 데모는 gh stack init으로 첫 레이어를 만들고 gh stack add로 다음 브랜치를 올리는 흐름을 보여 줍니다. 이 화면은 공식 데모를 캡처한 것이며, 사용자 저장소에서 직접 실행한 결과는 아닙니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 2,
+            "rect": {
+              "left": 420,
+              "top": 4710.109375,
+              "right": 860,
+              "bottom": 5057.984375,
+              "width": 440,
+              "height": 347.875
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 440,
+              "naturalHeight": 260,
+              "clientWidth": 438,
+              "clientHeight": 259,
+              "alt": "GitHub pull request 화면에서 frontend, api, auth 세 레이어를 보여 주는 stack map"
+            },
+            "caption": "PR 상단의 stack map은 현재 보고 있는 레이어와 아래 의존 PR을 한 번에 보여 줍니다. 리뷰어는 전체 기능을 잃지 않으면서도 현재 레이어의 diff에 집중할 수 있습니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 3,
+            "rect": {
+              "left": 380,
+              "top": 5654.3125,
+              "right": 900,
+              "bottom": 5960.75,
+              "width": 520,
+              "height": 306.4375
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 520,
+              "naturalHeight": 240,
+              "clientWidth": 518,
+              "clientHeight": 239,
+              "alt": "세 개 pull request가 Ready 상태로 연결되고 Merge stack 3 버튼이 표시된 GitHub UI"
+            },
+            "caption": "top 레이어가 병합 조건을 충족하면 아래의 준비된 PR까지 묶어 병합할 수 있습니다. 공식 데모에는 세 레이어와 Merge stack 3 버튼이 함께 표시됩니다. · Codex 캡처 · 2026-08-02"
+          }
+        ],
+        "pres": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 260,
+              "top": 1919.515625,
+              "right": 1020,
+              "bottom": 2041.703125,
+              "width": 760,
+              "height": 122.1875
+            },
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "frontend      -> PR #3 (base: api-endpoints)  <- top\napi-endpoints -> PR #2 (base: auth-layer)\nauth-layer    -> PR #1 (base: main)           <- bottom\nmain"
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 260,
+              "top": 3206.234375,
+              "right": 1020,
+              "bottom": 3259.28125,
+              "width": 760,
+              "height": 53.046875
+            },
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "gh extension install github/gh-stack"
+          },
+          {
+            "index": 2,
+            "rect": {
+              "left": 260,
+              "top": 3324.4375,
+              "right": 1020,
+              "bottom": 3654.046875,
+              "width": 760,
+              "height": 329.609375
+            },
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "gh stack init auth-layer\n\ngit add .\ngit commit -m \"Add authentication layer\"\n\ngh stack add api-endpoints\n\ngit add .\ngit commit -m \"Add API endpoints\"\n\ngh stack submit\n\ngh stack vie"
+          }
+        ],
+        "tables": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 260,
+              "top": 2222.5625,
+              "right": 1020,
+              "bottom": 2507.5625,
+              "width": 760,
+              "height": 285
+            },
+            "clientWidth": 760,
+            "scrollWidth": 760,
+            "maxScrollLeft": 0,
+            "overflowX": "auto",
+            "headers": [
+              "방식",
+              "리뷰 단위",
+              "의존 관계와 rebase",
+              "어울리는 상황"
+            ],
+            "firstRow": [
+              "하나의 큰 PR",
+              "전체 변경 하나",
+              "단순하지만 PR이 커집니다.",
+              "변경이 작고 한 번에 이해할 수 있을 때"
+            ]
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 260,
+              "top": 6440.984375,
+              "right": 1020,
+              "bottom": 6937.984375,
+              "width": 760,
+              "height": 497
+            },
+            "clientWidth": 760,
+            "scrollWidth": 760,
+            "maxScrollLeft": 0,
+            "overflowX": "auto",
+            "headers": [
+              "상황",
+              "판단",
+              "이유"
+            ],
+            "firstRow": [
+              "큰 기능을 의존 단계로 나눌 수 있음",
+              "잘 맞습니다.",
+              "아래 작업을 기다리지 않고 다음 레이어를 진행할 수 있습니다."
+            ]
+          }
+        ],
+        "lists": [
+          {
+            "type": "OL",
+            "itemCount": 6,
+            "listStyle": "decimal",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "UL",
+            "itemCount": 4,
+            "listStyle": "disc",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "UL",
+            "itemCount": 4,
+            "listStyle": "disc",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "OL",
+            "itemCount": 6,
+            "listStyle": "decimal",
+            "firstItemDisplay": "list-item"
+          }
+        ]
+      },
+      "full": {
+        "path": "independent-full-1280.png",
+        "sha256": "af502798ef7be692f842312149aa2264b19918263e557319bb5e3f6bc08597ba",
+        "bytes": 1293067
+      },
+      "tables": [],
+      "figures": [],
+      "pres": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "page": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/artifacts/qa/independent-rendered/github-stacked-pull-requests-rich-preview.html",
+        "inner_width": 390,
+        "inner_height": 844,
+        "client_width": 390,
+        "client_height": 844,
+        "scroll_width": 390,
+        "scroll_height": 9137,
+        "h1_count": 1,
+        "toc_anchor_count": 6,
+        "toc_targets_unique": true,
+        "image_count": 4,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdqiZG5%2FdJMcaf1L5A3%2FAAAAAAAAAAAAAAAAAAAAAGOKm87GiOkrwz5cEbLab_t_i5-x7SD6PHpKUIbowT2U%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYchQioyvO3qbuc61buToPbCZ9SI%253D",
+            "complete": true,
+            "natural_width": 1080,
+            "natural_height": 560
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FboY17e%2FdJMcajpvwoi%2FAAAAAAAAAAAAAAAAAAAAABUi-6zPeBAfQYoRcGSMhlkt8q60GrviAJrDC2wtCEWK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D3La8XmGmQa2gBIkTZNcKAFB%252Fgcg%253D",
+            "complete": true,
+            "natural_width": 520,
+            "natural_height": 340
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbkLp7W%2FdJMcajpvwoh%2FAAAAAAAAAAAAAAAAAAAAAM1V38OPZikrDH-SGY3IT3fMomgKu1bTYjHijGYSDdgq%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dt3Zpg%252BYzRZogLcazIbcPsIXaavs%253D",
+            "complete": true,
+            "natural_width": 440,
+            "natural_height": 260
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhHxO2%2FdJMcacD7jWw%2FAAAAAAAAAAAAAAAAAAAAADy-IoVUW6li8BCm7pGpHsgbHrgpnyJx-9ydVb0fLkYo%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWW24uBI4%252BiAn7SzHFWtkm%252BzQE%252F4%253D",
+            "complete": true,
+            "natural_width": 520,
+            "natural_height": 240
+          }
+        ]
+      },
+      "dom": {
+        "figures": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 20,
+              "top": 1069.984375,
+              "right": 370,
+              "bottom": 1361.171875,
+              "width": 350,
+              "height": 291.1875
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 1080,
+              "naturalHeight": 560,
+              "clientWidth": 348,
+              "clientHeight": 180,
+              "alt": "GitHub Stacked pull requests 공개 미리보기 제목과 여러 PR을 한 스택으로 병합하는 UI"
+            },
+            "caption": "GitHub는 2026년 7월 30일 Stacked pull requests의 public preview를 발표했습니다. 제목 아래 대표 화면은 여러 PR이 하나의 병합 단위로 연결된 모습을 보여 줍니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 20,
+              "top": 4288.96875,
+              "right": 370,
+              "bottom": 4627.25,
+              "width": 350,
+              "height": 338.28125
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 520,
+              "naturalHeight": 340,
+              "clientWidth": 348,
+              "clientHeight": 228,
+              "alt": "GitHub 변경 로그의 gh stack init과 add 명령 데모 화면"
+            },
+            "caption": "공식 페이지의 CLI 데모는 gh stack init으로 첫 레이어를 만들고 gh stack add로 다음 브랜치를 올리는 흐름을 보여 줍니다. 이 화면은 공식 데모를 캡처한 것이며, 사용자 저장소에서 직접 실행한 결과는 아닙니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 2,
+            "rect": {
+              "left": 20,
+              "top": 5378.828125,
+              "right": 370,
+              "bottom": 5695.203125,
+              "width": 350,
+              "height": 316.375
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 440,
+              "naturalHeight": 260,
+              "clientWidth": 348,
+              "clientHeight": 206,
+              "alt": "GitHub pull request 화면에서 frontend, api, auth 세 레이어를 보여 주는 stack map"
+            },
+            "caption": "PR 상단의 stack map은 현재 보고 있는 레이어와 아래 의존 PR을 한 번에 보여 줍니다. 리뷰어는 전체 기능을 잃지 않으면서도 현재 레이어의 diff에 집중할 수 있습니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 3,
+            "rect": {
+              "left": 20,
+              "top": 6467.171875,
+              "right": 370,
+              "bottom": 6716.84375,
+              "width": 350,
+              "height": 249.671875
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 520,
+              "naturalHeight": 240,
+              "clientWidth": 348,
+              "clientHeight": 161,
+              "alt": "세 개 pull request가 Ready 상태로 연결되고 Merge stack 3 버튼이 표시된 GitHub UI"
+            },
+            "caption": "top 레이어가 병합 조건을 충족하면 아래의 준비된 PR까지 묶어 병합할 수 있습니다. 공식 데모에는 세 레이어와 Merge stack 3 버튼이 함께 표시됩니다. · Codex 캡처 · 2026-08-02"
+          }
+        ],
+        "pres": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 20,
+              "top": 2006.078125,
+              "right": 370,
+              "bottom": 2128.265625,
+              "width": 350,
+              "height": 122.1875
+            },
+            "clientWidth": 348,
+            "scrollWidth": 509,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "frontend      -> PR #3 (base: api-endpoints)  <- top\napi-endpoints -> PR #2 (base: auth-layer)\nauth-layer    -> PR #1 (base: main)           <- bottom\nmain"
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 20,
+              "top": 3617.375,
+              "right": 370,
+              "bottom": 3670.421875,
+              "width": 350,
+              "height": 53.046875
+            },
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "gh extension install github/gh-stack"
+          },
+          {
+            "index": 2,
+            "rect": {
+              "left": 20,
+              "top": 3764.8125,
+              "right": 370,
+              "bottom": 4094.421875,
+              "width": 350,
+              "height": 329.609375
+            },
+            "clientWidth": 348,
+            "scrollWidth": 379,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "gh stack init auth-layer\n\ngit add .\ngit commit -m \"Add authentication layer\"\n\ngh stack add api-endpoints\n\ngit add .\ngit commit -m \"Add API endpoints\"\n\ngh stack submit\n\ngh stack vie"
+          }
+        ],
+        "tables": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 20,
+              "top": 2426.0625,
+              "right": 370,
+              "bottom": 2735.0625,
+              "width": 350,
+              "height": 309
+            },
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "maxScrollLeft": 270,
+            "overflowX": "auto",
+            "headers": [
+              "방식",
+              "리뷰 단위",
+              "의존 관계와 rebase",
+              "어울리는 상황"
+            ],
+            "firstRow": [
+              "하나의 큰 PR",
+              "전체 변경 하나",
+              "단순하지만 PR이 커집니다.",
+              "변경이 작고 한 번에 이해할 수 있을 때"
+            ]
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 20,
+              "top": 7376.71875,
+              "right": 370,
+              "bottom": 7921.71875,
+              "width": 350,
+              "height": 545
+            },
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "maxScrollLeft": 270,
+            "overflowX": "auto",
+            "headers": [
+              "상황",
+              "판단",
+              "이유"
+            ],
+            "firstRow": [
+              "큰 기능을 의존 단계로 나눌 수 있음",
+              "잘 맞습니다.",
+              "아래 작업을 기다리지 않고 다음 레이어를 진행할 수 있습니다."
+            ]
+          }
+        ],
+        "lists": [
+          {
+            "type": "OL",
+            "itemCount": 6,
+            "listStyle": "decimal",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "UL",
+            "itemCount": 4,
+            "listStyle": "disc",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "UL",
+            "itemCount": 4,
+            "listStyle": "disc",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "OL",
+            "itemCount": 6,
+            "listStyle": "decimal",
+            "firstItemDisplay": "list-item"
+          }
+        ]
+      },
+      "full": {
+        "path": "independent-full-390.png",
+        "sha256": "71612b69aaaaf8cde8419fef2468a00f4fa523e38b6cfbaada23ef779ab00c16",
+        "bytes": 963448
+      },
+      "tables": [
+        {
+          "index": 0,
+          "edge": "left",
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 267.0625,
+              "right": 370,
+              "bottom": 576.0625,
+              "width": 350,
+              "height": 309
+            }
+          },
+          "screenshot": {
+            "path": "table-1-left-390.png",
+            "sha256": "e2a4f032f68e53b834e106aad9b7889dc8bde1de2c23ce37f568bd43b2ff89c5",
+            "bytes": 73991
+          }
+        },
+        {
+          "index": 0,
+          "edge": "right",
+          "state": {
+            "scrollLeft": 270,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 267.0625,
+              "right": 370,
+              "bottom": 576.0625,
+              "width": 350,
+              "height": 309
+            }
+          },
+          "screenshot": {
+            "path": "table-1-right-390.png",
+            "sha256": "48b59282851a939fa3d3d2134e9987597dfbe0b4447e82dbb3fd11cdc1c6ca2c",
+            "bytes": 72436
+          }
+        },
+        {
+          "index": 1,
+          "edge": "left",
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 149.71875,
+              "right": 370,
+              "bottom": 694.71875,
+              "width": 350,
+              "height": 545
+            }
+          },
+          "screenshot": {
+            "path": "table-2-left-390.png",
+            "sha256": "5ce622e57b5f48526a8a6a803e7667dc9b5817111ff7b3538cadbaff65bab28c",
+            "bytes": 66536
+          }
+        },
+        {
+          "index": 1,
+          "edge": "right",
+          "state": {
+            "scrollLeft": 270,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 149.71875,
+              "right": 370,
+              "bottom": 694.71875,
+              "width": 350,
+              "height": 545
+            }
+          },
+          "screenshot": {
+            "path": "table-2-right-390.png",
+            "sha256": "2d018c17d4867241f784113d5bd7541547383fd0e30db66e16eb5939dc8af544",
+            "bytes": 66824
+          }
+        }
+      ],
+      "figures": [],
+      "pres": []
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "page": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/artifacts/qa/independent-rendered/github-stacked-pull-requests-rich-preview.html",
+        "inner_width": 360,
+        "inner_height": 800,
+        "client_width": 360,
+        "client_height": 800,
+        "scroll_width": 360,
+        "scroll_height": 9444,
+        "h1_count": 1,
+        "toc_anchor_count": 6,
+        "toc_targets_unique": true,
+        "image_count": 4,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdqiZG5%2FdJMcaf1L5A3%2FAAAAAAAAAAAAAAAAAAAAAGOKm87GiOkrwz5cEbLab_t_i5-x7SD6PHpKUIbowT2U%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYchQioyvO3qbuc61buToPbCZ9SI%253D",
+            "complete": true,
+            "natural_width": 1080,
+            "natural_height": 560
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FboY17e%2FdJMcajpvwoi%2FAAAAAAAAAAAAAAAAAAAAABUi-6zPeBAfQYoRcGSMhlkt8q60GrviAJrDC2wtCEWK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D3La8XmGmQa2gBIkTZNcKAFB%252Fgcg%253D",
+            "complete": true,
+            "natural_width": 520,
+            "natural_height": 340
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbkLp7W%2FdJMcajpvwoh%2FAAAAAAAAAAAAAAAAAAAAAM1V38OPZikrDH-SGY3IT3fMomgKu1bTYjHijGYSDdgq%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dt3Zpg%252BYzRZogLcazIbcPsIXaavs%253D",
+            "complete": true,
+            "natural_width": 440,
+            "natural_height": 260
+          },
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhHxO2%2FdJMcacD7jWw%2FAAAAAAAAAAAAAAAAAAAAADy-IoVUW6li8BCm7pGpHsgbHrgpnyJx-9ydVb0fLkYo%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWW24uBI4%252BiAn7SzHFWtkm%252BzQE%252F4%253D",
+            "complete": true,
+            "natural_width": 520,
+            "natural_height": 240
+          }
+        ]
+      },
+      "dom": {
+        "figures": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 20,
+              "top": 1166.84375,
+              "right": 340,
+              "bottom": 1442.46875,
+              "width": 320,
+              "height": 275.625
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 1080,
+              "naturalHeight": 560,
+              "clientWidth": 318,
+              "clientHeight": 165,
+              "alt": "GitHub Stacked pull requests 공개 미리보기 제목과 여러 PR을 한 스택으로 병합하는 UI"
+            },
+            "caption": "GitHub는 2026년 7월 30일 Stacked pull requests의 public preview를 발표했습니다. 제목 아래 대표 화면은 여러 PR이 하나의 병합 단위로 연결된 모습을 보여 줍니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 20,
+              "top": 4487.203125,
+              "right": 340,
+              "bottom": 4827.5625,
+              "width": 320,
+              "height": 340.359375
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 520,
+              "naturalHeight": 340,
+              "clientWidth": 318,
+              "clientHeight": 208,
+              "alt": "GitHub 변경 로그의 gh stack init과 add 명령 데모 화면"
+            },
+            "caption": "공식 페이지의 CLI 데모는 gh stack init으로 첫 레이어를 만들고 gh stack add로 다음 브랜치를 올리는 흐름을 보여 줍니다. 이 화면은 공식 데모를 캡처한 것이며, 사용자 저장소에서 직접 실행한 결과는 아닙니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 2,
+            "rect": {
+              "left": 20,
+              "top": 5608.375,
+              "right": 340,
+              "bottom": 5907.03125,
+              "width": 320,
+              "height": 298.65625
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 440,
+              "naturalHeight": 260,
+              "clientWidth": 318,
+              "clientHeight": 188,
+              "alt": "GitHub pull request 화면에서 frontend, api, auth 세 레이어를 보여 주는 stack map"
+            },
+            "caption": "PR 상단의 stack map은 현재 보고 있는 레이어와 아래 의존 PR을 한 번에 보여 줍니다. 리뷰어는 전체 기능을 잃지 않으면서도 현재 레이어의 diff에 집중할 수 있습니다. · Codex 캡처 · 2026-08-02"
+          },
+          {
+            "index": 3,
+            "rect": {
+              "left": 20,
+              "top": 6708.234375,
+              "right": 340,
+              "bottom": 6965.75,
+              "width": 320,
+              "height": 257.515625
+            },
+            "image": {
+              "complete": true,
+              "naturalWidth": 520,
+              "naturalHeight": 240,
+              "clientWidth": 318,
+              "clientHeight": 147,
+              "alt": "세 개 pull request가 Ready 상태로 연결되고 Merge stack 3 버튼이 표시된 GitHub UI"
+            },
+            "caption": "top 레이어가 병합 조건을 충족하면 아래의 준비된 PR까지 묶어 병합할 수 있습니다. 공식 데모에는 세 레이어와 Merge stack 3 버튼이 함께 표시됩니다. · Codex 캡처 · 2026-08-02"
+          }
+        ],
+        "pres": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 20,
+              "top": 2087.375,
+              "right": 340,
+              "bottom": 2209.5625,
+              "width": 320,
+              "height": 122.1875
+            },
+            "clientWidth": 318,
+            "scrollWidth": 509,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "frontend      -> PR #3 (base: api-endpoints)  <- top\napi-endpoints -> PR #2 (base: auth-layer)\nauth-layer    -> PR #1 (base: main)           <- bottom\nmain"
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 20,
+              "top": 3815.609375,
+              "right": 340,
+              "bottom": 3868.65625,
+              "width": 320,
+              "height": 53.046875
+            },
+            "clientWidth": 318,
+            "scrollWidth": 344,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "gh extension install github/gh-stack"
+          },
+          {
+            "index": 2,
+            "rect": {
+              "left": 20,
+              "top": 3963.046875,
+              "right": 340,
+              "bottom": 4292.65625,
+              "width": 320,
+              "height": 329.609375
+            },
+            "clientWidth": 318,
+            "scrollWidth": 379,
+            "overflowX": "auto",
+            "fontSize": "11.7px",
+            "lineHeight": "18.72px",
+            "sample": "gh stack init auth-layer\n\ngit add .\ngit commit -m \"Add authentication layer\"\n\ngh stack add api-endpoints\n\ngit add .\ngit commit -m \"Add API endpoints\"\n\ngh stack submit\n\ngh stack vie"
+          }
+        ],
+        "tables": [
+          {
+            "index": 0,
+            "rect": {
+              "left": 20,
+              "top": 2536.59375,
+              "right": 340,
+              "bottom": 2845.59375,
+              "width": 320,
+              "height": 309
+            },
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "maxScrollLeft": 300,
+            "overflowX": "auto",
+            "headers": [
+              "방식",
+              "리뷰 단위",
+              "의존 관계와 rebase",
+              "어울리는 상황"
+            ],
+            "firstRow": [
+              "하나의 큰 PR",
+              "전체 변경 하나",
+              "단순하지만 PR이 커집니다.",
+              "변경이 작고 한 번에 이해할 수 있을 때"
+            ]
+          },
+          {
+            "index": 1,
+            "rect": {
+              "left": 20,
+              "top": 7625.625,
+              "right": 340,
+              "bottom": 8170.625,
+              "width": 320,
+              "height": 545
+            },
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "maxScrollLeft": 300,
+            "overflowX": "auto",
+            "headers": [
+              "상황",
+              "판단",
+              "이유"
+            ],
+            "firstRow": [
+              "큰 기능을 의존 단계로 나눌 수 있음",
+              "잘 맞습니다.",
+              "아래 작업을 기다리지 않고 다음 레이어를 진행할 수 있습니다."
+            ]
+          }
+        ],
+        "lists": [
+          {
+            "type": "OL",
+            "itemCount": 6,
+            "listStyle": "decimal",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "UL",
+            "itemCount": 4,
+            "listStyle": "disc",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "UL",
+            "itemCount": 4,
+            "listStyle": "disc",
+            "firstItemDisplay": "list-item"
+          },
+          {
+            "type": "OL",
+            "itemCount": 6,
+            "listStyle": "decimal",
+            "firstItemDisplay": "list-item"
+          }
+        ]
+      },
+      "full": {
+        "path": "independent-full-360.png",
+        "sha256": "cccce0cb8a7c27ccbe1bd41454e803170476372c2865c96dbdc363f6aa75580d",
+        "bytes": 925029
+      },
+      "tables": [
+        {
+          "index": 0,
+          "edge": "left",
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 245.59375,
+              "right": 340,
+              "bottom": 554.59375,
+              "width": 320,
+              "height": 309
+            }
+          },
+          "screenshot": {
+            "path": "table-1-left-360.png",
+            "sha256": "da5fc6da063727d9eb4d4497daf09a061087baf12e3f6f98711eefa765e1bd9e",
+            "bytes": 65767
+          }
+        },
+        {
+          "index": 0,
+          "edge": "right",
+          "state": {
+            "scrollLeft": 300,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 245.59375,
+              "right": 340,
+              "bottom": 554.59375,
+              "width": 320,
+              "height": 309
+            }
+          },
+          "screenshot": {
+            "path": "table-1-right-360.png",
+            "sha256": "bf38e809e3ebd4f939ca59373da2435164ffe567200b0b11f73797622a066a9d",
+            "bytes": 63446
+          }
+        },
+        {
+          "index": 1,
+          "edge": "left",
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 127.625,
+              "right": 340,
+              "bottom": 672.625,
+              "width": 320,
+              "height": 545
+            }
+          },
+          "screenshot": {
+            "path": "table-2-left-360.png",
+            "sha256": "aa1e31acfaf99701d59d075fce9e2d9aaa4ee5762217980d4a1686590d50461a",
+            "bytes": 58230
+          }
+        },
+        {
+          "index": 1,
+          "edge": "right",
+          "state": {
+            "scrollLeft": 300,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 127.625,
+              "right": 340,
+              "bottom": 672.625,
+              "width": 320,
+              "height": 545
+            }
+          },
+          "screenshot": {
+            "path": "table-2-right-360.png",
+            "sha256": "e71ae87a3413e5de4a92e9b3048eed4eed50f487866f8bbbc1475bab0078fbb4",
+            "bytes": 61812
+          }
+        }
+      ],
+      "figures": [
+        {
+          "index": 0,
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 0,
+            "clientWidth": 320,
+            "scrollWidth": 320,
+            "rect": {
+              "left": 20,
+              "top": 261.84375,
+              "right": 340,
+              "bottom": 537.46875,
+              "width": 320,
+              "height": 275.625
+            }
+          },
+          "screenshot": {
+            "path": "figure-1-360.png",
+            "sha256": "527b402d260e14da39acb883b987b8c5ddbba22473fa15fab9066f7d13a74920",
+            "bytes": 76749
+          }
+        },
+        {
+          "index": 1,
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 0,
+            "clientWidth": 320,
+            "scrollWidth": 320,
+            "rect": {
+              "left": 20,
+              "top": 230.203125,
+              "right": 340,
+              "bottom": 570.5625,
+              "width": 320,
+              "height": 340.359375
+            }
+          },
+          "screenshot": {
+            "path": "figure-2-360.png",
+            "sha256": "0554eaec27cfdfde2afd414ed10fe9c1deed4b2613671c9a61e4a649c77e84b6",
+            "bytes": 109396
+          }
+        },
+        {
+          "index": 2,
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 0,
+            "clientWidth": 320,
+            "scrollWidth": 320,
+            "rect": {
+              "left": 20,
+              "top": 250.375,
+              "right": 340,
+              "bottom": 549.03125,
+              "width": 320,
+              "height": 298.65625
+            }
+          },
+          "screenshot": {
+            "path": "figure-3-360.png",
+            "sha256": "fc716e94fb7001d71c9e62a70028a976aebf2a90ad67c65633d280f576bfe9bb",
+            "bytes": 110789
+          }
+        },
+        {
+          "index": 3,
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 0,
+            "clientWidth": 320,
+            "scrollWidth": 320,
+            "rect": {
+              "left": 20,
+              "top": 271.234375,
+              "right": 340,
+              "bottom": 528.75,
+              "width": 320,
+              "height": 257.515625
+            }
+          },
+          "screenshot": {
+            "path": "figure-4-360.png",
+            "sha256": "0f0765baccfe8e2783eeeddf220234c8981e29ae5ad391c0300ab3ee407f489e",
+            "bytes": 105103
+          }
+        }
+      ],
+      "pres": [
+        {
+          "index": 0,
+          "edge": "left",
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 191,
+            "clientWidth": 318,
+            "scrollWidth": 509,
+            "rect": {
+              "left": 20,
+              "top": 339.375,
+              "right": 340,
+              "bottom": 461.5625,
+              "width": 320,
+              "height": 122.1875
+            }
+          },
+          "screenshot": {
+            "path": "pre-1-left-360.png",
+            "sha256": "3133cd67c9a58fe63ccd28eb0724827b562220f1abc61f1ced19c9eeec797536",
+            "bytes": 62645
+          }
+        },
+        {
+          "index": 0,
+          "edge": "right",
+          "state": {
+            "scrollLeft": 191,
+            "maxScrollLeft": 191,
+            "clientWidth": 318,
+            "scrollWidth": 509,
+            "rect": {
+              "left": 20,
+              "top": 339.375,
+              "right": 340,
+              "bottom": 461.5625,
+              "width": 320,
+              "height": 122.1875
+            }
+          },
+          "screenshot": {
+            "path": "pre-1-right-360.png",
+            "sha256": "4a4588add963f1a2e6544f7fdeb4fbfe35f97da7fb0cb87073f4f28ed9addb3f",
+            "bytes": 62510
+          }
+        },
+        {
+          "index": 1,
+          "edge": "left",
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 26,
+            "clientWidth": 318,
+            "scrollWidth": 344,
+            "rect": {
+              "left": 20,
+              "top": 373.609375,
+              "right": 340,
+              "bottom": 426.65625,
+              "width": 320,
+              "height": 53.046875
+            }
+          },
+          "screenshot": {
+            "path": "pre-2-left-360.png",
+            "sha256": "73f02c2733446bf5c6cbf48a53e295850f67b4d172ee28d565b982fa0072a201",
+            "bytes": 62281
+          }
+        },
+        {
+          "index": 1,
+          "edge": "right",
+          "state": {
+            "scrollLeft": 26,
+            "maxScrollLeft": 26,
+            "clientWidth": 318,
+            "scrollWidth": 344,
+            "rect": {
+              "left": 20,
+              "top": 373.609375,
+              "right": 340,
+              "bottom": 426.65625,
+              "width": 320,
+              "height": 53.046875
+            }
+          },
+          "screenshot": {
+            "path": "pre-2-right-360.png",
+            "sha256": "c7c1fffc700de34dd3d0bdbae260f32078fd6e93a99a2a1e549d65b786fda731",
+            "bytes": 62446
+          }
+        },
+        {
+          "index": 2,
+          "edge": "left",
+          "state": {
+            "scrollLeft": 0,
+            "maxScrollLeft": 61,
+            "clientWidth": 318,
+            "scrollWidth": 379,
+            "rect": {
+              "left": 20,
+              "top": 235.046875,
+              "right": 340,
+              "bottom": 564.65625,
+              "width": 320,
+              "height": 329.609375
+            }
+          },
+          "screenshot": {
+            "path": "pre-3-left-360.png",
+            "sha256": "4511565282eda3e0bcc0cc0d6142d5a80a416e59498c0f7a9a6811e8c84673af",
+            "bytes": 56925
+          }
+        },
+        {
+          "index": 2,
+          "edge": "right",
+          "state": {
+            "scrollLeft": 61,
+            "maxScrollLeft": 61,
+            "clientWidth": 318,
+            "scrollWidth": 379,
+            "rect": {
+              "left": 20,
+              "top": 235.046875,
+              "right": 340,
+              "bottom": 564.65625,
+              "width": 320,
+              "height": 329.609375
+            }
+          },
+          "screenshot": {
+            "path": "pre-3-right-360.png",
+            "sha256": "c6bcea02d0fc48dfcbbb79716d8369371c078058b8c1b55d3734b68a4d8bb6b6",
+            "bytes": 54205
+          }
+        }
+      ]
+    }
+  ],
+  "browser_version": "Chrome/150.0.7871.187"
+}

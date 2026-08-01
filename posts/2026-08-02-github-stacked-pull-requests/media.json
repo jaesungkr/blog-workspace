@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "lead_id": "github-changelog-hero",
+  "items": [
+    {
+      "id": "github-changelog-hero",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": [
+        "C01"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-02",
+      "environment": "macOS, Codex in-app browser, GitHub Changelog, 1280x720 viewport",
+      "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "raw_path": "artifacts/captures/raw/github-changelog-hero.jpg",
+      "publish_path": "assets/screenshots/github-changelog-hero.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdqiZG5%2FdJMcaf1L5A3%2FAAAAAAAAAAAAAAAAAAAAAGOKm87GiOkrwz5cEbLab_t_i5-x7SD6PHpKUIbowT2U%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYchQioyvO3qbuc61buToPbCZ9SI%253D",
+      "width": 1080,
+      "height": 560,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original browser capture of GitHub's public changelog for editorial commentary",
+      "alt": "GitHub Stacked pull requests 공개 미리보기 제목과 여러 PR을 한 스택으로 병합하는 UI",
+      "caption": "GitHub는 2026년 7월 30일 Stacked pull requests의 public preview를 발표했습니다. 제목 아래 대표 화면은 여러 PR이 하나의 병합 단위로 연결된 모습을 보여 줍니다.",
+      "processing": [
+        "crop from 1280x720 browser screenshot"
+      ],
+      "redactions": [],
+      "sha256": "126f9fe9ca0fb4b515e58056cea58b7adbea42b1f748b0b07c189552cdf9750c",
+      "status": "validated"
+    },
+    {
+      "id": "github-stack-workflow",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "action",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-02",
+      "environment": "macOS, Codex in-app browser, GitHub Changelog, 1280x720 viewport",
+      "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/#create-stacks-from-your-terminal-or-github-com",
+      "raw_path": "artifacts/captures/raw/github-stack-workflow.jpg",
+      "publish_path": "assets/screenshots/github-stack-workflow.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FboY17e%2FdJMcajpvwoi%2FAAAAAAAAAAAAAAAAAAAAABUi-6zPeBAfQYoRcGSMhlkt8q60GrviAJrDC2wtCEWK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D3La8XmGmQa2gBIkTZNcKAFB%252Fgcg%253D",
+      "width": 520,
+      "height": 340,
+      "display_width": 520,
+      "placement": "after:cli-quickstart",
+      "rights": "dev.log original browser capture of GitHub's public changelog for editorial commentary",
+      "alt": "GitHub 변경 로그의 gh stack init과 add 명령 데모 화면",
+      "caption": "공식 페이지의 CLI 데모는 gh stack init으로 첫 레이어를 만들고 gh stack add로 다음 브랜치를 올리는 흐름을 보여 줍니다. 이 화면은 공식 데모를 캡처한 것이며, 사용자 저장소에서 직접 실행한 결과는 아닙니다.",
+      "processing": [
+        "captured after lazy-loaded video displayed a readable frame",
+        "tighter claim-specific crop from 1280x720 browser screenshot after independent 360px review"
+      ],
+      "redactions": [],
+      "sha256": "b51cab514c22406111f8d98b58aa1d70d7ce7180d47d1cfc54132b7772b89aea",
+      "status": "validated"
+    },
+    {
+      "id": "github-review-map",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "concept",
+      "claim_ids": [
+        "C03"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-02",
+      "environment": "macOS, Codex in-app browser, GitHub Changelog, 1280x720 viewport",
+      "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/#review-each-layer-independently",
+      "raw_path": "artifacts/captures/raw/github-review-map.jpg",
+      "publish_path": "assets/screenshots/github-review-map.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbkLp7W%2FdJMcajpvwoh%2FAAAAAAAAAAAAAAAAAAAAAM1V38OPZikrDH-SGY3IT3fMomgKu1bTYjHijGYSDdgq%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dt3Zpg%252BYzRZogLcazIbcPsIXaavs%253D",
+      "width": 440,
+      "height": 260,
+      "display_width": 440,
+      "placement": "after:layer-review",
+      "rights": "dev.log original browser capture of GitHub's public changelog for editorial commentary",
+      "alt": "GitHub pull request 화면에서 frontend, api, auth 세 레이어를 보여 주는 stack map",
+      "caption": "PR 상단의 stack map은 현재 보고 있는 레이어와 아래 의존 PR을 한 번에 보여 줍니다. 리뷰어는 전체 기능을 잃지 않으면서도 현재 레이어의 diff에 집중할 수 있습니다.",
+      "processing": [
+        "tighter claim-specific crop from 1280x720 browser screenshot after independent 360px review"
+      ],
+      "redactions": [],
+      "sha256": "37cbf19583becd3a220141b89079b913cbaf2205ebf146c9b8569d85d226150f",
+      "status": "validated"
+    },
+    {
+      "id": "github-merge-stack",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "result",
+      "claim_ids": [
+        "C06"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-02",
+      "environment": "macOS, Codex in-app browser, GitHub Changelog, 1280x720 viewport",
+      "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/#merge-everything-in-a-single-click",
+      "raw_path": "artifacts/captures/raw/github-merge-stack.jpg",
+      "publish_path": "assets/screenshots/github-merge-stack.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhHxO2%2FdJMcacD7jWw%2FAAAAAAAAAAAAAAAAAAAAADy-IoVUW6li8BCm7pGpHsgbHrgpnyJx-9ydVb0fLkYo%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWW24uBI4%252BiAn7SzHFWtkm%252BzQE%252F4%253D",
+      "width": 520,
+      "height": 240,
+      "display_width": 520,
+      "placement": "after:merge-order",
+      "rights": "dev.log original browser capture of GitHub's public changelog for editorial commentary",
+      "alt": "세 개 pull request가 Ready 상태로 연결되고 Merge stack 3 버튼이 표시된 GitHub UI",
+      "caption": "top 레이어가 병합 조건을 충족하면 아래의 준비된 PR까지 묶어 병합할 수 있습니다. 공식 데모에는 세 레이어와 Merge stack 3 버튼이 함께 표시됩니다.",
+      "processing": [
+        "captured from official changelog video frame",
+        "tighter claim-specific crop from 1280x720 browser screenshot after independent 360px review"
+      ],
+      "redactions": [],
+      "sha256": "4b771c6a796c46a1dc68486769b65560223c7d1e02b613560ba656d6c766e8d4",
+      "status": "validated"
+    }
+  ]
+}

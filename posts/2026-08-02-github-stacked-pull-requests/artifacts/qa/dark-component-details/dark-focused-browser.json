@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "status": "pass",
+  "checked_at": "2026-08-01T17:00:46.204596Z",
+  "checked_by": "Codex",
+  "theme": "dark",
+  "preview": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/artifacts/qa/dark-preview/github-stacked-pull-requests-rich-preview.html",
+  "preview_sha256": "5fbb411368b41e9784f5e95f1f261749f1c12c74a192c3701aa914fda40c06ea",
+  "browser_version": "Chrome/150.0.7871.187",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "page": {
+        "readyState": "complete",
+        "innerWidth": 1280,
+        "innerHeight": 900,
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "scrollHeight": 7735,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "figureCount": 4,
+        "tableCount": 2,
+        "preCount": 3,
+        "tables": [
+          {
+            "index": 0,
+            "clientWidth": 760,
+            "scrollWidth": 760,
+            "overflowX": "auto"
+          },
+          {
+            "index": 1,
+            "clientWidth": 760,
+            "scrollWidth": 760,
+            "overflowX": "auto"
+          }
+        ]
+      },
+      "full": {
+        "path": "dark-full-1280.png",
+        "sha256": "eed5731d14d0aeec30ac96fee1739ee0667f51e5c2a7415d56327e8be90e4daf",
+        "bytes": 1413434
+      },
+      "tables": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "page": {
+        "readyState": "complete",
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 9137,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "figureCount": 4,
+        "tableCount": 2,
+        "preCount": 3,
+        "tables": [
+          {
+            "index": 0,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "overflowX": "auto"
+          },
+          {
+            "index": 1,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "overflowX": "auto"
+          }
+        ]
+      },
+      "full": {
+        "path": "dark-full-390.png",
+        "sha256": "9711d600a9002251a2360e1f9c4f5ccd281a31aa365bf3c5ff966a016ea82f73",
+        "bytes": 1079317
+      },
+      "tables": [
+        {
+          "state": {
+            "index": 0,
+            "edge": "left",
+            "scrollLeft": 0,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 267.0625,
+              "right": 370,
+              "bottom": 576.0625
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-1-left-390.png",
+            "sha256": "8e90d863c58d303f62388bcf0b7d56a067ebeb1f3e83af3738fd6fb5e007f41f",
+            "bytes": 91959
+          }
+        },
+        {
+          "state": {
+            "index": 0,
+            "edge": "right",
+            "scrollLeft": 270,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 267.0625,
+              "right": 370,
+              "bottom": 576.0625
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-1-right-390.png",
+            "sha256": "279d223eff214cae755a00526de9931064fe95d17a3a7e39b94faf6d44faed77",
+            "bytes": 89928
+          }
+        },
+        {
+          "state": {
+            "index": 1,
+            "edge": "left",
+            "scrollLeft": 0,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 149.71875,
+              "right": 370,
+              "bottom": 694.71875
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-2-left-390.png",
+            "sha256": "56c47f63551333eb5ad14bff403341b942013f367c7dec6b728ef4e7b55fbcf7",
+            "bytes": 79921
+          }
+        },
+        {
+          "state": {
+            "index": 1,
+            "edge": "right",
+            "scrollLeft": 270,
+            "maxScrollLeft": 270,
+            "clientWidth": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 149.71875,
+              "right": 370,
+              "bottom": 694.71875
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-2-right-390.png",
+            "sha256": "4f5a1bbc257200c1d2d1f7bb1e054c7cace4d1d97465cb12e93e4d846798d8c3",
+            "bytes": 80566
+          }
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "page": {
+        "readyState": "complete",
+        "innerWidth": 360,
+        "innerHeight": 800,
+        "scrollWidth": 360,
+        "clientWidth": 360,
+        "scrollHeight": 9444,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "figureCount": 4,
+        "tableCount": 2,
+        "preCount": 3,
+        "tables": [
+          {
+            "index": 0,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "overflowX": "auto"
+          },
+          {
+            "index": 1,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "overflowX": "auto"
+          }
+        ]
+      },
+      "full": {
+        "path": "dark-full-360.png",
+        "sha256": "aacc26b6fcd5f0308a68565fc3af2d2da36309f2e59fb24045208d27ef69ec22",
+        "bytes": 1036642
+      },
+      "tables": [
+        {
+          "state": {
+            "index": 0,
+            "edge": "left",
+            "scrollLeft": 0,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 245.59375,
+              "right": 340,
+              "bottom": 554.59375
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-1-left-360.png",
+            "sha256": "ae0e144e65203b5ecd82ca69446bc38aa49e5af049131791e685eafa9830fe91",
+            "bytes": 81003
+          }
+        },
+        {
+          "state": {
+            "index": 0,
+            "edge": "right",
+            "scrollLeft": 300,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 245.59375,
+              "right": 340,
+              "bottom": 554.59375
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-1-right-360.png",
+            "sha256": "5d30a475384d1c1458897a78106d54c4915485a0cf3b4b6b9f4e3b4bff439703",
+            "bytes": 78156
+          }
+        },
+        {
+          "state": {
+            "index": 1,
+            "edge": "left",
+            "scrollLeft": 0,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 127.625,
+              "right": 340,
+              "bottom": 672.625
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-2-left-360.png",
+            "sha256": "114b85b6bc2bd260b1674a3dd988cdd56f7e6fae16764b2783ee1525968ba323",
+            "bytes": 69972
+          }
+        },
+        {
+          "state": {
+            "index": 1,
+            "edge": "right",
+            "scrollLeft": 300,
+            "maxScrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "left": 20,
+              "top": 127.625,
+              "right": 340,
+              "bottom": 672.625
+            }
+          },
+          "screenshot": {
+            "path": "dark-table-2-right-360.png",
+            "sha256": "f5682ea30dd90133e2abe95afdfd7a9aa1359c366b460e3d1e3a2baebac11815",
+            "bytes": 74636
+          }
+        }
+      ]
+    }
+  ]
+}

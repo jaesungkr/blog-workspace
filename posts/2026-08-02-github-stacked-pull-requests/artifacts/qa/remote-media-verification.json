@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "status": "pass",
+  "verified_at": "2026-08-01T17:03:04.627634Z",
+  "verified_by": "Codex independent validator",
+  "remote_media_sha256": "930b38ff2f07b7c728efbb465277d0e821c881f163ada01943e1b9a179b6aa06",
+  "media_sha256": "4505a72d67ea44abff655e763d03b074486f0a974dceabc59691a23ba77aecf3",
+  "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
+  "fetcher_files": {
+    "remote_media.py": "ac44710fa5611571d1d8ee3cc6b21ab656df549bd2d49ccd32e4285b91bbb6b6",
+    "rich_post_common.py": "ac9167175f3f3682b163e8d9cfb0b7b55e9158297db11c9412d50ca18bf022bc"
+  },
+  "items": [
+    {
+      "id": "github-changelog-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdqiZG5%2FdJMcaf1L5A3%2FAAAAAAAAAAAAAAAAAAAAAGOKm87GiOkrwz5cEbLab_t_i5-x7SD6PHpKUIbowT2U%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYchQioyvO3qbuc61buToPbCZ9SI%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdqiZG5%2FdJMcaf1L5A3%2FAAAAAAAAAAAAAAAAAAAAAGOKm87GiOkrwz5cEbLab_t_i5-x7SD6PHpKUIbowT2U%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYchQioyvO3qbuc61buToPbCZ9SI%253D",
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "byte_length": 71460,
+      "sha256": "4f292fad2e0975abd7c1799f006afd7c74053b016c69688addc066f5eaf0a2b2",
+      "format": "jpeg",
+      "width": 1080,
+      "height": 560,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "github-stack-workflow",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FboY17e%2FdJMcajpvwoi%2FAAAAAAAAAAAAAAAAAAAAABUi-6zPeBAfQYoRcGSMhlkt8q60GrviAJrDC2wtCEWK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D3La8XmGmQa2gBIkTZNcKAFB%252Fgcg%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FboY17e%2FdJMcajpvwoi%2FAAAAAAAAAAAAAAAAAAAAABUi-6zPeBAfQYoRcGSMhlkt8q60GrviAJrDC2wtCEWK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D3La8XmGmQa2gBIkTZNcKAFB%252Fgcg%253D",
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "byte_length": 38213,
+      "sha256": "0cfda81ac32dd3f48e72814e1bb6d7001d1614ad6b79f1061d942858ef441972",
+      "format": "jpeg",
+      "width": 520,
+      "height": 340,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "github-review-map",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbkLp7W%2FdJMcajpvwoh%2FAAAAAAAAAAAAAAAAAAAAAM1V38OPZikrDH-SGY3IT3fMomgKu1bTYjHijGYSDdgq%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dt3Zpg%252BYzRZogLcazIbcPsIXaavs%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbkLp7W%2FdJMcajpvwoh%2FAAAAAAAAAAAAAAAAAAAAAM1V38OPZikrDH-SGY3IT3fMomgKu1bTYjHijGYSDdgq%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dt3Zpg%252BYzRZogLcazIbcPsIXaavs%253D",
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "byte_length": 26055,
+      "sha256": "e5880f5898321b26e9f5560265838a9241b0fb6197e453ea3fb8bc5d8344d6ea",
+      "format": "jpeg",
+      "width": 440,
+      "height": 260,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "github-merge-stack",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhHxO2%2FdJMcacD7jWw%2FAAAAAAAAAAAAAAAAAAAAADy-IoVUW6li8BCm7pGpHsgbHrgpnyJx-9ydVb0fLkYo%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWW24uBI4%252BiAn7SzHFWtkm%252BzQE%252F4%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhHxO2%2FdJMcacD7jWw%2FAAAAAAAAAAAAAAAAAAAAADy-IoVUW6li8BCm7pGpHsgbHrgpnyJx-9ydVb0fLkYo%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWW24uBI4%252BiAn7SzHFWtkm%252BzQE%252F4%253D",
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "byte_length": 24619,
+      "sha256": "ff6a05015ccf8504a56e88942eecbbee2e859aaeba32501b2228b6afb6315e56",
+      "format": "jpeg",
+      "width": 520,
+      "height": 240,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    }
+  ]
+}
