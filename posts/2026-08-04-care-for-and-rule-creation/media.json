@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "lead_id": "creation-care-hero",
+  "items": [
+    {
+      "id": "creation-care-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C05",
+        "C12"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-04",
+      "environment": "OpenAI built-in image generation, 16:9 Reflections bright pale pattern system",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/creation-care-hero-source.png",
+      "publish_path": "assets/screenshots/creation-care-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHQQKb%2FdJMcadXhinp%2FAAAAAAAAAAAAAAAAAAAAAIs8ix1-trcLQfrv96JSF2Fag5ayZhdLFj9uhFGfhI6u%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DU3ec8sRMtsSL%252BD0%252BhZ%252BXLtqkdAc%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "수많은 씨앗 모양의 선이 연한 생명의 가지를 보호하듯 감싸는 아이보리 패턴",
+      "caption": "작아 보이는 수많은 움직임이 모여 생명을 감싸는 돌봄의 책임으로 이어지는 흐름을 표현했습니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "a59d7d5e54cc0b0cceab03a66ac564ecf8d4e1efba72e568449985cf38afb560",
+      "status": "validated"
+    }
+  ]
+}

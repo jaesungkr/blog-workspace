@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "reviewer": "Codex independent reviewer",
+  "session": "3c431a02-4d5b-45d9-b6b7-55b394756799",
+  "browser": "Chrome/150.0.7871.187",
+  "preview_path": "artifacts/qa/independent-rendered/care-for-and-rule-creation-rich-preview.html",
+  "preview_sha256": "8863af17d2aee6147fb436190b88488433b0376310bfa19dea7ad702cfefeff6",
+  "viewport": {
+    "width": 360,
+    "height": 800
+  },
+  "page": {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-04-care-for-and-rule-creation/artifacts/qa/independent-rendered/care-for-and-rule-creation-rich-preview.html",
+    "inner_width": 360,
+    "inner_height": 800,
+    "client_width": 360,
+    "client_height": 800,
+    "scroll_width": 360,
+    "scroll_height": 7609,
+    "h1_count": 1,
+    "toc_anchor_count": 4,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHQQKb%2FdJMcadXhinp%2FAAAAAAAAAAAAAAAAAAAAAIs8ix1-trcLQfrv96JSF2Fag5ayZhdLFj9uhFGfhI6u%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DU3ec8sRMtsSL%252BD0%252BhZ%252BXLtqkdAc%253D",
+        "complete": true,
+        "natural_width": 1280,
+        "natural_height": 720
+      }
+    ]
+  },
+  "styles": {
+    "client_width": 360,
+    "scroll_width": 360,
+    "h1_count": 1,
+    "fragment_h1_count": 0,
+    "toc_links": [
+      {
+        "text": "설교 핵심 요약",
+        "target": "#설교-핵심-요약"
+      },
+      {
+        "text": "본문 | 창세기 1:26-28 (개역개정)",
+        "target": "#본문-창세기-126-28-개역개정"
+      },
+      {
+        "text": "설교 요약 - 신도배 목사님",
+        "target": "#설교-요약-신도배-목사님"
+      },
+      {
+        "text": "Thoughts",
+        "target": "#thoughts"
+      }
+    ],
+    "image": {
+      "complete": true,
+      "natural_width": 1280,
+      "natural_height": 720,
+      "rect": {
+        "x": 20,
+        "y": -5806.640625,
+        "width": 320,
+        "height": 180.875,
+        "top": -5806.640625,
+        "right": 340,
+        "bottom": -5625.765625,
+        "left": 20
+      },
+      "alt": "수많은 씨앗 모양의 선이 연한 생명의 가지를 보호하듯 감싸는 아이보리 패턴"
+    },
+    "caption": {
+      "text": "작아 보이는 수많은 움직임이 모여 생명을 감싸는 돌봄의 책임으로 이어지는 흐름을 표현했습니다. · 생성 이미지",
+      "font_size": "14px",
+      "line_height": "21.7px",
+      "rect": {
+        "x": 20,
+        "y": -5613.765625,
+        "width": 320,
+        "height": 53.375,
+        "top": -5613.765625,
+        "right": 340,
+        "bottom": -5560.390625,
+        "left": 20
+      }
+    },
+    "list": {
+      "style_type": "disc",
+      "font_size": "17px",
+      "line_height": "29.24px",
+      "item_count": 4,
+      "item_gap": 6.796875
+    },
+    "quote": {
+      "font_size": "16px",
+      "line_height": "23.52px",
+      "width": 320
+    },
+    "remote_src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHQQKb%2FdJMcadXhinp%2FAAAAAAAAAAAAAAAAAAAAAIs8ix1-trcLQfrv96JSF2Fag5ayZhdLFj9uhFGfhI6u%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DU3ec8sRMtsSL%252BD0%252BhZ%252BXLtqkdAc%253D"
+  },
+  "screenshots": [
+    {
+      "name": "hero-caption-toc",
+      "path": "artifacts/qa/independent/component-details/360-hero-caption-toc.png",
+      "scroll_y": 1002,
+      "sha256": "55245b02981b56622f5f0b2d11ce32c287105040daf603188d5bae6f79e416b4",
+      "dimensions": [
+        360,
+        800
+      ]
+    },
+    {
+      "name": "summary-list",
+      "path": "artifacts/qa/independent/component-details/360-summary-list.png",
+      "scroll_y": 1617,
+      "sha256": "3c1b85d7e979db753c3fa43eee19042c6b1f3b91961f6d6b584f4d9ddefff03b",
+      "dimensions": [
+        360,
+        800
+      ]
+    },
+    {
+      "name": "scripture-quote",
+      "path": "artifacts/qa/independent/component-details/360-scripture-quote.png",
+      "scroll_y": 2403,
+      "sha256": "d6c282256d8f2de1958db6932b48564b72fafce31a4b14702234f2bff6d97622",
+      "dimensions": [
+        360,
+        800
+      ]
+    },
+    {
+      "name": "thoughts-quote",
+      "path": "artifacts/qa/independent/component-details/360-thoughts-quote.png",
+      "scroll_y": 5951,
+      "sha256": "f69e912367660098592d5ab2e1743af23b6276311d17307a2c18d7b05a811944",
+      "dimensions": [
+        360,
+        800
+      ]
+    },
+    {
+      "name": "closing",
+      "path": "artifacts/qa/independent/component-details/360-closing.png",
+      "scroll_y": 6809,
+      "sha256": "bbf3bf2c7e1e48551eb0b0540b1e5b54dd03c3eeb75e5b9dc14ef41d6dcfb2a3",
+      "dimensions": [
+        360,
+        800
+      ]
+    }
+  ]
+}
