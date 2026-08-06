@@ -1,0 +1,23 @@
+{
+  "source_sha256": "e49ec2e824d0e2b447080e767f50e86735d59d0344bccf46e770fb2b5da7867a",
+  "source_title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+  "models": [
+    "Opus4.8",
+    "Fable5",
+    "GPT5.6 Sol (max)",
+    "Qwen3.7-Max",
+    "Qwen3.8-Max"
+  ],
+  "single_score_rows": 30,
+  "skipped_composite_or_unparseable_rows": [
+    "Agents' Last Exam (Pass / Score)"
+  ],
+  "rank_counts": {
+    "2": 11,
+    "3": 7,
+    "4": 5,
+    "1": 7
+  },
+  "qwen38_beats_qwen37_rows": 30,
+  "qwen38_leader_rows": 7
+}

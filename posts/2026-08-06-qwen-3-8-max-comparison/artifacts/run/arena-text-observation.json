@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-08-06",
+  "actor": "Codex in-app browser run",
+  "source_url": "https://arena.ai/leaderboard",
+  "table_header": [
+    "Model",
+    "Overall",
+    "Expert",
+    "Hard Prompts",
+    "Coding",
+    "Math",
+    "Creative Writing",
+    "Instruction Following",
+    "Longer Query"
+  ],
+  "listed_models": 677,
+  "rows": [
+    {
+      "model": "qwen3.8-max",
+      "overall": 5,
+      "expert": 9,
+      "hard_prompts": 6,
+      "coding": 9,
+      "math": null,
+      "creative_writing": 3,
+      "instruction_following": 9,
+      "longer_query": 5
+    },
+    {
+      "model": "qwen3.7-max-preview",
+      "overall": 21,
+      "expert": 17,
+      "hard_prompts": 25,
+      "coding": 16,
+      "math": 15,
+      "creative_writing": 33,
+      "instruction_following": 25,
+      "longer_query": 11
+    },
+    {
+      "model": "kimi-k3-max",
+      "overall": 13,
+      "expert": null,
+      "hard_prompts": null,
+      "coding": null,
+      "math": null,
+      "creative_writing": null,
+      "instruction_following": null,
+      "longer_query": null
+    }
+  ],
+  "method": "Read Qwen row values from the visible text-leaderboard table in one browser session and Kimi K3's overall rank from the same page's embedded current leaderboard payload; no filters were changed.",
+  "limitation": "Arena is a live preference leaderboard. Ranks can change as votes and model listings change; this is a dated observation, not a frozen benchmark rerun."
+}

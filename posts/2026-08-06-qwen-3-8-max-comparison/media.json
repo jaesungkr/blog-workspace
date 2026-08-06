@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "lead_id": "qwen38-official-hero",
+  "items": [
+    {
+      "id": "qwen38-official-hero",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C00",
+        "C01"
+      ],
+      "actor": "Qwen Team",
+      "captured_at": "2026-08-06",
+      "environment": "Qwen3.8-Max official release page video poster, 2752x1536 WebP source",
+      "source_url": "https://qwen.ai/blog?id=qwen3.8",
+      "raw_path": "artifacts/captures/official/qwen38-official-hero.webp",
+      "publish_path": "assets/screenshots/qwen38-official-hero.webp",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FxuDoC%2FdJMcaaM4frs%2FAAAAAAAAAAAAAAAAAAAAAEeTKv6nnZUtc2l8648cRcRUCql3-sta45DxO3-dL5M0%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dabft%252BYurLuukG%252FAJ3c%252BK8QMJ93U%253D",
+      "width": 2752,
+      "height": 1536,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "Qwen official release artwork reproduced with source attribution for editorial comparison and commentary",
+      "alt": "푸른 수평선 위에 Qwen 로고와 Qwen3.8-Max 출시 문구가 보이는 공식 이미지",
+      "caption": "Qwen3.8-Max 공식 출시 이미지입니다. 큰 모델 규모보다 공식표·독립 순위·공개 상태를 나눠 보는 것이 선택에 더 중요합니다.",
+      "processing": [
+        "downloaded from the official release page asset inventory",
+        "renamed to .webp to match the actual RIFF WebP signature"
+      ],
+      "redactions": [],
+      "sha256": "fec38118d97688b1ce15789b2c38abbe45b2434dc879ce35472124a1cb487b0e",
+      "status": "validated"
+    },
+    {
+      "id": "qwen38-official-performance",
+      "kind": "image",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "C16"
+      ],
+      "actor": "Qwen Team",
+      "captured_at": "2026-08-06",
+      "environment": "Qwen3.8-Max official release page Performance image, 4364x3211 PNG source",
+      "source_url": "https://qwen.ai/blog?id=qwen3.8",
+      "raw_path": "artifacts/captures/official/qwen38-official-performance.png",
+      "publish_path": "assets/screenshots/qwen38-official-performance.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fs1jNV%2FdJMcahyDDy5%2FAAAAAAAAAAAAAAAAAAAAAHmiUxxyb3KEn9HaFSypaVwxT6S7muPS7UU_X1-6VJaZ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DmlbLEVV2WziYqeNU%252FlvoWKypu6Q%253D",
+      "width": 4364,
+      "height": 3211,
+      "display_width": 916,
+      "placement": "after:official-performance-summary",
+      "rights": "Qwen official performance artwork reproduced with source attribution for editorial comparison and commentary",
+      "alt": "Qwen3.8-Max와 Qwen3.7-Max, Opus4.8, Fable5 등을 16개 벤치마크 막대로 비교한 공식 이미지",
+      "caption": "Qwen 공식 출시 글이 별도로 고른 16개 성능 지표입니다. 파란 막대가 Qwen3.8-Max이며, 비교 모델과 지표 구성이 달라 아래 30행 재계산과 합치면 안 됩니다.",
+      "processing": [
+        "downloaded from the official release page asset inventory"
+      ],
+      "redactions": [],
+      "sha256": "e4364d17ee88292c0cf43c1a13b2df25501b32f1db50c147abec4dc469b47a58",
+      "status": "validated"
+    }
+  ]
+}

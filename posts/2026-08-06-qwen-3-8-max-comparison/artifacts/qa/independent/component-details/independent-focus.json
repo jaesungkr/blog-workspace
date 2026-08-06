@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "reviewer": "Codex independent final reviewer",
+  "session": "aad4cd5e-747a-4488-89cf-fc2477416cf6",
+  "browser": "Chrome/150.0.7871.187",
+  "preview": "artifacts/qa/independent-rendered/qwen-3-8-max-comparison-rich-preview.html",
+  "preview_sha256": "88b2c10ea098a36e3d53bbb6eba2a38b9a6373da4a2a6cbe75fbf4123a102d35",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "dom": {
+        "client_width": 1280,
+        "scroll_width": 1280,
+        "h1_count": 1,
+        "toc_count": 7,
+        "toc_unique": true,
+        "figures": [
+          {
+            "media_id": "qwen38-official-hero",
+            "alt": "푸른 수평선 위에 Qwen 로고와 Qwen3.8-Max 출시 문구가 보이는 공식 이미지",
+            "natural_width": 1280,
+            "natural_height": 714,
+            "rendered_width": 916,
+            "rendered_height": 511.828125,
+            "caption": "Qwen3.8-Max 공식 출시 이미지입니다. 큰 모델 규모보다 공식표·독립 순위·공개 상태를 나눠 보는 것이 선택에 더 중요합니다. · 공식 자료",
+            "caption_attached": true
+          },
+          {
+            "media_id": "qwen38-official-performance",
+            "alt": "Qwen3.8-Max와 Qwen3.7-Max, Opus4.8, Fable5 등을 16개 벤치마크 막대로 비교한 공식 이미지",
+            "natural_width": 1280,
+            "natural_height": 941,
+            "rendered_width": 916,
+            "rendered_height": 673.921875,
+            "caption": "Qwen 공식 출시 글이 별도로 고른 16개 성능 지표입니다. 파란 막대가 Qwen3.8-Max이며, 비교 모델과 지표 구성이 달라 아래 30행 재계산과 합치면 안 됩니다. · 공식 자료",
+            "caption_attached": true
+          }
+        ],
+        "tables": [
+          {
+            "index": 0,
+            "client_width": 760,
+            "scroll_width": 760,
+            "overflow_x": "auto",
+            "row_count": 5,
+            "headers": [
+              "비교 기준",
+              "Qwen3.8-Max",
+              "Qwen3.7-Max",
+              "Kimi K3"
+            ],
+            "first_row": "전체·활성 규모2.4조·950억공식 문서에 미표기2.8조·1,040억",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 0,
+            "returned_left": 0
+          },
+          {
+            "index": 1,
+            "client_width": 760,
+            "scroll_width": 760,
+            "overflow_x": "auto",
+            "row_count": 4,
+            "headers": [
+              "공식표 범위",
+              "행 수",
+              "1위",
+              "2위",
+              "3위",
+              "4위"
+            ],
+            "first_row": "코딩 에이전트121632",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 0,
+            "returned_left": 0
+          },
+          {
+            "index": 2,
+            "client_width": 760,
+            "scroll_width": 760,
+            "overflow_x": "auto",
+            "row_count": 12,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "Terminal Bench 2.186.62/5GPT5.6 Sol (88.8)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 0,
+            "returned_left": 0
+          },
+          {
+            "index": 3,
+            "client_width": 760,
+            "scroll_width": 760,
+            "overflow_x": "auto",
+            "row_count": 8,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "CoWorkBench74.82/5Fable5 (75.9)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 0,
+            "returned_left": 0
+          },
+          {
+            "index": 4,
+            "client_width": 760,
+            "scroll_width": 760,
+            "overflow_x": "auto",
+            "row_count": 10,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "GPQA Diamond92.62/5GPT5.6 Sol (94.1)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 0,
+            "returned_left": 0
+          },
+          {
+            "index": 5,
+            "client_width": 760,
+            "scroll_width": 760,
+            "overflow_x": "auto",
+            "row_count": 6,
+            "headers": [
+              "Arena 항목",
+              "Qwen3.8-Max",
+              "Qwen3.7-Max Preview"
+            ],
+            "first_row": "종합5위21위",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 0,
+            "returned_left": 0
+          },
+          {
+            "index": 6,
+            "client_width": 760,
+            "scroll_width": 760,
+            "overflow_x": "auto",
+            "row_count": 4,
+            "headers": [
+              "목적",
+              "시작 순서",
+              "필요한 조건"
+            ],
+            "first_row": "웹에서 먼저 확인Qwen Studio 직링크 열기 → 상단 모델이 Qwen3.8-Max인지 확인 → 정답을 아는 작은 과제 입력실제 제출 때 로그인·이용 한도가 필요할 수 있음",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 0,
+            "returned_left": 0
+          }
+        ],
+        "lists": [
+          {
+            "index": 0,
+            "tag": "OL",
+            "item_count": 7,
+            "marker_content": "normal",
+            "list_style_type": "decimal",
+            "min_item_gap": 0,
+            "next_gap": null,
+            "text": "2.4조 전체·950억 활성의 뜻\n공식 성능표 30개 재계산\nArena 종합 5위\n오픈웨이트는 아직 예고 상태\nQwen3.8-Max 사용법\nQwen3.8-Max·Kimi K3 선택 기준\n참고 자료"
+          },
+          {
+            "index": 1,
+            "tag": "UL",
+            "item_count": 7,
+            "marker_content": "normal",
+            "list_style_type": "disc",
+            "min_item_gap": 6.796875,
+            "next_gap": null,
+            "text": "Qwen3.8-Max 공식 출시 글Qwen 공식 출시 발표와 API 가격QwenCloud 텍스트 모델·문맥·도구 지원 문서Alibaba Cloud Model Studio 모델 가격Qwen 공식 Hugging Face 모델 목록MoonshotAI/Kimi-K3 공식 모델 카드Arena 공개 리더보드"
+          }
+        ],
+        "single_score_row_count": 30
+      },
+      "screenshots": [
+        {
+          "path": "artifacts/qa/independent/component-details/figure-1-1280.png",
+          "sha256": "71fab157e6d19a6393395a25f31db647d5a24367b754ef14c2baeb75cb435caf"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/figure-2-1280.png",
+          "sha256": "505aa146a1cdc38b4e0c5e7cd05871a3680763c0397ac052d04167e8578713bf"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dom": {
+        "client_width": 390,
+        "scroll_width": 390,
+        "h1_count": 1,
+        "toc_count": 7,
+        "toc_unique": true,
+        "figures": [
+          {
+            "media_id": "qwen38-official-hero",
+            "alt": "푸른 수평선 위에 Qwen 로고와 Qwen3.8-Max 출시 문구가 보이는 공식 이미지",
+            "natural_width": 1280,
+            "natural_height": 714,
+            "rendered_width": 350,
+            "rendered_height": 196.109375,
+            "caption": "Qwen3.8-Max 공식 출시 이미지입니다. 큰 모델 규모보다 공식표·독립 순위·공개 상태를 나눠 보는 것이 선택에 더 중요합니다. · 공식 자료",
+            "caption_attached": true
+          },
+          {
+            "media_id": "qwen38-official-performance",
+            "alt": "Qwen3.8-Max와 Qwen3.7-Max, Opus4.8, Fable5 등을 16개 벤치마크 막대로 비교한 공식 이미지",
+            "natural_width": 1280,
+            "natural_height": 941,
+            "rendered_width": 350,
+            "rendered_height": 257.828125,
+            "caption": "Qwen 공식 출시 글이 별도로 고른 16개 성능 지표입니다. 파란 막대가 Qwen3.8-Max이며, 비교 모델과 지표 구성이 달라 아래 30행 재계산과 합치면 안 됩니다. · 공식 자료",
+            "caption_attached": true
+          }
+        ],
+        "tables": [
+          {
+            "index": 0,
+            "client_width": 350,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 5,
+            "headers": [
+              "비교 기준",
+              "Qwen3.8-Max",
+              "Qwen3.7-Max",
+              "Kimi K3"
+            ],
+            "first_row": "전체·활성 규모2.4조·950억공식 문서에 미표기2.8조·1,040억",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 270,
+            "returned_left": 0
+          },
+          {
+            "index": 1,
+            "client_width": 350,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 4,
+            "headers": [
+              "공식표 범위",
+              "행 수",
+              "1위",
+              "2위",
+              "3위",
+              "4위"
+            ],
+            "first_row": "코딩 에이전트121632",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 270,
+            "returned_left": 0
+          },
+          {
+            "index": 2,
+            "client_width": 350,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 12,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "Terminal Bench 2.186.62/5GPT5.6 Sol (88.8)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 270,
+            "returned_left": 0
+          },
+          {
+            "index": 3,
+            "client_width": 350,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 8,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "CoWorkBench74.82/5Fable5 (75.9)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 270,
+            "returned_left": 0
+          },
+          {
+            "index": 4,
+            "client_width": 350,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 10,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "GPQA Diamond92.62/5GPT5.6 Sol (94.1)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 270,
+            "returned_left": 0
+          },
+          {
+            "index": 5,
+            "client_width": 350,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 6,
+            "headers": [
+              "Arena 항목",
+              "Qwen3.8-Max",
+              "Qwen3.7-Max Preview"
+            ],
+            "first_row": "종합5위21위",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 270,
+            "returned_left": 0
+          },
+          {
+            "index": 6,
+            "client_width": 350,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 4,
+            "headers": [
+              "목적",
+              "시작 순서",
+              "필요한 조건"
+            ],
+            "first_row": "웹에서 먼저 확인Qwen Studio 직링크 열기 → 상단 모델이 Qwen3.8-Max인지 확인 → 정답을 아는 작은 과제 입력실제 제출 때 로그인·이용 한도가 필요할 수 있음",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 270,
+            "returned_left": 0
+          }
+        ],
+        "lists": [
+          {
+            "index": 0,
+            "tag": "OL",
+            "item_count": 7,
+            "marker_content": "normal",
+            "list_style_type": "decimal",
+            "min_item_gap": 0,
+            "next_gap": null,
+            "text": "2.4조 전체·950억 활성의 뜻\n공식 성능표 30개 재계산\nArena 종합 5위\n오픈웨이트는 아직 예고 상태\nQwen3.8-Max 사용법\nQwen3.8-Max·Kimi K3 선택 기준\n참고 자료"
+          },
+          {
+            "index": 1,
+            "tag": "UL",
+            "item_count": 7,
+            "marker_content": "normal",
+            "list_style_type": "disc",
+            "min_item_gap": 6.796875,
+            "next_gap": null,
+            "text": "Qwen3.8-Max 공식 출시 글Qwen 공식 출시 발표와 API 가격QwenCloud 텍스트 모델·문맥·도구 지원 문서Alibaba Cloud Model Studio 모델 가격Qwen 공식 Hugging Face 모델 목록MoonshotAI/Kimi-K3 공식 모델 카드Arena 공개 리더보드"
+          }
+        ],
+        "single_score_row_count": 30
+      },
+      "screenshots": [
+        {
+          "path": "artifacts/qa/independent/component-details/figure-1-390.png",
+          "sha256": "c6d6f2cb37f76391ea907523d6ff05a2a2e6a49b78ab608d78d57a017ee114b5"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/figure-2-390.png",
+          "sha256": "66572fcdf67c364191234a49209144b0bc69a891285347a06b9892bea91e4126"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/table-0-left-390.png",
+          "sha256": "7319614a331434428b5213ce64acd5e6fe292f0f1b9296801dcde173770de81c"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/table-0-right-390.png",
+          "sha256": "f7dc407f21566ce44a05d0fa43c8fb4837758cc74e780258744619df547e8c67"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/references-list-390.png",
+          "sha256": "c720fd1377316bdd5d53adf37e745c9e8df8f122adc3eea8c2eb504183807852"
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "dom": {
+        "client_width": 360,
+        "scroll_width": 360,
+        "h1_count": 1,
+        "toc_count": 7,
+        "toc_unique": true,
+        "figures": [
+          {
+            "media_id": "qwen38-official-hero",
+            "alt": "푸른 수평선 위에 Qwen 로고와 Qwen3.8-Max 출시 문구가 보이는 공식 이미지",
+            "natural_width": 1280,
+            "natural_height": 714,
+            "rendered_width": 320,
+            "rendered_height": 179.375,
+            "caption": "Qwen3.8-Max 공식 출시 이미지입니다. 큰 모델 규모보다 공식표·독립 순위·공개 상태를 나눠 보는 것이 선택에 더 중요합니다. · 공식 자료",
+            "caption_attached": true
+          },
+          {
+            "media_id": "qwen38-official-performance",
+            "alt": "Qwen3.8-Max와 Qwen3.7-Max, Opus4.8, Fable5 등을 16개 벤치마크 막대로 비교한 공식 이미지",
+            "natural_width": 1280,
+            "natural_height": 941,
+            "rendered_width": 320,
+            "rendered_height": 235.765625,
+            "caption": "Qwen 공식 출시 글이 별도로 고른 16개 성능 지표입니다. 파란 막대가 Qwen3.8-Max이며, 비교 모델과 지표 구성이 달라 아래 30행 재계산과 합치면 안 됩니다. · 공식 자료",
+            "caption_attached": true
+          }
+        ],
+        "tables": [
+          {
+            "index": 0,
+            "client_width": 320,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 5,
+            "headers": [
+              "비교 기준",
+              "Qwen3.8-Max",
+              "Qwen3.7-Max",
+              "Kimi K3"
+            ],
+            "first_row": "전체·활성 규모2.4조·950억공식 문서에 미표기2.8조·1,040억",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 300,
+            "returned_left": 0
+          },
+          {
+            "index": 1,
+            "client_width": 320,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 4,
+            "headers": [
+              "공식표 범위",
+              "행 수",
+              "1위",
+              "2위",
+              "3위",
+              "4위"
+            ],
+            "first_row": "코딩 에이전트121632",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 300,
+            "returned_left": 0
+          },
+          {
+            "index": 2,
+            "client_width": 320,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 12,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "Terminal Bench 2.186.62/5GPT5.6 Sol (88.8)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 300,
+            "returned_left": 0
+          },
+          {
+            "index": 3,
+            "client_width": 320,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 8,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "CoWorkBench74.82/5Fable5 (75.9)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 300,
+            "returned_left": 0
+          },
+          {
+            "index": 4,
+            "client_width": 320,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 10,
+            "headers": [
+              "시험",
+              "Qwen3.8-Max",
+              "행 순위",
+              "행 1위"
+            ],
+            "first_row": "GPQA Diamond92.62/5GPT5.6 Sol (94.1)",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 300,
+            "returned_left": 0
+          },
+          {
+            "index": 5,
+            "client_width": 320,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 6,
+            "headers": [
+              "Arena 항목",
+              "Qwen3.8-Max",
+              "Qwen3.7-Max Preview"
+            ],
+            "first_row": "종합5위21위",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 300,
+            "returned_left": 0
+          },
+          {
+            "index": 6,
+            "client_width": 320,
+            "scroll_width": 620,
+            "overflow_x": "auto",
+            "row_count": 4,
+            "headers": [
+              "목적",
+              "시작 순서",
+              "필요한 조건"
+            ],
+            "first_row": "웹에서 먼저 확인Qwen Studio 직링크 열기 → 상단 모델이 Qwen3.8-Max인지 확인 → 정답을 아는 작은 과제 입력실제 제출 때 로그인·이용 한도가 필요할 수 있음",
+            "initial_scroll_left": 0,
+            "max_scroll_left": 300,
+            "returned_left": 0
+          }
+        ],
+        "lists": [
+          {
+            "index": 0,
+            "tag": "OL",
+            "item_count": 7,
+            "marker_content": "normal",
+            "list_style_type": "decimal",
+            "min_item_gap": 0,
+            "next_gap": null,
+            "text": "2.4조 전체·950억 활성의 뜻\n공식 성능표 30개 재계산\nArena 종합 5위\n오픈웨이트는 아직 예고 상태\nQwen3.8-Max 사용법\nQwen3.8-Max·Kimi K3 선택 기준\n참고 자료"
+          },
+          {
+            "index": 1,
+            "tag": "UL",
+            "item_count": 7,
+            "marker_content": "normal",
+            "list_style_type": "disc",
+            "min_item_gap": 6.796875,
+            "next_gap": null,
+            "text": "Qwen3.8-Max 공식 출시 글Qwen 공식 출시 발표와 API 가격QwenCloud 텍스트 모델·문맥·도구 지원 문서Alibaba Cloud Model Studio 모델 가격Qwen 공식 Hugging Face 모델 목록MoonshotAI/Kimi-K3 공식 모델 카드Arena 공개 리더보드"
+          }
+        ],
+        "single_score_row_count": 30
+      },
+      "screenshots": [
+        {
+          "path": "artifacts/qa/independent/component-details/figure-1-360.png",
+          "sha256": "24e839bff44f4c69f8f3c81774df60d0ed1c3588935aa379768de7bcac4ac0fa"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/figure-2-360.png",
+          "sha256": "27e79fcfffd011beae04a2df20981ac2ff274112169cebb51a2f4cf89e5f935e"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/table-0-left-360.png",
+          "sha256": "c476c004b53bac6a56d9d631bed829b817c0aa222f07e2fb3c30905dd9b37b0a"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/table-0-right-360.png",
+          "sha256": "5c28762d05b3f88ea2267c9ef6f7bbc8804a077dd3635f63b3f0a332416472d2"
+        },
+        {
+          "path": "artifacts/qa/independent/component-details/references-list-360.png",
+          "sha256": "83dab3d9ba30e9bf6cf520b3efdafb6c5d0f7a2f7eca41c222850c1e98202383"
+        }
+      ]
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "placeholder_count": 0,
+    "local_path_count": 0
+  }
+}
