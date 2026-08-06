@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "lead_id": "smoking-cessation-hero",
+  "items": [
+    {
+      "id": "smoking-cessation-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C02",
+        "C03",
+        "C05"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-06",
+      "environment": "OpenAI built-in image generation, commissioned editorial still-life photography direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/smoking-cessation-hero-v2-source.png",
+      "publish_path": "assets/screenshots/smoking-cessation-hero-v2.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaSYXT%2FdJMcaiK0tTb%2FAAAAAAAAAAAAAAAAAAAAACGplfbSeMI9yoXOuIT3-FCWK3ICP48UuUJkp0iBW9z5%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FnsmV8ybpsetYoVy5OB4TpyBXA8%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "전자담배 기기와 빈 액상 용기를 담아 묶은 투명 폐기 봉투가 현관문 앞에 놓인 모습",
+      "caption": "금연 첫날, 집에 남은 기기와 액상 용품을 한꺼번에 치워 흡연까지의 거리를 만든 선택을 표현했습니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "159b70518529cf90170451eb69f50d6d1b7236b122e1b4430ba733dc1d80f8a6",
+      "status": "validated"
+    }
+  ]
+}

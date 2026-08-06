@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "pass",
+  "verified_at": "2026-08-06T15:18:01.434471Z",
+  "verified_by": "Banach independent QA",
+  "remote_media_sha256": "ffb2780e7c5c1d4c40617fd3abf7d27a71b4d66664281292ff7ef94a31a04377",
+  "media_sha256": "450cfeec0595251e32cca8b09c7d3be45fdb307cef41cd70e4cee7f83dfb9149",
+  "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
+  "fetcher_files": {
+    "remote_media.py": "ac44710fa5611571d1d8ee3cc6b21ab656df549bd2d49ccd32e4285b91bbb6b6",
+    "rich_post_common.py": "ac9167175f3f3682b163e8d9cfb0b7b55e9158297db11c9412d50ca18bf022bc"
+  },
+  "items": [
+    {
+      "id": "smoking-cessation-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaSYXT%2FdJMcaiK0tTb%2FAAAAAAAAAAAAAAAAAAAAACGplfbSeMI9yoXOuIT3-FCWK3ICP48UuUJkp0iBW9z5%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FnsmV8ybpsetYoVy5OB4TpyBXA8%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaSYXT%2FdJMcaiK0tTb%2FAAAAAAAAAAAAAAAAAAAAACGplfbSeMI9yoXOuIT3-FCWK3ICP48UuUJkp0iBW9z5%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FnsmV8ybpsetYoVy5OB4TpyBXA8%253D",
+      "content_type": "image/png",
+      "content_encoding": "",
+      "byte_length": 1760955,
+      "sha256": "072a778b1b67a7bae61f71a02c43b0b5e84da11e409c5a05dbf892426e7f9620",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    }
+  ]
+}
