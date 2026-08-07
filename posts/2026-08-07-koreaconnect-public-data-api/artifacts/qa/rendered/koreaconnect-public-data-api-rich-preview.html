@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>공공데이터 API 활용기, 전국 화재 현황 29만 건을 받아보니</title>
+  <meta name="description" content="디지털융합플랫폼 데이터·API 마켓에서 전국 화재 현황을 실제 호출해 29만여 건과 62개 상세 필드를 확인하고, 사건일과 등록일을 비교해 배치형 갱신 특성과 활용 범위를 정리했습니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>공공데이터 API 활용기, 전국 화재 현황 29만 건을 받아보니</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>공공데이터 목록에는 흥미로운 이름이 많지만, 승인 뒤 어떤 응답이 오는지는 설명만으로 감을 잡기 어렵습니다. 이번에는 사용자가 승인과 키 입력을 마친 뒤, Codex에서 디지털융합플랫폼의 <strong>전국 화재 현황 API</strong>를 호출하고 응답을 검산했습니다.</p>
+<p>응답에는 전국 화재 기록 29만여 건과 화재 유형, 출동·진화 시각, 발화 원인, 피해, 기상 등 62개 상세 필드가 담겨 있었습니다. 다만 2026년 8월 7일에 확인한 최신 화재 접수는 8월 2일이었습니다. 실시간 관제용 스트림이라기보다 며칠 간격으로 묶여 들어오는 분석용 데이터에 가까웠습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="koreaconnect-fire-api-batch" style="--rich-media-width:760px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcyvwCf%2FdJMb99UTeLJ%2FAAAAAAAAAAAAAAAAAAAAAIbPzQgujtSXfWZuMMLmiGLXuydczb4QltpPB6RAdzqK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DFWrBN1Sl%252FLn6M9kVpcvnCkoHHQU%253D" alt="전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림" width="1080" height="1350" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">2026년 8월 7일 직접 호출한 결과를 시간순으로 놓았습니다. 최신 화재 접수는 8월 2일, 같은 묶음의 등록 시각은 8월 4일이었습니다. 한 번의 관찰이며 고정 갱신 주기나 공식 SLA를 뜻하지 않습니다. <span class="devlog-rich__credit">· Codex 시뮬레이션 캡처 · 2026-08-07</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#흩어진-데이터를-찾는-api-마켓">흩어진 데이터를 찾는 API 마켓</a></li>
+<li><a href="#전국-화재-현황을-post로-호출">전국 화재 현황을 POST로 호출</a></li>
+<li><a href="#등록일-첫-행이-최신-화재가-아니었던-이유">등록일 첫 행이 최신 화재가 아니었던 이유</a></li>
+<li><a href="#35일-시차가-바꾼-활용-방향">3~5일 시차가 바꾼 활용 방향</a></li>
+<li><a href="#화재-62개-필드가-여는-분석-질문">화재 62개 필드가 여는 분석 질문</a></li>
+<li><a href="#1건부터-확인할-순서">1건부터 확인할 순서</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="흩어진-데이터를-찾는-api-마켓">
+<h2 id="흩어진-데이터를-찾는-api-마켓">흩어진 데이터를 찾는 API 마켓</h2>
+<p><a href="https://portal.koreaconnect.kr/market/mk/getMkDigitStore" style="color:#1a73e8;text-decoration:none;" target="_blank">디지털융합플랫폼 데이터·API 마켓</a>은 정부와 기업에 흩어진 데이터파일과 API를 분야별로 찾아볼 수 있는 곳입니다. 2026년 8월 7일 화면에는 전체 디지털자원 113,389건, 오픈API 12,973건이 표시됐습니다. 숫자는 계속 바뀔 수 있으므로 현재 규모를 보여 주는 시점값으로 보는 편이 맞습니다.</p>
+<p>처음부터 코드를 작성할 필요는 없습니다. 마켓에서 분야를 고르고 설명을 읽는 것만으로 어떤 재료가 있는지 빠르게 훑을 수 있습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>분야</th><th>화면에서 확인한 API 예시</th><th>만들어 볼 수 있는 것</th></tr></thead><tbody><tr><td>재난안전</td><td>전국 화재·구급·119 신고·구조 현황</td><td>지역별 사건 추이, 출동 시간 분석</td></tr><tr><td>교통물류</td><td>주유소 가격, 주차장 기본 정보, 실시간 주차 가능 정보</td><td>주변 시설 지도, 가격·혼잡 비교</td></tr><tr><td>환경생태기상</td><td>현재 날씨, 3시간 간격 5일 예보</td><td>날씨 대시보드, 일정 알림</td></tr><tr><td>건강의료복지</td><td>의약품개요정보</td><td>제품명 기반 복약정보 검색</td></tr><tr><td>기업무역</td><td>행정동별 업종별 상권지수</td><td>동네·업종별 상권 탐색</td></tr></tbody></table></div>
+<p>목록에 보인다고 모두 같은 조건으로 바로 호출되는 것은 아닙니다. 각 상세 페이지에서 제공기관, 요청 방식, 필드와 라이선스를 확인하고 필요한 API에 사용신청을 해야 합니다. 이 글에서는 여러 항목 중 소방청이 제공하는 전국 화재 현황 하나만 실제 호출했습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="전국-화재-현황을-post로-호출">
+<h2 id="전국-화재-현황을-post로-호출">전국 화재 현황을 POST로 호출</h2>
+<p><a href="https://portal.koreaconnect.kr/market/mk/getMkApiDetail?drsTcd=02&amp;drsno=77a018d8298c4921932ea8b51f3c1598" style="color:#1a73e8;text-decoration:none;" target="_blank">전국 화재 현황 상세 페이지</a>에서 확인한 요청 방식은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">POST</code>입니다. 발급받은 이용자 키는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">api_user_key_id</code> 헤더에 넣고, 페이지와 정렬 조건은 쿼리 문자열로 전달합니다.</p>
+<p>아래처럼 키를 환경 변수에 담으면 명령 기록에 값을 직접 적는 일을 줄일 수 있습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">export KOREACONNECT_API_KEY='발급받은 API 이용자 키 아이디'
+
+curl -X POST \
+  'https://api.koreaconnect.kr/01/1/2605060927592107314KFSBDP/SAFETY/fsdpApi/rest/v1/fire-incidents?page=1&amp;size=5&amp;sort=rcptDt,desc' \
+  -H "api_user_key_id: ${KOREACONNECT_API_KEY}"</code></pre>
+<p>처음에는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">size=1</code>이나 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">size=5</code>로 구조부터 보는 편이 안전합니다. 명세상 한 페이지의 최대 크기는 100건입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>변수</th><th>의미</th><th>처음 넣어 볼 값</th></tr></thead><tbody><tr><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">page</code></td><td>페이지 번호</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">1</code></td></tr><tr><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">size</code></td><td>페이지당 건수, 최대 100</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">5</code></td></tr><tr><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">q</code></td><td>여러 컬럼의 부분일치 검색</td><td>필요한 단어가 있을 때만</td></tr><tr><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">sort</code></td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">필드명,asc/desc</code> 정렬</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">rcptDt,desc</code></td></tr></tbody></table></div>
+<p>헤더를 빼고 같은 URL을 호출했을 때는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">401</code>과 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">유효하지 않은 이용자 서비스 키</code>가 돌아왔습니다. URL이 틀린 것이 아니라 인증 단계에서 막힌 경우입니다. 키를 쿼리에 옮기기보다 헤더 이름과 승인 상태를 먼저 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="등록일-첫-행이-최신-화재가-아니었던-이유">
+<h2 id="등록일-첫-행이-최신-화재가-아니었던-이유">등록일 첫 행이 최신 화재가 아니었던 이유</h2>
+<p>인증 요청은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">200 OK</code>와 JSON을 반환했습니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">total</code>은 295,105였고, 응답에는 페이지 정보 7개와 화재 한 건을 설명하는 상세 필드 62개가 있었습니다.</p>
+<p>처음에는 등록일을 뜻하는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">gtrRegDt</code>를 내림차순으로 정렬했습니다. 첫 행은 8월 2일 파주시 차량 화재였습니다. 하지만 상위 여러 행이 모두 같은 등록 시각을 갖고 있어, 첫 행이 실제로 가장 늦게 발생한 화재인지는 알 수 없었습니다.</p>
+<p>접수일 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">rcptDt</code>로 다시 정렬하자 결과가 달라졌습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>확인 항목</th><th>관찰값</th></tr></thead><tbody><tr><td>API 확인 시점</td><td>2026-08-07 23:03 KST</td></tr><tr><td>최신 화재 접수</td><td>2026-08-02 20:38, 경기도 용인시 기흥구</td></tr><tr><td>화재 유형</td><td>건축·구조물</td></tr><tr><td>인명 피해</td><td>사망 0명, 부상 0명</td></tr><tr><td>해당 묶음의 등록 시각</td><td>2026-08-04 06:31:19 KST</td></tr></tbody></table></div>
+<p>확인 시점과 최신 접수 사이에는 약 5일, 등록 시각과도 약 3일의 차이가 있었습니다. 상위 행들은 동일한 등록 타임스탬프를 공유했습니다. 이 두 가지를 함께 보면 사건이 생길 때마다 한 건씩 들어오는 실시간 스트림보다는 <strong>자료를 모아 갱신하는 배치형 API</strong>에 가까워 보입니다.</p>
+<p>다만 한 번의 관찰로 “항상 3일마다 갱신된다”고 말할 수는 없습니다. 공식 명세에서 고정 갱신 주기나 SLA를 확인하지 못했기 때문입니다. 정확한 표현은 2026년 8월 7일 확인에서 3~5일의 시차가 관찰됐다는 정도입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="35일-시차가-바꾼-활용-방향">
+<h2 id="35일-시차가-바꾼-활용-방향">3~5일 시차가 바꾼 활용 방향</h2>
+<p>며칠의 시차는 실시간 알림에는 치명적이지만, 장기 분석에서는 받아들일 수 있는 조건입니다. 전국 단위로 모으기 어려운 사건 기록을 같은 구조로 내려받을 수 있다는 점이 이 데이터의 강점입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>사용 목적</th><th>적합도</th><th>이유</th></tr></thead><tbody><tr><td>실시간 화재 알림·관제</td><td>낮음</td><td>이번 확인에서는 최신 접수가 약 5일 늦었음</td></tr><tr><td>최근 화재 통계</td><td>조건부</td><td>마지막 갱신 시각을 함께 표시해야 함</td></tr><tr><td>지역·시설별 장기 추이</td><td>높음</td><td>전국 기록과 공통 필드가 있음</td></tr><tr><td>발화 원인·착화물 탐색</td><td>높음</td><td>원인, 열원, 기기, 착화물 분류가 제공됨</td></tr><tr><td>데이터 분석·API 학습</td><td>높음</td><td>검색, 정렬, 페이지네이션을 작은 요청으로 연습 가능</td></tr></tbody></table></div>
+<p>날짜를 고를 때는 특히 주의해야 합니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">gtrRegDt</code>는 플랫폼에 등록된 시각이고, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">rcptDt</code>는 화재가 접수된 시각입니다. 최신 사건이 필요하면 업무 의미에 맞는 날짜 필드를 정렬해야 합니다. 같은 등록 시각 안에서 첫 행만 보고 최신이라고 판단하면 이번 확인처럼 다른 사건을 고를 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="화재-62개-필드가-여는-분석-질문">
+<h2 id="화재-62개-필드가-여는-분석-질문">화재 62개 필드가 여는 분석 질문</h2>
+<p>화재 한 건에는 단순한 발생 지역보다 훨씬 많은 정보가 들어 있습니다.</p>
+<ul><li>접수·출동·현장도착·초기진화·완전진화·복귀 시각으로 대응 흐름을 볼 수 있습니다.</li><li>시도·시군구·소방서·119안전센터와 현장 거리를 지역 분석에 쓸 수 있습니다.</li><li>화재 유형, 시설 분류, 건물 구조·면적·층수로 장소별 특성을 나눌 수 있습니다.</li><li>발화 열원·요인·기기·최초 착화물을 묶어 원인 분포를 살펴볼 수 있습니다.</li><li>사망·부상·인명피해와 재산피해로 피해 규모를 비교할 수 있습니다.</li><li>기온·습도·풍속·풍향을 사건 기록과 함께 탐색할 수 있습니다.</li></ul>
+<p>이 필드들을 함께 그렸다는 이유만으로 인과관계를 주장할 수는 없습니다. 습도와 화재 건수의 움직임이 비슷해도 데이터 누락, 계절, 시설 종류와 지역 차이를 먼저 확인해야 합니다.</p>
+<p>빈 값도 자연스럽게 섞여 있습니다. 차량 화재 행에서는 건물 연면적이나 층수 같은 필드가 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">null</code> 또는 빈 문자열이었습니다. 모든 필드를 무조건 숫자로 바꾸기보다 화재 유형에 따라 적용되지 않는 값인지, 실제 누락인지 구분하는 전처리가 필요합니다. 재산피해금액처럼 명세에서 단위를 확인하지 못한 값은 출처에 문의하기 전까지 금액 해석을 미루는 편이 안전합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="1건부터-확인할-순서">
+<h2 id="1건부터-확인할-순서">1건부터 확인할 순서</h2>
+<p>처음부터 29만 건을 모두 내려받을 필요는 없습니다.</p>
+<ol><li><a href="https://portal.koreaconnect.kr/market/mk/getMkDigitStore" style="color:#1a73e8;text-decoration:none;" target="_blank">데이터·API 마켓</a>에서 관심 분야와 설명을 둘러봅니다.</li><li><a href="https://portal.koreaconnect.kr/market/mk/getMkApiDetail?drsTcd=02&amp;drsno=77a018d8298c4921932ea8b51f3c1598" style="color:#1a73e8;text-decoration:none;" target="_blank">전국 화재 현황 상세 페이지</a>처럼 각 API의 명세에서 요청 메서드, 인증 헤더, 필수 변수와 응답 필드를 확인합니다.</li><li>승인 뒤 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">size=1</code>로 호출해 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">total</code>과 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">items</code> 구조부터 봅니다.</li><li>등록일이 아니라 분석 목적에 맞는 사건 날짜로 최신 행을 다시 정렬합니다.</li><li>데이터를 저장할 때 API 호출 시각과 마지막 사건 시각을 함께 남깁니다.</li><li>빈 값과 단위가 불명확한 필드를 확인한 뒤 필요한 범위만 페이지별로 수집합니다.</li></ol>
+<p>이 순서라면 대시보드를 만들기 전에 데이터가 질문에 맞는지 먼저 판단할 수 있습니다. 최신성이 중요한 서비스라면 다른 실시간 소스가 필요하고, 장기 추이나 원인 분포를 보고 싶다면 이 API부터 실험해 볼 만합니다.</p>
+<p>전국 화재 현황 외에도 같은 마켓에는 구급·구조·119 신고, 주차장, 주유소 가격, 날씨, 의약품과 상권 데이터가 있습니다. 평소에는 구하기 어려운 자료를 한 페이지씩 열어 보고, 작은 질문 하나를 정해 JSON 몇 건부터 받아보는 것만으로도 꽤 재미있는 프로젝트가 시작됩니다.</p>
+</section>
+</article>
+</body>
+</html>

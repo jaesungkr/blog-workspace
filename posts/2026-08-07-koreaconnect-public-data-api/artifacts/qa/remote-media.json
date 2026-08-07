@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "status": "pass",
+  "record_id": "ad1215ec-d55c-4a2d-8777-c5161fae1dbc",
+  "recorded_at": "2026-08-07T16:07:31.625696Z",
+  "recorded_by": "Codex creator QA",
+  "media_sha256": "a512d72923db843a71c063b0042538b0e0589d2a4c93be910b0f118c4c8a6cc1",
+  "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
+  "fetcher_files": {
+    "remote_media.py": "ac44710fa5611571d1d8ee3cc6b21ab656df549bd2d49ccd32e4285b91bbb6b6",
+    "rich_post_common.py": "ac9167175f3f3682b163e8d9cfb0b7b55e9158297db11c9412d50ca18bf022bc"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "koreaconnect-fire-api-batch",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcyvwCf%2FdJMb99UTeLJ%2FAAAAAAAAAAAAAAAAAAAAAIbPzQgujtSXfWZuMMLmiGLXuydczb4QltpPB6RAdzqK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DFWrBN1Sl%252FLn6M9kVpcvnCkoHHQU%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcyvwCf%2FdJMb99UTeLJ%2FAAAAAAAAAAAAAAAAAAAAAIbPzQgujtSXfWZuMMLmiGLXuydczb4QltpPB6RAdzqK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DFWrBN1Sl%252FLn6M9kVpcvnCkoHHQU%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-07T16:07:31.625441Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 794326,
+      "byte_length": 794326,
+      "sha256": "d61593537b1cfeca8bbaf5f254945ea4c1c98275a4836f8084eb91357b902351",
+      "format": "png",
+      "width": 1080,
+      "height": 1350,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 07 Aug 2026 16:05:58 GMT"
+    }
+  ]
+}

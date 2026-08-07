@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>전국 화재 현황 API 갱신 시차</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      min-width: 1080px;
+      height: 1350px;
+      margin: 0;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      color: #18304d;
+      background:
+        radial-gradient(circle at 86% 10%, rgba(53, 139, 113, .16), transparent 24%),
+        radial-gradient(circle at 8% 78%, rgba(231, 117, 84, .12), transparent 25%),
+        linear-gradient(152deg, #fbfbf7 0%, #eff5f2 100%);
+    }
+    .canvas {
+      position: relative;
+      width: 1080px;
+      height: 1350px;
+      padding: 44px 66px 34px;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #2d836d;
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 850;
+      letter-spacing: .3px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 42px;
+      height: 8px;
+      border-radius: 8px;
+      background: #2d836d;
+    }
+    h1 {
+      margin: 16px 0 6px;
+      font-size: 60px;
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: -2.6px;
+    }
+    .subtitle {
+      margin: 0;
+      color: #617182;
+      font-size: 38px;
+      line-height: 1.34;
+      font-weight: 680;
+      letter-spacing: -1px;
+    }
+    .stats {
+      display: flex;
+      align-items: baseline;
+      gap: 22px;
+      margin-top: 18px;
+      padding: 14px 0 13px;
+      border-top: 2px solid #cfd9d4;
+      border-bottom: 2px solid #cfd9d4;
+    }
+    .stat-main {
+      color: #173a63;
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -1.6px;
+    }
+    .stat-copy {
+      color: #4f6275;
+      font-size: 36px;
+      line-height: 1.25;
+      font-weight: 740;
+      letter-spacing: -.8px;
+    }
+    .timeline {
+      position: relative;
+      height: 548px;
+      margin-top: 18px;
+    }
+    .spine {
+      position: absolute;
+      top: 28px;
+      bottom: 18px;
+      left: 470px;
+      width: 10px;
+      border-radius: 10px;
+      background: linear-gradient(#e27656 0 42%, #d5b14e 42% 68%, #2d836d 68% 100%);
+      box-shadow: 0 0 0 9px rgba(255,255,255,.76);
+    }
+    .node {
+      position: absolute;
+      width: 410px;
+      min-height: 154px;
+    }
+    .node::after {
+      content: "";
+      position: absolute;
+      top: 57px;
+      width: 46px;
+      height: 4px;
+      background: #98a7af;
+    }
+    .node-left { left: 0; text-align: right; }
+    .node-left::after { right: -58px; }
+    .node-right { right: 0; text-align: left; }
+    .node-right::after { left: -58px; }
+    .incident { top: 8px; }
+    .ingest { top: 190px; }
+    .checked { top: 372px; }
+    .dot {
+      position: absolute;
+      top: 36px;
+      width: 54px;
+      height: 54px;
+      border: 9px solid #fbfbf7;
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .node-left .dot { right: -90px; }
+    .node-right .dot { left: -90px; }
+    .incident .dot { background: #e27656; box-shadow: 0 0 0 3px #e27656; }
+    .ingest .dot { background: #d5b14e; box-shadow: 0 0 0 3px #d5b14e; }
+    .checked .dot { background: #2d836d; box-shadow: 0 0 0 3px #2d836d; }
+    .node-label {
+      color: #647280;
+      font-size: 36px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: -.5px;
+    }
+    .node-date {
+      margin-top: 10px;
+      font-size: 50px;
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -1.8px;
+    }
+    .node-copy {
+      margin-top: 10px;
+      color: #40546a;
+      font-size: 36px;
+      line-height: 1.26;
+      font-weight: 700;
+      letter-spacing: -.8px;
+    }
+    .decision {
+      position: relative;
+      height: 202px;
+      margin-top: 0;
+      border-top: 3px solid #bdc9c5;
+    }
+    .decision-title {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 26px;
+      border-radius: 99px;
+      color: #fff;
+      background: #183a62;
+      font-size: 36px;
+      line-height: 1;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .branch-line {
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      width: 3px;
+      height: 50px;
+      background: #bdc9c5;
+    }
+    .branch-line::before,
+    .branch-line::after {
+      content: "";
+      position: absolute;
+      top: 48px;
+      width: 290px;
+      height: 3px;
+      background: #bdc9c5;
+    }
+    .branch-line::before { right: 0; transform-origin: right; transform: rotate(-9deg); }
+    .branch-line::after { left: 0; transform-origin: left; transform: rotate(9deg); }
+    .branch {
+      position: absolute;
+      top: 72px;
+      width: 420px;
+      min-height: 108px;
+      padding: 18px 26px;
+      border-top: 7px solid;
+      background: rgba(255,255,255,.62);
+    }
+    .branch-live { left: 0; border-color: #dc7357; }
+    .branch-analysis { right: 0; border-color: #2d8a70; }
+    .branch-kicker {
+      font-size: 45px;
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: -1.2px;
+    }
+    .branch-live .branch-kicker { color: #ad4f3c; }
+    .branch-analysis .branch-kicker { color: #216f5b; }
+    .branch-copy {
+      margin-top: 9px;
+      color: #4b5e70;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 720;
+      letter-spacing: -.7px;
+    }
+    .caveat {
+      margin: 12px 20px 0;
+      padding-left: 34px;
+      position: relative;
+      color: #5b6874;
+      font-size: 33px;
+      line-height: 1.34;
+      font-weight: 680;
+      letter-spacing: -.6px;
+    }
+    .caveat::before {
+      content: "i";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border: 3px solid #7a8993;
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="eyebrow">PUBLIC DATA · 직접 호출</div>
+    <h1>전국 화재 현황은<br>실시간보다 배치에 가까웠습니다</h1>
+    <p class="subtitle">사건 시각과 플랫폼 등록 시각을 따로 정렬해 확인했습니다</p>
+
+    <div class="stats">
+      <div class="stat-main">295,105건</div>
+      <div class="stat-copy">화재 상세 62개 필드 · 2026.08.07 확인</div>
+    </div>
+
+    <section class="timeline" aria-label="화재 접수부터 API 확인까지의 시간 흐름">
+      <div class="spine"></div>
+
+      <div class="node node-left incident">
+        <div class="dot"></div>
+        <div class="node-label">최신 화재 접수</div>
+        <div class="node-date">8월 2일 20:38</div>
+        <div class="node-copy">용인시 기흥구 · 건축물 화재</div>
+      </div>
+
+      <div class="node node-right ingest">
+        <div class="dot"></div>
+        <div class="node-label">같은 묶음의 API 등록</div>
+        <div class="node-date">8월 4일 06:31</div>
+        <div class="node-copy">상위 행 등록 시각 동일</div>
+      </div>
+
+      <div class="node node-left checked">
+        <div class="dot"></div>
+        <div class="node-label">API 직접 확인</div>
+        <div class="node-date">8월 7일 23:03</div>
+        <div class="node-copy">접수일 기준으로 다시 정렬</div>
+      </div>
+    </section>
+
+    <section class="decision" aria-label="API 활용 판단">
+      <div class="decision-title">이 관찰에서의 용도 판단</div>
+      <div class="branch-line"></div>
+      <div class="branch branch-live">
+        <div class="branch-kicker">실시간 알림에는 부족</div>
+        <div class="branch-copy">최신 사건 반영이 늦음</div>
+      </div>
+      <div class="branch branch-analysis">
+        <div class="branch-kicker">배치 분석에는 유용</div>
+        <div class="branch-copy">지역 · 원인 · 기상 분석</div>
+      </div>
+    </section>
+
+    <p class="caveat">단 한 번의 관찰입니다. 고정 주기와 공식 SLA는 확인하지 못했습니다.</p>
+  </main>
+</body>
+</html>

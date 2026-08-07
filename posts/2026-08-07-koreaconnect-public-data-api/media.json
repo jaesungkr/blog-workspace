@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "lead_id": "koreaconnect-fire-api-batch",
+  "items": [
+    {
+      "id": "koreaconnect-fire-api-batch",
+      "kind": "image",
+      "origin": "simulated",
+      "role": "lead",
+      "claim_ids": [
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-07",
+      "environment": "macOS, deterministic HTML/CSS rendered in Codex in-app Chromium",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/koreaconnect-fire-api-batch-v1.png",
+      "publish_path": "assets/infographics/koreaconnect-fire-api-batch-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcyvwCf%2FdJMb99UTeLJ%2FAAAAAAAAAAAAAAAAAAAAAIbPzQgujtSXfWZuMMLmiGLXuydczb4QltpPB6RAdzqK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DFWrBN1Sl%252FLn6M9kVpcvnCkoHHQU%253D",
+      "width": 1080,
+      "height": 1350,
+      "display_width": 760,
+      "placement": "after:opening",
+      "rights": "dev.log original deterministic explanatory infographic based on direct API observations",
+      "alt": "전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림",
+      "caption": "2026년 8월 7일 직접 호출한 결과를 시간순으로 놓았습니다. 최신 화재 접수는 8월 2일, 같은 묶음의 등록 시각은 8월 4일이었습니다. 한 번의 관찰이며 고정 갱신 주기나 공식 SLA를 뜻하지 않습니다.",
+      "processing": [
+        "rendered exact Korean copy and verified API observations as deterministic 1080x1350 HTML/CSS infographic",
+        "independent visual QA passed at full raster, 360 CSS px, and enlarged crops"
+      ],
+      "redactions": [],
+      "sha256": "f8e213e979e03a259280fa75262b91f11c0d91f2ee360b6e2af7d46d2dff9669",
+      "status": "validated"
+    }
+  ]
+}

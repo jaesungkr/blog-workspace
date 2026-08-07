@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "checked_at": "2026-08-08 Asia/Seoul",
+  "checked_by": "Codex creator QA",
+  "browser": "Chrome/151.0.7922.108",
+  "session": "in-app-browser-tab-10",
+  "preview_path": "artifacts/qa/dark-remote/koreaconnect-public-data-api-rich-preview.html",
+  "preview_sha256": "9cc131dca044bd781840f85a504d216a2e2e8a0c576b548403392b2ce5d38914",
+  "viewports": [390, 360],
+  "checks": {
+    "article_and_headings_readable": true,
+    "links_and_list_markers_readable": true,
+    "inline_code_and_code_block_readable": true,
+    "tables_and_borders_readable": true,
+    "caption_and_image_surround_readable": true,
+    "document_overflow": false,
+    "remote_image_loaded": true
+  },
+  "screenshots": [
+    ["artifacts/qa/dark-theme/dark-top.png", "d32f075d759b106a3efc5f92c095d87a1ad816f85c7ddcd64cc589999d250bdc"],
+    ["artifacts/qa/dark-theme/dark-figure.png", "ac03685719d8910236247d7d97dfaee1e0d85806691e89fc79170a506c9b2615"],
+    ["artifacts/qa/dark-theme/dark-code.png", "530ed7b434570a692a76ef62fef2b58c4c0d99f794a5619e3365d512b586ebc4"],
+    ["artifacts/qa/dark-theme/dark-table-3.png", "0ed23f7a33e61eafec06b1d540dda621d09984f24e2137ea0a7e0cd46a6e22e4"],
+    ["artifacts/qa/dark-theme/dark-list.png", "17421fc0e792b2533bfd58def57364bb524b6fa0aeee076d9291742ab8b206a9"]
+  ],
+  "result": "pass"
+}

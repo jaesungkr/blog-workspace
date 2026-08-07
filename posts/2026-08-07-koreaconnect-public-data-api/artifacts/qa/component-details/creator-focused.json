@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "checked_at": "2026-08-08 Asia/Seoul",
+  "checked_by": "Codex creator QA",
+  "browser": "Chrome/151.0.7922.108",
+  "session": "in-app-browser-tab-10",
+  "preview_path": "artifacts/qa/rendered/koreaconnect-public-data-api-rich-preview.html",
+  "preview_sha256": "4ff6fd6eedfa5919264935140a74cc15bc9cbf3f18a1f2b16d7b787623b2d2ba",
+  "viewports": [390, 360],
+  "document": {
+    "client_width_equals_scroll_width": true,
+    "h1_count": 1,
+    "toc_targets_unique": true,
+    "remote_image_loaded": true
+  },
+  "code": {
+    "client_widths": [348, 318],
+    "scroll_width": 1185,
+    "max_scroll_left": [837, 867],
+    "overflow_x": "auto",
+    "font_size": "14.4px",
+    "line_height": "23.04px",
+    "left_and_right_readable": true
+  },
+  "tables": {
+    "count": 4,
+    "client_widths": [350, 320],
+    "scroll_width": 620,
+    "max_scroll_left": [270, 300],
+    "overflow_x": "auto",
+    "font_size": "15px",
+    "line_height": "24px",
+    "all_left_and_right_states_readable": true
+  },
+  "ordered_list": {
+    "markers_visible": true,
+    "items_separated": true,
+    "following_paragraph_separated": true,
+    "font_size": "17px",
+    "line_height": "29.24px"
+  },
+  "screenshots": [
+    ["artifacts/qa/component-details/light-figure.png", "9975e04a957c3e8021d80779064af0fc845e55d0cbde09689d2f5e9305b27957"],
+    ["artifacts/qa/component-details/light-code-left.png", "1e2a17d2c6f39ecae83482b94a60f062b9794bd37ea70fc7bd034c7a38f5a276"],
+    ["artifacts/qa/component-details/light-code-right.png", "c3d9f5f1c8fd5864dece3431900f2ff8f361e0c994b18463dc3edd54cb46a2c9"],
+    ["artifacts/qa/component-details/light-table-0-left.png", "56567e60b6e8c8ac7b996041cc77b706be0526f872d07c5e3b490e631dfa5cf3"],
+    ["artifacts/qa/component-details/light-table-0-right.png", "483eab4718f6f79b19dcba9492ec9b29594d9372c614d305b2719d5cdaccb1ff"],
+    ["artifacts/qa/component-details/light-table-1-left.png", "b341be31093e9e255e78d65c1a7be26b56847afdbcff66b997bfdc8395995151"],
+    ["artifacts/qa/component-details/light-table-1-right.png", "2338238fbffd7df670dad01ebfec13b4774fd4eb020e7e30763ab377886914b5"],
+    ["artifacts/qa/component-details/light-table-2-left.png", "aa69c34821e3a072768a495409aac27499f14018a856fad0ffc098ea34ed058c"],
+    ["artifacts/qa/component-details/light-table-2-right.png", "9be87b7051737c57fd78f0fb719f3bcafa8c474dc75fc8a3cd84f76e393dd305"],
+    ["artifacts/qa/component-details/light-table-3-left.png", "2b20ffc36916e5b6e4d2dc5a6fa4ebea5fdc9e027ddc3c7b6bdebc3ec2758903"],
+    ["artifacts/qa/component-details/light-table-3-right.png", "4166d7404c3c284ec38662bb7f6d3c3b604ba45bc22c0a0d84fc8369bb380b3b"],
+    ["artifacts/qa/component-details/light-list.png", "50cd6ca586488c0f9a05eee0efcfccdf97ab0a15794024fabf333aad2c8973e6"]
+  ],
+  "result": "pass"
+}

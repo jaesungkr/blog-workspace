@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>전국 화재 현황 API 인포그래픽 확대 QA</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1080px; background: #20252a; }
+    body { padding: 24px 0; }
+    .crop { position: relative; width: 1080px; overflow: hidden; background: #fff; }
+    .crop + .crop { margin-top: 24px; }
+    .crop img { position: absolute; left: 0; width: 1080px; height: 1350px; max-width: none; }
+    .header { height: 390px; }
+    .header img { top: 0; }
+    .timeline { height: 610px; }
+    .timeline img { top: -370px; }
+    .decision { height: 330px; }
+    .decision img { top: -1020px; }
+  </style>
+</head>
+<body>
+  <div class="crop header"><img src="../../assets/infographics/koreaconnect-fire-api-batch-v1.png" alt="헤더 확대"></div>
+  <div class="crop timeline"><img src="../../assets/infographics/koreaconnect-fire-api-batch-v1.png" alt="타임라인 확대"></div>
+  <div class="crop decision"><img src="../../assets/infographics/koreaconnect-fire-api-batch-v1.png" alt="판단과 주의 문구 확대"></div>
+</body>
+</html>

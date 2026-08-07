@@ -1,0 +1,915 @@
+{
+  "version": 1,
+  "checked_at": "2026-08-07T16:21:17.122749Z",
+  "checked_by": "Parfit independent reviewer",
+  "browser": "Chrome/151.0.7922.108",
+  "protocol_version": "1.3",
+  "session": "5eb7658e-9798-4e78-aa0a-b306f0545e0f",
+  "preview_path": "artifacts/qa/independent-rendered/koreaconnect-public-data-api-rich-preview.html",
+  "preview_sha256": "4ff6fd6eedfa5919264935140a74cc15bc9cbf3f18a1f2b16d7b787623b2d2ba",
+  "fragment_path": "artifacts/qa/independent-rendered/koreaconnect-public-data-api-tistory-fragment.html",
+  "fragment_sha256": "e8c4dfdd5db5ba9977523064d6983b364ff24a3c5d4c82bc467388a70629beaf",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "document": {
+        "client_width": 390,
+        "scroll_width": 390,
+        "h1_count": 1,
+        "heading_count": 6,
+        "headings": [
+          {
+            "id": "흩어진-데이터를-찾는-api-마켓",
+            "text": "흩어진 데이터를 찾는 API 마켓"
+          },
+          {
+            "id": "전국-화재-현황을-post로-호출",
+            "text": "전국 화재 현황을 POST로 호출"
+          },
+          {
+            "id": "등록일-첫-행이-최신-화재가-아니었던-이유",
+            "text": "등록일 첫 행이 최신 화재가 아니었던 이유"
+          },
+          {
+            "id": "35일-시차가-바꾼-활용-방향",
+            "text": "3~5일 시차가 바꾼 활용 방향"
+          },
+          {
+            "id": "화재-62개-필드가-여는-분석-질문",
+            "text": "화재 62개 필드가 여는 분석 질문"
+          },
+          {
+            "id": "1건부터-확인할-순서",
+            "text": "1건부터 확인할 순서"
+          }
+        ],
+        "toc": [
+          {
+            "text": "흩어진 데이터를 찾는 API 마켓",
+            "href": "#흩어진-데이터를-찾는-api-마켓",
+            "target_count": 1
+          },
+          {
+            "text": "전국 화재 현황을 POST로 호출",
+            "href": "#전국-화재-현황을-post로-호출",
+            "target_count": 1
+          },
+          {
+            "text": "등록일 첫 행이 최신 화재가 아니었던 이유",
+            "href": "#등록일-첫-행이-최신-화재가-아니었던-이유",
+            "target_count": 1
+          },
+          {
+            "text": "3~5일 시차가 바꾼 활용 방향",
+            "href": "#35일-시차가-바꾼-활용-방향",
+            "target_count": 1
+          },
+          {
+            "text": "화재 62개 필드가 여는 분석 질문",
+            "href": "#화재-62개-필드가-여는-분석-질문",
+            "target_count": 1
+          },
+          {
+            "text": "1건부터 확인할 순서",
+            "href": "#1건부터-확인할-순서",
+            "target_count": 1
+          }
+        ],
+        "figure": {
+          "image_loaded": true,
+          "natural_width": 1080,
+          "natural_height": 1350,
+          "alt": "전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림",
+          "caption": "2026년 8월 7일 직접 호출한 결과를 시간순으로 놓았습니다. 최신 화재 접수는 8월 2일, 같은 묶음의 등록 시각은 8월 4일이었습니다. 한 번의 관찰이며 고정 갱신 주기나 공식 SLA를 뜻하지 않습니다. · Codex 시뮬레이션 캡처 · 2026-08-07",
+          "caption_attached": true
+        },
+        "unordered_list": {
+          "tag": "UL",
+          "count": 6,
+          "list_style_type": "disc",
+          "item_display": "list-item",
+          "font_size": "17px",
+          "line_height": "29.24px",
+          "item_gaps": [
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875
+          ],
+          "following_tag": "P",
+          "following_gap": 19.546875
+        },
+        "ordered_list": {
+          "tag": "OL",
+          "count": 6,
+          "list_style_type": "decimal",
+          "item_display": "list-item",
+          "font_size": "17px",
+          "line_height": "29.24px",
+          "item_gaps": [
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875
+          ],
+          "following_tag": "P",
+          "following_gap": 19.546875
+        },
+        "table_count": 4,
+        "code_count": 1
+      },
+      "components": {
+        "tables": [
+          {
+            "kind": "table",
+            "index": 0,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "분야",
+              "화면에서 확인한 API 예시",
+              "만들어 볼 수 있는 것"
+            ],
+            "first_row": [
+              "재난안전",
+              "전국 화재·구급·119 신고·구조 현황",
+              "지역별 사건 추이, 출동 시간 분석"
+            ]
+          },
+          {
+            "kind": "table",
+            "index": 1,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "변수",
+              "의미",
+              "처음 넣어 볼 값"
+            ],
+            "first_row": [
+              "page",
+              "페이지 번호",
+              "1"
+            ]
+          },
+          {
+            "kind": "table",
+            "index": 2,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "확인 항목",
+              "관찰값"
+            ],
+            "first_row": [
+              "API 확인 시점",
+              "2026-08-07 23:03 KST"
+            ]
+          },
+          {
+            "kind": "table",
+            "index": 3,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "사용 목적",
+              "적합도",
+              "이유"
+            ],
+            "first_row": [
+              "실시간 화재 알림·관제",
+              "낮음",
+              "이번 확인에서는 최신 접수가 약 5일 늦었음"
+            ]
+          }
+        ],
+        "code": [
+          {
+            "kind": "code",
+            "index": 0,
+            "client_width": 348,
+            "scroll_width": 1185,
+            "max_scroll_left": 837,
+            "overflow_x": "auto",
+            "font_size": "14.4px",
+            "line_height": "23.04px",
+            "headers": [],
+            "first_row": []
+          }
+        ]
+      }
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "document": {
+        "client_width": 360,
+        "scroll_width": 360,
+        "h1_count": 1,
+        "heading_count": 6,
+        "headings": [
+          {
+            "id": "흩어진-데이터를-찾는-api-마켓",
+            "text": "흩어진 데이터를 찾는 API 마켓"
+          },
+          {
+            "id": "전국-화재-현황을-post로-호출",
+            "text": "전국 화재 현황을 POST로 호출"
+          },
+          {
+            "id": "등록일-첫-행이-최신-화재가-아니었던-이유",
+            "text": "등록일 첫 행이 최신 화재가 아니었던 이유"
+          },
+          {
+            "id": "35일-시차가-바꾼-활용-방향",
+            "text": "3~5일 시차가 바꾼 활용 방향"
+          },
+          {
+            "id": "화재-62개-필드가-여는-분석-질문",
+            "text": "화재 62개 필드가 여는 분석 질문"
+          },
+          {
+            "id": "1건부터-확인할-순서",
+            "text": "1건부터 확인할 순서"
+          }
+        ],
+        "toc": [
+          {
+            "text": "흩어진 데이터를 찾는 API 마켓",
+            "href": "#흩어진-데이터를-찾는-api-마켓",
+            "target_count": 1
+          },
+          {
+            "text": "전국 화재 현황을 POST로 호출",
+            "href": "#전국-화재-현황을-post로-호출",
+            "target_count": 1
+          },
+          {
+            "text": "등록일 첫 행이 최신 화재가 아니었던 이유",
+            "href": "#등록일-첫-행이-최신-화재가-아니었던-이유",
+            "target_count": 1
+          },
+          {
+            "text": "3~5일 시차가 바꾼 활용 방향",
+            "href": "#35일-시차가-바꾼-활용-방향",
+            "target_count": 1
+          },
+          {
+            "text": "화재 62개 필드가 여는 분석 질문",
+            "href": "#화재-62개-필드가-여는-분석-질문",
+            "target_count": 1
+          },
+          {
+            "text": "1건부터 확인할 순서",
+            "href": "#1건부터-확인할-순서",
+            "target_count": 1
+          }
+        ],
+        "figure": {
+          "image_loaded": true,
+          "natural_width": 1080,
+          "natural_height": 1350,
+          "alt": "전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림",
+          "caption": "2026년 8월 7일 직접 호출한 결과를 시간순으로 놓았습니다. 최신 화재 접수는 8월 2일, 같은 묶음의 등록 시각은 8월 4일이었습니다. 한 번의 관찰이며 고정 갱신 주기나 공식 SLA를 뜻하지 않습니다. · Codex 시뮬레이션 캡처 · 2026-08-07",
+          "caption_attached": true
+        },
+        "unordered_list": {
+          "tag": "UL",
+          "count": 6,
+          "list_style_type": "disc",
+          "item_display": "list-item",
+          "font_size": "17px",
+          "line_height": "29.24px",
+          "item_gaps": [
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875
+          ],
+          "following_tag": "P",
+          "following_gap": 19.546875
+        },
+        "ordered_list": {
+          "tag": "OL",
+          "count": 6,
+          "list_style_type": "decimal",
+          "item_display": "list-item",
+          "font_size": "17px",
+          "line_height": "29.24px",
+          "item_gaps": [
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875,
+            6.796875
+          ],
+          "following_tag": "P",
+          "following_gap": 19.546875
+        },
+        "table_count": 4,
+        "code_count": 1
+      },
+      "components": {
+        "tables": [
+          {
+            "kind": "table",
+            "index": 0,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "분야",
+              "화면에서 확인한 API 예시",
+              "만들어 볼 수 있는 것"
+            ],
+            "first_row": [
+              "재난안전",
+              "전국 화재·구급·119 신고·구조 현황",
+              "지역별 사건 추이, 출동 시간 분석"
+            ]
+          },
+          {
+            "kind": "table",
+            "index": 1,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "변수",
+              "의미",
+              "처음 넣어 볼 값"
+            ],
+            "first_row": [
+              "page",
+              "페이지 번호",
+              "1"
+            ]
+          },
+          {
+            "kind": "table",
+            "index": 2,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "확인 항목",
+              "관찰값"
+            ],
+            "first_row": [
+              "API 확인 시점",
+              "2026-08-07 23:03 KST"
+            ]
+          },
+          {
+            "kind": "table",
+            "index": 3,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "font_size": "15px",
+            "line_height": "24px",
+            "headers": [
+              "사용 목적",
+              "적합도",
+              "이유"
+            ],
+            "first_row": [
+              "실시간 화재 알림·관제",
+              "낮음",
+              "이번 확인에서는 최신 접수가 약 5일 늦었음"
+            ]
+          }
+        ],
+        "code": [
+          {
+            "kind": "code",
+            "index": 0,
+            "client_width": 318,
+            "scroll_width": 1185,
+            "max_scroll_left": 867,
+            "overflow_x": "auto",
+            "font_size": "14.4px",
+            "line_height": "23.04px",
+            "headers": [],
+            "first_row": []
+          }
+        ]
+      }
+    }
+  ],
+  "fragment": {
+    "client_width": 980,
+    "scroll_width": 980,
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "article_count": 1,
+    "image_loaded": true,
+    "image_source": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcyvwCf%2FdJMb99UTeLJ%2FAAAAAAAAAAAAAAAAAAAAAIbPzQgujtSXfWZuMMLmiGLXuydczb4QltpPB6RAdzqK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DFWrBN1Sl%252FLn6M9kVpcvnCkoHHQU%253D"
+  },
+  "screenshots": [
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-toc.png",
+      "sha256": "600ed8008b6b21c85d5100d99650e942bfd461c8d092444d34760d45601ee1b9",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "toc",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-figure.png",
+      "sha256": "d162672ecc374274678ff959d66183e99f1f17855b28ec543cfe1907bb14af60",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "figure",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-unordered-list.png",
+      "sha256": "498c8c3ab4cfc2cc0b52af6ade72d7275b149adfab60e6f56dabfbcd7b354ed2",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "unordered-list",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-ordered-list.png",
+      "sha256": "b5e54f01d847f11fe459b264a966d78136bcba4f01610d8fca83e0770f1b4d14",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "ordered-list",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-0-left.png",
+      "sha256": "4b39b7d04d8d48ad9026cf7639d8c5cbe9cd7b34a518de14a089ba0cc40e6799",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-0",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 256.40625,
+          "width": 350,
+          "height": 331
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-0-right.png",
+      "sha256": "5f317e796fb19d4cb7ad8670978e56dfbd890c33775b8910a1d605958ebb9913",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-0",
+      "side": "right",
+      "observed": {
+        "scroll_left": 270,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 256.40625,
+          "width": 350,
+          "height": 331
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-1-left.png",
+      "sha256": "38dc3d7057739bff998f94a8a7102c5fb8bcfa9582a04ed831ad849277cbdc04",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-1",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 304.171875,
+          "width": 350,
+          "height": 236
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-1-right.png",
+      "sha256": "98cd3904439dfae48926ec082d2122fce69132db63f7bd6891f2648a3c21926a",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-1",
+      "side": "right",
+      "observed": {
+        "scroll_left": 270,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 304.171875,
+          "width": 350,
+          "height": 236
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-2-left.png",
+      "sha256": "4c9e1d8ab8ee914d3934611cec5ef9085f1dd1935869351c2a71d62bcd5ce543",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-2",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 280.328125,
+          "width": 350,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-2-right.png",
+      "sha256": "45dea91c6a4758da960776367bcbdfcbefab07a5efcba4fd165f84bd4b560723",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-2",
+      "side": "right",
+      "observed": {
+        "scroll_left": 270,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 280.328125,
+          "width": 350,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-3-left.png",
+      "sha256": "11912b294107704840f09aa7e22ef5661132ecd633ab7ae9a08f8f20c4152873",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-3",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 280.4375,
+          "width": 350,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-table-3-right.png",
+      "sha256": "5725cbfbd405d558ff633e83883a6e66fc42f4630ac40cc388f5868b0602cf68",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "table-3",
+      "side": "right",
+      "observed": {
+        "scroll_left": 270,
+        "max_scroll_left": 270,
+        "rect": {
+          "x": 20,
+          "y": 280.4375,
+          "width": 350,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-code-0-left.png",
+      "sha256": "0ee7a4fc7c5cddef84078d257420934f8aee4c8ae15bd0b871a08b658c5270c2",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "code-0",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 837,
+        "rect": {
+          "x": 20,
+          "y": 349.859375,
+          "width": 350,
+          "height": 145.234375
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-code-0-right.png",
+      "sha256": "2fe621bcd7cc5386cb446e2348b78b454dc40ba868da41d06cc08bafe605d38e",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "code-0",
+      "side": "right",
+      "observed": {
+        "scroll_left": 837,
+        "max_scroll_left": 837,
+        "rect": {
+          "x": 20,
+          "y": 349.859375,
+          "width": 350,
+          "height": 145.234375
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-toc.png",
+      "sha256": "bd7530d1146eceb959f479ad5a94c04903be55480bcf7e7746accdde2052f52a",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "toc",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-figure.png",
+      "sha256": "7357177fe0b3f239201bf481aee13f4c3d4d018ecedabc1f49e344b28bcee98d",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "figure",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-unordered-list.png",
+      "sha256": "ebb9df2fa5b2ee773fe18559404acdeb2bf8d30d572a19a843cf8e02d1653ba2",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "unordered-list",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-ordered-list.png",
+      "sha256": "781a917c6d1dd6223d1d275ef6c515c1d1335b59064a8ab053eec700529e4bea",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "ordered-list",
+      "side": "single"
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-0-left.png",
+      "sha256": "131535bb5a10fb4bc86929c19d093664ab046329b9c0717008f0da8b59d225fd",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-0",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 234.6875,
+          "width": 320,
+          "height": 331
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-0-right.png",
+      "sha256": "f07ef004a8af61f7f8cf1d2e5331b33b31e8115609f6ab9b965d5c50ab7d0346",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-0",
+      "side": "right",
+      "observed": {
+        "scroll_left": 300,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 234.6875,
+          "width": 320,
+          "height": 331
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-1-left.png",
+      "sha256": "2f37a746cc036f3ff5436f5509adbfda27da511e49157180206cc69d5e071d78",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-1",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 282.453125,
+          "width": 320,
+          "height": 236
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-1-right.png",
+      "sha256": "50bbd746feff0bcf47ed185bc2c721dd101503bf8b6d400df0c9703f0b4a1926",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-1",
+      "side": "right",
+      "observed": {
+        "scroll_left": 300,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 282.453125,
+          "width": 320,
+          "height": 236
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-2-left.png",
+      "sha256": "2938666f03d3b1501b2e3c3c592d77e57dd70d4f59def3a93b30296fd5ad2ca1",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-2",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 258.078125,
+          "width": 320,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-2-right.png",
+      "sha256": "6106390c38f365a5257104b826c8cb0384a93db0af5f9534c609460b42781900",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-2",
+      "side": "right",
+      "observed": {
+        "scroll_left": 300,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 258.078125,
+          "width": 320,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-3-left.png",
+      "sha256": "3d7a8d5c0be6618809f15b3f16d9caae884b0a68ec21ee502eb6960be811a27b",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-3",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 258.921875,
+          "width": 320,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-table-3-right.png",
+      "sha256": "d1345816b1e3ca86937084946371836d99f14c6edfe42eaa394ba3fd6e25f3b7",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "table-3",
+      "side": "right",
+      "observed": {
+        "scroll_left": 300,
+        "max_scroll_left": 300,
+        "rect": {
+          "x": 20,
+          "y": 258.921875,
+          "width": 320,
+          "height": 283
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-code-0-left.png",
+      "sha256": "77efa2965a38a04a873d4150cd5444f46967771e9d2bb2b22614d918af91c54a",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "code-0",
+      "side": "left",
+      "observed": {
+        "scroll_left": 0,
+        "max_scroll_left": 867,
+        "rect": {
+          "x": 20,
+          "y": 327.140625,
+          "width": 320,
+          "height": 145.234375
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/360-code-0-right.png",
+      "sha256": "eb429eee294d6fe9a907eb7324c86cf02a5da74307847778f53e0b0ad30905b9",
+      "width": 360,
+      "height": 800,
+      "viewport": 360,
+      "component": "code-0",
+      "side": "right",
+      "observed": {
+        "scroll_left": 867,
+        "max_scroll_left": 867,
+        "rect": {
+          "x": 20,
+          "y": 327.140625,
+          "width": 320,
+          "height": 145.234375
+        }
+      }
+    },
+    {
+      "path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/artifacts/qa/independent/component-details/390-fragment-top.png",
+      "sha256": "34c6dae0bf34c925657febb452c9f555d48bc47ce67837d2dc9fcd52c936a0e0",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "component": "fragment-top",
+      "side": "single"
+    }
+  ],
+  "visual_review": {
+    "document_horizontal_overflow": false,
+    "toc_readable_and_targets_unique": true,
+    "figure_and_caption_readable": true,
+    "unordered_list_markers_and_spacing": true,
+    "ordered_list_markers_and_spacing": true,
+    "all_four_tables_left_and_right_readable_at_390_and_360": true,
+    "code_left_and_right_readable_at_390_and_360": true,
+    "labels_collide": false,
+    "fragment_structure_and_remote_image": "pass"
+  },
+  "result": "pass"
+}
