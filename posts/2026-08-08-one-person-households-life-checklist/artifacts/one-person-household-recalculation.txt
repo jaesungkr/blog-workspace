@@ -1,0 +1,22 @@
+Recalculation record
+Actor: Codex
+Checked at: 2026-08-08
+Source: 2025 Population and Housing Census, Statistics Korea / Ministry of Data and Statistics
+Units: thousand households unless noted
+
+1. 2025 one-person household share
+   8,244 / 22,495 * 100 = 36.6481440320071%
+   Official published value = 36.6% (published source uses rounded component values)
+
+2. Change from 2015 registered census to 2025
+   Count: (8,244 - 5,203) / 5,203 * 100 = 58.4470497789737%
+   Share: 36.6% - 27.2% = 9.4 percentage points
+
+3. Age-group composition in 2025
+   Age 39 or younger: 16.9% + 17.5% = 34.4%
+   Age 60 or older: 17.7% + 12.3% + 8.5% = 38.5%
+
+Interpretation boundary:
+- The age sums describe composition, not motivation, happiness, income, or isolation.
+- Ages 40-59 are excluded from both comparison groups.
+- Percentages are based on rounded published values.

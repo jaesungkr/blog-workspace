@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "checked_by": "Codex independent reviewer",
+  "checked_at": "2026-08-08T18:40:20.822985Z",
+  "browser": "Chrome/151.0.7922.108",
+  "protocol_version": "1.3",
+  "session": "7efb87b2-5dd7-423d-b11f-75df66809567",
+  "session_scope": "fresh Chrome process separate from canonical independent capture",
+  "preview_path": "artifacts/qa/independent-rendered/one-person-households-life-checklist-rich-preview.html",
+  "preview_sha256": "3659f65a1f776e91f98fec893c4f47f00185fac6f9fe9a88e6989c99b898c2e5",
+  "component": "second rich-table-wrap",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "states": {
+        "left": {
+          "document_client_width": 390,
+          "document_scroll_width": 390,
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "wrapper_scroll_left": 0,
+          "wrapper_max_scroll_left": 270,
+          "overflow_x": "auto",
+          "font_size": "15px",
+          "line_height": "24px",
+          "headers": [
+            "통계에 잡힌 빈틈",
+            "응답 또는 비중",
+            "한 사람 기준에서 필요한 변화"
+          ],
+          "first_row": [
+            "균형 잡힌 식사의 어려움",
+            "42.6%",
+            "구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원"
+          ],
+          "wrapper_rect": {
+            "x": 20,
+            "y": 244.109375,
+            "width": 350,
+            "height": 356
+          },
+          "table_text": "통계에 잡힌 빈틈\t응답 또는 비중\t한 사람 기준에서 필요한 변화\n균형 잡힌 식사의 어려움\t42.6%\t구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원\n아프거나 위급할 때의 대처\t37.5%\t가족 연락망을 당연하게 전제하지 않는 병원 동행과 긴급 지원\n가장 필요한 정책으로 꼽은 주택 안정 지원\t37.9%\t가구 수보다 실제 주거비 부담과 안전, 생활권을 함께 보는 주거 정책\n고립과 외로움\t23.3%\t일회성 행사보다 동네에서 반복적으로 만날 수 있는 관계망",
+          "image_loaded": true,
+          "h1_count": 1,
+          "screenshot": {
+            "path": "artifacts/qa/independent/component-details/table-2-390-left.png",
+            "sha256": "69a7cfabc4b7c17cf09a549f3025f34489d9e92b5acfa5b9626e5412a7f2beac",
+            "pixel_width": 390,
+            "pixel_height": 844
+          }
+        },
+        "right": {
+          "document_client_width": 390,
+          "document_scroll_width": 390,
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "wrapper_scroll_left": 270,
+          "wrapper_max_scroll_left": 270,
+          "overflow_x": "auto",
+          "font_size": "15px",
+          "line_height": "24px",
+          "headers": [
+            "통계에 잡힌 빈틈",
+            "응답 또는 비중",
+            "한 사람 기준에서 필요한 변화"
+          ],
+          "first_row": [
+            "균형 잡힌 식사의 어려움",
+            "42.6%",
+            "구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원"
+          ],
+          "wrapper_rect": {
+            "x": 20,
+            "y": 244.109375,
+            "width": 350,
+            "height": 356
+          },
+          "table_text": "통계에 잡힌 빈틈\t응답 또는 비중\t한 사람 기준에서 필요한 변화\n균형 잡힌 식사의 어려움\t42.6%\t구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원\n아프거나 위급할 때의 대처\t37.5%\t가족 연락망을 당연하게 전제하지 않는 병원 동행과 긴급 지원\n가장 필요한 정책으로 꼽은 주택 안정 지원\t37.9%\t가구 수보다 실제 주거비 부담과 안전, 생활권을 함께 보는 주거 정책\n고립과 외로움\t23.3%\t일회성 행사보다 동네에서 반복적으로 만날 수 있는 관계망",
+          "image_loaded": true,
+          "h1_count": 1,
+          "screenshot": {
+            "path": "artifacts/qa/independent/component-details/table-2-390-right.png",
+            "sha256": "b58bf093cf242437e8a2a48cf386352b241c0c8715ca6e405ad3c282e45e4c68",
+            "pixel_width": 390,
+            "pixel_height": 844
+          }
+        }
+      },
+      "hero": {
+        "figure_rect": {
+          "x": 20,
+          "y": 289.921875,
+          "width": 350,
+          "height": 263.21875,
+          "bottom": 553.140625
+        },
+        "caption_rect": {
+          "x": 20,
+          "y": 499.765625,
+          "width": 350,
+          "height": 53.375,
+          "top": 499.765625
+        },
+        "caption_text": "한 자리의 식탁과 한 켤레의 신발로 혼자 사는 집의 온도를 담았습니다. · 생성 이미지",
+        "caption_font_size": "14px",
+        "caption_line_height": "21.7px",
+        "attached_gap": -53.375,
+        "image_loaded": true,
+        "screenshot": {
+          "path": "artifacts/qa/independent/component-details/hero-caption-390.png",
+          "sha256": "153b29aa0dbb98edfc7f121e988302524a75e807bc4dde113176673066adf4f9",
+          "pixel_width": 390,
+          "pixel_height": 844
+        }
+      }
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "states": {
+        "left": {
+          "document_client_width": 360,
+          "document_scroll_width": 360,
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "wrapper_scroll_left": 0,
+          "wrapper_max_scroll_left": 300,
+          "overflow_x": "auto",
+          "font_size": "15px",
+          "line_height": "24px",
+          "headers": [
+            "통계에 잡힌 빈틈",
+            "응답 또는 비중",
+            "한 사람 기준에서 필요한 변화"
+          ],
+          "first_row": [
+            "균형 잡힌 식사의 어려움",
+            "42.6%",
+            "구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원"
+          ],
+          "wrapper_rect": {
+            "x": 20,
+            "y": 221.5,
+            "width": 320,
+            "height": 356
+          },
+          "table_text": "통계에 잡힌 빈틈\t응답 또는 비중\t한 사람 기준에서 필요한 변화\n균형 잡힌 식사의 어려움\t42.6%\t구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원\n아프거나 위급할 때의 대처\t37.5%\t가족 연락망을 당연하게 전제하지 않는 병원 동행과 긴급 지원\n가장 필요한 정책으로 꼽은 주택 안정 지원\t37.9%\t가구 수보다 실제 주거비 부담과 안전, 생활권을 함께 보는 주거 정책\n고립과 외로움\t23.3%\t일회성 행사보다 동네에서 반복적으로 만날 수 있는 관계망",
+          "image_loaded": true,
+          "h1_count": 1,
+          "screenshot": {
+            "path": "artifacts/qa/independent/component-details/table-2-360-left.png",
+            "sha256": "13f14563b803c20913e4466ebf3ef6605578b4ebe1e9ed2a779f7fe78f7e6f76",
+            "pixel_width": 360,
+            "pixel_height": 800
+          }
+        },
+        "right": {
+          "document_client_width": 360,
+          "document_scroll_width": 360,
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "wrapper_scroll_left": 300,
+          "wrapper_max_scroll_left": 300,
+          "overflow_x": "auto",
+          "font_size": "15px",
+          "line_height": "24px",
+          "headers": [
+            "통계에 잡힌 빈틈",
+            "응답 또는 비중",
+            "한 사람 기준에서 필요한 변화"
+          ],
+          "first_row": [
+            "균형 잡힌 식사의 어려움",
+            "42.6%",
+            "구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원"
+          ],
+          "wrapper_rect": {
+            "x": 20,
+            "y": 221.5,
+            "width": 320,
+            "height": 356
+          },
+          "table_text": "통계에 잡힌 빈틈\t응답 또는 비중\t한 사람 기준에서 필요한 변화\n균형 잡힌 식사의 어려움\t42.6%\t구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원\n아프거나 위급할 때의 대처\t37.5%\t가족 연락망을 당연하게 전제하지 않는 병원 동행과 긴급 지원\n가장 필요한 정책으로 꼽은 주택 안정 지원\t37.9%\t가구 수보다 실제 주거비 부담과 안전, 생활권을 함께 보는 주거 정책\n고립과 외로움\t23.3%\t일회성 행사보다 동네에서 반복적으로 만날 수 있는 관계망",
+          "image_loaded": true,
+          "h1_count": 1,
+          "screenshot": {
+            "path": "artifacts/qa/independent/component-details/table-2-360-right.png",
+            "sha256": "796dbe3bddaaf0bd48712e3a20a481092bedda4c3c300a45c973af51f559b18b",
+            "pixel_width": 360,
+            "pixel_height": 800
+          }
+        }
+      }
+    }
+  ]
+}

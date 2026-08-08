@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1인 가구 800만 시대, 혼자 사는 삶이 바꾼 한국의 일상</title>
+  <meta name="description" content="한국의 1인 가구가 800만을 넘어선 지금, 최신 통계로 달라진 가구 풍경과 주거·돌봄·식사·관계의 새로운 기준을 살펴봅니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Trends</p>
+    <h1>1인 가구 800만 시대, 혼자 사는 삶이 바꾼 한국의 일상</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>혼자 산다고 하면 대학생 자취방이나 직장인 원룸부터 떠올리기 쉽습니다. 하지만 지금의 1인 가구는 청년만의 이야기가 아닙니다. 취업 때문에 독립한 사람도 있고, 이혼이나 사별 뒤 혼자 지내는 중장년과 노년도 있습니다. <strong>2025년 한국의 1인 가구는 824만 4천 가구, 전체 일반가구의 36.6%입니다.</strong></p>
+<p>이 정도면 1인 가구는 특이한 생활 방식이 아니라 한국에서 가장 흔한 가구 형태입니다. 중요한 건 숫자보다 그 뒤의 생활입니다. 집, 식사, 병원, 관계처럼 예전에는 가족이 나눠 맡던 일을 한 사람이 감당하는 경우가 많아졌습니다. 이 변화가 우리의 일상과 제도에 무엇을 요구하는지 살펴보겠습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="one-person-household-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="../../../assets/screenshots/one-person-household-hero-v2.png" alt="햇살이 드는 작은 원룸에 1인용 식탁과 신발 한 켤레가 놓인 모습" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">한 자리의 식탁과 한 켤레의 신발로 혼자 사는 집의 온도를 담았습니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#가장-흔한-가구가-된-1인-가구">가장 흔한 가구가 된 1인 가구</a></li>
+<li><a href="#혼자-사는-이유도-제각각">혼자 사는 이유도 제각각</a></li>
+<li><a href="#자유-뒤에-숨어-있는-생활의-비용">자유 뒤에 숨어 있는 생활의 비용</a></li>
+<li><a href="#1인-가구가-바꾼-사회의-기본값">1인 가구가 바꾼 사회의 기본값</a></li>
+<li><a href="#가족센터에서-찾을-수-있는-실제-지원">가족센터에서 찾을 수 있는 실제 지원</a></li>
+<li><a href="#혼자-사는-일이-특별하지-않은-사회">혼자 사는 일이 특별하지 않은 사회</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="가장-흔한-가구가-된-1인-가구">
+<h2 id="가장-흔한-가구가-된-1인-가구">가장 흔한 가구가 된 1인 가구</h2>
+<p><a href="https://mods.go.kr/boardDownload.es?bid=203&amp;list_no=446219&amp;seq=11" style="color:#1a73e8;text-decoration:none;" target="_blank">2025년 인구주택총조사</a>에 따르면 1인 가구는 824만 4천 가구로 일반가구의 36.6%를 차지합니다. 2015년 520만 3천 가구와 비교하면 10년 사이 약 58.4% 늘었습니다. 같은 기간 전체 가구에서 차지하는 비중도 27.2%에서 36.6%로 9.4%p 높아졌습니다.</p>
+<p>눈에 띄는 점은 연령입니다. 공식 연령대별 구성비를 직접 더해 보면 2025년 1인 가구 가운데 39세 이하는 34.4%, 60세 이상은 38.5%였습니다. 혼자 사는 삶을 자취하는 청년의 이미지로만 보면 오히려 더 큰 한쪽을 놓치게 됩니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>2025년 1인 가구</th><th>수치</th><th>읽을 때 주의할 점</th></tr></thead><tbody><tr><td>전체 규모</td><td>824만 4천 가구</td><td>일반가구 기준</td></tr><tr><td>일반가구 중 비중</td><td>36.6%</td><td>개인 인구 비중과는 다름</td></tr><tr><td>39세 이하 구성비</td><td>34.4%</td><td>20대 이하와 30대 합계</td></tr><tr><td>60세 이상 구성비</td><td>38.5%</td><td>60대·70대·80대 이상 합계</td></tr></tbody></table></div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="혼자-사는-이유도-제각각">
+<h2 id="혼자-사는-이유도-제각각">혼자 사는 이유도 제각각</h2>
+<p>1인 가구라는 같은 이름 안에는 꽤 다른 사정이 들어 있습니다. <a href="https://www.kostat.go.kr/boardDownload.es?bid=10820&amp;list_no=434103&amp;seq=3" style="color:#1a73e8;text-decoration:none;" target="_blank">2024 통계로 보는 1인가구</a>에는 2023년 가족실태조사 결과가 실려 있습니다. 혼자 사는 주된 이유는 배우자 사망 31.9%, 학업·직장 22.4%, 혼자 살고 싶어서 14.3% 순이었습니다.</p>
+<p>연령별로도 차이가 큽니다. 40대까지는 학업·직장이, 50대는 이혼이, 60대 이상은 배우자 사망이 가장 큰 이유였습니다. 그래서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">혼자 살아서 자유롭다</code>거나 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">혼자 살아서 외롭다</code>는 한 문장으로 1인 가구를 설명하기 어렵습니다. 선택한 독립과 예기치 않게 맞은 혼자 생활에는 필요한 도움이 다를 수밖에 없습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="자유-뒤에-숨어-있는-생활의-비용">
+<h2 id="자유-뒤에-숨어-있는-생활의-비용">자유 뒤에 숨어 있는 생활의 비용</h2>
+<p>사람들이 실제로 불편하다고 말한 부분은 아주 일상적입니다. 2023년 1인 가구의 42.6%는 균형 잡힌 식사가 어렵다고 답했습니다. 아프거나 위급할 때 혼자 대처하기 어렵다는 응답은 37.5%였습니다. 가사 부담은 25.6%, 고립과 외로움은 23.3%였습니다.</p>
+<p>돈도 총액만 보면 오해하기 쉽습니다. <a href="https://mods.go.kr/boardDownload.es?bid=10820&amp;list_no=442130&amp;seq=7" style="color:#1a73e8;text-decoration:none;" target="_blank">2025 통계로 보는 1인가구</a>에 따르면 2024년 1인 가구의 월평균 소비지출은 168만 9천 원으로 전체 가구보다 적었습니다. 다만 지출에서 주거·수도·광열이 차지하는 비중은 18.4%로 가장 컸습니다. 2024 보고서에 실린 2023년 가족실태조사에서 1인 가구가 가장 필요하다고 꼽은 정책 역시 주택 안정 지원 37.9%였습니다. 혼자 쓰는 돈이 적다고 해서 주거비 부담까지 가벼운 것은 아닙니다.</p>
+<p>이 숫자들은 혼자 사는 일이 불행하다는 판정표가 아닙니다. 어디가 자주 비고, 한 번 문제가 생기면 혼자 메워야 하는지를 보여 주는 신호에 가깝습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="1인-가구가-바꾼-사회의-기본값">
+<h2 id="1인-가구가-바꾼-사회의-기본값">1인 가구가 바꾼 사회의 기본값</h2>
+<p>이 통계를 개인의 생활 습관 문제로만 읽으면 답은 늘 비슷해집니다. 잘 챙겨 먹고, 비상 연락망을 만들고, 돈을 아껴 쓰라는 이야기입니다. 물론 개인의 준비도 필요하지만, 1인 가구가 800만을 넘은 사회라면 질문의 방향도 달라져야 합니다. 한 사람이 더 부지런해져야 하는지가 아니라, 여러 사람이 사는 집을 전제로 만든 주거·돌봄·서비스가 한 사람에게도 제대로 작동하는지를 물어야 합니다.</p>
+<p>아래 표의 마지막 열은 공식 정책 분류가 아니라, 앞서 확인한 통계를 바탕으로 정리한 생활 기준입니다. 구체적인 정책의 효과나 우선순위를 검증한 결과는 아닙니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>통계에 잡힌 빈틈</th><th>응답 또는 비중</th><th>한 사람 기준에서 필요한 변화</th></tr></thead><tbody><tr><td>균형 잡힌 식사의 어려움</td><td>42.6%</td><td>구매부터 보관·조리까지 한 사람이 맡는 생활을 고려한 식생활 지원</td></tr><tr><td>아프거나 위급할 때의 대처</td><td>37.5%</td><td>가족 연락망을 당연하게 전제하지 않는 병원 동행과 긴급 지원</td></tr><tr><td>가장 필요한 정책으로 꼽은 주택 안정 지원</td><td>37.9%</td><td>가구 수보다 실제 주거비 부담과 안전, 생활권을 함께 보는 주거 정책</td></tr><tr><td>고립과 외로움</td><td>23.3%</td><td>일회성 행사보다 동네에서 반복적으로 만날 수 있는 관계망</td></tr></tbody></table></div>
+<p>같은 숫자라도 답을 개인 체크리스트로 끝내면 중요한 절반을 놓칩니다. 1인 가구의 증가는 집 안에서 가족이 맡던 역할 일부를 시장과 지역사회, 공공서비스가 나눠야 한다는 신호이기도 합니다. 1인용 상품이 많아지는 것만으로는 식사, 아픈 날의 동행, 주거 불안 같은 빈틈까지 해결되지 않습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="가족센터에서-찾을-수-있는-실제-지원">
+<h2 id="가족센터에서-찾을-수-있는-실제-지원">가족센터에서 찾을 수 있는 실제 지원</h2>
+<p>혼자 해결하기 어려운 부분은 지역 서비스를 이용할 수 있습니다. <a href="https://www.mogef.go.kr/nw/rpd/nw_rpd_s001d.do?bbtSn=710892&amp;mid=news405" style="color:#1a73e8;text-decoration:none;" target="_blank">성평등가족부의 2026년 안내</a>에 따르면 전국 가족센터는 관계망 형성, 식생활·주거 교육, 안전·건강 프로그램을 운영합니다. 현관문 안전장치, 부동산 안심동행, 병원안심동행처럼 제공하는 내용은 지역마다 다릅니다.</p>
+<p>가까운 가족센터의 프로그램은 <a href="https://www.familynet.or.kr" style="color:#1a73e8;text-decoration:none;" target="_blank">가족센터 누리집</a>이나 대표번호 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">1577-9337</code>에서 확인할 수 있습니다. 대상 연령과 소득 기준, 신청 기간은 지역마다 다를 수 있습니다. 거주지 센터의 현재 공고를 다시 확인하세요.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="혼자-사는-일이-특별하지-않은-사회">
+<h2 id="혼자-사는-일이-특별하지-않은-사회">혼자 사는 일이 특별하지 않은 사회</h2>
+<p>혼자 사는 삶은 누군가에게 선택이고, 누군가에게는 상황입니다. 공통점은 생활의 책임을 나눌 사람이 집 안에 없다는 점입니다. 1인 가구를 하나의 성격이나 세대로 묶을 수 없는 이유도 여기에 있습니다.</p>
+<p>800만 가구 시대의 변화는 1인분 상품이 늘어나는 데서 끝나지 않아야 합니다. 집, 돌봄, 안전, 관계가 한 사람 기준에서도 무리 없이 작동해야 합니다. 혼자 사는 일이 특별하지 않은 만큼, 혼자 살아도 불편과 위험이 지나치게 커지지 않는 사회가 필요해 보입니다.</p>
+</section>
+</article>
+</body>
+</html>
