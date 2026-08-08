@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "pass",
+  "verified_at": "2026-08-08T18:35:17.573617Z",
+  "verified_by": "Turing independent reviewer",
+  "remote_media_sha256": "c73a6fa6e55988d6523dc9cb6cee324421b90f65a062bfa42ec5140960cd5126",
+  "media_sha256": "9116133b46cb14bbd4644113fc4ab22c8450b76ddf33b6e87aa09eecc52ecf67",
+  "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
+  "fetcher_files": {
+    "remote_media.py": "ac44710fa5611571d1d8ee3cc6b21ab656df549bd2d49ccd32e4285b91bbb6b6",
+    "rich_post_common.py": "ac9167175f3f3682b163e8d9cfb0b7b55e9158297db11c9412d50ca18bf022bc"
+  },
+  "items": [
+    {
+      "id": "openai-gpt56-sol-header",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "byte_length": 99700,
+      "sha256": "c93db6aa649ac718c6cd5a89995287d753e88b470eeebf91f7d00e168283e8d7",
+      "format": "jpeg",
+      "width": 1280,
+      "height": 760,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    }
+  ]
+}

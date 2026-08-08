@@ -1,0 +1,2153 @@
+{
+  "version": 1,
+  "checked_at": "2026-08-08T18:35:53.871923Z",
+  "checked_by": "Turing independent reviewer",
+  "browser_session": "b62d9638-7ee1-4541-95a4-9cc8feb6647f",
+  "light_preview_path": "artifacts/qa/independent-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+  "light_preview_sha256": "3cbfa562a6ddfe6ae2d873d45975a3f4b893c1156f6470a3e11a5d0effe3da0d",
+  "dark_preview_path": "artifacts/qa/independent-dark-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+  "dark_preview_sha256": "dc0054aa5255f8a8d865226e34f4cf64513665ef79762d8d94ee465f9d99361d",
+  "themes": {
+    "light": [
+      {
+        "width": 1280,
+        "height": 900,
+        "page": {
+          "ready_state": "complete",
+          "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-gpt-5-6-sol-chatgpt-update/artifacts/qa/independent-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+          "inner_width": 1280,
+          "inner_height": 900,
+          "client_width": 1280,
+          "client_height": 900,
+          "scroll_width": 1280,
+          "scroll_height": 6432,
+          "h1_count": 1,
+          "toc_anchor_count": 9,
+          "toc_targets_unique": true,
+          "image_count": 1,
+          "images_loaded": true,
+          "images": [
+            {
+              "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+              "complete": true,
+              "natural_width": 1280,
+              "natural_height": 760
+            }
+          ]
+        },
+        "title": {
+          "text": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료",
+          "count": 1,
+          "font_size": "42px",
+          "line_height": "50.4px"
+        },
+        "styles": {
+          "body": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "normal"
+          },
+          "article": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "section": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "alternate_section": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(245, 245, 247)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "toc": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "heading": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "34px",
+            "line_height": "42.5px"
+          },
+          "paragraph": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(51, 51, 51)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_link": {
+            "color": "rgb(26, 115, 232)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(26, 115, 232)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_code": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgb(240, 240, 240)",
+            "border_color": "rgb(51, 51, 51)",
+            "font_size": "15.64px",
+            "line_height": "26.9008px"
+          },
+          "table_header": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(245, 245, 247)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "table_cell": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "figure": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "caption": {
+            "color": "rgb(99, 99, 102)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(99, 99, 102)",
+            "font_size": "14px",
+            "line_height": "21.7px"
+          }
+        },
+        "tables": [
+          {
+            "index": 0,
+            "document_client_width": 1280,
+            "document_scroll_width": 1280,
+            "wrapper_client_width": 760,
+            "wrapper_scroll_width": 760,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 760,
+            "table_scroll_width": 760,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "사용자",
+              "바뀌는 모델·기능",
+              "발표 기준 시점",
+              "확인할 점"
+            ],
+            "representative_first_row": [
+              "Free·Go",
+              "기본 모델을 GPT-5.6 Luna로 전환",
+              "8월 6일이 포함된 주",
+              "계정별 날짜는 공개하지 않음"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-table-1-left.png",
+              "sha256": "dafa24769eddca0b455750a1089cefe43c5ff78dc6125248086178ffd37014ef",
+              "x": 260,
+              "y": 1959.5,
+              "width": 760,
+              "height": 308,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "index": 1,
+            "document_client_width": 1280,
+            "document_scroll_width": 1280,
+            "wrapper_client_width": 760,
+            "wrapper_scroll_width": 760,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 760,
+            "table_scroll_width": 760,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "OpenAI 공개 평가",
+              "GPT-5.6 Luna",
+              "GPT-5.6 Sol",
+              "GPT-5.5"
+            ],
+            "representative_first_row": [
+              "Agents' Last Exam",
+              "50.3%",
+              "52.7%",
+              "46.9%"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-table-2-left.png",
+              "sha256": "cb0fb9823f39155eaec23e706241bc98baa5a4a337e3b2bac77f9805200a2244",
+              "x": 260,
+              "y": 2827.4375,
+              "width": 760,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "lists": [
+          {
+            "selector": ".devlog-rich__toc ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 9,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "23.2px",
+            "font_size": "16px",
+            "line_height": "30.4px",
+            "first_to_second_gap": 0,
+            "following_tag": null,
+            "list_to_following_gap": null,
+            "first_item": "무료 Luna가 이번 업데이트의 중심",
+            "second_item": "Luna 성능은 어디까지인가",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-list-toc.png",
+              "sha256": "2c14ca6ad23c96dad137dca529ec848b75198961737bf425b15953d19ebf309d",
+              "x": 287,
+              "y": 1418.015625,
+              "width": 706,
+              "height": 273.515625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 3,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "현재 로그인한 계정이 Free·Go인지 Plus·Pro인지 확인합니다.",
+            "second_item": "Free·Go라면 기본 모델이 Luna인지, 입력창 주변에 Think 버튼이 보이는지 확인합니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-list-ordered.png",
+              "sha256": "fc330a3c1a8d736066c36365ecdd96a114554798c141c7fdbe9729bb53ab70d0",
+              "x": 260,
+              "y": 3694.71875,
+              "width": 760,
+              "height": 130.53125,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-list-ordered-context.png",
+              "sha256": "28f9e34c2d9322f03244e2f442c9a42319be07f003a937097647c02c2c5c4776",
+              "x": 260,
+              "y": 3694.71875,
+              "width": 760,
+              "height": 208.546875
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ul",
+            "index": 0,
+            "tag": "UL",
+            "item_count": 3,
+            "list_style_type": "disc",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "빠른 사실 확인이나 짧은 문장 수정은 낮은 사고량으로 시작합니다.",
+            "second_item": "계획, 조사, 긴 글, 코딩, 중요한 선택은 슬라이더를 올립니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-list-unordered.png",
+              "sha256": "430bf1e2d888ee196f14f7f2b393aa11897d9b6f83a8ac53340212588a2bb795",
+              "x": 260,
+              "y": 5074.125,
+              "width": 760,
+              "height": 101.296875,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-list-unordered-context.png",
+              "sha256": "338e2cee9896e909596ee5fd26d340c0be4a1d61e77c217fbc77547460b1dd43",
+              "x": 260,
+              "y": 5074.125,
+              "width": 760,
+              "height": 208.546875
+            }
+          }
+        ],
+        "figures": [
+          {
+            "index": 0,
+            "tag": "FIGURE",
+            "text": "OpenAI는 2026년 8월 6일 ChatGPT용 GPT-5.6 Sol 개선과 무료 이용자의 GPT-5.6 Luna 접근 확대를 함께 발표했습니다. · Codex in-app browser run 캡처 · 2026-08-08",
+            "x": 182,
+            "y": 638.375,
+            "width": 916,
+            "height": 610.0625,
+            "client_width": 916,
+            "scroll_width": 916,
+            "client_height": 610,
+            "scroll_height": 610,
+            "overflow_x": "visible",
+            "overflow_y": "visible",
+            "font_size": "16px",
+            "line_height": "23.52px",
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-1280-figure-1.png",
+              "sha256": "fe1592f2a7ba4da6f96b779a437e35f17361cce428eb23e355219d81cc13f760",
+              "x": 182,
+              "y": 638.375,
+              "width": 916,
+              "height": 610.0625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "top_screenshot": {
+          "path": "artifacts/qa/independent/component-details/light-1280-top.png",
+          "sha256": "380e1c3e532378845d47847c12c532e99b7ba8e9eeb37ca67587d78d0e56162e"
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "page": {
+          "ready_state": "complete",
+          "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-gpt-5-6-sol-chatgpt-update/artifacts/qa/independent-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+          "inner_width": 390,
+          "inner_height": 844,
+          "client_width": 390,
+          "client_height": 844,
+          "scroll_width": 390,
+          "scroll_height": 8393,
+          "h1_count": 1,
+          "toc_anchor_count": 9,
+          "toc_targets_unique": true,
+          "image_count": 1,
+          "images_loaded": true,
+          "images": [
+            {
+              "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+              "complete": true,
+              "natural_width": 1280,
+              "natural_height": 760
+            }
+          ]
+        },
+        "title": {
+          "text": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료",
+          "count": 1,
+          "font_size": "32px",
+          "line_height": "38.4px"
+        },
+        "styles": {
+          "body": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "normal"
+          },
+          "article": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "section": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "alternate_section": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(245, 245, 247)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "toc": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "heading": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "30px",
+            "line_height": "37.5px"
+          },
+          "paragraph": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(51, 51, 51)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_link": {
+            "color": "rgb(26, 115, 232)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(26, 115, 232)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_code": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgb(240, 240, 240)",
+            "border_color": "rgb(51, 51, 51)",
+            "font_size": "15.64px",
+            "line_height": "26.9008px"
+          },
+          "table_header": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(245, 245, 247)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "table_cell": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "figure": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "caption": {
+            "color": "rgb(99, 99, 102)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(99, 99, 102)",
+            "font_size": "14px",
+            "line_height": "21.7px"
+          }
+        },
+        "tables": [
+          {
+            "index": 0,
+            "document_client_width": 390,
+            "document_scroll_width": 390,
+            "wrapper_client_width": 350,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "사용자",
+              "바뀌는 모델·기능",
+              "발표 기준 시점",
+              "확인할 점"
+            ],
+            "representative_first_row": [
+              "Free·Go",
+              "기본 모델을 GPT-5.6 Luna로 전환",
+              "8월 6일이 포함된 주",
+              "계정별 날짜는 공개하지 않음"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-table-1-left.png",
+              "sha256": "7e4d59c1eace1d19db86903fed5ff47fccf2e9af40c8d2eaebbe13ef94bb8b66",
+              "x": 20,
+              "y": 1914.359375,
+              "width": 350,
+              "height": 332,
+              "scroll_left": 0,
+              "max_scroll_left": 270
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-table-1-right.png",
+              "sha256": "f9eb30323a746c88939ceb4c78a2bebad37b6e9854ff88e87b031f32a813df1d",
+              "x": 20,
+              "y": 1914.359375,
+              "width": 350,
+              "height": 332,
+              "scroll_left": 270,
+              "max_scroll_left": 270
+            }
+          },
+          {
+            "index": 1,
+            "document_client_width": 390,
+            "document_scroll_width": 390,
+            "wrapper_client_width": 350,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "OpenAI 공개 평가",
+              "GPT-5.6 Luna",
+              "GPT-5.6 Sol",
+              "GPT-5.5"
+            ],
+            "representative_first_row": [
+              "Agents' Last Exam",
+              "50.3%",
+              "52.7%",
+              "46.9%"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-table-2-left.png",
+              "sha256": "521cece30c8af8f70763e4a76a58fda71aae948d60d0eb2bc0146eadbdaba926",
+              "x": 20,
+              "y": 3077.640625,
+              "width": 350,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 270
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-table-2-right.png",
+              "sha256": "25bc95857830983792f0cbfd98374d728fe2a8bf0e7ad0318ff5facf931184b2",
+              "x": 20,
+              "y": 3077.640625,
+              "width": 350,
+              "height": 189,
+              "scroll_left": 270,
+              "max_scroll_left": 270
+            }
+          }
+        ],
+        "lists": [
+          {
+            "selector": ".devlog-rich__toc ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 9,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "23.2px",
+            "font_size": "16px",
+            "line_height": "30.4px",
+            "first_to_second_gap": 0,
+            "following_tag": null,
+            "list_to_following_gap": null,
+            "first_item": "무료 Luna가 이번 업데이트의 중심",
+            "second_item": "Luna 성능은 어디까지인가",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-list-toc.png",
+              "sha256": "58059cf688328aab8cb25d781c71b86537126437b245de7d9bd6ace766c5cb6f",
+              "x": 41,
+              "y": 1323.140625,
+              "width": 308,
+              "height": 273.515625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 3,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "현재 로그인한 계정이 Free·Go인지 Plus·Pro인지 확인합니다.",
+            "second_item": "Free·Go라면 기본 모델이 Luna인지, 입력창 주변에 Think 버튼이 보이는지 확인합니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-list-ordered.png",
+              "sha256": "36194e64093f91d6a44328c13a943a903032d294b999c4aa66458fe1fc6b03a2",
+              "x": 20,
+              "y": 4274.734375,
+              "width": 350,
+              "height": 218.234375,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-list-ordered-context.png",
+              "sha256": "a5b1402c43fce80b6b918e53db0a7f4a60738594d2ce52257ed8570d6e8820bf",
+              "x": 20,
+              "y": 4274.734375,
+              "width": 350,
+              "height": 354.71875
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ul",
+            "index": 0,
+            "tag": "UL",
+            "item_count": 3,
+            "list_style_type": "disc",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "빠른 사실 확인이나 짧은 문장 수정은 낮은 사고량으로 시작합니다.",
+            "second_item": "계획, 조사, 긴 글, 코딩, 중요한 선택은 슬라이더를 올립니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-list-unordered.png",
+              "sha256": "e603cb355fa0029cbafb690d01c4dbccfd25b1322f22bfaf2d346bb572a76d44",
+              "x": 20,
+              "y": 6388.734375,
+              "width": 350,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-list-unordered-context.png",
+              "sha256": "f565cf80727633315ae6ea3fbb5d47eb45646cf6f966248f922aa69b926684cb",
+              "x": 20,
+              "y": 6388.734375,
+              "width": 350,
+              "height": 383.953125
+            }
+          }
+        ],
+        "figures": [
+          {
+            "index": 0,
+            "tag": "FIGURE",
+            "text": "OpenAI는 2026년 8월 6일 ChatGPT용 GPT-5.6 Sol 개선과 무료 이용자의 GPT-5.6 Luna 접근 확대를 함께 발표했습니다. · Codex in-app browser run 캡처 · 2026-08-08",
+            "x": 20,
+            "y": 865.875,
+            "width": 350,
+            "height": 295.6875,
+            "client_width": 350,
+            "scroll_width": 350,
+            "client_height": 296,
+            "scroll_height": 296,
+            "overflow_x": "visible",
+            "overflow_y": "visible",
+            "font_size": "16px",
+            "line_height": "23.52px",
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-390-figure-1.png",
+              "sha256": "dfb49feab02af342689ddda3e2416347f0f497ed7c93eee9353d4fedc7a3425d",
+              "x": 20,
+              "y": 865.875,
+              "width": 350,
+              "height": 295.6875,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "top_screenshot": {
+          "path": "artifacts/qa/independent/component-details/light-390-top.png",
+          "sha256": "8a1fc6e2750bc1225a87d02a87845927fbf32b5f0b1f51798d37ba2fc509f313"
+        }
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "page": {
+          "ready_state": "complete",
+          "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-gpt-5-6-sol-chatgpt-update/artifacts/qa/independent-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+          "inner_width": 360,
+          "inner_height": 800,
+          "client_width": 360,
+          "client_height": 800,
+          "scroll_width": 360,
+          "scroll_height": 8815,
+          "h1_count": 1,
+          "toc_anchor_count": 9,
+          "toc_targets_unique": true,
+          "image_count": 1,
+          "images_loaded": true,
+          "images": [
+            {
+              "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+              "complete": true,
+              "natural_width": 1280,
+              "natural_height": 760
+            }
+          ]
+        },
+        "title": {
+          "text": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료",
+          "count": 1,
+          "font_size": "32px",
+          "line_height": "38.4px"
+        },
+        "styles": {
+          "body": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "normal"
+          },
+          "article": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "section": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "alternate_section": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(245, 245, 247)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "toc": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(255, 255, 255)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "heading": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "30px",
+            "line_height": "37.5px"
+          },
+          "paragraph": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(51, 51, 51)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_link": {
+            "color": "rgb(26, 115, 232)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(26, 115, 232)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_code": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgb(240, 240, 240)",
+            "border_color": "rgb(51, 51, 51)",
+            "font_size": "15.64px",
+            "line_height": "26.9008px"
+          },
+          "table_header": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgb(245, 245, 247)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "table_cell": {
+            "color": "rgb(51, 51, 51)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(224, 224, 224)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "figure": {
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "caption": {
+            "color": "rgb(99, 99, 102)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(99, 99, 102)",
+            "font_size": "14px",
+            "line_height": "21.7px"
+          }
+        },
+        "tables": [
+          {
+            "index": 0,
+            "document_client_width": 360,
+            "document_scroll_width": 360,
+            "wrapper_client_width": 320,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "사용자",
+              "바뀌는 모델·기능",
+              "발표 기준 시점",
+              "확인할 점"
+            ],
+            "representative_first_row": [
+              "Free·Go",
+              "기본 모델을 GPT-5.6 Luna로 전환",
+              "8월 6일이 포함된 주",
+              "계정별 날짜는 공개하지 않음"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-table-1-left.png",
+              "sha256": "94dccc99735ae65990f1bd41850d2e73e2df0ad91dab3162d08403a0268d7277",
+              "x": 20,
+              "y": 1947.46875,
+              "width": 320,
+              "height": 332,
+              "scroll_left": 0,
+              "max_scroll_left": 300
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-table-1-right.png",
+              "sha256": "13975255172a75701e3f49c263933411b657b94128b61a7ba6d7e33cc7869abd",
+              "x": 20,
+              "y": 1947.46875,
+              "width": 320,
+              "height": 332,
+              "scroll_left": 300,
+              "max_scroll_left": 300
+            }
+          },
+          {
+            "index": 1,
+            "document_client_width": 360,
+            "document_scroll_width": 360,
+            "wrapper_client_width": 320,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "OpenAI 공개 평가",
+              "GPT-5.6 Luna",
+              "GPT-5.6 Sol",
+              "GPT-5.5"
+            ],
+            "representative_first_row": [
+              "Agents' Last Exam",
+              "50.3%",
+              "52.7%",
+              "46.9%"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-table-2-left.png",
+              "sha256": "db31f2c1f8994587e112b28d748b2e25ec50d4f279c5b8e380bd727f98757fe2",
+              "x": 20,
+              "y": 3169.21875,
+              "width": 320,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 300
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-table-2-right.png",
+              "sha256": "9e84c2c5a4984cf70beaefe802c4c121235aac67cb207ae020a11583a9843de5",
+              "x": 20,
+              "y": 3169.21875,
+              "width": 320,
+              "height": 189,
+              "scroll_left": 300,
+              "max_scroll_left": 300
+            }
+          }
+        ],
+        "lists": [
+          {
+            "selector": ".devlog-rich__toc ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 9,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "23.2px",
+            "font_size": "16px",
+            "line_height": "30.4px",
+            "first_to_second_gap": 0,
+            "following_tag": null,
+            "list_to_following_gap": null,
+            "first_item": "무료 Luna가 이번 업데이트의 중심",
+            "second_item": "Luna 성능은 어디까지인가",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-list-toc.png",
+              "sha256": "ecb6db0401085dd649654fdf7a40366547b7dc946111f358caf4729acec9af6b",
+              "x": 41,
+              "y": 1356.25,
+              "width": 278,
+              "height": 273.515625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 3,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "현재 로그인한 계정이 Free·Go인지 Plus·Pro인지 확인합니다.",
+            "second_item": "Free·Go라면 기본 모델이 Luna인지, 입력창 주변에 Think 버튼이 보이는지 확인합니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-list-ordered.png",
+              "sha256": "4f49a2da8ee1032d142bb650ddd074d5534c54ad8f65ffc1e7a58c746a358d8b",
+              "x": 20,
+              "y": 4454.015625,
+              "width": 320,
+              "height": 218.234375,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-list-ordered-context.png",
+              "sha256": "b9a99b77858cf85934804e1434d7c6e2975331eb0d5206b237fb2de1456584af",
+              "x": 20,
+              "y": 4454.015625,
+              "width": 320,
+              "height": 354.71875
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ul",
+            "index": 0,
+            "tag": "UL",
+            "item_count": 3,
+            "list_style_type": "disc",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "빠른 사실 확인이나 짧은 문장 수정은 낮은 사고량으로 시작합니다.",
+            "second_item": "계획, 조사, 긴 글, 코딩, 중요한 선택은 슬라이더를 올립니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-list-unordered.png",
+              "sha256": "a7c65b654fe907e303b0d037dfd0c26ef35253b5e423551b7cb6125a113337ef",
+              "x": 20,
+              "y": 6693.21875,
+              "width": 320,
+              "height": 218.234375,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-list-unordered-context.png",
+              "sha256": "7342a67a1ce0fdacd38bc1e4ae09a70eabca20b4c916f15ab87cf43a69150d0d",
+              "x": 20,
+              "y": 6693.21875,
+              "width": 320,
+              "height": 413.1875
+            }
+          }
+        ],
+        "figures": [
+          {
+            "index": 0,
+            "tag": "FIGURE",
+            "text": "OpenAI는 2026년 8월 6일 ChatGPT용 GPT-5.6 Sol 개선과 무료 이용자의 GPT-5.6 Luna 접근 확대를 함께 발표했습니다. · Codex in-app browser run 캡처 · 2026-08-08",
+            "x": 20,
+            "y": 895.109375,
+            "width": 320,
+            "height": 299.5625,
+            "client_width": 320,
+            "scroll_width": 320,
+            "client_height": 300,
+            "scroll_height": 300,
+            "overflow_x": "visible",
+            "overflow_y": "visible",
+            "font_size": "16px",
+            "line_height": "23.52px",
+            "color": "rgb(29, 29, 31)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(29, 29, 31)",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/light-360-figure-1.png",
+              "sha256": "74cc184d9419caab322e43a9f09a7a2ab50e26c9287ad9f35c4475ada130ae9a",
+              "x": 20,
+              "y": 895.109375,
+              "width": 320,
+              "height": 299.5625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "top_screenshot": {
+          "path": "artifacts/qa/independent/component-details/light-360-top.png",
+          "sha256": "6e88efa97f50370b8643b98ec793237e459fce8144ceffc2ed00ef36255cbbeb"
+        }
+      }
+    ],
+    "dark": [
+      {
+        "width": 1280,
+        "height": 900,
+        "page": {
+          "ready_state": "complete",
+          "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-gpt-5-6-sol-chatgpt-update/artifacts/qa/independent-dark-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+          "inner_width": 1280,
+          "inner_height": 900,
+          "client_width": 1280,
+          "client_height": 900,
+          "scroll_width": 1280,
+          "scroll_height": 6432,
+          "h1_count": 1,
+          "toc_anchor_count": 9,
+          "toc_targets_unique": true,
+          "image_count": 1,
+          "images_loaded": true,
+          "images": [
+            {
+              "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+              "complete": true,
+              "natural_width": 1280,
+              "natural_height": 760
+            }
+          ]
+        },
+        "title": {
+          "text": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료",
+          "count": 1,
+          "font_size": "42px",
+          "line_height": "50.4px"
+        },
+        "styles": {
+          "body": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "normal"
+          },
+          "article": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "section": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "alternate_section": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(42, 43, 46)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "toc": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "heading": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "34px",
+            "line_height": "42.5px"
+          },
+          "paragraph": {
+            "color": "rgb(209, 209, 214)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(209, 209, 214)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_link": {
+            "color": "rgb(102, 179, 255)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(102, 179, 255)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_code": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(51, 52, 56)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "15.64px",
+            "line_height": "26.9008px"
+          },
+          "table_header": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(42, 43, 46)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "table_cell": {
+            "color": "rgb(209, 209, 214)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "figure": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "caption": {
+            "color": "rgb(161, 161, 170)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(161, 161, 170)",
+            "font_size": "14px",
+            "line_height": "21.7px"
+          }
+        },
+        "tables": [
+          {
+            "index": 0,
+            "document_client_width": 1280,
+            "document_scroll_width": 1280,
+            "wrapper_client_width": 760,
+            "wrapper_scroll_width": 760,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 760,
+            "table_scroll_width": 760,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "사용자",
+              "바뀌는 모델·기능",
+              "발표 기준 시점",
+              "확인할 점"
+            ],
+            "representative_first_row": [
+              "Free·Go",
+              "기본 모델을 GPT-5.6 Luna로 전환",
+              "8월 6일이 포함된 주",
+              "계정별 날짜는 공개하지 않음"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-table-1-left.png",
+              "sha256": "ca253063999aab56ce9ce89060746049369c001a3ea839c59e9c7bb5e9ed84ed",
+              "x": 260,
+              "y": 1959.5,
+              "width": 760,
+              "height": 308,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "index": 1,
+            "document_client_width": 1280,
+            "document_scroll_width": 1280,
+            "wrapper_client_width": 760,
+            "wrapper_scroll_width": 760,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 760,
+            "table_scroll_width": 760,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "OpenAI 공개 평가",
+              "GPT-5.6 Luna",
+              "GPT-5.6 Sol",
+              "GPT-5.5"
+            ],
+            "representative_first_row": [
+              "Agents' Last Exam",
+              "50.3%",
+              "52.7%",
+              "46.9%"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-table-2-left.png",
+              "sha256": "9376bd149b7159946c5ded09c4431df5370feea8144a7aed121e59762701a1da",
+              "x": 260,
+              "y": 2827.4375,
+              "width": 760,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "lists": [
+          {
+            "selector": ".devlog-rich__toc ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 9,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "23.2px",
+            "font_size": "16px",
+            "line_height": "30.4px",
+            "first_to_second_gap": 0,
+            "following_tag": null,
+            "list_to_following_gap": null,
+            "first_item": "무료 Luna가 이번 업데이트의 중심",
+            "second_item": "Luna 성능은 어디까지인가",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-list-toc.png",
+              "sha256": "d17cd4d55a6a1f4d1f28119ee3e75a5d47f6619f0ef06ed05bfd6b16e95118ab",
+              "x": 287,
+              "y": 1418.015625,
+              "width": 706,
+              "height": 273.515625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 3,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "현재 로그인한 계정이 Free·Go인지 Plus·Pro인지 확인합니다.",
+            "second_item": "Free·Go라면 기본 모델이 Luna인지, 입력창 주변에 Think 버튼이 보이는지 확인합니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-list-ordered.png",
+              "sha256": "a729845f765cb0683353f2299b706d7455bc0267951693bdcd71e578d8a279e1",
+              "x": 260,
+              "y": 3694.71875,
+              "width": 760,
+              "height": 130.53125,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-list-ordered-context.png",
+              "sha256": "266801918af869480ba8f5c362797a7c386264455903b5ab98c0db9dc7876215",
+              "x": 260,
+              "y": 3694.71875,
+              "width": 760,
+              "height": 208.546875
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ul",
+            "index": 0,
+            "tag": "UL",
+            "item_count": 3,
+            "list_style_type": "disc",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "빠른 사실 확인이나 짧은 문장 수정은 낮은 사고량으로 시작합니다.",
+            "second_item": "계획, 조사, 긴 글, 코딩, 중요한 선택은 슬라이더를 올립니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-list-unordered.png",
+              "sha256": "7d6bc41b7535a30f91f738457769facd22d011b849befa92970983b465d0dce5",
+              "x": 260,
+              "y": 5074.125,
+              "width": 760,
+              "height": 101.296875,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-list-unordered-context.png",
+              "sha256": "22902fd3e814651521e507ff278036846ae2799161727159d8dcd65ad923a5a8",
+              "x": 260,
+              "y": 5074.125,
+              "width": 760,
+              "height": 208.546875
+            }
+          }
+        ],
+        "figures": [
+          {
+            "index": 0,
+            "tag": "FIGURE",
+            "text": "OpenAI는 2026년 8월 6일 ChatGPT용 GPT-5.6 Sol 개선과 무료 이용자의 GPT-5.6 Luna 접근 확대를 함께 발표했습니다. · Codex in-app browser run 캡처 · 2026-08-08",
+            "x": 182,
+            "y": 638.375,
+            "width": 916,
+            "height": 610.0625,
+            "client_width": 916,
+            "scroll_width": 916,
+            "client_height": 610,
+            "scroll_height": 610,
+            "overflow_x": "visible",
+            "overflow_y": "visible",
+            "font_size": "16px",
+            "line_height": "23.52px",
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-1280-figure-1.png",
+              "sha256": "e4eca90ef53ff2c72e01bf52c889021e2b9bda0fe6c444f948642a9ca14a84e5",
+              "x": 182,
+              "y": 638.375,
+              "width": 916,
+              "height": 610.0625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "top_screenshot": {
+          "path": "artifacts/qa/independent/component-details/dark-1280-top.png",
+          "sha256": "36bdb2ac508af1c4a228116d06f5bdf65606e9b3a08e084276b4142b3d016402"
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "page": {
+          "ready_state": "complete",
+          "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-gpt-5-6-sol-chatgpt-update/artifacts/qa/independent-dark-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+          "inner_width": 390,
+          "inner_height": 844,
+          "client_width": 390,
+          "client_height": 844,
+          "scroll_width": 390,
+          "scroll_height": 8393,
+          "h1_count": 1,
+          "toc_anchor_count": 9,
+          "toc_targets_unique": true,
+          "image_count": 1,
+          "images_loaded": true,
+          "images": [
+            {
+              "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+              "complete": true,
+              "natural_width": 1280,
+              "natural_height": 760
+            }
+          ]
+        },
+        "title": {
+          "text": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료",
+          "count": 1,
+          "font_size": "32px",
+          "line_height": "38.4px"
+        },
+        "styles": {
+          "body": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "normal"
+          },
+          "article": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "section": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "alternate_section": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(42, 43, 46)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "toc": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "heading": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "30px",
+            "line_height": "37.5px"
+          },
+          "paragraph": {
+            "color": "rgb(209, 209, 214)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(209, 209, 214)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_link": {
+            "color": "rgb(102, 179, 255)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(102, 179, 255)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_code": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(51, 52, 56)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "15.64px",
+            "line_height": "26.9008px"
+          },
+          "table_header": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(42, 43, 46)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "table_cell": {
+            "color": "rgb(209, 209, 214)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "figure": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "caption": {
+            "color": "rgb(161, 161, 170)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(161, 161, 170)",
+            "font_size": "14px",
+            "line_height": "21.7px"
+          }
+        },
+        "tables": [
+          {
+            "index": 0,
+            "document_client_width": 390,
+            "document_scroll_width": 390,
+            "wrapper_client_width": 350,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "사용자",
+              "바뀌는 모델·기능",
+              "발표 기준 시점",
+              "확인할 점"
+            ],
+            "representative_first_row": [
+              "Free·Go",
+              "기본 모델을 GPT-5.6 Luna로 전환",
+              "8월 6일이 포함된 주",
+              "계정별 날짜는 공개하지 않음"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-table-1-left.png",
+              "sha256": "a0c06ca4ca0f1f6c2ca1856b6106e62fc7d88774c7f2e7205985d622e4e7c6e3",
+              "x": 20,
+              "y": 1914.359375,
+              "width": 350,
+              "height": 332,
+              "scroll_left": 0,
+              "max_scroll_left": 270
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-table-1-right.png",
+              "sha256": "1fcf0aa3b7002fbc38fa76993de52b29a7054a439149842d558a3f21fef818f5",
+              "x": 20,
+              "y": 1914.359375,
+              "width": 350,
+              "height": 332,
+              "scroll_left": 270,
+              "max_scroll_left": 270
+            }
+          },
+          {
+            "index": 1,
+            "document_client_width": 390,
+            "document_scroll_width": 390,
+            "wrapper_client_width": 350,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "OpenAI 공개 평가",
+              "GPT-5.6 Luna",
+              "GPT-5.6 Sol",
+              "GPT-5.5"
+            ],
+            "representative_first_row": [
+              "Agents' Last Exam",
+              "50.3%",
+              "52.7%",
+              "46.9%"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-table-2-left.png",
+              "sha256": "ff35bc9517f9de41c9a11d2db4837a1ad653fe3fc22e240403ba9fb65e56fee2",
+              "x": 20,
+              "y": 3077.640625,
+              "width": 350,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 270
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-table-2-right.png",
+              "sha256": "e67baba7c96626e158db3e10632dcf0fbcab586d15f228d718271c321d069e98",
+              "x": 20,
+              "y": 3077.640625,
+              "width": 350,
+              "height": 189,
+              "scroll_left": 270,
+              "max_scroll_left": 270
+            }
+          }
+        ],
+        "lists": [
+          {
+            "selector": ".devlog-rich__toc ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 9,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "23.2px",
+            "font_size": "16px",
+            "line_height": "30.4px",
+            "first_to_second_gap": 0,
+            "following_tag": null,
+            "list_to_following_gap": null,
+            "first_item": "무료 Luna가 이번 업데이트의 중심",
+            "second_item": "Luna 성능은 어디까지인가",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-list-toc.png",
+              "sha256": "b409fc24b9a861032b0146e0c78f254503e8d40437c2cc6fd9d0edf13dafdcda",
+              "x": 41,
+              "y": 1323.140625,
+              "width": 308,
+              "height": 273.515625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 3,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "현재 로그인한 계정이 Free·Go인지 Plus·Pro인지 확인합니다.",
+            "second_item": "Free·Go라면 기본 모델이 Luna인지, 입력창 주변에 Think 버튼이 보이는지 확인합니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-list-ordered.png",
+              "sha256": "6714975f358f8442ab2317f647b6214fd3f3c96b00e675bfd6010ce1a013bdb1",
+              "x": 20,
+              "y": 4274.734375,
+              "width": 350,
+              "height": 218.234375,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-list-ordered-context.png",
+              "sha256": "9048cfa50a66ce69cd57eb7afe00230ee3198f98ef292b7e989f0c9e59f72d9d",
+              "x": 20,
+              "y": 4274.734375,
+              "width": 350,
+              "height": 354.71875
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ul",
+            "index": 0,
+            "tag": "UL",
+            "item_count": 3,
+            "list_style_type": "disc",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "빠른 사실 확인이나 짧은 문장 수정은 낮은 사고량으로 시작합니다.",
+            "second_item": "계획, 조사, 긴 글, 코딩, 중요한 선택은 슬라이더를 올립니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-list-unordered.png",
+              "sha256": "fe2fbb4fb6a5ac3472e847a20036563fc48b8ecc27040a8bfd669763a6909855",
+              "x": 20,
+              "y": 6388.734375,
+              "width": 350,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-list-unordered-context.png",
+              "sha256": "80292fe999b869cec901697891afe575b8745803035c57d55ad11ce6860f0179",
+              "x": 20,
+              "y": 6388.734375,
+              "width": 350,
+              "height": 383.953125
+            }
+          }
+        ],
+        "figures": [
+          {
+            "index": 0,
+            "tag": "FIGURE",
+            "text": "OpenAI는 2026년 8월 6일 ChatGPT용 GPT-5.6 Sol 개선과 무료 이용자의 GPT-5.6 Luna 접근 확대를 함께 발표했습니다. · Codex in-app browser run 캡처 · 2026-08-08",
+            "x": 20,
+            "y": 865.875,
+            "width": 350,
+            "height": 295.6875,
+            "client_width": 350,
+            "scroll_width": 350,
+            "client_height": 296,
+            "scroll_height": 296,
+            "overflow_x": "visible",
+            "overflow_y": "visible",
+            "font_size": "16px",
+            "line_height": "23.52px",
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-390-figure-1.png",
+              "sha256": "6fc068079cff488a8e76b2ec5fcef08c1bdaf568cf205413bcc576e8ff45f903",
+              "x": 20,
+              "y": 865.875,
+              "width": 350,
+              "height": 295.6875,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "top_screenshot": {
+          "path": "artifacts/qa/independent/component-details/dark-390-top.png",
+          "sha256": "2d8364bcfd529eaeb19cb66baa73ac544dd9e0e8de3e411d724024db8b7142f6"
+        }
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "page": {
+          "ready_state": "complete",
+          "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-gpt-5-6-sol-chatgpt-update/artifacts/qa/independent-dark-rendered/gpt-5-6-sol-chatgpt-update-rich-preview.html",
+          "inner_width": 360,
+          "inner_height": 800,
+          "client_width": 360,
+          "client_height": 800,
+          "scroll_width": 360,
+          "scroll_height": 8815,
+          "h1_count": 1,
+          "toc_anchor_count": 9,
+          "toc_targets_unique": true,
+          "image_count": 1,
+          "images_loaded": true,
+          "images": [
+            {
+              "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+              "complete": true,
+              "natural_width": 1280,
+              "natural_height": 760
+            }
+          ]
+        },
+        "title": {
+          "text": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료",
+          "count": 1,
+          "font_size": "32px",
+          "line_height": "38.4px"
+        },
+        "styles": {
+          "body": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "normal"
+          },
+          "article": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "section": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "alternate_section": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(42, 43, 46)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "toc": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(30, 31, 33)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "heading": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "30px",
+            "line_height": "37.5px"
+          },
+          "paragraph": {
+            "color": "rgb(209, 209, 214)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(209, 209, 214)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_link": {
+            "color": "rgb(102, 179, 255)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(102, 179, 255)",
+            "font_size": "17px",
+            "line_height": "29.24px"
+          },
+          "styled_code": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(51, 52, 56)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "15.64px",
+            "line_height": "26.9008px"
+          },
+          "table_header": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgb(42, 43, 46)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "table_cell": {
+            "color": "rgb(209, 209, 214)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(58, 58, 60)",
+            "font_size": "15px",
+            "line_height": "24px"
+          },
+          "figure": {
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "font_size": "16px",
+            "line_height": "23.52px"
+          },
+          "caption": {
+            "color": "rgb(161, 161, 170)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(161, 161, 170)",
+            "font_size": "14px",
+            "line_height": "21.7px"
+          }
+        },
+        "tables": [
+          {
+            "index": 0,
+            "document_client_width": 360,
+            "document_scroll_width": 360,
+            "wrapper_client_width": 320,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "사용자",
+              "바뀌는 모델·기능",
+              "발표 기준 시점",
+              "확인할 점"
+            ],
+            "representative_first_row": [
+              "Free·Go",
+              "기본 모델을 GPT-5.6 Luna로 전환",
+              "8월 6일이 포함된 주",
+              "계정별 날짜는 공개하지 않음"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-table-1-left.png",
+              "sha256": "74c3d1efa6a440b447faaabaefc925ee5f81e5f403148a4917b584d6fd63dff5",
+              "x": 20,
+              "y": 1947.46875,
+              "width": 320,
+              "height": 332,
+              "scroll_left": 0,
+              "max_scroll_left": 300
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-table-1-right.png",
+              "sha256": "e2ace45d418ce436f715c41516f3956454b05b50ea75890482abe9daf661dae0",
+              "x": 20,
+              "y": 1947.46875,
+              "width": 320,
+              "height": 332,
+              "scroll_left": 300,
+              "max_scroll_left": 300
+            }
+          },
+          {
+            "index": 1,
+            "document_client_width": 360,
+            "document_scroll_width": 360,
+            "wrapper_client_width": 320,
+            "wrapper_scroll_width": 620,
+            "wrapper_overflow_x": "auto",
+            "table_client_width": 620,
+            "table_scroll_width": 620,
+            "table_font_size": "15px",
+            "table_line_height": "24px",
+            "cell_font_size": "15px",
+            "cell_line_height": "24px",
+            "headers": [
+              "OpenAI 공개 평가",
+              "GPT-5.6 Luna",
+              "GPT-5.6 Sol",
+              "GPT-5.5"
+            ],
+            "representative_first_row": [
+              "Agents' Last Exam",
+              "50.3%",
+              "52.7%",
+              "46.9%"
+            ],
+            "left_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-table-2-left.png",
+              "sha256": "6e19c5ee93e9ff08dba351e17025739089f83aa05d7bae3cb0ed33e378390c88",
+              "x": 20,
+              "y": 3169.21875,
+              "width": 320,
+              "height": 189,
+              "scroll_left": 0,
+              "max_scroll_left": 300
+            },
+            "right_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-table-2-right.png",
+              "sha256": "dd9e62f54202b8fcbfa62331548b1d50261e12217c3a3b64386c68305336955e",
+              "x": 20,
+              "y": 3169.21875,
+              "width": 320,
+              "height": 189,
+              "scroll_left": 300,
+              "max_scroll_left": 300
+            }
+          }
+        ],
+        "lists": [
+          {
+            "selector": ".devlog-rich__toc ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 9,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "23.2px",
+            "font_size": "16px",
+            "line_height": "30.4px",
+            "first_to_second_gap": 0,
+            "following_tag": null,
+            "list_to_following_gap": null,
+            "first_item": "무료 Luna가 이번 업데이트의 중심",
+            "second_item": "Luna 성능은 어디까지인가",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-list-toc.png",
+              "sha256": "d6a538456816c7aa3f357840ab5e5c019a35dbe6937b4a1f9534b94ec431efbf",
+              "x": 41,
+              "y": 1356.25,
+              "width": 278,
+              "height": 273.515625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ol",
+            "index": 0,
+            "tag": "OL",
+            "item_count": 3,
+            "list_style_type": "decimal",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "현재 로그인한 계정이 Free·Go인지 Plus·Pro인지 확인합니다.",
+            "second_item": "Free·Go라면 기본 모델이 Luna인지, 입력창 주변에 Think 버튼이 보이는지 확인합니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-list-ordered.png",
+              "sha256": "f1afd931fc236b1aaee399372cfba658eed6271263ee4147e02b92b55d9f33cc",
+              "x": 20,
+              "y": 4454.015625,
+              "width": 320,
+              "height": 218.234375,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-list-ordered-context.png",
+              "sha256": "e89612bc4bd5ee535a6a3b2b016e2bd6ad6a1f0c3a1f21ce9d00b71b612b5dbf",
+              "x": 20,
+              "y": 4454.015625,
+              "width": 320,
+              "height": 354.71875
+            }
+          },
+          {
+            "selector": ".devlog-rich__section > ul",
+            "index": 0,
+            "tag": "UL",
+            "item_count": 3,
+            "list_style_type": "disc",
+            "item_display": "list-item",
+            "padding_left": "24.65px",
+            "font_size": "17px",
+            "line_height": "29.24px",
+            "first_to_second_gap": 6.796875,
+            "following_tag": "P",
+            "list_to_following_gap": 19.546875,
+            "first_item": "빠른 사실 확인이나 짧은 문장 수정은 낮은 사고량으로 시작합니다.",
+            "second_item": "계획, 조사, 긴 글, 코딩, 중요한 선택은 슬라이더를 올립니다.",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-list-unordered.png",
+              "sha256": "c4f89993576e2f539caa8ee04cdd709b05bdb16ad80c3d30b67b2dc552c23ca5",
+              "x": 20,
+              "y": 6693.21875,
+              "width": 320,
+              "height": 218.234375,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            },
+            "context_screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-list-unordered-context.png",
+              "sha256": "7c4cab31fa228fd41f562456ac9daae6491c89f0d83def323c5b74108eb60ba0",
+              "x": 20,
+              "y": 6693.21875,
+              "width": 320,
+              "height": 413.1875
+            }
+          }
+        ],
+        "figures": [
+          {
+            "index": 0,
+            "tag": "FIGURE",
+            "text": "OpenAI는 2026년 8월 6일 ChatGPT용 GPT-5.6 Sol 개선과 무료 이용자의 GPT-5.6 Luna 접근 확대를 함께 발표했습니다. · Codex in-app browser run 캡처 · 2026-08-08",
+            "x": 20,
+            "y": 895.109375,
+            "width": 320,
+            "height": 299.5625,
+            "client_width": 320,
+            "scroll_width": 320,
+            "client_height": 300,
+            "scroll_height": 300,
+            "overflow_x": "visible",
+            "overflow_y": "visible",
+            "font_size": "16px",
+            "line_height": "23.52px",
+            "color": "rgb(245, 245, 247)",
+            "background_color": "rgba(0, 0, 0, 0)",
+            "border_color": "rgb(245, 245, 247)",
+            "screenshot": {
+              "path": "artifacts/qa/independent/component-details/dark-360-figure-1.png",
+              "sha256": "5e00a57636def5e74fdc0e92029440b5831d4648300c0b2c8c8964bcf0411eae",
+              "x": 20,
+              "y": 895.109375,
+              "width": 320,
+              "height": 299.5625,
+              "scroll_left": 0,
+              "max_scroll_left": 0
+            }
+          }
+        ],
+        "top_screenshot": {
+          "path": "artifacts/qa/independent/component-details/dark-360-top.png",
+          "sha256": "e252041ce9e4fe4e6007cf93123f1c90f32cef94a3350905b8e02308e37f89b8"
+        }
+      }
+    ]
+  },
+  "browser_version": "Chrome/151.0.7922.108",
+  "screenshots": [
+    "artifacts/qa/independent/component-details/dark-1280-figure-1.png",
+    "artifacts/qa/independent/component-details/dark-1280-list-ordered-context.png",
+    "artifacts/qa/independent/component-details/dark-1280-list-ordered.png",
+    "artifacts/qa/independent/component-details/dark-1280-list-toc.png",
+    "artifacts/qa/independent/component-details/dark-1280-list-unordered-context.png",
+    "artifacts/qa/independent/component-details/dark-1280-list-unordered.png",
+    "artifacts/qa/independent/component-details/dark-1280-table-1-left.png",
+    "artifacts/qa/independent/component-details/dark-1280-table-2-left.png",
+    "artifacts/qa/independent/component-details/dark-1280-top.png",
+    "artifacts/qa/independent/component-details/dark-360-figure-1.png",
+    "artifacts/qa/independent/component-details/dark-360-list-ordered-context.png",
+    "artifacts/qa/independent/component-details/dark-360-list-ordered.png",
+    "artifacts/qa/independent/component-details/dark-360-list-toc.png",
+    "artifacts/qa/independent/component-details/dark-360-list-unordered-context.png",
+    "artifacts/qa/independent/component-details/dark-360-list-unordered.png",
+    "artifacts/qa/independent/component-details/dark-360-table-1-left.png",
+    "artifacts/qa/independent/component-details/dark-360-table-1-right.png",
+    "artifacts/qa/independent/component-details/dark-360-table-2-left.png",
+    "artifacts/qa/independent/component-details/dark-360-table-2-right.png",
+    "artifacts/qa/independent/component-details/dark-360-top.png",
+    "artifacts/qa/independent/component-details/dark-390-figure-1.png",
+    "artifacts/qa/independent/component-details/dark-390-list-ordered-context.png",
+    "artifacts/qa/independent/component-details/dark-390-list-ordered.png",
+    "artifacts/qa/independent/component-details/dark-390-list-toc.png",
+    "artifacts/qa/independent/component-details/dark-390-list-unordered-context.png",
+    "artifacts/qa/independent/component-details/dark-390-list-unordered.png",
+    "artifacts/qa/independent/component-details/dark-390-table-1-left.png",
+    "artifacts/qa/independent/component-details/dark-390-table-1-right.png",
+    "artifacts/qa/independent/component-details/dark-390-table-2-left.png",
+    "artifacts/qa/independent/component-details/dark-390-table-2-right.png",
+    "artifacts/qa/independent/component-details/dark-390-top.png",
+    "artifacts/qa/independent/component-details/light-1280-figure-1.png",
+    "artifacts/qa/independent/component-details/light-1280-list-ordered-context.png",
+    "artifacts/qa/independent/component-details/light-1280-list-ordered.png",
+    "artifacts/qa/independent/component-details/light-1280-list-toc.png",
+    "artifacts/qa/independent/component-details/light-1280-list-unordered-context.png",
+    "artifacts/qa/independent/component-details/light-1280-list-unordered.png",
+    "artifacts/qa/independent/component-details/light-1280-table-1-left.png",
+    "artifacts/qa/independent/component-details/light-1280-table-2-left.png",
+    "artifacts/qa/independent/component-details/light-1280-top.png",
+    "artifacts/qa/independent/component-details/light-360-figure-1.png",
+    "artifacts/qa/independent/component-details/light-360-list-ordered-context.png",
+    "artifacts/qa/independent/component-details/light-360-list-ordered.png",
+    "artifacts/qa/independent/component-details/light-360-list-toc.png",
+    "artifacts/qa/independent/component-details/light-360-list-unordered-context.png",
+    "artifacts/qa/independent/component-details/light-360-list-unordered.png",
+    "artifacts/qa/independent/component-details/light-360-table-1-left.png",
+    "artifacts/qa/independent/component-details/light-360-table-1-right.png",
+    "artifacts/qa/independent/component-details/light-360-table-2-left.png",
+    "artifacts/qa/independent/component-details/light-360-table-2-right.png",
+    "artifacts/qa/independent/component-details/light-360-top.png",
+    "artifacts/qa/independent/component-details/light-390-figure-1.png",
+    "artifacts/qa/independent/component-details/light-390-list-ordered-context.png",
+    "artifacts/qa/independent/component-details/light-390-list-ordered.png",
+    "artifacts/qa/independent/component-details/light-390-list-toc.png",
+    "artifacts/qa/independent/component-details/light-390-list-unordered-context.png",
+    "artifacts/qa/independent/component-details/light-390-list-unordered.png",
+    "artifacts/qa/independent/component-details/light-390-table-1-left.png",
+    "artifacts/qa/independent/component-details/light-390-table-1-right.png",
+    "artifacts/qa/independent/component-details/light-390-table-2-left.png",
+    "artifacts/qa/independent/component-details/light-390-table-2-right.png",
+    "artifacts/qa/independent/component-details/light-390-top.png"
+  ]
+}

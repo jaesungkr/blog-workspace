@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "lead_id": "openai-gpt56-sol-header",
+  "items": [
+    {
+      "id": "openai-gpt56-sol-header",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C09"
+      ],
+      "actor": "Codex in-app browser run",
+      "captured_at": "2026-08-08",
+      "environment": "macOS, Codex in-app browser, 1280x720 CSS viewport, DPR 2; 1280x760 page-coordinate screenshot clip of the OpenAI public announcement",
+      "source_url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "raw_path": "artifacts/captures/raw/openai-gpt56-sol-header.jpg",
+      "publish_path": "assets/screenshots/openai-gpt56-sol-header.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGMkWM%2FdJMcajpz50e%2FAAAAAAAAAAAAAAAAAAAAAOZYigxyH8ZOOwuQhxtoIlDnxDhhK47QfpE-f_m-UP7F%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DPTtmwTRtwu0p5cE9sDYfnsfWUa8%253D",
+      "width": 1280,
+      "height": 760,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original screen capture of a publicly accessible official OpenAI announcement for editorial reporting and commentary",
+      "alt": "2026년 8월 6일 GPT-5.6 Sol 개선과 무료 Luna 확대를 알리는 OpenAI 공식 발표 화면",
+      "caption": "OpenAI는 2026년 8월 6일 ChatGPT용 GPT-5.6 Sol 개선과 무료 이용자의 GPT-5.6 Luna 접근 확대를 함께 발표했습니다.",
+      "processing": [
+        "viewport clip captured after rejecting non-essential cookies"
+      ],
+      "redactions": [],
+      "sha256": "be5f060a464d94e0529eee8ad0ec44b278c69f03e3826b1a4f1b9cc9cf0a4594",
+      "status": "validated"
+    }
+  ]
+}
