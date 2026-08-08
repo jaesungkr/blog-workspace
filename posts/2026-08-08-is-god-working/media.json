@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "lead_id": "is-god-working-hero",
+  "items": [
+    {
+      "id": "is-god-working-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C02",
+        "C04"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-08",
+      "environment": "OpenAI built-in image generation, wide Reflections editorial still life",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/is-god-working-hero-source.png",
+      "publish_path": "assets/screenshots/is-god-working-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcJWYcY%2FdJMcaidlqDg%2FAAAAAAAAAAAAAAAAAAAAAGo20HxD1Hxp80FnTzALI0cvHMeXliErGwtxrN2qEGlU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DGclXmHOVSP6qJstz%252BctNn2M4duA%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "금빛 실이 한 줄의 돌만 멈춘 채 다른 줄은 종이 집까지 쓰러지는 모형",
+      "caption": "똑같이 위험해 보이는 두 연쇄 중 하나만 멈춘 장면으로 선택적 개입에 남는 질문을 표현했습니다.",
+      "processing": [
+        "targeted_edit"
+      ],
+      "redactions": [],
+      "sha256": "dc852bbf9504d02f6b4e9ac637025d40e6dbc84cc794709164d7b5dc572d4b2a",
+      "status": "validated"
+    }
+  ]
+}

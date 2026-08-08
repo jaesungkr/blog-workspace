@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "status": "pass",
+  "mode": "independent",
+  "checked_at": "2026-08-08T13:31:49.662759Z",
+  "checked_by": "Socrates independent validator",
+  "tool_sha256": "6de6cef94d30413a365118492b4ecb26fc926ebe1ace7fefa519a1f8e7dfc726",
+  "preview_path": "artifacts/qa/independent-rendered/is-god-working-rich-preview.html",
+  "preview_sha256": "e588df6273e9ac8e090ab5d8c791c7c4bf83bab1455de043f0bf948a0d127cf4",
+  "screenshot_root": "artifacts/qa/independent",
+  "receipt_path": "artifacts/qa/independent/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.108",
+  "protocol_version": "1.3",
+  "session": "36bc8b5b-bafc-4f3c-a2f5-0dfcc62a0f54",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-is-god-working/artifacts/qa/independent-rendered/is-god-working-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 4866,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcJWYcY%2FdJMcaidlqDg%2FAAAAAAAAAAAAAAAAAAAAAGo20HxD1Hxp80FnTzALI0cvHMeXliErGwtxrN2qEGlU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DGclXmHOVSP6qJstz%252BctNn2M4duA%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "4363a71c67bab1616a2a7cc1a065fc7b11613e0edcaea2078f3451c11b513edb",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa/independent/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-is-god-working/artifacts/qa/independent-rendered/is-god-working-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 6647,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcJWYcY%2FdJMcaidlqDg%2FAAAAAAAAAAAAAAAAAAAAAGo20HxD1Hxp80FnTzALI0cvHMeXliErGwtxrN2qEGlU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DGclXmHOVSP6qJstz%252BctNn2M4duA%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "3e24159a7a66e0bd16eb279fb9435e6398b36f16f462e4aea6fcb56a76a9c207",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa/independent/mobile-390.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-08-is-god-working/artifacts/qa/independent-rendered/is-god-working-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7144,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcJWYcY%2FdJMcaidlqDg%2FAAAAAAAAAAAAAAAAAAAAAGo20HxD1Hxp80FnTzALI0cvHMeXliErGwtxrN2qEGlU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DGclXmHOVSP6qJstz%252BctNn2M4duA%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "37c22866f097bee92e59f402068371b6c606318f4104f64b3008a5fa1c9a757a",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa/independent/mobile-360.png"
+    }
+  ]
+}

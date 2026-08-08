@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "checked_at": "2026-08-08T13:27:10.446798Z",
+  "checked_by": "Codex /root focused browser review",
+  "browser": "Chrome/151.0.7922.108",
+  "protocol_version": "1.3",
+  "session": "3cbee2c2-fa83-4561-829b-b11821a08205",
+  "preview_path": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-08-is-god-working/artifacts/qa/dark-preview/is-god-working-rich-preview.html",
+  "preview_sha256": "3124ae2914b71d988e253fe2ee6adee9433b292083237dbe9c830537286a8c5e",
+  "selector": "section[aria-labelledby=\"자유의지는-왜-나쁜-일-뒤에-등장할까\"] ul",
+  "records": [
+    {
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "scroll_y": 1999,
+      "target_rect": {
+        "x": 260,
+        "y": 381.734375,
+        "width": 760,
+        "height": 137.328125
+      },
+      "list_style_type": "disc",
+      "list_padding_left": "24.65px",
+      "item_count": 4,
+      "item_display": "list-item",
+      "item_margin_bottom": "0px",
+      "next_element": "P",
+      "next_rect": {
+        "x": 260,
+        "y": 538.609375,
+        "width": 760,
+        "height": 116.9375
+      },
+      "width": 1280,
+      "height": 900,
+      "screenshot": "list-dark-1280.png",
+      "screenshot_sha256": "006564183c18f731fe5f573d075dd0a0ecc9871a6795285f3cd4707cc8932cc8"
+    },
+    {
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "scroll_width": 390,
+      "scroll_y": 2476,
+      "target_rect": {
+        "x": 20,
+        "y": 294.796875,
+        "width": 350,
+        "height": 254.265625
+      },
+      "list_style_type": "disc",
+      "list_padding_left": "24.65px",
+      "item_count": 4,
+      "item_display": "list-item",
+      "item_margin_bottom": "0px",
+      "next_element": "P",
+      "next_rect": {
+        "x": 20,
+        "y": 568.609375,
+        "width": 350,
+        "height": 204.640625
+      },
+      "width": 390,
+      "height": 844,
+      "screenshot": "list-dark-390.png",
+      "screenshot_sha256": "3565c162a6ea60e02e6a9cc1f47c1bf2ca20658c20ebd07de4d67d517060e869"
+    },
+    {
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "scroll_y": 2636,
+      "target_rect": {
+        "x": 20,
+        "y": 273.25,
+        "width": 320,
+        "height": 254.265625
+      },
+      "list_style_type": "disc",
+      "list_padding_left": "24.65px",
+      "item_count": 4,
+      "item_display": "list-item",
+      "item_margin_bottom": "0px",
+      "next_element": "P",
+      "next_rect": {
+        "x": 20,
+        "y": 547.0625,
+        "width": 320,
+        "height": 233.875
+      },
+      "width": 360,
+      "height": 800,
+      "screenshot": "list-dark-360.png",
+      "screenshot_sha256": "718098f418c4c7978d6dcfd4a259ee331deeee058bb70e0a7fa293602a1fd549"
+    }
+  ]
+}
