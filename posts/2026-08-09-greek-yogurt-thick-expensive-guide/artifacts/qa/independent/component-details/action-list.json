@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "checked_by": "Codex independent article validator",
+  "browser": "Chrome/151.0.7922.108",
+  "session": "addc1df9-7557-4d54-9996-bb09c572de73",
+  "preview_path": "artifacts/qa/independent-rendered/greek-yogurt-thick-expensive-guide-rich-preview.html",
+  "preview_sha256": "c6a29604bb08e9aa747eef625e63047cb5188ae82d681bedf10ce5bb05bda530",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "item_count": 5,
+        "items": [
+          "먹는 목적을 하나 정합니다. 단백질 보충, 당류 조절, 진한 맛, 요리 재료 가운데 무엇이 우선인지 먼저 고릅니다.",
+          "원재료명을 봅니다. 설탕, 시럽, 과일청, 감미료, 우유 단백질, 안정제가 들어 있는지 확인합니다. 첨가물이 나쁘다는 뜻이 아니라, 기대한 제품과 실제 배합이 같은지 보는 단계입니다.",
+          "모든 숫자를 100g으로 맞춥니다. 한 컵이 80g인 제품과 150g인 제품의 총량을 바로 비교하면 판단이 틀어집니다. 단백질·당류·지방·열량을 같은 양으로 맞춰 보세요.",
+          "가격도 100g으로 나눕니다. 대용량이 무조건 싸지 않고, 행사 가격은 다음 구매 때 달라질 수 있습니다. 자주 먹을 제품이라면 정상가와 실제 먹는 양을 함께 봅니다.",
+          "처음에는 작은 용량으로 맛을 확인합니다. 산미와 질감은 영양표로 알 수 없습니다. 숫자가 좋아도 입맛에 맞지 않아 남기면 좋은 선택이 되기 어렵습니다."
+        ],
+        "list_style": "decimal",
+        "top": 131.046875,
+        "bottom": 713.6875,
+        "client_width": 390,
+        "scroll_width": 390
+      },
+      "screenshot": "artifacts/qa/independent/component-details/action-list-390.png",
+      "sha256": "ef2e3e38550b14fd70800c9b7c22120fccd23cdeb7c4b5a97c90ed20718d1a2b"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "item_count": 5,
+        "items": [
+          "먹는 목적을 하나 정합니다. 단백질 보충, 당류 조절, 진한 맛, 요리 재료 가운데 무엇이 우선인지 먼저 고릅니다.",
+          "원재료명을 봅니다. 설탕, 시럽, 과일청, 감미료, 우유 단백질, 안정제가 들어 있는지 확인합니다. 첨가물이 나쁘다는 뜻이 아니라, 기대한 제품과 실제 배합이 같은지 보는 단계입니다.",
+          "모든 숫자를 100g으로 맞춥니다. 한 컵이 80g인 제품과 150g인 제품의 총량을 바로 비교하면 판단이 틀어집니다. 단백질·당류·지방·열량을 같은 양으로 맞춰 보세요.",
+          "가격도 100g으로 나눕니다. 대용량이 무조건 싸지 않고, 행사 가격은 다음 구매 때 달라질 수 있습니다. 자주 먹을 제품이라면 정상가와 실제 먹는 양을 함께 봅니다.",
+          "처음에는 작은 용량으로 맛을 확인합니다. 산미와 질감은 영양표로 알 수 없습니다. 숫자가 좋아도 입맛에 맞지 않아 남기면 좋은 선택이 되기 어렵습니다."
+        ],
+        "list_style": "decimal",
+        "top": 94.28125,
+        "bottom": 706.15625,
+        "client_width": 360,
+        "scroll_width": 360
+      },
+      "screenshot": "artifacts/qa/independent/component-details/action-list-360.png",
+      "sha256": "9eb06131e22ad0915d656858ca23a269d4fbd532c39da1b735fddc96ce5d0ef0"
+    }
+  ]
+}

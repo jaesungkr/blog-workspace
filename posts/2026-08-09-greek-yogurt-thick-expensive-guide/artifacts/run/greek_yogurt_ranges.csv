@@ -1,0 +1,5 @@
+metric,unit_per_100g,min,max,source_date,source_url
+protein,g,5.9,13.1,2026-03-04,https://www.kca.go.kr/home/sub.do?cate=00000049&menukey=4004&mode=view&no=1004013515
+sugars,g,1.2,12.3,2026-03-04,https://www.kca.go.kr/home/sub.do?cate=00000049&menukey=4004&mode=view&no=1004013515
+energy,kcal,55.6,199.7,2026-03-04,https://www.kca.go.kr/home/sub.do?cate=00000049&menukey=4004&mode=view&no=1004013515
+price,KRW,826,3333,2026-03-04,https://www.kca.go.kr/home/sub.do?cate=00000049&menukey=4004&mode=view&no=1004013515

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">꾸덕함은 어디서 올까?</title>
+  <desc id="desc">요거트에서 유청 일부를 분리해 그릭요거트가 되는 과정과 국내 17개 제품의 단백질, 당류, 가격, 고형분 범위</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf8f1"/>
+      <stop offset="1" stop-color="#f2eadb"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9db9aa"/>
+      <stop offset="1" stop-color="#c58a55"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#27362f" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M2,2 L14,8 L2,14 Z" fill="#2e5a46"/>
+    </marker>
+    <style>
+      text { font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #173126; }
+      .headline { font-size: 62px; font-weight: 800; letter-spacing: -2px; }
+      .primary { font-size: 48px; font-weight: 750; letter-spacing: -1.2px; }
+      .support { font-size: 38px; font-weight: 500; letter-spacing: -0.6px; fill: #53665d; }
+      .caveat { font-size: 33px; font-weight: 500; letter-spacing: -0.3px; fill: #6c756f; }
+      .number { font-size: 38px; font-weight: 700; fill: #294c3c; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <circle cx="985" cy="110" r="150" fill="#d6b98a" opacity="0.18"/>
+  <circle cx="85" cy="585" r="120" fill="#8fb09f" opacity="0.12"/>
+
+  <text x="72" y="96" class="headline">꾸덕함은 어디서 올까?</text>
+  <text x="72" y="164" class="support">유청을 줄이면 고형분은 남고, 수율은 낮아집니다</text>
+  <path d="M72 208 H1008" stroke="#cfc5b4" stroke-width="2"/>
+
+  <g aria-label="발효한 요거트" transform="translate(42 0)">
+    <text x="50" y="302" class="primary">발효한 요거트</text>
+    <text x="50" y="350" class="support">물과 고형분이 함께 있음</text>
+    <g filter="url(#shadow)">
+      <path d="M78 412 Q180 372 282 412 L262 590 Q180 630 98 590 Z" fill="#dfc29c"/>
+      <ellipse cx="180" cy="412" rx="102" ry="34" fill="#b78056"/>
+      <ellipse cx="180" cy="407" rx="86" ry="26" fill="#fffdf8"/>
+      <path d="M106 407 Q180 378 254 407 Q180 434 106 407" fill="#f5eee3"/>
+      <path d="M126 405 Q180 389 234 405" fill="none" stroke="#ded4c3" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <path d="M334 460 C374 430 395 430 424 446" fill="none" stroke="#2e5a46" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g aria-label="유청 일부 분리">
+    <text x="414" y="302" class="primary">유청 일부 분리</text>
+    <text x="414" y="350" class="support">여과·원심분리·농축</text>
+    <g filter="url(#shadow)">
+      <path d="M438 394 Q540 360 642 394 L592 568 Q540 625 488 568 Z" fill="#f2e6cc" stroke="#c7ad7f" stroke-width="4"/>
+      <path d="M452 406 Q540 378 628 406" fill="none" stroke="#ad8f64" stroke-width="5" stroke-linecap="round"/>
+      <path d="M474 424 Q540 446 606 424 M466 454 Q540 478 614 454 M478 487 Q540 510 602 487" fill="none" stroke="#d7c29e" stroke-width="4"/>
+      <path d="M492 407 L535 590 M525 391 L550 601 M558 390 L565 590 M592 402 L578 573" stroke="#d8c3a1" stroke-width="3" opacity="0.85"/>
+      <path d="M540 606 C520 636 520 660 540 680 C560 660 560 636 540 606 Z" fill="#d8b95c"/>
+      <path d="M476 686 H604 L584 766 H496 Z" fill="#f7faf8" stroke="#8da99a" stroke-width="4"/>
+      <path d="M493 728 Q540 710 587 728 L582 758 H498 Z" fill="#e2c766" opacity="0.72"/>
+    </g>
+  </g>
+
+  <path d="M660 460 C700 430 723 430 752 446" fill="none" stroke="#2e5a46" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g aria-label="남은 고형분 농축">
+    <text x="742" y="302" class="primary">고형분 농축</text>
+    <text x="742" y="350" class="support">질감은 진해지고</text>
+    <g filter="url(#shadow)">
+      <path d="M770 458 Q864 420 958 458 L938 598 Q864 635 790 598 Z" fill="#a8734f"/>
+      <ellipse cx="864" cy="458" rx="94" ry="30" fill="#8d603f"/>
+      <path d="M788 458 Q824 408 858 438 Q885 377 938 458 Q864 500 788 458 Z" fill="#fffdf8"/>
+      <path d="M806 458 Q835 430 858 449 Q887 416 920 458" fill="none" stroke="#e1d7c7" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <text x="752" y="684" class="primary" fill="#a65e36">꾸덕함 ↑</text>
+    <text x="752" y="737" class="primary" fill="#4d705f">수율 ↓</text>
+  </g>
+
+  <path d="M72 802 H1008" stroke="#cfc5b4" stroke-width="2"/>
+  <text x="72" y="874" class="primary">그래도 이름만으로는 부족합니다</text>
+  <text x="72" y="924" class="support">17개 제품을 100g으로 맞추자 차이가 크게 벌어졌습니다</text>
+
+  <g aria-label="제품 비교 범위">
+    <text x="72" y="1014" class="primary">단백질</text>
+    <line x1="300" y1="1000" x2="892" y2="1000" stroke="url(#bar)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="300" cy="1000" r="14" fill="#7fa491"/>
+    <circle cx="892" cy="1000" r="14" fill="#bd774a"/>
+    <text x="300" y="1051" class="number" text-anchor="middle">5.9g</text>
+    <text x="892" y="1051" class="number" text-anchor="middle">13.1g</text>
+
+    <text x="72" y="1124" class="primary">당류</text>
+    <line x1="300" y1="1110" x2="892" y2="1110" stroke="url(#bar)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="300" cy="1110" r="14" fill="#7fa491"/>
+    <circle cx="892" cy="1110" r="14" fill="#bd774a"/>
+    <text x="300" y="1161" class="number" text-anchor="middle">1.2g</text>
+    <text x="892" y="1161" class="number" text-anchor="middle">12.3g</text>
+
+    <text x="72" y="1234" class="primary">가격</text>
+    <line x1="300" y1="1220" x2="892" y2="1220" stroke="url(#bar)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="300" cy="1220" r="14" fill="#7fa491"/>
+    <circle cx="892" cy="1220" r="14" fill="#bd774a"/>
+    <text x="300" y="1271" class="number" text-anchor="middle">826원</text>
+    <text x="892" y="1271" class="number" text-anchor="middle">3,333원</text>
+  </g>
+
+  <text x="72" y="1323" class="caveat">소비자시민모임 시험 · 17개 제품 · 2025년 10월 구입 · 정상가 기준</text>
+</svg>

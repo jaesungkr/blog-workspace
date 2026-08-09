@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "status": "pass",
+  "verified_at": "2026-08-09T13:25:32.142815Z",
+  "verified_by": "Codex independent article validator",
+  "remote_media_sha256": "5c07dd58847d68f5b3e7495af0929c0cc395e93d1c8ccae31a6772324f8b3879",
+  "media_sha256": "8b7b060c2b8b3b71d7b111f4f0c4fa49dcba76a1fb8c4ef8f6f31a01ba4a15c3",
+  "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
+  "fetcher_files": {
+    "remote_media.py": "ac44710fa5611571d1d8ee3cc6b21ab656df549bd2d49ccd32e4285b91bbb6b6",
+    "rich_post_common.py": "ac9167175f3f3682b163e8d9cfb0b7b55e9158297db11c9412d50ca18bf022bc"
+  },
+  "items": [
+    {
+      "id": "greek-yogurt-hero",
+      "requested_url": "https://blog.kakaocdn.net/dna/QeSCm/dJMcajiXxrj/AAAAAAAAAAAAAAAAAAAAABOWjhawTp6p2nzHf8S07a0_N0PChqLiooeHYwzUqd2Z/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=uvaa6hw2A64wa2hdMKpUlyiqJm0%3D",
+      "final_url": "https://blog.kakaocdn.net/dna/QeSCm/dJMcajiXxrj/AAAAAAAAAAAAAAAAAAAAABOWjhawTp6p2nzHf8S07a0_N0PChqLiooeHYwzUqd2Z/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=uvaa6hw2A64wa2hdMKpUlyiqJm0%3D",
+      "content_type": "image/png",
+      "content_encoding": "",
+      "byte_length": 1722012,
+      "sha256": "4179e5487fd57fb55fac1d8957dc2127b9a2434dadd69167cafcaae57e37a710",
+      "format": "png",
+      "width": 1672,
+      "height": 941,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "greek-yogurt-process",
+      "requested_url": "https://blog.kakaocdn.net/dna/boUvUV/dJMcabkYIRk/AAAAAAAAAAAAAAAAAAAAAKDAQyYRy-MS-8Y57rZDHjrNYtPFotJ_EhL_idPMlYur/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=LZOPK6MN88%2FaSQgS8tohb7fvvUk%3D",
+      "final_url": "https://blog.kakaocdn.net/dna/boUvUV/dJMcabkYIRk/AAAAAAAAAAAAAAAAAAAAAKDAQyYRy-MS-8Y57rZDHjrNYtPFotJ_EhL_idPMlYur/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=LZOPK6MN88%2FaSQgS8tohb7fvvUk%3D",
+      "content_type": "image/png",
+      "content_encoding": "",
+      "byte_length": 1276465,
+      "sha256": "d281674704c5d7a5cc2c7cdf69b6be9bc85d3626e3c4eb324c4ea1e9368852bd",
+      "format": "png",
+      "width": 1080,
+      "height": 1350,
+      "frame_count": 1,
+      "duration_seconds": 0.0
+    }
+  ]
+}

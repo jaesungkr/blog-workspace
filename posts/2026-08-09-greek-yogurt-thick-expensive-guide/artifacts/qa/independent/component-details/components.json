@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "checked_by": "Codex independent article validator",
+  "browser": "Chrome/151.0.7922.108",
+  "session": "80e8e322-b5df-4b34-a822-a27b0e162209",
+  "preview_path": "artifacts/qa/independent-rendered/greek-yogurt-thick-expensive-guide-rich-preview.html",
+  "preview_sha256": "c6a29604bb08e9aa747eef625e63047cb5188ae82d681bedf10ce5bb05bda530",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "client_width": 390,
+        "scroll_width": 390,
+        "tables": [
+          {
+            "index": 0,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "headers": [
+              "궁금한 점",
+              "짧은 답"
+            ],
+            "first_row": [
+              "왜 꾸덕한가요?",
+              "수분과 유청 일부를 줄이거나 원유·유단백을 농축해 고형분 비율을 높였기 때문입니다."
+            ]
+          },
+          {
+            "index": 1,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "headers": [
+              "꾸덕함이 비교적 잘 말해 주는 것",
+              "꾸덕함만으로 알 수 없는 것"
+            ],
+            "first_row": [
+              "고형분 비율과 물성",
+              "첨가당 유무"
+            ]
+          },
+          {
+            "index": 2,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "headers": [
+              "항목",
+              "17개 제품의 100g당 범위",
+              "150g을 덜었을 때의 환산 범위"
+            ],
+            "first_row": [
+              "단백질",
+              "5.9~13.1g",
+              "8.9~19.7g"
+            ]
+          },
+          {
+            "index": 3,
+            "client_width": 350,
+            "scroll_width": 620,
+            "max_scroll_left": 270,
+            "overflow_x": "auto",
+            "headers": [
+              "가장 중요한 목적",
+              "먼저 볼 항목",
+              "함께 볼 항목"
+            ],
+            "first_row": [
+              "간편한 단백질 보충",
+              "100g당 단백질",
+              "당류, 총 섭취량, 가격"
+            ]
+          }
+        ],
+        "figures": [
+          {
+            "id": "greek-yogurt-hero",
+            "caption": "그릭요거트의 매력은 숟가락 자국이 남는 밀도입니다. 다만 이 질감만으로 영양을 판단할 수는 없습니다. · 생성 이미지",
+            "image_complete": true,
+            "natural_width": 1672
+          },
+          {
+            "id": "greek-yogurt-process",
+            "caption": "유청을 덜어 고형분 비율을 높이면 질감은 진해지고 수율은 낮아집니다. 아래 범위는 17개 제품을 100g 기준으로 비교한 결과입니다. · Codex deterministic infographic renderer 캡처 · 2026-08-09",
+            "image_complete": true,
+            "natural_width": 1080
+          }
+        ],
+        "lists": [
+          {
+            "index": 0,
+            "tag": "ol",
+            "items": 8,
+            "text": [
+              "꾸덕함을 만드는 농축",
+              "완제품 1kg 뒤의 유청 2~3kg",
+              "꾸덕하면 더 좋은가요?",
+              "단백질·발효·활용도",
+              "150g 한 그릇의 큰 차이",
+              "플레인·무가당·락토프리",
+              "라벨을 보는 30초 순서",
+              "슈퍼푸드보다 100g 영양정보"
+            ],
+            "list_style": "decimal"
+          },
+          {
+            "index": 1,
+            "tag": "ul",
+            "items": 3,
+            "text": [
+              "플레인은 보통 과일 맛이나 초콜릿 맛을 넣지 않은 기본 맛을 가리킵니다. 설탕이나 감미료가 없다는 보장은 아닙니다. 실제 17개 제품 시험에서도 플레인 제품 일부에 설탕·당류 또는 감미료가 들어 있었습니다.",
+              "무가당이나 설탕무첨가를 고를 때도 영양정보의 당류가 0g인지 따로 봐야 합니다. 우유에 원래 들어 있는 유당 때문에 첨가당이 없어도 당류가 표시될 수 있습니다.",
+              "락토프리는 유당을 제거하거나 분해한 제품을 찾는 단서입니다. 유당불내증에는 도움이 될 수 있지만 우유 단백질 알레르기와는 전혀 다른 문제입니다. 호주·뉴질랜드 임상면역알레르기학회는 우유 유래 락토프리 제품도 우유 알레르기가 있는 사람에게 적합하지 않다고 안내합니다."
+            ],
+            "list_style": "disc"
+          },
+          {
+            "index": 2,
+            "tag": "ol",
+            "items": 5,
+            "text": [
+              "먹는 목적을 하나 정합니다. 단백질 보충, 당류 조절, 진한 맛, 요리 재료 가운데 무엇이 우선인지 먼저 고릅니다.",
+              "원재료명을 봅니다. 설탕, 시럽, 과일청, 감미료, 우유 단백질, 안정제가 들어 있는지 확인합니다. 첨가물이 나쁘다는 뜻이 아니라, 기대한 제품과 실제 배합이 같은지 보는 단계입니다.",
+              "모든 숫자를 100g으로 맞춥니다. 한 컵이 80g인 제품과 150g인 제품의 총량을 바로 비교하면 판단이 틀어집니다. 단백질·당류·지방·열량을 같은 양으로 맞춰 보세요.",
+              "가격도 100g으로 나눕니다. 대용량이 무조건 싸지 않고, 행사 가격은 다음 구매 때 달라질 수 있습니다. 자주 먹을 제품이라면 정상가와 실제 먹는 양을 함께 봅니다.",
+              "처음에는 작은 용량으로 맛을 확인합니다. 산미와 질감은 영양표로 알 수 없습니다. 숫자가 좋아도 입맛에 맞지 않아 남기면 좋은 선택이 되기 어렵습니다."
+            ],
+            "list_style": "decimal"
+          }
+        ]
+      },
+      "screenshots": [
+        {
+          "label": "infographic",
+          "path": "artifacts/qa/independent/component-details/infographic-390.png",
+          "sha256": "413a7265b929528a54870d060ff3dbde37d204b5fb419c14b239529f622d2e97"
+        },
+        {
+          "label": "bullet-list",
+          "path": "artifacts/qa/independent/component-details/bullet-list-390.png",
+          "sha256": "a07cf57247c827a0e0e35a9cd12e5df86fdd8069efef016c76a9f5dc79ed12c2"
+        },
+        {
+          "label": "number-list",
+          "path": "artifacts/qa/independent/component-details/number-list-390.png",
+          "sha256": "44de986205fa989eab48ff2662c8b7f2f67adb68465fad818ba00f0b186d3871"
+        },
+        {
+          "label": "table-0-left",
+          "path": "artifacts/qa/independent/component-details/table-0-left-390.png",
+          "sha256": "56ffdf2f07ad3eef2d28ef5c016eadc08c0e07a02e7002d26539421779ce8d78"
+        },
+        {
+          "label": "table-0-right",
+          "path": "artifacts/qa/independent/component-details/table-0-right-390.png",
+          "sha256": "57472589f078f259fdf1fa8773f459c9c84874b5719a39d3cf95434e9e0e54f0"
+        },
+        {
+          "label": "table-1-left",
+          "path": "artifacts/qa/independent/component-details/table-1-left-390.png",
+          "sha256": "c2b84f7c149128325ce44c08bc0bf54939ba5ca31e1876f04329e8c7e7ec3fad"
+        },
+        {
+          "label": "table-1-right",
+          "path": "artifacts/qa/independent/component-details/table-1-right-390.png",
+          "sha256": "e38915bda620787ad049453ca43fd26517cb262c534974330cc54badf80a6b11"
+        },
+        {
+          "label": "table-2-left",
+          "path": "artifacts/qa/independent/component-details/table-2-left-390.png",
+          "sha256": "fe6926591293b60df1a0e855906e66f94c31eb9e8fb44d3df77bf2f1de641669"
+        },
+        {
+          "label": "table-2-right",
+          "path": "artifacts/qa/independent/component-details/table-2-right-390.png",
+          "sha256": "56e087108fca62e932cc9931e869ef675d4bae6344913a03251fc4f51e7a2ae8"
+        },
+        {
+          "label": "table-3-left",
+          "path": "artifacts/qa/independent/component-details/table-3-left-390.png",
+          "sha256": "257855561a225b91f0001af61b97ccaa7f7991f55a6895f51f8f395794638a27"
+        },
+        {
+          "label": "table-3-right",
+          "path": "artifacts/qa/independent/component-details/table-3-right-390.png",
+          "sha256": "84393483df7358108e752c8819ad52655fe9ed8e200beb49dca703698e3ec02d"
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "client_width": 360,
+        "scroll_width": 360,
+        "tables": [
+          {
+            "index": 0,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "headers": [
+              "궁금한 점",
+              "짧은 답"
+            ],
+            "first_row": [
+              "왜 꾸덕한가요?",
+              "수분과 유청 일부를 줄이거나 원유·유단백을 농축해 고형분 비율을 높였기 때문입니다."
+            ]
+          },
+          {
+            "index": 1,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "headers": [
+              "꾸덕함이 비교적 잘 말해 주는 것",
+              "꾸덕함만으로 알 수 없는 것"
+            ],
+            "first_row": [
+              "고형분 비율과 물성",
+              "첨가당 유무"
+            ]
+          },
+          {
+            "index": 2,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "headers": [
+              "항목",
+              "17개 제품의 100g당 범위",
+              "150g을 덜었을 때의 환산 범위"
+            ],
+            "first_row": [
+              "단백질",
+              "5.9~13.1g",
+              "8.9~19.7g"
+            ]
+          },
+          {
+            "index": 3,
+            "client_width": 320,
+            "scroll_width": 620,
+            "max_scroll_left": 300,
+            "overflow_x": "auto",
+            "headers": [
+              "가장 중요한 목적",
+              "먼저 볼 항목",
+              "함께 볼 항목"
+            ],
+            "first_row": [
+              "간편한 단백질 보충",
+              "100g당 단백질",
+              "당류, 총 섭취량, 가격"
+            ]
+          }
+        ],
+        "figures": [
+          {
+            "id": "greek-yogurt-hero",
+            "caption": "그릭요거트의 매력은 숟가락 자국이 남는 밀도입니다. 다만 이 질감만으로 영양을 판단할 수는 없습니다. · 생성 이미지",
+            "image_complete": true,
+            "natural_width": 1672
+          },
+          {
+            "id": "greek-yogurt-process",
+            "caption": "유청을 덜어 고형분 비율을 높이면 질감은 진해지고 수율은 낮아집니다. 아래 범위는 17개 제품을 100g 기준으로 비교한 결과입니다. · Codex deterministic infographic renderer 캡처 · 2026-08-09",
+            "image_complete": true,
+            "natural_width": 1080
+          }
+        ],
+        "lists": [
+          {
+            "index": 0,
+            "tag": "ol",
+            "items": 8,
+            "text": [
+              "꾸덕함을 만드는 농축",
+              "완제품 1kg 뒤의 유청 2~3kg",
+              "꾸덕하면 더 좋은가요?",
+              "단백질·발효·활용도",
+              "150g 한 그릇의 큰 차이",
+              "플레인·무가당·락토프리",
+              "라벨을 보는 30초 순서",
+              "슈퍼푸드보다 100g 영양정보"
+            ],
+            "list_style": "decimal"
+          },
+          {
+            "index": 1,
+            "tag": "ul",
+            "items": 3,
+            "text": [
+              "플레인은 보통 과일 맛이나 초콜릿 맛을 넣지 않은 기본 맛을 가리킵니다. 설탕이나 감미료가 없다는 보장은 아닙니다. 실제 17개 제품 시험에서도 플레인 제품 일부에 설탕·당류 또는 감미료가 들어 있었습니다.",
+              "무가당이나 설탕무첨가를 고를 때도 영양정보의 당류가 0g인지 따로 봐야 합니다. 우유에 원래 들어 있는 유당 때문에 첨가당이 없어도 당류가 표시될 수 있습니다.",
+              "락토프리는 유당을 제거하거나 분해한 제품을 찾는 단서입니다. 유당불내증에는 도움이 될 수 있지만 우유 단백질 알레르기와는 전혀 다른 문제입니다. 호주·뉴질랜드 임상면역알레르기학회는 우유 유래 락토프리 제품도 우유 알레르기가 있는 사람에게 적합하지 않다고 안내합니다."
+            ],
+            "list_style": "disc"
+          },
+          {
+            "index": 2,
+            "tag": "ol",
+            "items": 5,
+            "text": [
+              "먹는 목적을 하나 정합니다. 단백질 보충, 당류 조절, 진한 맛, 요리 재료 가운데 무엇이 우선인지 먼저 고릅니다.",
+              "원재료명을 봅니다. 설탕, 시럽, 과일청, 감미료, 우유 단백질, 안정제가 들어 있는지 확인합니다. 첨가물이 나쁘다는 뜻이 아니라, 기대한 제품과 실제 배합이 같은지 보는 단계입니다.",
+              "모든 숫자를 100g으로 맞춥니다. 한 컵이 80g인 제품과 150g인 제품의 총량을 바로 비교하면 판단이 틀어집니다. 단백질·당류·지방·열량을 같은 양으로 맞춰 보세요.",
+              "가격도 100g으로 나눕니다. 대용량이 무조건 싸지 않고, 행사 가격은 다음 구매 때 달라질 수 있습니다. 자주 먹을 제품이라면 정상가와 실제 먹는 양을 함께 봅니다.",
+              "처음에는 작은 용량으로 맛을 확인합니다. 산미와 질감은 영양표로 알 수 없습니다. 숫자가 좋아도 입맛에 맞지 않아 남기면 좋은 선택이 되기 어렵습니다."
+            ],
+            "list_style": "decimal"
+          }
+        ]
+      },
+      "screenshots": [
+        {
+          "label": "infographic",
+          "path": "artifacts/qa/independent/component-details/infographic-360.png",
+          "sha256": "3bd0e7857806cea105a7842c35dc50ca1412914900e12c6ac5dcb989d57744d9"
+        },
+        {
+          "label": "bullet-list",
+          "path": "artifacts/qa/independent/component-details/bullet-list-360.png",
+          "sha256": "b1d12e2f7fe9f08ecb60acb0abce61733639a0be709f8564efba9520894dfa11"
+        },
+        {
+          "label": "number-list",
+          "path": "artifacts/qa/independent/component-details/number-list-360.png",
+          "sha256": "3a3eb8af4080182399740c9d739f1d5e0ff44c190aefcf99e67fe1c6bc7268ea"
+        },
+        {
+          "label": "table-0-left",
+          "path": "artifacts/qa/independent/component-details/table-0-left-360.png",
+          "sha256": "d330100571c027144d7b64b4a6cc36f8524e944bbd031983ac2857b0450ab486"
+        },
+        {
+          "label": "table-0-right",
+          "path": "artifacts/qa/independent/component-details/table-0-right-360.png",
+          "sha256": "95c607d1f41c914161b3da257da2b897aa81ee9820a4c17766149db1b288ac39"
+        },
+        {
+          "label": "table-1-left",
+          "path": "artifacts/qa/independent/component-details/table-1-left-360.png",
+          "sha256": "32893a70661be0fc1aa8b2f8804bdcb9e459be5f96593d0d19e3e1bd64963767"
+        },
+        {
+          "label": "table-1-right",
+          "path": "artifacts/qa/independent/component-details/table-1-right-360.png",
+          "sha256": "b42880527477851d806190e67678df50bc6e53b37026bb6287666e3a110367b9"
+        },
+        {
+          "label": "table-2-left",
+          "path": "artifacts/qa/independent/component-details/table-2-left-360.png",
+          "sha256": "42466eb9b3f137861800b2d5b12b4885ad138398cb6ba4779f70ea471e4ff9dd"
+        },
+        {
+          "label": "table-2-right",
+          "path": "artifacts/qa/independent/component-details/table-2-right-360.png",
+          "sha256": "3330d55f181ff93921801e8e6c1adf3894f75c72faf73ac1f09af10472e01e69"
+        },
+        {
+          "label": "table-3-left",
+          "path": "artifacts/qa/independent/component-details/table-3-left-360.png",
+          "sha256": "3765dc5cf0b8a8a04e6bcb9801351fba0159fde1e5e852e6da25cc4fb05744d9"
+        },
+        {
+          "label": "table-3-right",
+          "path": "artifacts/qa/independent/component-details/table-3-right-360.png",
+          "sha256": "03bee62cd5e31887dbd713c0a18f04370849d87e4a38ab726a545d93165c7172"
+        }
+      ]
+    }
+  ]
+}

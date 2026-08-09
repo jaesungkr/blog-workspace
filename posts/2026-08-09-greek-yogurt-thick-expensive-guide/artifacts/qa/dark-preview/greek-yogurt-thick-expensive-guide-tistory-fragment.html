@@ -1,0 +1,384 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>저도 그릭요거트를 꽤 좋아합니다. 숟가락 자국이 그대로 남는 꾸덕한 질감과 진한 신맛은 한 번 익숙해지면 자꾸 생각납니다. 그런데 냉장 코너에서 일반 요거트보다 훨씬 비싼 가격표를 보면 궁금해집니다. 물기가 적을수록 더 좋은 걸까요? 비싸면 단백질과 유산균도 더 많을까요?</p>
+<p>먼저 결론부터 말씀드리면, <strong>꾸덕함은 고형분이 많다는 감각적 신호이지 건강 점수는 아닙니다.</strong> 수분과 유청 일부를 줄이면 맛과 질감은 진해지고, 같은 양을 만들 때 수율은 낮아집니다. 자연히 가격이 오를 여지가 생깁니다. 그래도 시판 제품 17개를 비교한 시험에서는 단백질, 당류, 열량, 가격이 모두 크게 달랐습니다. 이름보다 뒷면의 100g당 영양정보를 먼저 봐야 하는 이유입니다.</p>
+<figure class="devlog-rich__figure" data-media-id="greek-yogurt-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://blog.kakaocdn.net/dna/QeSCm/dJMcajiXxrj/AAAAAAAAAAAAAAAAAAAAABOWjhawTp6p2nzHf8S07a0_N0PChqLiooeHYwzUqd2Z/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1788188399&amp;allow_ip=&amp;allow_referer=&amp;signature=uvaa6hw2A64wa2hdMKpUlyiqJm0%3D" alt="숟가락 자국이 선명하게 남은 꾸덕한 그릭요거트 한 그릇" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">그릭요거트의 매력은 숟가락 자국이 남는 밀도입니다. 다만 이 질감만으로 영양을 판단할 수는 없습니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+<div class="rich-table-wrap"><table><thead><tr><th>궁금한 점</th><th>짧은 답</th></tr></thead><tbody><tr><td>왜 꾸덕한가요?</td><td>수분과 유청 일부를 줄이거나 원유·유단백을 농축해 고형분 비율을 높였기 때문입니다.</td></tr><tr><td>왜 비싼가요?</td><td>전통 여과식은 완제품 수율이 낮고 부산물인 산성 유청이 많이 생깁니다. 다만 공정과 브랜드마다 원가는 다릅니다.</td></tr><tr><td>무엇이 좋은가요?</td><td>평균적으로 일반 요거트보다 단백질이 높아 간편한 단백질 식품이 될 수 있습니다.</td></tr><tr><td>꾸덕할수록 건강한가요?</td><td>아닙니다. 단단한 질감은 고형분과 공정을 보여 주지만 당류·지방·열량까지 알려 주지는 않습니다.</td></tr><tr><td>처음 고를 때는요?</td><td>원재료명에서 첨가당을 확인하고, 단백질·당류·지방·가격을 모두 100g 기준으로 맞춰 보세요.</td></tr></tbody></table></div>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#꾸덕함을-만드는-농축">꾸덕함을 만드는 농축</a></li>
+<li><a href="#완제품-1kg-뒤의-유청-23kg">완제품 1kg 뒤의 유청 2~3kg</a></li>
+<li><a href="#꾸덕하면-더-좋은가요">꾸덕하면 더 좋은가요?</a></li>
+<li><a href="#단백질발효활용도">단백질·발효·활용도</a></li>
+<li><a href="#150g-한-그릇의-큰-차이">150g 한 그릇의 큰 차이</a></li>
+<li><a href="#플레인무가당락토프리">플레인·무가당·락토프리</a></li>
+<li><a href="#라벨을-보는-30초-순서">라벨을 보는 30초 순서</a></li>
+<li><a href="#슈퍼푸드보다-100g-영양정보">슈퍼푸드보다 100g 영양정보</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="꾸덕함을-만드는-농축">
+<h2 id="꾸덕함을-만드는-농축">꾸덕함을 만드는 농축</h2>
+<p>일반 요거트와 그릭요거트는 출발점이 크게 다르지 않습니다. 우유에 배양균을 넣으면 유당 일부가 젖산으로 바뀝니다. 산도가 내려가면서 우유 단백질이 그물처럼 엉겨 요거트가 됩니다. 여기서 산성 유청, 즉 발효 뒤 분리되는 옅은 노란빛 액체를 일부 덜어내면 물의 비중은 줄고 단백질·지방 같은 고형분의 비율은 높아집니다.</p>
+<p>전통 방식은 천이나 필터에 걸러 유청을 빼지만, 공장에서는 원심분리나 한외여과를 쓰기도 합니다. 발효 전에 원유를 농축하거나 우유 단백질을 더해 비슷한 질감을 만드는 방법도 있습니다. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9778196/" style="color:#1a73e8;text-decoration:none;" target="_blank">그릭요거트 제조조건을 비교한 연구</a>가 여러 열처리·여과 방식을 나눠 살핀 이유도 이 때문입니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">그릭</code>이라는 이름만으로 모든 제품이 같은 제조법을 썼다고 단정할 수 없습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="완제품-1kg-뒤의-유청-23kg">
+<h2 id="완제품-1kg-뒤의-유청-23kg">완제품 1kg 뒤의 유청 2~3kg</h2>
+<p>전통 여과식의 가격을 이해하려면 빠져나간 액체를 함께 봐야 합니다. <a href="https://www.mdpi.com/2624-862X/6/3/21" style="color:#1a73e8;text-decoration:none;" target="_blank">산성 유청의 양을 다룬 연구</a>는 그릭요거트 1kg을 만들 때 산성 유청이 약 2~3kg 생길 수 있다고 설명합니다. 투입한 요거트 베이스 가운데 완제품으로 남는 비율이 낮다는 뜻입니다.</p>
+<p>같은 1kg을 만들려면 완제품으로 남지 않는 부분이 커지고, 분리한 유청을 처리하거나 다른 원료로 활용하는 일도 남습니다. 낮은 수율이 가격을 끌어올리는 이유입니다. 이 수치는 개별 회사의 원가표는 아닙니다. 한외여과로 미리 농축하거나 단백질 원료를 보강하면 수율과 비용도 달라집니다. <strong>가격표만으로 전통 여과식인지, 영양가가 높은지까지 알 수는 없습니다.</strong></p>
+<figure class="devlog-rich__figure" data-media-id="greek-yogurt-process" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://blog.kakaocdn.net/dna/boUvUV/dJMcabkYIRk/AAAAAAAAAAAAAAAAAAAAAKDAQyYRy-MS-8Y57rZDHjrNYtPFotJ_EhL_idPMlYur/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1788188399&amp;allow_ip=&amp;allow_referer=&amp;signature=LZOPK6MN88%2FaSQgS8tohb7fvvUk%3D" alt="일반 요거트에서 유청을 줄여 그릭요거트가 되는 과정과 17개 제품의 영양·가격 범위" width="1080" height="1350" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">유청을 덜어 고형분 비율을 높이면 질감은 진해지고 수율은 낮아집니다. 아래 범위는 17개 제품을 100g 기준으로 비교한 결과입니다. <span class="devlog-rich__credit">· <a href="https://www.kca.go.kr/home/sub.do?cate=00000049&amp;menukey=4004&amp;mode=view&amp;no=1004013515" target="_blank" rel="noopener noreferrer">Codex deterministic infographic renderer 캡처 · 2026-08-09</a></span></figcaption></figure>
+</section>
+<section class="devlog-rich__section" aria-labelledby="꾸덕하면-더-좋은가요">
+<h2 id="꾸덕하면-더-좋은가요">꾸덕하면 더 좋은가요?</h2>
+<p>먹는 즐거움으로는 충분히 좋은 이유가 있습니다. 꾸덕한 요거트는 숟가락에 오래 머물고, 견과류나 과일을 얹어도 물에 잠기지 않으며, 소스나 스프레드로 쓰기 좋습니다. 미국 시판 제품을 살핀 <a href="https://pubmed.ncbi.nlm.nih.gov/24404579/" style="color:#1a73e8;text-decoration:none;" target="_blank">그릭요거트 감각평가 연구</a>에서도 소비자들은 단단하고 조밀하며 신맛이 지나치지 않은 질감을 선호했습니다.</p>
+<p>여기서 선호와 영양은 갈립니다. 2026년 한국소비자원 홈페이지에 공개된 소비자시민모임 시험에서 17개 제품의 고형분은 100g당 14.4~33.8g이었습니다. 가장 높은 제품과 낮은 제품의 차이가 2.3배였고, 고형분이 높을수록 질감도 더 단단하고 진했습니다. 같은 제품군의 열량은 55.6~199.7kcal, 당류는 1.2~12.3g으로 벌어졌습니다. 꾸덕함이 입안의 밀도를 알려 준다면, 단백질과 지방, 당류의 양은 영양정보가 알려 줍니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>꾸덕함이 비교적 잘 말해 주는 것</th><th>꾸덕함만으로 알 수 없는 것</th></tr></thead><tbody><tr><td>고형분 비율과 물성</td><td>첨가당 유무</td></tr><tr><td>숟가락에서 느껴지는 밀도</td><td>단백질의 정확한 양</td></tr><tr><td>토핑·소스에 쓰기 좋은 정도</td><td>지방·열량과 가격 대비 가치</td></tr><tr><td>제조 과정에서 농축했을 가능성</td><td>전통 여과식인지 단백질을 보강했는지</td></tr></tbody></table></div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="단백질발효활용도">
+<h2 id="단백질발효활용도">단백질·발효·활용도</h2>
+<p>첫째는 단백질입니다. <a href="https://www.kca.go.kr/home/sub.do?cate=00000049&amp;menukey=4004&amp;mode=view&amp;no=1004013515" style="color:#1a73e8;text-decoration:none;" target="_blank">17개 제품 시험</a>에서 그릭요거트의 평균 단백질은 100g당 8.3g으로 일반 요거트 평균 4.5g보다 1.8배 높았습니다. 아침을 거르기 쉽거나 간식에서 단백질을 보충하고 싶을 때 편리한 선택지가 될 수 있습니다.</p>
+<p>단백질이 많은 요거트 간식이 포만감에 도움이 될 가능성은 있습니다. 다만 근거의 범위가 좁습니다. 건강한 여성 20명이 참여한 <a href="https://pubmed.ncbi.nlm.nih.gov/25266206/" style="color:#1a73e8;text-decoration:none;" target="_blank">단기 무작위 교차시험</a>에서 160kcal 고단백 요거트는 초콜릿보다 오후 허기를 낮추고 저녁 식사 시작을 약 30분 늦췄습니다. 크래커와 비교한 허기와 식사 지연은 통계적으로 뚜렷하지 않았습니다. 식품의 단백질뿐 아니라 에너지 밀도와 형태도 달라 단백질만의 효과로 분리할 수도 없습니다. 한 번의 작은 단기 연구이므로 장기 체중 감량 효과로 확대해서는 안 됩니다.</p>
+<p>둘째는 발효유라는 점입니다. 요거트 배양균은 발효하면서 유당을 이용합니다. 유럽식품안전청은 <a href="https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2010.1763" style="color:#1a73e8;text-decoration:none;" target="_blank">살아 있는 전통 요거트 배양균과 유당 소화 개선 사이의 인과관계</a>를 유당 소화가 어려운 사람에게서 인정했습니다. 미국 국립당뇨병·소화기·신장질환연구소도 <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/eating-diet-nutrition" style="color:#1a73e8;text-decoration:none;" target="_blank">유당불내증이 있는 일부 사람은 요거트를 우유보다 편하게 먹을 수 있다</a>고 안내합니다. 제품에 살아 있는 배양균이 충분히 남아 있는지와 개인이 견딜 수 있는 양은 다르며, 요거트가 곧 락토프리 식품이라는 뜻도 아닙니다.</p>
+<p>셋째는 활용도입니다. 무가당 제품은 과일과 견과류를 곁들이는 간식뿐 아니라, 마요네즈나 생크림이 들어가는 소스의 일부를 바꾸는 재료로도 쓸 수 있습니다. 이 장점은 특정 치료 효과보다 현실적입니다. 한 통을 사서 아침, 간식, 소스에 나눠 쓰면 꾸덕한 질감 자체가 조리 기능이 됩니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="150g-한-그릇의-큰-차이">
+<h2 id="150g-한-그릇의-큰-차이">150g 한 그릇의 큰 차이</h2>
+<p>국내 시험 결과를 100g 기준으로 모아 보면 제품 차이가 선명합니다. 아래의 150g 값은 dev.log가 비교를 위해 단순 환산한 수치입니다. 실제 1회 섭취 권장량이 아니며, 각 항목의 최솟값과 최댓값은 서로 다른 제품에서 나왔을 수 있습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>항목</th><th>17개 제품의 100g당 범위</th><th>150g을 덜었을 때의 환산 범위</th></tr></thead><tbody><tr><td>단백질</td><td>5.9~13.1g</td><td>8.9~19.7g</td></tr><tr><td>당류</td><td>1.2~12.3g</td><td>1.8~18.5g</td></tr><tr><td>열량</td><td>55.6~199.7kcal</td><td>83~300kcal</td></tr><tr><td>가격</td><td>826~3,333원</td><td>1,239~5,000원</td></tr></tbody></table></div>
+<p>같은 양의 그릭요거트를 먹어도 단백질은 2배 이상, 당류는 약 10배, 열량은 3배 이상 차이 날 수 있습니다. 100g당 가격도 4배 차이였습니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">그릭요거트니까 고단백</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">플레인이니까 저당</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">비싸니까 진짜</code>라는 세 가지 짐작이 모두 위험한 이유입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="플레인무가당락토프리">
+<h2 id="플레인무가당락토프리">플레인·무가당·락토프리</h2>
+<p>제품 앞면의 단어는 비슷해 보여도 묻는 질문이 다릅니다.</p>
+<ul><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">플레인</code>은 보통 과일 맛이나 초콜릿 맛을 넣지 않은 기본 맛을 가리킵니다. 설탕이나 감미료가 없다는 보장은 아닙니다. 실제 17개 제품 시험에서도 플레인 제품 일부에 설탕·당류 또는 감미료가 들어 있었습니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">무가당</code>이나 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">설탕무첨가</code>를 고를 때도 영양정보의 당류가 0g인지 따로 봐야 합니다. 우유에 원래 들어 있는 유당 때문에 첨가당이 없어도 당류가 표시될 수 있습니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">락토프리</code>는 유당을 제거하거나 분해한 제품을 찾는 단서입니다. 유당불내증에는 도움이 될 수 있지만 우유 단백질 알레르기와는 전혀 다른 문제입니다. 호주·뉴질랜드 임상면역알레르기학회는 <a href="https://www.allergy.org.au/patients/food-allergy/cows-milk-dairy-allergy" style="color:#1a73e8;text-decoration:none;" target="_blank">우유 유래 락토프리 제품도 우유 알레르기가 있는 사람에게 적합하지 않다</a>고 안내합니다.</li></ul>
+<p>유산균 숫자도 한 줄로 순위를 매기기 어렵습니다. 17개 시험 제품은 모두 농후발효유의 유산균 수 기준을 충족했습니다. 미국 국립보건원 건강보조식품실은 <a href="https://ods.od.nih.gov/factsheets/Probiotics-Consumer/" style="color:#1a73e8;text-decoration:none;" target="_blank">건강 효과가 균주와 양에 따라 달라지고, 발효 식품의 모든 미생물이 입증된 프로바이오틱스는 아니라고 설명합니다</a>. 유산균 수가 가장 큰 제품이 모든 사람의 장에 가장 좋다는 뜻은 아닙니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="라벨을-보는-30초-순서">
+<h2 id="라벨을-보는-30초-순서">라벨을 보는 30초 순서</h2>
+<p>제품 두 개를 앞에 두고 고민할 때는 다음 순서면 충분합니다.</p>
+<ol><li><strong>먹는 목적을 하나 정합니다.</strong> 단백질 보충, 당류 조절, 진한 맛, 요리 재료 가운데 무엇이 우선인지 먼저 고릅니다.</li><li><strong>원재료명을 봅니다.</strong> 설탕, 시럽, 과일청, 감미료, 우유 단백질, 안정제가 들어 있는지 확인합니다. 첨가물이 나쁘다는 뜻이 아니라, 기대한 제품과 실제 배합이 같은지 보는 단계입니다.</li><li><strong>모든 숫자를 100g으로 맞춥니다.</strong> 한 컵이 80g인 제품과 150g인 제품의 총량을 바로 비교하면 판단이 틀어집니다. 단백질·당류·지방·열량을 같은 양으로 맞춰 보세요.</li><li><strong>가격도 100g으로 나눕니다.</strong> 대용량이 무조건 싸지 않고, 행사 가격은 다음 구매 때 달라질 수 있습니다. 자주 먹을 제품이라면 정상가와 실제 먹는 양을 함께 봅니다.</li><li><strong>처음에는 작은 용량으로 맛을 확인합니다.</strong> 산미와 질감은 영양표로 알 수 없습니다. 숫자가 좋아도 입맛에 맞지 않아 남기면 좋은 선택이 되기 어렵습니다.</li></ol>
+<div class="rich-table-wrap"><table><thead><tr><th>가장 중요한 목적</th><th>먼저 볼 항목</th><th>함께 볼 항목</th></tr></thead><tbody><tr><td>간편한 단백질 보충</td><td>100g당 단백질</td><td>당류, 총 섭취량, 가격</td></tr><tr><td>덜 단 간식</td><td>원재료명과 당류</td><td>토핑에 더하는 꿀·과일청</td></tr><tr><td>진하고 꾸덕한 맛</td><td>고형분 정보 또는 실제 질감</td><td>열량, 지방, 가격</td></tr><tr><td>유당이 불편할 때</td><td>락토프리 표시</td><td>소량부터 개인 반응 확인</td></tr><tr><td>소스·요리 재료</td><td>무가당 여부와 산미</td><td>원하는 점도와 지방 함량</td></tr></tbody></table></div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="슈퍼푸드보다-100g-영양정보">
+<h2 id="슈퍼푸드보다-100g-영양정보">슈퍼푸드보다 100g 영양정보</h2>
+<p>그릭요거트는 분명 매력적인 식품입니다. 적은 부피에 단백질을 담기 쉽고, 발효유의 장점이 있으며, 간식부터 소스까지 쓰임도 넓습니다. 꾸덕한 질감을 좋아한다면 그 자체로도 충분한 선택 이유입니다.</p>
+<p>다만 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">슈퍼푸드</code>라는 이름이 한 제품의 당류와 지방, 열량, 가격까지 대신 판단해 주지는 않습니다. 비싼 제품을 무조건 고를 필요도, 묽은 제품을 가짜라고 볼 필요도 없습니다. 다음에 냉장 코너에 가면 두 제품의 뒷면을 나란히 놓고 100g당 단백질과 당류, 가격부터 비교해 보세요. 그 순간부터 그릭요거트는 막연히 좋은 음식이 아니라, 내 목적에 맞게 고를 수 있는 음식이 됩니다.</p>
+</section>
+</article>

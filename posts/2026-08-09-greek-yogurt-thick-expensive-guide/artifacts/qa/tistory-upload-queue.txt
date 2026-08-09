@@ -1,0 +1,3 @@
+id	publish_path	pixels	sha256	tistory_url
+greek-yogurt-hero	assets/screenshots/greek-yogurt-hero-v2.png	1672x941	4179e5487fd57fb55fac1d8957dc2127b9a2434dadd69167cafcaae57e37a710	
+greek-yogurt-process	assets/screenshots/greek-yogurt-process-v2.png	1080x1350	d281674704c5d7a5cc2c7cdf69b6be9bc85d3626e3c4eb324c4ea1e9368852bd	

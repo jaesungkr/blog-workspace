@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "status": "pass",
+  "record_id": "b8ce87ab-d008-4b78-9442-55c0898c8b97",
+  "recorded_at": "2026-08-09T13:23:52.915597Z",
+  "recorded_by": "Codex /root creator",
+  "media_sha256": "8b7b060c2b8b3b71d7b111f4f0c4fa49dcba76a1fb8c4ef8f6f31a01ba4a15c3",
+  "fetcher_sha256": "eff65b3ab4a7a17882aef23bef5023237dd2308ee1ba903cb4ab52a4d22a2fcd",
+  "fetcher_files": {
+    "remote_media.py": "ac44710fa5611571d1d8ee3cc6b21ab656df549bd2d49ccd32e4285b91bbb6b6",
+    "rich_post_common.py": "ac9167175f3f3682b163e8d9cfb0b7b55e9158297db11c9412d50ca18bf022bc"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "greek-yogurt-hero",
+      "requested_url": "https://blog.kakaocdn.net/dna/QeSCm/dJMcajiXxrj/AAAAAAAAAAAAAAAAAAAAABOWjhawTp6p2nzHf8S07a0_N0PChqLiooeHYwzUqd2Z/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=uvaa6hw2A64wa2hdMKpUlyiqJm0%3D",
+      "final_url": "https://blog.kakaocdn.net/dna/QeSCm/dJMcajiXxrj/AAAAAAAAAAAAAAAAAAAAABOWjhawTp6p2nzHf8S07a0_N0PChqLiooeHYwzUqd2Z/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=uvaa6hw2A64wa2hdMKpUlyiqJm0%3D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-09T13:23:52.778036Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1722012,
+      "byte_length": 1722012,
+      "sha256": "4179e5487fd57fb55fac1d8957dc2127b9a2434dadd69167cafcaae57e37a710",
+      "format": "png",
+      "width": 1672,
+      "height": 941,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": null
+    },
+    {
+      "id": "greek-yogurt-process",
+      "requested_url": "https://blog.kakaocdn.net/dna/boUvUV/dJMcabkYIRk/AAAAAAAAAAAAAAAAAAAAAKDAQyYRy-MS-8Y57rZDHjrNYtPFotJ_EhL_idPMlYur/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=LZOPK6MN88%2FaSQgS8tohb7fvvUk%3D",
+      "final_url": "https://blog.kakaocdn.net/dna/boUvUV/dJMcabkYIRk/AAAAAAAAAAAAAAAAAAAAAKDAQyYRy-MS-8Y57rZDHjrNYtPFotJ_EhL_idPMlYur/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=LZOPK6MN88%2FaSQgS8tohb7fvvUk%3D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-09T13:23:52.915264Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1276465,
+      "byte_length": 1276465,
+      "sha256": "d281674704c5d7a5cc2c7cdf69b6be9bc85d3626e3c4eb324c4ea1e9368852bd",
+      "format": "png",
+      "width": 1080,
+      "height": 1350,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": null
+    }
+  ]
+}
