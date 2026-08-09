@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "reviewer": "Hegel",
+  "session": "c7a7f0ba-b2c0-4d72-97f8-ce4ac5377771",
+  "browser": "Chrome/151.0.7922.108",
+  "preview": "artifacts/qa/independent-rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+  "preview_sha256": "bd2603ec3f977dcaed59506bc64ac4489aeaa487e062d85c376df39e73f60745",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "page": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/independent-rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+        "inner_width": 1280,
+        "inner_height": 900,
+        "client_width": 1280,
+        "client_height": 900,
+        "scroll_width": 1280,
+        "scroll_height": 6747,
+        "h1_count": 1,
+        "toc_anchor_count": 7,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+            "complete": true,
+            "natural_width": 1080,
+            "natural_height": 1350
+          }
+        ]
+      },
+      "figure": {
+        "image_complete": true,
+        "image_natural_width": 1080,
+        "image_natural_height": 1350,
+        "image_display_width": 916,
+        "image_display_height": 1144.5,
+        "alt": "취득세 감소와 복지예산 증가가 경기도 재정 여력을 양쪽에서 압박하는 구조",
+        "caption": "공식 부도 판정은 없지만, 취득세 감소·복지예산 증가·재정자립도 하락은 함께 봐야 할 재정 경고 신호입니다. 2022·2026 경기도 공식 설명과 예산 기준 수치를 재구성했습니다. · Codex deterministic HTML/SVG render 캡처 · 2026-08-09",
+        "caption_font_size": "14px",
+        "caption_line_height": "21.7px",
+        "screenshot": "artifacts/qa/independent/component-details/figure-1280.png",
+        "screenshot_sha256": "0f01ae32265756a016c2e97f569837b2e26b039b46d544657f9507563814f310"
+      },
+      "tables": [],
+      "list": {
+        "ordered_list_found": true,
+        "marker_style": "decimal",
+        "item_displays": [
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item"
+        ],
+        "item_margin_tops": [
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px"
+        ],
+        "list_margin_bottom": "0px",
+        "following_tag": null
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "page": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/independent-rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+        "inner_width": 390,
+        "inner_height": 844,
+        "client_width": 390,
+        "client_height": 844,
+        "scroll_width": 390,
+        "scroll_height": 8240,
+        "h1_count": 1,
+        "toc_anchor_count": 7,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+            "complete": true,
+            "natural_width": 1080,
+            "natural_height": 1350
+          }
+        ]
+      },
+      "figure": {
+        "image_complete": true,
+        "image_natural_width": 1080,
+        "image_natural_height": 1350,
+        "image_display_width": 350,
+        "image_display_height": 437,
+        "alt": "취득세 감소와 복지예산 증가가 경기도 재정 여력을 양쪽에서 압박하는 구조",
+        "caption": "공식 부도 판정은 없지만, 취득세 감소·복지예산 증가·재정자립도 하락은 함께 봐야 할 재정 경고 신호입니다. 2022·2026 경기도 공식 설명과 예산 기준 수치를 재구성했습니다. · Codex deterministic HTML/SVG render 캡처 · 2026-08-09",
+        "caption_font_size": "14px",
+        "caption_line_height": "21.7px",
+        "screenshot": "artifacts/qa/independent/component-details/figure-390.png",
+        "screenshot_sha256": "65a4ddecf68e6375aacb5346a392f50508af57df85d299989bf09b4ad00f5bd6"
+      },
+      "tables": [
+        {
+          "index": 1,
+          "states": [
+            {
+              "side": "left",
+              "document_client_width": 390,
+              "document_scroll_width": 390,
+              "wrapper_client_width": 350,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 0,
+              "wrapper_max_scroll_left": 270,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "7조 원을 구성한 항목",
+                "의회 발언 금액",
+                "숫자의 성격"
+              ],
+              "first_row": [
+                "지역개발기금",
+                "3조 9,000억 원",
+                "내부 기금에서 빌린 재원으로 설명"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-1-390-left.png",
+              "screenshot_sha256": "e82dc19f94bfd42ccdd7b1caea9056675ac020605f56803047be0214f24ad163"
+            },
+            {
+              "side": "right",
+              "document_client_width": 390,
+              "document_scroll_width": 390,
+              "wrapper_client_width": 350,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 270,
+              "wrapper_max_scroll_left": 270,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "7조 원을 구성한 항목",
+                "의회 발언 금액",
+                "숫자의 성격"
+              ],
+              "first_row": [
+                "지역개발기금",
+                "3조 9,000억 원",
+                "내부 기금에서 빌린 재원으로 설명"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-1-390-right.png",
+              "screenshot_sha256": "2f536e5313fc4120aeaaf529c075d35cec409201b2910b53aabf7a05a818eb45"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "states": [
+            {
+              "side": "left",
+              "document_client_width": 390,
+              "document_scroll_width": 390,
+              "wrapper_client_width": 350,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 0,
+              "wrapper_max_scroll_left": 270,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "지표",
+                "공식 수치",
+                "읽는 법"
+              ],
+              "first_row": [
+                "재정자립도",
+                "44.4%",
+                "2022년 55.7%보다 11.3%포인트 하락"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-2-390-left.png",
+              "screenshot_sha256": "faa73f8105d82c22d32853928cd7193a3d1a09cdc7a7193a410a931072ea89f5"
+            },
+            {
+              "side": "right",
+              "document_client_width": 390,
+              "document_scroll_width": 390,
+              "wrapper_client_width": 350,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 270,
+              "wrapper_max_scroll_left": 270,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "지표",
+                "공식 수치",
+                "읽는 법"
+              ],
+              "first_row": [
+                "재정자립도",
+                "44.4%",
+                "2022년 55.7%보다 11.3%포인트 하락"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-2-390-right.png",
+              "screenshot_sha256": "05f7dd1723da5261b7780da5962ed179686c74eb575b81b4e69e3274866c02ba"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "states": [
+            {
+              "side": "left",
+              "document_client_width": 390,
+              "document_scroll_width": 390,
+              "wrapper_client_width": 350,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 0,
+              "wrapper_max_scroll_left": 270,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "확인할 지표",
+                "좋아지는 신호",
+                "주의할 신호"
+              ],
+              "first_row": [
+                "취득세 실제 징수액",
+                "예산 대비 세수 결손 축소",
+                "거래 부진과 과대 추계 반복"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-3-390-left.png",
+              "screenshot_sha256": "5facae5d3bd1c08d3e1b67fa6944f99f0e512fa111ae867c41354f862de696d8"
+            },
+            {
+              "side": "right",
+              "document_client_width": 390,
+              "document_scroll_width": 390,
+              "wrapper_client_width": 350,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 270,
+              "wrapper_max_scroll_left": 270,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "확인할 지표",
+                "좋아지는 신호",
+                "주의할 신호"
+              ],
+              "first_row": [
+                "취득세 실제 징수액",
+                "예산 대비 세수 결손 축소",
+                "거래 부진과 과대 추계 반복"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-3-390-right.png",
+              "screenshot_sha256": "e82016f0a5c528a471c3ece0a9d02a5ef3fa71e1e683ccf8c683d646470ca556"
+            }
+          ]
+        }
+      ],
+      "list": {
+        "ordered_list_found": true,
+        "marker_style": "decimal",
+        "item_displays": [
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item"
+        ],
+        "item_margin_tops": [
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px"
+        ],
+        "list_margin_bottom": "0px",
+        "following_tag": null
+      }
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "page": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/independent-rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+        "inner_width": 360,
+        "inner_height": 800,
+        "client_width": 360,
+        "client_height": 800,
+        "scroll_width": 360,
+        "scroll_height": 8797,
+        "h1_count": 1,
+        "toc_anchor_count": 7,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+            "complete": true,
+            "natural_width": 1080,
+            "natural_height": 1350
+          }
+        ]
+      },
+      "figure": {
+        "image_complete": true,
+        "image_natural_width": 1080,
+        "image_natural_height": 1350,
+        "image_display_width": 320,
+        "image_display_height": 399.5,
+        "alt": "취득세 감소와 복지예산 증가가 경기도 재정 여력을 양쪽에서 압박하는 구조",
+        "caption": "공식 부도 판정은 없지만, 취득세 감소·복지예산 증가·재정자립도 하락은 함께 봐야 할 재정 경고 신호입니다. 2022·2026 경기도 공식 설명과 예산 기준 수치를 재구성했습니다. · Codex deterministic HTML/SVG render 캡처 · 2026-08-09",
+        "caption_font_size": "14px",
+        "caption_line_height": "21.7px",
+        "screenshot": "artifacts/qa/independent/component-details/figure-360.png",
+        "screenshot_sha256": "b40ef4fb6ace345ca2e80688170e0f1bbb8b39023f1253f842c9cc87f514466e"
+      },
+      "tables": [
+        {
+          "index": 1,
+          "states": [
+            {
+              "side": "left",
+              "document_client_width": 360,
+              "document_scroll_width": 360,
+              "wrapper_client_width": 320,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 0,
+              "wrapper_max_scroll_left": 300,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "7조 원을 구성한 항목",
+                "의회 발언 금액",
+                "숫자의 성격"
+              ],
+              "first_row": [
+                "지역개발기금",
+                "3조 9,000억 원",
+                "내부 기금에서 빌린 재원으로 설명"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-1-360-left.png",
+              "screenshot_sha256": "9d68811880d6e1c6d411aef435d37006d0ea891a50ba37c504919c37c6b6af13"
+            },
+            {
+              "side": "right",
+              "document_client_width": 360,
+              "document_scroll_width": 360,
+              "wrapper_client_width": 320,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 300,
+              "wrapper_max_scroll_left": 300,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "7조 원을 구성한 항목",
+                "의회 발언 금액",
+                "숫자의 성격"
+              ],
+              "first_row": [
+                "지역개발기금",
+                "3조 9,000억 원",
+                "내부 기금에서 빌린 재원으로 설명"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-1-360-right.png",
+              "screenshot_sha256": "9ce89e82d79e8b696f64c9d111ad4fdd0c0d2411fd68c7bf035bd47e2dc1cc15"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "states": [
+            {
+              "side": "left",
+              "document_client_width": 360,
+              "document_scroll_width": 360,
+              "wrapper_client_width": 320,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 0,
+              "wrapper_max_scroll_left": 300,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "지표",
+                "공식 수치",
+                "읽는 법"
+              ],
+              "first_row": [
+                "재정자립도",
+                "44.4%",
+                "2022년 55.7%보다 11.3%포인트 하락"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-2-360-left.png",
+              "screenshot_sha256": "f45b2fdfd35b93578e48e415018d62ec8f2993047b35e40ad6f54cf3d2e6d9a1"
+            },
+            {
+              "side": "right",
+              "document_client_width": 360,
+              "document_scroll_width": 360,
+              "wrapper_client_width": 320,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 300,
+              "wrapper_max_scroll_left": 300,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "지표",
+                "공식 수치",
+                "읽는 법"
+              ],
+              "first_row": [
+                "재정자립도",
+                "44.4%",
+                "2022년 55.7%보다 11.3%포인트 하락"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-2-360-right.png",
+              "screenshot_sha256": "903784779bb25ee0a8343bfe8e2be6800005f0187f444a2d754f19adfbb3c11d"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "states": [
+            {
+              "side": "left",
+              "document_client_width": 360,
+              "document_scroll_width": 360,
+              "wrapper_client_width": 320,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 0,
+              "wrapper_max_scroll_left": 300,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "확인할 지표",
+                "좋아지는 신호",
+                "주의할 신호"
+              ],
+              "first_row": [
+                "취득세 실제 징수액",
+                "예산 대비 세수 결손 축소",
+                "거래 부진과 과대 추계 반복"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-3-360-left.png",
+              "screenshot_sha256": "41330366b7243375ed83a59390bb7a2f002c03cd47c1f30181db11aa56a27312"
+            },
+            {
+              "side": "right",
+              "document_client_width": 360,
+              "document_scroll_width": 360,
+              "wrapper_client_width": 320,
+              "wrapper_scroll_width": 620,
+              "wrapper_scroll_left": 300,
+              "wrapper_max_scroll_left": 300,
+              "overflow_x": "auto",
+              "font_size": "15px",
+              "line_height": "24px",
+              "headers": [
+                "확인할 지표",
+                "좋아지는 신호",
+                "주의할 신호"
+              ],
+              "first_row": [
+                "취득세 실제 징수액",
+                "예산 대비 세수 결손 축소",
+                "거래 부진과 과대 추계 반복"
+              ],
+              "screenshot": "artifacts/qa/independent/component-details/table-3-360-right.png",
+              "screenshot_sha256": "1a357ee8a9a1b83232ecb09f888c076f3b382d82f93432bda42a2c982410d4f4"
+            }
+          ]
+        }
+      ],
+      "list": {
+        "ordered_list_found": true,
+        "marker_style": "decimal",
+        "item_displays": [
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item",
+          "list-item"
+        ],
+        "item_margin_tops": [
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px",
+          "0px"
+        ],
+        "list_margin_bottom": "0px",
+        "following_tag": null
+      }
+    }
+  ]
+}

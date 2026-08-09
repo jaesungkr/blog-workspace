@@ -1,0 +1,227 @@
+{
+  "status": "preliminary_only",
+  "observations": [
+    {
+      "theme": "light",
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_links": 7,
+      "tables": [
+        {
+          "wrapper_client_width": 760,
+          "wrapper_scroll_width": 760,
+          "overflow_x": "auto",
+          "table_client_width": 760
+        },
+        {
+          "wrapper_client_width": 760,
+          "wrapper_scroll_width": 760,
+          "overflow_x": "auto",
+          "table_client_width": 760
+        },
+        {
+          "wrapper_client_width": 760,
+          "wrapper_scroll_width": 760,
+          "overflow_x": "auto",
+          "table_client_width": 760
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/preliminary/light-1280.png"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "client_width": 390,
+      "scroll_width": 390,
+      "h1_count": 1,
+      "toc_links": 7,
+      "tables": [
+        {
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/preliminary/light-390.png"
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_links": 7,
+      "tables": [
+        {
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/preliminary/light-360.png"
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_links": 7,
+      "tables": [
+        {
+          "wrapper_client_width": 760,
+          "wrapper_scroll_width": 760,
+          "overflow_x": "auto",
+          "table_client_width": 760
+        },
+        {
+          "wrapper_client_width": 760,
+          "wrapper_scroll_width": 760,
+          "overflow_x": "auto",
+          "table_client_width": 760
+        },
+        {
+          "wrapper_client_width": 760,
+          "wrapper_scroll_width": 760,
+          "overflow_x": "auto",
+          "table_client_width": 760
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/preliminary/dark-1280.png"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "client_width": 390,
+      "scroll_width": 390,
+      "h1_count": 1,
+      "toc_links": 7,
+      "tables": [
+        {
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 350,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/preliminary/dark-390.png"
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_links": 7,
+      "tables": [
+        {
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        },
+        {
+          "wrapper_client_width": 320,
+          "wrapper_scroll_width": 620,
+          "overflow_x": "auto",
+          "table_client_width": 620
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/preliminary/dark-360.png"
+    }
+  ]
+}

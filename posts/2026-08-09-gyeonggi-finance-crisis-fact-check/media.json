@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "lead_id": "gyeonggi-finance-pressure",
+  "items": [
+    {
+      "id": "gyeonggi-finance-pressure",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C05",
+        "C12"
+      ],
+      "actor": "Codex deterministic HTML/SVG render",
+      "captured_at": "2026-08-09",
+      "environment": "macOS, Google Chrome headless via Playwright, 1080x1350 CSS viewport, DPR 1",
+      "source_url": "https://www.gg.go.kr/bbs/boardView.do?bIdx=223879621&bsIdx=684&menuId=1954",
+      "raw_path": "artifacts/captures/raw/gyeonggi-finance-pressure-v1.png",
+      "publish_path": "assets/infographics/gyeonggi-finance-pressure-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+      "width": 1080,
+      "height": 1350,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original data visualization based on cited public Gyeonggi Province budget disclosures and assembly records",
+      "alt": "취득세 감소와 복지예산 증가가 경기도 재정 여력을 양쪽에서 압박하는 구조",
+      "caption": "공식 부도 판정은 없지만, 취득세 감소·복지예산 증가·재정자립도 하락은 함께 봐야 할 재정 경고 신호입니다. 2022·2026 경기도 공식 설명과 예산 기준 수치를 재구성했습니다.",
+      "processing": [
+        "deterministic HTML/SVG typesetting",
+        "Playwright raster render"
+      ],
+      "redactions": [],
+      "sha256": "9415494656cbfc6e2487aba826abc4a141dd5e06f1f5e3e1ee3dcaaa4137f910",
+      "status": "validated"
+    }
+  ]
+}

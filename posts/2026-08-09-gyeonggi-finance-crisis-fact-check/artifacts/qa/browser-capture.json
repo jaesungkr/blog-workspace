@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "status": "pass",
+  "mode": "creator",
+  "checked_at": "2026-08-09T12:00:12.449486Z",
+  "checked_by": "Codex",
+  "tool_sha256": "6de6cef94d30413a365118492b4ecb26fc926ebe1ace7fefa519a1f8e7dfc726",
+  "preview_path": "artifacts/qa/rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+  "preview_sha256": "bd2603ec3f977dcaed59506bc64ac4489aeaa487e062d85c376df39e73f60745",
+  "screenshot_root": "artifacts/qa",
+  "receipt_path": "artifacts/qa/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.108",
+  "protocol_version": "1.3",
+  "session": "a4a0c8b5-2065-4c87-90ae-b5d62eecc744",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6747,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "32fec3a799f20a1969cdc1db50db20194f6fa93b23573404c56e637c58710cee",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 8240,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "4421a7526059bff72494b3f7c2f4f714f33e0a16414cd36fd77b76bc64d7e971",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa/mobile-390.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-09-gyeonggi-finance-crisis-fact-check/artifacts/qa/rendered/gyeonggi-finance-crisis-fact-check-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 8797,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "b4294a78310213b8695a441f1e70a5ea1267ea23b99d6685c79c51c45a7d75b8",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa/mobile-360.png"
+    }
+  ]
+}
