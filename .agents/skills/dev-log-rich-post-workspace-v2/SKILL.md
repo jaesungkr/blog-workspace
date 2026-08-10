@@ -108,11 +108,23 @@ The creator inspects the local page as a preflight, not as a manual approval.
 Fix layout and media defects now. If text must change, return to the source
 stage and write a new source pass.
 
+If a wide UI screenshot becomes unreadable at 360 CSS pixels, use the optional
+validated `mobile_scroll_width` media field and a clear caption instruction so
+only the screenshot scrolls horizontally. Do not make lead art or ordinary
+images scroll.
+
 ## Bind remote media
 
-Print and bind the deterministic queue with `tistory_media_map_v2.py`. Receive
-URLs from the user or upload to a confirmed unpublished draft only with
-explicit authority. Never click publish.
+Print the deterministic user-upload queue with `tistory_media_map_v2.py` and
+hand the listed local files to the user. Codex never opens a Tistory editor,
+creates or edits a Tistory draft, uploads media to Tistory, or asks for upload
+permission. The user privately uploads every listed file and returns the final
+Tistory CDN URL for each stable media ID. Bind only those user-supplied URLs.
+
+While waiting, keep the article at `reviewing` and report the exact media ID,
+file, dimensions, and SHA-256 that the user must upload. After all URLs arrive,
+resume in the same bundle, bind them, and finish the remote and final-page
+gates. Do not produce the final HTML/TXT before the URL map is complete.
 
 Record one remote baseline with `remote_media_v2.py record`. Run
 `remote_media_v2.py verify` only when the route requires a second fetch. A
@@ -153,10 +165,12 @@ standards changed. Inspect the exact diff, stage only task files, commit, fetch
 and integrate without force, rerun affected checks, push to `origin/master`,
 and verify the remote commit.
 
-Make the byte-identical `<slug>-tistory-fragment.txt` the primary handoff and
-state the Tistory title separately. The user always pastes, previews, toggles
-the real hELLO theme, and publishes. After the user supplies the live URL,
-validate desktop and mobile before setting `published`.
+Make the byte-identical `<slug>-tistory-fragment.txt` the primary handoff only
+after the user has returned every CDN URL and the final gates pass. State the
+Tistory title separately. The user always uploads media privately, pastes the
+final HTML, previews it, toggles the real hELLO theme, and publishes. After the
+user supplies the live URL, validate desktop and mobile before setting
+`published`.
 
 ## Completion
 

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-10T03:25:48.456464Z",
+  "checked_by": "Codex independent reviewer /root/source_review",
+  "article_content_sha256": "757e3035666075504cf35e92fcf7dd2725e6b1c6f3eff8349c1d6d2310c2dfaa",
+  "brief_sha256": "61f14515fb130073e25a85935be3e5d00fd66b355a8d78a1c83168cb0d6257c4",
+  "evidence_sha256": "b0f4f7f8f2edf2f18599013d24a03cc119571b716bc5d8b8824963726382fb51",
+  "note": "공식 UI 스크린샷 3개와 설명, 원문·원격/로컬 SHA, authorship boundary 독립 대조 통과"
+}

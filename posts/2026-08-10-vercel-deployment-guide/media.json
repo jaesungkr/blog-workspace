@@ -1,0 +1,126 @@
+{
+  "version": 2,
+  "lead_id": "vercel-getting-started",
+  "items": [
+    {
+      "id": "vercel-getting-started",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "actor": "Vercel",
+      "captured_at": "2026-08-10",
+      "environment": "Vercel official documentation Open Graph image, 1200 x 628 PNG",
+      "source_url": "https://vercel.com/docs/getting-started-with-vercel",
+      "raw_path": "artifacts/sources/vercel-getting-started-og.png",
+      "publish_path": "assets/vercel-getting-started.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbtdRtu%2FdJMcadXkPP6%2FAAAAAAAAAAAAAAAAAAAAANLbuQrDdFjhWSKpiydnQMNE83BtVbJfETkYTel-jmME%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DoH1Fqg%252Bwl1JdSVnYtYXssTYcsGU%253D",
+      "width": 1200,
+      "height": 628,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "Vercel official documentation artwork reproduced with source attribution for editorial explanation",
+      "alt": "Vercel 삼각형 로고와 Getting started with Vercel 문구가 있는 공식 문서 대표 이미지",
+      "caption": "Vercel 공식 시작 문서의 대표 이미지입니다. 첫 배포는 Git 저장소를 가져와 빌드 설정을 확인하는 것부터 시작합니다.",
+      "processing": [
+        "downloaded from the official documentation Open Graph image endpoint without modification"
+      ],
+      "redactions": [],
+      "sha256": "49120e5aba964096551376e0015381ebccee1424f035b91992cd0daf4d906a40",
+      "status": "validated"
+    },
+    {
+      "id": "vercel-add-new-project",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C02"
+      ],
+      "actor": "Vercel",
+      "captured_at": "2026-08-10",
+      "environment": "Vercel official documentation UI screenshot, 1652 x 486 PNG",
+      "source_url": "https://vercel.com/docs/projects/managing-projects",
+      "raw_path": "artifacts/sources/ui/add-new-project-light.png",
+      "publish_path": "assets/vercel-add-new-project.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbL0YXZ%2FdJMcadv8NkO%2FAAAAAAAAAAAAAAAAAAAAAExrFA-N-JmTQKuQut2TpGa1wPrxsGF4PsU8XCw_0Qb8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYaFT%252BZRBcT18Bp1%252BLSQkYkl6CrM%253D",
+      "width": 1652,
+      "height": 486,
+      "display_width": 916,
+      "mobile_scroll_width": 720,
+      "placement": "after:add-new-project-steps",
+      "rights": "Vercel official documentation screenshot reproduced with source attribution for editorial explanation",
+      "alt": "Vercel 대시보드 오른쪽 위 Add New 메뉴에서 Project 항목이 펼쳐진 화면",
+      "caption": "Vercel 공식 문서의 프로젝트 생성 화면입니다. Add New… 메뉴에서 Project를 선택하면 Git 저장소를 가져오는 흐름이 시작됩니다. 모바일에서는 이미지를 오른쪽으로 밀어 메뉴를 확인하세요.",
+      "processing": [
+        "downloaded from the official documentation asset endpoint without modification"
+      ],
+      "redactions": [],
+      "sha256": "d46f775fde97174f5e8278160869879361e88b91efedec34ab293ca8d48daec5",
+      "status": "validated"
+    },
+    {
+      "id": "vercel-environment-variables",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C04"
+      ],
+      "actor": "Vercel",
+      "captured_at": "2026-08-10",
+      "environment": "Vercel official documentation UI screenshot, 1886 x 1124 PNG",
+      "source_url": "https://vercel.com/docs/environment-variables",
+      "raw_path": "artifacts/sources/ui/env-var-section-light.png",
+      "publish_path": "assets/vercel-environment-variables.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbbJF8k%2FdJMcagNngGI%2FAAAAAAAAAAAAAAAAAAAAAEHqkB2jWM_dVPfikjhQHn-SdNG_PCMYKBculF7xrxpR%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D4UqsgxS9%252BK0a3VACOkh8l6FkVM4%253D",
+      "width": 1886,
+      "height": 1124,
+      "display_width": 916,
+      "mobile_scroll_width": 720,
+      "placement": "after:environment-variable-scopes",
+      "rights": "Vercel official documentation screenshot reproduced with source attribution for editorial explanation",
+      "alt": "Vercel 환경 변수 화면에 Sensitive 설정, Environments 선택, Key와 Value 입력란이 표시된 모습",
+      "caption": "공식 환경 변수 입력 화면입니다. 적용할 환경을 고르고 Key와 Value를 저장한 뒤 새 배포를 만들어야 변경값이 반영됩니다. 모바일에서는 이미지를 좌우로 밀어 각 입력란을 확인하세요.",
+      "processing": [
+        "downloaded from the official documentation asset endpoint without modification"
+      ],
+      "redactions": [],
+      "sha256": "ae7e68d58e720ccd6779fb9bc8e9e03921e68ca8d5eda27410d07473ff374c28",
+      "status": "validated"
+    },
+    {
+      "id": "vercel-domain-verification",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Vercel",
+      "captured_at": "2026-08-10",
+      "environment": "Vercel official documentation UI screenshot, 1868 x 700 PNG",
+      "source_url": "https://vercel.com/docs/domains/working-with-domains/add-a-domain",
+      "raw_path": "artifacts/sources/ui/verify-domain-light.png",
+      "publish_path": "assets/vercel-domain-verification.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcOOFPm%2FdJMcahSSpdp%2FAAAAAAAAAAAAAAAAAAAAAM1nYaTd_hr_MPPx7XkT7TKVBq6DpkPyLZEolctZVTsY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DZko82LtJu2xD9eohvXlJ0JKYJ5I%253D",
+      "width": 1868,
+      "height": 700,
+      "display_width": 916,
+      "mobile_scroll_width": 720,
+      "placement": "after:custom-domain-records",
+      "rights": "Vercel official documentation screenshot reproduced with source attribution for editorial explanation",
+      "alt": "Vercel Configure DNS 화면에 CNAME과 TXT 레코드의 Type, Name, Value가 표시된 모습",
+      "caption": "공식 DNS 설정 예시입니다. 실제 연결에서는 자신의 프로젝트 화면에 나온 Type, Name, Value를 DNS 업체에 그대로 옮깁니다. 모바일에서는 이미지를 좌우로 밀어 세 열을 확인하세요.",
+      "processing": [
+        "downloaded from the official documentation asset endpoint without modification"
+      ],
+      "redactions": [],
+      "sha256": "b649bcfefee71fcb0abb22aeaeeb8792bfa111d788521822034e8e3f5a06fcd6",
+      "status": "validated"
+    }
+  ]
+}

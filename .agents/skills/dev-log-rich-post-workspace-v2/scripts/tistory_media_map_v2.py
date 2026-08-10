@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print the Tistory upload queue or bind one verified CDN URL to media.json."""
+"""Print the user-owned Tistory upload queue or bind a returned CDN URL."""
 
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ def print_errors(result: dict) -> None:
         print(f"ERROR: {error}", file=sys.stderr)
 
 
-def upload_rows(result: dict) -> list[dict]:
+def user_upload_rows(result: dict) -> list[dict]:
     rows: list[dict] = []
     for item in result["manifest"].get("items", []):
         if not isinstance(item, dict):
@@ -43,7 +43,7 @@ def upload_rows(result: dict) -> list[dict]:
 
 
 def run_plan(result: dict, as_json: bool) -> int:
-    rows = upload_rows(result)
+    rows = user_upload_rows(result)
     if as_json:
         print(json.dumps(rows, ensure_ascii=False, indent=2))
         return 0
@@ -111,10 +111,15 @@ def run_set_url(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Prepare and bind the deterministic Tistory media upload map."
+        description=(
+            "Prepare the user's deterministic Tistory media upload queue "
+            "and bind CDN URLs returned by the user."
+        )
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
-    plan = subparsers.add_parser("plan", help="Print upload order and identity data")
+    plan = subparsers.add_parser(
+        "plan", help="Print the user's upload queue and identity data"
+    )
     plan.add_argument("post_dir")
     plan.add_argument("--json", action="store_true")
     bind = subparsers.add_parser("set-url", help="Bind one final Tistory CDN URL")

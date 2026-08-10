@@ -27,7 +27,9 @@ not automatically require every repository regression test.
 
 ## Publication boundary
 
-Never click Tistory's final publish control. The user pastes the `.txt` HTML,
-checks the Tistory preview and hELLO theme toggle, and publishes. Keep
-`status: ready` until the user supplies the live URL. Validate the live desktop
-and mobile page before changing to `published`.
+Codex never uploads Tistory media or creates or edits a Tistory draft. The user
+first uploads the handed-off local media privately and returns the CDN URLs;
+Codex then binds and validates those URLs and creates the final `.txt` HTML.
+The user pastes the `.txt`, checks the Tistory preview and hELLO theme toggle,
+and publishes. Keep `status: ready` until the user supplies the live URL.
+Validate the live desktop and mobile page before changing to `published`.

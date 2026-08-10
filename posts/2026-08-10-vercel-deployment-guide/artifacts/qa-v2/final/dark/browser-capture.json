@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-dark",
+  "checked_at": "2026-08-10T04:49:27.965673Z",
+  "checked_by": "Codex independent final-page reviewer /root/source_review",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-dark-rendered/vercel-deployment-guide-rich-preview.html",
+  "preview_sha256": "c2480efbc0d00550c8b6f7ede22188e581a42c1c4c154b7b4005dedbb7d76398",
+  "screenshot_root": "artifacts/qa-v2/final/dark",
+  "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.108",
+  "protocol_version": "1.3",
+  "session": "a33e46f1-318e-43e3-a0f3-8f2137123e97",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/artifacts/qa-v2/final-dark-rendered/vercel-deployment-guide-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 9151,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 4,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbtdRtu%2FdJMcadXkPP6%2FAAAAAAAAAAAAAAAAAAAAANLbuQrDdFjhWSKpiydnQMNE83BtVbJfETkYTel-jmME%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DoH1Fqg%252Bwl1JdSVnYtYXssTYcsGU%253D",
+          "complete": true,
+          "natural_width": 1200,
+          "natural_height": 628
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbL0YXZ%2FdJMcadv8NkO%2FAAAAAAAAAAAAAAAAAAAAAExrFA-N-JmTQKuQut2TpGa1wPrxsGF4PsU8XCw_0Qb8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYaFT%252BZRBcT18Bp1%252BLSQkYkl6CrM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 376
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbbJF8k%2FdJMcagNngGI%2FAAAAAAAAAAAAAAAAAAAAAEHqkB2jWM_dVPfikjhQHn-SdNG_PCMYKBculF7xrxpR%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D4UqsgxS9%252BK0a3VACOkh8l6FkVM4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 762
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcOOFPm%2FdJMcahSSpdp%2FAAAAAAAAAAAAAAAAAAAAAM1nYaTd_hr_MPPx7XkT7TKVBq6DpkPyLZEolctZVTsY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DZko82LtJu2xD9eohvXlJ0JKYJ5I%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 479
+        }
+      ],
+      "screenshot_sha256": "cea527087353eebebf72b1cae35b11af99f554a24ada2e2f1cae4a930e297c67",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/artifacts/qa-v2/final-dark-rendered/vercel-deployment-guide-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 12827,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 4,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbtdRtu%2FdJMcadXkPP6%2FAAAAAAAAAAAAAAAAAAAAANLbuQrDdFjhWSKpiydnQMNE83BtVbJfETkYTel-jmME%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DoH1Fqg%252Bwl1JdSVnYtYXssTYcsGU%253D",
+          "complete": true,
+          "natural_width": 1200,
+          "natural_height": 628
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbL0YXZ%2FdJMcadv8NkO%2FAAAAAAAAAAAAAAAAAAAAAExrFA-N-JmTQKuQut2TpGa1wPrxsGF4PsU8XCw_0Qb8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYaFT%252BZRBcT18Bp1%252BLSQkYkl6CrM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 376
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbbJF8k%2FdJMcagNngGI%2FAAAAAAAAAAAAAAAAAAAAAEHqkB2jWM_dVPfikjhQHn-SdNG_PCMYKBculF7xrxpR%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D4UqsgxS9%252BK0a3VACOkh8l6FkVM4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 762
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcOOFPm%2FdJMcahSSpdp%2FAAAAAAAAAAAAAAAAAAAAAM1nYaTd_hr_MPPx7XkT7TKVBq6DpkPyLZEolctZVTsY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DZko82LtJu2xD9eohvXlJ0JKYJ5I%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 479
+        }
+      ],
+      "screenshot_sha256": "58f632b4474b1bcf7295b14a24fa95c08dedc182a851d31b2e8c49f797a505fd",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png"
+    }
+  ]
+}

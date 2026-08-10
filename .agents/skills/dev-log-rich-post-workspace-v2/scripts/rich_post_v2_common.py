@@ -2241,6 +2241,23 @@ def validate_bundle(
             errors.append(
                 f"{item_id}: source pixel width must cover display_width"
             )
+        mobile_scroll_width = raw_item.get("mobile_scroll_width")
+        if mobile_scroll_width is not None:
+            if kind != "screenshot":
+                errors.append(
+                    f"{item_id}: `mobile_scroll_width` is only supported for screenshots"
+                )
+            if (
+                type(mobile_scroll_width) is not int
+                or not 480 <= mobile_scroll_width <= 916
+            ):
+                errors.append(
+                    f"{item_id}: `mobile_scroll_width` must be between 480 and 916"
+                )
+            elif type(width) is int and width < mobile_scroll_width:
+                errors.append(
+                    f"{item_id}: source pixel width must cover mobile_scroll_width"
+                )
 
         publish_path = raw_item.get("publish_path")
         publish_file: Path | None = None

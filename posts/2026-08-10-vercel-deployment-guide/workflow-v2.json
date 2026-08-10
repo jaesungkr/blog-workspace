@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "GitHub 저장소는 있지만 배포 서비스를 처음 고르는 웹 개발 입문자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 문서를 근거로 Git 연동 배포의 최소 경로와 운영 체크포인트를 설명한다. 계정이나 프로젝트를 직접 조작했다는 주장은 하지 않는다. 정적 공식 리드 이미지와 프로젝트 생성·환경 변수·DNS 설정을 보여 주는 공식 UI 스크린샷 3개를 사용한다. GIF, 복잡한 표, 추가 뷰포트, 두 번째 원격 fetch는 열지 않는다."
+}

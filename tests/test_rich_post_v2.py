@@ -147,6 +147,37 @@ summary: "v2 게이트를 검증합니다."
         self.assertNotIn("<h1", fragment)
         self.assertIn("source-frozen article surface", preview)
 
+    def test_screenshot_can_opt_into_mobile_horizontal_scroll(self):
+        media_path = self.post / "media.json"
+        media = json.loads(media_path.read_text(encoding="utf-8"))
+        item = media["items"][0]
+        item["kind"] = "screenshot"
+        item["mobile_scroll_width"] = 640
+        media_path.write_text(
+            json.dumps(media, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+
+        result = validate_bundle(self.post)
+        self.assertEqual([], result["errors"])
+        preview, fragment = render_outputs(result, self.post / "dist")
+        for output in (preview, fragment):
+            self.assertIn("devlog-rich__figure--scroll-mobile", output)
+            self.assertIn("--rich-mobile-scroll-width:640px", output)
+            self.assertIn("스크린샷 가로 스크롤", output)
+
+    def test_mobile_scroll_width_rejects_non_screenshot_media(self):
+        media_path = self.post / "media.json"
+        media = json.loads(media_path.read_text(encoding="utf-8"))
+        media["items"][0]["mobile_scroll_width"] = 640
+        media_path.write_text(
+            json.dumps(media, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+
+        result = validate_bundle(self.post)
+        self.assertTrue(
+            any("only supported for screenshots" in error for error in result["errors"])
+        )
+
     def test_source_pass_is_bound_and_article_edit_invalidates_it(self):
         completed = subprocess.run(
             [

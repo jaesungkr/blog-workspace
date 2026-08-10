@@ -36,6 +36,23 @@ class SkillStructureTests(unittest.TestCase):
         self.assertIn("artifacts/qa-v2", skill_text)
         self.assertIn("allow_implicit_invocation: false", ui_text)
 
+        media_release = (
+            skill_dir / "references" / "media-release-v2.md"
+        ).read_text(encoding="utf-8")
+        delivery = (
+            skill_dir / "references" / "delivery-v2.md"
+        ).read_text(encoding="utf-8")
+        for text in (skill_text, media_release, delivery):
+            with self.subTest(contract="user-owned-tistory-upload"):
+                self.assertIn("Codex never", text)
+                self.assertIn("user", text.lower())
+        self.assertIn("never accesses the Tistory editor", media_release)
+        self.assertIn("returns every required URL", media_release)
+        self.assertNotIn(
+            "Upload to an unpublished Tistory draft only with explicit authority",
+            media_release,
+        )
+
         for relative in {
             "references/workflow-v2.md",
             "references/source-freeze-v2.md",

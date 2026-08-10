@@ -16,10 +16,31 @@ and blurring them later.
 
 ## Local preflight
 
-Before upload, run the v2 checker and render local light and dark previews.
-Inspect 1280 and 360 CSS pixels. Add 390 or 768 only when
+Before asking the user to upload, run the v2 checker and render local light and
+dark previews. Inspect 1280 and 360 CSS pixels. Add 390 or 768 only when
 `workflow-v2.json` routes that profile. Fix layout and media defects here; if
 the text must change, return to the source gate.
+
+When a wide UI screenshot is readable on desktop but its labels become too
+small at 360 CSS pixels, set `mobile_scroll_width` to an integer from 480 to
+916 in that screenshot's media item. The renderer keeps the caption fixed and
+places only the screenshot in a keyboard- and touch-scrollable region on
+mobile. State the horizontal-scroll action in the caption. Use this escape
+hatch only for screenshots whose labels must remain legible, not for lead art,
+photos, or decoration.
+
+## User-owned Tistory upload
+
+Codex never accesses the Tistory editor, creates or edits a Tistory draft,
+uploads any file to Tistory, or asks whether it may do so. Always treat Tistory
+media upload as the user's action, even when a signed-in browser or another
+upload mechanism appears available.
+
+After the source pass and local preflight, print the queue and give the user
+the listed local files. Include each stable ID, dimensions, and SHA-256 so the
+returned CDN URL can be matched without relying on upload order. Stop the
+release sequence at `reviewing` until the user privately uploads the files and
+returns every required URL.
 
 ## Map final URLs
 
@@ -32,8 +53,9 @@ python3 .agents/skills/dev-log-rich-post-workspace-v2/scripts/tistory_media_map_
   set-url posts/YYYY-MM-DD-slug <media-id> <https-tistory-cdn-url>
 ```
 
-The user may supply URLs. Upload to an unpublished Tistory draft only with
-explicit authority and an unambiguous destination. Never publish.
+Run `set-url` only with a URL the user returned for that media ID. Do not infer
+that a URL belongs to a file from its order alone. Once all URLs are bound,
+record the remote baseline and continue to the final page gate.
 
 Record one baseline GET:
 

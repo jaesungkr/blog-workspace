@@ -124,6 +124,7 @@ def figure_markup(
     width = int(item["width"])
     height = int(item["height"])
     display_width = int(item.get("display_width", min(width, 916)))
+    mobile_scroll_width = item.get("mobile_scroll_width")
     loading = "eager" if item["id"] == lead_id else "lazy"
     src = html.escape(
         media_src(item, mode, post_dir, output_dir), quote=True
@@ -160,9 +161,20 @@ def figure_markup(
     else:
         credit_markup = credit
 
+    figure_classes = "devlog-rich__figure"
+    figure_style = f"--rich-media-width:{display_width}px"
+    if type(mobile_scroll_width) is int:
+        figure_classes += " devlog-rich__figure--scroll-mobile"
+        figure_style += f";--rich-mobile-scroll-width:{mobile_scroll_width}px"
+        image = (
+            '<div class="devlog-rich__media-scroll" tabindex="0" '
+            'role="region" aria-label="스크린샷 가로 스크롤">'
+            f"{image}</div>"
+        )
+
     return (
-        f'<figure class="devlog-rich__figure" data-media-id="{item_id}" '
-        f'style="--rich-media-width:{display_width}px">'
+        f'<figure class="{figure_classes}" data-media-id="{item_id}" '
+        f'style="{figure_style}">'
         f"{image}"
         f'<figcaption class="devlog-rich__caption">{caption} '
         f'<span class="devlog-rich__credit">· {credit_markup}</span>'

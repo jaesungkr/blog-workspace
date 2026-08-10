@@ -30,7 +30,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Record the independent source-level pass that freezes a "
-            "rich-post v2 article before media upload and browser QA."
+            "rich-post v2 article before the user's media upload and browser QA."
         )
     )
     parser.add_argument("post_dir", help="Path to posts/YYYY-MM-DD-slug")

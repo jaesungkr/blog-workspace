@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-08-10",
+  "checked_by": "Codex independent final-page reviewer /root/source_review",
+  "browser": "Chrome/151.0.7922.108",
+  "session": "0f8e75b8-e74a-47f7-8536-f2cd3d9b22ab",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "fdc27e4c2030bcc7309481cc7a327a7fbef588302ddf893b2b4b681184a3ec2c",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "7d7e4fe1367d579ddc5dfb35e0aed7ce8a6da78cf309983aa15af3a2ee1c384c",
+  "source_pass_sha256": "e6046a1151bc1d01fb95bbd3583860d0d674f4c41007e80e433bfae4366f9c4f",
+  "article_content_sha256": "757e3035666075504cf35e92fcf7dd2725e6b1c6f3eff8349c1d6d2310c2dfaa",
+  "media_sha256": "54122399f4f32b0a64658b756be81bf3c3fbb05d3035eedd92201f618269cf30",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "ec3088e5a11900631c854ee5d77a741554bc5827791117bdd1d576c0ec0380b2",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/vercel-deployment-guide-rich-preview.html",
+  "preview_sha256": "22d86ddd81fb07efe000b223c82672bf3e0f82c33074dd1a691db391e4dd2e3a",
+  "preview_structure_sha256": "0d637bb80cf85aae653a01214423dee4558c4626bb11ac6231039bb240e0ee30",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/vercel-deployment-guide-rich-preview.html",
+  "dark_preview_sha256": "c2480efbc0d00550c8b6f7ede22188e581a42c1c4c154b7b4005dedbb7d76398",
+  "fragment_path": "artifacts/qa-v2/final-rendered/vercel-deployment-guide-tistory-fragment.html",
+  "fragment_sha256": "35cc206f3ebaa411552f8c1084afb89ab02f728f0de2faa72c9a821e76b93464",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "ca1652eda10a10d5d8e170955f013292105920d20e1210c604655c460bc8a4a4"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "02276a3cc54a8cc4bbeeb5700024049b72c8a4b8bb7e3823b54f25329584c836"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "cea527087353eebebf72b1cae35b11af99f554a24ada2e2f1cae4a930e297c67"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "58f632b4474b1bcf7295b14a24fa95c08dedc182a851d31b2e8c49f797a505fd"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

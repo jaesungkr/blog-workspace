@@ -204,6 +204,10 @@
   background: var(--rich-image-surface);
 }
 
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
 .devlog-rich__poster {
   display: none;
 }
@@ -311,5 +315,16 @@
   .devlog-rich__figure {
     margin-top: 32px;
     margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
   }
 }
