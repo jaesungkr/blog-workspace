@@ -1,6 +1,6 @@
 ---
 name: dev-log-rich-post-workspace-v2
-description: Create complete dev.log Tistory rich posts with a staged v2 workflow that freezes the evidence-backed source before remote media work, uses conditional capture and viewport gates, performs one independent light/dark final-page approval, and produces paste-ready responsive HTML with Git delivery. Use only when the user explicitly invokes v2 or asks for the faster source-freeze rich-post workflow; use the original dev-log-rich-post-workspace for existing v1 bundles or when v1 is explicitly requested.
+description: Create complete dev.log Tistory rich posts with a staged v2 workflow that freezes the evidence-backed source before remote media work, adds conditional reader-friction screenshots for procedural guides, uses viewport gates, performs one independent light/dark final-page approval, and produces paste-ready responsive HTML with Git delivery. Use only when the user explicitly invokes v2 or asks for the faster source-freeze rich-post workflow; use the original dev-log-rich-post-workspace for existing v1 bundles or when v1 is explicitly requested.
 ---
 
 # dev.log rich-post workspace v2
@@ -47,6 +47,9 @@ Record the decision in `workflow-v2.json` before research.
   capture-led promise.
 - Turn on generated hero, infographic, 390px, 768px, GIF, and second remote
   fetch only when the corresponding risk exists.
+- For a procedural software guide, record the reader-friction screenshot
+  decision in `workflow-v2.json` and `brief.md`; do not wait until the finished
+  prose to decide whether the reader needs a UI landmark.
 - Never claim hands-on work when the required app, account, device, version,
   or safe environment is unavailable. Narrow the promise instead.
 
@@ -65,6 +68,13 @@ as evidence.
 
 1. Plan one primary reader, the retained message, easiest start, required
    claims, honest test boundary, media role, and conditional gates.
+   For a procedural guide, map the steps where a first-time reader may fail to
+   locate the entry point, choose the right field or value, or recognize the
+   success/error state. Select a screenshot only for those friction points.
+   Two to five screenshots is a useful range for a normal guide, not a quota;
+   zero or more than five is valid when the recorded reader need justifies it.
+   Each selected screenshot must answer a different concrete question, and
+   every excluded obvious screen needs a short redundancy or upload-cost reason.
 2. Research unstable, niche, source-sensitive, or high-stakes claims before
    drafting. Prefer primary and official sources.
 3. Capture raw evidence during research only when the route requires it. Keep
@@ -91,6 +101,13 @@ Any material source edit invalidates it and all later page evidence.
 Complete `media.json` with local publication files, provenance, rights,
 dimensions, hashes, alt text, captions, placement, and claim IDs. Create
 `capture-plan.md` only for first-party, simulated, or GIF media.
+
+Place each instructional screenshot immediately after the step it clarifies.
+The surrounding prose must say where the reader is, what to inspect or enter,
+and what action follows; a caption alone is not the instruction. Prefer an
+official screenshot for source-based explanation and a first-party capture
+only when the article honestly claims direct product use. Do not add a screen
+that merely repeats an already obvious button or list.
 
 Run:
 

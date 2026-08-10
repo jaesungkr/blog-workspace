@@ -52,6 +52,17 @@ class SkillStructureTests(unittest.TestCase):
             "Upload to an unpublished Tistory draft only with explicit authority",
             media_release,
         )
+        workflow = (
+            skill_dir / "references" / "workflow-v2.md"
+        ).read_text(encoding="utf-8")
+        for text in (skill_text, workflow, media_release):
+            with self.subTest(contract="reader-friction-screenshot-gate"):
+                self.assertIn("reader-friction", text)
+                self.assertIn("not a quota", text)
+        self.assertIn("where the reader is", media_release)
+        self.assertIn("what to inspect or enter", media_release)
+        self.assertIn("to do next", media_release)
+        self.assertIn("Tistory upload burden", workflow)
 
         for relative in {
             "references/workflow-v2.md",

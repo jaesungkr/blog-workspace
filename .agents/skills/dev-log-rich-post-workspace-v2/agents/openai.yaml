@@ -1,7 +1,7 @@
 interface:
   display_name: "dev.log Rich Post Workspace v2"
   short_description: "원고 고정 후 한 번의 최종 QA로 완성하는 빠른 Tistory 워크플로"
-  default_prompt: "$dev-log-rich-post-workspace-v2를 사용해 원고를 먼저 검증·고정하고, Tistory 이미지는 제가 비공개 업로드 후 CDN URL을 전달하는 경계로 두고, 한 번의 독립 최종 페이지 QA로 글을 완성해 주세요."
+  default_prompt: "$dev-log-rich-post-workspace-v2를 사용해 원고를 먼저 검증·고정하고, 절차형 글은 독자가 막히는 조작 지점에만 서로 다른 질문을 해결하는 스크린샷을 배치해 주세요. Tistory 이미지는 제가 비공개 업로드 후 CDN URL을 전달하는 경계로 두고, 한 번의 독립 최종 페이지 QA로 글을 완성해 주세요."
 
 policy:
   allow_implicit_invocation: false

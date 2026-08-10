@@ -31,6 +31,19 @@ Turn on only the risks that actually exist:
   `include_768` only when the transition needs it;
 - `high_risk_remote_media`: set `second_remote_fetch` to true.
 
+For a procedural software guide, also use `decision_note` to record the
+reader-friction screenshot map before drafting:
+
+- entry point: can a first-time reader find the menu or screen from prose?
+- choice: can the reader identify the correct field, option, or value?
+- verification: can the reader recognize success, waiting, or error state?
+
+Choose screenshots only where prose alone leaves one of these questions hard
+to answer. A normal guide often needs two to five, but this is not a quota.
+Require a different reader question for every selected image and record why an
+obvious candidate was excluded when it would be redundant or increase the
+user's Tistory upload burden without improving the explanation.
+
 The v2 checker rejects GIF or high-risk remote media when the second fetch is
 not enabled.
 
