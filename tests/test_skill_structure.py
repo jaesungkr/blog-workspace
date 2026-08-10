@@ -20,9 +20,47 @@ ORCHESTRATORS = {
     "dev-log-rich-post-workspace",
 }
 EXPECTED_SKILLS = STANDARD_SPECIALISTS | ORCHESTRATORS
+V2_RICH_ORCHESTRATOR = "dev-log-rich-post-workspace-v2"
 
 
 class SkillStructureTests(unittest.TestCase):
+    def test_v2_rich_orchestrator_is_isolated_and_explicit(self):
+        skill_dir = SKILLS / V2_RICH_ORCHESTRATOR
+        skill_text = (skill_dir / "SKILL.md").read_text(encoding="utf-8")
+        ui_text = (skill_dir / "agents" / "openai.yaml").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn(f"name: {V2_RICH_ORCHESTRATOR}", skill_text)
+        self.assertIn("format: rich-post-v2", skill_text)
+        self.assertIn("artifacts/qa-v2", skill_text)
+        self.assertIn("allow_implicit_invocation: false", ui_text)
+
+        for relative in {
+            "references/workflow-v2.md",
+            "references/source-freeze-v2.md",
+            "references/media-release-v2.md",
+            "references/final-page-qa-v2.md",
+            "references/delivery-v2.md",
+            "scripts/init_bundle_v2.py",
+            "scripts/record_source_pass_v2.py",
+            "scripts/check_rich_post_v2.py",
+            "scripts/render_rich_post_v2.py",
+            "scripts/tistory_media_map_v2.py",
+            "scripts/remote_media_v2.py",
+            "scripts/prepare_final_qa_v2.py",
+            "scripts/capture_rich_qa_v2.py",
+            "scripts/record_final_page_v2.py",
+            "scripts/finalize_rich_post_v2.py",
+            "assets/workflow-template-v2.json",
+            "assets/media-template-v2.json",
+            "assets/capture-plan-template-v2.md",
+            "assets/final-qa-template-v2.json",
+            "assets/rich-post-v2.css",
+        }:
+            with self.subTest(resource=relative):
+                self.assertTrue((skill_dir / relative).is_file())
+
     def test_every_stage_has_skill_and_ui_metadata(self):
         for name in EXPECTED_SKILLS:
             with self.subTest(skill=name):

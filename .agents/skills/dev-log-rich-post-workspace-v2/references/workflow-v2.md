@@ -1,0 +1,61 @@
+# Rich-post v2 workflow
+
+## State model
+
+Keep the repository lifecycle unchanged:
+
+`planning -> researching -> drafting -> reviewing -> ready -> published`
+
+Use `artifacts/qa-v2/source-pass.json` as the internal `source_frozen` gate while
+the public lifecycle remains `reviewing`. After that record exists, do not edit
+the title, opening, headings, tables, links, usage steps, or substantive
+captions without rerunning the source review.
+
+## Route once
+
+Record the route in `workflow-v2.json`.
+
+- `standard-rich`: source-based explanation with static official, generated,
+  or user-supplied media;
+- `evidence-rich`: direct UI work, reproducible experiment, GIF, or another
+  capture-led promise.
+
+Turn on only the risks that actually exist:
+
+- `direct_capture`: create `capture-plan.md` and preserve raw evidence;
+- `gif`: require the poster and second remote fetch;
+- `generated_lead`: use the separate hero creator and validator;
+- `infographic`: use the infographic stages only when the visual reduces
+  reading effort;
+- `complex_layout`: inspect the affected component and set `include_390` or
+  `include_768` only when the transition needs it;
+- `high_risk_remote_media`: set `second_remote_fetch` to true.
+
+The v2 checker rejects GIF or high-risk remote media when the second fetch is
+not enabled.
+
+## Main sequence
+
+1. Initialize the bundle and fill `workflow-v2.json`.
+2. Research, capture raw evidence when routed, draft, and polish.
+3. Run an independent source review and write `source-pass.json`.
+4. Finish publication media and local light/dark preflight.
+5. Bind final Tistory URLs and record the first remote observation.
+6. Prepare one remote-media light/dark candidate.
+7. Let one independent reviewer capture and inspect both themes.
+8. Record `final-page.json`, set `ready`, render, deliver Git, and hand off the
+   byte-identical paste file.
+
+## Invalidation
+
+| Change | Repeat |
+|---|---|
+| Title, article body, table, link, usage step | Source pass and final page |
+| Brief or evidence | Source pass and final page |
+| CSS, display size, media file, caption | Final page |
+| Tistory URL | Remote record and final page |
+| Audit-only note | No page rerun |
+| Tool change with byte-identical final HTML | Keep the reviewed artifact; record the unchanged hash |
+
+Never start remote staging before the source pass. This ordering prevents a
+late editorial revision from invalidating expensive browser evidence.
