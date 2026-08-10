@@ -1,29 +1,29 @@
 {
   "version": 2,
   "checked_at": "2026-08-10",
-  "checked_by": "Codex final-page reviewer /root (2026-08-10)",
+  "checked_by": "Codex /root (2026-08-10)",
   "browser": "Chrome/151.0.7922.108",
-  "session": "1c875e0b-cb1b-455a-84b9-ea8932147e1f",
+  "session": "42a0d87c-25d7-4928-bf3c-d211c6252053",
   "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
-  "capture_receipt_sha256": "9763d21a84335c1caf996257ddf70cfeabed5465b2efecc268df160afbaf6dc5",
+  "capture_receipt_sha256": "b3f0ced98e37e6d09d1e6c461e699b1cd40cea40fefbfed1ea56ebd4162f9808",
   "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
-  "dark_capture_receipt_sha256": "b315c08ebc94fc49662a8a0c2c2140f4a1d9ed6c98254800e3b5f4b0154d8bff",
-  "source_pass_sha256": "a6384d5e0a6b29afe771e68cc3d9cf0eb33c6711434a7a856d9ef1a9101c35fa",
-  "article_content_sha256": "79e31c6e80d99c7f9765c596f73cfb5f7fcb5ce56a0a94a5b2e3a24f0b8f906a",
+  "dark_capture_receipt_sha256": "c24fa430048926fe42f2f2506b17ac72cee59361490fd1e2196dfc8251395aa6",
+  "source_pass_sha256": "febcc5dc8f7f77c7d0d087d8414f9b8542b4538be10a2282086e6ed699a3226d",
+  "article_content_sha256": "c43add3108b0eff5ad993e4cdb9b3214591408a24716ea509cd339221d70e5bd",
   "media_sha256": "a138617613ddfbdf191dc8c77d0b24ccf2a7b4a77e8e1d9d98491e7e4453eafe",
   "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
   "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
   "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
-  "remote_media_sha256": "1c26fef5f5019a1d0f0e21f0973d51d892d2c2aace1a27d8b72ed56b497c505f",
+  "remote_media_sha256": "7a810f6f0f5ad367a759d639501476160ff80355d6ec02420d3e7335c1706e73",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa-v2/final-rendered/plain-cracker-calories-rich-preview.html",
-  "preview_sha256": "3a5d357f65df198db6cfaf01b957207f0953e8e73573b2b0fb548a066a727146",
-  "preview_structure_sha256": "679513690adcdb5882be5c2f39e111cca5c29c66915e0ff5c385323844b52132",
+  "preview_sha256": "2f0308978db8a04c31bf239afa40c3a2a4f47496f47ad61fcb279558cbb7bb9e",
+  "preview_structure_sha256": "c56064df3d4f1d93d98310902af23924f415aaece6a9d4287386e8824e4eb6a6",
   "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/plain-cracker-calories-rich-preview.html",
-  "dark_preview_sha256": "72522dbf1910bff192f2aed37bd654e96d051b6b740f4f49dbd8baa33766800c",
+  "dark_preview_sha256": "8f6f99b221ec76620e8b715431d6c95e57bc0af4f46d074f7d1e4f7a7bd83a25",
   "fragment_path": "artifacts/qa-v2/final-rendered/plain-cracker-calories-tistory-fragment.html",
-  "fragment_sha256": "7c860001c6faf6b36321923a6edb527d943b39ca7a1695f8d303e62bb90871e2",
+  "fragment_sha256": "4f8f84ff03d1a89d21e20056727ce70e007b712dd85366c03eff3e825a718293",
   "viewports": [
     {
       "width": 1280,
@@ -38,7 +38,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "eb125296c496e43f2b922dcc5a7beaed5d4293eb11accea4cf7584f1126ed04e"
+      "screenshot_sha256": "e7dd9f9d90bf32099540cae55e20a2e0c541ba66a144ba38e1096ad6c4143d07"
     },
     {
       "width": 360,
@@ -53,7 +53,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "65cd6c7fe56186c75a66f7e444db84cb01e00545b8c543c81c6a3bbc20dd8ed6"
+      "screenshot_sha256": "e17fb95c4b9c116e48c70236ddea155fc83bb1daed25007c49819f559ae59422"
     }
   ],
   "dark_viewports": [
@@ -70,7 +70,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "55f105fdd1820cfaf3c090781d52eef87a518be412f634b906fd42f9d8bcf645"
+      "screenshot_sha256": "566d686f68c2af4e31b645b2786dd6e9e5185f97178b6431334920200753ba01"
     },
     {
       "width": 360,
@@ -85,7 +85,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "3df9347079bd4349216014768dc5c46e35263f3587410bc784e849ec67cbfb59"
+      "screenshot_sha256": "0f97d758b063b85c1c35b34dcd6479b6acdf8fa8df7a678787c3a4ab2da6bfff"
     }
   ],
   "fragment": {

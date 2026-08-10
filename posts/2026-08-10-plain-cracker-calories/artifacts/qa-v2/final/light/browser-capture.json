@@ -2,16 +2,16 @@
   "version": 2,
   "status": "pass",
   "mode": "final-light",
-  "checked_at": "2026-08-10T08:45:27.924099Z",
-  "checked_by": "Codex final-page reviewer /root (2026-08-10)",
+  "checked_at": "2026-08-10T09:06:00.206571Z",
+  "checked_by": "Codex /root (2026-08-10)",
   "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "preview_path": "artifacts/qa-v2/final-rendered/plain-cracker-calories-rich-preview.html",
-  "preview_sha256": "3a5d357f65df198db6cfaf01b957207f0953e8e73573b2b0fb548a066a727146",
+  "preview_sha256": "2f0308978db8a04c31bf239afa40c3a2a4f47496f47ad61fcb279558cbb7bb9e",
   "screenshot_root": "artifacts/qa-v2/final/light",
   "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
   "browser_version": "Chrome/151.0.7922.108",
   "protocol_version": "1.3",
-  "session": "1c875e0b-cb1b-455a-84b9-ea8932147e1f",
+  "session": "42a0d87c-25d7-4928-bf3c-d211c6252053",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,7 +21,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 3449,
+      "scroll_height": 3650,
       "h1_count": 1,
       "toc_anchor_count": 4,
       "toc_targets_unique": true,
@@ -35,7 +35,7 @@
           "natural_height": 960
         }
       ],
-      "screenshot_sha256": "eb125296c496e43f2b922dcc5a7beaed5d4293eb11accea4cf7584f1126ed04e",
+      "screenshot_sha256": "e7dd9f9d90bf32099540cae55e20a2e0c541ba66a144ba38e1096ad6c4143d07",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -51,7 +51,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 4043,
+      "scroll_height": 4565,
       "h1_count": 1,
       "toc_anchor_count": 4,
       "toc_targets_unique": true,
@@ -65,7 +65,7 @@
           "natural_height": 960
         }
       ],
-      "screenshot_sha256": "65cd6c7fe56186c75a66f7e444db84cb01e00545b8c543c81c6a3bbc20dd8ed6",
+      "screenshot_sha256": "e17fb95c4b9c116e48c70236ddea155fc83bb1daed25007c49819f559ae59422",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,

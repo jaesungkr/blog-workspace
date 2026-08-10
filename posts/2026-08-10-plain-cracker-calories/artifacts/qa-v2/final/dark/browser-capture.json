@@ -2,16 +2,16 @@
   "version": 2,
   "status": "pass",
   "mode": "final-dark",
-  "checked_at": "2026-08-10T08:45:30.224601Z",
-  "checked_by": "Codex final-page reviewer /root (2026-08-10)",
+  "checked_at": "2026-08-10T09:06:02.522346Z",
+  "checked_by": "Codex /root (2026-08-10)",
   "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "preview_path": "artifacts/qa-v2/final-dark-rendered/plain-cracker-calories-rich-preview.html",
-  "preview_sha256": "72522dbf1910bff192f2aed37bd654e96d051b6b740f4f49dbd8baa33766800c",
+  "preview_sha256": "8f6f99b221ec76620e8b715431d6c95e57bc0af4f46d074f7d1e4f7a7bd83a25",
   "screenshot_root": "artifacts/qa-v2/final/dark",
   "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
   "browser_version": "Chrome/151.0.7922.108",
   "protocol_version": "1.3",
-  "session": "7cb78705-67a4-47c5-848a-d89e4957f316",
+  "session": "b06b3981-bf63-4eaa-a9e6-662e6dee95d1",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,7 +21,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 3449,
+      "scroll_height": 3650,
       "h1_count": 1,
       "toc_anchor_count": 4,
       "toc_targets_unique": true,
@@ -35,7 +35,7 @@
           "natural_height": 960
         }
       ],
-      "screenshot_sha256": "55f105fdd1820cfaf3c090781d52eef87a518be412f634b906fd42f9d8bcf645",
+      "screenshot_sha256": "566d686f68c2af4e31b645b2786dd6e9e5185f97178b6431334920200753ba01",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -51,7 +51,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 4043,
+      "scroll_height": 4565,
       "h1_count": 1,
       "toc_anchor_count": 4,
       "toc_targets_unique": true,
@@ -65,7 +65,7 @@
           "natural_height": 960
         }
       ],
-      "screenshot_sha256": "3df9347079bd4349216014768dc5c46e35263f3587410bc784e849ec67cbfb59",
+      "screenshot_sha256": "0f97d758b063b85c1c35b34dcd6479b6acdf8fa8df7a678787c3a4ab2da6bfff",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,

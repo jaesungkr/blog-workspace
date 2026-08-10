@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-08-10T08:45:13.568690Z",
+  "checked_at": "2026-08-10T09:05:44.187541Z",
   "checked_by": "Codex independent source reviewer /root/source_review (2026-08-10)",
-  "article_content_sha256": "79e31c6e80d99c7f9765c596f73cfb5f7fcb5ce56a0a94a5b2e3a24f0b8f906a",
-  "brief_sha256": "cf22f4c82adae1062a9bd85206bcabca30e9191f9dcae39c6fbf2eecaa31e1f5",
-  "evidence_sha256": "c8b5f608d641fc490b4c1ca2d122fc8e5f9673cb1c6df584c98b35969fb77d72",
+  "article_content_sha256": "c43add3108b0eff5ad993e4cdb9b3214591408a24716ea509cd339221d70e5bd",
+  "brief_sha256": "3642e03a652b31a4fb7d62324de8596e897f21b58459f0c8f5085e38677dd174",
+  "evidence_sha256": "02fed2fe0521e389db174dd6a3d314f626697da3f845f9eff50288ec22f27f9b",
   "note": ""
 }
