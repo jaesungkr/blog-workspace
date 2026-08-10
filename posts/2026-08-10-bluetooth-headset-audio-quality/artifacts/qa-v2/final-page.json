@@ -3,27 +3,27 @@
   "checked_at": "2026-08-10",
   "checked_by": "/root/final_page_review",
   "browser": "Chrome/151.0.7922.108",
-  "session": "3d57c425-0031-4fec-b757-f10fe625cd71",
+  "session": "b84ad5aa-4124-46b4-bfda-07a7b55c9f58",
   "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
-  "capture_receipt_sha256": "a5234c6d0effb61a5d4eaaee49a226dea2d8c495e1500d55592ae8da1fe81cde",
+  "capture_receipt_sha256": "278ef9d4228b69a26100e9f943eafe8ef1a0d1dd81a47f8cccc03e951aef5fc2",
   "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
-  "dark_capture_receipt_sha256": "699f55e30d9cdbbcab4523a4f06cd7f012a52d4cd6dce04175751a7ea81ab089",
-  "source_pass_sha256": "848503c40a72d084b11b4d02804cdebe38b6b1574ab3b97f2bbec87bd7bc4668",
-  "article_content_sha256": "7f330a9cf033982dc2b463420cf4ee1675d49a56cefe377213b3ee48ef7ea416",
-  "media_sha256": "c2de54b26431a2d564b60d734e3e3275c17508e9d10a1e0b5261e7c092277cf1",
+  "dark_capture_receipt_sha256": "38f74823838a62212331daf737a3215bbb6d194a72c2b4d88de0b56d144ba704",
+  "source_pass_sha256": "eb3fcf435a1f004b8ceddaf844e9e8170bec2211567c306861f1ba1734726f4e",
+  "article_content_sha256": "da31ce6077d52a7acac516d448caed8a5dd41e62eae8bdfb2035f5d89a322cce",
+  "media_sha256": "bcda9478ae9b187e65af244516502efc190341fd36b2ba11ba0c11ab00c9c26b",
   "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
   "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
   "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
-  "remote_media_sha256": "5073d562181b611339afb51ff96bb81fa7af65717953ec400621831937f0d5af",
+  "remote_media_sha256": "bbb30b262cde889ea1737f8c2f96fd603d94c98b1666f4f479b5afcc0c3713e1",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-rich-preview.html",
-  "preview_sha256": "75fcfa82c9fb0da691b7ad8b221361f6fa841f0e3ed3d6404e6bb10877e1fc7f",
-  "preview_structure_sha256": "382ed541cef7da1c10ca7dc4346169e54503d48267ed9b8b2e886504dc90fcf8",
+  "preview_sha256": "b4bfe236852a71fcf9399518530280c771d44dee0cb0a3243949579f2193e3ee",
+  "preview_structure_sha256": "ded144f6ff1207c476621d3d51b3159bb2168ade33e547f95f18507fd593d98e",
   "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/bluetooth-headset-audio-quality-rich-preview.html",
-  "dark_preview_sha256": "0610166e8c144d8fd42a8da97ce03a9e5eba36070914c5f8f7ef71776d84dea2",
+  "dark_preview_sha256": "f667942551bac8cc437befd480fbbc822400b9ed52ef3b958b3588317ef863c1",
   "fragment_path": "artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-tistory-fragment.html",
-  "fragment_sha256": "697c364e526c400465ca6559540aa7e343ee34234e5245f660a9a5fd03a02d74",
+  "fragment_sha256": "f2917488af1f0a4e64c558621837630efc8cf31f5e29138ccb0826e58ac3279f",
   "viewports": [
     {
       "width": 1280,
@@ -38,7 +38,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "fab645182e5443c6ac0b413ddd78fdcec8502edb37d7a5f59c2244a945773472"
+      "screenshot_sha256": "72df8f13e867d996d9ebb32c59e8bc411356a851124c217513406947dc717c2a"
     },
     {
       "width": 360,
@@ -53,7 +53,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "6ce542a9ccbbeec205df4d79be66effd7ab5762e58993aa9a8a7457479f95c6e"
+      "screenshot_sha256": "56d4a21cdd69f50c439206fa277ec241f81c74ef31076577462093c529b083e6"
     }
   ],
   "dark_viewports": [
@@ -70,7 +70,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "95057f2744314301678ef9b443d7c760a942d5266bc7e76cf5997e5a1ac51036"
+      "screenshot_sha256": "975f821e843cba222fc40152fbe3255e116e838e43c7a01958919ac0379bb16a"
     },
     {
       "width": 360,
@@ -85,7 +85,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "0ce5399a4da75495bda4169657bdcf686b9b629cd828b9a08b17dab6f4fe658f"
+      "screenshot_sha256": "0e6d6afb6aeced64c1faf4d3332822d22f43d0b893f67babab2ff8a2f5a0142f"
     }
   ],
   "fragment": {

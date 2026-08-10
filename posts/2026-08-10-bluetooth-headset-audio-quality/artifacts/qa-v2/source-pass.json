@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-08-10T06:45:52.027065Z",
-  "checked_by": "/root/concise_review",
-  "article_content_sha256": "7f330a9cf033982dc2b463420cf4ee1675d49a56cefe377213b3ee48ef7ea416",
-  "brief_sha256": "f753d50f2647a7e3985a14e9d52b590c3f8c268c848329ac7297a47e43b15c24",
-  "evidence_sha256": "53f9d274c1c85006e8607665a5c52abb79ce790c7d379e4e68463a9a9fd3af63",
-  "note": "문장 밀도 재편집 뒤 설명 범위와 근거 경계를 독립 재검수함."
+  "checked_at": "2026-08-10T07:14:57.154763Z",
+  "checked_by": "/root/expert_structure_review",
+  "article_content_sha256": "da31ce6077d52a7acac516d448caed8a5dd41e62eae8bdfb2035f5d89a322cce",
+  "brief_sha256": "fafa4ac0c76ed09b48bbb0fe099c0da9e9dc687e0c316e1661b9cbc4637c388a",
+  "evidence_sha256": "c07ac6e1c7306aa8d73f3a999bec695ab32b0e271ca084619319b8e73f0ef47f",
+  "note": "행동 순서가 목차에 드러나는지와 설명 보존 여부를 독립 검수함."
 }

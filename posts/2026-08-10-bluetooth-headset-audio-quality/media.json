@@ -25,7 +25,7 @@
       "placement": "after:opening",
       "rights": "dev.log original AI-generated editorial artwork",
       "alt": "게임 화면과 음성 채팅 참가자 표시가 보이는 PC 책상 앞에 무선 이어폰과 마이크가 놓인 모습",
-      "caption": "게임 중 음성 채팅에 참가하면 Bluetooth Classic 이어폰은 통화용 오디오 경로로 전환될 수 있습니다. 게임 화면과 무선 이어폰, 마이크로 그 상황을 표현한 생성형 대표 이미지입니다.",
+      "caption": "게임 중 음성 채팅에 들어가면 무선 이어폰 음질이 통화처럼 낮아질 수 있습니다. 게임 화면과 무선 이어폰, 마이크로 그 상황을 표현한 생성형 대표 이미지입니다.",
       "processing": [
         "generated as a new gaming and voice-chat direction with OpenAI built-in image generation"
       ],
