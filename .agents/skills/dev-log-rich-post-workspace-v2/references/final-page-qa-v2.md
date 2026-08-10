@@ -33,6 +33,13 @@ fragment H1 count zero, and no local path or placeholder. In dark mode confirm
 contrast, preserved inline styles, and neutral image surrounds without
 recoloring image pixels.
 
+For troubleshooting and procedural posts, confirm at 1280 and 360 that the
+first safe action remains visible before the lead visual and TOC, the TOC reads
+as one compact action or decision path rather than an exhaustive checklist,
+and wrapped numbered headings are not clipped or visually crowded. Return text
+defects to the source stage; do not approve a visually neat page whose
+navigation still hides the next action or overwhelms it with same-stage detail.
+
 Use focused screenshots only after an automated failure, for a new component,
 or when a risky table state is not visible in the canonical evidence. Do not
 capture every repeated table or list.

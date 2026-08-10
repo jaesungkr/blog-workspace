@@ -96,6 +96,29 @@
   default choice when the evidence supports one, then state the important
   purpose-specific exceptions. Do not make the reader infer the recommendation
   from several score tables.
+- For troubleshooting and procedural posts, put the first safe action or
+  default choice before the lead visual and table of contents. A prerequisite
+  or safety warning may come first only when acting without it creates real
+  risk.
+- Treat the table of contents as a compact decision path, not an inventory of
+  facts or every click. Read only the title and headings: the reader should be
+  able to state what to do first, what to try if it fails, and where the
+  recommendation stops without facing an exhaustive checklist.
+- Make a heading's promise match the work inside it. Do not hide several
+  procedures behind labels such as `두 곳 확인`, `추가 설정`, or `기타 방법`;
+  name the actual branch or give each reader decision its own heading.
+- Use the fewest sections that preserve distinct reader decisions. Keep
+  mechanism, background, and advanced exceptions inside the relevant section
+  when they do not change the next action; do not use a fixed heading quota.
+- Reserve TOC headings for stage-level decisions. Keep sequential clicks,
+  verification details, and closely related failure checks as numbered steps,
+  bold in-section labels, or a compact table. When related branches share one
+  section, name their real scope in its heading instead of calling it `기타` or
+  `추가 확인`.
+- Reveal information in reader order: default action -> failure branch ->
+  supported exception -> mechanism and limit. Move the central choice ahead of
+  a technical explanation when understanding the mechanism is not required to
+  act safely.
 - If presenting an overall rank, define what is being ranked and the criteria
   used, such as breadth, observed performance, speed, failure risk, or
   implementation cost. Include measured evidence and a limitation for each
@@ -260,6 +283,9 @@ checks pass:
   already knowing the technical terms.
 - Headings are short, scannable, article-specific, and not repetitions of one
   grammatical mold.
+- In troubleshooting and procedural posts, the first safe action appears
+  before the lead visual and table of contents, and the title-plus-headings
+  alone form an honest action or decision path without hidden branches.
 - Bold emphasis marks only material retrieval points and follows no quota.
 - Sentences flow naturally rather than forming a staccato list.
 - Terms are defined and comparisons use concise tables where useful.

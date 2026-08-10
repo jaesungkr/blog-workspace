@@ -66,8 +66,9 @@ as evidence.
 
 ## Build and freeze the source
 
-1. Plan one primary reader, the retained message, easiest start, required
-   claims, honest test boundary, media role, and conditional gates.
+1. Plan one primary reader, the retained message, easiest start, first-screen
+   answer, heading-only action or decision path, required claims, honest test
+   boundary, media role, and conditional gates.
    For a procedural guide, map the steps where a first-time reader may fail to
    locate the entry point, choose the right field or value, or recognize the
    success/error state. Select a screenshot only for those friction points.
@@ -81,8 +82,21 @@ as evidence.
    secrets out of raw files; recapture instead of blurring them later.
 4. Draft around evidence with `plain identity -> ordinary use -> easiest start
    -> evidence boundary`. Keep comparison rules, prerequisites, exact entry
-   points, and limitations explicit.
+   points, and limitations explicit. For troubleshooting or procedural intent,
+   put the first safe action or default choice before the lead visual and TOC,
+   then order headings by the reader's actual next decisions.
 5. Run a density revision before prose polish:
+   - read only the title and headings. Reject the outline unless it tells the
+     reader what to do or decide first, what to try next, and where the advice
+     stops without opening the sections;
+   - match each heading to its real scope. Replace vague aggregate labels when
+     a section contains multiple procedures or branches, and keep only
+     headings that represent distinct reader decisions;
+   - reject a TOC that turns every click, checkpoint, or nearby error into a
+     section. Demote same-stage detail to numbered steps, bold labels, or one
+     compact table under a heading that names the grouped scope honestly;
+   - use progressive disclosure for actionable posts: default action, failure
+     branch, supported exception, then mechanism and technical limit;
    - assign each central fact, mechanism, action, and limitation one main
      section where it is explained fully;
    - treat a later mention as a reminder only when it names the earlier
@@ -107,9 +121,11 @@ as evidence.
    protected details in `audit.md`; the labels are working evidence, not
    article copy.
    Then run one prose-polish stage.
-6. Hand the still-`reviewing` bundle to an independent source reviewer. Return
-   substantive defects to writing and surface defects to prose polish until it
-   passes.
+6. Hand the still-`reviewing` bundle to an independent source reviewer. Require
+   a separate first-screen and title-plus-headings read. Return the source when
+   the initial action is buried, the TOC hides a branch, or the central choice
+   appears only after mechanism or background. Return substantive defects to
+   writing and surface defects to prose polish until it passes.
 7. Record the freeze:
 
 ```bash
