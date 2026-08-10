@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "lead_id": "plain-cracker-calorie-map",
+  "items": [
+    {
+      "id": "plain-cracker-calorie-map",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C02",
+        "C03",
+        "C04",
+        "C08",
+        "C09"
+      ],
+      "actor": "Codex deterministic SVG layout",
+      "captured_at": "2026-08-10",
+      "environment": "1080 x 960 SVG rendered with Google Chrome on macOS",
+      "source_url": "",
+      "raw_path": "artifacts/plain-cracker-calorie-map-v3.svg",
+      "publish_path": "assets/plain-cracker-calorie-map-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fk3ZD3%2FdJMcadiNvly%2FAAAAAAAAAAAAAAAAAAAAAE0KQrJmBrjWu6bZVNuxPSi2DNBX8LI0VvDrFxL2DJ3X%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DMVXmeKP6pCTX3r5e2M%252BE1Gv%252FzKs%253D",
+      "width": 1080,
+      "height": 960,
+      "display_width": 760,
+      "placement": "after:opening",
+      "rights": "dev.log original deterministic infographic",
+      "alt": "참크래커 한 봉 약 85kcal가 100g으로 환산하면 459.5kcal가 되는 과정을 봉지 수로 보여 주는 그림",
+      "caption": "한 봉과 100g은 서로 다른 중량 기준의 숫자입니다.",
+      "processing": [
+        "deterministic SVG layout",
+        "Chrome raster render",
+        "full-size and 360 CSS-pixel inspection"
+      ],
+      "redactions": [],
+      "sha256": "cceecddcfab3e164321d9dc736a8eb2a610151fe524daf7689b5ba2cb689b538",
+      "status": "validated"
+    }
+  ]
+}

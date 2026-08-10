@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "3bc66abd-741e-4390-9685-aec8b4f20bb4",
+  "recorded_at": "2026-08-10T08:29:27.377017Z",
+  "recorded_by": "Codex /root (2026-08-10)",
+  "media_sha256": "a138617613ddfbdf191dc8c77d0b24ccf2a7b4a77e8e1d9d98491e7e4453eafe",
+  "fetcher_sha256": "fd2e5ccefbb18d33c80a184a939f2e5ea764cb86589276a9eff2156a9c779457",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "557400890c29dc61ebde309918c3029cb7845cb0696662c5829f30f195a6de44"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "plain-cracker-calorie-map",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fk3ZD3%2FdJMcadiNvly%2FAAAAAAAAAAAAAAAAAAAAAE0KQrJmBrjWu6bZVNuxPSi2DNBX8LI0VvDrFxL2DJ3X%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DMVXmeKP6pCTX3r5e2M%252BE1Gv%252FzKs%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fk3ZD3%2FdJMcadiNvly%2FAAAAAAAAAAAAAAAAAAAAAE0KQrJmBrjWu6bZVNuxPSi2DNBX8LI0VvDrFxL2DJ3X%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DMVXmeKP6pCTX3r5e2M%252BE1Gv%252FzKs%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-10T08:29:27.376815Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 249384,
+      "byte_length": 249384,
+      "sha256": "756d2f66ad8d861627de18f295e60911a3135b2a86ab5f5bc4ce641a6e1dcb9f",
+      "format": "png",
+      "width": 1080,
+      "height": 960,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Mon, 10 Aug 2026 08:28:42 GMT"
+    }
+  ]
+}

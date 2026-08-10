@@ -27,6 +27,13 @@ Skip the infographic when:
 - visual simplification would overstate certainty or remove a critical caveat;
 - it is proposed only to make the post look more complete.
 
+Write the retained message as one plain sentence before planning the image. If
+a short paragraph, a two-value callout, bullets, or an existing table carries
+that sentence just as quickly, do not create an infographic. Never expand a
+small idea into extra labels or sections merely to fill a canvas. A required
+lead visual may be an exception only when scale, sequence, or transformation
+does explanatory work that the repeated sentence would not.
+
 Default to no supporting infographic for Reflections. Use one there only when
 the user explicitly requests it or when a visual relationship is indispensable
 to understanding the reflection.
@@ -58,9 +65,12 @@ Record in `brief.md`:
 - the exact section after which the image should appear;
 - for multiple images, the distinct reader question answered by each.
 
-Build the content from the article and `evidence.md`. Reduce it to one headline,
-three to five primary blocks, and only the labels needed to preserve meaning.
-Keep caveats near the claim they limit.
+Build the content from the article and `evidence.md`. Use the smallest complete
+structure: normally one headline, two to five primary blocks, one short label
+per block, and at most one decision-changing caveat. Do not add a block for
+symmetry. Remove kickers, subheads, rhetorical questions, instructional
+footers, and conclusion bars unless their absence creates a real ambiguity.
+Keep necessary caveats near the claim they limit.
 
 ## Rendering method
 
@@ -92,7 +102,8 @@ deterministically. Do not copy the reference's characters, exact layout, or
 distinctive centerpiece.
 
 Use a portrait 3:4 or 4:5 canvas by default for in-article mobile reading.
-Choose another ratio only when the information structure clearly requires it.
+Use a shorter portrait or square canvas when sparse content would otherwise
+invite decorative filler or excessive empty height.
 Prefer a calm editorial layout, strong reading order, restrained colors, and
 simple connectors over dense dashboard styling.
 
@@ -156,7 +167,10 @@ a smaller QA raster.
   large headline over a small framed card, slide, or boxed text sheet instead
   of the intended relationship.
 - Reading order is unambiguous.
-- The image has three to five primary blocks unless a simpler structure works.
+- The image uses the smallest complete structure, normally two to five primary
+  blocks, and contains no block added only for balance or decoration.
+- No kicker, subhead, rhetorical question, footer, or conclusion line repeats
+  what the surrounding prose, headline, or visible relationship already says.
 - With the labels mentally hidden, the scene or diagram still distinguishes the
   problem, transformation, and result. Reject interchangeable card grids.
 - Body copy is limited to one or two short lines per block where possible.

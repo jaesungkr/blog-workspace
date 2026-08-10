@@ -26,6 +26,13 @@ a glance. Skip decoration, table duplication, and poster-sized article
 summaries. Default to none for Reflections unless explicitly requested or
 indispensable.
 
+Before choosing a visual, write its retained message as one plain sentence.
+If a short paragraph, two-value callout, bullets, or an existing table conveys
+that message just as quickly, record `not_applicable`. Do not manufacture extra
+sections to justify an image. An exception is a required lead visual that
+encodes the relationship through scale, sequence, or transformation instead of
+repeating the sentence as a poster; record that separate media role explicitly.
+
 Record in `brief.md`:
 
 - the reader question;
@@ -39,20 +46,29 @@ Record `not_applicable` in `audit.md` when the gate fails.
 
 ## Design the candidate
 
-1. Reduce the content to one headline, three to five primary blocks, and only
-   the labels required to preserve meaning.
-2. Map every factual label, number, comparison, and conclusion to the article
+1. Use the smallest complete structure. Default to one headline, two to five
+   primary blocks, and only the labels required to preserve meaning. A simple
+   contrast may use two blocks; do not add a third block for symmetry.
+2. Set a copy budget before layout. Prefer one headline, one short label per
+   primary block, and at most one decision-changing caveat. Omit kickers,
+   subheads, rhetorical questions, instructional footers, and conclusion bars
+   unless removing one makes the relationship ambiguous. Delete labels such as
+   `무엇으로 판단할까요?` when the diagram or surrounding prose already
+   supplies that instruction.
+3. Map every factual label, number, comparison, and conclusion to the article
    or `evidence.md`. Preserve a limit when omitting it changes the decision.
-3. Use a meaningful process, scene, transformation, comparison, or data
+4. Use a meaningful process, scene, transformation, comparison, or data
    relationship. Reject interchangeable card grids and generic slide layouts.
-4. Default to a portrait 3:4 or 4:5 canvas for in-article mobile reading.
-5. Render exact Korean copy, numbers, units, arrows, and labels with a
+5. Choose the canvas ratio from the retained relationship. Default to portrait
+   3:4 or 4:5 for multi-step material, but use a shorter portrait or square
+   canvas when sparse content would otherwise create decorative filler.
+6. Render exact Korean copy, numbers, units, arrows, and labels with a
    deterministic code-native or template layout and a Korean-capable font.
-6. Use image generation only for an optional text-free illustration layer that
+7. Use image generation only for an optional text-free illustration layer that
    materially improves explanation.
-7. Keep connectors simple and reserve clear space around text. For SVG markers,
+8. Keep connectors simple and reserve clear space around text. For SVG markers,
    prefer explicit `markerUnits="userSpaceOnUse"` and explicit dimensions.
-8. Treat mobile legibility as both a minimum and a maximum. Before finalizing,
+9. Treat mobile legibility as both a minimum and a maximum. Before finalizing,
    convert source font sizes to their 360px CSS-display equivalents:
    `source font px × 360 ÷ source canvas width`. Start with these bands:
    headline `20-24px`, primary labels `15-18px`, supporting copy `12-14px`,
@@ -63,18 +79,18 @@ Record `not_applicable` in `audit.md` when the gate fails.
    and caveats `11-11.5px`. If text still feels large relative to the visual,
    reduce the hierarchy by about `4-8%` without crossing the mobile floor and
    rerender a versioned candidate.
-9. Keep the headline area at about 22% or less of canvas height. The relationship
+10. Keep the headline area at about 22% or less of canvas height. The relationship
    or diagram must remain the dominant visual, not a large title sitting above
    a small framed panel.
-10. Do not use one large rounded outer card as the default container. Prefer an
+11. Do not use one large rounded outer card as the default container. Prefer an
     open field, meaningful regions, or a boundary that carries information.
     When a frame is necessary, leave generous internal breathing room and make
     the diagram feel native to the canvas rather than squeezed into an inset.
-11. Reserve visible quiet space inside every primary region. If labels and copy
+12. Reserve visible quiet space inside every primary region. If labels and copy
     consume most of a block, shorten the copy, simplify the structure, or
     increase useful diagram area. Do not solve crowding by shrinking supporting
     copy below the mobile floor.
-12. Preview the untouched full-resolution candidate in a browser at
+13. Preview the untouched full-resolution candidate in a browser at
    `width:360px` early. Do not resize, re-encode, save, or commit a smaller
    raster derivative for mobile QA. Reject the browser display when the first
    impression is `headline + boxed text` instead of the intended relationship,

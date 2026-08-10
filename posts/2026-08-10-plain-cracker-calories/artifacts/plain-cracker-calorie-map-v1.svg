@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">한 봉 85킬로칼로리와 100그램당 459.5킬로칼로리의 차이</title>
+  <desc id="desc">참크래커 한 봉은 작아서 약 85킬로칼로리지만 같은 제품을 100그램으로 환산하면 459.5킬로칼로리라는 관계를 보여 주는 인포그래픽</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#F1EBDD"/>
+    </linearGradient>
+    <pattern id="grain" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="1.2" fill="#8C7C66" opacity="0.10"/>
+      <circle cx="18" cy="14" r="1" fill="#8C7C66" opacity="0.08"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#3E352A" flood-opacity="0.12"/>
+    </filter>
+    <g id="cracker">
+      <rect x="0" y="0" width="54" height="54" rx="6" fill="#E7C98D" stroke="#8E6936" stroke-width="3"/>
+      <circle cx="15" cy="15" r="2.5" fill="#8E6936"/>
+      <circle cx="39" cy="15" r="2.5" fill="#8E6936"/>
+      <circle cx="15" cy="39" r="2.5" fill="#8E6936"/>
+      <circle cx="39" cy="39" r="2.5" fill="#8E6936"/>
+      <circle cx="27" cy="27" r="2.5" fill="#8E6936"/>
+    </g>
+    <g id="pouch">
+      <path d="M0 20 Q0 0 20 0 H188 Q208 0 208 20 V278 Q208 298 188 298 H20 Q0 298 0 278 Z" fill="#FFFDF8" stroke="#233A3A" stroke-width="5"/>
+      <path d="M13 30 H195 M13 268 H195" stroke="#233A3A" stroke-width="3" stroke-dasharray="8 8" opacity="0.55"/>
+      <use href="#cracker" x="44" y="82"/>
+      <use href="#cracker" x="110" y="82"/>
+      <use href="#cracker" x="44" y="148"/>
+      <use href="#cracker" x="110" y="148"/>
+    </g>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="24" markerHeight="24" refX="20" refY="12" orient="auto">
+      <path d="M2 3 L21 12 L2 21 Z" fill="#D06843"/>
+    </marker>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#paper)"/>
+  <rect width="1080" height="1350" fill="url(#grain)"/>
+
+  <text x="84" y="76" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" letter-spacing="3" fill="#D06843">NUTRITION CHECK</text>
+  <text x="84" y="151" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="62" font-weight="800" fill="#1F3333">한 봉 85 kcal ≠ 저열량 크래커</text>
+  <text x="84" y="208" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="500" fill="#536161">작은 포장과 낮은 열량 밀도는 다른 말입니다</text>
+  <line x1="84" y1="244" x2="996" y2="244" stroke="#B9AD99" stroke-width="2"/>
+
+  <g transform="translate(106 330)" filter="url(#shadow)">
+    <use href="#pouch"/>
+  </g>
+  <circle cx="210" cy="685" r="12" fill="#D06843"/>
+  <text x="210" y="746" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="48" font-weight="800" fill="#1F3333">1봉</text>
+  <text x="210" y="797" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="600" fill="#536161">약 18.7 g</text>
+  <text x="210" y="856" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="48" font-weight="800" fill="#D06843">약 85 kcal</text>
+
+  <path d="M380 540 C455 485 520 485 596 540" fill="none" stroke="#D06843" stroke-width="8" marker-end="url(#arrow)"/>
+  <text x="494" y="433" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="650" fill="#1F3333">같은 제품을</text>
+  <text x="494" y="480" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="650" fill="#1F3333">100 g으로 맞추면</text>
+  <rect x="410" y="573" width="170" height="62" rx="31" fill="#D06843"/>
+  <text x="495" y="616" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="800" fill="#FFFDF8">× 5.35봉</text>
+
+  <g transform="translate(642 338)" opacity="0.45"><use href="#pouch" transform="scale(.54) translate(0 0)"/></g>
+  <g transform="translate(690 318)" opacity="0.58"><use href="#pouch" transform="scale(.54) translate(0 0)"/></g>
+  <g transform="translate(738 298)" opacity="0.72"><use href="#pouch" transform="scale(.54) translate(0 0)"/></g>
+  <g transform="translate(786 278)" opacity="0.86"><use href="#pouch" transform="scale(.54) translate(0 0)"/></g>
+  <g transform="translate(834 258)" filter="url(#shadow)"><use href="#pouch" transform="scale(.54) translate(0 0)"/></g>
+  <path d="M640 676 H960" stroke="#233A3A" stroke-width="4"/>
+  <path d="M640 660 V692 M960 660 V692" stroke="#233A3A" stroke-width="4"/>
+  <text x="800" y="746" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="48" font-weight="800" fill="#1F3333">비교 단위 100 g</text>
+  <text x="800" y="812" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="64" font-weight="850" fill="#D06843">459.5 kcal</text>
+  <text x="800" y="867" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="600" fill="#536161">지방 13.5 g · 나트륨 649 mg</text>
+
+  <line x1="84" y1="930" x2="996" y2="930" stroke="#B9AD99" stroke-width="2"/>
+  <text x="84" y="1002" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="48" font-weight="800" fill="#1F3333">무엇으로 판단할까요?</text>
+
+  <text x="84" y="1082" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="700" fill="#536161">맛의 인상</text>
+  <line x1="272" y1="1070" x2="930" y2="1070" stroke="#B9AD99" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="420" cy="1070" r="17" fill="#8E6936"/>
+  <text x="956" y="1082" text-anchor="end" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="700" fill="#8E6936">담백함</text>
+
+  <text x="84" y="1162" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="700" fill="#1F3333">열량 판단</text>
+  <line x1="272" y1="1150" x2="930" y2="1150" stroke="#E7B59F" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="770" cy="1150" r="17" fill="#D06843"/>
+  <text x="956" y="1162" text-anchor="end" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="38" font-weight="800" fill="#D06843">중량 × 봉지 수</text>
+
+  <rect x="84" y="1206" width="912" height="2" fill="#B9AD99"/>
+  <text x="84" y="1261" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="500" fill="#536161">100 g은 비교 단위이며 권장 섭취량이 아닙니다.</text>
+  <text x="84" y="1306" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="500" fill="#536161">2026-08-10 공개 영양정보를 단순 환산했습니다.</text>
+</svg>

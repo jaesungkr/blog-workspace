@@ -23,8 +23,12 @@ approve from a whole-image preview alone.
 - Every factual label, number, comparison, conclusion, and caveat maps to the
   article or `evidence.md`.
 - Reading order and connectors are unambiguous.
-- Three to five primary blocks carry one relationship without becoming a
-  generic card grid.
+- The candidate uses the smallest complete structure, normally two to five
+  primary blocks, without adding blocks only for visual symmetry.
+- Every kicker, subhead, rhetorical question, footer, and conclusion line earns
+  its place by preventing a real ambiguity. Reject text that merely repeats the
+  article, narrates an obvious connector, or tells the reader how to interpret
+  a relationship that is already visually clear.
 - With labels mentally hidden, the problem, transformation, branches, or result
   remain distinguishable.
 - The visual adds understanding after the surrounding prose instead of merely
@@ -59,6 +63,8 @@ Before checking individual glyphs, audit the whole 360px browser display:
   small framed insert;
 - reject blocks whose words, badges, and labels visually fill the available
   region. Require quiet space and a diagram-led shape before reading the text;
+- reject sparse relationships padded with generic helper copy, bottom
+  takeaways, or decorative sections. Require copy reduction or a smaller canvas;
 - treat user feedback that text is too large relative to the image as
   release-blocking. Require a versioned revision, fresh 360px display, and
   refreshed crops even when the type-scale script already passes;

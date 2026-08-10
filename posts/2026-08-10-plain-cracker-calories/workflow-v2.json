@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "담백한 크래커를 가벼운 간식으로 생각해 체중 관리 중 자주 먹는 성인",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": true,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 제품 영양표를 같은 100g 기준으로 환산하는 source-based 설명 글이다. 절차형 소프트웨어 가이드가 아니므로 reader-friction 스크린샷은 필요하지 않다. 한 봉과 100g의 중량 차이만 시각화한 최소형 인포그래픽 1장을 대표 시각물로 사용하고, 제품 비교·판단 설명은 HTML 표와 본문에 맡긴다."
+}

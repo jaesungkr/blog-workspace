@@ -1,0 +1,4 @@
+product,manufacturer,label_basis_g,label_kcal,carbohydrate_g,sugars_g,protein_g,fat_g,saturated_fat_g,sodium_mg,source_type,source_url,checked_at,note
+참크래커,크라운제과,37,170,27,1,4,5,2.8,240,온라인 상품 영양정보,https://prod.danawa.com/info/?pcode=3073525,2026-08-10,"280g 15개입, 표시기준 37g(2개)"
+아이비,해태제과,23,100,16,<1,2,2.9,1.8,160,온라인 상품 영양정보,https://m.danawa.com/product/product.html?code=111318173,2026-08-10,"270g 12개입, 표시기준 23g"
+제크 오리지널,롯데웰푸드,50,245,33,4,3,11,6,400,온라인 상품 영양정보,https://prod.danawa.com/info/?pcode=121408086,2026-08-10,"100g 2개입, 표시기준 50g"
