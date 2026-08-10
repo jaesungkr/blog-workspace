@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "625415b1-5857-4bbe-8d8a-068242d06abf",
+  "recorded_at": "2026-08-10T06:11:20.786493Z",
+  "recorded_by": "/root",
+  "media_sha256": "c2de54b26431a2d564b60d734e3e3275c17508e9d10a1e0b5261e7c092277cf1",
+  "fetcher_sha256": "fd2e5ccefbb18d33c80a184a939f2e5ea764cb86589276a9eff2156a9c779457",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "557400890c29dc61ebde309918c3029cb7845cb0696662c5829f30f195a6de44"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "bluetooth-audio-profile-switch",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaqmWv%2FdJMcaaTPyV7%2FAAAAAAAAAAAAAAAAAAAAAAlLXMLwH38NLzoR-6r8slAqR_02XPUrPUSA8IGvMY3h%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Du%252FLIi%252BE2G%252F6Kf48n6df2PBJqGHE%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaqmWv%2FdJMcaaTPyV7%2FAAAAAAAAAAAAAAAAAAAAAAlLXMLwH38NLzoR-6r8slAqR_02XPUrPUSA8IGvMY3h%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Du%252FLIi%252BE2G%252F6Kf48n6df2PBJqGHE%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-10T06:11:20.501283Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1799398,
+      "byte_length": 1799398,
+      "sha256": "5da7fb40889d5783d4fed598708878860f168592557614057441d98735e0d81d",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Mon, 10 Aug 2026 06:09:59 GMT"
+    },
+    {
+      "id": "discord-input-device",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdzhalj%2FdJMcahFnWrL%2FAAAAAAAAAAAAAAAAAAAAAAD3eKEV2-CtFNTGTi9XiRCfNXYvgWxQt9dmidoWhnhU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Do49dMT1NZa7V2wEo4vFZEo2HkEw%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdzhalj%2FdJMcahFnWrL%2FAAAAAAAAAAAAAAAAAAAAAAD3eKEV2-CtFNTGTi9XiRCfNXYvgWxQt9dmidoWhnhU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Do49dMT1NZa7V2wEo4vFZEo2HkEw%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-10T06:11:20.718080Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 5627,
+      "byte_length": 5627,
+      "sha256": "3dfea0d13d12b58b93d2504e3c278f744551433285e744b6f2b5a64a4f657b6d",
+      "format": "png",
+      "width": 727,
+      "height": 190,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Mon, 10 Aug 2026 06:09:59 GMT"
+    },
+    {
+      "id": "windows-le-audio-stereo",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbScFEj%2FdJMcahFnWr3%2FAAAAAAAAAAAAAAAAAAAAACSBaK0B5syDH8RqESOZa_XBBFuswXwQ0oAWEkQ3vYL2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhauP4jEllT0Usf5NBp%252FBpDJgc%252FM%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbScFEj%2FdJMcahFnWr3%2FAAAAAAAAAAAAAAAAAAAAACSBaK0B5syDH8RqESOZa_XBBFuswXwQ0oAWEkQ3vYL2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhauP4jEllT0Usf5NBp%252FBpDJgc%252FM%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-10T06:11:20.785903Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 95420,
+      "byte_length": 95420,
+      "sha256": "64cfbaf1a4c559fa3ad0536262e0ec7b9aa91e322c5763fa79afdbea42837cac",
+      "format": "png",
+      "width": 1280,
+      "height": 294,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Mon, 10 Aug 2026 06:09:59 GMT"
+    }
+  ]
+}

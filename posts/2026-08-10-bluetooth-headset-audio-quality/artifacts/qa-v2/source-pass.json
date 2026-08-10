@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-10T06:07:52.352062Z",
+  "checked_by": "/root/source_review",
+  "article_content_sha256": "b064feadaf25028574bc71d024d0bf56a30f21cd39efda37d863ceb62f415cd3",
+  "brief_sha256": "f753d50f2647a7e3985a14e9d52b590c3f8c268c848329ac7297a47e43b15c24",
+  "evidence_sha256": "8f8b2371350b6e3ca8c59012e3fafa4a470922effba61f386e434d41b6262ed2",
+  "note": "대표 이미지 경로만 v2로 변경했으며 본문 body, brief, evidence는 기존 source pass와 동일함을 독립 재검증함."
+}

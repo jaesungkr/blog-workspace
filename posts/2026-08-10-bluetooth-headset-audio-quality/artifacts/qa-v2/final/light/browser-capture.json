@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-08-10T06:12:15.256910Z",
+  "checked_by": "/root/final_page_review",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-rich-preview.html",
+  "preview_sha256": "a6033a9772db2a495ef6c53e9270a15aa6ddcead6cbfe1e13fa23711b2ee950e",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.108",
+  "protocol_version": "1.3",
+  "session": "1308b5ad-aa38-41ac-8f09-d58289e61841",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-10-bluetooth-headset-audio-quality/artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7305,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaqmWv%2FdJMcaaTPyV7%2FAAAAAAAAAAAAAAAAAAAAAAlLXMLwH38NLzoR-6r8slAqR_02XPUrPUSA8IGvMY3h%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Du%252FLIi%252BE2G%252F6Kf48n6df2PBJqGHE%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdzhalj%2FdJMcahFnWrL%2FAAAAAAAAAAAAAAAAAAAAAAD3eKEV2-CtFNTGTi9XiRCfNXYvgWxQt9dmidoWhnhU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Do49dMT1NZa7V2wEo4vFZEo2HkEw%253D",
+          "complete": true,
+          "natural_width": 727,
+          "natural_height": 190
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbScFEj%2FdJMcahFnWr3%2FAAAAAAAAAAAAAAAAAAAAACSBaK0B5syDH8RqESOZa_XBBFuswXwQ0oAWEkQ3vYL2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhauP4jEllT0Usf5NBp%252FBpDJgc%252FM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 294
+        }
+      ],
+      "screenshot_sha256": "e23ea0303cb1bab2e194fee8b56b8e2edbdb3ad77c1ae9b3966855b0c9acbb4d",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-10-bluetooth-headset-audio-quality/artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10090,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaqmWv%2FdJMcaaTPyV7%2FAAAAAAAAAAAAAAAAAAAAAAlLXMLwH38NLzoR-6r8slAqR_02XPUrPUSA8IGvMY3h%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Du%252FLIi%252BE2G%252F6Kf48n6df2PBJqGHE%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdzhalj%2FdJMcahFnWrL%2FAAAAAAAAAAAAAAAAAAAAAAD3eKEV2-CtFNTGTi9XiRCfNXYvgWxQt9dmidoWhnhU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Do49dMT1NZa7V2wEo4vFZEo2HkEw%253D",
+          "complete": true,
+          "natural_width": 727,
+          "natural_height": 190
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbScFEj%2FdJMcahFnWr3%2FAAAAAAAAAAAAAAAAAAAAACSBaK0B5syDH8RqESOZa_XBBFuswXwQ0oAWEkQ3vYL2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhauP4jEllT0Usf5NBp%252FBpDJgc%252FM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 294
+        }
+      ],
+      "screenshot_sha256": "9abf5221eb6fb08b8032bdd06a2d0358998a9870a87e9b33c91327b54d91845c",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    }
+  ]
+}

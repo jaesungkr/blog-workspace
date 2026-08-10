@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-08-10",
+  "checked_by": "/root/final_page_review",
+  "browser": "Chrome/151.0.7922.108",
+  "session": "1308b5ad-aa38-41ac-8f09-d58289e61841",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "e4cdfe352c086239cfa8a5e9b7f6cfda6b2cb040689fd1ee17388ec7c78ab3af",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "5b7c17e2a4fbb96b2f0e1646c16a40d66fbab68821f1595a81a6161bd2b380f6",
+  "source_pass_sha256": "9c41fc625e5917a752247f6d28adf309a6156176778bf0320d29a4bf36020627",
+  "article_content_sha256": "b064feadaf25028574bc71d024d0bf56a30f21cd39efda37d863ceb62f415cd3",
+  "media_sha256": "c2de54b26431a2d564b60d734e3e3275c17508e9d10a1e0b5261e7c092277cf1",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "5073d562181b611339afb51ff96bb81fa7af65717953ec400621831937f0d5af",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-rich-preview.html",
+  "preview_sha256": "a6033a9772db2a495ef6c53e9270a15aa6ddcead6cbfe1e13fa23711b2ee950e",
+  "preview_structure_sha256": "094fc51da536cdd08b768ffc853a90388ab10c8982e6e9f3755aa6cfbeffbe86",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/bluetooth-headset-audio-quality-rich-preview.html",
+  "dark_preview_sha256": "1e236a2ec7aedd6bb96fb9d6878853abfa95300efa3921d5360a67e5dfc0b098",
+  "fragment_path": "artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-tistory-fragment.html",
+  "fragment_sha256": "8d47e01425ebe6f5dd3baa430e3fa44ddb0085c912b17942f2ea5ec324a6ee75",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "e23ea0303cb1bab2e194fee8b56b8e2edbdb3ad77c1ae9b3966855b0c9acbb4d"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "9abf5221eb6fb08b8032bdd06a2d0358998a9870a87e9b33c91327b54d91845c"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "6ade7a071e9255e1af9180d04516f6a63c45113b5f452f37b4bb839541adb689"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "34a9c64efdb9c1d314dfe6715040a1dc0303f37214f8a3f75d34810100205e0e"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

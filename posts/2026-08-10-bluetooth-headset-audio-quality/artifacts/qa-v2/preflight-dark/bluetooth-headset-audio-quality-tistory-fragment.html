@@ -1,0 +1,406 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>평소에는 선명하던 블루투스 이어폰이 게임이나 Discord 음성 채팅을 켜는 순간 전화 통화처럼 답답해질 때가 있습니다. 게임 소리와 친구 목소리가 모두 얇게 들리지만, 통화를 나가면 다시 정상으로 돌아오기도 합니다. 이 증상은 이어폰 고장보다 <strong>Windows가 통화용 오디오 경로로 바뀌었는지</strong> 먼저 확인하는 편이 빠릅니다.</p>
+<p>Bluetooth Classic에서는 고음질 스테레오 재생과 이어폰 마이크 사용을 같은 경로로 처리하지 못합니다. 노트북 내장 마이크나 USB 마이크처럼 별도 입력 장치를 고르는 것이 가장 쉬운 첫 분리 테스트입니다. 입력을 바꿔도 음질이 그대로라면 앱의 통신용 출력이 전환을 일으킬 수 있습니다. 이 글은 2026년 8월 10일 Microsoft와 Discord 공식 문서를 대조했습니다. 특정 이어폰을 직접 측정한 사용기가 아니라 공식 문서를 바탕으로 원인과 확인 순서를 좁힌 안내입니다.</p>
+<figure class="devlog-rich__figure" data-media-id="bluetooth-audio-profile-switch" style="--rich-media-width:916px"><img class="devlog-rich__image" src="__TISTORY_MEDIA_BLUETOOTH_AUDIO_PROFILE_SWITCH__" alt="게임 화면과 음성 채팅 참가자 표시가 보이는 PC 책상 앞에 무선 이어폰과 마이크가 놓인 모습" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">게임 중 음성 채팅에 참가하면 Bluetooth Classic 이어폰은 통화용 오디오 경로로 전환될 수 있습니다. 게임 화면과 무선 이어폰, 마이크로 그 상황을 표현한 생성형 대표 이미지입니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#30초-확인으로-원인부터-분리">30초 확인으로 원인부터 분리</a></li>
+<li><a href="#a2dp는-듣기-hfp는-말하기까지">A2DP는 듣기, HFP는 말하기까지</a></li>
+<li><a href="#stereo와-hands-free가-하나로-합쳐진-windows-11">`Stereo`와 `Hands-Free`가 하나로 합쳐진 Windows 11</a></li>
+<li><a href="#별도-마이크로-첫-원인을-가르는-방법">별도 마이크로 첫 원인을 가르는 방법</a></li>
+<li><a href="#별도-마이크가-없을-때의-선택">별도 마이크가 없을 때의 선택</a></li>
+<li><a href="#le-audio라면-확인할-두-메뉴">LE Audio라면 확인할 두 메뉴</a></li>
+<li><a href="#증상별-첫-확인-지점">증상별 첫 확인 지점</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="30초-확인으로-원인부터-분리">
+<h2 id="30초-확인으로-원인부터-분리">30초 확인으로 원인부터 분리</h2>
+<p>설정을 바꾸기 전에 음질이 변하는 순간부터 확인해 보세요.</p>
+<ol><li>음악이나 게임 소리를 재생한 상태에서 Discord 음성 채널에 들어갑니다.</li><li>소리가 먹먹해지면 음성 채널에서 나옵니다.</li><li>몇 초 안에 원래 음질로 돌아오는지 듣습니다.</li><li>같은 현상이 게임 내 음성 채팅을 켜고 끌 때도 반복되는지 확인합니다.</li></ol>
+<p>통화에 들어갈 때 나빠지고 나올 때 돌아온다면 앱이 블루투스 장치를 통화용 오디오 경로로 바꿨을 가능성이 큽니다. <a href="https://learn.microsoft.com/en-us/windows/win32/coreaudio/communications-audio-format-capabilities" style="color:#1a73e8;text-decoration:none;" target="_blank">Microsoft의 통신 오디오 문서</a>는 두 가지 조건을 제시합니다. 앱이 블루투스 마이크를 열거나, 재생 스트림을 통신용으로 분류하면 장치가 통신 모드로 들어갈 수 있습니다. Discord도 통화 참가 시 Bluetooth 헤드셋 프로필로 바뀌어 음질이 낮아질 수 있다고 <a href="https://support.discord.com/hc/en-us/articles/19850083499159--Known-Issue-Audio-Quality-Drops-When-Joining-A-Call" style="color:#1a73e8;text-decoration:none;" target="_blank">별도 안내</a>합니다.</p>
+<p>통화 전부터 소리가 나쁘거나 통화를 끝내도 돌아오지 않는다면 이 글의 원인과 다를 수 있습니다. 그때는 출력 장치, 드라이버, 무선 간섭, 음향 효과를 따로 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="a2dp는-듣기-hfp는-말하기까지">
+<h2 id="a2dp는-듣기-hfp는-말하기까지">A2DP는 듣기, HFP는 말하기까지</h2>
+<p>Bluetooth Classic 오디오에는 이 문제와 관련된 두 프로필이 있습니다. 프로필은 이어폰과 PC가 어떤 방식으로 소리를 주고받을지 정한 규칙입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>프로필</th><th>주로 하는 일</th><th>마이크 사용 중 재생</th></tr></thead><tbody><tr><td>A2DP</td><td>음악·영상·게임의 고음질 스테레오 출력</td><td>이어폰 마이크 입력을 함께 처리하지 않음</td></tr><tr><td>HFP</td><td>통화용 마이크 입력과 소리 출력을 동시에 처리</td><td>모노 통신 품질로 동작</td></tr></tbody></table></div>
+<p><a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/bluetooth/bluetooth-classic-audio" style="color:#1a73e8;text-decoration:none;" target="_blank">Microsoft의 Bluetooth Classic 설명</a>에 따르면 A2DP는 일반 미디어를 위한 고음질 스테레오 재생을 담당합니다. 이어폰의 마이크 입력이 필요해지면 HFP를 사용합니다. HFP에서는 마이크와 출력이 모두 모노로 동작하며, Windows 11은 장치 조합에 따라 8kHz 협대역 또는 16kHz 광대역 음성을 사용합니다.</p>
+<p>그래서 평소 48kHz로 재생되던 게임 소리도 블루투스 마이크가 열리면 HFP 형식에 맞춰 다시 처리될 수 있습니다. 볼륨이 작아진 정도가 아니라 공간감과 고음이 줄고, 전체 소리가 통화처럼 바뀌는 이유입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="stereo와-hands-free가-하나로-합쳐진-windows-11">
+<h2 id="stereo와-hands-free가-하나로-합쳐진-windows-11"><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Stereo</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Hands-Free</code>가 하나로 합쳐진 Windows 11</h2>
+<p>예전 해결 글에서는 출력 장치 목록에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Headphones (Stereo)</code>를 고르고 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Headset (Hands-Free)</code>를 피하라고 안내하곤 합니다. 이 구분은 Windows 10 화면에는 맞을 수 있지만 Windows 11에서는 그대로 보이지 않을 수 있습니다.</p>
+<p>Windows 11은 Bluetooth Classic 장치의 A2DP와 HFP 입출력을 하나로 합칩니다. 앱이 이어폰 마이크를 열거나 통신용 출력 스트림을 만들면 Windows가 HFP를 자동으로 선택합니다. 그 밖의 재생에는 A2DP를 사용합니다. 장치 목록에 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Stereo</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Hands-Free</code>가 따로 없어도 두 프로필 전환은 내부에서 계속 일어납니다.</p>
+<p>따라서 Windows 11에서는 장치 이름을 찾는 것보다 <strong>앱이 사용하는 입력 장치와 통신용 출력</strong>을 함께 보는 편이 정확합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="별도-마이크로-첫-원인을-가르는-방법">
+<h2 id="별도-마이크로-첫-원인을-가르는-방법">별도 마이크로 첫 원인을 가르는 방법</h2>
+<p>노트북 내장 마이크, USB 마이크, 웹캠 마이크, 유선 이어셋 마이크 중 하나가 있다면 Discord의 입력 장치를 바꿉니다. 출력은 블루투스 이어폰으로 두고, 입력만 다른 마이크로 나누는 방식입니다.</p>
+<ol><li>Discord 왼쪽 아래 톱니바퀴를 눌러 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">사용자 설정</code>을 엽니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">음성 및 비디오</code>로 이동합니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">입력 장치</code>에서 블루투스 이어폰이 아닌 마이크를 장치 이름으로 선택합니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">출력 장치</code>는 사용할 블루투스 이어폰으로 둡니다.</li><li>음악을 재생한 채 음성 채널에 들어가 음질이 유지되는지 확인합니다.</li></ol>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Default</code>를 그대로 두면 Windows 기본 입력이 블루투스 이어폰 마이크일 수 있습니다. 아래 Discord 공식 화면에서 붉은 점선으로 표시된 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">INPUT DEVICE</code>를 열어 노트북 마이크나 USB 마이크 이름을 직접 선택하세요. 선택 뒤에는 Discord의 마이크 테스트로 목소리가 들어오는지도 확인합니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="discord-input-device" style="--rich-media-width:727px;--rich-mobile-scroll-width:640px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="__TISTORY_MEDIA_DISCORD_INPUT_DEVICE__" alt="Discord 음성 및 비디오 설정에서 입력 장치와 출력 장치를 고르는 화면" width="727" height="190" loading="lazy" decoding="async"></div><figcaption class="devlog-rich__caption">Discord 공식 영문 화면입니다. INPUT DEVICE에서 별도 마이크 이름을 고릅니다. 모바일에서는 이미지를 좌우로 밀어 입력·출력 항목을 확인하세요. <span class="devlog-rich__credit">· <a href="https://support.discord.com/hc/en-us/articles/360045138471-Guide-How-to-configure-your-microphone" target="_blank" rel="noopener noreferrer">공식 자료</a></span></figcaption></figure>
+<p><a href="https://support.discord.com/hc/en-us/articles/214925018-Where-d-my-Audio-Input-go-Various-Voice-Issues" style="color:#1a73e8;text-decoration:none;" target="_blank">Discord 공식 입력 장치 안내</a>도 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">사용자 설정 &gt; 음성 및 비디오</code>에서 원하는 마이크를 고르도록 설명합니다. 블루투스 마이크 사용이 전환 조건이었다면 별도 입력을 고른 뒤 Windows가 A2DP 재생을 유지할 수 있습니다.</p>
+<p>입력 장치를 바꿨는데도 Discord 통화에 들어가는 순간 소리가 나빠진다면 통신용 출력 스트림이 두 번째 후보입니다. 이를 가르려면 Discord의 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">출력 장치</code>를 노트북 스피커나 유선 장치로 잠시 바꾸고, 게임 소리만 블루투스 이어폰으로 재생해 봅니다. 이때 음질이 유지되면 Discord의 통신용 출력이 Bluetooth Classic 장치를 HFP로 바꾸는 조건에 가까웠다고 볼 수 있습니다. Discord 목소리까지 같은 Bluetooth Classic 이어폰으로 들어야 한다면 통화 중 모노 품질을 받아들여야 할 수 있습니다. 다른 선택지는 뒤에서 설명할 LE Audio 지원 여부를 확인하는 것입니다.</p>
+<p>Discord 입력을 바꿨는데도 게임을 실행할 때 다시 음질이 떨어진다면 게임의 음성 채팅 설정도 확인합니다. 게임이 별도로 블루투스 마이크를 사용하면 Discord 설정과 관계없이 HFP가 선택될 수 있습니다. 게임 안에서 입력 장치를 같은 별도 마이크로 바꾸거나, 사용하지 않는 음성 채팅을 끈 뒤 다시 비교하세요.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="별도-마이크가-없을-때의-선택">
+<h2 id="별도-마이크가-없을-때의-선택">별도 마이크가 없을 때의 선택</h2>
+<p>Bluetooth Classic 이어폰의 자체 마이크를 반드시 써야 한다면 고음질 스테레오와 마이크를 동시에 유지할 수 없습니다. 설정이 잘못된 것이 아니라 A2DP와 HFP의 역할이 나뉘어 있기 때문입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>필요한 것</th><th>현실적인 선택</th><th>결과</th></tr></thead><tbody><tr><td>게임 소리의 스테레오 품질</td><td>이어폰 마이크를 쓰지 않고 음성 채팅을 끔</td><td>A2DP 재생 유지</td></tr><tr><td>음성 채팅과 스테레오를 모두 사용</td><td>노트북 내장·USB·유선 마이크를 별도 입력으로 사용</td><td>마이크가 전환 조건이었다면 A2DP 유지</td></tr><tr><td>이어폰 하나로 말하고 듣기</td><td>이어폰 마이크를 그대로 사용</td><td>HFP의 모노 통신 품질 허용</td></tr></tbody></table></div>
+<p>마이크 권한을 끄거나 장치를 사용 중지하는 방법도 있지만, 필요한 앱까지 마이크를 못 쓰게 만들 수 있습니다. 먼저 앱 안에서 입력 장치를 명시적으로 바꾸는 것이 안전합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="le-audio라면-확인할-두-메뉴">
+<h2 id="le-audio라면-확인할-두-메뉴">LE Audio라면 확인할 두 메뉴</h2>
+<p>Bluetooth LE Audio는 Classic의 A2DP·HFP와 다른 최신 오디오 경로입니다. 지원되는 Windows 11 PC와 이어폰 조합에서는 마이크 사용 중 음질이 개선되고, 일부 PC는 스테레오 재생도 유지할 수 있습니다.</p>
+<p>먼저 PC가 LE Audio를 지원하는지 확인합니다.</p>
+<ol><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">설정 &gt; Bluetooth 및 장치 &gt; 장치</code>로 이동합니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">장치 설정</code>에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">사용 가능한 경우 LE 오디오 사용</code>이 있는지 봅니다.</li><li>항목이 있다면 켜고, 이어폰 제조사 사양에도 LE Audio 또는 TMAP 지원이 있는지 확인합니다.</li></ol>
+<p><a href="https://support.microsoft.com/en-US/Windows/Hardware/Bluetooth/check-if-a-windows-11-device-supports-bluetooth-low-energy-audio" style="color:#1a73e8;text-decoration:none;" target="_blank">Microsoft의 LE Audio 확인 문서</a>에 따르면 이 항목이 없으면 현재 PC가 LE Audio를 지원하지 않는 것입니다. 제품 설명에 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Bluetooth LE</code>나 최신 Bluetooth 버전이 적혀 있어도 LE Audio까지 지원한다는 뜻은 아닙니다. PC의 Bluetooth·오디오 하드웨어와 제조사 드라이버, 이어폰이 모두 맞아야 합니다.</p>
+<p>마이크 사용 중 스테레오 형식은 조건이 더 까다롭습니다. Microsoft가 제시한 조건은 Windows 11 24H2 이상과 빌드 26100.4484 이상입니다. 여기에 공장 출하 단계의 통합 Bluetooth LE 지원, 제조사 드라이버, 호환되는 LE Audio 이어폰이 모두 필요합니다. 조건을 충족한다면 다음 메뉴를 확인합니다.</p>
+<ol><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">설정 &gt; 시스템 &gt; 소리</code>를 엽니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">출력</code>에서 연결된 LE Audio 이어폰 오른쪽의 화살표를 누릅니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">출력 설정 &gt; 형식</code>을 펼칩니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">마이크가 활성 상태일 때 형식</code>에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">스테레오(채널 2개)</code>를 선택합니다.</li></ol>
+<p>아래 이미지는 Microsoft 영문 공식 문서의 Windows 설정 화면입니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Format when microphone is active</code> 항목에 1채널과 2채널 선택지가 나타납니다. 한국어 Windows에서는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">마이크가 활성 상태일 때 형식</code>으로 표시되며, 항목 자체가 없다면 현재 조합은 마이크 사용 중 스테레오를 지원하지 않습니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="windows-le-audio-stereo" style="--rich-media-width:916px;--rich-mobile-scroll-width:720px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="__TISTORY_MEDIA_WINDOWS_LE_AUDIO_STEREO__" alt="Windows 11 Bluetooth LE 오디오 출력 설정에서 마이크 활성 시 1채널과 2채널 형식을 고르는 화면" width="1520" height="350" loading="lazy" decoding="async"></div><figcaption class="devlog-rich__caption">Microsoft 공식 영문 화면입니다. Format when microphone is active에 2 channels가 보여야 마이크 사용 중 스테레오 선택이 가능합니다. 모바일에서는 이미지를 좌우로 밀어 항목과 값을 확인하세요. <span class="devlog-rich__credit">· <a href="https://support.microsoft.com/en-us/windows/configure-bluetooth-le-audio-quality-settings-on-windows-11-0da9b3b9-7097-49ec-8134-a5389f6a3db1" target="_blank" rel="noopener noreferrer">공식 자료</a></span></figcaption></figure>
+<p><a href="https://support.microsoft.com/en-us/windows/hardware/bluetooth/configuring-bluetooth-le-audio-quality-settings-on-windows-11" style="color:#1a73e8;text-decoration:none;" target="_blank">Microsoft의 LE Audio 품질 설정 문서</a>는 지원되는 조합에서 스테레오를 기본으로 사용한다고 설명합니다. 다만 스테레오 선택 뒤 소리가 끊기거나 사라지는 호환성 문제가 생기면 모노로 되돌려 비교하도록 안내합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="증상별-첫-확인-지점">
+<h2 id="증상별-첫-확인-지점">증상별 첫 확인 지점</h2>
+<p>설정을 여러 개 한꺼번에 바꾸기보다 현재 보이는 증상에 맞춰 한 단계씩 확인하세요.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>증상</th><th>먼저 볼 곳</th><th>다음 행동</th></tr></thead><tbody><tr><td>Discord에 들어갈 때만 음질 저하</td><td>Discord <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">입력 장치</code></td><td>블루투스 이어폰이 아닌 마이크를 직접 선택</td></tr><tr><td>게임을 켤 때만 음질 저하</td><td>게임의 음성 채팅·입력 장치</td><td>음성 채팅을 끄거나 별도 마이크 지정</td></tr><tr><td>Windows 11에 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Stereo</code> 장치가 없음</td><td>정상적인 통합 입출력 여부</td><td>장치명 대신 앱의 입력 장치와 통신용 출력 확인</td></tr><tr><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">사용 가능한 경우 LE 오디오 사용</code>이 없음</td><td>PC 하드웨어·제조사 드라이버</td><td>외부 마이크 방식 사용, 제조사 지원 여부 확인</td></tr><tr><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">마이크가 활성 상태일 때 형식</code>이 있음</td><td>출력 장치의 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">형식</code></td><td>2채널을 선택하고 통화 중 재생 테스트</td></tr><tr><td>통화를 끝내도 계속 음질이 나쁨</td><td>앱 종료 후 Windows 출력·드라이버</td><td>HFP 외 원인으로 범위를 넓혀 점검</td></tr></tbody></table></div>
+<p>가장 먼저 해볼 일은 Discord의 입력 장치를 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Default</code>에서 별도 마이크 이름으로 바꾸는 것입니다. 그 상태에서 음악을 틀고 음성 채널에 들어가 보세요. 음질이 유지되면 블루투스 마이크 사용이 전환 조건에 가까웠다고 판단할 수 있습니다. 그대로라면 Discord의 출력 장치를 다른 장치로 옮겨 두 번째 조건을 분리합니다.</p>
+<p>별도 마이크가 없고 LE Audio 지원 메뉴도 없다면 설정만으로 두 기능을 모두 얻기 어렵습니다. Bluetooth Classic 이어폰의 마이크와 고음질 스테레오 중 어느 기능을 우선할지 정하는 편이 빠릅니다.</p>
+</section>
+</article>
