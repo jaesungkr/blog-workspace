@@ -118,6 +118,26 @@
 
 - Put one message in each sentence, but join clauses when forced short sentences
   sound mechanical.
+- Aim for the shortest complete explanation, not the shortest text. Preserve
+  the cause, condition, reader action, and material limit; cut the setup or
+  repetition around them.
+- Give each important fact one full home. If a later section needs it, use a
+  short reminder or point to the earlier decision instead of explaining it
+  again. A reminder may name the decision, but it must not repeat the cause,
+  procedure, or evidence already given in that fact's main section.
+- Make every paragraph answer one reader question or do one clear job:
+  diagnose, explain a mechanism, give an action, compare choices, or state a
+  boundary. Merge or remove a paragraph that only previews or repeats another
+  paragraph.
+- Start a troubleshooting section with its answer or action. Do not spend a
+  lead paragraph announcing that an explanation is coming.
+- Use the deletion test sentence by sentence: if removing a sentence loses no
+  fact, step, distinction, evidence boundary, or necessary transition, remove
+  it. Do not use target word counts or sentence-length quotas as a substitute
+  for this judgment.
+- Let the closing add only the next action or the hard technical limit. Do not
+  restate the whole troubleshooting sequence after a summary table already
+  shows it.
 - Prefer direct verbs and spoken-natural Korean.
 - Assume some readers are not developers. Explain each technical term in plain
   Korean at first use and describe what it changes for the reader before

@@ -82,7 +82,31 @@ as evidence.
 4. Draft around evidence with `plain identity -> ordinary use -> easiest start
    -> evidence boundary`. Keep comparison rules, prerequisites, exact entry
    points, and limitations explicit.
-5. Run one structural revision and one prose-polish stage.
+5. Run a density revision before prose polish:
+   - assign each central fact, mechanism, action, and limitation one main
+     section where it is explained fully;
+   - treat a later mention as a reminder only when it names the earlier
+     decision or points the reader back without re-explaining its cause,
+     procedure, or evidence;
+   - during revision, record each paragraph's primary reader job in a working
+     list in `audit.md`: diagnosis, mechanism, action, comparison, or boundary.
+     A paragraph may carry a supporting job when the two are inseparable;
+     otherwise split it or move one job to its main section;
+   - merge or delete paragraphs that only preview, rephrase, or summarize a
+     job already completed;
+   - for troubleshooting claims, preserve the shortest complete explanation:
+     every applicable cause, condition, next action, and material exception
+     must remain. Do not force all four parts into product identity or simple
+     navigation copy;
+   - do not repeat the full solution in the closing when a table or earlier
+     section already provides it.
+   Run the prose analyzer before and after as an inventory, not a target score.
+   It detects surface signals, not semantic repetition, so complete a separate
+   manual pass for facts and actions repeated across sections. Record the
+   before/after inventory, representative removals, paragraph-job list, and
+   protected details in `audit.md`; the labels are working evidence, not
+   article copy.
+   Then run one prose-polish stage.
 6. Hand the still-`reviewing` bundle to an independent source reviewer. Return
    substantive defects to writing and surface defects to prose polish until it
    passes.

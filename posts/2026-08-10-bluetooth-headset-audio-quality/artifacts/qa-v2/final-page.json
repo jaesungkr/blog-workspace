@@ -3,14 +3,14 @@
   "checked_at": "2026-08-10",
   "checked_by": "/root/final_page_review",
   "browser": "Chrome/151.0.7922.108",
-  "session": "1308b5ad-aa38-41ac-8f09-d58289e61841",
+  "session": "3d57c425-0031-4fec-b757-f10fe625cd71",
   "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
-  "capture_receipt_sha256": "e4cdfe352c086239cfa8a5e9b7f6cfda6b2cb040689fd1ee17388ec7c78ab3af",
+  "capture_receipt_sha256": "a5234c6d0effb61a5d4eaaee49a226dea2d8c495e1500d55592ae8da1fe81cde",
   "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
-  "dark_capture_receipt_sha256": "5b7c17e2a4fbb96b2f0e1646c16a40d66fbab68821f1595a81a6161bd2b380f6",
-  "source_pass_sha256": "9c41fc625e5917a752247f6d28adf309a6156176778bf0320d29a4bf36020627",
-  "article_content_sha256": "b064feadaf25028574bc71d024d0bf56a30f21cd39efda37d863ceb62f415cd3",
+  "dark_capture_receipt_sha256": "699f55e30d9cdbbcab4523a4f06cd7f012a52d4cd6dce04175751a7ea81ab089",
+  "source_pass_sha256": "848503c40a72d084b11b4d02804cdebe38b6b1574ab3b97f2bbec87bd7bc4668",
+  "article_content_sha256": "7f330a9cf033982dc2b463420cf4ee1675d49a56cefe377213b3ee48ef7ea416",
   "media_sha256": "c2de54b26431a2d564b60d734e3e3275c17508e9d10a1e0b5261e7c092277cf1",
   "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
   "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
@@ -18,12 +18,12 @@
   "remote_media_sha256": "5073d562181b611339afb51ff96bb81fa7af65717953ec400621831937f0d5af",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-rich-preview.html",
-  "preview_sha256": "a6033a9772db2a495ef6c53e9270a15aa6ddcead6cbfe1e13fa23711b2ee950e",
-  "preview_structure_sha256": "094fc51da536cdd08b768ffc853a90388ab10c8982e6e9f3755aa6cfbeffbe86",
+  "preview_sha256": "75fcfa82c9fb0da691b7ad8b221361f6fa841f0e3ed3d6404e6bb10877e1fc7f",
+  "preview_structure_sha256": "382ed541cef7da1c10ca7dc4346169e54503d48267ed9b8b2e886504dc90fcf8",
   "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/bluetooth-headset-audio-quality-rich-preview.html",
-  "dark_preview_sha256": "1e236a2ec7aedd6bb96fb9d6878853abfa95300efa3921d5360a67e5dfc0b098",
+  "dark_preview_sha256": "0610166e8c144d8fd42a8da97ce03a9e5eba36070914c5f8f7ef71776d84dea2",
   "fragment_path": "artifacts/qa-v2/final-rendered/bluetooth-headset-audio-quality-tistory-fragment.html",
-  "fragment_sha256": "8d47e01425ebe6f5dd3baa430e3fa44ddb0085c912b17942f2ea5ec324a6ee75",
+  "fragment_sha256": "697c364e526c400465ca6559540aa7e343ee34234e5245f660a9a5fd03a02d74",
   "viewports": [
     {
       "width": 1280,
@@ -38,7 +38,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "e23ea0303cb1bab2e194fee8b56b8e2edbdb3ad77c1ae9b3966855b0c9acbb4d"
+      "screenshot_sha256": "fab645182e5443c6ac0b413ddd78fdcec8502edb37d7a5f59c2244a945773472"
     },
     {
       "width": 360,
@@ -53,7 +53,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "9abf5221eb6fb08b8032bdd06a2d0358998a9870a87e9b33c91327b54d91845c"
+      "screenshot_sha256": "6ce542a9ccbbeec205df4d79be66effd7ab5762e58993aa9a8a7457479f95c6e"
     }
   ],
   "dark_viewports": [
@@ -70,7 +70,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "6ade7a071e9255e1af9180d04516f6a63c45113b5f452f37b4bb839541adb689"
+      "screenshot_sha256": "95057f2744314301678ef9b443d7c760a942d5266bc7e76cf5997e5a1ac51036"
     },
     {
       "width": 360,
@@ -85,7 +85,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "34a9c64efdb9c1d314dfe6715040a1dc0303f37214f8a3f75d34810100205e0e"
+      "screenshot_sha256": "0ce5399a4da75495bda4169657bdcf686b9b629cd828b9a08b17dab6f4fe658f"
     }
   ],
   "fragment": {
