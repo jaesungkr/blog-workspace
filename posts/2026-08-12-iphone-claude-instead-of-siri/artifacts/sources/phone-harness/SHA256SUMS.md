@@ -1,0 +1,17 @@
+# 보존 파일 SHA-256
+
+커밋 `4d2de7a4b8780a386545c986543c83dda66764dd`에서 보존한 원자료입니다.
+
+| 파일 | SHA-256 |
+|---|---|
+| `LICENSE` | `18e66d0f33ecd712f960c2b76e36279c613d1cfbd425cc9537f8e84a767f35b3` |
+| `README.md` | `51097a8eb10173547a548f913dc459ea157310fee6373e1eea097ebddbd0e629` |
+| `SKILL.md` | `ebd4eac2802973744e247900a75355ef7ad2bc8272050ebd926fcfa12cfc5335` |
+| `admin.py` | `ed962f49aa557931d046dd90a4c509209e248a2e2dcc7bbf85c2f734046970c1` |
+| `background.py` | `3b6b32a2f290184d8976875075bca0aa34109be8ecf8401cccd9320802834e63` |
+| `helpers.py` | `f5f5364e515cc14a9d3fac38252c5594d0af84f9a6eb29f474ce71695cf320c2` |
+| `install.md` | `0c46b34eeb2f4c34e5aabdd6e9b3849eec0745ee584b1f92b03dcd6cad9ead4e` |
+| `mirror.py` | `95f4003ac70114fa252bf8031885d6c3c27e13fe4ef58ff6016c069063971724` |
+| `ocr.py` | `8f6c1147bce30d2323e78763c68d1e5d5aa1d8c9ed7eeb05a729ba87573f5d28` |
+| `pyproject.toml` | `f9147af6d948f9cb0659e64bc1d9e90635cd81ee23b46af2a792e5f14ec1cb7d` |
+| `run.py` | `0b34f89a39bd6eeba208c9e5741ea45b8e665eb32f4912003200fe3322316dd1` |

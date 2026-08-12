@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Claude가 아이폰 화면을 직접 보고 조작한다는 phone-harness 데모의 원리와 설치법이 궁금한 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "phone-harness 하나만 설명한다. 첫 화면에서 Mac의 Claude Code가 iPhone Mirroring을 캡처·OCR하고 좌표 입력을 보내는 구조를 바로 답한다. 이어서 준비물, 검증된 Python 3.12 설치 우회, doctor, 안전한 첫 테스트, 데이터 경계를 짧게 제공한다. Ask Claude와 Claude iOS 일반 설정은 제외한다. 실제 아이폰은 조작하지 않았고 패키지 설치·import만 검증했다. 공개 GitHub 개요와 doctor 문서 스크린샷 2개만 사용한다."
+}

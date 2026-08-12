@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "5427be7f-8df2-410b-91cb-38e9de617599",
+  "recorded_at": "2026-08-12T14:57:51.513093Z",
+  "recorded_by": "Codex",
+  "media_sha256": "fa573e05892541d6dd88c06785a5dbe90d5d5469b98415561bc1ad0d006e8b67",
+  "fetcher_sha256": "fd2e5ccefbb18d33c80a184a939f2e5ea764cb86589276a9eff2156a9c779457",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "557400890c29dc61ebde309918c3029cb7845cb0696662c5829f30f195a6de44"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "phone-harness-github-overview",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcApRyq%2FdJMcafgCyMi%2FAAAAAAAAAAAAAAAAAAAAABoy8Mk-KYikv0Vk7eAJgMO2ILQrKdqWC9brRFPBHcts%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DTvOJZetfs0UlEJu5ACLKX553xiE%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcApRyq%2FdJMcafgCyMi%2FAAAAAAAAAAAAAAAAAAAAABoy8Mk-KYikv0Vk7eAJgMO2ILQrKdqWC9brRFPBHcts%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DTvOJZetfs0UlEJu5ACLKX553xiE%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-12T14:57:51.449032Z",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "header_content_length": 135074,
+      "byte_length": 135074,
+      "sha256": "08ba582b6841de99b7fab08db9dd24c2dc47c4cde088d16824acb8397cccc357",
+      "format": "jpeg",
+      "width": 1200,
+      "height": 560,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Wed, 12 Aug 2026 14:42:19 GMT"
+    },
+    {
+      "id": "phone-harness-install-doctor",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FudAJk%2FdJMcafHICR1%2FAAAAAAAAAAAAAAAAAAAAAFXbvs2TW-lLNEca-UGH16RkroT-pG4wTWGs3RWXCg49%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DD5Oe50TchUT08mcE8mPxQ4XyP70%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FudAJk%2FdJMcafHICR1%2FAAAAAAAAAAAAAAAAAAAAAFXbvs2TW-lLNEca-UGH16RkroT-pG4wTWGs3RWXCg49%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DD5Oe50TchUT08mcE8mPxQ4XyP70%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-12T14:57:51.512896Z",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "header_content_length": 137975,
+      "byte_length": 137975,
+      "sha256": "09bca4865be2438a98ad27deaaebd66d3da395fed7419b539867e9ef21b10dda",
+      "format": "jpeg",
+      "width": 930,
+      "height": 560,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Wed, 12 Aug 2026 14:42:20 GMT"
+    }
+  ]
+}

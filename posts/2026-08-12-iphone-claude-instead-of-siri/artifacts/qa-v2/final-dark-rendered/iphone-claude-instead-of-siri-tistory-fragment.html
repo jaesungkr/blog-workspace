@@ -1,0 +1,418 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">phone-harness</code>를 사용하면 Claude에게 “날씨 앱을 열고 내일 비가 오는지 확인해 줘”라고 요청해 아이폰 화면을 직접 읽고 누르게 할 수 있습니다. Claude가 화면에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">날씨</code>라는 글자를 찾고, 그 위치를 탭한 뒤, 바뀐 화면을 다시 읽어 결과를 확인하는 방식입니다.</p>
+<p>다만 아이폰 안에서 Claude가 시리처럼 실행되는 구조는 아닙니다. <strong>Mac의 Claude Code가 아이폰 미러링 화면을 눈으로 보고, 마우스와 키보드 입력을 손처럼 보내는 방식</strong>입니다. 따라서 Mac과 아이폰이 함께 있어야 합니다.</p>
+<p>가장 먼저 Mac에서 아이폰 미러링을 직접 연결해 보세요. 미러링이 정상 작동해야 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">phone-harness</code>도 아이폰 화면을 읽고 누를 수 있습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="phone-harness-github-overview" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcApRyq%2FdJMcafgCyMi%2FAAAAAAAAAAAAAAAAAAAAABoy8Mk-KYikv0Vk7eAJgMO2ILQrKdqWC9brRFPBHcts%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DTvOJZetfs0UlEJu5ACLKX553xiE%253D" alt="GitHub의 ShawnPana phone-harness 공개 저장소와 iPhone Mirroring 관련 파일, 커밋 4d2de7a가 보이는 화면" width="1200" height="560" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">phone-harness는 Mac의 iPhone Mirroring 창을 Claude Code의 눈과 손으로 연결하는 공개 프로젝트입니다. <span class="devlog-rich__credit">· <a href="https://github.com/ShawnPana/phone-harness" target="_blank" rel="noopener noreferrer">공식 자료</a></span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#claude가-아이폰을-보고-누르는-방법">Claude가 아이폰을 보고 누르는 방법</a></li>
+<li><a href="#준비할-것은-mac-아이폰-미러링-claude-code">준비할 것은 Mac, 아이폰 미러링, Claude Code</a></li>
+<li><a href="#phone-harness-설치-명령은-그대로-복사하면-실패">phone-harness 설치 명령은 그대로 복사하면 실패</a></li>
+<li><a href="#권한을-켜고-doctor의-첫-fail부터-해결">권한을 켜고 doctor의 첫 FAIL부터 해결</a></li>
+<li><a href="#처음에는-날씨-앱처럼-안전한-작업만-맡기기">처음에는 날씨 앱처럼 안전한 작업만 맡기기</a></li>
+<li><a href="#화면-정보가-완전히-로컬에만-남는-것은-아님">화면 정보가 완전히 로컬에만 남는 것은 아님</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="claude가-아이폰을-보고-누르는-방법">
+<h2 id="claude가-아이폰을-보고-누르는-방법">Claude가 아이폰을 보고 누르는 방법</h2>
+<ol><li>Mac의 아이폰 미러링 창을 캡처합니다.</li><li>Apple Vision OCR로 화면의 글자와 좌표를 찾습니다.</li><li>해당 좌표에 탭·스크롤·키 입력을 보냅니다.</li><li>화면을 다시 캡처해 작업이 제대로 됐는지 확인합니다.</li></ol>
+<p>예를 들어 Claude에게 “설정 앱에서 소프트웨어 업데이트 화면까지 이동해 줘”라고 요청하면, 화면에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">설정</code>을 찾고 누른 뒤 다음 화면을 다시 읽습니다. 이어서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">일반</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">소프트웨어 업데이트</code>를 차례로 찾아 이동합니다. 웹 브라우저의 DOM처럼 버튼 정보가 따로 있는 것은 아니며, 실제 화면을 보고 글자 위치를 추적합니다.</p>
+<p>앱 열기, 메뉴 이동, 글자 읽기, 스크롤, 간단한 입력을 자동화할 수 있습니다. 카메라·마이크·Face ID·멀티터치는 지원하지 않습니다. 글자가 없는 아이콘이나 같은 문구가 여러 번 나오는 화면에서는 엉뚱한 곳을 누를 수도 있습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="준비할-것은-mac-아이폰-미러링-claude-code">
+<h2 id="준비할-것은-mac-아이폰-미러링-claude-code">준비할 것은 Mac, 아이폰 미러링, Claude Code</h2>
+<p><a href="https://support.apple.com/en-ie/120421" style="color:#1a73e8;text-decoration:none;" target="_blank">Apple 안내</a> 기준으로 Apple Silicon 또는 T2 칩이 있는 Mac, macOS Sequoia 15 이상, iOS 18 이상이 필요합니다. 두 기기는 같은 Apple 계정과 2단계 인증을 사용해야 하며 Wi-Fi와 Bluetooth가 켜져 있어야 합니다.</p>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">phone-harness</code>는 아이폰 앱이 아니라 Mac에서 실행하는 Python 도구입니다. 다음 준비물이 필요합니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>준비물</th><th>필요한 이유</th></tr></thead><tbody><tr><td>Claude Code</td><td>사용자의 요청을 해석하고 다음 조작을 결정합니다.</td></tr><tr><td>Python 3.12</td><td>phone-harness와 PyObjC 모듈을 실행합니다.</td></tr><tr><td>화면 기록 권한</td><td>아이폰 미러링 화면을 캡처합니다.</td></tr><tr><td>손쉬운 사용 권한</td><td>미러링 창에 탭과 키 입력을 보냅니다.</td></tr></tbody></table></div>
+<p>Claude Code가 없다면 <a href="https://code.claude.com/docs/en/getting-started" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 설치 안내</a>에 따라 먼저 설치합니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">curl -fsSL https://claude.ai/install.sh | bash
+claude --version
+claude</code></pre>
+<p>처음 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">claude</code>를 실행하면 브라우저 로그인 화면이 열립니다. 로그인 뒤 터미널에 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Login successful</code>이 표시되는지 확인하세요. Claude Code는 Pro·Max·Team·Enterprise 또는 Console 계정이 필요합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="phone-harness-설치-명령은-그대로-복사하면-실패">
+<h2 id="phone-harness-설치-명령은-그대로-복사하면-실패">phone-harness 설치 명령은 그대로 복사하면 실패</h2>
+<p>2026년 8월 12일 기준 저장소의 설치 문서에는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">pyobjc-framework-AppKit</code>가 적혀 있습니다. 하지만 이 이름의 패키지는 PyPI에 없어 그대로 설치하면 실패합니다. AppKit 바인딩이 포함된 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">pyobjc-framework-Cocoa</code>를 대신 설치해야 합니다.</p>
+<p>아래 명령은 Python 3.12 새 가상 환경에서 패키지 설치, 모듈 import, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">phone-harness --help</code>까지 확인했습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">git clone https://github.com/ShawnPana/phone-harness ~/.phone-harness
+cd ~/.phone-harness
+
+python3.12 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install pyobjc-framework-Quartz pyobjc-framework-Vision \
+  pyobjc-framework-Cocoa pyobjc-framework-ApplicationServices
+python -m pip install -e . --no-deps
+
+python -c 'import Quartz, Vision, AppKit, ApplicationServices, phone_harness; print("imports-ok")'
+phone-harness --help</code></pre>
+<p>설치가 끝나면 Claude Code가 이 도구를 자동으로 찾도록 스킬을 등록합니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">mkdir -p ~/.claude/skills/phone-harness
+phone-harness skill &gt; ~/.claude/skills/phone-harness/SKILL.md</code></pre>
+<p>다음부터 새 터미널을 열었을 때는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">source ~/.phone-harness/.venv/bin/activate</code>로 가상 환경을 먼저 활성화해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="권한을-켜고-doctor의-첫-fail부터-해결">
+<h2 id="권한을-켜고-doctor의-첫-fail부터-해결">권한을 켜고 doctor의 첫 FAIL부터 해결</h2>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">시스템 설정 &gt; 개인정보 보호 및 보안</code>에서 명령을 실행할 터미널 앱에 두 권한을 허용합니다.</p>
+<ul><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">화면 기록</code>: 아이폰 미러링 화면을 읽는 권한입니다. 켠 뒤 터미널을 완전히 다시 시작합니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">손쉬운 사용</code>: 화면을 누르고 글자를 입력하는 권한입니다.</li></ul>
+<p>아이폰을 잠근 상태로 Mac의 아이폰 미러링을 연결한 뒤 진단을 실행합니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">phone-harness --doctor</code></pre>
+<p>진단은 PyObjC, 손쉬운 사용, 화면 기록, 미러링 앱, 창 탐색, 캡처, OCR 순서로 진행됩니다. 여러 설정을 한꺼번에 바꾸지 말고 첫 번째 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">FAIL</code>부터 해결하세요.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="phone-harness-install-doctor" style="--rich-media-width:916px;--rich-mobile-scroll-width:760px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FudAJk%2FdJMcafHICR1%2FAAAAAAAAAAAAAAAAAAAAAFXbvs2TW-lLNEca-UGH16RkroT-pG4wTWGs3RWXCg49%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DD5Oe50TchUT08mcE8mPxQ4XyP70%253D" alt="phone-harness install.md의 If It Fails 절에 doctor 검사 순서와 대표 오류 해결법이 보이는 화면" width="930" height="560" loading="lazy" decoding="async"></div><figcaption class="devlog-rich__caption">`--doctor`는 PyObjC부터 OCR까지 차례로 검사합니다. 첫 FAIL부터 해결하세요. 모바일에서는 이미지를 좌우로 밀어 진단 순서를 읽을 수 있습니다. <span class="devlog-rich__credit">· <a href="https://github.com/ShawnPana/phone-harness/blob/4d2de7a4b8780a386545c986543c83dda66764dd/install.md#if-it-fails" target="_blank" rel="noopener noreferrer">공식 자료</a></span></figcaption></figure>
+</section>
+<section class="devlog-rich__section" aria-labelledby="처음에는-날씨-앱처럼-안전한-작업만-맡기기">
+<h2 id="처음에는-날씨-앱처럼-안전한-작업만-맡기기">처음에는 날씨 앱처럼 안전한 작업만 맡기기</h2>
+<p>연결 직후 메시지 전송이나 결제부터 맡기지 마세요. 먼저 화면을 읽을 수 있는지만 확인합니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">phone-harness &lt;&lt;'PY'
+print(connection_state())
+print([item["text"] for item in ocr()][:10])
+PY</code></pre>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ready</code>와 현재 화면의 글자가 나오면 캡처와 OCR이 연결된 것입니다. 그다음 Claude Code에서 아래처럼 범위를 좁힌 작업을 시켜 보세요.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">아이폰에서 날씨 앱만 열어 줘.
+다른 앱은 열지 말고, 실행하기 전에 나에게 확인해 줘.</code></pre>
+<p>작업마다 화면을 다시 확인하도록 요청하는 것이 중요합니다. 메시지 발송, 게시물 등록, 구매, 삭제, 설정 변경은 실행 직전에 반드시 확인을 받도록 해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="화면-정보가-완전히-로컬에만-남는-것은-아님">
+<h2 id="화면-정보가-완전히-로컬에만-남는-것은-아님">화면 정보가 완전히 로컬에만 남는 것은 아님</h2>
+<p>화면 캡처와 Apple Vision OCR 자체는 Mac에서 실행됩니다. 하지만 Claude Code가 판단하도록 OCR 결과나 스크린샷을 보여 주면 해당 내용이 모델 요청의 일부로 전송될 수 있습니다. <a href="https://code.claude.com/docs/en/data-usage" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude Code 데이터 안내</a>에 따르면 보존 기간과 모델 개선 사용 여부는 계정 종류와 개인정보 설정에 따라 달라집니다.</p>
+<p>인증 코드, 금융 정보, 사적인 대화가 보이는 화면에서는 사용하지 않는 편이 안전합니다. 작업이 끝나면 아이폰 미러링을 종료하고, 더 이상 필요하지 않다면 터미널의 화면 기록·손쉬운 사용 권한도 해제하세요.</p>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">phone-harness</code>는 시리를 아이폰 안에서 Claude로 바꾸는 기능이 아닙니다. <strong>Mac의 Claude Code에 아이폰 화면과 손을 빌려주는 도구</strong>입니다.</p>
+<p>이 글은 저장소 커밋 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">4d2de7a</code>의 문서와 코드를 감사하고 Python 패키지 설치를 검증해 작성했습니다. 실제 아이폰 연결과 터치·OCR 정확도는 직접 시험하지 않았습니다.</p>
+</section>
+</article>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-12T14:57:45.876337Z",
+  "checked_by": "/root/source_review",
+  "article_content_sha256": "33b939ea634dcfcf03a06ec9b5e69bb371c794f392d54bdbb44bfc65d7f0af5e",
+  "brief_sha256": "1af3dbf292a55fe33068f7f5046196fb787b1fbc5eebdf85c1ec020165702c33",
+  "evidence_sha256": "c242f53ab3625fb335ee067c249d0c6407eb588bccf28df55c49be1d5fb7d5a2",
+  "note": "phone-harness 중심의 간결한 재작성본. 실제 아이폰 조작은 미검증."
+}

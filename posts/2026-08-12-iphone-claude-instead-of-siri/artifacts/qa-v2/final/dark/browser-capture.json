@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-dark",
+  "checked_at": "2026-08-12T15:03:07.792109Z",
+  "checked_by": "/root/source_review",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-dark-rendered/iphone-claude-instead-of-siri-rich-preview.html",
+  "preview_sha256": "6e9ffe9876327b8550fdec5fa5e96ce62445d2393ac245d922a7daabe27b6f2d",
+  "screenshot_root": "artifacts/qa-v2/final/dark",
+  "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.110",
+  "protocol_version": "1.3",
+  "session": "bd5fba41-906c-4517-9900-e28eb25edeaa",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-12-iphone-claude-instead-of-siri/artifacts/qa-v2/final-dark-rendered/iphone-claude-instead-of-siri-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5994,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcApRyq%2FdJMcafgCyMi%2FAAAAAAAAAAAAAAAAAAAAABoy8Mk-KYikv0Vk7eAJgMO2ILQrKdqWC9brRFPBHcts%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DTvOJZetfs0UlEJu5ACLKX553xiE%253D",
+          "complete": true,
+          "natural_width": 1200,
+          "natural_height": 560
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FudAJk%2FdJMcafHICR1%2FAAAAAAAAAAAAAAAAAAAAAFXbvs2TW-lLNEca-UGH16RkroT-pG4wTWGs3RWXCg49%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DD5Oe50TchUT08mcE8mPxQ4XyP70%253D",
+          "complete": true,
+          "natural_width": 930,
+          "natural_height": 560
+        }
+      ],
+      "screenshot_sha256": "c38ac8f562d5f981a4c928b46429d104f8bc45766270974ce7c6c7f29a882c31",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-12-iphone-claude-instead-of-siri/artifacts/qa-v2/final-dark-rendered/iphone-claude-instead-of-siri-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7577,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcApRyq%2FdJMcafgCyMi%2FAAAAAAAAAAAAAAAAAAAAABoy8Mk-KYikv0Vk7eAJgMO2ILQrKdqWC9brRFPBHcts%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DTvOJZetfs0UlEJu5ACLKX553xiE%253D",
+          "complete": true,
+          "natural_width": 1200,
+          "natural_height": 560
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FudAJk%2FdJMcafHICR1%2FAAAAAAAAAAAAAAAAAAAAAFXbvs2TW-lLNEca-UGH16RkroT-pG4wTWGs3RWXCg49%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DD5Oe50TchUT08mcE8mPxQ4XyP70%253D",
+          "complete": true,
+          "natural_width": 930,
+          "natural_height": 560
+        }
+      ],
+      "screenshot_sha256": "678705bcfc201bee8c6f435fda948c239378b69e17078fed174c3e51a17eb5f2",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png"
+    }
+  ]
+}
