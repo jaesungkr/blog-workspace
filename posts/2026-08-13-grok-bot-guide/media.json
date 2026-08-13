@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "lead_id": "grok-bot-landing",
+  "items": [
+    {
+      "id": "grok-bot-landing",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C06"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-13",
+      "environment": "macOS, Codex in-app browser, x.ai public product page, 1280x720 viewport",
+      "source_url": "https://x.ai/bot",
+      "raw_path": "artifacts/sources/web/grok-bot-landing-hero.png",
+      "publish_path": "assets/grok-bot-landing.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FN3fvM%2FdJMcafnqPFe%2FAAAAAAAAAAAAAAAAAAAAAN2ZOSEZ0BmvzqIlLz-Fd1guTyC7SsyxUZVjXyVylcDP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhwTKUJveAB8zAJKkGA9t%252B0UVfDs%253D",
+      "width": 1280,
+      "height": 720,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log browser capture of the public official Grok Bot product page for source-attributed editorial explanation",
+      "alt": "x.ai Grok Bot 공식 페이지에 Early Beta, Meet Grok Bot, macOS 다운로드 버튼과 Sales Outbound 앱 화면이 보이는 모습",
+      "caption": "Grok Bot은 X 채팅 메뉴와 구분된 별도 초기 베타 제품이며, 공식 페이지에서 데스크톱 앱을 내려받아 시작합니다.",
+      "processing": [
+        "1280x720 viewport capture after dismissing the cookie notice"
+      ],
+      "redactions": [],
+      "sha256": "2407a70ea6d9ed97187871bc3231ad4afa83450b126ba5d823970d33d1d337ee",
+      "status": "validated"
+    },
+    {
+      "id": "grok-bot-use-cases",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "concept",
+      "claim_ids": [
+        "C03",
+        "C04",
+        "C05"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-13",
+      "environment": "macOS, Codex in-app browser, x.ai public use cases page, 1280x720 viewport",
+      "source_url": "https://x.ai/bot/use-cases",
+      "raw_path": "artifacts/sources/web/grok-bot-use-cases-featured.png",
+      "publish_path": "assets/grok-bot-use-cases.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbqa5eX%2FdJMcahesCV9%2FAAAAAAAAAAAAAAAAAAAAAK7nqJHuMmU9_CvKm0QD4BH9WkYFpfguupc_lxllxZrU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DQWAfHxT%252FmB%252FMDpKwInATgXCx6kU%253D",
+      "width": 1280,
+      "height": 720,
+      "display_width": 916,
+      "mobile_scroll_width": 760,
+      "placement": "after:use-cases-count",
+      "rights": "dev.log browser capture of the public official Grok Bot use-case catalog for source-attributed editorial explanation",
+      "alt": "Grok Bot 공식 Use cases 화면에 Chief of Staff, Sales Outbound, Paid Media 업무 카드가 나란히 보이는 모습",
+      "caption": "공식 사례는 브리핑, 영업 조사와 초안, 광고 예산 추천처럼 검토 가능한 결과가 남는 업무를 앞에 둡니다. 모바일에서는 이미지를 좌우로 밀어 각 카드의 설명을 읽을 수 있습니다.",
+      "processing": [
+        "1280x720 viewport capture after dismissing the cookie notice"
+      ],
+      "redactions": [],
+      "sha256": "b504fe790a8ba8cd4f174e825e65d2214c6529f4016cca94958a5f73f57a23ee",
+      "status": "validated"
+    },
+    {
+      "id": "grok-bot-workflow",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C08"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-13",
+      "environment": "macOS, Codex in-app browser, x.ai public product page, 1280x720 viewport",
+      "source_url": "https://x.ai/bot",
+      "raw_path": "artifacts/sources/web/grok-bot-workflow-cards.png",
+      "publish_path": "assets/grok-bot-workflow.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc8jJlz%2FdJMcaij51I4%2FAAAAAAAAAAAAAAAAAAAAAK784QYfRjxx9fi_r4CEGbA1svIVu0kPsCbJlZ4FDNmd%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dk5yDTsZZsZA6OQBFsiRb9Nx8wsA%253D",
+      "width": 1280,
+      "height": 720,
+      "display_width": 916,
+      "mobile_scroll_width": 760,
+      "placement": "after:first-instruction",
+      "rights": "dev.log browser capture of the public official Grok Bot workflow demonstration for source-attributed editorial explanation",
+      "alt": "Grok Bot이 Zendesk 로그인을 사용자에게 요청하는 Computer 카드와 한 번 작업을 따라 배우는 Teach a task 카드",
+      "caption": "왼쪽은 Bot이 로그인을 요청하는 지점, 오른쪽은 사용자의 작업을 한 번 보고 Routine으로 배우는 지점입니다. 모바일에서는 이미지를 좌우로 밀어 두 카드를 비교할 수 있습니다.",
+      "processing": [
+        "1280x720 viewport capture at the workflow-card section"
+      ],
+      "redactions": [],
+      "sha256": "e6f0e3da1dfc3a600064702ea57b1fe8dc02c495f1926d3edecf7ec3d9565259",
+      "status": "validated"
+    },
+    {
+      "id": "grok-bot-approval",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "result",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-13",
+      "environment": "macOS, Codex in-app browser, x.ai public launch post, 1280x720 viewport",
+      "source_url": "https://x.ai/news/introducing-grok-bot",
+      "raw_path": "artifacts/sources/web/grok-bot-launch-sales-outbound-modal.png",
+      "publish_path": "assets/grok-bot-approval.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fo6Ecd%2FdJMcaf8DYFh%2FAAAAAAAAAAAAAAAAAAAAAA0Fx7IBoVCTta853W7NXxlfDYk3hOa7DjauzE8JPquC%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DLKpg62VVft%252Bbe6dPuKSpNENDQrE%253D",
+      "width": 1280,
+      "height": 720,
+      "display_width": 916,
+      "mobile_scroll_width": 760,
+      "placement": "after:approval-example",
+      "rights": "dev.log browser capture of the public official Grok Bot launch-post demonstration for source-attributed editorial explanation",
+      "alt": "Sales Outbound Grok Bot이 이메일 초안을 만든 뒤 Send email 버튼과 사용자 승인 메시지를 기다리는 공식 데모",
+      "caption": "공식 Sales Outbound 데모는 초안을 만든 뒤 전송 여부를 사람이 정하는 흐름을 보여 줍니다. 모바일에서는 이미지를 좌우로 밀어 초안과 승인 메시지를 함께 확인할 수 있습니다.",
+      "processing": [
+        "opened the Sales Outbound use-case modal",
+        "captured the 1280x720 viewport"
+      ],
+      "redactions": [],
+      "sha256": "59b8573527369ffa8a6bcde33b14a966f09249e9dddc3a812b7712badba1ecea",
+      "status": "validated"
+    }
+  ]
+}
