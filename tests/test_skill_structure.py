@@ -55,6 +55,12 @@ class SkillStructureTests(unittest.TestCase):
         workflow = (
             skill_dir / "references" / "workflow-v2.md"
         ).read_text(encoding="utf-8")
+        source_freeze = (
+            skill_dir / "references" / "source-freeze-v2.md"
+        ).read_text(encoding="utf-8")
+        editorial_voice = (
+            skill_dir / "references" / "editorial-voice-v2.md"
+        ).read_text(encoding="utf-8")
         for text in (skill_text, workflow, media_release):
             with self.subTest(contract="reader-friction-screenshot-gate"):
                 self.assertIn("reader-friction", text)
@@ -63,9 +69,18 @@ class SkillStructureTests(unittest.TestCase):
         self.assertIn("what to inspect or enter", media_release)
         self.assertIn("to do next", media_release)
         self.assertIn("Tistory upload burden", workflow)
+        self.assertIn("references/editorial-voice-v2.md", skill_text)
+        self.assertIn("cold-read", skill_text)
+        self.assertIn("cold-read", source_freeze)
+        self.assertIn("new-information", source_freeze)
+        self.assertIn("diagnostic evidence, not a voice template", editorial_voice)
+        self.assertIn("A가 아니라 B", editorial_voice)
+        self.assertIn("one owner section", editorial_voice)
+        self.assertIn("Do not chase an AI-detector score", editorial_voice)
 
         for relative in {
             "references/workflow-v2.md",
+            "references/editorial-voice-v2.md",
             "references/source-freeze-v2.md",
             "references/media-release-v2.md",
             "references/final-page-qa-v2.md",

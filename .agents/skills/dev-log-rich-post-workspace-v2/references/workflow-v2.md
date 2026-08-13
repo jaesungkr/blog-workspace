@@ -50,8 +50,9 @@ not enabled.
 ## Main sequence
 
 1. Initialize the bundle and fill `workflow-v2.json`.
-2. Research, capture raw evidence when routed, draft, and polish.
-3. Run an independent source review and write `source-pass.json`.
+2. Research, capture raw evidence when routed, draft, run the v2 editorial
+   voice-and-density gate, and polish.
+3. Run an independent cold-read source review and write `source-pass.json`.
 4. Finish publication media and local light/dark preflight.
 5. Bind final Tistory URLs and record the first remote observation.
 6. Prepare one remote-media light/dark candidate.

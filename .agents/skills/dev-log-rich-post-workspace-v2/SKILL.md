@@ -1,6 +1,6 @@
 ---
 name: dev-log-rich-post-workspace-v2
-description: Create complete dev.log Tistory rich posts with a staged v2 workflow that freezes the evidence-backed source before remote media work, adds conditional reader-friction screenshots for procedural guides, uses viewport gates, performs one independent light/dark final-page approval, and produces paste-ready responsive HTML with Git delivery. Use only when the user explicitly invokes v2 or asks for the faster source-freeze rich-post workflow; use the original dev-log-rich-post-workspace for existing v1 bundles or when v1 is explicitly requested.
+description: Create complete dev.log Tistory rich posts with a staged v2 workflow that freezes a concise evidence-backed source before remote media work, applies a dedicated Korean voice-and-density gate to AI-template phrasing, awkward headings, and semantic repetition, adds conditional reader-friction screenshots, performs one independent light/dark final-page approval, and produces paste-ready responsive HTML with Git delivery. Use only when the user explicitly invokes v2 or asks for the faster source-freeze rich-post workflow; use the original dev-log-rich-post-workspace for existing v1 bundles or when v1 is explicitly requested.
 ---
 
 # dev.log rich-post workspace v2
@@ -28,6 +28,8 @@ silently migrate an existing `format: rich-post` bundle.
 
 Read `references/workflow-v2.md` for every v2 task. Then load just in time:
 
+- before drafting, materially revising, or polishing the source:
+  `references/editorial-voice-v2.md`;
 - before source approval: `references/source-freeze-v2.md`;
 - before final media or Tistory URL work: `references/media-release-v2.md`;
 - immediately before browser QA: `references/final-page-qa-v2.md`;
@@ -81,50 +83,33 @@ as evidence.
 3. Capture raw evidence during research only when the route requires it. Keep
    secrets out of raw files; recapture instead of blurring them later.
 4. Draft around evidence with `plain identity -> ordinary use -> easiest start
-   -> evidence boundary`. Keep comparison rules, prerequisites, exact entry
-   points, and limitations explicit. For troubleshooting or procedural intent,
-   put the first safe action or default choice before the lead visual and TOC,
-   then order headings by the reader's actual next decisions.
-5. Run a density revision before prose polish:
-   - read only the title and headings. Reject the outline unless it tells the
-     reader what to do or decide first, what to try next, and where the advice
-     stops without opening the sections;
-   - match each heading to its real scope. Replace vague aggregate labels when
-     a section contains multiple procedures or branches, and keep only
-     headings that represent distinct reader decisions;
-   - reject a TOC that turns every click, checkpoint, or nearby error into a
-     section. Demote same-stage detail to numbered steps, bold labels, or one
-     compact table under a heading that names the grouped scope honestly;
-   - use progressive disclosure for actionable posts: default action, failure
-     branch, supported exception, then mechanism and technical limit;
-   - assign each central fact, mechanism, action, and limitation one main
-     section where it is explained fully;
-   - treat a later mention as a reminder only when it names the earlier
-     decision or points the reader back without re-explaining its cause,
-     procedure, or evidence;
-   - during revision, record each paragraph's primary reader job in a working
-     list in `audit.md`: diagnosis, mechanism, action, comparison, or boundary.
-     A paragraph may carry a supporting job when the two are inseparable;
-     otherwise split it or move one job to its main section;
-   - merge or delete paragraphs that only preview, rephrase, or summarize a
-     job already completed;
-   - for troubleshooting claims, preserve the shortest complete explanation:
-     every applicable cause, condition, next action, and material exception
-     must remain. Do not force all four parts into product identity or simple
-     navigation copy;
-   - do not repeat the full solution in the closing when a table or earlier
-     section already provides it.
-   Run the prose analyzer before and after as an inventory, not a target score.
-   It detects surface signals, not semantic repetition, so complete a separate
-   manual pass for facts and actions repeated across sections. Record the
-   before/after inventory, representative removals, paragraph-job list, and
-   protected details in `audit.md`; the labels are working evidence, not
-   article copy.
-   Then run one prose-polish stage.
-6. Hand the still-`reviewing` bundle to an independent source reviewer. Require
-   a separate first-screen and title-plus-headings read. Return the source when
-   the initial action is buried, the TOC hides a branch, or the central choice
-   appears only after mechanism or background. Return substantive defects to
+   -> evidence boundary`. This is an information order, not a four-paragraph
+   template. Do not announce the article with `이번 글에서는`, promise to
+   explain it `차근차근`, or front-load a defensive process note when the same
+   boundary can sit beside the affected claim. Keep comparison rules,
+   prerequisites, exact entry points, and limitations explicit. For
+   troubleshooting or procedural intent, put the first safe action or default
+   choice before the lead visual and TOC, then order headings by the reader's
+   actual next decisions.
+5. Run the full voice-and-density revision in
+   `references/editorial-voice-v2.md` before the normal prose-polish stage. It
+   has four required surfaces: the heading strip, AI-template sentence frames,
+   paragraph-level new information, and repeated claim or action ownership.
+   The normal prose-polish stage does not replace this pass.
+   Run the analyzer before and after as an inventory, never a score. A zero
+   signal count does not pass a heading, paragraph, or article. Record the
+   heading rewrites, representative deletions or merges, ownership decisions,
+   protected facts and caveats, and unresolved concerns in `audit.md`.
+6. Hand the still-`reviewing` bundle to an independent source reviewer. The
+   reviewer must first cold-read `article.md` without the prior approvals or
+   audit conclusions, including separate first-screen and
+   title-plus-headings-only passes. Then the reviewer reads the brief,
+   evidence, audit, `references/editorial-voice-v2.md`, and
+   `references/source-freeze-v2.md`. Return the source when a heading sounds
+   like a compressed explanatory sentence, joins separate decisions for
+   symmetry, or relies on `A가 아니라 B`; when the opening contains a generic
+   roadmap; when a paragraph only previews, recaps, or repeats; or when the
+   central choice appears after background. Return substantive defects to
    writing and surface defects to prose polish until it passes.
 7. Record the freeze:
 
@@ -237,4 +222,6 @@ candidate, one independent final-page record, strict final render, focused Git
 delivery, verified remote commit, and byte-identical paste file pass. Never
 accept an unresolved claim, unsupported hands-on statement, local media path,
 placeholder, duplicate H1, unreadable mobile evidence, hidden table content,
-stale gate, or known visual defect.
+stale gate, known visual defect, generic opening roadmap, sentence-shaped
+contrast heading, paragraph without new reader value, or full takeaway repeated
+across sections.

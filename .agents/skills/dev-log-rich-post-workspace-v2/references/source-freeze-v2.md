@@ -2,7 +2,10 @@
 
 ## Review boundary
 
-Finish substantive writing before release QA. Independently verify:
+Finish substantive writing before release QA. The reviewer must first cold-read
+`article.md` without the prior approvals or audit conclusions. Then read
+`editorial-voice-v2.md`, the brief, evidence, and audit and independently
+verify:
 
 - claims, numbers, dates, links, quotations, and authorship;
 - the primary reader, plain identity, easiest start, and evidence boundary;
@@ -21,11 +24,22 @@ Finish substantive writing before release QA. Independently verify:
   likely failure, and official documentation;
 - Korean honorific style, title-heading scan, paragraph seams, and preserved
   technical meaning.
+- a heading strip without sentence-shaped contrast frames, bureaucratic noun
+  stacks, or separate decisions joined only for symmetry;
+- an opening that answers the reader without a generic presenter roadmap;
+- a paragraph-level new-information pass in which every retained paragraph
+  adds a fact, evidence, action, comparison, limitation, or necessary branch;
+- one owner section for each central claim and action, with no full takeaway
+  repeated across the opening, body sections, and closing;
+- natural cadence without forced slang, deliberate mistakes, invented
+  anecdotes, or unsupported casual endings.
 
 Return evidence or structure defects to writing. Return title, opening,
-heading, or rhythm defects to prose polish. A clear full article does not pass
-when its first screen or heading-only path still makes the reader hunt for the
-next action. Repeat until the source passes.
+heading, density, repetition, or rhythm defects to prose polish. A clear full
+article does not pass when its first screen or heading-only path still makes
+the reader hunt for the next action, or when the prose analyzer reports zero
+signals but the cold read exposes a mechanical surface. Repeat until the
+source passes.
 
 ## Record the pass
 
