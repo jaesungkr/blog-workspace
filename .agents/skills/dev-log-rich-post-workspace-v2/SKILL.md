@@ -52,6 +52,10 @@ Record the decision in `workflow-v2.json` before research.
 - For a procedural software guide, record the reader-friction screenshot
   decision in `workflow-v2.json` and `brief.md`; do not wait until the finished
   prose to decide whether the reader needs a UI landmark.
+- For an unfamiliar product, model, or technical concept, default to a
+  non-specialist reader unless the user explicitly names an expert audience.
+  Treat prior knowledge as a prerequisite only when the brief and title make
+  that scope explicit.
 - Never claim hands-on work when the required app, account, device, version,
   or safe environment is unavailable. Narrow the promise instead.
 
@@ -70,7 +74,12 @@ as evidence.
 
 1. Plan one primary reader, the retained message, easiest start, first-screen
    answer, heading-only action or decision path, required claims, honest test
-   boundary, media role, and conditional gates.
+   boundary, media role, and conditional gates. For an unfamiliar subject,
+   make the public title and first screen independently answer what it is, what
+   ordinary problem it solves, and why the intended reader would use it. A
+   navigation-count hook such as `볼 화면 3곳` cannot substitute for the
+   subject's plain identity unless the user explicitly requests a screen-led
+   guide for readers who already know the product.
    For a procedural guide, map the steps where a first-time reader may fail to
    locate the entry point, choose the right field or value, or recognize the
    success/error state. Select a screenshot only for those friction points.
@@ -90,7 +99,14 @@ as evidence.
    prerequisites, exact entry points, and limitations explicit. For
    troubleshooting or procedural intent, put the first safe action or default
    choice before the lead visual and TOC, then order headings by the reader's
-   actual next decisions.
+   actual next decisions. Keep a generic non-test boundary in the brief,
+   evidence, and audit rather than publishing a self-disqualifying sentence
+   such as `앱을 설치하거나 실제 학습을 실행하지 않았으므로 ... 확인하지
+   못했습니다`. Preserve honesty by narrowing the title and promise, omitting
+   unsupported hands-on or performance claims, attributing vendor claims, and
+   placing a specific limitation beside the claim it changes. Publish a test
+   boundary only when it materially changes the reader's decision or the user
+   explicitly asks for methodology disclosure.
 5. Run the full voice-and-density revision in
    `references/editorial-voice-v2.md` before the normal prose-polish stage. It
    has four required surfaces: the heading strip, AI-template sentence frames,
@@ -109,8 +125,12 @@ as evidence.
    like a compressed explanatory sentence, joins separate decisions for
    symmetry, or relies on `A가 아니라 B`; when the opening contains a generic
    roadmap; when a paragraph only previews, recaps, or repeats; or when the
-   central choice appears after background. Return substantive defects to
-   writing and surface defects to prose polish until it passes.
+   central choice appears after background. For a non-specialist article about
+   an unfamiliar subject, also return a title or first screen that assumes the
+   reader already knows the subject, leads with internal process boundaries,
+   or reaches usage steps before stating the plain identity and ordinary use.
+   Return substantive defects to writing and surface defects to prose polish
+   until it passes.
 7. Record the freeze:
 
 ```bash
@@ -223,5 +243,7 @@ delivery, verified remote commit, and byte-identical paste file pass. Never
 accept an unresolved claim, unsupported hands-on statement, local media path,
 placeholder, duplicate H1, unreadable mobile evidence, hidden table content,
 stale gate, known visual defect, generic opening roadmap, sentence-shaped
-contrast heading, paragraph without new reader value, or full takeaway repeated
-across sections.
+contrast heading, paragraph without new reader value, full takeaway repeated
+across sections, a specialist-assuming title for a non-specialist reader, or a
+generic public disclaimer that lowers trust without changing the reader's
+decision.

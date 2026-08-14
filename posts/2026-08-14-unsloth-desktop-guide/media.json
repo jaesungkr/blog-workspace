@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "lead_id": "unsloth-desktop-overview",
+  "items": [
+    {
+      "id": "unsloth-desktop-overview",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C03",
+        "C10"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-14",
+      "environment": "official Unsloth Desktop documentation, original GitBook-hosted PNG inspected on macOS",
+      "source_url": "https://unsloth.ai/docs/desktop",
+      "raw_path": "artifacts/media-candidates/hero-official.png",
+      "publish_path": "assets/unsloth-desktop-overview-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FEtfV6%2FdJMcadQxHiT%2FAAAAAAAAAAAAAAAAAAAAAKYOT-3rLDwgO2Pskg4v_7JAyD_S40OkNP6CU8F7LgRO%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Do3RVfbY75iHsFCa1xGYtM08Gmuw%253D",
+      "width": 2560,
+      "height": 1600,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "official Unsloth product screenshot republished with source attribution for editorial explanation of the public interface",
+      "alt": "Unsloth Desktop의 왼쪽 메뉴에 Model hub, Projects, Images, Train이 보이고 Qwen3.8 GGUF 모델이 선택된 공식 화면",
+      "caption": "공식 대표 화면의 왼쪽 메뉴에서 Model hub와 Train을 찾을 수 있습니다. 첫 실행은 작은 모델을 골라 채팅을 확인한 뒤 Train으로 이동합니다.",
+      "processing": [
+        "downloaded the original official PNG without visual modification"
+      ],
+      "redactions": [],
+      "sha256": "3e18987c29e355fe6f82e735136411cf765cc5ca51010ac1530a6fb7743b92a5",
+      "status": "validated"
+    },
+    {
+      "id": "unsloth-desktop-model-select",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-14",
+      "environment": "official Unsloth Desktop documentation, original GitBook-hosted PNG inspected on macOS",
+      "source_url": "https://unsloth.ai/docs/desktop#get-started",
+      "raw_path": "artifacts/media-candidates/permissions-official.png",
+      "publish_path": "assets/unsloth-desktop-model-select-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F15TU0%2FdJMcaiK5Gg0%2FAAAAAAAAAAAAAAAAAAAAAEWvD-3YP4kujfZ14_R5_X24wjhBYsXMlJRyG7JiraFW%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDUfmscZKgFaNb9CriuQRrCxgo6s%253D",
+      "width": 1124,
+      "height": 544,
+      "display_width": 916,
+      "mobile_scroll_width": 760,
+      "placement": "after:model-entry-point",
+      "rights": "official Unsloth product screenshot republished with source attribution for editorial explanation of the public interface",
+      "alt": "Unsloth Desktop Select model 드롭다운에 Recommended, On Device, Search Hub와 모델별 크기가 표시된 공식 화면",
+      "caption": "Select model에서 Recommended와 On Device를 구분하고 오른쪽 모델 크기를 확인합니다. 모바일에서는 이미지를 좌우로 밀어 모델 이름과 크기를 함께 볼 수 있습니다.",
+      "processing": [
+        "downloaded the original official PNG without visual modification"
+      ],
+      "redactions": [],
+      "sha256": "16718cbbd5b67072cfec6bc4fa2ab2a8f30877e50738dd6092d88940d9a69d3d",
+      "status": "validated"
+    },
+    {
+      "id": "unsloth-desktop-train-setup",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-14",
+      "environment": "official Unsloth Desktop training demonstration GIF, first frame extracted on macOS",
+      "source_url": "https://unsloth.ai/docs/desktop#train-with-no-code",
+      "raw_path": "artifacts/media-candidates/training-first-frame.png",
+      "publish_path": "assets/unsloth-desktop-train-setup-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbkdjjv%2FdJMcadJLjhb%2FAAAAAAAAAAAAAAAAAAAAACcU8TTyqGFNBWvMRlLCyngb0aKb3-1Og0Am-RLV0die%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dxgmg7nPSrk1m845Mx8ypw%252B%252Fgxz4%253D",
+      "width": 1212,
+      "height": 720,
+      "display_width": 916,
+      "mobile_scroll_width": 916,
+      "placement": "after:train-reading-order",
+      "rights": "static frame from an official Unsloth product demonstration republished with source attribution for editorial explanation",
+      "alt": "Unsloth Desktop Train Configure 화면에 Qwen3.5 모델, QLoRA 방식, FineTome 데이터셋과 Run preview가 보이는 공식 데모 프레임",
+      "caption": "왼쪽 위 Model과 Method, 아래 Dataset, 오른쪽 Run preview 순서로 읽습니다. 모바일에서는 이미지를 좌우로 밀어 설정값과 미리보기를 확인할 수 있습니다.",
+      "processing": [
+        "converted the first frame of the official GIF to PNG with no crop or annotation"
+      ],
+      "redactions": [],
+      "sha256": "3fe5a38d4c7cd4581020e806a81e1d6e1731bb3ef3df5f807c85bfef770d9e99",
+      "status": "validated"
+    },
+    {
+      "id": "unsloth-desktop-training-progress",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "result",
+      "claim_ids": [
+        "C09"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-08-14",
+      "environment": "official Unsloth Desktop training demonstration GIF played in Codex in-app browser on macOS",
+      "source_url": "https://unsloth.ai/docs/desktop#train-with-no-code",
+      "raw_path": "artifacts/media-candidates/training-progress-official-frame.jpg",
+      "publish_path": "assets/unsloth-desktop-training-progress-v1.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbVFyYZ%2FdJMcahZJvN7%2FAAAAAAAAAAAAAAAAAAAAAJ5T8xxdmx_CwNGDfcjt8xgPrGbyjhhx-OcFZFgIceZm%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DHQ55cFLJs9tSa4YGTY2gXa3Z4QQ%253D",
+      "width": 1212,
+      "height": 720,
+      "display_width": 916,
+      "mobile_scroll_width": 916,
+      "placement": "after:current-run-observation",
+      "rights": "static frame from an official Unsloth product demonstration republished with source attribution for editorial explanation",
+      "alt": "Unsloth Desktop Current Run 화면에 Training in progress, waiting for first step 0, 데이터셋과 모델 가중치 다운로드 99퍼센트가 함께 보이는 공식 데모 프레임",
+      "caption": "99%는 Dataset과 Model weights의 다운로드 진행률입니다. 모바일에서는 이미지를 좌우로 밀어 `waiting for first step (0)`과 두 진행 막대를 함께 확인할 수 있습니다.",
+      "processing": [
+        "captured a static JPEG frame from the official GIF at the state where the first-step counter was 0"
+      ],
+      "redactions": [],
+      "sha256": "3d98928bb15331c81971c83957cb3ff383dbef78c6f02f961c497c17b6fb9b8c",
+      "status": "validated"
+    }
+  ]
+}
