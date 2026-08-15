@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-dark",
+  "checked_at": "2026-08-15T06:29:29.124143Z",
+  "checked_by": "/root/source_reviewer",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-dark-rendered/red-bean-health-benefits-rich-preview.html",
+  "preview_sha256": "61803f754208de3f8e3e67221d96bbb2dc4430e950c88a239914085f93feeccd",
+  "screenshot_root": "artifacts/qa-v2/final/dark",
+  "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.138",
+  "protocol_version": "1.3",
+  "session": "79d8ce20-92b5-4be3-bbfb-905ce88757ee",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-14-red-bean-health-benefits/artifacts/qa-v2/final-dark-rendered/red-bean-health-benefits-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 3095,
+      "h1_count": 1,
+      "toc_anchor_count": 3,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcm6ucl%2FdJMcaji2uL4%2FAAAAAAAAAAAAAAAAAAAAAGbkCuhsay7tAogKBv5shaJ3e05ylLdVI_u__kxqtRjc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DbSEHuKwWUkQG4W63C5KLkNjhYLU%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "f7b9711dccc855aadedca6da0c7aedd6bbfff023bc7913b52c5c2eeb94e67a11",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-14-red-bean-health-benefits/artifacts/qa-v2/final-dark-rendered/red-bean-health-benefits-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 3834,
+      "h1_count": 1,
+      "toc_anchor_count": 3,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcm6ucl%2FdJMcaji2uL4%2FAAAAAAAAAAAAAAAAAAAAAGbkCuhsay7tAogKBv5shaJ3e05ylLdVI_u__kxqtRjc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DbSEHuKwWUkQG4W63C5KLkNjhYLU%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "06f90e5c393689ac231ef5218f97df7e49dc2925fde78168087e8bd11c25ab7c",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png"
+    }
+  ]
+}

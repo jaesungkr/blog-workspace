@@ -1,0 +1,4 @@
+food,fdc_id,basis,energy_kcal,protein_g,dietary_fiber_g,potassium_mg,iron_mg,folate_total_ug
+삶은 팥,173728,100g edible portion,128,7.52,7.3,532,2.0,121
+흰쌀밥,169757,100g edible portion,130,2.69,0.4,35,0.2,3
+팥/흰쌀밥 비율,Codex calculation,same 100g basis,0.984615,2.795539,18.25,15.2,10,40.333333

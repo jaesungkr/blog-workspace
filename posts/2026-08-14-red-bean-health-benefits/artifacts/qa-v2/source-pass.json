@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-15T06:17:26.670247Z",
+  "checked_by": "/root/source_reviewer",
+  "article_content_sha256": "291b08e47e96a4cc38fbe1b1594d7fa89a8ef168969176c04e0a20a2f0ea4123",
+  "brief_sha256": "b3104432d957052b402b9741ea12c034126475ead93b24c9f66f2a71753ad246",
+  "evidence_sha256": "c144feea068603b8fe20a132bd125cc5f477bad3e31dd7901ceac14f3c0cf665",
+  "note": "추천 대상을 사전지식 없이 직접 부르는 H1로 변경. 본문이 칼륨·식이섬유·알맹이 섭취의 추천 이유를 지불하고 치료 약속을 넘지 않아 SOURCE PASS."
+}

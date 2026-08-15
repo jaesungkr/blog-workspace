@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "팥의 효능은 모르지만 짜게 먹은 다음 날 잘 붓고 화장실이 답답해 자신에게 맞는 식재료와 먹는 법을 알고 싶은 일반 성인",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "삶은 팥의 칼륨과 식이섬유를 공공 식품성분 자료로 확인하고, 같은 100g의 흰쌀밥과 재계산 비교해 짠 식사 뒤 붓기가 신경 쓰이거나 배변이 답답한 독자에게 팥을 추천하는 이유와 한계를 설명하는 standard-rich 영양 글이다. 부종 치료나 즉효성 이뇨 효과를 약속하지 않고 저염 식사와 알맹이 섭취의 의미만 다룬다. 절차형 글이 아니므로 reader-friction 스크린샷은 없다. 생성형 리드는 설탕 시럽이나 빙수 없이 팥 자체와 평소 식사 맥락을 보여 준다. 수치 비교는 반응형 HTML 표로 충분해 별도 인포그래픽은 만들지 않는다. 정적 PNG 한 장이고 원격 변환 위험이 낮아 두 번째 fetch는 요구하지 않는다."
+}

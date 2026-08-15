@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "bde9e192-4ef1-4faa-9799-043f59cb874f",
+  "recorded_at": "2026-08-15T06:28:47.293459Z",
+  "recorded_by": "/root",
+  "media_sha256": "b356f97536d76fa4a038a9acda135866507d95ee611da577e60324fae4f540f7",
+  "fetcher_sha256": "fd2e5ccefbb18d33c80a184a939f2e5ea764cb86589276a9eff2156a9c779457",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "557400890c29dc61ebde309918c3029cb7845cb0696662c5829f30f195a6de44"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "red-bean-health-benefits-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcm6ucl%2FdJMcaji2uL4%2FAAAAAAAAAAAAAAAAAAAAAGbkCuhsay7tAogKBv5shaJ3e05ylLdVI_u__kxqtRjc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DbSEHuKwWUkQG4W63C5KLkNjhYLU%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcm6ucl%2FdJMcaji2uL4%2FAAAAAAAAAAAAAAAAAAAAAGbkCuhsay7tAogKBv5shaJ3e05ylLdVI_u__kxqtRjc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DbSEHuKwWUkQG4W63C5KLkNjhYLU%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-15T06:28:47.293246Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1978735,
+      "byte_length": 1978735,
+      "sha256": "6b31c6dfcd68f5e9808d800f28b662cb5f7d2ed845d3256726f7f616d75dedb7",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sat, 15 Aug 2026 06:26:53 GMT"
+    }
+  ]
+}
