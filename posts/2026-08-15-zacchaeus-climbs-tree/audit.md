@@ -56,15 +56,25 @@
   카테고리의 최근 완성 글 다섯 편을 사용했습니다.
 - 대표 제목·소제목 변경: 제목은 시리즈 문법과 대표 장면이 가장 선명한
   `나무에 올라간 삭개오`를 유지했습니다. `사람들보다 먼저 달려간 나무`는
-  원인과 나무 이름을 드러내는 `사람들에게 가려 올라간 돌무화과나무`로,
-  `누가복음이 멈춘 자리`는 경계를 밝힌 `재산 약속 뒤에 남은 빈칸`으로
-  바꿨습니다.
+  원인과 나무 이름을 드러내는 `사람들에게 가려 올라간 돌무화과나무`로
+  바꿨습니다. 사용자 재검토 뒤 후반의 `재산 약속 뒤에 남은 빈칸`과
+  `이번에 알아간 삭개오`는 독립 절로 둘 새 정보가 적어 소제목을 삭제하고
+  앞 절과 맺음말에 합쳤습니다.
 - 대표 문단 연결 수정: 첫 화면의 질문 `왜 나무에 올랐을까요?`가 19:3-4의
   군중·키·돌무화과나무 장면으로 바로 이어지도록 정리했습니다. 8절의 약속은
   가난한 사람에게 나누는 말과 조건부 네 배 배상으로 분리했습니다.
 - 삭제한 빈 문구 또는 반복: `어른의 몸으로`, `걸음을 멈추고`처럼 본문에
   필요 없거나 직접 기록되지 않은 표현을 제거했습니다. 결론의 전체 사건
   재요약을 줄이고 19:8을 다시 확인하는 독자 행동과 미기록 경계만 남겼습니다.
+  후속 편집에서는 공개 독자에게 필요하지 않은 Codex 대조 과정 문단도
+  삭제하고 내부 근거 자료에만 남겼습니다.
+- 후속 편집의 제목·소제목 스트립: `나무에 올라간 삭개오` -> `여리고의 부자
+  세무서장` -> `사람들에게 가려 올라간 돌무화과나무` -> `이름을 듣고
+  내려온 순간` -> `재산의 반과 네 배를 말한 삭개오`. 마지막 두 절을
+  병합해 사건 흐름에 필요한 네 단계만 남겼습니다.
+- 후속 편집의 정보 소유권: 세무원을 향한 사회적 시선과 눅 5:30 배경은 첫
+  절이 소유합니다. `이름을 듣고 내려온 순간`은 그 시선이 군중의 투덜거림으로
+  드러났다는 짧은 연결만 남기며 원인과 주석을 다시 설명하지 않습니다.
 - 보존 확인한 핵심 사실: 세무서장·부자, 군중과 작은 키, 돌무화과나무,
   이름을 부른 장면, 기쁘게 맞은 행동, 군중의 죄인 평가, 재산의 반과 조건부
   네 배 배상, 19:9-10의 선언, 이후 이행 미기록
@@ -161,11 +171,15 @@
 | 2 | 대표 이미지 독립 검증 | 없음 | 해당 없음 | hero_reviewer가 원본·360px·시리즈 레퍼런스를 비교해 pass. SHA-256 일치, targeted edit나 재생성 불필요 |
 | 3 | 로컬 light/dark 프리플라이트 | 없음 | 해당 없음 | 실제 브라우저의 light/dark 1280×900·360×800에서 전 페이지를 나누어 확인. 가로 넘침 0, preview H1 1개, 이미지 표시 폭 916px·320px, 자연 크기 1672×941, TOC 6개 대상 고유, 긴 모바일 소제목 2줄 래핑 정상, 캡션 부착, 콘솔 오류·경고 없음 |
 | 4 | 첫 원격 final-page gate | 19:8 조건문을 감싼 Markdown 백틱이 줄바꿈을 넘어가 exact fragment에 리터럴 문자로 남음 | 백틱을 제거하고 `다른 사람을 속여 빼앗은 것이 있을 때를 조건으로 합니다`라는 자연어 문장으로 교체 | source_reviewer가 수정 원고를 콜드리드하고 KOERV 19:8 조건과 단일 문장 외 드리프트 없음을 재확인해 source-level pass. 동일 독립 검토자가 light/dark 1280·360을 새로 캡처해 fragment backtick 0, overflow 0, 네 viewport와 dark theme 모두 final-page pass |
+| 5 | 사용자 후속 편집과 source re-freeze | 후반부 소제목이 내용을 지나치게 잘게 나누고, 세무서장이라는 직책이 왜 부정적인 시선과 이어지는지 배경이 부족함 | 마지막 두 소제목과 공개 원고의 내부 검증 문단을 삭제·병합하고, 눅 5:30 쉬운성경 주석과 눅 19:7 군중 반응으로 세무원을 향한 당시 시선을 보강함. 삭개오 개인의 실제 부당 징수는 미기록으로 유지 | source_reviewer가 수정 원고를 먼저 콜드리드한 뒤 KOERV 눅 5:30 주석과 눅 19장을 재대조해 source-level pass. 제목+4개 소제목, one-owner, 19:7 군중 화자, 19:8 조건문, 미기록 이후를 확인했고 `blog.py check` 오류 0개·경고 0개, v2 checker pass. final-page 재검증 대기 |
+| 6 | 수정 원고 final-page re-gate | 없음 | 새 source pass를 기준으로 remote light/dark 후보를 다시 준비하고 동일 독립 검토자가 각 테마를 별도 새 Chrome 세션에서 재캡처 | light/dark 1280·360 모두 TOC 4개 unique target, preview H1 1·fragment H1 0, overflow·placeholder·local path·literal backtick 0. 마지막 절의 5개 문단 간격과 모바일 소제목 2줄 wrap, 원격 hero·caption, dark contrast를 직접 확인해 final-page pass |
 
 - 중대한 문제가 없으면 `발견한 문제`에 `없음`이라고 쓰고 확인 근거를
   `재검증 결과`에 적습니다.
-- 최종 종료 판단: source·hero·원격 media·light/dark 1280·360 최종 페이지
-  검증을 모두 통과해 `ready`
+- 직전 후보의 종료 판단: source·hero·원격 media·light/dark 1280·360 최종
+  페이지 검증을 모두 통과해 `ready`였음
+- 현재 후보의 종료 판단: 후반 구조와 역사 배경을 수정한 뒤 source와
+  final-page 재검증을 모두 통과했고 finalizer가 `ready`로 전환했습니다.
 - 다시 열어 확인한 파일: `article.md`, `media.json`,
   `artifacts/qa-v2/preflight/zacchaeus-climbs-tree-rich-preview.html`,
   `artifacts/qa-v2/preflight-dark/zacchaeus-climbs-tree-rich-preview.html`,
@@ -178,12 +192,14 @@
 ## 검사와 남은 위험
 
 - 검사 명령: `python3 scripts/blog.py check posts/2026-08-15-zacchaeus-climbs-tree`
-- 검사 결과: `blog.py check` 오류 0개·경고 0개,
+- 직전 후보의 검사 결과: `blog.py check` 오류 0개·경고 0개,
   `check_rich_post_v2.py --require-publish-urls --require-final-pass` pass,
   source-level 독립 pass, hero 독립 pass, 원격 media HTTP 200·PNG
   1280×720, final light/dark 1280·360 독립 page pass
-- 아직 남은 위험: 저장소 검사와 Git 전달 후 사용자가 실제 티스토리 미리보기와
-  hELLO 테마 전환을 확인해야 합니다.
+- 현재 후보의 검사 결과: 새 source pass와 final-page pass를 기록했고,
+  최종 HTML과 사용자 전달용 TXT의 SHA-256이
+  `e747cea2bbb00c19d863e3883ef86dbfe003c87fd66208ba3db2d61254c1b622`로
+  일치합니다. Git 전달만 남았습니다.
 - 사람이 티스토리에서 확인할 항목: 제공된 HTML을 붙여넣은 뒤 대표 이미지,
   모바일 소제목 줄바꿈, 밝은/어두운 hELLO 테마를 미리보기에서 확인하고
   최종 공개는 사용자가 직접 진행합니다.
