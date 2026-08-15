@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-15T12:28:20.881350Z",
+  "checked_by": "Ohm (source_reviewer)",
+  "article_content_sha256": "9479b2977609588090428c4cb65f2a1f71e5884a1db968ccac7c512992cce4c0",
+  "brief_sha256": "0356cbcd1b89eba63ba78fe37a74ba85ba814daf12c4863ee5b3b7eaf81d3975",
+  "evidence_sha256": "046ff524f67da41203211744edd068ce891e93c108423648bd91b40cc580db2a",
+  "note": ""
+}

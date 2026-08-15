@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "삭개오라는 이름이나 나무에 오른 장면은 어렴풋이 들어봤지만, 그가 누구이며 왜 나무에 올랐고 내려온 뒤 무엇을 말했는지 모르는 성경 입문 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "누가복음 19:1-10 한 장면으로 완결되는 인물 소개입니다. 출처 기반 서사와 본문-해석 경계 지도가 핵심이므로 스크린샷·GIF·인포그래픽은 쓰지 않고, 인물 식별력이 높은 생성형 종이 공예 대표 이미지 1장만 사용합니다."
+}

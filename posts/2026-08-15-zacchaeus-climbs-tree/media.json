@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "lead_id": "zacchaeus-tree-hero",
+  "items": [
+    {
+      "id": "zacchaeus-tree-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C02",
+        "C03"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-15",
+      "environment": "OpenAI built-in image generation, handmade paper-relief biblical editorial direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/zacchaeus-tree-hero-source.png",
+      "publish_path": "assets/zacchaeus-tree-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbWyBXt%2FdJMcahr2j1o%2FAAAAAAAAAAAAAAAAAAAAAEybkLFl1CfbesNRYd4hIZx_0gqBeM2eKtNG3TK_dAaK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DiOo0X5Mhf1J1nYaQQBy8bu8ejuM%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening-question",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "돌무화과나무 가지에 올라 길을 지나는 사람들을 내려다보는 삭개오의 종이 부조 장면",
+      "caption": "사람들에게 가려 예수님을 볼 수 없었던 삭개오가 먼저 달려가 돌무화과나무에 오른 장면입니다.",
+      "processing": [
+        "generated from an original Bible-character series art-direction prompt",
+        "full-size creator inspection",
+        "360-by-202-pixel thumbnail creator inspection",
+        "independent hero validation pass by /root/hero_reviewer"
+      ],
+      "redactions": [],
+      "sha256": "e60fe126d9143f4bdbe206f41066e9fa368d3743385b057c554aa5d203ef6b99",
+      "status": "validated"
+    }
+  ]
+}

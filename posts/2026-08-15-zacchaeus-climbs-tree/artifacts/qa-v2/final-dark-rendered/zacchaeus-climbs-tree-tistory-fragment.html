@@ -1,0 +1,384 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>삭개오라는 이름을 처음 들어도 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">키가 작아 나무에 오른 사람</code>이라는 장면은<br>낯설지 않을 수 있습니다. 그런데 그는 왜 나무에 올랐을까요?<br>누가복음은 삭개오를 여리고의 부자 세무서장으로 소개하고, 그가 예수님을<br>보고 싶어 했다고 전합니다.</p>
+<p>사람들 때문에 앞이 보이지 않자 삭개오는 예수님이 지나가실 길로 먼저<br>달려가 돌무화과나무에 올랐습니다. 예수님은 그곳에 이르러 위를 바라보고<br>그의 이름을 불렀습니다.</p>
+<blockquote>누가복음 19:5 (쉬운성경)<br><br>5 “삭개오야, 어서 내려오너라! 오늘 내가 네 집에 머물러야겠다.”</blockquote>
+<p>삭개오는 곧 내려와 예수님을 집으로 모셨습니다. 나무에 오른 장면은<br>유명하지만, 내려온 뒤 그가 무엇을 말했는지는 덜 알려져 있습니다. 이번에는<br>누가복음 19장에 기록된 그 하루를 따라 삭개오를 처음 만나 보겠습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="zacchaeus-tree-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbWyBXt%2FdJMcahr2j1o%2FAAAAAAAAAAAAAAAAAAAAAEybkLFl1CfbesNRYd4hIZx_0gqBeM2eKtNG3TK_dAaK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DiOo0X5Mhf1J1nYaQQBy8bu8ejuM%253D" alt="돌무화과나무 가지에 올라 길을 지나는 사람들을 내려다보는 삭개오의 종이 부조 장면" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">사람들에게 가려 예수님을 볼 수 없었던 삭개오가 먼저 달려가 돌무화과나무에 오른 장면입니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#여리고의-부자-세무서장">여리고의 부자 세무서장</a></li>
+<li><a href="#사람들에게-가려-올라간-돌무화과나무">사람들에게 가려 올라간 돌무화과나무</a></li>
+<li><a href="#이름을-듣고-내려온-순간">이름을 듣고 내려온 순간</a></li>
+<li><a href="#재산의-반과-네-배를-말한-삭개오">재산의 반과 네 배를 말한 삭개오</a></li>
+<li><a href="#재산-약속-뒤에-남은-빈칸">재산 약속 뒤에 남은 빈칸</a></li>
+<li><a href="#이번에-알아간-삭개오">이번에 알아간 삭개오</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="여리고의-부자-세무서장">
+<h2 id="여리고의-부자-세무서장">여리고의 부자 세무서장</h2>
+<p>예수님이 여리고를 지나가실 때 그곳에 삭개오라는 사람이 있었습니다.<br>쉬운성경은 그의 일을 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">세무서장</code>이라고 옮깁니다. 세금을 거두는 일을 맡은<br>사람들의 책임자로 이해하면 됩니다. 누가복음은 그가 부자였다는 사실도 함께<br>적습니다(누가복음 19:1-2).</p>
+<p>이 짧은 소개는 삭개오를 나무 위의 작은 사람으로만 보지 않게 합니다. 그는<br>도시에서 직책과 재산을 가진 사람이었습니다. 그렇지만 누가복음은 그의<br>가족이나 이전 삶, 예수님을 언제부터 알고 있었는지는 말하지 않습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="사람들에게-가려-올라간-돌무화과나무">
+<h2 id="사람들에게-가려-올라간-돌무화과나무">사람들에게 가려 올라간 돌무화과나무</h2>
+<p>삭개오는 예수님이 어떤 분인지 보고 싶었습니다. 사람들이 너무 많았고 키가<br>작아서 그 자리에서는 예수님을 볼 수 없었습니다. 그래서 예수님이 지나가실<br>길을 앞질러 달려간 뒤 돌무화과나무에 올랐습니다(누가복음 19:3-4).</p>
+<p>여기까지가 삭개오를 기억하게 만든 대표 장면입니다. 본문에는 그가 창피함을<br>무릅썼다거나 누군가에게 밀려났다는 설명이 없습니다. 분명하게 기록된 것은<br>보고 싶었고, 보이지 않았고, 먼저 달려가 나무에 올랐다는 행동입니다.</p>
+<p>그런데 예수님은 그냥 지나가지 않으셨습니다. 위를 올려다보며 삭개오를<br>이름으로 부르고, 어서 내려오라고 말씀하셨습니다. 이어 오늘 그의 집에<br>머물겠다고 하셨습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="이름을-듣고-내려온-순간">
+<h2 id="이름을-듣고-내려온-순간">이름을 듣고 내려온 순간</h2>
+<p>삭개오는 얼른 내려와 기쁘게 예수님을 모셔 들였습니다. 나무 위에서<br>바라보려던 사람이 자기 집으로 손님을 맞게 된 것입니다(누가복음 19:6).</p>
+<p>그 모습을 본 사람들의 반응은 달랐습니다. 사람들은 예수님이 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">저런 죄인</code>의<br>손님으로 들어간다며 투덜거렸습니다(누가복음 19:7). 여기서 죄인이라는 말은<br>그 자리에 있던 사람들이 한 평가입니다. 누가복음은 곧이어 삭개오가 직접 한<br>말을 따로 기록합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="재산의-반과-네-배를-말한-삭개오">
+<h2 id="재산의-반과-네-배를-말한-삭개오">재산의 반과 네 배를 말한 삭개오</h2>
+<p>삭개오는 자기 재산의 반을 가난한 사람들에게 나누어 주겠다고 말했습니다.<br>그리고 다른 사람을 속여 빼앗은 것이 있다면 그 사람에게 네 배로 갚겠다고<br>했습니다(누가복음 19:8).</p>
+<p>두 약속은 구분해서 읽을 필요가 있습니다. 가난한 사람들에게 재산의 반을<br>나누겠다는 말은 바로 제시한 약속입니다. 네 배로 갚겠다는 말은 다른 사람을<br>속여 빼앗은 것이 있을 때를 조건으로 합니다. 본문은 그가 누구에게 얼마를<br>빼앗았는지 구체적인 사례를 적지 않습니다.</p>
+<p>예수님은 그 말을 들은 뒤 오늘 이 집에 구원이 이르렀다고 말씀하셨습니다.<br>삭개오도 아브라함의 자손이라고 하셨고, 사람의 아들은 잃어버린 사람들을<br>찾아 구원하려고 왔다고 덧붙이셨습니다(누가복음 19:9-10). 사람들은<br>삭개오를 죄인이라고 불렀지만, 예수님은 그를 찾아온 목적을 구원과 연결해<br>말씀하셨습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="재산-약속-뒤에-남은-빈칸">
+<h2 id="재산-약속-뒤에-남은-빈칸">재산 약속 뒤에 남은 빈칸</h2>
+<p>누가복음 19장의 삭개오 이야기는 예수님의 이 말씀에서 끝납니다. 삭개오가<br>재산을 언제 어떻게 나누었는지, 네 배의 배상이 실제로 누구에게 이루어졌는지,<br>그 뒤 어떻게 살았는지는 기록하지 않습니다.</p>
+<p>Codex는 이 장면의 열 절을 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">본문이 직접 말한 행동</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">사람들이 한 평가</code>,<br><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">기록되지 않은 이후</code>로 나누어 대조했습니다. 이렇게 읽으면 삭개오의 약속은<br>그대로 남기면서, 성경에 없는 이행 장면은 덧붙이지 않을 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="이번에-알아간-삭개오">
+<h2 id="이번에-알아간-삭개오">이번에 알아간 삭개오</h2>
+<p>삭개오를 처음 알아가는 다음 행동은 단순합니다. 누가복음 19:1-10을 열어<br>나무에 오르기 전부터 예수님의 마지막 말씀까지 한 번 이어 읽어 보세요.</p>
+<p>이번 글에서는 유명한 나무 장면이 어느 구절에서 시작되고 끝나는지<br>확인했습니다. 이제 삭개오라는 이름을 만나면 누가복음 19장을 함께 떠올릴 수<br>있겠습니다.</p>
+</section>
+</article>
