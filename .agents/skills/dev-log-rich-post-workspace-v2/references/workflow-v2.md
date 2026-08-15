@@ -44,6 +44,23 @@ Require a different reader question for every selected image and record why an
 obvious candidate was excluded when it would be redundant or increase the
 user's Tistory upload burden without improving the explanation.
 
+For a recommendation or benefit explainer aimed at non-specialists, record a
+reader-benefit contract in `brief.md` and summarize it in `decision_note`:
+
+- the concrete situation or discomfort the reader already recognizes;
+- what the reader does not yet know about the subject;
+- one intended reader and one plain recommendation;
+- the useful consequence in ordinary language before any nutrient, metric,
+  feature, or mechanism;
+- the practical choice or use the article will support;
+- evidence detail and adjacent topics the article will deliberately exclude.
+
+Do not treat a folk association or search habit as prior knowledge. A title
+such as `붓기에 팥물을 찾는다면` fails for readers who do not yet know why
+red beans are associated with swelling. Name the recognizable problem and the
+recommendation instead. Keep the audience fixed when research reveals more
+possible benefits; move unrelated benefits to another article.
+
 The v2 checker rejects GIF or high-risk remote media when the second fetch is
 not enabled.
 

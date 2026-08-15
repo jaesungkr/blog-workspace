@@ -56,6 +56,12 @@ Record the decision in `workflow-v2.json` before research.
   non-specialist reader unless the user explicitly names an expert audience.
   Treat prior knowledge as a prerequisite only when the brief and title make
   that scope explicit.
+- For a recommendation or benefit explainer aimed at non-specialists, record
+  the situation the reader already recognizes, what the reader does not yet
+  know, one intended reader, one plain recommendation, its useful consequence,
+  and details that the article will deliberately leave out. Do not frame the
+  title around a folk association, search behavior, nutrient, mechanism, or
+  feature that the intended reader may not know.
 - Never claim hands-on work when the required app, account, device, version,
   or safe environment is unavailable. Narrow the promise instead.
 
@@ -74,7 +80,11 @@ as evidence.
 
 1. Plan one primary reader, the retained message, easiest start, first-screen
    answer, heading-only action or decision path, required claims, honest test
-   boundary, media role, and conditional gates. For an unfamiliar subject,
+   boundary, media role, and conditional gates. For a recommendation or
+   benefit explainer, also lock the reader's recognizable situation, knowledge
+   baseline, plain recommendation, useful consequence, and excluded detail in
+   `brief.md`; do not broaden the audience after research reveals more facts.
+   For an unfamiliar subject,
    make the public title and first screen independently answer what it is, what
    ordinary problem it solves, and why the intended reader would use it. A
    navigation-count hook such as `볼 화면 3곳` cannot substitute for the
@@ -107,10 +117,23 @@ as evidence.
    placing a specific limitation beside the claim it changes. Publish a test
    boundary only when it materially changes the reader's decision or the user
    explicitly asks for methodology disclosure.
+   For a recommendation or benefit explainer, lead with `recognizable situation
+   -> plain recommendation and useful consequence -> practical use -> mechanism
+   and evidence -> material safety boundary`. Name the everyday effect before
+   asking a non-specialist to interpret a nutrient, metric, feature, or internal
+   mechanism. Start a simple lifestyle explainer with three stage-level jobs:
+   why it fits, how to choose or use it, and who needs a material caution. Add
+   another section only when it changes a real reader decision. Keep one
+   representative number or comparison in the prose when it is enough; move
+   supporting detail to a table or `evidence.md` instead of repeating it.
+   Keep consequential safety and exception language beside the affected advice,
+   but do not grow a standalone limitations section when one precise boundary
+   closes the claim.
 5. Run the full voice-and-density revision in
    `references/editorial-voice-v2.md` before the normal prose-polish stage. It
-   has four required surfaces: the heading strip, AI-template sentence frames,
-   paragraph-level new information, and repeated claim or action ownership.
+   has five required surfaces: the reader-benefit contract, heading strip,
+   AI-template sentence frames, paragraph-level new information, and repeated
+   claim or action ownership.
    The normal prose-polish stage does not replace this pass.
    Run the analyzer before and after as an inventory, never a score. A zero
    signal count does not pass a heading, paragraph, or article. Record the
@@ -129,6 +152,14 @@ as evidence.
    an unfamiliar subject, also return a title or first screen that assumes the
    reader already knows the subject, leads with internal process boundaries,
    or reaches usage steps before stating the plain identity and ordinary use.
+   For a non-specialist recommendation or benefit explainer, return a source
+   when the title assumes the reader already connects the subject with the
+   problem; when the first screen names nutrients, metrics, features, or
+   mechanisms before the useful consequence; when several audiences or
+   benefits compete without one recommendation; when evidence detail hides the
+   recommendation; or when defensive caveats occupy more attention than the
+   bounded claim they qualify. Do not remove a material medical, legal,
+   financial, security, or operational warning to satisfy density.
    Return substantive defects to writing and surface defects to prose polish
    until it passes.
 7. Record the freeze:
@@ -244,6 +275,8 @@ accept an unresolved claim, unsupported hands-on statement, local media path,
 placeholder, duplicate H1, unreadable mobile evidence, hidden table content,
 stale gate, known visual defect, generic opening roadmap, sentence-shaped
 contrast heading, paragraph without new reader value, full takeaway repeated
-across sections, a specialist-assuming title for a non-specialist reader, or a
-generic public disclaimer that lowers trust without changing the reader's
-decision.
+across sections, a specialist-assuming title for a non-specialist reader, a
+recommendation title that assumes an unknown folk association or search habit,
+an unexplained nutrient or mechanism before its useful consequence, competing
+target readers, evidence detail that hides the recommendation, or a generic
+public disclaimer that lowers trust without changing the reader's decision.

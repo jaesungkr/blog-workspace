@@ -40,6 +40,39 @@ fillers, invented anecdotes, fake uncertainty, or unsupported `~죠`,
 `~거든요`, and `~했어요` endings. Keep the established Korean honorific
 style. Uneven rhythm must come from the thought, not manufactured imperfection.
 
+## Pass 0: lock the reader-benefit contract
+
+Use this pass for recommendation and benefit explainers aimed at
+non-specialists. Record the following in `brief.md` and the revision result in
+`audit.md`:
+
+- the situation, discomfort, or decision the reader already recognizes;
+- what the reader does not yet know about the subject;
+- one intended reader;
+- one plain recommendation and its useful consequence;
+- the practical choice or use the article supports;
+- evidence detail and adjacent benefits deliberately excluded from the article.
+
+Reject a title or opening that assumes the reader already knows a folk
+association, search habit, nutrient, metric, feature, or mechanism. `붓기에
+팥물을 찾는다면` assumes a connection that a first-time reader may not know;
+name the recognizable problem and why the subject is worth recommending
+instead. Do not broaden the reader to everyone who might benefit after research
+reveals additional facts.
+
+Within the first three publishable sentences, a recommendation or benefit
+explainer should make the intended reader, recommendation, and useful
+consequence understandable in ordinary language. This is a comprehension gate,
+not a fixed sentence template. Explain the practical effect before asking the
+reader to interpret `칼륨`, `식이섬유`, a benchmark, a feature name, or an
+internal mechanism.
+
+For a simple lifestyle explainer, begin with three stage-level jobs: why the
+recommendation fits, how to choose or use it, and who needs a material caution.
+This is a default, not a quota. Add a section only when it changes a separate
+reader decision; merge background, mechanism, or evidence detail that merely
+supports an existing job.
+
 ## Pass 1: rewrite the heading strip
 
 Read only the title and headings. For each heading, write its one reader job in
@@ -126,6 +159,14 @@ sentence that only announces the next section, says the topic is important,
 repeats the heading, paraphrases a table, or summarizes the previous paragraph
 does not count as new information.
 
+For a recommendation or benefit explainer, each retained paragraph must also
+help the reader answer at least one of these questions: `나에게 왜 필요한가`,
+`무엇을 선택하거나 해야 하는가`, `어느 정도 기대할 수 있는가`, or `언제
+조심해야 하는가`. Research effort does not earn publication space by itself.
+Keep the smallest representative number or comparison that changes the answer;
+move supporting detail to a table or `evidence.md`. Do not repeat the same
+number in a table, explanatory paragraph, summary box, and later recap.
+
 For every central claim and action, name one owner section in the audit. A
 later section may depend on it or refer back briefly, but must not explain the
 same cause, procedure, evidence, and caution again. This ownership check is
@@ -149,6 +190,13 @@ greeting is allowed, but it cannot substitute for the answer. Move a caveat
 beside the claim it qualifies unless the caveat changes whether the reader
 should continue at all.
 
+Do not create a standalone `효능의 한계`, `주의할 점`, or `오해와 진실`
+section merely to display defensive completeness. Put one precise evidence
+boundary beside the claim it narrows. Keep a separate caution section only when
+the reader must make a distinct safety decision, and preserve every material
+medical, legal, financial, security, or operational warning even when the
+article is being compressed.
+
 The closing must change or settle the reader's decision. Do not repeat the
 article outline, copy the comparison table into prose, or restate every safety
 rule. A bounded recommendation, unresolved risk, or next check is enough.
@@ -162,9 +210,14 @@ judgment. Do not add spontaneity for its own sake.
 
 Record:
 
+- the reader-benefit contract, including the reader's knowledge baseline and
+  deliberately excluded detail when this pass applies;
 - the original and selected heading strip, with the job of each section;
 - representative template frames removed or justified;
 - paragraphs deleted or merged by the new-information test;
+- representative numbers or evidence detail moved out of repeated prose;
+- caveats kept beside their claims and any separate safety section justified by
+  a distinct reader decision;
 - the owner section for every repeated central claim or action;
 - facts, caveats, and branches protected during compression;
 - any remaining passage the source reviewer must challenge.
