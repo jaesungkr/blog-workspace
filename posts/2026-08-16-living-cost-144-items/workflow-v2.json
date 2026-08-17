@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "전체 물가 상승률보다 실제 장보기·외식·교통비에서 무엇이 얼마나 올랐는지 알고 싶은 한국 생활자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": true,
+  "complex_layout": true,
+  "high_risk_remote_media": false,
+  "include_390": true,
+  "include_768": true,
+  "second_remote_fetch": false,
+  "decision_note": "standard-rich source analysis. 국가데이터처 KOSIS의 2026년 7월 생활물가 원자료 144개 품목을 전년동월 대비 상승률로 재정렬하고, 장보기·외식·교통·주거 등 독자 생활 장면으로 다시 묶는다. 직접 UI 조작이나 절차 안내가 아니므로 독자 마찰 스크린샷은 제외한다. 상위 상승 품목과 지출 장면별 차이는 표만으로 144개 관계를 빠르게 파악하기 어려워 생성형 리드 1장과 데이터 기반 인포그래픽 1장을 사용한다. 긴 순위표와 도표의 중간 폭 전환 위험 때문에 390px·768px 검증을 추가한다. GIF와 고위험 원격 미디어는 사용하지 않는다."
+}

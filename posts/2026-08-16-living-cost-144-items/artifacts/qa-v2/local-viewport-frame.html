@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rich-post-v2 local viewport QA</title>
+  <style>
+    html, body { margin: 0; background: #c8c8c8; }
+    body { display: flex; justify-content: center; padding: 24px 0; }
+    iframe { display: block; border: 0; background: white; box-shadow: 0 0 0 1px #999; }
+  </style>
+</head>
+<body>
+  <iframe id="candidate" title="local rich post candidate"></iframe>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const width = Number(params.get('width') || 360);
+    const theme = params.get('theme') === 'dark' ? 'local-dark' : 'local-light';
+    const frame = document.querySelector('#candidate');
+    frame.width = String(width);
+    frame.src = `./${theme}/living-cost-144-items-rich-preview.html`;
+    frame.addEventListener('load', () => {
+      frame.height = String(frame.contentDocument.documentElement.scrollHeight);
+      document.title = `${theme} ${width}px rich-post-v2 QA`;
+    });
+  </script>
+</body>
+</html>

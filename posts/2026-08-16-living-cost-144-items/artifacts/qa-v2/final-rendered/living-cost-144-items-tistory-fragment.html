@@ -1,0 +1,388 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>2026년 7월 소비자물가는 1년 전보다 2.8% 올랐습니다. 자주 사는 품목을 따로 모은 생활물가는 2.5% 상승했습니다. 144개 세부 품목을 다시 계산하면 평균에서 멀리 튀어나온 상승률이 보입니다. <strong>경유 21.5%, 파 18.3%, 보험서비스료 13.4%</strong> 순입니다. 외식은 다른 모양으로 부담을 키웠습니다. 최고 상승률은 4.5%였지만 20개 품목이 하나도 빠짐없이 올랐습니다.</p>
+<p>영수증이 평균 물가보다 비싸게 느껴지는 이유는 하나의 숫자로 설명되지 않습니다. 크게 뛴 품목을 자주 샀는지, 완만하게 오른 지출을 피할 수 없었는지를 함께 봐야 합니다.</p>
+<figure class="devlog-rich__figure" data-media-id="living-cost-receipt" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D" alt="마트 계산대 위 영수증이 급등 그래프처럼 솟고, 파·자동차 열쇠·달걀이 놓인 장면" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">생활물가 평균 뒤에는 일부 품목의 큰 상승과 넓게 퍼진 가격 상승이 함께 있습니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#144개-중-98개-상승">144개 중 98개 상승</a></li>
+<li><a href="#가장-크게-오른-경유-장보기-1위-파">가장 크게 오른 경유, 장보기 1위 파</a></li>
+<li><a href="#장바구니-안에서-엇갈린-상승과-하락">장바구니 안에서 엇갈린 상승과 하락</a></li>
+<li><a href="#20개가-모두-오른-외식">20개가 모두 오른 외식</a></li>
+<li><a href="#내-생활비는-자주-쓰는-항목부터">내 생활비는 자주 쓰는 항목부터</a></li>
+<li><a href="#물가-평균에서-내-영수증까지">물가 평균에서 내 영수증까지</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="144개-중-98개-상승">
+<h2 id="144개-중-98개-상승">144개 중 98개 상승</h2>
+<p><a href="https://www.mods.go.kr/board.es?act=view&amp;bid=213&amp;list_no=446338&amp;mid=b70203010000" style="color:#1a73e8;text-decoration:none;" target="_blank">국가데이터처의 2026년 7월 소비자물가동향</a>은 전체 소비자물가가 전년 동월 대비 2.8%, 생활물가가 2.5% 상승했다고 발표했습니다. 생활물가는 소비자가 자주 사거나 지출 비중이 높아 가격 변화에 민감하게 느끼는 144개 품목으로 만든 보조지표입니다.</p>
+<p>이번 분석에서는 <a href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1J22005&amp;conn_path=I2" style="color:#1a73e8;text-decoration:none;" target="_blank">KOSIS 생활물가지수 통계표</a>의 2025년 7월과 2026년 7월 지수를 비교했습니다. 집계 항목을 빼고 144개 품목을 전년 동월 상승률로 다시 정렬했습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>2026년 7월 생활물가</th><th>분석 결과</th></tr></thead><tbody><tr><td>생활물가지수 상승률</td><td>2.5%</td></tr><tr><td>오른 품목</td><td>98개 · 68.1%</td></tr><tr><td>내린 품목</td><td>38개 · 26.4%</td></tr><tr><td>변동 없는 품목</td><td>8개 · 5.6%</td></tr><tr><td>5% 이상 오른 품목</td><td>16개</td></tr></tbody></table></div>
+<p>144개 중 98개, 세 품목 중 두 개꼴로 가격 지수가 상승했습니다. 이 개수에는 지출액 가중치가 없습니다. 쌀 한 품목과 치약 한 품목을 똑같이 한 개로 셌으므로, 68.1%는 가계 부담의 증가율이 아닙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="가장-크게-오른-경유-장보기-1위-파">
+<h2 id="가장-크게-오른-경유-장보기-1위-파">가장 크게 오른 경유, 장보기 1위 파</h2>
+<p>상승 폭이 큰 품목은 교통비, 장보기, 보험과 공공요금에 섞여 있었습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>순위</th><th>품목</th><th>생활 범주</th><th>전년 동월 대비</th></tr></thead><tbody><tr><td>1</td><td>경유</td><td>교통</td><td>+21.55%</td></tr><tr><td>2</td><td>파</td><td>식료품·비주류음료</td><td>+18.26%</td></tr><tr><td>3</td><td>보험서비스료</td><td>기타 생활서비스</td><td>+13.41%</td></tr><tr><td>4</td><td>휘발유</td><td>교통</td><td>+12.63%</td></tr><tr><td>5</td><td>간장</td><td>식료품·비주류음료</td><td>+9.66%</td></tr><tr><td>6</td><td>수입쇠고기</td><td>식료품·비주류음료</td><td>+8.71%</td></tr><tr><td>7</td><td>하수도료</td><td>주거·공공요금</td><td>+8.49%</td></tr><tr><td>8</td><td>쌀</td><td>식료품·비주류음료</td><td>+7.94%</td></tr><tr><td>9</td><td>달걀</td><td>식료품·비주류음료</td><td>+7.49%</td></tr><tr><td>10</td><td>고등어</td><td>식료품·비주류음료</td><td>+6.95%</td></tr></tbody></table></div>
+<p>상위 10개 가운데 장보기 품목이 6개였습니다. 차를 자주 쓰는 가구라면 경유나 휘발유가, 집밥 비중이 높다면 파·쌀·달걀이 체감에 더 크게 남을 수 있습니다. 보험서비스료와 하수도료처럼 서비스·공공요금 항목도 상위권에 들었습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="living-cost-144-overview" style="--rich-media-width:760px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D" alt="생활물가 144개 중 상승 98개·하락 38개·보합 8개를 점으로 나타내고, 급등한 경유·파·보험서비스료와 외식 20개 전부 상승을 비교한 인포그래픽" width="1080" height="1350" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">상승 폭이 큰 품목과 상승이 넓게 퍼진 범주는 가계에서 다르게 체감됩니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+<p><strong>경유가 1위라는 말은 144개 가운데 가격 지수의 상승률이 가장 높았다는 뜻</strong>입니다. 모든 가구의 생활비에 가장 크게 기여했다는 순위는 따로 계산해야 합니다. 차가 없는 가구에는 경유 상승의 직접 부담이 거의 없고, 운전이 잦은 가구에는 평균보다 훨씬 크게 다가옵니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="장바구니-안에서-엇갈린-상승과-하락">
+<h2 id="장바구니-안에서-엇갈린-상승과-하락">장바구니 안에서 엇갈린 상승과 하락</h2>
+<p>식료품·비주류음료 61개의 상승률 중앙값은 0.73%였습니다. 파가 18.26% 올랐지만 같은 채소인 시금치는 21.26%, 배추는 18.36%, 오이는 13.84% 내렸습니다. 한두 품목의 큰 변화만으로 장보기 전체를 설명하기 어려운 이유입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>많이 오른 장보기 품목</th><th>상승률</th><th>많이 내린 장보기 품목</th><th>하락률</th></tr></thead><tbody><tr><td>파</td><td>+18.26%</td><td>시금치</td><td>-21.26%</td></tr><tr><td>간장</td><td>+9.66%</td><td>귤</td><td>-19.67%</td></tr><tr><td>수입쇠고기</td><td>+8.71%</td><td>배추</td><td>-18.36%</td></tr><tr><td>쌀</td><td>+7.94%</td><td>부추</td><td>-17.63%</td></tr><tr><td>달걀</td><td>+7.49%</td><td>호박</td><td>-15.90%</td></tr></tbody></table></div>
+<p>특히 신선식품은 계절과 기상, 수급에 따라 변동 폭이 큽니다. 이 표가 보여 주는 범위도 2026년 7월과 1년 전 같은 달의 차이까지입니다. 앞으로 어느 품목이 계속 오를지는 판단할 수 없습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="20개가-모두-오른-외식">
+<h2 id="20개가-모두-오른-외식">20개가 모두 오른 외식</h2>
+<p>외식 20개 품목의 중앙값은 3.08%였습니다. 김밥 4.45%, 해장국 4.03%, 떡볶이 3.99% 순으로 높았고 20개가 모두 상승했습니다. 5%를 넘은 품목은 없었지만, 메뉴를 바꿔도 가격 상승을 피하기 어려운 분포입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>생활 범주</th><th>품목 수</th><th>오른 품목</th><th>상승률 중앙값</th><th>가장 많이 오른 품목</th></tr></thead><tbody><tr><td>가정용품</td><td>5</td><td>4</td><td>+3.39%</td><td>부엌용용구 +6.68%</td></tr><tr><td>외식</td><td>20</td><td>20</td><td>+3.08%</td><td>김밥 +4.45%</td></tr><tr><td>교육</td><td>7</td><td>6</td><td>+2.15%</td><td>가정학습지 +5.51%</td></tr><tr><td>기타 생활서비스</td><td>9</td><td>9</td><td>+2.02%</td><td>보험서비스료 +13.41%</td></tr><tr><td>교통</td><td>7</td><td>4</td><td>+1.29%</td><td>경유 +21.55%</td></tr><tr><td>주거·공공요금</td><td>6</td><td>4</td><td>+1.27%</td><td>하수도료 +8.49%</td></tr><tr><td>식료품·비주류음료</td><td>61</td><td>35</td><td>+0.73%</td><td>파 +18.26%</td></tr></tbody></table></div>
+<p>중앙값이 가장 높은 범주는 가정용품이었지만 품목이 5개뿐입니다. 교통은 중앙값이 1.29%인데 경유와 휘발유가 두 자릿수로 뛰었습니다. 외식과 기타 생활서비스는 각각 20개와 9개 품목이 모두 올랐습니다. <strong>범주별 중앙값만으로는 일부 품목의 급등과 상승이 넓게 퍼진 정도를 함께 볼 수 없습니다.</strong></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="내-생활비는-자주-쓰는-항목부터">
+<h2 id="내-생활비는-자주-쓰는-항목부터">내 생활비는 자주 쓰는 항목부터</h2>
+<p>이 순위를 내 지출로 옮길 때는 상승률보다 먼저 구매 빈도와 월 지출액을 적어 보는 편이 정확합니다.</p>
+<ol><li>카드 내역이나 영수증에서 매달 반복되는 지출을 장보기·외식·교통·공공요금·교육·생활서비스로 묶습니다.</li><li>경유, 쌀, 보험처럼 이번 상위 품목과 겹치는 항목을 표시합니다.</li><li>작년 같은 달과 올해 지출을 비교하되 구매량이 달라졌는지도 함께 적습니다.</li><li>신선식품처럼 변동이 큰 항목은 한 달 수치만 보고 장기 추세로 단정하지 않습니다.</li></ol>
+<p>예를 들어 경유 지수가 21.55% 올랐더라도 운전 횟수를 줄였다면 실제 주유비 증가는 그보다 작을 수 있습니다. 반대로 외식 단가가 약 3%씩 올랐고 외식 횟수까지 늘었다면 지출은 지수보다 더 많이 증가합니다. 품목별 지수는 가격 변화의 방향과 크기를 보여 주지만, 개인의 영수증에는 구매량과 상품 선택의 변화까지 섞입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="물가-평균에서-내-영수증까지">
+<h2 id="물가-평균에서-내-영수증까지">물가 평균에서 내 영수증까지</h2>
+<p>생활물가 144개를 한 줄로 세우면 경유, 파, 보험서비스료가 가장 많이 올랐습니다. 장바구니 안에서는 오르고 내린 품목이 크게 갈렸습니다. 외식에서는 20개 품목 모두가 완만하게 상승했습니다.</p>
+<p>체감물가를 확인할 때는 전국 평균과 자신의 경험 중 하나를 틀렸다고 볼 필요가 없습니다. 생활물가 2.5%는 전체 흐름을 보여 주고, 품목별 상승률은 어디에서 가격이 튀었는지 알려 줍니다. 여기에 내가 실제로 얼마를, 얼마나 자주 썼는지를 더해야 내 생활비가 비싸진 이유가 보입니다.</p>
+</section>
+</article>

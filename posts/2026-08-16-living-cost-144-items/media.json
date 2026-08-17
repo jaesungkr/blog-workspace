@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "lead_id": "living-cost-receipt",
+  "items": [
+    {
+      "id": "living-cost-receipt",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C03",
+        "C10"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-16",
+      "environment": "OpenAI built-in image generation, crafted editorial still-life direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/living-cost-receipt-source.png",
+      "publish_path": "assets/living-cost-receipt-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "마트 계산대 위 영수증이 급등 그래프처럼 솟고, 파·자동차 열쇠·달걀이 놓인 장면",
+      "caption": "생활물가 평균 뒤에는 일부 품목의 큰 상승과 넓게 퍼진 가격 상승이 함께 있습니다.",
+      "processing": [
+        "generated from an original living-cost editorial art-direction prompt",
+        "full-size creator inspection",
+        "360-by-202-pixel thumbnail inspection",
+        "independent hero validation pass by /root/hero_validator"
+      ],
+      "redactions": [],
+      "sha256": "642e866daf1f9a5d24c2efe8e52ec696487a687730214560263c478bee98b880",
+      "status": "validated"
+    },
+    {
+      "id": "living-cost-144-overview",
+      "kind": "image",
+      "origin": "generated",
+      "role": "comparison",
+      "claim_ids": [
+        "C03",
+        "C04",
+        "C05",
+        "C10"
+      ],
+      "actor": "Codex deterministic Pillow layout",
+      "captured_at": "2026-08-16",
+      "environment": "1080 x 1350 PNG rendered with Python Pillow and Apple SD Gothic Neo on macOS",
+      "source_url": "",
+      "raw_path": "artifacts/render_living_cost_infographic.py",
+      "publish_path": "assets/living-cost-144-overview-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+      "width": 1080,
+      "height": 1350,
+      "display_width": 760,
+      "placement": "after:top-ranking",
+      "rights": "dev.log original deterministic infographic",
+      "alt": "생활물가 144개 중 상승 98개·하락 38개·보합 8개를 점으로 나타내고, 급등한 경유·파·보험서비스료와 외식 20개 전부 상승을 비교한 인포그래픽",
+      "caption": "상승 폭이 큰 품목과 상승이 넓게 퍼진 범주는 가계에서 다르게 체감됩니다.",
+      "processing": [
+        "deterministic Pillow layout with exact Korean copy",
+        "versioned v1-v3 overlap correction",
+        "full-size and untouched 360 CSS-pixel creator inspection",
+        "independent infographic validation pass by /root/infographic_validator"
+      ],
+      "redactions": [],
+      "sha256": "eaf90603994836b09e6d6b2d41243b6a284bb7aaa73e590398b928eefdcb3bcc",
+      "status": "validated"
+    }
+  ]
+}

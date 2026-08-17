@@ -1,0 +1,170 @@
+{
+  "source_table": "KOSIS DT_1J22005 생활물가지수(2020=100)",
+  "source_updated": "2026-08-04",
+  "comparison": "2025-07 to 2026-07",
+  "detailed_item_count": 144,
+  "overall_cpi_yoy_pct": 2.79,
+  "living_cpi_yoy_pct": 2.55,
+  "living_food_yoy_pct": 1.59,
+  "living_nonfood_yoy_pct": 3.16,
+  "rising_item_count": 98,
+  "rising_item_share_pct": 68.1,
+  "falling_item_count": 38,
+  "unchanged_item_count": 8,
+  "five_percent_plus_count": 16,
+  "top_15": [
+    {
+      "rank": 1,
+      "item": "경유",
+      "category": "교통",
+      "yoy_pct": 21.55
+    },
+    {
+      "rank": 2,
+      "item": "파",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 18.26
+    },
+    {
+      "rank": 3,
+      "item": "보험서비스료",
+      "category": "기타 생활서비스",
+      "yoy_pct": 13.41
+    },
+    {
+      "rank": 4,
+      "item": "휘발유",
+      "category": "교통",
+      "yoy_pct": 12.63
+    },
+    {
+      "rank": 5,
+      "item": "간장",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 9.66
+    },
+    {
+      "rank": 6,
+      "item": "수입쇠고기",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 8.71
+    },
+    {
+      "rank": 7,
+      "item": "하수도료",
+      "category": "주거·공공요금",
+      "yoy_pct": 8.49
+    },
+    {
+      "rank": 8,
+      "item": "쌀",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 7.94
+    },
+    {
+      "rank": 9,
+      "item": "달걀",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 7.49
+    },
+    {
+      "rank": 10,
+      "item": "고등어",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 6.95
+    },
+    {
+      "rank": 11,
+      "item": "부엌용용구",
+      "category": "가정용품",
+      "yoy_pct": 6.68
+    },
+    {
+      "rank": 12,
+      "item": "섬유유연제",
+      "category": "가정용품",
+      "yoy_pct": 6.41
+    },
+    {
+      "rank": 13,
+      "item": "조개",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 6.31
+    },
+    {
+      "rank": 14,
+      "item": "국산쇠고기",
+      "category": "식료품·비주류음료",
+      "yoy_pct": 5.67
+    },
+    {
+      "rank": 15,
+      "item": "가정학습지",
+      "category": "교육",
+      "yoy_pct": 5.51
+    }
+  ],
+  "bottom_10": [
+    {
+      "rank": 135,
+      "item": "깻잎",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -9.39
+    },
+    {
+      "rank": 136,
+      "item": "무",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -10.77
+    },
+    {
+      "rank": 137,
+      "item": "수박",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -11.1
+    },
+    {
+      "rank": 138,
+      "item": "오이",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -13.84
+    },
+    {
+      "rank": 139,
+      "item": "호박",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -15.9
+    },
+    {
+      "rank": 140,
+      "item": "부추",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -17.63
+    },
+    {
+      "rank": 141,
+      "item": "배추",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -18.36
+    },
+    {
+      "rank": 142,
+      "item": "귤",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -19.67
+    },
+    {
+      "rank": 143,
+      "item": "시금치",
+      "category": "식료품·비주류음료",
+      "yoy_pct": -21.26
+    },
+    {
+      "rank": 144,
+      "item": "유치원납입금",
+      "category": "교육",
+      "yoy_pct": -41.27
+    }
+  ],
+  "method_limit": "Detailed-item ranks and category medians are unweighted diagnostics. Official aggregate indices apply expenditure weights; individual household bills also depend on purchase quantity, brand, region, and discounts."
+}

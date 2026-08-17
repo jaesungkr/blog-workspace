@@ -16,7 +16,12 @@ SCRIPTS = SKILL_DIR / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
 from render_rich_post_v2 import render_outputs
-from rich_post_v2_common import validate_bundle, validate_source_pass
+from rich_post_v2_common import (
+    CAPTURE_VIEWPORTS,
+    merge_browser_capture_viewports,
+    validate_bundle,
+    validate_source_pass,
+)
 
 
 def png_bytes(width=760, height=480):
@@ -215,6 +220,56 @@ summary: "v2 게이트를 검증합니다."
         self.write_workflow()
         result = validate_bundle(self.post)
         self.assertTrue(any("second fetch" in error for error in result["errors"]))
+
+    def test_optional_capture_profiles_merge_with_human_review(self):
+        self.assertEqual(
+            {1280: 900, 360: 800, 390: 844, 768: 900},
+            CAPTURE_VIEWPORTS,
+        )
+        receipt = {
+            "viewports": [
+                {"width": width, "height": height}
+                for width, height in CAPTURE_VIEWPORTS.items()
+            ]
+        }
+        human_viewports = [
+            {"width": width, "readable_media": True, "status": "pass"}
+            for width in CAPTURE_VIEWPORTS
+        ]
+        errors = []
+
+        merged = merge_browser_capture_viewports(
+            receipt,
+            human_viewports,
+            errors,
+        )
+
+        self.assertEqual([], errors)
+        self.assertEqual(set(CAPTURE_VIEWPORTS), {item["width"] for item in merged})
+
+    def test_human_review_must_cover_every_captured_optional_profile(self):
+        receipt = {
+            "viewports": [
+                {"width": 1280, "height": 900},
+                {"width": 360, "height": 800},
+                {"width": 390, "height": 844},
+            ]
+        }
+        errors = []
+
+        merge_browser_capture_viewports(
+            receipt,
+            [
+                {"width": 1280, "readable_media": True, "status": "pass"},
+                {"width": 360, "readable_media": True, "status": "pass"},
+            ],
+            errors,
+        )
+
+        self.assertIn(
+            "browser measurements must cover exactly the captured widths",
+            errors,
+        )
 
 
 if __name__ == "__main__":

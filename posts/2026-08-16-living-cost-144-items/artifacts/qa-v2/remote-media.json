@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "4d41dd55-5845-4c37-ac19-d195153b88e6",
+  "recorded_at": "2026-08-17T14:36:39.786006Z",
+  "recorded_by": "/root",
+  "media_sha256": "f744f6d0fd26370bdd7fa69761a59de420a4c926067c290f2ed5acd7f7ba89f1",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "living-cost-receipt",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-17T14:36:39.680838Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1656864,
+      "byte_length": 1656864,
+      "sha256": "ef9570c1e9d8e91dfa75204064810325007a68ffd1632afb10da06282c730a32",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Mon, 17 Aug 2026 14:18:16 GMT"
+    },
+    {
+      "id": "living-cost-144-overview",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-17T14:36:39.785482Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 217217,
+      "byte_length": 217217,
+      "sha256": "4cf49da707fdfc1756e34861f8abc8ab79f19141b4c467ea8381c7308c9d0b58",
+      "format": "png",
+      "width": 1080,
+      "height": 1350,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Mon, 17 Aug 2026 14:18:16 GMT"
+    }
+  ]
+}

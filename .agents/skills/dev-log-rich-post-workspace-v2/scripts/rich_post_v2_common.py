@@ -62,6 +62,11 @@ REQUIRED_VIEWPORTS = {
     1280: 900,
     360: 800,
 }
+CAPTURE_VIEWPORTS = {
+    **REQUIRED_VIEWPORTS,
+    390: 844,
+    768: 900,
+}
 INDEPENDENT_BOOLEAN_CHECKS = {
     "captions_attached",
     "table_code_scroll",
@@ -1164,10 +1169,10 @@ def validate_browser_capture_receipt(
         height = viewport.get("height")
         if (
             type(width) is not int
-            or width not in REQUIRED_VIEWPORTS
-            or height != REQUIRED_VIEWPORTS.get(width)
+            or width not in CAPTURE_VIEWPORTS
+            or height != CAPTURE_VIEWPORTS.get(width)
         ):
-            errors.append(f"{viewport_label} is not a required exact profile")
+            errors.append(f"{viewport_label} is not an allowed exact profile")
             continue
         if width in seen_widths:
             errors.append(f"{viewport_label} duplicates width {width}")
@@ -1271,8 +1276,12 @@ def validate_browser_capture_receipt(
         if screenshot_hash in seen_hashes:
             errors.append(f"{viewport_label} screenshot content must be unique")
         seen_hashes.add(screenshot_hash)
-    if seen_widths != set(REQUIRED_VIEWPORTS):
-        errors.append(f"{label} must contain exactly the three required viewports")
+    missing_widths = set(REQUIRED_VIEWPORTS) - seen_widths
+    if missing_widths:
+        errors.append(
+            f"{label} is missing required viewports: "
+            + ", ".join(str(width) for width in sorted(missing_widths))
+        )
     return receipt_path, receipt
 
 
@@ -1296,12 +1305,16 @@ def merge_browser_capture_viewports(
             )
             continue
         human_by_width[width] = viewport
-    if set(human_by_width) != set(REQUIRED_VIEWPORTS):
-        errors.append("browser measurements must cover exactly the required widths")
-
     captured = receipt.get("viewports")
     if not isinstance(captured, list):
         return []
+    captured_widths = {
+        viewport.get("width")
+        for viewport in captured
+        if isinstance(viewport, dict) and type(viewport.get("width")) is int
+    }
+    if set(human_by_width) != captured_widths:
+        errors.append("browser measurements must cover exactly the captured widths")
     merged: list[dict[str, Any]] = []
     for viewport in captured:
         if not isinstance(viewport, dict):
@@ -1832,10 +1845,10 @@ def validate_qa_data(
         height = viewport.get("height")
         if type(height) is not int or height <= 0:
             errors.append(f"{label} `height` must be a positive integer")
-        elif width in REQUIRED_VIEWPORTS and height != REQUIRED_VIEWPORTS[width]:
+        elif width in CAPTURE_VIEWPORTS and height != CAPTURE_VIEWPORTS[width]:
             errors.append(
-                f"{label} height must equal {REQUIRED_VIEWPORTS[width]} "
-                f"for required width {width}"
+                f"{label} height must equal {CAPTURE_VIEWPORTS[width]} "
+                f"for exact profile width {width}"
             )
         if width in seen_widths:
             errors.append(f"{label} duplicates width {width}")

@@ -1,0 +1,161 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-08-17T14:37:13.684070Z",
+  "checked_by": "/root/final_page_reviewer",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/living-cost-144-items-rich-preview.html",
+  "preview_sha256": "08e043a116e3cc7e2016837fd6c7099b0d58a5cb7be6298af416b3a87af4ec68",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.138",
+  "protocol_version": "1.3",
+  "session": "e7d29474-adba-42c5-865b-eebc331d4f62",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-16-living-cost-144-items/artifacts/qa-v2/final-rendered/living-cost-144-items-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6583,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "637c787a52ecaf147fd825a975ea349d1f100e8d2d41ce098b04595d3f07db23",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-16-living-cost-144-items/artifacts/qa-v2/final-rendered/living-cost-144-items-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7159,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "50a74d16b8f9fe768101fc2bbe703eac4491c54a3ca9c01e9199ef8f6b8f5b90",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-16-living-cost-144-items/artifacts/qa-v2/final-rendered/living-cost-144-items-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 7029,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "6aab5ba60ae30042337b8bf76e94ab947fd20e10bd70a55b8dfb10dbfd6acab5",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-390.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-16-living-cost-144-items/artifacts/qa-v2/final-rendered/living-cost-144-items-rich-preview.html",
+      "inner_width": 768,
+      "inner_height": 900,
+      "client_width": 768,
+      "client_height": 900,
+      "scroll_width": 768,
+      "scroll_height": 6539,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "1df2f1086ead7fcd663887f9aeae850554ac341e1e2baf12754cf7619f42145f",
+      "screenshot_pixel_width": 768,
+      "screenshot_pixel_height": 900,
+      "width": 768,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/tablet-768.png"
+    }
+  ]
+}
