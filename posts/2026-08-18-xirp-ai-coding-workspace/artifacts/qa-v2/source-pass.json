@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-08-18T14:39:24.868127Z",
-  "checked_by": "Codex independent reviewer /root/xirp_source_review",
-  "article_content_sha256": "4eff4341e44a001ae2e2f8e12a4552b59fa523f5a1ed41c75cb8a07b386257f8",
-  "brief_sha256": "9a8de5dab2e3625bb3e3f9dd7e7908e427a5b17b8637435bec38b6549751bff5",
-  "evidence_sha256": "115580f7e7b20e6f388c53a1f74b7051b3d1420caaafa26d31b5d8ff73aa10dd",
+  "checked_at": "2026-08-18T15:28:28.847007Z",
+  "checked_by": "Codex independent reviewer /root/xirp_revision_review",
+  "article_content_sha256": "c24adf1f91e9b82ccc59dd17b5486fb6332c2211dcc28cb6c9b9c81a314432fb",
+  "brief_sha256": "35c7c332c77a832b0a1379266da061627f46fb4ca19abff24e725a4a92f008d0",
+  "evidence_sha256": "cd78292b15dd599923901a5337d3a14686a01bd5fa308ec7e5136c80690543d3",
   "note": ""
 }

@@ -1,14 +1,78 @@
-# 최종 감사: Xirp, 여러 AI 코딩 에이전트를 한곳에서 관리하는 스포티파이 개발 도구
+# 최종 감사: Xirp, 스포티파이가 만든 AI 코딩 세션 관리 앱
 
 ## 현재 상태
 
 - lifecycle: `ready`
 - route: `standard-rich`
-- source stage: 작성·v2 문체 밀도 수정·일반 문장 다듬기·독립 source review 통과, source freeze 기록 완료
+- source stage: 1차 이력 보존, 2026-08-19 개정 원고 독립 source review 통과와 새 source freeze 기록 완료
 - media stage: 공식 화면 3장 로컬 검증·Tistory CDN 연결·remote baseline 통과
-- final page stage: 1280px·360px light/dark 로컬 preflight와 독립 final-page QA 통과
+- final page stage: 개정 원고 remote light/dark 독립 검수 통과, exact fragment 고정 완료
 
-## 독자 계약과 글의 척추
+## 2026-08-19 구조 개정
+
+### 사용자가 지적한 문제
+
+- 서론이 짧고 Xirp가 무슨 일을 하는지 선명하지 않음
+- Portal이 정의되기 전에 선택지로 등장해 독자가 낯선 제품을 스스로 해석해야 함
+- 비슷한 도구인 Orca와의 차이가 빠져 Xirp의 역할 경계가 흐림
+- 세션·worktree·Grid view·Portal·베타 제한이 나열되며 글의 판단 축이 약함
+
+### 개정한 글의 척추
+
+`여러 터미널에서 세션을 놓치는 장면 -> Xirp의 세션 관리 역할 -> Orca의 worktree·변경 검토·PR 역할과 비교 -> Portal을 회사의 개발 지도로 정의 -> Portal 없는 첫 실행 -> worktree·Grid view 운용 -> 상황별 최종 선택`
+
+### 현재 제목과 소제목 strip
+
+| 표면 | 독자 역할 | 검토 결과 |
+|---|---|---|
+| 제목 | identify | Spotify를 제작 주체로 명시하고 Xirp가 AI 코딩 세션 관리 앱임을 밝힘 |
+| Xirp의 프로젝트와 지속 세션 | identify | 지속 터미널·프로젝트·상태와 native CLI 설정 경계를 설명 |
+| 세션 중심 Xirp와 worktree 중심 Orca | compare | 세션 중심과 worktree·변경 검토·PR 중심의 차이를 비교 |
+| Spotify Portal이 회사 정보를 Xirp에 연결하는 과정 | identify | 내부 개발자 포털을 개인용 앱과 구분하고 Catalog·Workspace·MCP의 연결 순서를 풀이 |
+| Portal 없이 첫 세션 시작하기 | act | 설치 조건과 프로젝트·목표·에이전트·worktree 선택 순서를 제공 |
+| worktree와 Grid view로 병렬 세션 나누기 | act·verify | 독립 작업의 분리와 대기 세션 확인을 한 운영 흐름으로 연결 |
+| 터미널·Xirp·Orca 중 무엇을 고를까 | decide | 터미널·Xirp·Orca·Xirp+Portal·원격 도구의 선택 기준을 제시 |
+
+### 삭제·병합한 내용
+
+- Spotify의 `3만6천 회 이상 세션` 벤더 수치는 제품 역할이나 도입 선택을 바꾸지 않아 본문에서 삭제함
+- v0.14.0·v0.15.0 상태 판별 수정과 v0.15.1 브라우저 보안 수정은 현재 선택에 필요하지 않아 본문에서 삭제하고 근거 지도에만 보존함
+- `Portal 없이 시작하기`와 뒤쪽 `Portal 연결하기` 사이의 반복을 없애고, Portal을 먼저 정의한 뒤 로컬 시작법으로 이동함
+- `병렬 작업은 worktree`와 `Grid view`를 하나의 운영 단계로 합쳐 분리·상태 확인·검토가 이어지게 함
+- 한 문장뿐이던 결론 절은 삭제하고 최종 선택 절의 마지막 행동으로 흡수함
+
+### 보존한 사실과 새 근거
+
+- 기존 Xirp 지원 에이전트, 지속 세션, worktree, Grid view, Portal 세션 기록 범위와 보안 경계는 유지함
+- Spotify Portal을 Backstage 기반 내부 개발자 포털로 정의하고 Software Catalog·Workspace·MCP의 독자 효용을 먼저 설명함
+- Orca 공식 문서에서 작업별 worktree, diff 검토, commit·push·PR, SSH·자체 서버·사용자 소유 클라우드 실행을 확인함
+- Xirp와 Orca 비교는 공개 기능을 `세션 상태 / 구현 비교·PR / 조직 맥락 / 실행 위치`로 재분류한 정성 판단이며 성능 순위가 아님
+- 공식 화면 3장과 Tistory CDN URL은 바뀌지 않아 재업로드가 필요하지 않음
+
+### 개정 원고 독립 source review
+
+| 회차 | 판정 | 문제 | 반영한 수정 |
+|---|---|---|---|
+| 1 | revision_required | 제목의 `스포티파이 개발 도구`가 용도와 제작 주체를 혼동시킬 수 있음 | `스포티파이가 만든 AI 코딩 세션 관리 앱`으로 변경 |
+| 1 | revision_required | `세션을 닫아도`가 공식 지속 범위보다 넓고 worktree 뜻풀이가 늦음 | `앱을 닫았다 다시 열어도`로 좁히고 첫 등장에 별도 브랜치·작업 폴더임을 설명 |
+| 1 | revision_required | Portal 연결이 모든 로컬 세션에 조직 맥락을 자동 주입하는 것처럼 읽힘 | Catalog나 Workspace에서 시작한 세션으로 조건을 명시하고 Catalog -> Workspace -> MCP 순서로 재작성 |
+| 1 | revision_required | Orca의 `배포` 표현, 관리형 클라우드 오해, Xirp Git 기능 축소 | 변경 검토·commit·push·PR 제출로 좁히고 사용자 소유 클라우드 조건과 Xirp 변경 비교·commit·PR 상태 기능을 표에 반영 |
+| 1 | revision_required | 제목 경로가 실제 차이를 감추고 선택 결론이 네 번 반복됨 | `세션 중심 Xirp와 worktree 중심 Orca`로 변경하고 최종 표를 판단 소유 절로 남겨 비교 절과 닫는 문장의 반복을 삭제 |
+| 2 | pass | 1차 지적의 근거 경계·독자 순서·표 범위·반복이 모두 해결됨 | 독립 reviewer `/root/xirp_revision_review`, 추가 원고 수정 없음 |
+
+### 개정 analyzer 변화
+
+| 항목 | 1차 ready 원고 | 구조 개정 후 |
+|---|---:|---:|
+| 소제목 | 8 | 6 |
+| generic-heading signal | 0 | 0 |
+| 평균 문장 길이 | 35.7자 | 31.3자 |
+| 50자 초과 문장 | 12 | 5 |
+| 70자 초과 문장 | 0 | 0 |
+
+숫자는 품질 점수가 아니라 독립 냉독과 함께 쓰는 검토 목록입니다.
+
+## 1차 원고의 독자 계약과 글의 척추 (이력)
 
 - 독자가 겪는 장면: 여러 터미널·저장소·브랜치에서 AI 코딩 세션을 동시에 돌리며 작업 상태를 놓침
 - 독자가 모르는 것: Xirp의 정체, Portal 의존 여부, worktree와 transcript 공유 범위
@@ -34,7 +98,7 @@
 - 검색량 근거: 별도 검색량 도구를 쓰지 않은 정성 판단이며 트래픽을 약속하지 않음
 - Orca 글과의 중복 점검: `orca-agent-ide-guide`는 worktree 격리의 직접 실험이 중심이고, 이번 글은 Xirp의 로컬·Portal 경계와 베타 도입 판단이 중심임
 
-## 제목과 소제목 strip
+## 1차 원고의 제목과 소제목 strip (이력)
 
 | 표면 | 독자 역할 | 검토 결과 |
 |---|---|---|
@@ -51,7 +115,7 @@
 - 원래 소제목 `macOS 베타에서 확인할 네 가지`는 숫자형 탐색 훅보다 행동이 분명하도록 `Xirp 설치 전 확인할 베타 제한`으로 바꿈
 - 문장형 대비 소제목, `A가 아니라 B` 소제목, 범용 `정리·구조·활용` 소제목은 없음
 
-## v2 문체·밀도 수정
+## 1차 원고의 v2 문체·밀도 수정 (이력)
 
 ### analyzer 전후
 
@@ -113,10 +177,10 @@
 
 - 원본 CDN 응답은 `artifacts/media-candidates/`에 JPEG로 보존함
 - 엄격한 저장소 파서와 호환되도록 크롭·주석 없이 PNG로 무손실 변환함
-- 인포그래픽: 없음. Xirp 단독과 Portal의 차이는 3열 표가 더 정확하고 짧음
+- 인포그래픽: 없음. Xirp·Orca 비교와 상황별 선택은 두 개의 짧은 표가 더 정확하며 기존 공식 화면 3장으로 사용 지점을 설명할 수 있음
 - 생성 hero: 없음. 공식 홈 화면이 제품 정체를 직접 보여 줌
 
-## 현재 검사와 남은 위험
+## 1차 ready 검사 이력과 현재 재검증 상태
 
 - `analyze_prose.py`: 수정 전·후 실행 완료. 수정 후 평균 35.7자, 50자 초과 12개, generic heading 0, stock phrase 0, 70자 초과 문장 0
 - `check_rich_post_v2.py`: 로컬 source/media 검사 통과, media 3·directive 3
@@ -127,7 +191,14 @@
 - remote media: 사용자가 돌려준 세 Tistory CDN URL을 각 stable media ID에 고정하고 baseline GET 통과
 - final-page QA: 독립 reviewer `/root/xirp_source_review`가 1280×900·360×800 light/dark를 확인. H1 1개, 목차 target 8개, page overflow 0, remote image 3개 로드
 - fragment QA: H1 0, placeholder 0, local path 0
-- 최종 상태: paste-ready fragment 생성 완료, lifecycle `ready`; 실제 공개 URL 확인 전까지 `published`로 바꾸지 않음
+- 위 source·page pass는 1차 원고의 역사적 기록이며 2026-08-19 본문 개정에는 적용하지 않음
+- 개정 원고 local preflight: 1280×900·360×780 light/dark 확인. H1 1개, H2 6개, figure 3개, 전체 페이지 가로 넘침 없음
+- 개정 원고 mobile overflow: 두 비교표는 620px, 새 세션·Grid view 화면은 760px·916px 스크롤 컨테이너 안에서만 가로 스크롤함
+- 개정 원고 media load: 공식 화면 3장 모두 1800×1153으로 로드되고 깨진 이미지 없음
+- 개정 원고 final-page QA: 독립 reviewer `/root/xirp_revision_review`가 fresh Chrome 151 세션에서 1280×900·360×800 light/dark를 확인. H1 1개, 목차 target 6개, page overflow 0, remote image 3개 로드
+- 개정 원고 focused QA: 두 620px 표와 760px·916px 미디어가 모바일 내부 스크롤에서 동작하고, Portal의 Catalog → Workspace → MCP 흐름과 다크 모드 대비가 읽기 쉬움
+- 개정 fragment QA: H1 0, placeholder 0, local path 0
+- 현재 상태: lifecycle `ready`; source freeze, local preflight, remote final-page QA와 exact fragment 고정 완료
 
 ## 독립 source review 이력
 
