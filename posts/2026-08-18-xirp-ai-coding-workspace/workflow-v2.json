@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Claude Code, Codex, Gemini 가운데 둘 이상을 쓰거나 여러 프로젝트의 AI 코딩 세션을 동시에 관리하는 macOS 개발자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "standard-rich. Xirp를 처음 듣는 개발자가 제품의 정체와 쓰임을 이해하고 베타 참여 후 첫 프로젝트·세션을 시작할 수 있게 한다. 직접 사용 후기는 주장하지 않으며 공식 문서와 공개 화면을 근거로 한다. 독자 마찰 화면은 (1) 홈 화면으로 전체 구조, (2) 새 세션 대화상자로 목표·에이전트·worktree 선택, (3) grid view로 병렬 세션 확인을 보여 준다. 온보딩 각 단계, 단순 프로젝트 목록, 설정 화면은 본문 설명과 중복되고 업로드 부담을 늘려 제외한다. 생성 이미지·GIF·직접 캡처·인포그래픽·복잡 레이아웃·추가 원격 확인 위험은 없다."
+}

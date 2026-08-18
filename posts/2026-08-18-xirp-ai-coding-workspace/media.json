@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "lead_id": "xirp-home",
+  "items": [
+    {
+      "id": "xirp-home",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "source_url": "https://backstage.spotify.com/docs/xirp",
+      "publish_path": "assets/xirp-home-official-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbcySUr%2FdJMcacxsErG%2FAAAAAAAAAAAAAAAAAAAAAKhElEvVOga7wVy7_CYgJGMRAmTvc6wQJOMzN5Zkkz3l%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252BhGOQB5cTTedFTq5EP%252Fg7lDcHaA%253D",
+      "width": 1800,
+      "height": 1153,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "official Spotify Xirp documentation screenshot republished with source attribution for editorial explanation of the public beta interface",
+      "alt": "Xirp 공식 홈 화면에 Projects와 Sessions 메뉴, 새 세션 버튼, 목표 입력창이 표시된 모습",
+      "caption": "상단의 Projects와 Sessions에서 작업 단위를 오가고, 가운데 목표 입력창에서 새 세션을 시작합니다. 출처: Spotify Xirp 공식 문서",
+      "processing": [
+        "preserved the original official JPEG response under artifacts/media-candidates",
+        "losslessly converted the JPEG pixels to PNG without crop, annotation, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "b1c870e980905bf419629b5d875780b0b0a5a1629d1f6a93ee00e146e200b7a2",
+      "status": "validated"
+    },
+    {
+      "id": "xirp-new-session",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C04",
+        "C05"
+      ],
+      "source_url": "https://backstage.spotify.com/docs/xirp/sessions",
+      "publish_path": "assets/xirp-new-session-official-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9IPpu%2FdJMcacEjsig%2FAAAAAAAAAAAAAAAAAAAAAGnmvD84IcqojIELI6CFlFo49JnqDSbt9hhfIVlZ1XoP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DBN%252Br0g6nO3rw3GiZS4wTD%252B2zesk%253D",
+      "width": 1800,
+      "height": 1153,
+      "display_width": 916,
+      "mobile_scroll_width": 760,
+      "placement": "after:first-session-steps",
+      "rights": "official Spotify Xirp documentation screenshot republished with source attribution for editorial explanation of the public beta interface",
+      "alt": "Xirp의 새 세션 창에 목표 입력란, worktree 선택 아이콘, Claude 에이전트 선택 메뉴, 시작 버튼이 보이는 공식 화면",
+      "caption": "가운데 목표를 적고 아래쪽에서 worktree와 에이전트를 확인한 뒤 시작합니다. 모바일에서는 이미지를 좌우로 밀어 입력란과 하단 선택값을 함께 볼 수 있습니다. 출처: Spotify Xirp 공식 문서",
+      "processing": [
+        "preserved the original official JPEG response under artifacts/media-candidates",
+        "losslessly converted the JPEG pixels to PNG without crop, annotation, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "7dd4f2d61896477b66b225e4fa433fe7c2ff34b8a086c7e8e610d292a4e9a681",
+      "status": "validated"
+    },
+    {
+      "id": "xirp-grid-view",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C06"
+      ],
+      "source_url": "https://backstage.spotify.com/docs/xirp/sessions",
+      "publish_path": "assets/xirp-grid-view-official-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FlDZFm%2FdJMcacEjsih%2FAAAAAAAAAAAAAAAAAAAAANnwV5L4rckfb9p6txhqoMO8DRe9Yiy5mCPrLXwHO1OL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FqpaIcuis3Bq%252BlsBGIypfFx8uP0%253D",
+      "width": 1800,
+      "height": 1153,
+      "display_width": 916,
+      "mobile_scroll_width": 916,
+      "placement": "after:grid-view-reading-order",
+      "rights": "official Spotify Xirp documentation screenshot republished with source attribution for editorial explanation of the public beta interface",
+      "alt": "Xirp Grid view 공식 화면의 왼쪽에 여러 세션과 idle 상태가 나열되고 오른쪽에 선택한 Claude Code 터미널이 표시된 모습",
+      "caption": "왼쪽에서 세션별 상태를 찾고 오른쪽 터미널에서 작업을 이어갑니다. 모바일에서는 이미지를 좌우로 밀어 세션 목록과 터미널을 함께 확인할 수 있습니다. 출처: Spotify Xirp 공식 문서",
+      "processing": [
+        "preserved the original official JPEG response under artifacts/media-candidates",
+        "losslessly converted the JPEG pixels to PNG without crop, annotation, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "fa53347330d1c84ce632c8cc3cf8fb5ee0ba1986931a53f44e7a75e09e5006d2",
+      "status": "validated"
+    }
+  ]
+}
