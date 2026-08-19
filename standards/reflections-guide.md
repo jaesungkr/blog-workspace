@@ -15,8 +15,11 @@
 1. Title: default to the scripture reference, such as `마태복음 25:31-46`.
 2. Opening: briefly set the Sunday context, include one roadmap sentence, then
    state the recurring fear/confession in fresh natural language.
-3. Scripture: use the requested translation, include verse numbers, and add a
-   short lead paragraph that names the passage's tension.
+3. Scripture: use the requested translation, include verse numbers and the
+   complete requested passage rather than selected excerpts, and add a short
+   lead paragraph that names the passage's tension. Treat this as the default
+   for every new sermon meditation unless the user explicitly asks for a
+   shortened passage.
 4. Sermon summaries: separate by preacher. Give 1-2 framing sentences, then
    about three numbered core claims with 2-4 sentences each.
 5. Comparison: when there are multiple sermons, introduce a three-column
