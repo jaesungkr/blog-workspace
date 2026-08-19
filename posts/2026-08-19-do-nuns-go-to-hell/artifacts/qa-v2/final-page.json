@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-08-19",
+  "checked_by": "/root/source_reviewer",
+  "browser": "Chrome/151.0.7922.138",
+  "session": "8c160bf5-8317-4ea0-8fb9-b642b7a26e12",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "24493149a37001509c3967c7e142040339fff8d5e27cea2089257aed938b5816",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "2444cccbdee45855140ed0bd1890141052897b6597d78faadd51b3250eee0874",
+  "source_pass_sha256": "2c4ed4a1b1d5e7604148a5e05771e93a6bd7ee5e3afb1c2664839e9e35a5e6f5",
+  "article_content_sha256": "62de0ab0df62caa36243af4f6e2e29dc8525f61e550aa3e418f574472851540f",
+  "media_sha256": "2b8bf6c3813c5943dade0760e3909e2c3b2402f6a068eb660fad245c27f1acf2",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "fe21a76c73841a337e893aa57ebd948d314929c8df780614f0be51f53068e5d6",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/do-nuns-go-to-hell-rich-preview.html",
+  "preview_sha256": "5c969bd5a872342a49ab6a9a03ac8b2ebdb5379349b4541fcb96a8dd4509b514",
+  "preview_structure_sha256": "e677109ef406c03f9fb00a8f803e581b790d61c8bc9e1ca3fd327e82c11823eb",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/do-nuns-go-to-hell-rich-preview.html",
+  "dark_preview_sha256": "efc55e69db8d10de4fda6c50bd642f7b5aec1c877521aa29685b7a502ccc7794",
+  "fragment_path": "artifacts/qa-v2/final-rendered/do-nuns-go-to-hell-tistory-fragment.html",
+  "fragment_sha256": "51cf18eed74136503972d47955b3cf51ff1dc2addca876927301b1a4925d1d02",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "11562dbc15834331552cc399089a74a8f06c2185d8e26acb0bc5812163d1bb75"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "00e15a8b224e247776482f64de83518927544a3509bea6a2a1232e8214787475"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "803ca3e31bc90d9acf78370e234e87e27624481f556557bfeacfe946a6b01992"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "f7789c9c02b58dbd263bc5059e576027536906ca8a87b1250f6875fa2b52ca55"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

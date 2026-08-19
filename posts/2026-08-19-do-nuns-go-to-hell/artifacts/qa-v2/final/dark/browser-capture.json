@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-dark",
+  "checked_at": "2026-08-19T13:47:08.928977Z",
+  "checked_by": "/root/source_reviewer",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-dark-rendered/do-nuns-go-to-hell-rich-preview.html",
+  "preview_sha256": "efc55e69db8d10de4fda6c50bd642f7b5aec1c877521aa29685b7a502ccc7794",
+  "screenshot_root": "artifacts/qa-v2/final/dark",
+  "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.138",
+  "protocol_version": "1.3",
+  "session": "5780cc07-3f21-4b61-9960-d91ee8792978",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-19-do-nuns-go-to-hell/artifacts/qa-v2/final-dark-rendered/do-nuns-go-to-hell-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 4358,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FUObCW%2FdJMcaaTWjjn%2FAAAAAAAAAAAAAAAAAAAAAJIVzA3F96bmPdT7ZH4e1X4uFM2ic7XODUJtbe9bwkYI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOQm6c8y6ocHNbxGxeGHcV8uRtrw%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "803ca3e31bc90d9acf78370e234e87e27624481f556557bfeacfe946a6b01992",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-19-do-nuns-go-to-hell/artifacts/qa-v2/final-dark-rendered/do-nuns-go-to-hell-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 6302,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FUObCW%2FdJMcaaTWjjn%2FAAAAAAAAAAAAAAAAAAAAAJIVzA3F96bmPdT7ZH4e1X4uFM2ic7XODUJtbe9bwkYI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOQm6c8y6ocHNbxGxeGHcV8uRtrw%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "f7789c9c02b58dbd263bc5059e576027536906ca8a87b1250f6875fa2b52ca55",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png"
+    }
+  ]
+}

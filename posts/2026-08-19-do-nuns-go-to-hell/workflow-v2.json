@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "어느 종파나 종교가 구원의 정답인지보다 하나님이 사람을 어떻게 판단하시는지가 궁금한 신앙인",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "개인의 실제 가톨릭 학교 경험에서 출발하는 질문형 글이다. 교리와 성경 구절은 공식·1차 자료로 확인하되 어느 한 교단의 구원론을 정답으로 확정하지 않는다. 개념적 긴장을 담을 생성형 정적 리드 이미지 1장만 사용하며, 직접 캡처·GIF·인포그래픽·복잡한 레이아웃·추가 화면 폭·두 번째 원격 fetch는 필요하지 않다."
+}

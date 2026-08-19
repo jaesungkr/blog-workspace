@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-19T13:46:23.114536Z",
+  "checked_by": "/root/source_reviewer",
+  "article_content_sha256": "62de0ab0df62caa36243af4f6e2e29dc8525f61e550aa3e418f574472851540f",
+  "brief_sha256": "0457c5f53561aec3736aaff59813ebbbce2e1447e1e5d3ae029bae5414aa7924",
+  "evidence_sha256": "90f7201e37469d381132efaed5e63644e1021d5d9bb6e105b988ebb90d12e185",
+  "note": "Final-section readability and Markdown link repair passed; claims and evidence preserved."
+}

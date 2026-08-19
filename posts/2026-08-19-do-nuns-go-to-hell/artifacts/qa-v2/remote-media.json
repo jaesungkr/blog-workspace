@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "212bbfde-78b3-4886-8bb1-5fbfdc96f171",
+  "recorded_at": "2026-08-19T13:39:37.943041Z",
+  "recorded_by": "/root",
+  "media_sha256": "2b8bf6c3813c5943dade0760e3909e2c3b2402f6a068eb660fad245c27f1acf2",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "do-nuns-go-to-hell-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FUObCW%2FdJMcaaTWjjn%2FAAAAAAAAAAAAAAAAAAAAAJIVzA3F96bmPdT7ZH4e1X4uFM2ic7XODUJtbe9bwkYI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOQm6c8y6ocHNbxGxeGHcV8uRtrw%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FUObCW%2FdJMcaaTWjjn%2FAAAAAAAAAAAAAAAAAAAAAJIVzA3F96bmPdT7ZH4e1X4uFM2ic7XODUJtbe9bwkYI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOQm6c8y6ocHNbxGxeGHcV8uRtrw%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-19T13:39:37.942774Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1881610,
+      "byte_length": 1881610,
+      "sha256": "fe0dfc2008b38a829bc6725024fc873fd00c25c687a82cf23252564b96dff24f",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Wed, 19 Aug 2026 13:36:08 GMT"
+    }
+  ]
+}

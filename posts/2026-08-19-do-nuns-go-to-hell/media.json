@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "lead_id": "do-nuns-go-to-hell-hero",
+  "items": [
+    {
+      "id": "do-nuns-go-to-hell-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-19",
+      "environment": "OpenAI built-in image generation, contemplative editorial photography direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/do-nuns-go-to-hell-hero-v2-source.png",
+      "publish_path": "assets/do-nuns-go-to-hell-hero-v2.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FUObCW%2FdJMcaaTWjjn%2FAAAAAAAAAAAAAAAAAAAAAJIVzA3F96bmPdT7ZH4e1X4uFM2ic7XODUJtbe9bwkYI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOQm6c8y6ocHNbxGxeGHcV8uRtrw%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "조용한 가톨릭 예배당에서 수녀가 앉아 있고 서로 다른 돌바닥 위로 하나의 아침빛이 이어지는 모습",
+      "caption": "조용한 예배당의 수녀와 바닥의 경계를, 끊기지 않는 아침빛이 가로지릅니다.",
+      "processing": [
+        "generated from an original contemplative faith-question art-direction prompt",
+        "full-size creator inspection",
+        "360-by-202-pixel thumbnail inspection",
+        "targeted lighting and shadow-balance edit after independent hero review",
+        "independent hero validation pass by /root/hero_validator"
+      ],
+      "redactions": [],
+      "sha256": "0f55644f6d34da8d6375125dbf77bf7a1b797877dfa333fc28c54cb69c5ca582",
+      "status": "validated"
+    }
+  ]
+}
