@@ -124,10 +124,11 @@
 | 8 | `Thoughts` 독립 대조 | 마지막 문단이 `질문을 하나님께 가져감`, `예수님을 옮기는 것과 가까이 가는 것의 구분`, `계속 질문하는 것이 신앙의 공사`라는 사용자 원문에 없는 적용을 추가함 | 해당 문단 전체를 삭제하고, 사용자가 실제로 남긴 `어디까지 나아가고 기다려야 하는가`라는 미해결 질문에서 끝냄 | `/root/source_reviewer`가 사용자 원문과 새 `Thoughts`를 다시 대조해 경험·의문·미해결 결론의 보존과 추가 적용의 부재를 확인하고 pass |
 | 9 | 일반 Markdown 렌더 | 긴 성경 인용과 11개 `Thoughts` 문단의 모바일 가독성, 본문 이미지 제거 여부 | UTF-8 검수용 렌더를 916px 데스크톱과 iframe 기준 360×800px 모바일로 확인 | 가로 넘침 0, 데스크톱 본문 916px·인용 876px, 모바일 본문 360px·인용 320px, 이미지 0개, media directive 0개, `Thoughts` 11문단의 줄바꿈과 마지막 미해결 질문 정상 |
 | 10 | 최종 렌더 독립 시각 검토 | 최초 데스크톱 full-page 캡처에서 브라우저 스티칭 중복이 발생해 전체 페이지 판정 불가 | 제목을 포함한 검수용 미리보기를 상단·성경 본문·설교 요약·Thoughts의 고정 viewport 4장으로 다시 캡처하고, 360px 3장과 함께 독립 검토 | `/root/hero_reviewer`가 제목부터 마지막 질문까지 중복·누락 없이 이어짐, 데스크톱·360px 가독성, 가로 넘침·한글 깨짐 없음, 이미지·배경 이미지 0건을 확인하고 final rendered-page pass |
+| 11 | 사용자 `Thoughts` 후속 정정 | `그냥 믿어졌습니다`가 평소 믿음의 상태를 필요 이상으로 확신적으로 표현함 | 의구심이 없었다는 뜻이 아니라 `이해하고 받아들이는 데 걸림돌이 적었습니다`로 느낌의 강도를 바로잡음 | `/root/source_reviewer`가 사용자 후속 정정과의 일치, 믿음 상태의 과장 제거, 앞뒤 문장과의 자연스러운 연결을 확인하고 pass |
 
 - 중대한 문제가 없으면 `발견한 문제`에 `없음`이라고 쓰고 확인 근거를
   `재검증 결과`에 적습니다.
-- 최종 종료 판단: 새 원고의 독립 source 검토, 일반 Markdown 정식 렌더, 독립 데스크톱·360px 최종 화면 검토 통과. `ready` 유지
+- 최종 종료 판단: `Thoughts` 후속 정정을 반영하고 독립 source 재검토를 통과함. `ready` 유지
 - 다시 열어 확인한 파일: `article.md`, `media.json`, `assets/under-construction-pattern-hero.png`, `artifacts/qa-v2/hero/under-construction-pattern-hero-360.png`, `artifacts/qa-v2/preflight/under-construction-rich-preview.html`, `artifacts/qa-v2/preflight-dark/under-construction-rich-preview.html`
 
 ## 검사와 남은 위험
