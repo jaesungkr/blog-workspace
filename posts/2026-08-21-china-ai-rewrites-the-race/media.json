@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "lead_id": "china-ai-race-hero",
+  "items": [
+    {
+      "id": "china-ai-race-hero",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": [
+        "C03",
+        "C05"
+      ],
+      "actor": "Codex deterministic Pillow renderer",
+      "captured_at": "2026-08-21",
+      "environment": "Python 3 with Pillow; official brand assets from Moonshot AI, QwenLM, DeepSeek AI, and Z.ai",
+      "source_url": "",
+      "raw_path": "artifacts/captures/china-ai-logo-roster-source-v1.png",
+      "publish_path": "assets/china-ai-logo-roster-hero-v7.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Ftf8MY%2FdJMcaf1ZSGx%2FAAAAAAAAAAAAAAAAAAAAAOS-lGZgZJQdw5riE4ONhwQHUGeDkgIwLZlITXbKCXcH%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDy%252FvPxEODUfSuyAMkqdtBbKOD0Y%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "도입부의 핵심 결론 다음",
+      "rights": "언론·비평 목적의 dev.log 편집 합성. Kimi·Qwen·DeepSeek·Z.ai 로고와 상표의 권리는 각 소유자에게 있으며 제휴·후원을 의미하지 않음. 공식 자산 URL과 원본 해시는 artifacts/logo-sources.json에 기록",
+      "alt": "Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터",
+      "caption": "딥시크 이후 중국 AI 경쟁은 Kimi, Qwen, GLM, DeepSeek처럼 서로 다른 네 브랜드가 동시에 선두권에 등장하는 흐름으로 넓어졌습니다. 각 상표의 권리는 해당 소유자에게 있습니다.",
+      "processing": [
+        "Kimi·Qwen·DeepSeek·Z.ai 공식 로고의 비율과 고유색을 유지한 1672×941 비대칭 editorial-tech 로스터 합성",
+        "Qwen 자산의 흰 배경과 Z.ai SVG 렌더의 외곽 배경만 제거하고 로고 도형·색상은 유지",
+        "전체 원본과 실제 320×180 축소본에서 브랜드 식별, 클리핑, 알파 halo, subject-swap을 독립 검증"
+      ],
+      "redactions": [],
+      "sha256": "e039b6d8660fab262db0023105c702f043ad0b367887377f0d5b650b5c989e29",
+      "status": "validated"
+    },
+    {
+      "id": "china-ai-three-signals",
+      "kind": "image",
+      "origin": "generated",
+      "role": "comparison",
+      "claim_ids": [
+        "C03",
+        "C04",
+        "C06"
+      ],
+      "actor": "Codex deterministic Pillow renderer",
+      "captured_at": "2026-08-21",
+      "environment": "Python 3 with Pillow; Apple SD Gothic Neo",
+      "source_url": "",
+      "publish_path": "assets/china-ai-signal-field-v7.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIMsZY%2FdJMcahll5oS%2FAAAAAAAAAAAAAAAAAAAAANm34AqOYRhqpvqQYucDcLiSG8lxGM4drKdEheUAVj3k%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DjJp7SXzDEvoDONvDlabKTVKHT84%253D",
+      "width": 1080,
+      "height": 1200,
+      "display_width": 760,
+      "placement": "톱10보다 중요한 세 가지 신호의 판정·한계 문단 다음",
+      "rights": "dev.log가 코드로 제작한 원본 인포그래픽; 제3자 시각 자산 미사용",
+      "alt": "성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식",
+      "caption": "중국 AI 경쟁력은 한 점수가 아니라 성능·비용·확산의 세 신호가 함께 움직이는 데서 나옵니다. 서로 다른 설정과 시점은 실제 업무에서 다시 비교해야 합니다.",
+      "processing": [
+        "1080×1200 editorial-tech 비대칭 signal-field 레이아웃 렌더",
+        "53·53·58·60점 대 62점, 출력 가격 100 대 20·14.7·13.2, 파생 모델 63%를 정량 도형으로 표현",
+        "원본의 360 CSS px 표시와 전체 spine·connector·label 확대 크롭, 한글·영문 글리프, type-scale 독립 검증"
+      ],
+      "redactions": [],
+      "sha256": "755f5b71922af7b66e4757f1834763ac183faee85e55333c793efb97c28319db",
+      "status": "validated"
+    }
+  ]
+}

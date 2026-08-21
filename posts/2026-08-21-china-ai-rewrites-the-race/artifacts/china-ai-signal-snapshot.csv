@@ -1,0 +1,7 @@
+checked_at_kst,benchmark_version,developer_country,developer,model,reasoning_setting,intelligence_index,input_usd_per_m_tokens,output_usd_per_m_tokens,weights,source_url
+2026-08-21,Artificial Analysis v4.1.1,China,Kimi,Kimi K3,max,60,3.00,15.00,open,https://artificialanalysis.ai/models/kimi-k3/
+2026-08-21,Artificial Analysis v4.1.1,China,Alibaba,Qwen3.8 Max,default,58,2.00,6.00,closed,https://artificialanalysis.ai/models/qwen3-8-max
+2026-08-21,Artificial Analysis v4.1.1,China,Z AI,GLM-5.2,max,53,1.40,4.40,open,https://artificialanalysis.ai/models/glm-5-2/
+2026-08-21,Artificial Analysis v4.1.1,China,DeepSeek,DeepSeek V4 Pro 0813,max,53,1.32,3.96,open,https://artificialanalysis.ai/models/deepseek-v4-pro
+2026-08-21,Artificial Analysis v4.1.1,United States,Anthropic,Claude Fable 5,max with Opus 4.8 fallback,62,10.00,50.00,closed,https://artificialanalysis.ai/models/claude-fable-5/
+2026-08-21,Artificial Analysis v4.1.1,United States,OpenAI,GPT-5.6 Sol,medium,56,5.00,30.00,closed,https://artificialanalysis.ai/models/gpt-5-6-sol-medium/

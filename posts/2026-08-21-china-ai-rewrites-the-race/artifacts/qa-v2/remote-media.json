@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "a55749a4-3aa9-4c10-8aaa-dad3d4845f0a",
+  "recorded_at": "2026-08-21T08:36:29.657903Z",
+  "recorded_by": "/root",
+  "media_sha256": "341be28c2c85e502c3a2fe4bad09a12a99f099d190b760879011bec3c2acc988",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "china-ai-race-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Ftf8MY%2FdJMcaf1ZSGx%2FAAAAAAAAAAAAAAAAAAAAAOS-lGZgZJQdw5riE4ONhwQHUGeDkgIwLZlITXbKCXcH%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDy%252FvPxEODUfSuyAMkqdtBbKOD0Y%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Ftf8MY%2FdJMcaf1ZSGx%2FAAAAAAAAAAAAAAAAAAAAAOS-lGZgZJQdw5riE4ONhwQHUGeDkgIwLZlITXbKCXcH%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDy%252FvPxEODUfSuyAMkqdtBbKOD0Y%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-21T08:36:29.599066Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 163561,
+      "byte_length": 163561,
+      "sha256": "1e8909e21956cf43ad9da460bd7ff55e8626fc98d065fff9e10149e04afb8e9e",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 21 Aug 2026 08:35:26 GMT"
+    },
+    {
+      "id": "china-ai-three-signals",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIMsZY%2FdJMcahll5oS%2FAAAAAAAAAAAAAAAAAAAAANm34AqOYRhqpvqQYucDcLiSG8lxGM4drKdEheUAVj3k%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DjJp7SXzDEvoDONvDlabKTVKHT84%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIMsZY%2FdJMcahll5oS%2FAAAAAAAAAAAAAAAAAAAAANm34AqOYRhqpvqQYucDcLiSG8lxGM4drKdEheUAVj3k%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DjJp7SXzDEvoDONvDlabKTVKHT84%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-21T08:36:29.657673Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 105809,
+      "byte_length": 105809,
+      "sha256": "e631d01e94f5c4e2141ed7d18db8deba61b079d5611cddf495cfaa05b31738ee",
+      "format": "png",
+      "width": 1080,
+      "height": 1200,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 21 Aug 2026 08:35:26 GMT"
+    }
+  ]
+}

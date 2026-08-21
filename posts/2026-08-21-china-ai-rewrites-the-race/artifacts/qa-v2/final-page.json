@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-08-21",
+  "checked_by": "/root/source_reviewer",
+  "browser": "Chrome/151.0.7922.172",
+  "session": "91dd1e9d-c76c-4e8e-82da-dd2537136056",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "fa66ce13362f3b46296ff0708914d70b251835183cc428a8643e9d694034c98d",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "80e71e49c13e33c8aff2bbc87996f58f1049eb19944cb8e1013e0054187a4e74",
+  "source_pass_sha256": "804d368311290ca7db25d2d8215fe9f289ac8c0a2e18c5a260364a96f33ed3e8",
+  "article_content_sha256": "44cb66a6521006c24d1875195ade26d7e337b063dc5520993a16b0abde24620a",
+  "media_sha256": "341be28c2c85e502c3a2fe4bad09a12a99f099d190b760879011bec3c2acc988",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "e8af5ae3674285bb56ca904d3e42129fe31a2c06d78ffa432f4658f8d7816f20",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/china-ai-rewrites-the-race-rich-preview.html",
+  "preview_sha256": "7107531c7ba7d322b6f2bfda01e65e28342b1c42d802a99f945b7e2e2c35939d",
+  "preview_structure_sha256": "667b1112b5dffa2843275411ed490745cdb98caeb9fda96431d27e08cf615781",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/china-ai-rewrites-the-race-rich-preview.html",
+  "dark_preview_sha256": "126c71f57d564eb4a0ad29c9aa6ec2bff5670cd6bef02797a6d24aa653e42f77",
+  "fragment_path": "artifacts/qa-v2/final-rendered/china-ai-rewrites-the-race-tistory-fragment.html",
+  "fragment_sha256": "f3457c5384fbeda26cad737ae21ab80012ded4b84b056f3807da1a62dfdbc532",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "2c0d9c0d8533900359bdff117f0c6d4579d256eaeefc706cea09cda4fefa535e"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "9d73a221f3ad421b55c882723e44b87ec66dadf9fddc07510e211e1ff440ec06"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "88243dc965c06709fe024c478f76036a19c68d86d832ead90c0ac187d6164197"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "ecd1e45e87c316fb9c6a4c1c3d7b9d7e8572c751499251468936c894d33c75ca"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

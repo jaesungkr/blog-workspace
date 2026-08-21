@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "미국 빅테크 중심으로만 AI 산업을 보는 비전문 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": true,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "중앙일보의 중국 AI 기사에서 출발해 공개 자료로 중국 AI 경쟁력의 구조를 해석하는 source-based standard-rich 글이다. 리드 이미지는 사용자의 직접 피드백에 따라 추상 생성형 장면을 폐기하고 Kimi·Qwen·DeepSeek·Z.ai 공식 로고를 사용한 편집형 브랜드 로스터로 교체했다. 인포그래픽 1장은 성능, 비용, 개발자 확산의 세 축을 정량적으로 보여 준다. 직접 제품 조작, GIF, UI 캡처는 없으며 복잡한 레이아웃과 고위험 원격 미디어도 사용하지 않는다."
+}

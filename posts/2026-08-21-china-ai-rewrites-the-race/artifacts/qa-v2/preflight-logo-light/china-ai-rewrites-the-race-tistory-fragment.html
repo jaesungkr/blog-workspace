@@ -1,0 +1,398 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>AI 시장을 볼 때 ChatGPT, Claude, Gemini만 떠올려도 큰 문제가 없던 시기가 있었습니다. 그런데 <a href="https://www.joongang.co.kr/article/25453502" style="color:#1a73e8;text-decoration:none;" target="_blank">중앙일보는 8월 15일</a> 중국 모델 4개가 AI 종합 평가 톱10에 들었고, 일부 모델의 출력 단가는 미국 선두 모델의 약 10분의 1이라고 보도했습니다.</p>
+<p>같은 시점의 공개 자료를 다시 묶으니 더 현실적인 결론이 나왔습니다. <strong>중국 AI를 값싼 모방품으로 보고 비교 대상에서 빼는 판단은 이미 위험합니다.</strong> 딥시크 한 곳을 넘어 여러 연구소가 성능, 가격, 배포 방식에서 미국 선두권을 압박하고 있기 때문입니다.</p>
+<figure class="devlog-rich__figure" data-media-id="china-ai-race-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="__TISTORY_MEDIA_CHINA_AI_RACE_HERO__" alt="Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">딥시크 이후 중국 AI 경쟁은 Kimi, Qwen, GLM, DeepSeek처럼 서로 다른 네 브랜드가 동시에 선두권에 등장하는 흐름으로 넓어졌습니다. 각 상표의 권리는 해당 소유자에게 있습니다. <span class="devlog-rich__credit">· Codex deterministic Pillow renderer 캡처 · 2026-08-21</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#톱10보다-중요한-세-가지-신호">톱10보다 중요한 세 가지 신호</a></li>
+<li><a href="#네-연구소가-동시에-선두권에-진입">네 연구소가 동시에 선두권에 진입</a></li>
+<li><a href="#낮은-가격이-바꾸는-모델-선택표">낮은 가격이 바꾸는 모델 선택표</a></li>
+<li><a href="#오픈웨이트가-넓힌-개발자-생태계">오픈웨이트가 넓힌 개발자 생태계</a></li>
+<li><a href="#미국의-자본인프라-우위">미국의 자본·인프라 우위</a></li>
+<li><a href="#민감한-데이터를-맡기기-전-검증">민감한 데이터를 맡기기 전 검증</a></li>
+<li><a href="#중국-모델을-비교표에-넣을-때">중국 모델을 비교표에 넣을 때</a></li>
+<li><a href="#한국-ai가-먼저-증명할-현장">한국 AI가 먼저 증명할 현장</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="톱10보다-중요한-세-가지-신호">
+<h2 id="톱10보다-중요한-세-가지-신호">톱10보다 중요한 세 가지 신호</h2>
+<p>순위표는 빠르게 바뀝니다. 평가 문제나 추론 강도가 달라지면 같은 모델의 점수도 움직입니다. 중국 AI가 실제 경쟁자인지 보려면 최고점 하나보다 다음 세 질문이 더 유용합니다.</p>
+<ol><li>서로 다른 중국 개발사의 모델이 미국 선두권 성능에 반복해서 가까워지고 있는가?</li><li>비슷한 능력을 훨씬 낮은 가격에 제공하는 모델이 여럿인가?</li><li>공개된 가중치가 다운로드와 파생 모델로 이어져 개발자 생태계를 넓히고 있는가?</li></ol>
+<p>2026년 8월 21일에 확인한 자료에서는 세 항목이 모두 충족됐습니다. 중국의 전면 역전까지 증명된 것은 아닙니다. 미국은 투자와 데이터센터, 최상위 모델 수에서 여전히 앞서 있습니다. 보안과 검열 문제도 실제 도입 단계에서 따로 확인해야 합니다.</p>
+<figure class="devlog-rich__figure" data-media-id="china-ai-three-signals" style="--rich-media-width:760px"><img class="devlog-rich__image" src="__TISTORY_MEDIA_CHINA_AI_THREE_SIGNALS__" alt="성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식" width="1080" height="1200" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">중국 AI 경쟁력은 한 점수가 아니라 성능·비용·확산의 세 신호가 함께 움직이는 데서 나옵니다. 서로 다른 설정과 시점은 실제 업무에서 다시 비교해야 합니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="네-연구소가-동시에-선두권에-진입">
+<h2 id="네-연구소가-동시에-선두권에-진입">네 연구소가 동시에 선두권에 진입</h2>
+<p><a href="https://artificialanalysis.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis Intelligence Index v4.1.1</a>은 독립 평가 지수입니다. 수학, 코딩, 과학, 도구 사용 등 9개 평가를 묶습니다. Kimi K3는 60점, Qwen3.8 Max는 58점을 기록했습니다. GLM-5.2와 DeepSeek V4 Pro 0813은 각각 53점이었습니다. 같은 평가의 미국 모델 Claude Fable 5는 62점이었습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>개발사·모델 (추론 설정)</th><th>지수 점수</th><th>입력·출력 100만 토큰 가격</th><th>공개 방식</th></tr></thead><tbody><tr><td>Moonshot AI · Kimi K3 (max)</td><td>60</td><td>3달러 · 15달러</td><td>오픈웨이트</td></tr><tr><td>Alibaba · Qwen3.8 Max (default)</td><td>58</td><td>2달러 · 6달러</td><td>폐쇄형</td></tr><tr><td>Z AI · GLM-5.2 (max)</td><td>53</td><td>1.40달러 · 4.40달러</td><td>오픈웨이트</td></tr><tr><td>DeepSeek · V4 Pro 0813 (max)</td><td>53</td><td>1.32달러 · 3.96달러</td><td>오픈웨이트</td></tr><tr><td>Anthropic · Claude Fable 5 (max·Opus 4.8 fallback)</td><td>62</td><td>10달러 · 50달러</td><td>폐쇄형</td></tr><tr><td>OpenAI · GPT-5.6 Sol (medium)</td><td>56</td><td>5달러 · 30달러</td><td>폐쇄형</td></tr></tbody></table></div>
+<p>이 표는 2026년 8월 21일의 같은 지수 버전과 평가 묶음으로 모은 스냅샷입니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">max</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">medium</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">default</code>는 평가 때 사용한 추론 강도를 가리킵니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">fallback</code>은 Fable 5가 필요할 때 Opus 4.8로 작업을 넘기는 설정입니다. 추론 강도와 fallback 사용 여부가 달라 통제된 일대일 실험은 아닙니다. 점수는 높을수록 좋지만 설정 차이까지 성능 차이로 단정할 수 없습니다.</p>
+<p>중국 쪽에는 <a href="https://artificialanalysis.ai/models/kimi-k3/" style="color:#1a73e8;text-decoration:none;" target="_blank">Kimi K3</a>와 <a href="https://artificialanalysis.ai/models/qwen3-8-max" style="color:#1a73e8;text-decoration:none;" target="_blank">Qwen3.8 Max</a>가 있습니다. <a href="https://artificialanalysis.ai/models/glm-5-2/" style="color:#1a73e8;text-decoration:none;" target="_blank">GLM-5.2</a>와 <a href="https://artificialanalysis.ai/models/deepseek-v4-pro" style="color:#1a73e8;text-decoration:none;" target="_blank">DeepSeek V4 Pro</a>도 함께 놓았습니다. 네 모델은 <a href="https://artificialanalysis.ai/models/claude-fable-5/" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude Fable 5</a> 점수의 85.5~96.8% 구간에 들어왔습니다. 설정 차이를 감안해도 네 개발사가 동시에 상위 점수대에 나타났다는 관찰은 남습니다. 딥시크 하나가 사라지면 끝날 흐름으로 보기 어려운 이유입니다.</p>
+<p><a href="https://hai.stanford.edu/assets/files/hai-digichina-issue-brief-beyond-deepseek-chinas-diverse-open-weight-ai-ecosystem-policy-implications.pdf" style="color:#1a73e8;text-decoration:none;" target="_blank">Stanford HAI와 DigiChina의 2025년 12월 보고서</a>는 당시 강력한 모델을 공개하는 중국 조직이 12곳을 넘는다고 정리했습니다. Alibaba는 여러 크기와 형태의 Qwen 계열을 운영했습니다. Moonshot AI와 Z AI, DeepSeek도 각자의 주력 모델을 내놓았습니다. 2026년 8월 점수표에 이 네 곳이 다시 나타났습니다. 이제 중국 AI를 한 회사의 성패만으로 설명하기 어렵습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="낮은-가격이-바꾸는-모델-선택표">
+<h2 id="낮은-가격이-바꾸는-모델-선택표">낮은 가격이 바꾸는 모델 선택표</h2>
+<p>중앙일보가 가격 비교에 사용한 <a href="https://artificialanalysis.ai/models/claude-fable-5/" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude Fable 5</a>는 이 표에서 62점으로 가장 높습니다. 출력 가격도 100만 토큰당 50달러로 매우 비쌉니다. 이 모델을 기준으로 Qwen3.8 Max, GLM-5.2, DeepSeek V4 Pro의 출력 가격은 7.9~12%, Kimi K3는 30%입니다.</p>
+<p>두 번째 미국 비교점인 <a href="https://artificialanalysis.ai/models/gpt-5-6-sol-medium/" style="color:#1a73e8;text-decoration:none;" target="_blank">GPT-5.6 Sol medium</a>은 56점, 출력 30달러입니다. 이를 기준으로 Qwen3.8 Max·GLM-5.2·DeepSeek V4 Pro는 13.2~20%, Kimi K3는 50%입니다. ‘10분의 1’은 고가의 Fable 5와 일부 중국 모델을 짝지었을 때 나오는 값이며, 미국과 중국 모델 전체의 고정 가격 차이가 아닙니다.</p>
+<p>가격이 낮아질수록 최고 점수만으로 모델을 고르기 어려워집니다. 고객 문의 분류, 문서 요약, 코드 초안은 모델을 많이 호출합니다. 이런 작업에서는 2~3점의 성능 차이보다 월간 비용과 자체 운영 가능성이 더 중요할 수 있습니다. 최고 모델 하나가 시장 전체를 가져가기 어려운 이유입니다.</p>
+<p>토큰 단가가 낮아도 실제 작업이 저렴하다는 보장은 없습니다. 답변이 길어지거나 실패 후 재시도가 늘면 총비용이 커집니다. 캐시 할인, 서버 운영비, 보안 검토와 사람의 재검수도 빠져 있습니다. 실제 도입에서는 같은 업무 입력으로 정확도와 완수 비용을 함께 재야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="오픈웨이트가-넓힌-개발자-생태계">
+<h2 id="오픈웨이트가-넓힌-개발자-생태계">오픈웨이트가 넓힌 개발자 생태계</h2>
+<p>오픈웨이트 모델은 학습이 끝난 가중치를 내려받아 자체 서버에서 실행하거나 목적에 맞게 추가 학습할 수 있습니다. API 제공사의 정책과 가격에만 의존하지 않고 제품 안에 모델을 넣을 여지가 생깁니다. 학습 데이터와 개발 과정까지 모두 공개하는 완전한 오픈소스와는 범위가 다릅니다.</p>
+<p>확산 지표에서도 변화가 보입니다. Stanford 보고서는 2024년 8월부터 2025년 8월까지 Hugging Face 다운로드를 지역별로 나눴습니다. 중국 개발자 모델의 비중은 17.1%로 미국 개발자의 15.8%를 근소하게 앞섰습니다. 2025년 9월 새로 올라온 파인튜닝·파생 모델 중 중국 기반 모델의 비중은 63%였습니다.</p>
+<p>다운로드는 실제 매출이나 기업 도입과 다릅니다. 이 수치는 2025년 공개 생태계의 스냅샷이므로 2026년 현재 점유율로 읽어서도 안 됩니다. 당시 개발자가 중국 모델을 내려받고 그 위에 새 모델을 만들기 시작했다는 확산 신호로 범위를 한정할 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="미국의-자본인프라-우위">
+<h2 id="미국의-자본인프라-우위">미국의 자본·인프라 우위</h2>
+<p>중국 AI의 추격 속도를 인정해도 미국을 넘어섰다고 결론 내릴 근거는 부족합니다. <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" style="color:#1a73e8;text-decoration:none;" target="_blank">Stanford AI Index 2026</a>은 2026년 3월 두 나라의 최상위 모델 성능 차이를 2.7%로 봤습니다. 반면 미국의 2025년 민간 AI 투자는 2,859억 달러로 중국의 124억 달러보다 23배 이상 많았습니다. 미국이 더 많은 최상위 모델과 데이터센터를 보유했다는 점도 함께 적었습니다.</p>
+<p>평가 방법을 바꾸면 격차도 달라집니다. 미국 NIST 산하 CAISI는 <a href="https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro" style="color:#1a73e8;text-decoration:none;" target="_blank">DeepSeek V4 평가</a>에서 미국 프런티어보다 약 8개월 뒤라고 판단했습니다. DeepSeek가 고른 공개 벤치마크에서는 비슷해 보였지만, CAISI가 결과를 보기 전에 확정한 평가 묶음에서는 차이가 나타났습니다. Stanford의 2.7%와 NIST의 8개월은 서로 다른 모델과 평가를 본 결과이므로 하나만 골라 전체 진실처럼 쓰기 어렵습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="민감한-데이터를-맡기기-전-검증">
+<h2 id="민감한-데이터를-맡기기-전-검증">민감한 데이터를 맡기기 전 검증</h2>
+<p>오픈웨이트도 공개 범위와 안전성을 자동으로 보장하지 않습니다. <a href="https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks" style="color:#1a73e8;text-decoration:none;" target="_blank">CAISI의 2025년 DeepSeek 평가</a>는 보안 취약성과 검열 위험을 지적했습니다. 모든 중국 모델에 그대로 적용할 결과는 아닙니다. 기업이 모델의 국적이나 가격만 보고 개인정보와 내부 문서를 맡겨서는 안 된다는 경고로는 충분합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="중국-모델을-비교표에-넣을-때">
+<h2 id="중국-모델을-비교표에-넣을-때">중국 모델을 비교표에 넣을 때</h2>
+<p>한국 기업과 개발자는 미국 모델만 넣던 비교표에 중국 선두 모델도 포함할 필요가 있습니다. 실제 한국어 업무로 성능과 총비용을 다시 재는 것이 먼저입니다. 민감한 데이터를 다룬다면 라이선스와 학습 데이터 설명을 읽고, 제공 지역과 로그 보관 조건도 확인해야 합니다. 검열과 보안 평가는 가중치 공개 여부와 별개의 항목입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="한국-ai가-먼저-증명할-현장">
+<h2 id="한국-ai가-먼저-증명할-현장">한국 AI가 먼저 증명할 현장</h2>
+<p>모델을 만드는 쪽의 과제도 선명합니다. <a href="https://www.joongang.co.kr/article/25453502" style="color:#1a73e8;text-decoration:none;" target="_blank">중앙일보 기사</a>에서 인용한 전문가들은 한국의 제조업 기반을 살린 피지컬 AI, 온디바이스 AI와 산업 특화 모델을 후보로 들었습니다. 미국과 같은 자본 규모로 정면 대결하거나 중국과 토큰 가격만 겨루기 어려운 만큼, 실제 제조·산업 현장에서 더 정확하고 안전하게 끝낸 업무 기록이 필요합니다.</p>
+<p>중국 AI는 아직 약점이 많고 미국의 기반도 두껍습니다. 그럼에도 성능, 가격, 개발자 확산이 여러 회사에서 동시에 움직인다는 사실은 가볍게 볼 수 없습니다. 앞으로의 모델 선택은 미국 선두만 확인하는 일에서 끝나지 않을 것입니다. 중국 모델을 실제 후보로 놓고 같은 조건에서 비교해야 하는 시점이 이미 왔습니다.</p>
+</section>
+</article>

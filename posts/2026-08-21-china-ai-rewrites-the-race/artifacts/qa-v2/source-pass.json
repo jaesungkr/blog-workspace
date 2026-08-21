@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-21T08:27:35.535909Z",
+  "checked_by": "/root/source_reviewer",
+  "article_content_sha256": "44cb66a6521006c24d1875195ade26d7e337b063dc5520993a16b0abde24620a",
+  "brief_sha256": "47d0d8e0a3f8d04adedd152f49be899deeeac0fc7ece6096bb2599eb4793c3a5",
+  "evidence_sha256": "d1cc57a65ec3ede1031e2b8578427a8a32637c56becf937e890213cb52c52410",
+  "note": "media-only metadata change: hero_image v6 -> assets/china-ai-logo-roster-hero-v7.png; article body, title, sources, brief, and evidence unchanged"
+}

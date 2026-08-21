@@ -1,0 +1,36 @@
+{
+  "retrieved_at": "2026-08-21",
+  "purpose": "중국 AI 기업·브랜드를 식별하기 위한 언론·비평용 대표 이미지 합성",
+  "transformation_policy": "공식 로고의 비율과 색상은 유지하고 크기 조정과 배치만 수행",
+  "items": [
+    {
+      "brand": "Kimi / Moonshot AI",
+      "official_page": "https://www.kimi.com/resources/kimi-brand",
+      "official_asset": "https://raw.githubusercontent.com/MoonshotAI/Branding-Guide/main/scenarios/01-kimi-with-icon/kimi-with-icon-light.png",
+      "local_path": "artifacts/captures/official-logos/kimi-with-icon-light.png",
+      "sha256": "4f811e29e5a4406a20709045d78896ffb4c313e591dc6714d6d7af3657ab1d9c"
+    },
+    {
+      "brand": "Qwen / Alibaba",
+      "official_page": "https://qwen.ai/",
+      "official_asset": "https://raw.githubusercontent.com/QwenLM/Qwen/main/assets/logo.jpg",
+      "local_path": "artifacts/captures/official-logos/qwen-logo.jpg",
+      "sha256": "1ca4bfc66a9ba04c7b5335fc4f84a1ab62b8d1fc073a6e82fb07a294e5a2cf1e"
+    },
+    {
+      "brand": "DeepSeek",
+      "official_page": "https://www.deepseek.com/en/",
+      "official_asset": "https://raw.githubusercontent.com/deepseek-ai/DeepSeek-VL/main/images/logo.png",
+      "local_path": "artifacts/captures/official-logos/deepseek-logo.png",
+      "sha256": "42b06f9dd7d81c0790510da5fb4c1d909c0c32cd786ff0f00ea788809d1a71e3"
+    },
+    {
+      "brand": "Z.ai / GLM",
+      "official_page": "https://z.ai/",
+      "official_asset": "https://raw.githubusercontent.com/zai-org/GLM-5/main/resources/logo.svg",
+      "local_path": "artifacts/captures/official-logos/zai-logo.svg",
+      "sha256": "e60742a0b37f805e654249dedb7b6ca11c785a60a2dd9ae33864668dce217693"
+    }
+  ],
+  "notice": "각 로고와 상표의 권리는 해당 소유자에게 있으며, 이 편집 이미지는 제휴·후원을 의미하지 않습니다."
+}
