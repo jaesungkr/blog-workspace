@@ -73,6 +73,10 @@ them when decisions depend on current state.
 - The user's preferred final handoff is a `.txt` file containing only the raw
   paste-ready Tistory HTML, matching the Kimi K3 delivery. Always provide this
   file as the primary final artifact and give the title separately.
+- Do not show media-origin labels such as `사용자 제공`, `직접 캡처`, or
+  `공식 자료` beside images in the public article. Keep provenance in
+  `media.json` and the audit only; public captions contain the useful image
+  explanation unless the user explicitly requests a visible source label.
 
 ## Current Reflections series direction
 

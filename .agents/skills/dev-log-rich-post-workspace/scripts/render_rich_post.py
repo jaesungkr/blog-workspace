@@ -89,27 +89,6 @@ def media_src(
     return Path(os.path.relpath(asset, output_dir.resolve())).as_posix()
 
 
-def origin_label(item: dict[str, Any]) -> str:
-    labels = {
-        "first_party": "직접 캡처",
-        "official": "공식 자료",
-        "user_supplied": "사용자 제공",
-        "simulated": "에뮬레이터 확인",
-        "generated": "생성 이미지",
-    }
-    origin = item.get("origin")
-    label = labels.get(origin, "출처 기록")
-    if origin == "first_party":
-        label = f"{item['actor']} 캡처"
-        if item.get("captured_at"):
-            label += f" · {item['captured_at']}"
-    elif origin == "simulated":
-        label = f"{item['actor']} 시뮬레이션 캡처"
-        if item.get("captured_at"):
-            label += f" · {item['captured_at']}"
-    return label
-
-
 def figure_markup(
     item: dict[str, Any],
     items_by_id: dict[str, dict[str, Any]],
@@ -149,24 +128,12 @@ def figure_markup(
             'loading="lazy" decoding="async">'
         )
 
-    credit = html.escape(origin_label(item))
-    source_url = item.get("source_url")
-    if source_url:
-        safe_url = html.escape(source_url, quote=True)
-        credit_markup = (
-            f'<a href="{safe_url}" target="_blank" rel="noopener noreferrer">'
-            f"{credit}</a>"
-        )
-    else:
-        credit_markup = credit
-
     return (
         f'<figure class="devlog-rich__figure" data-media-id="{item_id}" '
         f'style="--rich-media-width:{display_width}px">'
         f"{image}"
-        f'<figcaption class="devlog-rich__caption">{caption} '
-        f'<span class="devlog-rich__credit">· {credit_markup}</span>'
-        "</figcaption></figure>"
+        f'<figcaption class="devlog-rich__caption">{caption}</figcaption>'
+        "</figure>"
     )
 
 
@@ -177,9 +144,32 @@ def render_lines(
     mode: str,
     post_dir: Path,
     output_dir: Path,
+    hoist_before_opening: bool = False,
 ) -> str:
     chunks: list[str] = []
     text_buffer: list[str] = []
+    hoisted_ids: list[str] = []
+
+    if hoist_before_opening:
+        for line, outside in iter_fence_lines(lines):
+            match = MEDIA_LINE_RE.match(line) if outside else None
+            if not match:
+                continue
+            item = items_by_id[match.group(1)]
+            if item.get("placement") == "before:opening":
+                hoisted_ids.append(match.group(1))
+
+        for item_id in hoisted_ids:
+            chunks.append(
+                figure_markup(
+                    items_by_id[item_id],
+                    items_by_id,
+                    lead_id,
+                    mode,
+                    post_dir,
+                    output_dir,
+                )
+            )
 
     def flush() -> None:
         if text_buffer:
@@ -191,6 +181,8 @@ def render_lines(
     for line, outside in iter_fence_lines(lines):
         match = MEDIA_LINE_RE.match(line) if outside else None
         if match:
+            if match.group(1) in hoisted_ids:
+                continue
             flush()
             chunks.append(
                 figure_markup(
@@ -236,6 +228,7 @@ def build_article(
             mode,
             result["post_dir"],
             output_dir,
+            hoist_before_opening=True,
         )
     )
     parts.append("</section>")

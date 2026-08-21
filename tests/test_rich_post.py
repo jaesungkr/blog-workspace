@@ -983,7 +983,8 @@ summary: "설정부터 확인까지 실제 화면으로 짚습니다."
             preview,
         )
         self.assertIn("../2026-07-30-rich-test/assets/screenshots/lead.png", preview)
-        self.assertIn("Codex 브라우저 실행 캡처 · 2026-07-30", preview)
+        self.assertNotIn("Codex 브라우저 실행 캡처 · 2026-07-30", preview)
+        self.assertNotIn('class="devlog-rich__credit"', preview)
         self.assertIn("__TISTORY_MEDIA_LEAD_SCREEN__", fragment)
         self.assertNotIn("{{media:", preview)
         self.assertNotIn(str(self.post.resolve()), preview)
@@ -1069,7 +1070,7 @@ summary: "설정부터 확인까지 실제 화면으로 짚습니다."
         self.assertEqual(1, completed.returncode)
         self.assertIn("--preview-media-source remote", completed.stderr)
 
-    def test_renderer_identifies_simulated_capture_in_public_credit(self):
+    def test_renderer_keeps_simulated_capture_provenance_out_of_public_caption(self):
         self.manifest["items"][0]["origin"] = "simulated"
         self.manifest["items"][0]["actor"] = "iOS 시뮬레이터"
         self.write_manifest()
@@ -1091,10 +1092,11 @@ summary: "설정부터 확인까지 실제 화면으로 짚습니다."
         preview = (output_dir / "rich-test-rich-preview.html").read_text(
             encoding="utf-8"
         )
-        self.assertIn(
+        self.assertNotIn(
             "iOS 시뮬레이터 시뮬레이션 캡처 · 2026-07-30",
             preview,
         )
+        self.assertNotIn('class="devlog-rich__credit"', preview)
 
     def test_rejects_empty_claim_mapping_and_unknown_directive(self):
         self.manifest["items"][0]["claim_ids"] = []
@@ -1431,6 +1433,7 @@ summary: "설정부터 확인까지 실제 화면으로 짚습니다."
             encoding="utf-8"
         )
         self.assertIn("devlog-rich__motion", preview)
+
         self.assertIn("devlog-rich__poster", preview)
         self.assertIn("@media (prefers-reduced-motion: reduce)", preview)
 
@@ -1470,6 +1473,34 @@ summary: "설정부터 확인까지 실제 화면으로 짚습니다."
         self.assertTrue(
             any("exceeds five seconds" in error for error in result["errors"])
         )
+
+    def test_before_opening_media_is_rendered_before_intro_text(self):
+        self.manifest["items"][0]["placement"] = "before:opening"
+        self.write_manifest()
+
+        result = validate_bundle(self.post)
+        self.assertEqual([], result["errors"])
+        output_dir = Path(self.temp.name) / "dist"
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(SCRIPTS / "render_rich_post.py"),
+                str(self.post),
+                "--output-dir",
+                str(output_dir),
+            ],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(0, completed.returncode, completed.stderr)
+        fragment = (output_dir / "rich-test-tistory-fragment.html").read_text(
+            encoding="utf-8"
+        )
+        figure_index = fragment.index('data-media-id="lead-screen"')
+        greeting_index = fragment.index("안녕하세요. dev.log입니다.")
+        self.assertLess(figure_index, greeting_index)
 
 
 if __name__ == "__main__":

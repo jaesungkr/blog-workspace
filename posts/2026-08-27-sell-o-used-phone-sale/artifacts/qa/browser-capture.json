@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "status": "pass",
+  "mode": "creator",
+  "checked_at": "2026-08-21T05:06:01.885745Z",
+  "checked_by": "Codex creator browser review",
+  "tool_sha256": "6de6cef94d30413a365118492b4ecb26fc926ebe1ace7fefa519a1f8e7dfc726",
+  "preview_path": "artifacts/qa/rendered/sell-o-used-phone-sale-rich-preview.html",
+  "preview_sha256": "e18dedf768ca53cd85a5ad78fc71edb02a74134fed4fbb4585f1d39c6ec03060",
+  "screenshot_root": "artifacts/qa",
+  "receipt_path": "artifacts/qa/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.172",
+  "protocol_version": "1.3",
+  "session": "c20f951e-0c74-4932-b9a0-46cff31ec01d",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/artifacts/qa/rendered/sell-o-used-phone-sale-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 10189,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 9,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNtiwL%2FdJMcabSQQhu%2FAAAAAAAAAAAAAAAAAAAAAP1DLU_cgqe3kveW64A5gL83RNp6uCWm23Rsx5PUfTPv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DKlthUF2DwxMDZtj3cHQA0IVgM%252BM%253D",
+          "complete": true,
+          "natural_width": 512,
+          "natural_height": 512
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FnC1kT%2FdJMcabSQQhv%2FAAAAAAAAAAAAAAAAAAAAAMPIiWbqBsliKr0VdkFmpX8ea215RaIT1Qq--VPOm285%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DR0k5mGyGCo%252FmA0%252Be9AE5TAwHBuA%253D",
+          "complete": true,
+          "natural_width": 769,
+          "natural_height": 769
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpF3d4%2FdJMcafHPbQM%2FAAAAAAAAAAAAAAAAAAAAAG5WUpI-v-gvgrWd7Wj9dscE3v4G3pABVnEfoVJAwtDJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DK0ABwgCoZ2Dr%252F14rrs4LVmWOCIY%253D",
+          "complete": true,
+          "natural_width": 769,
+          "natural_height": 769
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fp7gWN%2FdJMcabrOARP%2FAAAAAAAAAAAAAAAAAAAAAIraDs7_uFzr7sRJiOSfFDt9zAGCICluBS3NFQ8XLggL%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DORZtRjEJ0jjghZmDtZ8mVlYSKmg%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fwu9YW%2FdJMcabSQQhK%2FAAAAAAAAAAAAAAAAAAAAAGonoix3E2WoXVaWsP1KoY40yWUkGDCAq-AWihf3eMGU%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1OyzvoJCrC3HPCQtuINplnQKKq4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHiz5H%2FdJMcadbZvu9%2FAAAAAAAAAAAAAAAAAAAAAGTdh86AD2yZGeFZ7WeaRQivL8BbgvIGlVRWiSfyS-XF%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVzuaJeieCly1DgXLRmySzR0aFBc%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmelWE%2FdJMcadbZvva%2FAAAAAAAAAAAAAAAAAAAAAAWIOw_seKo_5yqJFBvQSiUWI6RYz6AJUrog0jv2Epp2%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOnqpSb3vkRe%252FYoZQaYSAHadiLp0%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhuSec%2FdJMcafHPbQS%2FAAAAAAAAAAAAAAAAAAAAAP8c3tW0LfhKS-un7Ujpvr_UcbPWbZKZH3JgKz_mZO7Y%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOl6o6XJCC229RivPxBVllG3HEbM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcUhoDG%2FdJMcabrOARQ%2FAAAAAAAAAAAAAAAAAAAAAHMlwFSjNzvQRhLJWE9zeK8O-8IwMXi1NMTETxqAcN_v%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DZkX9tTn02S%252FvbpNFM1Xs9wphAw8%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        }
+      ],
+      "screenshot_sha256": "7af927bea191a63ca5af4fe926cbaf1bd80ab6cf4997d8cac0f1be15b9abbdc2",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/artifacts/qa/rendered/sell-o-used-phone-sale-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 7989,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 9,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNtiwL%2FdJMcabSQQhu%2FAAAAAAAAAAAAAAAAAAAAAP1DLU_cgqe3kveW64A5gL83RNp6uCWm23Rsx5PUfTPv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DKlthUF2DwxMDZtj3cHQA0IVgM%252BM%253D",
+          "complete": true,
+          "natural_width": 512,
+          "natural_height": 512
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FnC1kT%2FdJMcabSQQhv%2FAAAAAAAAAAAAAAAAAAAAAMPIiWbqBsliKr0VdkFmpX8ea215RaIT1Qq--VPOm285%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DR0k5mGyGCo%252FmA0%252Be9AE5TAwHBuA%253D",
+          "complete": true,
+          "natural_width": 769,
+          "natural_height": 769
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpF3d4%2FdJMcafHPbQM%2FAAAAAAAAAAAAAAAAAAAAAG5WUpI-v-gvgrWd7Wj9dscE3v4G3pABVnEfoVJAwtDJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DK0ABwgCoZ2Dr%252F14rrs4LVmWOCIY%253D",
+          "complete": true,
+          "natural_width": 769,
+          "natural_height": 769
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fp7gWN%2FdJMcabrOARP%2FAAAAAAAAAAAAAAAAAAAAAIraDs7_uFzr7sRJiOSfFDt9zAGCICluBS3NFQ8XLggL%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DORZtRjEJ0jjghZmDtZ8mVlYSKmg%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fwu9YW%2FdJMcabSQQhK%2FAAAAAAAAAAAAAAAAAAAAAGonoix3E2WoXVaWsP1KoY40yWUkGDCAq-AWihf3eMGU%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1OyzvoJCrC3HPCQtuINplnQKKq4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHiz5H%2FdJMcadbZvu9%2FAAAAAAAAAAAAAAAAAAAAAGTdh86AD2yZGeFZ7WeaRQivL8BbgvIGlVRWiSfyS-XF%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVzuaJeieCly1DgXLRmySzR0aFBc%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmelWE%2FdJMcadbZvva%2FAAAAAAAAAAAAAAAAAAAAAAWIOw_seKo_5yqJFBvQSiUWI6RYz6AJUrog0jv2Epp2%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOnqpSb3vkRe%252FYoZQaYSAHadiLp0%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhuSec%2FdJMcafHPbQS%2FAAAAAAAAAAAAAAAAAAAAAP8c3tW0LfhKS-un7Ujpvr_UcbPWbZKZH3JgKz_mZO7Y%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOl6o6XJCC229RivPxBVllG3HEbM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcUhoDG%2FdJMcabrOARQ%2FAAAAAAAAAAAAAAAAAAAAAHMlwFSjNzvQRhLJWE9zeK8O-8IwMXi1NMTETxqAcN_v%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DZkX9tTn02S%252FvbpNFM1Xs9wphAw8%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        }
+      ],
+      "screenshot_sha256": "6dc0f546d9006e5c9707b39e9ade43cc9559cd07e8a7b3aa3474611f9b3d38a3",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa/mobile-390.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/artifacts/qa/rendered/sell-o-used-phone-sale-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7976,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 9,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNtiwL%2FdJMcabSQQhu%2FAAAAAAAAAAAAAAAAAAAAAP1DLU_cgqe3kveW64A5gL83RNp6uCWm23Rsx5PUfTPv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DKlthUF2DwxMDZtj3cHQA0IVgM%252BM%253D",
+          "complete": true,
+          "natural_width": 512,
+          "natural_height": 512
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FnC1kT%2FdJMcabSQQhv%2FAAAAAAAAAAAAAAAAAAAAAMPIiWbqBsliKr0VdkFmpX8ea215RaIT1Qq--VPOm285%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DR0k5mGyGCo%252FmA0%252Be9AE5TAwHBuA%253D",
+          "complete": true,
+          "natural_width": 769,
+          "natural_height": 769
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpF3d4%2FdJMcafHPbQM%2FAAAAAAAAAAAAAAAAAAAAAG5WUpI-v-gvgrWd7Wj9dscE3v4G3pABVnEfoVJAwtDJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DK0ABwgCoZ2Dr%252F14rrs4LVmWOCIY%253D",
+          "complete": true,
+          "natural_width": 769,
+          "natural_height": 769
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fp7gWN%2FdJMcabrOARP%2FAAAAAAAAAAAAAAAAAAAAAIraDs7_uFzr7sRJiOSfFDt9zAGCICluBS3NFQ8XLggL%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DORZtRjEJ0jjghZmDtZ8mVlYSKmg%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fwu9YW%2FdJMcabSQQhK%2FAAAAAAAAAAAAAAAAAAAAAGonoix3E2WoXVaWsP1KoY40yWUkGDCAq-AWihf3eMGU%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1OyzvoJCrC3HPCQtuINplnQKKq4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHiz5H%2FdJMcadbZvu9%2FAAAAAAAAAAAAAAAAAAAAAGTdh86AD2yZGeFZ7WeaRQivL8BbgvIGlVRWiSfyS-XF%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVzuaJeieCly1DgXLRmySzR0aFBc%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmelWE%2FdJMcadbZvva%2FAAAAAAAAAAAAAAAAAAAAAAWIOw_seKo_5yqJFBvQSiUWI6RYz6AJUrog0jv2Epp2%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOnqpSb3vkRe%252FYoZQaYSAHadiLp0%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhuSec%2FdJMcafHPbQS%2FAAAAAAAAAAAAAAAAAAAAAP8c3tW0LfhKS-un7Ujpvr_UcbPWbZKZH3JgKz_mZO7Y%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DOl6o6XJCC229RivPxBVllG3HEbM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcUhoDG%2FdJMcabrOARQ%2FAAAAAAAAAAAAAAAAAAAAAHMlwFSjNzvQRhLJWE9zeK8O-8IwMXi1NMTETxqAcN_v%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DZkX9tTn02S%252FvbpNFM1Xs9wphAw8%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 851
+        }
+      ],
+      "screenshot_sha256": "f8d58e9df5bdb169ef52e0df0a132d211a7a2a921231323606b46592905f5db5",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa/mobile-360.png"
+    }
+  ]
+}
