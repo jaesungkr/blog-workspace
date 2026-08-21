@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "lead_id": "aim-black-ragdoll-kittens-hero",
+  "items": [
+    {
+      "id": "aim-black-ragdoll-kittens-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C11"
+      ],
+      "actor": "Codex image generation",
+      "captured_at": "2026-08-20",
+      "environment": "OpenAI image generation; editorial photorealism",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/aim-black-ragdoll-kittens-hero-source-v4.png",
+      "publish_path": "assets/aim-black-ragdoll-kittens-hero-v4.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdnvLjB%2FdJMcagNv8SX%2FAAAAAAAAAAAAAAAAAAAAAA8wAu_jaNtXeRIAKlQRdNSzXmI4hQQYj5TiVZ4DaQjL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dn2LZ8EpQPaSoTOb7qDGbUBZr3sY%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "도입부의 네 줄 요약 다음",
+      "rights": "dev.log용 AI 생성 원본; 제3자 시각 자산 미사용",
+      "alt": "창가에서 리넨 담요의 주름을 앞발로 건드리는 아기 검은 고양이와 곁에서 바라보는 푸른 눈의 아기 렉돌",
+      "caption": "아기 검은 고양이와 아기 렉돌이 집에서 함께 노는 순간을 담은 생성 이미지입니다. 실제 연구 참여 동물 사진은 아닙니다.",
+      "processing": [
+        "16:9 자연광 다큐멘터리 사진 구도 생성",
+        "아기 검은 고양이와 아기 렉돌이 리넨 주름을 함께 살피는 일상 장면으로 사용자 요청 반영",
+        "전체 크기와 360px 썸네일 독립 검증"
+      ],
+      "redactions": [],
+      "sha256": "3aaca45561af647074de15e2b01567373e25d1a4a503ccba9415658f45b761c4",
+      "status": "validated"
+    },
+    {
+      "id": "aim-kidney-mechanism",
+      "kind": "image",
+      "origin": "generated",
+      "role": "concept",
+      "claim_ids": [
+        "C03"
+      ],
+      "actor": "Codex deterministic Pillow renderer",
+      "captured_at": "2026-08-20",
+      "environment": "Python 3 with Pillow 12.3.0; Apple SD Gothic Neo",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/aim-kidney-mechanism-source-v1.png",
+      "publish_path": "assets/aim-kidney-mechanism-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmiImX%2FdJMcabrOFdn%2FAAAAAAAAAAAAAAAAAAAAAGqck8rcSi1DdB53ioixAGn2a5-Az7_kmijdyM4Xon0d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtbjCz9c%252F78wfEq%252BbFN3QiSWRti8%253D",
+      "width": 1080,
+      "height": 1350,
+      "display_width": 760,
+      "placement": "AIM과 IgM, 세뇨관 찌꺼기 제거 원리를 설명한 뒤",
+      "rights": "dev.log가 코드로 제작한 원본 인포그래픽; 제3자 시각 자산 미사용",
+      "alt": "AIM이 IgM에서 분리돼 신장 찌꺼기에 붙는 흐름, 고양이에서 분리가 막히는 흐름, 재조합 AIM 보완 접근을 세 단계로 나타낸 도식",
+      "caption": "고양이 AIM은 신장 손상 때 IgM에서 잘 떨어지지 않습니다. 재조합 AIM 투여 연구는 외부 AIM으로 찌꺼기 표지와 제거 흐름을 보완하려는 접근입니다.",
+      "processing": [
+        "1080×1350 결정형 레이아웃 렌더",
+        "Apple SD Gothic Neo로 한글 라벨 고정",
+        "360 CSS px 원본 표시와 확대 구간 독립 검증"
+      ],
+      "redactions": [],
+      "sha256": "c423b9ce15caa21bf9524116b112e8f81287f581d783c7266501fdeb167be1c3",
+      "status": "validated"
+    }
+  ]
+}

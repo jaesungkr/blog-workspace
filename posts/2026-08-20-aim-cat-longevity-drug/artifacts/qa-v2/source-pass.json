@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-21T03:03:20.940684Z",
+  "checked_by": "Codex /root/source_reviewer",
+  "article_content_sha256": "40ebad0c5add2cf4b93871ab205def19857fe01d3a1917d552dcc9e8df818f2f",
+  "brief_sha256": "ad0c225f6f887296fe91ab7e626d8bb6f7338257d719e371f1b674929f5a0ad7",
+  "evidence_sha256": "8b2acd5cf2e5c715f54fe6ae2559f03a7470f1f5776be7f54f483b1bffa0cb80",
+  "note": ""
+}

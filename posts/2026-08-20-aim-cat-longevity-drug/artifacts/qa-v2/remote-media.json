@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "5aa23d17-e0ed-43b4-95cf-f12d488c93a7",
+  "recorded_at": "2026-08-21T05:29:43.674407Z",
+  "recorded_by": "Codex /root",
+  "media_sha256": "3db720ef4d7cd77c6e9ebcc20277c7a1a4146e7ef2b1d8a2012adf7e1989d590",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "aim-black-ragdoll-kittens-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdnvLjB%2FdJMcagNv8SX%2FAAAAAAAAAAAAAAAAAAAAAA8wAu_jaNtXeRIAKlQRdNSzXmI4hQQYj5TiVZ4DaQjL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dn2LZ8EpQPaSoTOb7qDGbUBZr3sY%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdnvLjB%2FdJMcagNv8SX%2FAAAAAAAAAAAAAAAAAAAAAA8wAu_jaNtXeRIAKlQRdNSzXmI4hQQYj5TiVZ4DaQjL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dn2LZ8EpQPaSoTOb7qDGbUBZr3sY%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-21T05:29:43.609571Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1921944,
+      "byte_length": 1921944,
+      "sha256": "1b9a04a5c8f89d356be2e790b24fb74f2b6050f6b268b04b2f1abf3ffd4dbe97",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 21 Aug 2026 04:57:57 GMT"
+    },
+    {
+      "id": "aim-kidney-mechanism",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmiImX%2FdJMcabrOFdn%2FAAAAAAAAAAAAAAAAAAAAAGqck8rcSi1DdB53ioixAGn2a5-Az7_kmijdyM4Xon0d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtbjCz9c%252F78wfEq%252BbFN3QiSWRti8%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmiImX%2FdJMcabrOFdn%2FAAAAAAAAAAAAAAAAAAAAAGqck8rcSi1DdB53ioixAGn2a5-Az7_kmijdyM4Xon0d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtbjCz9c%252F78wfEq%252BbFN3QiSWRti8%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-21T05:29:43.674084Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 108378,
+      "byte_length": 108378,
+      "sha256": "b6b31b383aad5dc915c40474d37ae9d1e1cd1b88dbb20e7760f53648dd78a892",
+      "format": "png",
+      "width": 1080,
+      "height": 1350,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 21 Aug 2026 05:29:05 GMT"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-dark",
+  "checked_at": "2026-08-21T05:30:21.251161Z",
+  "checked_by": "Codex /root/source_reviewer",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-dark-rendered/aim-cat-longevity-drug-rich-preview.html",
+  "preview_sha256": "a8480179575fcc1e1c656379246df8c132c5b27b5e52b807c32baeb44f534fb7",
+  "screenshot_root": "artifacts/qa-v2/final/dark",
+  "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.172",
+  "protocol_version": "1.3",
+  "session": "1734ae16-206d-4948-9cbf-12cf6f135a8c",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-20-aim-cat-longevity-drug/artifacts/qa-v2/final-dark-rendered/aim-cat-longevity-drug-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5331,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdnvLjB%2FdJMcagNv8SX%2FAAAAAAAAAAAAAAAAAAAAAA8wAu_jaNtXeRIAKlQRdNSzXmI4hQQYj5TiVZ4DaQjL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dn2LZ8EpQPaSoTOb7qDGbUBZr3sY%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmiImX%2FdJMcabrOFdn%2FAAAAAAAAAAAAAAAAAAAAAGqck8rcSi1DdB53ioixAGn2a5-Az7_kmijdyM4Xon0d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtbjCz9c%252F78wfEq%252BbFN3QiSWRti8%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "a1216b90af10d540ea2b0372ede331a8d9df642b3a28f7162357e8ca6d0f47d5",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-20-aim-cat-longevity-drug/artifacts/qa-v2/final-dark-rendered/aim-cat-longevity-drug-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 5875,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdnvLjB%2FdJMcagNv8SX%2FAAAAAAAAAAAAAAAAAAAAAA8wAu_jaNtXeRIAKlQRdNSzXmI4hQQYj5TiVZ4DaQjL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dn2LZ8EpQPaSoTOb7qDGbUBZr3sY%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmiImX%2FdJMcabrOFdn%2FAAAAAAAAAAAAAAAAAAAAAGqck8rcSi1DdB53ioixAGn2a5-Az7_kmijdyM4Xon0d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtbjCz9c%252F78wfEq%252BbFN3QiSWRti8%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "a3ff0219354e0332e19412b69b7846e05637a22fd9739a201e3ff325397edf30",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-20-aim-cat-longevity-drug/artifacts/qa-v2/final-dark-rendered/aim-cat-longevity-drug-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 5708,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdnvLjB%2FdJMcagNv8SX%2FAAAAAAAAAAAAAAAAAAAAAA8wAu_jaNtXeRIAKlQRdNSzXmI4hQQYj5TiVZ4DaQjL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dn2LZ8EpQPaSoTOb7qDGbUBZr3sY%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmiImX%2FdJMcabrOFdn%2FAAAAAAAAAAAAAAAAAAAAAGqck8rcSi1DdB53ioixAGn2a5-Az7_kmijdyM4Xon0d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtbjCz9c%252F78wfEq%252BbFN3QiSWRti8%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1350
+        }
+      ],
+      "screenshot_sha256": "875110db38c4a8f1665a4682b7adab84118a630d98300a45bbab4ff65fc0fdf8",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-390.png"
+    }
+  ]
+}
