@@ -1,24 +1,24 @@
 {
   "version": 1,
   "checked_at": "2026-08-21",
-  "checked_by": "Codex creator browser review",
+  "checked_by": "Codex creator tone revision browser review",
   "browser": "Chrome/151.0.7922.172",
-  "session": "c20f951e-0c74-4932-b9a0-46cff31ec01d",
+  "session": "3c616dc7-18e6-43b9-97ea-7da56489775c",
   "capture_receipt_path": "artifacts/qa/browser-capture.json",
-  "capture_receipt_sha256": "e0c3ba0a3b4290721e526602b19781a8861d59eb09190d5e497fb4a8a8037966",
+  "capture_receipt_sha256": "43765b811b31be1089952d0cc5adb39369a60a8f02ad511512bedb9e86e9264d",
   "capture_tool_sha256": "6de6cef94d30413a365118492b4ecb26fc926ebe1ace7fefa519a1f8e7dfc726",
-  "article_content_sha256": "603d0d74a139841920d25819753b57dfbbb25fac3b0332791ed6cd06f604ecb1",
-  "media_sha256": "6537bcfdfc28d79ce7654b9db065a1ee76bb9559a03bbafadd8a28e62c56e88e",
+  "article_content_sha256": "b1968c25aa65915a775faa1bc27f1d538b07dd4b3bc3a03fcea2795c9f4a8510",
+  "media_sha256": "8217ac0e81757cdd241b48536129be09e4dcf6a476f26ba8af27fb7b519d7b70",
   "renderer_sha256": "d8d3ce874fae7db18308f3172115cba69fcb7ab81083d82b9ab5a54faa8391a0",
   "css_sha256": "08af6301a39dc3575c0a3539cf126c6d621c7c1575e58a6483b696c5dfa117f3",
   "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
-  "remote_media_sha256": "7dc799d1cca78282abd34fda59e9bd89a0d679b9d4631dec5bfe39c522c9a23c",
+  "remote_media_sha256": "8907c09d58574f889010f9a91063073640b83b7ca98ea47f9b33d52a42226f85",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa/rendered/sell-o-used-phone-sale-rich-preview.html",
-  "preview_sha256": "e18dedf768ca53cd85a5ad78fc71edb02a74134fed4fbb4585f1d39c6ec03060",
-  "preview_structure_sha256": "b50f5468ce9f883f82c12fa686681a05079d4f61ec50e06de42611e1c6828850",
+  "preview_sha256": "382ffb849c559ef7036e14769a98b5cef0a0087afd2847892f0647d232714d95",
+  "preview_structure_sha256": "a1ad6eb77f3b9f0b7b645174bcfd42922f9a0d308a0a0a45f525184bf20a0c59",
   "fragment_path": "artifacts/qa/rendered/sell-o-used-phone-sale-tistory-fragment.html",
-  "fragment_sha256": "d6aa5b45da89788f2aae8c71390f629a63341741547487ce6cc41f17f91cea83",
+  "fragment_sha256": "bbd6a0e97cef1605f0401a66e0c9129346850f1b823cdec41fb9428a89794859",
   "viewports": [
     {
       "width": 1280,
@@ -48,7 +48,7 @@
       "status": "pass",
       "screenshot_pixel_width": 390,
       "screenshot_pixel_height": 844,
-      "screenshot_sha256": "6dc0f546d9006e5c9707b39e9ade43cc9559cd07e8a7b3aa3474611f9b3d38a3"
+      "screenshot_sha256": "d667b350da29a9def1306ec0b4780e04f382cb6e654d85f713a03d9cbd388a9e"
     },
     {
       "width": 360,
@@ -63,7 +63,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "f8d58e9df5bdb169ef52e0df0a132d211a7a2a921231323606b46592905f5db5"
+      "screenshot_sha256": "7cf1d567570f37777a59210e7232e607bb4d9c12f51a5c8cd205a1c1b6103719"
     }
   ],
   "fragment": {

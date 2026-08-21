@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "reviewer": "Codex independent article validator",
+  "session": "9a20358b-63ae-4332-a2aa-77906d679a55",
+  "preview_path": "artifacts/qa/independent-rendered/sell-o-used-phone-sale-rich-preview.html",
+  "preview_sha256": "382ffb849c559ef7036e14769a98b5cef0a0087afd2847892f0647d232714d95",
+  "profiles": [
+    {
+      "width": 1280,
+      "height": 900,
+      "documentClientWidth": 1280,
+      "documentScrollWidth": 1280,
+      "h1Count": 1,
+      "media": [
+        {
+          "id": "sell-o-00-logo",
+          "caption": "셀로 중고폰 판매 후기를 시작합니다.",
+          "alt": "보라색 배경의 셀로 로고",
+          "loaded": true,
+          "width": 512
+        },
+        {
+          "id": "sell-o-01-phone-front",
+          "caption": "판매할 갤럭시 S25 엣지의 전면입니다.",
+          "alt": "흰색 침구 위에 놓인 갤럭시 S25 엣지 전면",
+          "loaded": true,
+          "width": 769
+        },
+        {
+          "id": "sell-o-02-phone-back",
+          "caption": "후면 외관과 카메라 상태를 확인할 수 있습니다.",
+          "alt": "검은색 갤럭시 S25 엣지 후면과 듀얼 카메라",
+          "loaded": true,
+          "width": 769
+        },
+        {
+          "id": "sell-o-03-additional-reward",
+          "caption": "판매 추가보상 2만원과 후기 이벤트 3만원을 더해 최대 5만원 혜택을 안내합니다.",
+          "alt": "셀로 이벤트 화면에 네이버페이 추가보상 최대 5만원이 표시된 모습",
+          "loaded": true,
+          "width": 916
+        },
+        {
+          "id": "sell-o-04-review-event",
+          "caption": "후기 이벤트 참여 전에는 채널별 작성 조건과 공통 해시태그를 확인해야 합니다.",
+          "alt": "셀로 후기 작성하기 이벤트에서 블로그와 영상 후기 조건을 안내하는 화면",
+          "loaded": true,
+          "width": 916
+        },
+        {
+          "id": "sell-o-05-max-compensation",
+          "caption": "A등급 선택 화면에서는 예상 판매가 48만원에 두 혜택을 더한 최대 53만원이 표시됐습니다.",
+          "alt": "갤럭시 S25 엣지 512GB의 예상 판매가 48만원과 최대 보상가 53만원 화면",
+          "loaded": true,
+          "width": 916
+        },
+        {
+          "id": "sell-o-06-device-selection",
+          "caption": "기종과 용량을 선택하면 판매 신청 전에 예상 보상가를 확인할 수 있습니다.",
+          "alt": "셀로 최대 보상가 조회에서 갤럭시 S와 갤럭시 S25 엣지 512GB를 선택한 화면",
+          "loaded": true,
+          "width": 916
+        },
+        {
+          "id": "sell-o-07-free-pickup",
+          "caption": "방문 수거와 반송 비용이 무료라는 안내를 확인한 뒤 최종 판매 여부를 결정할 수 있습니다.",
+          "alt": "셀로 화면에 전국 무료 수거와 무료 반송, 휴대폰·키오스크 판매 방식이 표시된 모습",
+          "loaded": true,
+          "width": 916
+        },
+        {
+          "id": "sell-o-08-data-deletion",
+          "caption": "사용자 초기화 뒤 검수센터에서 추가 삭제 절차를 진행한다는 안내입니다.",
+          "alt": "셀로 화면에 블랑코 국제 인증 솔루션을 통한 개인정보 삭제 안내가 표시된 모습",
+          "loaded": true,
+          "width": 916
+        }
+      ],
+      "disclosureCount": 1,
+      "publicOriginLabels": 0,
+      "fragmentHrefsValid": true,
+      "table": [
+        {
+          "label": "left",
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "scrollLeft": 0,
+          "maxScrollLeft": 0,
+          "overflowX": "auto",
+          "headers": [
+            "예상 판매가",
+            "추가보상 네이버페이",
+            "SNS 후기 이벤트 네이버페이",
+            "최대 보상가"
+          ],
+          "firstRow": [
+            "480,000원",
+            "+20,000원",
+            "+30,000원",
+            "530,000원"
+          ]
+        },
+        {
+          "label": "right",
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "scrollLeft": 0,
+          "maxScrollLeft": 0,
+          "overflowX": "auto",
+          "headers": [
+            "예상 판매가",
+            "추가보상 네이버페이",
+            "SNS 후기 이벤트 네이버페이",
+            "최대 보상가"
+          ],
+          "firstRow": [
+            "480,000원",
+            "+20,000원",
+            "+30,000원",
+            "530,000원"
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "h1Count": 1,
+      "media": [
+        {
+          "id": "sell-o-00-logo",
+          "caption": "셀로 중고폰 판매 후기를 시작합니다.",
+          "alt": "보라색 배경의 셀로 로고",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-01-phone-front",
+          "caption": "판매할 갤럭시 S25 엣지의 전면입니다.",
+          "alt": "흰색 침구 위에 놓인 갤럭시 S25 엣지 전면",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-02-phone-back",
+          "caption": "후면 외관과 카메라 상태를 확인할 수 있습니다.",
+          "alt": "검은색 갤럭시 S25 엣지 후면과 듀얼 카메라",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-03-additional-reward",
+          "caption": "판매 추가보상 2만원과 후기 이벤트 3만원을 더해 최대 5만원 혜택을 안내합니다.",
+          "alt": "셀로 이벤트 화면에 네이버페이 추가보상 최대 5만원이 표시된 모습",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-04-review-event",
+          "caption": "후기 이벤트 참여 전에는 채널별 작성 조건과 공통 해시태그를 확인해야 합니다.",
+          "alt": "셀로 후기 작성하기 이벤트에서 블로그와 영상 후기 조건을 안내하는 화면",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-05-max-compensation",
+          "caption": "A등급 선택 화면에서는 예상 판매가 48만원에 두 혜택을 더한 최대 53만원이 표시됐습니다.",
+          "alt": "갤럭시 S25 엣지 512GB의 예상 판매가 48만원과 최대 보상가 53만원 화면",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-06-device-selection",
+          "caption": "기종과 용량을 선택하면 판매 신청 전에 예상 보상가를 확인할 수 있습니다.",
+          "alt": "셀로 최대 보상가 조회에서 갤럭시 S와 갤럭시 S25 엣지 512GB를 선택한 화면",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-07-free-pickup",
+          "caption": "방문 수거와 반송 비용이 무료라는 안내를 확인한 뒤 최종 판매 여부를 결정할 수 있습니다.",
+          "alt": "셀로 화면에 전국 무료 수거와 무료 반송, 휴대폰·키오스크 판매 방식이 표시된 모습",
+          "loaded": true,
+          "width": 350
+        },
+        {
+          "id": "sell-o-08-data-deletion",
+          "caption": "사용자 초기화 뒤 검수센터에서 추가 삭제 절차를 진행한다는 안내입니다.",
+          "alt": "셀로 화면에 블랑코 국제 인증 솔루션을 통한 개인정보 삭제 안내가 표시된 모습",
+          "loaded": true,
+          "width": 350
+        }
+      ],
+      "disclosureCount": 1,
+      "publicOriginLabels": 0,
+      "fragmentHrefsValid": true,
+      "table": [
+        {
+          "label": "left",
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "scrollLeft": 0,
+          "maxScrollLeft": 270,
+          "overflowX": "auto",
+          "headers": [
+            "예상 판매가",
+            "추가보상 네이버페이",
+            "SNS 후기 이벤트 네이버페이",
+            "최대 보상가"
+          ],
+          "firstRow": [
+            "480,000원",
+            "+20,000원",
+            "+30,000원",
+            "530,000원"
+          ]
+        },
+        {
+          "label": "right",
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "scrollLeft": 270,
+          "maxScrollLeft": 270,
+          "overflowX": "auto",
+          "headers": [
+            "예상 판매가",
+            "추가보상 네이버페이",
+            "SNS 후기 이벤트 네이버페이",
+            "최대 보상가"
+          ],
+          "firstRow": [
+            "480,000원",
+            "+20,000원",
+            "+30,000원",
+            "530,000원"
+          ]
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "documentClientWidth": 360,
+      "documentScrollWidth": 360,
+      "h1Count": 1,
+      "media": [
+        {
+          "id": "sell-o-00-logo",
+          "caption": "셀로 중고폰 판매 후기를 시작합니다.",
+          "alt": "보라색 배경의 셀로 로고",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-01-phone-front",
+          "caption": "판매할 갤럭시 S25 엣지의 전면입니다.",
+          "alt": "흰색 침구 위에 놓인 갤럭시 S25 엣지 전면",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-02-phone-back",
+          "caption": "후면 외관과 카메라 상태를 확인할 수 있습니다.",
+          "alt": "검은색 갤럭시 S25 엣지 후면과 듀얼 카메라",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-03-additional-reward",
+          "caption": "판매 추가보상 2만원과 후기 이벤트 3만원을 더해 최대 5만원 혜택을 안내합니다.",
+          "alt": "셀로 이벤트 화면에 네이버페이 추가보상 최대 5만원이 표시된 모습",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-04-review-event",
+          "caption": "후기 이벤트 참여 전에는 채널별 작성 조건과 공통 해시태그를 확인해야 합니다.",
+          "alt": "셀로 후기 작성하기 이벤트에서 블로그와 영상 후기 조건을 안내하는 화면",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-05-max-compensation",
+          "caption": "A등급 선택 화면에서는 예상 판매가 48만원에 두 혜택을 더한 최대 53만원이 표시됐습니다.",
+          "alt": "갤럭시 S25 엣지 512GB의 예상 판매가 48만원과 최대 보상가 53만원 화면",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-06-device-selection",
+          "caption": "기종과 용량을 선택하면 판매 신청 전에 예상 보상가를 확인할 수 있습니다.",
+          "alt": "셀로 최대 보상가 조회에서 갤럭시 S와 갤럭시 S25 엣지 512GB를 선택한 화면",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-07-free-pickup",
+          "caption": "방문 수거와 반송 비용이 무료라는 안내를 확인한 뒤 최종 판매 여부를 결정할 수 있습니다.",
+          "alt": "셀로 화면에 전국 무료 수거와 무료 반송, 휴대폰·키오스크 판매 방식이 표시된 모습",
+          "loaded": true,
+          "width": 320
+        },
+        {
+          "id": "sell-o-08-data-deletion",
+          "caption": "사용자 초기화 뒤 검수센터에서 추가 삭제 절차를 진행한다는 안내입니다.",
+          "alt": "셀로 화면에 블랑코 국제 인증 솔루션을 통한 개인정보 삭제 안내가 표시된 모습",
+          "loaded": true,
+          "width": 320
+        }
+      ],
+      "disclosureCount": 1,
+      "publicOriginLabels": 0,
+      "fragmentHrefsValid": true,
+      "table": [
+        {
+          "label": "left",
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "scrollLeft": 0,
+          "maxScrollLeft": 300,
+          "overflowX": "auto",
+          "headers": [
+            "예상 판매가",
+            "추가보상 네이버페이",
+            "SNS 후기 이벤트 네이버페이",
+            "최대 보상가"
+          ],
+          "firstRow": [
+            "480,000원",
+            "+20,000원",
+            "+30,000원",
+            "530,000원"
+          ]
+        },
+        {
+          "label": "right",
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "scrollLeft": 300,
+          "maxScrollLeft": 300,
+          "overflowX": "auto",
+          "headers": [
+            "예상 판매가",
+            "추가보상 네이버페이",
+            "SNS 후기 이벤트 네이버페이",
+            "최대 보상가"
+          ],
+          "firstRow": [
+            "480,000원",
+            "+20,000원",
+            "+30,000원",
+            "530,000원"
+          ]
+        }
+      ]
+    }
+  ],
+  "browser_version": "Chrome/151.0.7922.172"
+}
