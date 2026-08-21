@@ -93,6 +93,19 @@ the `916px` media canvas; the renderer never intentionally upscales evidence.
 - `generated`: never use as proof of an actual product state.
   Use only `kind: image` with `role: lead`, `concept`, or `comparison`.
 
+Screenshot count and editorial finish are separate decisions. A screenshot-led
+guide may still need one topic-specific `lead` or `concept` image for iconic
+recognition and page rhythm. Record that image's subject cue and unique visual
+job in `capture-plan.md`; never let it substitute for a missing action, result,
+or failure screenshot.
+
+Keep public alt text and captions reader-facing. Do not add provenance labels
+such as `generated image`, `provided image`, `official image`, `edited image`,
+or `source:` merely to expose the asset category. Preserve origin, rights, and
+processing details in `media.json` and the audit trail. When attribution is
+legally or editorially required, write a natural nearby source sentence or
+link instead of turning the caption into a label.
+
 Do not preserve a raw capture containing a password, token, QR pairing secret,
 email, private repository name, personal notification, or identifying path.
 Remove the sensitive state and recapture. Record ordinary privacy-safe crops or

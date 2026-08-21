@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "lead_id": "git-worktree-hero",
+  "items": [
+    {
+      "id": "git-worktree-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C03"
+      ],
+      "actor": "Codex with OpenAI image generation",
+      "captured_at": "2026-08-21",
+      "environment": "OpenAI image generation, reviewed on macOS 26.5.2",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/git-worktree-hero-v1.png",
+      "publish_path": "assets/graphics/git-worktree-hero-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdNhDpk%2FdJMcabMeRfo%2FAAAAAAAAAAAAAAAAAAAAANZmYsarHm7I-iOUISA6BQfiNRwNOs0QO81xJPfY4OFv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1rjpFBzd0dTN%252FZoCmZ2Nj9OxRSc%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log generated original",
+      "alt": "하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 장면",
+      "caption": "하나의 Git 저장소에서 작업 경로를 에이전트별로 나누고, 검토 지점에서 다시 합치는 흐름을 보여 줍니다.",
+      "processing": [
+        "generated from a topic-specific editorial prompt",
+        "no logos or interface text"
+      ],
+      "redactions": [],
+      "sha256": "b46c46d09978d364e4c1c222ab5d28915fe91c5252e904328fe45b7f40fbe039",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-map",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "concept",
+      "claim_ids": [
+        "C03",
+        "C06"
+      ],
+      "actor": "Codex deterministic SVG and browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Google Chrome 140, 1080×1080 SVG render",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/worktree-map-infographic-v5.png",
+      "publish_path": "assets/graphics/worktree-map-infographic-v5.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbAbvnn%2FdJMcabMeRfn%2FAAAAAAAAAAAAAAAAAAAAADmmFZzjGwgwVKYvEfOOwTIucX7TAEDjou5j8juaheat%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0UfYCuAk87Do357EmArOWK3kcE0%253D",
+      "width": 1080,
+      "height": 1080,
+      "display_width": 720,
+      "placement": "after:what-worktree-separates",
+      "rights": "dev.log original infographic",
+      "alt": "하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도",
+      "caption": "commit 객체와 일반 branch·tag ref는 저장소가 공유하고, HEAD·index·작업 파일은 worktree마다 나뉩니다. 일부 ref는 worktree별이라는 예외가 있습니다.",
+      "processing": [
+        "rendered from deterministic SVG",
+        "v4 narrows the shared metadata label after source review",
+        "v5 restores 12px mobile supporting type"
+      ],
+      "redactions": [],
+      "sha256": "1578139934f1ad79e0478513b2ada5979644e73cc23ee11872c5129439c8df61",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-baseline",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "action",
+      "claim_ids": [
+        "C02"
+      ],
+      "actor": "Codex direct test and deterministic browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Git 2.53.0, Google Chrome 140",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/01-baseline-v3.png",
+      "publish_path": "assets/screenshots/01-baseline-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbadXCO%2FdJMcaf8Jz5M%2FAAAAAAAAAAAAAAAAAAAAAGDa65qigNIYv4CMFOzh1S4COBewBSvy42kMrS4b8EIg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DpcJslF8kiuHeFM%252FbmT2idFqJ%252BS8%253D",
+      "width": 720,
+      "height": 800,
+      "display_width": 720,
+      "placement": "after:clean-main",
+      "rights": "dev.log original direct-test log visualization",
+      "alt": "Git 2.53.0과 깨끗한 main 브랜치를 확인하는 터미널 로그",
+      "caption": "branch 헤더 아래에 변경 파일 행이 없으면 깨끗한 출발점입니다. 원격 추적 branch가 있으면 헤더 표시는 더 길어질 수 있습니다.",
+      "processing": [
+        "selected direct-test commands and core outputs re-typeset for mobile reading",
+        "editorial heading and syntax colors added"
+      ],
+      "redactions": [],
+      "sha256": "6b0276501068889f9d324dc369a47fc452a91e19cce0936c5fb03336f247f8b2",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-add",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "action",
+      "claim_ids": [
+        "C02"
+      ],
+      "actor": "Codex direct test and deterministic browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Git 2.53.0, Google Chrome 140",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/02-add-worktrees-v3.png",
+      "publish_path": "assets/screenshots/02-add-worktrees-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FBnnTT%2FdJMcaixLbLl%2FAAAAAAAAAAAAAAAAAAAAAArMEY-iqDXc0bk1q4fASSFjUnwQ8Naf4BGXugrPSGvy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtZ2g%252FFzzNgh1nfeUpXS46PMdEHs%253D",
+      "width": 720,
+      "height": 800,
+      "display_width": 720,
+      "placement": "after:add-worktrees",
+      "rights": "dev.log original direct-test log visualization",
+      "alt": "git worktree add 명령으로 Claude와 Codex용 브랜치와 폴더를 만드는 터미널 로그",
+      "caption": "`-b` 뒤에는 새 브랜치, 그다음에는 새 작업 폴더, 마지막에는 출발할 브랜치를 적습니다.",
+      "processing": [
+        "selected direct-test commands and core outputs re-typeset for mobile reading",
+        "editorial heading and syntax colors added"
+      ],
+      "redactions": [],
+      "sha256": "3e3ee2dd848c8f0b87b12fa07d8e86886c623c29760d19aaab177bc2d923346b",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-list",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "result",
+      "claim_ids": [
+        "C01",
+        "C03"
+      ],
+      "actor": "Codex direct test and deterministic browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Git 2.53.0, Google Chrome 140",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/03-list-worktrees-v4.png",
+      "publish_path": "assets/screenshots/03-list-worktrees-v4.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fmz6bR%2FdJMcaixLbLj%2FAAAAAAAAAAAAAAAAAAAAALg_MKNdmjMWfOQju2VoILGr38eahwPQDg5QWa1pVYsB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWKJVYeTZcVb0GC1M%252FInJZLb5ONM%253D",
+      "width": 720,
+      "height": 800,
+      "display_width": 720,
+      "placement": "after:list-worktrees",
+      "rights": "dev.log original direct-test log visualization",
+      "alt": "main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록",
+      "caption": "세 폴더는 같은 시작 커밋을 가리키지만 서로 다른 브랜치를 checkout하고 있습니다.",
+      "processing": [
+        "direct-test command and output re-typeset for mobile reading",
+        "editorial heading and syntax colors added",
+        "temporary absolute path normalized"
+      ],
+      "redactions": [
+        "temporary absolute path replaced with ~/worktree-demo"
+      ],
+      "sha256": "26d82750be594072a568312eeca0ac3abb518640eb94d1b018bdc026bf8812d1",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-isolated-status",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "result",
+      "claim_ids": [
+        "C04"
+      ],
+      "actor": "Codex direct test and deterministic browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Git 2.53.0, Google Chrome 140",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/04-isolated-status-v3.png",
+      "publish_path": "assets/screenshots/04-isolated-status-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9zkTk%2FdJMcaixLbLi%2FAAAAAAAAAAAAAAAAAAAAACL8uiTmCTozfb8AYKMo2gdBR_maaq5r_fMITTOfLEfi%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVRzCKMI4q0rFbUygxRoVMh9yYEo%253D",
+      "width": 720,
+      "height": 800,
+      "display_width": 720,
+      "placement": "after:isolated-status",
+      "rights": "dev.log original direct-test log visualization",
+      "alt": "Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그",
+      "caption": "각 `status`에는 자기 폴더의 수정만 나타났고 main worktree에는 변경이 생기지 않았습니다.",
+      "processing": [
+        "selected direct-test commands and core outputs re-typeset for mobile reading",
+        "editorial heading and syntax colors added"
+      ],
+      "redactions": [],
+      "sha256": "b2ee84776da67c7f449757928446835ca48850407fcf14d2190e507d570072a6",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-merge-graph",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "result",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Codex direct test and deterministic browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Git 2.53.0, Google Chrome 140",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/05-merge-graph-v3.png",
+      "publish_path": "assets/screenshots/05-merge-graph-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FTd3UT%2FdJMcaf8Jz5N%2FAAAAAAAAAAAAAAAAAAAAALfZpdQPFJB5JUQVQT6qg8rkQQ1CP7BoaU7vpPemE9lr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaFw02eVtUN5Ik4Xsc8YbanTET4A%253D",
+      "width": 720,
+      "height": 800,
+      "display_width": 720,
+      "placement": "after:merge-one-by-one",
+      "rights": "dev.log original direct-test log visualization",
+      "alt": "서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프",
+      "caption": "두 변경을 각각 commit한 뒤 main에서 하나씩 merge했습니다. 그래프에는 작업 commit과 두 merge 지점이 모두 남습니다.",
+      "processing": [
+        "selected direct-test commands and core outputs re-typeset for mobile reading",
+        "editorial heading and syntax colors added"
+      ],
+      "redactions": [],
+      "sha256": "42ec1d24a2ee9d97d96d0743f75e817db9de719154566f5a1a2c06f3ce3fc744",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-conflict",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "error",
+      "claim_ids": [
+        "C06"
+      ],
+      "actor": "Codex direct test and deterministic browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Git 2.53.0, Google Chrome 140",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/06-conflict-boundary-v3.png",
+      "publish_path": "assets/screenshots/06-conflict-boundary-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNOyyV%2FdJMcaixLbLm%2FAAAAAAAAAAAAAAAAAAAAAHs8rGBWGbbpeqJVS1hl7r7P7QXlGLTpAIHpQwZYChdf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhtNBh79pRTy3gTR78H%252BR0Xozcfw%253D",
+      "width": 720,
+      "height": 800,
+      "display_width": 720,
+      "placement": "after:conflict-boundary",
+      "rights": "dev.log original direct-test log visualization",
+      "alt": "같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그",
+      "caption": "worktree는 작업 중 파일을 분리하지만 같은 줄의 변경까지 자동으로 합쳐 주지는 않습니다. `UU`는 양쪽에서 수정된 미해결 파일입니다.",
+      "processing": [
+        "selected direct-test commands and core outputs re-typeset for mobile reading",
+        "editorial heading and syntax colors added"
+      ],
+      "redactions": [],
+      "sha256": "5a900326be69e699e31d1536807f9fb9383963d6459773ee0b87c05619b75818",
+      "status": "validated"
+    },
+    {
+      "id": "worktree-cleanup",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "result",
+      "claim_ids": [
+        "C07",
+        "C08"
+      ],
+      "actor": "Codex direct test and deterministic browser render",
+      "captured_at": "2026-08-21",
+      "environment": "macOS 26.5.2, Git 2.53.0, Google Chrome 140",
+      "source_url": "",
+      "raw_path": "artifacts/captures/raw/07-cleanup-v5.png",
+      "publish_path": "assets/screenshots/07-cleanup-v5.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBgs61%2FdJMcaixLbLk%2FAAAAAAAAAAAAAAAAAAAAAE-PCV0uaRMwVfYDeM7yk7Jj1XkfwlWImvuWJeq013Ae%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DsyS5cWX0FM1L0mW8E%252Fx%252FfAZYHX0%253D",
+      "width": 720,
+      "height": 800,
+      "display_width": 720,
+      "placement": "after:cleanup",
+      "rights": "dev.log original direct-test log visualization",
+      "alt": "두 linked worktree를 제거한 뒤 main만 남고 직접 검증이 통과한 터미널 로그",
+      "caption": "병합과 보존 여부를 확인한 뒤 linked worktree를 제거했습니다. 빈 `prune --dry-run` 결과는 정리할 stale metadata가 없다는 뜻입니다.",
+      "processing": [
+        "selected direct-test commands and core outputs re-typeset for mobile reading",
+        "editorial heading and syntax colors added",
+        "temporary absolute path normalized"
+      ],
+      "redactions": [
+        "temporary absolute path replaced with ~/worktree-demo"
+      ],
+      "sha256": "d666e151f55a685e2024219feb38a50157354f1e54e10222e50f42e2f87869a6",
+      "status": "validated"
+    }
+  ]
+}

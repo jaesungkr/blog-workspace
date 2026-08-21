@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #111318; color: #f7f5f2; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+    .shot {
+      position: relative;
+      width: 720px;
+      height: 800px;
+      overflow: hidden;
+      padding: 34px;
+      background:
+        radial-gradient(circle at 84% 12%, rgba(240, 80, 50, .19), transparent 26%),
+        linear-gradient(145deg, #171a21 0%, #0d0f14 78%);
+      border: 1px solid #2f333d;
+    }
+    .shot::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+    .eyebrow { display: flex; align-items: center; gap: 12px; color: #ff745c; font-size: 16px; font-weight: 760; letter-spacing: .08em; text-transform: uppercase; }
+    .git-mark { width: 28px; height: 28px; border-radius: 8px; background: #f05133; position: relative; transform: rotate(45deg); box-shadow: 0 10px 28px rgba(240,81,51,.28); }
+    .git-mark::before, .git-mark::after { content: ""; position: absolute; background: #fff; border-radius: 50%; width: 6px; height: 6px; }
+    .git-mark::before { left: 7px; top: 7px; box-shadow: 10px 10px 0 #fff; }
+    .git-mark::after { width: 3px; height: 16px; border-radius: 2px; left: 14px; top: 8px; transform: rotate(-45deg); transform-origin: 50% 50%; }
+    h1 { margin: 20px 0 26px; max-width: 640px; font-size: 34px; line-height: 1.22; letter-spacing: -.035em; }
+    .terminal { position: relative; z-index: 2; border: 1px solid #353a46; border-radius: 20px; overflow: hidden; background: rgba(8, 10, 14, .94); box-shadow: 0 28px 70px rgba(0,0,0,.48); }
+    .bar { height: 50px; display: flex; align-items: center; padding: 0 20px; border-bottom: 1px solid #2b2f38; background: #171a20; }
+    .dots { display: flex; gap: 9px; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: #ff5f57; }
+    .dot:nth-child(2) { background: #febc2e; }
+    .dot:nth-child(3) { background: #28c840; }
+    .tab { margin-left: 22px; color: #a9afbb; font: 600 15px/1 -apple-system, BlinkMacSystemFont, sans-serif; }
+    pre { margin: 0; min-height: 500px; padding: 26px 27px 31px; white-space: pre-wrap; overflow-wrap: anywhere; font: 600 24px/1.48 SFMono-Regular, Menlo, Monaco, Consolas, monospace; letter-spacing: -.025em; color: #e9edf3; }
+    .prompt { color: #ff765f; }
+    .muted { color: #9aa2b1; }
+    .green { color: #69d38a; }
+    .yellow { color: #f0c96b; }
+    .red { color: #ff746f; }
+    .blue { color: #73b7ff; }
+    .note { position: absolute; right: 34px; top: 42px; z-index: 3; max-width: 260px; color: #aeb5c2; font-size: 15px; line-height: 1.5; text-align: right; }
+    .shot.compact pre { font-size: 22px; line-height: 1.43; }
+    .shot.graph pre { font-size: 22px; line-height: 1.37; }
+  </style>
+</head>
+<body>
+  <section class="shot" data-shot="01-baseline">
+    <div class="eyebrow"><span class="git-mark"></span> STEP 0 · 시작점 확인</div>
+    <h1>main 작업 폴더가 깨끗한지 먼저 확인</h1>
+    <div class="terminal"><div class="bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="tab">shop-app — main</div></div><pre><span class="prompt">$</span> git --version
+<span class="muted">git version 2.53.0</span>
+
+<span class="prompt">$</span> git status --short --branch
+<span class="green">## main</span></pre></div>
+  </section>
+
+  <section class="shot compact" data-shot="02-add-worktrees">
+    <div class="eyebrow"><span class="git-mark"></span> STEP 1 · 작업 폴더 생성</div>
+    <h1>에이전트마다 브랜치와 폴더를 함께 만들기</h1>
+    <div class="terminal"><div class="bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="tab">shop-app — worktree add</div></div><pre><span class="prompt">$</span> git worktree add -b feat/home-copy ../agent-claude main
+<span class="muted">Preparing worktree (new branch 'feat/home-copy')</span>
+<span class="green">HEAD is now at 9326ae3 chore: initial demo</span>
+
+<span class="prompt">$</span> git worktree add -b docs/agent-rule ../agent-codex main
+<span class="muted">Preparing worktree (new branch 'docs/agent-rule')</span>
+<span class="green">HEAD is now at 9326ae3 chore: initial demo</span></pre></div>
+  </section>
+
+  <section class="shot compact" data-shot="03-list-worktrees">
+    <div class="eyebrow"><span class="git-mark"></span> STEP 2 · 분리 결과</div>
+    <h1>한 저장소에서 세 작업 폴더가 열린 상태</h1>
+    <div class="terminal"><div class="bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="tab">shop-app — worktree list</div></div><pre><span class="prompt">$</span> git worktree list
+<span class="blue">~/worktree-demo/shop-app</span>      9326ae3 <span class="green">[main]</span>
+<span class="blue">~/worktree-demo/agent-claude</span>  9326ae3 <span class="yellow">[feat/home-copy]</span>
+<span class="blue">~/worktree-demo/agent-codex</span>   9326ae3 <span class="yellow">[docs/agent-rule]</span></pre></div>
+  </section>
+
+  <section class="shot compact" data-shot="04-isolated-status">
+    <div class="eyebrow"><span class="git-mark"></span> STEP 3 · 동시 수정</div>
+    <h1>각 변경은 자기 worktree에만 보입니다</h1>
+    <div class="terminal"><div class="bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="tab">three worktrees — status</div></div><pre><span class="prompt">$</span> (cd ../agent-claude &amp;&amp; git status --short --branch)
+<span class="yellow">## feat/home-copy</span>
+ <span class="green">M</span> index.html
+
+<span class="prompt">$</span> (cd ../agent-codex &amp;&amp; git status --short --branch)
+<span class="yellow">## docs/agent-rule</span>
+ <span class="green">M</span> README.md
+
+<span class="prompt">$</span> git status --short --branch  <span class="muted"># main worktree</span>
+<span class="green">## main</span></pre></div>
+  </section>
+
+  <section class="shot graph" data-shot="05-merge-graph">
+    <div class="eyebrow"><span class="git-mark"></span> STEP 4 · 결과 합치기</div>
+    <h1>서로 다른 파일의 변경은 두 번의 merge로 합쳐짐</h1>
+    <div class="terminal"><div class="bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="tab">shop-app — commit graph</div></div><pre><span class="prompt">$</span> git log --graph --oneline --decorate --all --max-count=8
+<span class="green">*   1f99aa6 (HEAD -&gt; main) merge: agent rule</span>
+<span class="blue">|\</span>
+<span class="blue">| *</span> 9a8fe5d (docs/agent-rule) docs: add agent rule
+<span class="green">* |</span>   6a397c1 merge: home copy
+<span class="yellow">|\ \</span>
+<span class="yellow">| |/</span>
+<span class="yellow">|/|</span>
+<span class="yellow">| *</span> 350d994 (feat/home-copy) feat: clarify intro copy
+<span class="yellow">|/</span>
+<span class="muted">*</span> 9326ae3 chore: initial demo</pre></div>
+  </section>
+
+  <section class="shot compact" data-shot="06-conflict-boundary">
+    <div class="eyebrow"><span class="git-mark"></span> FAILURE TEST · 같은 줄 수정</div>
+    <h1>폴더는 분리돼도 merge 충돌은 남습니다</h1>
+    <div class="terminal"><div class="bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="tab">shop-app — expected conflict</div></div><pre><span class="prompt">$</span> git merge --no-ff test/button-b
+<span class="muted">Auto-merging index.html</span>
+<span class="red">CONFLICT (content): Merge conflict in index.html</span>
+<span class="red">Automatic merge failed; fix conflicts and then commit the result.</span>
+
+<span class="prompt">$</span> git status --short
+<span class="red">UU index.html</span>
+
+<span class="prompt">$</span> git diff --name-only --diff-filter=U
+<span class="red">index.html</span></pre></div>
+  </section>
+
+  <section class="shot compact" data-shot="07-cleanup">
+    <div class="eyebrow"><span class="git-mark"></span> STEP 5 · 작업 폴더 정리</div>
+    <h1>커밋과 병합을 확인한 뒤 worktree 제거</h1>
+    <div class="terminal"><div class="bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="tab">cleanup</div></div><pre><span class="prompt">$</span> git worktree remove ../agent-a
+<span class="prompt">$</span> git worktree remove ../agent-b
+
+<span class="prompt">$</span> git worktree list
+<span class="blue">~/worktree-demo/shop-app</span> 3ba3f6f <span class="green">[main]</span>
+
+<span class="prompt">$</span> git worktree prune --dry-run
+
+<span class="green">RESULT: PASS - isolated edits merged cleanly; same-line edits conflicted as expected.</span></pre></div>
+  </section>
+</body>
+</html>

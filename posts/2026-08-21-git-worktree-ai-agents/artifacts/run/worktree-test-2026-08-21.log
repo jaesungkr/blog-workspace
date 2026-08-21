@@ -1,0 +1,66 @@
+$ git --version
+git version 2.53.0
+$ git status --short --branch
+## main
+
+$ git worktree add -b feat/home-copy ../agent-claude main
+Preparing worktree (new branch 'feat/home-copy')
+HEAD is now at 9326ae3 chore: initial demo
+$ git worktree add -b docs/agent-rule ../agent-codex main
+Preparing worktree (new branch 'docs/agent-rule')
+HEAD is now at 9326ae3 chore: initial demo
+$ git worktree list
+~/worktree-demo/shop-app     9326ae3 [main]
+~/worktree-demo/agent-claude 9326ae3 [feat/home-copy]
+~/worktree-demo/agent-codex  9326ae3 [docs/agent-rule]
+
+$ (cd ../agent-claude && git status --short --branch)
+## feat/home-copy
+ M index.html
+$ (cd ../agent-codex && git status --short --branch)
+## docs/agent-rule
+ M README.md
+$ git status --short --branch  # main worktree
+## main
+
+$ git merge --no-ff feat/home-copy
+Merge made by the 'ort' strategy.
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git merge --no-ff docs/agent-rule
+Merge made by the 'ort' strategy.
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+$ git log --graph --oneline --decorate --all --max-count=8
+*   1f99aa6 (HEAD -> main) merge: agent rule
+|\
+| * 9a8fe5d (docs/agent-rule) docs: add agent rule
+* |   6a397c1 merge: home copy
+|\ \
+| |/
+|/|
+| * 350d994 (feat/home-copy) feat: clarify intro copy
+|/
+* 9326ae3 chore: initial demo
+
+$ git merge --no-ff test/button-a
+Merge made by the 'ort' strategy.
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git merge --no-ff test/button-b
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+merge_exit_code=1
+$ git status --short
+UU index.html
+$ git diff --name-only --diff-filter=U
+index.html
+
+$ git worktree remove ../agent-a
+$ git worktree remove ../agent-b
+$ git worktree list
+~/worktree-demo/shop-app 3ba3f6f [main]
+$ git worktree prune --dry-run
+
+RESULT: PASS - isolated edits merged cleanly; same-line edits conflicted as expected.

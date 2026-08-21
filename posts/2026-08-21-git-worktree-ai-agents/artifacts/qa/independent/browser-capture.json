@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "status": "pass",
+  "mode": "independent",
+  "checked_at": "2026-08-21T15:11:51.583920Z",
+  "checked_by": "Helmholtz independent QA",
+  "tool_sha256": "6de6cef94d30413a365118492b4ecb26fc926ebe1ace7fefa519a1f8e7dfc726",
+  "preview_path": "artifacts/qa/independent-rendered/git-worktree-ai-agents-rich-preview.html",
+  "preview_sha256": "4879c5b27c7731942913fa6d866c50d72b672759214322a94161bc6b49e0a072",
+  "screenshot_root": "artifacts/qa/independent",
+  "receipt_path": "artifacts/qa/independent/browser-capture.json",
+  "browser_version": "Chrome/151.0.7922.172",
+  "protocol_version": "1.3",
+  "session": "39bc35e1-cf24-4c0c-ae03-ad316d7306cb",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-21-git-worktree-ai-agents/artifacts/qa/independent-rendered/git-worktree-ai-agents-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 16119,
+      "h1_count": 1,
+      "toc_anchor_count": 9,
+      "toc_targets_unique": true,
+      "image_count": 9,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdNhDpk%2FdJMcabMeRfo%2FAAAAAAAAAAAAAAAAAAAAANZmYsarHm7I-iOUISA6BQfiNRwNOs0QO81xJPfY4OFv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1rjpFBzd0dTN%252FZoCmZ2Nj9OxRSc%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbAbvnn%2FdJMcabMeRfn%2FAAAAAAAAAAAAAAAAAAAAADmmFZzjGwgwVKYvEfOOwTIucX7TAEDjou5j8juaheat%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0UfYCuAk87Do357EmArOWK3kcE0%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1080
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbadXCO%2FdJMcaf8Jz5M%2FAAAAAAAAAAAAAAAAAAAAAGDa65qigNIYv4CMFOzh1S4COBewBSvy42kMrS4b8EIg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DpcJslF8kiuHeFM%252FbmT2idFqJ%252BS8%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FBnnTT%2FdJMcaixLbLl%2FAAAAAAAAAAAAAAAAAAAAAArMEY-iqDXc0bk1q4fASSFjUnwQ8Naf4BGXugrPSGvy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtZ2g%252FFzzNgh1nfeUpXS46PMdEHs%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fmz6bR%2FdJMcaixLbLj%2FAAAAAAAAAAAAAAAAAAAAALg_MKNdmjMWfOQju2VoILGr38eahwPQDg5QWa1pVYsB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWKJVYeTZcVb0GC1M%252FInJZLb5ONM%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9zkTk%2FdJMcaixLbLi%2FAAAAAAAAAAAAAAAAAAAAACL8uiTmCTozfb8AYKMo2gdBR_maaq5r_fMITTOfLEfi%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVRzCKMI4q0rFbUygxRoVMh9yYEo%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FTd3UT%2FdJMcaf8Jz5N%2FAAAAAAAAAAAAAAAAAAAAALfZpdQPFJB5JUQVQT6qg8rkQQ1CP7BoaU7vpPemE9lr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaFw02eVtUN5Ik4Xsc8YbanTET4A%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNOyyV%2FdJMcaixLbLm%2FAAAAAAAAAAAAAAAAAAAAAHs8rGBWGbbpeqJVS1hl7r7P7QXlGLTpAIHpQwZYChdf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhtNBh79pRTy3gTR78H%252BR0Xozcfw%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBgs61%2FdJMcaixLbLk%2FAAAAAAAAAAAAAAAAAAAAAE-PCV0uaRMwVfYDeM7yk7Jj1XkfwlWImvuWJeq013Ae%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DsyS5cWX0FM1L0mW8E%252Fx%252FfAZYHX0%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        }
+      ],
+      "screenshot_sha256": "61ef9acbd10744a9156ec4d78cfe185ab4c8784869a02f25d8743275a305d7b6",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa/independent/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-21-git-worktree-ai-agents/artifacts/qa/independent-rendered/git-worktree-ai-agents-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 15185,
+      "h1_count": 1,
+      "toc_anchor_count": 9,
+      "toc_targets_unique": true,
+      "image_count": 9,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdNhDpk%2FdJMcabMeRfo%2FAAAAAAAAAAAAAAAAAAAAANZmYsarHm7I-iOUISA6BQfiNRwNOs0QO81xJPfY4OFv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1rjpFBzd0dTN%252FZoCmZ2Nj9OxRSc%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbAbvnn%2FdJMcabMeRfn%2FAAAAAAAAAAAAAAAAAAAAADmmFZzjGwgwVKYvEfOOwTIucX7TAEDjou5j8juaheat%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0UfYCuAk87Do357EmArOWK3kcE0%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1080
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbadXCO%2FdJMcaf8Jz5M%2FAAAAAAAAAAAAAAAAAAAAAGDa65qigNIYv4CMFOzh1S4COBewBSvy42kMrS4b8EIg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DpcJslF8kiuHeFM%252FbmT2idFqJ%252BS8%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FBnnTT%2FdJMcaixLbLl%2FAAAAAAAAAAAAAAAAAAAAAArMEY-iqDXc0bk1q4fASSFjUnwQ8Naf4BGXugrPSGvy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtZ2g%252FFzzNgh1nfeUpXS46PMdEHs%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fmz6bR%2FdJMcaixLbLj%2FAAAAAAAAAAAAAAAAAAAAALg_MKNdmjMWfOQju2VoILGr38eahwPQDg5QWa1pVYsB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWKJVYeTZcVb0GC1M%252FInJZLb5ONM%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9zkTk%2FdJMcaixLbLi%2FAAAAAAAAAAAAAAAAAAAAACL8uiTmCTozfb8AYKMo2gdBR_maaq5r_fMITTOfLEfi%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVRzCKMI4q0rFbUygxRoVMh9yYEo%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FTd3UT%2FdJMcaf8Jz5N%2FAAAAAAAAAAAAAAAAAAAAALfZpdQPFJB5JUQVQT6qg8rkQQ1CP7BoaU7vpPemE9lr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaFw02eVtUN5Ik4Xsc8YbanTET4A%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNOyyV%2FdJMcaixLbLm%2FAAAAAAAAAAAAAAAAAAAAAHs8rGBWGbbpeqJVS1hl7r7P7QXlGLTpAIHpQwZYChdf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhtNBh79pRTy3gTR78H%252BR0Xozcfw%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBgs61%2FdJMcaixLbLk%2FAAAAAAAAAAAAAAAAAAAAAE-PCV0uaRMwVfYDeM7yk7Jj1XkfwlWImvuWJeq013Ae%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DsyS5cWX0FM1L0mW8E%252Fx%252FfAZYHX0%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        }
+      ],
+      "screenshot_sha256": "5d9a8eddc64ea5761035b36db30512cad17dd30a133be9f1b08b3c0e2f996c92",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa/independent/mobile-390.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-08-21-git-worktree-ai-agents/artifacts/qa/independent-rendered/git-worktree-ai-agents-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 15579,
+      "h1_count": 1,
+      "toc_anchor_count": 9,
+      "toc_targets_unique": true,
+      "image_count": 9,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdNhDpk%2FdJMcabMeRfo%2FAAAAAAAAAAAAAAAAAAAAANZmYsarHm7I-iOUISA6BQfiNRwNOs0QO81xJPfY4OFv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1rjpFBzd0dTN%252FZoCmZ2Nj9OxRSc%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbAbvnn%2FdJMcabMeRfn%2FAAAAAAAAAAAAAAAAAAAAADmmFZzjGwgwVKYvEfOOwTIucX7TAEDjou5j8juaheat%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0UfYCuAk87Do357EmArOWK3kcE0%253D",
+          "complete": true,
+          "natural_width": 1080,
+          "natural_height": 1080
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbadXCO%2FdJMcaf8Jz5M%2FAAAAAAAAAAAAAAAAAAAAAGDa65qigNIYv4CMFOzh1S4COBewBSvy42kMrS4b8EIg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DpcJslF8kiuHeFM%252FbmT2idFqJ%252BS8%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FBnnTT%2FdJMcaixLbLl%2FAAAAAAAAAAAAAAAAAAAAAArMEY-iqDXc0bk1q4fASSFjUnwQ8Naf4BGXugrPSGvy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtZ2g%252FFzzNgh1nfeUpXS46PMdEHs%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fmz6bR%2FdJMcaixLbLj%2FAAAAAAAAAAAAAAAAAAAAALg_MKNdmjMWfOQju2VoILGr38eahwPQDg5QWa1pVYsB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWKJVYeTZcVb0GC1M%252FInJZLb5ONM%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9zkTk%2FdJMcaixLbLi%2FAAAAAAAAAAAAAAAAAAAAACL8uiTmCTozfb8AYKMo2gdBR_maaq5r_fMITTOfLEfi%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVRzCKMI4q0rFbUygxRoVMh9yYEo%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FTd3UT%2FdJMcaf8Jz5N%2FAAAAAAAAAAAAAAAAAAAAALfZpdQPFJB5JUQVQT6qg8rkQQ1CP7BoaU7vpPemE9lr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaFw02eVtUN5Ik4Xsc8YbanTET4A%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNOyyV%2FdJMcaixLbLm%2FAAAAAAAAAAAAAAAAAAAAAHs8rGBWGbbpeqJVS1hl7r7P7QXlGLTpAIHpQwZYChdf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhtNBh79pRTy3gTR78H%252BR0Xozcfw%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBgs61%2FdJMcaixLbLk%2FAAAAAAAAAAAAAAAAAAAAAE-PCV0uaRMwVfYDeM7yk7Jj1XkfwlWImvuWJeq013Ae%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DsyS5cWX0FM1L0mW8E%252Fx%252FfAZYHX0%253D",
+          "complete": true,
+          "natural_width": 720,
+          "natural_height": 800
+        }
+      ],
+      "screenshot_sha256": "b27314d87ea0dc8b893a5b73e5fa8a7051d896eb7a1055c4150df31c7a319128",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa/independent/mobile-360.png"
+    }
+  ]
+}

@@ -108,13 +108,31 @@ Record any theme-specific revision and re-verification in `audit.md`. The
 Tistory fragment must not emit its own `html.dark` wrapper; the skin owns that
 state.
 
+## Plan evidence and editorial images separately
+
+Treat a screenshot-led guide as two visual lanes. The **evidence lane** proves
+steps, controls, states, results, and failures with direct or official media.
+The **editorial lane** gives the post topic recognition and visual rhythm with
+a topic-specific lead or concept image. A large number of UI or terminal
+screenshots does not by itself make the article visually finished.
+
+For every new rich post, explicitly decide whether the editorial lane needs an
+iconic lead or section image even when evidence coverage is already complete.
+Record its recognizable subject cue, visual job, placement, and why it earns
+space. It may be generated or first-party when provenance permits, but it must
+not imitate a product screen, claim an observed state, or replace missing
+evidence. Avoid generic decoration: the image should still identify this
+topic if the title and caption are hidden.
+
 ## Run the workflow
 
 1. **Plan.** Define one primary reader, what that reader does not know, a
    familiar anchor, the shortest useful no-code path, specialist paths,
    required claims, capture coverage, GIF decisions, and the honest test
-   boundary. Assume a general search reader does not know an unfamiliar
-   product unless the request explicitly targets experts.
+   boundary. Plan evidence media and topic-specific editorial media as separate
+   lanes, including the recognition cue and unique job of each editorial
+   image. Assume a general search reader does not know an unfamiliar product
+   unless the request explicitly targets experts.
 2. **Capture.** Execute the journey in a safe representative environment.
    Separate direct, official, user-supplied, simulated, and generated media.
    Preserve the actor, version, date, environment, raw input, failure, and

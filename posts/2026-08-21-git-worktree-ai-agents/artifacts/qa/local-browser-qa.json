@@ -1,0 +1,1005 @@
+{
+  "checkedAt": "2026-08-21T14:46:34.355Z",
+  "checkedBy": "Codex local supplemental browser QA",
+  "session": "b7e88519-92fe-419c-913e-fe09caec185a",
+  "browser": "151.0.7922.172",
+  "note": "Local-media supplemental QA only; this does not replace required remote-media creator or independent QA.",
+  "profiles": [
+    {
+      "theme": "light",
+      "width": 1280,
+      "height": 900,
+      "screenshot": "local-light-1280-full.png",
+      "metrics": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "scrollHeight": 16120,
+        "h1Count": 1,
+        "images": [
+          {
+            "alt": "하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 편집 이미지",
+            "displayWidth": 916,
+            "displayHeight": 516.390625,
+            "naturalWidth": 1672,
+            "naturalHeight": 941
+          },
+          {
+            "alt": "하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도",
+            "displayWidth": 720,
+            "displayHeight": 720,
+            "naturalWidth": 1080,
+            "naturalHeight": 1080
+          },
+          {
+            "alt": "Git 2.53.0과 깨끗한 main 브랜치를 확인하는 터미널 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "git worktree add 명령으로 Claude와 Codex용 브랜치와 폴더를 만드는 터미널 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "두 linked worktree를 제거한 뒤 main만 남고 직접 검증이 통과한 터미널 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          }
+        ],
+        "tables": [
+          {
+            "wrapperClientWidth": 760,
+            "wrapperScrollWidth": 760,
+            "overflowX": "auto"
+          },
+          {
+            "wrapperClientWidth": 760,
+            "wrapperScrollWidth": 760,
+            "overflowX": "auto"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          }
+        ]
+      }
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "screenshot": "local-light-390-full.png",
+      "metrics": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 15207,
+        "h1Count": 1,
+        "images": [
+          {
+            "alt": "하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 편집 이미지",
+            "displayWidth": 350,
+            "displayHeight": 197.84375,
+            "naturalWidth": 1672,
+            "naturalHeight": 941
+          },
+          {
+            "alt": "하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도",
+            "displayWidth": 350,
+            "displayHeight": 350,
+            "naturalWidth": 1080,
+            "naturalHeight": 1080
+          },
+          {
+            "alt": "Git 2.53.0과 깨끗한 main 브랜치를 확인하는 터미널 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "git worktree add 명령으로 Claude와 Codex용 브랜치와 폴더를 만드는 터미널 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "두 linked worktree를 제거한 뒤 main만 남고 직접 검증이 통과한 터미널 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          }
+        ],
+        "tables": [
+          {
+            "wrapperClientWidth": 350,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          },
+          {
+            "wrapperClientWidth": 350,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 509,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 425,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 379,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          }
+        ]
+      }
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "screenshot": "local-light-360-full.png",
+      "metrics": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 15601,
+        "h1Count": 1,
+        "images": [
+          {
+            "alt": "하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 편집 이미지",
+            "displayWidth": 320,
+            "displayHeight": 180.96875,
+            "naturalWidth": 1672,
+            "naturalHeight": 941
+          },
+          {
+            "alt": "하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도",
+            "displayWidth": 320,
+            "displayHeight": 320,
+            "naturalWidth": 1080,
+            "naturalHeight": 1080
+          },
+          {
+            "alt": "Git 2.53.0과 깨끗한 main 브랜치를 확인하는 터미널 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "git worktree add 명령으로 Claude와 Codex용 브랜치와 폴더를 만드는 터미널 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "두 linked worktree를 제거한 뒤 main만 남고 직접 검증이 통과한 터미널 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          }
+        ],
+        "tables": [
+          {
+            "wrapperClientWidth": 320,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          },
+          {
+            "wrapperClientWidth": 320,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 509,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 425,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 379,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 344,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 344,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 335,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          }
+        ]
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "height": 900,
+      "screenshot": "local-dark-1280-full.png",
+      "metrics": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "scrollHeight": 16120,
+        "h1Count": 1,
+        "images": [
+          {
+            "alt": "하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 편집 이미지",
+            "displayWidth": 916,
+            "displayHeight": 516.390625,
+            "naturalWidth": 1672,
+            "naturalHeight": 941
+          },
+          {
+            "alt": "하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도",
+            "displayWidth": 720,
+            "displayHeight": 720,
+            "naturalWidth": 1080,
+            "naturalHeight": 1080
+          },
+          {
+            "alt": "Git 2.53.0과 깨끗한 main 브랜치를 확인하는 터미널 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "git worktree add 명령으로 Claude와 Codex용 브랜치와 폴더를 만드는 터미널 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "두 linked worktree를 제거한 뒤 main만 남고 직접 검증이 통과한 터미널 로그",
+            "displayWidth": 720,
+            "displayHeight": 799.765625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          }
+        ],
+        "tables": [
+          {
+            "wrapperClientWidth": 760,
+            "wrapperScrollWidth": 760,
+            "overflowX": "auto"
+          },
+          {
+            "wrapperClientWidth": 760,
+            "wrapperScrollWidth": 760,
+            "overflowX": "auto"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 758,
+            "scrollWidth": 758,
+            "overflowX": "auto"
+          }
+        ]
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "screenshot": "local-dark-390-full.png",
+      "metrics": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 15207,
+        "h1Count": 1,
+        "images": [
+          {
+            "alt": "하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 편집 이미지",
+            "displayWidth": 350,
+            "displayHeight": 197.84375,
+            "naturalWidth": 1672,
+            "naturalHeight": 941
+          },
+          {
+            "alt": "하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도",
+            "displayWidth": 350,
+            "displayHeight": 350,
+            "naturalWidth": 1080,
+            "naturalHeight": 1080
+          },
+          {
+            "alt": "Git 2.53.0과 깨끗한 main 브랜치를 확인하는 터미널 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "git worktree add 명령으로 Claude와 Codex용 브랜치와 폴더를 만드는 터미널 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "두 linked worktree를 제거한 뒤 main만 남고 직접 검증이 통과한 터미널 로그",
+            "displayWidth": 350,
+            "displayHeight": 388.65625,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          }
+        ],
+        "tables": [
+          {
+            "wrapperClientWidth": 350,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          },
+          {
+            "wrapperClientWidth": 350,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 509,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 425,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 379,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 348,
+            "scrollWidth": 348,
+            "overflowX": "auto"
+          }
+        ]
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "screenshot": "local-dark-360-full.png",
+      "metrics": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 15601,
+        "h1Count": 1,
+        "images": [
+          {
+            "alt": "하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 편집 이미지",
+            "displayWidth": 320,
+            "displayHeight": 180.96875,
+            "naturalWidth": 1672,
+            "naturalHeight": 941
+          },
+          {
+            "alt": "하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도",
+            "displayWidth": 320,
+            "displayHeight": 320,
+            "naturalWidth": 1080,
+            "naturalHeight": 1080
+          },
+          {
+            "alt": "Git 2.53.0과 깨끗한 main 브랜치를 확인하는 터미널 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "git worktree add 명령으로 Claude와 Codex용 브랜치와 폴더를 만드는 터미널 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          },
+          {
+            "alt": "두 linked worktree를 제거한 뒤 main만 남고 직접 검증이 통과한 터미널 로그",
+            "displayWidth": 320,
+            "displayHeight": 355.328125,
+            "naturalWidth": 720,
+            "naturalHeight": 800
+          }
+        ],
+        "tables": [
+          {
+            "wrapperClientWidth": 320,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          },
+          {
+            "wrapperClientWidth": 320,
+            "wrapperScrollWidth": 620,
+            "overflowX": "auto"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 509,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 425,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 379,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 344,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 344,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 335,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          },
+          {
+            "clientWidth": 318,
+            "scrollWidth": 318,
+            "overflowX": "auto"
+          }
+        ]
+      }
+    }
+  ]
+}
