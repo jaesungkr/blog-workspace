@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "c00ac220-07d0-4e62-94fb-8edb4908d32e",
+  "recorded_at": "2026-08-21T05:37:40.425606Z",
+  "recorded_by": "Codex /root",
+  "media_sha256": "55acb7e4fca72c4f78351c5dd12e48a5e0c5fcfeaffe2491607b0d265ca9e096",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "github-homepage",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGjWFW%2FdJMcagmjMc1%2FAAAAAAAAAAAAAAAAAAAAAKRJ_R6mdSSw78nECBge6RRkLnPwa2NmXu4sIAFm5u3i%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaEjVmjLV%252Bg%252FIZTDnQYWSAbagkTY%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGjWFW%2FdJMcagmjMc1%2FAAAAAAAAAAAAAAAAAAAAAKRJ_R6mdSSw78nECBge6RRkLnPwa2NmXu4sIAFm5u3i%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaEjVmjLV%252Bg%252FIZTDnQYWSAbagkTY%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-21T05:37:40.332265Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 323683,
+      "byte_length": 323683,
+      "sha256": "4192195c786502251dc5a43ddd9fbf18cf1eea6492f3636e11e80a2ec9b02379",
+      "format": "png",
+      "width": 1280,
+      "height": 693,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 21 Aug 2026 05:31:49 GMT"
+    },
+    {
+      "id": "github-actions-workflow",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FucAYs%2FdJMcaafp5iL%2FAAAAAAAAAAAAAAAAAAAAALzlQt9htGBtovULtNXLO-5QfT6_h5e23FfaWJJyF9ZJ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D9opdN6oFiR6%252FV24iCs3emNOL3Lw%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FucAYs%2FdJMcaafp5iL%2FAAAAAAAAAAAAAAAAAAAAALzlQt9htGBtovULtNXLO-5QfT6_h5e23FfaWJJyF9ZJ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D9opdN6oFiR6%252FV24iCs3emNOL3Lw%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-21T05:37:40.425243Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 68735,
+      "byte_length": 68735,
+      "sha256": "79c1c54d327564f6348a48bcbb93a4161ee9813950e0d20a670e001bd6c63dc5",
+      "format": "png",
+      "width": 1280,
+      "height": 448,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 21 Aug 2026 05:31:48 GMT"
+    }
+  ]
+}

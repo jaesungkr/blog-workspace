@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "lead_id": "github-homepage",
+  "items": [
+    {
+      "id": "github-homepage",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "lead",
+      "claim_ids": [
+        "C04",
+        "C05"
+      ],
+      "source_url": "https://github.com/",
+      "publish_path": "assets/github-homepage-user-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGjWFW%2FdJMcagmjMc1%2FAAAAAAAAAAAAAAAAAAAAAKRJ_R6mdSSw78nECBge6RRkLnPwa2NmXu4sIAFm5u3i%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaEjVmjLV%252Bg%252FIZTDnQYWSAbagkTY%253D",
+      "width": 1280,
+      "height": 693,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "user-captured screenshot of the public GitHub homepage supplied by the user for publication; GitHub product names, interface, and marks remain with GitHub",
+      "alt": "GitHub 홈페이지에 함께 일하고 더 많은 성과를 내라는 문구와 프로젝트 계획표가 표시된 화면",
+      "caption": "GitHub 첫 화면은 계획과 토론, 코드 리뷰를 코드 옆에서 이어 가는 협업 공간을 보여 줍니다.",
+      "processing": [
+        "downloaded the exact user-supplied Tistory CDN PNG without crop, annotation, re-encoding, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "4192195c786502251dc5a43ddd9fbf18cf1eea6492f3636e11e80a2ec9b02379",
+      "status": "validated"
+    },
+    {
+      "id": "github-actions-workflow",
+      "kind": "image",
+      "origin": "official",
+      "role": "concept",
+      "claim_ids": [
+        "C06"
+      ],
+      "source_url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "publish_path": "assets/github-actions-workflow-official-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FucAYs%2FdJMcaafp5iL%2FAAAAAAAAAAAAAAAAAAAAALzlQt9htGBtovULtNXLO-5QfT6_h5e23FfaWJJyF9ZJ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D9opdN6oFiR6%252FV24iCs3emNOL3Lw%253D",
+      "width": 1536,
+      "height": 538,
+      "display_width": 916,
+      "placement": "after:actions-architecture",
+      "rights": "official GitHub documentation diagram republished with source attribution for editorial explanation of the public GitHub Actions architecture",
+      "alt": "저장소 이벤트가 GitHub Actions의 두 러너와 각 작업 단계로 이어지는 구조도",
+      "caption": "저장소 이벤트가 워크플로를 시작하고, 각 작업은 배정된 러너에서 여러 단계로 실행됩니다.",
+      "processing": [
+        "downloaded the original official PNG without crop, annotation, re-encoding, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "873d1510ee0c7b341246e6459a1612ab33b9cb4bdd90f75a164491519086ee2b",
+      "status": "validated"
+    }
+  ]
+}
