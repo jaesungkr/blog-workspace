@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "d0f1a1fc-683a-4ebe-88b0-dbe4b7abe308",
+  "recorded_at": "2026-08-22T11:48:51.416376Z",
+  "recorded_by": "Codex (/root)",
+  "media_sha256": "3609d6c774b7480b6640849b5be56326bfd44558ddd871c97eba0fedf1ab49a9",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "robot-market-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FxHy57%2FdJMcacxvKmr%2FAAAAAAAAAAAAAAAAAAAAAGnaw20LuuZTHCpj34KRslZGeAGXCPm57ZyhIXNsWNLv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DXUojcve3kX%252FHXAHIujpX%252FUPNcTM%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FxHy57%2FdJMcacxvKmr%2FAAAAAAAAAAAAAAAAAAAAAGnaw20LuuZTHCpj34KRslZGeAGXCPm57ZyhIXNsWNLv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DXUojcve3kX%252FHXAHIujpX%252FUPNcTM%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-22T11:48:51.353967Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 2038427,
+      "byte_length": 2038427,
+      "sha256": "f8f4b81550ef5f6fafc56702bf36d3bb3b3d4b3e60371aae3e3a07aa7294a77a",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sat, 22 Aug 2026 11:47:00 GMT"
+    },
+    {
+      "id": "robot-commercialization-map",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBCENk%2FdJMcajcfOq8%2FAAAAAAAAAAAAAAAAAAAAAO5AvxChN70--fjKg4wAg7_vYhMiXUshSwI_d8L0nMUQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dqg0ZCXoRXSvyCb9%252FeY5V1Z0V7YU%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBCENk%2FdJMcajcfOq8%2FAAAAAAAAAAAAAAAAAAAAAO5AvxChN70--fjKg4wAg7_vYhMiXUshSwI_d8L0nMUQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dqg0ZCXoRXSvyCb9%252FeY5V1Z0V7YU%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-22T11:48:51.415992Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 194506,
+      "byte_length": 194506,
+      "sha256": "a6d80a05e7c92d15f9b78dd62cfb2b756a4b2c290ee6884bdcad8f5a97d71368",
+      "format": "png",
+      "width": 1080,
+      "height": 1320,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sat, 22 Aug 2026 11:46:59 GMT"
+    }
+  ]
+}

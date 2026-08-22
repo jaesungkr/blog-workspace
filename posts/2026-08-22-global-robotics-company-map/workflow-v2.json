@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "휴머노이드 뉴스는 보지만 로봇 산업 전체의 기업 구도와 실제 기술 수준을 한 번에 이해하고 싶은 비전문 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": true,
+  "complex_layout": true,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": true,
+  "second_remote_fetch": false,
+  "decision_note": "공식 자료를 교차 검증하는 standard-rich 경로다. 직접 사용기나 성능 벤치마크를 주장하지 않는다. 생성형 리드 이미지는 산업용·물류·수술·현장·휴머노이드가 하나의 시장이라는 인식을 만들고, 인포그래픽은 기업을 작업 환경과 상용화 단계에 배치해 긴 목록의 독해 부담을 줄인다. 기업 비교 표와 단계 카드가 태블릿 폭에서 재배치되므로 768px QA를 추가한다. GIF·직접 캡처·고위험 원격 미디어는 없으며 두 번째 원격 fetch는 요구하지 않는다."
+}

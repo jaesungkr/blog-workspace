@@ -1,6 +1,6 @@
 ---
 name: dev-log-infographic
-description: Decide whether a dev.log post needs a supporting infographic and create or revise the candidate when it does. Use for process, mechanism, decision, comparison, experiment, or troubleshooting visuals; deterministic Korean labels; balanced mobile typography and canvas composition; HTML, SVG, or template layout sources; raster assets; alt text; and placement records. Hand every candidate to dev-log-infographic-validation and keep the hero workflow separate.
+description: Decide whether a dev.log post needs a supporting infographic and create or revise the candidate when it does. Use for process, mechanism, decision, comparison, experiment, or troubleshooting visuals; deterministic Korean labels; balanced typography, painted-bound spacing, and canvas composition; HTML, SVG, or template layout sources; raster assets; alt text; and placement records. Hand every candidate to dev-log-infographic-validation and keep the hero workflow separate.
 ---
 
 # dev.log supporting infographic creation
@@ -68,46 +68,39 @@ Record `not_applicable` in `audit.md` when the gate fails.
    materially improves explanation.
 8. Keep connectors simple and reserve clear space around text. For SVG markers,
    prefer explicit `markerUnits="userSpaceOnUse"` and explicit dimensions.
-9. Treat mobile legibility as both a minimum and a maximum. Before finalizing,
-   convert source font sizes to their 360px CSS-display equivalents:
-   `source font px × 360 ÷ source canvas width`. Start with these bands:
-   headline `20-24px`, primary labels `15-18px`, supporting copy `12-14px`,
-   and caveats `11-12px`. Deviate only when the visual role clearly
-   requires it and record why.
-   Default to the lower half when no semantic emphasis requires more:
-   headline `20-21px`, primary labels `15-16px`, supporting copy `12-13px`,
-   and caveats `11-11.5px`. If text still feels large relative to the visual,
-   reduce the hierarchy by about `4-8%` without crossing the mobile floor and
-   rerender a versioned candidate.
-10. Keep the headline area at about 22% or less of canvas height. The relationship
-   or diagram must remain the dominant visual, not a large title sitting above
-   a small framed panel.
-11. Do not use one large rounded outer card as the default container. Prefer an
-    open field, meaningful regions, or a boundary that carries information.
-    When a frame is necessary, leave generous internal breathing room and make
-    the diagram feel native to the canvas rather than squeezed into an inset.
-12. Reserve visible quiet space inside every primary region. If labels and copy
+9. Set type from the source canvas and the intended editorial hierarchy. Start
+   smaller than feels necessary, compare it with the illustration at the final
+   publication size, and enlarge only the roles that are genuinely hard to
+   read. Do not use a minimum CSS-pixel band to force every label upward.
+10. Measure painted glyph bounds rather than baseline coordinates. Keep visible
+   vertical air between adjacent lines; use roughly `0.6-1.0×` the smaller
+   line's painted height as a starting gap and more between semantic groups.
+   Add a render-time assertion when deterministic layout repeatedly crowds the
+   same roles. Do not let labels, badges, or company lists fill a region merely
+   because their bounding boxes technically fit.
+   Measure illustration and connector envelopes as well. Never let a painted
+   object touch a section rule. Repeated boundaries need optically consistent
+   clearance on both sides; when a rule carries no meaning, remove it and use
+   aligned anchors plus negative space. Add envelope assertions for recurring
+   scene bands.
+11. Keep the headline area compact, usually about 18% or less of canvas height.
+   The relationship or diagram must remain the dominant visual, not a large
+   title sitting above a small framed panel.
+12. Do not use one large rounded outer card as the default container. Prefer an
+   open field, meaningful regions, or a boundary that carries information.
+   When a frame is necessary, leave generous internal breathing room and make
+   the diagram feel native to the canvas rather than squeezed into an inset.
+13. Reserve visible quiet space inside every primary region. If labels and copy
     consume most of a block, shorten the copy, simplify the structure, or
-    increase useful diagram area. Do not solve crowding by shrinking supporting
-    copy below the mobile floor.
-13. Preview the untouched full-resolution candidate in a browser at
-   `width:360px` early. Do not resize, re-encode, save, or commit a smaller
-   raster derivative for mobile QA. Reject the browser display when the first
-   impression is `headline + boxed text` instead of the intended relationship,
-   even if every word is technically readable. Treat direct user feedback that
-   type dominates the image as a required revision, not a stylistic note.
-
-Before handoff, run the validator's deterministic type-scale checker with the
-actual source values:
-
-```bash
-python3 ../dev-log-infographic-validation/scripts/check_mobile_type_scale.py \
-  --canvas-width 1080 --canvas-height 1350 --header-height 260 \
-  --headline 64 --primary 52 --support 40 --caveat 36
-```
-
-Use repeated flags when a role has multiple sizes. Treat a failure as a layout
-revision, not as permission to shrink all copy.
+    increase useful diagram area. Solve cramped composition by adjusting font
+    size, leading, grouping, copy length, and useful visual area together.
+14. Preview the untouched full-resolution candidate and the actual intended
+    publication width early. Reject it when the first impression is `headline
+    + boxed text` instead of the intended relationship. Treat direct user
+    feedback that type dominates or spacing feels cramped as a required
+    revision even when no collision is present.
+    Do not resize, re-encode, save, or commit a separate QA derivative; inspect
+    the publication raster itself.
 
 Save:
 
@@ -116,9 +109,8 @@ Save:
 - practical editable source and render code under `artifacts/`;
 - placement, alt text, type, copy source, production method, and candidate hash
   in `audit.md`;
-- the 360px CSS-display-equivalent type scale, headline-height share, and any
-  justified deviation from the default bands in `audit.md`. Do not save a
-  reduced-size QA raster under the post bundle.
+- the source font sizes, painted-bound gaps, headline-height share, intended
+  publication width, and any deliberate hierarchy exception in `audit.md`.
 
 Do not add a local filesystem image link to `article.md`.
 

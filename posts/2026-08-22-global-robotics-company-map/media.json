@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "lead_id": "robot-market-hero",
+  "items": [
+    {
+      "id": "robot-market-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "R01",
+        "R03",
+        "R04"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-22",
+      "environment": "OpenAI built-in image generation, editorial campaign photography direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/robot-market-hero-v2-source.png",
+      "publish_path": "assets/robot-market-hero-v2.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FxHy57%2FdJMcacxvKmr%2FAAAAAAAAAAAAAAAAAAAAAGnaw20LuuZTHCpj34KRslZGeAGXCPm57ZyhIXNsWNLv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DXUojcve3kX%252FHXAHIujpX%252FUPNcTM%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "전용 작업 레인을 따라 산업용 팔·물류·정밀 로봇이 일하고, 갈라지는 길 끝에 휴머노이드가 서 있는 밝은 작업 공간",
+      "caption": "현재 로봇 시장의 깊이는 사람을 닮은 모양보다 정해진 작업을 얼마나 오래 반복했는지에서 갈립니다.",
+      "processing": [
+        "generated from an original global robotics market editorial prompt",
+        "targeted v2 edit for mechanically plausible gripper contact and pseudo-writing removal",
+        "full-size and 360-by-202-pixel creator inspection",
+        "independent hero validation pass by /root/hero_validator"
+      ],
+      "redactions": [],
+      "sha256": "6b39d26f2ae6b37fd4356536f7e7f2d9234443a395809fe6b38053b7b19c6638",
+      "status": "validated"
+    },
+    {
+      "id": "robot-commercialization-map",
+      "kind": "image",
+      "origin": "generated",
+      "role": "comparison",
+      "claim_ids": [
+        "R05",
+        "R06",
+        "R10",
+        "R13",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20",
+        "R21",
+        "R22",
+        "R23",
+        "R24",
+        "R25"
+      ],
+      "actor": "Codex deterministic Pillow layout",
+      "captured_at": "2026-08-22",
+      "environment": "1080 x 1320 PNG rendered with Python Pillow and Apple SD Gothic Neo on macOS",
+      "source_url": "",
+      "raw_path": "artifacts/render_robot_commercialization_map_v4.py",
+      "publish_path": "assets/robot-commercialization-map-v4.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBCENk%2FdJMcajcfOq8%2FAAAAAAAAAAAAAAAAAAAAAO5AvxChN70--fjKg4wAg7_vYhMiXUshSwI_d8L0nMUQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dqg0ZCXoRXSvyCb9%252FeY5V1Z0V7YU%253D",
+      "width": 1080,
+      "height": 1320,
+      "display_width": 760,
+      "placement": "after:commercialization-criteria",
+      "rights": "dev.log original deterministic infographic",
+      "alt": "정돈된 환경의 대규모 운영에서 열린 환경의 개발·사전 주문까지 로봇 분야와 대표 기업을 네 단계로 나눈 지도",
+      "caption": "같은 휴머노이드라도 고객 반복 작업, 배치 발표, 파일럿 계획, 하드웨어 판매는 서로 다른 근거입니다.",
+      "processing": [
+        "deterministic Pillow layout with exact Korean and company-name copy",
+        "v4 rule-free alternating scene composition after direct user feedback on divider rhythm",
+        "painted-glyph clearance assertions: 44.5-46 pixels between stage and company labels, 26.5 pixels between company lines",
+        "scene-envelope clearance assertions: 58, 71, 65, and 102 pixels",
+        "full-size and untouched 760 CSS-pixel intended-publication-width inspection",
+        "independent v4 infographic validation pass by /root/infographic_v4_validator"
+      ],
+      "redactions": [],
+      "sha256": "63fb81fda3d458db75ecd97ef8d7804daaa5cd488bd369f75d5c730c0005d880",
+      "status": "validated"
+    }
+  ]
+}

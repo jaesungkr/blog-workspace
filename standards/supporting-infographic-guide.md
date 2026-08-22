@@ -23,7 +23,7 @@ Skip the infographic when:
 
 - it only repeats a short paragraph, list, or table;
 - the reader needs exact values better served by HTML text or a table;
-- the concept requires so many labels that it will fail at mobile width;
+- the concept requires so many labels that typography overwhelms the diagram;
 - visual simplification would overstate certainty or remove a critical caveat;
 - it is proposed only to make the post look more complete.
 
@@ -101,36 +101,35 @@ layer when it materially improves the explanation, then add exact Korean copy
 deterministically. Do not copy the reference's characters, exact layout, or
 distinctive centerpiece.
 
-Use a portrait 3:4 or 4:5 canvas by default for in-article mobile reading.
+Choose the canvas ratio from the relationship and intended article placement.
 Use a shorter portrait or square canvas when sparse content would otherwise
 invite decorative filler or excessive empty height.
 Prefer a calm editorial layout, strong reading order, restrained colors, and
 simple connectors over dense dashboard styling.
 
-Mobile legibility is a floor, not a reason to enlarge every text role. Keep one
-publication raster at its source dimensions; do not create a reduced-size
-mobile derivative. Convert source typography to its 360px CSS-display
-equivalent with
-`source font px × 360 ÷ source canvas width`. Use these starting bands:
+Set typography from the source canvas, the intended article display width, and
+the visual hierarchy. Do not convert every role to a fixed CSS-pixel minimum;
+that approach can enlarge the complete type system until the result feels like
+a crowded poster. Start smaller, inspect the real composition, and enlarge only
+the roles that are genuinely difficult to read.
 
-- headline: `20-24px`;
-- primary labels: `15-18px`;
-- supporting copy: `12-14px`;
-- caveat: `11-12px`.
+Measure painted glyph bounds rather than relying on baseline distance. Adjacent
+lines need visible air after ascenders, descenders, punctuation, and Korean
+glyph boxes are painted. Use roughly `0.6-1.0×` the smaller line's painted
+height as a starting vertical gap inside a group and more between semantic
+groups. For deterministic layouts, assert these gaps in render code when the
+same crowding defect can recur.
 
-Unless the visual role clearly needs stronger type, start in the lower half of
-those bands: headline `20-21px`, primary labels `15-16px`, supporting copy
-`12-13px`, and caveats `11-11.5px`. Passing the broad band is necessary but not
-sufficient. When words feel large relative to the mechanism or illustration,
-reduce the affected hierarchy by about `4-8%` while staying above the mobile
-floor, then reopen the quiet space around labels. Do not treat a previous
-upper-band value as the default for a new canvas.
+Measure the complete painted envelopes of illustrations and connectors around
+every section boundary. No object may touch a divider, and repeated boundaries
+need optically consistent space on both sides. Remove a divider when it carries
+no explanatory meaning; aligned anchors and negative space usually create a
+cleaner editorial rhythm. Assert scene-envelope gaps in deterministic layouts
+when this defect has already occurred.
 
-Keep the headline zone near 22% or less of canvas height. Reduce copy or
-restructure the visual when a role falls outside its band; do not make the
-headline larger while shrinking body copy. In the original raster's 360px CSS
-display, the relationship must have at least equal visual presence to the
-headline.
+Keep the headline zone near 18% or less of canvas height. Reduce type, increase
+leading, shorten or regroup copy, and enlarge useful diagram area together.
+The relationship must have more visual presence than the headline.
 
 Avoid enclosing the whole explanation in one large rounded card by default.
 Such a frame often makes the actual diagram feel like a small insert inside a
@@ -154,15 +153,13 @@ space and keep text, badges, and icons from filling each region.
 ## Quality gate
 
 Inspect the final raster at full resolution and display that same untouched
-raster in a browser at `width:360px`. Do not resize, re-encode, save, or commit
-a smaller QA raster.
+raster at the intended article publication width.
 
 - The headline and primary relationship are clear without zooming.
-- Inspect the original raster at its 360px CSS display size, not a zoomed
-  preview or exported small copy.
-- Record the 360px-equivalent size of each text role and the headline-height
-  share. Treat the default bands above as a release gate unless a semantic
-  exception is documented.
+- Inspect the original raster at its intended publication width, not only a
+  zoomed preview.
+- Record each source text size, the intended display width, painted-bound gaps,
+  scene-envelope clearances, and the headline-height share.
 - Look away and back for one second. Reject the image if it reads first as a
   large headline over a small framed card, slide, or boxed text sheet instead
   of the intended relationship.
@@ -176,12 +173,14 @@ a smaller QA raster.
 - Body copy is limited to one or two short lines per block where possible.
 - Every primary region retains visible quiet space. Readability alone does not
   excuse oversized labels, crowded blocks, or weak typography-to-canvas scale.
-- Treat user feedback that the type dominates the image as release-blocking.
-  Revise the hierarchy and rerun the full-size, 360px, crop, and type-scale
-  checks before approval.
+- Treat user feedback that the type dominates the image or the leading feels
+  cramped as release-blocking. Revise size and spacing, then rerun the
+  full-size, intended-size, and crop checks before approval.
 - Korean glyphs, numbers, units, arrows, and line breaks are exact.
-- Contrast, spacing, and touch-sized visual separation work on mobile.
+- Contrast and spacing remain stable at the intended publication size.
 - Connectors point to the intended objects and do not cross confusingly.
+- Section rules do not touch nearby artwork or create irregular table-like
+  bands. Repeated regions have a deliberate optical rhythm.
 - No clipped text, orphaned label, overlap, pseudo-writing, or low-resolution
   supporting artwork remains.
 - The image still helps after surrounding prose is read and does not merely
@@ -195,8 +194,8 @@ a smaller QA raster.
 Do not approve a supporting infographic from the whole-image preview alone.
 Perform this audit on the exact final raster:
 
-1. Open the full raster, then display that exact raster in a browser at
-   `width:360px` without creating a derivative file.
+1. Open the full raster, then display that exact raster at the intended article
+   publication width without creating a derivative file.
 2. Create enlarged crops around every headline, primary block, connector,
    arrowhead, icon-label pair, footnote, and caveat.
 3. Trace a small clear zone around every text block. Reject any line,
@@ -210,14 +209,14 @@ Perform this audit on the exact final raster:
 5. Read the labels once in normal order and once by scanning only the text
    blocks. This second pass catches words hidden by visually dominant arrows or
    illustrations.
-6. After any correction, write a versioned final raster, refresh its 360px CSS
-   browser display and every affected full-raster crop, and repeat the audit.
+6. After any correction, write a versioned final raster, refresh its intended-
+   size display and every affected full-raster crop, and repeat the audit.
    Record `problem -> revision -> re-verification` in `audit.md`.
 
 Record the decision even when it is `없음`. When an infographic exists, record
 its final path, type, reader question, placement, Korean alt text, copy/evidence
-source, and full-size/360px CSS-display inspection in `audit.md`. Do not keep a
-downscaled mobile raster in the post bundle.
+source, painted-bound spacing, and full-size/intended-size inspection in
+`audit.md`.
 
 Do not insert a local filesystem Markdown image link into `article.md`. The user
 uploads the raster to Tistory manually; record placement guidance separately.

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-08-22T02:17:34.351507Z",
+  "checked_by": "Codex (/root/source_review)",
+  "article_content_sha256": "96b23a1c37fedc93d3519274a4bf3ea2dffa3be42fc9c92fdf57f2b778c561dc",
+  "brief_sha256": "bca527518f9b1e831edee614cf1f84a89a62b8ff6d099a123da825f47f5d701c",
+  "evidence_sha256": "d09f9b3791552d08f5586118d24d9f9a5018e81cea5771c0c0d71b2e7d15708a",
+  "note": "source-level pass 유지. 기사 내용은 불변이며 hero_image만 독립 검수된 v2 경로로 갱신함."
+}

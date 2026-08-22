@@ -1,0 +1,48 @@
+{
+  "viewports": [
+    {
+      "width": 1280,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 360,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "readable_media": true,
+      "status": "pass"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 360,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "readable_media": true,
+      "status": "pass"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}
