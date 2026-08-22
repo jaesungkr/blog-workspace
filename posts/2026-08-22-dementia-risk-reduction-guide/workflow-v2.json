@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "부모님의 치매가 걱정되지만 무엇부터 챙겨야 할지 모르는 성인 자녀",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "standard-rich. 사용자가 주변 어르신들의 치매를 보며 부모님과 주변 어르신에게 실질적인 도움을 주고 싶다는 상황에서 출발한다. 독자는 치매를 완전히 막는 방법이 없다는 점과 위험을 낮출 수 있는 항목의 우선순위를 아직 모른다. 한 명의 독자에게 검진 수치 관리, 운동, 청력·시력 교정부터 가족 일정에 넣으라고 권한다. 기대할 결과는 예방을 보장하는 것이 아니라 바꿀 수 있는 위험을 미리 줄이는 것이다. 보충제, 단일 음식, 퍼즐의 효능 비교와 치매 치료법은 제외한다. 직접 제품 사용·실험이 없는 의료 근거 해설이므로 캡처·GIF·복잡한 레이아웃·두 번째 원격 확인은 끈다. 사용자 동기를 따뜻하게 전달하는 생성형 리드 1장을 사용한다. 첫 반응형 표가 가족 실천 우선순위를 이미 보여 주므로 보조 인포그래픽은 만들지 않는다."
+}

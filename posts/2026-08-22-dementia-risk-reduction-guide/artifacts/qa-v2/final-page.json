@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-08-22",
+  "checked_by": "/root/hero_reviewer",
+  "browser": "Chrome/151.0.7922.172",
+  "session": "75ee68df-6b40-43d6-a5a0-2424c833b410",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "48107c6b988c0c608dc8a5a18b2c96dc81984b3fcaeb2b6682ba48307d00ae82",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "aa9337dedebfa14f3dccba5dd0529fd6f0ef2593b422d9491d0de4b97565f1f2",
+  "source_pass_sha256": "a2dffb0b01431f7a939d0570365f696cc230fb42ba52ae8e9bab487b3221e4e2",
+  "article_content_sha256": "7a304215b4184457b204ce006d3ebd53f1929650b7edddce9aa619bc0c20168e",
+  "media_sha256": "f9c25192b344c754e239577a19a45c52f2527b8dae4a44f1354c7d5c9ba40d6d",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "7df67aff9107270e8248c41479a50e732447748b2721efc03d4efb61cb531a0e",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/dementia-risk-reduction-guide-rich-preview.html",
+  "preview_sha256": "e18a16b13d941e2a807746248445b1afac39682657a5774e09a483c282840c0b",
+  "preview_structure_sha256": "b1e672e36e4f2cd6bf134b7794d8c2560895937d33b5d0c3d26cb7eaf327a969",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/dementia-risk-reduction-guide-rich-preview.html",
+  "dark_preview_sha256": "3d510e7629dcbf17558c696c4952ea871b55d77ebbcc4807214bead4f9da2122",
+  "fragment_path": "artifacts/qa-v2/final-rendered/dementia-risk-reduction-guide-tistory-fragment.html",
+  "fragment_sha256": "1866a8eb950f45275d9719f67babfa263219d41f7abeba55dcca7f32952d19e9",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "9fded148edba2e98b1397abe536f275458696d8ac680645b704732643ded2d9e"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "c28bfc516dfb31b0ee18038b97e9ffaa5f2916d27bfc1150f8acdf8ccc654f9a"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "f8757e584215b8892dd29666075443bbcc1de8a2e1a91a580628feac71c61782"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "69791f27a00dc729acff9c1e8ed1dcf81ba0c500bfeb84a96742661216dde63e"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

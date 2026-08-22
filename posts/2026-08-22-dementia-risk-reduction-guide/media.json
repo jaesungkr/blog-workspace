@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "lead_id": "dementia-prevention-family-plan-hero",
+  "items": [
+    {
+      "id": "dementia-prevention-family-plan-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C14"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-22",
+      "environment": "OpenAI built-in image generation, photorealistic natural editorial lifestyle direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/dementia-prevention-family-plan-hero-source.png",
+      "publish_path": "assets/dementia-prevention-family-plan-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fda1D1s%2FdJMcadwhJAS%2FAAAAAAAAAAAAAAAAAAAAAJ8jU7ePqFQkOrHD-zD3qeN0mVrQQnNOgpl4UaFpeZP5%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DxW7iuToPZFyt3hU%252BTnsOp4Fa1nE%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening-action-table",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "성인 자녀와 노년의 어머니가 혈압 커프 옆에서 건강 계획표에 초록 표식을 놓는 모습",
+      "caption": "부모님 건강을 미리 챙기는 일은 검진과 운동을 실제 일정에 넣는 데서 시작됩니다.",
+      "processing": [
+        "generated from an original health-article art-direction prompt",
+        "paper area targeted edits to remove pseudo-writing and restore an unlabeled schedule grid",
+        "full-size creator inspection at 1672x941",
+        "thumbnail creator inspection at 360x202",
+        "independent hero validation pass by /root/hero_reviewer"
+      ],
+      "redactions": [],
+      "sha256": "77c395019f28686f2f13df5026a9df06ef54ea2a38aa290fbc6da50cf83813d2",
+      "status": "validated"
+    }
+  ]
+}
