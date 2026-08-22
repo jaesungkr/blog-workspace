@@ -3,27 +3,27 @@
   "checked_at": "2026-08-22",
   "checked_by": "/root/hero_reviewer",
   "browser": "Chrome/151.0.7922.172",
-  "session": "75ee68df-6b40-43d6-a5a0-2424c833b410",
+  "session": "b09adbdf-66d6-4861-b9e7-1e13316160ec",
   "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
-  "capture_receipt_sha256": "48107c6b988c0c608dc8a5a18b2c96dc81984b3fcaeb2b6682ba48307d00ae82",
+  "capture_receipt_sha256": "4d2314d701948b9d485d97dbae654dbc1354b46e8e87983cfb33ca9166d2e26c",
   "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
-  "dark_capture_receipt_sha256": "aa9337dedebfa14f3dccba5dd0529fd6f0ef2593b422d9491d0de4b97565f1f2",
-  "source_pass_sha256": "a2dffb0b01431f7a939d0570365f696cc230fb42ba52ae8e9bab487b3221e4e2",
-  "article_content_sha256": "7a304215b4184457b204ce006d3ebd53f1929650b7edddce9aa619bc0c20168e",
-  "media_sha256": "f9c25192b344c754e239577a19a45c52f2527b8dae4a44f1354c7d5c9ba40d6d",
+  "dark_capture_receipt_sha256": "bdb0a065127cdeaaecffcb0dacfbbaf37a80b4c56343e5bae47a5a9b5f5c259b",
+  "source_pass_sha256": "c6e17584cba131917fbf8c76ac759f8eefcd679313cc4eeb0c753e93b5fc6257",
+  "article_content_sha256": "3252744ac2f5be41ba5820aee8e523ed8472c5b2b0751904bee581a467d4cb57",
+  "media_sha256": "05f61293ea3e64c42db91f51c37d3c3a8810ea4cca3fa3c7efb2d4d5fa709033",
   "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
   "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
   "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
-  "remote_media_sha256": "7df67aff9107270e8248c41479a50e732447748b2721efc03d4efb61cb531a0e",
+  "remote_media_sha256": "2693e0c25c851c5e3bb0a893107841504d95f26f8f1b0ce6d769e47558b2004c",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa-v2/final-rendered/dementia-risk-reduction-guide-rich-preview.html",
-  "preview_sha256": "e18a16b13d941e2a807746248445b1afac39682657a5774e09a483c282840c0b",
-  "preview_structure_sha256": "b1e672e36e4f2cd6bf134b7794d8c2560895937d33b5d0c3d26cb7eaf327a969",
+  "preview_sha256": "838215a06ec6140e231970cf0ee2ad6b2c9b143fd6f5ca32aacf83a0cd759b38",
+  "preview_structure_sha256": "d44af4627af22bd28ca60d2f502d911575b253af3ef40a6a70855248eb89ef7c",
   "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/dementia-risk-reduction-guide-rich-preview.html",
-  "dark_preview_sha256": "3d510e7629dcbf17558c696c4952ea871b55d77ebbcc4807214bead4f9da2122",
+  "dark_preview_sha256": "1fc7b9394735d7a034abafb90d7815ba022dbee16e7858f42e7a57fefa9414f8",
   "fragment_path": "artifacts/qa-v2/final-rendered/dementia-risk-reduction-guide-tistory-fragment.html",
-  "fragment_sha256": "1866a8eb950f45275d9719f67babfa263219d41f7abeba55dcca7f32952d19e9",
+  "fragment_sha256": "deb64b94cb739c215550c2dd958676b10ac8068c20da9000f027e491a625b06e",
   "viewports": [
     {
       "width": 1280,
@@ -38,7 +38,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "9fded148edba2e98b1397abe536f275458696d8ac680645b704732643ded2d9e"
+      "screenshot_sha256": "6f926734a8dab7e2df0b677e56233821642b351249fa3365ee7561104d7d834d"
     },
     {
       "width": 360,
@@ -53,7 +53,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "c28bfc516dfb31b0ee18038b97e9ffaa5f2916d27bfc1150f8acdf8ccc654f9a"
+      "screenshot_sha256": "943a7cd4e76b6f61f53ce705a24fb2e2cf26c4c92cdecda0bb1d9ddbc3ab46b3"
     }
   ],
   "dark_viewports": [
@@ -70,7 +70,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "f8757e584215b8892dd29666075443bbcc1de8a2e1a91a580628feac71c61782"
+      "screenshot_sha256": "850f767fd115eea1b34258dd9466c20a55d963af96689d8f573e0969440b77cd"
     },
     {
       "width": 360,
@@ -85,7 +85,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "69791f27a00dc729acff9c1e8ed1dcf81ba0c500bfeb84a96742661216dde63e"
+      "screenshot_sha256": "c845159076decfc3bb1504be6523343f30db8670c31cea6556312aca35f3e756"
     }
   ],
   "fragment": {

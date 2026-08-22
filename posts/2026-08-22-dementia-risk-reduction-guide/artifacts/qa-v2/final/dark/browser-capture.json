@@ -2,16 +2,16 @@
   "version": 2,
   "status": "pass",
   "mode": "final-dark",
-  "checked_at": "2026-08-22T11:22:18.882309Z",
+  "checked_at": "2026-08-22T11:55:26.489087Z",
   "checked_by": "/root/hero_reviewer",
   "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "preview_path": "artifacts/qa-v2/final-dark-rendered/dementia-risk-reduction-guide-rich-preview.html",
-  "preview_sha256": "3d510e7629dcbf17558c696c4952ea871b55d77ebbcc4807214bead4f9da2122",
+  "preview_sha256": "1fc7b9394735d7a034abafb90d7815ba022dbee16e7858f42e7a57fefa9414f8",
   "screenshot_root": "artifacts/qa-v2/final/dark",
   "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
   "browser_version": "Chrome/151.0.7922.172",
   "protocol_version": "1.3",
-  "session": "d356d3df-650e-45ce-bcca-1a19efc98cae",
+  "session": "5f0d8d5c-2646-40d8-9b26-51befc82ef27",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,7 +21,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 5522,
+      "scroll_height": 4803,
       "h1_count": 1,
       "toc_anchor_count": 7,
       "toc_targets_unique": true,
@@ -35,7 +35,7 @@
           "natural_height": 720
         }
       ],
-      "screenshot_sha256": "f8757e584215b8892dd29666075443bbcc1de8a2e1a91a580628feac71c61782",
+      "screenshot_sha256": "850f767fd115eea1b34258dd9466c20a55d963af96689d8f573e0969440b77cd",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -51,7 +51,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 8061,
+      "scroll_height": 6703,
       "h1_count": 1,
       "toc_anchor_count": 7,
       "toc_targets_unique": true,
@@ -65,7 +65,7 @@
           "natural_height": 720
         }
       ],
-      "screenshot_sha256": "69791f27a00dc729acff9c1e8ed1dcf81ba0c500bfeb84a96742661216dde63e",
+      "screenshot_sha256": "c845159076decfc3bb1504be6523343f30db8670c31cea6556312aca35f3e756",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,
