@@ -1,7 +1,7 @@
 interface:
   display_name: "dev.log Rich Post Workspace v2"
-  short_description: "AI 문체와 중복을 걷어낸 뒤 한 번의 QA로 완성하는 Tistory 워크플로"
-  default_prompt: "$dev-log-rich-post-workspace-v2를 사용해 어색한 소제목, AI식 전개, 설명 반복을 먼저 걷어내고 원고를 고정한 뒤 필요한 화면만 배치해 한 번의 독립 최종 QA로 완성해 주세요."
+  short_description: "독자 질문과 주제 범위를 지키는 Tistory 완성 워크플로"
+  default_prompt: "$dev-log-rich-post-workspace-v2를 사용해 제목이 만든 독자 질문과 주제 범위를 먼저 잠그고, 근거·문체·반응형 QA를 거쳐 완성해 주세요."
 
 policy:
   allow_implicit_invocation: false

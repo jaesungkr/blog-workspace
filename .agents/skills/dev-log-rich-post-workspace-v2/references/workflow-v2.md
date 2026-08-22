@@ -55,6 +55,12 @@ reader-benefit contract in `brief.md` and summarize it in `decision_note`:
 - the practical choice or use the article will support;
 - evidence detail and adjacent topics the article will deliberately exclude.
 
+For a disease, cause, prevention, or another broad explainer, also record the
+small set of questions created by the public title and opening. Give each
+question one owner section and list adjacent category topics that the article
+will not cover. This keeps an article about one condition, product, or decision
+from expanding into a complete wellness, productivity, safety, or buyer guide.
+
 Do not treat a folk association or search habit as prior knowledge. A title
 such as `붓기에 팥물을 찾는다면` fails for readers who do not yet know why
 red beans are associated with swelling. Name the recognizable problem and the

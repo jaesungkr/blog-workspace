@@ -97,6 +97,16 @@ as evidence.
    zero or more than five is valid when the recorded reader need justifies it.
    Each selected screenshot must answer a different concrete question, and
    every excluded obvious screen needs a short redundancy or upload-cost reason.
+   For a disease, cause, prevention, or another broad explainer, also lock the
+   questions created by the title and opening, then name adjacent topics the
+   article will exclude. Typical questions may include what causes the subject,
+   whether it applies personally, what can realistically change the outcome,
+   which popular claims are overstated, and when professional help is needed.
+   Use only the questions this title creates; do not turn the example into a
+   fixed health outline. A category guide sets safety and evidence rules, not
+   the article's public structure. Apply repository title and heading syntax to
+   planning candidates as well; public titles and headings must not end in
+   `~다`, including polite `~습니다` forms.
 2. Research unstable, niche, source-sensitive, or high-stakes claims before
    drafting. Prefer primary and official sources.
 3. Capture raw evidence during research only when the route requires it. Keep
@@ -129,11 +139,19 @@ as evidence.
    Keep consequential safety and exception language beside the affected advice,
    but do not grow a standalone limitations section when one precise boundary
    closes the claim.
+   Run a topic-link test on every practical section. If its advice could be
+   pasted unchanged into a generic wellness, productivity, safety, or buyer
+   guide, either explain the subject-specific causal or decision link with
+   evidence or remove it. Broadly helpful advice does not earn space merely
+   because it may benefit the same audience. The title-created questions, not
+   the source's full list of adjacent recommendations, own the outline.
 5. Run the full voice-and-density revision in
    `references/editorial-voice-v2.md` before the normal prose-polish stage. It
    has five required surfaces: the reader-benefit contract, heading strip,
    AI-template sentence frames, paragraph-level new information, and repeated
-   claim or action ownership.
+   claim or action ownership. For broad explainers, the audit must also record
+   the title-created question map, excluded adjacent topics, and topic-link
+   test decisions.
    The normal prose-polish stage does not replace this pass.
    Run the analyzer before and after as an inventory, never a score. A zero
    signal count does not pass a heading, paragraph, or article. Record the

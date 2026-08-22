@@ -73,6 +73,29 @@ This is a default, not a quota. Add a section only when it changes a separate
 reader decision; merge background, mechanism, or evidence detail that merely
 supports an existing job.
 
+### Lock the topic boundary
+
+For a disease, cause, prevention, or another broad explainer, write the small
+set of questions that the public title and opening naturally create. Give each
+question one owner section and list adjacent topics that will stay out. Do not
+copy a source taxonomy, clinical guideline, product feature list, or category
+template into the outline merely because the material is accurate.
+
+Apply the topic-link test to every heading and practical paragraph:
+
+- What exact question from the title or opening does this answer?
+- What subject-specific cause, evidence, tradeoff, warning, or next decision
+  connects the advice to this article?
+- Could the paragraph be pasted unchanged into a generic article for the same
+  demographic or category?
+
+If the last answer is yes and the first two have no concrete answer, remove the
+paragraph or rewrite it around the missing connection. For example, a dementia
+article should not become a checklist for healthy ageing; exercise, blood
+pressure, hearing, or diet belongs only when the prose explains how it changes
+the reader's dementia-risk judgment. This is a scope test, not a ban on
+foundational health advice.
+
 ## Pass 1: rewrite the heading strip
 
 Read only the title and headings. For each heading, write its one reader job in
@@ -167,6 +190,12 @@ Keep the smallest representative number or comparison that changes the answer;
 move supporting detail to a table or `evidence.md`. Do not repeat the same
 number in a table, explanatory paragraph, summary box, and later recap.
 
+For a broad explainer, `generally useful` is not new reader value by itself.
+Each practical paragraph must also pay one title-created question and make its
+subject-specific link explicit. When adjacent recommendations add no new cause,
+tradeoff, warning, or decision, compress them behind the strongest
+representative action or leave them in `evidence.md`.
+
 For every central claim and action, name one owner section in the audit. A
 later section may depend on it or refer back briefly, but must not explain the
 same cause, procedure, evidence, and caution again. This ownership check is
@@ -212,6 +241,8 @@ Record:
 
 - the reader-benefit contract, including the reader's knowledge baseline and
   deliberately excluded detail when this pass applies;
+- for broad explainers, the title-created question map, excluded adjacent
+  topics, and topic-link test decisions;
 - the original and selected heading strip, with the job of each section;
 - representative template frames removed or justified;
 - paragraphs deleted or merged by the new-information test;

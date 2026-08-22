@@ -9,6 +9,9 @@ verify:
 
 - claims, numbers, dates, links, quotations, and authorship;
 - the primary reader, plain identity, easiest start, and evidence boundary;
+- for a broad explainer, a locked map of the questions created by the title and
+  opening, one owner section for each question, and explicit adjacent-topic
+  exclusions;
 - for a non-specialist recommendation or benefit explainer, a recorded
   reader-benefit contract with one recognizable situation, the reader's actual
   knowledge baseline, one intended reader, one plain recommendation, its useful
@@ -24,6 +27,10 @@ verify:
 - a title-plus-headings-only pass that exposes the action or decision order,
   names every real branch, and does not require opening a section to learn what
   `추가 확인` or a similar aggregate label contains;
+- a topic-boundary pass in which a cold reader can name the promised subject
+  after reading only the title and headings. Return an article whose outline is
+  better described by an adjacent category such as `healthy ageing`, `general
+  productivity`, or `overall device care` than by its public title;
 - a compact TOC whose entries are stage-level decisions rather than every
   click, checkpoint, or closely related error; same-stage detail must remain
   inside an honestly named section;
@@ -39,6 +46,10 @@ verify:
 - an opening that answers the reader without a generic presenter roadmap;
 - a paragraph-level new-information pass in which every retained paragraph
   adds a fact, evidence, action, comparison, limitation, or necessary branch;
+- a topic-link test for every practical recommendation. If the advice could be
+  pasted unchanged into a generic guide for the same demographic, require an
+  explicit subject-specific cause, evidence link, tradeoff, warning, or next
+  decision; otherwise return it for deletion or rewrite;
 - recommendation prose in which one intended reader and benefit remain more
   prominent than supporting numbers, mechanisms, and defensive caveats;
 - the useful consequence before an unexplained nutrient, metric, feature, or
@@ -62,6 +73,12 @@ signals but the cold read exposes a mechanical surface. A recommendation or
 benefit explainer also fails when the reviewer cannot complete `이 글은 ___한
 사람에게 ___을 추천하고, 이유는 ___이다` from the title and opening without
 specialized knowledge. Repeat until the source passes.
+
+For a broad explainer, also fail the source when it answers a guideline's full
+list more completely than it answers the reader's actual questions. Accurate
+adjacent advice is still scope drift when it displaces the promised cause,
+personal relevance, realistic intervention, common misconception, or
+escalation boundary.
 
 ## Record the pass
 
