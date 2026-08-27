@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "lead_id": "glm-5-3-flash-hero",
+  "items": [
+    {
+      "id": "glm-5-3-flash-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-27",
+      "environment": "Codex desktop image generation",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/glm-5-3-flash-comparison-hero-v2-source.png",
+      "publish_path": "assets/glm-5-3-flash-comparison-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOrQxB%2FdJMcaf14tuI%2FAAAAAAAAAAAAAAAAAAAAAKoUoJ4c4AQjUmOLCKrJ1TdkCKBqJk0bIv0h20GDJWT9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DazzY8Cz4gSfof3NuWWPz0jIJ1Xk%253D",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1df533ba91dfaa3fab34f9f413ebecc39828f6280779c29703cc27e86cf6543e",
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "Original AI-generated image created for this post",
+      "alt": "OX ALPHA 외피에서 같은 내부 구조가 GLM-5.3-FLASH 금속 모듈로 이어지는 대표 이미지",
+      "caption": "익명 이름으로 가려졌던 Ox Alpha가 같은 내부 구조를 유지한 채 GLM-5.3-Flash로 공개된 장면을 표현했습니다.",
+      "processing": [
+        "Generated a 16:9 editorial still life from the recorded art direction",
+        "Removed the regular 3x3 vent pattern after independent review identified a false-logo risk",
+        "Inspected the 1672x941 source and a 320px-wide thumbnail",
+        "Preserved the original candidate and stored the revised raw source separately"
+      ],
+      "redactions": [],
+      "status": "validated"
+    }
+  ]
+}

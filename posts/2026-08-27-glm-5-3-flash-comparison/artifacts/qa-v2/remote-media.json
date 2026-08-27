@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "ba757e3c-84dc-427d-9988-0b3fc8194420",
+  "recorded_at": "2026-08-27T14:30:52.542093Z",
+  "recorded_by": "Codex",
+  "media_sha256": "3a97abdbcf66eec46dfb4499b265a87c8905edd29fb2713d44694fa5948223ad",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "glm-5-3-flash-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOrQxB%2FdJMcaf14tuI%2FAAAAAAAAAAAAAAAAAAAAAKoUoJ4c4AQjUmOLCKrJ1TdkCKBqJk0bIv0h20GDJWT9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DazzY8Cz4gSfof3NuWWPz0jIJ1Xk%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOrQxB%2FdJMcaf14tuI%2FAAAAAAAAAAAAAAAAAAAAAKoUoJ4c4AQjUmOLCKrJ1TdkCKBqJk0bIv0h20GDJWT9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DazzY8Cz4gSfof3NuWWPz0jIJ1Xk%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-27T14:30:52.541785Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 1857620,
+      "byte_length": 1857620,
+      "sha256": "308ef52135e435255ced6a33115069d71dbcb5483673c39c189d235d5884bbd0",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Thu, 27 Aug 2026 14:30:28 GMT"
+    }
+  ]
+}

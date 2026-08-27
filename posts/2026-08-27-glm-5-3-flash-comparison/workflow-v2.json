@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Ox Alpha를 써 봤거나 빠른 코딩 모델을 고르려는 비전문 개발자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "standard-rich: 직접 실행을 새로 주장하지 않고 Z.AI·OpenRouter·OpenCode의 공식 공개 자료와 2026-08-24 dev.log의 Ox Alpha 정답형 테스트를 나란히 읽는다. 독자가 알고 싶은 핵심은 Ox Alpha와 GLM-5.3-Flash가 별도 모델인지, 공개 뒤 무엇이 확인됐는지, 기존 사용 판단이 어떻게 달라지는지다. 신규 UI 절차가 없으므로 reader-friction screenshot은 0장으로 정하고, 모델 계보와 속도 이미지를 전달할 생성형 대표 이미지 1장만 사용한다. 표가 비교 관계를 충분히 전달하므로 인포그래픽은 만들지 않으며, 정적 PNG 한 장이라 두 번째 원격 fetch는 요구하지 않는다."
+}

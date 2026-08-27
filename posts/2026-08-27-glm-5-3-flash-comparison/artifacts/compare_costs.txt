@@ -1,0 +1,9 @@
+Scenario: 10M input tokens + 2M output tokens; cache excluded
+GLM-5.3-Flash promo: $1.25
+GLM-5.3-Flash list: $2.50
+GLM-5.3: $22.80
+GLM-5.2: $22.80
+GLM-5.3 / Flash list cost ratio: 9.12x
+Flash list savings vs GLM-5.3: $20.30
+Input price ratio (GLM-5.3 / Flash list): 9.33x
+Output price ratio (GLM-5.3 / Flash list): 8.80x
