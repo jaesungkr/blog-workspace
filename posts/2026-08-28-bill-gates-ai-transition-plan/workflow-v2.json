@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "AI가 일자리를 어떻게 바꿀지 걱정하지만 기술 담론과 정책 제안을 따로 따라가기 어려운 한국의 비전문 직장인",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Bill Gates의 2026년 8월 Gates Notes 글을 출발점으로 AI 전환기의 위험과 정책 선택을 한국 독자 관점에서 해석하는 source-based standard-rich 글이다. 제품 사용이나 성능 실험을 약속하지 않는다. 생성형 리드와 별도 인포그래픽은 만들지 않고, 공개 원문 페이지의 제목·위험·정책 제안 구간을 서로 다른 독자 질문에 답하는 정적 공식 화면으로 캡처한다. 절차형 UI 안내가 아니므로 reader-friction screenshot gate는 해당하지 않으며, GIF·복잡한 레이아웃·고위험 원격 미디어·두 번째 원격 fetch도 사용하지 않는다."
+}

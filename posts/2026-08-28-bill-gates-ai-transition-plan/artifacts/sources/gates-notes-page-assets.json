@@ -1,0 +1,21 @@
+{
+  "assets": [
+    {
+      "contentType": "image/jpeg",
+      "id": "fb73970898da53ae",
+      "kind": "image",
+      "name": "GN-PORTRAIT_760_680_desktop.jpg",
+      "path": "/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T/browser-use/assets/cd61c630-8048-4299-b705-621c70a20b1d/fb73970898da53ae.jpg",
+      "url": "https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/66ccdb81-246f-4180-8827-6fe2cfee3bb9/GN-PORTRAIT_760_680_desktop.jpg?w=760&h=680&fit=clip&fm=jpg&q=95"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "ec83a2e0deeff83e",
+      "kind": "image",
+      "name": "age-of-ai_2023_vNEXT_2400x1500_01.jpg",
+      "path": "/var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T/browser-use/assets/cd61c630-8048-4299-b705-621c70a20b1d/ec83a2e0deeff83e.jpg",
+      "url": "https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/b2764799-6637-49f5-a526-56215416c9d8/age-of-ai_2023_vNEXT_2400x1500_01.jpg?w=1440&fit=clip&fm=jpg"
+    }
+  ],
+  "failures": []
+}

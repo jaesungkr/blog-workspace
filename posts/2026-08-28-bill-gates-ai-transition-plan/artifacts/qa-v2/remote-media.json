@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "68ddb492-0c2a-4c4e-8a47-60b5e1fbe60c",
+  "recorded_at": "2026-08-28T14:02:34.367686Z",
+  "recorded_by": "Codex creator /root",
+  "media_sha256": "fe1c6c544bc0499ad244a62b8b2668abe20ac04307e97333ec8c81392cec4cd3",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "bill-gates-source-portrait",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FCloa6%2FdJMcaaT3Bok%2FAAAAAAAAAAAAAAAAAAAAAGGhsgeY00t1fJYJqcOxYVdItFQP59AQ4acWFLDOyYPZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhXwMM9Vv6FEt7V67DV6CZFGIryA%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FCloa6%2FdJMcaaT3Bok%2FAAAAAAAAAAAAAAAAAAAAAGGhsgeY00t1fJYJqcOxYVdItFQP59AQ4acWFLDOyYPZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhXwMM9Vv6FEt7V67DV6CZFGIryA%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-28T14:02:34.367328Z",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "header_content_length": 199275,
+      "byte_length": 199275,
+      "sha256": "d427a0d67e55d075c90f5b09342b52d1673ad1cc413822dbd6c0f96b359274b2",
+      "format": "jpeg",
+      "width": 760,
+      "height": 680,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 28 Aug 2026 14:02:07 GMT"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "lead_id": "bill-gates-source-portrait",
+  "items": [
+    {
+      "id": "bill-gates-source-portrait",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "actor": "Gates Notes",
+      "captured_at": "2026-08-28",
+      "environment": "Gates Notes article page asset collected with Browser pageAssets, 760 x 680 JPEG",
+      "source_url": "https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/66ccdb81-246f-4180-8827-6fe2cfee3bb9/GN-PORTRAIT_760_680_desktop.jpg?w=760&h=680&fit=clip&fm=jpg&q=95",
+      "raw_path": "artifacts/sources/bill-gates-source-portrait.jpg",
+      "publish_path": "assets/bill-gates-source-portrait.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FCloa6%2FdJMcaaT3Bok%2FAAAAAAAAAAAAAAAAAAAAAGGhsgeY00t1fJYJqcOxYVdItFQP59AQ4acWFLDOyYPZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhXwMM9Vv6FEt7V67DV6CZFGIryA%253D",
+      "width": 760,
+      "height": 680,
+      "display_width": 760,
+      "placement": "after:opening",
+      "rights": "Gates Notes article artwork reproduced with source attribution for editorial criticism and commentary; rights remain with Gates Notes",
+      "alt": "푸른 배경 앞에서 고개를 괴고 생각하는 Bill Gates를 색면으로 표현한 일러스트",
+      "caption": "AI가 모두를 위한 도구가 될지, 불평등을 키울지는 기술의 성능보다 전환기의 선택에 달렸다는 것이 Gates의 문제 제기입니다.",
+      "processing": [
+        "downloaded from the Gates Notes article page asset inventory without visual modification"
+      ],
+      "redactions": [],
+      "sha256": "4feee5791aa7bd2335b796cee93360b8c7f2f7ac07e0c74fbb69d8810f40cb21",
+      "status": "validated"
+    }
+  ]
+}

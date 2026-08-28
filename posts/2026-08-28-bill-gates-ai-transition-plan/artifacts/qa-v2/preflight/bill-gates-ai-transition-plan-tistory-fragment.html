@@ -1,0 +1,388 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>AI가 일을 줄여 준다는 소식과 내 자리를 없앨 수 있다는 경고가 매일 함께 들립니다. <a href="https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make" style="color:#1a73e8;text-decoration:none;" target="_blank">Bill Gates는 2026년 8월 26일 공개한 글</a>에서 AI가 역사상 가장 강력한 평등의 도구가 되거나 최악의 불평등을 만들 수 있다고 주장했습니다.</p>
+<p>원문을 최신 노동시장 자료와 대조하면 결론은 조금 차분해집니다. <strong>경제 전반의 대량 실업은 아직 관측되지 않았지만, AI에 노출된 신입 직군에서는 채용 감소 신호가 나타났습니다.</strong> 지금 논의할 대상은 세 가지입니다. 신입이 경험을 쌓을 경로, 인간이 끝까지 책임질 업무, 전환 비용을 부담할 세원입니다.</p>
+<figure class="devlog-rich__figure" data-media-id="bill-gates-source-portrait" style="--rich-media-width:760px"><img class="devlog-rich__image" src="__TISTORY_MEDIA_BILL_GATES_SOURCE_PORTRAIT__" alt="푸른 배경 앞에서 고개를 괴고 생각하는 Bill Gates를 색면으로 표현한 일러스트" width="760" height="680" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">AI가 모두를 위한 도구가 될지, 불평등을 키울지는 기술의 성능보다 전환기의 선택에 달렸다는 것이 Gates의 문제 제기입니다. <span class="devlog-rich__credit">· <a href="https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/66ccdb81-246f-4180-8827-6fe2cfee3bb9/GN-PORTRAIT_760_680_desktop.jpg?w=760&amp;h=680&amp;fit=clip&amp;fm=jpg&amp;q=95" target="_blank" rel="noopener noreferrer">공식 자료</a></span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#ai가-pc보다-빨리-퍼지는-조건">AI가 PC보다 빨리 퍼지는 조건</a></li>
+<li><a href="#신입-채용에서-먼저-나타난-이상-신호">신입 채용에서 먼저 나타난 이상 신호</a></li>
+<li><a href="#한국-고용의-절반이-ai-고노출-직군">한국 고용의 절반이 AI 고노출 직군</a></li>
+<li><a href="#human-reserved는-누가-어떻게-정할까">Human Reserved는 누가 어떻게 정할까</a></li>
+<li><a href="#ai-토큰로봇세는-무엇을-해결할까">AI 토큰·로봇세는 무엇을 해결할까</a></li>
+<li><a href="#한국에서-먼저-답할-세-질문">한국에서 먼저 답할 세 질문</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="ai가-pc보다-빨리-퍼지는-조건">
+<h2 id="ai가-pc보다-빨리-퍼지는-조건">AI가 PC보다 빨리 퍼지는 조건</h2>
+<p>Gates가 이번 변화를 과거의 PC 혁명과 다르게 보는 이유는 접근 방식입니다. PC가 업무를 바꾸려면 기기 가격이 내려가고 전용 소프트웨어가 보급되며 사용자가 조작법을 익혀야 했습니다. AI는 이미 쓰는 기기에서 자연어로 작동하고, 기존 문서와 교육 영상을 곧바로 학습 자료로 삼을 수 있습니다. 사람이 도구에 적응하는 시간보다 도구가 사람의 업무에 들어오는 시간이 짧다는 주장입니다.</p>
+<p>그는 이 속도가 법률, 고객 지원, 의료, 소프트웨어, 제조업을 한꺼번에 흔들고 결국 인지 업무뿐 아니라 로봇이 맡는 육체 업무까지 넓어질 것으로 예상합니다. 이 전망의 규모와 시점은 아직 관측 자료로 확인되지 않았습니다.</p>
+<p>원문은 일자리 감소, 악의적 사용, 아동 발달·인간관계 훼손을 세 위험으로 꼽습니다. 이 글은 일자리와 Human Reserved, 과세 문제에 범위를 좁힙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="신입-채용에서-먼저-나타난-이상-신호">
+<h2 id="신입-채용에서-먼저-나타난-이상-신호">신입 채용에서 먼저 나타난 이상 신호</h2>
+<p>Gates는 많은 일자리가 영원히 사라질 것이라고 단정적으로 전망합니다. 최신 자료가 보여 주는 범위는 그보다 좁습니다. <a href="https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/" style="color:#1a73e8;text-decoration:none;" target="_blank">Stanford Digital Economy Lab의 2026년 8월 개정 연구</a>는 미국 ADP 급여 자료를 2026년 6월까지 분석했습니다. AI 노출 직군에 속한 22~25세의 고용 수준은 덜 노출된 동년배와 같은 추세를 따랐을 때의 예상치보다 19% 낮았습니다.</p>
+<p>감소는 고용관계 종료 증가보다 신규 채용 축소를 통해 주로 나타났고, AI가 사람의 업무를 보조하는 직군에서는 고용이 유지되거나 늘었습니다. 연구진은 경제 전체에서 광범위한 일자리 감소를 찾지 못했습니다. 교육 수준을 통제하면 격차가 줄고 생성형 AI 확산 전부터 일부 추세가 달랐다는 한계도 밝혔습니다. 저자들이 이 결과를 인과 추정이 아닌 초기 신호라고 부른 이유입니다.</p>
+<p><a href="https://www.ilo.org/publications/generative-ai-and-jobs-2025-update" style="color:#1a73e8;text-decoration:none;" target="_blank">ILO와 NASK의 2025년 직업 노출 지수</a>도 전 세계 노동자 네 명 중 한 명이 생성형 AI에 어느 정도 노출됐다고 추정합니다. 다만 직업은 사람이 맡아야 하는 여러 업무로 구성되므로, 현재로서는 소멸보다 업무의 변형이 더 가능성 높은 결과라고 봤습니다.</p>
+<p>두 자료를 함께 보면 Gates의 경고를 그대로 확정할 수도, 아직 먼 이야기라고 넘길 수도 없습니다. 당장 보이는 문제는 경력자가 해고되는 장면보다 신입이 들어와 숙련될 자리가 줄어드는 현상입니다. 초급 업무를 AI에 맡긴 뒤 경력자만 채용하려는 회사가 늘면 몇 년 뒤에는 경력자 공급 자체가 부족해질 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="한국-고용의-절반이-ai-고노출-직군">
+<h2 id="한국-고용의-절반이-ai-고노출-직군">한국 고용의 절반이 AI 고노출 직군</h2>
+<p>한국은 이 문제에서 멀리 떨어져 있지 않습니다. <a href="https://www.imf.org/en/publications/selected-issues-papers/issues/2025/03/04/transforming-the-future-the-impact-of-artificial-intelligence-in-korea-562939" style="color:#1a73e8;text-decoration:none;" target="_blank">IMF가 통계청 지역별고용조사를 바탕으로 분석한 2025년 보고서</a>는 국내 고용의 약 50%를 AI 고노출 직군으로 분류했습니다. 약 24%는 AI가 사람의 판단을 보완할 가능성이 높은 직군이고, 27%는 보완 가능성이 낮아 대체 압력을 더 받을 수 있는 직군입니다.</p>
+<p>노출도는 AI와 업무가 겹치는 정도를 뜻하며 해고 확률을 나타내지 않습니다. 같은 회계 업무에서도 자료 입력은 자동화하기 쉽지만 예외를 판단하고 고객에게 설명하는 일은 사람의 책임이 남습니다. 한국에서는 직업의 소멸 순위보다 신입 채용 규모와 직무별 AI 사용 방식, 초급자가 판단 업무로 이동하는 데 필요한 교육 시간을 먼저 측정해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="human-reserved는-누가-어떻게-정할까">
+<h2 id="human-reserved는-누가-어떻게-정할까">Human Reserved는 누가 어떻게 정할까</h2>
+<p>Gates는 기술적으로 자동화할 수 있어도 사회가 인간에게 남겨 둘 영역을 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Human Reserved</code>라고 부릅니다. 자연보호구역처럼 개발할 수 있지만 손실이 너무 커서 남겨 두는 선택입니다. 그는 아버지를 돌본 요양보호사의 사례와 환자에게 회복 불가능한 병을 알리는 상황을 듭니다. 로봇이 수행할 능력을 갖추더라도 관계와 책임 때문에 사람이 맡아야 한다는 뜻입니다.</p>
+<p>직업 이름만 보호 목록에 올리면 현실과 맞지 않습니다. 교육과 정신건강처럼 AI가 교사나 상담사의 능력을 넓힐 수 있는 분야도 있습니다. 고령 인구가 많고 돌봄 인력이 부족한 지역에서는 로봇을 배제하는 선택이 오히려 서비스를 줄일 수 있습니다. 보호 여부를 직업 이름으로 일괄 정하기보다 다음 세 조건으로 판단하는 편이 낫습니다.</p>
+<ol><li>결과가 잘못됐을 때 사람에게 설명하고 책임질 주체가 필요한가요?</li><li>관계를 맺는 과정 자체가 서비스의 가치인가요?</li><li>자동화를 늦추지 않으면 신입이 숙련될 경로가 사라지나요?</li></ol>
+<p>이 기준을 누가 정하고 기업의 우회를 어떻게 막을지는 Gates도 답을 내놓지 못했습니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Human Reserved</code>의 가치는 완성된 정책안보다 자동화 가능성과 자동화 허용을 구분하는 질문에 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="ai-토큰로봇세는-무엇을-해결할까">
+<h2 id="ai-토큰로봇세는-무엇을-해결할까">AI 토큰·로봇세는 무엇을 해결할까</h2>
+<p>자동화로 고용이나 근로시간이 줄면 임금과 근로소득세 수입은 감소하고 실직 지원과 재교육 지출은 커질 수 있습니다. Gates는 미국 세제에서 사람을 고용하면 급여세를 내지만 로봇은 투자 비용으로 공제할 수 있어 자동화 유인이 생긴다고 지적합니다. 그 대안으로 AI 토큰과 로봇에 세금을 매겨 전환 속도를 조금 늦추고 사회안전망의 재원을 마련하자고 제안합니다. Gates는 이를 전체 해법이 아닌 전환 대응의 일부로 보며, 일의 사회적 가치를 지키기 위해 일부 비효율을 감수할 수 있다고 주장합니다.</p>
+<p>문제 정의에 동의해도 세목은 논쟁적입니다. <a href="https://www.elibrary.imf.org/view/journals/068/2026/002/article-A001-en.xml" style="color:#1a73e8;text-decoration:none;" target="_blank">2026년 IMF Note의 시나리오 분석</a>은 포괄적인 로봇세를 피하고 경제적 지대와 개인의 자본소득을 더 잘 포착하는 방향을 제시했습니다. 자본 이동과 국제 조세 경쟁 탓에 기업 소득세만으로 줄어드는 노동세를 모두 보충하기 어렵다는 판단도 붙였습니다.</p>
+<p><a href="https://www.elibrary.imf.org/view/journals/006/2024/002/article-A001-en.xml" style="color:#1a73e8;text-decoration:none;" target="_blank">2024년 IMF 직원 연구</a>는 다른 모형 실험에서 실무상의 난점을 짚었습니다. 어떤 기술이 노동을 대체하는지 식별하기 어렵고, 자동화 투자에만 세금을 매기면 생산성을 낮출 수 있습니다. 반대로 전환 비용이 매우 크고 노동시장이 느리게 적응하는 시나리오에서는 임시 자동화세가 후생을 높일 수도 있었습니다.</p>
+<p>Gates의 제안을 찬반으로만 나누기보다 목적을 먼저 분리해야 합니다. 자동화를 늦출 것인지, 줄어드는 노동세를 보충할 것인지, 초과이익을 환수할 것인지에 따라 적합한 세금이 달라집니다. 의료와 교육처럼 편익이 큰 사용까지 같은 비율로 과세해서도 안 됩니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="한국에서-먼저-답할-세-질문">
+<h2 id="한국에서-먼저-답할-세-질문">한국에서 먼저 답할 세 질문</h2>
+<p>원문의 정책 제안을 한국의 상황에 옮기면 논의 순서가 선명해집니다.</p>
+<ol><li><strong>신입 경로:</strong> AI가 초급 업무를 맡아도 사람이 검토와 예외 판단을 배우도록 채용·훈련 구조를 남길 수 있나요?</li><li><strong>인간의 책임:</strong> 의료, 돌봄, 교육, 금융처럼 결과 설명과 관계 형성이 필요한 업무에서 최종 책임자를 어디에 둘까요?</li><li><strong>전환 재원:</strong> 근로소득세가 줄어들 때 자본소득, 초과이익, 자동화 설비 가운데 무엇을 과세하고 그 재원을 누구의 재교육과 소득 보전에 쓸까요?</li></ol>
+<p>한국처럼 AI 노출 직군이 많은 나라에서는 대량 실업의 시점을 맞히기보다 신입 경로와 책임 기준, 전환 재원을 먼저 준비할 이유가 충분합니다. 기술 기업이 발표하는 자동화의 가능성과 사회가 정할 자동화의 허용 범위를 구분하는 논의가 이제 모델 성능 경쟁만큼 중요해 보입니다.</p>
+</section>
+</article>
