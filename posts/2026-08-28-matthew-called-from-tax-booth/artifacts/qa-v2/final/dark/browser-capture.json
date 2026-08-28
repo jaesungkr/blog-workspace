@@ -2,16 +2,16 @@
   "version": 2,
   "status": "pass",
   "mode": "final-dark",
-  "checked_at": "2026-08-28T14:14:53.364012Z",
+  "checked_at": "2026-08-28T14:34:51.504629Z",
   "checked_by": "/root/final_page_reviewer",
   "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "preview_path": "artifacts/qa-v2/final-dark-rendered/matthew-called-from-tax-booth-rich-preview.html",
-  "preview_sha256": "4fe81df6b0ff53c6020e0b68076fc07fd7d77b941a489971e2a580a68922ed62",
+  "preview_sha256": "c55bc8820aa670a8892f351148e10d49f478e90c74589d88ea9a9af81fa0188f",
   "screenshot_root": "artifacts/qa-v2/final/dark",
   "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
   "browser_version": "Chrome/151.0.7922.175",
   "protocol_version": "1.3",
-  "session": "835cfa89-e5e9-4054-a0a3-389feb2cf586",
+  "session": "b2f42937-da03-416c-83db-d137b36d79f6",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,7 +21,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 4447,
+      "scroll_height": 4807,
       "h1_count": 1,
       "toc_anchor_count": 6,
       "toc_targets_unique": true,
@@ -35,7 +35,7 @@
           "natural_height": 720
         }
       ],
-      "screenshot_sha256": "2c3aa8912af9d8d0369e385f123e9d829c5d03773050ba2bee9b8e3a230bc545",
+      "screenshot_sha256": "fdbe0ad81c679142c4d27098fe681c881f7868554ae12a7fbd4802ba8c369fcc",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -51,7 +51,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 5588,
+      "scroll_height": 6321,
       "h1_count": 1,
       "toc_anchor_count": 6,
       "toc_targets_unique": true,
@@ -65,7 +65,7 @@
           "natural_height": 720
         }
       ],
-      "screenshot_sha256": "8719ac09483df9dcd172cff993f86bf6513ca83bd8b281e28471c9535c0bd590",
+      "screenshot_sha256": "4ae8db428191ad56d438f3bae5e2ebc29b3c40c11c060f09c6de3ed87d7c9741",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,
