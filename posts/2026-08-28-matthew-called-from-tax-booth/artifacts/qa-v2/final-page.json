@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-08-28",
+  "checked_by": "/root/final_page_reviewer",
+  "browser": "Chrome/151.0.7922.175",
+  "session": "5ce43ec6-cfad-413e-a5d5-236459ef9c5e",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "1e014180f6fca95c0c25db36f4f4bbedf99cc36e1bf607373a7b5ee90906f3b0",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "9ca65aba164166f6ac104eb5f0b0953678f800277da89557ab88ae3a8ad3269d",
+  "source_pass_sha256": "544b299929f68f67cc8570020e9041e17a39af048998247f37a7337a56e73483",
+  "article_content_sha256": "dd1302ca685740e346581a1f04dbcc40af40d55b352877ffcf9d4264aeb8a163",
+  "media_sha256": "98dda796dc0b5ceaeb71505d22cd9bc106bf85620e3d631ebf374e9ed34c0d4f",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "7804755ff6d794ccc0008730efae35bbed9206d24151385aff11b8bffca15718",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/matthew-called-from-tax-booth-rich-preview.html",
+  "preview_sha256": "04ce2e3c3238b229a6d6c1044cdc7abb682449445cbff990925bfc770641197c",
+  "preview_structure_sha256": "0dca066d9eb5bb1592ebcd0caa3d07ce9b070b578271b914f9a71b4fca3e60a3",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/matthew-called-from-tax-booth-rich-preview.html",
+  "dark_preview_sha256": "4fe81df6b0ff53c6020e0b68076fc07fd7d77b941a489971e2a580a68922ed62",
+  "fragment_path": "artifacts/qa-v2/final-rendered/matthew-called-from-tax-booth-tistory-fragment.html",
+  "fragment_sha256": "8069981b06a6d5ee06feff1107ebc0050cdc8cc28d5068009ee59b85f74d9ebe",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "6c406a5cbe653144ef119c1c7973c1b704072d6bac18d3d09912f970112a5a63"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "a3aeabf93195c5dd33e100841f1c175f6c81ac07e7a23d92b83c9cbdc2831ea9"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "2c3aa8912af9d8d0369e385f123e9d829c5d03773050ba2bee9b8e3a230bc545"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "8719ac09483df9dcd172cff993f86bf6513ca83bd8b281e28471c9535c0bd590"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "마태라는 이름은 복음서 제목으로 알지만, 세관에서 부름받은 인물 마태와 어떻게 연결되는지 모르는 성경 입문 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "완료된 성경 인물 알아가기 여섯 번째 삭개오 편의 세금 징수 배경에서 마태로 이어지는 출처 기반 인물 소개입니다. 마태복음 9장의 부르심을 중심으로 정경 본문, 공관복음의 레위 기록, 후대 저자 전승을 분리한 passage map을 first-party 근거로 만듭니다. 화면 절차가 없어 스크린샷과 GIF는 쓰지 않으며, 표 하나보다 본문 흐름이 쉬워 인포그래픽도 제외합니다. 시리즈의 종이 부조 미감을 잇는 생성형 대표 이미지 1장만 사용합니다."
+}

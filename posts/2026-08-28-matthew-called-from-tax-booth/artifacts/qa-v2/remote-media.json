@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "9596ed0f-c1e3-4274-91b2-eb0d98a8f5c9",
+  "recorded_at": "2026-08-28T14:07:32.822389Z",
+  "recorded_by": "Codex",
+  "media_sha256": "98dda796dc0b5ceaeb71505d22cd9bc106bf85620e3d631ebf374e9ed34c0d4f",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "matthew-tax-booth-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHXNxz%2FdJMcagmpFTb%2FAAAAAAAAAAAAAAAAAAAAAJeSIPPNKkW_bywBdberKvqLXtz_gNOmh8ho0xWmMRIq%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DEwn4q4ROEiTD3b4SC3Dqxk92iG4%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHXNxz%2FdJMcagmpFTb%2FAAAAAAAAAAAAAAAAAAAAAJeSIPPNKkW_bywBdberKvqLXtz_gNOmh8ho0xWmMRIq%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DEwn4q4ROEiTD3b4SC3Dqxk92iG4%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-08-28T14:07:32.821870Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 2424592,
+      "byte_length": 2424592,
+      "sha256": "d5fe4c2fbd4fff311d0581530055066e58278bcbaa5f875da0177ba13cbee29f",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Fri, 28 Aug 2026 14:06:47 GMT"
+    }
+  ]
+}
