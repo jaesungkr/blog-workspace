@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "lead_id": "clascoterone-5-percent-hero",
+  "items": [
+    {
+      "id": "clascoterone-5-percent-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C16"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-31",
+      "environment": "Crafted editorial medical material study",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/clascoterone-5-percent-hero-source.png",
+      "publish_path": "assets/clascoterone-5-percent-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9Dt03%2FdJMcadJYIxj%2FAAAAAAAAAAAAAAAAAAAAAEyrJ1du09svr2y21zKWVOb-oEoQ6fht2qbsA_Tsm9LK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DiPnFZXI6nRlFR3vW03Z0t4m%252F%252Fvs%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening-context",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "겹겹이 표현한 두피 단면에서 푸른 고리가 모낭 주변을 감싸고, 투명한 약물 방울과 호박색 입자가 국소 작용을 상징하는 장면",
+      "caption": "클라스코테론 5%는 DHT 생성량을 낮추는 대신 두피의 안드로겐 수용체를 국소적으로 막도록 개발 중인 후보약입니다.",
+      "processing": [
+        "Generated as a 16:9 macro scientific still life without labels, logos, or efficacy imagery",
+        "Copied without resampling to the publication asset path",
+        "Full-size and 360-pixel thumbnail passed independent hero validation by /root/hero_reviewer"
+      ],
+      "redactions": [],
+      "sha256": "3327f52d2b9947c76b9d89a85f45d2e2d1d5c5e90a79874473498c54163846ea",
+      "status": "validated"
+    }
+  ]
+}

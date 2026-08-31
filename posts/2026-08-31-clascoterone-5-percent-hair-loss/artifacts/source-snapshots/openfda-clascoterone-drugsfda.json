@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2026-08-28",
+    "results": {
+      "skip": 0,
+      "limit": 100,
+      "total": 1
+    }
+  },
+  "results": [
+    {
+      "submissions": [
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "2",
+          "submission_status": "AP",
+          "submission_status_date": "20220318",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "70574",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213433Orig1s002ltr.pdf",
+              "date": "20220321",
+              "type": "Letter"
+            },
+            {
+              "id": "70701",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213433Orig1s002lbl.pdf",
+              "date": "20220405",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "ORIG",
+          "submission_number": "1",
+          "submission_status": "AP",
+          "submission_status_date": "20200826",
+          "review_priority": "STANDARD",
+          "submission_class_code": "TYPE 1",
+          "submission_class_code_description": "Type 1 - New Molecular Entity",
+          "application_docs": [
+            {
+              "id": "64450",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/213433Orig1s000ltr.pdf",
+              "date": "20200831",
+              "type": "Letter"
+            },
+            {
+              "id": "64518",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2020/213433s000lbl.pdf",
+              "date": "20200904",
+              "type": "Label"
+            },
+            {
+              "id": "64756",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2020/213433Orig1s000TOC.html",
+              "date": "20200929",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "1",
+          "submission_status": "AP",
+          "submission_status_date": "20210819",
+          "review_priority": "STANDARD",
+          "submission_class_code": "S",
+          "submission_class_code_description": "Supplement"
+        }
+      ],
+      "application_number": "NDA213433",
+      "sponsor_name": "SUN PHARM",
+      "openfda": {
+        "application_number": [
+          "NDA213433"
+        ],
+        "brand_name": [
+          "WINLEVI"
+        ],
+        "generic_name": [
+          "CLASCOTERONE"
+        ],
+        "manufacturer_name": [
+          "Sun Pharmaceutical Industries, Inc."
+        ],
+        "product_ndc": [
+          "47335-994"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "TOPICAL"
+        ],
+        "substance_name": [
+          "CLASCOTERONE"
+        ],
+        "rxcui": [
+          "2474344",
+          "2474349"
+        ],
+        "spl_id": [
+          "2abfc28a-6f85-d793-e063-6394a90a9490"
+        ],
+        "spl_set_id": [
+          "1673a84b-7f5c-47ab-a99c-1e3db21a6a09"
+        ],
+        "package_ndc": [
+          "47335-994-36",
+          "47335-994-40",
+          "47335-994-94"
+        ],
+        "nui": [
+          "N0000000243",
+          "N0000175560"
+        ],
+        "pharm_class_moa": [
+          "Androgen Receptor Antagonists [MoA]"
+        ],
+        "pharm_class_epc": [
+          "Androgen Receptor Inhibitor [EPC]"
+        ],
+        "unii": [
+          "XN7MM8XG2M"
+        ]
+      },
+      "products": [
+        {
+          "product_number": "001",
+          "reference_drug": "Yes",
+          "brand_name": "WINLEVI",
+          "active_ingredients": [
+            {
+              "name": "CLASCOTERONE",
+              "strength": "1%"
+            }
+          ],
+          "reference_standard": "Yes",
+          "dosage_form": "CREAM",
+          "route": "TOPICAL",
+          "marketing_status": "Prescription"
+        }
+      ]
+    }
+  ]
+}

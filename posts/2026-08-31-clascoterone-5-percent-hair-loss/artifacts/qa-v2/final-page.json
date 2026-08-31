@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-08-31",
+  "checked_by": "/root/final_page_reviewer",
+  "browser": "Chrome/151.0.7922.175",
+  "session": "2cec2cbb-f4d7-4c66-b5bf-53322b58a62f",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "dcf33abc9eddf4d4d43db37e6d95071c8ed1d23966d71067795789da025c0524",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "272354c2a19fc4e3210a22d815127782c6fd2dd58cfd41f3e4976a2eed3e9ff9",
+  "source_pass_sha256": "6e97c72ef43aea6b94a8dcf326f3201dc7b8cc976fe23abd4d17ad0489354946",
+  "article_content_sha256": "b8afd67d7b575a4b14a06731f8fd3d925bce73db3a35acf29d2506545fb0ee0e",
+  "media_sha256": "a6dd2bae46f589da8d04bbf9a6fda9ea7adb4241cc53961111efccab9e1f5848",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "5d8bb238d6f8025cbc229670ff1312bc642c4f2337cb1c7fe84a30ef516557bc",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/clascoterone-5-percent-hair-loss-rich-preview.html",
+  "preview_sha256": "455c72e00505f034a34c13a4652038a5b0620ffbd85f506fe41c79e0a2d9d556",
+  "preview_structure_sha256": "5b081e078193e89621c7eed1882d0e8da436afc7a451c0743f7e05d6d18b1d01",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/clascoterone-5-percent-hair-loss-rich-preview.html",
+  "dark_preview_sha256": "33f5f30cb3699de48d704cdb7e89a533d128655127c3486491c45f7656478659",
+  "fragment_path": "artifacts/qa-v2/final-rendered/clascoterone-5-percent-hair-loss-tistory-fragment.html",
+  "fragment_sha256": "c875cc3083161a43b17db04819cc70978506b078a4cd0cce21db1471fbd007fa",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "d1a5f1e2cc0dd3f9234d960a206fe36bec1b2d3c4d9b13a11f2eca6fd2456c49"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "04d56f930a098f9181bca791d874b3e2d1642a710eea5384cc8390610323d6a0"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "6fda37dcdffb497434b5f686482c8c520e95d94a58295a5d4e71200a91f33c16"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "149263a960c6e90faddc12f790815409e80cc6a0e3e929dd256a27fc57bfcf59"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}
