@@ -2,16 +2,16 @@
   "version": 2,
   "status": "pass",
   "mode": "final-light",
-  "checked_at": "2026-08-31T13:52:59.333685Z",
+  "checked_at": "2026-08-31T14:28:29.198933Z",
   "checked_by": "/root/final_page_reviewer",
   "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "preview_path": "artifacts/qa-v2/final-rendered/clascoterone-5-percent-hair-loss-rich-preview.html",
-  "preview_sha256": "455c72e00505f034a34c13a4652038a5b0620ffbd85f506fe41c79e0a2d9d556",
+  "preview_sha256": "f672e774edb1af4ee305978cfd39f8f2fa053c93b5c0a8f1689d88686d8ad905",
   "screenshot_root": "artifacts/qa-v2/final/light",
   "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
   "browser_version": "Chrome/151.0.7922.175",
   "protocol_version": "1.3",
-  "session": "2cec2cbb-f4d7-4c66-b5bf-53322b58a62f",
+  "session": "29c9834c-e5ca-4cba-bd89-f045cbc82abb",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,7 +21,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 5527,
+      "scroll_height": 6266,
       "h1_count": 1,
       "toc_anchor_count": 8,
       "toc_targets_unique": true,
@@ -35,7 +35,7 @@
           "natural_height": 720
         }
       ],
-      "screenshot_sha256": "d1a5f1e2cc0dd3f9234d960a206fe36bec1b2d3c4d9b13a11f2eca6fd2456c49",
+      "screenshot_sha256": "fad525783045c4929a741c1419eea53c5badb697b1ffa8a2f03cb3615f6825c8",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -51,7 +51,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 8048,
+      "scroll_height": 8816,
       "h1_count": 1,
       "toc_anchor_count": 8,
       "toc_targets_unique": true,
@@ -65,7 +65,7 @@
           "natural_height": 720
         }
       ],
-      "screenshot_sha256": "04d56f930a098f9181bca791d874b3e2d1642a710eea5384cc8390610323d6a0",
+      "screenshot_sha256": "6a497abe0485a1c097393f69e035adf77eceea7d0490655b4d42f29c2150cc6b",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,

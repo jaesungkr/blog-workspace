@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-08-31T13:21:49.600753Z",
+  "checked_at": "2026-08-31T14:25:12.267958Z",
   "checked_by": "/root/source_reviewer",
-  "article_content_sha256": "b8afd67d7b575a4b14a06731f8fd3d925bce73db3a35acf29d2506545fb0ee0e",
-  "brief_sha256": "fc1e4681c4ef10f82440a7de468f6c5645943b1ef4df2b47e2c3c9ab71c62898",
+  "article_content_sha256": "fbc8ba01fece4a55ccf9d964011f1004992029b0543be75d6d453cd05fd6bb14",
+  "brief_sha256": "ca137ce492b1ea1c460b161fa1a6eff5a822df67858ca736d0462464d37edfb3",
   "evidence_sha256": "28b018249364f23c6316423f093963e8f774d7682739d8f44fb259c13069ba0d",
   "note": ""
 }
