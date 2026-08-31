@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C 한 줄이 CPU 값이 되기까지</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 700px; height: 980px; overflow: hidden; }
+    body {
+      background: #f4f0e8;
+      color: #18211f;
+      font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .canvas {
+      position: relative;
+      width: 700px;
+      height: 980px;
+      padding: 50px 46px 38px;
+      background:
+        radial-gradient(circle at 92% 6%, rgba(187, 100, 53, .11), transparent 27%),
+        linear-gradient(135deg, rgba(255,255,255,.66), rgba(255,255,255,0) 52%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.18;
+      letter-spacing: -.045em;
+      word-break: keep-all;
+    }
+    .flow {
+      position: relative;
+      margin-top: 40px;
+      padding-left: 7px;
+    }
+    .flow::before {
+      content: "";
+      position: absolute;
+      left: 34px;
+      top: 53px;
+      bottom: 53px;
+      width: 3px;
+      background: linear-gradient(#bd6139 0 27%, #77857f 27% 73%, #244f43 73% 100%);
+    }
+    .stage {
+      position: relative;
+      display: grid;
+      grid-template-columns: 70px 152px 1fr;
+      align-items: center;
+      min-height: 148px;
+    }
+    .stage + .stage { margin-top: 13px; }
+    .marker {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border: 3px solid #bd6139;
+      border-radius: 50%;
+      background: #f4f0e8;
+      color: #a54f2b;
+      font: 700 20px/1 "SFMono-Regular", Menlo, monospace;
+    }
+    .label .title {
+      display: block;
+      font-size: 26px;
+      font-weight: 760;
+      line-height: 1.25;
+      letter-spacing: -.025em;
+    }
+    .object {
+      min-height: 124px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 18px 21px;
+    }
+    code, .mono { font-family: "SFMono-Regular", Menlo, monospace; }
+    .main-code {
+      color: #172522;
+      font-size: 25px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .detail {
+      margin-top: 10px;
+      color: #5e6965;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+    .source {
+      border-left: 7px solid #bd6139;
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 9px 24px rgba(67, 58, 44, .07);
+    }
+    .assembly {
+      border-top: 4px solid #71817a;
+      background: rgba(220, 226, 221, .76);
+    }
+    .machine {
+      border: 2px solid #9aa6a0;
+      background: linear-gradient(180deg, #e5e8e4, #cfd6d1);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.8), 0 9px 20px rgba(30,45,41,.07);
+    }
+    .machine .hex {
+      font: 700 25px/1.25 "SFMono-Regular", Menlo, monospace;
+    }
+    .machine .bits {
+      margin-top: 9px;
+      color: #43514c;
+      font: 650 18px/1.35 "SFMono-Regular", Menlo, monospace;
+      letter-spacing: .025em;
+    }
+    .result {
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      border-left: 7px solid #244f43;
+      background: #203b34;
+      color: #fff8ec;
+    }
+    .chip {
+      display: grid;
+      place-items: center;
+      width: 68px;
+      height: 68px;
+      border: 2px solid #ca865f;
+      background: #142c26;
+      font: 700 16px/1 "SFMono-Regular", Menlo, monospace;
+      letter-spacing: .08em;
+    }
+    .result .main-code { color: #fff8ec; font-size: 32px; }
+    .arrow {
+      position: absolute;
+      z-index: 3;
+      left: 26px;
+      bottom: -22px;
+      width: 17px;
+      height: 17px;
+      border-right: 3px solid #73807b;
+      border-bottom: 3px solid #73807b;
+      transform: rotate(45deg);
+      background: #f4f0e8;
+    }
+    .stage:last-child .arrow { display: none; }
+    .note {
+      position: absolute;
+      right: 46px;
+      bottom: 31px;
+      margin: 0;
+      color: #5e6965;
+      font: 650 18px/1.4 "SFMono-Regular", Menlo, monospace;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas" aria-label="C 덧셈 코드가 ARM64 어셈블리와 32비트 기계어를 거쳐 실행되는 네 단계">
+    <h1>C 한 줄이<br>CPU 값이 되기까지</h1>
+
+    <section class="flow">
+      <div class="stage">
+        <div class="marker">01</div>
+        <div class="label"><span class="title">C 소스</span></div>
+        <div class="object source">
+          <code class="main-code">return a + b;</code>
+          <span class="detail"><span class="mono">a = 7</span> · <span class="mono">b = 5</span></span>
+        </div>
+        <span class="arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="stage">
+        <div class="marker">02</div>
+        <div class="label"><span class="title">ARM64<br>어셈블리</span></div>
+        <div class="object assembly">
+          <code class="main-code">add w0, w1, w0</code>
+          <span class="detail">사람이 읽는 명령</span>
+        </div>
+        <span class="arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="stage">
+        <div class="marker">03</div>
+        <div class="label"><span class="title">32비트<br>기계어</span></div>
+        <div class="object machine">
+          <code class="hex">0x0B000020</code>
+          <code class="bits">00001011 00000000<br>00000000 00100000</code>
+        </div>
+        <span class="arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="stage">
+        <div class="marker">04</div>
+        <div class="label"><span class="title">CPU 결과</span></div>
+        <div class="object result">
+          <span class="chip">CPU</span>
+          <code class="main-code">w0 = 12</code>
+        </div>
+        <span class="arrow" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <p class="note">ARM64 · Apple Clang 21 · -O2</p>
+  </main>
+</body>
+</html>

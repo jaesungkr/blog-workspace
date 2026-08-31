@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>어셈블리어란 무엇인가, ARM64 코드로 읽는 사용처와 장단점</title>
+  <meta name="description" content="어셈블리어와 기계어의 차이부터 ARM64 덧셈·조건문·함수 호출 예제, 실제 사용처와 장단점, 2026년 개발 생태계에서의 위치까지 재현 가능한 코드로 설명합니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>어셈블리어란 무엇인가, ARM64 코드로 읽는 사용처와 장단점</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>Python이나 JavaScript에서 덧셈은 한 줄이면 끝납니다. 그런데 CPU는 변수명이나 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">return</code>을 읽지 못합니다. <strong>어셈블리어는 CPU가 실행할 명령을 사람이 읽을 수 있는 기호로 적은 언어</strong>입니다. 오늘날에는 앱 전체를 작성하기보다 부팅, 하드웨어 제어, 성능 분석, 보안처럼 컴퓨터의 낮은 층을 직접 확인해야 할 때 주로 만납니다.</p>
+<p>이 글의 ARM64 예제는 Apple Silicon Mac에서 C 코드를 직접 컴파일하고, 오브젝트 파일의 기계어까지 확인한 결과입니다.</p>
+<figure class="devlog-rich__figure" data-media-id="assembly-language-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fchixf9%2FdJMcagGSOln%2FAAAAAAAAAAAAAAAAAAAAAHezddNM0gc-RpZwKSLrDOOVLKbwSBqp5X70j1Vofpkz%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DfN9p9vxHuYznX%252B5i1hCeWARKBeo%253D" alt="ADD W0, W0, W1 명령과 4×8 비트 셀이 새겨진 금속 토큰이 CPU 소켓에 맞닿은 장면" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">사람이 읽는 ARM64 명령 한 줄은 CPU가 처리할 32비트 인코딩과 대응합니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#고급-언어와-기계어-사이의-한-층">고급 언어와 기계어 사이의 한 층</a></li>
+<li><a href="#덧셈-두-줄에서-익히는-기본-표기">덧셈 두 줄에서 익히는 기본 표기</a></li>
+<li><a href="#절댓값-함수에서-만나는-조건-플래그">절댓값 함수에서 만나는 조건 플래그</a></li>
+<li><a href="#포인터가-가리킨-값을-읽는-ldr">포인터가 가리킨 값을 읽는 `ldr`</a></li>
+<li><a href="#다른-함수를-부를-때-지키는-레지스터-규칙">다른 함수를 부를 때 지키는 레지스터 규칙</a></li>
+<li><a href="#최적화-단계가-바꾼-명령의-수">최적화 단계가 바꾼 명령의 수</a></li>
+<li><a href="#어셈블리어를-직접-쓰는-다섯-영역">어셈블리어를 직접 쓰는 다섯 영역</a></li>
+<li><a href="#어셈블리어의-장단점">어셈블리어의 장단점</a></li>
+<li><a href="#2026년에는-얼마나-직접-작성할까">2026년에는 얼마나 직접 작성할까</a></li>
+<li><a href="#입문자가-익힐-실용적인-범위">입문자가 익힐 실용적인 범위</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="고급-언어와-기계어-사이의-한-층">
+<h2 id="고급-언어와-기계어-사이의-한-층">고급 언어와 기계어 사이의 한 층</h2>
+<p><a href="https://clang.llvm.org/docs/Toolchain.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Clang의 도구 사슬 문서</a>는 변환 과정을 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">소스 코드 -&gt; 중간 표현 -&gt; 대상별 어셈블리 -&gt; 기계어 오브젝트 -&gt; 실행 파일</code>로 나눕니다. 컴파일러의 백엔드가 ARM64나 x86-64에 맞는 어셈블리 명령을 고르고, 어셈블러가 그 기호를 CPU가 해석할 비트 패턴으로 바꿉니다. 실제 빌드에서는 속도를 위해 중간 파일을 만들지 않고 여러 단계를 합치기도 합니다.</p>
+<p>레지스터는 CPU 안에서 계산할 값과 주소를 잠시 담는 작은 저장 공간입니다. 이 글의 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w1</code> 같은 이름이 레지스터를 가리킵니다. A64는 Arm의 64비트 명령 집합이며, <a href="https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Learn%20the%20Architecture/Armv8-A%20Instruction%20Set%20Architecture.pdf" style="color:#1a73e8;text-decoration:none;" target="_blank">Arm 안내서</a>에 따르면 각 명령은 32비트 길이로 인코딩됩니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>층</th><th>덧셈의 표현</th><th>읽는 주체</th></tr></thead><tbody><tr><td>C 소스</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">return a + b;</code></td><td>개발자와 컴파일러</td></tr><tr><td>ARM64 어셈블리</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add w0, w0, w1</code></td><td>개발자와 어셈블러</td></tr><tr><td>A64 명령 인코딩</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">0x0B010000</code></td><td>CPU와 분석 도구</td></tr><tr><td>실행 결과</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0 = 12</code></td><td>다음 명령 또는 호출자</td></tr></tbody></table></div>
+<p>어셈블리어와 기계어는 같은 명령을 서로 다른 표기로 나타냅니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add</code>는 사람이 기억할 니모닉(mnemonic)이고, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">0x0B010000</code>은 이번 ARM64 오브젝트에서 확인한 32비트 인코딩입니다. 레이블과 주석은 사람이 코드를 구성하도록 돕고, CPU에는 인코딩된 명령만 전달됩니다.</p>
+<p>위 표는 직접 작성한 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add w0, w0, w1</code>을 기준으로 합니다. 아래 그림은 같은 C 함수를 Clang <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">-O2</code>로 컴파일한 결과입니다. 덧셈은 두 입력의 순서를 바꿔도 결과가 같기 때문에 Clang은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add w0, w1, w0</code>을 골랐고, 그 인코딩은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">0x0B000020</code>이었습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="assembly-language-pipeline" style="--rich-media-width:700px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FLKCMt%2FdJMcacYGPqx%2FAAAAAAAAAAAAAAAAAAAAAHYtrbtovhiXWibkHk317vnGasRWXiT41XLVlT8VVSMM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D6THgjaQ5X%252BHOox2lsr%252Bu%252F2SCw0s%253D" alt="C 덧셈 코드가 ARM64 어셈블리와 32비트 기계어를 거쳐 CPU 결과 12가 되는 네 단계" width="700" height="980" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">같은 덧셈도 C 소스, ARM64 어셈블리, 32비트 기계어, CPU 결과에서는 서로 다른 모습으로 표현됩니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+<p>CPU마다 명령 집합이 다르므로 어셈블리어도 여러 갈래로 나뉩니다. <a href="https://sourceware.org/binutils/docs/as/Statements.html" style="color:#1a73e8;text-decoration:none;" target="_blank">GNU 어셈블러 문서</a>도 대상 컴퓨터에 따라 인식하는 명령이 달라진다고 설명합니다. ARM64, x86-64, RISC-V는 서로 다른 명령을 사용하며, 같은 x86에서도 Intel 표기와 AT&amp;T 표기가 나뉩니다. 아래 코드는 이 글에서 직접 생성하고 디스어셈블한 ARM64 예시입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="덧셈-두-줄에서-익히는-기본-표기">
+<h2 id="덧셈-두-줄에서-익히는-기본-표기">덧셈 두 줄에서 익히는 기본 표기</h2>
+<p>먼저 C 함수 하나를 보겠습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">int add(int a, int b) {
+    return a + b;
+}</code></pre>
+<p>같은 동작을 ARM64 어셈블리로 직접 작성하면 두 명령이면 충분합니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">.text
+.globl _asm_add
+.p2align 2
+_asm_add:
+    add w0, w0, w1
+    ret</code></pre>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add</code>는 더하고, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ret</code>는 함수를 호출한 위치로 돌아갑니다. 쉼표 뒤의 첫 피연산자 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0</code>가 결과를 받을 곳입니다. 나머지 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w1</code>은 더할 두 값입니다.</p>
+<p>응용 프로그램 이진 인터페이스(ABI)는 컴파일된 함수들이 인자와 결과를 주고받는 규칙입니다. <a href="https://github.com/ARM-software/abi-aa/blob/main/aapcs64/aapcs64.rst" style="color:#1a73e8;text-decoration:none;" target="_blank">Arm의 AAPCS64 호출 규약</a>에 따르면 정수 인자와 반환값은 먼저 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">x0</code>부터 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">x7</code>까지의 레지스터를 사용합니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">x0</code>는 64비트 전체, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0</code>는 같은 레지스터의 아래 32비트를 가리킵니다. 이 함수는 32비트 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">int</code> 두 개를 받으므로 첫 인자는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0</code>, 둘째는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w1</code>에 들어오고 결과도 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0</code>로 돌아갑니다.</p>
+<p>2026년 8월 31일 Codex가 이 함수를 어셈블해 C에서 호출한 결과는 다음과 같았습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">asm_add(7, 5) = 12
+asm_add(-4, 9) = 5
+asm_add(1000000, 234567) = 1234567</code></pre>
+<p>여기에는 작지만 중요한 함정이 있었습니다. macOS의 C 코드는 외부 심볼 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">_asm_add</code>를 찾는데, 첫 소스는 밑줄 없는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">asm_add</code>만 공개해 링크에 실패했습니다. 명령 두 줄을 정확히 써도 운영체제의 오브젝트 형식과 호출 규약을 맞추지 않으면 다른 언어와 연결되지 않습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="절댓값-함수에서-만나는-조건-플래그">
+<h2 id="절댓값-함수에서-만나는-조건-플래그">절댓값 함수에서 만나는 조건 플래그</h2>
+<p>ARM64에서 절댓값 함수를 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">-O2</code>로 컴파일하자 비교와 조건부 부호 반전 명령이 생성됐습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">int absolute_value(int x) {
+    return x &lt; 0 ? -x : x;
+}</code></pre>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">_absolute_value:
+    cmp  w0, #0
+    cneg w0, w0, mi
+    ret</code></pre>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">cmp w0, #0</code>은 입력을 0과 비교해 조건 플래그를 바꿉니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">cneg</code>는 비교 결과가 음수 조건(<code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">mi</code>)일 때만 부호를 뒤집습니다. 컴파일러는 C의 조건식을 별도 분기 없이 ARM64의 조건부 명령으로 표현했습니다.</p>
+<p>이 C 예제에는 입력 한계가 있습니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">int</code>의 최솟값 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">INT_MIN</code>은 같은 자료형의 양수로 표현할 수 없으므로 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">-x</code>에서 부호 있는 정수 오버플로가 발생합니다. <a href="https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Clang도 표현 범위를 벗어난 부호 있는 정수 연산을 정의되지 않은 동작으로 검사합니다</a>. 아래 설명은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">INT_MIN</code>을 제외한 입력에만 적용됩니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="포인터가-가리킨-값을-읽는-ldr">
+<h2 id="포인터가-가리킨-값을-읽는-ldr">포인터가 가리킨 값을 읽는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ldr</code></h2>
+<p>어셈블리어는 값 대부분을 레지스터에서 계산합니다. 메모리에 있는 값이 필요하면 먼저 로드 명령으로 가져오고, 결과를 메모리에 남기려면 스토어 명령을 사용합니다. 포인터가 가리킨 정수에 1을 더하는 C 함수는 다음과 같이 바뀌었습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">int load_plus_one(const int *value) {
+    return *value + 1;
+}</code></pre>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">_load_plus_one:
+    ldr  w8, [x0]
+    add  w0, w8, #1
+    ret</code></pre>
+<p>두 번째 함수에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">x0</code>에는 정수 자체가 아니라 메모리 주소가 들어옵니다. 대괄호를 쓴 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">[x0]</code>는 그 주소가 가리키는 메모리를 뜻합니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ldr</code>가 값을 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w8</code>로 읽고, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add</code>가 숫자 1을 더해 반환 레지스터 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">w0</code>에 둡니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">#1</code>처럼 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">#</code>이 붙은 값은 레지스터가 아니라 명령 안에 적힌 즉시값입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="다른-함수를-부를-때-지키는-레지스터-규칙">
+<h2 id="다른-함수를-부를-때-지키는-레지스터-규칙">다른 함수를 부를 때 지키는 레지스터 규칙</h2>
+<p>함수 안에서 다른 함수를 호출하면 보존할 상태가 늘어납니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add(a, b)</code>의 결과를 두 배로 만드는 C 코드에는 스택 작업이 추가됩니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">int add_then_double(int a, int b) {
+    return add(a, b) * 2;
+}</code></pre>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">_add_then_double:
+    stp x29, x30, [sp, #-16]!
+    mov x29, sp
+    bl  _add
+    lsl w0, w0, #1
+    ldp x29, x30, [sp], #16
+    ret</code></pre>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">bl _add</code>는 돌아올 주소를 링크 레지스터인 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">x30</code>에 남기고 다른 함수로 이동합니다. 이 함수도 나중에 호출자에게 돌아가야 하므로, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">stp</code>가 프레임 포인터 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">x29</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">x30</code>을 스택에 보관합니다. 호출이 끝나면 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">lsl</code>이 결과의 비트를 왼쪽으로 한 칸 밀어 2를 곱하고, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ldp</code>가 보관한 두 레지스터를 복원합니다.</p>
+<p>이 코드를 무조건 외울 필요는 없습니다. 호출 전에는 누구의 값을 보존할지, 인자는 어디에 둘지, 결과는 어디에서 받을지를 CPU가 알아서 정하지 않는다는 점이 중요합니다. 서로 다른 언어와 라이브러리가 연결되는 이유는 <a href="https://github.com/ARM-software/abi-aa/blob/main/aapcs64/aapcs64.rst" style="color:#1a73e8;text-decoration:none;" target="_blank">AAPCS64 같은 ABI</a>가 이 약속을 정하기 때문입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="최적화-단계가-바꾼-명령의-수">
+<h2 id="최적화-단계가-바꾼-명령의-수">최적화 단계가 바꾼 명령의 수</h2>
+<p>같은 C 함수라도 어셈블리 출력은 하나로 고정되지 않습니다. 실험에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add</code>를 최적화 없이 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">-O0</code>로 컴파일했을 때에는 다음과 같이 인자를 스택에 저장했다가 다시 읽었습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">sub sp, sp, #16
+str w0, [sp, #12]
+str w1, [sp, #8]
+ldr w8, [sp, #12]
+ldr w9, [sp, #8]
+add w0, w8, w9
+add sp, sp, #16
+ret</code></pre>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">-O2</code>에서는 같은 의미가 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add w0, w1, w0</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ret</code>로 줄었습니다. 이 표본은 최적화 단계가 생성 코드를 바꾼다는 사실만 보여 주며 실행 시간은 재지 않았습니다. 컴파일러 버전과 대상 CPU가 달라져도 고급 언어 한 줄에 대응하는 명령이 바뀔 수 있습니다. 그래서 디버거에서 소스 줄과 명령을 함께 보더라도 일대일로 맞지 않을 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="어셈블리어를-직접-쓰는-다섯-영역">
+<h2 id="어셈블리어를-직접-쓰는-다섯-영역">어셈블리어를 직접 쓰는 다섯 영역</h2>
+<p>일반 앱의 화면과 업무 규칙을 어셈블리어로 작성하는 일은 드뭅니다. 대신 고급 언어가 닿기 전이나, 생성된 기계어가 문제의 원인인 곳에서는 현재도 직접 사용합니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>쓰이는 곳</th><th>어셈블리어가 필요한 이유</th><th>실제 단서</th></tr></thead><tbody><tr><td>부팅과 운영체제 진입부</td><td>스택·메모리 관리 장치(MMU)·CPU 모드처럼 C 런타임 전에 필요한 상태를 설정</td><td>Linux ARM64의 <a href="https://github.com/torvalds/linux/blob/master/arch/arm64/kernel/head.S" style="color:#1a73e8;text-decoration:none;" target="_blank"><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">head.S</code></a></td></tr><tr><td>마이크로컨트롤러 시작·인터럽트</td><td>리셋 벡터와 초기 스택, 핸들러 주소를 하드웨어 형식에 맞춤</td><td><a href="https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/decoding-the-startup-file-for-arm-cortex-m4" style="color:#1a73e8;text-decoration:none;" target="_blank">Arm Cortex-M 시작 코드 설명</a></td></tr><tr><td>암호·미디어의 좁은 핵심 루프</td><td>특정 CPU 명령과 레지스터 배치를 세밀하게 선택</td><td>OpenSSL의 현재 <a href="https://github.com/openssl/openssl/blob/master/crypto/aes/asm/aes-x86_64.pl" style="color:#1a73e8;text-decoration:none;" target="_blank">x86-64 AES 소스</a></td></tr><tr><td>컴파일러·런타임·언어 구현</td><td>고급 언어를 대상 CPU 명령으로 내리거나 언어 경계를 연결</td><td><a href="https://clang.llvm.org/docs/Toolchain.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Clang의 백엔드와 어셈블러 단계</a></td></tr><tr><td>디버깅·성능 분석·보안 분석</td><td>충돌 주소와 실제 실행 명령을 연결하고 바이너리 동작을 확인</td><td><a href="https://sourceware.org/gdb/current/onlinedocs/gdb.html/Machine-Code.html" style="color:#1a73e8;text-decoration:none;" target="_blank">GDB의 소스·기계어 보기</a></td></tr></tbody></table></div>
+<p><a href="https://www.kernel.org/doc/html/latest/process/howto.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Linux 커널 문서</a>도 커널이 주로 C로 작성되며 일부 아키텍처 의존부가 어셈블리라고 설명합니다. 이 조합이 현재 위치를 잘 보여 줍니다. 큰 구조는 C·C++·Rust 같은 언어로 관리하고, 하드웨어 경계의 작은 부분만 어셈블리어가 맡습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="어셈블리어의-장단점">
+<h2 id="어셈블리어의-장단점">어셈블리어의 장단점</h2>
+<p>어셈블리어의 장점은 “무조건 빠르다”보다 <strong>무슨 명령이 실행되는지 직접 선택하고 확인할 수 있다</strong>는 데 있습니다.</p>
+<ul><li>특정 시스템 레지스터나 CPU 명령처럼 고급 언어가 바로 드러내지 않는 기능에 접근할 수 있습니다.</li><li>함수 호출, 메모리 접근, 분기를 실제 명령 단위로 추적할 수 있어 충돌과 성능 병목을 분석하기 좋습니다.</li><li>부팅 코드나 인터럽트 진입부처럼 런타임이 준비되기 전의 짧은 경로를 만들 수 있습니다.</li><li>컴파일러가 만든 코드를 검토하면 고급 언어의 비용과 최적화 결과를 구체적으로 확인할 수 있습니다.</li></ul>
+<p>그 대가는 코드가 CPU와 플랫폼에 밀착된다는 점입니다.</p>
+<ul><li>ARM64 코드는 x86-64에서 그대로 실행되지 않으며, 같은 ARM64에서도 운영체제 ABI와 오브젝트 형식이 다를 수 있습니다.</li><li>자료형, 변수 수명, 자동 메모리 관리 같은 고급 언어의 보호 장치가 약해 작은 실수가 레지스터나 스택을 망가뜨릴 수 있습니다.</li><li>명령 수가 적다고 실제 CPU에서 항상 빠른 것은 아닙니다. 파이프라인, 캐시, 분기 예측까지 고려해야 하며 컴파일러가 주변 코드 전체를 보며 적용하는 최적화를 막을 수도 있습니다.</li><li>사람이 읽고 수정할 정보량이 커서 같은 기능을 개발하고 검증하는 비용이 높습니다.</li></ul>
+<p>성능이 목적이어도 먼저 알고리즘과 메모리 접근을 고급 언어에서 개선하고 프로파일러로 병목을 확인해야 합니다. 특정 명령만 필요하다면 컴파일러 내장 함수가 이식성과 최적화 정보를 더 잘 보존하기도 합니다. 직접 작성한 어셈블리는 마지막에 남은 좁고 측정 가능한 경로에 두는 편이 관리하기 쉽습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="2026년에는-얼마나-직접-작성할까">
+<h2 id="2026년에는-얼마나-직접-작성할까">2026년에는 얼마나 직접 작성할까</h2>
+<p>2026년 현재 어셈블리어는 일반 애플리케이션의 주력 언어보다 저수준 전문 도구에 가깝습니다. 이 글에서 확인한 프로젝트와 도구는 직접 작성하는 영역을 특정 기능에 한정하면서, 코드를 읽고 다른 언어와 연결하는 기능을 계속 제공합니다.</p>
+<p><a href="https://learn.microsoft.com/cpp/assembler/masm/masm-for-x64-ml64-exe" style="color:#1a73e8;text-decoration:none;" target="_blank">Microsoft의 x64 도구 문서</a>는 x64와 ARM64에서 인라인 어셈블러를 지원하지 않습니다. 대안은 C++, 컴파일러 내장 함수, 별도 어셈블리 소스 파일입니다. <a href="https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html" style="color:#1a73e8;text-decoration:none;" target="_blank">GCC의 extended asm</a>과 <a href="https://doc.rust-lang.org/stable/core/arch/macro.asm.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Rust 안정판의 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">asm!</code></a>은 저수준 명령을 연결하는 통로를 계속 제공합니다. Linux와 OpenSSL 저장소에도 아키텍처별 어셈블리 코드가 남아 있습니다.</p>
+<p>이 자료를 함께 보면 현대의 어셈블리어는 세 역할로 정리됩니다.</p>
+<ol><li>컴파일러가 생성하는 <strong>결과 형식</strong>입니다.</li><li>디버거와 프로파일러가 프로그램을 들여다보는 <strong>관찰 형식</strong>입니다.</li><li>부팅·암호·런타임의 작은 핵심부를 작성하는 <strong>전문 구현 언어</strong>입니다.</li></ol>
+<p>웹 서비스나 모바일 앱은 생산성이 높은 고급 언어로 시작하는 편이 맞습니다. 운영체제, 임베디드, 컴파일러, 리버스 엔지니어링, 고성능 라이브러리를 다룬다면 어셈블리어를 읽는 능력만으로도 문제를 더 낮은 층에서 확인할 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="입문자가-익힐-실용적인-범위">
+<h2 id="입문자가-익힐-실용적인-범위">입문자가 익힐 실용적인 범위</h2>
+<p>처음부터 ARM64 명령 전체를 외우지 않아도 됩니다. 지금 사용하는 컴퓨터의 함수 하나를 골라 다음 순서로 확인해 보세요.</p>
+<ol><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">clang -S -O2 file.c -o file.s</code>로 어셈블리 파일을 만듭니다.</li><li>함수 레이블을 찾고 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">mov</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">add</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">sub</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ldr</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">str</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">cmp</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">b</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">bl</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ret</code>부터 읽습니다.</li><li>첫 인자와 반환값이 어느 레지스터에 있는지 해당 플랫폼의 ABI 문서에서 확인합니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">clang -c -O2 file.c -o file.o</code>로 디스어셈블할 오브젝트 파일을 만듭니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">objdump -d file.o</code>나 디버거의 디스어셈블 기능으로 명령 인코딩과 주소를 연결합니다.</li><li><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">-O0</code>과 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">-O2</code>를 비교하되, 명령 수를 성능 결과로 단정하지 않습니다.</li></ol>
+<p>덧셈 함수에서 출발해 조건문, 메모리 로드, 함수 호출까지 읽었다면 명령표 암기보다 중요한 감각을 얻은 것입니다. 고급 언어 한 줄에 대응하는 명령은 컴파일러와 CPU·ABI가 함께 결정합니다. 다음에 충돌 주소나 프로파일러의 병목 함수를 만났을 때 그 과정을 거꾸로 따라가 보세요. 어셈블리어를 처음 실용적으로 써 보는 순간입니다.</p>
+</section>
+</article>
+</body>
+</html>

@@ -1,0 +1,9 @@
+clang -S -O0 examples.c -o examples-O0.s
+clang -S -O2 examples.c -o examples-O2.s
+clang -c -O2 examples.c -o examples-O2.o
+objdump -d examples-O2.o
+clang -c handwritten_add_naive.s -o handwritten_add_naive.o
+clang handwritten_add_naive.o test_handwritten.c -o handwritten-naive-demo
+clang -c handwritten_add.s -o handwritten_add.o
+clang handwritten_add.o test_handwritten.c -o handwritten-demo
+./handwritten-demo

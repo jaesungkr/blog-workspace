@@ -1,0 +1,26 @@
+
+examples-O2.o:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000000000000 <ltmp0>:
+       0: 0b000020     	add	w0, w1, w0
+       4: d65f03c0     	ret
+
+0000000000000008 <_absolute_value>:
+       8: 7100001f     	cmp	w0, #0x0
+       c: 5a805400     	cneg	w0, w0, mi
+      10: d65f03c0     	ret
+
+0000000000000014 <_load_plus_one>:
+      14: b9400008     	ldr	w8, [x0]
+      18: 11000500     	add	w0, w8, #0x1
+      1c: d65f03c0     	ret
+
+0000000000000020 <_add_then_double>:
+      20: a9bf7bfd     	stp	x29, x30, [sp, #-0x10]!
+      24: 910003fd     	mov	x29, sp
+      28: 94000000     	bl	0x28 <_add_then_double+0x8>
+      2c: 531f7800     	lsl	w0, w0, #1
+      30: a8c17bfd     	ldp	x29, x30, [sp], #0x10
+      34: d65f03c0     	ret

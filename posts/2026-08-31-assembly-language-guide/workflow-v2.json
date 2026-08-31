@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "evidence-rich",
+  "scope": "complete",
+  "primary_reader": "고급 언어 코드는 작성해 봤지만 어셈블리어와 CPU 명령의 관계는 처음 보는 개발 입문자",
+  "direct_capture": true,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": true,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "evidence-rich: 같은 C 함수와 조건문을 Apple Silicon의 ARM64 어셈블리 및 기계어로 직접 변환해, 고급 언어와 CPU 명령 사이의 대응 관계를 재현 가능한 원자료로 남긴다. 글은 어셈블리어의 평범한 정체, 실제 사용처, 최소 문법, 함수 호출과 조건문의 예, 장단점, 현대 개발에서의 위치를 다룬다. 설치형 제품 절차가 아니므로 reader-friction UI 스크린샷은 0장이다. 생성형 대표 이미지 1장과 소스 코드 -> 어셈블리 -> 기계어 -> CPU의 변환 관계를 보여 주는 결정적 조판 인포그래픽 1장을 사용한다. 정적 PNG 두 장이며 외부 추적 요소가 없어 두 번째 원격 fetch는 요구하지 않는다. 코드 블록은 기본 가로 스크롤로 처리할 수 있어 추가 390px·768px 프로필과 complex_layout 경로는 켜지 않는다."
+}

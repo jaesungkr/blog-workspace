@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "lead_id": "assembly-language-hero",
+  "items": [
+    {
+      "id": "assembly-language-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C04",
+        "C11"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-31",
+      "environment": "OpenAI built-in image generation; editorial crafted-object direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/assembly-language-hero-v5-source.png",
+      "publish_path": "assets/assembly-language-hero-v5.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fchixf9%2FdJMcagGSOln%2FAAAAAAAAAAAAAAAAAAAAAHezddNM0gc-RpZwKSLrDOOVLKbwSBqp5X70j1Vofpkz%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DfN9p9vxHuYznX%252B5i1hCeWARKBeo%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "ADD W0, W0, W1 명령과 4×8 비트 셀이 새겨진 금속 토큰이 CPU 소켓에 맞닿은 장면",
+      "caption": "사람이 읽는 ARM64 명령 한 줄은 CPU가 처리할 32비트 인코딩과 대응합니다.",
+      "processing": [
+        "generated from an original ARM64 assembly-language editorial prompt",
+        "regenerated to add the exact ADD W0, W0, W1 subject-recognition cue",
+        "targeted edits to preserve exactly 32 cells and encode 0x0B010000 with copper as 1",
+        "full-size and 320-by-180-pixel inspection",
+        "independent hero validation pass by /root/hero_review"
+      ],
+      "redactions": [],
+      "sha256": "67b04e5f9b95a4ccf732ab5ef528b796230ac2535eecab45b48f6b4f468947eb",
+      "status": "validated"
+    },
+    {
+      "id": "assembly-language-pipeline",
+      "kind": "image",
+      "origin": "generated",
+      "role": "concept",
+      "claim_ids": [
+        "C01",
+        "C03",
+        "C04",
+        "C11"
+      ],
+      "actor": "Codex deterministic HTML and CSS renderer",
+      "captured_at": "2026-08-31",
+      "environment": "700 x 980 PNG rendered in headless Google Chrome with Apple SD Gothic Neo and SFMono-Regular on macOS",
+      "source_url": "",
+      "raw_path": "artifacts/infographic/assembly-language-pipeline-v3.html",
+      "publish_path": "assets/assembly-language-pipeline-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FLKCMt%2FdJMcacYGPqx%2FAAAAAAAAAAAAAAAAAAAAAHYtrbtovhiXWibkHk317vnGasRWXiT41XLVlT8VVSMM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D6THgjaQ5X%252BHOox2lsr%252Bu%252F2SCw0s%253D",
+      "width": 700,
+      "height": 980,
+      "display_width": 700,
+      "placement": "after:고급 언어와 기계어 사이의 한 층",
+      "rights": "dev.log original deterministic infographic",
+      "alt": "C 덧셈 코드가 ARM64 어셈블리와 32비트 기계어를 거쳐 CPU 결과 12가 되는 네 단계",
+      "caption": "같은 덧셈도 C 소스, ARM64 어셈블리, 32비트 기계어, CPU 결과에서는 서로 다른 모습으로 표현됩니다.",
+      "processing": [
+        "deterministic HTML and CSS layout with exact Korean, instruction, hexadecimal, and bit-pattern copy",
+        "revised to separate ARM64 assembly from 32-bit machine code and use actual Apple Clang 21 -O2 output",
+        "removed redundant English kicker and stage labels",
+        "full-size and exact 360 CSS-pixel display inspection",
+        "independent infographic validation pass by /root/infographic_review"
+      ],
+      "redactions": [],
+      "sha256": "b283eec0dd22a41fee3fb138bbcc68f22eaa680d4d3a302df0ceefbe5c60a977",
+      "status": "validated"
+    }
+  ]
+}
