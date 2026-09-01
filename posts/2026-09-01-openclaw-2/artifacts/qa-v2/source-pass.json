@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-01T14:39:47.132926Z",
+  "checked_by": "Codex independent source reviewer /root/openclaw_source_review",
+  "article_content_sha256": "678d63ec88fba34bd22e6fe6e6ec9ef9513990eb8d91b63b479a925b6d04491f",
+  "brief_sha256": "4a16799127cb2b2fc3722e3ebca9f764dba406da365e57378a76dfa98f1e58d5",
+  "evidence_sha256": "36fea06bc5898b9e9dc8618b463e2986ba00df6fb93ea74f0fed399a7110d669",
+  "note": "PNG 발행 자산 전환에 따른 hero_image 확장자 변경만 재확인함"
+}

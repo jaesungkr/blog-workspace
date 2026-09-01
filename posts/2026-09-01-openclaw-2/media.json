@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "lead_id": "openclaw-2-hero",
+  "items": [
+    {
+      "id": "openclaw-2-hero",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "source_url": "https://openclaw.ai/blog/openclaw-2-accidentally",
+      "raw_path": "artifacts/media-candidates/openclaw-2-hero.jpg",
+      "publish_path": "assets/openclaw-2-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4kfu4%2FdJMcahsfZ2N%2FAAAAAAAAAAAAAAAAAAAAAMKFbZyeXRPv5x5HPnfQ-YJL3gUzF_w4f34fwKOW27lO%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DFYq0dqWxVBsYJ3hWpGbv%252FwPAK4s%253D",
+      "width": 1280,
+      "height": 672,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "official OpenClaw blog image republished with source attribution for editorial explanation of the public OpenClaw 2.0 announcement",
+      "alt": "어두운 배경의 중앙에 OpenClaw 캐릭터가 서 있고 메신저, 파일, 브라우저, 일정, 팀 작업 화면이 연결선으로 이어진 공식 대표 이미지",
+      "caption": "OpenClaw 2.0은 모델, 도구, 메신저, 작업 공간을 하나의 개인 AI 환경으로 연결하는 방향을 보여 줍니다. 출처: OpenClaw 공식 발표",
+      "processing": [
+        "preserved the original official JPEG response under artifacts/media-candidates",
+        "converted the original JPEG pixels to PNG without crop, annotation, resize, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "e85b3b21eff3da88fcd3ac1741062a19c223c2f151ff3a026fec7a74219947c3",
+      "status": "validated"
+    },
+    {
+      "id": "openclaw-browser-ui",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C04",
+        "C05",
+        "C09"
+      ],
+      "source_url": "https://openclaw.ai/blog/openclaw-2-accidentally",
+      "raw_path": "artifacts/media-candidates/openclaw-browser-ui.jpg",
+      "publish_path": "assets/openclaw-browser-ui.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbewfSw%2FdJMcacj3mXl%2FAAAAAAAAAAAAAAAAAAAAADbZ76ewkQamQgjJHcR5fB63AZhJQKJRGNQ8TvvpVO8R%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DmcXNVAEqhB19kPxU5HdcPI9F0Cg%253D",
+      "width": 880,
+      "height": 430,
+      "display_width": 880,
+      "mobile_scroll_width": 760,
+      "placement": "after:first-setting-explanation",
+      "rights": "official OpenClaw blog screenshot republished with source attribution for editorial explanation of the public OpenClaw 2.0 interface",
+      "alt": "OpenClaw 2.0의 Claw Patrol 새 세션 화면에서 작업 위치, workspace, Full access 권한, 모델 선택값이 입력창 주위에 표시된 모습",
+      "caption": "새 세션 입력창 가까이에서 작업 위치, 권한, 모델을 확인할 수 있습니다. 모바일에서는 이미지를 좌우로 밀어 입력창 양쪽의 선택값을 확인할 수 있습니다. 출처: OpenClaw 공식 발표",
+      "processing": [
+        "preserved the original official JPEG response under artifacts/media-candidates",
+        "converted the original JPEG pixels to PNG without crop, annotation, resize, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "6e64fe7d84be01124e91ca51d952b4a206f635dd4105c7251a3a2e3cf8602e6c",
+      "status": "validated"
+    },
+    {
+      "id": "openclaw-multiplayer-dashboard",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "concept",
+      "claim_ids": [
+        "C08",
+        "C10"
+      ],
+      "source_url": "https://openclaw.ai/blog/openclaw-2-accidentally",
+      "raw_path": "artifacts/media-candidates/openclaw-multiplayer-dashboard.jpg",
+      "publish_path": "assets/openclaw-multiplayer-dashboard.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FzRrE6%2FdJMcaf173TG%2FAAAAAAAAAAAAAAAAAAAAALo5-oyfH0_874gus7AGT_u_0rksY0SGnTRshwajoc1q%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DUSrww9wbSaOAtHPXsSNtwepRLwg%253D",
+      "width": 1280,
+      "height": 686,
+      "display_width": 916,
+      "mobile_scroll_width": 916,
+      "placement": "after:shared-session-explanation",
+      "rights": "official OpenClaw blog screenshot republished with source attribution for editorial explanation of public shared-session capabilities",
+      "alt": "OpenClaw 공유 작업 공간의 왼쪽에 여러 세션과 참여자 목록이 있고 중앙에 The Daily Claw 대시보드가 열린 공식 화면",
+      "caption": "공유 작업 공간에서는 여러 사람과 세션이 같은 맥락을 이어 볼 수 있습니다. 모바일에서는 이미지를 좌우로 밀어 왼쪽 목록과 중앙 대시보드를 함께 확인할 수 있습니다. 출처: OpenClaw 공식 발표",
+      "processing": [
+        "preserved the original official JPEG response under artifacts/media-candidates",
+        "converted the original JPEG pixels to PNG without crop, annotation, resize, or visual modification"
+      ],
+      "redactions": [],
+      "sha256": "d942e6e36a34fa4a7d33a75dc890bdb8d17d4e79d5d03967beeec9bd7af925fa",
+      "status": "validated"
+    }
+  ]
+}

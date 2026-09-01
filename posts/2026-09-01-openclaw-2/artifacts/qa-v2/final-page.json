@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-09-01",
+  "checked_by": "Codex independent final-page reviewer /root/openclaw_source_review",
+  "browser": "Chrome/152.0.7977.65",
+  "session": "eae54f49-f863-460d-a4e6-facfffe3a0d7",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "e8b85755bf72fff6b6707c4b5742f65ae3b3d7675e82e0283c2db6426569a105",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "8280005ffbca248c97f02740b8f726d2d87cefb5ea2a6cd67242ac22b3773143",
+  "source_pass_sha256": "9beeeb705b078067e4106b4022f5513957b8b29b1248005dd4e31731bf466a9d",
+  "article_content_sha256": "678d63ec88fba34bd22e6fe6e6ec9ef9513990eb8d91b63b479a925b6d04491f",
+  "media_sha256": "ee64820ec494687c3ee8c568809604a9c2488a1ceaa96cf1aaa1783f62781356",
+  "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "b4a7b34e08524cf769dd445d81ff1bc8f4f4658c68ac230eedd3ef3497d47dc5",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/openclaw-2-rich-preview.html",
+  "preview_sha256": "cce0d02ed17203ae99891e8f16e938733c0c4939757f8c781c1738149c5cb078",
+  "preview_structure_sha256": "84447cc35feb9b2ea77a22757befc95e6cec814376d5acd269c1f30c58ccd7a3",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/openclaw-2-rich-preview.html",
+  "dark_preview_sha256": "b3ebfbb4b357f0a9da6cc19de2d735f4a634e817ce932ee8e290ca81b1f950ff",
+  "fragment_path": "artifacts/qa-v2/final-rendered/openclaw-2-tistory-fragment.html",
+  "fragment_sha256": "95146e4be6e30541a1ce2c3bee4d0ef8097e098b1e57b1667d1e718688d81b20",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "5afb74ff8ef5e9a08169049fa1f37295217ce626649fe475214d27532ed2e929"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "ab7f2b9d7a0bbd0e8878bfbe9281136c3a2549b3f097616b35532b1549897d19"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "95dca9c672e04f1499b96b56239e45994acd15925eeaceeaf0db7f336cda625a"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "ab29ee196ccd5a5463ded0435337c7e373b91bda483e13b75f680a11e9d34597"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

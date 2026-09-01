@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "OpenClaw를 처음 듣거나 2.0 발표가 기존 챗봇과 무엇이 다른지 알고 싶은 비전문 개발자와 AI 도구 사용자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "standard-rich: 사용자가 제공한 OpenClaw 공식 발표와 국내 보도를 출발점으로 삼아 공개 자료의 주장과 확인 가능한 사실을 구분한다. 직접 설치·실행이나 UI 사용을 주장하지 않는 제품 해설이므로 direct_capture와 GIF는 사용하지 않는다. 독자가 먼저 알아야 할 것은 OpenClaw 2.0의 정체, 기존 대화형 AI와 달라진 작업 방식, 공개 범위와 보안·운영 경계다. 절차형 사용 가이드가 아니므로 reader-friction screenshot은 0장이다. 공식 발표의 정적 시각 자료를 대표 이미지로 검토하고, 구조를 설명하는 별도 인포그래픽은 공식 자료와 본문 표가 관계를 충분히 전달하지 못할 때만 연구 뒤 다시 라우팅한다. 정적 미디어만 사용하므로 390px·768px 추가 프로필과 두 번째 원격 fetch는 요구하지 않는다."
+}

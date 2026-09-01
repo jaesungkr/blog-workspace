@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "08980ba3-155c-4e45-a893-d2638a050ff1",
+  "recorded_at": "2026-09-01T14:53:05.421421Z",
+  "recorded_by": "Codex",
+  "media_sha256": "ee64820ec494687c3ee8c568809604a9c2488a1ceaa96cf1aaa1783f62781356",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "openclaw-2-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4kfu4%2FdJMcahsfZ2N%2FAAAAAAAAAAAAAAAAAAAAAMKFbZyeXRPv5x5HPnfQ-YJL3gUzF_w4f34fwKOW27lO%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DFYq0dqWxVBsYJ3hWpGbv%252FwPAK4s%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4kfu4%2FdJMcahsfZ2N%2FAAAAAAAAAAAAAAAAAAAAAMKFbZyeXRPv5x5HPnfQ-YJL3gUzF_w4f34fwKOW27lO%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DFYq0dqWxVBsYJ3hWpGbv%252FwPAK4s%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-09-01T14:53:05.260084Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 730329,
+      "byte_length": 730329,
+      "sha256": "7f247bb050a57548c5e23a0104c0031dfe7fc1ad2a7dc5a8d7a957f21687e343",
+      "format": "png",
+      "width": 1280,
+      "height": 672,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Tue, 01 Sep 2026 14:51:15 GMT"
+    },
+    {
+      "id": "openclaw-browser-ui",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbewfSw%2FdJMcacj3mXl%2FAAAAAAAAAAAAAAAAAAAAADbZ76ewkQamQgjJHcR5fB63AZhJQKJRGNQ8TvvpVO8R%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DmcXNVAEqhB19kPxU5HdcPI9F0Cg%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbewfSw%2FdJMcacj3mXl%2FAAAAAAAAAAAAAAAAAAAAADbZ76ewkQamQgjJHcR5fB63AZhJQKJRGNQ8TvvpVO8R%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DmcXNVAEqhB19kPxU5HdcPI9F0Cg%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-09-01T14:53:05.314266Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 76612,
+      "byte_length": 76612,
+      "sha256": "ba32a06df54be9025cd7c3335d7b7304a3c7d7da8a3d3f10595fd85138ba41b0",
+      "format": "png",
+      "width": 880,
+      "height": 430,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Tue, 01 Sep 2026 14:51:15 GMT"
+    },
+    {
+      "id": "openclaw-multiplayer-dashboard",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FzRrE6%2FdJMcaf173TG%2FAAAAAAAAAAAAAAAAAAAAALo5-oyfH0_874gus7AGT_u_0rksY0SGnTRshwajoc1q%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DUSrww9wbSaOAtHPXsSNtwepRLwg%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FzRrE6%2FdJMcaf173TG%2FAAAAAAAAAAAAAAAAAAAAALo5-oyfH0_874gus7AGT_u_0rksY0SGnTRshwajoc1q%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DUSrww9wbSaOAtHPXsSNtwepRLwg%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-09-01T14:53:05.420956Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 513295,
+      "byte_length": 513295,
+      "sha256": "7b13ad764664fdc4b8f06d389474446907aa07f76260c442239513dd32cf03e5",
+      "format": "png",
+      "width": 1280,
+      "height": 686,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Tue, 01 Sep 2026 14:51:15 GMT"
+    }
+  ]
+}
