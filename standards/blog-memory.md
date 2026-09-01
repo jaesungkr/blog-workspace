@@ -34,6 +34,31 @@ them when decisions depend on current state.
 - A single post cannot guarantee AdSense approval or explosive traffic. Never
   promise either outcome.
 
+## Editorial feedback memory - 2026-09-02
+
+- The user rejected the first OpenClaw 2.0 title and opening because the prose
+  described abstractions before explaining the product in recognizable terms.
+  Treat this as a recurring quality signal for all technical posts.
+- Reject titles built around vague combinations such as `시작과 운영이 달라진
+  이유`, `사용 환경의 변화`, or `새 구조` when the title can name the actual
+  object, task, conflict, or decision instead.
+- After the greeting, explain the subject with concrete nouns and direct verbs
+  before introducing architecture. For a software product, name what the user
+  can connect, inspect, change, or delegate. Do not make the reader translate
+  `Gateway`, `흐름`, `경계`, or `운영` into an everyday benefit.
+- Do not compress several audience branches into the first screen. A new-user
+  benefit, existing-user migration warning, collaboration summary, and security
+  boundary do not belong in one short paragraph merely because they are all
+  important. Keep one main benefit and at most one decision-changing caution;
+  move the other branches to their owner sections.
+- Phrases such as `모델 자체의 성능보다 사용 환경에 있습니다` and `필요한
+  순간에 권한을 승인하는 흐름을 한곳으로 모았습니다` fail unless the next
+  words immediately name who does what and what changes for the reader.
+- Read the title and opening aloud as a standalone pair. Return them for rewrite
+  when they sound like a release-note classification, could introduce many
+  unrelated products, or leave a cold reader unable to answer `그래서 이걸로
+  무슨 일을 하는가?`.
+
 ## Proven strengths
 
 - `게임 내 한글 채팅 오류 해결 방법`: exact Windows environment and a

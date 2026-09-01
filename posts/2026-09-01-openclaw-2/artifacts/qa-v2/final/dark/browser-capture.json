@@ -2,16 +2,16 @@
   "version": 2,
   "status": "pass",
   "mode": "final-dark",
-  "checked_at": "2026-09-01T14:54:03.458432Z",
+  "checked_at": "2026-09-01T15:30:29.413369Z",
   "checked_by": "Codex independent final-page reviewer /root/openclaw_source_review",
   "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "preview_path": "artifacts/qa-v2/final-dark-rendered/openclaw-2-rich-preview.html",
-  "preview_sha256": "b3ebfbb4b357f0a9da6cc19de2d735f4a634e817ce932ee8e290ca81b1f950ff",
+  "preview_sha256": "3f76bb63301081a65bcd65bd6bb3e7b4c569370a4a3e05a88c4706a7bc0f052d",
   "screenshot_root": "artifacts/qa-v2/final/dark",
   "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
   "browser_version": "Chrome/152.0.7977.65",
   "protocol_version": "1.3",
-  "session": "a906f99a-49d4-4a08-a348-3c5ca1e69d1f",
+  "session": "48795559-9758-4d4c-9eb8-69a3c8761b91",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,7 +21,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 6876,
+      "scroll_height": 6847,
       "h1_count": 1,
       "toc_anchor_count": 8,
       "toc_targets_unique": true,
@@ -47,7 +47,7 @@
           "natural_height": 686
         }
       ],
-      "screenshot_sha256": "95dca9c672e04f1499b96b56239e45994acd15925eeaceeaf0db7f336cda625a",
+      "screenshot_sha256": "b9fb3f0bed48941ec82790dfee29aaae5d919b72fe5e21b9e56168851aee8e48",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -63,7 +63,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 9657,
+      "scroll_height": 9589,
       "h1_count": 1,
       "toc_anchor_count": 8,
       "toc_targets_unique": true,
@@ -89,7 +89,7 @@
           "natural_height": 686
         }
       ],
-      "screenshot_sha256": "ab29ee196ccd5a5463ded0435337c7e373b91bda483e13b75f680a11e9d34597",
+      "screenshot_sha256": "5d3e78652dd0b4bc42f445dfb0ad30387fce91fed874ce036a7fb73d8f3e4890",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,

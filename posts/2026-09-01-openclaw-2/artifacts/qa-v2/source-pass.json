@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-09-01T14:39:47.132926Z",
+  "checked_at": "2026-09-01T15:29:37.947419Z",
   "checked_by": "Codex independent source reviewer /root/openclaw_source_review",
-  "article_content_sha256": "678d63ec88fba34bd22e6fe6e6ec9ef9513990eb8d91b63b479a925b6d04491f",
-  "brief_sha256": "4a16799127cb2b2fc3722e3ebca9f764dba406da365e57378a76dfa98f1e58d5",
-  "evidence_sha256": "36fea06bc5898b9e9dc8618b463e2986ba00df6fb93ea74f0fed399a7110d669",
-  "note": "PNG 발행 자산 전환에 따른 hero_image 확장자 변경만 재확인함"
+  "article_content_sha256": "8abd5c6234c4243154ab2d2153ef86b9234f50356355f9af0e4dc810d975042b",
+  "brief_sha256": "ca9ac5f28e2d89aab00ee0f8948a474980d2183244f3df9f95db02819ae4f707",
+  "evidence_sha256": "37d8ce7814ff34460de5c92aa6c746e458e7c9ed48ca945ac7a71fa37c67e427",
+  "note": "사용자 피드백과 두 차례의 360px 제목 줄바꿈 검수를 반영해 제목을 자연스럽게 압축했습니다. 제목·summary·서론의 사실성과 제품 정체를 다시 확인했습니다."
 }

@@ -3,14 +3,14 @@
   "checked_at": "2026-09-01",
   "checked_by": "Codex independent final-page reviewer /root/openclaw_source_review",
   "browser": "Chrome/152.0.7977.65",
-  "session": "eae54f49-f863-460d-a4e6-facfffe3a0d7",
+  "session": "5b6b6492-4f60-4e29-8c39-47710f00facd",
   "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
-  "capture_receipt_sha256": "e8b85755bf72fff6b6707c4b5742f65ae3b3d7675e82e0283c2db6426569a105",
+  "capture_receipt_sha256": "3579ca4c12f87df28c136d7662dd310ab0e23f5f220241093d6a397af6a99e58",
   "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
-  "dark_capture_receipt_sha256": "8280005ffbca248c97f02740b8f726d2d87cefb5ea2a6cd67242ac22b3773143",
-  "source_pass_sha256": "9beeeb705b078067e4106b4022f5513957b8b29b1248005dd4e31731bf466a9d",
-  "article_content_sha256": "678d63ec88fba34bd22e6fe6e6ec9ef9513990eb8d91b63b479a925b6d04491f",
+  "dark_capture_receipt_sha256": "776d40016589a15a05905677f5b2a4addc4ff11c6f3e498a3ce7221232f4cf11",
+  "source_pass_sha256": "84b85002596c9a58494ab48c9a911966c3fc63fc8b221edf1b2f2a8ef12861c0",
+  "article_content_sha256": "8abd5c6234c4243154ab2d2153ef86b9234f50356355f9af0e4dc810d975042b",
   "media_sha256": "ee64820ec494687c3ee8c568809604a9c2488a1ceaa96cf1aaa1783f62781356",
   "renderer_sha256": "2e4178ac56b77775dba0b8bb4b567c4565e798d0a1ce59b64d71de25f1636a04",
   "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
@@ -18,12 +18,12 @@
   "remote_media_sha256": "b4a7b34e08524cf769dd445d81ff1bc8f4f4658c68ac230eedd3ef3497d47dc5",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa-v2/final-rendered/openclaw-2-rich-preview.html",
-  "preview_sha256": "cce0d02ed17203ae99891e8f16e938733c0c4939757f8c781c1738149c5cb078",
-  "preview_structure_sha256": "84447cc35feb9b2ea77a22757befc95e6cec814376d5acd269c1f30c58ccd7a3",
+  "preview_sha256": "94acabcae7fd98e153256a95b1a84ddf093a75e642da76ad7cdcfc8d00e2c1c6",
+  "preview_structure_sha256": "3a5013165837e9b6bb4fdc75feab96eefda48573ceb80db971fdf34e037b03eb",
   "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/openclaw-2-rich-preview.html",
-  "dark_preview_sha256": "b3ebfbb4b357f0a9da6cc19de2d735f4a634e817ce932ee8e290ca81b1f950ff",
+  "dark_preview_sha256": "3f76bb63301081a65bcd65bd6bb3e7b4c569370a4a3e05a88c4706a7bc0f052d",
   "fragment_path": "artifacts/qa-v2/final-rendered/openclaw-2-tistory-fragment.html",
-  "fragment_sha256": "95146e4be6e30541a1ce2c3bee4d0ef8097e098b1e57b1667d1e718688d81b20",
+  "fragment_sha256": "0e589cb3a0c720f945e4cb09bb990e80fc9073c0fa889e355d5f64b6547cf3cd",
   "viewports": [
     {
       "width": 1280,
@@ -38,7 +38,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "5afb74ff8ef5e9a08169049fa1f37295217ce626649fe475214d27532ed2e929"
+      "screenshot_sha256": "dbbfde228033985f2eb62f5c59538b69010539ce41a2aca49d4caa7fe845a64f"
     },
     {
       "width": 360,
@@ -53,7 +53,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "ab7f2b9d7a0bbd0e8878bfbe9281136c3a2549b3f097616b35532b1549897d19"
+      "screenshot_sha256": "6d567d7ba156a11ff288454b0a1117963bb22d92764a95958d37e2ba3c608645"
     }
   ],
   "dark_viewports": [
@@ -70,7 +70,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "95dca9c672e04f1499b96b56239e45994acd15925eeaceeaf0db7f336cda625a"
+      "screenshot_sha256": "b9fb3f0bed48941ec82790dfee29aaae5d919b72fe5e21b9e56168851aee8e48"
     },
     {
       "width": 360,
@@ -85,7 +85,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "ab29ee196ccd5a5463ded0435337c7e373b91bda483e13b75f680a11e9d34597"
+      "screenshot_sha256": "5d3e78652dd0b4bc42f445dfb0ad30387fce91fed874ce036a7fb73d8f3e4890"
     }
   ],
   "fragment": {
