@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-02T15:19:12.563877Z",
+  "checked_by": "/root/source_review",
+  "article_content_sha256": "3bfa9753697513360ca32b6127a7ac5d5dba0aa4cde968888db294bb70bb060e",
+  "brief_sha256": "5373fd60c45737a0be33b1a7dfd30063f8872529c4ed8639afe3039404e830f4",
+  "evidence_sha256": "e5756cdd7c71f1f8013f3267fb8e7f051c3525f3972267b4a439a2ef3cc87562",
+  "note": "Final language pass: clarified C15 subject without changing the recommendation scope; article, brief, evidence, and audit are consistent."
+}

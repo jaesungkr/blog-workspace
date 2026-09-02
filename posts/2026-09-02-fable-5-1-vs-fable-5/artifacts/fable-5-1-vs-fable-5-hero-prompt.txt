@@ -1,0 +1,14 @@
+Use case: ads-marketing
+Asset type: Korean Tistory model-comparison hero image, landscape 16:9
+Input image: style and series-layout reference only. Preserve its transferable split-comparison grammar and level of finish, but do not copy its emblems, objects, or exact decoration.
+Primary request: Create a new comparison-series hero for “Fable 5.1 vs Fable 5 - 클로드 모델 비교”.
+Creative intent: two credible generations shown with equal visual dignity; the newer model is a refined continuity upgrade, not a cartoon winner.
+Visual idea: a thin luminous diagonal seam divides two premium crafted object studies. At the center sits a compact brushed-metal “VS” medallion. On the luminous left, a distinctive layered relay-path emblem suggests long-running multi-step continuity. On the dark right, a distinct carved route-map emblem suggests a proven previous generation. Each emblem sits inside its own tactile rounded-square frame with believable thickness and contact shadow.
+Art direction: premium editorial campaign still life with carefully crafted 3D objects, museum-catalog finish, restrained depth, no dashboard or fake UI.
+Composition/framing: exact equal-weight left/right hierarchy, strong thumbnail readability, safe margins, diagonal seam running behind the VS medallion, model names near the upper third, emblems below, generous quiet space.
+Lighting/mood: broad diffused studio light on the ivory side; controlled violet edge light and soft fill on the charcoal side; consistent physical shadows; calm, precise, trustworthy.
+Color palette: left luminous ivory, warm champagne gold, pale sand; right deep charcoal, muted violet, graphite; central brushed silver.
+Materials/textures: uncoated mineral paper, finely brushed aluminum, sandblasted glass, matte ceramic, subtle microtexture; no glossy plastic.
+Text (verbatim): left heading “Fable 5.1”; left role line “긴 작업의 새 기준”; center “VS”; right heading “Fable 5”; right role line “검증된 이전 세대”. Render every quoted string exactly, with no added text. Use clean bold Korean sans-serif for role lines and refined sans-serif for model names.
+Constraints: equal status, publication-ready, crop-safe, exact legible text, no logos, no Anthropic mark, no winner badge, no arrows implying guaranteed success, no watermark.
+Avoid: generic AI brain, circuit-board wallpaper, floating holograms, neon cyberpunk, feature-icon inventory, fake benchmarks, tiny pseudo-writing, mirrored identical emblems, excessive bloom, plastic CG sheen.

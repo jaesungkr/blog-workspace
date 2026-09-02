@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "lead_id": "fable-5-1-vs-fable-5-hero",
+  "items": [
+    {
+      "id": "fable-5-1-vs-fable-5-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C15"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-09-03",
+      "environment": "Codex desktop built-in image generation; existing dev.log comparison-series art direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/fable-5-1-vs-fable-5-hero-source.png",
+      "publish_path": "assets/fable-5-1-vs-fable-5-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FQD2sT%2FdJMcadXDUKV%2FAAAAAAAAAAAAAAAAAAAAAKI31Ik1C1sJPzlvT6F0yYPlcn74OzD4ByXxF-z42J85%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DrpWSecyIP8ykIQm%252B4sf5z%252B0F%252Bvo%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "아이보리·금색의 Fable 5.1과 차콜·보라색의 Fable 5를 중앙 VS로 나란히 비교한 이미지",
+      "caption": "긴 작업을 위한 새 기본 선택 Fable 5.1과 검증된 이전 세대 Fable 5를 같은 비중으로 비교했습니다.",
+      "processing": [
+        "generated with the existing Claude comparison-series split composition as a style reference",
+        "used new relay-path and route-map emblems instead of copying the reference emblems",
+        "verified all five text strings at full size",
+        "inspected the 1672x941 source and a 320x180 thumbnail",
+        "independent hero validation pass by /root/hero_review"
+      ],
+      "redactions": [],
+      "sha256": "971dacb1b47028332cce343f6e116f509c613a25ce5713b080a4150853e47054",
+      "status": "validated"
+    },
+    {
+      "id": "fable-5-1-upgrade-card",
+      "kind": "image",
+      "origin": "generated",
+      "role": "comparison",
+      "claim_ids": [
+        "C03",
+        "C05",
+        "C10",
+        "C11"
+      ],
+      "actor": "Codex deterministic Pillow renderer",
+      "captured_at": "2026-09-03",
+      "environment": "1600x1000 PNG rendered with bundled Python Pillow and Apple SD Gothic Neo on macOS",
+      "source_url": "",
+      "raw_path": "artifacts/render_fable_upgrade_signals.py",
+      "publish_path": "assets/fable-5-1-upgrade-card-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fs8jVp%2FdJMcadC9vik%2FAAAAAAAAAAAAAAAAAAAAAH9nLKnmdCcd_6ZF4TZR7KAe7wJQ_UsZ0ijDQQaJlxBP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D6UjgCsgo%252BZHBKsWJh%252FlBNqmd8gM%253D",
+      "width": 1600,
+      "height": 1000,
+      "display_width": 916,
+      "placement": "after:외부 평가의 66점과 20% 높은 과제당 비용",
+      "rights": "dev.log original deterministic infographic",
+      "alt": "Fable 5.1의 공식 평가 우위, 캐시 읽기 가격 하락, max 과제당 비용 상승을 한 축에서 비교한 인포그래픽",
+      "caption": "공식 성능은 올랐지만 캐시 읽기와 max 과제당 비용은 반대 방향으로 움직여, 사용 방식에 따라 실제 비용이 달라집니다.",
+      "processing": [
+        "deterministic Pillow layout with exact Korean and price copy",
+        "v2 moved the cache signal node away from the $0.25 value after full-raster creator inspection",
+        "v3 connected all signal lines to their circular markers and restored text clear zones after independent review",
+        "painted-bound assertions for the headline and all three signal values",
+        "full-size and untouched 916 CSS-pixel intended-publication-width inspection",
+        "independent infographic validation pass by /root/infographic_review"
+      ],
+      "redactions": [],
+      "sha256": "bef4e2f84365c1da6ffe099fdae64128cbe3b7f703becd96ea7af4259970cd48",
+      "status": "validated"
+    }
+  ]
+}

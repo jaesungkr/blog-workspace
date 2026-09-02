@@ -1,0 +1,14 @@
+Assumptions shared by both scenarios
+- 5-minute cache write: 0.2M tokens at $12.50/MTok
+- uncached input: 0.1M tokens at $10/MTok
+- output: 0.1M tokens at $50/MTok
+- Fable 5 cache reads: $1.00/MTok
+- Fable 5.1 cache reads: $0.25/MTok
+
+short: cache_read=4M, fable_5=$12.50, fable_5_1=$9.50, savings=24.0%
+long: cache_read=10M, fable_5=$18.50, fable_5_1=$11.00, savings=40.5%
+
+Interpretation boundary
+- This isolates the cache-read price change while holding all other token counts constant.
+- It is a reproducible cost structure example, not a measured Claude Code bill.
+- Fable 5.1 can use a different number of output tokens, tool calls, and turns in practice.
