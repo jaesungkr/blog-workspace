@@ -1,0 +1,357 @@
+GPT-6 Astra Model | OpenAI API (https://developers.openai.com/api/docs/models/gpt-6-astra)
+citeturn16view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://developers.openai.com/api/docs/models/gpt-6-astra","lineno":null}); Total lines: 1051
+L0: For the complete documentation index, see cite0†llms.txt . Markdown versions of documentation pages are available by appending `.md` to the page URL.
+L1:
+L2: cite1†ChatGPT L3:
+L4: cite1†Home L5:
+L6: cite2†API L7:
+L8: cite3†Codex†learn.chatgpt.com L9:
+L10: cite4†Docs L11:
+L12: cite5†Use cases L13:
+L14: cite6†Training L15:
+L16: cite7†Resources L17:
+L18: cite8†ChatGPT L19:
+L20: cite9†Resources L21:
+L22: cite2†Overview cite10†Models cite11†Agents cite12†Tools cite13†Voice & Audio cite14†Production cite15†API reference L23:
+L24: ## Search the API docs
+L25:
+L26: Search docs[Input: Start searching]
+L27: ### Suggested
+L28:
+L29: [Button: responses create][Button: reasoning_effort][Button: realtime][Button: prompt caching]
+L30:
+L31: Primary navigation
+L32:
+L33: [Button: API ][Button: Codex ][Button: ChatGPT ][Button: Docs ][Button: Use cases ][Button: Training ][Button: Resources ][Button: Resources ]
+L34:
+L35: Search docs[Input: Start searching]
+L36: ### Suggested
+L37:
+L38: [Button: responses create][Button: reasoning_effort][Button: realtime][Button: prompt caching]
+L39:
+L40: [Button: Overview ][Button: Models ][Button: Agents ][Button: Tools ][Button: Voice & Audio ][Button: Production ][Button: API reference ]
+L41:
+L42: [Select]Docs Models
+L43:
+L44:   * cite2†Home L45:
+L46: ### Get started
+L47:
+L48:   * cite16†Quickstart L49:   * cite17†Using GPT-6 Astra L50:   * cite18†Key concepts L51: ### Core concepts
+L52:
+L53:   * cite19†Responses API L54:   * cite20†Conversation state L55:   * cite21†Background mode L56:   * cite22†Streaming L57:   * cite23†WebSocket mode L58:   * cite24†Mid-turn steering L59:   * cite25†Multi-agent L60:   * cite26†Webhooks L61:   * cite27†File inputs L62:   * cite28†Compaction L63:   * cite29†Counting tokens L64:
+L65: ### SDKs and CLI
+L66:
+L67:   * cite30†OpenAI SDK L68:   * cite31†OpenAI CLI L69:
+L70: ### Resources
+L71:
+L72:   * cite32†Changelog L73:   * cite33†Deprecations L74:   * cite34†Supported countries L75:   * cite35†OpenAI Crawlers L76:   * cite36†Terms and policies†openai.com L77: ### Legacy APIs
+L78:   * Agent Builder
+L79:     * cite37†Overview L80:     * cite38†Migration guide L81:     * cite39†Node reference L82:     * cite40†Safety in building agents L83:   * Evals
+L84:     * cite41†Getting started L85:     * cite42†Working with evals L86:     * cite43†Prompt optimizer L87:     * cite44†External models L88:     * cite45†Best practices L89:     * cite46†Graders L90:   * Fine-tuning
+L91:     * cite47†Optimization cycle L92:     * cite48†Supervised fine-tuning L93:     * cite49†Vision fine-tuning L94:     * cite50†Direct preference optimization L95:     * cite51†Reinforcement fine-tuning L96:     * cite52†RFT use cases L97:     * cite53†Best practices L98:   * Assistants API
+L99:     * cite54†Migration guide L100:   * cite10†Model catalog L101: ### Choose a model
+L102:
+L103:   * cite55†Pricing L104:   * cite56†Model selection L105:
+L106: ### Text and code
+L107:
+L108:   * cite57†Text generation L109:   * cite58†Code generation L110:   * cite59†Structured output L111:
+L112: ### Prompting
+L113:
+L114:   * cite60†Overview L115:   * cite61†Prompt engineering L116:   * cite62†Citation formatting L117:   * cite63†Migration guide L118:   * cite64†Prompt generation L119:   * cite65†Frontend prompting L120:
+L121: ### Reasoning
+L122:
+L123:   * cite66†Reasoning models L124:   * cite67†Reasoning best practices L125: ### Images and video
+L126:
+L127:   * cite68†Images and vision L128:     * cite69†Image input cost calculator L129:   * cite70†Image generation L130:   * cite71†Video generation L131:
+L132: ### Realtime and audio
+L133:
+L134:   * cite72†Audio and speech L135:   * cite13†Overview L136:   * cite73†Voice agents L137:
+L138: ### Specialized models
+L139:
+L140:   * cite74†Deep research L141:   * cite75†Embeddings L142:   * cite76†Moderation L143:
+L144:   * cite11†Overview L145: ### Agents SDK
+L146:
+L147:   * cite77†Quickstart L148:   * cite78†Agent definitions L149:   * cite79†Models and providers L150:   * cite80†Running agents L151:   * cite81†Sandbox agents L152:   * cite82†Orchestration L153:   * cite83†Guardrails L154:   * cite84†Results and state L155:   * cite85†Integrations and observability L156:   * cite86†Evaluate agent workflows L157:
+L158: ### ChatKit
+L159:
+L160:   * cite87†Overview L161:   * cite88†Customize L162:   * cite89†Widgets L163:   * cite90†Actions L164:   * cite91†Advanced integrations L165:
+L166:   * cite12†Overview L167:   * cite92†Function calling L168: ### Search and retrieval
+L169:
+L170:   * cite93†Web search L171:   * cite94†File search L172:   * cite95†Retrieval L173:
+L174: ### Connect tools and data
+L175:
+L176:   * cite96†MCP and Connectors L177:   * cite97†Secure MCP Tunnel L178:
+L179: ### Build tool workflows
+L180:
+L181:   * cite98†Skills L182:   * cite99†Tool search L183:   * cite100†Programmatic tool calling L184:   * cite101†Async tool calling L185:
+L186: ### Computer and code
+L187:
+L188:   * cite102†Shell L189:   * cite103†Computer use L190:   * cite104†Apply Patch L191:   * cite105†Local shell L192:   * cite106†Code interpreter L193:
+L194: ### Media
+L195:
+L196:   * cite107†Image generation L197:
+L198:   * cite13†Overview L199: ### Get started
+L200:
+L201:   * cite73†Voice agents L202:   * cite108†Live translation L203:   * cite109†Realtime prompting guide L204:
+L205: ### Audio
+L206:
+L207:   * cite72†Audio and speech L208:   * cite110†Transcription L209:   * cite111†File transcription L210:   * cite112†Realtime transcription L211:   * cite113†Speech generation L212:
+L213: ### Connection methods
+L214:
+L215:   * cite114†WebRTC L216:   * cite115†WebSocket L217:   * cite116†SIP L218: ### Sessions and operations
+L219:
+L220:   * cite117†Managing conversations L221:   * cite118†Voice activity detection L222:   * cite119†Realtime with tools L223:   * cite120†Webhooks and server-side controls L224:   * cite121†Managing costs L225:
+L226: ### Go live
+L227:
+L228:   * cite14†Production best practices L229:   * cite122†Deployment checklist L230:
+L231: ### Performance and quality
+L232:
+L233:   * cite123†Latency optimization L234:   * cite124†Predicted Outputs L235:   * cite125†Fast mode L236:   * cite126†Accuracy optimization L237: ### Cost and throughput
+L238:
+L239:   * cite127†Cost optimization L240:   * cite128†Prompt caching L241:   * cite129†Batch L242:   * cite130†Flex processing L243:
+L244: ### Safety and governance
+L245:
+L246:   * cite131†Safety best practices L247:   * cite132†Red teaming L248:   * Safety checks
+L249:     * cite133†Safety classifiers L250:     * cite134†Cybersecurity checks L251:     * cite135†Misalignment monitoring L252:   * cite136†Under-18 guidance L253:   * cite137†CSAM guidance L254:   * cite138†Content provenance L255:   * cite139†Your data L256:   * cite140†Permissions L257: ### Infrastructure and access
+L258:   * cite141†Terraform provider L259:     * cite141†Overview L260:     * cite142†Projects and access L261:     * cite143†Service accounts L262:     * cite144†Rate limits and spend L263:     * cite145†Model, tool, and data controls L264:     * cite146†Import and reconciliation L265:   * cite147†Private Link L266:   * cite148†IP allowlist L267:   * cite149†Mutual TLS L268:   * cite150†Workload identity federation L269:     * cite151†Codex setup L270:     * cite152†Federation rules L271:     * cite153†Admin API L272:     * cite154†X.509 certificates L273:     * cite155†Kubernetes L274:     * cite156†AWS L275:     * cite157†Microsoft Azure L276:     * cite158†Google Cloud L277:     * cite159†Oracle Cloud Infrastructure L278:     * cite160†GitHub Actions L279:     * cite161†SPIFFE L280:   * cite162†IP egress ranges L281:   * cite163†Amazon Bedrock L282: ### Operations
+L283:
+L284:   * cite164†Rate limits L285:   * cite165†Spend limits L286:   * cite166†Admin APIs L287:   * cite167†Error codes L288:
+L289: cite3†Docs†learn.chatgpt.com cite168†Use cases†learn.chatgpt.com L290:
+L291: [Select]Docs Docs
+L292:
+L293: [Button: Plugins ][Button: Workspace Agents ][Button: Commerce ][Button: Ads ]
+L294:
+L295: [Select]Docs Select...
+L296:
+L297:   * cite169†Home L298:   * cite170†Quickstart L299:
+L300: ### Core concepts
+L301:
+L302:   * cite171†Plugin architecture L303:   * cite172†Skills L304:   * cite173†MCP server L305:
+L306: ### Plan
+L307:
+L308:   * cite174†Brainstorm use cases L309:   * cite175†Define tools L310: ### Build
+L311:
+L312:   * cite176†Build an MCP server L313:   * cite177†Add UI to your MCP server (optional) L314:   * cite178†Authenticate users L315:   * cite179†Build skills L316:   * cite180†Package your plugin L317:   * cite181†Examples L318:
+L319: ### Test and publish
+L320:
+L321:   * cite182†Connect and test your plugin L322:   * cite183†Submit and publish L323:   * cite184†Submission error reference L324:
+L325: ### Conversion specs
+L326:
+L327:   * cite185†Restaurant reservation spec L328:   * cite186†Get Quote spec L329:   * cite187†Product checkout spec L330: ### Guides
+L331:
+L332:   * cite188†UI guidelines L333:   * cite189†Optimize Metadata L334:   * cite190†Submit a Claude Code plugin L335:   * cite191†Security & Privacy L336:   * cite192†Troubleshooting L337:
+L338: ### Resources
+L339:
+L340:   * cite193†Changelog L341:   * cite194†Plugin guidelines L342:   * cite195†MCP server review requirements L343:   * cite196†Plugin UI reference L344:   * cite197†Checkout API reference L345:
+L346:   * cite198†Home L347:
+L348: ### Get started
+L349:
+L350:   * cite199†Trigger workspace agent runs L351:   * cite200†Authenticate with Workspace Agent access tokens L352:
+L353:   * cite201†Home L354: ### Guides
+L355:
+L356:   * cite202†Get started L357:   * cite203†Best practices L358:
+L359: ### File Upload
+L360:
+L361:   * cite204†Overview L362:   * cite205†Products L363:
+L364: ### API
+L365:
+L366:   * cite206†Overview L367:   * cite207†Feeds L368:   * cite208†Products L369:   * cite209†Promotions L370:
+L371:   * cite210†Ads Overview L372:
+L373: ### Measurement
+L374:
+L375:   * cite211†Measurement Pixel L376:   * cite212†Multiple Pixels (Advanced) L377:   * cite213†Image Tag L378:   * cite214†Conversions API L379:   * cite215†Supported Events L380: ### Advertiser API
+L381:
+L382:   * cite216†Overview L383:   * cite217†API Partner Setup L384:   * cite218†Quickstart L385:   * cite219†Bulk API L386:   * cite220†Product Feeds L387:   * cite221†Delta Feeds API L388:   * cite222†Campaign Targeting L389:   * cite223†Conversion-Optimized Campaigns L390:   * cite224†Custom Audiences L391: ### API Reference
+L392:
+L393:   * cite225†Authentication L394:   * cite226†Ad Account L395:   * cite227†Campaigns L396:   * cite228†Ad Groups L397:   * cite229†Ads L398:   * cite230†Insights L399:   * cite231†Files L400:   * cite232†Conversion Setup L401:
+L402: [Button: Overview ][Button: Features ][Button: Configuration ][Button: Developers ][Button: Security ][Button: Administration ][Button: Use Cases ][Button: Resources ]
+L403:
+L404: [Select]Docs Overview
+L405:
+L406:   * cite4†Home L407: ### Get started
+L408:
+L409:   * cite233†Quickstart L410:   * cite234†Use ChatGPT L411:   * cite235†Get started with Work L412:   * cite236†Import from another agent L413:
+L414: ### Foundations
+L415:
+L416:   * cite237†Prompting L417:   * cite238†Personalize ChatGPT L418:   * cite239†Skills & Plugins L419:   * cite240†Permissions L420:
+L421: ### Explore
+L422:
+L423:   * cite241†What's new L424:   * cite242†Models L425:   * cite243†Pricing L426:   * cite244†Glossary L427:
+L428: ### Available on
+L429:
+L430:   * cite245†ChatGPT desktop app L431:   * cite246†Remote L432:   * cite247†ChatGPT on the web L433:   * cite248†Codex CLI L434:   * cite249†Codex IDE extension L435:   * cite250†Codex cloud L436: ### Releases
+L437:
+L438:   * cite251†Changelog L439:   * cite252†Feature Maturity L440:   * cite253†Open Source L441:
+L442:   * cite254†Overview L443:
+L444: ### Workflows
+L445:
+L446:   * cite255†Projects and chats L447:   * cite256†Sites L448:   * cite257†Visualizations L449:   * cite258†Scheduled tasks L450:   * cite259†Long-running work L451:   * cite260†Notifications L452:   * cite261†Pets L453:   * cite262†Codex Micro L454: ### Capabilities
+L455:
+L456:   * cite263†Browser L457:   * cite264†Computer use L458:   * cite265†Voice L459:   * cite266†Plugins L460:   * cite267†Web search L461:   * cite268†Image generation L462:   * cite269†Image inputs L463:   * cite270†Appshots L464:   * cite271†Browser extension L465:   * cite272†Work with files L466:
+L467: ### Reference
+L468:
+L469:   * cite273†Commands L470:   * cite274†Slash commands L471:   * cite275†Settings L472:   * cite276†Troubleshooting L473:
+L474:   * cite277†Overview L475:
+L476: ### Customization
+L477:
+L478:   * cite278†Overview L479:   * cite279†Memories L480:   * cite280†Computer History L481: ### Config file
+L482:
+L483:   * cite281†Config Basics L484:   * cite282†Advanced Config L485:   * cite283†Config Reference L486:   * cite284†Environment Variables L487:   * cite285†Sample Config L488:
+L489: ### Agent configuration
+L490:
+L491:   * cite286†AGENTS.md L492:   * cite287†Subagents L493:   * cite288†Speed L494:   * cite289†Rules L495:
+L496: ### Extend ChatGPT and Codex
+L497:
+L498:   * cite290†Record & Replay L499:   * cite291†MCP L500:
+L501: ### Linux
+L502:
+L503:   * cite292†Desktop app L504:
+L505: ### Windows
+L506:
+L507:   * cite293†Desktop app L508:   * cite294†Windows sandbox L509:   * cite295†WSL L510:
+L511:   * cite296†Overview L512: ### Development workflows
+L513:
+L514:   * cite297†Code review L515:   * cite298†Integrated terminal L516:
+L517: ### Extend and automate
+L518:
+L519:   * cite299†Build skills L520:   * cite300†Build plugins L521:   * cite301†Site tools (WebMCP) L522:   * cite302†Hooks L523:
+L524: ### Environments
+L525:
+L526:   * cite303†Modes L527:   * cite304†Local environments L528:   * cite305†Cloud environment L529:   * cite306†Git worktrees L530:
+L531: ### Build with Codex
+L532:
+L533:   * cite307†Codex SDK L534:   * cite308†App Server L535:   * cite309†MCP Server L536:   * cite310†GitHub Action L537:   * cite311†Non-interactive mode L538: ### Third-party integrations
+L539:
+L540:   * cite312†GitHub L541:   * cite313†GitLab (Beta) L542:   * cite314†Slack L543:   * cite315†Linear L544:
+L545: ### Reference
+L546:
+L547:   * cite316†CLI customization L548:   * cite317†Developer commands L549:   * cite318†Developer settings L550:
+L551:   * cite319†Overview L552:
+L553: ### Permissions
+L554:
+L555:   * cite320†Profiles L556:   * cite321†Sandboxing L557:   * cite322†Auto-review L558:   * cite323†Agent approvals & security L559:   * cite324†Internet access L560: ### Codex Security
+L561:   * cite325†Overview L562:   * Codex Security plugin
+L563:     * cite326†Quickstart L564:     * cite327†Run a security scan L565:     * cite328†Run a deep scan L566:     * cite329†Review code changes L567:     * cite330†Use the Security workbench L568:     * cite331†Triage a backlog L569:     * cite332†Fix findings L570:     * cite333†Propose security hardening L571:     * cite334†Write vulnerability reports L572:     * cite335†Export and track findings L573:     * cite336†Changelog L574:   * Codex Security CLI
+L575:     * cite337†Quickstart L576:     * cite338†Run bulk scans L577:     * cite339†Run scans in CI L578:     * cite340†GitLab CI/CD L579:     * cite341†Reference L580:     * cite342†FAQ L581:   * cite343†TypeScript SDK L582:   * Codex Security cloud
+L583:     * cite344†Setup L584:     * cite345†Security Review L585:     * cite346†Improving the threat model L586:     * cite347†FAQ L587: ### Cyber safety
+L588:
+L589:   * cite348†Models & Trusted Access L590:   * cite349†Recommended configuration L591:
+L592:   * cite350†Overview L593:
+L594: ### Getting started
+L595:
+L596:   * cite351†Admin rollout guide L597:
+L598: ### ChatGPT Work
+L599:
+L600:   * cite352†ChatGPT Work Overview L601:   * cite353†ChatGPT Work cloud security L602:   * cite354†ChatGPT Work local security L603:   * cite355†ChatGPT Work admin FAQ L604:   * cite356†ChatGPT Work: usage and cost L605: ### Identity and authentication
+L606:
+L607:   * cite357†Authentication overview L608:   * cite151†Workload identity L609:   * cite358†Personal Access Tokens L610:   * cite359†Service accounts L611:
+L612: ### Workspace access, policy, and models
+L613:
+L614:   * cite360†Groups and provisioning L615:   * cite361†User lifecycle management L616:   * cite362†Roles and workspace permissions L617:   * cite363†GPTs and Sharing L618:   * cite364†Managed configuration L619:   * cite365†Prisma AIRS L620:   * cite366†HIPAA configuration L621:   * cite367†Workspace model availability L622: ### Plugin and connector controls
+L623:
+L624:   * cite368†Plugin controls L625:   * cite369†Plugin management L626:   * cite370†Skill controls L627:
+L628: ### Usage, governance, and compliance
+L629:
+L630:   * cite371†Governance L631:   * cite372†Admin plugin L632:   * cite373†Workspace analytics L633:   * cite374†Analytics API L634:   * cite375†Compliance API and audit events L635: ### Deployment and model providers
+L636:
+L637:   * cite376†Manage app updates L638:   * cite377†Windows app deployment L639:   * cite378†Remote connections L640:   * cite379†Amazon Bedrock L641:
+L642:   * cite5†Explore use cases L643:   * cite380†Collections L644:
+L645:   * cite7†Home L646:   * cite381†Videos L647:   * cite382†Showcase L648:   * cite383†OpenAI Academy†openai.com L649:   * cite384†Online trainings†academy.openai.com L650:
+L651: ### Community
+L652:
+L653:   * cite385†Codex Ambassadors L654:   * cite386†Codex for Students L655:   * cite387†Codex for Open Source L656:   * cite388†Meetups L657: ### Blog
+L658:
+L659:   * cite389†Company blog†openai.com L660:   * cite390†Developer blog L661:
+L662:   * cite5†Explore use cases L663:   * cite380†Collections L664:
+L665:   * cite7†Home L666:   * cite381†Videos L667:   * cite382†Showcase L668:   * cite383†OpenAI Academy†openai.com L669:   * cite384†Online trainings†academy.openai.com L670:
+L671: ### Community
+L672:
+L673:   * cite385†Codex Ambassadors L674:   * cite386†Codex for Students L675:   * cite387†Codex for Open Source L676:   * cite388†Meetups L677: ### Blog
+L678:
+L679:   * cite389†Company blog†openai.com L680:   * cite390†Developer blog L681:
+L682: cite382†Showcase [Button: Blog ][Button: Cookbook ][Button: Learn ][Button: Community ]
+L683:
+L684: [Select]Docs Select...
+L685:
+L686:   * cite390†All posts L687:
+L688: ### Recent
+L689:
+L690:   * cite391†Architectural visualization with Astra L691:   * cite392†Building games with Astra L692:   * cite393†Meet Rosalind Workbench: Empowering every scientist to be their own research team L693:   * cite394†Automating repetitive work at OpenAI with Codex L694:   * cite395†Meet the winners of OpenAI Build Week L695: ### Topics
+L696:
+L697:   * cite396†General L698:   * cite397†API L699:   * cite398†Apps SDK L700:   * cite399†Audio L701:   * cite400†Codex L702:   * cite401†Life sciences L703:
+L704:   * cite402†Home L705:
+L706: ### Topics
+L707:
+L708:   * cite403†Agents L709:   * cite404†Evals L710:   * cite405†Multimodal L711:   * cite406†Text L712:   * cite407†Guardrails L713:   * cite408†Optimization L714:   * cite409†ChatGPT L715:   * cite410†Codex L716:   * cite411†gpt-oss L717:
+L718: ### Contribute
+L719:
+L720:   * cite412†Cookbook on GitHub†github.com L721:
+L722:   * cite9†Home L723:   * cite413†OpenAI Developers plugin L724:   * cite414†Docs MCP L725:
+L726: ### Categories
+L727:
+L728:   * cite415†Demo apps L729:   * cite416†Videos L730: ### Topics
+L731:
+L732:   * cite417†Agents L733:   * cite418†Audio & Voice L734:   * cite419†Computer Use L735:   * cite420†Codex L736:   * cite421†Evals L737:   * cite422†gpt-oss L738:   * cite423†Fine-tuning L739:   * cite424†Image generation L740:   * cite425†Scaling L741:   * cite426†Tools L742:   * cite427†Video generation L743:
+L744:   * cite428†Community L745:
+L746: ### Programs
+L747:
+L748:   * cite385†Codex Ambassadors L749:   * cite386†Codex for Students L750:   * cite387†Codex for Open Source L751:   * cite429†OpenAI for Startups†openai.com L752:
+L753: ### Events
+L754:
+L755:   * cite388†Meetups L756: ### Spaces
+L757:
+L758:   * cite430†Developer Forum†community.openai.com L759:   * cite431†Discord†discord.com L760:   * cite432†Reddit†www.reddit.com L761:   * cite433†X†x.com L762:
+L763: cite434†API Dashboard†platform.openai.com L764:
+L765: cite435†Try ChatGPT†chatgpt.com L766:
+L767:   * cite10†Model catalog L768:
+L769: ### Choose a model
+L770:
+L771:   * cite55†Pricing L772:   * cite56†Model selection L773:
+L774: ### Text and code
+L775:
+L776:   * cite57†Text generation L777:   * cite58†Code generation L778:   * cite59†Structured output L779: ### Prompting
+L780:
+L781:   * cite60†Overview L782:   * cite61†Prompt engineering L783:   * cite62†Citation formatting L784:   * cite63†Migration guide L785:   * cite64†Prompt generation L786:   * cite65†Frontend prompting L787:
+L788: ### Reasoning
+L789:
+L790:   * cite66†Reasoning models L791:   * cite67†Reasoning best practices L792:
+L793: ### Images and video
+L794:
+L795:   * cite68†Images and vision L796:     * cite69†Image input cost calculator L797:   * cite70†Image generation L798:   * cite71†Video generation L799:
+L800: ### Realtime and audio
+L801:
+L802:   * cite72†Audio and speech L803:   * cite13†Overview L804:   * cite73†Voice agents L805: ### Specialized models
+L806:
+L807:   * cite74†Deep research L808:   * cite75†Embeddings L809:   * cite76†Moderation L810:
+L811: cite10†Models L812:
+L813: cite436†Image: gpt-6-astra L814:
+L815: GPT-6 Astra
+L816:
+L817: Default
+L818:
+L819: Our most capable model, built for the hardest end-to-end work
+L820:
+L821: Our most capable model, built for the hardest end-to-end work
+L822:
+L823: Compare Try in Playground
+L824:
+L825: Reasoning
+L826:
+L827: Speed
+L828:
+L829: Price
+L830:
+L831: $10•$50
+L832:
+L833: Input
+L834:
+L835: Output
+--------------------------------------------------------------------------------
+Claude Fable 5.1 - Claude Platform Docs (https://platform.claude.com/docs/en/models/fable-5-1/overview)
+citeturn16view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://platform.claude.com/docs/en/models/fable-5-1/overview","lineno":null}); Total lines: 301
+--------------------------------------------------------------------------------
+Pricing - Claude Platform Docs (https://platform.claude.com/docs/en/about-claude/pricing)
+citeturn16view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://platform.claude.com/docs/en/about-claude/pricing","lineno":null}); Total lines: 707
+--------------------------------------------------------------------------------
+Claude Fable models on your plan | Claude Help Center (https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan)
+citeturn16view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan","lineno":null}); Total lines: 553

@@ -152,6 +152,22 @@ summary: "v2 게이트를 검증합니다."
         self.assertNotIn("<h1", fragment)
         self.assertIn("source-frozen article surface", preview)
 
+    def test_post_css_reaches_both_themes_and_fragment_without_global_changes(self):
+        result = validate_bundle(self.post)
+        original = render_outputs(result, self.post / "dist")
+        path = self.post / "assets" / "post.css"
+        override = ".devlog-rich table { min-width: 0; table-layout: fixed; }"
+        path.write_text(override, encoding="utf-8")
+        for theme in ("light", "dark"):
+            preview, fragment = render_outputs(
+                result, self.post / "dist", preview_theme=theme
+            )
+            for output in (preview, fragment):
+                self.assertIn(override, output)
+                self.assertGreater(output.index(override), output.index("min-width: 620px"))
+        path.unlink()
+        self.assertEqual(original, render_outputs(result, self.post / "dist"))
+
     def test_screenshot_can_opt_into_mobile_horizontal_scroll(self):
         media_path = self.post / "media.json"
         media = json.loads(media_path.read_text(encoding="utf-8"))

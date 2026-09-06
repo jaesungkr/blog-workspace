@@ -343,6 +343,9 @@ def render_outputs(
     preview_theme: str = "light",
 ) -> tuple[str, str]:
     css = (SKILL_DIR / "assets" / "rich-post-v2.css").read_text(encoding="utf-8")
+    post_css = result["post_dir"] / "assets" / "post.css"
+    if post_css.is_file():
+        css += "\n" + post_css.read_text(encoding="utf-8")
     preview_mode = (
         "remote-preview" if preview_media_source == "remote" else "preview"
     )

@@ -1,0 +1,50 @@
+[
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/artifacts/qa-v2/preflight/gpt-6-astra-vs-fable-5-1-rich-preview.html",
+    "inner_width": 1280,
+    "inner_height": 900,
+    "client_width": 1280,
+    "client_height": 900,
+    "scroll_width": 1280,
+    "scroll_height": 6687,
+    "h1_count": 1,
+    "toc_anchor_count": 6,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/assets/gpt-6-astra-vs-fable-5-1-hero.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "tables": "[{\"width\":760,\"scroll\":760,\"text\":\"항목\\tGPT-6 Astra\\tClaude Fable 5.1\\n개발사\\tOpenAI\\tAnthropic\\n컨텍스트 창\\t105만 토큰\\t100만 토큰\\n최대 출력\\t12만 8천 토큰\\t12만 8천 토큰\\n입력과 출력\\t글·이미지 → 글\\t글·이미지 → 글\\nAPI 모델 ID\\tgpt-6-astra\\tclaude-fable-5-1\"},{\"width\":760,\"scroll\":760,\"text\":\"v4.2 평가 항목\\tAstra\\tFable 5.1\\n추론 설정\\tmax\\tmax, 기본 대체 모델 사용\\n종합 지수, 높을수록 좋음\\t55\\t57\\n과제당 가중평균 비용, 낮을수록 좋음\\t$2.57\\t$6.12\"},{\"width\":760,\"scroll\":760,\"text\":\"100만 토큰당 표준 단가\\tAstra\\tFable 5.1\\n일반 입력\\t$10\\t$10\\n출력\\t$50\\t$50\\n캐시 읽기\\t$1\\t$0.25\\n캐시 쓰기\\t$12.50\\t$12.50, 5분 기준\"},{\"width\":760,\"scroll\":760,\"text\":\"가정한 요청 1회\\tAstra\\tFable 5.1\\n새 입력 10만 + 출력 1만 토큰\\t$1.50\\t$1.50\\n기존 캐시 읽기 10만 + 새 입력 1만 + 출력 1만\\t$0.70\\t$0.625\\n새 입력 30만 + 출력 1만 토큰\\t$6.75\\t$3.50\"},{\"width\":760,\"scroll\":760,\"text\":\"내 상황\\t먼저 시험할 선택\\t선택 이유\\n이미 한쪽 앱에 자료와 도구를 연결한 경우\\t그 앱에서 제공하는 비교 대상 모델\\t같은 작업 환경에서 결과 차이를 확인하기 쉬움\\n어려운 과제의 완성도를 우선하는 경우\\tFable 5.1\\t최신 외부 종합 평가에서 더 높은 점수\\nAPI 과제 비용이 중요한 경우\\tAstra도 함께 시험\\t외부 종합 평가에서 더 낮은 과제당 비용\\n긴 문서를 반복해서 읽히는 경우\\tFable 5.1\\t낮은 캐시 읽기 단가와 장문 할증 없는 요금\"}]"
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/artifacts/qa-v2/preflight/gpt-6-astra-vs-fable-5-1-rich-preview.html",
+    "inner_width": 360,
+    "inner_height": 900,
+    "client_width": 360,
+    "client_height": 900,
+    "scroll_width": 360,
+    "scroll_height": 9155,
+    "h1_count": 1,
+    "toc_anchor_count": 6,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/assets/gpt-6-astra-vs-fable-5-1-hero.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "tables": "[{\"width\":320,\"scroll\":320,\"text\":\"항목\\tGPT-6 Astra\\tClaude Fable 5.1\\n개발사\\tOpenAI\\tAnthropic\\n컨텍스트 창\\t105만 토큰\\t100만 토큰\\n최대 출력\\t12만 8천 토큰\\t12만 8천 토큰\\n입력과 출력\\t글·이미지 → 글\\t글·이미지 → 글\\nAPI 모델 ID\\tgpt-6-astra\\tclaude-fable-5-1\"},{\"width\":320,\"scroll\":320,\"text\":\"v4.2 평가 항목\\tAstra\\tFable 5.1\\n추론 설정\\tmax\\tmax, 기본 대체 모델 사용\\n종합 지수, 높을수록 좋음\\t55\\t57\\n과제당 가중평균 비용, 낮을수록 좋음\\t$2.57\\t$6.12\"},{\"width\":320,\"scroll\":320,\"text\":\"100만 토큰당 표준 단가\\tAstra\\tFable 5.1\\n일반 입력\\t$10\\t$10\\n출력\\t$50\\t$50\\n캐시 읽기\\t$1\\t$0.25\\n캐시 쓰기\\t$12.50\\t$12.50, 5분 기준\"},{\"width\":320,\"scroll\":320,\"text\":\"가정한 요청 1회\\tAstra\\tFable 5.1\\n새 입력 10만 + 출력 1만 토큰\\t$1.50\\t$1.50\\n기존 캐시 읽기 10만 + 새 입력 1만 + 출력 1만\\t$0.70\\t$0.625\\n새 입력 30만 + 출력 1만 토큰\\t$6.75\\t$3.50\"},{\"width\":320,\"scroll\":320,\"text\":\"내 상황\\t먼저 시험할 선택\\t선택 이유\\n이미 한쪽 앱에 자료와 도구를 연결한 경우\\t그 앱에서 제공하는 비교 대상 모델\\t같은 작업 환경에서 결과 차이를 확인하기 쉬움\\n어려운 과제의 완성도를 우선하는 경우\\tFable 5.1\\t최신 외부 종합 평가에서 더 높은 점수\\nAPI 과제 비용이 중요한 경우\\tAstra도 함께 시험\\t외부 종합 평가에서 더 낮은 과제당 비용\\n긴 문서를 반복해서 읽히는 경우\\tFable 5.1\\t낮은 캐시 읽기 단가와 장문 할증 없는 요금\"}]"
+  }
+]

@@ -1,0 +1,568 @@
+Claude Fable 5.1 (max with fallback) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/claude-fable-5-1)
+citeturn7view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn3view1","lineno":null}); Total lines: 587
+L0:   * [Button: Models]
+L1:   * [Button: Coding Agents]
+L2:   * [Button: Speech, Image, Video]
+L3:   * [Button: Inference]
+L4:   * [Button: Leaderboards]
+L5:   * [Button: About]
+L6:
+L7:   * cite0†AI Trends L8:
+L9:   * Arenas
+L10:
+L11: cite1†Image: Anthropic logo L12:
+L13: cite2†Anthropic†www.anthropic.com L14:
+L15: •
+L16:
+L17: cite3†Claude Fable 5.1 max
+L18:
+L19: •
+L20:
+L21: Proprietary model
+L22:
+L23: •
+L24:
+L25: Released September 2026
+L26:
+L27: # Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) Intelligence, Performance & Price Analysis
+L28:
+L29: Comparecite4†Try it out cite5†API Provider Benchmarks L30:
+L31: ### Model summary
+L32: #### cite6†Intelligence Updated
+L33:
+L34: #1 / 202
+L35:
+L36: 57
+L37:
+L38: Artificial Analysis Intelligence Index
+L39:
+L40: 4 out of 4 units for Intelligence.
+L41:
+L42: #### cite7†Speed L43:
+L44: #86 / 202
+L45:
+L46: 69.0
+L47:
+L48: Output tokens per second
+L49:
+L50: 2 out of 4 units for Speed.
+L51:
+L52: #### cite8†Cost L53:
+L54: #40 / 202
+L55:
+L56: In $10.00 Out $50.00 Cache Discount 98%
+L57:
+L58: $6.12
+L59:
+L60: Cost per Intelligence Index task
+L61:
+L62: 4 out of 4 units for Cost.
+L63:
+L64: #### cite9†Verbosity L65:
+L66: #37 / 202
+L67:
+L68: 160M
+L69:
+L70: Output tokens from Intelligence Index
+L71:
+L72: 4 out of 4 units for Verbosity.
+L73: ### Comparison Summary
+L74:
+L75: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is amongst the leading models in intelligence, but particularly expensive when comparing to other models of similar price. It's also slower than average and very verbose. The model supports text and image input, outputs text, and has a 1M tokens context window.
+L76: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) scores 57 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 29). When evaluating the Intelligence Index, it generated 160M tokens, which is very verbose in comparison to the median of 79M.
+L77: Pricing for Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is $10.00 per 1M input tokens (expensive, median: $2.00) and $50.00 per 1M output tokens (expensive, median: $10.00). In total, it cost $10815.70 to evaluate Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) on the Intelligence Index.
+L78:
+L79: At 69 tokens per second, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is slower than average (72).
+L80: ### Technical specifications
+L81:
+L82: Reasoning  | Yes This page shows the reasoning version of this model.A non-reasoning variant may also exist.
+L83: Input modality  | Supports: text and image
+L84: Output modality  | Supports: text
+L85: Context window  | 1M~1500 A4 pages of size 12 Arial font
+L86: ### 202 models in this class
+L87:
+L88: Metrics are compared against models of the same class:
+L89:   * Non-reasoning models → compared only with other non-reasoning models
+L90:   * Reasoning models → compared across both reasoning and non-reasoning
+L91:   * Open weights models → compared only with other open weights models of the same size class:
+L92:     * Tiny: ≤4B parameters
+L93:     * Small: 4B–40B parameters
+L94:     * Medium: 40B–150B parameters
+L95:     * Large: >150B parameters
+L96:   * Proprietary models → compared across proprietary and open weights models of the same price range, using a blended 3:1 input/output price ratio:
+L97:     * <$0.15 per 1M tokens
+L98:     * $0.15–$1 per 1M tokens
+L99:     * >$1 per 1M tokens
+L100: cite10†Model Comparison cite5†API Provider Benchmarks L101:
+L102: Highlights
+L103:
+L104: Updated
+L105: ### cite6†Intelligence L106:
+L107: Artificial Analysis Intelligence Index · Higher is better
+L108:
+L109: ### cite7†Speed L110:
+L111: Output tokens per second · Higher is better
+L112:
+L113: ### cite8†Cost per Task L114:
+L115: Weighted average cost (USD) per Intelligence Index task · Lower is better
+L116:
+L117: cite6†IntelligenceUpdated cite11†Benchmarks cite12†Intelligence Index Comparisons cite9†Token Use cite8†Cost cite13†Context Window cite7†Speed cite14†Latency cite15†End-to-End Response Time L118:
+L119: Prompt Options
+L120:
+L121: ## Intelligence Updated
+L122: ### cite16†Artificial Analysis Intelligence Index L123:
+L124: Artificial Analysis Intelligence Index v4.2 incorporates 10 evaluations: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1
+L125:
+L126: 23 of 643 models
+L127:
+L128: Add model from specific provider
+L129: ###
+L130:
+L131: Artificial Analysis Intelligence Index
+L132:
+L133: Artificial Analysis Intelligence Index v4.2 includes: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1. See cite17†Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+L134:
+L135: [Button: Open Weights / Proprietary][Button: Reasoning / Non-Reasoning][Button: Text Only / Multimodal Inputs]
+L136: ### Artificial Analysis Intelligence Index by Open Weights / Proprietary
+L137:
+L138: Artificial Analysis Intelligence Index v4.2 incorporates 10 evaluations: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1
+L139:
+L140: 23 of 643 models
+L141:
+L142: Add model from specific provider
+L143:
+L144: Proprietary Open Weights (Commercial Use Restricted)Open Weights
+L145: ###
+L146:
+L147: Artificial Analysis Intelligence Index
+L148:
+L149: Artificial Analysis Intelligence Index v4.2 includes: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1. See cite17†Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+L150: ###
+L151:
+L152: Open Weights
+L153:
+L154: Indicates whether the model weights are available. Models are labelled as 'Commercial Use Restricted' if commercial use is limited by conditions, and as 'Non-commercial' if the license prohibits commercial use.
+L155:
+L156: ## cite18†Benchmarks L157: ### Intelligence Evaluations
+L158:
+L159: Intelligence evaluations measured independently by Artificial Analysis · Higher is better
+L160:
+L161: Coding Tool Use Private Dataset User Interaction Finance Medical Legal Intelligence Index Long Context Multimodal Instruction Following Faithfulness Writing Businesscite18†See more L162:
+L163: 20 of 25 evaluations
+L164:
+L165: 23 of 643 models
+L166:
+L167: Add model from specific provider
+L168:
+L169: cite19†AA-Briefcase L170:
+L171: Agentic knowledge work, (Elo-500)/2000
+L172:
+L173: cite20†GDPval-AA v2 L174:
+L175: Agentic real-world work tasks, (Elo-500)/2000
+L176: cite21†𝜏³-Banking L177:
+L178: Agentic tool use
+L179:
+L180: cite22†Terminal-Bench v2.1 L181:
+L182: Agentic coding & terminal use
+L183:
+L184: cite23†SciCode L185:
+L186: Coding
+L187:
+L188: cite24†Humanity's Last Exam L189:
+L190: Reasoning & knowledge
+L191:
+L192: cite25†GDP.pdf New
+L193:
+L194: Professional document reasoning, All-pass
+L195:
+L196: cite26†CritPt L197:
+L198: Physics reasoning
+L199:
+L200: cite27†AA-Omniscience Accuracy L201:
+L202: Knowledge
+L203:
+L204: cite27†AA-Omniscience Non-Hallucination Rate L205:
+L206: 1 - hallucination rate
+L207:
+L208: cite28†AA-LCR v1.1 L209:
+L210: Long context reasoning
+L211:
+L212: cite29†AutomationBench-AA L213:
+L214: Agentic SaaS workflows
+L215:
+L216: cite30†Harvey LAB-AA L217: Legal agentic work, criterion pass rate
+L218:
+L219: cite31†EnterpriseOps-Gym-AA L220:
+L221: Agentic business operations
+L222:
+L223: cite32†GPQA Diamond L224:
+L225: Scientific reasoning
+L226:
+L227: cite33†AA-AnalystAgent L228:
+L229: Quantitative analysis on spreadsheets & documents
+L230:
+L231: cite34†IFBench L232:
+L233: Instruction following
+L234:
+L235: cite35†APEX-Agents-AA L236:
+L237: Long-horizon agentic tasks
+L238:
+L239: cite36†ITBench-AA L240:
+L241: Kubernetes incident root-cause analysis
+L242:
+L243: cite37†MMMU-Pro L244:
+L245: Visual reasoning
+L246: ###
+L247:
+L248: Intelligence Evaluation Relevance
+L249:
+L250: While model intelligence generally translates across use cases, specific evaluations may be more relevant for certain use cases.
+L251: ###
+L252:
+L253: Artificial Analysis Intelligence Index
+L254:
+L255: Artificial Analysis Intelligence Index v4.2 includes: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1. See cite17†Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+L256:
+L257: ### AA-Briefcase
+L258:
+L259: [Button: AA-Briefcase Elo][Button: AA-Briefcase Rubric Score (%)][Button: Analytical Quality & Presentation Elo]
+L260: ### AA-Briefcase Elo
+L261:
+L262: AA-Briefcase is an agentic knowledge work benchmark developed by Artificial Analysis. AA-Briefcase Elo is a combined metric that aggregates rubric pass rate, analytical quality Elo and presentation Elo · Higher is better
+L263:
+L264: 23 of 110 models
+L265:
+L266: Add model from specific provider
+L267: ###
+L268:
+L269: AA-Briefcase Elo
+L270:
+L271: AA-Briefcase Elo is a combined metric that aggregates analytical quality Elo, presentation Elo, and rubric pass rate, with rubric performance converted into Elo via synthetic head-to-head matches. Elo and 95% confidence interval bounds are clamped at 0.
+L272:
+L273: ### AA-Omniscience
+L274:
+L275: [Button: AA-Omniscience Index][Button: AA-Omniscience Accuracy][Button: AA-Omniscience Hallucination Rate]
+L276: ### AA-Omniscience Index
+L277:
+L278: AA-Omniscience Index (higher is better) measures knowledge reliability and hallucination. It rewards correct answers, penalizes hallucinations, and has no penalty for refusing to answer. Scores range from -100 to 100, where 0 means as many correct as incorrect answers, and negative scores mean more incorrect than correct.
+L279:
+L280: 23 of 514 models
+L281:
+L282: Add model from specific provider
+L283: ###
+L284:
+L285: AA-Omniscience Index
+L286:
+L287: AA-Omniscience Index (higher is better) measures knowledge reliability and hallucination. It rewards correct answers, penalizes hallucinations, and has no penalty for refusing to answer. Scores range from -100 to 100, where 0 means as many correct as incorrect answers, and negative scores mean more incorrect than correct.
+L288: ## Intelligence Index Comparisons
+L289:
+L290: [Button: Intelligence Index vs. Cost per Task][Button: Intelligence Index vs. Time per Task][Button: Intelligence Index vs. Output Speed][Button: Intelligence Index vs. End-to-End Response Time]
+L291: ### Intelligence Index vs. Cost per Intelligence Index Task
+L292:
+L293: Artificial Analysis Intelligence Index · Weighted average cost (USD) per Artificial Analysis Intelligence Index task
+L294:
+L295: 23 of 643 models
+L296:
+L297: Most attractive quadrant
+L298:
+L299: Pareto line
+L300:
+L301: Anthropic OpenAI Meta DeepSeek Google SpaceXAI Z AI Kimi
+L302: ###
+L303:
+L304: Cost per Intelligence Index Task
+L305:
+L306: Weighted average cost per Intelligence Index task. Each evaluation’s cost is calculated from input, cache hit, cache write, reasoning, and answer token prices, divided by task count, and weighted by its Intelligence Index weight.
+L307: ###
+L308:
+L309: Artificial Analysis Intelligence Index
+L310:
+L311: Artificial Analysis Intelligence Index v4.2 includes: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1. See cite17†Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+L312: ## Token Use
+L313:
+L314: [Button: Output Tokens per Task][Button: Intelligence Index vs. Output Tokens per Task][Button: Intelligence Index Token Use][Button: Intelligence Index vs. Token Use]
+L315:
+L316: ### Output Tokens per Intelligence Index Task
+L317:
+L318: Weighted average number of output tokens used to run one task in the Artificial Analysis Intelligence Index
+L319:
+L320: 23 of 643 models
+L321:
+L322: Answer Reasoning
+L323: ###
+L324:
+L325: Output Tokens per Intelligence Index Task
+L326:
+L327: The number of tokens required per Intelligence Index task. This is calculated by multiplying the output tokens per eval by the relative weights of each benchmark in the Intelligence Index, then dividing by task count (excluding repeats).
+L328:
+L329: ## Cost
+L330:
+L331: [Button: Cost per Task][Button: Intelligence Index vs. Cost per Task][Button: Evaluation Breakdown]
+L332: ### Cost per Intelligence Index Task
+L333:
+L334: Weighted average cost (USD) per Artificial Analysis Intelligence Index task, segmented by token type. Lower is better
+L335:
+L336: 23 of 643 models
+L337:
+L338: Answer Reasoning Cache Write Cache Hit Input
+L339: ###
+L340:
+L341: Cost per Intelligence Index Task
+L342:
+L343: Weighted average cost per Intelligence Index task. Each evaluation’s cost is calculated from input, cache hit, cache write, reasoning, and answer token prices, divided by task count, and weighted by its Intelligence Index weight.
+L344:
+L345: [Button: Intelligence Index Total Cost][Button: Intelligence Index vs. Total Cost]
+L346: ### Cost to Run Artificial Analysis Intelligence Index
+L347:
+L348: Cost (USD) to run all evaluations in the Artificial Analysis Intelligence Index
+L349:
+L350: 23 of 643 models
+L351:
+L352: Add model from specific provider
+L353:
+L354: Output Reasoning Cache Write Cache Read Non-Cache Input
+L355: ###
+L356:
+L357: Cost to Run Artificial Analysis Intelligence Index
+L358:
+L359: The cost to run the evaluations in the Artificial Analysis Intelligence Index, calculated using the model's input, cache hit, cache write, reasoning, and answer token prices and the number of tokens used across evaluations (excluding repeats).
+L360: [Button: Cache Hit, Input, and Output Pricing][Button: Blended Price][Button: Blended Price (Stacked)][Button: Cache Discount][Button: Intelligence Index vs. Price][Button: Intelligence Index vs. Price (Log, Inverted)][Button: Image Input Pricing]
+L361: ### Pricing: Cache Hit, Input, and Output
+L362:
+L363: Price (USD per M Tokens)
+L364:
+L365: 23 of 643 models
+L366:
+L367: Add model from specific provider
+L368:
+L369: Cache Hit Input Output
+L370: ###
+L371:
+L372: Cache Hit
+L373:
+L374: Price per token for cached prompts (previously processed), typically offering a significant discount compared to regular input price, represented as USD per million tokens. The values shown here are the cache hit price; cache write and cache storage are billed separately and vary by provider — see "Cache pricing by provider" for detail.
+L375:
+L376: 4 more notes
+L377:
+L378: ## Context Window
+L379:
+L380: [Button: Context Window][Button: Intelligence Index vs. Context Window]
+L381: ### Context Window
+L382:
+L383: Context window: tokens limit · Higher is better
+L384:
+L385: 23 of 643 models
+L386:
+L387: Add model from specific provider
+L388:
+L389: ###
+L390:
+L391: Context Window for RAG
+L392:
+L393: Larger context windows are relevant to RAG (Retrieval Augmented Generation) LLM workflows which typically involve reasoning and information retrieval of large amounts of data.
+L394:
+L395: ###
+L396:
+L397: Context Window
+L398:
+L399: Maximum number of combined input & output tokens. Output tokens commonly have a significantly lower limit (varied by model).
+L400: ## Speed
+L401:
+L402: Measured by Output Speed (tokens per second)
+L403:
+L404: [Button: Output Speed][Button: Output Speed by Prompt Type][Button: Output Speed Variance][Button: Output Speed Over Time][Button: Output Speed vs. Price][Button: Latency vs. Output Speed]
+L405:
+L406: ### Output Speed
+L407:
+L408: Output tokens per second · Higher is better
+L409:
+L410: 23 of 643 models
+L411:
+L412: Add model from specific provider
+L413: ###
+L414:
+L415: Output Speed
+L416:
+L417: Tokens per second received while the model is generating tokens (ie. after first chunk has been received from the API for models which support streaming).
+L418:
+L419: ###
+L420:
+L421: Model Performance Representation
+L422:
+L423: Figures represent performance of the model's first-party API (e.g. OpenAI for o1) or the median across providers where a first-party API is not available (e.g. Meta's Llama models).
+L424:
+L425: [Button: Time per Task][Button: Intelligence Index vs. Time per Task][Button: Cost vs. Time per Task]
+L426: ### Time per Intelligence Index Task
+L427:
+L428: Weighted average decode time (minutes) per task; excludes TTFT and overhead time · Lower is better
+L429:
+L430: 23 of 643 models
+L431:
+L432: ###
+L433:
+L434: Time per Intelligence Index Task
+L435:
+L436: The weighted average time (seconds) per Artificial Analysis Intelligence Index task. This is calculated by dividing output tokens per task by output speed, weighted by the relative weights of each benchmark in the Intelligence Index.
+L437: ## Latency
+L438:
+L439: Measured by Time (seconds) to First Token
+L440:
+L441: [Button: Time To First Answer Token][Button: Time To First Token][Button: Latency by Prompt Type][Button: Latency Variance][Button: Latency Over Time]
+L442:
+L443: ### Latency: Time To First Answer Token
+L444:
+L445: Seconds to first answer token received · Accounts for reasoning model 'thinking' time
+L446:
+L447: 23 of 643 models
+L448:
+L449: Add model from specific provider
+L450:
+L451: Thinking (reasoning models, when applicable)Input processing
+L452: ###
+L453:
+L454: Time to First Answer Token
+L455:
+L456: Time to first answer token received, in seconds, after API request sent. For reasoning models, this includes the 'thinking' time of the model before providing an answer. For models which do not support streaming, this represents time to receive the completion.
+L457: ## End-to-End Response Time
+L458:
+L459: Seconds to output 500 tokens, calculated based on time to first token, 'thinking' time for reasoning models, and output speed
+L460:
+L461: [Button: End-to-End Response Time][Button: End-to-End Response Time by Prompt Type][Button: End-to-End Response Time Over Time]
+L462: ### End-to-End Response Time
+L463:
+L464: Seconds to output 500 tokens, including reasoning model 'thinking' time · Lower is better
+L465:
+L466: 23 of 643 models
+L467:
+L468: Add model from specific provider
+L469:
+L470: Outputting time'Thinking' time (reasoning models)Input processing time
+L471: ###
+L472:
+L473: End-to-End Response Time
+L474:
+L475: Seconds to receive a 500 token response. Key components:
+L476:
+L477:   * Input time: Time to receive the first response token
+L478:   * Thinking time (only for reasoning models): Time reasoning models spend outputting tokens to reason prior to providing an answer. Amount of tokens based on the average reasoning tokens across a diverse set of 60 prompts (cite38†methodology details ).
+L479:   * Answer time: Time to generate 500 output tokens, based on output speed
+L480: ###
+L481:
+L482: Model Performance Representation
+L483:
+L484: Figures represent performance of the model's first-party API (e.g. OpenAI for o1) or the median across providers where a first-party API is not available (e.g. Meta's Llama models).
+L485:
+L486: ## Frequently Asked Questions
+L487:
+L488: Common questions about Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)
+L489: ### When was Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) released?
+L490:
+L491: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) was released on September 1, 2026.
+L492:
+L493: ### Who created Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)?
+L494:
+L495: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) was created by Anthropic.
+L496: ### How intelligent is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)?
+L497:
+L498: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) scores 57 on the Artificial Analysis Intelligence Index, placing it well above average among other reasoning models in a similar price tier (median: 29).
+L499: ### How fast is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)?
+L500:
+L501: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) generates output at 69.0 tokens per second (based on Anthropic's API), which is below average compared to other reasoning models in a similar price tier (median: 71.6 t/s).
+L502: ### What is the latency of Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)?
+L503:
+L504: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) has a time to first token (TTFT) of 273.60s (based on Anthropic's API), which is at the higher end compared to other reasoning models in a similar price tier (median: 3.70s).
+L505: ### How much does Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) cost?
+L506:
+L507: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) costs $10.00 per 1M input tokens (at the higher end, median: $2.00) and $50.00 per 1M output tokens (at the higher end, median: $10.00), based on Anthropic's API.
+L508: ### What is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) API pricing?
+L509:
+L510: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) costs $10.00 per 1M input tokens and $50.00 per 1M output tokens (based on Anthropic's API). For a blended rate (7:2:1 cache hit/input/output ratio), this is $7.17 per 1M tokens. Pricing may vary by provider. cite5†Compare provider pricing L511: ### How verbose is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)?
+L512:
+L513: When evaluated on the Intelligence Index, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) generated 160M output tokens, which is at the higher end compared to other reasoning models in a similar price tier (median: 79M).
+L514: ### Is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) a reasoning model?
+L515:
+L516: Yes, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is a reasoning model. It uses extended thinking or chain-of-thought reasoning to work through complex problems before providing an answer.
+L517: ### What input modalities does Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) support?
+L518:
+L519: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) supports text and image input.
+L520:
+L521: ### What output modalities does Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) support?
+L522:
+L523: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) supports text output.
+L524: ### Can Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) process images?
+L525:
+L526: Yes, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) supports image input and can analyze, describe, and answer questions about images.
+L527:
+L528: ### Is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) multimodal?
+L529:
+L530: Yes, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is multimodal. It can process text and image input and generate text output.
+L531: ### What is the context window of Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)?
+L532:
+L533: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) has a context window of 1.0M tokens. This determines how much text and conversation history the model can process in a single request.
+L534: ### Is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) open source?
+L535:
+L536: No, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is proprietary. The model weights are not publicly available.
+L537:
+L538: ### How many parameters does Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) have?
+L539:
+L540: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is a proprietary model and Anthropic has not disclosed the model size or parameter count.
+L541: ### How does Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) perform on benchmarks?
+L542:
+L543: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) achieves a score of 57 on the Artificial Analysis Intelligence Index. This composite benchmark evaluates models across reasoning, knowledge, mathematics, and coding.
+L544: ### Is Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) available via API?
+L545:
+L546: Yes, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is available via API through 5 providers. cite5†Compare API providers L547: ### Where can I use Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)?
+L548:
+L549: Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) is available through 5 API providers. cite5†Compare providers L550:
+L551: Artificial Analysis
+L552:
+L553: Get notified about new articles
+L554:
+L555: Email address[Input: What's your email?][Button: Subscribe]
+L556:
+L557: Explore
+L558:
+L559:   * cite39†LLM Leaderboard L560:   * cite40†Image Arena L561:   * cite41†Video Arena L562:   * cite42†AI Agents L563:   * cite18†Evaluations L564:
+L565: Products
+L566:   * cite43†Optima L567:   * cite44†MicroEvals L568:   * cite45†Model Recommender L569:   * cite46†Data Playground L570:   * cite47†Image Lab L571:
+L572: Company
+L573:
+L574:   * cite48†About L575:   * cite49†Methodology L576:   * cite50†Services L577:   * cite51†Contact L578:   * cite52†Articles L579:
+L580: cite53†X†x.com cite54†LinkedIn†www.linkedin.com cite55†YouTube†www.youtube.com cite56†Rednote†www.xiaohongshu.com cite57†Discord†discord.gg L581:
+L582: © 2026 Artificial Analysis
+L583:
+L584: cite58†Terms of Use cite59†Data Platform Terms†artificialanalysiscdn.com cite60†Privacy Policy L585:
+L586: English[Select]
+--------------------------------------------------------------------------------
+Announcing Artificial Analysis Intelligence Index v4.2 | Artificial Analysis (https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2)
+citeturn7view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: click({"ref_id":"turn6view0","id":11}); Total lines: 104
+L0:   * [Button: Models]
+L1:   * [Button: Coding Agents]
+L2:   * [Button: Speech, Image, Video]
+L3:   * [Button: Inference]
+L4:   * [Button: Leaderboards]
+L5:   * [Button: About]
+L6:
+L7:   * cite0†AI Trends L8:
+L9:   * Arenas
+L10:
+L11: cite1†All articles L12:
+L13: September 4, 2026
+L14: # Announcing Artificial Analysis Intelligence Index v4.2
+L15:
+L16: We are accelerating elements of our upcoming v5 release with interim updates to keep pace with the frontier. Index v4.2 has more complex and realistic tasks, and more private test sets to prevent gaming
+L17:
+L18: Intelligence Index v4.2 changelog:
+L19:
+L20: + AA-Briefcase, our agentic knowledge work evaluation with a private test set
+L21:
+L22: + Surge’s GDP.pdf, long context document reasoning across 4,592 PDF pages
+L23: - GPQA Diamond, an exceptional scientific reasoning evaluation that has now been saturated
+L24:
+L25: … plus greater weighting on held-out test sets to prevent gaming, and grading infrastructure upgrades to increase robustness
+L26:
+L27: This update brings the Index closer to real-world use cases with more challenging, complex and realistic tasks and private test sets to prevent gaming. We have been planning and building elements of Index v5 for months - it’s been 8 months since we launched Index v4 in January.
+--------------------------------------------------------------------------------
+Models | OpenAI API (https://developers.openai.com/api/docs/models)
+citeturn7view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn6view2","pattern":"rolling"}); Total lines: 1003
+No matching text found for "rolling"

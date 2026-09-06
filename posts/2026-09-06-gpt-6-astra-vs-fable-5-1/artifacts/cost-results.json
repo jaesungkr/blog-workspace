@@ -1,0 +1,38 @@
+{
+  "actor": "Codex local Decimal calculation",
+  "date": "2026-09-06",
+  "basis": "Standard rates and fixed illustrative token counts; no actual model calls.",
+  "exclusions": [
+    "initial cache write",
+    "tool charges",
+    "tax",
+    "discounts"
+  ],
+  "output_definition": "All billable output including reasoning",
+  "rows": [
+    {
+      "id": "fresh_100k",
+      "fresh": 100000,
+      "cached": 0,
+      "output": 10000,
+      "astra_usd": "1.5",
+      "fable_usd": "1.50"
+    },
+    {
+      "id": "cache_hit_100k",
+      "fresh": 10000,
+      "cached": 100000,
+      "output": 10000,
+      "astra_usd": "0.7",
+      "fable_usd": "0.625"
+    },
+    {
+      "id": "long_300k",
+      "fresh": 300000,
+      "cached": 0,
+      "output": 10000,
+      "astra_usd": "6.75",
+      "fable_usd": "3.50"
+    }
+  ]
+}

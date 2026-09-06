@@ -1,0 +1,65 @@
+test_bible_character_series_is_a_current_reflections_subcategory (test_blog.BlogCheckerTests) ... ok
+test_bible_character_series_rejects_legacy_numbered_title_when_ready (test_blog.BlogCheckerTests) ... ok
+test_drafting_bundle_has_no_errors (test_blog.BlogCheckerTests) ... ok
+test_model_comparison_reference_section_passes (test_blog.BlogCheckerTests) ... ok
+test_model_comparison_requires_reference_section_when_ready (test_blog.BlogCheckerTests) ... ok
+test_new_command_copies_complete_template_bundle (test_blog.BlogCheckerTests) ... ok
+test_ready_bundle_can_pass_automated_gate (test_blog.BlogCheckerTests) ... ok
+test_ready_bundle_requires_summary_sources_image_and_audit (test_blog.BlogCheckerTests) ... ok
+test_title_and_h2_are_rejected (test_blog.BlogCheckerTests) ... ok
+test_frontmatter_lists_are_parsed (test_md2tistory.MarkdownConverterTests) ... ok
+test_h3_table_code_and_link_render (test_md2tistory.MarkdownConverterTests) ... ok
+test_sample_comments_can_be_removed_before_render (test_md2tistory.MarkdownConverterTests) ... ok
+test_fence_marker_type_and_length_do_not_close_each_other (test_prose_analyzer.ProseAnalyzerTests) ... ok
+test_ignores_code_fences_and_table_rows_in_prose_counts (test_prose_analyzer.ProseAnalyzerTests) ... ok
+test_ignores_heading_syntax_inside_fenced_code (test_prose_analyzer.ProseAnalyzerTests) ... ok
+test_reports_heading_and_template_signals (test_prose_analyzer.ProseAnalyzerTests) ... ok
+test_reports_long_sentence_and_ending_context (test_prose_analyzer.ProseAnalyzerTests) ... ok
+test_before_opening_media_is_rendered_before_intro_text (test_rich_post.RichPostTests) ... ok
+test_body_status_line_still_invalidates_content_qa (test_rich_post.RichPostTests) ... ok
+test_browser_capture_and_remote_toolchain_are_hash_bound (test_rich_post.RichPostTests) ... ok
+test_code_fence_content_is_not_a_section_or_media_directive (test_rich_post.RichPostTests) ... ok
+test_failed_remote_rerecord_invalidates_prior_pass (test_rich_post.RichPostTests) ... ok
+test_gif_requires_a_short_clip_and_renders_a_static_fallback (test_rich_post.RichPostTests) ... ok
+test_invalid_utf8_bundle_reports_errors_without_traceback (test_rich_post.RichPostTests) ... ok
+test_paste_ready_gate_requires_final_https_urls (test_rich_post.RichPostTests) ... ok
+test_ready_gate_binds_independent_reviewer_and_remote_verification (test_rich_post.RichPostTests) ... ok
+test_ready_transition_keeps_content_bound_qa_valid (test_rich_post.RichPostTests) ... ok
+test_ready_transition_requires_persisted_independent_pass (test_rich_post.RichPostTests) ... ok
+test_record_qa_binds_canonical_reviewed_files (test_rich_post.RichPostTests) ... ok
+test_record_qa_rejects_noncanonical_preview_location (test_rich_post.RichPostTests) ... ok
+test_record_qa_rejects_viewport_evidence_bypasses (test_rich_post.RichPostTests) ... ok
+test_rejects_empty_claim_mapping_and_unknown_directive (test_rich_post.RichPostTests) ... ok
+test_rejects_non_object_manifest_unsafe_slug_and_source_url (test_rich_post.RichPostTests) ... ok
+test_remote_media_inspection_checks_container_and_animation (test_rich_post.RichPostTests) ... ok
+test_remote_media_rejects_structurally_fake_images (test_rich_post.RichPostTests) ... ok
+test_renderer_keeps_simulated_capture_provenance_out_of_public_caption (test_rich_post.RichPostTests) ... ok
+test_renderer_supports_dark_preview_theme_without_changing_fragment (test_rich_post.RichPostTests) ... ok
+test_renderer_uses_final_tistory_url_in_strict_mode (test_rich_post.RichPostTests) ... ok
+test_renderer_writes_preview_and_fragment_with_distinct_media_sources (test_rich_post.RichPostTests) ... ok
+test_strict_gate_rejects_stale_qa_and_generated_product_screenshot (test_rich_post.RichPostTests) ... ok
+test_tistory_media_map_plans_and_binds_url (test_rich_post.RichPostTests) ... ok
+test_valid_reviewing_bundle_passes_without_publish_url (test_rich_post.RichPostTests) ... ok
+test_human_review_must_cover_every_captured_optional_profile (test_rich_post_v2.RichPostV2Tests) ... ok
+test_mobile_scroll_width_rejects_non_screenshot_media (test_rich_post_v2.RichPostV2Tests) ... ok
+test_optional_capture_profiles_merge_with_human_review (test_rich_post_v2.RichPostV2Tests) ... ok
+test_post_css_reaches_both_themes_and_fragment_without_global_changes (test_rich_post_v2.RichPostV2Tests) ... ok
+test_routed_risks_open_only_their_required_gates (test_rich_post_v2.RichPostV2Tests) ... ok
+test_screenshot_can_opt_into_mobile_horizontal_scroll (test_rich_post_v2.RichPostV2Tests) ... ok
+test_source_pass_is_bound_and_article_edit_invalidates_it (test_rich_post_v2.RichPostV2Tests) ... ok
+test_standard_static_bundle_skips_capture_plan_and_renders (test_rich_post_v2.RichPostV2Tests) ... ok
+test_creation_and_validation_roles_stay_separate (test_skill_structure.SkillStructureTests) ... ok
+test_every_stage_has_skill_and_ui_metadata (test_skill_structure.SkillStructureTests) ... ok
+test_link_script_discovers_all_dev_log_skills (test_skill_structure.SkillStructureTests) ... ok
+test_orchestrators_deliver_raw_tistory_fragment_txt (test_skill_structure.SkillStructureTests) ... ok
+test_prose_polish_preserves_evidence_and_hands_off (test_skill_structure.SkillStructureTests) ... ok
+test_rich_orchestrator_owns_media_render_and_git_delivery (test_skill_structure.SkillStructureTests) ... ok
+test_standard_orchestrator_loads_every_standard_specialist (test_skill_structure.SkillStructureTests) ... ok
+test_v2_rich_orchestrator_is_isolated_and_explicit (test_skill_structure.SkillStructureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 1.824s
+
+OK
+생성: /var/folders/yz/vq7v_knj6yn9n8pp70ms_x6r0000gn/T/tmpynml1od5/posts/2026-07-25-new-post
+다음: brief.md에서 독자, 핵심 메시지, first-party value를 먼저 정하세요.

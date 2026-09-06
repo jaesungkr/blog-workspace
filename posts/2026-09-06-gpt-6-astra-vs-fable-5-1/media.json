@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "lead_id": "astra-fable-hero",
+  "items": [
+    {
+      "id": "astra-fable-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C15"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-09-06",
+      "environment": "Codex desktop built-in image generation with prior dev.log comparison hero as style reference",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/gpt-6-astra-vs-fable-5-1-hero-source.png",
+      "publish_path": "assets/gpt-6-astra-vs-fable-5-1-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbfUhcH%2FdJMcahZ0gvJ%2FAAAAAAAAAAAAAAAAAAAAAE1Zpe2SWSaVY51OO11IY9zVyGchBD0mihRyXQBRWOVN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dhu36t4cSGT8qnMWdo0b5eDxAzZ4%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "GPT-6 Astra의 금색 커서와 Fable 5.1의 보라색 문서 조형물을 같은 비중으로 배치한 비교 이미지",
+      "caption": "커서와 문서 조형물은 두 모델이 맡는 도구 실행과 문서 작업을 표현합니다.",
+      "processing": [
+        "Built-in image generation with original cursor-loop and document emblems",
+        "Creator inspected exact model names and Korean role text at full size",
+        "Independent full-size and 360px hero validation passed by /root/hero_review"
+      ],
+      "redactions": [],
+      "sha256": "e3815edcfc6d784623d9c4809533e4731775d6c4e1e7c6cc496acb37f47e4b66",
+      "status": "validated"
+    }
+  ]
+}

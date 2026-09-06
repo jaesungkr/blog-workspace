@@ -1,0 +1,296 @@
+Benchmarking GPT-6 Astra | Artificial Analysis (https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra)
+citeturn6view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn5search1","lineno":null}); Total lines: 96
+L0:   * [Button: Models]
+L1:   * [Button: Coding Agents]
+L2:   * [Button: Speech, Image, Video]
+L3:   * [Button: Inference]
+L4:   * [Button: Leaderboards]
+L5:   * [Button: About]
+L6:
+L7:   * cite0†AI Trends L8:
+L9:   * Arenas
+L10:
+L11: cite1†All articles L12:
+L13: September 3, 2026
+L14:
+L15: GPT-6 Astra makes significant gains in the Artificial Analysis Coding Agent Index, scoring equal to Fable 5 at lower cost. In the Intelligence Index, it uses fewer tokens than GPT-5.6 Sol for similar performance, but this is outweighed by higher prices
+L16:
+L17: cite2†Image†cdn.sanity.io L18: Pricing is 2.5x GPT-5.6 Sol’s current prices across the board, up from $4/$20 to $10/$50 per million input/output tokens, with the same 90% discount for cache reads and 25% premium for cache writes.
+L19: We see distinct stories across our two flagship Indices. In the Artificial Analysis Coding Agent Index, GPT-6 Astra equals Fable 5 at less than half the cost, driven by significant token efficiency gains. In the Artificial Analysis Intelligence Index, GPT-6 Astra is more token efficient than its predecessor for similar performance, but this is offset by the price increase.
+L20:
+L21: Artificial Analysis Coding Agent Index - key takeaways:
+L22: ➤ Rivals top models: In Codex, GPT-6 Astra scores 67 in the Index - approximately equal to Claude Opus 5 and Fable 5 in Claude Code, and Muse Spark 1.3 in Muse Code. Fable 5.1 in Claude Code leads the Index with a score of 70.
+L23: ➤ 70% more token efficient than GPT-5.6 Sol: GPT-6 Astra sees a substantial improvement in token efficiency, using one third of the tokens compared to GPT-5.6 Sol (max) in the Codex harness, and one fifth of the tokens of Claude Opus 5 (xhigh). Various effort levels of the model occupy the Pareto frontier of token efficiency.
+L24: ➤ Leads Coding Agent Index cost efficiency frontier: At max effort, GPT-6 Astra costs about the same as GPT-5.6 Sol (max) while scoring 2 points higher on the Index. Per task, the model is less than half the cost of Claude Fable 5, for the same score.
+L25:
+L26: Artificial Analysis Intelligence Index - key takeaways:
+L27: ➤ Sits beside GPT-5.6 Sol in Intelligence: GPT-6 Astra scores equal to GPT-5.6 Sol in the Index at 61. This is 5 points lower than Claude Fable 5.1 (max with fallback). The model also trails Meta’s newly released Muse Spark 1.3 (max).
+L28: ➤ ~10% fewer output tokens, offset by price increase: GPT-6 Astra defines a new Pareto frontier for Intelligence Index vs Output Tokens per Task - with a ~10% reduction in token use at max effort compared to GPT-5.6 Sol. However, due to the 2.5x increase in price, the model is 75% more expensive per task than its predecessor at max effort.
+L29: ➤ Hallucinates half as much as GPT-5.6 Sol: GPT-6 Astra sees a large jump in AA-Omniscience, our knowledge and hallucination benchmark. This is driven by a significant decrease in hallucination rate from 92% to 51% at max effort. Unlike some models, this improvement does not come at the cost of accuracy - Astra increased accuracy by 4 points at the same time.
+L30: ➤ ~80 point gain in AA-Briefcase Elo: GPT-6 Astra improves ~80 points in AA-Briefcase, our frontier long-horizon knowledge work evaluation. Models are tested on multi-week projects, with many linked tasks and thousands of source files. Astra sees a significant increase in both rubric scores and Analytical Quality Elo in AA-Briefcase compared to its predecessor. In the other direction, we observe a reduction in Presentation Quality Elo, where GPT-5.6 Sol (max) still leads all models.
+L31: ➤ Mixed progress on other evaluations: The model sees a 6 point gain in Humanity’s Last Exam, a long-standing evaluation with emphasis on mathematics, science, and humanities. This is offset by a drop of ~80 Elo points in GDPval-AA v2 - a benchmark we adapted from OpenAI’s dataset measuring economically valuable tasks across 44 occupations.
+L32: We also observe 2-3 point regressions on other evaluations across a mix of capabilities, including reductions in τ³-Banking (customer support), SciCode (Python problems in a scientific domain), and AA-LCR (long context reasoning over large documents).
+L33: cite3†Image†cdn.sanity.io L34:
+L35: Coding Agent Index cost improvements are driven by token efficiency, with a ~3x token reduction at max effort compared to GPT-5.6 Sol (max).
+L36:
+L37: cite4†Image†cdn.sanity.io L38:
+L39: GPT-6 Astra is on the Pareto frontier for Coding Agent Index vs Cost per Task, with its max effort setting costing about the same as GPT-5.6 Sol (max) while scoring 2 points higher in the Index.
+L40:
+L41: cite5†Image†cdn.sanity.io L42: GPT-6 Astra defines a new Pareto frontier for Intelligence Index vs Output Tokens per Task - with a ~10% reduction in output tokens at max effort compared to GPT-5.6 Sol.
+L43:
+L44: cite6†Image†cdn.sanity.io L45:
+L46: GPT-6 Astra is 75% more expensive than GPT-5.6 Sol at max effort, and largely sits behind its predecessor on the Intelligence Index vs Cost per Task frontier. This is driven by a 2.5x increase in price, partially offset by a reduction in token use.
+L47:
+L48: cite7†Image†cdn.sanity.io L49: GPT-6 Astra sees a large jump in AA-Omniscience, driven by a significant decrease in hallucination rate from 92% to 51% at max effort, alongside a modest increase in accuracy.
+L50:
+L51: cite8†Image†cdn.sanity.io L52:
+L53: The model shows mixed progress in agentic knowledge work - improving ~80 points in AA-Briefcase, but regressing a similar amount in GDPval-AA v2. In AA-Briefcase, Astra sees a significant increase in both rubric scores and Analytical Quality Elo, but a reduction in Presentation Quality Elo.
+L54: cite9†Image†cdn.sanity.io L55:
+L56: Breakdown of the individual evaluations in the Artificial Analysis Intelligence Index v4.1.1.
+L57:
+L58: Compare GPT-6 Astra with other leading models at: cite10†www.artificialanalysis.ai†www.artificialanalysis.ai L59: #### Read the latest
+L60: cite11†Announcing Artificial Analysis Intelligence Index v4.2 We are accelerating elements of our upcoming v5 release with interim updates to keep pace with the frontier.
+L61: Index v4.2 has more complex and realistic tasks, and more private test sets to prevent gaming September 4, 2026 cite12†Muse Spark 1.3: Meta reaches the frontier Independent analysis and benchmarks of Meta's Muse Spark 1.3 September 2, 2026 cite13†Google has released Gemini 3.8 Flash, its fourth Flash model in under four months Gemini 3.8 Flash scores 59 on the Artificial Analysis Intelligence Index and reaches the Intelligence vs. Cost per Task Pareto frontier September 2, 2026 L62: Artificial Analysis
+L63:
+L64: Get notified about new articles
+L65:
+L66: Email address[Input: What's your email?][Button: Subscribe]
+L67:
+L68: Explore
+L69:
+L70:   * cite14†LLM Leaderboard L71:   * cite15†Image Arena L72:   * cite16†Video Arena L73:   * cite17†AI Agents L74:   * cite18†Evaluations L75:
+L76: Products
+L77:
+L78:   * cite19†Optima L79:   * cite20†MicroEvals L80:   * cite21†Model Recommender L81:   * cite22†Data Playground L82:   * cite23†Image Lab L83:
+L84: Company
+L85:
+L86:   * cite24†About L87:   * cite25†Methodology L88:   * cite26†Services L89:   * cite27†Contact L90:   * cite1†Articles L91: cite28†X†x.com cite29†LinkedIn†www.linkedin.com cite30†YouTube†www.youtube.com cite31†Rednote†www.xiaohongshu.com cite32†Discord†discord.gg L92:
+L93: © 2026 Artificial Analysis
+L94:
+L95: cite33†Terms of Use cite34†Data Platform Terms†artificialanalysiscdn.com cite35†Privacy Policy --------------------------------------------------------------------------------
+Claude Fable 5.1 tops the Artificial Analysis Intelligence Index | Artificial Analysis (https://artificialanalysis.ai/articles/claude-fable-5-1)
+citeturn6view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://artificialanalysis.ai/articles/claude-fable-5-1","lineno":null}); Total lines: 88
+L0:   * [Button: Models]
+L1:   * [Button: Coding Agents]
+L2:   * [Button: Speech, Image, Video]
+L3:   * [Button: Inference]
+L4:   * [Button: Leaderboards]
+L5:   * [Button: About]
+L6:
+L7:   * cite0†AI Trends L8:
+L9:   * Arenas
+L10:
+L11: cite1†All articles L12:
+L13: September 1, 2026
+L14: # Claude Fable 5.1 tops the Artificial Analysis Intelligence Index but costs 20% more per task than Fable 5 despite a 75% cache read price cut
+L15:
+L16: cite2†See model page L17: We supported Anthropic with pre-release evaluation of Claude Fable 5.1. At max effort it scores 66 on the Artificial Analysis Intelligence Index, the highest score we have measured, ahead of Claude Opus 5 (max, 63), Claude Fable 5 (max, 62), GPT-5.6 Sol (max, 61) and Grok 4.6 (high, 61). We evaluated the model with Anthropic's 'default' server-side fallback, which routes safety-flagged requests to Claude Opus 4.8 or Claude Opus 5; fallback served ~4% of output tokens across the Intelligence Index.
+L18: Key takeaways:
+L19:
+L20: ➤ Frontier intelligence with improvements across benchmarks: Fable 5.1 gains +4 points on the Intelligence Index over Fable 5. On HLE, Fable 5.1 scores 59.1%, ahead of the previous best of 55.5% from Claude Fable 5. It posts the narrowly highest scores we've seen on Terminal-Bench v2.1 (91.4%) and SciCode (62.0%), and on 𝜏³-Banking it gains 9 points over Fable 5
+L21: ➤ 75% cache read price cut, but Fable 5.1 still costs more per task: Anthropic has cut the cache read price from $1 to $0.25 per 1M cached input tokens, with standard pricing unchanged at $10/$50 per 1M input/output tokens. Fable 5.1 (max) costs $3.76 per Intelligence Index task, 20% more than Fable 5 (max), because it uses ~1.7x the output tokens. The cache cut saves ~$1.40 per task, concentrated in the agentic evaluations where the majority of input tokens are cache reads.
+L22: At xhigh effort Fable 5.1 scores 65 at $2.72 per task, $1.04 less than max, but still above Claude Opus 5 (max, 63) at $2.34
+L23: ➤ Claude Fable 5.1 holds the upper end of the Intelligence vs. Output Tokens per Task Pareto frontier: every model variant scoring higher than GPT-5.6 Sol (medium) on the Intelligence Index is matched or beaten by a Fable 5.1 effort level on both intelligence and token usage
+L24: ➤ Highest scores on agentic work tasks, but effectively tied with Opus 5: Fable 5.1 sets the highest scores we have measured on GDPval-AA v2 (1,853 Elo, +130 over Fable 5) and AA-Briefcase (1,694 Elo, +122 over Fable 5), our agentic knowledge work evaluations. Against Claude Opus 5 the GDPval-AA v2 lead is within the confidence interval and AA-Briefcase (1,685) is effectively tied, with Fable 5.1 ahead on analytical quality and rubric correctness, but behind on presentation
+L25:
+L26: Other model details:
+L27: ➤ Context window: 1 million tokens, supporting image and text inputs as with Anthropic's other recent launches
+L28:
+L29: ➤ Pricing: Fable 5.1 retains the $10/$50/$12.5 input, output, and cache write prices per million tokens from Fable 5, but cache hits have been reduced to $0.25 per million tokens, a 75% relative reduction that will materially reduce agentic workload costs
+L30:
+L31: cite3†Image†cdn.sanity.io L32: Claude Fable 5.1 (max) costs $3.76 per Intelligence Index task, 20% more than Claude Fable 5 (max) at $3.14 and 1.6x Claude Opus 5 (max) at $2.34, driven by ~1.7x the output tokens of Fable 5. Anthropic's cut to cache read pricing from $1 to $0.25 per 1M tokens saves ~$1.40 per task; without it Fable 5.1 would cost ~$5.16. At xhigh effort Fable 5.1 scores 65 at $2.72 per task, $1.04 less than max effort.
+L33:
+L34: cite4†Image†cdn.sanity.io L35: Claude Fable 5.1's five effort settings span 11x in output token usage, from 13.1M at low effort to 143.7M at max, and score from 58 to 66 on the Artificial Analysis Intelligence Index. Across effort levels Fable 5.1 sits on the Intelligence vs. Output Tokens frontier, but its floor is higher than the GPT-5.6 family's: GPT-5.6 Sol (medium) uses marginally fewer tokens than Fable 5.1 (low), 12M against 13.1M.
+L36:
+L37: cite5†Image†cdn.sanity.io L38: Claude Fable 5.1 (max) leads GDPval-AA v2 at 1,853 Elo, ahead of Claude Opus 5 (max) at 1,824, although their confidence intervals overlap. On AA-Briefcase the two are effectively tied at 1,694 against 1,685, and the sub-scores diverge: Fable 5.1 is ahead on analytical quality (2,025 against 1,980) and behind on presentation (1,495 against 1,572). Both benchmarks test whether models can produce accurate and well-presented professional outputs using our open source reference agent harness, Stirrup.
+L39: cite6†Image†cdn.sanity.io L40:
+L41: Claude Fable 5.1 (max) attempts 93.4% of AA-Omniscience questions against Claude Opus 5's 87.8%, and records the highest accuracy we have measured at 67.2%, ahead of Claude Fable 5 at 65.4%.
+L42:
+L43: It hallucinates more with this higher attempt rate: of questions it did not get correct, it attempted to respond in 72.6% against Claude Fable 5's 63.6%. The two effects cancel out, and its AA-Omniscience Index score is level with Claude Fable 5.
+L44:
+L45: cite7†Image†cdn.sanity.io L46: Full breakdown of the individual evaluations in the Artificial Analysis Intelligence Index for Claude Fable 5.1 across all reasoning efforts:
+L47:
+L48: cite8†Image†cdn.sanity.io L49:
+L50: See Artificial Analysis for further details and benchmarks of Claude Fable 5.1: cite2†https://artificialanalysis.ai/models/claude-fable-5-1 L51: #### Read the latest
+L52: cite9†Announcing Artificial Analysis Intelligence Index v4.2 We are accelerating elements of our upcoming v5 release with interim updates to keep pace with the frontier. Index v4.2 has more complex and realistic tasks, and more private test sets to prevent gaming September 4, 2026 cite10†Benchmarking GPT-6 Astra GPT-6 Astra makes significant gains in the Artificial Analysis Coding Agent Index, scoring equal to Fable 5 at lower cost.
+L53: In the Intelligence Index, it uses fewer tokens than GPT-5.6 Sol for similar performance, but this is outweighed by higher prices September 3, 2026 cite11†Muse Spark 1.3: Meta reaches the frontier Independent analysis and benchmarks of Meta's Muse Spark 1.3 September 2, 2026 L54: Artificial Analysis
+L55:
+L56: Get notified about new articles
+L57:
+L58: Email address[Input: What's your email?][Button: Subscribe]
+L59:
+L60: Explore
+L61:
+L62:   * cite12†LLM Leaderboard L63:   * cite13†Image Arena L64:   * cite14†Video Arena L65:   * cite15†AI Agents L66:   * cite16†Evaluations L67:
+L68: Products
+L69:
+L70:   * cite17†Optima L71:   * cite18†MicroEvals L72:   * cite19†Model Recommender L73:   * cite20†Data Playground L74:   * cite21†Image Lab L75:
+L76: Company
+L77:
+L78:   * cite22†About L79:   * cite23†Methodology L80:   * cite24†Services L81:   * cite25†Contact L82:   * cite1†Articles L83: cite26†X†x.com cite27†LinkedIn†www.linkedin.com cite28†YouTube†www.youtube.com cite29†Rednote†www.xiaohongshu.com cite30†Discord†discord.gg L84:
+L85: © 2026 Artificial Analysis
+L86:
+L87: cite31†Terms of Use cite32†Data Platform Terms†artificialanalysiscdn.com cite33†Privacy Policy --------------------------------------------------------------------------------
+Models | OpenAI API (https://developers.openai.com/api/docs/models)
+citeturn6view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://developers.openai.com/api/docs/models","lineno":null}); Total lines: 1003
+L0: For the complete documentation index, see cite0†llms.txt . Markdown versions of documentation pages are available by appending `.md` to the page URL.
+L1:
+L2: cite1†ChatGPT L3:
+L4: cite1†Home L5:
+L6: cite2†API L7:
+L8: cite3†Codex†learn.chatgpt.com L9:
+L10: cite4†Docs L11:
+L12: cite5†Use cases L13:
+L14: cite6†Training L15:
+L16: cite7†Resources L17:
+L18: cite8†ChatGPT L19:
+L20: cite9†Resources L21:
+L22: cite2†Overview cite10†Models cite11†Agents cite12†Tools cite13†Voice & Audio cite14†Production cite15†API reference L23:
+L24: ## Search the API docs
+L25:
+L26: Search docs[Input: Start searching]
+L27: ### Suggested
+L28:
+L29: [Button: responses create][Button: reasoning_effort][Button: realtime][Button: prompt caching]
+L30:
+L31: Primary navigation
+L32:
+L33: [Button: API ][Button: Codex ][Button: ChatGPT ][Button: Docs ][Button: Use cases ][Button: Training ][Button: Resources ][Button: Resources ]
+L34:
+L35: Search docs[Input: Start searching]
+L36: ### Suggested
+L37:
+L38: [Button: responses create][Button: reasoning_effort][Button: realtime][Button: prompt caching]
+L39:
+L40: [Button: Overview ][Button: Models ][Button: Agents ][Button: Tools ][Button: Voice & Audio ][Button: Production ][Button: API reference ]
+L41:
+L42: [Select]Docs Models
+L43:
+L44:   * cite2†Home L45:
+L46: ### Get started
+L47:
+L48:   * cite16†Quickstart L49:   * cite17†Using GPT-6 Astra L50:   * cite18†Key concepts L51: ### Core concepts
+L52:
+L53:   * cite19†Responses API L54:   * cite20†Conversation state L55:   * cite21†Background mode L56:   * cite22†Streaming L57:   * cite23†WebSocket mode L58:   * cite24†Mid-turn steering L59:   * cite25†Multi-agent L60:   * cite26†Webhooks L61:   * cite27†File inputs L62:   * cite28†Compaction L63:   * cite29†Counting tokens L64:
+L65: ### SDKs and CLI
+L66:
+L67:   * cite30†OpenAI SDK L68:   * cite31†OpenAI CLI L69:
+L70: ### Resources
+L71:
+L72:   * cite32†Changelog L73:   * cite33†Deprecations L74:   * cite34†Supported countries L75:   * cite35†OpenAI Crawlers L76:   * cite36†Terms and policies†openai.com L77: ### Legacy APIs
+L78:   * Agent Builder
+L79:     * cite37†Overview L80:     * cite38†Migration guide L81:     * cite39†Node reference L82:     * cite40†Safety in building agents L83:   * Evals
+L84:     * cite41†Getting started L85:     * cite42†Working with evals L86:     * cite43†Prompt optimizer L87:     * cite44†External models L88:     * cite45†Best practices L89:     * cite46†Graders L90:   * Fine-tuning
+L91:     * cite47†Optimization cycle L92:     * cite48†Supervised fine-tuning L93:     * cite49†Vision fine-tuning L94:     * cite50†Direct preference optimization L95:     * cite51†Reinforcement fine-tuning L96:     * cite52†RFT use cases L97:     * cite53†Best practices L98:   * Assistants API
+L99:     * cite54†Migration guide L100:   * cite10†Model catalog L101: ### Choose a model
+L102:
+L103:   * cite55†Pricing L104:   * cite56†Model selection L105:
+L106: ### Text and code
+L107:
+L108:   * cite57†Text generation L109:   * cite58†Code generation L110:   * cite59†Structured output L111:
+L112: ### Prompting
+L113:
+L114:   * cite60†Overview L115:   * cite61†Prompt engineering L116:   * cite62†Citation formatting L117:   * cite63†Migration guide L118:   * cite64†Prompt generation L119:   * cite65†Frontend prompting L120:
+L121: ### Reasoning
+L122:
+L123:   * cite66†Reasoning models L124:   * cite67†Reasoning best practices L125: ### Images and video
+L126:
+L127:   * cite68†Images and vision L128:     * cite69†Image input cost calculator L129:   * cite70†Image generation L130:   * cite71†Video generation L131:
+L132: ### Realtime and audio
+L133:
+L134:   * cite72†Audio and speech L135:   * cite13†Overview L136:   * cite73†Voice agents L137:
+L138: ### Specialized models
+L139:
+L140:   * cite74†Deep research L141:   * cite75†Embeddings L142:   * cite76†Moderation L143:
+L144:   * cite11†Overview L145: ### Agents SDK
+L146:
+L147:   * cite77†Quickstart L148:   * cite78†Agent definitions L149:   * cite79†Models and providers L150:   * cite80†Running agents L151:   * cite81†Sandbox agents L152:   * cite82†Orchestration L153:   * cite83†Guardrails L154:   * cite84†Results and state L155:   * cite85†Integrations and observability L156:   * cite86†Evaluate agent workflows L157:
+L158: ### ChatKit
+L159:
+L160:   * cite87†Overview L161:   * cite88†Customize L162:   * cite89†Widgets L163:   * cite90†Actions L164:   * cite91†Advanced integrations L165:
+L166:   * cite12†Overview L167:   * cite92†Function calling L168: ### Search and retrieval
+L169:
+L170:   * cite93†Web search L171:   * cite94†File search L172:   * cite95†Retrieval L173:
+L174: ### Connect tools and data
+L175:
+L176:   * cite96†MCP and Connectors L177:   * cite97†Secure MCP Tunnel L178:
+L179: ### Build tool workflows
+L180:
+L181:   * cite98†Skills L182:   * cite99†Tool search L183:   * cite100†Programmatic tool calling L184:   * cite101†Async tool calling L185:
+L186: ### Computer and code
+L187:
+L188:   * cite102†Shell L189:   * cite103†Computer use L190:   * cite104†Apply Patch L191:   * cite105†Local shell L192:   * cite106†Code interpreter L193:
+L194: ### Media
+L195:
+L196:   * cite107†Image generation L197:
+L198:   * cite13†Overview L199: ### Get started
+L200:
+L201:   * cite73†Voice agents L202:   * cite108†Live translation L203:   * cite109†Realtime prompting guide L204:
+L205: ### Audio
+L206:
+L207:   * cite72†Audio and speech L208:   * cite110†Transcription L209:   * cite111†File transcription L210:   * cite112†Realtime transcription L211:   * cite113†Speech generation L212:
+L213: ### Connection methods
+L214:
+L215:   * cite114†WebRTC L216:   * cite115†WebSocket L217:   * cite116†SIP L218: ### Sessions and operations
+L219:
+L220:   * cite117†Managing conversations L221:   * cite118†Voice activity detection L222:   * cite119†Realtime with tools L223:   * cite120†Webhooks and server-side controls L224:   * cite121†Managing costs L225:
+L226: ### Go live
+L227:
+L228:   * cite14†Production best practices L229:   * cite122†Deployment checklist L230:
+L231: ### Performance and quality
+L232:
+L233:   * cite123†Latency optimization L234:   * cite124†Predicted Outputs L235:   * cite125†Fast mode L236:   * cite126†Accuracy optimization L237: ### Cost and throughput
+L238:
+L239:   * cite127†Cost optimization L240:   * cite128†Prompt caching L241:   * cite129†Batch L242:   * cite130†Flex processing L243:
+L244: ### Safety and governance
+L245:
+L246:   * cite131†Safety best practices L247:   * cite132†Red teaming L248:   * Safety checks
+L249:     * cite133†Safety classifiers L250:     * cite134†Cybersecurity checks L251:     * cite135†Misalignment monitoring L252:   * cite136†Under-18 guidance L253:   * cite137†CSAM guidance L254:   * cite138†Content provenance L255:   * cite139†Your data L256:   * cite140†Permissions L257: ### Infrastructure and access
+L258:   * cite141†Terraform provider L259:     * cite141†Overview L260:     * cite142†Projects and access L261:     * cite143†Service accounts L262:     * cite144†Rate limits and spend L263:     * cite145†Model, tool, and data controls L264:     * cite146†Import and reconciliation L265:   * cite147†Private Link L266:   * cite148†IP allowlist L267:   * cite149†Mutual TLS L268:   * cite150†Workload identity federation L269:     * cite151†Codex setup L270:     * cite152†Federation rules L271:     * cite153†Admin API L272:     * cite154†X.509 certificates L273:     * cite155†Kubernetes L274:     * cite156†AWS L275:     * cite157†Microsoft Azure L276:     * cite158†Google Cloud L277:     * cite159†Oracle Cloud Infrastructure L278:     * cite160†GitHub Actions L279:     * cite161†SPIFFE L280:   * cite162†IP egress ranges L281:   * cite163†Amazon Bedrock L282: ### Operations
+L283:
+L284:   * cite164†Rate limits L285:   * cite165†Spend limits L286:   * cite166†Admin APIs L287:   * cite167†Error codes L288:
+L289: cite3†Docs†learn.chatgpt.com cite168†Use cases†learn.chatgpt.com L290:
+L291: [Select]Docs Docs
+L292:
+L293: [Button: Plugins ][Button: Workspace Agents ][Button: Commerce ][Button: Ads ]
+L294:
+L295: [Select]Docs Select...
+L296:
+L297:   * cite169†Home L298:   * cite170†Quickstart L299:
+L300: ### Core concepts
+L301:
+L302:   * cite171†Plugin architecture L303:   * cite172†Skills L304:   * cite173†MCP server L305:
+L306: ### Plan
+L307:
+L308:   * cite174†Brainstorm use cases L309:   * cite175†Define tools L310: ### Build
+L311:
+L312:   * cite176†Build an MCP server L313:   * cite177†Add UI to your MCP server (optional) L314:   * cite178†Authenticate users L315:   * cite179†Build skills L316:   * cite180†Package your plugin L317:   * cite181†Examples L318:
+L319: ### Test and publish
+L320:
+L321:   * cite182†Connect and test your plugin L322:   * cite183†Submit and publish L323:   * cite184†Submission error reference L324:
+L325: ### Conversion specs
+L326:
+L327:   * cite185†Restaurant reservation spec L328:   * cite186†Get Quote spec L329:   * cite187†Product checkout spec L330: ### Guides
+L331:
+L332:   * cite188†UI guidelines L333:   * cite189†Optimize Metadata L334:   * cite190†Submit a Claude Code plugin L335:   * cite191†Security & Privacy L336:   * cite192†Troubleshooting L337:
+L338: ### Resources
+L339:
+L340:   * cite193†Changelog L341:   * cite194†Plugin guidelines L342:   * cite195†MCP server review requirements L343:   * cite196†Plugin UI reference L344:   * cite197†Checkout API reference L345:
+L346:   * cite198†Home L347:
+L348: ### Get started
+L349:
+L350:   * cite199†Trigger workspace agent runs L351:   * cite200†Authenticate with Workspace Agent access tokens L352:
+L353:   * cite201†Home L354: ### Guides
+L355:
+L356:   * cite202†Get started L357:   * cite203†Best practices L358:
+L359: ### File Upload
+L360:
+L361:   * cite204†Overview L362:   * cite205†Products L363:
+L364: ### API
+L365:
+L366:   * cite206†Overview L367:   * cite207†Feeds L368:   * cite208†Products L369:   * cite209†Promotions L370:
+L371:   * cite210†Ads Overview L372:
+L373: ### Measurement
+--------------------------------------------------------------------------------
+What's new in Claude Fable 5.1 - Claude Platform Docs (https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1)
+citeturn6view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1","lineno":null}); Total lines: 334

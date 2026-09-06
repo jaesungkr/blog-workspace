@@ -1,0 +1,26 @@
+/* This post uses short three-column comparisons readable without swiping. */
+.devlog-rich .rich-table-wrap table {
+  min-width: 0;
+  table-layout: fixed;
+}
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  overflow-wrap: anywhere;
+}
+.devlog-rich .devlog-rich__credit {
+  display: none;
+}
+@media (max-width: 735px) {
+  .devlog-rich .rich-table-wrap table {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .devlog-rich .rich-table-wrap th,
+  .devlog-rich .rich-table-wrap td {
+    padding: 10px 7px;
+  }
+  .devlog-rich .rich-table-wrap th:first-child,
+  .devlog-rich .rich-table-wrap td:first-child {
+    width: 36%;
+  }
+}

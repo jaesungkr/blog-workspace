@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT-6 Astra vs. Fable 5.1 - AI 모델 비교</title>
+  <meta name="description" content="GPT-6 Astra와 Claude Fable 5.1의 최신 외부 평가, 긴 작업 기능, 캐시와 장문 입력 비용을 비교합니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>GPT-6 Astra vs. Fable 5.1 - AI 모델 비교</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+/* This post uses short three-column comparisons readable without swiping. */
+.devlog-rich .rich-table-wrap table {
+  min-width: 0;
+  table-layout: fixed;
+}
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  overflow-wrap: anywhere;
+}
+.devlog-rich .devlog-rich__credit {
+  display: none;
+}
+@media (max-width: 735px) {
+  .devlog-rich .rich-table-wrap table {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .devlog-rich .rich-table-wrap th,
+  .devlog-rich .rich-table-wrap td {
+    padding: 10px 7px;
+  }
+  .devlog-rich .rich-table-wrap th:first-child,
+  .devlog-rich .rich-table-wrap td:first-child {
+    width: 36%;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>코드를 고치거나 여러 문서를 읽고 보고서를 만들 때, 어느 AI에 맡겨야 재작업을 줄일 수 있을까요? OpenAI의 <strong>GPT-6 Astra</strong>와 Anthropic의 <strong>Claude Fable 5.1</strong>은 이런 복잡한 작업을 겨냥한 상위 AI 모델입니다. 이미 쓰는 앱에서 이용할 수 있는 모델을 먼저 시험하고, 새로 선택한다면 완성도와 비용 중 무엇이 더 중요한지에 따라 후보를 좁혀 보세요.</p>
+<p>현재 외부 종합 평가에서는 Fable 5.1의 점수가 더 높고, 같은 평가에서 과제 하나를 처리한 비용은 Astra가 더 낮습니다. 프로그램에서 모델을 호출하는 API의 기본 단가는 두 모델이 같습니다. 실제 비용은 자료를 읽고 답변을 만드는 데 사용한 양에 따라 달라집니다. 아래 수치와 이용 조건은 <strong>2026년 9월 6일 확인한 자료</strong>를 기준으로 합니다.</p>
+<figure class="devlog-rich__figure" data-media-id="astra-fable-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbfUhcH%2FdJMcahZ0gvJ%2FAAAAAAAAAAAAAAAAAAAAAE1Zpe2SWSaVY51OO11IY9zVyGchBD0mihRyXQBRWOVN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dhu36t4cSGT8qnMWdo0b5eDxAzZ4%253D" alt="GPT-6 Astra의 금색 커서와 Fable 5.1의 보라색 문서 조형물을 같은 비중으로 배치한 비교 이미지" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">커서와 문서 조형물은 두 모델이 맡는 도구 실행과 문서 작업을 표현합니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#astra와-fable-51의-기본-사양">Astra와 Fable 5.1의 기본 사양</a></li>
+<li><a href="#외부-평가의-점수와-과제-비용">외부 평가의 점수와 과제 비용</a></li>
+<li><a href="#긴-작업을-위한-api-기능">긴 작업을 위한 API 기능</a></li>
+<li><a href="#캐시와-장문-입력의-요금-차이">캐시와 장문 입력의 요금 차이</a></li>
+<li><a href="#내-작업에서-먼저-시험할-모델">내 작업에서 먼저 시험할 모델</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="astra와-fable-51의-기본-사양">
+<h2 id="astra와-fable-51의-기본-사양">Astra와 Fable 5.1의 기본 사양</h2>
+<p>두 모델 모두 글과 이미지를 읽고 텍스트를 생성합니다. 여기에 파일 검색, 코드 실행, 브라우저 조작 같은 도구를 연결하면 자료 조사부터 결과물 작성까지 여러 단계를 수행할 수 있습니다. 이처럼 AI가 도구를 사용하며 작업을 이어 가는 방식을 에이전트 작업이라고 부릅니다. 실제로 쓸 수 있는 도구는 모델을 실행하는 앱과 연결 설정에 따라 달라집니다. <a href="https://developers.openai.com/api/docs/guides/latest-model" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 공식 안내</a>, <a href="https://platform.claude.com/docs/en/models/fable-5-1/overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 5.1 공식 안내</a></p>
+<p>토큰은 AI가 글을 나누어 처리하는 단위입니다. 한 번에 다룰 수 있는 대화와 자료의 범위를 컨텍스트 창이라고 하며, 이 범위에는 생성할 답변도 포함됩니다. 같은 한국어 문서라도 모델마다 토큰 수가 다를 수 있으므로 용량을 문서 페이지 수로 단순 환산하기는 어렵습니다.</p>
+<p>다음은 앱의 파일 업로드 한도와 구분되는 모델/API 사양입니다. <a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 모델 문서</a>, <a href="https://platform.claude.com/docs/en/models/fable-5-1/overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude 모델 문서</a></p>
+<div class="rich-table-wrap"><table><thead><tr><th>항목</th><th>GPT-6 Astra</th><th>Claude Fable 5.1</th></tr></thead><tbody><tr><td>개발사</td><td>OpenAI</td><td>Anthropic</td></tr><tr><td>컨텍스트 창</td><td>105만 토큰</td><td>100만 토큰</td></tr><tr><td>최대 출력</td><td>12만 8천 토큰</td><td>12만 8천 토큰</td></tr><tr><td>입력과 출력</td><td>글·이미지 → 글</td><td>글·이미지 → 글</td></tr><tr><td>API 모델 ID</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">gpt-6-astra</code></td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">claude-fable-5-1</code></td></tr></tbody></table></div>
+<p>많은 문서를 넣을 수 있어도 그 안에서 서로 모순되는 조건을 놓칠 수 있습니다. 컨텍스트 용량과 실제 문제 해결 능력은 구분해서 보아야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="외부-평가의-점수와-과제-비용">
+<h2 id="외부-평가의-점수와-과제-비용">외부 평가의 점수와 과제 비용</h2>
+<p>Artificial Analysis는 여러 과제를 직접 실행해 모델을 평가하는 외부 평가 기관입니다. 이곳의 Intelligence Index는 코딩, 추론, 문서 이해, 업무 수행 등을 합친 지수로, 높을수록 해당 평가에서 좋은 결과를 냈다는 뜻입니다. 정답률이나 한국어 글쓰기 점수는 아닙니다.</p>
+<p><strong>9월 4일 지수가 v4.2로 개편되었습니다.</strong> 업무·문서 과제가 추가되고 평가 비중도 바뀌었으므로, 출시 기사에 있는 이전 버전 점수와 섞으면 안 됩니다. 아래 표는 두 모델의 현재 페이지가 함께 표시하는 v4.2를 사용했습니다. <a href="https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2" style="color:#1a73e8;text-decoration:none;" target="_blank">평가 개편 안내</a></p>
+<div class="rich-table-wrap"><table><thead><tr><th>v4.2 평가 항목</th><th>Astra</th><th>Fable 5.1</th></tr></thead><tbody><tr><td>추론 설정</td><td>max</td><td>max, 기본 대체 모델 사용</td></tr><tr><td>종합 지수, 높을수록 좋음</td><td>55</td><td>57</td></tr><tr><td>과제당 가중평균 비용, 낮을수록 좋음</td><td>$2.57</td><td>$6.12</td></tr></tbody></table></div>
+<p>출처는 <a href="https://artificialanalysis.ai/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 평가 페이지</a>와 <a href="https://artificialanalysis.ai/models/claude-fable-5-1" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 5.1 평가 페이지</a>입니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">max</code>는 많은 추론을 허용하는 설정이며, 같은 이름이 두 회사에서 동일한 연산량이나 대기 시간을 뜻하지는 않습니다. Fable의 기본 대체 모델 사용은 안전장치에 걸린 일부 요청을 다른 Claude 모델이 처리하는 조건입니다.</p>
+<p>이 결과만 놓고 보면 점수를 우선하는 후보는 Fable 5.1, 평가 비용을 줄이는 후보는 Astra입니다. 과제당 비용은 새 자료의 입력, 이전 자료의 재사용, 추론과 답변 생성에 든 비용을 평가별로 가중평균한 값입니다. 앱의 월 구독료나 내 업무 한 건의 예상 견적으로 읽어서는 안 됩니다.</p>
+<p>코딩 도구까지 포함한 <strong>9월 3일 Coding Agent Index 발표</strong>도 있습니다. Artificial Analysis는 Astra를 사용한 Codex에 67점, Fable 5.1을 사용한 Claude Code에 70점을 기록했습니다. 이 수치는 모델에 더해 파일 편집과 도구 실행 환경을 함께 평가한 결과이며, 위 종합 지수와는 척도가 다릅니다. <a href="https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">코딩 에이전트 평가 발표</a></p>
+<p>따라서 이 표로 “Fable의 한국어 문장이 더 자연스럽다”거나 “Astra가 모든 코딩 작업을 더 빨리 끝낸다”고 결론 내릴 수는 없습니다. 한국어 보고서가 목적이라면 근거 누락과 수정량을, 코딩이 목적이라면 실제 테스트 통과 여부를 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="긴-작업을-위한-api-기능">
+<h2 id="긴-작업을-위한-api-기능">긴 작업을 위한 API 기능</h2>
+<p>Astra의 API는 외부 도구가 실행되는 동안 다른 독립적인 작업을 이어 가는 비동기 도구 호출을 지원합니다. 작업 도중 새 요구 사항을 보내 이미 끝낸 작업을 보존하면서 계속 진행하는 기능도 제공합니다. 예를 들어 자료를 모으는 중에 보고서 대상 독자를 바꾸는 상황에 활용할 수 있습니다. 앱 개발자가 해당 기능을 구현해야 하며, 모든 채팅 화면에서 동일하게 제공된다는 뜻은 아닙니다. <a href="https://developers.openai.com/api/docs/guides/latest-model" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 사용 가이드</a></p>
+<p>Fable 5.1은 대화 중 추론 강도를 바꾸면서 캐시를 유지하는 기능과, 도구 호출 사이에 진행 상황을 텍스트로 받는 기능을 제공합니다. 두 기능은 베타입니다. 긴 코드 수정이나 문서 작성에서 사용자가 진행 상황을 확인할 수 있도록 구성할 때 유용합니다. 기본 응답 설정에서는 진행 안내가 비어 있을 수 있으므로, 개발자는 표시 옵션을 확인해야 합니다. <a href="https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 5.1 변경 사항</a></p>
+<p>작업 도중의 지시 변경이나 진행 표시가 중요하다면, 사용하는 앱이 이 기능을 어떻게 제공하는지 확인하세요. 모델의 API 기능과 앱 화면에서 쓸 수 있는 기능은 구분해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="캐시와-장문-입력의-요금-차이">
+<h2 id="캐시와-장문-입력의-요금-차이">캐시와 장문 입력의 요금 차이</h2>
+<p>아래 가격은 사용량에 따라 청구되는 API의 표준 요금입니다. 월 구독료와 구분되며 별도 할인은 반영하지 않았습니다. 캐시는 반복해서 보내는 자료를 재사용하는 기능으로, 처음 저장할 때와 다시 읽을 때의 단가가 다릅니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>100만 토큰당 표준 단가</th><th>Astra</th><th>Fable 5.1</th></tr></thead><tbody><tr><td>일반 입력</td><td>$10</td><td>$10</td></tr><tr><td>출력</td><td>$50</td><td>$50</td></tr><tr><td>캐시 읽기</td><td>$1</td><td>$0.25</td></tr><tr><td>캐시 쓰기</td><td>$12.50</td><td>$12.50, 5분 기준</td></tr></tbody></table></div>
+<p><a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 가격 문서</a>와 <a href="https://platform.claude.com/docs/en/about-claude/pricing" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude 가격표</a>에 따른 값입니다. Fable은 1시간 캐시 쓰기에 별도 단가를 적용하므로 위 표는 모든 캐시 보존 옵션을 같다고 가정한 비교가 아닙니다.</p>
+<p>장문 입력에서도 차이가 있습니다. Astra는 <strong>입력이 27만 2천 토큰을 넘으면 해당 요청 전체</strong>의 입력·캐시 단가가 2배, 출력 단가가 1.5배가 됩니다. Fable 5.1의 100만 토큰 컨텍스트에는 장문 할증 없이 표준 단가가 적용됩니다. <a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 장문 요금</a>, <a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude 컨텍스트 안내</a></p>
+<p>가격표가 실제 계산에 미치는 영향을 보기 위해, 두 모델에 <strong>같은 토큰 수</strong>를 적용한 예시를 계산했습니다. 아래 결과는 실사용 청구서가 아닌 단가 계산이며, 출력은 추론을 포함한 과금 대상 출력 전체로 가정했습니다. 도구 요금, 세금, 할인은 제외했습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>가정한 요청 1회</th><th>Astra</th><th>Fable 5.1</th></tr></thead><tbody><tr><td>새 입력 10만 + 출력 1만 토큰</td><td>$1.50</td><td>$1.50</td></tr><tr><td>기존 캐시 읽기 10만 + 새 입력 1만 + 출력 1만</td><td>$0.70</td><td>$0.625</td></tr><tr><td>새 입력 30만 + 출력 1만 토큰</td><td>$6.75</td><td>$3.50</td></tr></tbody></table></div>
+<p>두 번째 행은 캐시가 이미 만들어져 적중한 후속 요청만 계산했으며, 최초 캐시 쓰기 비용은 포함하지 않았습니다. 마지막 행은 Astra의 장문 할증을 반영해 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">0.3 × $20 + 0.01 × $75</code>로 계산했습니다. Fable은 같은 토큰 수에 표준 단가를 적용했습니다.</p>
+<p>캐시 읽기 단가가 4분의 1이어도 전체 청구액이 4분의 1로 줄지는 않습니다. 출력 비용은 그대로 남고, 실제로 생성하는 추론과 답변의 양도 모델마다 다릅니다. 따라서 입력 할인과 한 과제를 끝내는 총비용은 다른 방향으로 움직일 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="내-작업에서-먼저-시험할-모델">
+<h2 id="내-작업에서-먼저-시험할-모델">내 작업에서 먼저 시험할 모델</h2>
+<p>공개 평가와 이용 조건을 바탕으로 정리한 시험 순서입니다. 자신의 과제로 결과를 확인한 뒤 채택 여부를 정하세요.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>내 상황</th><th>먼저 시험할 선택</th><th>선택 이유</th></tr></thead><tbody><tr><td>이미 한쪽 앱에 자료와 도구를 연결한 경우</td><td>그 앱에서 제공하는 비교 대상 모델</td><td>같은 작업 환경에서 결과 차이를 확인하기 쉬움</td></tr><tr><td>어려운 과제의 완성도를 우선하는 경우</td><td>Fable 5.1</td><td>최신 외부 종합 평가에서 더 높은 점수</td></tr><tr><td>API 과제 비용이 중요한 경우</td><td>Astra도 함께 시험</td><td>외부 종합 평가에서 더 낮은 과제당 비용</td></tr><tr><td>긴 문서를 반복해서 읽히는 경우</td><td>Fable 5.1</td><td>낮은 캐시 읽기 단가와 장문 할증 없는 요금</td></tr></tbody></table></div>
+<p>시작할 때는 모델 접근 권한과 추가 과금부터 확인하세요. Astra는 OpenAI API에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">gpt-6-astra</code>로 지정합니다. Fable 5.1은 Claude 앱의 모델 선택 메뉴에서 선택하거나 API에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">claude-fable-5-1</code>을 지정합니다. Claude Code에서는 2.1.255 이상이 필요합니다. <a href="https://developers.openai.com/api/docs/models" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 모델 목록</a>, <a href="https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 이용 안내</a></p>
+<p>특히 <strong>Claude Pro에서 Fable 5.1은 구독에 포함된 사용량 대신 별도 사용 크레딧으로 과금됩니다.</strong> Max에서는 플랜 사용량에 포함되지만 Fable에 쓸 수 있는 주간 한도가 따로 적용됩니다. 모델이 목록에 보인다고 추가 비용이 없다고 가정하지 마세요. <a href="https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan" style="color:#1a73e8;text-decoration:none;" target="_blank">플랜별 Fable 과금 조건</a></p>
+<p>비교 과제는 평소 다시 손보는 일이 많은 작업 하나면 충분합니다. 보고서라면 같은 원문으로 근거가 표시된 초안을 요청하고, 코딩이라면 같은 저장소 상태에서 같은 오류를 수정하도록 요청해 보세요. 자료·도구·완료 조건을 맞추고 추론 설정을 기록하세요. 어떤 모델이 만든 결과인지 가린 뒤 <strong>빠진 요구 사항, 사람이 수정한 시간, 총비용</strong>을 비교하면 모델을 바꿀 이유가 있는지 판단하기 쉽습니다.</p>
+<p>한국어 문장 다듬기가 주목적이라면 문서 몇 편을 직접 비교한 뒤 선택하세요. 종합 평가의 작은 점수 차이보다, 내가 고쳐야 하는 문장이 얼마나 줄었는지가 그 작업에는 더 직접적인 기준입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="참고-자료">
+<h2 id="참고-자료">참고 자료</h2>
+<ul><li><a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">GPT-6 Astra 모델 사양·가격 - OpenAI</a></li><li><a href="https://developers.openai.com/api/docs/guides/latest-model" style="color:#1a73e8;text-decoration:none;" target="_blank">GPT-6 Astra 사용 가이드 - OpenAI</a></li><li><a href="https://platform.claude.com/docs/en/models/fable-5-1/overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude Fable 5.1 사양 - Anthropic</a></li><li><a href="https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 5.1 변경 사항 - Anthropic</a></li><li><a href="https://platform.claude.com/docs/en/about-claude/pricing" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude 가격표</a> · <a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" style="color:#1a73e8;text-decoration:none;" target="_blank">컨텍스트와 장문 요금</a></li><li><a href="https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 플랜별 이용 조건 - Claude Help Center</a></li><li><a href="https://artificialanalysis.ai/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 최신 외부 평가</a> · <a href="https://artificialanalysis.ai/models/claude-fable-5-1" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 5.1 최신 외부 평가</a></li><li><a href="https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2" style="color:#1a73e8;text-decoration:none;" target="_blank">Intelligence Index v4.2 개편 - Artificial Analysis</a></li><li><a href="https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 코딩 에이전트 평가 발표 - Artificial Analysis</a></li></ul>
+</section>
+</article>
+</body>
+</html>

@@ -1,0 +1,644 @@
+GPT-6 Astra (max) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/gpt-6-astra)
+citeturn5search0 [wordlim: 200] Published: 3 days ago; Crawled: today; GPT-6 Astra (max) scores 55 on the Artificial Analysis Intelligence Index, placing it well above average among other reasoning models in a similar price tier (median: 29). ... GPT-6 Astra (max) generates output at 87.5 tokens per second (based on OpenAI's API), which is above average compared to other reasoning models in a similar price tier (median: 73.5 t/s).
+## Intelligence Updated
+
+### Artificial Analysis Intelligence Index
+
+Artificial Analysis Intelligence Index v4.2 incorporates 10 evaluations: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1
+
+23 of 643 models
+
+Add model from specific provider
+
+###
+
+Artificial Analysis Intelligence Index
+
+Artificial Analysis Intelligence Index v4.2 includes: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+
+[Button: Open Weights / Proprietary][Button: Reasoning / Non-Reasoning][Button: Text Only / Multimodal Inputs]
+
+### Artificial Analysis Intelligence Index by Open Weights / Proprietary
+
+Artificial Analysis Intelligence Index v4.2 incorporates 10 evaluations: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1
+
+23 of 643 models
+
+Add model from specific provider
+
+Proprietary Open Weights (Commercial Use Restricted)Open Weights
+
+###
+
+Artificial Analysis Intelligence Index
+
+Artificial Analysis Intelligence Index v4.2 includes: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+
+###
+
+Open Weights
+
+Indicates whether the model weights are available. Models are labelled as 'Commercial Use Restricted' if commercial use is limited by conditions, and as 'Non-commercial' if the license prohibits commercial use.
+
+## Benchmarks
+
+### Intelligence Evaluations
+
+Intelligence evaluations measured independently by Artificial Analysis · Higher is better
+
+
+20 of 25 evaluations
+
+23 of 643 models
+
+Add model from specific provider
+
+AA-Briefcase
+
+Agentic knowledge work, (Elo-500)/2000
+
+GDPval-AA v2
+
+Agentic real-world work tasks, (Elo-500)/2000
+
+𝜏³-Banking
+
+Agentic tool use
+
+Terminal-Bench v2.1
+
+Agentic coding & terminal use
+
+SciCode
+
+Coding
+
+Humanity's Last Exam
+
+Reasoning & knowledge
+
+GDP.pdfNew
+
+Professional document reasoning, All-pass
+
+CritPt
+
+Physics reasoning
+
+AA-Omniscience Accuracy
+
+Knowledge
+
+AA-Omniscience Non-Hallucination Rate
+
+1 - hallucination rate
+
+AA-LCR v1.1
+
+Long context reasoning
+
+AutomationBench-AA
+
+Agentic SaaS workflows
+
+Harvey LAB-AA
+
+Legal agentic work, criterion pass rate
+
+
+## Frequently Asked Questions
+
+Common questions about GPT-6 Astra (max)
+
+### When was GPT-6 Astra (max) released?
+
+GPT-6 Astra (max) was released on September 3, 2026.
+
+### Who created GPT-6 Astra (max)?
+
+GPT-6 Astra (max) was created by OpenAI.
+
+### How intelligent is GPT-6 Astra (max)?
+
+GPT-6 Astra (max) scores 55 on the Artificial Analysis Intelligence Index, placing it well above average among other reasoning models in a similar price tier (median: 29).
+
+### How fast is GPT-6 Astra (max)?
+
+GPT-6 Astra (max) generates output at 87.5 tokens per second (based on OpenAI's API), which is above average compared to other reasoning models in a similar price tier (median: 73.5 t/s).
+
+### What is the latency of GPT-6 Astra (max)?
+
+GPT-6 Astra (max) has a time to first token (TTFT) of 463.73s (based on OpenAI's API), which is at the higher end compared to other reasoning models in a similar price tier (median: 3.86s).
+
+### How much does GPT-6 Astra (max) cost?
+
+GPT-6 Astra (max) costs $10.00 per 1M input tokens (at the higher end, median: $2.00) and $50.00 per 1M output tokens (at the higher end, median: $10.00), based on OpenAI's API.
+
+### Is GPT-6 Astra (max) multimodal?
+
+Yes, GPT-6 Astra (max) is multimodal. It can process text and image input and generate text output.
+
+### What is the context window of GPT-6 Astra (max)?
+
+GPT-6 Astra (max) has a context window of 1.0M tokens. This determines how much text and conversation history the model can process in a single request.
+
+### Is GPT-6 Astra (max) open source?
+
+No, GPT-6 Astra (max) is proprietary. The model weights are not publicly available.
+
+### How many parameters does GPT-6 Astra (max) have?
+
+GPT-6 Astra (max) is a proprietary model and OpenAI has not disclosed the model size or parameter count.
+
+### How does GPT-6 Astra (max) perform on benchmarks?
+
+GPT-6 Astra (max) achieves a score of 55 on the Artificial Analysis Intelligence Index. This composite benchmark evaluates models across reasoning, knowledge, mathematics, and coding.
+
+### What is the knowledge cutoff date for GPT-6 Astra (max)?
+
+GPT-6 Astra (max) has a knowledge cutoff of April 2026. The model's training data includes information up to this date.
+
+### Is GPT-6 Astra (max) available via API?
+
+Yes, GPT-6 Astra (max) is available via API through 1 provider. Compare API providers
+--------------------------------------------------------------------------------
+Benchmarking GPT-6 Astra | Artificial Analysis (https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra)
+citeturn5search1 [wordlim: 200] Published: 3 days ago; Crawled: today; Breakdown of the individual evaluations in the Artificial Analysis Intelligence Index v4.1.1.Compare GPT-6 Astra with other leading models at: www.artificialanalysis.ai
+
+September 3, 2026
+
+GPT-6 Astra makes significant gains in the Artificial Analysis Coding Agent Index, scoring equal to Fable 5 at lower cost. In the Intelligence Index, it uses fewer tokens than GPT-5.6 Sol for similar performance, but this is outweighed by higher prices
+
+Image
+
+Pricing is 2.5x GPT-5.6 Sol’s current prices across the board, up from $4/$20 to $10/$50 per million input/output tokens, with the same 90% discount for cache reads and 25% premium for cache writes.
+
+We see distinct stories across our two flagship Indices. In the Artificial Analysis Coding Agent Index, GPT-6 Astra equals Fable 5 at less than half the cost, driven by significant token efficiency gains. In the Artificial Analysis Intelligence Index, GPT-6 Astra is more token efficient than its predecessor for similar performance, but this is offset by the price increase.
+
+Artificial Analysis Coding Agent Index - key takeaways:
+
+➤ Rivals top models: In Codex, GPT-6 Astra scores 67 in the Index - approximately equal to Claude Opus 5 and Fable 5 in Claude Code, and Muse Spark 1.3 in Muse Code. Fable 5.1 in Claude Code leads the Index with a score of 70.
+
+➤ 70% more token efficient than GPT-5.6 Sol: GPT-6 Astra sees a substantial improvement in token efficiency, using one third of the tokens compared to GPT-5.6 Sol (max) in the Codex harness, and one fifth of the tokens of Claude Opus 5 (xhigh). Various effort levels of the model occupy the Pareto frontier of token efficiency.
+
+➤ Leads Coding Agent Index cost efficiency frontier: At max effort, GPT-6 Astra costs about the same as GPT-5.6 Sol (max) while scoring 2 points higher on the Index. Per task, the model is less than half the cost of Claude Fable 5, for the same score.
+
+Artificial Analysis Intelligence Index - key takeaways:
+
+➤ Sits beside GPT-5.6 Sol in Intelligence: GPT-6 Astra scores equal to GPT-5.6 Sol in the Index at 61. This is 5 points lower than Claude Fable 5.1 (max with fallback). The model also trails Meta’s newly released Muse Spark 1.3 (max).
+
+➤ ~10% fewer output tokens, offset by price increase: GPT-6 Astra defines a new Pareto frontier for Intelligence Index vs Output Tokens per Task - with a ~10% reduction in token use at max effort compared to GPT-5.6 Sol. However, due to the 2.5x increase in price, the model is 75% more expensive per task than its predecessor at max effort.
+
+➤ Hallucinates half as much as GPT-5.6 Sol: GPT-6 Astra sees a large jump in AA-Omniscience, our knowledge and hallucination benchmark. This is driven by a significant decrease in hallucination rate from 92% to 51% at max effort. Unlike some models, this improvement does not come at the cost of accuracy - Astra increased accuracy by 4 points at the same time.
+
+➤ ~80 point gain in AA-Briefcase Elo: GPT-6 Astra improves ~80 points in AA-Briefcase, our frontier long-horizon knowledge work evaluation. Models are tested on multi-week projects, with many linked tasks and thousands of source files. Astra sees a significant increase in both rubric scores and Analytical Quality Elo in AA-Briefcase compared to its predecessor. In the other direction, we observe a reduction in Presentation Quality Elo, where GPT-5.6 Sol (max) still leads all models.
+
+➤ Mixed progress on other evaluations: The model sees a 6 point gain in Humanity’s Last Exam, a long-standing evaluation with emphasis on mathematics, science, and humanities. This is offset by a drop of ~80 Elo points in GDPval-AA v2 - a benchmark we adapted from OpenAI’s dataset measuring economically valuable tasks across 44 occupations. We also observe 2-3 point regressions on other evaluations across a mix of capabilities, including reductions in τ³-Banking (customer support), SciCode (Python problems in a scientific domain), and AA-LCR (long context reasoning over large documents).
+
+Image
+
+Coding Agent Index cost improvements are driven by token efficiency, with a ~3x token reduction at max effort compared to GPT-5.6 Sol (max).
+
+Image
+
+GPT-6 Astra is on the Pareto frontier for Coding Agent Index vs Cost per Task, with its max effort setting costing about the same as GPT-5.6 Sol (max) while scoring 2 points higher in the Index.
+
+Image
+
+GPT-6 Astra defines a new Pareto frontier for Intelligence Index vs Output Tokens per Task - with a ~10% reduction in output tokens at max effort compared to GPT-5.6 Sol.
+
+Image
+
+GPT-6 Astra is 75% more expensive than GPT-5.6 Sol at max effort, and largely sits behind its predecessor on the Intelligence Index vs Cost per Task frontier. This is driven by a 2.5x increase in price, partially offset by a reduction in token use.
+
+Image
+
+GPT-6 Astra sees a large jump in AA-Omniscience, driven by a significant decrease in hallucination rate from 92% to 51% at max effort, alongside a modest increase in accuracy.
+
+Image
+
+The model shows mixed progress in agentic knowledge work - improving ~80 points in AA-Briefcase, but regressing a similar amount in GDPval-AA v2. In AA-Briefcase, Astra sees a significant increase in both rubric scores and Analytical Quality Elo, but a reduction in Presentation Quality Elo.
+
+Image
+
+Breakdown of the individual evaluations in the Artificial Analysis Intelligence Index v4.1.1.
+
+Compare GPT-6 Astra with other leading models at: www.artificialanalysis.ai--------------------------------------------------------------------------------
+GPT-6 Astra (max) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/gpt-6-astra/)
+citeturn5search2 [wordlim: 200] Published: 3 days ago; Crawled: yesterday; GPT-6 Astra (max) scores 61 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 36). ... Artificial Analysis Intelligence Index v4.1.1 incorporates 9 evaluations: GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GPQA Diamond, CritPt, AA-Omniscience, AA-LCR
+
+GPT-6 Astramax
+
+•
+
+Proprietary model
+
+•
+
+Released September 2026
+
+# GPT-6 Astra (max) Intelligence, Performance & Price Analysis
+
+CompareTry it out API Provider Benchmarks
+
+### Model summary
+
+#### Intelligence
+
+#8 / 202
+
+61
+
+Artificial Analysis Intelligence Index
+
+4 out of 4 units for Intelligence.
+
+#### Speed
+
+N/A
+
+Output tokens per second
+
+Unknown out of 4 units for Speed.
+
+#### Cost
+
+#86 / 202
+
+In $10.00 Out $50.00 Cache Discount 90%
+
+$1.67
+
+Cost per Intelligence Index task
+
+4 out of 4 units for Cost.
+
+#### Verbosity
+
+#36 / 202
+
+42M
+
+Output tokens from Intelligence Index
+
+2 out of 4 units for Verbosity.
+
+### Comparison Summary
+
+GPT-6 Astra (max) is amongst the leading models in intelligence, but particularly expensive when comparing to other models of similar price. The model supports text and image input, outputs text, and has a 1M tokens context window with knowledge up to April 2026.
+
+GPT-6 Astra (max) scores 61 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 36). When evaluating the Intelligence Index, it generated 42M tokens, which is fairly concise in comparison to the median of 62M.
+
+Pricing for GPT-6 Astra (max) is $10.00 per 1M input tokens (expensive, median: $2.00) and $50.00 per 1M output tokens (expensive, median: $10.00). In total, it cost $3013.30 to evaluate GPT-6 Astra (max) on the Intelligence Index.
+
+### Technical specifications
+
+Reasoning  | Yes This page shows the reasoning version of this model.A non-reasoning variant may also exist.
+Input modality  | Supports: text and image
+Output modality  | Supports: text
+Knowledge cutoff  | Apr 30, 2026
+Context window  | 1M~1500 A4 pages of size 12 Arial font
+
+
+Prompt Options
+
+## Intelligence
+
+### Artificial Analysis Intelligence Index
+
+Artificial Analysis Intelligence Index v4.1.1 incorporates 9 evaluations: GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GPQA Diamond, CritPt, AA-Omniscience, AA-LCR
+
+27 of 643 models
+
+Add model from specific provider
+
+###
+
+Artificial Analysis Intelligence Index
+--------------------------------------------------------------------------------
+Changelog | Artificial Analysis (https://artificialanalysis.ai/changelog)
+citeturn5search3 [wordlim: 200] Crawled: today; Track the latest AI model benchmarks, performance evaluations, and platform updates. ... 🔔 New article published Benchmarking GPT-6 Astra GPT-6 Astra makes significant gains in the Artificial Analysis Coding Agent Index, scoring equal to Fable 5 at lower cost. ... MiniMax-M3 Kimi K2.7 Code DeepSeek V4 Flash Vision (Reasoning, Max Effort)Muse Glimmer (high)Nemotron 3 Ultra 550B A55B (Reasoning)
+
+Qwen3.8-Flash-Next
+
+Image: Meta
+
+Meta performance results now available
+
+Muse Spark 1.3 (max)
+
+#### 03 Sept 2026
+
+🔔 New article published Benchmarking GPT-6 Astra GPT-6 Astra makes significant gains in the Artificial Analysis Coding Agent Index, scoring equal to Fable 5 at lower cost. In the Intelligence Index, it uses fewer tokens than GPT-5.6 Sol for similar performance, but this is outweighed by higher prices
+
+New language model evaluation results available GPT-6 Astra (Non-reasoning)Intelligence Index: 48
+
+New language model evaluation results available GPT-6 Astra (low)Intelligence Index: 49
+
+New language model evaluation results available GPT-6 Astra (medium)Intelligence Index: 52
+
+New language model evaluation results available GPT-6 Astra (high)Intelligence Index: 53
+
+New language model evaluation results available GPT-6 Astra (xhigh)Intelligence Index: 54
+
+New language model evaluation results available GPT-6 Astra (max)Intelligence Index: 55
+--------------------------------------------------------------------------------
+GPT-6 Astra (Non-reasoning) vs Command A+: Model Comparison | Artificial Analysis (https://artificialanalysis.ai/models/comparisons/gpt-6-astra-non-reasoning-vs-command-a-plus)
+citeturn5search4 [wordlim: 200] Crawled: 2 days ago;  | Image: OpenAI logo OpenAI GPT-6 Astra (Non-reasoning)  | Image: Cohere logo Cohere Command A+  | ... Intelligence Index  | 55  | 23  | GPT-6 Astra (Non-reasoning) is more intelligent than Command A+ ... Artificial Analysis Intelligence Index v4.1.1 incorporates 9 evaluations: GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GPQA Diamond, CritPt, AA-Omniscience, AA-LCR
+
+# GPT-6 Astra (Non-reasoning) vs. Command A+
+
+Comparison between GPT-6 Astra (Non-reasoning) and Command A+ across intelligence, price, speed, context window and more.
+
+For details relating to our methodology, see our Methodology page.
+
+Highlights
+
+### Intelligence
+
+Artificial Analysis Intelligence Index · Higher is better
+
+### Speed
+
+Output tokens per second · Higher is better
+
+### Cost per Task
+
+Weighted average cost (USD) per Intelligence Index task · Lower is better
+
+Model ComparisonIntelligenceBenchmarksOpenness IndexIntelligence Index ComparisonsToken UseCostContext WindowSpeedLatencyEnd-to-End Response TimeModel Size (Open Weights Models Only)
+
+## Model Comparison
+
+ | Image: OpenAI logoOpenAI GPT-6 Astra (Non-reasoning)  | Image: Cohere logoCohere Command A+  |
+--- | --- | --- | ---
+Intelligence Index  | 55  | 23  | GPT-6 Astra (Non-reasoning) is more intelligent than Command A+
+--------------------------------------------------------------------------------
+GPT-6 Astra (low) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/gpt-6-astra-low)
+citeturn5search5 [wordlim: 200] Published: 3 days ago; Crawled: today; GPT-6 Astra (low) scores 49 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 29). ... GPT-6 Astra (low) generates output at 85.7 tokens per second (based on OpenAI's API), which is above average compared to other reasoning models in a similar price tier (median: 73.5 t/s).
+
+### Cost per Task
+
+Weighted average cost (USD) per Intelligence Index task · Lower is better
+
+IntelligenceUpdatedBenchmarksIntelligence Index ComparisonsToken UseCostContext WindowSpeedLatencyEnd-to-End Response Time
+
+Prompt Options
+
+## Intelligence Updated
+
+### Artificial Analysis Intelligence Index
+
+Artificial Analysis Intelligence Index v4.2 incorporates 10 evaluations: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1
+
+23 of 643 models
+
+Add model from specific provider
+
+###
+
+Artificial Analysis Intelligence Index
+
+Artificial Analysis Intelligence Index v4.2 includes: AA-Briefcase, GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+--------------------------------------------------------------------------------
+GPT-6 Astra (Non-reasoning) vs Claude Opus 5 (Adaptive Reasoning, Xhigh Effort): Model Comparison | Artificial Analysis (https://artificialanalysis.ai/models/comparisons/gpt-6-astra-non-reasoning-vs-claude-opus-5-xhigh)
+citeturn5search6 [wordlim: 200] Crawled: yesterday;  | Image: OpenAI logo OpenAI GPT-6 Astra (Non-reasoning)  | Image: Anthropic logo Anthropic Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)  | ... Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) scores 63, compared with GPT-6 Astra (Non-reasoning) at 55 on the Artificial Analysis Intelligence Index.
+
+# GPT-6 Astra (Non-reasoning) vs. Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)
+
+Comparison between GPT-6 Astra (Non-reasoning) and Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) across intelligence, price, speed, context window and more.
+
+For details relating to our methodology, see our Methodology page.
+
+
+## Model Comparison
+
+ | Image: OpenAI logoOpenAI GPT-6 Astra (Non-reasoning)  | Image: Anthropic logoAnthropic Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)  |
+--- | --- | --- | ---
+Intelligence Index  | 55  | 63  | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) is more intelligent than GPT-6 Astra (Non-reasoning)
+Price per 1M Tokens  | $7.70  | $3.85  | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) is cheaper than GPT-6 Astra (Non-reasoning)
+Context Window  | 1000k tokens~1,500 A4 pages of size 12 Arial font  | 1000k tokens~1,500 A4 pages of size 12 Arial font  | Both GPT-6 Astra (Non-reasoning) and Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) have the same sized context window
+--------------------------------------------------------------------------------
+GPT-6 Astra (high) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/gpt-6-astra-high)
+citeturn5search7 [wordlim: 200] Published: 3 days ago; Crawled: today; Image: OpenAI logo ... # GPT-6 Astra (high) Intelligence, Performance & Price Analysis ... GPT-6 Astra (high) scores 53 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 29).
+
+Image: OpenAI logo
+
+OpenAI
+
+•
+
+GPT-6 Astrahigh
+
+•
+
+Proprietary model
+
+•
+
+Released September 2026
+
+# GPT-6 Astra (high) Intelligence, Performance & Price Analysis
+
+CompareTry it out API Provider Benchmarks
+
+### Model summary
+
+#### IntelligenceUpdated
+
+#7 / 202
+
+53
+
+Artificial Analysis Intelligence Index
+
+4 out of 4 units for Intelligence.
+
+#### Speed
+
+#57 / 202
+
+87.4
+
+Output tokens per second
+
+3 out of 4 units for Speed.
+
+#### Cost
+
+#29 / 202
+
+In $10.00 Out $50.00 Cache Discount 90%
+
+$1.41
+
+Cost per Intelligence Index task
+
+3 out of 4 units for Cost.
+
+#### Verbosity
+
+#7 / 202
+
+19M
+
+Output tokens from Intelligence Index
+
+1 out of 4 units for Verbosity.
+
+### Comparison Summary
+
+GPT-6 Astra (high) is amongst the leading models in intelligence, but particularly expensive when comparing to other models of similar price. It's also faster than average and highly concise. The model supports text and image input, outputs text, and has a 1M tokens context window with knowledge up to April 2026.
+
+GPT-6 Astra (high) scores 53 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 29). When evaluating the Intelligence Index, it generated 19M tokens, which is very concise in comparison to the median of 79M.
+
+Pricing for GPT-6 Astra (high) is $10.00 per 1M input tokens (expensive, median: $2.00) and $50.00 per 1M output tokens (expensive, median: $10.00). In total, it cost $2038.95 to evaluate GPT-6 Astra (high) on the Intelligence Index.
+
+At 87 tokens per second, GPT-6 Astra (high) is faster than average (74).
+
+### Technical specifications
+
+Reasoning  | Yes This page shows the reasoning version of this model.A non-reasoning variant may also exist.
+Input modality  | Supports: text and image
+Output modality  | Supports: text
+Knowledge cutoff  | Apr 30, 2026
+Context window  | 1M~1500 A4 pages of size 12 Arial font
+
+
+Metrics are compared against models of the same class:
+
+  * Non-reasoning models → compared only with other non-reasoning models
+  * Reasoning models → compared across both reasoning and non-reasoning
+--------------------------------------------------------------------------------
+GPT-6 Astra (Non-reasoning) vs GPT-6 Astra (max): Model Comparison | Artificial Analysis (https://artificialanalysis.ai/models/comparisons/gpt-6-astra-non-reasoning-vs-gpt-6-astra)
+citeturn5search8 [wordlim: 200] Crawled: 2 days ago; GPT-6 Astra (max) scores 61, compared with GPT-6 Astra (Non-reasoning) at 55 on the Artificial Analysis Intelligence Index.
+## Frequently Asked Questions
+
+### Which is more intelligent, GPT-6 Astra (Non-reasoning) or GPT-6 Astra (max)?
+
+GPT-6 Astra (max) is more intelligent. GPT-6 Astra (max) scores 61, compared with GPT-6 Astra (Non-reasoning) at 55 on the Artificial Analysis Intelligence Index.
+
+### Which is cheaper, GPT-6 Astra (Non-reasoning) or GPT-6 Astra (max)?
+
+Both models cost $7.70 per 1M tokens (7:2:1 cache hit/input/output ratio).
+
+### Which has a larger context window, GPT-6 Astra (Non-reasoning) or GPT-6 Astra (max)?
+
+Both models have a context window of 1.0M tokens.
+--------------------------------------------------------------------------------
+Models | OpenAI API (https://developers.openai.com/api/docs/models/gpt)
+citeturn5search9 [wordlim: 200] Crawled: 2 days ago; If you're not sure where to start, use GPT-6 Astra, our flagship model for complex reasoning and coding. ... GPT‑6 Astra is rolling out today for enterprises in our Trusted Access Program⁠, with access through API and our Plus, Pro, Business and Enterprise plans coming in the coming days.
+
+# Models
+
+## Choosing a model
+
+If you're not sure where to start, use GPT-6 Astra, our flagship model for complex reasoning and coding. Choose GPT-5.6 Terra to balance intelligence and cost, or GPT-5.6 Luna for cost-sensitive, high-volume workloads.
+
+All latest OpenAI models support text and image input, text output, multilingual capabilities, and vision. Models are available via the Responses API and our Client SDKs.
+
+## Flagship models
+
+Compare model capabilities and specifications.
+
+View all Compare models
+
+GPT‑6 Astra is rolling out today for enterprises in our Trusted Access Program⁠, with access through API and our Plus, Pro, Business and Enterprise plans coming in the coming days.
+
+Astra GPT-6 Astra Our most capable model, built for the hardest end-to-end work
+
+Model ID
+
+gpt-6-astra
+
+Reasoning
+
+low medium high xhigh max
+
+Input price
+
+$10 / Input MTok
+
+Output price
+
+$50 / Output MTok
+
+--------------------------------------------------------------------------------
+GPT-6 Astra (high) vs GPT-6 Astra (low): Model Comparison | Artificial Analysis (https://artificialanalysis.ai/models/comparisons/gpt-6-astra-high-vs-gpt-6-astra-low)
+citeturn5search10 [wordlim: 200] Crawled: 2 days ago;  | Image: OpenAI logo OpenAI GPT-6 Astra (high)  | Image: OpenAI logo OpenAI GPT-6 Astra (low)  | ... GPT-6 Astra (high) scores 60, compared with GPT-6 Astra (low) at 57 on the Artificial Analysis Intelligence Index.
+--------------------------------------------------------------------------------
+GPT-6 Astra (Non-reasoning) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/gpt-6-astra-non-reasoning)
+citeturn5search11 [wordlim: 200] Published: 3 days ago; Crawled: today; GPT-6 Astra (Non-reasoning) scores 48 on the Artificial Analysis Intelligence Index, placing it well above average among other non-reasoning models in a similar price tier (median: 17). ... GPT-6 Astra (Non-reasoning) costs $10.00 per 1M input tokens (at the higher end, median: $1.88) and $50.00 per 1M output tokens (at the higher end, median: $9.50), based on OpenAI's API.
+--------------------------------------------------------------------------------
+02. Language Models (https://artificialanalysis.ai/downloads/state-of-ai/2025/Q3-2025-Artificial-Analysis-State-of-AI-Highlights-Report.pdf)
+citeturn5search12 [wordlim: 200] Leading Large Language Models (LLMs), by AI labArtificial Analysis Intelligence Index v3.0 incorporates 10 evaluations: MMLU-Pro, GPQA Diamond, Humanity's Last Exam, LiveCodeBench, SciCode, AIME 2025, IFBench, AA-LCR, Terminal-Bench Hard, τ²-Bench Telecom ... <tr><td>55</td><td>GLM-4.6</td></tr> ... • OpenAI regains frontier leadership: GPT-5 (High) takes the lead with an intelligence index of 68, moving ahead of xAI’s Grok 4 and reclaiming the lead that OpenAI briefly lost last quarter
+--------------------------------------------------------------------------------
+02. Language Models (https://artificialanalysis.ai/downloads/state-of-ai/2025/Q2-2025-Artificial-Analysis-State-of-AI-Highlights-Report.pdf)
+citeturn5search13 [wordlim: 200] Highest Artificial Analysis Intelligence Index v2 achieved by each AI Lab ... <tr><td>55</td><td>Magistral Small</td></tr> ... <tr><td>53</td><td>GPT-4.1</td></tr> ... • OpenAI loses frontier for the first time: xAI’s Grok 4 is now the most intelligent language model, sitting ahead of o3-pro, OpenAI’s frontier model
+--------------------------------------------------------------------------------
+02. Language Models (https://artificialanalysis.ai/downloads/state-of-ai/2025/2025-Year-End-Artificial-Analysis-State-of-AI-Highlights-Report.pdf)
+citeturn5search14 [wordlim: 200] As at the end of 2025, OpenAI, xAI and Anthropic lead frontier intelligence with their latest reasoning models with a significant gap to the next set of AI labs ... Artificial Analysis Intelligence Index v4.0 incorporates 10 evaluations: GDPval-AA, τ²-Bench Telecom, Terminal-Bench Hard, SciCode, AA-LCR, AA-Omniscience, IFBench, Humanity's Last Exam, GPQA Diamond, CritPt ... • OpenAI still leads with GPT-5.2 (xhigh), but competes in an increasingly crowded frontier where Anthropic, Google, xAI, and Chinese labs have all released competitive reasoning models
+--------------------------------------------------------------------------------
+Claude Fable 5.1 (max with fallback) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/claude-fable-5-1)
+citeturn5view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn3view1","lineno":15}); Total lines: 587
+L0:   * [Button: Models]
+L1:   * [Button: Coding Agents]
+L2:   * [Button: Speech, Image, Video]
+L3:   * [Button: Inference]
+L4:   * [Button: Leaderboards]
+L5:   * [Button: About]
+L6:
+L7:   * cite0†AI Trends L8:
+L9:   * Arenas
+L10:
+L11: cite1†Image: Anthropic logo L12:
+L13: cite2†Anthropic†www.anthropic.com L14:
+L15: •
+L16:
+L17: cite3†Claude Fable 5.1 max
+L18:
+L19: •
+L20:
+L21: Proprietary model
+L22:
+L23: •
+L24:
+L25: Released September 2026
+L26:
+L27: # Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) Intelligence, Performance & Price Analysis
+L28:
+L29: Comparecite4†Try it out cite5†API Provider Benchmarks L30:
+L31: ### Model summary
+--------------------------------------------------------------------------------
+GPT-6 Astra (max) - Intelligence, Performance & Price Analysis | Artificial Analysis (https://artificialanalysis.ai/models/gpt-6-astra)
+citeturn5view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn3view0","lineno":15}); Total lines: 598
+L0:   * [Button: Models]
+L1:   * [Button: Coding Agents]
+L2:   * [Button: Speech, Image, Video]
+L3:   * [Button: Inference]
+L4:   * [Button: Leaderboards]
+L5:   * [Button: About]
+L6:
+L7:   * cite0†AI Trends L8:
+L9:   * Arenas
+L10:
+L11: cite1†Image: OpenAI logo L12:
+L13: cite2†OpenAI†openai.com L14:
+L15: •
+L16:
+L17: cite3†GPT-6 Astra max
+L18:
+L19: •
+L20:
+L21: Proprietary model
+L22:
+L23: •
+L24:
+L25: Released September 2026
+L26:
+L27: # GPT-6 Astra (max) Intelligence, Performance & Price Analysis
+L28:
+L29: Comparecite4†Try it out cite5†API Provider Benchmarks L30:
+L31: ### Model summary
+L32:
+L33: #### cite6†Intelligence Updated
