@@ -1,0 +1,18 @@
+{
+  "creator": "max-txt2img",
+  "tool": "OpenAI built-in image generation",
+  "references": [
+    "article.md section: 검은콩의 성분과 사람 연구",
+    "evidence.md claims C02-C13",
+    "brief.md supporting infographic decision"
+  ],
+  "output_path": "assets/black-soybean-claims-infographic-v2.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "5403f6440429ab296296f658a716ca19b7ee47267a7310385261876468a0d3cb",
+  "requested_ratio": "16:9",
+  "observed_ratio": "1672:941 (approximately 16:9)",
+  "correction_count": 1,
+  "inspection_result": "Pass. The user confirmed mobile label readability. Independent revalidation classified the people and calendar pictograms as symbolic because they have no one-icon-per-person legend, scale, or numbered cells; the exact quantitative statement is carried by the adjacent label '22명 · 4주 혈관 연구'. All eight Korean strings, three evidence regions, connectors, opaque background, and 916-pixel display passed.",
+  "source_font_sizes": "unavailable for generated raster"
+}
