@@ -1,29 +1,29 @@
 {
   "version": 2,
   "checked_at": "2026-09-06",
-  "checked_by": "/root/final_page_review",
+  "checked_by": "revision_final_review",
   "browser": "Chrome/152.0.7977.76",
-  "session": "dcd1e8d3-9c19-446d-82a1-8882cc453a68",
+  "session": "19e0faaa-9747-4604-bbbd-a8fd21bf1986",
   "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
-  "capture_receipt_sha256": "5ba3ea514af6e73ed5d6de9c1d67444d6039d0a110601e24c869154d5c733b85",
+  "capture_receipt_sha256": "9aa594be465867f3f5ea96ae58b1d0136d9601725d9279c7d9c2bcc6424a592f",
   "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
-  "dark_capture_receipt_sha256": "65d0693249b2c6485998f46cae1c72e8ce12d90a1fc332411705e9a213cddc0b",
-  "source_pass_sha256": "0819965da5e3e47509fde05b39ec26730d0cd71c8e81a9dcdd0ee9bc16d772c9",
-  "article_content_sha256": "02b8c72ea22d59159d69a7a257ddd21ae446e27292e8fd2c49a4624dc4299211",
-  "media_sha256": "290d6a607624e6484c49d6f908fcead6c4eaa5642e613e84848f5f17853e7f6c",
+  "dark_capture_receipt_sha256": "ab985b8d9fd06344d9020551de1475d47186a417b82730e0e9495b1af931ab31",
+  "source_pass_sha256": "dc9231cbf2015c4ef981de682b9eaa0efc820299cba722b6f60d889edb92b549",
+  "article_content_sha256": "8537820d449ebc34f641cb4c94762aad56e81cf47116e28f3332ca3e5a35b948",
+  "media_sha256": "f1c9dff2491884a22ae559a4178d0939339ecaf529517cf35700548ce780e1d1",
   "renderer_sha256": "ffc7b5f2af6783ca8125d3ddd53b7103e8eb16993eac509232fec595c9a9263d",
   "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
   "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
-  "remote_media_sha256": "ec7097b7789c54da0e991a5424daebd15d19d9b9cc76e8a971b092c4fefa32fd",
+  "remote_media_sha256": "43c77051e44ef63373a821479dc2e20343f57e0102754cf686406ca524604eb5",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa-v2/final-rendered/gpt-6-astra-vs-fable-5-1-rich-preview.html",
-  "preview_sha256": "56491e6cddafa7427a36f66793506b09b2af809ab3ffd616d21c75230cd6fbe2",
-  "preview_structure_sha256": "433a9f4dfebdeb34438928935731f1e663a736cc6471ec13462470d6ddac8d8e",
+  "preview_sha256": "4cfa725ef56df8dcfbf5a54c006cdfcfe1afc03267ee04244d5f619bad05b73e",
+  "preview_structure_sha256": "f52bf35cb1f383d7ba282ae72282395f07664dddea36190a12bb77c440040df4",
   "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/gpt-6-astra-vs-fable-5-1-rich-preview.html",
-  "dark_preview_sha256": "e4cf9bbbf385e1f16a33d1f7db69761c783bed3192e7827c67acfa015c208aa6",
+  "dark_preview_sha256": "2140ab006826fcf3ea34a45f9b0d2446c3ffe3152c41f0e97c0ee121a6e966d7",
   "fragment_path": "artifacts/qa-v2/final-rendered/gpt-6-astra-vs-fable-5-1-tistory-fragment.html",
-  "fragment_sha256": "2c6d48be6f36c3f9ba1b2a2e7bf7ffe436715ba6166cb9796427ab4c17de3723",
+  "fragment_sha256": "877621da06a66b2a39a22bf76e804571c3af29f0ee027390cfc483913a4cf7f1",
   "viewports": [
     {
       "width": 1280,
@@ -38,7 +38,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "d54f730a2fc2f86ef11b507b44ce90deb559e86f6cd225aa6a1235118ebb2f89"
+      "screenshot_sha256": "b02d14c674d88daf9001453bf7164f1fa3bf13f6427c49a2ce20cb5f1a75bf61"
     },
     {
       "width": 360,
@@ -53,7 +53,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "b58566444e6b6790edb7038b2f845c045e93f1d56ebc1dac9735d80fb182eec5"
+      "screenshot_sha256": "efbf7b9924499910b839bae138ac34e0879c369df640fae512fae36285f638c0"
     }
   ],
   "dark_viewports": [
@@ -70,7 +70,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "13a19aa4881330e9dfe4536d19529bc3ac6f4aaf1a4f64839ddf64a4f6f5b800"
+      "screenshot_sha256": "1e890c661f5b5381a753eb7bec11a270fa45e76e6759567b12c687c5cf56ede4"
     },
     {
       "width": 360,
@@ -85,7 +85,7 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "18bba1fdf0121c80e77c03b8f1263a15ef7845174b0c9f1a7c8908b003d4d853"
+      "screenshot_sha256": "13050970c079839cfd340ea19ff53f92209208fab3eef0be108b3993b2d58767"
     }
   ],
   "fragment": {

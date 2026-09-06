@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-09-06T00:34:37.389246Z",
-  "checked_by": "/root/source_review",
-  "article_content_sha256": "02b8c72ea22d59159d69a7a257ddd21ae446e27292e8fd2c49a4624dc4299211",
-  "brief_sha256": "9496ef0eb303ea6ae6befb23a8813933160249aa148e418c51abbbe29e2dc13b",
-  "evidence_sha256": "53adf086035de72778afe68bd581a689fed132f4a5035406fa686a5f6bdebce9",
-  "note": ""
+  "checked_at": "2026-09-06T01:30:37.076583Z",
+  "checked_by": "/root/revision_source_review",
+  "article_content_sha256": "8537820d449ebc34f641cb4c94762aad56e81cf47116e28f3332ca3e5a35b948",
+  "brief_sha256": "f2c43a8ccc79599e5f5b09703fbf281c0de30639d6d25f803763dd2a39dacb7b",
+  "evidence_sha256": "653c55bd77c481c333cd79fdbc058e969e1ff99bbb8d628c331de33774b3c1ee",
+  "note": "전면 개정 원문과 공식 근거를 독립 대조했습니다. 신규 CDN 및 최종 페이지 검증은 별도이며 reviewing을 유지합니다."
 }

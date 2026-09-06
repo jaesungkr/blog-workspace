@@ -2,16 +2,16 @@
   "version": 2,
   "status": "pass",
   "mode": "final-dark",
-  "checked_at": "2026-09-06T01:02:21.822966Z",
-  "checked_by": "/root/final_page_review",
+  "checked_at": "2026-09-06T01:44:26.345561Z",
+  "checked_by": "revision_final_review",
   "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "preview_path": "artifacts/qa-v2/final-dark-rendered/gpt-6-astra-vs-fable-5-1-rich-preview.html",
-  "preview_sha256": "e4cf9bbbf385e1f16a33d1f7db69761c783bed3192e7827c67acfa015c208aa6",
+  "preview_sha256": "2140ab006826fcf3ea34a45f9b0d2446c3ffe3152c41f0e97c0ee121a6e966d7",
   "screenshot_root": "artifacts/qa-v2/final/dark",
   "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
   "browser_version": "Chrome/152.0.7977.76",
   "protocol_version": "1.3",
-  "session": "e7e7735a-8134-4775-988e-facb3278f8de",
+  "session": "1a254291-d5c6-40ef-b21c-4e60011ef094",
   "viewports": [
     {
       "ready_state": "complete",
@@ -21,21 +21,39 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 6687,
+      "scroll_height": 9906,
       "h1_count": 1,
-      "toc_anchor_count": 6,
+      "toc_anchor_count": 7,
       "toc_targets_unique": true,
-      "image_count": 1,
+      "image_count": 4,
       "images_loaded": true,
       "images": [
         {
-          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbfUhcH%2FdJMcahZ0gvJ%2FAAAAAAAAAAAAAAAAAAAAAE1Zpe2SWSaVY51OO11IY9zVyGchBD0mihRyXQBRWOVN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dhu36t4cSGT8qnMWdo0b5eDxAzZ4%253D",
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fd4h57e%2FdJMcafuoH5K%2FAAAAAAAAAAAAAAAAAAAAAGvemsQfDsCECtuDFFkcMeBwct1-9hyATe9vzFUrlS26%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DIgnoj0pO54QA3NxIj8ah%252BQXl0f4%253D",
           "complete": true,
           "natural_width": 1280,
           "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaCDTY%2FdJMcacq1cKc%2FAAAAAAAAAAAAAAAAAAAAAEeNALAoj-fXqIqWC4PDI0eV-CGGvB4gB4OfbSgnjMSa%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dq2Er32lIsOFpNcM49n7gABYXoGI%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdW9YfD%2FdJMcafuoH5R%2FAAAAAAAAAAAAAAAAAAAAAFi210pJgCeQ2MAwJcVO4HiOjshtTRtofbTXB6FOcggZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DuAeCj8s05wZf950KWvC47JXPTt4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdJkTYs%2FdJMcacRTnKI%2FAAAAAAAAAAAAAAAAAAAAAJHc7DnHem6twpHFliKTxgzzBZkUTW9JtmawSjG_fp7E%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DLx1YxZY41jCnjSEBRiIdckL%252BZuc%253D",
+          "complete": true,
+          "natural_width": 596,
+          "natural_height": 540
         }
       ],
-      "screenshot_sha256": "13a19aa4881330e9dfe4536d19529bc3ac6f4aaf1a4f64839ddf64a4f6f5b800",
+      "screenshot_sha256": "1e890c661f5b5381a753eb7bec11a270fa45e76e6759567b12c687c5cf56ede4",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
       "width": 1280,
@@ -51,21 +69,39 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 9155,
+      "scroll_height": 12591,
       "h1_count": 1,
-      "toc_anchor_count": 6,
+      "toc_anchor_count": 7,
       "toc_targets_unique": true,
-      "image_count": 1,
+      "image_count": 4,
       "images_loaded": true,
       "images": [
         {
-          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbfUhcH%2FdJMcahZ0gvJ%2FAAAAAAAAAAAAAAAAAAAAAE1Zpe2SWSaVY51OO11IY9zVyGchBD0mihRyXQBRWOVN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dhu36t4cSGT8qnMWdo0b5eDxAzZ4%253D",
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fd4h57e%2FdJMcafuoH5K%2FAAAAAAAAAAAAAAAAAAAAAGvemsQfDsCECtuDFFkcMeBwct1-9hyATe9vzFUrlS26%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DIgnoj0pO54QA3NxIj8ah%252BQXl0f4%253D",
           "complete": true,
           "natural_width": 1280,
           "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaCDTY%2FdJMcacq1cKc%2FAAAAAAAAAAAAAAAAAAAAAEeNALAoj-fXqIqWC4PDI0eV-CGGvB4gB4OfbSgnjMSa%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dq2Er32lIsOFpNcM49n7gABYXoGI%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdW9YfD%2FdJMcafuoH5R%2FAAAAAAAAAAAAAAAAAAAAAFi210pJgCeQ2MAwJcVO4HiOjshtTRtofbTXB6FOcggZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DuAeCj8s05wZf950KWvC47JXPTt4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdJkTYs%2FdJMcacRTnKI%2FAAAAAAAAAAAAAAAAAAAAAJHc7DnHem6twpHFliKTxgzzBZkUTW9JtmawSjG_fp7E%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DLx1YxZY41jCnjSEBRiIdckL%252BZuc%253D",
+          "complete": true,
+          "natural_width": 596,
+          "natural_height": 540
         }
       ],
-      "screenshot_sha256": "18bba1fdf0121c80e77c03b8f1263a15ef7845174b0c9f1a7c8908b003d4d853",
+      "screenshot_sha256": "13050970c079839cfd340ea19ff53f92209208fab3eef0be108b3993b2d58767",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
       "width": 360,

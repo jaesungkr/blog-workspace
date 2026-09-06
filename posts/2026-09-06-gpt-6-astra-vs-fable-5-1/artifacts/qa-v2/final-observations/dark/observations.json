@@ -7,21 +7,39 @@
     "client_width": 1280,
     "client_height": 900,
     "scroll_width": 1280,
-    "scroll_height": 6687,
+    "scroll_height": 9906,
     "h1_count": 1,
-    "toc_anchor_count": 6,
+    "toc_anchor_count": 7,
     "toc_targets_unique": true,
-    "image_count": 1,
+    "image_count": 4,
     "images_loaded": true,
     "images": [
       {
-        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbfUhcH%2FdJMcahZ0gvJ%2FAAAAAAAAAAAAAAAAAAAAAE1Zpe2SWSaVY51OO11IY9zVyGchBD0mihRyXQBRWOVN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dhu36t4cSGT8qnMWdo0b5eDxAzZ4%253D",
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fd4h57e%2FdJMcafuoH5K%2FAAAAAAAAAAAAAAAAAAAAAGvemsQfDsCECtuDFFkcMeBwct1-9hyATe9vzFUrlS26%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DIgnoj0pO54QA3NxIj8ah%252BQXl0f4%253D",
         "complete": true,
         "natural_width": 1280,
         "natural_height": 720
+      },
+      {
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaCDTY%2FdJMcacq1cKc%2FAAAAAAAAAAAAAAAAAAAAAEeNALAoj-fXqIqWC4PDI0eV-CGGvB4gB4OfbSgnjMSa%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dq2Er32lIsOFpNcM49n7gABYXoGI%253D",
+        "complete": true,
+        "natural_width": 1280,
+        "natural_height": 720
+      },
+      {
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdW9YfD%2FdJMcafuoH5R%2FAAAAAAAAAAAAAAAAAAAAAFi210pJgCeQ2MAwJcVO4HiOjshtTRtofbTXB6FOcggZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DuAeCj8s05wZf950KWvC47JXPTt4%253D",
+        "complete": true,
+        "natural_width": 1280,
+        "natural_height": 720
+      },
+      {
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdJkTYs%2FdJMcacRTnKI%2FAAAAAAAAAAAAAAAAAAAAAJHc7DnHem6twpHFliKTxgzzBZkUTW9JtmawSjG_fp7E%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DLx1YxZY41jCnjSEBRiIdckL%252BZuc%253D",
+        "complete": true,
+        "natural_width": 596,
+        "natural_height": 540
       }
     ],
-    "tables": "[{\"width\":760,\"scroll\":760,\"text\":\"항목\\tGPT-6 Astra\\tClaude Fable 5.1\\n개발사\\tOpenAI\\tAnthropic\\n컨텍스트 창\\t105만 토큰\\t100만 토큰\\n최대 출력\\t12만 8천 토큰\\t12만 8천 토큰\\n입력과 출력\\t글·이미지 → 글\\t글·이미지 → 글\\nAPI 모델 ID\\tgpt-6-astra\\tclaude-fable-5-1\"},{\"width\":760,\"scroll\":760,\"text\":\"v4.2 평가 항목\\tAstra\\tFable 5.1\\n추론 설정\\tmax\\tmax, 기본 대체 모델 사용\\n종합 지수, 높을수록 좋음\\t55\\t57\\n과제당 가중평균 비용, 낮을수록 좋음\\t$2.57\\t$6.12\"},{\"width\":760,\"scroll\":760,\"text\":\"100만 토큰당 표준 단가\\tAstra\\tFable 5.1\\n일반 입력\\t$10\\t$10\\n출력\\t$50\\t$50\\n캐시 읽기\\t$1\\t$0.25\\n캐시 쓰기\\t$12.50\\t$12.50, 5분 기준\"},{\"width\":760,\"scroll\":760,\"text\":\"가정한 요청 1회\\tAstra\\tFable 5.1\\n새 입력 10만 + 출력 1만 토큰\\t$1.50\\t$1.50\\n기존 캐시 읽기 10만 + 새 입력 1만 + 출력 1만\\t$0.70\\t$0.625\\n새 입력 30만 + 출력 1만 토큰\\t$6.75\\t$3.50\"},{\"width\":760,\"scroll\":760,\"text\":\"내 상황\\t먼저 시험할 선택\\t선택 이유\\n이미 한쪽 앱에 자료와 도구를 연결한 경우\\t그 앱에서 제공하는 비교 대상 모델\\t같은 작업 환경에서 결과 차이를 확인하기 쉬움\\n어려운 과제의 완성도를 우선하는 경우\\tFable 5.1\\t최신 외부 종합 평가에서 더 높은 점수\\nAPI 과제 비용이 중요한 경우\\tAstra도 함께 시험\\t외부 종합 평가에서 더 낮은 과제당 비용\\n긴 문서를 반복해서 읽히는 경우\\tFable 5.1\\t낮은 캐시 읽기 단가와 장문 할증 없는 요금\"}]"
+    "tables": "[{\"width\":760,\"scroll\":760,\"text\":\"평가 항목\\tGPT-6 Astra\\tFable 5.1\\nTerminal-Bench 4.0 · 터미널 작업\\t57.9%\\t55.8%\\nDeepSWE v1.1 · 소프트웨어 개발\\t74.1%\\t67.4%\\nFrontierCode 1.1 Extended · 코딩\\t64.5%\\t63.6%\\nAutomationBench · 업무 자동화\\t41.4%\\t31.4%\\nTerminal-Bench Science 0.1 · 과학 연구 작업\\t64.6%\\t52.6%\\nFrontierMath Tier 4 v2 · 고난도 수학\\t97.6%\\t87.8%\\nGPQA Diamond · 대학원 수준 과학\\t96.0%\\t93.7%\\nHumanity’s Last Exam · 도구 사용\\t57.2%\\t65.0%\\nARC-AGI-2 · 추상 추론\\t95.0%\\t90.0%\"},{\"width\":760,\"scroll\":760,\"text\":\"Artificial Analysis 평가\\tGPT-6 Astra\\tFable 5.1\\nIntelligence Index v4.2 · 종합 지수\\t55\\t57\\nGDP.pdf · 모든 조건을 충족한 비율\\t33.2%\\t26.2%\\nCoding Agent Index · 9월 3일 발표\\tCodex 67점\\tClaude Code 70점\\nv4.2 과제당 가중평균 비용\\t$2.57\\t$6.12\"},{\"width\":760,\"scroll\":760,\"text\":\"모델/API 사양\\tGPT-6 Astra\\tFable 5.1\\n컨텍스트 창\\t105만 토큰\\t100만 토큰\\n최대 출력\\t12만 8천 토큰\\t12만 8천 토큰\\n입력 → 출력\\t글·이미지 → 글\\t글·이미지 → 글\\nAPI 모델 ID\\tgpt-6-astra\\tclaude-fable-5-1\"},{\"width\":760,\"scroll\":760,\"text\":\"100만 토큰당 표준 단가\\tGPT-6 Astra\\tFable 5.1\\n일반 입력\\t$10\\t$10\\n출력\\t$50\\t$50\\n캐시 읽기\\t$1\\t$0.25\\n캐시 쓰기\\t$12.50\\t$12.50 · 5분 기준\"},{\"width\":760,\"scroll\":760,\"text\":\"가정한 요청 1회\\tGPT-6 Astra\\tFable 5.1\\n새 입력 10만 + 출력 1만 토큰\\t$1.50\\t$1.50\\n캐시 읽기 10만 + 새 입력 1만 + 출력 1만\\t$0.70\\t$0.625\\n새 입력 30만 + 출력 1만 토큰\\t$6.75\\t$3.50\"},{\"width\":760,\"scroll\":760,\"text\":\"주로 맡길 작업\\t먼저 시험할 모델\\t확인할 부분\\n코드 수정·데이터 분석\\tGPT-6 Astra\\t기존 테스트 통과와 작업 비용\\n여러 단계의 긴 프로젝트\\tFable 5.1도 함께 비교\\t요구 사항 누락과 결과물 완성도\\n많은 PDF에서 근거를 종합\\tGPT-6 Astra\\t원문 위치와 예외 조건의 정확성\\n긴 자료를 반복해서 입력\\tFable 5.1\\t캐시 적중과 전체 청구액\\n한국어 보고서·블로그 문장\\t같은 원문으로 두 모델 비교\\t실제로 고쳐야 하는 문장과 수정 시간\"}]"
   },
   {
     "ready_state": "complete",
@@ -31,20 +49,38 @@
     "client_width": 360,
     "client_height": 800,
     "scroll_width": 360,
-    "scroll_height": 9155,
+    "scroll_height": 12591,
     "h1_count": 1,
-    "toc_anchor_count": 6,
+    "toc_anchor_count": 7,
     "toc_targets_unique": true,
-    "image_count": 1,
+    "image_count": 4,
     "images_loaded": true,
     "images": [
       {
-        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbfUhcH%2FdJMcahZ0gvJ%2FAAAAAAAAAAAAAAAAAAAAAE1Zpe2SWSaVY51OO11IY9zVyGchBD0mihRyXQBRWOVN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dhu36t4cSGT8qnMWdo0b5eDxAzZ4%253D",
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fd4h57e%2FdJMcafuoH5K%2FAAAAAAAAAAAAAAAAAAAAAGvemsQfDsCECtuDFFkcMeBwct1-9hyATe9vzFUrlS26%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DIgnoj0pO54QA3NxIj8ah%252BQXl0f4%253D",
         "complete": true,
         "natural_width": 1280,
         "natural_height": 720
+      },
+      {
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbaCDTY%2FdJMcacq1cKc%2FAAAAAAAAAAAAAAAAAAAAAEeNALAoj-fXqIqWC4PDI0eV-CGGvB4gB4OfbSgnjMSa%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dq2Er32lIsOFpNcM49n7gABYXoGI%253D",
+        "complete": true,
+        "natural_width": 1280,
+        "natural_height": 720
+      },
+      {
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdW9YfD%2FdJMcafuoH5R%2FAAAAAAAAAAAAAAAAAAAAAFi210pJgCeQ2MAwJcVO4HiOjshtTRtofbTXB6FOcggZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DuAeCj8s05wZf950KWvC47JXPTt4%253D",
+        "complete": true,
+        "natural_width": 1280,
+        "natural_height": 720
+      },
+      {
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdJkTYs%2FdJMcacRTnKI%2FAAAAAAAAAAAAAAAAAAAAAJHc7DnHem6twpHFliKTxgzzBZkUTW9JtmawSjG_fp7E%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DLx1YxZY41jCnjSEBRiIdckL%252BZuc%253D",
+        "complete": true,
+        "natural_width": 596,
+        "natural_height": 540
       }
     ],
-    "tables": "[{\"width\":320,\"scroll\":320,\"text\":\"항목\\tGPT-6 Astra\\tClaude Fable 5.1\\n개발사\\tOpenAI\\tAnthropic\\n컨텍스트 창\\t105만 토큰\\t100만 토큰\\n최대 출력\\t12만 8천 토큰\\t12만 8천 토큰\\n입력과 출력\\t글·이미지 → 글\\t글·이미지 → 글\\nAPI 모델 ID\\tgpt-6-astra\\tclaude-fable-5-1\"},{\"width\":320,\"scroll\":320,\"text\":\"v4.2 평가 항목\\tAstra\\tFable 5.1\\n추론 설정\\tmax\\tmax, 기본 대체 모델 사용\\n종합 지수, 높을수록 좋음\\t55\\t57\\n과제당 가중평균 비용, 낮을수록 좋음\\t$2.57\\t$6.12\"},{\"width\":320,\"scroll\":320,\"text\":\"100만 토큰당 표준 단가\\tAstra\\tFable 5.1\\n일반 입력\\t$10\\t$10\\n출력\\t$50\\t$50\\n캐시 읽기\\t$1\\t$0.25\\n캐시 쓰기\\t$12.50\\t$12.50, 5분 기준\"},{\"width\":320,\"scroll\":320,\"text\":\"가정한 요청 1회\\tAstra\\tFable 5.1\\n새 입력 10만 + 출력 1만 토큰\\t$1.50\\t$1.50\\n기존 캐시 읽기 10만 + 새 입력 1만 + 출력 1만\\t$0.70\\t$0.625\\n새 입력 30만 + 출력 1만 토큰\\t$6.75\\t$3.50\"},{\"width\":320,\"scroll\":320,\"text\":\"내 상황\\t먼저 시험할 선택\\t선택 이유\\n이미 한쪽 앱에 자료와 도구를 연결한 경우\\t그 앱에서 제공하는 비교 대상 모델\\t같은 작업 환경에서 결과 차이를 확인하기 쉬움\\n어려운 과제의 완성도를 우선하는 경우\\tFable 5.1\\t최신 외부 종합 평가에서 더 높은 점수\\nAPI 과제 비용이 중요한 경우\\tAstra도 함께 시험\\t외부 종합 평가에서 더 낮은 과제당 비용\\n긴 문서를 반복해서 읽히는 경우\\tFable 5.1\\t낮은 캐시 읽기 단가와 장문 할증 없는 요금\"}]"
+    "tables": "[{\"width\":320,\"scroll\":320,\"text\":\"평가 항목\\tGPT-6 Astra\\tFable 5.1\\nTerminal-Bench 4.0 · 터미널 작업\\t57.9%\\t55.8%\\nDeepSWE v1.1 · 소프트웨어 개발\\t74.1%\\t67.4%\\nFrontierCode 1.1 Extended · 코딩\\t64.5%\\t63.6%\\nAutomationBench · 업무 자동화\\t41.4%\\t31.4%\\nTerminal-Bench Science 0.1 · 과학 연구 작업\\t64.6%\\t52.6%\\nFrontierMath Tier 4 v2 · 고난도 수학\\t97.6%\\t87.8%\\nGPQA Diamond · 대학원 수준 과학\\t96.0%\\t93.7%\\nHumanity’s Last Exam · 도구 사용\\t57.2%\\t65.0%\\nARC-AGI-2 · 추상 추론\\t95.0%\\t90.0%\"},{\"width\":320,\"scroll\":320,\"text\":\"Artificial Analysis 평가\\tGPT-6 Astra\\tFable 5.1\\nIntelligence Index v4.2 · 종합 지수\\t55\\t57\\nGDP.pdf · 모든 조건을 충족한 비율\\t33.2%\\t26.2%\\nCoding Agent Index · 9월 3일 발표\\tCodex 67점\\tClaude Code 70점\\nv4.2 과제당 가중평균 비용\\t$2.57\\t$6.12\"},{\"width\":320,\"scroll\":320,\"text\":\"모델/API 사양\\tGPT-6 Astra\\tFable 5.1\\n컨텍스트 창\\t105만 토큰\\t100만 토큰\\n최대 출력\\t12만 8천 토큰\\t12만 8천 토큰\\n입력 → 출력\\t글·이미지 → 글\\t글·이미지 → 글\\nAPI 모델 ID\\tgpt-6-astra\\tclaude-fable-5-1\"},{\"width\":320,\"scroll\":320,\"text\":\"100만 토큰당 표준 단가\\tGPT-6 Astra\\tFable 5.1\\n일반 입력\\t$10\\t$10\\n출력\\t$50\\t$50\\n캐시 읽기\\t$1\\t$0.25\\n캐시 쓰기\\t$12.50\\t$12.50 · 5분 기준\"},{\"width\":320,\"scroll\":320,\"text\":\"가정한 요청 1회\\tGPT-6 Astra\\tFable 5.1\\n새 입력 10만 + 출력 1만 토큰\\t$1.50\\t$1.50\\n캐시 읽기 10만 + 새 입력 1만 + 출력 1만\\t$0.70\\t$0.625\\n새 입력 30만 + 출력 1만 토큰\\t$6.75\\t$3.50\"},{\"width\":320,\"scroll\":320,\"text\":\"주로 맡길 작업\\t먼저 시험할 모델\\t확인할 부분\\n코드 수정·데이터 분석\\tGPT-6 Astra\\t기존 테스트 통과와 작업 비용\\n여러 단계의 긴 프로젝트\\tFable 5.1도 함께 비교\\t요구 사항 누락과 결과물 완성도\\n많은 PDF에서 근거를 종합\\tGPT-6 Astra\\t원문 위치와 예외 조건의 정확성\\n긴 자료를 반복해서 입력\\tFable 5.1\\t캐시 적중과 전체 청구액\\n한국어 보고서·블로그 문장\\t같은 원문으로 두 모델 비교\\t실제로 고쳐야 하는 문장과 수정 시간\"}]"
   }
 ]

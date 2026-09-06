@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "profile": "standard-rich",
+  "profile": "evidence-rich",
   "scope": "complete",
   "primary_reader": "글쓰기와 코딩에 쓸 AI를 고르는 한국어 사용자",
-  "direct_capture": false,
+  "direct_capture": true,
   "gif": false,
   "generated_lead": true,
   "infographic": false,
@@ -12,5 +12,5 @@
   "include_390": false,
   "include_768": false,
   "second_remote_fetch": false,
-  "decision_note": "공식 자료 기반의 모델 비교로 진행합니다. 제목은 GPT-6 Astra vs. Fable 5.1 - AI 모델 비교를 잠정 사용하며 공식 명칭 확인 후 확정합니다. 독자는 두 모델의 역할과 비용 차이를 모릅니다. 검증된 차이를 기준으로 자기 작업에 맞는 시작 모델을 고르는 것이 목적입니다. 직접 성능 실험은 약속하지 않습니다. 기존 비교 시리즈의 분할형 대표 이미지를 제작하며 절차 안내가 아니므로 UI 스크린샷과 GIF는 제외합니다. 비교표로 충분하므로 인포그래픽은 제외합니다. 추천 결론은 근거 확보 후 brief에 확정합니다."
+  "decision_note": "사용자 요청에 따라 성능 비교를 중심으로 전면 개정합니다. OpenAI 발표 화면과 공식 벤치마크 화면, Anthropic 모델 안내 화면을 실제 브라우저에서 캡처합니다. 모델을 직접 실행했다는 주장은 하지 않습니다. 제조사 발표의 동시 비교표와 외부 평가를 구분하고, 기존 대표 이미지는 유지합니다. 표와 스크린샷을 본문 근거로 활용하므로 별도 인포그래픽과 GIF는 제외합니다. 신규 스크린샷은 사용자가 업로드한 CDN URL을 받은 뒤 최종 검증합니다."
 }
