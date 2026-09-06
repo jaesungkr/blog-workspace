@@ -67,6 +67,48 @@ not a fixed sentence template. Explain the practical effect before asking the
 reader to interpret `칼륨`, `식이섬유`, a benchmark, a feature name, or an
 internal mechanism.
 
+### Build an opening that moves
+
+After the standard greeting, begin from a concrete decision or encounter that
+belongs to the subject. Depending on the article, that may be choosing an
+ingredient at a meal, comparing two labels in a shop, looking for a setting,
+or facing a specific failure. Use only a situation that can be stated honestly;
+do not turn a plausible reader scene into the author's personal experience.
+
+Let the opening move through four beats when they help the reader:
+
+1. the recognizable moment in which the subject becomes relevant;
+2. the expectation, rumor, tradeoff, or confusion that appears in that moment;
+3. the practical answer, default choice, or easiest action in ordinary words;
+4. the precise boundary that separates that useful answer from an overstated
+   claim and explains why the article is worth reading.
+
+These are reasoning beats, not four mandatory sentences or paragraphs. Combine
+or reorder them when the topic reads better another way. The opening should
+feel as though one thought causes the next: the situation raises the question,
+the answer changes what the reader should do, and the boundary shows what not
+to infer.
+
+Reject the opening and rewrite it when:
+
+- it starts by inventorying search results, public claims, features, or source
+  findings in the abstract even though a concrete reader decision is available;
+- it uses `결론부터 말하면` as a mechanical hinge between setup and answer;
+- it compresses the whole article into an executive summary instead of giving
+  one useful answer and one reason to continue;
+- it repeats the practical answer in a second paragraph as a maxim such as
+  `이 주제의 장점은 A보다 B에 있습니다`;
+- its first sentence could introduce many unrelated subjects after swapping one
+  noun, or its scene has no causal link to the recommendation;
+- it adds cinematic detail, emotion, dialogue, or a personal anecdote that is
+  not supported by the article's evidence.
+
+Prefer ordinary objects and direct actions over abstract setup. A meal, product
+label, settings field, or error message is useful only when it naturally
+creates the article's actual question. Do not force a shopping or daily-life
+scene into research reports, breaking news, or other subjects whose clearest
+opening is a concrete event, result, or decision.
+
 For a simple lifestyle explainer, begin with three stage-level jobs: why the
 recommendation fits, how to choose or use it, and who needs a material caution.
 This is a default, not a quota. Add a section only when it changes a separate
@@ -241,6 +283,8 @@ Record:
 
 - the reader-benefit contract, including the reader's knowledge baseline and
   deliberately excluded detail when this pass applies;
+- the opening's concrete situation, resulting tension, practical answer, and
+  evidence boundary, plus any abstract summary or repeated conclusion removed;
 - for broad explainers, the title-created question map, excluded adjacent
   topics, and topic-link test decisions;
 - the original and selected heading strip, with the job of each section;

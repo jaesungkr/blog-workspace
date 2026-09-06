@@ -84,8 +84,13 @@ as evidence.
 ## Build and freeze the source
 
 1. Plan one primary reader, the retained message, easiest start, first-screen
-   answer, heading-only action or decision path, required claims, honest test
-   boundary, media role, and conditional gates. For a recommendation or
+   answer, opening movement, heading-only action or decision path, required
+   claims, honest test boundary, media role, and conditional gates. The opening
+   movement should name a concrete moment in which the reader meets the topic,
+   the question or tension that arises there, the useful answer or action, and
+   the evidence boundary that explains why the distinction matters. Treat this
+   as narrative logic rather than a sentence quota, and never invent a personal
+   anecdote to supply the scene. For a recommendation or
    benefit explainer, also lock the reader's recognizable situation, knowledge
    baseline, plain recommendation, useful consequence, and excluded detail in
    `brief.md`; do not broaden the audience after research reveals more facts.
@@ -118,9 +123,16 @@ as evidence.
    secrets out of raw files; recapture instead of blurring them later.
 4. Draft around evidence with `plain identity -> ordinary use -> easiest start
    -> evidence boundary`. This is an information order, not a four-paragraph
-   template. Do not announce the article with `이번 글에서는`, promise to
-   explain it `차근차근`, or front-load a defensive process note when the same
-   boundary can sit beside the affected claim. Keep comparison rules,
+   template. After the greeting, prefer a concrete reader situation such as a
+   choice at a meal, shop, settings screen, or failed task when it belongs to
+   the subject. Let the competing expectation or confusion arise from that
+   situation, give the practical answer before background detail, and use the
+   next turn to explain the evidence boundary. Do not open with an abstract
+   summary of search results when a truthful everyday decision is available,
+   and do not manufacture momentum with `결론부터 말하면`. Do not announce
+   the article with `이번 글에서는`, promise to explain it `차근차근`, or
+   front-load a defensive process note when the same boundary can sit beside
+   the affected claim. Keep comparison rules,
    prerequisites, exact entry points, and limitations explicit. For
    troubleshooting or procedural intent, put the first safe action or default
    choice before the lead visual and TOC, then order headings by the reader's
@@ -152,11 +164,11 @@ as evidence.
    the source's full list of adjacent recommendations, own the outline.
 5. Run the full voice-and-density revision in
    `references/editorial-voice-v2.md` before the normal prose-polish stage. It
-   has five required surfaces: the reader-benefit contract, heading strip,
-   AI-template sentence frames, paragraph-level new information, and repeated
-   claim or action ownership. For broad explainers, the audit must also record
-   the title-created question map, excluded adjacent topics, and topic-link
-   test decisions.
+   has six required surfaces: the reader-benefit contract, opening movement,
+   heading strip, AI-template sentence frames, paragraph-level new information,
+   and repeated claim or action ownership. For broad explainers, the audit must
+   also record the title-created question map, excluded adjacent topics, and
+   topic-link test decisions.
    The normal prose-polish stage does not replace this pass.
    Run the analyzer before and after as an inventory, never a score. A zero
    signal count does not pass a heading, paragraph, or article. Record the
@@ -183,8 +195,12 @@ as evidence.
    recommendation; or when defensive caveats occupy more attention than the
    bounded claim they qualify. Do not remove a material medical, legal,
    financial, security, or operational warning to satisfy density.
-   Return substantive defects to writing and surface defects to prose polish
-   until it passes.
+   Also return an opening that merely inventories rumors, features, search
+   results, or source findings before pivoting with `결론부터 말하면`; one that
+   gives a practical answer but then restates it as a slogan; or one whose
+   opening scene could introduce an unrelated subject without changing the
+   action. Return substantive defects to writing and surface defects to prose
+   polish until it passes.
 7. Record the freeze:
 
 ```bash
@@ -296,7 +312,8 @@ candidate, one independent final-page record, strict final render, focused Git
 delivery, verified remote commit, and byte-identical paste file pass. Never
 accept an unresolved claim, unsupported hands-on statement, local media path,
 placeholder, duplicate H1, unreadable mobile evidence, hidden table content,
-stale gate, known visual defect, generic opening roadmap, sentence-shaped
+stale gate, known visual defect, generic opening roadmap, abstract
+result-summary opening, canned `결론부터 말하면` pivot, sentence-shaped
 contrast heading, paragraph without new reader value, full takeaway repeated
 across sections, a specialist-assuming title for a non-specialist reader, a
 recommendation title that assumes an unknown folk association or search habit,

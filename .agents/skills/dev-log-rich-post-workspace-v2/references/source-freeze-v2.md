@@ -22,6 +22,11 @@ verify:
 - a first-three-sentences test for recommendation and benefit explainers: can a
   cold reader state who the article is for, what it recommends, and why it may
   be useful in ordinary language?;
+- an opening-movement test: does a truthful, subject-specific situation raise
+  the article's real question, lead to one useful answer or action, and then
+  establish the evidence boundary without an abstract search-result inventory,
+  a canned `결론부터 말하면` pivot, or a repeated slogan? Treat these as
+  reasoning beats rather than a fixed sentence count;
 - for troubleshooting and procedural intent, the first safe action or default
   choice before the lead visual and table of contents;
 - a title-plus-headings-only pass that exposes the action or decision order,
@@ -43,7 +48,8 @@ verify:
   technical meaning.
 - a heading strip without sentence-shaped contrast frames, bureaucratic noun
   stacks, or separate decisions joined only for symmetry;
-- an opening that answers the reader without a generic presenter roadmap;
+- an opening that answers the reader without a generic presenter roadmap,
+  interchangeable scene, abstract result summary, or repeated conclusion;
 - a paragraph-level new-information pass in which every retained paragraph
   adds a fact, evidence, action, comparison, limitation, or necessary branch;
 - a topic-link test for every practical recommendation. If the advice could be
