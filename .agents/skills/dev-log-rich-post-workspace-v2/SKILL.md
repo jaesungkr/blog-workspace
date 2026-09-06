@@ -38,7 +38,12 @@ Read `references/workflow-v2.md` for every v2 task. Then load just in time:
 Use the repository writing, prose-polishing, and article-validation skills for
 their owning stages. Run article validation as a source-level gate before the
 freeze; do not rerun its editorial interrogation after browser QA. Use the
-separate hero and infographic creator/validator skills only when routed.
+separate hero creator/validator only when routed. For a routed infographic,
+read [references/infographic-v2.md](references/infographic-v2.md), create with
+[../max-txt2img/SKILL.md](../max-txt2img/SKILL.md), and hand the candidate to
+[../dev-log-infographic-validation/SKILL.md](../dev-log-infographic-validation/SKILL.md).
+In v2, `max-txt2img` replaces `dev-log-infographic` as the creator; the
+independent validator remains responsible for approval.
 
 ## Route the work
 

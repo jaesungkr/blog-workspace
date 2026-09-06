@@ -1,0 +1,6 @@
+interface:
+  display_name: "max-txt2img"
+  short_description: "문서의 핵심 구조와 관계를 이미지 생성 기반 인포그래픽으로 제작"
+  default_prompt: "$max-txt2img를 사용해 이 문서의 핵심 단계와 관계를 한눈에 이해할 수 있는 인포그래픽 이미지로 만들어 주세요."
+policy:
+  allow_implicit_invocation: true

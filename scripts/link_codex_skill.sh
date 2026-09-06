@@ -14,7 +14,7 @@ fi
 
 mkdir -p "$skills_directory"
 
-for skill_source in "$skill_sources"/dev-log-*; do
+for skill_source in "$skill_sources"/dev-log-* "$skill_sources"/max-txt2img; do
   if [ ! -f "$skill_source/SKILL.md" ]; then
     continue
   fi

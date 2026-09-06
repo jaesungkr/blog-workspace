@@ -25,8 +25,9 @@ Turn on only the risks that actually exist:
 - `direct_capture`: create `capture-plan.md` and preserve raw evidence;
 - `gif`: require the poster and second remote fetch;
 - `generated_lead`: use the separate hero creator and validator;
-- `infographic`: use the infographic stages only when the visual reduces
-  reading effort;
+- `infographic`: only when the visual reduces reading effort, follow
+  [infographic-v2.md](infographic-v2.md), create with `max-txt2img`, then use
+  `dev-log-infographic-validation` for independent approval;
 - `complex_layout`: inspect the affected component and set `include_390` or
   `include_768` only when the transition needs it;
 - `high_risk_remote_media`: set `second_remote_fetch` to true.

@@ -14,6 +14,13 @@ Require `capture-plan.md` only for direct, simulated, or GIF media. Generated
 media never proves an actual UI state. Recapture secrets instead of preserving
 and blurring them later.
 
+## Generated infographic
+
+When `workflow-v2.json` enables `infographic`, read
+[infographic-v2.md](infographic-v2.md). Use `max-txt2img` for creation and
+`dev-log-infographic-validation` for independent approval before marking the
+media item validated. Preserve the final English prompt with the candidate.
+
 ## Instructional screenshot gate
 
 For a procedural software guide, carry the reader-friction map from

@@ -13,9 +13,16 @@ approve from a whole-image preview alone.
 1. Resolve the canonical repository as the directory three levels above this
    skill directory.
 2. Read `standards/supporting-infographic-guide.md` completely.
-3. Read the target article, brief, evidence, audit, copy map, editable source,
-   and render code.
-4. Inspect the exact candidate raster, not only its HTML or SVG source.
+3. For `format: rich-post-v2` candidates created by `max-txt2img`, first read
+   [../dev-log-rich-post-workspace-v2/references/infographic-v2.md](../dev-log-rich-post-workspace-v2/references/infographic-v2.md).
+   That route replaces deterministic production requirements with generated
+   raster and prompt evidence; it preserves content and visual inspection.
+   Otherwise keep the existing production requirements.
+4. Read the target article, brief, evidence, audit, copy map, editable source,
+   and render code when that production method provides them. For `max-txt2img`,
+   inspect the saved final English prompt and actual generation record instead
+   of requiring nonexistent font settings or render code.
+5. Inspect the exact candidate raster, not only its prompt, HTML, or SVG source.
 
 ## Content and diagram gate
 
@@ -104,14 +111,19 @@ Return:
   spacing defect.
 
 For a failure, send exact coordinates or named regions and the observed problem
-back to `dev-log-infographic`. Require a new versioned raster, regenerate all
+back to the recorded creator: `max-txt2img` for the v2 route, otherwise
+`dev-log-infographic`. Follow the creator's authorized retry limit; an exhausted
+limit leaves `revision_required`, never an implicit pass or an endless retry.
+Require a new versioned raster, regenerate all
 affected views from that raster, and rerun the complete visual QA. Do not accept
 an automated check as a substitute for actual raster inspection.
 
 Record in `audit.md`:
 
 - candidate path, dimensions, hash, type, question, placement, and alt text;
-- source sizes for headline, primary labels, supporting copy, and caveat;
+- source sizes for headline, primary labels, supporting copy, and caveat when
+  available; for generated text, record observed raster bounds and explicitly
+  mark source font sizes unavailable rather than inventing measurements;
 - measured text gaps, scene-envelope or rule clearances, headline-height share,
   and intended display width;
 - full raster, intended-size display, and crop observations;
@@ -122,5 +134,6 @@ Record in `audit.md`:
 
 ## Handoff
 
-Return the stage result and visual evidence to `dev-log-workspace`. Do not
+Return the stage result and visual evidence to the invoking orchestrator
+(`dev-log-rich-post-workspace-v2` for v2, otherwise the owning dev.log workflow). Do not
 change hero-image standards, set the article ready by yourself, commit, or push.
