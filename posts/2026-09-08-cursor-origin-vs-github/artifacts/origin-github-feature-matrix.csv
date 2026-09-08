@@ -1,0 +1,11 @@
+item,origin_documented_2026-09-08,github_documented_2026-09-08,practical_reading,source_ids
+Git repository,"clone; push; pull; branches; tags; history","clone; push; pull; branches; tags; history","core Git work overlaps","C01;C04"
+Pull request,"open; review; merge; mirrored PR syncs both ways","open; review; merge; checks and review ecosystem","basic PR work overlaps; surrounding platform differs","C01;C04;C06;C09"
+Code browse and search,"cursor.com/codebase","repository web and search","basic browse overlaps","C01;C09"
+Issues and planning,"not listed in current Origin core scope; GitHub Issues do not mirror","Issues; Projects; Discussions","keep GitHub when backlog and community metadata matter","C05;C09"
+CI and deployment,"Vercel; Depot; Buildkite; Cursor Automations","GitHub Actions and external apps","mirrored repositories keep CI on GitHub","C07;C08;C10"
+Packages and static sites,"not listed as a separate current Origin product area","GitHub Packages; GitHub Pages","GitHub covers more release-adjacent assets in current docs","C10"
+Security operations,"not compared beyond Origin permissions and protections","dependency graph; Dependabot; code scanning; secret scanning; push protection","perform a separate security and compliance review","C10"
+Coding agents,"Cursor Automations and cloud agents","Copilot cloud agent and third-party coding agents","agent support exists on both; control plane differs","C07;C11"
+Repository visibility,"Internal; Private","Public; Private; enterprise Internal","public open-source work favors GitHub's documented surface","C03;C12"
+Existing GitHub project,"GitHub-source mirror; Git and PR sync; Issues and Actions secrets excluded","remains source of truth","mirror before migration","C04;C05;C06"

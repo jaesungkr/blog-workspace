@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "lead_id": "cursor-origin-lead",
+  "items": [
+    {
+      "id": "cursor-origin-lead",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01"
+      ],
+      "actor": "Cursor official asset downloaded and inspected by Codex",
+      "captured_at": "2026-09-08",
+      "environment": "Cursor Origin official landing-page Open Graph image, original JPEG inspected on macOS",
+      "source_url": "https://cursor.com/ko/origin",
+      "raw_path": "artifacts/media-candidates/cursor-origin-official-og.jpg",
+      "publish_path": "assets/cursor-origin-official-og.jpg",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNeDGv%2FdJMcagNMs09%2FAAAAAAAAAAAAAAAAAAAAACzFq11KFf2YPgjoUb0T-cdrVcTvZBJjd_4zXDzDqhyK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DG4XWCSQj%252Fb54iuw9KMI4iDbY6y0%253D",
+      "width": 1200,
+      "height": 675,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "official Cursor Origin marketing asset republished with source attribution for editorial explanation of the public product",
+      "alt": "청록색과 주황색 빛이 번지는 배경 위에 흰색 Origin 로고와 이름이 놓인 Cursor 공식 이미지",
+      "caption": "Origin은 Cursor가 만든 Git 저장소 호스팅 서비스입니다. 저장소와 Pull Request를 Cursor 에이전트 작업 공간에 연결합니다.",
+      "processing": [
+        "downloaded the original official 1200x675 JPEG without visual modification",
+        "verified identical SHA-256 between the preserved raw candidate and publication asset",
+        "inspected the full-size source and a 360x202 QA thumbnail for logo recognition and text legibility"
+      ],
+      "redactions": [],
+      "sha256": "7b8060517e376e74814f91fd50be47281029e2e1589d2abf0a67e9e630fb3660",
+      "status": "validated"
+    }
+  ]
+}
