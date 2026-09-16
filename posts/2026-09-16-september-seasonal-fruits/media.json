@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "lead_id": "september-seasonal-fruits-hero",
+  "items": [
+    {
+      "id": "september-seasonal-fruits-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C05",
+        "C08"
+      ],
+      "actor": "Codex built-in image generation under dev.log art direction",
+      "captured_at": "2026-09-16",
+      "environment": "Codex desktop built-in image generation, original 1672 x 941 PNG",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/september-seasonal-fruits-hero-v2-source.png",
+      "publish_path": "assets/september-seasonal-fruits-hero-v2.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbrWTGD%2FdJMcajp38qr%2FAAAAAAAAAAAAAAAAAAAAAL-FeoJIMcmew49PIalA2JWD0H8yRgqYEjiie9WS2uEL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D6ULN2HFvZO6C5pOAW%252FuObdeZZhg%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "초가을 햇빛 아래 붉은 사과와 황금빛 배, 반으로 갈라 붉은 속이 보이는 무화과가 놓인 9월 과일 정물",
+      "caption": "바로 먹을 무화과는 앞에, 나누어 보관할 사과와 배는 서로 떨어뜨려 놓았습니다.",
+      "processing": [
+        "Built-in image generation with an original early-autumn editorial still-life direction",
+        "Targeted built-in image edit replaced the synthetic-looking pear with a more irregular Korean Singo pear surface",
+        "Creator inspected the v2 original raster, a 360 px thumbnail, and a 650 px pear detail crop",
+        "Independent full-size, 360 px, and pear-detail validation passed by /root/hero_validator"
+      ],
+      "redactions": [],
+      "sha256": "835e4a138e2d1c394743619f3e05cd5bce871ec5a53371adbe0ea49f94be3880",
+      "status": "validated"
+    }
+  ]
+}

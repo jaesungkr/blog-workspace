@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-09-16",
+  "checked_by": "/root/final_page_reviewer",
+  "browser": "Chrome/152.0.7977.83",
+  "session": "d352f3b5-441f-4e6e-bd28-6e0580090656",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "cb1c5952f9904dc751c66ab2a93ffae80315899206ac15e005ead67f6d7aa948",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "5983a75e6e2dc6fc0deed289612f4edc5dd0b1fa3755857b89161ef39bd3e4a8",
+  "source_pass_sha256": "db93d1da1fbcc77292736b7fd8868aef5d9bdea3ac49cff53031838b69db71aa",
+  "article_content_sha256": "66e6c17966fd7fb7496661d95550daef3de4eac496e20f69b9501dd832fdefee",
+  "media_sha256": "23d804e654c85f09087f6c2ea0fc0ccbd00ffef2565f1516023e1f785723c7a6",
+  "renderer_sha256": "ffc7b5f2af6783ca8125d3ddd53b7103e8eb16993eac509232fec595c9a9263d",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "84dcebdcba189266749a1ddd17905e99791eb509d314d1f965c6a30f1391b78c",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/september-seasonal-fruits-rich-preview.html",
+  "preview_sha256": "1ddc1d4c5efb892d0215d9713a3040f0f82b5f53ed24725f28bc8eb144d223a8",
+  "preview_structure_sha256": "2900d97f6e6ebbf6fbb16d02efe14fdae287049387d99df58cde2988dfc8a71a",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/september-seasonal-fruits-rich-preview.html",
+  "dark_preview_sha256": "926260e8ccc9d1e5fcaa7dc4567d06e0be529c29bceba6db193d8078cad776e1",
+  "fragment_path": "artifacts/qa-v2/final-rendered/september-seasonal-fruits-tistory-fragment.html",
+  "fragment_sha256": "6ed9f51ac2259d61215205fc921d8fe1fe6b9482eea4b2337fab881b22aad067",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "9238c933e93d13f54b575858dacb5b7bb5cf30f81e7fa29f471e75a65b44e0d7"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "9d0738e51b9536a86e5ddb2109a73a541570b261d7caa7e63478e0a581307ff0"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "d9e87fec0ba166a9637d623a253c46a4ddaa572acda789dacdd35dd57a949c9d"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "e870ddf672bb1d2738e167d57229a86de653d6424016d02f8948d92b582d2996"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

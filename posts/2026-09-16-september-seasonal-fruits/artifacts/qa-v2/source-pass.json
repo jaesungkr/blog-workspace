@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-16T14:04:37.687177Z",
+  "checked_by": "/root/source_reviewer",
+  "article_content_sha256": "66e6c17966fd7fb7496661d95550daef3de4eac496e20f69b9501dd832fdefee",
+  "brief_sha256": "49cbc1a7fb6bf7cc06bb6924d0172727f2fd3713c79b9a7b6f9e01947c0d8f85",
+  "evidence_sha256": "d758be776dd3570e7e9a2903e2e230c062976cc37fd16fac3942f5521a22e4c1",
+  "note": ""
+}
