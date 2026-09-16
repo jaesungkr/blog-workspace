@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>복을 구한 야베스</title>
+  <meta name="description" content="유다 자손의 족보에 두 절로 등장하는 야베스가 누구인지, 고통을 떠올리게 하는 이름과 하나님께 드린 네 가지 부탁을 함께 읽어 봅니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Reflections</p>
+    <h1>복을 구한 야베스</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+/* Use the shared v2 rich-post layout without post-specific geometry overrides. */
+
+/* Keep Korean words intact inside the opening scripture quotation on narrow
+   screens while retaining an emergency wrap for unusually long tokens. */
+.devlog-rich__section > blockquote {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>야베스는 예수님이 태어나기 오래전 이스라엘에서 살았던 사람입니다. 성경에는 단 두 절에만 그의 이야기가 나오며, 그 가운데 한 절이 하나님께 복과 도움을 구한 기도입니다.</p>
+<p>오늘날 이 짧은 기도는 ‘야베스의 기도’라는 이름으로 널리 알려져 있습니다.</p>
+<blockquote>역대상 4장 10절 (읽기 쉬운 성경, KOERV · 기도 부분 발췌)<br><br>10 “저에게 복을 주시고 저의 영토를 넓혀 주십시오. 주의 손으로 저를 도우시고 불행을 막아 주셔서 아무것도 저를 해치지 못하게 하여 주십시오.”</blockquote>
+<p>짧은 기도 앞에는 야베스가 형제들보다 존경받았다는 평가와, 어머니가 그의 이름을 지은 사연이 놓여 있습니다. 수많은 이름이 이어지는 자리에서 야베스에게 이르러 두 절의 이야기가 펼쳐지는 것입니다. 그가 등장하는 자리부터 보면 이 짧은 기록이 눈에 띄는 이유를 알 수 있습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="jabez-prayer-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbn1ljx%2FdJMcadpWQeU%2FAAAAAAAAAAAAAAAAAAAAAL-Q1LngB2GoJT7C1RcNPwp-Ql7aiNKT-ltxLZtZPoeU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DjDDUBMvzSfJ%252BwMNj5ok4eJ6yLNc%253D" alt="족보를 나타내는 종이와 흙 인형 행렬 사이에서 한 인물이 무릎을 꿇고, 종이가 넓은 땅으로 이어지는 모습을 만든 미니어처" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">족보의 인물들 사이에서 기도하는 야베스와, 그가 넓혀 달라고 구한 땅을 상징한 장면입니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#족보-속에-남은-야베스의-두-절">족보 속에 남은 야베스의 두 절</a></li>
+<li><a href="#고통을-떠올리게-한-이름">고통을 떠올리게 한 이름</a></li>
+<li><a href="#야베스가-하나님께-구한-네-가지">야베스가 하나님께 구한 네 가지</a></li>
+<li><a href="#한-문장으로-끝난-기도의-응답">한 문장으로 끝난 기도의 응답</a></li>
+<li><a href="#이번에-알아간-야베스">이번에 알아간 야베스</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="족보-속에-남은-야베스의-두-절">
+<h2 id="족보-속에-남은-야베스의-두-절">족보 속에 남은 야베스의 두 절</h2>
+<p>야베스는 구약성경의 『역대상』 4장 9~10절에 등장합니다. 구약성경은 예수님이 태어나기 전 이스라엘의 역사와 신앙을 전하는 책들을 가리키고, 역대상은 그 가운데 한 권입니다.</p>
+<p>역대상 4장의 앞부분에는 유다의 후손들이 차례로 나옵니다. 누가 누구를 낳았는지 이어지는 이런 기록을 족보라고 합니다. 처음 보는 이름이 계속 등장하는 가운데, 성경은 야베스에게 이르러 이름만 적고 지나가지 않습니다. 그가 형제들보다 더 존경받았다고 평가하고, 어머니가 이름을 지은 이유와 하나님께 드린 기도까지 전합니다.</p>
+<p>이 두 절이 알려 주는 야베스의 기본 모습은 분명합니다. 그는 유다 자손을 소개하는 기록에 등장하는 옛 이스라엘 사람이며, 형제들보다 존경받았고 이스라엘의 하나님께 기도했습니다. 그러나 부모가 누구인지, 무슨 일을 했는지, 정확히 어느 시대에 살았는지는 나오지 않습니다. 존경받은 이유도 성경은 따로 설명하지 않습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="고통을-떠올리게-한-이름">
+<h2 id="고통을-떠올리게-한-이름">고통을 떠올리게 한 이름</h2>
+<p>야베스의 어머니는 “내가 고통 가운데 그를 낳았다”라고 말하며 아들의 이름을 지었습니다(역대상 4장 9절). 읽기 쉬운 성경의 각주에 따르면 ‘야베스’는 고통을 뜻하는 히브리어와 발음이 비슷합니다. 우리말로 이름만 읽을 때는 보이지 않지만, 원래 언어에서는 이름의 소리가 출산 때의 아픔을 떠올리게 한 것입니다.</p>
+<p>본문이 직접 말하는 고통은 어머니가 출산하며 겪은 고통입니다. 이 이름만으로 야베스가 불행한 어린 시절을 보냈다거나 평생 고통받았다고 단정할 수는 없습니다. 이름 때문에 기도했다는 설명도 성경에는 없습니다.</p>
+<p>성경이 보여 주는 다음 장면은 성장 과정이 아니라 야베스가 하나님께 드린 기도입니다. 어머니의 고통이 남은 이름 뒤에, 복과 보호를 구하는 야베스의 말이 이어집니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="야베스가-하나님께-구한-네-가지">
+<h2 id="야베스가-하나님께-구한-네-가지">야베스가 하나님께 구한 네 가지</h2>
+<p>야베스는 이스라엘의 하나님께 자신의 바람을 숨기지 않고 말했습니다. 그의 짧은 기도에는 네 가지 부탁이 담겨 있습니다.</p>
+<ol><li><strong>복을 베풀어 달라고 구했습니다.</strong> 여기서 복은 하나님께서 자신의 삶에 좋은 것을 베풀어 주시기를 바라는 말입니다. 이어지는 세 가지 부탁이 야베스가 무엇을 바랐는지 조금 더 구체적으로 보여 줍니다.</li><li><strong>영토를 넓혀 달라고 구했습니다.</strong> 영토는 그가 차지하는 땅의 범위를 뜻합니다. 옛 이스라엘에서 땅은 농사를 짓고 가축을 기르며 살아가는 터전이었습니다. 야베스의 직업은 알 수 없지만, 그가 추상적인 영향력이 아니라 실제 삶과 연결된 땅을 구했다는 점은 분명합니다.</li><li><strong>주의 손으로 도와 달라고 구했습니다.</strong> ‘주’는 하나님을 높여 부르는 말입니다. ‘주의 손’은 하나님께서 힘을 베풀어 돕는다는 뜻으로 사용됩니다. 야베스는 더 넓은 땅만 바라지 않고, 그 삶을 살아갈 때 하나님의 도움이 함께하기를 구했습니다.</li><li><strong>불행과 해침에서 지켜 달라고 구했습니다.</strong> 원하는 것을 얻는 일과 함께, 자신을 해치는 일이 닥치지 않도록 보호해 달라는 부탁도 기도의 끝에 놓았습니다.</li></ol>
+<p>‘영토를 넓혀 달라’는 말만 떼어 놓으면 더 많은 것을 갖고 싶다는 소원처럼 들릴 수 있습니다. 기도를 끝까지 읽으면 그보다 넓은 뜻이 보입니다. 야베스는 넓어진 땅과 더불어 그 삶을 감당할 도움과 보호까지 하나님께 구했습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="한-문장으로-끝난-기도의-응답">
+<h2 id="한-문장으로-끝난-기도의-응답">한 문장으로 끝난 기도의 응답</h2>
+<p>역대상 4장 10절은 “하나님께서는 그가 구한 것을 다 주셨다”라는 문장으로 야베스 이야기를 마칩니다. 성경은 그의 영토가 얼마나 넓어졌는지, 어떤 방식으로 도움과 보호를 받았는지 설명하지 않습니다. 기도 이후에 야베스가 어떻게 살았는지도 알 수 없습니다.</p>
+<p>그래서 이 결말은 기록된 그대로 읽는 것이 중요합니다. 성경은 야베스라는 한 사람이 하나님께 구했고, 하나님께서 그의 부탁을 들어주셨다고 전합니다. 같은 문장을 반복해서 기도하면 누구나 더 많은 재산이나 성공을 얻는다는 약속까지 이 두 절에 적혀 있는 것은 아닙니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="이번에-알아간-야베스">
+<h2 id="이번에-알아간-야베스">이번에 알아간 야베스</h2>
+<p>이제 야베스를 이렇게 소개할 수 있습니다. 야베스는 유다 자손의 족보에 두 절로 등장하는 옛 이스라엘 사람입니다. 어머니가 출산 때 겪은 고통을 떠올리게 하는 이름을 받았고, 형제들보다 존경받았습니다. 그는 이스라엘의 하나님께 복과 넓은 땅, 도움과 보호를 구했으며, 성경은 하나님께서 그 부탁을 들어주셨다고 전합니다.</p>
+<p>긴 생애가 기록된 인물은 아니지만 야베스는 자신이 하나님께 드린 한 번의 기도로 기억됩니다. 야베스를 처음 알게 되었다면 역대상 4장 8~11절을 이어 읽어 보세요. 여러 이름이 계속되는 족보에서 왜 그의 두 절이 눈에 띄는지 직접 확인할 수 있습니다.</p>
+</section>
+</article>
+</body>
+</html>

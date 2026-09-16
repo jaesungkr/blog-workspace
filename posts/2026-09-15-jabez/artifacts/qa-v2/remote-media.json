@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "d03c3479-9de5-4eee-a671-46ddde478b74",
+  "recorded_at": "2026-09-15T15:10:59.708255Z",
+  "recorded_by": "/root",
+  "media_sha256": "4e2e6f28267bd7241eb7972d1db8375001f4e69d57906172b59d5a2877c943d6",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "jabez-prayer-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbn1ljx%2FdJMcadpWQeU%2FAAAAAAAAAAAAAAAAAAAAAL-Q1LngB2GoJT7C1RcNPwp-Ql7aiNKT-ltxLZtZPoeU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DjDDUBMvzSfJ%252BwMNj5ok4eJ6yLNc%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbn1ljx%2FdJMcadpWQeU%2FAAAAAAAAAAAAAAAAAAAAAL-Q1LngB2GoJT7C1RcNPwp-Ql7aiNKT-ltxLZtZPoeU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DjDDUBMvzSfJ%252BwMNj5ok4eJ6yLNc%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-09-15T15:10:59.707966Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 2217841,
+      "byte_length": 2217841,
+      "sha256": "fec22bec805ed99735d0ed77fbd44090d109700fff3d7d6231f7076aaf51ade2",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Tue, 15 Sep 2026 14:59:24 GMT"
+    }
+  ]
+}

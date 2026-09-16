@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "성경이나 야베스의 기도를 미리 알지 못하며, 야베스가 누구인지 처음 알아가려는 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "표준 자료형 성경 인물 소개로 진행한다. 역대상 4:9-10의 두 절을 중심으로 인물과 기도의 네 요청을 구분하고, 역대상 2:55의 지명 야베스와 동일 인물이라고 단정하지 않는다. 대표 이미지는 생성형 정적 이미지 1장으로 구성한다. 두 절의 흐름은 본문과 간단한 목록으로 충분하므로 인포그래픽, 직접 캡처, GIF, 복잡한 반응형 레이아웃, 추가 너비 점검, 두 번째 원격 확인은 사용하지 않는다."
+}

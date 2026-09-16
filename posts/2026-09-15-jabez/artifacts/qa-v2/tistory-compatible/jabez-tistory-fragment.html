@@ -1,0 +1,374 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+/* Use the shared v2 rich-post layout without post-specific geometry overrides. */
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>야베스는 옛 이스라엘에서 하나님께 복을 구한 사람입니다. 성경에 기록된 그의 부탁은 ‘야베스의 기도’로 알려져 있습니다.</p>
+<blockquote>역대상 4장 10절 (읽기 쉬운 성경, KOERV · 기도 부분 발췌)<br><br>10 “저에게 복을 주시고 저의 영토를 넓혀 주십시오. 주의 손으로 저를 도우시고 불행을 막아 주셔서 아무것도 저를 해치지 못하게 하여 주십시오.”</blockquote>
+<p>이 기도 앞에는 야베스의 이름에 얽힌 사연도 적혀 있습니다. 그의 어머니가 아들을 낳으며 겪은 고통에 관한 이야기입니다.</p>
+<figure class="devlog-rich__figure" data-media-id="jabez-prayer-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbn1ljx%2FdJMcadpWQeU%2FAAAAAAAAAAAAAAAAAAAAAL-Q1LngB2GoJT7C1RcNPwp-Ql7aiNKT-ltxLZtZPoeU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DjDDUBMvzSfJ%252BwMNj5ok4eJ6yLNc%253D" alt="족보를 나타내는 종이와 흙 인형 행렬 사이에서 한 인물이 무릎을 꿇고, 종이가 넓은 땅으로 이어지는 모습을 만든 미니어처" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">족보의 인물들 사이에서 기도하는 야베스와, 그가 넓혀 달라고 구한 땅을 상징한 장면입니다. <span class="devlog-rich__credit">· 생성 이미지</span></figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#어머니가-지어-준-이름">어머니가 지어 준 이름</a></li>
+<li><a href="#야베스가-하나님께-바랐던-것">야베스가 하나님께 바랐던 것</a></li>
+<li><a href="#하나님이-부탁을-들어주셨다는-기록">하나님이 부탁을 들어주셨다는 기록</a></li>
+<li><a href="#이번에-알아간-야베스">이번에 알아간 야베스</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="어머니가-지어-준-이름">
+<h2 id="어머니가-지어-준-이름">어머니가 지어 준 이름</h2>
+<p>야베스 이야기는 『역대상』 4장 9~10절에 나옵니다. 역대상은 예수님이 태어나기 이전의 이스라엘 역사를 전하는 구약성경의 한 책입니다.</p>
+<p>성경은 야베스를 형제들보다 존경받던 사람으로 소개합니다. 이어서 그를 낳은 어머니의 말을 전합니다. 어머니는 아들을 낳으며 겪은 고통을 기억하며 아이의 이름을 야베스라고 지었습니다(역대상 4장 9절).</p>
+<p>‘야베스’는 옛 이스라엘 사람들이 쓰던 히브리어에서 고통을 뜻하는 말과 발음이 비슷합니다. 우리말로 이름만 읽으면 알기 어렵지만, 원래 언어에서는 이름의 소리가 어머니가 겪은 아픔을 떠올리게 했던 것입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="야베스가-하나님께-바랐던-것">
+<h2 id="야베스가-하나님께-바랐던-것">야베스가 하나님께 바랐던 것</h2>
+<p>어머니가 이름을 지은 사연 다음에는 야베스가 하나님께 자신의 바람을 말씀드리는 기도가 이어집니다.</p>
+<p>야베스가 먼저 구한 복은 하나님께서 자기 삶에 좋은 것을 베풀어 주시는 일이었습니다. 그가 바란 것 가운데 하나가 더 넓은 땅입니다.</p>
+<p>성경 번역에 쓰인 ‘영토’는 여기서 야베스가 차지하는 땅의 범위를 가리킵니다. 옛 이스라엘에서 땅은 농사를 짓고 가축을 기르며 살아가는 터전이었습니다.</p>
+<p>땅을 구한 뒤에도 기도는 계속됩니다. 그는 하나님의 도움을 청하며 ‘주의 손’이라는 표현을 씁니다. 여기서 ‘주’는 하나님을 높여 부르는 말이고, 손은 하나님께서 베푸시는 힘과 도움을 나타냅니다.</p>
+<p>마지막 부탁은 불행한 일이 자신을 해치지 않도록 지켜 달라는 것입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="하나님이-부탁을-들어주셨다는-기록">
+<h2 id="하나님이-부탁을-들어주셨다는-기록">하나님이 부탁을 들어주셨다는 기록</h2>
+<p>성경은 이 기도 뒤에 하나님께서 야베스가 구한 것을 이루어 주셨다고 전합니다(역대상 4장 10절). 그가 얼마나 넓은 땅을 얻었는지나 이후에 어떻게 살았는지는 설명하지 않고, 그의 이야기는 여기서 끝납니다.</p>
+<p>이 기록은 야베스라는 한 사람에게 일어난 일을 전합니다. 같은 말을 따라 하면 누구나 같은 결과를 얻는다는 약속까지 담고 있지는 않습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="이번에-알아간-야베스">
+<h2 id="이번에-알아간-야베스">이번에 알아간 야베스</h2>
+<p>야베스는 어머니가 출산 때 겪은 고통을 이름에 지녔고, 형제들보다 존경받던 사람입니다. 그는 자신의 삶이 나아지기를 바라며 하나님께 땅과 도움, 보호를 구했고, 성경은 하나님께서 그 부탁을 들어주셨다고 전합니다.</p>
+</section>
+</article>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-16T14:52:48.514880Z",
+  "checked_by": "/root/jabez_rewrite_review",
+  "article_content_sha256": "e63d34be35fd1585f525d73452bfda30be92dc16e1f3f06c662b38a54cd6eeaf",
+  "brief_sha256": "0be086a97007cb55c53b80d559b8777c712b86c5572951aa9775819722d8c1e7",
+  "evidence_sha256": "88f545e381d84a0d9a06e94911a57ed00a69c52df77ad0e14d30c669f72b8d93",
+  "note": ""
+}

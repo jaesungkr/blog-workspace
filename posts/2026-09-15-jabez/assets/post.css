@@ -1,0 +1,14 @@
+/* Use the shared v2 rich-post layout without post-specific geometry overrides. */
+
+/* Keep Korean words intact inside the opening scripture quotation on narrow
+   screens while retaining an emergency wrap for unusually long tokens. */
+.devlog-rich__section > blockquote {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}

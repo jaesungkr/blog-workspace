@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "lead_id": "jabez-prayer-hero",
+  "items": [
+    {
+      "id": "jabez-prayer-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C04"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-09-15",
+      "environment": "OpenAI built-in image generation, practical parchment-and-earth miniature editorial direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/jabez-prayer-hero-source.png",
+      "publish_path": "assets/jabez-prayer-hero.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbn1ljx%2FdJMcadpWQeU%2FAAAAAAAAAAAAAAAAAAAAAL-Q1LngB2GoJT7C1RcNPwp-Ql7aiNKT-ltxLZtZPoeU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DjDDUBMvzSfJ%252BwMNj5ok4eJ6yLNc%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening-question",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "족보를 나타내는 종이와 흙 인형 행렬 사이에서 한 인물이 무릎을 꿇고, 종이가 넓은 땅으로 이어지는 모습을 만든 미니어처",
+      "caption": "족보의 인물들 사이에서 기도하는 야베스와, 그가 넓혀 달라고 구한 땅을 상징한 장면입니다.",
+      "processing": [
+        "generated from an original Bible-character series art-direction prompt",
+        "full-size creator inspection",
+        "360-by-202-pixel thumbnail creator inspection",
+        "independent hero validation pass by /root/jabez_hero_review"
+      ],
+      "redactions": [],
+      "sha256": "57175c9def33858b56e193cdb75a7c93c899a95213cf2cd298967d11b5ee76f7",
+      "status": "validated"
+    }
+  ]
+}
