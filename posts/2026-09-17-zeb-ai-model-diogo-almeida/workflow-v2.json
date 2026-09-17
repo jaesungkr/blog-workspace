@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "챗GPT를 알지만 제브(Zeb)는 처음 접한 비전문가",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 홈페이지와 제작자 공개 자료를 바탕으로 새 모델의 정체, 공개된 사용 방식, 확인된 범위를 설명하는 standard-rich 기사입니다. 직접 제품 사용이나 성능 실험을 약속하지 않으며, 홈페이지 스크린샷 한 장을 공식 정적 미디어로 사용합니다. 절차형 가이드가 아니므로 reader-friction screenshot은 필요하지 않습니다. 생성형 대표 이미지, 보조 인포그래픽, GIF, 복잡한 레이아웃, 390px/768px 추가 프로필, 두 번째 원격 fetch는 사용하지 않습니다."
+}

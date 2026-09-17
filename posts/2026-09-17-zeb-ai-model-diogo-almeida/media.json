@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "lead_id": "typesafe-jev-homepage",
+  "items": [
+    {
+      "id": "typesafe-jev-homepage",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "actor": "Codex browser capture of the public TypeSafe AI homepage",
+      "captured_at": "2026-09-17",
+      "environment": "Google Chrome headless, public https://typesafe.ai/ homepage, 1280 x 720 CSS pixels, device scale factor 1",
+      "source_url": "https://typesafe.ai/",
+      "raw_path": "artifacts/sources/typesafe-jev-homepage-2026-09-17.png",
+      "publish_path": "assets/typesafe-jev-homepage-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4VQ8F%2FdJMcaf2lRuv%2FAAAAAAAAAAAAAAAAAAAAAHxuqKauKb78kPxiG8nMIG-UlgHIHkSnUH1ZqkM2Ztbc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DfeXFGZrqgrVdzDz1780bx2L5cYQ%253D",
+      "width": 1280,
+      "height": 720,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "public TypeSafe AI homepage screenshot reproduced for editorial explanation and criticism; TypeSafe interface, product names, and marks remain with TypeSafe AI",
+      "alt": "분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지",
+      "caption": "TypeSafe 첫 화면은 제브를 ‘대화를 넘어선 지능’으로 소개합니다. 본문에서는 이 문구를 소프트웨어가 쓰는 판단 모델이라는 뜻으로 풀어 봅니다.",
+      "processing": [
+        "captured the public homepage at 1280 x 720 after the page and animated hero loaded",
+        "preserved the captured pixels without crop, annotation, redaction, or re-encoding",
+        "inspected the full raster for loading overlays, clipped navigation text, broken glyphs, and unreadable product cues"
+      ],
+      "redactions": [],
+      "sha256": "f3a51f8e2d327d268f518c0bbeaa8019614fe9e97a43512698dc2d7cc9247505",
+      "status": "validated"
+    }
+  ]
+}

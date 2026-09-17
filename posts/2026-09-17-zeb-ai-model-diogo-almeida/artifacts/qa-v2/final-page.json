@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-09-17",
+  "checked_by": "Codex independent final-page reviewer (/root/source_review)",
+  "browser": "Chrome/152.0.7977.83",
+  "session": "d7535ba5-b969-48d4-b87e-cd2050bb27f4",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "25145fd08588db0f547968193c4b2ab792406112f47b6143961ec7e61c4f12ad",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "65280d3c928e607b296ffdead038c6a998437733526043e126831bdd9ee5c3ed",
+  "source_pass_sha256": "143ccac730646e51a4364d272870e4c9d4eb9933e27f5612fa2833a4bae888f2",
+  "article_content_sha256": "73e3b4829516263388fc6b44577e8c344723b4c5735c89ed6d86e114fe69a2d2",
+  "media_sha256": "e8b22ff528de62dc34eb9e07305d051e53d04fb4f6a0d5afecb7e21619c20991",
+  "renderer_sha256": "ffc7b5f2af6783ca8125d3ddd53b7103e8eb16993eac509232fec595c9a9263d",
+  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "399d5282fbf76b95fa50a63e4fbafa3700175d10681a6fe208ac97242ecc95b4",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/zeb-ai-model-diogo-almeida-rich-preview.html",
+  "preview_sha256": "f981859b9a9996a22c4fcbb6f7f53a7f85e03fb5e36c0dca4ce0d514f4e89c55",
+  "preview_structure_sha256": "ebddc01bbbec599aa59dfb587c75e68168a73c3f123f325c35809ab9d852f022",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/zeb-ai-model-diogo-almeida-rich-preview.html",
+  "dark_preview_sha256": "da057139944979cae7a01ba788e2944af52dc20b4d3d029f21c17d16b09fa125",
+  "fragment_path": "artifacts/qa-v2/final-rendered/zeb-ai-model-diogo-almeida-tistory-fragment.html",
+  "fragment_sha256": "d51c78fdc62a0239bd36ddec644f9682f057e9912de480b079f6b70bcbaf9cec",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "a7ea7461efddbab6f5f9d89fe3393398b4d931c690bba783f605cb16ce5d5b80"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "57383f2f04f323ac00c197f97a7d7a8a8cb4a3bbc81962676f4e7d77a276247b"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "8b6c1825ea0e51de65a324e98aef3c880cf0c9685b3787bdd0dbac4e2f5a0eea"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "3299cf767f7721bc62a3d729b44c9f3703337d085d618e69b2621468021f3247"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}
