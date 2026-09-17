@@ -1,4 +1,4 @@
-# 근거 지도: 제브(Jev), InstructGPT 연구자가 만든 판단 전용 AI
+# 근거 지도: 제브(Jev) AI, 고객 문의 예시로 이해하는 판단 전용 모델
 
 확인 기준일: 2026-09-17 (Asia/Seoul)
 
@@ -20,6 +20,17 @@
 | C12 | 제브는 2026년 9월 16일 Vercel AI Gateway에도 추가됨 | 공식 플랫폼 공지 | 확인 | [Vercel AI Gateway 변경 기록](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway), [모델 페이지](https://vercel.com/ai-gateway/models/jev) | TypeSafe의 초기 접근 정책과 Vercel 계정·요금 조건은 별개임 |
 
 ## 직접 검증 대신 수행한 주장 감사
+
+### 예시 보강 시 추가 확인
+
+- [공식 빠른 시작 문서](https://docs.typesafe.ai/introduction/quickstart): Playground에 텍스트를 상태로 넣고 질문을 추가하는 체험 경로와 API 연결 방식을 재확인함
+- [Choice](https://docs.typesafe.ai/primitives/choice): 미리 정의한 선택지, 선택값, 선택지별 확률, confidence를 반환함
+- [Score](https://docs.typesafe.ai/primitives/score): 단계 번호는 0부터 시작하며 점수는 각 단계 확률의 가중 평균임. 본문의 0~2 중 1.7점은 이를 설명하는 가상 값임
+- [Noul](https://docs.typesafe.ai/primitives/noul): 주어진 진술이 참일 확률을 0~1로 반환함
+- 예시 작성 주체: Codex. 고객 문의 문장, 배송 92%·결제 5%·계정 3%, 긴급도 1.7, Noul 0.85는 작동 방식 설명용으로 만든 가상 데이터임. 실행·정확도·한국어 성능을 입증하지 않으며 실제 API 출력 형식을 재현한 코드도 아님
+- 본문에는 표 앞에서 가상 문의와 수치임을 밝히고, 모델이 부여한 확률이 실제 100건 중 정답 수를 뜻하지 않는다고 설명함
+
+### 감사 설계
 
 - 질문: 홈페이지의 속도·비용·환각 문구 중 무엇이 구조적으로 보장되고, 무엇이 회사 평가이며, 무엇이 아직 독립 검증되지 않았나요?
 - 실행 주체: `Codex`

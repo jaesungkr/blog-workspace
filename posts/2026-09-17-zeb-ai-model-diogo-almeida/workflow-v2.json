@@ -2,7 +2,7 @@
   "version": 2,
   "profile": "standard-rich",
   "scope": "complete",
-  "primary_reader": "챗GPT를 알지만 제브(Zeb)는 처음 접한 비전문가",
+  "primary_reader": "챗GPT를 알지만 제브(Jev)는 처음 접한 비전문가",
   "direct_capture": false,
   "gif": false,
   "generated_lead": false,

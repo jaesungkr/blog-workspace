@@ -334,45 +334,51 @@
 <article class="devlog-rich">
 <section class="devlog-rich__section is-intro">
 <p>안녕하세요. dev.log입니다.</p>
-<p>고객 문의가 스팸인지, 어느 상담팀으로 보내야 하는지, 사람이 다시 봐야 하는지를 애플리케이션은 끊임없이 판단합니다. 챗GPT 같은 언어 모델에 맡기면 먼저 문장이나 JSON을 생성하고, 소프트웨어가 그 답을 다시 읽어야 합니다. <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" style="color:#1a73e8;text-decoration:none;" target="_blank">TypeSafe AI가 2026년 9월 15일 공개한 제브(Jev)</a>는 이 중간 단계를 없앴습니다. 입력을 읽고 미리 정한 선택·점수·확률만 돌려주는 <strong>판단 전용 AI</strong>입니다.</p>
-<p>제브는 글쓰기 대신 짧고 반복되는 결정을 맡습니다. 챗GPT를 언제 부를지, 생성된 답을 통과시킬지처럼 애플리케이션 안에서 자주 되풀이되는 판단이 대상입니다. TypeSafe 콘솔은 초기 접근 단계이며, Vercel AI Gateway에서는 별도 경로로 제브를 호출할 수 있습니다.</p>
+<p>온라인 쇼핑몰에 상품이 아직 도착하지 않았다는 문의가 들어왔다고 가정해 보겠습니다. 답장을 쓰기 전에 배송팀으로 보낼지, 얼마나 급한 일인지부터 정해야 합니다. 고객마다 표현이 달라서 단어 몇 개만으로 분류하기 어려운 문의도 있습니다.</p>
+<p><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" style="color:#1a73e8;text-decoration:none;" target="_blank">TypeSafe AI가 2026년 9월 15일 공개한 제브(Jev)</a>는 <strong>프로그램이 다음 행동을 정할 수 있도록 선택과 확률을 돌려주는 AI 모델</strong>입니다. 고객에게 보낼 답장보다 그 앞에 있는 분류와 판단을 맡습니다.</p>
 <figure class="devlog-rich__figure" data-media-id="typesafe-jev-homepage" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4VQ8F%2FdJMcaf2lRuv%2FAAAAAAAAAAAAAAAAAAAAAHxuqKauKb78kPxiG8nMIG-UlgHIHkSnUH1ZqkM2Ztbc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DfeXFGZrqgrVdzDz1780bx2L5cYQ%253D" alt="분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지" width="1280" height="720" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">TypeSafe 첫 화면은 제브를 ‘대화를 넘어선 지능’으로 소개합니다. 본문에서는 이 문구를 소프트웨어가 쓰는 판단 모델이라는 뜻으로 풀어 봅니다. <span class="devlog-rich__credit">· <a href="https://typesafe.ai/" target="_blank" rel="noopener noreferrer">공식 자료</a></span></figcaption></figure>
 </section>
 <section class="devlog-rich__section is-toc">
 <nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#배송-문의-한-건을-제브에-맡기면">배송 문의 한 건을 제브에 맡기면</a></li>
 <li><a href="#디오고-알메이다와-챗gpt의-연결고리">디오고 알메이다와 챗GPT의 연결고리</a></li>
-<li><a href="#챗봇과-다른-제브의-세-가지-출력">챗봇과 다른 제브의 세 가지 출력</a></li>
-<li><a href="#1936배-속도와-4446배-비용의-조건">193.6배 속도와 444.6배 비용의 조건</a></li>
+<li><a href="#1936배-빠르고-4446배-저렴하다는-주장">193.6배 빠르고 444.6배 저렴하다는 주장</a></li>
 <li><a href="#환각-0의-정확한-범위">환각 0%의 정확한 범위</a></li>
-<li><a href="#반복-판단에-제브를-붙이는-자리">반복 판단에 제브를 붙이는 자리</a></li>
+<li><a href="#제브를-연결해-볼-만한-업무">제브를 연결해 볼 만한 업무</a></li>
 </ol></nav></section>
-<section class="devlog-rich__section" aria-labelledby="디오고-알메이다와-챗gpt의-연결고리">
+<section class="devlog-rich__section" aria-labelledby="배송-문의-한-건을-제브에-맡기면">
+<h2 id="배송-문의-한-건을-제브에-맡기면">배송 문의 한 건을 제브에 맡기면</h2>
+<p>다음은 작동 방식을 설명하기 위해 만든 <strong>가상의 문의와 응답 예시</strong>입니다. 아래 수치는 실제 제브를 호출해서 얻은 결과가 아닙니다.</p>
+<blockquote>고객 문의: “주문한 물건이 사흘째 도착하지 않았습니다. 내일 선물해야 하는데 배송 상황을 확인해 주세요.”</blockquote>
+<p>개발자는 이 문의와 함께 판단할 질문을 보냅니다. 담당 팀을 고르는 질문이라면 선택지를 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">배송·결제·계정</code>으로 미리 정합니다. 제브가 가령 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">배송 92%, 결제 5%, 계정 3%</code>를 돌려주면, 프로그램은 그 값을 읽어 배송팀에 문의를 배정할 수 있습니다. <strong>문의 배정은 프로그램이 실행하고, 제브는 그때 사용할 판단값을 제공합니다.</strong></p>
+<p>같은 문의에 긴급도나 수령 기한이 있는지를 물을 수도 있습니다. <a href="https://docs.typesafe.ai/introduction" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 문서</a>는 질문을 다음 세 유형으로 구분합니다. 표는 이해를 돕기 위해 응답의 핵심 값만 간추린 예시입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>질문 유형</th><th>미리 정할 질문</th><th>가상의 응답 예시</th></tr></thead><tbody><tr><td>Choice: 선택</td><td>배송·결제·계정 중 담당 팀은?</td><td>배송 92%, 결제 5%, 계정 3%</td></tr><tr><td>Score: 점수</td><td>여유 있음(0)·빠른 확인 필요(1)·즉시 확인 필요(2) 중 긴급도는?</td><td>1.7점. 즉시 확인이 필요한 쪽에 가까움</td></tr><tr><td>Noul: 참일 확률</td><td>고객이 특정 기한 전 수령을 요구하는가?</td><td>0.85. 제브가 추정한 확률로는 85%</td></tr></tbody></table></div>
+<p>공식 문서에서 문의 내용처럼 판단할 자료는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">상태(state)</code>, 답의 형태를 미리 정한 질문은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">정형 질문(typed questions)</code>이라고 부릅니다. Choice와 Score는 선택값이나 점수에 더해 확률 분포와 신뢰도 정보도 제공합니다. <a href="https://docs.typesafe.ai/primitives/score" style="color:#1a73e8;text-decoration:none;" target="_blank">Score의 점수</a>는 단계마다 부여한 확률을 반영한 평균이어서 소수로 나올 수 있습니다. 세 유형의 질문은 한 요청에 묶을 수 있으며, 각 질문은 같은 자료를 보고 서로 독립적으로 평가됩니다.</p>
+<p>이 예시의 92%는 모델이 특정 선택지에 부여한 확률입니다. 배송 문의를 실제로 100건 시험했을 때 92건을 맞혔다는 뜻은 아닙니다. 어느 정도 확신할 때 자동으로 배정할지는 개발자가 실제 문의로 검증해 정해야 합니다.</p>
+<p>챗GPT 같은 언어 모델에도 분류를 시키거나 정해진 형식으로 답하게 할 수 있습니다. 제브가 내세우는 차이는 이런 판단을 위한 출력 방식에 있습니다. 문장을 한 단어씩 이어 쓰는 대신, 미리 정한 질문의 답과 확률을 병렬로 계산합니다. 고객에게 보낼 안내문이 필요하다면 그 뒤에 사람이나 생성형 언어 모델이 작성하도록 연결합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="디오고-알메이다와-챗gpt의-연결고리">
 <h2 id="디오고-알메이다와-챗gpt의-연결고리">디오고 알메이다와 챗GPT의 연결고리</h2>
-<p>제브를 만든 TypeSafe 창업자 디오고 알메이다는 <a href="https://arxiv.org/abs/2203.02155" style="color:#1a73e8;text-decoration:none;" target="_blank">2022년 InstructGPT 논문</a>의 공동 저자입니다. 사람이 선호하는 답을 학습에 반영해 GPT-3가 지시를 더 잘 따르도록 만든 연구로, 오늘날 챗GPT의 대화 방식을 준비한 핵심 작업입니다. 알메이다는 <a href="https://arxiv.org/abs/2303.08774" style="color:#1a73e8;text-decoration:none;" target="_blank">GPT-4 기술 보고서</a>에도 이름을 올렸습니다.</p>
-<p>TypeSafe는 알메이다가 RLHF와 InstructGPT를 공동 개발했고, 이 방법이 ChatGPT와 GPT-4로 이어졌다고 소개합니다. 공개 자료로 독립 확인되는 범위는 그가 <strong>InstructGPT 논문의 공동 저자이고 GPT-4 기술 보고서에도 참여했다</strong>는 사실입니다.</p>
+<p>제브를 만든 TypeSafe 창업자 디오고 알메이다는 <a href="https://arxiv.org/abs/2203.02155" style="color:#1a73e8;text-decoration:none;" target="_blank">2022년 InstructGPT 논문</a>의 공동 저자입니다. 이 연구는 사람이 선호하는 답을 학습에 반영해 GPT-3가 지시를 더 잘 따르도록 만든 작업입니다. 알메이다는 <a href="https://arxiv.org/abs/2303.08774" style="color:#1a73e8;text-decoration:none;" target="_blank">GPT-4 기술 보고서</a>에도 이름을 올렸습니다.</p>
+<p>‘챗GPT 공동 개발자’라는 소개는 이 연구 이력에서 나온 표현으로 이해하면 됩니다. <a href="https://typesafe.ai/team" style="color:#1a73e8;text-decoration:none;" target="_blank">TypeSafe는 알메이다의 연구가 ChatGPT와 GPT-4로 이어졌다고 소개</a>합니다. 논문으로 직접 확인할 수 있는 이력은 InstructGPT 공동 저자이자 GPT-4 기술 보고서 참여자라는 점입니다. 제브에서는 대화에 필요한 문장 생성보다, 소프트웨어가 반복해서 수행하는 판단에 초점을 맞췄습니다.</p>
 </section>
-<section class="devlog-rich__section is-alt" aria-labelledby="챗봇과-다른-제브의-세-가지-출력">
-<h2 id="챗봇과-다른-제브의-세-가지-출력">챗봇과 다른 제브의 세 가지 출력</h2>
-<p><a href="https://docs.typesafe.ai/introduction" style="color:#1a73e8;text-decoration:none;" target="_blank">TypeSafe 공식 문서</a>에 따르면 제브는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">상태(state)</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">정형 질문(typed questions)</code>을 입력받습니다. 상태는 고객 문의나 작업 기록처럼 판단할 자료이고, 정형 질문은 가능한 답의 모양을 미리 정해 둔 질문입니다.</p>
-<div class="rich-table-wrap"><table><thead><tr><th>질문 유형</th><th>제브가 돌려주는 값</th><th>고객 문의에 적용한 예</th></tr></thead><tbody><tr><td>Choice</td><td>정해 둔 선택지와 각 확률</td><td>결제·배송·계정 중 어느 팀으로 보낼지</td></tr><tr><td>Score</td><td>단계별 점수와 확률</td><td>문의의 긴급도를 1~5단계로 평가</td></tr><tr><td>Noul</td><td>문장이 참일 확률 0~1</td><td>사람이 다시 확인해야 하는 문의인지</td></tr></tbody></table></div>
-<p>세 질문은 같은 문의 내용을 공유하면서 서로 독립적으로 평가됩니다. 답을 한 단어씩 이어 쓰지 않고 여러 판단을 병렬로 계산하는 방식입니다. 코드는 확률이 높은 문의를 자동 분류하고, 애매한 결과만 사람에게 보낼 수 있습니다.</p>
-</section>
-<section class="devlog-rich__section" aria-labelledby="1936배-속도와-4446배-비용의-조건">
-<h2 id="1936배-속도와-4446배-비용의-조건">193.6배 속도와 444.6배 비용의 조건</h2>
-<p><a href="https://typesafe.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">TypeSafe 홈페이지</a>에는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">193.6배 빠르고 444.6배 저렴하다</code>는 문구가 크게 표시됩니다. 회사가 공개한 네 가지 워크플로 평가에서 나온 수치입니다. 공식 발표는 입력 100만 토큰당 0.042달러, 출력 토큰 무료, 종단 간 응답 시간 70~500ms도 제시합니다. 회사에 따르면 공개 속도 평가는 대체로 현재 서비스가 있는 미국 서부의 노트북에서 실행됐습니다. 출력 문장을 생성하지 않으므로 출력 토큰 요금이 없다는 설명입니다.</p>
-<p>공개된 수치는 회사 평가의 결과입니다. 곧바로 보편적인 성능을 뜻하지는 않습니다. <a href="https://evals.typesafe.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">평가 방법</a>은 보안 사고, 에이전트 기록, 송장, 고객 서비스라는 네 워크플로를 좁은 질문들로 나누고 동일한 비중으로 평균합니다. 공개 데이터셋의 독립 정답 대신 GPT-6 Astra와 Claude Fable 5.1이 낸 확률의 평균을 참조값으로 삼았습니다. 평가용 코드가 옳다고 가정한 비교입니다.</p>
-<p>TypeSafe도 이 개선치가 실제 환경에서 높은 쪽에 해당할 수 있고, 평가용 워크플로를 회사 내부 인력이 만들어 편향이 남을 수 있다고 적었습니다. 따라서 아래처럼 읽는 편이 안전합니다.</p>
+<section class="devlog-rich__section" aria-labelledby="1936배-빠르고-4446배-저렴하다는-주장">
+<h2 id="1936배-빠르고-4446배-저렴하다는-주장">193.6배 빠르고 444.6배 저렴하다는 주장</h2>
+<p><a href="https://typesafe.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">TypeSafe 홈페이지</a>는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">193.6배 빠르고 444.6배 저렴하다</code>는 수치를 내세웁니다. 문의가 들어올 때마다 AI를 부르는 서비스라면 속도와 호출 비용이 중요합니다. 다만 이 배수를 읽으려면 회사가 무엇을 비교했는지부터 확인해야 합니다.</p>
+<p><a href="https://evals.typesafe.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">공개 평가</a>는 보안 사고, 에이전트 기록, 송장, 고객 서비스의 네 업무를 여러 개의 좁은 질문으로 나눕니다. 모델마다 같은 처리 절차를 수행하게 하고 네 업무에 동일한 비중을 줬습니다. 답의 품질은 공개 데이터셋의 독립 정답 대신 GPT-6 Astra와 Claude Fable 5.1이 낸 확률의 평균과 비교했습니다. 평가용 코드가 옳다는 가정도 들어갑니다.</p>
+<p>TypeSafe도 내부 인력이 만든 업무 절차에 편향이 남을 수 있으며, 발표한 개선치가 실제 환경에서 얻을 수 있는 높은 쪽의 수치일 수 있다고 밝혔습니다. 발표 문구와 확인 범위를 나누면 다음과 같습니다.</p>
 <div class="rich-table-wrap"><table><thead><tr><th>홈페이지 문구</th><th>확인된 범위</th><th>아직 필요한 확인</th></tr></thead><tbody><tr><td>193.6배 빠름</td><td>제브에 맞춘 회사의 네 가지 구조화 워크플로 평가</td><td>다른 지역·업무·입력 길이에서의 독립 재현</td></tr><tr><td>444.6배 저렴함</td><td>같은 평가의 API 비용 계산</td><td>장기 가격과 실제 운영 비용</td></tr><tr><td>기존 LLM과 비슷한 지능</td><td>회사가 정한 질문에서 기준 모델의 확률과 비교</td><td>공개 정답 데이터와 실패 사례를 포함한 외부 평가</td></tr></tbody></table></div>
+<p>공식 발표 가격은 입력 100만 토큰당 0.042달러이며 출력 토큰은 무료입니다. 토큰은 AI가 텍스트를 처리할 때 나누는 단위입니다. 회사는 요청을 보내고 응답을 받기까지 70~500ms가 걸린다고 설명합니다. 공개 속도 평가는 대체로 서비스가 위치한 미국 서부의 노트북에서 실행했으므로, 한국에서 같은 속도가 나오는지는 별도로 확인해야 합니다.</p>
 </section>
 <section class="devlog-rich__section is-alt" aria-labelledby="환각-0의-정확한-범위">
 <h2 id="환각-0의-정확한-범위">환각 0%의 정확한 범위</h2>
-<p>홈페이지의 ‘환각 0%’는 오답률이 아니라 출력 형식에 관한 주장입니다. 제브는 가능한 출력 형태를 미리 제한하므로 약속한 형식 밖의 문장이나 존재하지 않는 필드를 만들지 않습니다. TypeSafe가 보장하는 대상은 <strong>출력 스키마</strong>입니다.</p>
-<p>선택지 안에서 틀린 답을 고를 가능성은 남습니다. 회사 발표도 0%가 실험으로 측정한 수치가 아니라, 스키마 일치가 보장되기 때문에 표시한 값이라고 설명합니다. 판단 오류 가능성을 다루기 위해 제브는 답에 확률과 신뢰도 정보를 제공합니다. 신뢰도가 높을 때만 자동 처리하고, 낮을 때는 사람이나 더 큰 언어 모델로 넘기는 정책이 필요합니다.</p>
+<p>‘환각 0%’라는 문구도 앞의 배송 문의에 대입하면 뜻이 분명해집니다. 선택지를 배송·결제·계정으로 정했다면, 제브는 목록에 없는 부서를 새로 만들어 답하지 않는다는 주장입니다. 그렇다고 배송 문의를 결제 문의로 잘못 분류할 가능성까지 사라지는 것은 아닙니다.</p>
+<p><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" style="color:#1a73e8;text-decoration:none;" target="_blank">TypeSafe가 보장한다고 설명한 대상</a>은 <strong>미리 정한 출력 형식인 ‘스키마’와의 일치</strong>입니다. 회사도 0%가 실제 오답을 세어 얻은 수치는 아니라고 밝혔습니다. 출력 형식이 맞는지와 판단 내용이 맞는지는 각각 검증해야 합니다. 답이 애매한 문의를 사람이 다시 확인할 수 있도록 처리 경로를 두는 이유도 여기에 있습니다.</p>
 </section>
-<section class="devlog-rich__section" aria-labelledby="반복-판단에-제브를-붙이는-자리">
-<h2 id="반복-판단에-제브를-붙이는-자리">반복 판단에 제브를 붙이는 자리</h2>
-<p>제브가 잘 맞는 일은 답의 후보를 미리 정할 수 있고 같은 판단을 자주 반복하는 업무입니다. 문의 분류, 스팸 판별, 작업 라우팅, 위험도 점수화, AI 에이전트 결과 검사가 여기에 들어갑니다. 반대로 글쓰기, 코드 생성, 긴 설명, 열린 질문처럼 새로운 문자열을 만들어야 하는 일은 챗GPT나 다른 생성형 언어 모델의 몫입니다.</p>
-<p>제브는 생성형 언어 모델의 앞뒤에 놓일 수 있습니다. 먼저 요청의 종류와 난도를 판단해 필요할 때만 큰 모델을 부르고, 뒤에서는 생성된 답을 정해 둔 기준으로 검사합니다. <a href="https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway" style="color:#1a73e8;text-decoration:none;" target="_blank">Vercel도 9월 16일 AI Gateway에 제브를 추가</a>하며 도구 선택, 재시도, 사람 확인 여부 같은 용도를 예로 들었습니다.</p>
-<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Jev</code>라는 이름은 경제학자 윌리엄 스탠리 제번스에서 왔습니다. 효율이 높아져 자원 사용 비용이 내려가면 전체 소비가 오히려 늘 수 있다는 제번스의 역설을 AI 판단 비용에 빗댔습니다. 제브의 승부처는 최고 성능 챗봇의 자리를 빼앗는 데 있지 않습니다. 한국의 작은 서비스에서도 분류와 검사를 매 요청마다 부를 만큼 판단 비용을 낮출 수 있는지가 관건입니다. 공개된 배수가 다른 업무에서도 재현되는지부터 확인해야 합니다.</p>
+<section class="devlog-rich__section" aria-labelledby="제브를-연결해-볼-만한-업무">
+<h2 id="제브를-연결해-볼-만한-업무">제브를 연결해 볼 만한 업무</h2>
+<p>제브를 검토할 만한 곳은 <strong>답의 후보를 정할 수 있고 같은 판단을 자주 반복하는 업무</strong>입니다. 이메일을 읽고 스팸일 확률을 구하거나, AI 에이전트가 사용할 도구를 정해 둔 목록에서 고르는 일이 여기에 해당합니다. <a href="https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway" style="color:#1a73e8;text-decoration:none;" target="_blank">Vercel도 9월 16일 AI Gateway에 제브를 추가</a>하며 도구 선택, 재시도, 사람 확인 여부 같은 용도를 제시했습니다.</p>
+<p>실제 서비스에 쓰려면 개발자가 자신의 프로그램에 API를 연결합니다. API는 프로그램이 다른 서비스에 요청을 보내고 결과를 받는 통로입니다. 9월 17일 기준 TypeSafe 콘솔은 초기 접근 단계이며, Vercel AI Gateway에서도 제브를 호출할 수 있습니다. 접근 권한이 있다면 <a href="https://docs.typesafe.ai/introduction/quickstart" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 빠른 시작 문서</a>에 안내된 Playground에서 텍스트와 질문을 넣어 보는 것부터 시작할 수 있습니다.</p>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Jev</code>라는 이름은 효율이 높아져 사용 비용이 내려가면 전체 소비가 오히려 늘 수 있다는 제번스의 역설에서 왔습니다. TypeSafe는 판단 비용이 낮아지면 AI를 쓸 곳도 늘어날 것으로 기대합니다. 국내 서비스에서 도입을 검토한다면, 이미 담당 팀이 정해진 한국어 문의를 제브에도 분류하게 해 보는 것이 구체적인 출발점입니다. 그 결과를 실제 배정 기록과 대조하고 응답 시간과 비용을 측정해야, 홈페이지의 큰 배수가 자신의 업무에서도 의미가 있는지 판단할 수 있습니다.</p>
 </section>
 </article>
