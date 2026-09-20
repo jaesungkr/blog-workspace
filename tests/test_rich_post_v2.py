@@ -152,6 +152,15 @@ summary: "v2 게이트를 검증합니다."
         self.assertNotIn("<h1", fragment)
         self.assertIn("source-frozen article surface", preview)
 
+    def test_public_caption_omits_internal_media_origin_label(self):
+        result = validate_bundle(self.post)
+        self.assertEqual([], result["errors"])
+        preview, fragment = render_outputs(result, self.post / "dist")
+        for output in (preview, fragment):
+            self.assertIn("공식 페이지에서 확인한 공개 화면입니다.", output)
+            self.assertNotIn('class="devlog-rich__credit"', output)
+            self.assertNotIn("공식 자료", output)
+
     def test_post_css_reaches_both_themes_and_fragment_without_global_changes(self):
         result = validate_bundle(self.post)
         original = render_outputs(result, self.post / "dist")

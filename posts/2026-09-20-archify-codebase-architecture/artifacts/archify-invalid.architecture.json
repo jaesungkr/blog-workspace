@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "검증 실패 확인",
+    "output": "artifacts/invalid.html"
+  },
+  "components": [
+    {
+      "id": "source",
+      "type": "external",
+      "label": "입력",
+      "pos": [40, 120],
+      "size": [120, 60]
+    }
+  ],
+  "connections": [
+    {
+      "from": "source",
+      "to": "missing-node",
+      "label": "존재하지 않는 대상"
+    }
+  ]
+}

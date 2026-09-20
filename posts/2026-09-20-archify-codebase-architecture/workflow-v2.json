@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "evidence-rich",
+  "scope": "complete",
+  "primary_reader": "처음 맡은 코드 저장소의 구조를 빠르게 파악하고 설명해야 하는 개발자",
+  "direct_capture": true,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Archify의 2026-09-20 main 커밋을 직접 실행해 doctor, 검증, 전달, 브라우저 검사를 재현한다. 설치 명령과 검증 수치는 본문 코드·표가 더 정확하므로 별도 터미널 캡처를 만들지 않는다. 독자가 최종 산출물의 모양과 정보 밀도를 판단할 수 있도록 한국어 파이프라인을 Archify로 생성한 결과 화면 1장만 대표 이미지로 사용한다. 설정 화면이나 반복 출력은 업로드 비용에 비해 새 정보가 없어 제외한다. 정적 이미지로 충분하므로 GIF, 생성형 대표 이미지, 별도 인포그래픽은 사용하지 않는다."
+}

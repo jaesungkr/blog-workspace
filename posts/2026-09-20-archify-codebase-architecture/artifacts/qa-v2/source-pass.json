@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-20T08:41:13.503136Z",
+  "checked_by": "Codex 독립 검토자 /root/archify_source_review",
+  "article_content_sha256": "288df58b707cb15bf034ec6c183eb8590350b0257d2b739067307be23f4533e0",
+  "brief_sha256": "208a0aaad9b8f5fb772adf9e60c989b045f07f3dc512407b40a6e8b88c38ad9a",
+  "evidence_sha256": "a94cf64c65cf6f715896953fb9f7803501f1d7f9fa19daf915a761d1037905a6",
+  "note": ""
+}

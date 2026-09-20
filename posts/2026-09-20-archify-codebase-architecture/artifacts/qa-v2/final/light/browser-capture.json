@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-09-20T09:29:51.584564Z",
+  "checked_by": "Codex independent reviewer",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/archify-codebase-architecture-rich-preview.html",
+  "preview_sha256": "f5374ed98fa42e9f6c8d9e23ba7da496063e0fcda6b5db3d90c185d7b16261b7",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/153.0.8010.52",
+  "protocol_version": "1.3",
+  "session": "f9604ac4-3479-4421-ab67-99faed96fd6a",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-20-archify-codebase-architecture/artifacts/qa-v2/final-rendered/archify-codebase-architecture-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5728,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdB66jg%2FdJMcag73sXb%2FAAAAAAAAAAAAAAAAAAAAAKnoEAZeeFB_pTAgDkOyqD0aNHeIc0dPFTsF8n7lHHvr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO7p5%252FOTjCA7%252F%252FcqpdqR1zAQQ4ls%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 825
+        }
+      ],
+      "screenshot_sha256": "4986d22d62c67935a70033bfedd3f3e8b9f4706d6df3ebdc85fccddc723c5c32",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-20-archify-codebase-architecture/artifacts/qa-v2/final-rendered/archify-codebase-architecture-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7734,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdB66jg%2FdJMcag73sXb%2FAAAAAAAAAAAAAAAAAAAAAKnoEAZeeFB_pTAgDkOyqD0aNHeIc0dPFTsF8n7lHHvr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO7p5%252FOTjCA7%252F%252FcqpdqR1zAQQ4ls%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 825
+        }
+      ],
+      "screenshot_sha256": "bb0bd2faa4eacd15ed259b4dacc58a8a6d40d56d9629fd4ebf698a7469994725",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    }
+  ]
+}

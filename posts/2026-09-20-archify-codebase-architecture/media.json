@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "lead_id": "archify-pipeline",
+  "items": [
+    {
+      "id": "archify-pipeline",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C04",
+        "C06",
+        "C08"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-09-20",
+      "environment": "macOS, Node.js v26.0.0, Google Chrome, Archify main commit 72c750bb070d95171dbb2244e5b62b1b7da69c12",
+      "source_url": "https://github.com/tt-a1i/archify",
+      "raw_path": "artifacts/captures/archify-pipeline-2048x1320-dark.png",
+      "publish_path": "assets/archify-pipeline.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdB66jg%2FdJMcag73sXb%2FAAAAAAAAAAAAAAAAAAAAAKnoEAZeeFB_pTAgDkOyqD0aNHeIc0dPFTsF8n7lHHvr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO7p5%252FOTjCA7%252F%252FcqpdqR1zAQQ4ls%253D",
+      "width": 2048,
+      "height": 1320,
+      "display_width": 916,
+      "mobile_scroll_width": 760,
+      "placement": "after:opening",
+      "rights": "Codex가 작성한 한국어 JSON IR을 MIT 라이선스 Archify로 렌더링하고 자동 브라우저 검사에서 캡처한 first-party 결과 화면",
+      "alt": "코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인",
+      "caption": "Archify로 직접 만든 한국어 결과 화면입니다. 에이전트가 JSON IR을 작성하고, 로컬 검증기와 렌더러가 자체 포함 HTML을 전달하는 흐름을 보여 줍니다.",
+      "processing": [
+        "authored a seven-node Korean Architecture JSON from verified product behavior",
+        "validated and delivered with Archify showcase quality",
+        "captured the exact delivered HTML at 2048x1320 in dark theme",
+        "copied the PNG without crop, annotation, or visual alteration"
+      ],
+      "redactions": [],
+      "sha256": "f95599e5bbff414c917e39f8dd58ba078ea41acd834afb122241da52a9aa4218",
+      "status": "validated"
+    }
+  ]
+}

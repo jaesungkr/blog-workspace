@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Archify가 다이어그램을 만드는 과정",
+    "subtitle": "저장소 읽기 → JSON IR → 검증 → 자체 포함 HTML",
+    "output": "artifacts/archify-pipeline.html"
+  },
+  "components": [
+    {
+      "id": "repository",
+      "type": "database",
+      "label": "코드 저장소",
+      "sublabel": "파일과 관계",
+      "pos": [40, 280],
+      "size": [150, 64]
+    },
+    {
+      "id": "agent",
+      "type": "frontend",
+      "label": "AI 에이전트",
+      "sublabel": "범위 선택과 구조 해석",
+      "pos": [240, 280],
+      "size": [170, 64]
+    },
+    {
+      "id": "skill",
+      "type": "frontend",
+      "label": "Archify 스킬",
+      "sublabel": "작성 규칙과 수정 절차",
+      "pos": [240, 120],
+      "size": [170, 64]
+    },
+    {
+      "id": "ir",
+      "type": "messagebus",
+      "label": "JSON IR",
+      "sublabel": "노드·연결·좌표",
+      "pos": [470, 280],
+      "size": [160, 64]
+    },
+    {
+      "id": "validator",
+      "type": "security",
+      "label": "검증기",
+      "sublabel": "스키마와 배치 검사",
+      "pos": [690, 280],
+      "size": [160, 64]
+    },
+    {
+      "id": "renderer",
+      "type": "backend",
+      "label": "렌더러",
+      "sublabel": "HTML과 SVG 조립",
+      "pos": [910, 280],
+      "size": [160, 64]
+    },
+    {
+      "id": "artifact",
+      "type": "cloud",
+      "label": "결과 파일",
+      "sublabel": "대화형 HTML 1개",
+      "pos": [1130, 280],
+      "size": [160, 64]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Archify 로컬 파이프라인",
+      "wraps": ["ir", "validator", "renderer"]
+    }
+  ],
+  "connections": [
+    {
+      "from": "repository",
+      "to": "agent",
+      "label": "읽기",
+      "variant": "emphasis"
+    },
+    {
+      "from": "agent",
+      "to": "skill",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "from": "agent",
+      "to": "ir",
+      "label": "구조 작성",
+      "variant": "emphasis"
+    },
+    {
+      "from": "ir",
+      "to": "validator",
+      "label": "검사",
+      "variant": "security"
+    },
+    {
+      "from": "validator",
+      "to": "renderer",
+      "label": "통과",
+      "variant": "emphasis"
+    },
+    {
+      "from": "renderer",
+      "to": "artifact",
+      "label": "전달",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "에이전트가 맡는 일",
+      "items": [
+        "질문에 맞는 범위를 고릅니다",
+        "코드와 설명을 읽어 JSON IR을 작성합니다",
+        "검사 결과에 맞춰 배치와 문구를 고칩니다"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Archify가 보장하는 일",
+      "items": [
+        "형식과 연결 대상을 검사합니다",
+        "화살표와 글자 충돌을 검사합니다",
+        "통과한 명세를 같은 방식으로 렌더링합니다"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "여전히 사람이 볼 일",
+      "items": [
+        "다이어그램 범위가 질문에 맞는지 판단합니다",
+        "코드 해석이 빠뜨린 관계가 없는지 확인합니다",
+        "외부 공유 전에 내부 이름과 경로를 점검합니다"
+      ]
+    }
+  ]
+}
