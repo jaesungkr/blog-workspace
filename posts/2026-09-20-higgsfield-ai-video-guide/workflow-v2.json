@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "힉스필드라는 이름을 처음 듣고, 광고나 숏폼 영상을 만들 때 기존 AI 영상 도구와 무엇이 다른지 판단하려는 비전문가",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 자료를 근거로 제품의 정체, 제작 흐름, 적합한 용도, 강점, 한계를 설명하는 standard-rich 글이다. 직접 생성 결과나 계정 내부 기능을 평가하지 않으므로 evidence-rich와 direct_capture는 끈다. 기능을 모두 나열하지 않고 광고·숏폼 제작 판단에 필요한 대표 기능과 모델 접근 방식만 다룬다. 기능 표는 반응형 HTML로 충분하므로 인포그래픽과 추가 화면 캡처는 만들지 않는다. 최종 대표 이미지는 사용자가 제공하고 Tistory에 업로드한 Higgsfield API 로그인·모델 갤러리 스크린샷을 사용한다."
+}

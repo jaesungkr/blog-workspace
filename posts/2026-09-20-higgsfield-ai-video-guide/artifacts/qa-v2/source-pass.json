@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-20T09:38:52.691695Z",
+  "checked_by": "Codex independent source reviewer (/root/source_review)",
+  "article_content_sha256": "12a93cb200cee2690bb04ab6e9b7e7998c33986ba53e7666604be2851e9c2154",
+  "brief_sha256": "c1295fe0bbc86c19a5df688939899367fdae4af1c0ce831c141864cbef00f1de",
+  "evidence_sha256": "36a53c6be8d01004295afb94e68ea85d03fde4bc853cc6ecdc3bed6799d079bd",
+  "note": "User-selected Higgsfield API screenshot replaced the generated lead; article body, tables, links, and evidence claims remain unchanged."
+}

@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-dark",
+  "checked_at": "2026-09-20T09:40:40.324129Z",
+  "checked_by": "Codex independent final-page reviewer",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-dark-rendered/higgsfield-ai-video-guide-rich-preview.html",
+  "preview_sha256": "ab8c11bdced695221fa4cccef624a93db38b2cb9887065069a89f14175bd3614",
+  "screenshot_root": "artifacts/qa-v2/final/dark",
+  "receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "browser_version": "Chrome/153.0.8010.52",
+  "protocol_version": "1.3",
+  "session": "8cf01268-e59a-4a26-a243-4f4767608a2d",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-20-higgsfield-ai-video-guide/artifacts/qa-v2/final-dark-rendered/higgsfield-ai-video-guide-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6623,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbnKMhQ%2FdJMcadjnTkC%2FAAAAAAAAAAAAAAAAAAAAAOiz2KjOr7VPZ-ZmOlYd3O0qJdKrr-7uCzcaIrVJvt4L%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DurYxwkI%252FhvtE0zhiEn60GnwSMfY%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 647
+        }
+      ],
+      "screenshot_sha256": "2bdd4f6d8798700124ea71263cacfd244b546b41786bcd5aaf4f8c5398293368",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-20-higgsfield-ai-video-guide/artifacts/qa-v2/final-dark-rendered/higgsfield-ai-video-guide-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 9385,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbnKMhQ%2FdJMcadjnTkC%2FAAAAAAAAAAAAAAAAAAAAAOiz2KjOr7VPZ-ZmOlYd3O0qJdKrr-7uCzcaIrVJvt4L%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DurYxwkI%252FhvtE0zhiEn60GnwSMfY%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 647
+        }
+      ],
+      "screenshot_sha256": "ddd04f0fd20274858b54bb2e98ef6584c16000efcb4270ec481bc1bcde95b7b3",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png"
+    }
+  ]
+}

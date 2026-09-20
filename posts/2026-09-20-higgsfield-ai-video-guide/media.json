@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "lead_id": "higgsfield-ai-hero",
+  "items": [
+    {
+      "id": "higgsfield-ai-hero",
+      "kind": "image",
+      "origin": "user_supplied",
+      "role": "lead",
+      "claim_ids": [
+        "C03",
+        "C08"
+      ],
+      "actor": "User-provided screenshot",
+      "captured_at": "2026-09-20",
+      "environment": "Higgsfield API login and model gallery screen, supplied through the user's Tistory CDN URL; original capture time not independently verified",
+      "source_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbnKMhQ%2FdJMcadjnTkC%2FAAAAAAAAAAAAAAAAAAAAAOiz2KjOr7VPZ-ZmOlYd3O0qJdKrr-7uCzcaIrVJvt4L%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DurYxwkI%252FhvtE0zhiEn60GnwSMfY%253D",
+      "raw_path": "artifacts/media-candidates/higgsfield-ai-user-screenshot-v1-source.png",
+      "publish_path": "assets/higgsfield-ai-user-screenshot-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbnKMhQ%2FdJMcadjnTkC%2FAAAAAAAAAAAAAAAAAAAAAOiz2KjOr7VPZ-ZmOlYd3O0qJdKrr-7uCzcaIrVJvt4L%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DurYxwkI%252FhvtE0zhiEn60GnwSMfY%253D",
+      "width": 1280,
+      "height": 647,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "User-supplied product screenshot for editorial use in the requested dev.log post; Higgsfield retains rights in its product interface and marks",
+      "alt": "왼쪽에 로그인 입력란이 있고 오른쪽에 여러 영상 모델의 예시 카드가 배치된 Higgsfield API 화면",
+      "caption": "Higgsfield API 로그인 화면 옆에 여러 영상 모델의 예시 카드가 함께 표시됩니다. 모델 수와 과금 조건은 화면이 아니라 공식 문서를 기준으로 확인했습니다.",
+      "processing": [
+        "selected by the user to replace the generated hero",
+        "downloaded byte-identically from the user-supplied Tistory CDN URL",
+        "no crop, retouching, or redaction applied"
+      ],
+      "redactions": [],
+      "sha256": "1398bde0370428a2e8310ef842f2e1f68c5bb7ff9f19a2e8e3de136443280a99",
+      "status": "validated"
+    }
+  ]
+}
