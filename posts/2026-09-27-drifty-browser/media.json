@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "lead_id": "drifty-lead",
+  "items": [
+    {
+      "id": "drifty-lead",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "status": "validated",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C06"
+      ],
+      "alt": "Drifty 로고와 데스크톱 고양이, 집중·중립·딴짓 분류 막대가 배치된 대표 이미지",
+      "caption": "Drifty는 활동을 자동으로 기록한 뒤 Focus·Neutral·Drift로 나누며, 현재 Mac과 Windows에서 설치할 수 있습니다.",
+      "placement": "opening 뒤, 첫 번째 소제목 앞",
+      "rights": "Drifty 공식 홈페이지에서 공개한 로고와 데스크톱 펫 자산을 제품 설명용으로 재배치한 편집 이미지",
+      "publish_path": "assets/drifty-hero.png",
+      "sha256": "4c1e7633eb1415081a89101f599d1de341f142929bb46d76d90a3ee41f472538",
+      "processing": [
+        "official_asset_composite",
+        "editorial_layout",
+        "png_export"
+      ],
+      "redactions": [],
+      "width": 1600,
+      "height": 900,
+      "display_width": 916,
+      "source_url": "https://drifty.so/ko/",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FuwF7t%2FdJMcaaNMZU5%2FAAAAAAAAAAAAAAAAAAAAACaFdP8RlcWZ3iYXPjnrZYPsnZO_i4BRt04KRq3lZ_24%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DMs2XiD2Ry49esO7kK1J1sFG2Sww%253D"
+    },
+    {
+      "id": "drifty-dashboard",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "result",
+      "status": "validated",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C10"
+      ],
+      "alt": "고양이 아래에 활동 타임라인, 집중·딴짓 비중, 자주 쓴 앱을 보여 주는 Drifty 공식 홈페이지 예시 화면",
+      "caption": "Drifty 공식 홈페이지의 예시 화면입니다. 시간과 비중은 실제 사용자의 측정값이 아닙니다. 모바일에서는 이미지를 좌우로 밀어 타임라인과 오른쪽 통계를 확인할 수 있습니다.",
+      "placement": "‘하루의 기록을 한 화면에서 보기’ 절의 화면 설명 바로 뒤",
+      "rights": "사용자가 블로그에 사용하도록 제공한 Drifty 공식 홈페이지 스크린샷. 제품 UI와 캐릭터의 권리는 원 권리자에게 있습니다.",
+      "publish_path": "assets/drifty-dashboard.png",
+      "sha256": "512a5ff64ccd4712fd7d9a97117e9c498937e7e9c0d048b3d4a0c421170cd890",
+      "processing": [
+        "user_supplied_original"
+      ],
+      "redactions": [],
+      "width": 3378,
+      "height": 1902,
+      "display_width": 916,
+      "mobile_scroll_width": 916,
+      "source_url": "https://drifty.so/ko/",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb5kbfO%2FdJMcabFKg4s%2FAAAAAAAAAAAAAAAAAAAAAHqTCQ6dXE9X4NKbll_qZd2sAkpOKh4waI0CA13NAOGu%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVF5uzUSMXjiWDp3nCaVAFADtyiM%253D"
+    }
+  ]
+}

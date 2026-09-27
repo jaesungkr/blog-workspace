@@ -1,0 +1,290 @@
+[
+  {
+    "theme": "light",
+    "width": 1280,
+    "measurement": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/qa-v2/final-rendered/drifty-browser-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5289,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FuwF7t%2FdJMcaaNMZU5%2FAAAAAAAAAAAAAAAAAAAAACaFdP8RlcWZ3iYXPjnrZYPsnZO_i4BRt04KRq3lZ_24%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DMs2XiD2Ry49esO7kK1J1sFG2Sww%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb5kbfO%2FdJMcabFKg4s%2FAAAAAAAAAAAAAAAAAAAAAHqTCQ6dXE9X4NKbll_qZd2sAkpOKh4waI0CA13NAOGu%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVF5uzUSMXjiWDp3nCaVAFADtyiM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "90a9bb0193868a8aa5b18201f22c6fbf69c8c620356f974f032bea48400d42bd",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass"
+    }
+  },
+  {
+    "theme": "light",
+    "width": 360,
+    "measurement": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/qa-v2/final-rendered/drifty-browser-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 6818,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FuwF7t%2FdJMcaaNMZU5%2FAAAAAAAAAAAAAAAAAAAAACaFdP8RlcWZ3iYXPjnrZYPsnZO_i4BRt04KRq3lZ_24%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DMs2XiD2Ry49esO7kK1J1sFG2Sww%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb5kbfO%2FdJMcabFKg4s%2FAAAAAAAAAAAAAAAAAAAAAHqTCQ6dXE9X4NKbll_qZd2sAkpOKh4waI0CA13NAOGu%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVF5uzUSMXjiWDp3nCaVAFADtyiM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "45bbfda7d551739c1ce6e7ed01e2b22c57a1c3b213437604052ad770c7fd54e0",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    }
+  },
+  {
+    "theme": "light",
+    "component": "dashboard",
+    "position": "left",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 916,
+      "scrollLeft": 0,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "light",
+    "component": "dashboard",
+    "position": "right",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 916,
+      "scrollLeft": 596,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "light",
+    "component": "pricing",
+    "position": "left",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 0,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "light",
+    "component": "pricing",
+    "position": "right",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 300,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "light",
+    "component": "platforms",
+    "position": "left",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 0,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "light",
+    "component": "platforms",
+    "position": "right",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 300,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "dark",
+    "width": 1280,
+    "measurement": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/qa-v2/final-dark-rendered/drifty-browser-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5289,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FuwF7t%2FdJMcaaNMZU5%2FAAAAAAAAAAAAAAAAAAAAACaFdP8RlcWZ3iYXPjnrZYPsnZO_i4BRt04KRq3lZ_24%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DMs2XiD2Ry49esO7kK1J1sFG2Sww%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb5kbfO%2FdJMcabFKg4s%2FAAAAAAAAAAAAAAAAAAAAAHqTCQ6dXE9X4NKbll_qZd2sAkpOKh4waI0CA13NAOGu%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVF5uzUSMXjiWDp3nCaVAFADtyiM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "c7724804d97886acc01287005832b4b7a7fb266208fe3ecbad8f63f20fcecf63",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass"
+    }
+  },
+  {
+    "theme": "dark",
+    "width": 360,
+    "measurement": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/qa-v2/final-dark-rendered/drifty-browser-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 6818,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FuwF7t%2FdJMcaaNMZU5%2FAAAAAAAAAAAAAAAAAAAAACaFdP8RlcWZ3iYXPjnrZYPsnZO_i4BRt04KRq3lZ_24%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DMs2XiD2Ry49esO7kK1J1sFG2Sww%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb5kbfO%2FdJMcabFKg4s%2FAAAAAAAAAAAAAAAAAAAAAHqTCQ6dXE9X4NKbll_qZd2sAkpOKh4waI0CA13NAOGu%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVF5uzUSMXjiWDp3nCaVAFADtyiM%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "dd146482463fea638d667ef3633c646082fcf4b5101f6aba94aa65bb103f5c2d",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    }
+  },
+  {
+    "theme": "dark",
+    "component": "dashboard",
+    "position": "left",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 916,
+      "scrollLeft": 0,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "dark",
+    "component": "dashboard",
+    "position": "right",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 916,
+      "scrollLeft": 596,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "dark",
+    "component": "pricing",
+    "position": "left",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 0,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "dark",
+    "component": "pricing",
+    "position": "right",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 300,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "dark",
+    "component": "platforms",
+    "position": "left",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 0,
+      "pageWidth": 360
+    }
+  },
+  {
+    "theme": "dark",
+    "component": "platforms",
+    "position": "right",
+    "measurement": {
+      "clientWidth": 320,
+      "scrollWidth": 620,
+      "scrollLeft": 300,
+      "pageWidth": 360
+    }
+  }
+]

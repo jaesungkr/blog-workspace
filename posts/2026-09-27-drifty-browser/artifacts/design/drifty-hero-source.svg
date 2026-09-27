@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f0e8"/>
+      <stop offset="0.55" stop-color="#ece4f6"/>
+      <stop offset="1" stop-color="#d8c8ee"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171320"/>
+      <stop offset="1" stop-color="#2c243d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#2a1c3d" flood-opacity="0.22"/>
+    </filter>
+    <clipPath id="panelClip"><rect x="70" y="70" width="1460" height="760" rx="54"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <rect x="70" y="70" width="1460" height="760" rx="54" fill="url(#panel)"/>
+  </g>
+  <g clip-path="url(#panelClip)">
+    <circle cx="1400" cy="100" r="360" fill="#7652a7" opacity="0.16"/>
+    <circle cx="1230" cy="780" r="300" fill="#80d9a3" opacity="0.08"/>
+    <g opacity="0.46">
+      <rect x="120" y="662" width="182" height="24" rx="12" fill="#79dca7"/>
+      <rect x="318" y="662" width="90" height="24" rx="12" fill="#8d8797"/>
+      <rect x="424" y="662" width="238" height="24" rx="12" fill="#79dca7"/>
+      <rect x="678" y="662" width="104" height="24" rx="12" fill="#f2a3a3"/>
+      <rect x="798" y="662" width="216" height="24" rx="12" fill="#8d8797"/>
+      <rect x="1030" y="662" width="132" height="24" rx="12" fill="#f2a3a3"/>
+      <rect x="1178" y="662" width="260" height="24" rx="12" fill="#79dca7"/>
+      <rect x="120" y="704" width="110" height="13" rx="6.5" fill="#70697f"/>
+      <rect x="246" y="704" width="278" height="13" rx="6.5" fill="#70697f"/>
+      <rect x="540" y="704" width="182" height="13" rx="6.5" fill="#70697f"/>
+      <rect x="738" y="704" width="330" height="13" rx="6.5" fill="#70697f"/>
+      <rect x="1084" y="704" width="168" height="13" rx="6.5" fill="#70697f"/>
+      <rect x="1268" y="704" width="170" height="13" rx="6.5" fill="#70697f"/>
+    </g>
+  </g>
+  <rect x="120" y="120" width="520" height="265" rx="34" fill="#f7f3ec"/>
+  <image x="158" y="142" width="445" height="227" preserveAspectRatio="xMidYMid meet" xlink:href="file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/source-media/drifty-logo-official.png"/>
+  <text x="124" y="462" fill="#f8f4ee" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="4">AI TIME TRACKER</text>
+  <text x="124" y="525" fill="#bcb4c8" font-family="Inter, Arial, sans-serif" font-size="22">AUTOMATIC CAPTURE · CONTEXT CLASSIFICATION</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">
+    <rect x="124" y="568" width="126" height="42" rx="21" fill="#79dca7" opacity="0.18"/>
+    <text x="151" y="596" fill="#8ee9b7">FOCUS</text>
+    <rect x="266" y="568" width="146" height="42" rx="21" fill="#aaa3b8" opacity="0.15"/>
+    <text x="289" y="596" fill="#c8c1d3">NEUTRAL</text>
+    <rect x="428" y="568" width="116" height="42" rx="21" fill="#f2a3a3" opacity="0.16"/>
+    <text x="456" y="596" fill="#f4b4b4">DRIFT</text>
+  </g>
+  <g transform="translate(850 180) scale(0.78)" filter="url(#shadow)">
+    <image x="0" y="0" width="797" height="581" xlink:href="file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/source-media/drifty-cat-base-official.png"/>
+    <image x="568" y="222" width="26" height="27" xlink:href="file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/source-media/drifty-pupil-l-official.png"/>
+    <image x="647" y="216" width="22" height="27" xlink:href="file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/artifacts/source-media/drifty-pupil-r-official.png"/>
+  </g>
+  <rect x="1150" y="726" width="282" height="58" rx="29" fill="#f7f3ec"/>
+  <text x="1193" y="764" fill="#2c243d" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="2">MAC + WINDOWS</text>
+</svg>

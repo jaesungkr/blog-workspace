@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-27T12:50:09.187172Z",
+  "checked_by": "Codex independent source reviewer /root/drifty_source_review",
+  "article_content_sha256": "a2ad31d3a8361163afd0abcebfa6f5fb0db6451bbc0ae3c4055ba44a040968bd",
+  "brief_sha256": "c2cf2cb2e2c55432e84cf8c86985a717a32b8dacf9d2d9f54d9b501d7998fea0",
+  "evidence_sha256": "c5bd26b696c58695ff5eb93acf62ec99561f9be571d48ab2b22293b5e75aae98",
+  "note": ""
+}

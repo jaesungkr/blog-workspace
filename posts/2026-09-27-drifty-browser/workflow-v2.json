@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "타이머를 자주 잊거나 하루가 어디에 쓰였는지 뒤늦게 확인하고 싶은 비전문 Mac·Windows 사용자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 홈페이지·문서·릴리스 저장소와 사용자가 준 공개 Instagram 피드를 교차 확인하는 standard-rich 경로입니다. 사용자가 지정한 제목 ‘Drifty, 고양이 AI 시간 관리 앱’을 중심으로 고양이의 집중 복귀 기능, AI 분류와 기록, 비용, Windows 설치를 설명합니다. 직접 앱을 설치하거나 계정 기능을 시험하지 않으므로 hands-on 정확도·안정성 주장은 하지 않습니다. 2026-09-27 홈페이지, Mac 중심 문서, Windows 10/11 x64 릴리스의 일치 여부를 확인한 기록을 first-party contribution으로 남깁니다. 클릭 절차를 가르치는 글이 아니므로 단계별 캡처는 필요하지 않습니다. 사용자가 제공한 공식 홈페이지 대시보드 화면은 기록을 읽는 위치를 설명하며 예시 데이터임을 캡션에 명시합니다. 작은 UI 라벨을 위해 기존 mobile_scroll_width 기능을 해당 이미지에만 적용합니다. 공식 자산 기반 리드는 유지하고 drifty-cat은 발행 대상에서 제외합니다. 생성형 히어로, 인포그래픽, GIF, 복잡한 레이아웃, 390px·768px 추가 프로필, 두 번째 원격 fetch는 라우팅하지 않습니다."
+}

@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "bfb887d9-d162-43a2-9553-3babfc773567",
+  "recorded_at": "2026-09-27T13:37:30.138949Z",
+  "recorded_by": "Codex creator",
+  "media_sha256": "66d7b92d43d61870ec4a2852ad00837423f6e5311aed893bd7017edf29c1d73a",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "drifty-lead",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FuwF7t%2FdJMcaaNMZU5%2FAAAAAAAAAAAAAAAAAAAAACaFdP8RlcWZ3iYXPjnrZYPsnZO_i4BRt04KRq3lZ_24%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DMs2XiD2Ry49esO7kK1J1sFG2Sww%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FuwF7t%2FdJMcaaNMZU5%2FAAAAAAAAAAAAAAAAAAAAACaFdP8RlcWZ3iYXPjnrZYPsnZO_i4BRt04KRq3lZ_24%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DMs2XiD2Ry49esO7kK1J1sFG2Sww%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-09-27T13:37:30.054329Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 374613,
+      "byte_length": 374613,
+      "sha256": "25a5cafdb34840b3aceeb8cbf00935b9ec083be089747cd1165876a7055cb227",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sun, 27 Sep 2026 13:27:16 GMT"
+    },
+    {
+      "id": "drifty-dashboard",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb5kbfO%2FdJMcabFKg4s%2FAAAAAAAAAAAAAAAAAAAAAHqTCQ6dXE9X4NKbll_qZd2sAkpOKh4waI0CA13NAOGu%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVF5uzUSMXjiWDp3nCaVAFADtyiM%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb5kbfO%2FdJMcabFKg4s%2FAAAAAAAAAAAAAAAAAAAAAHqTCQ6dXE9X4NKbll_qZd2sAkpOKh4waI0CA13NAOGu%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVF5uzUSMXjiWDp3nCaVAFADtyiM%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-09-27T13:37:30.138498Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 367669,
+      "byte_length": 367669,
+      "sha256": "5de0663d6cbb7af87dccb8fd795597dfd9341f1cd9d5a2ce19b3781f8299f38d",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sun, 27 Sep 2026 13:27:16 GMT"
+    }
+  ]
+}

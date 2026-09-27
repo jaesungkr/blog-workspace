@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drifty, 고양이 AI 시간 관리 앱</title>
+  <meta name="description" content="데스크톱 고양이가 집중 복귀를 돕는 Drifty를 소개합니다. AI가 일과 딴짓을 구분하는 방식, 자동 시간 기록, 무료·Cloud 선택과 Windows 지원 상태를 정리합니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>Drifty, 고양이 AI 시간 관리 앱</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>자료를 찾으려고 연 YouTube에서 어느새 쇼츠를 넘기고 있을 때가 있습니다. 그때 화면 위의 고양이가 다가와 보던 탭을 닫고, 하던 일로 돌아가도록 돕는 앱이 있습니다.</p>
+<p><strong>Drifty는 AI로 일과 딴짓을 구분하고, 데스크톱 고양이가 집중 복귀를 돕는 시간 관리 앱입니다.</strong> 타이머를 켜지 않아도 사용한 앱과 사이트를 기록합니다. 고양이와 자동 종료는 선택 기능이므로, 처음에는 기록을 보면서 AI가 자신의 업무를 제대로 구분하는지 확인해 볼 수 있습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="drifty-lead" style="--rich-media-width:916px"><img class="devlog-rich__image" src="../../../assets/drifty-hero.png" alt="Drifty 로고와 데스크톱 고양이, 집중·중립·딴짓 분류 막대가 배치된 대표 이미지" width="1600" height="900" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">Drifty는 활동을 자동으로 기록한 뒤 Focus·Neutral·Drift로 나누며, 현재 Mac과 Windows에서 설치할 수 있습니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#딴짓하는-탭을-닫아-주는-고양이">딴짓하는 탭을 닫아 주는 고양이</a></li>
+<li><a href="#youtube-강의도-딴짓으로-볼까">YouTube 강의도 딴짓으로 볼까?</a></li>
+<li><a href="#하루의-기록을-한-화면에서-보기">하루의 기록을 한 화면에서 보기</a></li>
+<li><a href="#무료로-시작할까-cloud를-쓸까">무료로 시작할까, Cloud를 쓸까?</a></li>
+<li><a href="#windows에서도-설치-가능">Windows에서도 설치 가능</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="딴짓하는-탭을-닫아-주는-고양이">
+<h2 id="딴짓하는-탭을-닫아-주는-고양이">딴짓하는 탭을 닫아 주는 고양이</h2>
+<p><a href="https://drifty.so/ko/" style="color:#1a73e8;text-decoration:none;" target="_blank">Drifty 공식 홈페이지</a>에서 눈에 띄는 기능은 데스크톱 위를 돌아다니는 고양이입니다. AI가 활동을 딴짓으로 판단하면 집중 복귀를 유도하고, 설정에 따라 고양이가 달려와 브라우저 탭을 닫는 동작을 보여 줍니다.</p>
+<p>알림을 받았을 때는 하던 일로 돌아가거나, 잠깐 쉬거나, 딴짓이 아니라고 정정할 수 있습니다. 메뉴 막대의 Companion이 이 선택을 제공하며, 탭을 닫거나 앱을 종료하는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Extreme Nudge</code>는 <strong>사용자가 켜는 베타 기능</strong>입니다. 고양이를 표시하거나 자동 종료를 켜지 않아도 시간 기록은 사용할 수 있습니다.</p>
+<p>업무용 영상을 잘못 닫으면 오히려 방해가 됩니다. 자동 종료를 켜기 전에는 강의나 메신저 대화가 어떻게 분류되는지 먼저 확인하는 편이 좋습니다. <a href="https://github.com/edgethink00/drifty_releases/releases/tag/1.11.20-winbeta.6" style="color:#1a73e8;text-decoration:none;" target="_blank">Windows Beta 0.0.6 릴리스</a>에도 Firefox 자동 종료와 고양이 동작 검증이 기록돼 있습니다. 다만 Mac과 Windows의 모든 화면과 기능이 같다는 뜻은 아닙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="youtube-강의도-딴짓으로-볼까">
+<h2 id="youtube-강의도-딴짓으로-볼까">YouTube 강의도 딴짓으로 볼까?</h2>
+<p>Drifty는 앱 이름만으로 일과 딴짓을 나누지 않고, 업무 프로필과 최근 활동을 함께 참고한다고 설명합니다. 같은 YouTube라도 업무에 필요한 강의인지, 관련 없는 영상을 보고 있는지 구분하려는 방식입니다.</p>
+<p><a href="https://docs.drifty.so/ai-and-classification/how-it-reads-work/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 분류 안내</a>와 홈페이지의 예시를 보면, 개발자가 Slack에서 React 오류를 논의하고 GitHub에서 코드를 수정한 뒤 관련 YouTube 강의를 봅니다. Drifty는 앞선 작업과 연결된 이 강의를 집중 활동으로 분류합니다. 업무와 무관한 쇼츠를 보는 상황과 다르게 판단하는 것입니다.</p>
+<p>자신이 하는 일은 업무 프로필인 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Memory.md</code>에 적고, 잘못 붙은 분류는 직접 고칠 수 있습니다. 정정한 내용은 이후 판단에 참고됩니다. 물론 이 예시가 분류 정확도를 보장하지는 않습니다. 같은 영상도 맡은 업무와 앞뒤 활동에 따라 다르게 분류될 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="하루의-기록을-한-화면에서-보기">
+<h2 id="하루의-기록을-한-화면에서-보기">하루의 기록을 한 화면에서 보기</h2>
+<p>Drifty는 활성 앱과 사이트, 창 정보와 머문 시간을 백그라운드에서 기록합니다. 홈페이지는 이를 3분 단위 블록으로 보여 준다고 안내합니다. 사용자가 작업마다 타이머를 켜거나 태그를 붙일 필요는 없습니다.</p>
+<p>기록된 활동에는 집중(<code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Focus</code>), 중립(<code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Neutral</code>), 딴짓(<code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Drift</code>)이라는 분류가 붙습니다. 아래 공식 홈페이지의 예시 화면에서는 가운데 시간대별 활동을 보고, 오른쪽에서 분류별 비중을 확인할 수 있습니다. 아래쪽에는 자주 쓴 앱과 사이트가 정리됩니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="drifty-dashboard" style="--rich-media-width:916px;--rich-mobile-scroll-width:916px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="../../../assets/drifty-dashboard.png" alt="고양이 아래에 활동 타임라인, 집중·딴짓 비중, 자주 쓴 앱을 보여 주는 Drifty 공식 홈페이지 예시 화면" width="3378" height="1902" loading="lazy" decoding="async"></div><figcaption class="devlog-rich__caption">Drifty 공식 홈페이지의 예시 화면입니다. 시간과 비중은 실제 사용자의 측정값이 아닙니다. 모바일에서는 이미지를 좌우로 밀어 타임라인과 오른쪽 통계를 확인할 수 있습니다.</figcaption></figure>
+<p>하루를 돌아볼 때는 총 사용 시간보다 딴짓으로 표시된 구간을 먼저 살펴보세요. 업무 중 잠깐 쉰 시간인지, 생각보다 오래 머문 사이트인지 구분하면 다음 날 바꿀 습관을 찾기 쉽습니다. 고객에게 청구할 정확한 시간이나 프로젝트별 원가가 필요하다면 전용 타임시트가 더 적합합니다. <a href="https://drifty.so/use-cases/developers/" style="color:#1a73e8;text-decoration:none;" target="_blank">개발자용 공식 안내</a>도 Drifty의 용도를 업무 흐름 회고로 한정합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="무료로-시작할까-cloud를-쓸까">
+<h2 id="무료로-시작할까-cloud를-쓸까">무료로 시작할까, Cloud를 쓸까?</h2>
+<p>Mac에서는 계정 없이 자동 기록과 로컬 타임라인부터 사용할 수 있습니다. AI 분류까지 쓰려면 기기 안에서 모델을 실행하거나, 외부 AI 서비스를 연결하는 방식을 고릅니다. 로컬 모델을 준비할 수 있다면 무료 로컬 AI를, 모델 설정을 맡기고 싶다면 Drifty Cloud를 고려할 수 있습니다.</p>
+<p>2026년 9월 27일 <a href="https://docs.drifty.so/account/billing/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 요금 안내</a>와 홈페이지에 나온 선택지는 다음과 같습니다. BYOK는 자신이 발급받은 API 키로 외부 AI 서비스를 연결하는 방식입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>선택</th><th>비용</th><th>준비할 것과 특징</th></tr></thead><tbody><tr><td>로컬 AI</td><td>무료</td><td>기기 안에서 분류합니다. 로컬 모델이 필요하며, Mac 안내 기준으로 약 5-7GB RAM을 사용합니다.</td></tr><tr><td>OpenRouter BYOK</td><td>공식 추정 월 4-6달러</td><td>자신의 API 키를 연결합니다. 선택한 모델과 사용량에 따라 실제 요금이 달라집니다.</td></tr><tr><td>Drifty Cloud</td><td>월 7달러 또는 연 60달러</td><td>Drifty가 관리하는 AI로 분류합니다. 별도의 모델 설치나 API 키 설정이 필요 없습니다.</td></tr></tbody></table></div>
+<p><a href="https://docs.drifty.so/ai-and-classification/privacy-boundary/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 개인정보 문서</a>는 화면 녹화나 스크린샷을 저장하지 않으며, Mac의 원시 활동 기록을 로컬 데이터베이스에 보관한다고 설명합니다. Cloud나 BYOK를 선택하면 앱 이름, 사이트, 머문 시간 등 분류에 필요한 일부 정보가 선택한 AI 공급자에게 전송됩니다. 기기 밖으로 보내는 정보를 줄이고 싶다면 로컬 AI를 먼저 살펴볼 이유가 있습니다.</p>
+<p>Windows 릴리스에도 로컬 모델 설치와 분류 검증이 기록돼 있습니다. 다만 계정 없는 사용 범위, 세부 저장 경로와 개인정보 설정은 Mac만큼 자세히 문서화돼 있지 않아 설치한 버전에서 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="windows에서도-설치-가능">
+<h2 id="windows에서도-설치-가능">Windows에서도 설치 가능</h2>
+<p><a href="https://www.instagram.com/p/DdtJZrqmpkS/?img_index=1" style="color:#1a73e8;text-decoration:none;" target="_blank">소개 피드</a>에는 Windows 출시를 반기는 댓글도 있습니다. 2026년 9월 27일 확인한 <a href="https://github.com/edgethink00/drifty_releases/releases/tag/1.11.22-win" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 Windows 릴리스</a>에는 <strong>Windows 10/11 x64용 1.11.22 설치 파일</strong>이 공개돼 있습니다.</p>
+<p>같은 설치 파일이 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Windows Beta 0.0.8</code>이라는 이름으로도 배포됩니다. 저장소의 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Pre-release</code> 표시는 Mac용 최신 릴리스를 유지하기 위한 운영 방식이며, Windows 업데이트 경로는 따로 있습니다.</p>
+<p>설치할 기기에 따라 지원 상태를 확인하면 됩니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>환경</th><th>2026-09-27 확인 상태</th><th>설치 전에 볼 점</th></tr></thead><tbody><tr><td>Apple Silicon Mac</td><td>macOS 13 이상 정식 배포</td><td>공식 다운로드와 설치 문서가 가장 자세합니다.</td></tr><tr><td>Intel Mac</td><td>대기자 명단</td><td>현재 공개 설치 파일은 Apple Silicon용입니다.</td></tr><tr><td>Windows</td><td>Windows 10/11 x64용 1.11.22 공개</td><td>설치 문서와 일부 다운로드 문구는 아직 Mac 중심입니다.</td></tr><tr><td>iPhone·iPad</td><td>iOS 앱 없음</td><td>데스크톱 활동 기록을 위한 제품입니다.</td></tr></tbody></table></div>
+<p>다운로드 안내에는 혼동할 부분이 남아 있습니다. 확인 당시 한국어 홈페이지의 Windows 링크를 열어도 본문에 Mac용 DMG 안내가 나타났습니다. 같은 화면을 만난다면 위 공식 릴리스에서 Windows용 설치 파일을 확인하세요.</p>
+<p>1.11.22에서는 마지막 설정 단계의 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Start tracking</code>이 처음에 실패로 표시되는 알려진 문제도 있습니다. 실제 기록은 이미 시작됐을 수 있으며, 공식 노트는 버튼을 다시 누르면 설정이 끝난다고 안내합니다. 설치 시점에 더 새 버전이 있다면 해당 릴리스 노트를 먼저 확인하세요.</p>
+<p>고양이가 탭을 닫는 모습이 궁금해 설치하더라도, 첫날에는 하루의 기록과 분류부터 살펴보세요. 자신의 업무를 잘 이해하는지 확인한 뒤 복귀 알림과 자동 종료를 차례로 켜 보면, 어느 정도의 개입이 집중에 도움이 되는지 판단하기 쉽습니다.</p>
+</section>
+</article>
+</body>
+</html>
