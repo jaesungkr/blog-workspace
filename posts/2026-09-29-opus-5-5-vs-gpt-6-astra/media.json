@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "lead_id": "opus-5-5-vs-gpt-6-astra-hero",
+  "items": [
+    {
+      "id": "opus-5-5-vs-gpt-6-astra-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C17"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-09-29",
+      "environment": "Codex built-in image generation; approved Grok 4.7 vs Fable 5.1 v9 hero inspected as the series reference; candidate inspected at full size and 420px thumbnail",
+      "source_url": "",
+      "raw_path": "assets/opus-5-5-vs-gpt-6-astra-hero-v1.png",
+      "publish_path": "assets/opus-5-5-vs-gpt-6-astra-hero-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FkSKyt%2FdJMcacSaQVH%2FAAAAAAAAAAAAAAAAAAAAAB9dJFTJwJ2Wum2th-qxh7nxtkERxiA1Nt_JzsTNlYia%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DmP3HU731pTS67YW5%252B6nDUj5u2YY%253D",
+      "width": 1671,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "푸른 정밀 조형물로 표현한 Opus 5.5와 금색 커서 조형물로 표현한 GPT-6 Astra를 같은 비중으로 배치한 비교 이미지",
+      "caption": "푸른 정밀 조형물은 Opus 5.5의 성능·비용 균형을, 금색 커서는 GPT-6 Astra의 도구 실행을 표현합니다.",
+      "processing": [
+        "Generated from the approved Grok 4.7 vs Fable 5.1 v9 hero as a composition reference while replacing all model-specific text, colors, and symbols",
+        "Opus uses the established cobalt, steel-blue, and ice palette with bracket-and-reasoning-plate instrumentation",
+        "Astra uses champagne gold and solar amber with a cursor-and-loop execution instrument",
+        "Creator inspected the 1671x941 raster and a 420px thumbnail for exact labels, crop safety, equal model weight, and visible defects",
+        "Independent full-size and 420px thumbnail validation passed by /root/hero_review; user aesthetic approval remains separate"
+      ],
+      "redactions": [],
+      "sha256": "4bd1954f118b463ca13d91f029f27f278d277fff71e1cee8301fba92f70d1951",
+      "status": "validated"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Opus 5.5, GPT-6 Astra, Fable 5.1 가운데 복잡한 코딩·리서치·업무 자동화에 쓸 모델을 고르는 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 문서와 공개 평가를 바탕으로 선택 기준을 만드는 standard-rich 글입니다. 직접 API 실행이나 제품 사용을 주장하지 않습니다. 독자가 이미 아는 비교 대상은 GPT-6 Astra이며, 기본 추천은 비용과 공개 성능이 균형 잡힌 Opus 5.5입니다. 장기 추론의 최대 성능이 비용보다 중요할 때 Fable 5.1을 예외로 두고, OpenAI 도구 생태계와 Astra 전용 기능이 필요할 때 Astra를 선택합니다. 표가 가격·사양·벤치마크 관계를 충분히 압축하므로 인포그래픽은 제외하고, 사용자 승인 v9 계열의 생성형 대표 이미지만 제작합니다. 절차 안내가 아니므로 독자 마찰 스크린샷도 필요하지 않습니다."
+}

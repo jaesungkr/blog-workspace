@@ -1,0 +1,38 @@
+Use case: ads-marketing and precise reference-guided edit.
+Asset type: original wide Korean Tistory AI-model comparison hero, 16:9 or similarly wide landscape.
+
+Input image role: the provided approved Grok 4.7 vs Fable 5.1 image is the edit target and composition reference. Preserve its continuous monumental celestial-observatory composition, camera, one distant central arch, crop-safe title zones, grounded lower objects, restrained mythic atmosphere, tactile enterprise-campaign finish, and small central VS. Replace the compared models, text, colors, and model-specific objects. Do not recreate the older diagonal split or square medallion layout.
+
+Create a balanced comparison between Opus 5.5 and GPT-6 Astra. Keep both sides equal in visual authority. The image must not imply a winner.
+
+Left side, Opus 5.5:
+- Use deep cobalt blue, steel blue, silver, and pale ice highlights, consistent with the established Opus palette.
+- Render one iconic, grounded precision instrument: an architectural pair of code brackets enclosing several thin stacked reasoning plates or pages. It should look engineered, quiet, and exact, not like a generic logo.
+- Large exact title text: "Opus 5.5"
+- Smaller exact Korean role line: "성능과 비용의 균형"
+
+Right side, GPT-6 Astra:
+- Use warm champagne gold, soft solar amber, ivory, and restrained bronze accents.
+- Render one iconic, grounded execution instrument: a large three-dimensional cursor or arrow passing through a smooth open loop, suggesting tool use, action, and steering. Keep it original and refined, not a copied brand mark.
+- Large exact title text: "GPT-6 Astra"
+- Smaller exact Korean role line: "도구 작업의 실행"
+
+Center:
+- A very small, understated "VS" between the two title zones.
+- Keep the distant observatory arch and central light as neutral shared architecture.
+
+Typography and layout:
+- All four text strings must be spelled exactly as provided and remain fully readable at a 420-pixel-wide thumbnail.
+- Use large clean sans-serif lettering with restrained dimensionality. Avoid decorative fonts, tiny labels, footnotes, data tables, and additional text.
+- Keep generous safe margins for Tistory cropping. Do not put important text or symbols near the outer edges.
+
+Art direction:
+- Continuous cinematic observatory environment with cool-to-warm lighting transition, not a hard split screen.
+- Monumental but uncluttered, premium enterprise campaign quality, tactile satin metal and stone, controlled volumetric light, restrained floor reflections.
+- No logos, no people, no robots, no faces, no brains, no circuit-board clichés, no confetti, no star-particle clutter, no orbital-line clutter, no winner podium, no arrows indicating superiority, and no ranking badges.
+- Avoid an app-dashboard look, card tiles, diagonal division, and square model medallions.
+
+Output requirements:
+- One polished raster image, approximately 1672×941 pixels.
+- Preserve the reference image's dense painted bounds and thumbnail clarity.
+- The result should feel like the next image in the same dev.log AI-model comparison series while being specifically recognizable as Opus 5.5 versus GPT-6 Astra.

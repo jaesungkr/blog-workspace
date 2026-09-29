@@ -1,0 +1,18 @@
+{
+  "cache_heavy_agent": {
+    "fable_5_1": 75.0,
+    "gpt_6_astra": 90.0,
+    "opus_5_5": 32.0
+  },
+  "single_300k_prompt": {
+    "fable_5_1": 5.5,
+    "gpt_6_astra": 9.75,
+    "opus_5_5": 2.2
+  },
+  "standard_bundle": {
+    "fable_5_1": 20.0,
+    "gpt_6_astra": 20.0,
+    "opus_5_5": 8.0
+  },
+  "standard_bundle_savings_vs_astra_percent": 60.0
+}
