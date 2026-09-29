@@ -7,7 +7,7 @@ subcategory: "AI 모델 · 비교"
 status: ready
 format: rich-post-v2
 tags: [Claude Opus 5.5, GPT-6 Astra, Claude Fable 5.1, AI 모델 비교, LLM API]
-summary: "Claude Opus 5.5와 GPT-6 Astra의 공개 성능, API 비용, 문맥과 도구 기능을 비교하고 Fable 5.1이 필요한 예외까지 정리합니다."
+summary: "Claude Opus 5.5와 GPT-6 Astra의 공개 성능, Arena 평가와 API 비용을 비교하고 Fable 5.1이 필요한 경우까지 정리합니다."
 hero_image: assets/opus-5-5-vs-gpt-6-astra-hero-v1.png
 published_url: ""
 sources:
@@ -19,6 +19,11 @@ sources:
   - https://artificialanalysis.ai/models/claude-opus-5-5
   - https://artificialanalysis.ai/models/gpt-6-astra
   - https://artificialanalysis.ai/models/claude-fable-5-1
+  - https://arena.ai/leaderboard/text
+  - https://arena.ai/leaderboard/code/webdev
+  - https://arena.ai/leaderboard/agent
+  - https://arena.ai/how-it-works
+  - https://x.com/arena/status/2103532528946839901/photo/2
 ---
 
 안녕하세요. dev.log입니다.
@@ -73,9 +78,24 @@ Humanity's Last Exam은 여러 분야의 추론과 지식을 평가하며, 아�
 
 다만 Anthropic이 모아 공개한 결과이므로 평가 조건까지 같다고 보면 안 됩니다. Opus 5.5는 대부분 최대 추론 강도로, Terminal-Bench에서는 `xhigh`로 실행됐습니다. Astra 점수는 OpenAI 또는 공개 리더보드에서 가져왔으며, 서버와 추론 예산, 도구를 모두 통일한 단일 실험은 아닙니다. Anthropic도 실제 작업에서 Opus 5.5와 Fable 5.1의 차이는 표에 나타난 것보다 작다고 설명합니다.
 
+### Arena에서 확인한 사용자 평가
+
+**Opus 5.5는 Arena의 사용자 평가에서도 좋은 반응을 얻고 있습니다.** Arena의 [기본 비교 방식](https://arena.ai/how-it-works)은 모델 이름을 가린 두 답변을 보여 주고, 사용자가 더 선호하는 답변을 고르게 하는 것입니다. 정답을 맞혔는지만으로 평가하는 벤치마크와 달리, 사용자가 어느 결과물을 더 좋게 받아들이는지 살펴볼 수 있습니다.
+
+2026년 9월 29일 확인한 [Text Overall](https://arena.ai/leaderboard/text)과 [WebDev](https://arena.ai/leaderboard/code/webdev)에서 Opus 5.5는 모두 1위로 표시됐습니다. 두 화면의 갱신일은 9월 25일입니다. Text는 다양한 텍스트 응답을, WebDev는 프런트엔드 웹 개발 결과물을 비교합니다. 아래는 순위와 점수이며, 괄호 안은 추론 설정입니다. 점수는 높을수록 좋지만 두 부문의 점수를 서로 비교할 수는 없습니다.
+
+| Arena 부문 | Opus 5.5 | GPT-6 Astra | Fable 5.1 |
+|---|---|---|---|
+| Text Overall | **1위 · 1509±12** (`high`) | 26위 · 1478±8 (`max`) | 5위 · 1501±7 (`max`) |
+| WebDev | **1위 · 1827±18** (`max`) | 2위 · 1792±11 (`max`) | 3위 · 1751±10 (`max`) |
+
+다만 Text에서 Opus 5.5에 쌓인 투표는 2,307건이고, Arena가 표시한 추정 순위 범위는 1~10위입니다. Fable 5.1과 점수의 불확실성 범위도 겹치므로, 현재의 1위를 확정적인 우위로 해석하기는 이릅니다. 도구를 활용하는 실제 작업을 별도로 평가하는 [Agent 순위](https://arena.ai/leaderboard/agent)에서는 9월 28일 갱신 기준으로 Fable 5.1이 1위, Opus 5.5가 2위, Astra가 3위였습니다. 대화나 웹 개발에서 받은 좋은 평가가 모든 에이전트 업무의 우위로 이어지는 것은 아닙니다.
+
+문체에서도 변화가 보입니다. Arena의 [언어 표현 분석 차트](https://x.com/arena/status/2103532528946839901/photo/2)는 2026년 8~9월 Text Arena의 `high` 설정 응답을 비교했습니다. Opus 5.5의 엠대시 사용량은 1,000단어당 0.8회로, Opus 5의 15.2회보다 크게 줄었습니다. 세미콜론도 같은 단위로 6.10회에서 1.64회로 줄었습니다. 이전 모델이 자주 쓰던 문장부호를 덜 쓴다는 뜻이며, 이 수치만으로 한국어 문장이 더 자연스럽거나 답변이 더 정확해졌다고 판단할 수는 없습니다.
+
 ### 독립 평가의 성능과 과제당 비용
 
-제공사 비교표와 함께 볼 자료는 [Artificial Analysis의 Intelligence Index v4.3.2](https://artificialanalysis.ai/models/claude-opus-5-5)입니다. 코딩, 전문 문서, 장문 추론과 지식 정확성 등 10개 평가를 묶은 독립 지수이며, 점수가 높을수록 좋습니다. 아래는 세 모델의 최대 추론 설정에서 나온 점수와 비용입니다.
+사용자 선호도와 함께 과제 수행 능력과 비용을 보려면 [Artificial Analysis의 Intelligence Index v4.3.2](https://artificialanalysis.ai/models/claude-opus-5-5)도 참고할 만합니다. 코딩, 전문 문서, 장문 추론과 지식 정확성 등 10개 평가를 묶은 독립 지수이며, 점수가 높을수록 좋습니다. 아래는 세 모델의 최대 추론 설정에서 나온 점수와 비용입니다.
 
 | Artificial Analysis v4.3.2 | Opus 5.5 | GPT-6 Astra | Fable 5.1 |
 |---|---:|---:|---:|
@@ -138,3 +158,8 @@ Astra로 이미 안정적으로 처리하는 일이 있다면 비용이 많이 �
 - [Claude Opus 5.5 - Artificial Analysis](https://artificialanalysis.ai/models/claude-opus-5-5)
 - [GPT-6 Astra - Artificial Analysis](https://artificialanalysis.ai/models/gpt-6-astra)
 - [Claude Fable 5.1 - Artificial Analysis](https://artificialanalysis.ai/models/claude-fable-5-1)
+- [Text Overall 순위 - Arena](https://arena.ai/leaderboard/text)
+- [WebDev 순위 - Arena](https://arena.ai/leaderboard/code/webdev)
+- [Agent 순위 - Arena](https://arena.ai/leaderboard/agent)
+- [사용자 선호도 평가 방식 - Arena](https://arena.ai/how-it-works)
+- [Claude 언어 표현 분석 - Arena](https://x.com/arena/status/2103532528946839901/photo/2)

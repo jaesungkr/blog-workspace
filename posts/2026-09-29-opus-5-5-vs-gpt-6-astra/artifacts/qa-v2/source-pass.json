@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-09-29T13:43:23.516312Z",
-  "checked_by": "polished_source_review",
-  "article_content_sha256": "64e3e2406893afd737784bcb9c99989d19d17a27a2639cfc4ad6d04fbb71d1ff",
-  "brief_sha256": "b88a6aa5c02bb74dbd1a090752bcfe842dea604bb429b874e7ec6d06090dd596",
-  "evidence_sha256": "2120ad97f3a2733d64dac3d3463573038c682dc66184d676953d77d9d268c325",
+  "checked_at": "2026-09-29T14:31:36.192760Z",
+  "checked_by": "arena_source_review",
+  "article_content_sha256": "0fb3bdaae1e34ffd6299f39cf054dbb93d5562d6c1d83dd351a5b0ed26193422",
+  "brief_sha256": "c090afea2b0275086627741a6ea4f10a1ddd5b2ab017261995f33a5860966ad7",
+  "evidence_sha256": "68494cfaf53ab4d6be00fd6dfb381664173ae0f7096bf955e09f3c01e11f3ada",
   "note": ""
 }
