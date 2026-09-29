@@ -1,0 +1,11 @@
+Use case: precise-object-edit and lighting-weather.
+Asset type: 16:9 Korean Tistory AI model-comparison hero.
+Image 1 is the edit target. Preserve the exact camera, continuous observatory composition, positions, scale, large arch, far-edge columns, ground, contact, exact text, typography, text placement, Sonnet sculpture identity, GPT-6 Sol armillary identity, colors, and all crop-safe margins.
+
+Make only these targeted corrections:
+1. Simplify the GPT-6 Sol sculpture. Remove all four literal search, document, code, and monitor icon badges. Replace them with at most one small abstract unmarked connection node integrated into the ring. No pictograms, no app-like badges, no feature-list appearance, no added symbols.
+2. Reduce the brightness of the GPT-6 Sol inner ivory sphere and gold reflections so it does not look like the winner. Match the perceived luminance, object height, and visual weight of the Sonnet sculpture while keeping the GPT Sol solar-amber and burnished-gold palette.
+3. Remove all unreadable pseudo-writing and pseudo-glyphs from the Sonnet paper and from every ring or metal surface. Replace them only with subtle blank embossed guide lines, fine material grain, and clean machining marks. Do not add readable body copy.
+4. Keep these exact text strings unchanged and verbatim, with no additional text: "Sonnet 5.5", "코딩·문서 실무", "VS", "GPT-6 Sol", "도구 연결·에이전트".
+
+Invariants: retain the left grounded copper-and-terracotta paper/pen precision sculpture; retain the right grounded solar-amber armillary tool-hub sculpture; equal status, equal visual emphasis, balanced side key lights, plausible contact shadows, tactile paper and brushed metal, small centered VS, no logos, no watermark, no fake UI, no benchmark numbers, no winner cues, no crowns, no trophies, no floating panels, no neon, no square tiles, no pedestals. Change only the listed defects; do not redesign the concept.

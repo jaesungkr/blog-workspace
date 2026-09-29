@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonnet 5.5 vs GPT-6 Sol - AI 모델 비교</title>
+  <meta name="description" content="Claude Sonnet 5.5와 GPT-6 Sol의 성능·API 가격·장문 비용을 비교하고, Opus 5.5를 선택할 조건까지 정리했습니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>Sonnet 5.5 vs GPT-6 Sol - AI 모델 비교</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>GPT-6 Sol로 코드를 고치거나 문서를 만들고 있다면, Sonnet 5.5도 같은 작업에 써 볼 만합니다. Anthropic이 버그 수정과 문서 제작 같은 실무 작업을 겨냥해 내놓은 모델로, 기본 API 가격은 Sol과 같습니다. <strong>특히 긴 코드나 여러 문서를 한꺼번에 입력하는 작업에는 Sonnet 5.5를 먼저 검토해 보세요.</strong> Sol에 적용되는 장문 할증이 없어 비용을 줄일 여지가 있습니다.</p>
+<p>이미 Sol에 검색이나 코드 실행 도구를 연결해 쓰고 있다면, 모델을 바꾸면서 그 연결도 다시 점검해야 합니다. 이때는 새 모델의 성능뿐 아니라 옮기는 데 드는 수고까지 고려해야 합니다.</p>
+<figure class="devlog-rich__figure" data-media-id="sonnet-sol-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbjgVrX%2FdJMcahe65sr%2FAAAAAAAAAAAAAAAAAAAAAN2c1-LtnsDB_YFnIgTG3N8yn3xavsDIThhPx3KkY5IY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D8G05ejmyCJ4TEuvzbIlxZ6g54SU%253D" alt="문서와 펜촉을 결합한 Sonnet 5.5 조형물과 검색·문서·코드·컴퓨터 아이콘을 단 GPT-6 Sol의 금색 구체가 마주 선 모습" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">Sonnet 5.5의 코딩·문서 실무와 GPT-6 Sol의 도구 연결 역할을 서로 다른 조형물로 표현했습니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#sonnet-55는-어떤-모델인가요">Sonnet 5.5는 어떤 모델인가요?</a></li>
+<li><a href="#sonnet과-sol의-기본-api-가격">Sonnet과 Sol의 기본 API 가격</a></li>
+<li><a href="#긴-자료를-넣을-때-달라지는-비용">긴 자료를 넣을 때 달라지는 비용</a></li>
+<li><a href="#공개-벤치마크의-성능-차이">공개 벤치마크의 성능 차이</a></li>
+<li><a href="#opus-55가-필요한-작업">Opus 5.5가 필요한 작업</a></li>
+<li><a href="#바꾸기-전에-내-작업으로-비교하기">바꾸기 전에 내 작업으로 비교하기</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="sonnet-55는-어떤-모델인가요">
+<h2 id="sonnet-55는-어떤-모델인가요">Sonnet 5.5는 어떤 모델인가요?</h2>
+<p><a href="https://www.anthropic.com/claude-sonnet-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic</a>은 Sonnet 5.5를 Opus 5.5보다 빠르고 저렴하게 일상 업무를 처리할 모델로 소개합니다. 수정할 버그나 만들 문서처럼 목표와 완료 조건이 분명한 일에 초점을 맞췄습니다. 문서뿐 아니라 슬라이드와 스프레드시트 제작도 주요 용도로 제시합니다.</p>
+<p><a href="https://platform.claude.com/docs/en/models/sonnet-5-5/overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude Platform 문서</a>에 따르면 API 모델 ID는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">claude-sonnet-5-5</code>입니다. 한 요청에서 처리할 수 있는 문맥은 100만 토큰, 최대 출력은 12만 8천 토큰입니다. 토큰은 모델이 텍스트를 나누어 처리하는 단위이며, 문맥에는 입력 자료와 대화 내용, 생성하는 답변 등이 포함됩니다.</p>
+<p>비교 대상인 <a href="https://developers.openai.com/api/docs/models/gpt-6-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">GPT-6 Sol</a>은 복잡한 코딩과 여러 도구를 사용하는 에이전트 작업을 겨냥한 OpenAI 모델입니다. 문맥은 105만 토큰, 최대 출력은 12만 8천 토큰으로 Sonnet과 비슷합니다. Responses API에서는 웹 검색·파일 검색·코드 실행·컴퓨터 사용 같은 내장 도구를 연결할 수 있습니다.</p>
+<p>Claude의 상위 모델인 Opus 5.5는 일을 진행하면서 판단을 거듭해야 하는 복잡한 작업에 초점을 맞춥니다. 세 모델을 처음 비교할 때는 맡길 일에 따라 다음과 같이 접근할 수 있습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>지금 맡길 일</th><th>먼저 볼 모델</th><th>선택 이유</th></tr></thead><tbody><tr><td>요구사항이 분명한 코딩·버그 수정·문서 제작</td><td>Sonnet 5.5</td><td>Anthropic이 빠른 실무 처리용으로 소개하며, 기본 단가는 GPT-6 Sol과 같습니다.</td></tr><tr><td>기존 OpenAI Responses 도구와 에이전트 유지</td><td>GPT-6 Sol</td><td>모델 교체 없이 현재 도구 호출과 운영 흐름을 유지할 수 있습니다.</td></tr><tr><td>대규모 변경·감사처럼 판단이 오래 이어지는 작업</td><td>Opus 5.5</td><td>Anthropic이 지속적인 판단이 필요한 개방형 작업에 더 강한 모델로 구분합니다.</td></tr></tbody></table></div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="sonnet과-sol의-기본-api-가격">
+<h2 id="sonnet과-sol의-기본-api-가격">Sonnet과 Sol의 기본 API 가격</h2>
+<p>2026년 9월 29일 기준으로 Sonnet 5.5와 GPT-6 Sol의 표준 API 가격은 같습니다. 100만 토큰당 입력은 2달러, 출력은 10달러입니다. Opus 5.5는 입력 4달러, 출력 20달러로 두 모델의 두 배입니다. 이 요금은 프로그램에서 모델을 호출할 때 내는 사용료이며, Claude나 ChatGPT의 월 구독료와는 별개입니다.</p>
+<p>입력 자료를 저장해 재사용하는 캐시의 요금도 대부분 같습니다. 100만 토큰당 캐시 읽기는 두 모델 모두 0.20달러입니다. GPT-6 Sol의 캐시 쓰기와 Sonnet 5.5의 5분 캐시 쓰기는 2.50달러이며, Sonnet의 1시간 캐시 쓰기는 4달러입니다.</p>
+<p>기본 단가를 실제 요청 비용으로 환산하면 다음과 같습니다. Codex가 공식 단가에 입력 10만 토큰과 출력 2만 토큰을 대입해 계산했으며, 캐시와 도구 호출 비용은 제외했습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>모델</th><th>입력 비용</th><th>출력 비용</th><th>합계</th></tr></thead><tbody><tr><td>Sonnet 5.5</td><td>$0.20</td><td>$0.20</td><td><strong>$0.40</strong></td></tr><tr><td>GPT-6 Sol</td><td>$0.20</td><td>$0.20</td><td><strong>$0.40</strong></td></tr><tr><td>Opus 5.5</td><td>$0.40</td><td>$0.40</td><td><strong>$0.80</strong></td></tr></tbody></table></div>
+<p>이 조건에서는 가격만으로 Sonnet과 Sol 중 하나를 고를 이유가 없습니다. 결과물을 완성하는 데 얼마나 수정해야 하는지, 현재 쓰는 도구와 얼마나 잘 맞는지가 더 중요합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="긴-자료를-넣을-때-달라지는-비용">
+<h2 id="긴-자료를-넣을-때-달라지는-비용">긴 자료를 넣을 때 달라지는 비용</h2>
+<p>입력이 길어지면 두 모델의 요금은 달라집니다. GPT-6 Sol은 입력이 27만 2천 토큰을 넘는 요청에 장문 할증을 적용합니다. 초과분만 비싸지는 것이 아니라, 해당 요청 전체의 입력·캐시 단가가 두 배, 출력 단가가 1.5배가 됩니다. Sonnet 5.5는 100만 토큰 문맥까지 표준 단가를 유지합니다.</p>
+<p>여러 문서나 많은 코드를 한꺼번에 넣는 경우를 가정해, 입력 50만 토큰과 출력 5만 토큰의 비용도 계산했습니다. 단가 열은 100만 토큰당 입력·출력 가격입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>모델</th><th>적용한 입력·출력 단가</th><th>계산한 합계</th></tr></thead><tbody><tr><td>Sonnet 5.5</td><td>$2 / $10</td><td><strong>$1.50</strong></td></tr><tr><td>GPT-6 Sol</td><td>$4 / $15</td><td><strong>$2.75</strong></td></tr><tr><td>Opus 5.5</td><td>$4 / $20</td><td><strong>$3.00</strong></td></tr></tbody></table></div>
+<p>두 비용표는 각 모델에 같은 토큰 수가 청구된다는 가정으로 계산했습니다. 캐시와 도구 호출, Batch·Flex·Fast 옵션의 할인·할증, 데이터 처리 지역에 따른 요금은 반영하지 않았습니다. 같은 자료를 넣어도 모델마다 토큰을 나누는 방식과 추론에 쓰는 양이 달라 실제 청구액은 달라질 수 있습니다. 다만 긴 입력을 자주 처리한다면, Sol의 할증 여부를 확인하는 것만으로도 가격표에서 놓치기 쉬운 비용을 파악할 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="공개-벤치마크의-성능-차이">
+<h2 id="공개-벤치마크의-성능-차이">공개 벤치마크의 성능 차이</h2>
+<p>아래는 Anthropic이 Sonnet 5.5 발표문에 모아 놓은 공개 평가 결과입니다. 직접 세 모델을 실행해 얻은 점수는 아니며, 평가에 사용한 도구와 모델의 추론 설정도 완전히 같지 않습니다.</p>
+<p>세 평가 모두 점수가 높을수록 좋습니다. 다만 GDPval-AA의 Elo는 결과물을 서로 비교해 매긴 상대 평점이므로, 다른 평가의 백분율과는 비교할 수 없습니다. 표에서는 같은 행에 있는 모델끼리만 비교해야 합니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>공개 평가</th><th>Sonnet 5.5</th><th>GPT-6 Sol</th><th>Opus 5.5</th><th>읽는 법</th></tr></thead><tbody><tr><td>FrontierCode 1.1 Main</td><td>52.1% (xhigh)</td><td>49.3%</td><td>54.4%</td><td>실제 코드 변경이 병합 가능한지를 보는 평가입니다. Sonnet의 Max 점수는 46.2%로 오히려 낮았습니다.</td></tr><tr><td>GDPval-AA v2.1</td><td>1844 Elo</td><td>1487 Elo</td><td>1846 Elo</td><td>여러 직업의 지식 작업을 평가합니다. Sonnet과 Sol의 버그 수정 결과가 점수에 아직 반영되지 않았을 수 있습니다.</td></tr><tr><td>Terminal-Bench 4.0</td><td>70.6%</td><td>공개값 없음</td><td>66.4%</td><td>GPT-6 Sol 값이 없으므로 이 행으로 Sonnet과 Sol의 우열을 정할 수 없습니다.</td></tr></tbody></table></div>
+<p>코딩 평가인 FrontierCode에서는 Sonnet이 Sol을 앞섰고, Opus가 가장 높은 점수를 받았습니다. 눈여겨볼 부분은 Sonnet의 추론 설정입니다. 추론에 더 많은 자원을 쓰는 Max 설정에서 오히려 점수가 낮아졌습니다. Anthropic의 각주에 따르면 Max에서는 코드 검토 기능을 더 자주 사용했고, Cognition이 살핀 두 사례에서는 시간 초과나 요청하지 않은 수정으로 이어졌습니다. 두 사례로 전체 원인을 설명할 수는 없지만, 설정을 높인다고 항상 결과가 좋아지는 것은 아니라는 점은 확인할 수 있습니다.</p>
+<p>문서 등 지식 작업을 평가하는 GDPval-AA에서는 Sonnet과 Opus가 2점 차이에 그쳤습니다. 그렇다고 두 모델이 모든 업무에서 같은 성능을 낸다는 뜻은 아닙니다. Anthropic은 자체 테스트와 외부 시험 사용을 근거로, 판단을 오래 이어가야 하는 복잡한 작업에서는 Opus가 더 강하다고 설명합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="opus-55가-필요한-작업">
+<h2 id="opus-55가-필요한-작업">Opus 5.5가 필요한 작업</h2>
+<p>Opus 5.5도 Sonnet과 같은 100만 토큰 문맥과 최대 12만 8천 토큰 출력을 지원합니다. 따라서 더 긴 자료를 넣기 위해 Opus를 선택할 필요는 없습니다. 추가 비용을 낼 이유는 작업 중에 내려야 할 판단이 얼마나 복잡한지에 있습니다.</p>
+<p>예를 들어 여러 저장소의 코드를 함께 바꾸는 마이그레이션이나 요구사항이 계속 달라지는 설계 검토는 처음부터 모든 절차를 정하기 어렵습니다. 자료를 조사하면서 무엇을 비교할지까지 정해야 하는 일도 비슷합니다. 앞에서 내린 결정을 기억하면서 다음 판단을 이어가야 하므로, Anthropic이 설명하는 Opus의 강점을 시험해 볼 만한 작업입니다.</p>
+<p>반대로 수정할 오류와 통과해야 할 테스트가 정해져 있거나, 문서에 담을 내용과 형식이 분명하다면 Sonnet부터 사용해 보세요. Sonnet으로 충분한 작업까지 모두 Opus에 맡길 필요는 없습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="바꾸기-전에-내-작업으로-비교하기">
+<h2 id="바꾸기-전에-내-작업으로-비교하기">바꾸기 전에 내 작업으로 비교하기</h2>
+<p>GPT-6 Sol에서 Sonnet으로 옮길지는 자주 하는 작업 하나로 확인할 수 있습니다. 같은 자료와 지시를 두 모델에 주고, 원하는 결과가 나왔는지와 사람이 수정하는 데 걸린 시간을 비교해 보세요. API를 사용한다면 입력·출력 토큰 수와 실제 청구액도 함께 기록합니다. 긴 요청에서는 Sol의 장문 할증이 반영됐는지 확인해야 합니다.</p>
+<p>Sonnet이 여러 단계의 판단을 이어가지 못해 작업을 끝내지 못했다면, 그 작업을 Opus로 다시 실행해 볼 수 있습니다. 추가 요금을 내고도 수정 시간이 충분히 줄어드는지 확인하세요. 모델을 바꿀 이유는 공개 순위보다, 내 일을 마치는 데 드는 시간과 비용에서 찾는 편이 낫습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="참고-자료">
+<h2 id="참고-자료">참고 자료</h2>
+<ul><li><a href="https://www.anthropic.com/claude-sonnet-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic - Claude Sonnet 5.5 발표</a></li><li><a href="https://platform.claude.com/docs/en/models/sonnet-5-5/overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude Platform - Sonnet 5.5 모델 문서</a></li><li><a href="https://www.anthropic.com/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic - Claude Opus 5.5 발표</a></li><li><a href="https://developers.openai.com/api/docs/models/gpt-6-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI Docs - GPT-6 Sol 모델 문서</a></li><li><a href="https://cognition.com/frontiercode" style="color:#1a73e8;text-decoration:none;" target="_blank">Cognition - FrontierCode 리더보드</a></li></ul>
+</section>
+</article>
+</body>
+</html>

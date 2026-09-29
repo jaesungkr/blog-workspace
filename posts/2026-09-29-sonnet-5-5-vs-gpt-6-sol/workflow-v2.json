@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "코딩과 문서 작업에 쓸 주력 AI 모델을 성능과 비용 사이에서 고르려는 개발자 및 실무자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 발표와 모델 문서를 바탕으로 Sonnet 5.5, GPT-6 Sol, Opus 5.5의 역할과 선택 기준을 정리하는 standard-rich 글입니다. 직접 API 실행이나 제품 사용을 주장하지 않습니다. 동일한 입력·출력 토큰 가정으로 API 비용을 재계산한 결정표를 dev.log의 검증 가능한 기여로 남깁니다. 절차 안내가 아니므로 reader-friction 스크린샷은 제외합니다. 비교표만으로 관계를 충분히 전달할 수 있어 인포그래픽도 제외하고, 모델 선택의 균형을 상징하는 생성형 대표 이미지 한 장만 제작합니다. 일반 이미지와 표 중심 레이아웃이므로 390px·768px 추가 프로필, GIF, 두 번째 원격 fetch는 활성화하지 않습니다."
+}

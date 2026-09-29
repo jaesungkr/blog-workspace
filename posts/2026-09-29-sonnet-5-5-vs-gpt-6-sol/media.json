@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "lead_id": "sonnet-sol-hero",
+  "items": [
+    {
+      "id": "sonnet-sol-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C04",
+        "C11"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-09-29",
+      "environment": "OpenAI built-in image generation with the user-approved dev.log v9 model-comparison image as a composition reference",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/hero-v1-source.png",
+      "publish_path": "assets/hero-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbjgVrX%2FdJMcahe65sr%2FAAAAAAAAAAAAAAAAAAAAAN2c1-LtnsDB_YFnIgTG3N8yn3xavsDIThhPx3KkY5IY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D8G05ejmyCJ4TEuvzbIlxZ6g54SU%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "문서와 펜촉을 결합한 Sonnet 5.5 조형물과 검색·문서·코드·컴퓨터 아이콘을 단 GPT-6 Sol의 금색 구체가 마주 선 모습",
+      "caption": "Sonnet 5.5의 코딩·문서 실무와 GPT-6 Sol의 도구 연결 역할을 서로 다른 조형물로 표현했습니다.",
+      "processing": [
+        "generated from the user-approved v9 composition reference with model-specific symbols and exact text",
+        "user explicitly selected the original v1 candidate with four tool icons instead of the revised v2 candidate",
+        "creator visually confirmed the user-supplied Tistory CDN image matches the original v1 composition; user preference supersedes earlier optional art-direction revisions"
+      ],
+      "redactions": [],
+      "sha256": "8d11a947888ef9eda8600c0918a5a41006a127d96740fefed28f75f4f3ec1f4d",
+      "status": "validated"
+    }
+  ]
+}

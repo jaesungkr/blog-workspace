@@ -1,0 +1,28 @@
+Use case: stylized-concept.
+Asset type: 16:9 Korean Tistory AI model-comparison hero image.
+Reference image role: Image 1 is the user-approved composition and campaign-quality reference. Preserve its continuous monumental celestial-observatory setting, equal-weight two-model hierarchy, large headings with short Korean role lines, grounded standalone objects, restrained central VS, tactile materials, quiet negative space, controlled lighting, and crop-safe margins. Adapt the subjects, colors, symbols, and exact text to this comparison; do not copy the Grok code brackets, coin, book, or drafting compass.
+
+Primary request: create an editorial comparison image for Claude Sonnet 5.5 versus GPT-6 Sol. It must communicate a balanced choice between a precise everyday work model and a tool-connected agent model, without declaring a winner.
+
+Exact text, verbatim:
+Left large heading: "Sonnet 5.5"
+Left smaller Korean role line: "코딩·문서 실무"
+Center small text: "VS"
+Right large heading: "GPT-6 Sol"
+Right smaller Korean role line: "도구 연결·에이전트"
+Render no other text.
+
+Scene/backdrop: one continuous restrained ancient celestial observatory at twilight, with a single enormous distant arch, shadowed stone column edges at far margins, smoky slate atmosphere, and a narrow soft shaft of neutral silver daylight through the central opening. Quiet mythic scale, no people or literal gods, no fluffy clouds, no stars, no orbital arcs, no runes, no floor diagrams.
+
+Left subject for Sonnet 5.5: a grounded crafted copper-and-terracotta kinetic sculpture that combines one elegant folded sheet of thick uncoated paper with a precise metal pen-nib form and two aligned machined joints. The recognizable cue is polished document craft and exact bug-fixing precision. Materials: dark terracotta enamel, brushed copper edges, warm parchment fibers, charcoal recesses. Do not use purple, blue, or gold as the primary color. The object must feel engineered and editorial, not decorative stationery.
+
+Right subject for GPT-6 Sol: a grounded solar-amber astrolabe-like instrument with a solid central warm-ivory core and four physically connected brass tool arms, suggesting one model coordinating search, files, code, and computer tools. Materials: burnished gold #B56A16, solar amber #F2A93B, warm ivory #FFF3D6, dark bronze recesses. No logos, no literal app icons, no floating interface.
+
+Composition/framing: wide landscape, Sonnet left and GPT-6 Sol right because that order matches the article title; both objects equal visual weight and height, physically touching the honed graphite-stone ground with believable contact shadows. Keep the center open and the VS small. Large exact headings above each object with generous breathing room and strong 420px thumbnail readability. Continuous space, no diagonal split, no divider, no square tiles, no pedestals, no ranking podium.
+
+Lighting/mood: one neutral overhead architectural shaft plus balanced side key lights. Warm copper light on Sonnet and solar amber light on Sol, equal luminance and no halo or victory beam for either side. Background stays soft and subordinate; objects remain sharp and tactile.
+
+Creative intent: a measured choice at the same base price, expressed as two equally serious instruments with different roles.
+Style/medium: high-end architectural material study and crafted practical miniature, major enterprise editorial campaign quality, plausible optics, refined microtexture, controlled reflections, no plasticky CG sheen.
+Constraints: exact text only; equal status; publication-ready; no company logos, watermark, fake UI, benchmark numbers, prices, winner marks, arrows, crowns, trophies, or unsupported claims.
+Avoid: generic AI imagery, robot heads, brains, circuitry, neon, glass panels, floating dashboards, excessive bloom, fantasy-game wallpaper, decorative clutter, malformed typography, pseudo-writing.

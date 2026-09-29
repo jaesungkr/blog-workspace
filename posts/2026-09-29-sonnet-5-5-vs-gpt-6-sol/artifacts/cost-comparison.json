@@ -1,0 +1,49 @@
+{
+  "assumption": "Each model bills the same input and output token counts; cache, tools, discounts, and regional processing are excluded.",
+  "scenarios": [
+    {
+      "id": "short",
+      "input_tokens": 100000,
+      "output_tokens": 20000,
+      "models": {
+        "Claude Sonnet 5.5": {
+          "input_rate": "2",
+          "output_rate": "10",
+          "total_usd": "0.40"
+        },
+        "GPT-6 Sol": {
+          "input_rate": "2",
+          "output_rate": "10",
+          "total_usd": "0.40"
+        },
+        "Claude Opus 5.5": {
+          "input_rate": "4",
+          "output_rate": "20",
+          "total_usd": "0.80"
+        }
+      }
+    },
+    {
+      "id": "long",
+      "input_tokens": 500000,
+      "output_tokens": 50000,
+      "models": {
+        "Claude Sonnet 5.5": {
+          "input_rate": "2",
+          "output_rate": "10",
+          "total_usd": "1.50"
+        },
+        "GPT-6 Sol": {
+          "input_rate": "4",
+          "output_rate": "15",
+          "total_usd": "2.75"
+        },
+        "Claude Opus 5.5": {
+          "input_rate": "4",
+          "output_rate": "20",
+          "total_usd": "3.00"
+        }
+      }
+    }
+  ]
+}

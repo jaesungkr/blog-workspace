@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "reviewer": "final_source_polish_review",
+  "checked_at": "2026-09-29T13:51:10Z",
+  "result": "manual_visual_pass",
+  "strict_final_page_approval": false,
+  "method": "CUA Chrome extension browser, documented viewport capability, read-only DOM measurement and sequential viewport screenshots from top to bottom",
+  "limitation": "This observation record is not the required capture_rich_qa_v2.py CDP receipt and does not authorize the standard ready transition. The prescribed file-URI/raw-CDP capture was not run because a prior browser safety rejection prohibited that route. IAB was unavailable. The CUA Chrome extension accepted the isolated loopback HTTP previews without a security warning or approval rejection.",
+  "candidate_hashes": {
+    "light_preview_sha256": "54c7cdf335e753b95ed7d105b78ebc8d8e4912ddf0b50ee95f56da9a02c2e526",
+    "dark_preview_sha256": "3d20a01dada16fb589a4a594f0b6412374467070581e3ee7f9855341a569967f",
+    "fragment_sha256": "7c7735537cdcfe22887cae4e7ff4dcf8473a5bd2f3632810fc739077a2572e90",
+    "http_copy_hashes_match_canonical": true
+  },
+  "profiles": [
+    {"theme":"light","url":"http://127.0.0.1:8765/light.html","viewport_width":1280,"viewport_height":900,"page_scroll_width":1280,"page_scroll_height":6028,"entire_page_visually_read":true,"visual_result":"pass"},
+    {"theme":"light","url":"http://127.0.0.1:8765/light.html","viewport_width":360,"viewport_height":800,"page_scroll_width":360,"page_scroll_height":7841,"entire_page_visually_read":true,"visual_result":"pass"},
+    {"theme":"dark","url":"http://127.0.0.1:8765/dark.html","viewport_width":1280,"viewport_height":900,"page_scroll_width":1280,"page_scroll_height":6028,"entire_page_visually_read":true,"visual_result":"pass"},
+    {"theme":"dark","url":"http://127.0.0.1:8765/dark.html","viewport_width":360,"viewport_height":800,"page_scroll_width":360,"page_scroll_height":7841,"entire_page_visually_read":true,"visual_result":"pass"}
+  ],
+  "observations": {
+    "preview_h1_count": 1,
+    "heading_count": 7,
+    "page_horizontal_overflow": false,
+    "table_count": 4,
+    "desktop_table_widths": [760,760,760,760],
+    "mobile_table_widths": [620,620,620,620],
+    "mobile_table_container_widths": [320,320,320,320],
+    "table_container_overflow_x": "auto",
+    "benchmark_horizontal_scroll_test": {"themes":["light","dark"],"from":0,"to":300,"rightmost_explanation_column_readable":true},
+    "toc_navigation_test": {"theme":"dark","viewport_width":360,"label":"Sonnet과 Sol의 기본 API 가격","target_heading_top_px":23.8671875,"result":"pass"},
+    "hero": {"user_selected_version":"hero-v1","loaded":true,"natural_width":1280,"natural_height":720,"desktop_display_width":914,"desktop_display_height":514,"mobile_display_width":318,"mobile_display_height":179,"model_names_readable":true,"caption_attached":true,"dark_mode_css_filter":"none","aspect_ratio_preserved":true},
+    "body_text_and_links_readable_in_both_themes": true,
+    "wrapped_mobile_headings_not_clipped": true,
+    "paragraph_and_section_spacing_clear": true,
+    "toc_numbers_and_reference_bullets_visible": true,
+    "material_visual_defects": []
+  },
+  "evidence_location": "Viewport screenshots and DOM measurements are present in the CUA tool outputs of the independent reviewer conversation. No local screenshot files or synthetic browser receipt were generated.",
+  "cleanup": "Temporary viewport override reset; both reviewer-created tabs closed."
+}

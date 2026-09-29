@@ -1,0 +1,38 @@
+{
+  "viewports": [
+    {
+      "width": 1280,
+      "readable_media": null,
+      "status": "pending"
+    },
+    {
+      "width": 360,
+      "readable_media": null,
+      "status": "pending"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "readable_media": null,
+      "status": "pending"
+    },
+    {
+      "width": 360,
+      "readable_media": null,
+      "status": "pending"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pending"
+  },
+  "dark_theme": {
+    "contrast": null,
+    "inline_styles": null,
+    "image_surrounds": null,
+    "status": "pending"
+  }
+}
