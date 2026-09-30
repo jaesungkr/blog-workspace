@@ -1,29 +1,29 @@
 {
   "version": 2,
   "checked_at": "2026-09-30",
-  "checked_by": "Codex independent source reviewer /root/final_source_review",
+  "checked_by": "independent benchmark_source_review",
   "browser": "Chrome/154.0.8037.58",
-  "session": "a2845b27-bfbd-4326-b15f-435fdf33c901",
+  "session": "ce7c014d-6031-465a-be2c-a91ae7888006",
   "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
-  "capture_receipt_sha256": "1655f3ab91e6023d0c7ef844f2213bb3fe0299febe7102222ba78b53f448c75b",
+  "capture_receipt_sha256": "8a77e898c3e380116e65586a771471cb849408d1dec5ed49bc7639f61a810603",
   "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
   "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
-  "dark_capture_receipt_sha256": "e9f2eac5522546b3b88d627450dd5f740e2e64e0d68041d7c3e50041675340f8",
-  "source_pass_sha256": "ff31f9b47de80a4bf3b7c6db253050f12801e99a70fb259c57114c82f0a43123",
-  "article_content_sha256": "c3ee42b29396b8240bb445164af03a3066c411ba65d4b09b6e96e87588aafa40",
+  "dark_capture_receipt_sha256": "5f9647cfa1147fdca1704fef0e2829490b31c5362f7ba44a0eafddafd01e0574",
+  "source_pass_sha256": "c4b9c4aa9fb1dbe70d4140ffcf44349e49f03f0fe20ae5dae6c16fd54bf8ba7a",
+  "article_content_sha256": "87f99685ac8f1922fde954e98e81cd9d012ebcddae70a712f5f3618936b5b8b1",
   "media_sha256": "fa97d874b12c519683ddb687de56ba1f5a77ef01d91a4d6de33db3946f2c3b70",
-  "renderer_sha256": "6beddb2dbb227ef629e16488e5433b07589fbc446f72bba6418b8d9b69da84fa",
-  "css_sha256": "e121408655f404661baf1faf4da80536ce2d8e9138df7ecc0129733c5998cd2f",
+  "renderer_sha256": "52bc08421b7467600090df6ac2ff0ff0baff8d40c123ffbd3f22a0edd8e3b9a5",
+  "css_sha256": "fee5a984eec9929b160e86953e7db54f332d8eca7f15189e908089a2b29ac0ba",
   "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
-  "remote_media_sha256": "6c98ac1688bd5d01868996cbbbf31f1ff6441a51637fef6209dc7da17a067d88",
+  "remote_media_sha256": "82ba93f1bb1bf93415807eaf67585e25663bc10ad890d0a2aee7ae200ca54e6b",
   "preview_media_source": "remote",
   "preview_path": "artifacts/qa-v2/final-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
-  "preview_sha256": "c6097dcd1f61c2a3f0ae0f52140179c92f99ea285e9456bfde9979806d2177b8",
-  "preview_structure_sha256": "112c83b9dae98f890403011651e7c3f910d58bb9c610d957e3af2120bd1ded13",
+  "preview_sha256": "326e0286b8d5369686e0bd8b325c5916c8220557976cef3592238957505c726e",
+  "preview_structure_sha256": "9accbe6e0d6dca9e0d8ece16b8626ceeb92e7a171d7c566811e65c987b0d394b",
   "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
-  "dark_preview_sha256": "21608288dc12f444226f0307f5aa098dee6261621ebcf0cea9a70452d2406f1e",
+  "dark_preview_sha256": "d4c6527faf8e4d70e4091667951d8f55ababcde7b4909c9ac600a9981490a334",
   "fragment_path": "artifacts/qa-v2/final-rendered/gpt-6-1-sol-vs-opus-5-5-tistory-fragment.html",
-  "fragment_sha256": "7646a122c2969cb784c88d66acb97b83b680ed36b907cb28e9834c0554096c5a",
+  "fragment_sha256": "8a20b00d66d36aea3980d5eed0727546e5ba94a40941b7df7808413899741a1f",
   "viewports": [
     {
       "width": 1280,
@@ -38,7 +38,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "457146792d9d6b245865c155da8fcd9d9442af1ba45def2dda3144d4f7ebebda"
+      "screenshot_sha256": "f743715db425a97cc70f85c339d0cc899e80d198a67c3ebb17f0208a98356b84"
     },
     {
       "width": 360,
@@ -53,7 +53,22 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "8dab46f9b42a9b7607d7cd9604f1ae8fc56f17dd5e81d09e99fbf98abaf98682"
+      "screenshot_sha256": "0fb24f576ed7fd4ef61f1b96d9912ff7ec07b7c0577a4c4b3811652560c81d89"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "client_width": 390,
+      "scroll_width": 390,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-390.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "screenshot_sha256": "b22466be1155d5f27d36036b9ff33ef27b738659f81019ffe6e61a85436d4c9c"
     }
   ],
   "dark_viewports": [
@@ -70,7 +85,7 @@
       "status": "pass",
       "screenshot_pixel_width": 1280,
       "screenshot_pixel_height": 900,
-      "screenshot_sha256": "8512d6864fc793ae7c1030f6b9a2775ce9047115f453fd9b1653352d0b8b3b98"
+      "screenshot_sha256": "2e6d404243aa8547ced3e2a182e9e70fd6685a4fc8472f351e0ad3e5abb929d3"
     },
     {
       "width": 360,
@@ -85,7 +100,22 @@
       "status": "pass",
       "screenshot_pixel_width": 360,
       "screenshot_pixel_height": 800,
-      "screenshot_sha256": "cd748e4aa3da63687a911d11c9647f9c475c4247a37db70cbeeec54f1e881613"
+      "screenshot_sha256": "58ac6208b4c0169a844a2716f6714db24f6a8e63d44f90feeb882063b2796442"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "client_width": 390,
+      "scroll_width": 390,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-390.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "screenshot_sha256": "52407d10ae34979e9a8fe82a2fd1fead03ff9ad478ad5316598ec7c161c2363a"
     }
   ],
   "fragment": {

@@ -7,9 +7,9 @@
     "client_width": 1280,
     "client_height": 900,
     "scroll_width": 1280,
-    "scroll_height": 5505,
+    "scroll_height": 9401,
     "h1_count": 1,
-    "toc_anchor_count": 6,
+    "toc_anchor_count": 8,
     "toc_targets_unique": true,
     "image_count": 1,
     "images_loaded": true,
@@ -27,7 +27,31 @@
         "client_width": 760,
         "scroll_width": 760,
         "overflow": "auto",
-        "y": 3040.71875,
+        "y": 2383.0625,
+        "height": 330,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 4938.40625,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 5664.40625,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 7043.59375,
         "height": 236,
         "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
       },
@@ -35,7 +59,7 @@
         "client_width": 760,
         "scroll_width": 760,
         "overflow": "auto",
-        "y": 4012.234375,
+        "y": 7907.859375,
         "height": 236,
         "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
       }
@@ -48,7 +72,11 @@
       "artifacts/qa-v2/preflight/browser/1280-page-03.png",
       "artifacts/qa-v2/preflight/browser/1280-page-04.png",
       "artifacts/qa-v2/preflight/browser/1280-page-05.png",
-      "artifacts/qa-v2/preflight/browser/1280-page-06.png"
+      "artifacts/qa-v2/preflight/browser/1280-page-06.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-07.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-08.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-09.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-10.png"
     ]
   },
   {
@@ -59,9 +87,9 @@
     "client_width": 360,
     "client_height": 800,
     "scroll_width": 360,
-    "scroll_height": 7954,
+    "scroll_height": 13115,
     "h1_count": 1,
-    "toc_anchor_count": 6,
+    "toc_anchor_count": 8,
     "toc_targets_unique": true,
     "image_count": 1,
     "images_loaded": true,
@@ -79,7 +107,31 @@
         "client_width": 320,
         "scroll_width": 620,
         "overflow": "auto",
-        "y": 4141.015625,
+        "y": 2802.734375,
+        "height": 330,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 6247.875,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 7224.25,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 9526.203125,
         "height": 236,
         "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
       },
@@ -87,7 +139,7 @@
         "client_width": 320,
         "scroll_width": 620,
         "overflow": "auto",
-        "y": 5713.71875,
+        "y": 10874.71875,
         "height": 236,
         "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
       }
@@ -104,8 +156,107 @@
       "artifacts/qa-v2/preflight/browser/360-page-07.png",
       "artifacts/qa-v2/preflight/browser/360-page-08.png",
       "artifacts/qa-v2/preflight/browser/360-page-09.png",
+      "artifacts/qa-v2/preflight/browser/360-page-10.png",
+      "artifacts/qa-v2/preflight/browser/360-page-11.png",
+      "artifacts/qa-v2/preflight/browser/360-page-12.png",
+      "artifacts/qa-v2/preflight/browser/360-page-13.png",
+      "artifacts/qa-v2/preflight/browser/360-page-14.png",
+      "artifacts/qa-v2/preflight/browser/360-page-15.png",
+      "artifacts/qa-v2/preflight/browser/360-page-16.png",
       "artifacts/qa-v2/preflight/browser/360-table-0-right.png",
-      "artifacts/qa-v2/preflight/browser/360-table-1-right.png"
+      "artifacts/qa-v2/preflight/browser/360-table-1-right.png",
+      "artifacts/qa-v2/preflight/browser/360-table-2-right.png",
+      "artifacts/qa-v2/preflight/browser/360-table-3-right.png",
+      "artifacts/qa-v2/preflight/browser/360-table-4-right.png"
+    ]
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/preflight/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+    "inner_width": 390,
+    "inner_height": 844,
+    "client_width": 390,
+    "client_height": 844,
+    "scroll_width": 390,
+    "scroll_height": 12203,
+    "h1_count": 1,
+    "toc_anchor_count": 8,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/assets/gpt-6-1-sol-vs-opus-5-5-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "light",
+    "tables": [
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 2731.90625,
+        "height": 330,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 5987.5,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 6838.671875,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 8935.984375,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 10167.5625,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "review_type": "creator local preflight, not remote/final approval",
+    "screenshots": [
+      "artifacts/qa-v2/preflight/browser/390-page-00.png",
+      "artifacts/qa-v2/preflight/browser/390-page-01.png",
+      "artifacts/qa-v2/preflight/browser/390-page-02.png",
+      "artifacts/qa-v2/preflight/browser/390-page-03.png",
+      "artifacts/qa-v2/preflight/browser/390-page-04.png",
+      "artifacts/qa-v2/preflight/browser/390-page-05.png",
+      "artifacts/qa-v2/preflight/browser/390-page-06.png",
+      "artifacts/qa-v2/preflight/browser/390-page-07.png",
+      "artifacts/qa-v2/preflight/browser/390-page-08.png",
+      "artifacts/qa-v2/preflight/browser/390-page-09.png",
+      "artifacts/qa-v2/preflight/browser/390-page-10.png",
+      "artifacts/qa-v2/preflight/browser/390-page-11.png",
+      "artifacts/qa-v2/preflight/browser/390-page-12.png",
+      "artifacts/qa-v2/preflight/browser/390-page-13.png",
+      "artifacts/qa-v2/preflight/browser/390-page-14.png",
+      "artifacts/qa-v2/preflight/browser/390-table-0-right.png",
+      "artifacts/qa-v2/preflight/browser/390-table-1-right.png",
+      "artifacts/qa-v2/preflight/browser/390-table-2-right.png",
+      "artifacts/qa-v2/preflight/browser/390-table-3-right.png",
+      "artifacts/qa-v2/preflight/browser/390-table-4-right.png"
     ]
   },
   {
@@ -116,9 +267,9 @@
     "client_width": 1280,
     "client_height": 900,
     "scroll_width": 1280,
-    "scroll_height": 5505,
+    "scroll_height": 9401,
     "h1_count": 1,
-    "toc_anchor_count": 6,
+    "toc_anchor_count": 8,
     "toc_targets_unique": true,
     "image_count": 1,
     "images_loaded": true,
@@ -136,7 +287,31 @@
         "client_width": 760,
         "scroll_width": 760,
         "overflow": "auto",
-        "y": 3040.71875,
+        "y": 2383.0625,
+        "height": 330,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 4938.40625,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 5664.40625,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 7043.59375,
         "height": 236,
         "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
       },
@@ -144,7 +319,7 @@
         "client_width": 760,
         "scroll_width": 760,
         "overflow": "auto",
-        "y": 4012.234375,
+        "y": 7907.859375,
         "height": 236,
         "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
       }
@@ -157,7 +332,11 @@
       "artifacts/qa-v2/preflight-dark/browser/1280-page-03.png",
       "artifacts/qa-v2/preflight-dark/browser/1280-page-04.png",
       "artifacts/qa-v2/preflight-dark/browser/1280-page-05.png",
-      "artifacts/qa-v2/preflight-dark/browser/1280-page-06.png"
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-06.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-07.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-08.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-09.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-10.png"
     ]
   },
   {
@@ -168,9 +347,9 @@
     "client_width": 360,
     "client_height": 800,
     "scroll_width": 360,
-    "scroll_height": 7954,
+    "scroll_height": 13115,
     "h1_count": 1,
-    "toc_anchor_count": 6,
+    "toc_anchor_count": 8,
     "toc_targets_unique": true,
     "image_count": 1,
     "images_loaded": true,
@@ -188,7 +367,31 @@
         "client_width": 320,
         "scroll_width": 620,
         "overflow": "auto",
-        "y": 4141.015625,
+        "y": 2802.734375,
+        "height": 330,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 6247.875,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 7224.25,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 9526.203125,
         "height": 236,
         "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
       },
@@ -196,7 +399,7 @@
         "client_width": 320,
         "scroll_width": 620,
         "overflow": "auto",
-        "y": 5713.71875,
+        "y": 10874.71875,
         "height": 236,
         "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
       }
@@ -213,8 +416,107 @@
       "artifacts/qa-v2/preflight-dark/browser/360-page-07.png",
       "artifacts/qa-v2/preflight-dark/browser/360-page-08.png",
       "artifacts/qa-v2/preflight-dark/browser/360-page-09.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-10.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-11.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-12.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-13.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-14.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-15.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-16.png",
       "artifacts/qa-v2/preflight-dark/browser/360-table-0-right.png",
-      "artifacts/qa-v2/preflight-dark/browser/360-table-1-right.png"
+      "artifacts/qa-v2/preflight-dark/browser/360-table-1-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-table-2-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-table-3-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-table-4-right.png"
+    ]
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/preflight-dark/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+    "inner_width": 390,
+    "inner_height": 844,
+    "client_width": 390,
+    "client_height": 844,
+    "scroll_width": 390,
+    "scroll_height": 12203,
+    "h1_count": 1,
+    "toc_anchor_count": 8,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/assets/gpt-6-1-sol-vs-opus-5-5-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "dark",
+    "tables": [
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 2731.90625,
+        "height": 330,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 5987.5,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 6838.671875,
+        "height": 283,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 8935.984375,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 350,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 10167.5625,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "review_type": "creator local preflight, not remote/final approval",
+    "screenshots": [
+      "artifacts/qa-v2/preflight-dark/browser/390-page-00.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-01.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-02.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-03.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-04.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-05.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-06.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-07.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-08.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-09.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-10.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-11.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-12.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-13.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-page-14.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-table-0-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-table-1-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-table-2-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-table-3-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/390-table-4-right.png"
     ]
   }
 ]

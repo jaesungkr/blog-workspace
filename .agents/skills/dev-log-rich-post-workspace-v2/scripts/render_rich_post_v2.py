@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
+import math
 import os
 import re
 import sys
@@ -149,6 +151,59 @@ def figure_markup(
     )
 
 
+def benchmark_chart_markup(payload: str) -> str:
+    """Render bounded numeric data without scripts, raster files, or raw HTML."""
+    data = json.loads(payload)
+    if not isinstance(data, dict):
+        raise ValueError("benchmark-chart must be a JSON object")
+    title = data.get("title")
+    caption = data.get("caption")
+    groups = data.get("groups")
+    if not isinstance(title, str) or not title.strip():
+        raise ValueError("benchmark-chart requires a title")
+    if not isinstance(caption, str) or not caption.strip():
+        raise ValueError("benchmark-chart requires an evidence caption")
+    if not isinstance(groups, list) or not 1 <= len(groups) <= 6:
+        raise ValueError("benchmark-chart requires 1-6 groups")
+    parts = [
+        '<figure class="devlog-rich__benchmark">',
+        f'<p class="devlog-rich__benchmark-title">{html.escape(title)}</p>',
+        '<p class="devlog-rich__benchmark-axis">점수 (%) · 0–100 · 높을수록 좋음</p>',
+    ]
+    for group in groups:
+        if not isinstance(group, dict) or not isinstance(group.get("label"), str):
+            raise ValueError("benchmark-chart group requires a label")
+        rows = group.get("rows")
+        if not isinstance(rows, list) or not 1 <= len(rows) <= 8:
+            raise ValueError("benchmark-chart requires 1-8 rows per group")
+        parts.append('<div class="devlog-rich__benchmark-group">')
+        parts.append(f'<p class="devlog-rich__benchmark-group-title">{html.escape(group["label"])}</p>')
+        for row in rows:
+            if not isinstance(row, dict) or not isinstance(row.get("model"), str):
+                raise ValueError("benchmark-chart row requires a model")
+            score = row.get("score")
+            cost = row.get("cost")
+            tone = row.get("tone", "neutral")
+            if type(score) not in (int, float) or not math.isfinite(score) or not 0 <= score <= 100:
+                raise ValueError("benchmark-chart score must be between 0 and 100")
+            if type(cost) not in (int, float) or not math.isfinite(cost) or cost < 0:
+                raise ValueError("benchmark-chart cost must be finite and nonnegative")
+            if tone not in {"sol", "opus", "astra", "neutral"}:
+                raise ValueError("benchmark-chart tone is unsupported")
+            model = html.escape(row["model"])
+            parts.append(
+                '<div class="devlog-rich__benchmark-row">'
+                '<div class="devlog-rich__benchmark-label">'
+                f'<span>{model}</span><strong>{score:.1f}%</strong></div>'
+                '<div class="devlog-rich__benchmark-track" aria-hidden="true">'
+                f'<span class="is-{tone}" style="width:{score:g}%"></span></div>'
+                f'<p class="devlog-rich__benchmark-cost">과제당 ${cost:.2f}</p></div>'
+            )
+        parts.append('</div>')
+    parts.append(f'<figcaption class="devlog-rich__caption">{html.escape(caption)}</figcaption></figure>')
+    return "\n".join(parts)
+
+
 def render_lines(
     lines: list[str],
     items_by_id: dict[str, dict[str, Any]],
@@ -167,7 +222,31 @@ def render_lines(
                 chunks.append(clean_converted(markup))
             text_buffer.clear()
 
+    chart_buffer: list[str] | None = None
+    ordinary_fence: str | None = None
     for line, outside in iter_fence_lines(lines):
+        if chart_buffer is not None:
+            if line.strip() == "```":
+                chunks.append(benchmark_chart_markup("\n".join(chart_buffer)))
+                chart_buffer = None
+            else:
+                chart_buffer.append(line)
+            continue
+        if ordinary_fence is not None:
+            if re.fullmatch(r"\s*" + re.escape(ordinary_fence[0]) +
+                            "{" + str(len(ordinary_fence)) + r",}\s*", line):
+                ordinary_fence = None
+            text_buffer.append(line)
+            continue
+        if line.strip() == "```benchmark-chart":
+            flush()
+            chart_buffer = []
+            continue
+        fence = re.match(r"^\s*(`{3,}|~{3,})", line)
+        if fence:
+            ordinary_fence = fence.group(1)
+            text_buffer.append(line)
+            continue
         match = MEDIA_LINE_RE.match(line) if outside else None
         if match:
             flush()
@@ -183,6 +262,8 @@ def render_lines(
             )
         else:
             text_buffer.append(line)
+    if chart_buffer is not None:
+        raise ValueError("benchmark-chart fence is not closed")
     flush()
     return "\n".join(chunks)
 

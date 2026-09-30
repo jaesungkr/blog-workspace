@@ -51,3 +51,20 @@ python3 posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/research/calculate_ap
 ```
 
 저장된 출력: `artifacts/research/api-cost-result.json`입니다. 입력단가 × 0.1 + 출력단가 × 0.01로 계산하며, 캐시·도구·모드 할증을 켜면 이 값으로 실제 청구액을 예측할 수 없다는 한계를 보존했습니다.
+
+## 2026-10-01 보강 근거
+
+공식 한국어 출시 페이지를 2026-09-30 브라우저로 열고 각 그래프의 공개 SVG 점 ARIA 레이블을 읽었다. `chart-wrapper`의 중복 스크롤 사본은 제외했다. 반올림된 축이나 툴팁 첫 숫자가 아닌 `모델 / 추론 강도 / 작업당 비용 / 점수` 레이블의 정확한 값을 사용했다. urllib로 HTML을 받으려던 시도는 403으로 실패했으며 증거로 사용하지 않았다. SVG 다운로드는 타임아웃으로 파일을 얻지 못했으므로 내려받은 원본이라고 주장하지 않는다.
+
+| ID | 주장 | 유형 | 상태 | 출처·측정 기준 | 한계 |
+| --- | --- | --- | --- | --- | --- |
+| C19 | 공식 6항목 종합표 | 공식 자료 전사 | 확인 | OpenAI 출시 SVG, 5항목 max·오류율 xhigh | 행별 과제가 다름, Opus 공란은 평가점 부재 |
+| C20 | GDP.pdf max Sol 31.0%/$0.42, Opus 26.2%/$1.55, Astra 31.0%/$2.08 | 공식 자료 전사 | 확인 | 동일 공식 그래프 max점 | Opus fallback 포함, 일반 문서 전체 성능 아님 |
+| C21 | 자동화 medium Sol31.7/$0.19 vs Opus29.5/$0.65, max Sol36.1/$0.30 vs Opus42.5/$1.44 | 공식 자료 전사 | 확인 | AutomationBench1.0.6 전체 설정점 | 설정에 따라 승자가 달라짐, 제조사 effort 이름은 같은 계산량 아님 |
+| C22 | DeepSWE high75.2%/$0.65, max71.9%/$1.57 | 공식 자료 전사 | 확인 | DeepSWE1.1 전체 설정점 | max가 최고 점수 아님, Opus 없음 |
+| C23 | OSWorld max Sol71.4/$1.27 vs Astra73.5/$9.44 | 공식 자료 전사 | 확인 | OSWorld2.0 offline v2026.08.08 partial reward | 전체 과제 완료율 아님 |
+| C24 | 과학 max Sol57.0/$5.47 vs Opus63.3/$23.21 vs Astra68.1/$23.80 | 공식 자료 전사 | 확인 | Terminal-Bench Science0.1 | Opus fallback, Anthropic 별도 구성과 혼합 금지 |
+| C25 | 사실 오류율 xhigh Sol4.1/$0.10 vs 이전4.5/$0.13 vs Astra4.0/$0.60 | 공식 자료 전사 | 확인 | 사용자 오류 보고 기반 어려운 질문 묶음 | 일반 환각률 아님, 낮을수록 좋음, max에서 이전과 같음 |
+
+원천 주소: https://openai.com/ko-KR/index/introducing-gpt-6-1-sol/
+HTML 차트는 C20·C21의 점을 선택해 0–100% 막대로 재구성한다. 제조사 원래 산점도의 비용 축이나 잘린 점수 축을 복제하지 않는다. 표·그래프의 점수와 비용은 숫자 텍스트로도 모두 노출한다. Fable 자동화 max31.4%/$2.45에는 약40% 과제의 fallback 비용이 제외되어 총비용 순위를 주장하지 않는다.

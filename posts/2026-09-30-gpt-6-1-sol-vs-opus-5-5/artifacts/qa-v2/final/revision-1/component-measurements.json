@@ -1,0 +1,854 @@
+[
+  {
+    "theme": "light",
+    "width": 1280,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 9401,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "f743715db425a97cc70f85c339d0cc899e80d198a67c3ebb17f0208a98356b84",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass"
+    },
+    "figures": [
+      {
+        "x": 260,
+        "y": 3276.734375,
+        "width": 760,
+        "height": 472.046875,
+        "text": "PDF 분석: Sol·Opus·Astra 비교\n\n점수 (%) · 0–100 · 높을수록 좋음\n\nGDP.pdf · 최대 추론 설정 (max)\n\nGPT-6.1 Sol\n31.0%\n\n과제당 $0.42\n\nClaude Opus 5.5\n26.2%\n\n과제당 $1.55\n\nGPT-6 Astra\n31.0%\n\n과제당 $2.08\n\n출처: OpenAI 출시 그래프의 max 설정. 원자료를 막대그래프로 다시 구성했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.0%\n\n과제당 $0.42",
+            "style": "width:31%",
+            "track_width": 718,
+            "bar_width": 222.578125
+          },
+          {
+            "text": "Claude Opus 5.5\n26.2%\n\n과제당 $1.55",
+            "style": "width:26.2%",
+            "track_width": 718,
+            "bar_width": 188.109375
+          },
+          {
+            "text": "GPT-6 Astra\n31.0%\n\n과제당 $2.08",
+            "style": "width:31%",
+            "track_width": 718,
+            "bar_width": 222.578125
+          }
+        ]
+      },
+      {
+        "x": 260,
+        "y": 3978.5,
+        "width": 760,
+        "height": 763.15625,
+        "text": "업무 자동화: 추론 설정에 따라 달라지는 순위\n\n점수 (%) · 0–100 · 높을수록 좋음\n\n중간 추론 설정 (medium)\n\nGPT-6.1 Sol\n31.7%\n\n과제당 $0.19\n\nClaude Opus 5.5\n29.5%\n\n과제당 $0.65\n\nGPT-6 Astra\n34.1%\n\n과제당 $1.27\n\n최대 추론 설정 (max)\n\nGPT-6.1 Sol\n36.1%\n\n과제당 $0.30\n\nClaude Opus 5.5\n42.5%\n\n과제당 $1.44\n\nGPT-6 Astra\n41.4%\n\n과제당 $1.73\n\n출처: OpenAI AutomationBench 1.0.6 그래프. medium과 max를 각각 비교했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.7%\n\n과제당 $0.19",
+            "style": "width:31.7%",
+            "track_width": 718,
+            "bar_width": 227.59375
+          },
+          {
+            "text": "Claude Opus 5.5\n29.5%\n\n과제당 $0.65",
+            "style": "width:29.5%",
+            "track_width": 718,
+            "bar_width": 211.796875
+          },
+          {
+            "text": "GPT-6 Astra\n34.1%\n\n과제당 $1.27",
+            "style": "width:34.1%",
+            "track_width": 718,
+            "bar_width": 244.828125
+          },
+          {
+            "text": "GPT-6.1 Sol\n36.1%\n\n과제당 $0.30",
+            "style": "width:36.1%",
+            "track_width": 718,
+            "bar_width": 259.1875
+          },
+          {
+            "text": "Claude Opus 5.5\n42.5%\n\n과제당 $1.44",
+            "style": "width:42.5%",
+            "track_width": 718,
+            "bar_width": 305.140625
+          },
+          {
+            "text": "GPT-6 Astra\n41.4%\n\n과제당 $1.73",
+            "style": "width:41.4%",
+            "track_width": 718,
+            "bar_width": 297.25
+          }
+        ]
+      }
+    ],
+    "right_tables": []
+  },
+  {
+    "theme": "light",
+    "width": 360,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 13115,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "0fb24f576ed7fd4ef61f1b96d9912ff7ec07b7c0577a4c4b3811652560c81d89",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    },
+    "figures": [
+      {
+        "x": 20,
+        "y": 4034.65625,
+        "width": 320,
+        "height": 515.421875,
+        "text": "PDF 분석: Sol·Opus·Astra 비교\n\n점수 (%) · 0–100 · 높을수록 좋음\n\nGDP.pdf · 최대 추론 설정 (max)\n\nGPT-6.1 Sol\n31.0%\n\n과제당 $0.42\n\nClaude Opus 5.5\n26.2%\n\n과제당 $1.55\n\nGPT-6 Astra\n31.0%\n\n과제당 $2.08\n\n출처: OpenAI 출시 그래프의 max 설정. 원자료를 막대그래프로 다시 구성했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.0%\n\n과제당 $0.42",
+            "style": "width:31%",
+            "track_width": 278,
+            "bar_width": 86.171875
+          },
+          {
+            "text": "Claude Opus 5.5\n26.2%\n\n과제당 $1.55",
+            "style": "width:26.2%",
+            "track_width": 278,
+            "bar_width": 72.828125
+          },
+          {
+            "text": "GPT-6 Astra\n31.0%\n\n과제당 $2.08",
+            "style": "width:31%",
+            "track_width": 278,
+            "bar_width": 86.171875
+          }
+        ]
+      },
+      {
+        "x": 20,
+        "y": 5013.671875,
+        "width": 320,
+        "height": 832.984375,
+        "text": "업무 자동화: 추론 설정에 따라 달라지는 순위\n\n점수 (%) · 0–100 · 높을수록 좋음\n\n중간 추론 설정 (medium)\n\nGPT-6.1 Sol\n31.7%\n\n과제당 $0.19\n\nClaude Opus 5.5\n29.5%\n\n과제당 $0.65\n\nGPT-6 Astra\n34.1%\n\n과제당 $1.27\n\n최대 추론 설정 (max)\n\nGPT-6.1 Sol\n36.1%\n\n과제당 $0.30\n\nClaude Opus 5.5\n42.5%\n\n과제당 $1.44\n\nGPT-6 Astra\n41.4%\n\n과제당 $1.73\n\n출처: OpenAI AutomationBench 1.0.6 그래프. medium과 max를 각각 비교했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.7%\n\n과제당 $0.19",
+            "style": "width:31.7%",
+            "track_width": 278,
+            "bar_width": 88.125
+          },
+          {
+            "text": "Claude Opus 5.5\n29.5%\n\n과제당 $0.65",
+            "style": "width:29.5%",
+            "track_width": 278,
+            "bar_width": 82
+          },
+          {
+            "text": "GPT-6 Astra\n34.1%\n\n과제당 $1.27",
+            "style": "width:34.1%",
+            "track_width": 278,
+            "bar_width": 94.796875
+          },
+          {
+            "text": "GPT-6.1 Sol\n36.1%\n\n과제당 $0.30",
+            "style": "width:36.1%",
+            "track_width": 278,
+            "bar_width": 100.34375
+          },
+          {
+            "text": "Claude Opus 5.5\n42.5%\n\n과제당 $1.44",
+            "style": "width:42.5%",
+            "track_width": 278,
+            "bar_width": 118.140625
+          },
+          {
+            "text": "GPT-6 Astra\n41.4%\n\n과제당 $1.73",
+            "style": "width:41.4%",
+            "track_width": 278,
+            "bar_width": 115.078125
+          }
+        ]
+      }
+    ],
+    "right_tables": [
+      {
+        "x": 20,
+        "y": 2802.640625,
+        "width": 320,
+        "height": 330,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "x": 20,
+        "y": 6247.78125,
+        "width": 320,
+        "height": 283,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "x": 20,
+        "y": 7224.15625,
+        "width": 320,
+        "height": 283,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "x": 20,
+        "y": 9526.109375,
+        "width": 320,
+        "height": 236,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "x": 20,
+        "y": 10874.625,
+        "width": 320,
+        "height": 236,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 12203,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "b22466be1155d5f27d36036b9ff33ef27b738659f81019ffe6e61a85436d4c9c",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass"
+    },
+    "figures": [
+      {
+        "x": 20,
+        "y": 3905.359375,
+        "width": 350,
+        "height": 493.734375,
+        "text": "PDF 분석: Sol·Opus·Astra 비교\n\n점수 (%) · 0–100 · 높을수록 좋음\n\nGDP.pdf · 최대 추론 설정 (max)\n\nGPT-6.1 Sol\n31.0%\n\n과제당 $0.42\n\nClaude Opus 5.5\n26.2%\n\n과제당 $1.55\n\nGPT-6 Astra\n31.0%\n\n과제당 $2.08\n\n출처: OpenAI 출시 그래프의 max 설정. 원자료를 막대그래프로 다시 구성했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.0%\n\n과제당 $0.42",
+            "style": "width:31%",
+            "track_width": 308,
+            "bar_width": 95.46875
+          },
+          {
+            "text": "Claude Opus 5.5\n26.2%\n\n과제당 $1.55",
+            "style": "width:26.2%",
+            "track_width": 308,
+            "bar_width": 80.6875
+          },
+          {
+            "text": "GPT-6 Astra\n31.0%\n\n과제당 $2.08",
+            "style": "width:31%",
+            "track_width": 308,
+            "bar_width": 95.46875
+          }
+        ]
+      },
+      {
+        "x": 20,
+        "y": 4804.21875,
+        "width": 350,
+        "height": 811.296875,
+        "text": "업무 자동화: 추론 설정에 따라 달라지는 순위\n\n점수 (%) · 0–100 · 높을수록 좋음\n\n중간 추론 설정 (medium)\n\nGPT-6.1 Sol\n31.7%\n\n과제당 $0.19\n\nClaude Opus 5.5\n29.5%\n\n과제당 $0.65\n\nGPT-6 Astra\n34.1%\n\n과제당 $1.27\n\n최대 추론 설정 (max)\n\nGPT-6.1 Sol\n36.1%\n\n과제당 $0.30\n\nClaude Opus 5.5\n42.5%\n\n과제당 $1.44\n\nGPT-6 Astra\n41.4%\n\n과제당 $1.73\n\n출처: OpenAI AutomationBench 1.0.6 그래프. medium과 max를 각각 비교했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.7%\n\n과제당 $0.19",
+            "style": "width:31.7%",
+            "track_width": 308,
+            "bar_width": 97.625
+          },
+          {
+            "text": "Claude Opus 5.5\n29.5%\n\n과제당 $0.65",
+            "style": "width:29.5%",
+            "track_width": 308,
+            "bar_width": 90.859375
+          },
+          {
+            "text": "GPT-6 Astra\n34.1%\n\n과제당 $1.27",
+            "style": "width:34.1%",
+            "track_width": 308,
+            "bar_width": 105.015625
+          },
+          {
+            "text": "GPT-6.1 Sol\n36.1%\n\n과제당 $0.30",
+            "style": "width:36.1%",
+            "track_width": 308,
+            "bar_width": 111.1875
+          },
+          {
+            "text": "Claude Opus 5.5\n42.5%\n\n과제당 $1.44",
+            "style": "width:42.5%",
+            "track_width": 308,
+            "bar_width": 130.890625
+          },
+          {
+            "text": "GPT-6 Astra\n41.4%\n\n과제당 $1.73",
+            "style": "width:41.4%",
+            "track_width": 308,
+            "bar_width": 127.5
+          }
+        ]
+      }
+    ],
+    "right_tables": [
+      {
+        "x": 20,
+        "y": 2731.8125,
+        "width": 350,
+        "height": 330,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "x": 20,
+        "y": 5987.40625,
+        "width": 350,
+        "height": 283,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "x": 20,
+        "y": 6838.578125,
+        "width": 350,
+        "height": 283,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "x": 20,
+        "y": 8935.890625,
+        "width": 350,
+        "height": 236,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "x": 20,
+        "y": 10167.46875,
+        "width": 350,
+        "height": 236,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1280,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 9401,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "2e6d404243aa8547ced3e2a182e9e70fd6685a4fc8472f351e0ad3e5abb929d3",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass"
+    },
+    "figures": [
+      {
+        "x": 260,
+        "y": 3276.734375,
+        "width": 760,
+        "height": 472.046875,
+        "text": "PDF 분석: Sol·Opus·Astra 비교\n\n점수 (%) · 0–100 · 높을수록 좋음\n\nGDP.pdf · 최대 추론 설정 (max)\n\nGPT-6.1 Sol\n31.0%\n\n과제당 $0.42\n\nClaude Opus 5.5\n26.2%\n\n과제당 $1.55\n\nGPT-6 Astra\n31.0%\n\n과제당 $2.08\n\n출처: OpenAI 출시 그래프의 max 설정. 원자료를 막대그래프로 다시 구성했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.0%\n\n과제당 $0.42",
+            "style": "width:31%",
+            "track_width": 718,
+            "bar_width": 222.578125
+          },
+          {
+            "text": "Claude Opus 5.5\n26.2%\n\n과제당 $1.55",
+            "style": "width:26.2%",
+            "track_width": 718,
+            "bar_width": 188.109375
+          },
+          {
+            "text": "GPT-6 Astra\n31.0%\n\n과제당 $2.08",
+            "style": "width:31%",
+            "track_width": 718,
+            "bar_width": 222.578125
+          }
+        ]
+      },
+      {
+        "x": 260,
+        "y": 3978.5,
+        "width": 760,
+        "height": 763.15625,
+        "text": "업무 자동화: 추론 설정에 따라 달라지는 순위\n\n점수 (%) · 0–100 · 높을수록 좋음\n\n중간 추론 설정 (medium)\n\nGPT-6.1 Sol\n31.7%\n\n과제당 $0.19\n\nClaude Opus 5.5\n29.5%\n\n과제당 $0.65\n\nGPT-6 Astra\n34.1%\n\n과제당 $1.27\n\n최대 추론 설정 (max)\n\nGPT-6.1 Sol\n36.1%\n\n과제당 $0.30\n\nClaude Opus 5.5\n42.5%\n\n과제당 $1.44\n\nGPT-6 Astra\n41.4%\n\n과제당 $1.73\n\n출처: OpenAI AutomationBench 1.0.6 그래프. medium과 max를 각각 비교했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.7%\n\n과제당 $0.19",
+            "style": "width:31.7%",
+            "track_width": 718,
+            "bar_width": 227.59375
+          },
+          {
+            "text": "Claude Opus 5.5\n29.5%\n\n과제당 $0.65",
+            "style": "width:29.5%",
+            "track_width": 718,
+            "bar_width": 211.796875
+          },
+          {
+            "text": "GPT-6 Astra\n34.1%\n\n과제당 $1.27",
+            "style": "width:34.1%",
+            "track_width": 718,
+            "bar_width": 244.828125
+          },
+          {
+            "text": "GPT-6.1 Sol\n36.1%\n\n과제당 $0.30",
+            "style": "width:36.1%",
+            "track_width": 718,
+            "bar_width": 259.1875
+          },
+          {
+            "text": "Claude Opus 5.5\n42.5%\n\n과제당 $1.44",
+            "style": "width:42.5%",
+            "track_width": 718,
+            "bar_width": 305.140625
+          },
+          {
+            "text": "GPT-6 Astra\n41.4%\n\n과제당 $1.73",
+            "style": "width:41.4%",
+            "track_width": 718,
+            "bar_width": 297.25
+          }
+        ]
+      }
+    ],
+    "right_tables": []
+  },
+  {
+    "theme": "dark",
+    "width": 360,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 13115,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "58ac6208b4c0169a844a2716f6714db24f6a8e63d44f90feeb882063b2796442",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    },
+    "figures": [
+      {
+        "x": 20,
+        "y": 4034.65625,
+        "width": 320,
+        "height": 515.421875,
+        "text": "PDF 분석: Sol·Opus·Astra 비교\n\n점수 (%) · 0–100 · 높을수록 좋음\n\nGDP.pdf · 최대 추론 설정 (max)\n\nGPT-6.1 Sol\n31.0%\n\n과제당 $0.42\n\nClaude Opus 5.5\n26.2%\n\n과제당 $1.55\n\nGPT-6 Astra\n31.0%\n\n과제당 $2.08\n\n출처: OpenAI 출시 그래프의 max 설정. 원자료를 막대그래프로 다시 구성했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.0%\n\n과제당 $0.42",
+            "style": "width:31%",
+            "track_width": 278,
+            "bar_width": 86.171875
+          },
+          {
+            "text": "Claude Opus 5.5\n26.2%\n\n과제당 $1.55",
+            "style": "width:26.2%",
+            "track_width": 278,
+            "bar_width": 72.828125
+          },
+          {
+            "text": "GPT-6 Astra\n31.0%\n\n과제당 $2.08",
+            "style": "width:31%",
+            "track_width": 278,
+            "bar_width": 86.171875
+          }
+        ]
+      },
+      {
+        "x": 20,
+        "y": 5013.671875,
+        "width": 320,
+        "height": 832.984375,
+        "text": "업무 자동화: 추론 설정에 따라 달라지는 순위\n\n점수 (%) · 0–100 · 높을수록 좋음\n\n중간 추론 설정 (medium)\n\nGPT-6.1 Sol\n31.7%\n\n과제당 $0.19\n\nClaude Opus 5.5\n29.5%\n\n과제당 $0.65\n\nGPT-6 Astra\n34.1%\n\n과제당 $1.27\n\n최대 추론 설정 (max)\n\nGPT-6.1 Sol\n36.1%\n\n과제당 $0.30\n\nClaude Opus 5.5\n42.5%\n\n과제당 $1.44\n\nGPT-6 Astra\n41.4%\n\n과제당 $1.73\n\n출처: OpenAI AutomationBench 1.0.6 그래프. medium과 max를 각각 비교했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.7%\n\n과제당 $0.19",
+            "style": "width:31.7%",
+            "track_width": 278,
+            "bar_width": 88.125
+          },
+          {
+            "text": "Claude Opus 5.5\n29.5%\n\n과제당 $0.65",
+            "style": "width:29.5%",
+            "track_width": 278,
+            "bar_width": 82
+          },
+          {
+            "text": "GPT-6 Astra\n34.1%\n\n과제당 $1.27",
+            "style": "width:34.1%",
+            "track_width": 278,
+            "bar_width": 94.796875
+          },
+          {
+            "text": "GPT-6.1 Sol\n36.1%\n\n과제당 $0.30",
+            "style": "width:36.1%",
+            "track_width": 278,
+            "bar_width": 100.34375
+          },
+          {
+            "text": "Claude Opus 5.5\n42.5%\n\n과제당 $1.44",
+            "style": "width:42.5%",
+            "track_width": 278,
+            "bar_width": 118.140625
+          },
+          {
+            "text": "GPT-6 Astra\n41.4%\n\n과제당 $1.73",
+            "style": "width:41.4%",
+            "track_width": 278,
+            "bar_width": 115.078125
+          }
+        ]
+      }
+    ],
+    "right_tables": [
+      {
+        "x": 20,
+        "y": 2802.640625,
+        "width": 320,
+        "height": 330,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "x": 20,
+        "y": 6247.78125,
+        "width": 320,
+        "height": 283,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "x": 20,
+        "y": 7224.15625,
+        "width": 320,
+        "height": 283,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "x": 20,
+        "y": 9526.109375,
+        "width": 320,
+        "height": 236,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "x": 20,
+        "y": 10874.625,
+        "width": 320,
+        "height": 236,
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 12203,
+      "h1_count": 1,
+      "toc_anchor_count": 8,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "52407d10ae34979e9a8fe82a2fd1fead03ff9ad478ad5316598ec7c161c2363a",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass"
+    },
+    "figures": [
+      {
+        "x": 20,
+        "y": 3905.359375,
+        "width": 350,
+        "height": 493.734375,
+        "text": "PDF 분석: Sol·Opus·Astra 비교\n\n점수 (%) · 0–100 · 높을수록 좋음\n\nGDP.pdf · 최대 추론 설정 (max)\n\nGPT-6.1 Sol\n31.0%\n\n과제당 $0.42\n\nClaude Opus 5.5\n26.2%\n\n과제당 $1.55\n\nGPT-6 Astra\n31.0%\n\n과제당 $2.08\n\n출처: OpenAI 출시 그래프의 max 설정. 원자료를 막대그래프로 다시 구성했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.0%\n\n과제당 $0.42",
+            "style": "width:31%",
+            "track_width": 308,
+            "bar_width": 95.46875
+          },
+          {
+            "text": "Claude Opus 5.5\n26.2%\n\n과제당 $1.55",
+            "style": "width:26.2%",
+            "track_width": 308,
+            "bar_width": 80.6875
+          },
+          {
+            "text": "GPT-6 Astra\n31.0%\n\n과제당 $2.08",
+            "style": "width:31%",
+            "track_width": 308,
+            "bar_width": 95.46875
+          }
+        ]
+      },
+      {
+        "x": 20,
+        "y": 4804.21875,
+        "width": 350,
+        "height": 811.296875,
+        "text": "업무 자동화: 추론 설정에 따라 달라지는 순위\n\n점수 (%) · 0–100 · 높을수록 좋음\n\n중간 추론 설정 (medium)\n\nGPT-6.1 Sol\n31.7%\n\n과제당 $0.19\n\nClaude Opus 5.5\n29.5%\n\n과제당 $0.65\n\nGPT-6 Astra\n34.1%\n\n과제당 $1.27\n\n최대 추론 설정 (max)\n\nGPT-6.1 Sol\n36.1%\n\n과제당 $0.30\n\nClaude Opus 5.5\n42.5%\n\n과제당 $1.44\n\nGPT-6 Astra\n41.4%\n\n과제당 $1.73\n\n출처: OpenAI AutomationBench 1.0.6 그래프. medium과 max를 각각 비교했으며, 막대 길이는 0–100% 기준입니다. Opus는 fallback 포함 결과입니다.",
+        "rows": [
+          {
+            "text": "GPT-6.1 Sol\n31.7%\n\n과제당 $0.19",
+            "style": "width:31.7%",
+            "track_width": 308,
+            "bar_width": 97.625
+          },
+          {
+            "text": "Claude Opus 5.5\n29.5%\n\n과제당 $0.65",
+            "style": "width:29.5%",
+            "track_width": 308,
+            "bar_width": 90.859375
+          },
+          {
+            "text": "GPT-6 Astra\n34.1%\n\n과제당 $1.27",
+            "style": "width:34.1%",
+            "track_width": 308,
+            "bar_width": 105.015625
+          },
+          {
+            "text": "GPT-6.1 Sol\n36.1%\n\n과제당 $0.30",
+            "style": "width:36.1%",
+            "track_width": 308,
+            "bar_width": 111.1875
+          },
+          {
+            "text": "Claude Opus 5.5\n42.5%\n\n과제당 $1.44",
+            "style": "width:42.5%",
+            "track_width": 308,
+            "bar_width": 130.890625
+          },
+          {
+            "text": "GPT-6 Astra\n41.4%\n\n과제당 $1.73",
+            "style": "width:41.4%",
+            "track_width": 308,
+            "bar_width": 127.5
+          }
+        ]
+      }
+    ],
+    "right_tables": [
+      {
+        "x": 20,
+        "y": 2731.8125,
+        "width": 350,
+        "height": 330,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "평가 · 추론 설정\tSol 6.1\t이전 Sol\tAstra\tOpus 5.5\n코드 수정 · DeepSWE v1.1 · max\t71.9%\t68.8%\t73.2%\t미제공\nPDF 분석 · GDP.pdf · max\t31.0%\t24.8%\t31.0%\t26.2%\n업무 자동화 · AutomationBench 1.0.6 · max\t36.1%\t32.0%\t41.4%\t42.5%\n컴퓨터 조작 · OSWorld 2.0 · max\t71.4%\t64.4%\t73.5%\t미제공\n과학 연구 · Terminal-Bench Science 0.1 · max\t57.0%\t27.6%\t68.1%\t63.3%\n사실 오류율 · 어려운 질문 · xhigh · 낮을수록 좋음\t4.1%\t4.5%\t4.0%\t미제공"
+      },
+      {
+        "x": 20,
+        "y": 5987.40625,
+        "width": 350,
+        "height": 283,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "추론 설정\tSol 6.1\tOpus 5.5 · fallback 포함\nlow · 낮음\t24.7% / $0.16\t24.2% / $0.51\nmedium · 중간\t31.7% / $0.19\t29.5% / $0.65\nhigh · 높음\t33.2% / $0.23\t33.0% / $0.71\nxhigh · 매우 높음\t35.5% / $0.25\t35.8% / $0.89\nmax · 최대\t36.1% / $0.30\t42.5% / $1.44"
+      },
+      {
+        "x": 20,
+        "y": 6838.578125,
+        "width": 350,
+        "height": 283,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "추론 설정\tSol 6.1\t이전 Sol\tAstra\nlow\t64.4% / $0.17\t37.2% / $0.16\t67.0% / $1.60\nmedium\t73.0% / $0.42\t56.6% / $0.38\t72.8% / $3.08\nhigh\t75.2% / $0.65\t65.3% / $0.64\t73.2% / $3.92\nxhigh\t71.9% / $0.79\t66.6% / $1.00\t74.1% / $4.43\nmax\t71.9% / $1.57\t68.8% / $2.74\t73.2% / $7.50"
+      },
+      {
+        "x": 20,
+        "y": 8935.890625,
+        "width": 350,
+        "height": 236,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "x": 20,
+        "y": 10167.46875,
+        "width": 350,
+        "height": 236,
+        "scrollLeft": 270,
+        "scrollWidth": 620,
+        "clientWidth": 350,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ]
+  }
+]

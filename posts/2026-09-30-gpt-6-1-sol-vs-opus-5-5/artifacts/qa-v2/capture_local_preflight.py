@@ -25,7 +25,7 @@ for theme, directory in [('light', 'preflight'), ('dark', 'preflight-dark')]:
             client = CDPClient(ws, timeout=30)
             client.call('Page.enable')
             client.call('Runtime.enable')
-            for width, height in [(1280, 900), (360, 800)]:
+            for width, height in [(1280, 900), (360, 800), (390, 844)]:
                 client.call('Emulation.setDeviceMetricsOverride', {'width': width, 'height': height, 'deviceScaleFactor': 1, 'mobile': width < 735})
                 client.discard_events('Page.loadEventFired')
                 client.call('Page.navigate', {'url': preview.as_uri()})
@@ -48,12 +48,12 @@ for theme, directory in [('light', 'preflight'), ('dark', 'preflight-dark')]:
                     path = output / f'{width}-page-{index:02d}.png'
                     path.write_bytes(base64.b64decode(shot['data']))
                     m['screenshots'].append(path.relative_to(POST).as_posix())
-                if width == 360:
+                if width < 735:
                     for index, table in enumerate(tables):
                         evaluate(client, f"document.querySelectorAll('.rich-table-wrap')[{index}].scrollLeft=10000;window.scrollTo(0,{max(0,int(table['y'])-120)});true")
                         client.call('Runtime.evaluate', {'expression':'new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))','awaitPromise':True})
                         shot = client.call('Page.captureScreenshot', {'format':'png','fromSurface':True,'captureBeyondViewport':False})
-                        path = output / f'360-table-{index}-right.png'
+                        path = output / f'{width}-table-{index}-right.png'
                         path.write_bytes(base64.b64decode(shot['data']))
                         m['screenshots'].append(path.relative_to(POST).as_posix())
                 records.append(m)

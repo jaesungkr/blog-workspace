@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-09-30T14:28:31.669605Z",
-  "checked_by": "Codex independent source reviewer /root/final_source_review",
-  "article_content_sha256": "c3ee42b29396b8240bb445164af03a3066c411ba65d4b09b6e96e87588aafa40",
-  "brief_sha256": "075d4d4668ba688be120d717a445842b4329ca7811500faa42ede78101acb973",
-  "evidence_sha256": "671e9e659ceb1244c1d5ba254010fa386d1fb45cff65295853900a7294c4b8ea",
-  "note": "사용자 피드백을 반영한 최종 문장 수정본을 cold-read한 뒤 공식 자료·AA 값·가격 계산을 독립 대조했습니다. 상세 관찰은 source-review-final-polish.md에 있습니다. 원격 미디어와 최종 페이지 검수는 별도입니다."
+  "checked_at": "2026-09-30T15:18:00.357338Z",
+  "checked_by": "independent benchmark_source_review",
+  "article_content_sha256": "87f99685ac8f1922fde954e98e81cd9d012ebcddae70a712f5f3618936b5b8b1",
+  "brief_sha256": "c63d2cbfd5a30f7d5417160aeae0ae56a64da50681801246d0e21e5d7467190b",
+  "evidence_sha256": "ac5c4d0c89ec4c1a65a72b79974cfae6b6f6103e721446cb177e7a6cd732076f",
+  "note": ""
 }

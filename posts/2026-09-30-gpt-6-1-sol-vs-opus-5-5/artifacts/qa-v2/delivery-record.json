@@ -1,8 +1,8 @@
 {
   "status": "ready",
   "paste_file": "/Users/ja2sng/Documents/Codex/2026-09-30/new-chat/outputs/gpt-6-1-sol-vs-opus-5-5-tistory-fragment.txt",
-  "fragment_sha256": "7646a122c2969cb784c88d66acb97b83b680ed36b907cb28e9834c0554096c5a",
+  "fragment_sha256": "8a20b00d66d36aea3980d5eed0727546e5ba94a40941b7df7808413899741a1f",
   "byte_identical_to_final_candidate": true,
-  "source_review": "artifacts/qa-v2/source-review-final-polish.md",
-  "final_page_review": "artifacts/qa-v2/final-page-review.md"
+  "source_review": "artifacts/qa-v2/source-review-benchmarks.md",
+  "final_page_review": "artifacts/qa-v2/final-page-review-benchmarks.md"
 }

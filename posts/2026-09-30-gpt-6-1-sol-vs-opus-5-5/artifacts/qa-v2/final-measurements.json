@@ -9,6 +9,11 @@
       "width": 360,
       "readable_media": true,
       "status": "pass"
+    },
+    {
+      "width": 390,
+      "readable_media": true,
+      "status": "pass"
     }
   ],
   "dark_viewports": [
@@ -19,6 +24,11 @@
     },
     {
       "width": 360,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 390,
       "readable_media": true,
       "status": "pass"
     }
