@@ -1,0 +1,15 @@
+Use case: stylized-concept.
+Asset type: Korean Tistory model-comparison hero, wide 16:9.
+Input image 1 is the user's approved dev.log v9 composition and material reference, not the model identities to preserve. Generate a new model comparison that clearly belongs to this same series.
+Keep the continuous restrained mythic stone observatory, distant monumental arch, cropped columns at the far margins, narrow soft central celestial daylight, finely textured stone ground, disciplined tactile materials, equal-status standalone grounded objects, large same-weight headings, short Korean role lines, and very small VS. No diagonal split, square tiles, pedestals, winner marks or busy fantasy background.
+Change the actual comparison to GPT-6.1 Sol at left and Claude Opus 5.5 at right. Replace all Grok and Fable identity cues. Sol's fixed editorial palette is solar amber #F2A93B and burnished gold #B56A16 with warm ivory highlights; Opus is deep cobalt #174B8F and steel blue #5D7FA8 with ice-blue highlights. No cyan or amethyst as a main color.
+Left standalone sculpture: a substantial crafted sun wheel in brushed warm brass, a solid central sun disc and twelve short restrained radial metal rays, subtly segmented edges, grounded on its lower arc with believable weight, broad matte metal faces and controlled highlights. The sun is a Sol recognition motif, not a halo or victory cue. A few thin orderly warm-ivory document layers physically nestled beneath its lower edge suggest efficient document work without fake writing. No Grok code chevrons, coin or dollar sign.
+Right standalone sculpture: an open cobalt-bound folio with visibly layered ivory paper edges and a large refined steel-blue fountain-pen nib positioned diagonally across the foreground, its tip resting on the stone ground. This suggests composed document and code work without copying Fable's compass. No readable page text, no pseudo-code, no logos.
+Both groups have equal visual mass, gravity and contact shadows, arranged in the lower half; maintain plenty of clear breathing space behind the headings. Softer bright slate haze behind the gold left text; deeper quiet cobalt-slate behind the pale right text. Continuous scene with a natural tonal transition. Architecture is subordinate, no clouds competing with type, no extra stars, no orbital diagrams, no rune floor etchings, no neon tubes, excessive bloom or glossy mirror floor.
+Exact text, and no other text:
+Left large heading "GPT-6.1 Sol"
+Left short role line "낮은 API 비용"
+Right large heading "Opus 5.5"
+Right short role line "폭넓은 업무 성능"
+Small central "VS".
+Precise legible sans serif, equal optical weight between both headings, correct Korean spelling, at least 6% crop-safe margins. Landscape 1672x941 or similar 16:9. Enterprise editorial campaign finish, beautifully restrained reflections and stone microtexture, quiet mythic scale and depth. No watermark or unsupported benchmark numbers.

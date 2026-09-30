@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "f6b393c3-a768-404e-b811-f1916ac30c9a",
+  "recorded_at": "2026-09-30T14:29:34.434733Z",
+  "recorded_by": "Codex creator /root",
+  "media_sha256": "fa97d874b12c519683ddb687de56ba1f5a77ef01d91a4d6de33db3946f2c3b70",
+  "fetcher_sha256": "b746294458f595489bed986e7180c701e6a5a1da6725d11bc6128577d0f41a2c",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "59f38ad875c91394979eb17f9c6b52e4f5222e5bc59f553ca2182839f78eaa3c"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "sol-opus-hero",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-09-30T14:29:34.434469Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 2161358,
+      "byte_length": 2161358,
+      "sha256": "5262e35ae36d4b365f436b003c70dd1d6cef72ea10b972cd628e852e8d6bd8cb",
+      "format": "png",
+      "width": 1280,
+      "height": 720,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Wed, 30 Sep 2026 14:10:16 GMT"
+    }
+  ]
+}

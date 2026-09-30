@@ -1,0 +1,42 @@
+{
+  "actor": "Codex",
+  "observation_date": "2026-09-30",
+  "method": "fixed token counts multiplied by standard USD rates per million tokens",
+  "input_tokens": 100000,
+  "output_tokens": 10000,
+  "exclusions": [
+    "cache",
+    "tool fees",
+    "retries",
+    "speed modes",
+    "regional premiums",
+    "subscription limits"
+  ],
+  "limitation": "Actual token usage differs by model; this is arithmetic, not an inference benchmark.",
+  "rows": [
+    {
+      "model": "GPT-6.1 Sol",
+      "input_rate": "2",
+      "output_rate": "10",
+      "example_usd": "0.3"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "input_rate": "4",
+      "output_rate": "20",
+      "example_usd": "0.6"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "input_rate": "10",
+      "output_rate": "50",
+      "example_usd": "1.5"
+    },
+    {
+      "model": "Claude Fable 5.1",
+      "input_rate": "10",
+      "output_rate": "50",
+      "example_usd": "1.5"
+    }
+  ]
+}

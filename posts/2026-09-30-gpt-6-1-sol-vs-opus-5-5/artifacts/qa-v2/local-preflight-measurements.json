@@ -1,0 +1,220 @@
+[
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/preflight/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+    "inner_width": 1280,
+    "inner_height": 900,
+    "client_width": 1280,
+    "client_height": 900,
+    "scroll_width": 1280,
+    "scroll_height": 5505,
+    "h1_count": 1,
+    "toc_anchor_count": 6,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/assets/gpt-6-1-sol-vs-opus-5-5-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "light",
+    "tables": [
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 3040.71875,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 4012.234375,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "review_type": "creator local preflight, not remote/final approval",
+    "screenshots": [
+      "artifacts/qa-v2/preflight/browser/1280-page-00.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-01.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-02.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-03.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-04.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-05.png",
+      "artifacts/qa-v2/preflight/browser/1280-page-06.png"
+    ]
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/preflight/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+    "inner_width": 360,
+    "inner_height": 800,
+    "client_width": 360,
+    "client_height": 800,
+    "scroll_width": 360,
+    "scroll_height": 7954,
+    "h1_count": 1,
+    "toc_anchor_count": 6,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/assets/gpt-6-1-sol-vs-opus-5-5-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "light",
+    "tables": [
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 4141.015625,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 5713.71875,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "review_type": "creator local preflight, not remote/final approval",
+    "screenshots": [
+      "artifacts/qa-v2/preflight/browser/360-page-00.png",
+      "artifacts/qa-v2/preflight/browser/360-page-01.png",
+      "artifacts/qa-v2/preflight/browser/360-page-02.png",
+      "artifacts/qa-v2/preflight/browser/360-page-03.png",
+      "artifacts/qa-v2/preflight/browser/360-page-04.png",
+      "artifacts/qa-v2/preflight/browser/360-page-05.png",
+      "artifacts/qa-v2/preflight/browser/360-page-06.png",
+      "artifacts/qa-v2/preflight/browser/360-page-07.png",
+      "artifacts/qa-v2/preflight/browser/360-page-08.png",
+      "artifacts/qa-v2/preflight/browser/360-page-09.png",
+      "artifacts/qa-v2/preflight/browser/360-table-0-right.png",
+      "artifacts/qa-v2/preflight/browser/360-table-1-right.png"
+    ]
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/preflight-dark/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+    "inner_width": 1280,
+    "inner_height": 900,
+    "client_width": 1280,
+    "client_height": 900,
+    "scroll_width": 1280,
+    "scroll_height": 5505,
+    "h1_count": 1,
+    "toc_anchor_count": 6,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/assets/gpt-6-1-sol-vs-opus-5-5-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "dark",
+    "tables": [
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 3040.71875,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 4012.234375,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "review_type": "creator local preflight, not remote/final approval",
+    "screenshots": [
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-00.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-01.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-02.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-03.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-04.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-05.png",
+      "artifacts/qa-v2/preflight-dark/browser/1280-page-06.png"
+    ]
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/preflight-dark/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+    "inner_width": 360,
+    "inner_height": 800,
+    "client_width": 360,
+    "client_height": 800,
+    "scroll_width": 360,
+    "scroll_height": 7954,
+    "h1_count": 1,
+    "toc_anchor_count": 6,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/assets/gpt-6-1-sol-vs-opus-5-5-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "dark",
+    "tables": [
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 4141.015625,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 5713.71875,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "review_type": "creator local preflight, not remote/final approval",
+    "screenshots": [
+      "artifacts/qa-v2/preflight-dark/browser/360-page-00.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-01.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-02.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-03.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-04.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-05.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-06.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-07.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-08.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-page-09.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-table-0-right.png",
+      "artifacts/qa-v2/preflight-dark/browser/360-table-1-right.png"
+    ]
+  }
+]

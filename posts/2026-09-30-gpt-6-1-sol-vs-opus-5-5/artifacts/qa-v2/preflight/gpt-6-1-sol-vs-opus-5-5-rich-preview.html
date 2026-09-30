@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT-6.1 Sol vs Claude Opus 5.5 - 새 GPT 모델의 성능과 가격</title>
+  <meta name="description" content="GPT-6.1 Sol을 Opus 5.5와 비교하고, Astra·Fable 5.1을 포함한 독립 평가와 API 비용으로 새 모델의 위치를 살펴봅니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>GPT-6.1 Sol vs Claude Opus 5.5 - 새 GPT 모델의 성능과 가격</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>OpenAI가 새 GPT 모델인 <strong>GPT-6.1 Sol</strong>을 공개했습니다. 기존 Sol을 개선한 모델로, 글쓰기와 자료 분석부터 코딩, 도구를 활용한 업무까지 맡길 수 있습니다. 새 모델이 나온 만큼, 이전보다 얼마나 좋아졌고 지금 쓰는 클로드와 비교하면 어느 정도인지 궁금해집니다.</p>
+<p><strong>Sol은 문서 분석과 업무 자동화에서 성능과 비용을 함께 따져 볼 만한 모델입니다.</strong> OpenAI가 공개한 일부 업무 평가에서는 Opus 5.5를 앞서면서 비용도 낮췄습니다. 다만 여러 분야를 묶은 독립 종합 평가에서는 Opus가 더 높은 점수를 받았으므로, 어떤 작업을 맡길지에 따라 선택이 달라집니다.</p>
+<figure class="devlog-rich__figure" data-media-id="sol-opus-hero" style="--rich-media-width:916px"><img class="devlog-rich__image" src="../../../assets/gpt-6-1-sol-vs-opus-5-5-hero-v1.png" alt="금색 태양과 문서로 표현한 GPT-6.1 Sol, 파란 책과 만년필로 표현한 Claude Opus 5.5가 나란히 놓여 있습니다." width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">GPT-6.1 Sol의 비용과 Claude Opus 5.5의 업무 성능을 함께 비교합니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#gpt-61-sol의-특징과-이용-방법">GPT-6.1 Sol의 특징과 이용 방법</a></li>
+<li><a href="#opus와-비교한-업무-성능">Opus와 비교한 업무 성능</a></li>
+<li><a href="#독립-종합-평가에서-본-네-모델의-수준">독립 종합 평가에서 본 네 모델의 수준</a></li>
+<li><a href="#같은-처리량으로-비교한-api-비용">같은 처리량으로 비교한 API 비용</a></li>
+<li><a href="#클로드-대신-쓸지-판단하는-방법">클로드 대신 쓸지 판단하는 방법</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="gpt-61-sol의-특징과-이용-방법">
+<h2 id="gpt-61-sol의-특징과-이용-방법">GPT-6.1 Sol의 특징과 이용 방법</h2>
+<p>OpenAI는 <a href="https://openai.com/index/devday-2026-recap/" style="color:#1a73e8;text-decoration:none;" target="_blank">2026년 9월 29일 DevDay</a>에 GPT-6.1 Sol을 발표했습니다. 기존 GPT-6 Sol을 개선하면서 코딩·컴퓨터 조작·전문 업무에서 더 비싼 GPT-6 Astra에 가까운 성능을 목표로 한 모델입니다. 출시 안내에 따르면 Plus·Pro·Business·Enterprise·Edu 사용자는 ChatGPT Work와 Codex의 모델 선택 화면에서 Sol 6.1을 선택할 수 있습니다. 일반 Chat에는 아직 제공되지 않으며, API에서는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">gpt-6.1-sol</code>이라는 식별자로 호출합니다. <a href="https://openai.com/ko-KR/index/introducing-gpt-6-1-sol/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 출시 안내</a></p>
+<p>클로드와 비교할 때는 <strong>Opus 5.5</strong>를 중심으로 보는 것이 좋겠습니다. Anthropic이 9월 22일 출시한 모델로, 코드 작업과 문서 작성 등 대부분의 업무에서 Fable 5.1 수준의 성능을 제공한다고 설명합니다. OpenAI의 Sol 출시 자료에도 Opus와 직접 비교한 결과가 있습니다. 여기에 OpenAI의 상위 모델인 Astra와 Claude의 다른 고성능 모델인 Fable 5.1을 함께 놓으면, 새 Sol의 수준과 가격을 더 넓게 가늠할 수 있습니다. <a href="https://www.anthropic.com/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic Opus 5.5 발표</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="opus와-비교한-업무-성능">
+<h2 id="opus와-비교한-업무-성능">Opus와 비교한 업무 성능</h2>
+<p>OpenAI의 출시 자료에서 먼저 눈에 띄는 것은 문서 분석 성능입니다. 표·차트·작은 주석을 읽고 질문에 답하는 <strong>GDP.pdf</strong> 평가에서는, 추론에 사용할 자원의 양을 정하는 설정을 바꿔 가며 두 모델을 비교했습니다. OpenAI에 따르면 Sol 6.1은 평가한 설정 전반에서 Opus 5.5보다 높은 점수를 기록했고, 과제당 비용은 절반 미만이었습니다. 이때 Opus는 안전장치 등이 작동하면 다른 모델로 작업을 넘기는 <strong>fallback(대체 처리)</strong>을 포함한 구성입니다.</p>
+<p>문서를 읽는 데서 더 나아가, 여러 업무용 도구를 연결해 작업을 끝내는 <strong>AutomationBench 1.0.6</strong>에서도 Sol이 앞섰습니다. 중간 추론 수준인 medium 설정에서 Opus보다 점수가 2.2%p 높았고, 과제당 비용은 약 3분의 1이었습니다. %p는 두 비율의 차이를 나타내는 퍼센트포인트입니다. 다만 두 결과 모두 OpenAI가 발표한 특정 업무 평가입니다. 같은 페이지에 제시된 Fable 5.1 비용에는 약 40%의 과제에서 발생한 fallback 비용이 빠져 있으므로, 표시된 금액만으로 네 모델의 비용 순위를 정하기는 어렵습니다. <a href="https://openai.com/ko-KR/index/introducing-gpt-6-1-sol/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 전문 업무 평가</a></p>
+<p>코딩에서는 Opus보다 Astra와의 비교가 더 분명합니다. 실제 코드베이스에서 긴 소프트웨어 개발 과제를 수행하는 <strong>DeepSWE v1.1</strong>에서 Sol은 Astra와 같은 수준의 점수를 약 5분의 1 비용으로 달성했다고 OpenAI가 보고했습니다. 반면 Opus 출시 자료의 코딩 비교표에 들어 있는 모델은 이전 버전인 GPT-5.6 Sol입니다. 이 표를 새 Sol 6.1의 결과처럼 읽으면 두 모델의 코딩 성능을 잘못 비교하게 됩니다. 현재 자료로는 Sol과 Opus 중 어느 쪽이 코딩 전반에서 우세한지까지 판단하기 어렵습니다. <a href="https://openai.com/ko-KR/index/introducing-gpt-6-1-sol/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 코딩 평가</a>, <a href="https://www.anthropic.com/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic 비교표</a></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="독립-종합-평가에서-본-네-모델의-수준">
+<h2 id="독립-종합-평가에서-본-네-모델의-수준">독립 종합 평가에서 본 네 모델의 수준</h2>
+<p>앞의 결과는 문서 분석과 자동화 같은 개별 업무를 보여 줍니다. 여러 분야를 함께 평가하면 순위는 어떻게 달라질까요? 독립 평가 기관인 Artificial Analysis의 <strong>Intelligence Index v4.3.2</strong>는 문서 업무·코딩·추론 등을 포함한 10개 평가를 묶은 종합 지수입니다. 점수가 높을수록 이 평가 묶음에서 성능이 좋다는 뜻이며, 업무 성공률이나 정답률을 나타내는 백분율과는 다릅니다. <a href="https://artificialanalysis.ai/models/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">평가 구성</a></p>
+<p>아래 표는 2026년 9월 30일 리더보드에서 확인한 정수 표시값입니다. medium은 중간, max는 최대 추론 설정을 뜻합니다. Claude 결과에는 리더보드에 표시된 fallback 구성이 포함되어 있습니다. 제조사마다 추론 설정을 구현하는 방식이 달라서, 설정 이름이 같다고 실제 계산량까지 같지는 않습니다. <a href="https://artificialanalysis.ai/leaderboards/models" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis 리더보드</a></p>
+<p>모바일에서는 표를 좌우로 밀어 모든 열을 확인하세요.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>모델</th><th>medium 지수</th><th>max 지수</th><th>max 과제당 비용</th></tr></thead><tbody><tr><td>GPT-6.1 Sol</td><td>48</td><td>52</td><td>$0.72</td></tr><tr><td>Claude Opus 5.5</td><td>51</td><td>58</td><td>$5.98</td></tr><tr><td>GPT-6 Astra</td><td>50</td><td>53</td><td>$3.26</td></tr><tr><td>Claude Fable 5.1</td><td>49</td><td>53</td><td>$7.63</td></tr></tbody></table></div>
+<p>종합 지수에서는 Opus가 가장 높았습니다. Sol은 Astra와 Fable에 가까운 점수를 훨씬 낮은 비용으로 얻었지만, Opus의 최대 추론 성능과는 차이가 남아 있습니다. 표의 과제당 비용은 이 평가 묶음의 평균값이므로, 실제 문서 한 건이나 코드 수정 한 번에 들 요금은 별도로 계산해야 합니다.</p>
+<p>난도가 높은 작업에서는 모델의 역할도 달라집니다. OpenAI는 가장 어려운 과학 연구에 여전히 Astra를 권장합니다. 문서와 자동화 평가에서 Sol이 좋은 결과를 얻었다고 해서, 어려운 연구 과제까지 상위 모델과 같은 수준으로 해결한다고 볼 수는 없습니다. <a href="https://openai.com/ko-KR/index/introducing-gpt-6-1-sol/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 과학 연구 평가</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="같은-처리량으로-비교한-api-비용">
+<h2 id="같은-처리량으로-비교한-api-비용">같은 처리량으로 비교한 API 비용</h2>
+<p>평가에 나온 과제당 비용은 모델이 사용한 토큰 수와 작업 방식까지 반영한 값입니다. 기본 요금 자체가 얼마나 다른지 보려면, 같은 양을 처리한다고 가정해 비교하는 편이 이해하기 쉽습니다.</p>
+<p>API는 프로그램에서 모델을 호출하고 처리한 양만큼 요금을 내는 방식입니다. 그 처리량을 세는 단위가 <strong>토큰</strong>이며, 입력은 모델에 보낸 자료와 지시, 출력은 모델이 생성한 내용에 해당합니다. 아래 단가는 100만 토큰 기준으로, GPT는 Standard, Claude는 일반 API 요금을 사용했습니다. <a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">Sol 요금</a>, <a href="https://www.anthropic.com/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus 요금</a>, <a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 요금</a>, <a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" style="color:#1a73e8;text-decoration:none;" target="_blank">Fable 요금</a></p>
+<p>마지막 열은 입력 10만 토큰과 출력 1만 토큰을 처리한다고 가정한 계산입니다. 입력 단가에 0.1을, 출력 단가에 0.01을 곱해 더했으며, 캐시·도구 비용·재시도·모드별 할증은 제외했습니다. 실제 모델을 실행해 측정한 비용은 아닙니다.</p>
+<p>모바일에서는 표를 좌우로 밀어 모든 열을 확인하세요.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>모델</th><th>입력 / 100만 토큰</th><th>출력 / 100만 토큰</th><th>가정한 처리량의 비용</th></tr></thead><tbody><tr><td>GPT-6.1 Sol</td><td>$2</td><td>$10</td><td>$0.30</td></tr><tr><td>Claude Opus 5.5</td><td>$4</td><td>$20</td><td>$0.60</td></tr><tr><td>GPT-6 Astra</td><td>$10</td><td>$50</td><td>$1.50</td></tr><tr><td>Claude Fable 5.1</td><td>$10</td><td>$50</td><td>$1.50</td></tr></tbody></table></div>
+<p>같은 처리량이라면 Sol의 기본 요금은 Opus의 절반입니다. 다만 같은 일을 맡겨도 모델마다 사용하는 토큰 수가 다르므로, 실제 작업 비용이 항상 절반이 되는 것은 아닙니다.</p>
+<p>같은 자료를 반복해서 보내는 경우에는 이전에 처리한 입력을 재사용하는 <strong>캐시</strong>가 비용을 줄여 줍니다. Sol의 캐시 입력은 100만 토큰당 $0.10, Opus의 캐시 읽기는 $0.20이며, 캐시를 처음 저장하는 비용과 적용 조건은 별도로 확인해야 합니다. 긴 자료를 한 번에 보내는 경우에도 주의할 조건이 있습니다. Sol은 입력이 27만 2천 토큰을 넘으면 전체 요청의 입력·캐시 단가가 2배, 출력 단가가 1.5배로 올라갑니다. 모델이 받아들일 수 있는 길이의 자료라도 기본 요금보다 더 비싸질 수 있다는 뜻입니다. <a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">Sol 상세 요금</a>, <a href="https://www.anthropic.com/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus 상세 요금</a></p>
+<p>이 요금표는 ChatGPT나 Claude의 월 구독료와는 별개입니다. 구독을 바꾸려는 경우에는 API 단가보다 실제 이용할 서비스의 사용 한도와 필요한 기능을 먼저 확인하는 것이 좋겠습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="클로드-대신-쓸지-판단하는-방법">
+<h2 id="클로드-대신-쓸지-판단하는-방법">클로드 대신 쓸지 판단하는 방법</h2>
+<p>문서 분석이나 업무 자동화를 API로 반복한다면, Sol의 낮은 단가가 실제로 비용을 줄여 주는지 시험해 볼 만합니다. 반면 어려운 문제의 해결 가능성을 더 중요하게 본다면 종합 평가에서 앞선 Opus도 함께 비교할 이유가 있습니다. Fable 5.1을 이미 사용 중이라면, 더 비싼 요금만큼 현재 작업에서 더 나은 결과를 얻고 있는지 확인해 보세요.</p>
+<p>직접 비교할 때는 <strong>평소 자주 맡기는 작업 한 건을 두 모델에 같은 조건으로 요청하는 것</strong>부터 시작하면 됩니다. 문서라면 표의 수치와 각주를 제대로 반영했는지, 코드라면 요구한 동작을 구현하면서 기존 기능도 유지했는지를 확인하세요. 첫 답변만 보고 결정하기보다는, 필요한 수정을 모두 마칠 때까지 걸린 시간과 총비용을 비교하는 편이 실제 선택에 도움이 됩니다. 지금 쓰는 Opus의 결과에 만족한다면 유지하되, 수정이 많았던 작업부터 Sol에도 맡겨 보는 것이 좋겠습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="참고-자료">
+<h2 id="참고-자료">참고 자료</h2>
+<ul><li><a href="https://openai.com/ko-KR/index/introducing-gpt-6-1-sol/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI: GPT-6.1 Sol 출시 안내와 업무별 평가</a></li><li><a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI API: GPT-6.1 Sol 사양과 상세 요금</a></li><li><a href="https://www.anthropic.com/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic: Claude Opus 5.5 발표와 평가 조건</a></li><li><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic: Claude Fable 5.1 발표</a></li><li><a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI API: GPT-6 Astra 요금</a></li><li><a href="https://artificialanalysis.ai/leaderboards/models" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis: 독립 모델 평가 리더보드</a></li><li><a href="https://artificialanalysis.ai/models/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis: Intelligence Index 평가 구성</a></li></ul>
+</section>
+</article>
+</body>
+</html>

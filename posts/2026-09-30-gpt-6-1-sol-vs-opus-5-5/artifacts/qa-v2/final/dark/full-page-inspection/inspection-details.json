@@ -1,0 +1,364 @@
+[
+  {
+    "width": 1280,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5505,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "8512d6864fc793ae7c1030f6b9a2775ce9047115f453fd9b1653352d0b8b3b98",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass"
+    },
+    "details": {
+      "tables": [
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "scrollLeft": 0
+        },
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "scrollLeft": 0
+        }
+      ],
+      "imageFilter": "none",
+      "figureStyle": "--rich-media-width:916px",
+      "links": [
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        }
+      ],
+      "listMarkers": [
+        "disc",
+        "disc",
+        "disc",
+        "disc",
+        "disc",
+        "disc",
+        "disc"
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-09-30-gpt-6-1-sol-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/gpt-6-1-sol-vs-opus-5-5-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7954,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcs2OPa%2FdJMcadwK8k0%2FAAAAAAAAAAAAAAAAAAAAAHfjBkPHAGjaXQXdHFynKhIHUmXKNQFadFAxbg2-Y3Nw%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3De1lgrPonQnGnZ5k%252BYXrruImQYy4%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 720
+        }
+      ],
+      "screenshot_sha256": "cd748e4aa3da63687a911d11c9647f9c475c4247a37db70cbeeec54f1e881613",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass"
+    },
+    "details": {
+      "tables": [
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "scrollLeft": 0
+        },
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "scrollLeft": 0
+        }
+      ],
+      "imageFilter": "none",
+      "figureStyle": "--rich-media-width:916px",
+      "links": [
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": null
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        },
+        {
+          "color": "rgb(102, 179, 255)",
+          "inline": "color:#1a73e8;text-decoration:none;"
+        }
+      ],
+      "listMarkers": [
+        "disc",
+        "disc",
+        "disc",
+        "disc",
+        "disc",
+        "disc",
+        "disc"
+      ],
+      "rightmost_tables": [
+        {
+          "x": 20,
+          "y": 4140.921875,
+          "width": 320,
+          "height": 236,
+          "scrollLeft": 300,
+          "scrollWidth": 620,
+          "clientWidth": 320
+        },
+        {
+          "x": 20,
+          "y": 5713.625,
+          "width": 320,
+          "height": 236,
+          "scrollLeft": 300,
+          "scrollWidth": 620,
+          "clientWidth": 320
+        }
+      ]
+    }
+  }
+]

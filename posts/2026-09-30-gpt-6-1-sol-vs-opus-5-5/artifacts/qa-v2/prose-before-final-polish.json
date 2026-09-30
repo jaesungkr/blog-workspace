@@ -1,0 +1,504 @@
+{
+  "title": "GPT-6.1 Sol vs Claude Opus 5.5 - 새 GPT 모델의 성능과 가격",
+  "headings": [
+    {
+      "line": 31,
+      "level": 3,
+      "text": "새 Sol은 어디서 쓸 수 있을까?",
+      "generic_signals": []
+    },
+    {
+      "line": 37,
+      "level": 3,
+      "text": "Opus와 비교한 업무 성능",
+      "generic_signals": []
+    },
+    {
+      "line": 45,
+      "level": 3,
+      "text": "독립 종합 평가에서는 Opus 우위",
+      "generic_signals": []
+    },
+    {
+      "line": 64,
+      "level": 3,
+      "text": "같은 양을 처리할 때의 API 비용",
+      "generic_signals": []
+    },
+    {
+      "line": 83,
+      "level": 3,
+      "text": "Claude 사용자라면 무엇부터 비교할까?",
+      "generic_signals": []
+    },
+    {
+      "line": 89,
+      "level": 3,
+      "text": "참고 자료",
+      "generic_signals": []
+    }
+  ],
+  "summary": {
+    "heading_count": 6,
+    "headings_with_generic_signal": 0,
+    "sentence_count": 74,
+    "average_sentence_chars_no_spaces": 40.3,
+    "sentences_over_50_chars": 21,
+    "sentences_over_70_chars": 8,
+    "hangul_chars": 2110,
+    "abstract_nouns_per_1000_hangul": 8.5,
+    "corrective_frames_per_1000_hangul": 2.4
+  },
+  "stock_phrases": {},
+  "abstract_nouns": {
+    "기준": 1,
+    "결과": 9,
+    "구성": 3,
+    "경우": 1,
+    "차이": 2,
+    "설명": 1,
+    "방식": 1
+  },
+  "corrective_frames": {
+    "아닙니다": 4,
+    "반대로": 1
+  },
+  "matched_lines": [
+    {
+      "line": 25,
+      "kind": "corrective_frame",
+      "signal": "아닙니다",
+      "excerpt": "Claude에 PDF 분석이나 코드 수정을 맡기던 분이라면, 새 GPT 모델이 나왔을 때 궁금한 것은 하나입니다. 지금 쓰는 클로드와 비교해 볼 만한 수준일까요? GPT-6.1 Sol은 자료를 읽고 코드를 수정하며, 도구를 사용해 여러 단계의 업무를 처리하는 OpenAI의 새 모델입니다. 문서 분석과 반복 업무에 Sol을 비교 후보로 추가할 이유는 생겼지만, Opus 5.5에서 곧바로 갈아탈 근거까지 확보된 것은 아닙니다."
+    },
+    {
+      "line": 35,
+      "kind": "abstract_noun",
+      "signal": "설명",
+      "excerpt": "Claude Opus 5.5는 Anthropic이 9월 22일 출시한 모델로, 코드 작업과 문서 작성 등 대부분의 업무에서 Fable 5.1 수준을 제공한다고 설명합니다. 기존 Claude 사용자가 새 Sol을 검토할 때 자연스럽게 비교할 상대입니다. Astra는 OpenAI의 상위 모델이고, Fable 5.1은 Claude의 또 다른 고성능 모델입니다. 두 모델도 Sol의 수준을 가늠할 비교 대상에 포함했습니다. Anthropic Opus 5.5 발표"
+    },
+    {
+      "line": 39,
+      "kind": "abstract_noun",
+      "signal": "구성",
+      "excerpt": "출시 자료에서 눈에 띄는 부분은 PDF 분석입니다. 표·차트·작은 주석까지 읽고 질문에 답하는 GDP.pdf에서는 추론 설정을 바꿔 가며 비교했습니다. 추론 설정은 답변을 만들기 전에 얼마나 많은 추론 자원을 사용할지 정하는 설정입니다. OpenAI에 따르면 Sol 6.1은 평가한 설정 전반에서 Opus 5.5보다 높은 점수를 기록했고, 과제당 비용은 절반 미만이었습니다. 여기서 Opus는 안전장치 등이 작동하면 다른 모델로 작업을 넘기는 대체 처리, 즉 fallback을 포함한 구성입니다."
+    },
+    {
+      "line": 41,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "여러 업무용 도구를 연결해 작업을 끝내는 AutomationBench 1.0.6에서는 Sol의 중간 추론 수준인 medium 설정이 Opus보다 2.2%p 높았고, 과제당 비용은 약 3분의 1이었습니다. 퍼센트포인트(%p)는 두 비율의 차이를 나타냅니다. 두 결과는 OpenAI가 발표한 특정 업무 평가입니다. 같은 페이지의 Fable 5.1 비용에는 약 40%의 과제에서 발생한 fallback 비용이 빠졌다는 주석도 있어, 표시된 비용만으로 네 모델을 나란히 순위 매기면 비교 조건을 놓치게 됩니다. OpenAI 전문 업무 평가"
+    },
+    {
+      "line": 41,
+      "kind": "abstract_noun",
+      "signal": "차이",
+      "excerpt": "여러 업무용 도구를 연결해 작업을 끝내는 AutomationBench 1.0.6에서는 Sol의 중간 추론 수준인 medium 설정이 Opus보다 2.2%p 높았고, 과제당 비용은 약 3분의 1이었습니다. 퍼센트포인트(%p)는 두 비율의 차이를 나타냅니다. 두 결과는 OpenAI가 발표한 특정 업무 평가입니다. 같은 페이지의 Fable 5.1 비용에는 약 40%의 과제에서 발생한 fallback 비용이 빠졌다는 주석도 있어, 표시된 비용만으로 네 모델을 나란히 순위 매기면 비교 조건을 놓치게 됩니다. OpenAI 전문 업무 평가"
+    },
+    {
+      "line": 43,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "코딩에서도 Sol이 발전했다는 근거는 있습니다. 실제 코드베이스의 긴 소프트웨어 개발 과제를 다루는 DeepSWE v1.1에서는 Astra와 같은 수준의 점수를 약 5분의 1 비용으로 달성했다고 OpenAI가 보고했습니다. 이 결과가 Opus와의 코딩 전반 우열을 증명하지는 않습니다. Opus 출시 때의 코딩 표에는 GPT-5.6 Sol이 들어 있으므로, 그 점수를 새 Sol 6.1의 성능으로 가져와 비교해서는 안 됩니다. OpenAI 코딩 평가, Anthropic 비교표"
+    },
+    {
+      "line": 47,
+      "kind": "corrective_frame",
+      "signal": "아닙니다",
+      "excerpt": "PDF 질문에 잘 답하는 모델이 글쓰기, 과학 문제, 코딩에서도 항상 앞서는 것은 아닙니다. 여러 영역을 묶은 결과를 보기 위해 독립 평가 기관인 Artificial Analysis의 Intelligence Index v4.3.2를 확인했습니다. 문서 업무·코딩·추론 등을 포함한 10개 평가의 종합 지수이며, 점수가 높을수록 이 평가 묶음에서 성능이 좋습니다. 업무 성공률이나 정답률을 그대로 나타내는 백분율은 아닙니다. 평가 구성"
+    },
+    {
+      "line": 47,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "PDF 질문에 잘 답하는 모델이 글쓰기, 과학 문제, 코딩에서도 항상 앞서는 것은 아닙니다. 여러 영역을 묶은 결과를 보기 위해 독립 평가 기관인 Artificial Analysis의 Intelligence Index v4.3.2를 확인했습니다. 문서 업무·코딩·추론 등을 포함한 10개 평가의 종합 지수이며, 점수가 높을수록 이 평가 묶음에서 성능이 좋습니다. 업무 성공률이나 정답률을 그대로 나타내는 백분율은 아닙니다. 평가 구성"
+    },
+    {
+      "line": 47,
+      "kind": "abstract_noun",
+      "signal": "구성",
+      "excerpt": "PDF 질문에 잘 답하는 모델이 글쓰기, 과학 문제, 코딩에서도 항상 앞서는 것은 아닙니다. 여러 영역을 묶은 결과를 보기 위해 독립 평가 기관인 Artificial Analysis의 Intelligence Index v4.3.2를 확인했습니다. 문서 업무·코딩·추론 등을 포함한 10개 평가의 종합 지수이며, 점수가 높을수록 이 평가 묶음에서 성능이 좋습니다. 업무 성공률이나 정답률을 그대로 나타내는 백분율은 아닙니다. 평가 구성"
+    },
+    {
+      "line": 49,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "아래는 2026년 9월 30일 확인한 정수 표시값입니다. medium은 중간, max는 최대 추론 설정입니다. Claude 결과에는 리더보드에 표시된 fallback 구성이 포함되어 있으며, 제조사가 다른 모델에서 같은 설정명을 사용해도 계산량이 같지는 않습니다. Artificial Analysis 리더보드"
+    },
+    {
+      "line": 49,
+      "kind": "abstract_noun",
+      "signal": "구성",
+      "excerpt": "아래는 2026년 9월 30일 확인한 정수 표시값입니다. medium은 중간, max는 최대 추론 설정입니다. Claude 결과에는 리더보드에 표시된 fallback 구성이 포함되어 있으며, 제조사가 다른 모델에서 같은 설정명을 사용해도 계산량이 같지는 않습니다. Artificial Analysis 리더보드"
+    },
+    {
+      "line": 60,
+      "kind": "abstract_noun",
+      "signal": "차이",
+      "excerpt": "이 자료에서는 Sol이 Astra와 Fable에 가까운 종합 점수를 낮은 비용으로 얻었고, Opus의 최고 점수와는 차이가 남았습니다. 과제당 비용도 이 평가 묶음의 평균값이므로 내 PDF 한 장이나 코드 수정 한 건의 예상 요금으로 쓰면 안 됩니다."
+    },
+    {
+      "line": 62,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "OpenAI는 가장 어려운 과학 연구에는 여전히 Astra를 권장합니다. 평소 문서 업무의 결과만 보고 모든 난도에서 Sol이 상위 모델을 대체한다고 기대하기는 어렵습니다. OpenAI 과학 연구 평가"
+    },
+    {
+      "line": 66,
+      "kind": "abstract_noun",
+      "signal": "기준",
+      "excerpt": "API는 프로그램에서 모델을 호출하고 처리한 양만큼 요금을 내는 방식입니다. 토큰은 그 처리량을 세는 단위이며, 입력은 모델에 보낸 자료와 지시, 출력은 모델이 생성한 내용에 해당합니다. 아래 기본 단가는 100만 토큰 기준이며, GPT는 Standard, Claude는 일반 API 요금을 사용했습니다. Sol 요금, Opus 요금, Astra 요금, Fable 요금"
+    },
+    {
+      "line": 66,
+      "kind": "abstract_noun",
+      "signal": "방식",
+      "excerpt": "API는 프로그램에서 모델을 호출하고 처리한 양만큼 요금을 내는 방식입니다. 토큰은 그 처리량을 세는 단위이며, 입력은 모델에 보낸 자료와 지시, 출력은 모델이 생성한 내용에 해당합니다. 아래 기본 단가는 100만 토큰 기준이며, GPT는 Standard, Claude는 일반 API 요금을 사용했습니다. Sol 요금, Opus 요금, Astra 요금, Fable 요금"
+    },
+    {
+      "line": 68,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "마지막 열은 입력 10만 토큰과 출력 1만 토큰을 처리한다고 가정해 계산한 값입니다. 입력 단가에 0.1을, 출력 단가에 0.01을 곱해 더했습니다. 실제 모델을 실행한 결과가 아니며, 캐시·도구 비용·재시도·모드별 할증은 제외했습니다. 모델마다 같은 작업에 쓰는 토큰 수가 다르므로, 단가 비교와 실제 작업 비용은 구분해야 합니다."
+    },
+    {
+      "line": 79,
+      "kind": "corrective_frame",
+      "signal": "아닙니다",
+      "excerpt": "같은 자료를 반복해서 보내는 작업에서는 이전에 처리한 입력을 재사용하는 캐시도 비용을 바꿉니다. Sol의 캐시 입력은 100만 토큰당 $0.10이고, Opus의 캐시 읽기는 $0.20입니다. 캐시를 처음 저장하는 비용과 적용 조건은 별도로 확인해야 합니다. Sol은 입력이 27만 2천 토큰을 넘는 요청에서 전체 요청의 입력·캐시 단가가 2배, 출력 단가가 1.5배로 올라가므로, 최대 문맥 길이 안에 들어간다고 기본 요금이 유지되는 것은 아닙니다. Sol 상세 요금, Opus 상세 요금"
+    },
+    {
+      "line": 85,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "이미 Opus로 만든 결과에 만족한다면 계속 사용하되, 최근에 수정이 많았던 PDF 분석이나 코드 작업 한 건을 Sol에도 맡겨 보세요. 문서에서는 표의 수치와 각주를 제대로 반영했는지, 코드에서는 요구한 동작을 구현하고 기존 기능을 유지했는지를 보세요. 같은 자료와 완료 조건을 주고, 첫 답변보다 수정까지 마친 결과에 걸린 시간과 비용을 비교해야 전환할 이유가 보입니다."
+    },
+    {
+      "line": 87,
+      "kind": "corrective_frame",
+      "signal": "반대로",
+      "excerpt": "API로 문서 분석이나 업무 자동화를 반복하는 경우에는 Sol을 먼저 시험할 근거가 비교적 분명합니다. 반대로 비용보다 어려운 문제의 해결 가능성이 중요하다면 Opus도 함께 시험하고, OpenAI 도구를 쓰는 과학 연구 작업에서는 Astra를 남겨 둘 이유가 있습니다. Fable 5.1을 이미 사용 중이라면 종합 점수만으로 더 비싼 요금을 계속 낼 이유를 단정하지 말고, 현재 작업에서 그 비용을 보완할 결과가 나오는지 확인하세요."
+    },
+    {
+      "line": 87,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "API로 문서 분석이나 업무 자동화를 반복하는 경우에는 Sol을 먼저 시험할 근거가 비교적 분명합니다. 반대로 비용보다 어려운 문제의 해결 가능성이 중요하다면 Opus도 함께 시험하고, OpenAI 도구를 쓰는 과학 연구 작업에서는 Astra를 남겨 둘 이유가 있습니다. Fable 5.1을 이미 사용 중이라면 종합 점수만으로 더 비싼 요금을 계속 낼 이유를 단정하지 말고, 현재 작업에서 그 비용을 보완할 결과가 나오는지 확인하세요."
+    },
+    {
+      "line": 87,
+      "kind": "abstract_noun",
+      "signal": "경우",
+      "excerpt": "API로 문서 분석이나 업무 자동화를 반복하는 경우에는 Sol을 먼저 시험할 근거가 비교적 분명합니다. 반대로 비용보다 어려운 문제의 해결 가능성이 중요하다면 Opus도 함께 시험하고, OpenAI 도구를 쓰는 과학 연구 작업에서는 Astra를 남겨 둘 이유가 있습니다. Fable 5.1을 이미 사용 중이라면 종합 점수만으로 더 비싼 요금을 계속 낼 이유를 단정하지 말고, 현재 작업에서 그 비용을 보완할 결과가 나오는지 확인하세요."
+    }
+  ],
+  "long_sentences": [
+    {
+      "line": 25,
+      "chars_no_spaces": 56,
+      "ending": "입니다",
+      "excerpt": "GPT-6.1 Sol은 자료를 읽고 코드를 수정하며, 도구를 사용해 여러 단계의 업무를 처리하는 OpenAI의 새 모델입니다."
+    },
+    {
+      "line": 25,
+      "chars_no_spaces": 59,
+      "ending": "-니다",
+      "excerpt": "문서 분석과 반복 업무에 Sol을 비교 후보로 추가할 이유는 생겼지만, Opus 5.5에서 곧바로 갈아탈 근거까지 확보된 것은 아닙니다."
+    },
+    {
+      "line": 27,
+      "chars_no_spaces": 52,
+      "ending": "-습니다",
+      "excerpt": "출시 자료에서는 일부 업무에서 Sol이 Opus를 앞섰고, 독립 종합 평가에서는 Opus가 더 높은 점수를 받았습니다."
+    },
+    {
+      "line": 33,
+      "chars_no_spaces": 61,
+      "ending": "합니다",
+      "excerpt": "기존 GPT-6 Sol을 개선한 모델이며, 코딩·컴퓨터 조작·전문 업무에서 더 비싼 GPT-6 Astra에 가까운 성능을 목표로 합니다."
+    },
+    {
+      "line": 33,
+      "chars_no_spaces": 72,
+      "ending": "있습니다",
+      "excerpt": "출시 안내에 따르면 Plus·Pro·Business·Enterprise·Edu 사용자는 ChatGPT Work와 Codex에서 이용할 수 있습니다."
+    },
+    {
+      "line": 35,
+      "chars_no_spaces": 76,
+      "ending": "합니다",
+      "excerpt": "Claude Opus 5.5는 Anthropic이 9월 22일 출시한 모델로, 코드 작업과 문서 작성 등 대부분의 업무에서 Fable 5.1 수준을 제공한다고 설명합니다."
+    },
+    {
+      "line": 39,
+      "chars_no_spaces": 61,
+      "ending": "-습니다",
+      "excerpt": "OpenAI에 따르면 Sol 6.1은 평가한 설정 전반에서 Opus 5.5보다 높은 점수를 기록했고, 과제당 비용은 절반 미만이었습니다."
+    },
+    {
+      "line": 39,
+      "chars_no_spaces": 53,
+      "ending": "입니다",
+      "excerpt": "여기서 Opus는 안전장치 등이 작동하면 다른 모델로 작업을 넘기는 대체 처리, 즉 fallback을 포함한 구성입니다."
+    },
+    {
+      "line": 41,
+      "chars_no_spaces": 92,
+      "ending": "-습니다",
+      "excerpt": "여러 업무용 도구를 연결해 작업을 끝내는 AutomationBench 1.0.6에서는 Sol의 중간 추론 수준인 medium 설정이 Opus보다 2.2%p 높았고, 과제당 비용은 약 3분의 1이었습니다."
+    },
+    {
+      "line": 41,
+      "chars_no_spaces": 83,
+      "ending": "됩니다",
+      "excerpt": "같은 페이지의 Fable 5.1 비용에는 약 40%의 과제에서 발생한 fallback 비용이 빠졌다는 주석도 있어, 표시된 비용만으로 네 모델을 나란히 순위 매기면 비교 조건을 놓치게 됩니다."
+    },
+    {
+      "line": 43,
+      "chars_no_spaces": 78,
+      "ending": "했습니다",
+      "excerpt": "실제 코드베이스의 긴 소프트웨어 개발 과제를 다루는 DeepSWE v1.1에서는 Astra와 같은 수준의 점수를 약 5분의 1 비용으로 달성했다고 OpenAI가 보고했습니다."
+    },
+    {
+      "line": 43,
+      "chars_no_spaces": 60,
+      "ending": "됩니다",
+      "excerpt": "Opus 출시 때의 코딩 표에는 GPT-5.6 Sol이 들어 있으므로, 그 점수를 새 Sol 6.1의 성능으로 가져와 비교해서는 안 됩니다."
+    },
+    {
+      "line": 47,
+      "chars_no_spaces": 71,
+      "ending": "했습니다",
+      "excerpt": "여러 영역을 묶은 결과를 보기 위해 독립 평가 기관인 Artificial Analysis의 Intelligence Index v4.3.2를 확인했습니다."
+    },
+    {
+      "line": 49,
+      "chars_no_spaces": 69,
+      "ending": "-습니다",
+      "excerpt": "Claude 결과에는 리더보드에 표시된 fallback 구성이 포함되어 있으며, 제조사가 다른 모델에서 같은 설정명을 사용해도 계산량이 같지는 않습니다."
+    },
+    {
+      "line": 60,
+      "chars_no_spaces": 60,
+      "ending": "-습니다",
+      "excerpt": "이 자료에서는 Sol이 Astra와 Fable에 가까운 종합 점수를 낮은 비용으로 얻었고, Opus의 최고 점수와는 차이가 남았습니다."
+    },
+    {
+      "line": 66,
+      "chars_no_spaces": 53,
+      "ending": "했습니다",
+      "excerpt": "아래 기본 단가는 100만 토큰 기준이며, GPT는 Standard, Claude는 일반 API 요금을 사용했습니다."
+    },
+    {
+      "line": 79,
+      "chars_no_spaces": 82,
+      "ending": "-니다",
+      "excerpt": "Sol은 입력이 27만 2천 토큰을 넘는 요청에서 전체 요청의 입력·캐시 단가가 2배, 출력 단가가 1.5배로 올라가므로, 최대 문맥 길이 안에 들어간다고 기본 요금이 유지되는 것은 아닙니다."
+    },
+    {
+      "line": 85,
+      "chars_no_spaces": 58,
+      "ending": "-세요",
+      "excerpt": "이미 Opus로 만든 결과에 만족한다면 계속 사용하되, 최근에 수정이 많았던 PDF 분석이나 코드 작업 한 건을 Sol에도 맡겨 보세요."
+    },
+    {
+      "line": 85,
+      "chars_no_spaces": 52,
+      "ending": "-세요",
+      "excerpt": "문서에서는 표의 수치와 각주를 제대로 반영했는지, 코드에서는 요구한 동작을 구현하고 기존 기능을 유지했는지를 보세요."
+    },
+    {
+      "line": 87,
+      "chars_no_spaces": 73,
+      "ending": "있습니다",
+      "excerpt": "반대로 비용보다 어려운 문제의 해결 가능성이 중요하다면 Opus도 함께 시험하고, OpenAI 도구를 쓰는 과학 연구 작업에서는 Astra를 남겨 둘 이유가 있습니다."
+    },
+    {
+      "line": 87,
+      "chars_no_spaces": 69,
+      "ending": "-세요",
+      "excerpt": "Fable 5.1을 이미 사용 중이라면 종합 점수만으로 더 비싼 요금을 계속 낼 이유를 단정하지 말고, 현재 작업에서 그 비용을 보완할 결과가 나오는지 확인하세요."
+    }
+  ],
+  "sentence_endings": {
+    "입니다": 16,
+    "other": 10,
+    "-습니다": 9,
+    "합니다": 9,
+    "했습니다": 8,
+    "-니다": 7,
+    "-세요": 6,
+    "있습니다": 3,
+    "됩니다": 3,
+    "question": 1,
+    "없습니다": 1,
+    "보입니다": 1
+  },
+  "sentence_ending_samples": {
+    "-세요": [
+      {
+        "line": 23,
+        "chars_no_spaces": 6,
+        "ending": "-세요",
+        "excerpt": "안녕하세요."
+      },
+      {
+        "line": 51,
+        "chars_no_spaces": 23,
+        "ending": "-세요",
+        "excerpt": "모바일에서는 표를 좌우로 밀어 모든 열을 확인하세요."
+      }
+    ],
+    "입니다": [
+      {
+        "line": 23,
+        "chars_no_spaces": 11,
+        "ending": "입니다",
+        "excerpt": "dev.log입니다."
+      },
+      {
+        "line": 25,
+        "chars_no_spaces": 49,
+        "ending": "입니다",
+        "excerpt": "Claude에 PDF 분석이나 코드 수정을 맡기던 분이라면, 새 GPT 모델이 나왔을 때 궁금한 것은 하나입니다."
+      }
+    ],
+    "question": [
+      {
+        "line": 25,
+        "chars_no_spaces": 20,
+        "ending": "question",
+        "excerpt": "지금 쓰는 클로드와 비교해 볼 만한 수준일까요?"
+      }
+    ],
+    "-니다": [
+      {
+        "line": 25,
+        "chars_no_spaces": 59,
+        "ending": "-니다",
+        "excerpt": "문서 분석과 반복 업무에 Sol을 비교 후보로 추가할 이유는 생겼지만, Opus 5.5에서 곧바로 갈아탈 근거까지 확보된 것은 아닙니다."
+      },
+      {
+        "line": 41,
+        "chars_no_spaces": 24,
+        "ending": "-니다",
+        "excerpt": "퍼센트포인트(%p)는 두 비율의 차이를 나타냅니다."
+      }
+    ],
+    "-습니다": [
+      {
+        "line": 27,
+        "chars_no_spaces": 52,
+        "ending": "-습니다",
+        "excerpt": "출시 자료에서는 일부 업무에서 Sol이 Opus를 앞섰고, 독립 종합 평가에서는 Opus가 더 높은 점수를 받았습니다."
+      },
+      {
+        "line": 33,
+        "chars_no_spaces": 19,
+        "ending": "-습니다",
+        "excerpt": "일반 Chat에는 아직 제공되지 않습니다."
+      }
+    ],
+    "other": [
+      {
+        "line": 29,
+        "chars_no_spaces": 23,
+        "ending": "other",
+        "excerpt": "{{media:sol-opus-hero}}"
+      },
+      {
+        "line": 33,
+        "chars_no_spaces": 10,
+        "ending": "other",
+        "excerpt": "OpenAI 출시 안내"
+      }
+    ],
+    "했습니다": [
+      {
+        "line": 33,
+        "chars_no_spaces": 42,
+        "ending": "했습니다",
+        "excerpt": "OpenAI는 2026년 9월 29일 DevDay에 GPT-6.1 Sol을 발표했습니다."
+      },
+      {
+        "line": 35,
+        "chars_no_spaces": 26,
+        "ending": "했습니다",
+        "excerpt": "두 모델도 Sol의 수준을 가늠할 비교 대상에 포함했습니다."
+      }
+    ],
+    "합니다": [
+      {
+        "line": 33,
+        "chars_no_spaces": 61,
+        "ending": "합니다",
+        "excerpt": "기존 GPT-6 Sol을 개선한 모델이며, 코딩·컴퓨터 조작·전문 업무에서 더 비싼 GPT-6 Astra에 가까운 성능을 목표로 합니다."
+      },
+      {
+        "line": 33,
+        "chars_no_spaces": 36,
+        "ending": "합니다",
+        "excerpt": "Work 또는 Codex의 모델 선택 화면에서 Sol 6.1을 선택해 사용합니다."
+      }
+    ],
+    "있습니다": [
+      {
+        "line": 33,
+        "chars_no_spaces": 72,
+        "ending": "있습니다",
+        "excerpt": "출시 안내에 따르면 Plus·Pro·Business·Enterprise·Edu 사용자는 ChatGPT Work와 Codex에서 이용할 수 있습니다."
+      },
+      {
+        "line": 43,
+        "chars_no_spaces": 22,
+        "ending": "있습니다",
+        "excerpt": "코딩에서도 Sol이 발전했다는 근거는 있습니다."
+      }
+    ],
+    "됩니다": [
+      {
+        "line": 41,
+        "chars_no_spaces": 83,
+        "ending": "됩니다",
+        "excerpt": "같은 페이지의 Fable 5.1 비용에는 약 40%의 과제에서 발생한 fallback 비용이 빠졌다는 주석도 있어, 표시된 비용만으로 네 모델을 나란히 순위 매기면 비교 조건을 놓치게 됩니다."
+      },
+      {
+        "line": 43,
+        "chars_no_spaces": 60,
+        "ending": "됩니다",
+        "excerpt": "Opus 출시 때의 코딩 표에는 GPT-5.6 Sol이 들어 있으므로, 그 점수를 새 Sol 6.1의 성능으로 가져와 비교해서는 안 됩니다."
+      }
+    ],
+    "없습니다": [
+      {
+        "line": 81,
+        "chars_no_spaces": 41,
+        "ending": "없습니다",
+        "excerpt": "API가 저렴하다는 이유로 같은 구독 금액에서 작업을 몇 배 더 할 수 있다고 계산할 수는 없습니다."
+      }
+    ],
+    "보입니다": [
+      {
+        "line": 85,
+        "chars_no_spaces": 50,
+        "ending": "보입니다",
+        "excerpt": "같은 자료와 완료 조건을 주고, 첫 답변보다 수정까지 마친 결과에 걸린 시간과 비용을 비교해야 전환할 이유가 보입니다."
+      }
+    ]
+  },
+  "repeated_paragraph_openers": {
+    "모바일에서는 표를": 2
+  },
+  "repeated_paragraph_opener_matches": [
+    {
+      "line": 51,
+      "opener": "모바일에서는 표를",
+      "excerpt": "모바일에서는 표를 좌우로 밀어 모든 열을 확인하세요."
+    },
+    {
+      "line": 70,
+      "opener": "모바일에서는 표를",
+      "excerpt": "모바일에서는 표를 좌우로 밀어 모든 열을 확인하세요."
+    }
+  ],
+  "note": "Signals are review prompts, not pass/fail rules."
+}

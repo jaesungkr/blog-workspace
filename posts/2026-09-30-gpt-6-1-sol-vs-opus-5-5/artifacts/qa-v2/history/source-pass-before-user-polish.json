@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-09-30T13:56:02.322216Z",
+  "checked_by": "Codex independent source reviewer /root/source_review",
+  "article_content_sha256": "8494529e1237e39adc9b6375e13ec34f584f2584f073f11c281e0ca7e02205c3",
+  "brief_sha256": "49df11c61ca056b5eacf95685f6a9d947abc29488f198574baf01819582eca84",
+  "evidence_sha256": "671e9e659ceb1244c1d5ba254010fa386d1fb45cff65295853900a7294c4b8ea",
+  "note": "추론 설정 정의와 제조사 간 설정 비교 문장, 두 표 앞의 모바일 스크롤 안내를 재검증했습니다. 각 표에 필요한 조작 안내이며 원고 pass를 유지합니다. 제작자의 로컬 preflight와 독립 최종 페이지 승인은 구분합니다."
+}

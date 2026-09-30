@@ -1,0 +1,102 @@
+[
+  {
+    "theme": "light",
+    "width": 1280,
+    "page_height": 5505,
+    "overflow": 0,
+    "tables": [
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 3040.71875,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 4012.234375,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "screenshots": 7
+  },
+  {
+    "theme": "light",
+    "width": 360,
+    "page_height": 7954,
+    "overflow": 0,
+    "tables": [
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 4141.015625,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 5713.71875,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "screenshots": 12
+  },
+  {
+    "theme": "dark",
+    "width": 1280,
+    "page_height": 5505,
+    "overflow": 0,
+    "tables": [
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 3040.71875,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 760,
+        "scroll_width": 760,
+        "overflow": "auto",
+        "y": 4012.234375,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "screenshots": 7
+  },
+  {
+    "theme": "dark",
+    "width": 360,
+    "page_height": 7954,
+    "overflow": 0,
+    "tables": [
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 4141.015625,
+        "height": 236,
+        "text": "모델\tmedium 지수\tmax 지수\tmax 과제당 비용\nGPT-6.1 Sol\t48\t52\t$0.72\nClaude Opus 5.5\t51\t58\t$5.98\nGPT-6 Astra\t50\t53\t$3.26\nClaude Fable 5.1\t49\t53\t$7.63"
+      },
+      {
+        "client_width": 320,
+        "scroll_width": 620,
+        "overflow": "auto",
+        "y": 5713.71875,
+        "height": 236,
+        "text": "모델\t입력 / 100만 토큰\t출력 / 100만 토큰\t가정한 처리량의 비용\nGPT-6.1 Sol\t$2\t$10\t$0.30\nClaude Opus 5.5\t$4\t$20\t$0.60\nGPT-6 Astra\t$10\t$50\t$1.50\nClaude Fable 5.1\t$10\t$50\t$1.50"
+      }
+    ],
+    "screenshots": 12
+  }
+]
