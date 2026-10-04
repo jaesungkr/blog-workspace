@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-04T14:14:35.383046Z",
+  "checked_at": "2026-10-04T15:00:39.181498Z",
   "checked_by": "source_review",
-  "article_content_sha256": "37d7050da67057895af05dfbacdfab3730dd3391fd7fdc6f02b26073c540e53d",
-  "brief_sha256": "264f6bcdffeda7b3a64243ae99e01490fef8e61cfd6b3d7c9152648e657657fd",
-  "evidence_sha256": "9768f47b8e951cfecee1654a2e4afbeb4c8384b7bad3df3ddf736c2fa79cbb57",
-  "note": "사용자 Thoughts 통합 및 최종 polish 원고를 독립 검수했습니다. 사용자 명시 요청으로 이미지는 별도 썸네일만 사용하며 본문 lead/CDN 조건은 적용하지 않습니다. 페이지와 Git 승인은 별도 단계입니다."
+  "article_content_sha256": "099edcfec3f3817f1e016751eb5bd5663d98a52dc9cee3499044b8b2a16a99c9",
+  "brief_sha256": "92d7bd065bbd030b04fc10c71019bf17c5719806bbdd2aa0b8ef67a6f7e6473f",
+  "evidence_sha256": "8336cb97e41f2b03e152130b669cd7cbec832eafdaf9dbbd4d989c87456b735b",
+  "note": "사용자 시청 경험 정정과 Thoughts 단락 논리를 cold-read로 독립 검수했습니다. 공개 문구 수정은 Thoughts에 한정됩니다. reviewing 유지, 본문 이미지는 사용자 요청으로 없으며 페이지 승인은 새 후보로 별도 진행합니다."
 }

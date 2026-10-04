@@ -11,9 +11,9 @@
   "body_remote_media": "not_applicable",
   "strict_v2_media_gate": "not_applicable_by_user_instruction",
   "hashes": {
-    "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-rich-preview.html": "ff4b838156a71ca705adefbb12751c328a37c3550b58221db9e949b4354c9ec0",
-    "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-tistory-fragment.html": "4abc7da3ba4e216f4ea080249c1ef814731aaa1bd449087ab329957ad8790819",
-    "artifacts/qa-v2/final-dark-rendered/genesis-4-fight-against-anger-rich-preview.html": "b2600d817fd843b8784c1930d0b0456a73c723eb492ee6434b341fb285bc25e2",
-    "artifacts/qa-v2/final-dark-rendered/genesis-4-fight-against-anger-tistory-fragment.html": "4abc7da3ba4e216f4ea080249c1ef814731aaa1bd449087ab329957ad8790819"
+    "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-rich-preview.html": "b1b86cc0ca575939b5046487dc1454a5ec3775cdbc36a09135f1d137abeda07b",
+    "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-tistory-fragment.html": "4c4506561f5dc2821d70805803e953cdfa4fed69ba20dd6c47453f28a5e13e03",
+    "artifacts/qa-v2/final-dark-rendered/genesis-4-fight-against-anger-rich-preview.html": "b0a682c803f1af8ad9a8f92b4d9b0bfc0389d1b8647214da348b68898c9d7bce",
+    "artifacts/qa-v2/final-dark-rendered/genesis-4-fight-against-anger-tistory-fragment.html": "4c4506561f5dc2821d70805803e953cdfa4fed69ba20dd6c47453f28a5e13e03"
   }
 }

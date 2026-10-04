@@ -2,27 +2,28 @@
   "version": 2,
   "scope": "user-requested-thumbnail-only",
   "result": "pass",
-  "checked_by": "page_review_v2",
-  "capture_by": "thumbnail_review",
-  "checked_at": "2026-10-04T15:07:40.349504Z",
+  "checked_by": "thumbnail_review",
+  "checked_at": "2026-10-04T14:19:20.378829Z",
   "strict_v2_media_gate": "not_applicable_by_user_instruction",
   "user_instruction": "이미지는 썸네일에 넣을거라서 따로 본문에는 추가안해도되고. 썸네일 이미지만 만들어주면되는거야.",
-  "article_content_sha256": "099edcfec3f3817f1e016751eb5bd5663d98a52dc9cee3499044b8b2a16a99c9",
+  "source_pass_sha256": "e9ea06b7385c06628d95526de777b3d37cd997a09a2f438395f3158256f31aef",
+  "article_content_sha256": "37d7050da67057895af05dfbacdfab3730dd3391fd7fdc6f02b26073c540e53d",
+  "preview_sha256": "ff4b838156a71ca705adefbb12751c328a37c3550b58221db9e949b4354c9ec0",
+  "dark_preview_sha256": "b2600d817fd843b8784c1930d0b0456a73c723eb492ee6434b341fb285bc25e2",
+  "fragment_sha256": "4abc7da3ba4e216f4ea080249c1ef814731aaa1bd449087ab329957ad8790819",
   "paths": {
     "source_pass": "artifacts/qa-v2/source-pass.json",
     "preview": "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-rich-preview.html",
     "dark_preview": "artifacts/qa-v2/final-dark-rendered/genesis-4-fight-against-anger-rich-preview.html",
     "fragment": "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-tistory-fragment.html"
   },
-  "measurements_sha256": "0aa7e4edcc9314629a04cbac672f7a910ad6ce3b6e02ffcc465b90924ec6ceab",
-  "review_sha256": "e179900ae18c490251f263f8d1cc0de55cd82b26d4860c48f2953289630dab65",
+  "measurements_sha256": "a9f5e2450bd488a609ab69a9372880c30a65329ba09dabf91544875b3f1853f7",
   "receipts": [
     {
       "theme": "light",
       "path": "artifacts/qa-v2/final/light/thumbnail-only-browser-capture.json",
-      "sha256": "75e8b9502a9d4ad32c6ed7ac2b279c23192f5d683e65517bd34c8ff7dfd7d0c4",
-      "capture_by": "thumbnail_review",
-      "session": "5303ef2a-df9b-4b0a-887b-c21536ede43e",
+      "sha256": "e49e6c39fd100bbc688b9fde7611a24de8b03abde926d61887204a9e0fea604e",
+      "session": "0c467267-397c-4ade-83ce-711eedbd04dd",
       "screenshots": [
         {
           "path": "artifacts/qa-v2/final/light/desktop-1280.png",
@@ -30,7 +31,7 @@
         },
         {
           "path": "artifacts/qa-v2/final/light/desktop-1280-full.png",
-          "sha256": "48bdfcf940b7002ee41b907bc8778157c6af143c394cb10d9aec912695b13d32"
+          "sha256": "0a5392e0ca522e6a28944437b4f7459286888e553b8505e03f09cf97349eabb7"
         },
         {
           "path": "artifacts/qa-v2/final/light/mobile-360.png",
@@ -38,16 +39,15 @@
         },
         {
           "path": "artifacts/qa-v2/final/light/mobile-360-full.png",
-          "sha256": "ce5fe8b82c4f1c1c6321ea560ef13e43ffd8837a1d46373ba528e1bc54d46cd0"
+          "sha256": "53cffc0b50a5f936d32afd82fbc9db4642e65463a1817bdfe1ae0990ab124534"
         }
       ]
     },
     {
       "theme": "dark",
       "path": "artifacts/qa-v2/final/dark/thumbnail-only-browser-capture.json",
-      "sha256": "c8597f7b704b83c5490b90ff04d065dbcbeedb2e4e52ec5a12a692e68245404b",
-      "capture_by": "thumbnail_review",
-      "session": "4aed4040-1ef3-4e8e-90dc-dfd1dc7ecff7",
+      "sha256": "77c4d5dd0c4ec853ce0ea40808b94eaa98ca6c796d7855d9c0bfe394715cf807",
+      "session": "ca1d0dbd-16a0-493e-8edf-d78dd59488a2",
       "screenshots": [
         {
           "path": "artifacts/qa-v2/final/dark/desktop-1280.png",
@@ -55,7 +55,7 @@
         },
         {
           "path": "artifacts/qa-v2/final/dark/desktop-1280-full.png",
-          "sha256": "c712105ae0d414c125a0ee013bf66f094ce4be786e1dffcc74050f7ab177ddfe"
+          "sha256": "7008140f05fc61a3b6398f988a6decf1e133cb338cca40fb5e5c1cf8a545c078"
         },
         {
           "path": "artifacts/qa-v2/final/dark/mobile-360.png",
@@ -63,7 +63,7 @@
         },
         {
           "path": "artifacts/qa-v2/final/dark/mobile-360-full.png",
-          "sha256": "a560b5ee36981501473a650b131fd8eb1b4bfe6f7b970e1d3ffae1936738e24e"
+          "sha256": "ce6f85f4c492b3727b5161f5aefa46c3ced5b408ddbbb4e0846e5da4ecceb9d6"
         }
       ]
     }
@@ -73,9 +73,5 @@
     "images_loaded must be true with at least one remote image",
     "preview must contain at least one image"
   ],
-  "note": "현재 후보를 독립 검수하여 사용자 요청에 따른 썸네일 전용 페이지로 승인했습니다. 기존 캡처의 해시를 재검증하고 전체 화면 네 개와 연속 확대 이미지 열여섯 개를 직접 확인했습니다. 엄격한 본문 미디어 gate는 해당하지 않으며, 원고·lifecycle·Git은 변경하지 않았습니다.",
-  "source_pass_sha256": "5ce02cb7235531ce1832297b5323931d8a575fb0b3ffb6be8f019950ea2932db",
-  "preview_sha256": "b1b86cc0ca575939b5046487dc1454a5ec3775cdbc36a09135f1d137abeda07b",
-  "dark_preview_sha256": "b0a682c803f1af8ad9a8f92b4d9b0bfc0389d1b8647214da348b68898c9d7bce",
-  "fragment_sha256": "4c4506561f5dc2821d70805803e953cdfa4fed69ba20dd6c47453f28a5e13e03"
+  "note": "엄격한 v2 본문 media gate 통과가 아닌 사용자 명시 썸네일 전용 예외에 따른 실제 light/dark 1280·360 페이지 승인입니다. stock 캡처가 두 테마에서 이미지 부재 조건으로 실패한 사실을 보존하며 원본 스킬과 checker는 수정하지 않았습니다."
 }

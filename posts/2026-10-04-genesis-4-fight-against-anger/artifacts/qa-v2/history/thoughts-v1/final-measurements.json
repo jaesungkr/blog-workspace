@@ -43,10 +43,8 @@
     "image_surrounds": "not_applicable",
     "status": "pass"
   },
-  "checked_at": "2026-10-04T15:07:40.349504Z",
-  "checked_by": "page_review_v2",
+  "checked_at": "2026-10-04T14:19:20.378829Z",
+  "checked_by": "thumbnail_review",
   "scope": "user-requested-thumbnail-only",
-  "strict_v2_media_gate": "not_applicable_by_user_instruction",
-  "capture_by": "thumbnail_review",
-  "manual_review_note": "현재 전체 페이지 캡처 네 개와 연속 확대 이미지 열여섯 개를 직접 확인했습니다. 본문과 소제목의 줄바꿈, 문단 간격, 목차, 두 테마의 대비를 통과로 판정했습니다. 보존할 인라인 style 속성은 없으며, 본문 이미지·표·코드·캡션 검사는 해당하지 않습니다."
+  "strict_v2_media_gate": "not_applicable_by_user_instruction"
 }

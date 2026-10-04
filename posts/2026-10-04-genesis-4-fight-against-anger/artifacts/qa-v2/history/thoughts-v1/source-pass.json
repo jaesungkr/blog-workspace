@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-04T14:14:35.383046Z",
+  "checked_by": "source_review",
+  "article_content_sha256": "37d7050da67057895af05dfbacdfab3730dd3391fd7fdc6f02b26073c540e53d",
+  "brief_sha256": "264f6bcdffeda7b3a64243ae99e01490fef8e61cfd6b3d7c9152648e657657fd",
+  "evidence_sha256": "9768f47b8e951cfecee1654a2e4afbeb4c8384b7bad3df3ddf736c2fa79cbb57",
+  "note": "사용자 Thoughts 통합 및 최종 polish 원고를 독립 검수했습니다. 사용자 명시 요청으로 이미지는 별도 썸네일만 사용하며 본문 lead/CDN 조건은 적용하지 않습니다. 페이지와 Git 승인은 별도 단계입니다."
+}
