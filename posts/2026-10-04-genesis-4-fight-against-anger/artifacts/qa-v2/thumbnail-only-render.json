@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "scope": "user-requested-thumbnail-only",
+  "user_instruction": "이미지는 썸네일에 넣을거라서 따로 본문에는 추가안해도되고. 썸네일 이미지만 만들어주면되는거야.",
+  "excluded_checks": [
+    "exactly one media item must use role `lead` and match lead_id",
+    "media.json `items` must be a non-empty array",
+    "media.json `lead_id` must reference a registered item"
+  ],
+  "body_media_count": 0,
+  "body_remote_media": "not_applicable",
+  "strict_v2_media_gate": "not_applicable_by_user_instruction",
+  "hashes": {
+    "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-rich-preview.html": "ff4b838156a71ca705adefbb12751c328a37c3550b58221db9e949b4354c9ec0",
+    "artifacts/qa-v2/final-rendered/genesis-4-fight-against-anger-tistory-fragment.html": "4abc7da3ba4e216f4ea080249c1ef814731aaa1bd449087ab329957ad8790819",
+    "artifacts/qa-v2/final-dark-rendered/genesis-4-fight-against-anger-rich-preview.html": "b2600d817fd843b8784c1930d0b0456a73c723eb492ee6434b341fb285bc25e2",
+    "artifacts/qa-v2/final-dark-rendered/genesis-4-fight-against-anger-tistory-fragment.html": "4abc7da3ba4e216f4ea080249c1ef814731aaa1bd449087ab329957ad8790819"
+  }
+}

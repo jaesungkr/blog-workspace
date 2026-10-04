@@ -1,0 +1,50 @@
+{
+  "viewports": [
+    {
+      "width": 1280,
+      "readable_media": "not_applicable",
+      "status": "pass",
+      "readable_text": true,
+      "body_media_count": 0
+    },
+    {
+      "width": 360,
+      "readable_media": "not_applicable",
+      "status": "pass",
+      "readable_text": true,
+      "body_media_count": 0
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "readable_media": "not_applicable",
+      "status": "pass",
+      "readable_text": true,
+      "body_media_count": 0
+    },
+    {
+      "width": 360,
+      "readable_media": "not_applicable",
+      "status": "pass",
+      "readable_text": true,
+      "body_media_count": 0
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": "not_applicable",
+    "status": "pass"
+  },
+  "checked_at": "2026-10-04T14:19:20.378829Z",
+  "checked_by": "thumbnail_review",
+  "scope": "user-requested-thumbnail-only",
+  "strict_v2_media_gate": "not_applicable_by_user_instruction"
+}

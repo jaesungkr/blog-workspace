@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "분노와의 싸움 설교를 복습하고 자신의 묵상을 작성하려는 신앙 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "사용자 설교와 개인 Thoughts를 통합한 말씀 묵상 글입니다. 썸네일은 검수된 별도 자산이며 사용자 명시 요청에 따라 본문 이미지는 0개입니다. 본문 media.json은 비어 있습니다. lead 및 CDN gate는 본문 미삽입 요청으로 해당하지 않습니다. 저장소 스킬과 checker는 수정하지 않고 썸네일 전용 예외를 문서화해 원문 검수와 본문 light/dark 1280·360 브라우저 QA로 검증합니다. 캡처·GIF·인포그래픽·추가 폭·두 번째 fetch는 해당하지 않습니다."
+}

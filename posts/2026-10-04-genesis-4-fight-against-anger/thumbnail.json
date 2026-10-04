@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "id": "anger-pattern-thumbnail",
+  "role": "thumbnail_only",
+  "origin": "generated",
+  "publish_path": "assets/anger-pattern-thumbnail-v1.png",
+  "body_placement": "none",
+  "width": 1672,
+  "height": 941,
+  "sha256": "458b5e1dc66d16cc932f36c38fe0289c6f9b86d9cd415c4fb05db0d02dbc8dda",
+  "alt": "아이보리 바탕에서 흐트러진 각진 무늬가 차분한 반원 무늬로 바뀌는 패턴입니다.",
+  "caption": "",
+  "actor": "Codex using OpenAI built-in image generation",
+  "created_at": "2026-10-04",
+  "rights": "Original AI-generated editorial artwork",
+  "prompt_path": "artifacts/thumbnail-prompt.txt",
+  "claim_ids": [
+    "C06",
+    "C08"
+  ],
+  "status": "validated",
+  "reviewer": "independent subagent thumbnail_review",
+  "review_path": "artifacts/qa-v2/thumbnail-review.md"
+}

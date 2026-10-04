@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "result": "pass",
+  "scope": "user-requested-thumbnail-only",
+  "ready_basis": "independent source, separate thumbnail, actual light/dark desktop/mobile page approval",
+  "strict_v2_media_gate": "not_applicable_by_user_instruction",
+  "source_pass_sha256": "e9ea06b7385c06628d95526de777b3d37cd997a09a2f438395f3158256f31aef",
+  "page_pass_sha256": "8e581596efc3c2203bd4f189f7da70dfffee79a53a03b48f64415370f824cf57",
+  "fragment_sha256": "4abc7da3ba4e216f4ea080249c1ef814731aaa1bd449087ab329957ad8790819",
+  "paste_file_sha256": "4abc7da3ba4e216f4ea080249c1ef814731aaa1bd449087ab329957ad8790819",
+  "output_files": [
+    "/Users/ja2sng/Documents/Codex/2026-10-04/new-chat/outputs/genesis-4-fight-against-anger-tistory-fragment.txt",
+    "/Users/ja2sng/Documents/Codex/2026-10-04/new-chat/outputs/genesis-4-fight-against-anger-preview.html",
+    "/Users/ja2sng/Documents/Codex/2026-10-04/new-chat/outputs/genesis-4-fight-against-anger-preview-dark.html",
+    "/Users/ja2sng/Documents/Codex/2026-10-04/new-chat/outputs/genesis-4-fight-against-anger-thoughts.md",
+    "/Users/ja2sng/Documents/Codex/2026-10-04/new-chat/outputs/genesis-4-fight-against-anger-final.md"
+  ]
+}
