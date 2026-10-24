@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T01:26:25.543462Z",
-  "checked_by": "review_user_thoughts",
-  "article_content_sha256": "aa9b3fdf55185b14ffcc6d824acf75e86a7f639f24dc99cbb40365ae2237f45b",
-  "brief_sha256": "1790f6f35c26bca9e211302fccddee5d22770467a790147bfc994d33a754da5b",
-  "evidence_sha256": "57fd8d5c067fb21484b5fb960c0dbb3cd727c1f204be906497537906fe22bbda",
-  "note": "사용자 Thoughts를 반영한 전체 원고의 사실·논리·저자성·문체 검토입니다. 신학적 의문은 의도적으로 미해결 상태이며 대표 이미지·CDN·최종 페이지·ready 승인은 별도입니다."
+  "checked_at": "2026-10-24T02:01:25.262735Z",
+  "checked_by": "review_thoughts_clarity",
+  "article_content_sha256": "a875996e4899c59c4f89e877baa09cb5eed9e341dea5f95aa17207c0b9d1aee6",
+  "brief_sha256": "ffb350c789d6c85d0ad4511f8e3dc6eb4a08f1945c8069c3cc1309c405455f24",
+  "evidence_sha256": "aa40bbc39d3e9f0a4beee77ffbe7750f277ccefb5a18a01ec37729d30bc335cc",
+  "note": "사용자가 요청한 설명 보완과 반박 문장 삭제를 반영한 전체 원고의 독립 검토입니다. 음식·강아지 비유의 직관성, 사실·저자성·한국어를 확인했습니다. 미디어와 최종 페이지 승인은 별도입니다."
 }
