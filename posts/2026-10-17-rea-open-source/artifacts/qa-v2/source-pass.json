@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T10:43:46.132772Z",
+  "checked_at": "2026-10-24T10:53:28.847596Z",
   "checked_by": "/root/rea_source_review",
-  "article_content_sha256": "05e85ea1edcf26ae6cf3ec4c988ab944dedd7f8ca15dc3675941702b4414147f",
-  "brief_sha256": "e49143bf54001250c3b7b25c21cb9ab8d26db3f3f12c778fdca51034468f4145",
-  "evidence_sha256": "82b3ee45826b667ebef2c5f34d58ec784a3614f3160486e0e65c8c9308da44b2",
+  "article_content_sha256": "3dc7aeb04f655add226429e23c326b751948029ab4fd63abb9a0e9fb2c71bfb5",
+  "brief_sha256": "281f2424a1a6cec2a6654aa4d1f3689a0f9f18f0558b3da34449d690a5efc4a7",
+  "evidence_sha256": "aede8a65dc007084338069f9b45724bc3f0bb7587b5c3e8d559bf071aec79494",
   "note": ""
 }

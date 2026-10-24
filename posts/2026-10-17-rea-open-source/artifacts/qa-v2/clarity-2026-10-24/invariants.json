@@ -1,0 +1,7 @@
+{
+  "two_commands_and_csv_output": "byte-identical; reordered",
+  "media_asset_hashes": "unchanged",
+  "main_js_quote_and_detailed_tables": "preserved in evidence and before/article.md; removed from current public source",
+  "public_test_attribution": "neutral; no user first-person experience",
+  "viewport_checks": "4 local light/dark 1280/360; all 3 images loaded; 1 H1 and 4 H2; table fully fits; no page overflow"
+}

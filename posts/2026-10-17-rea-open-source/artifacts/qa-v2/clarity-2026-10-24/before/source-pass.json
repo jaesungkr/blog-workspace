@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T10:43:46.132772Z",
+  "checked_by": "/root/rea_source_review",
+  "article_content_sha256": "05e85ea1edcf26ae6cf3ec4c988ab944dedd7f8ca15dc3675941702b4414147f",
+  "brief_sha256": "e49143bf54001250c3b7b25c21cb9ab8d26db3f3f12c778fdca51034468f4145",
+  "evidence_sha256": "82b3ee45826b667ebef2c5f34d58ec784a3614f3160486e0e65c8c9308da44b2",
+  "note": ""
+}

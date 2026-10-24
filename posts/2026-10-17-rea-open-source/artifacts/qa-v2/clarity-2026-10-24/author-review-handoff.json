@@ -1,0 +1,17 @@
+{
+  "stage": "author review candidate; not published",
+  "review_sha256": "a6ce069cf54a0b4e2b64d921be540c621157a4834444e5d12bcaabae632cbc4c",
+  "source_pass_sha256": "5972f70dc2c5587ef111b07564115fea59c082931f390a9e9b04bb087a7ffcea",
+  "media": {
+    "rea-official-lead": "f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078",
+    "rea-notes-flow": "03869a32b8e065a1e8df558d57fdc6a8c473063698ab2c1976ead2e333acceff",
+    "rea-csv-escaping": "ffd6982ae5268692a58120e9e314a2603074a54280aaee75965b0c7b4f1e1016"
+  },
+  "self_contained_images": 3,
+  "pending": [
+    "specific candidate publication approval",
+    "native attachment binding",
+    "remote observations and final-page gate",
+    "Tistory preview and live verification"
+  ]
+}

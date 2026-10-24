@@ -1,15 +1,9 @@
-/* Keep the mobile scroll instruction attached to each wide result table. */
-@media (max-width: 735px) {
-  .devlog-rich .rich-table-wrap::before {
-    content: "표를 좌우로 밀어 전체 내용을 확인하세요.";
-    display: block;
-    position: sticky;
-    left: 0;
-    width: 100%;
-    padding: 0 0 10px;
-    color: var(--rich-muted);
-    font-size: 13px;
-    line-height: 1.5;
-    white-space: normal;
-  }
+/* Keep the two-column findings readable together on narrow screens. */
+.devlog-rich .rich-table-wrap table {
+  min-width: 0;
+  table-layout: fixed;
+}
+.devlog-rich .rich-table-wrap th:first-child,
+.devlog-rich .rich-table-wrap td:first-child {
+  width: 28%;
 }
