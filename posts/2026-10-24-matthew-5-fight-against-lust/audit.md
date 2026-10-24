@@ -175,3 +175,11 @@
 - 새로운 교리 사실이나 실제 발언을 주장하지 않고 조건문과 저자의 느낌으로 표현했습니다. 원고·근거·승인은 history/before-love-and-responsibility에 보존했습니다.
 
 - 독립 재검토 결과: review_thoughts_cadence의 pass입니다. 사랑과 책임의 의문이 사용자 요청과 일치하고 조건문의 범위가 유지됨을 확인했습니다. article SHA256은 6f35956324ccb990fb56a9d9ab6f734f2afc6cae893cb415f76d214a58bd6a8f입니다. blog.py check 오류·경고 0개이며 공백 검사와 Thoughts 사본 일치도 확인했습니다.
+
+## 사용자 지정 두 문장 수정
+
+- 설교에 대한 첫인상을 요청한 ‘죄에 대한 설교는 사실 다 비슷합니다’로 직접 표현했습니다. 이는 Thoughts의 개인적 평가이며 설교 요약의 내용은 변하지 않았습니다.
+- 음식 예시 뒤에 당분과 소금의 과다 섭취가 건강을 심각하게 해칠 수 있다는 한 줄을 추가했습니다. WHO의 현재 식생활 안내에서 위험과 섭취 제한 근거를 확인하고 source 목록과 evidence에 보존했습니다. 매운맛 자체의 위해로 범위를 넓히지 않았습니다.
+- 이전 원고·근거·승인은 history/before-direct-tone-health-line에 보존했습니다.
+
+- 독립 재검토: review_thoughts_cadence의 pass입니다. 첫 문장의 저자성 및 건강 설명의 과다 섭취 범위와 문맥을 확인했습니다. article SHA256은 e435c341c7f7bf32d070bfbaf0fa07d5cb5e2296264f1b520402da595a74fe2f입니다. blog.py check 오류·경고 0개, 공백 검사 및 Thoughts 사본 일치 확인을 완료했습니다.
