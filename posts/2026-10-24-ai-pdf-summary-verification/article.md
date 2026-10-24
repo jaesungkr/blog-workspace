@@ -6,7 +6,7 @@ category: "Log"
 subcategory: "AI 개념 · 실전"
 publication_category: "AI·개발"
 publication_subcategory: "AI 이해·활용"
-status: reviewing
+status: ready
 format: rich-post-v2
 tags: ["AI", "Claude", "PDF 요약", "문서 검증", "환각"]
 summary: "183쪽 제품 설명서를 Claude에게 요약하게 한 뒤, 모델별 숫자·각주 조건·문서에 없는 정보를 원문과 대조했습니다."

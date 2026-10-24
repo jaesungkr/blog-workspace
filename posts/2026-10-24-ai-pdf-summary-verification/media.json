@@ -23,14 +23,15 @@
       ],
       "mobile_scroll_width": 700,
       "kind": "screenshot",
-      "tistory_url": "",
+      "tistory_url": "https://blog.kakaocdn.net/dna/snUWM/dJMcac58sjG/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XksP_9wmPKBmsBem8MiBNpktz8CWLjdmIDJa8nKBPvOgAfRT1JatSBQv6PVQd744xxEKp_UYIjNE5r3uN4UQuJ/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=%2BNKQFhcrta91qP16nMNrtrFXa8Y%3D",
       "status": "validated",
       "display_width": 916,
       "redactions": [],
       "width": 955,
       "height": 1138,
       "sha256": "b0329bf8d82c45852b6580e206708341517945f23aa85ec7b451046ad051571e",
-      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다."
+      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다.",
+      "tistory_embed": "[##_Image|kage@snUWM/dJMcac58sjG/AAAAAAAAAAAAAAAAAAAAAKrzluuftBmRKiusJ_ki1xBEQvpgiVVSP-aAwzX-dAr-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=Bt6AZxIFQo%2BziCaH8AOqBTPHVNc%3D|CDM|1.3|{\"originWidth\":955,\"originHeight\":1138,\"style\":\"alignCenter\",\"filename\":\"model-specifications-detail.png\",\"alt\":\"173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면\"}_##]"
     },
     {
       "id": "claude-model-group",
@@ -55,14 +56,15 @@
       "captured_at": "2026-10-24",
       "environment": "Claude web in Codex in-app browser; UI model Sonnet 5.5 중간; 1280x720 viewport.",
       "kind": "screenshot",
-      "tistory_url": "",
+      "tistory_url": "https://blog.kakaocdn.net/dna/bqAXyl/dJMcaiFmbct/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XTIIsOPb4kI_Z9-c1KtEjfPRR3zQ46-LBUNUQDwDF-tfCF-WV5GZ7uZIue8Y5rE0q8kTYh28IUpjBARV3kpelP/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=%2BKqyTts1ziheOgNT1r7J60X%2F71A%3D",
       "status": "validated",
       "display_width": 916,
       "redactions": [],
       "width": 1490,
       "height": 390,
       "sha256": "d46d94e0d1fb522ee4370d4aa331d09997144737451a663e831cd1dd989dfb6c",
-      "rights": "Codex가 본 실험에서 생성된 Claude 응답 화면을 직접 캡처했습니다. 원문 검증과 비평을 위한 응답 발췌입니다."
+      "rights": "Codex가 본 실험에서 생성된 Claude 응답 화면을 직접 캡처했습니다. 원문 검증과 비평을 위한 응답 발췌입니다.",
+      "tistory_embed": "[##_Image|kage@bqAXyl/dJMcaiFmbct/AAAAAAAAAAAAAAAAAAAAAIBmwSdPEN5k5bUM4GNoXtXw93-m4Wc1RvltAFbidmh-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=dOfofcKN2H6TZFqj9p3isJufOjI%3D|CDM|1.3|{\"originWidth\":1490,\"originHeight\":390,\"style\":\"alignCenter\",\"filename\":\"claude-model-group-explanation.png\",\"alt\":\"Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변\"}_##]"
     },
     {
       "id": "png-footnote",
@@ -85,14 +87,15 @@
       ],
       "mobile_scroll_width": 700,
       "kind": "screenshot",
-      "tistory_url": "",
+      "tistory_url": "https://blog.kakaocdn.net/dna/HOjel/dJMcablYuii/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VcNKzPX3_Bd0Hw9wSAiXGGjS4seoQjQUk4A-vvviTjjTDGS7e1MRWoHI6JquPzXQ-rNCAI0_dCTHUB58n2UbvL/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=HmsjKJ4ci4Dd0QKpGNiF6AaMRGA%3D",
       "status": "validated",
       "display_width": 916,
       "redactions": [],
       "width": 940,
       "height": 590,
       "sha256": "dc7815a6ebddc14cb5a67864431ba4beca295a275a1357e9b90833ad12c2bff6",
-      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다."
+      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다.",
+      "tistory_embed": "[##_Image|kage@HOjel/dJMcablYuii/AAAAAAAAAAAAAAAAAAAAAIoKZS78lzW8tziEqLur1ewxgiby0uiNdQivVPQHP42-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=ph3KyVvtpG7gX0caFs9RVuml3qg%3D|CDM|1.3|{\"originWidth\":940,\"originHeight\":590,\"style\":\"alignCenter\",\"filename\":\"png-limit-footnote.png\",\"alt\":\"PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면\"}_##]"
     },
     {
       "id": "eco-noise",
@@ -115,14 +118,15 @@
       ],
       "mobile_scroll_width": 700,
       "kind": "screenshot",
-      "tistory_url": "",
+      "tistory_url": "https://blog.kakaocdn.net/dna/bV9SIA/dJMcaiFmbcs/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UWB4ieu3BrgB9l1rIR2n88LddDA5IWUvy18Gs8gdpvKA5XhDzIA7gZnD6B0DbL-Pno1KifFls35Fy1T60-FOvY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iUAHCGWapzkpQKMHTVsrMMwcwsA%3D",
       "status": "validated",
       "display_width": 916,
       "redactions": [],
       "width": 925,
       "height": 345,
       "sha256": "0bfb1f1a40d60931389efb71b6c14b58e1bec1a33daa9f30ca1fcabb155de717",
-      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다."
+      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다.",
+      "tistory_embed": "[##_Image|kage@bV9SIA/dJMcaiFmbcs/AAAAAAAAAAAAAAAAAAAAAJkWOQF7cCp2fjS2kdcFohFA-cymGZmnyZkHCdtycJx9/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=xXoCSR3Lck5FHzW3xvbBbEDIyCM%3D|CDM|1.3|{\"originWidth\":925,\"originHeight\":345,\"style\":\"alignCenter\",\"filename\":\"eco-noise-description.png\",\"alt\":\"ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표\"}_##]"
     }
   ]
 }

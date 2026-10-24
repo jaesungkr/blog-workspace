@@ -1,0 +1,16 @@
+{
+  "author_instruction": "좋아 게시해줘",
+  "approved_revision": 3,
+  "approved_at": "2026-10-24T23:59:33.103213+09:00",
+  "timezone": "Asia/Seoul",
+  "target_blog": "https://dop3n.tistory.com",
+  "source_pass_sha256": "6968426d01907b541fa33fb689abcd81ae4e92782ae30c9eac93d5e58d106a75",
+  "article_sha256": "60d3d4bab1c6fd5bc9fe2b96b61181eee9ef4259a06ca2eb515cc79f93ef45c4",
+  "media": {
+    "model-specifications": "b0329bf8d82c45852b6580e206708341517945f23aa85ec7b451046ad051571e",
+    "claude-model-group": "d46d94e0d1fb522ee4370d4aa331d09997144737451a663e831cd1dd989dfb6c",
+    "png-footnote": "dc7815a6ebddc14cb5a67864431ba4beca295a275a1357e9b90833ad12c2bff6",
+    "eco-noise": "0bfb1f1a40d60931389efb71b6c14b58e1bec1a33daa9f30ca1fcabb155de717"
+  },
+  "scope": "Upload native attachments, assemble approved revision 3, preview, publish publicly now and verify live page."
+}

@@ -1,0 +1,45 @@
+{
+  "articleCount": 1,
+  "captions": [
+    "173쪽의 해상도·램프·본체 전력·무게 행을 발췌했습니다. 모바일에서는 그림을 좌우로 밀어 모델명과 값을 확인해 주세요.",
+    "숫자 표 아래에 붙은 실제 설명입니다. 두 번째 항목에서 해상도까지 같은 값으로 묶었습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
+    "65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.",
+    "131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요."
+  ],
+  "h1": 1,
+  "images": [
+    {
+      "alt": "",
+      "loaded": true,
+      "naturalWidth": 955,
+      "src": "https://blog.kakaocdn.net/dna/snUWM/dJMcac58sjG/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XksP_9wmPKBmsBem8MiBNpktz8CWLjdmIDJa8nKBPvOgAfRT1JatSBQv6PVQd744xxEKp_UYIjNE5r3uN4UQuJ/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=%2BNKQFhcrta91qP16nMNrtrFXa8Y%3D",
+      "width": 736
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "naturalWidth": 1280,
+      "src": "https://blog.kakaocdn.net/dna/bqAXyl/dJMcaiFmbct/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XTIIsOPb4kI_Z9-c1KtEjfPRR3zQ46-LBUNUQDwDF-tfCF-WV5GZ7uZIue8Y5rE0q8kTYh28IUpjBARV3kpelP/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=%2BKqyTts1ziheOgNT1r7J60X%2F71A%3D",
+      "width": 736
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "naturalWidth": 940,
+      "src": "https://blog.kakaocdn.net/dna/HOjel/dJMcablYuii/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VcNKzPX3_Bd0Hw9wSAiXGGjS4seoQjQUk4A-vvviTjjTDGS7e1MRWoHI6JquPzXQ-rNCAI0_dCTHUB58n2UbvL/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=HmsjKJ4ci4Dd0QKpGNiF6AaMRGA%3D",
+      "width": 736
+    },
+    {
+      "alt": "",
+      "loaded": false,
+      "naturalWidth": 0,
+      "src": "https://blog.kakaocdn.net/dna/bV9SIA/dJMcaiFmbcs/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UWB4ieu3BrgB9l1rIR2n88LddDA5IWUvy18Gs8gdpvKA5XhDzIA7gZnD6B0DbL-Pno1KifFls35Fy1T60-FOvY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iUAHCGWapzkpQKMHTVsrMMwcwsA%3D",
+      "width": 736
+    }
+  ],
+  "nativeImages": 4,
+  "scrollWidth": 1160,
+  "tables": 5,
+  "theme": "scroll-smooth dark",
+  "width": 1160
+}
