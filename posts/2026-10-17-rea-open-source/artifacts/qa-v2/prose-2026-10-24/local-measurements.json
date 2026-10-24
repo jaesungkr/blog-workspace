@@ -1,0 +1,86 @@
+[
+  {
+    "documentWidth": 360,
+    "h1": 1,
+    "h2": 5,
+    "images": [
+      {
+        "naturalWidth": 1200,
+        "width": 318
+      },
+      {
+        "naturalWidth": 1024,
+        "width": 318
+      },
+      {
+        "naturalWidth": 1280,
+        "width": 318
+      }
+    ],
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "documentWidth": 360,
+    "h1": 1,
+    "h2": 5,
+    "images": [
+      {
+        "naturalWidth": 1200,
+        "width": 318
+      },
+      {
+        "naturalWidth": 1024,
+        "width": 318
+      },
+      {
+        "naturalWidth": 1280,
+        "width": 318
+      }
+    ],
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "documentWidth": 1280,
+    "h1": 1,
+    "h2": 5,
+    "images": [
+      {
+        "naturalWidth": 1200,
+        "width": 914
+      },
+      {
+        "naturalWidth": 1024,
+        "width": 538
+      },
+      {
+        "naturalWidth": 1280,
+        "width": 538
+      }
+    ],
+    "theme": "light",
+    "width": 1280
+  },
+  {
+    "documentWidth": 1280,
+    "h1": 1,
+    "h2": 5,
+    "images": [
+      {
+        "naturalWidth": 1200,
+        "width": 914
+      },
+      {
+        "naturalWidth": 1024,
+        "width": 538
+      },
+      {
+        "naturalWidth": 1280,
+        "width": 538
+      }
+    ],
+    "theme": "dark",
+    "width": 1280
+  }
+]

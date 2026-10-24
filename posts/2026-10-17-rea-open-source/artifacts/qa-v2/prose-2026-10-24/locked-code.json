@@ -1,0 +1,6 @@
+[
+  "bash\nnpx -y rea-agents@6.7.0 analyze-javascript-application \\\n  ./notes-example --format json --full-output\n",
+  "javascript\nipcMain.handle(\"notes:export\", () => {\n  const destination = path.join(app.getPath(\"downloads\"), \"notes.csv\");\n  writeFileSync(destination, toCsv(notes), \"utf8\");\n  return destination;\n});\n",
+  "csv\nid,title\n1,\"Hello, \"\"REA\"\"\"\n",
+  "bash\nnode -e 'const {toCsv}=require(\"./csv.js\"); process.stdout.write(toCsv([{id:1,title:\"Hello, \\\"REA\\\"\"}]))'\n"
+]
