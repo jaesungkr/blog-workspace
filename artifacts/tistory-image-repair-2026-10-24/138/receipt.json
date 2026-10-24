@@ -1,0 +1,562 @@
+{
+  "id": 138,
+  "title": "Grok 4.7 vs. Fable 5.1 - AI 모델 비교",
+  "url": "https://dop3n.tistory.com/entry/Grok-47-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1",
+  "images": [
+    {
+      "alt": "실버색 코드 괄호와 토큰으로 표현한 Grok 4.7, 보라색 책과 컴퍼스로 표현한 Fable 5.1 비교 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "grok-fable-hero",
+      "index": 0,
+      "rect": {
+        "bottom": -2359.390625,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": -2774.265625,
+        "width": 736,
+        "x": 272,
+        "y": -2774.265625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbQquBd%2FdJMb99OYITx%2FAAAAAAAAAAAAAAAAAAAAAI2qFyJhHVmZmJ1vwsXzhJEuHfyV6d3yTAvsAMhlHy-6%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DDZpQeYnkCiz9KrtEtHwNbKozGN0%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok 4.7 발표 제목과 코딩·지식 노동용 모델이라는 설명이 보이는 SpaceXAI 화면",
+      "complete": true,
+      "h": 570,
+      "id": "grok-4-7-launch",
+      "index": 1,
+      "rect": {
+        "bottom": -1094.1171875,
+        "height": 328.859375,
+        "left": 272,
+        "right": 1008,
+        "top": -1422.9765625,
+        "width": 736,
+        "x": 272,
+        "y": -1422.9765625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbUDMKX%2FdJMcacFeW8L%2FAAAAAAAAAAAAAAAAAAAAACEUgaP43QlCJv-DmDFG8C9vxCmLwLif19LEVALywkFz%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DzWz51cxEO99M4UDa%252Fjn%252BUE5nRC0%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok 4.7과 Fable 5.1을 포함한 네 모델의 가격과 7개 평가 점수를 나란히 적은 공식 비교표",
+      "complete": true,
+      "h": 715,
+      "id": "grok-4-7-benchmark-table",
+      "index": 2,
+      "rect": {
+        "bottom": 941.984375,
+        "height": 642.0078125,
+        "left": 272,
+        "right": 1008,
+        "top": 299.9765625,
+        "width": 736,
+        "x": 272,
+        "y": 299.9765625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcHE0FI%2FdJMcacFeW8M%2FAAAAAAAAAAAAAAAAAAAAAKky5gIQ4Aj_2ErcPInBgujOcdub4bnA7xHYDGmfk_9y%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FpJrT6061QmMOpAnZZ1A7xrpjEc%253D",
+      "w": 820
+    },
+    {
+      "alt": "CursorBench 점수를 세로축, 평균 과제 비용을 가로축으로 표시한 모델별 선 그래프",
+      "complete": true,
+      "h": 464,
+      "id": "grok-4-7-cursorbench-cost",
+      "index": 3,
+      "rect": {
+        "bottom": 1631.609375,
+        "height": 435.296875,
+        "left": 272,
+        "right": 1008,
+        "top": 1196.3125,
+        "width": 736,
+        "x": 272,
+        "y": 1196.3125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FxhPzZ%2FdJMcadqq9Sd%2FAAAAAAAAAAAAAAAAAAAAAKlaj8PUnsS_rRk4V77KKm5PYl7mNF0wK0jIvIpDQ7A7%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DqD62EhQQD0PNq5cEPDqyzOHhLyk%253D",
+      "w": 786
+    },
+    {
+      "alt": "GDPval 전문 지식 노동 평가에서 Fable 5.1 1735점과 Grok 4.7 1695점을 보여 주는 가로 막대그래프",
+      "complete": true,
+      "h": 476,
+      "id": "grok-4-7-knowledge-work",
+      "index": 4,
+      "rect": {
+        "bottom": 2457.328125,
+        "height": 464.140625,
+        "left": 272,
+        "right": 1008,
+        "top": 1993.1875,
+        "width": 736,
+        "x": 272,
+        "y": 1993.1875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhwrPN%2FdJMcadqq9Se%2FAAAAAAAAAAAAAAAAAAAAALldsz_eJEOohOpz7POZoWzfDLXMhPCbVDTtswj2QxbQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtyyF1SIoIpuWE0LZnl4KM3BLYnc%253D",
+      "w": 756
+    },
+    {
+      "alt": "Artificial Analysis가 표시한 Grok 4.7의 종합지수 46점, 속도 39.2, 과제당 비용 3.74달러, 출력량 240M",
+      "complete": true,
+      "h": 590,
+      "id": "aa-grok-4-7-summary",
+      "index": 5,
+      "rect": {
+        "bottom": 3704.015625,
+        "height": 340.328125,
+        "left": 272,
+        "right": 1008,
+        "top": 3363.6875,
+        "width": 736,
+        "x": 272,
+        "y": 3363.6875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FemIQDD%2FdJMcah7z50V%2FAAAAAAAAAAAAAAAAAAAAAHcmL4QmkKc4I6FbtaW_z80yftikHBCBKGUfyamaTkXC%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DbLrB%252Fg61QwJPYZGVG55LnfuklLY%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Artificial Analysis가 표시한 Fable 5.1의 종합지수 53점, 속도 65.5, 과제당 비용 7.63달러, 출력량 190M",
+      "complete": true,
+      "h": 590,
+      "id": "aa-fable-5-1-summary",
+      "index": 6,
+      "rect": {
+        "bottom": 4269.4375,
+        "height": 340.328125,
+        "left": 272,
+        "right": 1008,
+        "top": 3929.109375,
+        "width": 736,
+        "x": 272,
+        "y": 3929.109375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDAZ8W%2FdJMcad4ZbcV%2FAAAAAAAAAAAAAAAAAAAAANUX0jLog93MamLnaFBkfHdQ2Gv_EivF-6qqFlkvKY3P%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dqb%252BFKn6YqTE5y%252FMQ3TBLSiSDDcM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Fable 5.1의 모델 ID, 요금, 100만 토큰 문맥, 12만 8천 토큰 출력을 보여 주는 공식 사양표",
+      "complete": true,
+      "h": 709,
+      "id": "fable-5-1-api-specs",
+      "index": 7,
+      "rect": {
+        "bottom": 7183.8125,
+        "height": 539.609375,
+        "left": 272,
+        "right": 1008,
+        "top": 6644.203125,
+        "width": 736,
+        "x": 272,
+        "y": 6644.203125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOisj2%2FdJMcad4Zbc4%2FAAAAAAAAAAAAAAAAAAAAAJsg8jrryndoZvml628pVs6fJGSonynPLeCoF0znA5X3%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DAXhj%252BR6i7Zaofy%252FxQOFFISKWexM%253D",
+      "w": 968
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "실버색 코드 괄호와 토큰으로 표현한 Grok 4.7, 보라색 책과 컴퍼스로 표현한 Fable 5.1 비교 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "grok-fable-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 614.21875,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 451.34375,
+        "width": 288,
+        "x": 36,
+        "y": 451.34375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbQquBd%2FdJMb99OYITx%2FAAAAAAAAAAAAAAAAAAAAAI2qFyJhHVmZmJ1vwsXzhJEuHfyV6d3yTAvsAMhlHy-6%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DDZpQeYnkCiz9KrtEtHwNbKozGN0%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok 4.7 발표 제목과 코딩·지식 노동용 모델이라는 설명이 보이는 SpaceXAI 화면",
+      "complete": true,
+      "h": 570,
+      "id": "grok-4-7-launch",
+      "index": 1,
+      "rect": {
+        "bottom": 2080.0859375,
+        "height": 129.359375,
+        "left": 36,
+        "right": 324,
+        "top": 1950.7265625,
+        "width": 288,
+        "x": 36,
+        "y": 1950.7265625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbUDMKX%2FdJMcacFeW8L%2FAAAAAAAAAAAAAAAAAAAAACEUgaP43QlCJv-DmDFG8C9vxCmLwLif19LEVALywkFz%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DzWz51cxEO99M4UDa%252Fjn%252BUE5nRC0%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok 4.7과 Fable 5.1을 포함한 네 모델의 가격과 7개 평가 점수를 나란히 적은 공식 비교표",
+      "complete": true,
+      "h": 715,
+      "id": "grok-4-7-benchmark-table",
+      "index": 2,
+      "rect": {
+        "bottom": 4331.9375,
+        "height": 251.375,
+        "left": 36,
+        "right": 324,
+        "top": 4080.5625,
+        "width": 288,
+        "x": 36,
+        "y": 4080.5625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcHE0FI%2FdJMcacFeW8M%2FAAAAAAAAAAAAAAAAAAAAAKky5gIQ4Aj_2ErcPInBgujOcdub4bnA7xHYDGmfk_9y%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FpJrT6061QmMOpAnZZ1A7xrpjEc%253D",
+      "w": 820
+    },
+    {
+      "alt": "CursorBench 점수를 세로축, 평균 과제 비용을 가로축으로 표시한 모델별 선 그래프",
+      "complete": true,
+      "h": 464,
+      "id": "grok-4-7-cursorbench-cost",
+      "index": 3,
+      "rect": {
+        "bottom": 4967.890625,
+        "height": 170.828125,
+        "left": 36,
+        "right": 324,
+        "top": 4797.0625,
+        "width": 288,
+        "x": 36,
+        "y": 4797.0625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FxhPzZ%2FdJMcadqq9Sd%2FAAAAAAAAAAAAAAAAAAAAAKlaj8PUnsS_rRk4V77KKm5PYl7mNF0wK0jIvIpDQ7A7%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DqD62EhQQD0PNq5cEPDqyzOHhLyk%253D",
+      "w": 786
+    },
+    {
+      "alt": "GDPval 전문 지식 노동 평가에서 Fable 5.1 1735점과 Grok 4.7 1695점을 보여 주는 가로 막대그래프",
+      "complete": true,
+      "h": 476,
+      "id": "grok-4-7-knowledge-work",
+      "index": 4,
+      "rect": {
+        "bottom": 5788.34375,
+        "height": 182.0703125,
+        "left": 36,
+        "right": 324,
+        "top": 5606.2734375,
+        "width": 288,
+        "x": 36,
+        "y": 5606.2734375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhwrPN%2FdJMcadqq9Se%2FAAAAAAAAAAAAAAAAAAAAALldsz_eJEOohOpz7POZoWzfDLXMhPCbVDTtswj2QxbQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtyyF1SIoIpuWE0LZnl4KM3BLYnc%253D",
+      "w": 756
+    },
+    {
+      "alt": "Artificial Analysis가 표시한 Grok 4.7의 종합지수 46점, 속도 39.2, 과제당 비용 3.74달러, 출력량 240M",
+      "complete": true,
+      "h": 590,
+      "id": "aa-grok-4-7-summary",
+      "index": 5,
+      "rect": {
+        "bottom": 7165.5,
+        "height": 133.828125,
+        "left": 36,
+        "right": 324,
+        "top": 7031.671875,
+        "width": 288,
+        "x": 36,
+        "y": 7031.671875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FemIQDD%2FdJMcah7z50V%2FAAAAAAAAAAAAAAAAAAAAAHcmL4QmkKc4I6FbtaW_z80yftikHBCBKGUfyamaTkXC%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DbLrB%252Fg61QwJPYZGVG55LnfuklLY%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Artificial Analysis가 표시한 Fable 5.1의 종합지수 53점, 속도 65.5, 과제당 비용 7.63달러, 출력량 190M",
+      "complete": true,
+      "h": 590,
+      "id": "aa-fable-5-1-summary",
+      "index": 6,
+      "rect": {
+        "bottom": 7676.75,
+        "height": 133.828125,
+        "left": 36,
+        "right": 324,
+        "top": 7542.921875,
+        "width": 288,
+        "x": 36,
+        "y": 7542.921875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDAZ8W%2FdJMcad4ZbcV%2FAAAAAAAAAAAAAAAAAAAAANUX0jLog93MamLnaFBkfHdQ2Gv_EivF-6qqFlkvKY3P%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dqb%252BFKn6YqTE5y%252FMQ3TBLSiSDDcM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Fable 5.1의 모델 ID, 요금, 100만 토큰 문맥, 12만 8천 토큰 출력을 보여 주는 공식 사양표",
+      "complete": true,
+      "h": 709,
+      "id": "fable-5-1-api-specs",
+      "index": 7,
+      "rect": {
+        "bottom": 11308.3515625,
+        "height": 211.4765625,
+        "left": 36,
+        "right": 324,
+        "top": 11096.875,
+        "width": 288,
+        "x": 36,
+        "y": 11096.875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOisj2%2FdJMcad4Zbc4%2FAAAAAAAAAAAAAAAAAAAAAJsg8jrryndoZvml628pVs6fJGSonynPLeCoF0znA5X3%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DAXhj%252BR6i7Zaofy%252FxQOFFISKWexM%253D",
+      "w": 968
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-23 12:54"
+    ],
+    "public": true,
+    "slug": "Grok-47-vs-Fable-51-AI-모델-비교"
+  },
+  "uploads": [
+    {
+      "id": "grok-fable-hero",
+      "rawToken": "[##_Image|kage@bQquBd/dJMb99OYITx/AAAAAAAAAAAAAAAAAAAAAI2qFyJhHVmZmJ1vwsXzhJEuHfyV6d3yTAvsAMhlHy-6/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/grok-4-7-vs-fable-5-1-hero.png",
+      "sha256": "8fa3c67097d51fa225e8e9d2bb9738b6d1d659f519c2d2c2ac42979ab8d3b560",
+      "embed": "[##_Image|kage@bQquBd/dJMb99OYITx/AAAAAAAAAAAAAAAAAAAAAI2qFyJhHVmZmJ1vwsXzhJEuHfyV6d3yTAvsAMhlHy-6/img.png|alignCenter|width=\"100%\" alt=\"실버색 코드 괄호와 토큰으로 표현한 Grok 4.7, 보라색 책과 컴퍼스로 표현한 Fable 5.1 비교 이미지\"|_##]"
+    },
+    {
+      "id": "grok-4-7-launch",
+      "rawToken": "[##_Image|kage@bUDMKX/dJMcacFeW8L/AAAAAAAAAAAAAAAAAAAAACEUgaP43QlCJv-DmDFG8C9vxCmLwLif19LEVALywkFz/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/screenshots/grok-4-7-launch.png",
+      "sha256": "25787a79a5eb9eba3dfc85842a566b73761261878775ce548b343700cf7c5ca2",
+      "embed": "[##_Image|kage@bUDMKX/dJMcacFeW8L/AAAAAAAAAAAAAAAAAAAAACEUgaP43QlCJv-DmDFG8C9vxCmLwLif19LEVALywkFz/img.png|alignCenter|width=\"100%\" alt=\"Grok 4.7 발표 제목과 코딩·지식 노동용 모델이라는 설명이 보이는 SpaceXAI 화면\"|_##]"
+    },
+    {
+      "id": "grok-4-7-benchmark-table",
+      "rawToken": "[##_Image|kage@cHE0FI/dJMcacFeW8M/AAAAAAAAAAAAAAAAAAAAAKky5gIQ4Aj_2ErcPInBgujOcdub4bnA7xHYDGmfk_9y/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/screenshots/grok-4-7-benchmark-table.png",
+      "sha256": "3ac5435c506d53ded1020c3881802e6bd5963f0221b8e98458fa03169c0cef30",
+      "embed": "[##_Image|kage@cHE0FI/dJMcacFeW8M/AAAAAAAAAAAAAAAAAAAAAKky5gIQ4Aj_2ErcPInBgujOcdub4bnA7xHYDGmfk_9y/img.png|alignCenter|width=\"100%\" alt=\"Grok 4.7과 Fable 5.1을 포함한 네 모델의 가격과 7개 평가 점수를 나란히 적은 공식 비교표\"|_##]"
+    },
+    {
+      "id": "grok-4-7-cursorbench-cost",
+      "rawToken": "[##_Image|kage@xhPzZ/dJMcadqq9Sd/AAAAAAAAAAAAAAAAAAAAAKlaj8PUnsS_rRk4V77KKm5PYl7mNF0wK0jIvIpDQ7A7/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/screenshots/grok-4-7-cursorbench-cost.png",
+      "sha256": "ce7c7f98083610828e59d567d4e39f718496f78de54894f44a68b647c5f391ec",
+      "embed": "[##_Image|kage@xhPzZ/dJMcadqq9Sd/AAAAAAAAAAAAAAAAAAAAAKlaj8PUnsS_rRk4V77KKm5PYl7mNF0wK0jIvIpDQ7A7/img.png|alignCenter|width=\"100%\" alt=\"CursorBench 점수를 세로축, 평균 과제 비용을 가로축으로 표시한 모델별 선 그래프\"|_##]"
+    },
+    {
+      "id": "grok-4-7-knowledge-work",
+      "rawToken": "[##_Image|kage@bhwrPN/dJMcadqq9Se/AAAAAAAAAAAAAAAAAAAAALldsz_eJEOohOpz7POZoWzfDLXMhPCbVDTtswj2QxbQ/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/screenshots/grok-4-7-knowledge-work.png",
+      "sha256": "e2ee183c3388479f90e2e1575ff7d05b8d7779eca9b4706fd0ac32cc95f31ff9",
+      "embed": "[##_Image|kage@bhwrPN/dJMcadqq9Se/AAAAAAAAAAAAAAAAAAAAALldsz_eJEOohOpz7POZoWzfDLXMhPCbVDTtswj2QxbQ/img.png|alignCenter|width=\"100%\" alt=\"GDPval 전문 지식 노동 평가에서 Fable 5.1 1735점과 Grok 4.7 1695점을 보여 주는 가로 막대그래프\"|_##]"
+    },
+    {
+      "id": "aa-grok-4-7-summary",
+      "rawToken": "[##_Image|kage@emIQDD/dJMcah7z50V/AAAAAAAAAAAAAAAAAAAAAHcmL4QmkKc4I6FbtaW_z80yftikHBCBKGUfyamaTkXC/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/screenshots/aa-grok-4-7-summary.png",
+      "sha256": "3d16d65b0fddcfc04ed9de9d0479fe5b91f0dac6dc8d11ff6d4421cbc854195e",
+      "embed": "[##_Image|kage@emIQDD/dJMcah7z50V/AAAAAAAAAAAAAAAAAAAAAHcmL4QmkKc4I6FbtaW_z80yftikHBCBKGUfyamaTkXC/img.png|alignCenter|width=\"100%\" alt=\"Artificial Analysis가 표시한 Grok 4.7의 종합지수 46점, 속도 39.2, 과제당 비용 3.74달러, 출력량 240M\"|_##]"
+    },
+    {
+      "id": "aa-fable-5-1-summary",
+      "rawToken": "[##_Image|kage@DAZ8W/dJMcad4ZbcV/AAAAAAAAAAAAAAAAAAAAANUX0jLog93MamLnaFBkfHdQ2Gv_EivF-6qqFlkvKY3P/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/screenshots/aa-fable-5-1-summary.png",
+      "sha256": "41f4390dc31863f2e442571418a3cf52a7c399ab46a44d17df96cb18bd036b03",
+      "embed": "[##_Image|kage@DAZ8W/dJMcad4ZbcV/AAAAAAAAAAAAAAAAAAAAANUX0jLog93MamLnaFBkfHdQ2Gv_EivF-6qqFlkvKY3P/img.png|alignCenter|width=\"100%\" alt=\"Artificial Analysis가 표시한 Fable 5.1의 종합지수 53점, 속도 65.5, 과제당 비용 7.63달러, 출력량 190M\"|_##]"
+    },
+    {
+      "id": "fable-5-1-api-specs",
+      "rawToken": "[##_Image|kage@Oisj2/dJMcad4Zbc4/AAAAAAAAAAAAAAAAAAAAAJsg8jrryndoZvml628pVs6fJGSonynPLeCoF0znA5X3/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/screenshots/fable-5-1-api-specs.png",
+      "sha256": "d82e60c17e471c03c88eb01092ffbc029967617f6609c5035ba6de944dd2aa14",
+      "embed": "[##_Image|kage@Oisj2/dJMcad4Zbc4/AAAAAAAAAAAAAAAAAAAAAJsg8jrryndoZvml628pVs6fJGSonynPLeCoF0znA5X3/img.png|alignCenter|width=\"100%\" alt=\"Fable 5.1의 모델 ID, 요금, 100만 토큰 문맥, 12만 8천 토큰 출력을 보여 주는 공식 사양표\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "실버색 코드 괄호와 토큰으로 표현한 Grok 4.7, 보라색 책과 컴퍼스로 표현한 Fable 5.1 비교 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "grok-fable-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1086.609375,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 671.734375,
+        "width": 736,
+        "x": 212,
+        "y": 671.734375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbQquBd%2FdJMb99OYITx%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WuAw9LaPk1GEBOoBDZSeBvxeT7orwHTcgAZ8r-58a1SCxgb-Bw4RCxABb6pKg7VStwnRW7QySvXpbL-N18gPMR%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D97Jfn2LB9NYtOe6oxGQ8DqoB1BE%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok 4.7 발표 제목과 코딩·지식 노동용 모델이라는 설명이 보이는 SpaceXAI 화면",
+      "complete": true,
+      "h": 570,
+      "id": "grok-4-7-launch",
+      "index": 1,
+      "rect": {
+        "bottom": 2351.8828125,
+        "height": 328.859375,
+        "left": 212,
+        "right": 948,
+        "top": 2023.0234375,
+        "width": 736,
+        "x": 212,
+        "y": 2023.0234375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbUDMKX%2FdJMcacFeW8L%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VrSB526Z_whd89aDkMCT-DQJmxt6504fLrTb87EdvV15iM3rUV7E1lhtrY8wV-8aM1xxZqMkAjGTmjAnmZJRzT%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dsqx39wZLFTmswOH2sdVu1korDB0%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok 4.7과 Fable 5.1을 포함한 네 모델의 가격과 7개 평가 점수를 나란히 적은 공식 비교표",
+      "complete": true,
+      "h": 715,
+      "id": "grok-4-7-benchmark-table",
+      "index": 2,
+      "rect": {
+        "bottom": 4387.984375,
+        "height": 642.0078125,
+        "left": 212,
+        "right": 948,
+        "top": 3745.9765625,
+        "width": 736,
+        "x": 212,
+        "y": 3745.9765625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcHE0FI%2FdJMcacFeW8M%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V7_QNnO6LuiNi--G7scccohzDEm2GtJkpU0t_DHUYCiN5HNefuY1ZpYzFIbBQZj5OwjY30AtAw139rvAShMk44%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D5swPsFkObJJ2jEqs9e%252F5BziJUD0%253D",
+      "w": 820
+    },
+    {
+      "alt": "CursorBench 점수를 세로축, 평균 과제 비용을 가로축으로 표시한 모델별 선 그래프",
+      "complete": true,
+      "h": 464,
+      "id": "grok-4-7-cursorbench-cost",
+      "index": 3,
+      "rect": {
+        "bottom": 5077.609375,
+        "height": 435.296875,
+        "left": 212,
+        "right": 948,
+        "top": 4642.3125,
+        "width": 736,
+        "x": 212,
+        "y": 4642.3125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FxhPzZ%2FdJMcadqq9Sd%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1X8NOfD4LUJtSay5jHheFuJcQqmzl1_yeeuFDOouWj1PBeEA7WB44t_VYdftEiIdISaGi8lMOPvDuMq_3jV1YEG%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DTd0cJ%252BBuUHH8ggA9zh%252Fq7vPW5bI%253D",
+      "w": 786
+    },
+    {
+      "alt": "GDPval 전문 지식 노동 평가에서 Fable 5.1 1735점과 Grok 4.7 1695점을 보여 주는 가로 막대그래프",
+      "complete": true,
+      "h": 476,
+      "id": "grok-4-7-knowledge-work",
+      "index": 4,
+      "rect": {
+        "bottom": 5903.328125,
+        "height": 464.140625,
+        "left": 212,
+        "right": 948,
+        "top": 5439.1875,
+        "width": 736,
+        "x": 212,
+        "y": 5439.1875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhwrPN%2FdJMcadqq9Se%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VQ9cLWGq6IxAPswsNgeaGhT4Akv9JtbR1DJmCzSOX8dl5V_Xzl_ss6e_z5xSbv0-95lZWYWTdk2psGV-nvQtKM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DzzwgpLhW6SLuqcO8GyvPg2rwLi8%253D",
+      "w": 756
+    },
+    {
+      "alt": "Artificial Analysis가 표시한 Grok 4.7의 종합지수 46점, 속도 39.2, 과제당 비용 3.74달러, 출력량 240M",
+      "complete": true,
+      "h": 590,
+      "id": "aa-grok-4-7-summary",
+      "index": 5,
+      "rect": {
+        "bottom": 7150.015625,
+        "height": 340.328125,
+        "left": 212,
+        "right": 948,
+        "top": 6809.6875,
+        "width": 736,
+        "x": 212,
+        "y": 6809.6875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FemIQDD%2FdJMcah7z50V%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VDEdHIXecHQbJ4YEcvCiIfAYnQBUYiuCsa-C9kNWlARECTGwtdwF18T2ioqZjY0NxeyVd36-jkLfNg3eFxkgYb%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D6zuVguTFCdeIFpuuEivvgHCWBbg%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Artificial Analysis가 표시한 Fable 5.1의 종합지수 53점, 속도 65.5, 과제당 비용 7.63달러, 출력량 190M",
+      "complete": true,
+      "h": 590,
+      "id": "aa-fable-5-1-summary",
+      "index": 6,
+      "rect": {
+        "bottom": 7715.4375,
+        "height": 340.328125,
+        "left": 212,
+        "right": 948,
+        "top": 7375.109375,
+        "width": 736,
+        "x": 212,
+        "y": 7375.109375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDAZ8W%2FdJMcad4ZbcV%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Wwg6emur07jT2P3TDV8S0gUjfkHv7STiQH7dZbohaZ70AURZqVzL_BXsDZfta30TJRRGEDwKjAN1OJWRgW2Mwr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dntl%252Bonj9lybsqyug%252FFwRaD2pSBM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Fable 5.1의 모델 ID, 요금, 100만 토큰 문맥, 12만 8천 토큰 출력을 보여 주는 공식 사양표",
+      "complete": true,
+      "h": 709,
+      "id": "fable-5-1-api-specs",
+      "index": 7,
+      "rect": {
+        "bottom": 10629.8125,
+        "height": 539.609375,
+        "left": 212,
+        "right": 948,
+        "top": 10090.203125,
+        "width": 736,
+        "x": 212,
+        "y": 10090.203125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOisj2%2FdJMcad4Zbc4%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UsxdiQSIXrOWq6r96pxM92lLX60TSWqgiuqe0N4EMhVr56esgU-C4qkSH7Kzg2ARmzfMcpMJFESdWzdrMh4bMl%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D6jBXCUqadBWLb67%252F6eqDAWrX8Wg%253D",
+      "w": 968
+    }
+  ],
+  "totalImages": 8,
+  "repairedImages": 8,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:31:11.786Z"
+}

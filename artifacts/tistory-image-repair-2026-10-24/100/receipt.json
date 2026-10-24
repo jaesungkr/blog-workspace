@@ -1,0 +1,294 @@
+{
+  "id": 100,
+  "title": "Unsloth Desktop이란? 코딩 없이 내 PC에서 AI를 학습하는 앱",
+  "url": "https://dop3n.tistory.com/entry/Unsloth-Desktop%EC%9D%B4%EB%9E%80-%EC%BD%94%EB%94%A9-%EC%97%86%EC%9D%B4-%EB%82%B4-PC%EC%97%90%EC%84%9C-AI%EB%A5%BC-%ED%95%99%EC%8A%B5%ED%95%98%EB%8A%94-%EC%95%B1",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-14-unsloth-desktop-guide",
+  "images": [
+    {
+      "alt": "Unsloth Desktop의 왼쪽 메뉴에 Model hub, Projects, Images, Train이 보이고 Qwen3.8 GGUF 모델이 선택된 공식 화면",
+      "complete": true,
+      "h": 800,
+      "id": "unsloth-desktop-overview",
+      "index": 0,
+      "rect": {
+        "bottom": -4526.78125,
+        "height": 460.75,
+        "left": 272,
+        "right": 1008,
+        "top": -4987.53125,
+        "width": 736,
+        "x": 272,
+        "y": -4987.53125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FccfD8y%2FdJMcag8r96G%2FAAAAAAAAAAAAAAAAAAAAAHUoZ31qkYb0l4RHgEAm0Go7g1HUFmAQClmiwM25e7xN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DTE%252FuDGTNtZ0lWBPGfBigcJoKsX8%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Unsloth Desktop Select model 드롭다운에 Recommended, On Device, Search Hub와 모델별 크기가 표시된 공식 화면",
+      "complete": true,
+      "h": 544,
+      "id": "unsloth-desktop-model-select",
+      "index": 1,
+      "rect": {
+        "bottom": -1374.109375,
+        "height": 357.2421875,
+        "left": 272,
+        "right": 1008,
+        "top": -1731.3515625,
+        "width": 736,
+        "x": 272,
+        "y": -1731.3515625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FphoVp%2FdJMcaien6Vk%2FAAAAAAAAAAAAAAAAAAAAACw7v4PM7yL32QVywIaUZ9zG4zW7fudc4Nj43oVY5F0y%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DrcH5D7iSO%252BmU7nTvr4pYcUHv9ZI%253D",
+      "w": 1124
+    },
+    {
+      "alt": "Unsloth Desktop Train Configure 화면에 Qwen3.5 모델, QLoRA 방식, FineTome 데이터셋과 Run preview가 보이는 공식 데모 프레임",
+      "complete": true,
+      "h": 720,
+      "id": "unsloth-desktop-train-setup",
+      "index": 2,
+      "rect": {
+        "bottom": 737.9609375,
+        "height": 438.0390625,
+        "left": 272,
+        "right": 1008,
+        "top": 299.921875,
+        "width": 736,
+        "x": 272,
+        "y": 299.921875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFNhkI%2FdJMcag8r96M%2FAAAAAAAAAAAAAAAAAAAAAPnX_85mdnR12VqHqqhXJe2rqMW1QQsqiCQFW0bSD3H_%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D7r636yN5ZXwrCl9bgM8%252FaZ7ZbpI%253D",
+      "w": 1212
+    },
+    {
+      "alt": "Unsloth Desktop Current Run 화면에 Training in progress, waiting for first step 0, 데이터셋과 모델 가중치 다운로드 99퍼센트가 함께 보이는 공식 데모 프레임",
+      "complete": true,
+      "h": 720,
+      "id": "unsloth-desktop-training-progress",
+      "index": 3,
+      "rect": {
+        "bottom": 2438.609375,
+        "height": 438.0390625,
+        "left": 272,
+        "right": 1008,
+        "top": 2000.5703125,
+        "width": 736,
+        "x": 272,
+        "y": 2000.5703125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNJb4d%2FdJMcag8r96N%2FAAAAAAAAAAAAAAAAAAAAAAB9a_xxVt4hkWNLNTYXuWGDPV7lPMhkHbVS_EI70ocP%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFj7gwuSt3invFmfI92VJ%252BRvIF9I%253D",
+      "w": 1212
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "Unsloth Desktop의 왼쪽 메뉴에 Model hub, Projects, Images, Train이 보이고 Qwen3.8 GGUF 모델이 선택된 공식 화면",
+      "complete": true,
+      "h": 800,
+      "id": "unsloth-desktop-overview",
+      "index": 0,
+      "rect": {
+        "bottom": 661.0625,
+        "height": 180.75,
+        "left": 36,
+        "right": 324,
+        "top": 480.3125,
+        "width": 288,
+        "x": 36,
+        "y": 480.3125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FccfD8y%2FdJMcag8r96G%2FAAAAAAAAAAAAAAAAAAAAAHUoZ31qkYb0l4RHgEAm0Go7g1HUFmAQClmiwM25e7xN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DTE%252FuDGTNtZ0lWBPGfBigcJoKsX8%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Unsloth Desktop Select model 드롭다운에 Recommended, On Device, Search Hub와 모델별 크기가 표시된 공식 화면",
+      "complete": true,
+      "h": 544,
+      "id": "unsloth-desktop-model-select",
+      "index": 1,
+      "rect": {
+        "bottom": 4719.6953125,
+        "height": 140.4140625,
+        "left": 36,
+        "right": 324,
+        "top": 4579.28125,
+        "width": 288,
+        "x": 36,
+        "y": 4579.28125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FphoVp%2FdJMcaien6Vk%2FAAAAAAAAAAAAAAAAAAAAACw7v4PM7yL32QVywIaUZ9zG4zW7fudc4Nj43oVY5F0y%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DrcH5D7iSO%252BmU7nTvr4pYcUHv9ZI%253D",
+      "w": 1124
+    },
+    {
+      "alt": "Unsloth Desktop Train Configure 화면에 Qwen3.5 모델, QLoRA 방식, FineTome 데이터셋과 Run preview가 보이는 공식 데모 프레임",
+      "complete": true,
+      "h": 720,
+      "id": "unsloth-desktop-train-setup",
+      "index": 2,
+      "rect": {
+        "bottom": 7379.578125,
+        "height": 171.8984375,
+        "left": 36,
+        "right": 324,
+        "top": 7207.6796875,
+        "width": 288,
+        "x": 36,
+        "y": 7207.6796875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFNhkI%2FdJMcag8r96M%2FAAAAAAAAAAAAAAAAAAAAAPnX_85mdnR12VqHqqhXJe2rqMW1QQsqiCQFW0bSD3H_%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D7r636yN5ZXwrCl9bgM8%252FaZ7ZbpI%253D",
+      "w": 1212
+    },
+    {
+      "alt": "Unsloth Desktop Current Run 화면에 Training in progress, waiting for first step 0, 데이터셋과 모델 가중치 다운로드 99퍼센트가 함께 보이는 공식 데모 프레임",
+      "complete": true,
+      "h": 720,
+      "id": "unsloth-desktop-training-progress",
+      "index": 3,
+      "rect": {
+        "bottom": 9414.1640625,
+        "height": 171.8984375,
+        "left": 36,
+        "right": 324,
+        "top": 9242.265625,
+        "width": 288,
+        "x": 36,
+        "y": 9242.265625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNJb4d%2FdJMcag8r96N%2FAAAAAAAAAAAAAAAAAAAAAAB9a_xxVt4hkWNLNTYXuWGDPV7lPMhkHbVS_EI70ocP%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFj7gwuSt3invFmfI92VJ%252BRvIF9I%253D",
+      "w": 1212
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-14 11:21"
+    ],
+    "public": true,
+    "slug": "Unsloth-Desktop이란-코딩-없이-내-PC에서-AI를-학습하는-앱"
+  },
+  "uploads": [
+    {
+      "id": "unsloth-desktop-overview",
+      "rawToken": "[##_Image|kage@ccfD8y/dJMcag8r96G/AAAAAAAAAAAAAAAAAAAAAHUoZ31qkYb0l4RHgEAm0Go7g1HUFmAQClmiwM25e7xN/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-14-unsloth-desktop-guide/assets/unsloth-desktop-overview-v1.png",
+      "sha256": "3e18987c29e355fe6f82e735136411cf765cc5ca51010ac1530a6fb7743b92a5",
+      "embed": "[##_Image|kage@ccfD8y/dJMcag8r96G/AAAAAAAAAAAAAAAAAAAAAHUoZ31qkYb0l4RHgEAm0Go7g1HUFmAQClmiwM25e7xN/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=TE%2FuDGTNtZ0lWBPGfBigcJoKsX8%3D|CDM|1.3|{\"originWidth\":2560,\"originHeight\":1600,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop의 왼쪽 메뉴에 Model hub, Projects, Images, Train이 보이고 Qwen3.8 GGUF 모델이 선택된 공식 화면\"}_##]"
+    },
+    {
+      "id": "unsloth-desktop-model-select",
+      "rawToken": "[##_Image|kage@phoVp/dJMcaien6Vk/AAAAAAAAAAAAAAAAAAAAACw7v4PM7yL32QVywIaUZ9zG4zW7fudc4Nj43oVY5F0y/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-14-unsloth-desktop-guide/assets/unsloth-desktop-model-select-v1.png",
+      "sha256": "16718cbbd5b67072cfec6bc4fa2ab2a8f30877e50738dd6092d88940d9a69d3d",
+      "embed": "[##_Image|kage@phoVp/dJMcaien6Vk/AAAAAAAAAAAAAAAAAAAAACw7v4PM7yL32QVywIaUZ9zG4zW7fudc4Nj43oVY5F0y/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=rcH5D7iSO%2BmU7nTvr4pYcUHv9ZI%3D|CDM|1.3|{\"originWidth\":1124,\"originHeight\":544,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop Select model 드롭다운에 Recommended, On Device, Search Hub와 모델별 크기가 표시된 공식 화면\"}_##]"
+    },
+    {
+      "id": "unsloth-desktop-train-setup",
+      "rawToken": "[##_Image|kage@bFNhkI/dJMcag8r96M/AAAAAAAAAAAAAAAAAAAAAPnX_85mdnR12VqHqqhXJe2rqMW1QQsqiCQFW0bSD3H_/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-14-unsloth-desktop-guide/assets/unsloth-desktop-train-setup-v1.png",
+      "sha256": "3fe5a38d4c7cd4581020e806a81e1d6e1731bb3ef3df5f807c85bfef770d9e99",
+      "embed": "[##_Image|kage@bFNhkI/dJMcag8r96M/AAAAAAAAAAAAAAAAAAAAAPnX_85mdnR12VqHqqhXJe2rqMW1QQsqiCQFW0bSD3H_/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=7r636yN5ZXwrCl9bgM8%2FaZ7ZbpI%3D|CDM|1.3|{\"originWidth\":1212,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop Train Configure 화면에 Qwen3.5 모델, QLoRA 방식, FineTome 데이터셋과 Run preview가 보이는 공식 데모 프레임\"}_##]"
+    },
+    {
+      "id": "unsloth-desktop-training-progress",
+      "rawToken": "[##_Image|kage@NJb4d/dJMcag8r96N/AAAAAAAAAAAAAAAAAAAAAAB9a_xxVt4hkWNLNTYXuWGDPV7lPMhkHbVS_EI70ocP/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-14-unsloth-desktop-guide/assets/unsloth-desktop-training-progress-v1.jpg",
+      "sha256": "3d98928bb15331c81971c83957cb3ff383dbef78c6f02f961c497c17b6fb9b8c",
+      "embed": "[##_Image|kage@NJb4d/dJMcag8r96N/AAAAAAAAAAAAAAAAAAAAAAB9a_xxVt4hkWNLNTYXuWGDPV7lPMhkHbVS_EI70ocP/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=Fj7gwuSt3invFmfI92VJ%2BRvIF9I%3D|CDM|1.3|{\"originWidth\":1212,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop Current Run 화면에 Training in progress, waiting for first step 0, 데이터셋과 모델 가중치 다운로드 99퍼센트가 함께 보이는 공식 데모 프레임\"}_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "Unsloth Desktop의 왼쪽 메뉴에 Model hub, Projects, Images, Train이 보이고 Qwen3.8 GGUF 모델이 선택된 공식 화면",
+      "complete": true,
+      "h": 800,
+      "id": "unsloth-desktop-overview",
+      "index": 0,
+      "rect": {
+        "bottom": -4526.78125,
+        "height": 460.75,
+        "left": 212,
+        "right": 948,
+        "top": -4987.53125,
+        "width": 736,
+        "x": 212,
+        "y": -4987.53125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FccfD8y%2FdJMcag8r96G%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V-IHkJOYaGSfex_rup5EL5LBLYwI8aqyamG0nEpxAvgWAyjApzVgomW8Zho5K6E803PmftzZ9TbXfBGvNb0kD-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DPDamCy5mRF4UjFDv1gBE6JrPgcA%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Unsloth Desktop Select model 드롭다운에 Recommended, On Device, Search Hub와 모델별 크기가 표시된 공식 화면",
+      "complete": true,
+      "h": 544,
+      "id": "unsloth-desktop-model-select",
+      "index": 1,
+      "rect": {
+        "bottom": -1374.109375,
+        "height": 357.2421875,
+        "left": 212,
+        "right": 948,
+        "top": -1731.3515625,
+        "width": 736,
+        "x": 212,
+        "y": -1731.3515625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FphoVp%2FdJMcaien6Vk%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Vn_M9ZNYtkKCxIj9kpfzlHq4Kfhl9LKTlivbgb6Hp0X0_YljLwiLHkR8TzG5LHnH1fIqqymyejIaTn07I0k026%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DKYRfDJvbBd1Glv%252Fdr%252FoFWT8ztf8%253D",
+      "w": 1124
+    },
+    {
+      "alt": "Unsloth Desktop Train Configure 화면에 Qwen3.5 모델, QLoRA 방식, FineTome 데이터셋과 Run preview가 보이는 공식 데모 프레임",
+      "complete": true,
+      "h": 720,
+      "id": "unsloth-desktop-train-setup",
+      "index": 2,
+      "rect": {
+        "bottom": 737.9609375,
+        "height": 438.0390625,
+        "left": 212,
+        "right": 948,
+        "top": 299.921875,
+        "width": 736,
+        "x": 212,
+        "y": 299.921875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFNhkI%2FdJMcag8r96M%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XqT5mRcfbqdvAOClWgPOm_ZbYlpyfTqPFx2oZ3jhX6t1C2lTWEfiN_8oDjUXOG3ZAFpTdR5rVtUCSY3SlynBp3%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DezdM20y7xu7tNoBfI9a1HQn7xnE%253D",
+      "w": 1212
+    },
+    {
+      "alt": "Unsloth Desktop Current Run 화면에 Training in progress, waiting for first step 0, 데이터셋과 모델 가중치 다운로드 99퍼센트가 함께 보이는 공식 데모 프레임",
+      "complete": true,
+      "h": 720,
+      "id": "unsloth-desktop-training-progress",
+      "index": 3,
+      "rect": {
+        "bottom": 2438.609375,
+        "height": 438.0390625,
+        "left": 212,
+        "right": 948,
+        "top": 2000.5703125,
+        "width": 736,
+        "x": 212,
+        "y": 2000.5703125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNJb4d%2FdJMcag8r96N%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XWB1LY7mn0869ixMJsJUeO4arDrn4XzTk5Lvhk9j1sdKW-QghlIFCOa-vH0sSVCzvuZpC92w3ttHR5k0hQ0x3s%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DWA5l49T5l0kdiWf1nv1reDo9aDo%253D",
+      "w": 1212
+    }
+  ],
+  "totalImages": 4,
+  "repairedImages": 4,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:46:12.891Z"
+}

@@ -1,0 +1,430 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">크림도 초콜릿도 없는 참크래커는 다른 과자보다 가벼워 보입니다. 그렇다면 실제로도 나은 선택일까요?</p>
+<p data-ke-size="size16"><b>같은 무게로 보면 참크래커는 이번에 확인한 농심 포테토칩 오리지널과 오리온 초코칩쿠키보다 열량이 낮았습니다. 당류도 초코칩쿠키보다 적었습니다.</b> 다만 100g당 약 460kcal라서 저열량 식품은 아닙니다. 장점은 &lsquo;마음껏 먹어도 가벼운 과자&rsquo;가 아니라, 달지 않고 한 봉 85kcal 단위로 양을 끊기 쉽다는 데 있습니다.</p>
+<figure class="devlog-rich__figure" style="--rich-media-width: 760px;" data-media-id="plain-cracker-calorie-map"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fk3ZD3%2FdJMcadiNvly%2FAAAAAAAAAAAAAAAAAAAAAE0KQrJmBrjWu6bZVNuxPSi2DNBX8LI0VvDrFxL2DJ3X%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DMVXmeKP6pCTX3r5e2M%252BE1Gv%252FzKs%253D" alt="참크래커 한 봉 약 85kcal가 100g으로 환산하면 459.5kcal가 되는 과정을 봉지 수로 보여 주는 그림" width="1080" height="960" />
+<figcaption class="devlog-rich__caption">한 봉과 100g은 서로 다른 중량 기준의 숫자입니다.</figcaption>
+<span class="devlog-rich__credit">&middot; 생성 이미지</span></figure>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#한-봉-85kcal-100g으로는-4595kcal">한 봉 85kcal, 100g으로는 459.5kcal</a></li>
+<li><a href="#왜-달지-않은데도-460kcal일까">왜 달지 않은데도 460kcal일까</a></li>
+<li><a href="#포테토칩보다-19-초코칩쿠키보다-10-낮은-열량">포테토칩보다 19%, 초코칩쿠키보다 10% 낮은 열량</a></li>
+<li><a href="#괜찮은-선택이-되는-두-가지-조건">괜찮은 선택이 되는 두 가지 조건</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="한-봉-85kcal-100g으로는-4595kcal">
+<h2 id="한-봉-85kcal-100g으로는-4595kcal" data-ke-size="size26">한 봉 85kcal, 100g으로는 459.5kcal</h2>
+<p data-ke-size="size16">2026년 8월 10일 확인한 <a style="color: #1a73e8; text-decoration: none;" href="https://prod.danawa.com/info/?pcode=3073525" target="_blank" rel="noopener">참크래커 280g 상품 영양정보</a>는 37g, 즉 2봉에 170kcal로 표시되어 있습니다. 한 봉 열량은 85kcal입니다. 총중량 280g을 15개입으로 나누면 개별 포장은 약 18.7g입니다.</p>
+<p data-ke-size="size16">Codex가 같은 값을 100g으로 환산한 결과는 459.5kcal였습니다. <b>85kcal는 작은 포장 한 봉의 열량이고, 459.5kcal는 제품끼리 중량을 맞춰 비교하는 값입니다.</b></p>
+<p data-ke-size="size16">100g은 권장 섭취량이 아닙니다. 실제로 먹은 열량은 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">100g당 열량 &times; 먹은 중량 &divide; 100</code>으로 계산합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="왜-달지-않은데도-460kcal일까">
+<h2 id="왜-달지-않은데도-460kcal일까" data-ke-size="size26">왜 달지 않은데도 460kcal일까</h2>
+<p data-ke-size="size16">참크래커는 <a style="color: #1a73e8; text-decoration: none;" href="https://www.crown.co.kr/product/view?idx=312" target="_blank" rel="noopener">크라운제과 공식 제품 소개</a>에서 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">SALTINE CRACKERS</code>로 분류됩니다. 소금 크래커라는 이름은 맛의 계열을 가리킬 뿐, 소금이 주재료라는 뜻은 아닙니다. 공개된 <a style="color: #1a73e8; text-decoration: none;" href="https://hanpoom.com/products/%ED%81%AC%EB%9D%BC%EC%9A%B4-%EC%B0%B8%ED%81%AC%EB%9E%98%EC%BB%A4-56g" target="_blank" rel="noopener">원재료 정보</a>에는 소맥분과 쇼트닝, 식용유 등이 함께 적혀 있습니다.</p>
+<p data-ke-size="size16">열량도 소금보다 밀가루의 탄수화물과 유지류의 지방에서 주로 나옵니다. 식품안전나라의 <a style="color: #1a73e8; text-decoration: none;" href="https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?bbs_no=bbs001&amp;menu_grp=MENU_NEW01&amp;menu_no=3120&amp;ntctxt_no=1101512" target="_blank" rel="noopener">영양표시 안내</a>에 따라 참크래커 37g의 탄수화물&middot;단백질&middot;지방을 계산하면 169kcal입니다. 포장 표시 170kcal와 거의 같습니다.</p>
+<p data-ke-size="size16">현행 <a style="color: #1a73e8; text-decoration: none;" href="https://www.law.go.kr/LSW/flDownload.do?flSeq=156388173" target="_blank" rel="noopener">식품등의 표시기준</a>에서 고체 식품의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">저열량</code> 강조표시 기준은 100g당 40kcal 미만입니다. 참크래커의 환산값은 약 460kcal이므로, 법적 표시 기준에서 저열량 식품과는 거리가 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="포테토칩보다-19-초코칩쿠키보다-10-낮은-열량">
+<h2 id="포테토칩보다-19-초코칩쿠키보다-10-낮은-열량" data-ke-size="size26">포테토칩보다 19%, 초코칩쿠키보다 10% 낮은 열량</h2>
+<p data-ke-size="size16">담백한 크래커 3종에 감자칩과 초코칩 쿠키를 더해 같은 무게로 비교했습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>제품</th>
+<th>종류</th>
+<th>표시 기준</th>
+<th>100g당 열량</th>
+<th>100g당 당류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>아이비</td>
+<td>담백한 크래커</td>
+<td>23g</td>
+<td>434.8kcal</td>
+<td>4.3g 미만</td>
+</tr>
+<tr>
+<td>참크래커</td>
+<td>담백한 크래커</td>
+<td>37g</td>
+<td>459.5kcal</td>
+<td>2.7g</td>
+</tr>
+<tr>
+<td>제크 오리지널</td>
+<td>담백한 크래커</td>
+<td>50g</td>
+<td>490.0kcal</td>
+<td>8.0g</td>
+</tr>
+<tr>
+<td>오리온 초코칩쿠키</td>
+<td>단맛 쿠키</td>
+<td>64g</td>
+<td>512.5kcal</td>
+<td>28.1g</td>
+</tr>
+<tr>
+<td>농심 포테토칩 오리지널</td>
+<td>감자칩</td>
+<td>60g</td>
+<td>566.7kcal</td>
+<td>공개값 없음</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://m.danawa.com/product/product.html?code=111318173" target="_blank" rel="noopener">아이비</a>, <a style="color: #1a73e8; text-decoration: none;" href="https://prod.danawa.com/info/?pcode=121408086" target="_blank" rel="noopener">제크 오리지널</a>, <a style="color: #1a73e8; text-decoration: none;" href="https://emile.emarteveryday.co.kr/product/ProductView?skuCode=8801117122409" target="_blank" rel="noopener">초코칩쿠키</a>의 공개 영양정보와 <a style="color: #1a73e8; text-decoration: none;" href="https://brand.nongshim.com/potatochip/main/index" target="_blank" rel="noopener">농심 공식 제품 정보</a>를 Codex가 100g 기준으로 환산했습니다.</p>
+<p data-ke-size="size16">이 표본에서 참크래커는 오리온 초코칩쿠키보다 약 10%, 농심 포테토칩 오리지널보다 약 19% 열량이 낮았습니다. 당류는 100g당 2.7g으로 초코칩쿠키의 28.1g보다 크게 낮았습니다. <b>적어도 이번에 확인한 두 제품과 비교하면 참크래커의 상대적 장점도 분명합니다.</b></p>
+<p data-ke-size="size16">다만 다섯 제품만 확인한 결과이므로 과자 시장 전체의 평균이나 순위는 아닙니다. 제품도 리뉴얼될 수 있어 구매 시점의 실제 포장이 최종 기준입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="괜찮은-선택이-되는-두-가지-조건">
+<h2 id="괜찮은-선택이-되는-두-가지-조건" data-ke-size="size26">괜찮은 선택이 되는 두 가지 조건</h2>
+<p data-ke-size="size16">참크래커를 고를 만한 조건은 두 가지입니다. 초코칩쿠키처럼 단 제품 대신 당류가 낮은 제품을 찾고, 먹을 양을 한 봉으로 미리 정하려는 경우입니다. <b>한 봉만 꺼내 먹는다면 실제 섭취 열량도 85kcal에서 멈춥니다.</b></p>
+<p data-ke-size="size16">반대로 봉지가 작다는 이유로 계속 뜯으면 두 봉 170kcal, 네 봉 340kcal가 됩니다. 치즈나 잼, 땅콩버터를 곁들이면 그 열량도 더해야 합니다. 참크래커 37g의 나트륨도 240mg이므로 칼로리만 볼 필요는 없습니다.</p>
+<p data-ke-size="size16">결론적으로 참크래커는 <b>저칼로리 과자는 아니지만, 이번에 비교한 포테토칩&middot;초코칩쿠키 대신 고르고 한 봉에서 멈춘다면 비교적 계산하기 쉬운 선택지</b>입니다. 선택 이유는 &lsquo;살이 안 찌는 과자라서&rsquo;가 아니라, &lsquo;덜 달고 정해 둔 양만 먹기 쉬워서&rsquo;에 가깝습니다.</p>
+<p data-ke-size="size16">제품끼리 비교할 때는 100g 값을, 실제로 먹을 때는 한 봉 열량과 봉지 수를 보면 됩니다. 이 두 숫자를 나눠 보면 &lsquo;생각보다 높다&rsquo;에서 끝나지 않고, 내 간식으로 쓸 만한지까지 판단할 수 있습니다.</p>
+</section>
+</article>

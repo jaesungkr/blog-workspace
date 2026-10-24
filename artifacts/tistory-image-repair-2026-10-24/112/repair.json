@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 112,
+  "title": "치매는 왜 생길까? 유전부터 실제 예방법까지",
+  "url": "https://dop3n.tistory.com/entry/%EC%B9%98%EB%A7%A4%EB%8A%94-%EC%99%9C-%EC%83%9D%EA%B8%B8%EA%B9%8C-%EB%B6%80%EB%AA%A8%EB%8B%98%EA%B3%BC-%EC%A7%80%EA%B8%88-%EC%8B%9C%EC%9E%91%ED%95%A0-%ED%98%84%EC%8B%A4%EC%A0%81%EC%9D%B8-%EC%98%88%EB%B0%A9%EB%B2%95",
+  "checked_at": "2026-10-24T03:44:46.780Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "0c76d8f0a4fd30a67f8828b418b078c3e46a18d00674550a02af8fd883e6974a",
+  "submitted_sha256": "3360ec87b9ea3357e52321be0e9186e4d8f21f6cfc78e062e51cc393e5c9e410",
+  "metadata": {
+    "dates": [
+      "2026-08-22 21:31"
+    ],
+    "public": true,
+    "slug": "치매는-왜-생길까-부모님과-지금-시작할-현실적인-예방법"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

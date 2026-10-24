@@ -1,0 +1,93 @@
+{
+  "id": 102,
+  "title": "나무에 올라간 삭개오",
+  "url": "https://dop3n.tistory.com/entry/%EB%82%98%EB%AC%B4%EC%97%90-%EC%98%AC%EB%9D%BC%EA%B0%84-%EC%82%AD%EA%B0%9C%EC%98%A4",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-15-zacchaeus-climbs-tree",
+  "images": [
+    {
+      "alt": "돌무화과나무 가지에 올라 길을 지나는 사람들을 내려다보는 삭개오의 종이 부조 장면",
+      "complete": true,
+      "h": 720,
+      "id": "zacchaeus-tree-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1717.09375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 1302.21875,
+        "width": 736,
+        "x": 272,
+        "y": 1302.21875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FmmoeD%2FdJMcah7z57T%2FAAAAAAAAAAAAAAAAAAAAAPP9MtUI8o8xzZYpYuCeyhRvZgjffOAFG4DVY2Bl4ouG%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DIVzT3%252FIp2t3JKDAT3iAKSre1qtQ%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "돌무화과나무 가지에 올라 길을 지나는 사람들을 내려다보는 삭개오의 종이 부조 장면",
+      "complete": true,
+      "h": 720,
+      "id": "zacchaeus-tree-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 624.96875,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 462.09375,
+        "width": 288,
+        "x": 36,
+        "y": 462.09375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FmmoeD%2FdJMcah7z57T%2FAAAAAAAAAAAAAAAAAAAAAPP9MtUI8o8xzZYpYuCeyhRvZgjffOAFG4DVY2Bl4ouG%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DIVzT3%252FIp2t3JKDAT3iAKSre1qtQ%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-16 02:22"
+    ],
+    "public": true,
+    "slug": "나무에-올라간-삭개오"
+  },
+  "uploads": [
+    {
+      "id": "zacchaeus-tree-hero",
+      "rawToken": "[##_Image|kage@mmoeD/dJMcah7z57T/AAAAAAAAAAAAAAAAAAAAAPP9MtUI8o8xzZYpYuCeyhRvZgjffOAFG4DVY2Bl4ouG/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-15-zacchaeus-climbs-tree/assets/zacchaeus-tree-hero.png",
+      "sha256": "e60fe126d9143f4bdbe206f41066e9fa368d3743385b057c554aa5d203ef6b99",
+      "embed": "[##_Image|kage@mmoeD/dJMcah7z57T/AAAAAAAAAAAAAAAAAAAAAPP9MtUI8o8xzZYpYuCeyhRvZgjffOAFG4DVY2Bl4ouG/img.png|alignCenter|width=\"100%\" alt=\"돌무화과나무 가지에 올라 길을 지나는 사람들을 내려다보는 삭개오의 종이 부조 장면\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "돌무화과나무 가지에 올라 길을 지나는 사람들을 내려다보는 삭개오의 종이 부조 장면",
+      "complete": true,
+      "h": 720,
+      "id": "zacchaeus-tree-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1387.09375,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 972.21875,
+        "width": 736,
+        "x": 212,
+        "y": 972.21875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FmmoeD%2FdJMcah7z57T%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UWgSBtHDnHbn3gQGHBYSJ9zAnfbiW3bUs60vUB2_vQjWXg-BjE9C766-id-uKfOyILzpqkkzuQ4PN4NNl2Dtg_%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dv%252B9dHITplVyO8ZJuUl%252FlGl%252BD0Xk%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 1,
+  "repairedImages": 1,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:45:01.031Z"
+}

@@ -16,7 +16,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/matthew-tax-booth-hero-source.png",
       "publish_path": "assets/matthew-tax-booth-hero.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHXNxz%2FdJMcagmpFTb%2FAAAAAAAAAAAAAAAAAAAAAJeSIPPNKkW_bywBdberKvqLXtz_gNOmh8ho0xWmMRIq%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DEwn4q4ROEiTD3b4SC3Dqxk92iG4%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcLiCzG%2FdJMcafonLW9%2FAAAAAAAAAAAAAAAAAAAAADzo51-4i4dItg0B8FwNWtUcG9QWOERZsw-EljO_Cf_y%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DDZI20gtHQVkl4znGEQeCCcCV0ow%253D",
       "width": 1671,
       "height": 941,
       "display_width": 916,
@@ -32,7 +32,8 @@
       ],
       "redactions": [],
       "sha256": "ff08cb4eaab77ac362565c7bffb1d4fc0e71e253873e9ca72c08ba61830cd0f7",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@cLiCzG/dJMcafonLW9/AAAAAAAAAAAAAAAAAAAAADzo51-4i4dItg0B8FwNWtUcG9QWOERZsw-EljO_Cf_y/img.png|alignCenter|width=\"100%\" alt=\"동전과 저울이 놓인 세관에서 일어나 햇빛 든 길로 향하는 마태의 종이 부조 장면\"|_##]"
     }
   ]
 }

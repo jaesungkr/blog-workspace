@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 87,
+  "title": "하나님은 정말 일하고 계신가",
+  "url": "https://dop3n.tistory.com/entry/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%80-%EC%A0%95%EB%A7%90-%EC%9D%BC%ED%95%98%EA%B3%A0-%EA%B3%84%EC%8B%A0%EA%B0%80",
+  "checked_at": "2026-10-24T03:42:21.656Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "ad5bdc3f4394e8b2761c4c41938764027e8bc5cfea2f984a942dace02debf345",
+  "submitted_sha256": "10654a03d24b7f337ff0fc1a398112eef4c31ac19fdded4ac9bbd4317ef7e7c6",
+  "metadata": {
+    "dates": [
+      "2026-08-08 22:16"
+    ],
+    "public": true,
+    "slug": "하나님은-정말-일하고-계신가"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

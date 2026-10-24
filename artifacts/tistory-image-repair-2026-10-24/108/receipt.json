@@ -1,0 +1,629 @@
+{
+  "id": 108,
+  "title": "셀로에서 갤럭시 S25 엣지 중고폰 판매 솔직 후기",
+  "url": "https://dop3n.tistory.com/entry/%EC%85%80%EB%A1%9C%EC%97%90%EC%84%9C-%EA%B0%A4%EB%9F%AD%EC%8B%9C-S25-%EC%97%A3%EC%A7%80-%EC%A4%91%EA%B3%A0%ED%8F%B0-%ED%8C%90%EB%A7%A4-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale",
+  "images": [
+    {
+      "alt": "보라색 배경의 셀로 로고",
+      "complete": true,
+      "h": 512,
+      "id": "sell-o-00-logo",
+      "index": 0,
+      "rect": {
+        "bottom": -3011,
+        "height": 512,
+        "left": 384,
+        "right": 896,
+        "top": -3523,
+        "width": 512,
+        "x": 384,
+        "y": -3523
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcWy2aM%2FdJMcaaN8vcZ%2FAAAAAAAAAAAAAAAAAAAAAJRgMxiQKT2DpTN7psgIHj1ZqUzBN6SfOLlwdBHPnkNC%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dp360QgZkqFvPD8w79jrGkpGcRz0%253D",
+      "w": 512
+    },
+    {
+      "alt": "흰색 침구 위에 놓인 갤럭시 S25 엣지 전면",
+      "complete": true,
+      "h": 769,
+      "id": "sell-o-01-phone-front",
+      "index": 1,
+      "rect": {
+        "bottom": -1968.0546875,
+        "height": 736,
+        "left": 272,
+        "right": 1008,
+        "top": -2704.0546875,
+        "width": 736,
+        "x": 272,
+        "y": -2704.0546875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbEy8Qe%2FdJMcaik11uy%2FAAAAAAAAAAAAAAAAAAAAAOFLY9M-lL3wv5s9uHX73e7-w1t736bwxOcxEDoBIghy%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252Fat8tqdW%252BVduFfVTKrd8AqGomjE%253D",
+      "w": 769
+    },
+    {
+      "alt": "검은색 갤럭시 S25 엣지 후면과 듀얼 카메라",
+      "complete": true,
+      "h": 769,
+      "id": "sell-o-02-phone-back",
+      "index": 2,
+      "rect": {
+        "bottom": -1152.359375,
+        "height": 736,
+        "left": 272,
+        "right": 1008,
+        "top": -1888.359375,
+        "width": 736,
+        "x": 272,
+        "y": -1888.359375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcITfCn%2FdJMcaf2MIHP%2FAAAAAAAAAAAAAAAAAAAAAOTALetezumGWRgwWBdyqt2LmoZFDkLAM9F_0DMHUcPp%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DrkdXcIvCR8G5XHpgjI0Eo9SNRZM%253D",
+      "w": 769
+    },
+    {
+      "alt": "셀로 이벤트 화면에 네이버페이 추가보상 최대 5만원이 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-03-additional-reward",
+      "index": 3,
+      "rect": {
+        "bottom": 112.3828125,
+        "height": 489.9921875,
+        "left": 272,
+        "right": 1008,
+        "top": -377.609375,
+        "width": 736,
+        "x": 272,
+        "y": -377.609375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FA1R60%2FdJMcaik11uC%2FAAAAAAAAAAAAAAAAAAAAAOmMcSnagCGW-a83zfb8pgIjZ29Xf-6SWF8F2WhxUrpx%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DSpHPVMnL%252BJKCGLxCpxoFSN4r%252Bzc%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 후기 작성하기 이벤트에서 블로그와 영상 후기 조건을 안내하는 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-04-review-event",
+      "index": 4,
+      "rect": {
+        "bottom": 776.5390625,
+        "height": 489.9921875,
+        "left": 272,
+        "right": 1008,
+        "top": 286.546875,
+        "width": 736,
+        "x": 272,
+        "y": 286.546875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FlgC9V%2FdJMcaf9tAsP%2FAAAAAAAAAAAAAAAAAAAAAAC-VxqS_dP4boxvegZXBh3JxEKuBPfa2pAnHX7857wz%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DWemhRGLNU16dl7mw72eGjuXBMvE%253D",
+      "w": 1280
+    },
+    {
+      "alt": "갤럭시 S25 엣지 512GB의 예상 판매가 48만원과 최대 보상가 53만원 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-05-max-compensation",
+      "index": 5,
+      "rect": {
+        "bottom": 2223.1796875,
+        "height": 489.9921875,
+        "left": 272,
+        "right": 1008,
+        "top": 1733.1875,
+        "width": 736,
+        "x": 272,
+        "y": 1733.1875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbmGquS%2FdJMcaf9tAsS%2FAAAAAAAAAAAAAAAAAAAAALYobh2UJduPe0gKpLLne6Ok_2FQqCOf-vnd8GGuR7Gw%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dkl65GqsBpSmsD3ma5qW7YayxqPU%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 최대 보상가 조회에서 갤럭시 S와 갤럭시 S25 엣지 512GB를 선택한 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-06-device-selection",
+      "index": 6,
+      "rect": {
+        "bottom": 3149.3515625,
+        "height": 489.9921875,
+        "left": 272,
+        "right": 1008,
+        "top": 2659.359375,
+        "width": 736,
+        "x": 272,
+        "y": 2659.359375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcjxIxA%2FdJMcafPvcwg%2FAAAAAAAAAAAAAAAAAAAAAPoLIw3m1kZjy5TadtsuaCYbBzrqQO3qjtSt9p-Kap4O%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DCmQqK4uydqrzIqJOdy1bNCzW9dg%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 화면에 전국 무료 수거와 무료 반송, 휴대폰·키오스크 판매 방식이 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-07-free-pickup",
+      "index": 7,
+      "rect": {
+        "bottom": 3940.3046875,
+        "height": 489.9921875,
+        "left": 272,
+        "right": 1008,
+        "top": 3450.3125,
+        "width": 736,
+        "x": 272,
+        "y": 3450.3125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHjsRQ%2FdJMcahmdo6K%2FAAAAAAAAAAAAAAAAAAAAAP8d_XR0FYMpCZWyOp5cAVSRGXhc0dq-G0L263z6qopP%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D3jbQSD1uGZqtmZEBeMlMYN6hQVo%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 화면에 블랑코 국제 인증 솔루션을 통한 개인정보 삭제 안내가 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-08-data-deletion",
+      "index": 8,
+      "rect": {
+        "bottom": 4944.4921875,
+        "height": 489.9921875,
+        "left": 272,
+        "right": 1008,
+        "top": 4454.5,
+        "width": 736,
+        "x": 272,
+        "y": 4454.5
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcUF97v%2FdJMcahGkZCB%2FAAAAAAAAAAAAAAAAAAAAAOEtoa6iSluynOndIhmYg-25YJSdDwPmQh6lEtNel8UD%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D5rATe5qkvKfU6zjAHe8z9PyJOHA%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "보라색 배경의 셀로 로고",
+      "complete": true,
+      "h": 512,
+      "id": "sell-o-00-logo",
+      "index": 0,
+      "rect": {
+        "bottom": 466,
+        "height": 288,
+        "left": 36,
+        "right": 324,
+        "top": 178,
+        "width": 288,
+        "x": 36,
+        "y": 178
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcWy2aM%2FdJMcaaN8vcZ%2FAAAAAAAAAAAAAAAAAAAAAJRgMxiQKT2DpTN7psgIHj1ZqUzBN6SfOLlwdBHPnkNC%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dp360QgZkqFvPD8w79jrGkpGcRz0%253D",
+      "w": 512
+    },
+    {
+      "alt": "흰색 침구 위에 놓인 갤럭시 S25 엣지 전면",
+      "complete": true,
+      "h": 769,
+      "id": "sell-o-01-phone-front",
+      "index": 1,
+      "rect": {
+        "bottom": 1180.6484375,
+        "height": 288,
+        "left": 36,
+        "right": 324,
+        "top": 892.6484375,
+        "width": 288,
+        "x": 36,
+        "y": 892.6484375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbEy8Qe%2FdJMcaik11uy%2FAAAAAAAAAAAAAAAAAAAAAOFLY9M-lL3wv5s9uHX73e7-w1t736bwxOcxEDoBIghy%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252Fat8tqdW%252BVduFfVTKrd8AqGomjE%253D",
+      "w": 769
+    },
+    {
+      "alt": "검은색 갤럭시 S25 엣지 후면과 듀얼 카메라",
+      "complete": true,
+      "h": 769,
+      "id": "sell-o-02-phone-back",
+      "index": 2,
+      "rect": {
+        "bottom": 1544.34375,
+        "height": 288,
+        "left": 36,
+        "right": 324,
+        "top": 1256.34375,
+        "width": 288,
+        "x": 36,
+        "y": 1256.34375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcITfCn%2FdJMcaf2MIHP%2FAAAAAAAAAAAAAAAAAAAAAOTALetezumGWRgwWBdyqt2LmoZFDkLAM9F_0DMHUcPp%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DrkdXcIvCR8G5XHpgjI0Eo9SNRZM%253D",
+      "w": 769
+    },
+    {
+      "alt": "셀로 이벤트 화면에 네이버페이 추가보상 최대 5만원이 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-03-additional-reward",
+      "index": 3,
+      "rect": {
+        "bottom": 2807.0703125,
+        "height": 192.140625,
+        "left": 36,
+        "right": 324,
+        "top": 2614.9296875,
+        "width": 288,
+        "x": 36,
+        "y": 2614.9296875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FA1R60%2FdJMcaik11uC%2FAAAAAAAAAAAAAAAAAAAAAOmMcSnagCGW-a83zfb8pgIjZ29Xf-6SWF8F2WhxUrpx%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DSpHPVMnL%252BJKCGLxCpxoFSN4r%252Bzc%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 후기 작성하기 이벤트에서 블로그와 영상 후기 조건을 안내하는 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-04-review-event",
+      "index": 4,
+      "rect": {
+        "bottom": 3245.5390625,
+        "height": 192.140625,
+        "left": 36,
+        "right": 324,
+        "top": 3053.3984375,
+        "width": 288,
+        "x": 36,
+        "y": 3053.3984375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FlgC9V%2FdJMcaf9tAsP%2FAAAAAAAAAAAAAAAAAAAAAAC-VxqS_dP4boxvegZXBh3JxEKuBPfa2pAnHX7857wz%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DWemhRGLNU16dl7mw72eGjuXBMvE%253D",
+      "w": 1280
+    },
+    {
+      "alt": "갤럭시 S25 엣지 512GB의 예상 판매가 48만원과 최대 보상가 53만원 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-05-max-compensation",
+      "index": 5,
+      "rect": {
+        "bottom": 4649.8984375,
+        "height": 192.140625,
+        "left": 36,
+        "right": 324,
+        "top": 4457.7578125,
+        "width": 288,
+        "x": 36,
+        "y": 4457.7578125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbmGquS%2FdJMcaf9tAsS%2FAAAAAAAAAAAAAAAAAAAAALYobh2UJduPe0gKpLLne6Ok_2FQqCOf-vnd8GGuR7Gw%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dkl65GqsBpSmsD3ma5qW7YayxqPU%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 최대 보상가 조회에서 갤럭시 S와 갤럭시 S25 엣지 512GB를 선택한 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-06-device-selection",
+      "index": 6,
+      "rect": {
+        "bottom": 5388.8515625,
+        "height": 192.140625,
+        "left": 36,
+        "right": 324,
+        "top": 5196.7109375,
+        "width": 288,
+        "x": 36,
+        "y": 5196.7109375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcjxIxA%2FdJMcafPvcwg%2FAAAAAAAAAAAAAAAAAAAAAPoLIw3m1kZjy5TadtsuaCYbBzrqQO3qjtSt9p-Kap4O%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DCmQqK4uydqrzIqJOdy1bNCzW9dg%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 화면에 전국 무료 수거와 무료 반송, 휴대폰·키오스크 판매 방식이 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-07-free-pickup",
+      "index": 7,
+      "rect": {
+        "bottom": 6071.0546875,
+        "height": 192.140625,
+        "left": 36,
+        "right": 324,
+        "top": 5878.9140625,
+        "width": 288,
+        "x": 36,
+        "y": 5878.9140625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHjsRQ%2FdJMcahmdo6K%2FAAAAAAAAAAAAAAAAAAAAAP8d_XR0FYMpCZWyOp5cAVSRGXhc0dq-G0L263z6qopP%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D3jbQSD1uGZqtmZEBeMlMYN6hQVo%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 화면에 블랑코 국제 인증 솔루션을 통한 개인정보 삭제 안내가 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-08-data-deletion",
+      "index": 8,
+      "rect": {
+        "bottom": 7063.4296875,
+        "height": 192.140625,
+        "left": 36,
+        "right": 324,
+        "top": 6871.2890625,
+        "width": 288,
+        "x": 36,
+        "y": 6871.2890625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcUF97v%2FdJMcahGkZCB%2FAAAAAAAAAAAAAAAAAAAAAOEtoa6iSluynOndIhmYg-25YJSdDwPmQh6lEtNel8UD%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D5rATe5qkvKfU6zjAHe8z9PyJOHA%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-21 14:46"
+    ],
+    "public": true,
+    "slug": "셀로에서-갤럭시-S25-엣지-중고폰-판매-솔직-후기"
+  },
+  "uploads": [
+    {
+      "id": "sell-o-00-logo",
+      "rawToken": "[##_Image|kage@cWy2aM/dJMcaaN8vcZ/AAAAAAAAAAAAAAAAAAAAAJRgMxiQKT2DpTN7psgIHj1ZqUzBN6SfOLlwdBHPnkNC/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/Documents/Codex/2026-10-24/d/work/tistory-all-repair/recovered-originals/2026-08-27-sell-o-used-phone-sale/sell-o-00-logo.png",
+      "sha256": "f56434e23e8dcb92f7f7476f448e92630287100ba179d01e19e1f5eebd8ac287",
+      "embed": "[##_Image|kage@cWy2aM/dJMcaaN8vcZ/AAAAAAAAAAAAAAAAAAAAAJRgMxiQKT2DpTN7psgIHj1ZqUzBN6SfOLlwdBHPnkNC/img.png|alignCenter|width=\"100%\" alt=\"보라색 배경의 셀로 로고\"|_##]"
+    },
+    {
+      "id": "sell-o-01-phone-front",
+      "rawToken": "[##_Image|kage@bEy8Qe/dJMcaik11uy/AAAAAAAAAAAAAAAAAAAAAOFLY9M-lL3wv5s9uHX73e7-w1t736bwxOcxEDoBIghy/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-01-phone-front.jpg",
+      "sha256": "1101a73776276581d6326fe89f1e2447b145d0697319ea5ebd9d3ecbcf052c6d",
+      "embed": "[##_Image|kage@bEy8Qe/dJMcaik11uy/AAAAAAAAAAAAAAAAAAAAAOFLY9M-lL3wv5s9uHX73e7-w1t736bwxOcxEDoBIghy/img.jpg|alignCenter|width=\"100%\" alt=\"흰색 침구 위에 놓인 갤럭시 S25 엣지 전면\"|_##]"
+    },
+    {
+      "id": "sell-o-02-phone-back",
+      "rawToken": "[##_Image|kage@cITfCn/dJMcaf2MIHP/AAAAAAAAAAAAAAAAAAAAAOTALetezumGWRgwWBdyqt2LmoZFDkLAM9F_0DMHUcPp/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-02-phone-back.jpg",
+      "sha256": "7d8381005fdc499fcca9a1e50859782e81ba1e23cee862a33129d15e85ed5f5c",
+      "embed": "[##_Image|kage@cITfCn/dJMcaf2MIHP/AAAAAAAAAAAAAAAAAAAAAOTALetezumGWRgwWBdyqt2LmoZFDkLAM9F_0DMHUcPp/img.jpg|alignCenter|width=\"100%\" alt=\"검은색 갤럭시 S25 엣지 후면과 듀얼 카메라\"|_##]"
+    },
+    {
+      "id": "sell-o-03-additional-reward",
+      "rawToken": "[##_Image|kage@A1R60/dJMcaik11uC/AAAAAAAAAAAAAAAAAAAAAOmMcSnagCGW-a83zfb8pgIjZ29Xf-6SWF8F2WhxUrpx/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-03-additional-reward.jpg",
+      "sha256": "900be23bd517cc59bfdccd6fab75810bb9d663beb6ecade5c06023ab06c04016",
+      "embed": "[##_Image|kage@A1R60/dJMcaik11uC/AAAAAAAAAAAAAAAAAAAAAOmMcSnagCGW-a83zfb8pgIjZ29Xf-6SWF8F2WhxUrpx/img.jpg|alignCenter|width=\"100%\" alt=\"셀로 이벤트 화면에 네이버페이 추가보상 최대 5만원이 표시된 모습\"|_##]"
+    },
+    {
+      "id": "sell-o-04-review-event",
+      "rawToken": "[##_Image|kage@lgC9V/dJMcaf9tAsP/AAAAAAAAAAAAAAAAAAAAAAC-VxqS_dP4boxvegZXBh3JxEKuBPfa2pAnHX7857wz/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-04-review-event.jpg",
+      "sha256": "970d49f14dcce503ba3598af018ae34653031bbc74e5fc94cafc5c7e6ace05e5",
+      "embed": "[##_Image|kage@lgC9V/dJMcaf9tAsP/AAAAAAAAAAAAAAAAAAAAAAC-VxqS_dP4boxvegZXBh3JxEKuBPfa2pAnHX7857wz/img.jpg|alignCenter|width=\"100%\" alt=\"셀로 후기 작성하기 이벤트에서 블로그와 영상 후기 조건을 안내하는 화면\"|_##]"
+    },
+    {
+      "id": "sell-o-05-max-compensation",
+      "rawToken": "[##_Image|kage@bmGquS/dJMcaf9tAsS/AAAAAAAAAAAAAAAAAAAAALYobh2UJduPe0gKpLLne6Ok_2FQqCOf-vnd8GGuR7Gw/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-05-max-compensation.jpg",
+      "sha256": "63fc5284689fb3c8af0f5369d91419560626bc4eb304a8e2fdce401920a4cd1d",
+      "embed": "[##_Image|kage@bmGquS/dJMcaf9tAsS/AAAAAAAAAAAAAAAAAAAAALYobh2UJduPe0gKpLLne6Ok_2FQqCOf-vnd8GGuR7Gw/img.jpg|alignCenter|width=\"100%\" alt=\"갤럭시 S25 엣지 512GB의 예상 판매가 48만원과 최대 보상가 53만원 화면\"|_##]"
+    },
+    {
+      "id": "sell-o-06-device-selection",
+      "rawToken": "[##_Image|kage@cjxIxA/dJMcafPvcwg/AAAAAAAAAAAAAAAAAAAAAPoLIw3m1kZjy5TadtsuaCYbBzrqQO3qjtSt9p-Kap4O/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-06-device-selection.jpg",
+      "sha256": "ea213aa2903dc68dfd35c3e162fb7e8da1bfbb1d0bee88b6cf45817b086c272c",
+      "embed": "[##_Image|kage@cjxIxA/dJMcafPvcwg/AAAAAAAAAAAAAAAAAAAAAPoLIw3m1kZjy5TadtsuaCYbBzrqQO3qjtSt9p-Kap4O/img.jpg|alignCenter|width=\"100%\" alt=\"셀로 최대 보상가 조회에서 갤럭시 S와 갤럭시 S25 엣지 512GB를 선택한 화면\"|_##]"
+    },
+    {
+      "id": "sell-o-07-free-pickup",
+      "rawToken": "[##_Image|kage@HjsRQ/dJMcahmdo6K/AAAAAAAAAAAAAAAAAAAAAP8d_XR0FYMpCZWyOp5cAVSRGXhc0dq-G0L263z6qopP/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-07-free-pickup.jpg",
+      "sha256": "b56d47867bb50a8eb21383265ef4c6d2c90d0b62df79a7c10482260376d74021",
+      "embed": "[##_Image|kage@HjsRQ/dJMcahmdo6K/AAAAAAAAAAAAAAAAAAAAAP8d_XR0FYMpCZWyOp5cAVSRGXhc0dq-G0L263z6qopP/img.jpg|alignCenter|width=\"100%\" alt=\"셀로 화면에 전국 무료 수거와 무료 반송, 휴대폰·키오스크 판매 방식이 표시된 모습\"|_##]"
+    },
+    {
+      "id": "sell-o-08-data-deletion",
+      "rawToken": "[##_Image|kage@cUF97v/dJMcahGkZCB/AAAAAAAAAAAAAAAAAAAAAOEtoa6iSluynOndIhmYg-25YJSdDwPmQh6lEtNel8UD/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-08-data-deletion.jpg",
+      "sha256": "9fb1441fca5e73c8c97e18eeb3a3f8c332bf6f27b6b1a61654883457b2d7c727",
+      "embed": "[##_Image|kage@cUF97v/dJMcahGkZCB/AAAAAAAAAAAAAAAAAAAAAOEtoa6iSluynOndIhmYg-25YJSdDwPmQh6lEtNel8UD/img.jpg|alignCenter|width=\"100%\" alt=\"셀로 화면에 블랑코 국제 인증 솔루션을 통한 개인정보 삭제 안내가 표시된 모습\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "보라색 배경의 셀로 로고",
+      "complete": true,
+      "h": 512,
+      "id": "sell-o-00-logo",
+      "index": 0,
+      "rect": {
+        "bottom": 940,
+        "height": 512,
+        "left": 324,
+        "right": 836,
+        "top": 428,
+        "width": 512,
+        "x": 324,
+        "y": 428
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcWy2aM%2FdJMcaaN8vcZ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WHkR7mmME2NF9qikUkBMB9vX_saVQ9kVZhTM7r0pRnSg63kGwb64J6NiAJrKuFPTp02kHDuqQw_V7pjgpH-27O%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DW7f%252B9NDaddVWxBQEL47IiUrjw40%253D",
+      "w": 512
+    },
+    {
+      "alt": "흰색 침구 위에 놓인 갤럭시 S25 엣지 전면",
+      "complete": true,
+      "h": 769,
+      "id": "sell-o-01-phone-front",
+      "index": 1,
+      "rect": {
+        "bottom": 1982.9453125,
+        "height": 736,
+        "left": 212,
+        "right": 948,
+        "top": 1246.9453125,
+        "width": 736,
+        "x": 212,
+        "y": 1246.9453125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbEy8Qe%2FdJMcaik11uy%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Uzdr-9S_30Lcs-HN-SrEEBoaFhBGl9kzjZYvEnH2a0uDwlD5LvtujywP3bGsCmIObDMX5aWeE--JMZK3281z9G%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D1hdcsgbvyqG4v4AsBTSqQ0orjmY%253D",
+      "w": 769
+    },
+    {
+      "alt": "검은색 갤럭시 S25 엣지 후면과 듀얼 카메라",
+      "complete": true,
+      "h": 769,
+      "id": "sell-o-02-phone-back",
+      "index": 2,
+      "rect": {
+        "bottom": 2798.640625,
+        "height": 736,
+        "left": 212,
+        "right": 948,
+        "top": 2062.640625,
+        "width": 736,
+        "x": 212,
+        "y": 2062.640625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcITfCn%2FdJMcaf2MIHP%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1W2DA3Vbn_fSucszQZio6vpC_fkaf8MP1smnqTq3X2aN7ZE7b8qQCxsdWepObyFggGyEl9XLJkhWoxAkHduTl_L%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DvUSO%252BuIfebFZA0P0T73JcuOAYdE%253D",
+      "w": 769
+    },
+    {
+      "alt": "셀로 이벤트 화면에 네이버페이 추가보상 최대 5만원이 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-03-additional-reward",
+      "index": 3,
+      "rect": {
+        "bottom": 4063.3828125,
+        "height": 489.9921875,
+        "left": 212,
+        "right": 948,
+        "top": 3573.390625,
+        "width": 736,
+        "x": 212,
+        "y": 3573.390625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FA1R60%2FdJMcaik11uC%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VJBzLJNe8Z9d5IqOlDBwoQXUkyDCxLRSspBvo9C-7e8wZ4_Qiaxm-3AlyDYtqhzXQB3bU59JHWPOaGdso2Q6ND%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DjMdbN26EEUfTJe3jhpB88WYyl88%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 후기 작성하기 이벤트에서 블로그와 영상 후기 조건을 안내하는 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-04-review-event",
+      "index": 4,
+      "rect": {
+        "bottom": 4727.5390625,
+        "height": 489.9921875,
+        "left": 212,
+        "right": 948,
+        "top": 4237.546875,
+        "width": 736,
+        "x": 212,
+        "y": 4237.546875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FlgC9V%2FdJMcaf9tAsP%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VuDPcyD6qza4irDsMAyhzUNEciFUw78ARr79fBiGax_RX0lo-TuFtf2yQLo3UQQwmpvM8bCE7JpenHmw_IQkjx%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtNwTR2O%252Bt%252BKTulTN%252FGcxnNoEOz4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "갤럭시 S25 엣지 512GB의 예상 판매가 48만원과 최대 보상가 53만원 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-05-max-compensation",
+      "index": 5,
+      "rect": {
+        "bottom": 6174.1796875,
+        "height": 489.9921875,
+        "left": 212,
+        "right": 948,
+        "top": 5684.1875,
+        "width": 736,
+        "x": 212,
+        "y": 5684.1875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbmGquS%2FdJMcaf9tAsS%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UdPvi_hQCS19ADBjytF0Zlu9FolsQieAYuqt23aUusrb8GsGWfO82uJBQY9QfIMorub3dYXdC65fycpduzhyGW%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DiayP%252FyaX7TA8PwjL8Wl%252FHLpeWDI%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 최대 보상가 조회에서 갤럭시 S와 갤럭시 S25 엣지 512GB를 선택한 화면",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-06-device-selection",
+      "index": 6,
+      "rect": {
+        "bottom": 7100.3515625,
+        "height": 489.9921875,
+        "left": 212,
+        "right": 948,
+        "top": 6610.359375,
+        "width": 736,
+        "x": 212,
+        "y": 6610.359375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcjxIxA%2FdJMcafPvcwg%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VhSIKyKd-R0ePim79dJ1YcLpWB9OPiHd-XCHW7TIZI_jZYkewp8Q65jxNguB3LL85ACGerRPNeqi0ii5iWTloJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D3WACFVU8Jk9ss7yRoKWv03mLMGY%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 화면에 전국 무료 수거와 무료 반송, 휴대폰·키오스크 판매 방식이 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-07-free-pickup",
+      "index": 7,
+      "rect": {
+        "bottom": 7891.3046875,
+        "height": 489.9921875,
+        "left": 212,
+        "right": 948,
+        "top": 7401.3125,
+        "width": 736,
+        "x": 212,
+        "y": 7401.3125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHjsRQ%2FdJMcahmdo6K%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Vl5plYlAuUEbem56jMiI2M4mUc_O2vo1AGcdMlnQXIxVup9HWDrwJV1kdeYYmd5Fn16z1VB6SGmychqgp-_63J%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DkiKBngcsc5qThGhb5LGLnBuMUZM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "셀로 화면에 블랑코 국제 인증 솔루션을 통한 개인정보 삭제 안내가 표시된 모습",
+      "complete": true,
+      "h": 851,
+      "id": "sell-o-08-data-deletion",
+      "index": 8,
+      "rect": {
+        "bottom": 8895.4921875,
+        "height": 489.9921875,
+        "left": 212,
+        "right": 948,
+        "top": 8405.5,
+        "width": 736,
+        "x": 212,
+        "y": 8405.5
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcUF97v%2FdJMcahGkZCB%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UD0DI2-dbxVPV3Ji5sf3C4jKYoStW15koUU77SmmX8mcptzGasVNpEoAI0WopGBpb4tZvn66H2Fo2EpPMUb8DQ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DP6FpxLDP4EBf3TZDcxg4iLse9pA%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 9,
+  "repairedImages": 9,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:36:43.290Z"
+}

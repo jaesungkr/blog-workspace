@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 88,
+  "title": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료",
+  "url": "https://dop3n.tistory.com/entry/GPT-56-Sol-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%B0%8F-Luna-%EB%AC%B4%EC%A0%9C%ED%95%9C-%EB%AC%B4%EB%A3%8C",
+  "checked_at": "2026-10-24T03:49:37.953Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "5bc84b5f43d77c16fa948190b1ea61e0f538721577fd9de59b184b9794d79a4f",
+  "submitted_sha256": "3a8e4d818be664660786f8fa2a5bd2c400b18aacb69ff3f0644d7b6e04681d6a",
+  "metadata": {
+    "dates": [
+      "2026-08-09 03:05"
+    ],
+    "public": true,
+    "slug": "GPT-56-Sol-업데이트-및-Luna-무제한-무료"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

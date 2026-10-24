@@ -248,3 +248,9 @@
 - final light/dark page QA: `pass` by `Codex (/root/robot_final_page_qa)`. 라이트·다크 1280/768/360에서 clientWidth=scrollWidth, H1·TOC·원격 이미지 로드·캡션·목록·표 스크롤·다크 대비를 확인함. fragment H1 0, placeholder 0, local path 0
 - ready: `finalize_rich_post_v2.py` 통과, `article.md` lifecycle을 `ready`로 전환하고 byte-identical Tistory paste TXT 생성 완료
 - Git delivery: 진행 중
+
+## 2026-10-24 전체 글 이미지 첨부 복구
+
+작성자의 전체 글 이미지 점검·수정 요청에 따라 공개 글의 이미지 2개를 확인하고, 그중 2개를 원본과 같은 파일로 다시 첨부해 네이티브 티스토리 참조로 저장했습니다. 정규화한 본문 텍스트가 변경 전과 일치하며, URL과 발행일을 유지했습니다. 1280px·360px 공개 화면에서 모든 본문 이미지의 로딩과 교체 이미지의 가로 배치를 확인했습니다.
+
+복구 증빙은 저장소 루트의 `artifacts/tistory-image-repair-2026-10-24/113/`에 보관했습니다. 이번 확인은 실제 공개 글의 이미지 복구에 한정합니다. 기존 원고와 전체 페이지 검증 기록은 미디어 변경 전의 기록이며, 현재 로컬 원고가 공개 본문과 일치한다거나 전체 원고를 재승인했다고 판단하지 않았습니다. 작성자의 최종 검토를 기다립니다.

@@ -1,0 +1,294 @@
+{
+  "id": 99,
+  "title": "Grok Bot 사용법, 일론 머스크의 애착 에이전트",
+  "url": "https://dop3n.tistory.com/entry/Grok-Bot-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%9D%BC%EB%A1%A0-%EB%A8%B8%EC%8A%A4%ED%81%AC%EC%9D%98-%EC%95%A0%EC%B0%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-13-grok-bot-guide",
+  "images": [
+    {
+      "alt": "x.ai Grok Bot 공식 페이지에 Early Beta, Meet Grok Bot, macOS 다운로드 버튼과 Sales Outbound 앱 화면이 보이는 모습",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-landing",
+      "index": 0,
+      "rect": {
+        "bottom": -3917.875,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": -4332.75,
+        "width": 736,
+        "x": 272,
+        "y": -4332.75
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fd1fvkv%2FdJMcackJffd%2FAAAAAAAAAAAAAAAAAAAAAP4-ROaJ_ijB42ZUzDNnqzUIu9Rt1sFfIbHudZXruIm8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DsySv%252BV27W44k2V55gWbL3vlmfkM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok Bot 공식 Use cases 화면에 Chief of Staff, Sales Outbound, Paid Media 업무 카드가 나란히 보이는 모습",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-use-cases",
+      "index": 1,
+      "rect": {
+        "bottom": -1909.765625,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": -2324.640625,
+        "width": 736,
+        "x": 272,
+        "y": -2324.640625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdt30sM%2FdJMcahsYMxs%2FAAAAAAAAAAAAAAAAAAAAABxYNZsVevplDlRDYK4gcdibsVw2F9J4YbCEjWQtPL_d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dz2fbegaOGS2dncYMo39rboUh85Q%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok Bot이 Zendesk 로그인을 사용자에게 요청하는 Computer 카드와 한 번 작업을 따라 배우는 Teach a task 카드",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-workflow",
+      "index": 2,
+      "rect": {
+        "bottom": 715,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 300.125,
+        "width": 736,
+        "x": 272,
+        "y": 300.125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FkDh8B%2FdJMcahsYMxv%2FAAAAAAAAAAAAAAAAAAAAADtY5pnK7G2wQbZm4EmVJhBE7OvHq-erRCAXAspZ4aUQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DNuXyqiUY22VoaSDrQ6TrkDmDHe0%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Sales Outbound Grok Bot이 이메일 초안을 만든 뒤 Send email 버튼과 사용자 승인 메시지를 기다리는 공식 데모",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-approval",
+      "index": 3,
+      "rect": {
+        "bottom": 2146.25,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 1731.375,
+        "width": 736,
+        "x": 272,
+        "y": 1731.375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc6EXuK%2FdJMcafWcqea%2FAAAAAAAAAAAAAAAAAAAAAA7Qbx2Nw1q-9HNooroIGOym1EIc28voP0rdRc5G50JV%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dn61pqxaRQg21JC%252BPlJv6%252B6TQlrk%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "x.ai Grok Bot 공식 페이지에 Early Beta, Meet Grok Bot, macOS 다운로드 버튼과 Sales Outbound 앱 화면이 보이는 모습",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-landing",
+      "index": 0,
+      "rect": {
+        "bottom": 662.703125,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 499.828125,
+        "width": 288,
+        "x": 36,
+        "y": 499.828125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fd1fvkv%2FdJMcackJffd%2FAAAAAAAAAAAAAAAAAAAAAP4-ROaJ_ijB42ZUzDNnqzUIu9Rt1sFfIbHudZXruIm8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DsySv%252BV27W44k2V55gWbL3vlmfkM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok Bot 공식 Use cases 화면에 Chief of Staff, Sales Outbound, Paid Media 업무 카드가 나란히 보이는 모습",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-use-cases",
+      "index": 1,
+      "rect": {
+        "bottom": 3063.0390625,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 2900.1640625,
+        "width": 288,
+        "x": 36,
+        "y": 2900.1640625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdt30sM%2FdJMcahsYMxs%2FAAAAAAAAAAAAAAAAAAAAABxYNZsVevplDlRDYK4gcdibsVw2F9J4YbCEjWQtPL_d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dz2fbegaOGS2dncYMo39rboUh85Q%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok Bot이 Zendesk 로그인을 사용자에게 요청하는 Computer 카드와 한 번 작업을 따라 배우는 Teach a task 카드",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-workflow",
+      "index": 2,
+      "rect": {
+        "bottom": 6799.0390625,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 6636.1640625,
+        "width": 288,
+        "x": 36,
+        "y": 6636.1640625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FkDh8B%2FdJMcahsYMxv%2FAAAAAAAAAAAAAAAAAAAAADtY5pnK7G2wQbZm4EmVJhBE7OvHq-erRCAXAspZ4aUQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DNuXyqiUY22VoaSDrQ6TrkDmDHe0%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Sales Outbound Grok Bot이 이메일 초안을 만든 뒤 Send email 버튼과 사용자 승인 메시지를 기다리는 공식 데모",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-approval",
+      "index": 3,
+      "rect": {
+        "bottom": 8527.8984375,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 8365.0234375,
+        "width": 288,
+        "x": 36,
+        "y": 8365.0234375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc6EXuK%2FdJMcafWcqea%2FAAAAAAAAAAAAAAAAAAAAAA7Qbx2Nw1q-9HNooroIGOym1EIc28voP0rdRc5G50JV%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dn61pqxaRQg21JC%252BPlJv6%252B6TQlrk%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-14 01:18"
+    ],
+    "public": true,
+    "slug": "Grok-Bot-사용법-일론-머스크의-애착-에이전트"
+  },
+  "uploads": [
+    {
+      "id": "grok-bot-landing",
+      "rawToken": "[##_Image|kage@d1fvkv/dJMcackJffd/AAAAAAAAAAAAAAAAAAAAAP4-ROaJ_ijB42ZUzDNnqzUIu9Rt1sFfIbHudZXruIm8/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/Documents/Codex/2026-10-24/d/work/tistory-all-repair/recovered-originals/2026-08-13-grok-bot-guide/grok-bot-landing.png",
+      "sha256": "2407a70ea6d9ed97187871bc3231ad4afa83450b126ba5d823970d33d1d337ee",
+      "embed": "[##_Image|kage@d1fvkv/dJMcackJffd/AAAAAAAAAAAAAAAAAAAAAP4-ROaJ_ijB42ZUzDNnqzUIu9Rt1sFfIbHudZXruIm8/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=sySv%2BV27W44k2V55gWbL3vlmfkM%3D|CDM|1.3|{\"originWidth\":1280,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"x.ai Grok Bot 공식 페이지에 Early Beta, Meet Grok Bot, macOS 다운로드 버튼과 Sales Outbound 앱 화면이 보이는 모습\"}_##]"
+    },
+    {
+      "id": "grok-bot-use-cases",
+      "rawToken": "[##_Image|kage@dt30sM/dJMcahsYMxs/AAAAAAAAAAAAAAAAAAAAABxYNZsVevplDlRDYK4gcdibsVw2F9J4YbCEjWQtPL_d/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-13-grok-bot-guide/assets/grok-bot-use-cases.png",
+      "sha256": "b504fe790a8ba8cd4f174e825e65d2214c6529f4016cca94958a5f73f57a23ee",
+      "embed": "[##_Image|kage@dt30sM/dJMcahsYMxs/AAAAAAAAAAAAAAAAAAAAABxYNZsVevplDlRDYK4gcdibsVw2F9J4YbCEjWQtPL_d/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=z2fbegaOGS2dncYMo39rboUh85Q%3D|CDM|1.3|{\"originWidth\":1280,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Grok Bot 공식 Use cases 화면에 Chief of Staff, Sales Outbound, Paid Media 업무 카드가 나란히 보이는 모습\"}_##]"
+    },
+    {
+      "id": "grok-bot-workflow",
+      "rawToken": "[##_Image|kage@kDh8B/dJMcahsYMxv/AAAAAAAAAAAAAAAAAAAAADtY5pnK7G2wQbZm4EmVJhBE7OvHq-erRCAXAspZ4aUQ/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-13-grok-bot-guide/assets/grok-bot-workflow.png",
+      "sha256": "e6f0e3da1dfc3a600064702ea57b1fe8dc02c495f1926d3edecf7ec3d9565259",
+      "embed": "[##_Image|kage@kDh8B/dJMcahsYMxv/AAAAAAAAAAAAAAAAAAAAADtY5pnK7G2wQbZm4EmVJhBE7OvHq-erRCAXAspZ4aUQ/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=NuXyqiUY22VoaSDrQ6TrkDmDHe0%3D|CDM|1.3|{\"originWidth\":1280,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Grok Bot이 Zendesk 로그인을 사용자에게 요청하는 Computer 카드와 한 번 작업을 따라 배우는 Teach a task 카드\"}_##]"
+    },
+    {
+      "id": "grok-bot-approval",
+      "rawToken": "[##_Image|kage@c6EXuK/dJMcafWcqea/AAAAAAAAAAAAAAAAAAAAAA7Qbx2Nw1q-9HNooroIGOym1EIc28voP0rdRc5G50JV/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/Documents/Codex/2026-10-24/d/work/tistory-all-repair/recovered-originals/2026-08-13-grok-bot-guide/grok-bot-approval.png",
+      "sha256": "59b8573527369ffa8a6bcde33b14a966f09249e9dddc3a812b7712badba1ecea",
+      "embed": "[##_Image|kage@c6EXuK/dJMcafWcqea/AAAAAAAAAAAAAAAAAAAAAA7Qbx2Nw1q-9HNooroIGOym1EIc28voP0rdRc5G50JV/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=n61pqxaRQg21JC%2BPlJv6%2B6TQlrk%3D|CDM|1.3|{\"originWidth\":1280,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Sales Outbound Grok Bot이 이메일 초안을 만든 뒤 Send email 버튼과 사용자 승인 메시지를 기다리는 공식 데모\"}_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "x.ai Grok Bot 공식 페이지에 Early Beta, Meet Grok Bot, macOS 다운로드 버튼과 Sales Outbound 앱 화면이 보이는 모습",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-landing",
+      "index": 0,
+      "rect": {
+        "bottom": -3917.875,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": -4332.75,
+        "width": 736,
+        "x": 212,
+        "y": -4332.75
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fd1fvkv%2FdJMcackJffd%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UCnP0LS5bTjioWq8H2EbCCditogYPPld0anVLo92YDy1gNWNJDZuWJcgiYuhO5rk57X1jCCtKajHcpR4uAUK61%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DbR%252Frk2ze9r93q4gN5qMObcF2zoI%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok Bot 공식 Use cases 화면에 Chief of Staff, Sales Outbound, Paid Media 업무 카드가 나란히 보이는 모습",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-use-cases",
+      "index": 1,
+      "rect": {
+        "bottom": -1909.765625,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": -2324.640625,
+        "width": 736,
+        "x": 212,
+        "y": -2324.640625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdt30sM%2FdJMcahsYMxs%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XD4QdePeLfGbUbE79Fj-5ct_aPpu-QEMP1KaPTKBlENFJgWAtTfLULHVshPI8jla_Qq-1EbmiwR4GSxLa_8TfV%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFj4%252FsyGHo064yoE2bTzGqJkFPTs%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Grok Bot이 Zendesk 로그인을 사용자에게 요청하는 Computer 카드와 한 번 작업을 따라 배우는 Teach a task 카드",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-workflow",
+      "index": 2,
+      "rect": {
+        "bottom": 715,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 300.125,
+        "width": 736,
+        "x": 212,
+        "y": 300.125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FkDh8B%2FdJMcahsYMxv%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Xd2fBUMH3DDQ2G5nD2obZzLg-ME0fOEGVh0Cwg1VdukM0MZfTXBEwNWE1vPcKvLqLFVVt5SRopwTJvXQw9ZsGV%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252BwayWDxwy4N%252FI8GrLhH7HNw3%252FBI%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Sales Outbound Grok Bot이 이메일 초안을 만든 뒤 Send email 버튼과 사용자 승인 메시지를 기다리는 공식 데모",
+      "complete": true,
+      "h": 720,
+      "id": "grok-bot-approval",
+      "index": 3,
+      "rect": {
+        "bottom": 2146.25,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 1731.375,
+        "width": 736,
+        "x": 212,
+        "y": 1731.375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc6EXuK%2FdJMcafWcqea%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V_PL_bTNZ9nnAKHPePKeF4kuZDzHJrkN4B25DuaLCymtpDJ-aX4Yf2EP2lHGO2t9GYt1Vv1pBavTzUdICFCy4G%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DRBvm%252FUb49s82FAw0bbkqpU4Z%252F5I%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 4,
+  "repairedImages": 4,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:46:33.605Z"
+}

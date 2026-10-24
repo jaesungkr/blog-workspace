@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 119,
+  "title": "빌 게이츠의 AI 경고, 일자리 보호와 로봇세는 답이 될까",
+  "url": "https://dop3n.tistory.com/entry/%EB%B9%8C-%EA%B2%8C%EC%9D%B4%EC%B8%A0%EC%9D%98-AI-%EA%B2%BD%EA%B3%A0-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EB%B3%B4%ED%98%B8%EC%99%80-%EB%A1%9C%EB%B4%87%EC%84%B8%EB%8A%94-%EB%8B%B5%EC%9D%B4-%EB%90%A0%EA%B9%8C",
+  "checked_at": "2026-10-24T03:28:20.885Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "4f85db1f918f4dcefacc7531455b2866f47da24fb0a6b1c5d56e9dede3d2cbbf",
+  "submitted_sha256": "442c013db4285e7fe115f45c86dc72dcdc72307fbdd765d5fdf63674c4def06a",
+  "metadata": {
+    "dates": [
+      "2026-08-29 00:10"
+    ],
+    "public": true,
+    "slug": "빌-게이츠의-AI-경고-일자리-보호와-로봇세는-답이-될까"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

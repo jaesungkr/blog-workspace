@@ -1,0 +1,160 @@
+{
+  "id": 107,
+  "title": "고양이 신장병 치료제 AIM, 수명 연장 기대해도 될까?",
+  "url": "https://dop3n.tistory.com/entry/%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%8B%A0%EC%9E%A5%EB%B3%91-%EC%B9%98%EB%A3%8C%EC%A0%9C-AIM-%EC%88%98%EB%AA%85-%EC%97%B0%EC%9E%A5-%EA%B8%B0%EB%8C%80%ED%95%B4%EB%8F%84-%EB%90%A0%EA%B9%8C",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-20-aim-cat-longevity-drug",
+  "images": [
+    {
+      "alt": "창가에서 리넨 담요의 주름을 앞발로 건드리는 아기 검은 고양이와 곁에서 바라보는 푸른 눈의 아기 렉돌",
+      "complete": true,
+      "h": 720,
+      "id": "aim-black-ragdoll-kittens-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 714.96875,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 300.09375,
+        "width": 736,
+        "x": 272,
+        "y": 300.09375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcxSDH6%2FdJMcab7gukN%2FAAAAAAAAAAAAAAAAAAAAAAdGyn02dB0Gjgs3lvQfBOu4owyyZZPxBXvdeAvizW2J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DA8mjazARwce66VHCCkXT2Ci%252BaPU%253D",
+      "w": 1280
+    },
+    {
+      "alt": "AIM이 IgM에서 분리돼 신장 찌꺼기에 붙는 흐름, 고양이에서 분리가 막히는 흐름, 재조합 AIM 보완 접근을 세 단계로 나타낸 도식",
+      "complete": true,
+      "h": 1350,
+      "id": "aim-kidney-mechanism",
+      "index": 1,
+      "rect": {
+        "bottom": 2539.984375,
+        "height": 919.5,
+        "left": 272,
+        "right": 1008,
+        "top": 1620.484375,
+        "width": 736,
+        "x": 272,
+        "y": 1620.484375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbxFaLi%2FdJMcab7gukS%2FAAAAAAAAAAAAAAAAAAAAAAVK8EWdZeVYWVVsaAxpYBuf-YeUas2l7AVdSRRnI2Oy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DarT%252FHrRoHVwk6SriNnN%252Fh40Td8o%253D",
+      "w": 1080
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "창가에서 리넨 담요의 주름을 앞발로 건드리는 아기 검은 고양이와 곁에서 바라보는 푸른 눈의 아기 렉돌",
+      "complete": true,
+      "h": 720,
+      "id": "aim-black-ragdoll-kittens-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 545.609375,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 382.734375,
+        "width": 288,
+        "x": 36,
+        "y": 382.734375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcxSDH6%2FdJMcab7gukN%2FAAAAAAAAAAAAAAAAAAAAAAdGyn02dB0Gjgs3lvQfBOu4owyyZZPxBXvdeAvizW2J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DA8mjazARwce66VHCCkXT2Ci%252BaPU%253D",
+      "w": 1280
+    },
+    {
+      "alt": "AIM이 IgM에서 분리돼 신장 찌꺼기에 붙는 흐름, 고양이에서 분리가 막히는 흐름, 재조합 AIM 보완 접근을 세 단계로 나타낸 도식",
+      "complete": true,
+      "h": 1350,
+      "id": "aim-kidney-mechanism",
+      "index": 1,
+      "rect": {
+        "bottom": 2059.890625,
+        "height": 359.5,
+        "left": 36,
+        "right": 324,
+        "top": 1700.390625,
+        "width": 288,
+        "x": 36,
+        "y": 1700.390625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbxFaLi%2FdJMcab7gukS%2FAAAAAAAAAAAAAAAAAAAAAAVK8EWdZeVYWVVsaAxpYBuf-YeUas2l7AVdSRRnI2Oy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DarT%252FHrRoHVwk6SriNnN%252Fh40Td8o%253D",
+      "w": 1080
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-21 14:46"
+    ],
+    "public": true,
+    "slug": "고양이-신장병-치료제-AIM-수명-연장-기대해도-될까"
+  },
+  "uploads": [
+    {
+      "id": "aim-black-ragdoll-kittens-hero",
+      "rawToken": "[##_Image|kage@cxSDH6/dJMcab7gukN/AAAAAAAAAAAAAAAAAAAAAAdGyn02dB0Gjgs3lvQfBOu4owyyZZPxBXvdeAvizW2J/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-20-aim-cat-longevity-drug/assets/aim-black-ragdoll-kittens-hero-v4.png",
+      "sha256": "3aaca45561af647074de15e2b01567373e25d1a4a503ccba9415658f45b761c4",
+      "embed": "[##_Image|kage@cxSDH6/dJMcab7gukN/AAAAAAAAAAAAAAAAAAAAAAdGyn02dB0Gjgs3lvQfBOu4owyyZZPxBXvdeAvizW2J/img.png|alignCenter|width=\"100%\" alt=\"창가에서 리넨 담요의 주름을 앞발로 건드리는 아기 검은 고양이와 곁에서 바라보는 푸른 눈의 아기 렉돌\"|_##]"
+    },
+    {
+      "id": "aim-kidney-mechanism",
+      "rawToken": "[##_Image|kage@bxFaLi/dJMcab7gukS/AAAAAAAAAAAAAAAAAAAAAAVK8EWdZeVYWVVsaAxpYBuf-YeUas2l7AVdSRRnI2Oy/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-20-aim-cat-longevity-drug/assets/aim-kidney-mechanism-v1.png",
+      "sha256": "c423b9ce15caa21bf9524116b112e8f81287f581d783c7266501fdeb167be1c3",
+      "embed": "[##_Image|kage@bxFaLi/dJMcab7gukS/AAAAAAAAAAAAAAAAAAAAAAVK8EWdZeVYWVVsaAxpYBuf-YeUas2l7AVdSRRnI2Oy/img.png|alignCenter|width=\"100%\" alt=\"AIM이 IgM에서 분리돼 신장 찌꺼기에 붙는 흐름, 고양이에서 분리가 막히는 흐름, 재조합 AIM 보완 접근을 세 단계로 나타낸 도식\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "창가에서 리넨 담요의 주름을 앞발로 건드리는 아기 검은 고양이와 곁에서 바라보는 푸른 눈의 아기 렉돌",
+      "complete": true,
+      "h": 720,
+      "id": "aim-black-ragdoll-kittens-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 714.96875,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 300.09375,
+        "width": 736,
+        "x": 212,
+        "y": 300.09375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcxSDH6%2FdJMcab7gukN%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1W5Sw_uvEh6R-FN-ru3ZEKAd6YWVWXQ6KLZ0D9aijw-zfDswWMOu6A0QPDRTj-UuotgdDZmmqg0WCTMIumHkemk%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252Bj9sSS3wF%252Fg2tfKLrq4IQSBpZAw%253D",
+      "w": 1280
+    },
+    {
+      "alt": "AIM이 IgM에서 분리돼 신장 찌꺼기에 붙는 흐름, 고양이에서 분리가 막히는 흐름, 재조합 AIM 보완 접근을 세 단계로 나타낸 도식",
+      "complete": true,
+      "h": 1350,
+      "id": "aim-kidney-mechanism",
+      "index": 1,
+      "rect": {
+        "bottom": 2539.984375,
+        "height": 919.5,
+        "left": 212,
+        "right": 948,
+        "top": 1620.484375,
+        "width": 736,
+        "x": 212,
+        "y": 1620.484375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbxFaLi%2FdJMcab7gukS%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V9K-aq5fRI8y5tty4RMtP7LQo4wSVyTktwGf_JtsvXc0NJUtYoARa17ueIbueTOwTG-E2ZXL2-nfbwokRrsXJG%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DXpQmRrcrBgq9K6VqcKiNnNnI1IA%253D",
+      "w": 1080
+    }
+  ],
+  "totalImages": 2,
+  "repairedImages": 2,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:37:04.257Z"
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 117,
+  "title": "GLM-5.3-Flash 비교 - Ox Alpha 정체 공개 뒤 다시 본 성능과 가격",
+  "url": "https://dop3n.tistory.com/entry/GLM-53-Flash-%EB%B9%84%EA%B5%90-Ox-Alpha-%EC%A0%95%EC%B2%B4-%EA%B3%B5%EA%B0%9C-%EB%92%A4-%EB%8B%A4%EC%8B%9C-%EB%B3%B8-%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B0%80%EA%B2%A9",
+  "checked_at": "2026-10-24T03:49:29.547Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "594006b299de417f5026da0eecc0b6a11a1af4198d9a454a1263b840e7e877e6",
+  "submitted_sha256": "381d3eb81bac30979f1cbf04dc328ebc77d794485604ff9823a2eaa1328619cf",
+  "metadata": {
+    "dates": [
+      "2026-08-28 00:18"
+    ],
+    "public": true,
+    "slug": "GLM-53-Flash-비교-Ox-Alpha-정체-공개-뒤-다시-본-성능과-가격"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "openclaw-2-hero",
+    "rawToken": "[##_Image|kage@b20CZU/dJMcadYkPiy/AAAAAAAAAAAAAAAAAAAAAIIfvFbNijj3cHDv2_1IuZ9zAin5OdJfLvl1JjeUdUWt/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-01-openclaw-2/assets/openclaw-2-hero.png",
+    "sha256": "e85b3b21eff3da88fcd3ac1741062a19c223c2f151ff3a026fec7a74219947c3",
+    "embed": "[##_Image|kage@b20CZU/dJMcadYkPiy/AAAAAAAAAAAAAAAAAAAAAIIfvFbNijj3cHDv2_1IuZ9zAin5OdJfLvl1JjeUdUWt/img.png|alignCenter|width=\"100%\" alt=\"어두운 배경의 중앙에 OpenClaw 캐릭터가 서 있고 메신저, 파일, 브라우저, 일정, 팀 작업 화면이 연결선으로 이어진 공식 대표 이미지\"|_##]"
+  },
+  {
+    "id": "openclaw-browser-ui",
+    "rawToken": "[##_Image|kage@1MR3R/dJMcahfqYqA/AAAAAAAAAAAAAAAAAAAAACCZYR_LIlCG4cANy818Wzu3qJ1stYqroBHh7AnUJiKI/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-01-openclaw-2/assets/openclaw-browser-ui.png",
+    "sha256": "6e64fe7d84be01124e91ca51d952b4a206f635dd4105c7251a3a2e3cf8602e6c",
+    "embed": "[##_Image|kage@1MR3R/dJMcahfqYqA/AAAAAAAAAAAAAAAAAAAAACCZYR_LIlCG4cANy818Wzu3qJ1stYqroBHh7AnUJiKI/img.png|alignCenter|width=\"100%\" alt=\"OpenClaw 2.0의 Claw Patrol 새 세션 화면에서 작업 위치, workspace, Full access 권한, 모델 선택값이 입력창 주위에 표시된 모습\"|_##]"
+  },
+  {
+    "id": "openclaw-multiplayer-dashboard",
+    "rawToken": "[##_Image|kage@bzODma/dJMcajqv2CQ/AAAAAAAAAAAAAAAAAAAAAO_ghZYunwX1r09IBjtb0EnW5sbzsFP0axq5QiImwd5M/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-01-openclaw-2/assets/openclaw-multiplayer-dashboard.png",
+    "sha256": "d942e6e36a34fa4a7d33a75dc890bdb8d17d4e79d5d03967beeec9bd7af925fa",
+    "embed": "[##_Image|kage@bzODma/dJMcajqv2CQ/AAAAAAAAAAAAAAAAAAAAAO_ghZYunwX1r09IBjtb0EnW5sbzsFP0axq5QiImwd5M/img.png|alignCenter|width=\"100%\" alt=\"OpenClaw 공유 작업 공간의 왼쪽에 여러 세션과 참여자 목록이 있고 중앙에 The Daily Claw 대시보드가 열린 공식 화면\"|_##]"
+  }
+]

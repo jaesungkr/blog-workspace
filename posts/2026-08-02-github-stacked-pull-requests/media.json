@@ -16,7 +16,7 @@
       "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
       "raw_path": "artifacts/captures/raw/github-changelog-hero.jpg",
       "publish_path": "assets/screenshots/github-changelog-hero.jpg",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdqiZG5%2FdJMcaf1L5A3%2FAAAAAAAAAAAAAAAAAAAAAGOKm87GiOkrwz5cEbLab_t_i5-x7SD6PHpKUIbowT2U%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYchQioyvO3qbuc61buToPbCZ9SI%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdcO2Vn%2FdJMcagHCf4S%2FAAAAAAAAAAAAAAAAAAAAAEV6NUpw93f0KJf-UsMidHFG2Q17hf6tjqzb2ekNPSrZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FRZZ0jCznle2OJxji7bGw7%252F7zlE%253D",
       "width": 1080,
       "height": 560,
       "display_width": 916,
@@ -29,7 +29,8 @@
       ],
       "redactions": [],
       "sha256": "126f9fe9ca0fb4b515e58056cea58b7adbea42b1f748b0b07c189552cdf9750c",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@dcO2Vn/dJMcagHCf4S/AAAAAAAAAAAAAAAAAAAAAEV6NUpw93f0KJf-UsMidHFG2Q17hf6tjqzb2ekNPSrZ/img.jpg|alignCenter|width=\"100%\" alt=\"GitHub Stacked pull requests 공개 미리보기 제목과 여러 PR을 한 스택으로 병합하는 UI\"|_##]"
     },
     {
       "id": "github-stack-workflow",
@@ -45,7 +46,7 @@
       "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/#create-stacks-from-your-terminal-or-github-com",
       "raw_path": "artifacts/captures/raw/github-stack-workflow.jpg",
       "publish_path": "assets/screenshots/github-stack-workflow.jpg",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FboY17e%2FdJMcajpvwoi%2FAAAAAAAAAAAAAAAAAAAAABUi-6zPeBAfQYoRcGSMhlkt8q60GrviAJrDC2wtCEWK%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D3La8XmGmQa2gBIkTZNcKAFB%252Fgcg%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdfgMp2%2FdJMcahM4r1g%2FAAAAAAAAAAAAAAAAAAAAAPPlCh2BbE9RfCdVhTemR8OCwSaN0sdXcBuNp47u7evm%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DK%252FaxKYQPkNqqrBHkxihciOpo7RU%253D",
       "width": 520,
       "height": 340,
       "display_width": 520,
@@ -59,7 +60,8 @@
       ],
       "redactions": [],
       "sha256": "b51cab514c22406111f8d98b58aa1d70d7ce7180d47d1cfc54132b7772b89aea",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@dfgMp2/dJMcahM4r1g/AAAAAAAAAAAAAAAAAAAAAPPlCh2BbE9RfCdVhTemR8OCwSaN0sdXcBuNp47u7evm/img.jpg|alignCenter|width=\"100%\" alt=\"GitHub 변경 로그의 gh stack init과 add 명령 데모 화면\"|_##]"
     },
     {
       "id": "github-review-map",
@@ -75,7 +77,7 @@
       "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/#review-each-layer-independently",
       "raw_path": "artifacts/captures/raw/github-review-map.jpg",
       "publish_path": "assets/screenshots/github-review-map.jpg",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbkLp7W%2FdJMcajpvwoh%2FAAAAAAAAAAAAAAAAAAAAAM1V38OPZikrDH-SGY3IT3fMomgKu1bTYjHijGYSDdgq%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dt3Zpg%252BYzRZogLcazIbcPsIXaavs%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FAljFt%2FdJMcadcMlek%2FAAAAAAAAAAAAAAAAAAAAABc4xLCT-6HOxMZsT9rZ-MyJcKDOoloOjTgsnYVNX2PZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DvxEfmUNzxg2r9X7Iodfbwmnftik%253D",
       "width": 440,
       "height": 260,
       "display_width": 440,
@@ -88,7 +90,8 @@
       ],
       "redactions": [],
       "sha256": "37cbf19583becd3a220141b89079b913cbaf2205ebf146c9b8569d85d226150f",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@AljFt/dJMcadcMlek/AAAAAAAAAAAAAAAAAAAAABc4xLCT-6HOxMZsT9rZ-MyJcKDOoloOjTgsnYVNX2PZ/img.jpg|alignCenter|width=\"100%\" alt=\"GitHub pull request 화면에서 frontend, api, auth 세 레이어를 보여 주는 stack map\"|_##]"
     },
     {
       "id": "github-merge-stack",
@@ -104,7 +107,7 @@
       "source_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/#merge-everything-in-a-single-click",
       "raw_path": "artifacts/captures/raw/github-merge-stack.jpg",
       "publish_path": "assets/screenshots/github-merge-stack.jpg",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhHxO2%2FdJMcacD7jWw%2FAAAAAAAAAAAAAAAAAAAAADy-IoVUW6li8BCm7pGpHsgbHrgpnyJx-9ydVb0fLkYo%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWW24uBI4%252BiAn7SzHFWtkm%252BzQE%252F4%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fnhygh%2FdJMcadcMlel%2FAAAAAAAAAAAAAAAAAAAAAEhFfEjL5A1lGBp0V68g_GFr_9Gc37lNSxyCL6Wsmm3N%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DqCdMB23mZgCMfn3io5xBYJsrb7E%253D",
       "width": 520,
       "height": 240,
       "display_width": 520,
@@ -118,7 +121,8 @@
       ],
       "redactions": [],
       "sha256": "4b771c6a796c46a1dc68486769b65560223c7d1e02b613560ba656d6c766e8d4",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@nhygh/dJMcadcMlel/AAAAAAAAAAAAAAAAAAAAAEhFfEjL5A1lGBp0V68g_GFr_9Gc37lNSxyCL6Wsmm3N/img.jpg|alignCenter|width=\"100%\" alt=\"세 개 pull request가 Ready 상태로 연결되고 Merge stack 3 버튼이 표시된 GitHub UI\"|_##]"
     }
   ]
 }

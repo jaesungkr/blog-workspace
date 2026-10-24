@@ -1,0 +1,471 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">먹는 탈모약의 부작용이 걱정되거나, 두피에 바르는 새 치료제가 나오는지 궁금한 분이 많습니다. 클라스코테론 5%는 이런 관심을 받는 개발 중 탈모약입니다. 남성형 탈모가 있는 두피에 바르는 용액으로, 기존 먹는 약과 다른 곳에서 남성호르몬의 영향을 막도록 설계됐습니다.</p>
+<p data-ke-size="size16">하지만 아직 병원에서 처방받거나 약국에서 살 수 있는 약은 아닙니다. 3상 임상시험 두 건은 끝났지만, <b>2026년 8월 31일 현재 미국에서도 허가를 신청하기 전이며 국내 허가&middot;출시 일정도 확인되지 않았습니다.</b> 지금은 현재 치료를 바꿀 약이 아니라, 전체 결과와 허가를 기다려야 하는 후보약으로 보는 편이 맞습니다.</p>
+<p data-ke-size="size16">먼저 현재 확인된 내용을 간단히 정리하면 다음과 같습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>궁금한 점</th>
+<th>현재 확인된 내용</th>
+<th>아직 필요한 자료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>지금 쓸 수 있나요?</td>
+<td>아니요. 미국은 허가 신청 전이고 국내 공식 출시 일정도 확인되지 않았습니다.</td>
+<td>미국과 국내의 허가 결과</td>
+</tr>
+<tr>
+<td>임상시험은 끝났나요?</td>
+<td>성인 남성 1,465명이 참여한 3상 두 건이 끝났습니다.</td>
+<td>참가자별 결과와 상세 부작용 자료</td>
+</tr>
+<tr>
+<td>효과는 확인됐나요?</td>
+<td>회사는 약 성분이 없는 용액보다 좋은 결과가 나왔다고 발표했습니다.</td>
+<td>실제 모발 수 변화와 전체 결과표</td>
+</tr>
+<tr>
+<td>기존 약보다 좋은가요?</td>
+<td>직접 비교하지 않아 아직 알 수 없습니다.</td>
+<td>기존 치료와 직접 비교한 연구</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="clascoterone-5-percent-hero"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9Dt03%2FdJMcadJYIxj%2FAAAAAAAAAAAAAAAAAAAAAEyrJ1du09svr2y21zKWVOb-oEoQ6fht2qbsA_Tsm9LK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DiPnFZXI6nRlFR3vW03Z0t4m%252F%252Fvs%253D" alt="겹겹이 표현한 두피 단면에서 푸른 고리가 모낭 주변을 감싸고, 투명한 약물 방울과 호박색 입자가 국소 작용을 상징하는 장면" width="1672" height="941" />
+<figcaption class="devlog-rich__caption">클라스코테론 5%는 DHT 생성량을 낮추는 대신 두피의 안드로겐 수용체를 국소적으로 막도록 개발 중인 후보약입니다.</figcaption>
+<span class="devlog-rich__credit">&middot; 생성 이미지</span></figure>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#아직-쓸-수-없는-개발-중-탈모약">아직 쓸 수 없는 개발 중 탈모약</a></li>
+<li><a href="#기존-탈모약과-다른-작용-위치">기존 탈모약과 다른 작용 위치</a></li>
+<li><a href="#회사가-발표한-539를-읽는-방법">회사가 발표한 539%를 읽는 방법</a></li>
+<li><a href="#처음-효과를-본-사람만-참여한-1년-연구">처음 효과를 본 사람만 참여한 1년 연구</a></li>
+<li><a href="#1년-안전성-발표에-없는-상세-자료">1년 안전성 발표에 없는 상세 자료</a></li>
+<li><a href="#현재-치료를-유지해야-하는-이유">현재 치료를 유지해야 하는 이유</a></li>
+<li><a href="#여드름용-1-크림은-대신-쓸-수-없는-약">여드름용 1% 크림은 대신 쓸 수 없는 약</a></li>
+<li><a href="#2027년-허가-신청-뒤에도-남는-절차">2027년 허가 신청 뒤에도 남는 절차</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="아직-쓸-수-없는-개발-중-탈모약">
+<h2 id="아직-쓸-수-없는-개발-중-탈모약" data-ke-size="size26">아직 쓸 수 없는 개발 중 탈모약</h2>
+<p data-ke-size="size16">클라스코테론은 남성호르몬이 피부에 신호를 보내는 통로를 막는 성분입니다. 미국에는 이 성분을 1% 넣은 여드름 크림 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">WINLEVI</code>가 이미 나와 있습니다. 이 글에서 다루는 제품은 농도 5%의 두피용 용액이며, 탈모약으로 따로 개발되고 있습니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1673a84b-7f5c-47ab-a99c-1e3db21a6a09" target="_blank" rel="noopener">WINLEVI 공식 설명서</a>와 탈모약 임상시험인 <a style="color: #1a73e8; text-decoration: none;" href="https://clinicaltrials.gov/study/NCT05910450" target="_blank" rel="noopener">SCALP 1</a>&middot;<a style="color: #1a73e8; text-decoration: none;" href="https://clinicaltrials.gov/study/NCT05914805" target="_blank" rel="noopener">SCALP 2</a> 기록에서도 두 제품이 구분됩니다.</p>
+<p data-ke-size="size16">두 임상시험에는 가벼운 수준부터 중간 수준까지의 남성형 탈모가 있는 성인 남성이 참여했습니다. 참가자들은 5% 용액 1.5mL를 정수리와 관자 부위에 하루 두 번 발랐습니다. 이 방법은 임상시험에서 정한 사용법이며, 의사가 처방할 수 있도록 승인된 사용법은 아닙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="기존-탈모약과-다른-작용-위치">
+<h2 id="기존-탈모약과-다른-작용-위치" data-ke-size="size26">기존 탈모약과 다른 작용 위치</h2>
+<p data-ke-size="size16">남성형 탈모에는 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">DHT</code>라는 남성호르몬이 관여합니다. 피나스테리드와 두타스테리드는 몸에서 DHT가 만들어지는 양을 줄이는 약입니다. 반면 클라스코테론은 DHT의 양을 줄이기보다, 두피에서 DHT 신호를 받는 통로를 막는 것을 목표로 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://pubmed.ncbi.nlm.nih.gov/38666717/" target="_blank" rel="noopener">2024년에 발표된 탈모 치료 리뷰</a>에서도 이 작용 차이를 확인할 수 있습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>약</th>
+<th>어디에 작용하나요?</th>
+<th>쉽게 말하면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>피나스테리드&middot;두타스테리드</td>
+<td>DHT를 만드는 효소</td>
+<td>몸에서 DHT가 만들어지는 양을 줄입니다.</td>
+</tr>
+<tr>
+<td>클라스코테론 5%</td>
+<td>두피에서 DHT 신호를 받는 통로</td>
+<td>약을 바른 부위에서 DHT 신호를 막는 것을 목표로 합니다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">이처럼 약을 바른 두피에서 주로 작용하도록 만든 점 때문에 관심을 받고 있습니다. 그렇다고 바르는 약은 몸 전체에 영향을 주지 않는다고 단정할 수는 없습니다. 실제 부작용은 5% 두피 용액을 사용한 전체 임상 자료가 공개된 뒤 판단해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="회사가-발표한-539를-읽는-방법">
+<h2 id="회사가-발표한-539를-읽는-방법" data-ke-size="size26">회사가 발표한 539%를 읽는 방법</h2>
+<p data-ke-size="size16">SCALP 1에는 703명, SCALP 2에는 762명이 참여했습니다. 두 시험을 합하면 모두 1,465명입니다. 연구진은 6개월 뒤 정해진 두피 부위에서 굵게 자란 머리카락 수가 얼마나 달라졌는지 셌습니다. 연구에서는 이 수치를 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">TAHC</code>라고 부릅니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://files.schedulr.ch/news-files/7663/714d4f31-6df4-430a-824c-6eb0d6ca82f2.pdf" target="_blank" rel="noopener">개발사가 2025년 12월 공개한 3상 요약</a>에 따르면, 약을 쓴 집단은 약 성분이 없는 용액을 쓴 집단보다 더 나은 결과를 보였습니다. 그 차이를 두 시험에서 각각 5.39배와 1.68배라고 발표했고, 회사는 이를 539%와 168%로도 표시했습니다. 두 시험 모두 통계적으로 의미 있는 차이라고 밝혔습니다(p&lt;0.05).</p>
+<p data-ke-size="size16">여기서 5.39배는 한 사람의 머리카락이 5.39배가 됐다는 뜻이 아닙니다. 두 집단의 <b>개선 폭을 서로 비교한 비율</b>입니다. 약 성분이 없는 용액을 쓴 집단의 변화가 작으면, 실제 머리카락 수 차이가 크지 않아도 상대 비율은 크게 보일 수 있습니다.</p>
+<p data-ke-size="size16">현재 회사 자료에는 각 집단에서 머리카락이 평균 몇 개 늘었는지와 수치가 흔들릴 수 있는 범위가 나오지 않았습니다. 따라서 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">모발이 539% 늘었다</code>거나 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">기존 약보다 5배 강하다</code>고 바꿔 말할 수 없습니다.</p>
+<p data-ke-size="size16">2026년 8월 31일에 ClinicalTrials.gov의 두 기록을 다시 확인했지만 전체 결과표는 아직 게시되지 않았습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://pubmed.ncbi.nlm.nih.gov/?term=%28clascoterone%5BTitle%2FAbstract%5D%29+AND+%28androgenetic+alopecia%5BTitle%2FAbstract%5D+OR+male+pattern+hair+loss%5BTitle%2FAbstract%5D%29" target="_blank" rel="noopener">같은 날 PubMed에서 논문도 검색</a>했으나 SCALP 1&middot;2의 전체 결과를 담은 논문을 찾지 못했습니다. 임상시험이 목표를 달성했다는 소식과 실제로 머리카락이 얼마나 늘었는지는 나눠서 봐야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="처음-효과를-본-사람만-참여한-1년-연구">
+<h2 id="처음-효과를-본-사람만-참여한-1년-연구" data-ke-size="size26">처음 효과를 본 사람만 참여한 1년 연구</h2>
+<p data-ke-size="size16">처음 6개월이 끝난 뒤에는 연구를 6개월 더 진행했습니다. 다만 처음 참여한 1,465명 모두가 연장 연구에 들어간 것은 아닙니다. 첫 6개월 동안 자신이 효과를 느꼈다고 답한 참가자를 골라, 클라스코테론 5%를 계속 쓰는 집단과 약 성분이 없는 용액으로 바꾸는 집단 등으로 다시 나눴습니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://files.schedulr.ch/news-files/8365/439087a1-8c04-4d60-ba05-aac2aa2158ae.pdf" target="_blank" rel="noopener">개발사가 2026년 4월 발표한 12개월 자료</a>에 따르면, 계속 약을 쓴 집단은 중간에 약 성분이 없는 용액으로 바꾼 집단보다 TAHC 개선 폭이 2.39배 컸습니다. 치료 만족도도 상대적으로 24.5% 높았다고 발표했습니다. 중간에 약을 끊은 집단에서는 앞서 늘었던 모발 수가 다시 줄어드는 방향이 나타났습니다.</p>
+<p data-ke-size="size16">이 결과는 효과를 유지하려면 계속 발라야 할 가능성을 보여 줍니다. 다만 처음 효과를 느낀 사람만 고른 결과이므로, 모든 참가자가 1년 동안 같은 효과를 봤다고 해석할 수는 없습니다. 한 번만 치료하면 효과가 계속 남는다는 뜻도 아닙니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="1년-안전성-발표에-없는-상세-자료">
+<h2 id="1년-안전성-발표에-없는-상세-자료" data-ke-size="size26">1년 안전성 발표에 없는 상세 자료</h2>
+<p data-ke-size="size16">개발사는 12개월 동안 나타난 부작용과 치료를 계속할 수 있었던 정도가 약 성분이 없는 용액과 비슷했다고 밝혔습니다. 몸 전체의 호르몬과 관련된 뚜렷한 부작용도 관찰되지 않았다고 발표했습니다. 오래 써야 하는 탈모약이라는 점에서는 반가운 소식입니다.</p>
+<p data-ke-size="size16">그러나 이 발표만으로 전신 부작용이 전혀 없다고 단정하기에는 이릅니다. 공개된 자료에는 어떤 부작용이 몇 명에게 나타났는지, 부작용 때문에 치료를 중단한 사람이 얼마나 되는지, 검사 수치가 어떻게 변했는지가 모두 나오지 않았습니다. 전문가 심사를 거친 3상 논문도 아직 나오지 않았습니다.</p>
+<p data-ke-size="size16">여드름용 1% 크림의 <a style="color: #1a73e8; text-decoration: none;" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1673a84b-7f5c-47ab-a99c-1e3db21a6a09" target="_blank" rel="noopener">공식 설명서</a>에는 피부가 붉어지거나 가렵고 건조해지는 증상이 적혀 있습니다. 몸의 호르몬 조절 기능인 HPA축이 억제될 가능성도 안내합니다. 다만 1% 크림과 5% 두피 용액은 농도와 형태, 바르는 부위가 다릅니다. 1% 크림의 부작용 수치를 5% 용액에 그대로 적용할 수도 없고, 1% 크림이 이미 쓰인다는 이유로 5% 용액도 안전하다고 말할 수도 없습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="현재-치료를-유지해야-하는-이유">
+<h2 id="현재-치료를-유지해야-하는-이유" data-ke-size="size26">현재 치료를 유지해야 하는 이유</h2>
+<p data-ke-size="size16">SCALP 1&middot;2는 클라스코테론 5%를 피나스테리드나 미녹시딜과 비교한 시험이 아닙니다. 비교 대상은 약 성분이 없는 용액이었습니다. 따라서 이번 결과만으로 클라스코테론 5%가 기존 치료보다 효과가 좋은지, 기존 약을 끊고 바꿔도 되는지 알 수 없습니다. 다른 탈모약과 함께 쓰면 효과가 더 커지는지도 확인하지 않았습니다.</p>
+<p data-ke-size="size16">참가자가 가벼운 수준부터 중간 수준까지의 남성형 탈모가 있는 성인 남성이었다는 점도 기억해야 합니다. 여성형 탈모나 심한 탈모에서도 같은 효과와 안전성이 나타날지는 아직 알 수 없습니다.</p>
+<p data-ke-size="size16">현재 치료 중이라면 새 후보약 소식만 보고 약을 중단하거나 바꿀 이유가 없습니다. 효과가 부족하거나 부작용이 걱정된다면 피부과에서 탈모의 원인과 현재 치료 반응부터 확인하는 편이 안전합니다. 클라스코테론 5%는 지금 갈아탈 약이 아니라, 전체 자료와 허가 결과를 기다릴 새 선택지에 가깝습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="여드름용-1-크림은-대신-쓸-수-없는-약">
+<h2 id="여드름용-1-크림은-대신-쓸-수-없는-약" data-ke-size="size26">여드름용 1% 크림은 대신 쓸 수 없는 약</h2>
+<p data-ke-size="size16">이미 판매되는 클라스코테론 1% 크림을 두피에 바르면 5% 탈모약을 미리 쓰는 것과 같을까요? 그렇지 않습니다. 두 제품은 성분만 같을 뿐 농도가 다섯 배 다릅니다. 하나는 피부에 바르는 크림이고, 다른 하나는 두피에 바르는 용액입니다. 1% 크림이 허가받은 용도도 탈모가 아니라 여드름입니다.</p>
+<p data-ke-size="size16">1% 크림을 두피에 바른다고 5% 용액의 임상시험 결과를 기대할 근거는 없습니다. 크림과 용액은 두피에 퍼지는 정도도 다를 수 있습니다. 아직 나오지 않은 탈모약을 대신하려고 여드름 치료제를 임의로 두피에 바르면 안 됩니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="2027년-허가-신청-뒤에도-남는-절차">
+<h2 id="2027년-허가-신청-뒤에도-남는-절차" data-ke-size="size26">2027년 허가 신청 뒤에도 남는 절차</h2>
+<p data-ke-size="size16">개발사는 <a style="color: #1a73e8; text-decoration: none;" href="https://www.cosmohealthconfidence.com/news/64300770-h1-2026" target="_blank" rel="noopener">2026년 7월 반기 실적 발표</a>에서 미국에는 2027년 1분기, 유럽에는 2027년 2분기에 허가를 신청할 계획이라고 밝혔습니다. 미국의 신약허가신청은 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">NDA</code>라고 부릅니다. 이 일정은 약을 출시하는 날이 아니라, 허가 심사에 필요한 자료를 제출하려는 시점입니다.</p>
+<p data-ke-size="size16">자료를 예정대로 내더라도 규제기관의 심사와 보완 요구가 이어질 수 있습니다. 허가를 받은 뒤에는 생산과 유통도 준비해야 합니다. 국내 허가 신청과 출시 일정은 아직 공식적으로 확인되지 않았습니다. 지금 단계에서 국내 판매 연도나 가격을 예상하기는 어렵습니다.</p>
+<p data-ke-size="size16">다음 발표가 나오면 다음 네 가지를 먼저 확인할 필요가 있습니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>약을 쓴 집단과 약 성분이 없는 용액을 쓴 집단에서 머리카락이 실제로 몇 개 늘었는지 확인해야 합니다.</li>
+<li>결과가 달라질 수 있는 범위인 신뢰구간을 확인해야 합니다.</li>
+<li>처음 참여한 사람 전체의 분석 결과를 확인해야 합니다.</li>
+<li>부작용의 종류와 발생률, 최종 허가 내용을 확인해야 합니다.</li>
+</ul>
+<p data-ke-size="size16">이 자료가 공개돼야 클라스코테론 5%가 기존 치료를 보완할 약인지, 일부 환자에게 새로운 선택지가 될 수 있는지 판단할 수 있습니다.</p>
+<p data-ke-size="size16">그전까지는 새 후보약 소식만 보고 현재 치료를 임의로 바꾸지 않는 것이 안전합니다.</p>
+</section>
+</article>

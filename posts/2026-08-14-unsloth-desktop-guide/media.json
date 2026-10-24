@@ -18,7 +18,7 @@
       "source_url": "https://unsloth.ai/docs/desktop",
       "raw_path": "artifacts/media-candidates/hero-official.png",
       "publish_path": "assets/unsloth-desktop-overview-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FEtfV6%2FdJMcadQxHiT%2FAAAAAAAAAAAAAAAAAAAAAKYOT-3rLDwgO2Pskg4v_7JAyD_S40OkNP6CU8F7LgRO%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Do3RVfbY75iHsFCa1xGYtM08Gmuw%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FccfD8y%2FdJMcag8r96G%2FAAAAAAAAAAAAAAAAAAAAAHUoZ31qkYb0l4RHgEAm0Go7g1HUFmAQClmiwM25e7xN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DTE%252FuDGTNtZ0lWBPGfBigcJoKsX8%253D",
       "width": 2560,
       "height": 1600,
       "display_width": 916,
@@ -31,7 +31,8 @@
       ],
       "redactions": [],
       "sha256": "3e18987c29e355fe6f82e735136411cf765cc5ca51010ac1530a6fb7743b92a5",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@ccfD8y/dJMcag8r96G/AAAAAAAAAAAAAAAAAAAAAHUoZ31qkYb0l4RHgEAm0Go7g1HUFmAQClmiwM25e7xN/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=TE%2FuDGTNtZ0lWBPGfBigcJoKsX8%3D|CDM|1.3|{\"originWidth\":2560,\"originHeight\":1600,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop의 왼쪽 메뉴에 Model hub, Projects, Images, Train이 보이고 Qwen3.8 GGUF 모델이 선택된 공식 화면\"}_##]"
     },
     {
       "id": "unsloth-desktop-model-select",
@@ -47,7 +48,7 @@
       "source_url": "https://unsloth.ai/docs/desktop#get-started",
       "raw_path": "artifacts/media-candidates/permissions-official.png",
       "publish_path": "assets/unsloth-desktop-model-select-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F15TU0%2FdJMcaiK5Gg0%2FAAAAAAAAAAAAAAAAAAAAAEWvD-3YP4kujfZ14_R5_X24wjhBYsXMlJRyG7JiraFW%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDUfmscZKgFaNb9CriuQRrCxgo6s%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FphoVp%2FdJMcaien6Vk%2FAAAAAAAAAAAAAAAAAAAAACw7v4PM7yL32QVywIaUZ9zG4zW7fudc4Nj43oVY5F0y%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DrcH5D7iSO%252BmU7nTvr4pYcUHv9ZI%253D",
       "width": 1124,
       "height": 544,
       "display_width": 916,
@@ -61,7 +62,8 @@
       ],
       "redactions": [],
       "sha256": "16718cbbd5b67072cfec6bc4fa2ab2a8f30877e50738dd6092d88940d9a69d3d",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@phoVp/dJMcaien6Vk/AAAAAAAAAAAAAAAAAAAAACw7v4PM7yL32QVywIaUZ9zG4zW7fudc4Nj43oVY5F0y/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=rcH5D7iSO%2BmU7nTvr4pYcUHv9ZI%3D|CDM|1.3|{\"originWidth\":1124,\"originHeight\":544,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop Select model 드롭다운에 Recommended, On Device, Search Hub와 모델별 크기가 표시된 공식 화면\"}_##]"
     },
     {
       "id": "unsloth-desktop-train-setup",
@@ -79,7 +81,7 @@
       "source_url": "https://unsloth.ai/docs/desktop#train-with-no-code",
       "raw_path": "artifacts/media-candidates/training-first-frame.png",
       "publish_path": "assets/unsloth-desktop-train-setup-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbkdjjv%2FdJMcadJLjhb%2FAAAAAAAAAAAAAAAAAAAAACcU8TTyqGFNBWvMRlLCyngb0aKb3-1Og0Am-RLV0die%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dxgmg7nPSrk1m845Mx8ypw%252B%252Fgxz4%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFNhkI%2FdJMcag8r96M%2FAAAAAAAAAAAAAAAAAAAAAPnX_85mdnR12VqHqqhXJe2rqMW1QQsqiCQFW0bSD3H_%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D7r636yN5ZXwrCl9bgM8%252FaZ7ZbpI%253D",
       "width": 1212,
       "height": 720,
       "display_width": 916,
@@ -93,7 +95,8 @@
       ],
       "redactions": [],
       "sha256": "3fe5a38d4c7cd4581020e806a81e1d6e1731bb3ef3df5f807c85bfef770d9e99",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bFNhkI/dJMcag8r96M/AAAAAAAAAAAAAAAAAAAAAPnX_85mdnR12VqHqqhXJe2rqMW1QQsqiCQFW0bSD3H_/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=7r636yN5ZXwrCl9bgM8%2FaZ7ZbpI%3D|CDM|1.3|{\"originWidth\":1212,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop Train Configure 화면에 Qwen3.5 모델, QLoRA 방식, FineTome 데이터셋과 Run preview가 보이는 공식 데모 프레임\"}_##]"
     },
     {
       "id": "unsloth-desktop-training-progress",
@@ -109,7 +112,7 @@
       "source_url": "https://unsloth.ai/docs/desktop#train-with-no-code",
       "raw_path": "artifacts/media-candidates/training-progress-official-frame.jpg",
       "publish_path": "assets/unsloth-desktop-training-progress-v1.jpg",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbVFyYZ%2FdJMcahZJvN7%2FAAAAAAAAAAAAAAAAAAAAAJ5T8xxdmx_CwNGDfcjt8xgPrGbyjhhx-OcFZFgIceZm%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DHQ55cFLJs9tSa4YGTY2gXa3Z4QQ%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNJb4d%2FdJMcag8r96N%2FAAAAAAAAAAAAAAAAAAAAAAB9a_xxVt4hkWNLNTYXuWGDPV7lPMhkHbVS_EI70ocP%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFj7gwuSt3invFmfI92VJ%252BRvIF9I%253D",
       "width": 1212,
       "height": 720,
       "display_width": 916,
@@ -123,7 +126,8 @@
       ],
       "redactions": [],
       "sha256": "3d98928bb15331c81971c83957cb3ff383dbef78c6f02f961c497c17b6fb9b8c",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@NJb4d/dJMcag8r96N/AAAAAAAAAAAAAAAAAAAAAAB9a_xxVt4hkWNLNTYXuWGDPV7lPMhkHbVS_EI70ocP/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=Fj7gwuSt3invFmfI92VJ%2BRvIF9I%3D|CDM|1.3|{\"originWidth\":1212,\"originHeight\":720,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Unsloth Desktop Current Run 화면에 Training in progress, waiting for first step 0, 데이터셋과 모델 가중치 다운로드 99퍼센트가 함께 보이는 공식 데모 프레임\"}_##]"
     }
   ]
 }

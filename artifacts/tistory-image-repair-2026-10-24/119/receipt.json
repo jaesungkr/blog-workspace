@@ -1,0 +1,93 @@
+{
+  "id": 119,
+  "title": "빌 게이츠의 AI 경고, 일자리 보호와 로봇세는 답이 될까",
+  "url": "https://dop3n.tistory.com/entry/%EB%B9%8C-%EA%B2%8C%EC%9D%B4%EC%B8%A0%EC%9D%98-AI-%EA%B2%BD%EA%B3%A0-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EB%B3%B4%ED%98%B8%EC%99%80-%EB%A1%9C%EB%B4%87%EC%84%B8%EB%8A%94-%EB%8B%B5%EC%9D%B4-%EB%90%A0%EA%B9%8C",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-28-bill-gates-ai-transition-plan",
+  "images": [
+    {
+      "alt": "푸른 배경 앞에서 고개를 괴고 생각하는 Bill Gates를 색면으로 표현한 일러스트",
+      "complete": true,
+      "h": 680,
+      "id": "bill-gates-source-portrait",
+      "index": 0,
+      "rect": {
+        "bottom": 1301.234375,
+        "height": 658.734375,
+        "left": 272,
+        "right": 1008,
+        "top": 642.5,
+        "width": 736,
+        "x": 272,
+        "y": 642.5
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fctwb6O%2FdJMcadjObkJ%2FAAAAAAAAAAAAAAAAAAAAAN6ysPJ_79mudNvdJ6VawqWqnw_6bZBSrR8IJLsaqo2r%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DIk9Ei8mQ6P41nnQfMv3Hj%252F4YT%252BQ%253D",
+      "w": 760
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "푸른 배경 앞에서 고개를 괴고 생각하는 Bill Gates를 색면으로 표현한 일러스트",
+      "complete": true,
+      "h": 680,
+      "id": "bill-gates-source-portrait",
+      "index": 0,
+      "rect": {
+        "bottom": 582.0625,
+        "height": 257.890625,
+        "left": 36,
+        "right": 324,
+        "top": 324.171875,
+        "width": 288,
+        "x": 36,
+        "y": 324.171875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fctwb6O%2FdJMcadjObkJ%2FAAAAAAAAAAAAAAAAAAAAAN6ysPJ_79mudNvdJ6VawqWqnw_6bZBSrR8IJLsaqo2r%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DIk9Ei8mQ6P41nnQfMv3Hj%252F4YT%252BQ%253D",
+      "w": 760
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-29 00:10"
+    ],
+    "public": true,
+    "slug": "빌-게이츠의-AI-경고-일자리-보호와-로봇세는-답이-될까"
+  },
+  "uploads": [
+    {
+      "id": "bill-gates-source-portrait",
+      "rawToken": "[##_Image|kage@ctwb6O/dJMcadjObkJ/AAAAAAAAAAAAAAAAAAAAAN6ysPJ_79mudNvdJ6VawqWqnw_6bZBSrR8IJLsaqo2r/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-28-bill-gates-ai-transition-plan/assets/bill-gates-source-portrait.jpg",
+      "sha256": "4feee5791aa7bd2335b796cee93360b8c7f2f7ac07e0c74fbb69d8810f40cb21",
+      "embed": "[##_Image|kage@ctwb6O/dJMcadjObkJ/AAAAAAAAAAAAAAAAAAAAAN6ysPJ_79mudNvdJ6VawqWqnw_6bZBSrR8IJLsaqo2r/img.jpg|alignCenter|width=\"100%\" alt=\"푸른 배경 앞에서 고개를 괴고 생각하는 Bill Gates를 색면으로 표현한 일러스트\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "푸른 배경 앞에서 고개를 괴고 생각하는 Bill Gates를 색면으로 표현한 일러스트",
+      "complete": true,
+      "h": 680,
+      "id": "bill-gates-source-portrait",
+      "index": 0,
+      "rect": {
+        "bottom": 1301.234375,
+        "height": 658.734375,
+        "left": 212,
+        "right": 948,
+        "top": 642.5,
+        "width": 736,
+        "x": 212,
+        "y": 642.5
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fctwb6O%2FdJMcadjObkJ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VgXh1fv4Iu8uwkmi-1-5MBNn8QeytBqBzXwyi2H-eMr60aJwM-u4f9KT3QEnVYkNYhwznKhxN285R4xw0nEl4n%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DJZTGM2dx9%252FNpst%252BZ1U7pP3Kxgm8%253D",
+      "w": 760
+    }
+  ],
+  "totalImages": 1,
+  "repairedImages": 1,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:28:20.885Z"
+}

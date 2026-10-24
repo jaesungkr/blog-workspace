@@ -1,0 +1,294 @@
+{
+  "id": 127,
+  "title": "GPT-6 Astra vs. Fable 5.1 - AI 모델 비교",
+  "url": "https://dop3n.tistory.com/entry/GPT-6-Astra-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1",
+  "images": [
+    {
+      "alt": "GPT-6 Astra의 금색 커서와 Fable 5.1의 보라색 문서 조형물을 같은 비중으로 배치한 비교 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "astra-fable-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1421.84375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 1006.96875,
+        "width": 736,
+        "x": 272,
+        "y": 1006.96875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Ft3hiv%2FdJMcahM4rGO%2FAAAAAAAAAAAAAAAAAAAAAHA8miQD0wOSLQSx1i5yzugpRQt1Vt6raauaS5Fke26d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DzQguXo8PkcjPv%252F1nwrLsAVl%252FYM4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "검은 별 무늬 배경에 GPT와 Astra가 표시된 OpenAI 발표 화면",
+      "complete": true,
+      "h": 720,
+      "id": "openai-astra-launch",
+      "index": 1,
+      "rect": {
+        "bottom": 2631.484375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 2216.609375,
+        "width": 736,
+        "x": 272,
+        "y": 2216.609375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FESQea%2FdJMb992GXcy%2FAAAAAAAAAAAAAAAAAAAAALZVgZ6CIlZ6v5VTVK-DHzL0TEVjtGBAA3Z5LttP_2o3%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dz%252BFTVHsICcDygJGMf78Idsur%252FUA%253D",
+      "w": 1280
+    },
+    {
+      "alt": "푸른 하늘 배경에 Claude Fable 5.1과 Mythos 5.1이 표시된 출시 화면",
+      "complete": true,
+      "h": 720,
+      "id": "anthropic-fable-launch",
+      "index": 2,
+      "rect": {
+        "bottom": 3278.9921875,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 2864.1171875,
+        "width": 736,
+        "x": 272,
+        "y": 2864.1171875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fco4W53%2FdJMcagAGNs3%2FAAAAAAAAAAAAAAAAAAAAAGNEojkIKd7T44hdCuroHzOvO7fVtaEUTJuSkEJ9Qj1n%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVrr21mntkqOc2vKP0WckaBcIElU%253D",
+      "w": 1280
+    },
+    {
+      "alt": "과학 연구 작업 해결률을 세로축, API 비용을 가로축으로 표시한 Astra와 Fable 비교 그래프",
+      "complete": true,
+      "h": 540,
+      "id": "openai-astra-science",
+      "index": 3,
+      "rect": {
+        "bottom": 5329.25,
+        "height": 540.1875,
+        "left": 342,
+        "right": 938,
+        "top": 4789.0625,
+        "width": 596,
+        "x": 342,
+        "y": 4789.0625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FctrP0N%2FdJMcagAGNtd%2FAAAAAAAAAAAAAAAAAAAAAGC5RXdJDKAJinGbQe8T2q1r6d_kjZnB7ZkG-b1CTAGE%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DvnVKFMerfrBP3d7%252FuXfGkaSZ9DY%253D",
+      "w": 596
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "GPT-6 Astra의 금색 커서와 Fable 5.1의 보라색 문서 조형물을 같은 비중으로 배치한 비교 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "astra-fable-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 691.65625,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 528.78125,
+        "width": 288,
+        "x": 36,
+        "y": 528.78125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Ft3hiv%2FdJMcahM4rGO%2FAAAAAAAAAAAAAAAAAAAAAHA8miQD0wOSLQSx1i5yzugpRQt1Vt6raauaS5Fke26d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DzQguXo8PkcjPv%252F1nwrLsAVl%252FYM4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "검은 별 무늬 배경에 GPT와 Astra가 표시된 OpenAI 발표 화면",
+      "complete": true,
+      "h": 720,
+      "id": "openai-astra-launch",
+      "index": 1,
+      "rect": {
+        "bottom": 1819.5625,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 1656.6875,
+        "width": 288,
+        "x": 36,
+        "y": 1656.6875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FESQea%2FdJMb992GXcy%2FAAAAAAAAAAAAAAAAAAAAALZVgZ6CIlZ6v5VTVK-DHzL0TEVjtGBAA3Z5LttP_2o3%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dz%252BFTVHsICcDygJGMf78Idsur%252FUA%253D",
+      "w": 1280
+    },
+    {
+      "alt": "푸른 하늘 배경에 Claude Fable 5.1과 Mythos 5.1이 표시된 출시 화면",
+      "complete": true,
+      "h": 720,
+      "id": "anthropic-fable-launch",
+      "index": 2,
+      "rect": {
+        "bottom": 2374.9375,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 2212.0625,
+        "width": 288,
+        "x": 36,
+        "y": 2212.0625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fco4W53%2FdJMcagAGNs3%2FAAAAAAAAAAAAAAAAAAAAAGNEojkIKd7T44hdCuroHzOvO7fVtaEUTJuSkEJ9Qj1n%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVrr21mntkqOc2vKP0WckaBcIElU%253D",
+      "w": 1280
+    },
+    {
+      "alt": "과학 연구 작업 해결률을 세로축, API 비용을 가로축으로 표시한 Astra와 Fable 비교 그래프",
+      "complete": true,
+      "h": 540,
+      "id": "openai-astra-science",
+      "index": 3,
+      "rect": {
+        "bottom": 5370.984375,
+        "height": 261.125,
+        "left": 36,
+        "right": 324,
+        "top": 5109.859375,
+        "width": 288,
+        "x": 36,
+        "y": 5109.859375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FctrP0N%2FdJMcagAGNtd%2FAAAAAAAAAAAAAAAAAAAAAGC5RXdJDKAJinGbQe8T2q1r6d_kjZnB7ZkG-b1CTAGE%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DvnVKFMerfrBP3d7%252FuXfGkaSZ9DY%253D",
+      "w": 596
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-06 10:53"
+    ],
+    "public": true,
+    "slug": "GPT-6-Astra-vs-Fable-51-AI-모델-비교"
+  },
+  "uploads": [
+    {
+      "id": "astra-fable-hero",
+      "rawToken": "[##_Image|kage@t3hiv/dJMcahM4rGO/AAAAAAAAAAAAAAAAAAAAAHA8miQD0wOSLQSx1i5yzugpRQt1Vt6raauaS5Fke26d/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/assets/gpt-6-astra-vs-fable-5-1-hero.png",
+      "sha256": "e3815edcfc6d784623d9c4809533e4731775d6c4e1e7c6cc496acb37f47e4b66",
+      "embed": "[##_Image|kage@t3hiv/dJMcahM4rGO/AAAAAAAAAAAAAAAAAAAAAHA8miQD0wOSLQSx1i5yzugpRQt1Vt6raauaS5Fke26d/img.png|alignCenter|width=\"100%\" alt=\"GPT-6 Astra의 금색 커서와 Fable 5.1의 보라색 문서 조형물을 같은 비중으로 배치한 비교 이미지\"|_##]"
+    },
+    {
+      "id": "openai-astra-launch",
+      "rawToken": "[##_Image|kage@ESQea/dJMb992GXcy/AAAAAAAAAAAAAAAAAAAAALZVgZ6CIlZ6v5VTVK-DHzL0TEVjtGBAA3Z5LttP_2o3/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/assets/openai-astra-launch.jpg",
+      "sha256": "9871c8856c339ebb9b9788ede1bd1c5b03aba4f39fb5cf42f9f939c69a8d9a2b",
+      "embed": "[##_Image|kage@ESQea/dJMb992GXcy/AAAAAAAAAAAAAAAAAAAAALZVgZ6CIlZ6v5VTVK-DHzL0TEVjtGBAA3Z5LttP_2o3/img.jpg|alignCenter|width=\"100%\" alt=\"검은 별 무늬 배경에 GPT와 Astra가 표시된 OpenAI 발표 화면\"|_##]"
+    },
+    {
+      "id": "anthropic-fable-launch",
+      "rawToken": "[##_Image|kage@co4W53/dJMcagAGNs3/AAAAAAAAAAAAAAAAAAAAAGNEojkIKd7T44hdCuroHzOvO7fVtaEUTJuSkEJ9Qj1n/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/assets/anthropic-fable-launch.jpg",
+      "sha256": "b6da7fc7934bd0311b7758af2c063a07c8eab703b4e8d8cce2d05530ebc800d0",
+      "embed": "[##_Image|kage@co4W53/dJMcagAGNs3/AAAAAAAAAAAAAAAAAAAAAGNEojkIKd7T44hdCuroHzOvO7fVtaEUTJuSkEJ9Qj1n/img.jpg|alignCenter|width=\"100%\" alt=\"푸른 하늘 배경에 Claude Fable 5.1과 Mythos 5.1이 표시된 출시 화면\"|_##]"
+    },
+    {
+      "id": "openai-astra-science",
+      "rawToken": "[##_Image|kage@ctrP0N/dJMcagAGNtd/AAAAAAAAAAAAAAAAAAAAAGC5RXdJDKAJinGbQe8T2q1r6d_kjZnB7ZkG-b1CTAGE/img.jpg|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-06-gpt-6-astra-vs-fable-5-1/assets/openai-astra-science-chart.jpg",
+      "sha256": "8dd176365344a81fc943d202e9e2eec38ce4f6bda59da9d332732185de86b0ee",
+      "embed": "[##_Image|kage@ctrP0N/dJMcagAGNtd/AAAAAAAAAAAAAAAAAAAAAGC5RXdJDKAJinGbQe8T2q1r6d_kjZnB7ZkG-b1CTAGE/img.jpg|alignCenter|width=\"100%\" alt=\"과학 연구 작업 해결률을 세로축, API 비용을 가로축으로 표시한 Astra와 Fable 비교 그래프\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "GPT-6 Astra의 금색 커서와 Fable 5.1의 보라색 문서 조형물을 같은 비중으로 배치한 비교 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "astra-fable-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1115.84375,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 700.96875,
+        "width": 736,
+        "x": 212,
+        "y": 700.96875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Ft3hiv%2FdJMcahM4rGO%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UP_hKi592llC46niDxVVtszfPMY7Ce7tdw3WbjyWDq56sX77CtnwNNgt1M4hmtL2aIy5hLLVaOe49LtXsAS5oB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DJs%252FUpQF9plTDphPXE20h%252BoeGNlU%253D",
+      "w": 1280
+    },
+    {
+      "alt": "검은 별 무늬 배경에 GPT와 Astra가 표시된 OpenAI 발표 화면",
+      "complete": true,
+      "h": 720,
+      "id": "openai-astra-launch",
+      "index": 1,
+      "rect": {
+        "bottom": 2325.484375,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 1910.609375,
+        "width": 736,
+        "x": 212,
+        "y": 1910.609375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FESQea%2FdJMb992GXcy%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WlyCn-Pf4yl1yda9KPZlUWjryXw9uzXqIfP0_FZzXkQ4a6xpnaLrEHK4vYymYf6aSjucTom0usRhyVQSUDW613%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3De31Y4aXx2pNLkhHvd4SuEv4sWmg%253D",
+      "w": 1280
+    },
+    {
+      "alt": "푸른 하늘 배경에 Claude Fable 5.1과 Mythos 5.1이 표시된 출시 화면",
+      "complete": true,
+      "h": 720,
+      "id": "anthropic-fable-launch",
+      "index": 2,
+      "rect": {
+        "bottom": 2972.9921875,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 2558.1171875,
+        "width": 736,
+        "x": 212,
+        "y": 2558.1171875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fco4W53%2FdJMcagAGNs3%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UcRE3fYskJ7Y2mDmErL12KS1GItKFcSejivWena9mzMN8-LKL4lQIO6yZwPC3jyFnLLavPV3_L14v97FdnD97i%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Du9d24ujdZz%252BmE7M2HdokQXBdPLA%253D",
+      "w": 1280
+    },
+    {
+      "alt": "과학 연구 작업 해결률을 세로축, API 비용을 가로축으로 표시한 Astra와 Fable 비교 그래프",
+      "complete": true,
+      "h": 540,
+      "id": "openai-astra-science",
+      "index": 3,
+      "rect": {
+        "bottom": 5023.25,
+        "height": 540.1875,
+        "left": 282,
+        "right": 878,
+        "top": 4483.0625,
+        "width": 596,
+        "x": 282,
+        "y": 4483.0625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FctrP0N%2FdJMcagAGNtd%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Wa8DfGqWSVv8JjC-jSfXJS4vpWLKiVHEsaD0SbyAV9p1rQjzJZnxmJ3wX2q0cMqYJb_jeScTIpS1gpRvpHNcUE%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dp7yTU7um9l0BKMz81WgTi3cnSeg%253D",
+      "w": 596
+    }
+  ],
+  "totalImages": 4,
+  "repairedImages": 4,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:35:08.954Z"
+}

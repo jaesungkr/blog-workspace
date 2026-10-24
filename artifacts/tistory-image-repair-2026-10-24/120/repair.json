@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 120,
+  "title": "세관에서 부름받은 마태",
+  "url": "https://dop3n.tistory.com/entry/%EC%84%B8%EA%B4%80%EC%97%90%EC%84%9C-%EB%B6%80%EB%A6%84%EB%B0%9B%EC%9D%80-%EB%A7%88%ED%83%9C",
+  "checked_at": "2026-10-24T03:44:39.286Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "c7941294d1688126f654c56a8b69657c15577544b26be04eb9913b9500009aac",
+  "submitted_sha256": "9dde286e0b12e8fcc60c15fb48970cc00fdc82f809605307c1d7810297a60469",
+  "metadata": {
+    "dates": [
+      "2026-08-29 00:05"
+    ],
+    "public": true,
+    "slug": "세관에서-부름받은-마태"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

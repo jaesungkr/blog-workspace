@@ -17,7 +17,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/raw/git-worktree-hero-v1.png",
       "publish_path": "assets/graphics/git-worktree-hero-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdNhDpk%2FdJMcabMeRfo%2FAAAAAAAAAAAAAAAAAAAAANZmYsarHm7I-iOUISA6BQfiNRwNOs0QO81xJPfY4OFv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D1rjpFBzd0dTN%252FZoCmZ2Nj9OxRSc%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbgpNeR%2FdJMcaaUKs6t%2FAAAAAAAAAAAAAAAAAAAAAMjX_ZHcnS4pZ_CMpM5uhoWI1CqvrIKbGd8FsyvODLSP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DisougorBBSm8hVWbPqs5aZ2T3Mw%253D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -31,7 +31,8 @@
       ],
       "redactions": [],
       "sha256": "b46c46d09978d364e4c1c222ab5d28915fe91c5252e904328fe45b7f40fbe039",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bgpNeR/dJMcaaUKs6t/AAAAAAAAAAAAAAAAAAAAAMjX_ZHcnS4pZ_CMpM5uhoWI1CqvrIKbGd8FsyvODLSP/img.png|alignCenter|width=\"100%\" alt=\"하나의 Git 저장소에서 두 개의 작업 폴더와 커밋 경로가 갈라졌다가 검토 지점에서 다시 만나는 장면\"|_##]"
     },
     {
       "id": "worktree-map",
@@ -48,7 +49,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/raw/worktree-map-infographic-v5.png",
       "publish_path": "assets/graphics/worktree-map-infographic-v5.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbAbvnn%2FdJMcabMeRfn%2FAAAAAAAAAAAAAAAAAAAAADmmFZzjGwgwVKYvEfOOwTIucX7TAEDjou5j8juaheat%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0UfYCuAk87Do357EmArOWK3kcE0%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FVwDBZ%2FdJMcaaUKs6u%2FAAAAAAAAAAAAAAAAAAAAAEDrJL2pmQFWClHHdZrWK7CgmLZzZ30JwVzaOQvUZH-w%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DB%252FFFnNKU2XLlEY22zabyIzKUSuM%253D",
       "width": 1080,
       "height": 1080,
       "display_width": 720,
@@ -63,7 +64,8 @@
       ],
       "redactions": [],
       "sha256": "1578139934f1ad79e0478513b2ada5979644e73cc23ee11872c5129439c8df61",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@VwDBZ/dJMcaaUKs6u/AAAAAAAAAAAAAAAAAAAAAEDrJL2pmQFWClHHdZrWK7CgmLZzZ30JwVzaOQvUZH-w/img.png|alignCenter|width=\"100%\" alt=\"하나의 Git 저장소가 main, Claude, Codex 세 작업 폴더와 연결되고 각 폴더에는 별도 HEAD, index, 작업 파일이 있는 구조도\"|_##]"
     },
     {
       "id": "worktree-baseline",
@@ -140,7 +142,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/raw/03-list-worktrees-v4.png",
       "publish_path": "assets/screenshots/03-list-worktrees-v4.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fmz6bR%2FdJMcaixLbLj%2FAAAAAAAAAAAAAAAAAAAAALg_MKNdmjMWfOQju2VoILGr38eahwPQDg5QWa1pVYsB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DWKJVYeTZcVb0GC1M%252FInJZLb5ONM%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcEsGnD%2FdJMcaaUKs6x%2FAAAAAAAAAAAAAAAAAAAAAL-WPduLsKQIiF8R9Bfdj-sU4y0MKHLWJKBLYGO6ENFG%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtI5BMg1rnhYGs4kIqoDNKJUDk1A%253D",
       "width": 720,
       "height": 800,
       "display_width": 720,
@@ -157,7 +159,8 @@
         "temporary absolute path replaced with ~/worktree-demo"
       ],
       "sha256": "26d82750be594072a568312eeca0ac3abb518640eb94d1b018bdc026bf8812d1",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@cEsGnD/dJMcaaUKs6x/AAAAAAAAAAAAAAAAAAAAAL-WPduLsKQIiF8R9Bfdj-sU4y0MKHLWJKBLYGO6ENFG/img.png|alignCenter|width=\"100%\" alt=\"main, feat/home-copy, docs/agent-rule 세 worktree의 경로와 브랜치를 보여 주는 목록\"|_##]"
     },
     {
       "id": "worktree-isolated-status",
@@ -173,7 +176,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/raw/04-isolated-status-v3.png",
       "publish_path": "assets/screenshots/04-isolated-status-v3.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9zkTk%2FdJMcaixLbLi%2FAAAAAAAAAAAAAAAAAAAAACL8uiTmCTozfb8AYKMo2gdBR_maaq5r_fMITTOfLEfi%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DVRzCKMI4q0rFbUygxRoVMh9yYEo%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbRt7Xy%2FdJMcaik11mM%2FAAAAAAAAAAAAAAAAAAAAAKbVqQLJLZZ2k0hewrnAiyOdCe2bYmYUgZoVoPmjgADM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252BOaEqVbZLWVNfUSG6E%252FJa4diREY%253D",
       "width": 720,
       "height": 800,
       "display_width": 720,
@@ -187,7 +190,8 @@
       ],
       "redactions": [],
       "sha256": "b2ee84776da67c7f449757928446835ca48850407fcf14d2190e507d570072a6",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bRt7Xy/dJMcaik11mM/AAAAAAAAAAAAAAAAAAAAAKbVqQLJLZZ2k0hewrnAiyOdCe2bYmYUgZoVoPmjgADM/img.png|alignCenter|width=\"100%\" alt=\"Claude worktree에는 index.html, Codex worktree에는 README.md 변경만 보이고 main은 깨끗한 상태 로그\"|_##]"
     },
     {
       "id": "worktree-merge-graph",
@@ -203,7 +207,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/raw/05-merge-graph-v3.png",
       "publish_path": "assets/screenshots/05-merge-graph-v3.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FTd3UT%2FdJMcaf8Jz5N%2FAAAAAAAAAAAAAAAAAAAAALfZpdQPFJB5JUQVQT6qg8rkQQ1CP7BoaU7vpPemE9lr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaFw02eVtUN5Ik4Xsc8YbanTET4A%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXPSWP%2FdJMcagU2DBa%2FAAAAAAAAAAAAAAAAAAAAAPkrTbA2oIOEMIjBB_jlDFIJ38N2z-gGAKku8EY_0Vbt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DlVTk7qBd36dvw8BchjtDFgfGL9o%253D",
       "width": 720,
       "height": 800,
       "display_width": 720,
@@ -217,7 +221,8 @@
       ],
       "redactions": [],
       "sha256": "42ec1d24a2ee9d97d96d0743f75e817db9de719154566f5a1a2c06f3ce3fc744",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bXPSWP/dJMcagU2DBa/AAAAAAAAAAAAAAAAAAAAAPkrTbA2oIOEMIjBB_jlDFIJ38N2z-gGAKku8EY_0Vbt/img.png|alignCenter|width=\"100%\" alt=\"서로 다른 파일을 수정한 두 브랜치가 main에 차례로 병합된 Git 커밋 그래프\"|_##]"
     },
     {
       "id": "worktree-conflict",
@@ -233,7 +238,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/raw/06-conflict-boundary-v3.png",
       "publish_path": "assets/screenshots/06-conflict-boundary-v3.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FNOyyV%2FdJMcaixLbLm%2FAAAAAAAAAAAAAAAAAAAAAHs8rGBWGbbpeqJVS1hl7r7P7QXlGLTpAIHpQwZYChdf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhtNBh79pRTy3gTR78H%252BR0Xozcfw%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FEFEtg%2FdJMcagU2DBl%2FAAAAAAAAAAAAAAAAAAAAAPcPQGsN_QatJ_HQjbOE9xHrmS6IxhD1F1izC7HWek4Q%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DQHakJhMdacRie26vq9cPKAZMKnk%253D",
       "width": 720,
       "height": 800,
       "display_width": 720,
@@ -247,7 +252,8 @@
       ],
       "redactions": [],
       "sha256": "5a900326be69e699e31d1536807f9fb9383963d6459773ee0b87c05619b75818",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@EFEtg/dJMcagU2DBl/AAAAAAAAAAAAAAAAAAAAAPcPQGsN_QatJ_HQjbOE9xHrmS6IxhD1F1izC7HWek4Q/img.png|alignCenter|width=\"100%\" alt=\"같은 index.html 줄을 바꾼 두 번째 브랜치 병합에서 content conflict와 UU 상태가 나온 로그\"|_##]"
     },
     {
       "id": "worktree-cleanup",

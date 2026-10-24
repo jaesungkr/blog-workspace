@@ -1,0 +1,502 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+/* Native attachment repair: retain Tistory file references. */
+.devlog-rich__native-media figure.imageblock { margin: 0 auto !important; transform: none !important; width: 100% !important; max-width: 100% !important; }
+.devlog-rich__native-media img { display: block; width: 100%; height: auto; border: 1px solid var(--rich-border); border-radius: 18px; background: var(--rich-image-surface); }
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">AI 코딩 에이전트 하나를 쓸 때는 터미널 한두 개면 충분합니다. Codex로 기능을 만들고 Claude Code로 다른 버그를 고치면 상황이 달라집니다. 어느 세션이 멈췄는지, 어떤 브랜치에서 일하는지 찾는 시간이 늘어납니다.</p>
+<p data-ke-size="size16"><b>Xirp는 이처럼 흩어진 AI 코딩 세션을 프로젝트별로 모아 관리하는 macOS 앱</b>입니다. 앱을 닫았다 다시 열어도 이어지는 터미널과 상태 표시, Git 변경을 한 화면에서 다룹니다. 별도 브랜치와 작업 폴더를 만드는 Git worktree도 선택할 수 있습니다. 이미 설치한 Claude Code, Codex, Gemini CLI를 그대로 사용합니다.</p>
+<p data-ke-size="size16">비슷해 보이는 Orca는 작업마다 독립된 Git worktree를 만듭니다. 여러 구현의 코드 변경을 비교하고 하나를 고르는 IDE에 가깝습니다. Spotify Portal은 회사의 서비스, 담당 팀과 문서를 모아 둔 내부 개발자 포털입니다. 개인이 Xirp의 로컬 기능만 쓸 때는 필요 없습니다.</p>
+<p data-ke-size="size16"><b>흩어진 로컬 세션을 관리하려면 Xirp 단독이 출발점</b>입니다. 여러 구현을 비교하고 PR로 제출하려면 Orca를, 사내 정보를 에이전트에 제공하려면 Xirp와 Portal을 고릅니다.</p>
+<div class="devlog-rich__figure devlog-rich__native-media" style="--rich-media-width: 916px;" data-media-id="xirp-home">[##_Image|kage@cceM77/dJMcabTGAqL/AAAAAAAAAAAAAAAAAAAAAA8xCd-yg_mEJm0eUSbz_lnJePyEiF38H3Ed4rpV4YDO/img.png|alignCenter|width="100%" alt="Xirp 공식 홈 화면에 Projects와 Sessions 메뉴, 새 세션 버튼, 목표 입력창이 표시된 모습"|_##]
+<p class="devlog-rich__caption">상단의 Projects와 Sessions에서 작업 단위를 오가고, 가운데 목표 입력창에서 새 세션을 시작합니다. 출처: Spotify Xirp 공식 문서</p>
+<span class="devlog-rich__credit">&middot; <a href="https://backstage.spotify.com/docs/xirp" target="_blank" rel="noopener noreferrer">공식 자료</a></span></div>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#xirp의-프로젝트와-지속-세션">Xirp의 프로젝트와 지속 세션</a></li>
+<li><a href="#세션-중심-xirp와-worktree-중심-orca">세션 중심 Xirp와 worktree 중심 Orca</a></li>
+<li><a href="#spotify-portal이-회사-정보를-xirp에-연결하는-과정">Spotify Portal이 회사 정보를 Xirp에 연결하는 과정</a></li>
+<li><a href="#portal-없이-첫-세션-시작하기">Portal 없이 첫 세션 시작하기</a></li>
+<li><a href="#worktree와-grid-view로-병렬-세션-나누기">worktree와 Grid view로 병렬 세션 나누기</a></li>
+<li><a href="#터미널xirporca-중-무엇을-고를까">터미널&middot;Xirp&middot;Orca 중 무엇을 고를까</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="xirp의-프로젝트와-지속-세션">
+<h2 id="xirp의-프로젝트와-지속-세션" data-ke-size="size26">Xirp의 프로젝트와 지속 세션</h2>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://backstage.spotify.com/docs/xirp" target="_blank" rel="noopener">Xirp 공식 문서</a>에 따르면 현재 지원 에이전트는 Claude Code, Codex, Gemini입니다. 각 세션은 앱을 다시 열어도 이어지는 지속 터미널로 작동합니다. Projects에는 저장소나 폴더를 프로젝트로 등록합니다. Sessions와 Grid view에서는 진행 중이거나 입력을 기다리는 터미널을 찾습니다.</p>
+<p data-ke-size="size16">모델, 로그인 정보, 추론 설정, 권한과 샌드박스는 각 에이전트의 CLI 설정을 따릅니다. Xirp는 모델 자체보다 터미널 세션과 Git 작업 공간을 관리합니다.</p>
+<p data-ke-size="size16">한 에이전트와 한 세션만 쓴다면 기존 터미널이 더 단순합니다. Xirp의 이점은 프로젝트나 세션이 두세 개로 늘어나 어느 작업이 어디에서 멈췄는지 자주 확인해야 할 때 생깁니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="세션-중심-xirp와-worktree-중심-orca">
+<h2 id="세션-중심-xirp와-worktree-중심-orca" data-ke-size="size26">세션 중심 Xirp와 worktree 중심 Orca</h2>
+<p data-ke-size="size16">두 제품 모두 기존 CLI 에이전트와 Git worktree를 지원합니다. Xirp에서는 worktree가 세션의 선택지이고, Orca에서는 작업의 기본 단위입니다. 아래 표는 전체 기능표가 아니라 선택에 영향을 주는 공개 기능만 추렸습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>비교 항목</th>
+<th>Xirp</th>
+<th>Orca</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>중심 관리 단위</td>
+<td>프로젝트 안의 에이전트 세션</td>
+<td>작업마다 만든 Git worktree</td>
+</tr>
+<tr>
+<td>worktree 사용</td>
+<td>세션을 열 때 main checkout과 새 worktree 중 선택</td>
+<td>모든 작업을 별도 worktree로 나누는 기본 구조</td>
+</tr>
+<tr>
+<td>화면의 중심</td>
+<td>세션 상태, 지속 터미널, Grid view</td>
+<td>편집기, 터미널, 브라우저, 코드 변경 비교</td>
+</tr>
+<tr>
+<td>작업 마무리</td>
+<td>Git 탭에서 변경 비교&middot;commit&middot;PR 상태 확인</td>
+<td>변경 줄 주석, stage, commit, push&middot;PR 제출과 검사 확인</td>
+</tr>
+<tr>
+<td>실행 위치</td>
+<td>현재 로컬 macOS 베타</td>
+<td>로컬, SSH, 자체 서버, 사용자 소유 클라우드 환경</td>
+</tr>
+<tr>
+<td>조직 정보</td>
+<td>Portal을 연결하면 사내 카탈로그와 문서 사용</td>
+<td>GitHub&middot;Linear&middot;Jira 같은 작업 항목과 개발 흐름 연결</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.onorca.dev/docs/model/worktrees" target="_blank" rel="noopener">Orca 공식 문서</a>는 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">작업 하나 = worktree 하나</code>를 기본 모델로 둡니다. 같은 버그를 여러 에이전트에 맡기면 각각 별도 브랜치와 파일 폴더에서 실행합니다. 이후 내장 <a style="color: #1a73e8; text-decoration: none;" href="https://www.onorca.dev/docs/review/diff-viewer" target="_blank" rel="noopener">diff 화면</a>에서 결과를 비교해 하나를 선택합니다. 편집, 변경 검토와 PR 제출까지 한 도구에서 끝내려는 개발자에게 맞습니다.</p>
+<p data-ke-size="size16">Xirp에서는 기존 작업 폴더에서 세션을 이어가거나 여러 저장소의 상태만 모아 볼 수도 있습니다. Xirp의 Git 탭에서도 변경 비교, commit 제어와 PR 상태 확인이 가능합니다. Orca는 이 검토 단계를 worktree별 편집기와 주석, stage, push 흐름에 더 깊게 묶습니다. 공개 기능을 비교한 판단이며 속도, 비용, 코드 품질을 측정한 순위는 아닙니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="spotify-portal이-회사-정보를-xirp에-연결하는-과정">
+<h2 id="spotify-portal이-회사-정보를-xirp에-연결하는-과정" data-ke-size="size26">Spotify Portal이 회사 정보를 Xirp에 연결하는 과정</h2>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://backstage.spotify.com/docs/portal" target="_blank" rel="noopener">Spotify Portal</a>은 Backstage를 기반으로 만든 기업용 내부 개발자 포털입니다. 회사 안의 서비스와 저장소가 누구 소유인지 보여 줍니다. 의존 관계, 문서와 API도 한곳에서 찾게 해 줍니다. 개인 프로젝트나 Spotify 음악 계정을 관리하는 서비스는 아닙니다.</p>
+<p data-ke-size="size16">Portal의 정보가 Xirp 세션에 연결되는 순서는 다음과 같습니다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><b>Software Catalog</b>에 서비스, 저장소, 담당 팀, 의존 관계와 관련 링크를 모읍니다.</li>
+<li><b>Workspace</b>가 특정 업무와 문서, 관련 개발 정보를 하나의 맥락으로 묶습니다.</li>
+<li>Catalog나 Workspace에서 Xirp 세션을 시작하면 에이전트가 <b>MCP 연결</b>을 통해 필요한 정보를 불러옵니다. MCP는 에이전트가 외부 도구와 정보를 정해진 방식으로 읽는 연결 규격입니다.</li>
+</ol>
+<p data-ke-size="size16">에이전트가 결제 서비스의 오류를 고친다고 가정해 보겠습니다. Xirp에서 직접 만든 로컬 세션은 코드와 현재 터미널을 봅니다. Catalog나 Workspace에서 시작한 세션은 담당 팀, 연결된 API와 운영 문서도 찾을 수 있습니다. <b>Portal은 이처럼 조직 안에서 코드가 놓인 맥락을 제공합니다.</b></p>
+<p data-ke-size="size16">프로젝트 등록, 지속 터미널, worktree, Git 변경과 Grid view는 Xirp만으로 쓸 수 있습니다. Portal Workspace에서 시작한 Claude Code&middot;Codex 세션은 사용자가 기록을 올려 팀과 공유할 수 있습니다. 기록에는 대화, 도구 호출, 파일 변경과 경로가 포함될 수 있습니다. Xirp가 비밀정보를 자동으로 지우지 않으므로 업로드 전에 내용을 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="portal-없이-첫-세션-시작하기">
+<h2 id="portal-없이-첫-세션-시작하기" data-ke-size="size26">Portal 없이 첫 세션 시작하기</h2>
+<p data-ke-size="size16">먼저 <a style="color: #1a73e8; text-decoration: none;" href="https://xirp.spotify.com/join-beta" target="_blank" rel="noopener">베타 다운로드 페이지</a>에서 Apple silicon 또는 Intel Mac용 설치 파일을 고릅니다. 가입에는 업무용 이메일이 필요합니다. Spotify Technology 계정은 개인 Spotify 음악 계정과 별도입니다. 사용할 CLI도 미리 설치하고 로그인해야 합니다.</p>
+<p data-ke-size="size16">첫 세션은 다음 순서로 열 수 있습니다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li>Xirp의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Projects</code>에서 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Add Project</code>를 눌러 프로젝트 폴더를 등록합니다.</li>
+<li>프로젝트 화면에서 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">New session</code>을 열고 완료 여부를 확인할 수 있는 목표를 적습니다.</li>
+<li>사용할 에이전트를 고릅니다.</li>
+<li>기존 작업 폴더를 쓸지, 새 Git worktree를 만들지 선택합니다.</li>
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Start</code>를 누르고 터미널에 나타나는 응답과 권한 요청을 확인합니다.</li>
+</ol>
+<p data-ke-size="size16"><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">main checkout</code>은 지금 쓰는 작업 폴더를 그대로 사용합니다. 다른 세션도 같은 저장소의 파일을 수정한다면 새 worktree를 고르세요. worktree는 별도 브랜치와 파일 폴더를 만들어 작업 중 변경이 바로 섞이지 않게 합니다.</p>
+<p data-ke-size="size16">아래 공식 화면에서는 가운데 목표 입력란을 채운 다음, 아래쪽에서 worktree와 에이전트를 확인합니다. 선택값이 맞으면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">start</code>로 넘어가면 됩니다.</p>
+<div class="devlog-rich__figure devlog-rich__native-media devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 760px;" data-media-id="xirp-new-session">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">[##_Image|kage@nq2wQ/dJMcabTGAqM/AAAAAAAAAAAAAAAAAAAAACCvvWw1UB_viSMAFfdP_RpruDmY4J-3y4EuR6IrEvyy/img.png|alignCenter|width="100%" alt="Xirp의 새 세션 창에 목표 입력란, worktree 선택 아이콘, Claude 에이전트 선택 메뉴, 시작 버튼이 보이는 공식 화면"|_##]</div>
+<p class="devlog-rich__caption">가운데 목표를 적고 아래쪽에서 worktree와 에이전트를 확인한 뒤 시작합니다. 모바일에서는 이미지를 좌우로 밀어 입력란과 하단 선택값을 함께 볼 수 있습니다. 출처: Spotify Xirp 공식 문서</p>
+<span class="devlog-rich__credit">&middot; <a href="https://backstage.spotify.com/docs/xirp/sessions" target="_blank" rel="noopener noreferrer">공식 자료</a></span></div>
+<p data-ke-size="size16">Git 저장소가 아닌 폴더도 세션과 파일, <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">rules</code>, <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">skills</code>는 쓸 수 있습니다. 브랜치와 worktree까지 사용하려면 단일 Git 저장소를 프로젝트로 등록해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="worktree와-grid-view로-병렬-세션-나누기">
+<h2 id="worktree와-grid-view로-병렬-세션-나누기" data-ke-size="size26">worktree와 Grid view로 병렬 세션 나누기</h2>
+<p data-ke-size="size16">worktree는 서로 독립적으로 끝낼 수 있는 작업에 하나씩 배정합니다. 로그인 오류 수정과 문서 정리는 나누기 쉽습니다. 같은 인증 설계를 동시에 바꾸는 두 작업은 마지막에 충돌할 수 있습니다. worktree는 작업 중 파일을 분리할 뿐 merge 결과까지 해결하지 않습니다.</p>
+<p data-ke-size="size16">세션이 늘어나면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Cmd+G</code>로 Grid view를 엽니다. Session hooks를 켠 세션에는 작업 중, 대기, 완료 또는 실패 상태가 표시됩니다. 왼쪽 목록에서 입력을 기다리는 세션을 고르고 오른쪽 터미널에서 답합니다.</p>
+<div class="devlog-rich__figure devlog-rich__native-media devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="xirp-grid-view">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">[##_Image|kage@cYdY6s/dJMcaiSUY4m/AAAAAAAAAAAAAAAAAAAAAOolP1jWCHA_TsDxCcNNX1dcAMyeJ4RGOktY-8r9tSpe/img.png|alignCenter|width="100%" alt="Xirp Grid view 공식 화면의 왼쪽에 여러 세션과 idle 상태가 나열되고 오른쪽에 선택한 Claude Code 터미널이 표시된 모습"|_##]</div>
+<p class="devlog-rich__caption">왼쪽에서 세션별 상태를 찾고 오른쪽 터미널에서 작업을 이어갑니다. 모바일에서는 이미지를 좌우로 밀어 세션 목록과 터미널을 함께 확인할 수 있습니다. 출처: Spotify Xirp 공식 문서</p>
+<span class="devlog-rich__credit">&middot; <a href="https://backstage.spotify.com/docs/xirp/sessions" target="_blank" rel="noopener noreferrer">공식 자료</a></span></div>
+<p data-ke-size="size16">상태 표시는 작업을 찾기 위한 신호일 뿐 완료 증거는 아닙니다. 에이전트가 끝났다고 보고하면 Git 변경을 읽고 테스트를 다시 확인한 뒤 커밋하세요. 자동 승인이나 권한 우회도 각 에이전트의 CLI 설정을 따르므로 처음에는 필요한 동작만 허용하는 편이 안전합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="터미널xirporca-중-무엇을-고를까">
+<h2 id="터미널xirporca-중-무엇을-고를까" data-ke-size="size26">터미널&middot;Xirp&middot;Orca 중 무엇을 고를까</h2>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>현재 상황</th>
+<th>권장 도구</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한 프로젝트에서 한 세션만 사용</td>
+<td>기존 터미널</td>
+<td>관리 앱을 추가할 이점이 작음</td>
+</tr>
+<tr>
+<td>여러 프로젝트와 CLI 세션의 상태를 함께 확인</td>
+<td>Xirp 단독</td>
+<td>지속 세션과 Grid view가 중심 문제를 해결</td>
+</tr>
+<tr>
+<td>여러 에이전트의 구현을 분리해 비교하고 PR 제출</td>
+<td>Orca</td>
+<td>worktree, 변경 검토와 PR 흐름이 더 깊게 연결됨</td>
+</tr>
+<tr>
+<td>팀의 서비스 정보와 문서를 에이전트에 제공</td>
+<td>Xirp+Portal</td>
+<td>Software Catalog와 Workspace의 조직 맥락을 사용</td>
+</tr>
+<tr>
+<td>Windows&middot;Linux&middot;원격 서버에서 에이전트 실행</td>
+<td>Orca 또는 기존 원격 도구</td>
+<td>Xirp는 로컬 macOS 베타, Orca 원격 환경은 사용자 인프라를 사용</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">이 표는 공개 기능과 제약으로 고른 시작점이며 성능이나 코드 품질 순위가 아닙니다.</p>
+<p data-ke-size="size16">Xirp는 아직 독점 소프트웨어의 베타입니다. 화면과 지원 범위가 바뀔 수 있으므로 설치 후 업데이트 상태를 확인하세요. 로컬 프로젝트 등록만으로 코드가 Portal에 올라가지는 않습니다. 세션 기록을 공유할 때는 대화와 경로에 비밀정보가 없는지 직접 살펴봐야 합니다.</p>
+<p data-ke-size="size16">Xirp를 고른 독자는 Portal을 연결하기 전에 로컬 프로젝트 하나와 worktree 세션 하나부터 열어 보세요.</p>
+</section>
+</article>

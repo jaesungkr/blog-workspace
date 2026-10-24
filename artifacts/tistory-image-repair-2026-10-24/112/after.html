@@ -1,0 +1,413 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+/* Native attachment repair: retain Tistory file references. */
+.devlog-rich__native-media figure.imageblock { margin: 0 auto !important; transform: none !important; width: 100% !important; max-width: 100% !important; }
+.devlog-rich__native-media img { display: block; width: 100%; height: auto; border: 1px solid var(--rich-border); border-radius: 18px; background: var(--rich-image-surface); }
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">주변 할머니&middot;할아버지가 치매를 겪는 모습을 볼 때마다 우리 부모님도 남의 일처럼 느껴졌고, 주변 어르신들에게 도움이 되도록 저도 미리 알아두고 싶었습니다.</p>
+<p data-ke-size="size16">가장 궁금했던 것은 치매가 왜 생기는지, 가족력이 있으면 나도 걸리는지, 실제로 바꿀 수 있는 위험이 무엇인지였습니다. 치매는 여러 뇌 질환이 만드는 상태로, 대부분 유전 하나에 좌우되지 않으며 고혈압&middot;당뇨 치료와 꾸준한 운동, 난청 치료는 위험을 낮추는 데 도움이 됩니다.</p>
+<div class="devlog-rich__figure devlog-rich__native-media" style="--rich-media-width: 916px;" data-media-id="dementia-prevention-family-plan-hero">[##_Image|kage@b2GTaH/dJMcabeVxDV/AAAAAAAAAAAAAAAAAAAAADQfApScHoxCtS3xcFf2mSxA0W0BrVzTzWczDcMSOpcj/img.png|alignCenter|width="100%" alt="성인 자녀와 노년의 어머니가 혈압 커프 옆에서 건강 계획표에 초록 표식을 놓는 모습"|_##]
+<p class="devlog-rich__caption">치매는 유전 하나로 결정되지 않습니다. 부모님의 뇌혈관 위험과 기억 변화를 함께 살피는 일이 미리 준비하는 첫걸음입니다.</p>
+<span class="devlog-rich__credit">&middot; 생성 이미지</span></div>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#치매를-일으키는-알츠하이머병과-뇌혈관-손상">치매를 일으키는 알츠하이머병과 뇌혈관 손상</a></li>
+<li><a href="#부모가-치매면-자녀도-걸릴까">부모가 치매면 자녀도 걸릴까</a></li>
+<li><a href="#치매-예방은-어디까지-가능할까">치매 예방은 어디까지 가능할까</a></li>
+<li><a href="#혈압과-뇌혈관-손상이-치매-위험에-미치는-영향">혈압과 뇌혈관 손상이 치매 위험에 미치는 영향</a></li>
+<li><a href="#치매-위험을-낮추려면-얼마나-움직여야-할까">치매 위험을 낮추려면 얼마나 움직여야 할까</a></li>
+<li><a href="#난청을-치료하면-치매도-예방될까">난청을 치료하면 치매도 예방될까</a></li>
+<li><a href="#영양제와-두뇌-게임에-기대해도-될까">영양제와 두뇌 게임에 기대해도 될까</a></li>
+<li><a href="#건망증이-일상생활을-방해하기-시작할-때">건망증이 일상생활을 방해하기 시작할 때</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="치매를-일으키는-알츠하이머병과-뇌혈관-손상">
+<h2 id="치매를-일으키는-알츠하이머병과-뇌혈관-손상" data-ke-size="size26">치매를 일으키는 알츠하이머병과 뇌혈관 손상</h2>
+<p data-ke-size="size16">치매는 뇌가 손상돼 기억과 판단 능력이 떨어지고 일상생활까지 어려워진 상태를 가리킵니다. 하나의 병명이 아니기 때문에 처음 나타나는 증상과 진행 속도도 사람마다 다릅니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.who.int/news-room/fact-sheets/detail/dementia" target="_blank" rel="noopener">세계보건기구(WHO)</a>에 따르면 알츠하이머병이 전체 치매의 약 60~70%로 가장 흔합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.nia.nih.gov/health/alzheimers-disease-fact-sheet" target="_blank" rel="noopener">미국 국립노화연구소(NIA)</a>는 아밀로이드와 타우 단백질의 비정상적인 변화가 신경세포를 오랜 시간 손상시킨다고 설명합니다. 기억력 문제가 보이기 훨씬 전부터 뇌 안에서는 변화가 진행될 수 있습니다.</p>
+<p data-ke-size="size16">혈관성 치매는 뇌졸중이나 뇌의 작은 혈관 손상과 관련이 깊습니다. 루이소체 치매와 전두측두엽 치매도 있으며, 알츠하이머병 변화와 혈관 손상이 함께 발견되기도 합니다. 원인이 여러 갈래이므로 한 가지 음식이나 운동법이 모든 치매를 막아준다는 주장은 믿기 어렵습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="부모가-치매면-자녀도-걸릴까">
+<h2 id="부모가-치매면-자녀도-걸릴까" data-ke-size="size26">부모가 치매면 자녀도 걸릴까</h2>
+<p data-ke-size="size16">가족력이 있으면 위험이 높아질 수 있지만 부모의 치매가 자녀에게 그대로 이어지는 것은 아닙니다. 흔한 노년기 알츠하이머병에는 여러 유전적 소인이 관여합니다. 여기에 나이, 건강 상태, 생활환경이 함께 작용합니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.nia.nih.gov/health/alzheimers-disease-genetics-fact-sheet" target="_blank" rel="noopener">미국 국립노화연구소(NIA)의 유전 안내</a>에 따르면 APOE &epsilon;4 같은 유전자 변이는 발병 위험을 높이지만 발병을 확정하지는 않습니다. 이 변이가 있어도 치매가 생기지 않는 사람이 있고, 변이가 없어도 알츠하이머병이 생길 수 있습니다.</p>
+<p data-ke-size="size16">APP, PSEN1, PSEN2라는 특정 유전자 변이가 직접 원인이 되는 가족성 알츠하이머병도 있습니다. 매우 드문 형태이며 대개 65세 이전에 증상이 시작됩니다. 65세 이전에 증상이 시작된 가족이 여럿인 강한 가족력이 있다면 유전자검사부터 받기보다 신경과나 유전상담에서 검사 필요성을 판단해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="치매-예방은-어디까지-가능할까">
+<h2 id="치매-예방은-어디까지-가능할까" data-ke-size="size26">치매 예방은 어디까지 가능할까</h2>
+<p data-ke-size="size16">치매 예방에서 말하는 &lsquo;예방&rsquo;은 절대 걸리지 않게 만든다는 뜻이 아닙니다. 발병 가능성을 낮추거나 증상이 나타나는 시기를 늦추는 데 가깝습니다. 나이와 유전은 바꿀 수 없지만 고혈압&middot;당뇨, 흡연, 과음, 운동 부족, 난청처럼 관리할 수 있는 위험요인은 있습니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.who.int/publications/i/item/9789240123557" target="_blank" rel="noopener">WHO가 2026년에 개정한 치매 위험 감소 지침</a>은 바꿀 수 있는 요인과 관련된 치매 위험이 최대 45%에 이를 수 있다고 설명합니다. 이 수치는 한 사람이 생활습관을 바꾸면 위험이 정확히 45% 줄어든다는 뜻이 아니라, 여러 위험요인을 인구 전체에서 줄였을 때 기대할 수 있는 잠재적 범위입니다.</p>
+<p data-ke-size="size16">부모님에게 이미 있는 위험 가운데 뇌 손상과 연결이 큰 문제를 찾아 치료하고, 오래 이어갈 수 있는 행동을 고르는 것이 현실적인 목표입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="혈압과-뇌혈관-손상이-치매-위험에-미치는-영향">
+<h2 id="혈압과-뇌혈관-손상이-치매-위험에-미치는-영향" data-ke-size="size26">혈압과 뇌혈관 손상이 치매 위험에 미치는 영향</h2>
+<p data-ke-size="size16">고혈압, 당뇨, 높은 LDL 콜레스테롤과 흡연은 뇌졸중과 작은 혈관 손상의 위험을 높입니다. 이로 인해 생긴 뇌졸중과 작은 혈관 손상은 혈관성 치매의 원인이 될 수 있고, 알츠하이머병 변화가 있는 뇌에도 손상을 더할 수 있습니다.</p>
+<p data-ke-size="size16">부모님이 이 질환으로 치료받고 있다면 새로운 치매 예방 제품을 찾기 전에 약을 자주 거르지는 않는지, 진료를 미루지는 않는지 확인하는 쪽이 낫습니다. 다음 진료에서 최근 혈압&middot;혈당&middot;LDL 수치가 치료 목표 안에 들어오는지 물어보면 됩니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.who.int/news-room/fact-sheets/detail/dementia" target="_blank" rel="noopener">WHO는</a> 흡연과 해로운 음주를 치매 위험요인으로 꼽습니다. 담배를 피우거나 술로 일상이 흐트러질 정도라면 치매 예방 식품을 찾기보다 금연 치료와 음주 상담을 먼저 받아야 합니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.nhlbi.nih.gov/science/systolic-blood-pressure-intervention-trial-sprint-study" target="_blank" rel="noopener">SPRINT MIND 연구</a>에서는 고혈압을 더 적극적으로 치료한 집단에서 경도인지장애가 약 20% 적었습니다. 치매 자체의 감소는 통계적으로 뚜렷하지 않았고, 당뇨나 뇌졸중 병력이 없는 특정 고혈압 고위험군을 대상으로 한 결과입니다. 연구에 나온 혈압 목표만 보고 약을 바꾸면 안 되는 이유입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="치매-위험을-낮추려면-얼마나-움직여야-할까">
+<h2 id="치매-위험을-낮추려면-얼마나-움직여야-할까" data-ke-size="size26">치매 위험을 낮추려면 얼마나 움직여야 할까</h2>
+<p data-ke-size="size16">운동은 혈압과 혈당처럼 치매 위험과 연결된 건강 문제를 관리하는 데 도움이 됩니다. 기억력을 갑자기 좋아지게 하지는 않지만, 여러 위험요인을 함께 줄일 수 있습니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.who.int/europe/news-room/fact-sheets/item/physical-activity" target="_blank" rel="noopener">WHO의 65세 이상 운동 권고</a>는 일주일에 150~300분의 중강도 유산소 운동과 주 2회 이상의 근력운동입니다. 평소 거의 움직이지 않았다면 숫자를 한 번에 채우려 하지 말고 10~15분 걷기부터 시작해 20~30분으로 늘리면 됩니다. 숨이 조금 차지만 대화할 수 있는 속도면 충분합니다.</p>
+<p data-ke-size="size16">가슴 통증, 심한 숨참, 어지럼증이 생기면 운동을 멈춰야 합니다. 심장&middot;폐&middot;관절 질환이 있거나 자주 넘어진다면 운동량을 늘리기 전에 의료진과 안전한 강도를 정하세요.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="난청을-치료하면-치매도-예방될까">
+<h2 id="난청을-치료하면-치매도-예방될까" data-ke-size="size26">난청을 치료하면 치매도 예방될까</h2>
+<p data-ke-size="size16">난청이 있으면 소리를 이해하는 데 더 많은 노력이 들고 대화와 사회활동도 줄기 쉽습니다. 부모님이 자주 되묻거나 TV 음량을 계속 높인다면 청력검사를 받아볼 만합니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://pubmed.ncbi.nlm.nih.gov/37478886/" target="_blank" rel="noopener">ACHIEVE 무작위시험</a>에서는 보청기를 사용한 전체 참가자의 인지저하가 유의하게 느려지지 않았습니다. 인지저하 위험이 높던 일부 참가자에게서만 도움이 관찰됐습니다.</p>
+<p data-ke-size="size16">따라서 보청기는 실제 난청이 확인됐을 때 잘 듣고 대화에 참여하기 위한 치료로 접근해야 합니다. 치매 예방 효과를 기대해 청력이 정상인 사람이 사용할 이유는 없습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="영양제와-두뇌-게임에-기대해도-될까">
+<h2 id="영양제와-두뇌-게임에-기대해도-될까" data-ke-size="size26">영양제와 두뇌 게임에 기대해도 될까</h2>
+<p data-ke-size="size16">치매 예방을 내세운 영양제부터 살 근거는 부족합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed" target="_blank" rel="noopener">WHO의 2026년 지침 안내</a>는 결핍이 확인되지 않은 사람에게 비타민 B&middot;E, 오메가3, 종합비타민&middot;미네랄을 치매 위험 감소 목적으로 권하지 않습니다.</p>
+<p data-ke-size="size16">WHO 지침은 인지 훈련과 사회활동을 권하지만, 특정 퍼즐이나 상업용 두뇌 게임 하나가 치매를 막아준다는 뜻은 아닙니다. 독서모임이나 악기&middot;언어 수업처럼 배우기와 대화가 함께 있는 활동이 더 현실적입니다.</p>
+<p data-ke-size="size16">식사는 혈압과 당뇨 관리에 도움이 되는 방향이면 충분합니다. &lsquo;치매 예방 음식&rsquo;을 따로 챙기면서 기존 치료를 미루면 우선순위가 뒤바뀝니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="건망증이-일상생활을-방해하기-시작할-때">
+<h2 id="건망증이-일상생활을-방해하기-시작할-때" data-ke-size="size26">건망증이 일상생활을 방해하기 시작할 때</h2>
+<p data-ke-size="size16">이름이나 단어가 바로 떠오르지 않다가 나중에 생각나는 일은 나이가 들며 흔히 생길 수 있습니다. 치매를 의심해야 하는 변화는 기억 실수의 횟수보다 그 실수 때문에 예전처럼 생활하기 어려워지는지에 있습니다.</p>
+<p data-ke-size="size16">같은 질문을 반복하고, 익숙한 길에서 헤매고, 공과금이나 약을 관리하지 못하거나 늘 하던 요리를 어려워한다면 진료를 받아야 합니다. 판단력이나 성격이 눈에 띄게 달라졌을 때도 마찬가지입니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.nia.nih.gov/health/memory-forgetfulness-and-aging-whats-normal-and-whats-not" target="_blank" rel="noopener">NIA</a>는 우울, 약물 부작용, 갑상선 문제, 수면장애, 비타민 B12 부족처럼 치료할 수 있는 원인도 기억력을 떨어뜨릴 수 있다고 안내합니다. 가족끼리 치매라고 단정하지 말고 의료진에게 원인을 확인해야 합니다.</p>
+<p data-ke-size="size16">한국에서는 가까운 치매안심센터에 인지선별검사와 상담을 문의할 수 있습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://mediahub.seoul.go.kr/archives/2017640" target="_blank" rel="noopener">서울시는 2026년, 올해 아직 검진받지 않은 60세 이상 서울시민에게 무료 조기검진을 안내</a>하고 있습니다. 지역마다 대상과 예약 방식이 다를 수 있으니 관할 센터나 치매상담콜센터 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">1899-9988</code>에서 먼저 확인하세요.</p>
+<p data-ke-size="size16">미리 준비하려면 부모님의 평소 기억과 일상생활이 어떻게 달라지는지 알아두어야 합니다. 변화가 보일 때 기다리지 않고 진료받는 것이 가장 현실적인 출발점입니다.</p>
+</section>
+</article>

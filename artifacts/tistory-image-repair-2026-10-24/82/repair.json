@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 82,
+  "title": "GitHub Stacked Pull Request 사용법, 큰 변경을 작은 PR로 쌓는 순서",
+  "url": "https://dop3n.tistory.com/entry/GitHub-Stacked-Pull-Request-%EC%82%AC%EC%9A%A9%EB%B2%95-%ED%81%B0-%EB%B3%80%EA%B2%BD%EC%9D%84-%EC%9E%91%EC%9D%80-PR%EB%A1%9C-%EC%8C%93%EB%8A%94-%EC%88%9C%EC%84%9C",
+  "checked_at": "2026-10-24T03:43:34.582Z",
+  "total_images_checked": 4,
+  "images_rebound": 4,
+  "normalized_prose_preserved": true,
+  "before_sha256": "660c60ed48433394787eeecb70dad7d1ee26ab40ac9ab61a198b4ff1c116e043",
+  "submitted_sha256": "578399d6bdc584e0eb88255d183afbcb228d4bfba924b5aa1ba6d8019c4e34dd",
+  "metadata": {
+    "dates": [
+      "2026-08-02 01:53"
+    ],
+    "public": true,
+    "slug": "GitHub-Stacked-Pull-Request-사용법-큰-변경을-작은-PR로-쌓는-순서"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

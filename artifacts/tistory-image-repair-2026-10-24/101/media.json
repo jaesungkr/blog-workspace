@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "lead_id": "red-bean-health-benefits-hero",
+  "items": [
+    {
+      "id": "red-bean-health-benefits-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-14",
+      "environment": "OpenAI built-in image generation, photorealistic natural editorial food photography direction",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/red-bean-health-benefits-hero-v3-source.png",
+      "publish_path": "assets/red-bean-health-benefits-hero-v3.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbmd5rs%2FdJMcai6fJYf%2FAAAAAAAAAAAAAAAAAAAAANvcTv9GfXhSfL2fx_zXSm35-fZc6x_ovF3CD9W-guv6%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DHq67atmLFYgIFulrUOP%252BWaSdkPQ%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening-summary",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "옆으로 기운 도자기 컵에서 타원형 마른 팥이 쏟아지고 뒤에 팥밥이 놓인 모습",
+      "caption": "달콤한 디저트보다 먼저, 팥이라는 식재료 자체의 모양과 질감부터 담았습니다.",
+      "processing": [
+        "generated from an original health-article art-direction prompt",
+        "full-size creator inspection",
+        "360-pixel thumbnail creator inspection",
+        "independent hero validation pass by /root/hero_reviewer"
+      ],
+      "redactions": [],
+      "sha256": "bbf1be27adc4896eb6087e78d39f83512477920d14ea45141e527ade038bdfc7",
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bmd5rs/dJMcai6fJYf/AAAAAAAAAAAAAAAAAAAAANvcTv9GfXhSfL2fx_zXSm35-fZc6x_ovF3CD9W-guv6/img.png|alignCenter|width=\"100%\" alt=\"옆으로 기운 도자기 컵에서 타원형 마른 팥이 쏟아지고 뒤에 팥밥이 놓인 모습\"|_##]"
+    }
+  ]
+}

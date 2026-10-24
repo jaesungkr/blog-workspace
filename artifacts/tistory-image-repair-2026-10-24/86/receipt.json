@@ -1,0 +1,93 @@
+{
+  "id": 86,
+  "title": "공공데이터 API 활용기, 전국 화재 현황 29만 건을 받아보니",
+  "url": "https://dop3n.tistory.com/entry/%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0-API-%ED%99%9C%EC%9A%A9%EA%B8%B0-%EC%A0%84%EA%B5%AD-%ED%99%94%EC%9E%AC-%ED%98%84%ED%99%A9-29%EB%A7%8C-%EA%B1%B4%EC%9D%84-%EB%B0%9B%EC%95%84%EB%B3%B4%EB%8B%88",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api",
+  "images": [
+    {
+      "alt": "전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림",
+      "complete": true,
+      "h": 1350,
+      "id": "koreaconnect-fire-api-batch",
+      "index": 0,
+      "rect": {
+        "bottom": 1219.734375,
+        "height": 919.5,
+        "left": 272,
+        "right": 1008,
+        "top": 300.234375,
+        "width": 736,
+        "x": 272,
+        "y": 300.234375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdihXlF%2FdJMcafPvcHA%2FAAAAAAAAAAAAAAAAAAAAAD44qVeZGu7FPMv60Qi5yLXNl3grI-LNw8eVp1qKJgcM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D6m%252B97dg5RIuzzsthUrvemRlXliE%253D",
+      "w": 1080
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림",
+      "complete": true,
+      "h": 1350,
+      "id": "koreaconnect-fire-api-batch",
+      "index": 0,
+      "rect": {
+        "bottom": 1092.6875,
+        "height": 359.5,
+        "left": 36,
+        "right": 324,
+        "top": 733.1875,
+        "width": 288,
+        "x": 36,
+        "y": 733.1875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdihXlF%2FdJMcafPvcHA%2FAAAAAAAAAAAAAAAAAAAAAD44qVeZGu7FPMv60Qi5yLXNl3grI-LNw8eVp1qKJgcM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D6m%252B97dg5RIuzzsthUrvemRlXliE%253D",
+      "w": 1080
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-08 01:05"
+    ],
+    "public": true,
+    "slug": "공공데이터-API-활용기-전국-화재-현황-29만-건을-받아보니"
+  },
+  "uploads": [
+    {
+      "id": "koreaconnect-fire-api-batch",
+      "rawToken": "[##_Image|kage@dihXlF/dJMcafPvcHA/AAAAAAAAAAAAAAAAAAAAAD44qVeZGu7FPMv60Qi5yLXNl3grI-LNw8eVp1qKJgcM/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-07-koreaconnect-public-data-api/assets/infographics/koreaconnect-fire-api-batch-v1.png",
+      "sha256": "f8e213e979e03a259280fa75262b91f11c0d91f2ee360b6e2af7d46d2dff9669",
+      "embed": "[##_Image|kage@dihXlF/dJMcafPvcHA/AAAAAAAAAAAAAAAAAAAAAD44qVeZGu7FPMv60Qi5yLXNl3grI-LNw8eVp1qKJgcM/img.png|alignCenter|width=\"100%\" alt=\"전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림",
+      "complete": true,
+      "h": 1350,
+      "id": "koreaconnect-fire-api-batch",
+      "index": 0,
+      "rect": {
+        "bottom": 1805.734375,
+        "height": 919.5,
+        "left": 212,
+        "right": 948,
+        "top": 886.234375,
+        "width": 736,
+        "x": 212,
+        "y": 886.234375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdihXlF%2FdJMcafPvcHA%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VTq99wjDdJlKP1dOAL0z5PClBzwqSJxkcLmK4YJ-Q3rpwQ-6DhPGEmppy_nsByU0oSh39aLWn-5YfLuSPkebkD%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DKTCYRE6I01DyHqZxV8s0J8OYiC4%253D",
+      "w": 1080
+    }
+  ],
+  "totalImages": 1,
+  "repairedImages": 1,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:42:41.325Z"
+}

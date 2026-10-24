@@ -1,0 +1,402 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16"><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">마태</code>라는 이름은 성경 인물보다 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">마태복음</code>이라는 책 제목으로 먼저<br />익숙할 수 있습니다. 앞선 편에서 만난 삭개오는 여리고의 부자<br />세무서장이었습니다. 이번에 만날 마태도 세금을 거두던 사람이지만, 나무 위가<br />아니라 세관에 앉아 있는 모습으로 처음 등장합니다.</p>
+<p data-ke-size="size16">예수님은 그곳에 앉아 있던 마태를 보시고 짧게 부르셨습니다.</p>
+<blockquote data-ke-style="style1">마태복음 9:9 (쉬운성경)<br /><br />9 예수께서 그곳을 떠나 길을 가시다가, 마태라는 사람이 세관에 앉아 있는 것을 보셨다. 예수께서 마태에게 &ldquo;나를 따라오너라.&rdquo; 하고 말씀하셨다. 그러자 그는 일어나서 예수를 따랐다.</blockquote>
+<p data-ke-size="size16">마태는 부름을 받기 전 무슨 일을 했고, 이 한 문장 뒤로 성경에는 어떤<br />기록이 남아 있을까요? 책 제목으로 아는 이름과 세관에 앉아 있던 사람을<br />연결하려면 부르심 뒤의 식사와 예수님이 따로 세우신 열두 제자 명단도 함께<br />읽어야 합니다.</p>
+<figure class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="matthew-tax-booth-hero"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHXNxz%2FdJMcagmpFTb%2FAAAAAAAAAAAAAAAAAAAAAJeSIPPNKkW_bywBdberKvqLXtz_gNOmh8ho0xWmMRIq%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DEwn4q4ROEiTD3b4SC3Dqxk92iG4%253D" alt="동전과 저울이 놓인 세관에서 일어나 햇빛 든 길로 향하는 마태의 종이 부조 장면" width="1671" height="941" />
+<figcaption class="devlog-rich__caption">세관의 계산대를 뒤로하고 부르심을 따라 길로 나서는 마태의 첫 장면을 표현했습니다.</figcaption>
+<span class="devlog-rich__credit">&middot; 생성 이미지</span></figure>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#세관에-앉아-있던-세금-징수원">세관에 앉아 있던 세금 징수원</a></li>
+<li><a href="#부르심-뒤-마태의-집에-모인-사람들">부르심 뒤 마태의 집에 모인 사람들</a></li>
+<li><a href="#열두-제자-명단의-세무원-마태">열두 제자 명단의 세무원 마태</a></li>
+<li><a href="#마태를-읽다가-만나는-레위">마태를 읽다가 만나는 레위</a></li>
+<li><a href="#마태복음-저자라는-오랜-전승">마태복음 저자라는 오랜 전승</a></li>
+<li><a href="#이번에-알아간-마태">이번에 알아간 마태</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="세관에-앉아-있던-세금-징수원">
+<h2 id="세관에-앉아-있던-세금-징수원" data-ke-size="size26">세관에 앉아 있던 세금 징수원</h2>
+<p data-ke-size="size16">마태복음은 마태가 세관에 앉아 있었다고 기록합니다. 세관은 세금을 거두는<br />관청이었습니다. 열두 제자의 이름을 적은 장면에서도 그를 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">세무원 마태</code>라고<br />부릅니다(마태복음 10:2-4). 마태가 예수님을 따르기 전에 세금 징수 일을<br />했다는 사실은 두 본문에서 확인할 수 있습니다.</p>
+<p data-ke-size="size16">당시 세금 징수원은 사람들에게 좋은 시선을 받지 못했습니다. 쉬운성경의<br />마태복음 9:10 주석은 로마가 유대 사람을 고용해 세금을 거두게 했다고<br />설명합니다. 정해진 몫보다 더 거두는 일도 있어 세무원들은 죄인이나 반역자<br />취급을 받았습니다. 이어지는 식사 장면에서도 바리새파 사람들은 세무원과<br />죄인을 함께 묶어 부릅니다.</p>
+<p data-ke-size="size16">삭개오와 마태는 모두 세금 징수와 연결되지만, 성경이 남긴 기록은 다릅니다.<br />삭개오는 여리고의 세무서장이며 재산의 반을 나누고, 속여 빼앗은 것이 있다면<br />네 배로 갚겠다고 직접 말합니다(누가복음 19:1-8). 마태는 세관에 앉은<br />세무원으로 소개되지만, 과다 징수나 배상에 관한 개인 기록은 없습니다.<br />당시 세무원 일반의 평판을 마태 개인의 행동으로 옮겨서는 안 됩니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="부르심-뒤-마태의-집에-모인-사람들">
+<h2 id="부르심-뒤-마태의-집에-모인-사람들" data-ke-size="size26">부르심 뒤 마태의 집에 모인 사람들</h2>
+<p data-ke-size="size16">본문은 마태가 무엇을 고민했는지 또는 세관 업무를 어떻게 정리했는지는<br />기록하지 않습니다.</p>
+<p data-ke-size="size16">다음 장면은 마태의 집에서 열린 식사입니다. 많은 세무원과 당시 종교적으로<br />죄인이라 불리던 사람들이 예수님과 제자들 곁에 앉았습니다. 바리새파<br />사람들은 왜 그런 사람들과 함께 식사하느냐고 제자들에게 물었습니다<br />(마태복음 9:10-11).</p>
+<p data-ke-size="size16">예수님은 건강한 사람보다 병든 사람에게 의사가 필요하다고 답하셨습니다.<br />자신이 의로운 사람을 부르러 온 것이 아니라 죄인을 부르러 왔다고도<br />말씀하셨습니다(마태복음 9:12-13). 마태의 부르심은 개인의 자리 이동으로만<br />끝나지 않고, 누구와 한 식탁에 앉을 것인가라는 질문으로 이어집니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="열두-제자-명단의-세무원-마태">
+<h2 id="열두-제자-명단의-세무원-마태" data-ke-size="size26">열두 제자 명단의 세무원 마태</h2>
+<p data-ke-size="size16">마태는 예수님이 따로 세우신 열두 제자 가운데 한 사람입니다. 마태복음의<br />명단은 여러 이름 중에서도 마태 앞에만 이전 직업을 붙여 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">세무원 마태</code>라고<br />적습니다(마태복음 10:3). 마가복음과 누가복음의 열두 제자 명단에는 직업<br />표시 없이 마태라는 이름만 나옵니다(마가복음 3:18, 누가복음 6:15).</p>
+<p data-ke-size="size16">복음서에서 마태 개인의 말이나 행동은 이 부르심 뒤로 거의 기록되지<br />않습니다. 예수님이 하늘로 올라가신 뒤에는 다른 사도들과 예루살렘의 이층<br />방에 모여 기도한 사람들의 명단에 이름이 나옵니다(사도행전 1:12-14).<br />사도행전 1장 뒤로 성경은 마태의 개별 행적을 더 적지 않습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="마태를-읽다가-만나는-레위">
+<h2 id="마태를-읽다가-만나는-레위" data-ke-size="size26">마태를 읽다가 만나는 레위</h2>
+<p data-ke-size="size16">여기까지 보면 세관에서 부름받은 사람과 열두 제자 명단의 마태가 자연스럽게<br />이어집니다. 그런데 마가복음 2장과 누가복음 5장에서 매우 비슷한 부르심<br />장면을 찾아보면, 세관에 앉은 사람의 이름이 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">레위</code>로 적혀 있습니다. 갑자기<br />다른 사람의 이야기가 끼어든 것처럼 보여 처음에는 헷갈릴 수 있습니다.</p>
+<p data-ke-size="size16">이름부터 나누어 보면 차이가 선명합니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>마태복음 9:9은 세관에 앉아 있던 사람을 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">마태</code>라고 부릅니다.</li>
+<li>마가복음 2:14은 같은 자리의 사람을 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">알패오의 아들 레위</code>라고 부릅니다.</li>
+<li>누가복음 5:27은 그를 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">레위라는 세무원</code>이라고 부릅니다.</li>
+</ul>
+<p data-ke-size="size16">세 본문을 나란히 읽는 이유는 이름이 같아서가 아닙니다. 세관에 앉아 있던<br />사람을 예수님이 부르고, 그가 일어나 따르며, 뒤이어 여러 세무원과의 식사가<br />열립니다. 바리새파 사람들의 질문과 예수님의 대답도 같은 순서로 이어집니다.<br />이처럼 서로 다른 복음서에 나오는 대응 장면을 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">평행 본문</code>이라고 부릅니다.</p>
+<p data-ke-size="size16">여기서 성경 책 이름인 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">레위기</code>가 떠오를 수 있습니다. 레위기라는 책 이름의<br /><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">레위</code>는 한 명의 주인공을 가리키는 말이 아닙니다. 구약의 레위 지파와 그<br />지파에서 나온 제사장들의 일을 많이 다루는 책에 붙은 이름입니다. 반면<br />마가복음과 누가복음의 레위는 세관에 앉아 있던 한 사람의 이름입니다. 책<br />이름과 개인 이름에 같은 말이 들어갈 뿐, 같은 인물은 아닙니다.</p>
+<p data-ke-size="size16">그렇다면 복음서의 레위와 마태는 같은 사람일까요? 이 지점에는 두 가지<br />해석이 있습니다.</p>
+<p data-ke-size="size16"><b>같은 인물로 보는 전통적인 해석</b></p>
+<p data-ke-size="size16">전통적인 해석은 두 이름을 같은 인물로 봅니다. 세 부르심 장면의 장소와 사건<br />순서가 거의 같고, 마태복음의 열두 제자 명단이 그를 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">세무원 마태</code>라고 부르는<br />점도 이 해석을 뒷받침합니다. 이 관점에서는 마태복음이 마가복음과 누가복음의<br />레위를 마태라는 이름으로 전했다고 이해합니다.</p>
+<p data-ke-size="size16"><b>다른 인물로 보는 해석</b></p>
+<p data-ke-size="size16">다른 인물일 수 있다고 보는 해석도 있습니다. 마가복음은 레위를<br /><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">알패오의 아들</code>로 소개하지만, 열두 제자 명단에는 레위라는 이름이 한 번도<br />나오지 않습니다. 같은 마가복음의 제자 명단에는 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">알패오의 아들 야고보</code>가 별도로<br />등장합니다(마가복음 3:18). 초기 기독교 문헌에도 레위와 마태를 구분한 해석이<br />전해집니다.</p>
+<p data-ke-size="size16">따라서 이 글은 전통적인 동일 인물 해석을 먼저 소개하되, 이를 복음서가 직접<br />확정한 사실로 쓰지는 않습니다. 세 복음서는 매우 비슷한 부르심 장면을<br />전하고 교회 전통은 마태와 레위를 같은 인물로 읽어 왔지만, 본문 자체는 두<br />이름의 관계를 직접 밝히지 않습니다.</p>
+<p data-ke-size="size16">마가복음은 그를 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">알패오의 아들 레위</code>라고 부릅니다. 누가복음은 레위가<br /><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">모든 것을 그대로 두었다</code>고 기록하고, 자기 집에서 큰 잔치를 열었다고<br />덧붙입니다. 이 두 세부는 레위 장면에만 있으므로 마태복음이 직접 기록한<br />마태의 행동처럼 옮겨 읽지는 않는 편이 정확합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="마태복음-저자라는-오랜-전승">
+<h2 id="마태복음-저자라는-오랜-전승" data-ke-size="size26">마태복음 저자라는 오랜 전승</h2>
+<p data-ke-size="size16">오늘 우리가 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">마태복음</code>이라고 부르는 책은 오랜 교회 전승에서 사도 마태와<br />연결되어 왔습니다. <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">마태복음</code>이라는 제목에도 이 전승이 담겨 있습니다.<br />그러나 복음서 본문 안에는 저자가 자신을 마태라고 밝히는 문장이 없습니다.<br />누가 이 복음서를 썼는가는 초기 교회 전승과 문헌의 관계를 함께 살펴야 하는<br />별도의 주제입니다. 이번 인물 소개에서는 저자 문제를 결론 내리지 않고,<br />마태복음 9장과 열두 제자 명단이 직접 보여 주는 마태까지만 알아갑니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="이번에-알아간-마태">
+<h2 id="이번에-알아간-마태" data-ke-size="size26">이번에 알아간 마태</h2>
+<p data-ke-size="size16">이제 마태라는 이름 옆에는 세관과 식탁을 함께 놓을 수 있습니다. 마태를 처음<br />만났다면 마태복음 9:9-13을 한 번 이어 읽어 보세요. 책 제목으로 알던 이름이<br />부르심을 받고 일어난 열두 제자의 한 사람과 연결될 것입니다.</p>
+</section>
+</article>

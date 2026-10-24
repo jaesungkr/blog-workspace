@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 96,
+  "title": "참 크래커는 저칼로리일까? 담백한 크래커의 칼로리 읽는 법",
+  "url": "https://dop3n.tistory.com/entry/%EC%B0%B8-%ED%81%AC%EB%9E%98%EC%BB%A4%EB%8A%94-%EC%A0%80%EC%B9%BC%EB%A1%9C%EB%A6%AC%EC%9D%BC%EA%B9%8C-%EB%8B%B4%EB%B0%B1%ED%95%9C-%ED%81%AC%EB%9E%98%EC%BB%A4%EC%9D%98-%EC%B9%BC%EB%A1%9C%EB%A6%AC-%EC%9D%BD%EB%8A%94-%EB%B2%95",
+  "checked_at": "2026-10-24T03:47:03.196Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "d142f613c1fad9707325ced688f83453b8f9fcaad7d763228977d694aae915d8",
+  "submitted_sha256": "54c78f37c8456fb7f34737e7434abbaab09387a9743dd49d277e3de0f776d103",
+  "metadata": {
+    "dates": [
+      "2026-08-10 18:15"
+    ],
+    "public": true,
+    "slug": "참-크래커는-저칼로리일까-담백한-크래커의-칼로리-읽는-법"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

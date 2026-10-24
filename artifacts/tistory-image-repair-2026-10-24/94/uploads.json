@@ -1,0 +1,30 @@
+[
+  {
+    "id": "vercel-getting-started",
+    "rawToken": "[##_Image|kage@tZ66D/dJMcabM6JUm/AAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-getting-started.png",
+    "sha256": "49120e5aba964096551376e0015381ebccee1424f035b91992cd0daf4d906a40",
+    "embed": "[##_Image|kage@tZ66D/dJMcabM6JUm/AAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=iEPl9Ko6eTlA4ZbtvepsRDlP81o%3D|CDM|1.3|{\"originWidth\":1200,\"originHeight\":628,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 삼각형 로고와 Getting started with Vercel 문구가 있는 공식 문서 대표 이미지\"}_##]"
+  },
+  {
+    "id": "vercel-add-new-project",
+    "rawToken": "[##_Image|kage@YEabS/dJMcafhxBP8/AAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-add-new-project.png",
+    "sha256": "d46f775fde97174f5e8278160869879361e88b91efedec34ab293ca8d48daec5",
+    "embed": "[##_Image|kage@YEabS/dJMcafhxBP8/AAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=s7ubdBBMMigKR0nugnt0zWnPXqM%3D|CDM|1.3|{\"originWidth\":1652,\"originHeight\":486,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 대시보드 오른쪽 위 Add New 메뉴에서 Project 항목이 펼쳐진 화면\"}_##]"
+  },
+  {
+    "id": "vercel-environment-variables",
+    "rawToken": "[##_Image|kage@cx9sMX/dJMcafhxBQi/AAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-environment-variables.png",
+    "sha256": "ae7e68d58e720ccd6779fb9bc8e9e03921e68ca8d5eda27410d07473ff374c28",
+    "embed": "[##_Image|kage@cx9sMX/dJMcafhxBQi/AAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=xUcV%2Bn2RjpGd%2FCLNaW8v0LYCp%2Fc%3D|CDM|1.3|{\"originWidth\":1886,\"originHeight\":1124,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 환경 변수 화면에 Sensitive 설정, Environments 선택, Key와 Value 입력란이 표시된 모습\"}_##]"
+  },
+  {
+    "id": "vercel-domain-verification",
+    "rawToken": "[##_Image|kage@cBCIfT/dJMcahfqYJI/AAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-domain-verification.png",
+    "sha256": "b649bcfefee71fcb0abb22aeaeeb8792bfa111d788521822034e8e3f5a06fcd6",
+    "embed": "[##_Image|kage@cBCIfT/dJMcahfqYJI/AAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=kBVQtiVl7pJYDbA6c8BZ9E4pUbs%3D|CDM|1.3|{\"originWidth\":1868,\"originHeight\":700,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel Configure DNS 화면에 CNAME과 TXT 레코드의 Type, Name, Value가 표시된 모습\"}_##]"
+  }
+]

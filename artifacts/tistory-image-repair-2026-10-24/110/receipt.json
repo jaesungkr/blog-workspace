@@ -1,0 +1,160 @@
+{
+  "id": 110,
+  "title": "중국 AI가 만만치 않은 이유 - 딥시크 이후 넓어진 경쟁",
+  "url": "https://dop3n.tistory.com/entry/%EC%A4%91%EA%B5%AD-AI%EA%B0%80-%EB%A7%8C%EB%A7%8C%EC%B9%98-%EC%95%8A%EC%9D%80-%EC%9D%B4%EC%9C%A0-%EB%94%A5%EC%8B%9C%ED%81%AC-%EC%9D%B4%ED%9B%84-%EB%84%93%EC%96%B4%EC%A7%84-%EA%B2%BD%EC%9F%81",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-21-china-ai-rewrites-the-race",
+  "images": [
+    {
+      "alt": "Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터",
+      "complete": true,
+      "h": 720,
+      "id": "china-ai-race-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1086.609375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 671.734375,
+        "width": 736,
+        "x": 272,
+        "y": 671.734375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdHwImU%2FdJMb999mbCs%2FAAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Da%252Ffvfz9VGi4K8iQ2MZChZpkhTC4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식",
+      "complete": true,
+      "h": 1200,
+      "id": "china-ai-three-signals",
+      "index": 1,
+      "rect": {
+        "bottom": 2986.3046875,
+        "height": 817.5546875,
+        "left": 272,
+        "right": 1008,
+        "top": 2168.75,
+        "width": 736,
+        "x": 272,
+        "y": 2168.75
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbq0NRY%2FdJMb999mbCv%2FAAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DsCnscmUtDj%252Fk9%252Bs8BtiC5%252Fo7l8A%253D",
+      "w": 1080
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터",
+      "complete": true,
+      "h": 720,
+      "id": "china-ai-race-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 545.75,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 382.875,
+        "width": 288,
+        "x": 36,
+        "y": 382.875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdHwImU%2FdJMb999mbCs%2FAAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Da%252Ffvfz9VGi4K8iQ2MZChZpkhTC4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식",
+      "complete": true,
+      "h": 1200,
+      "id": "china-ai-three-signals",
+      "index": 1,
+      "rect": {
+        "bottom": 2308.1484375,
+        "height": 319.7734375,
+        "left": 36,
+        "right": 324,
+        "top": 1988.375,
+        "width": 288,
+        "x": 36,
+        "y": 1988.375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbq0NRY%2FdJMb999mbCv%2FAAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DsCnscmUtDj%252Fk9%252Bs8BtiC5%252Fo7l8A%253D",
+      "w": 1080
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-21 17:51"
+    ],
+    "public": true,
+    "slug": "중국-AI가-만만치-않은-이유-딥시크-이후-넓어진-경쟁"
+  },
+  "uploads": [
+    {
+      "id": "china-ai-race-hero",
+      "rawToken": "[##_Image|kage@dHwImU/dJMb999mbCs/AAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-21-china-ai-rewrites-the-race/assets/china-ai-logo-roster-hero-v7.png",
+      "sha256": "e039b6d8660fab262db0023105c702f043ad0b367887377f0d5b650b5c989e29",
+      "embed": "[##_Image|kage@dHwImU/dJMb999mbCs/AAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ/img.png|alignCenter|width=\"100%\" alt=\"Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터\"|_##]"
+    },
+    {
+      "id": "china-ai-three-signals",
+      "rawToken": "[##_Image|kage@bq0NRY/dJMb999mbCv/AAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-21-china-ai-rewrites-the-race/assets/china-ai-signal-field-v7.png",
+      "sha256": "755f5b71922af7b66e4757f1834763ac183faee85e55333c793efb97c28319db",
+      "embed": "[##_Image|kage@bq0NRY/dJMb999mbCv/AAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP/img.png|alignCenter|width=\"100%\" alt=\"성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터",
+      "complete": true,
+      "h": 720,
+      "id": "china-ai-race-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1086.609375,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 671.734375,
+        "width": 736,
+        "x": 212,
+        "y": 671.734375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdHwImU%2FdJMb999mbCs%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VIF49OBczk20ie0_tTVZDUXnf6Z8ltD6NqiytIlTG3R7lHtksWMPZWUET6N8fjLub_fNp9R0z_4xRTlAyy6AdD%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FNlK8lbcdPsl4FuTAz372itVnbw%253D",
+      "w": 1280
+    },
+    {
+      "alt": "성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식",
+      "complete": true,
+      "h": 1200,
+      "id": "china-ai-three-signals",
+      "index": 1,
+      "rect": {
+        "bottom": 2986.3046875,
+        "height": 817.5546875,
+        "left": 212,
+        "right": 948,
+        "top": 2168.75,
+        "width": 736,
+        "x": 212,
+        "y": 2168.75
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbq0NRY%2FdJMb999mbCv%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U5kvvPYrDnxJRZFNnIEnJ0_yByb2K9DhOAnBzMuXsrRkCKeaDPAdMvoFz65llo_PhKw0zgOXfKsQFRjleo8C7a%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FeAnD1u9DC4xCoIy54FeFVQeWGo%253D",
+      "w": 1080
+    }
+  ],
+  "totalImages": 2,
+  "repairedImages": 2,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:44:51.323Z"
+}

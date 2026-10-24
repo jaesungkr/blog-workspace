@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 100,
+  "title": "Unsloth Desktop이란? 코딩 없이 내 PC에서 AI를 학습하는 앱",
+  "url": "https://dop3n.tistory.com/entry/Unsloth-Desktop%EC%9D%B4%EB%9E%80-%EC%BD%94%EB%94%A9-%EC%97%86%EC%9D%B4-%EB%82%B4-PC%EC%97%90%EC%84%9C-AI%EB%A5%BC-%ED%95%99%EC%8A%B5%ED%95%98%EB%8A%94-%EC%95%B1",
+  "checked_at": "2026-10-24T03:46:12.891Z",
+  "total_images_checked": 4,
+  "images_rebound": 4,
+  "normalized_prose_preserved": true,
+  "before_sha256": "ce4f1ca04db561b920b367b1a6388943621d2019d35ce95d85c2eebbb5cc6e2e",
+  "submitted_sha256": "46994d56f6e295703c2fa442cf9543ea99c71d78e110e12112f93c69b6d9edb0",
+  "metadata": {
+    "dates": [
+      "2026-08-14 11:21"
+    ],
+    "public": true,
+    "slug": "Unsloth-Desktop이란-코딩-없이-내-PC에서-AI를-학습하는-앱"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 108,
+  "title": "셀로에서 갤럭시 S25 엣지 중고폰 판매 솔직 후기",
+  "url": "https://dop3n.tistory.com/entry/%EC%85%80%EB%A1%9C%EC%97%90%EC%84%9C-%EA%B0%A4%EB%9F%AD%EC%8B%9C-S25-%EC%97%A3%EC%A7%80-%EC%A4%91%EA%B3%A0%ED%8F%B0-%ED%8C%90%EB%A7%A4-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0",
+  "checked_at": "2026-10-24T03:36:43.290Z",
+  "total_images_checked": 9,
+  "images_rebound": 9,
+  "normalized_prose_preserved": true,
+  "before_sha256": "185f69026331dcbba839b56439800a5af71cae696b8f2191891632883fb1051b",
+  "submitted_sha256": "e79c77d3c48b590b72cb2cbf8a006a1ce4cbc96978ab20d3b7418b8032e63070",
+  "metadata": {
+    "dates": [
+      "2026-08-21 14:46"
+    ],
+    "public": true,
+    "slug": "셀로에서-갤럭시-S25-엣지-중고폰-판매-솔직-후기"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

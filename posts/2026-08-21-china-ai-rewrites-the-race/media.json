@@ -17,7 +17,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/china-ai-logo-roster-source-v1.png",
       "publish_path": "assets/china-ai-logo-roster-hero-v7.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Ftf8MY%2FdJMcaf1ZSGx%2FAAAAAAAAAAAAAAAAAAAAAOS-lGZgZJQdw5riE4ONhwQHUGeDkgIwLZlITXbKCXcH%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDy%252FvPxEODUfSuyAMkqdtBbKOD0Y%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdHwImU%2FdJMb999mbCs%2FAAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Da%252Ffvfz9VGi4K8iQ2MZChZpkhTC4%253D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -32,7 +32,8 @@
       ],
       "redactions": [],
       "sha256": "e039b6d8660fab262db0023105c702f043ad0b367887377f0d5b650b5c989e29",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@dHwImU/dJMb999mbCs/AAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ/img.png|alignCenter|width=\"100%\" alt=\"Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터\"|_##]"
     },
     {
       "id": "china-ai-three-signals",
@@ -49,7 +50,7 @@
       "environment": "Python 3 with Pillow; Apple SD Gothic Neo",
       "source_url": "",
       "publish_path": "assets/china-ai-signal-field-v7.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIMsZY%2FdJMcahll5oS%2FAAAAAAAAAAAAAAAAAAAAANm34AqOYRhqpvqQYucDcLiSG8lxGM4drKdEheUAVj3k%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DjJp7SXzDEvoDONvDlabKTVKHT84%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbq0NRY%2FdJMb999mbCv%2FAAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DsCnscmUtDj%252Fk9%252Bs8BtiC5%252Fo7l8A%253D",
       "width": 1080,
       "height": 1200,
       "display_width": 760,
@@ -64,7 +65,8 @@
       ],
       "redactions": [],
       "sha256": "755f5b71922af7b66e4757f1834763ac183faee85e55333c793efb97c28319db",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bq0NRY/dJMb999mbCv/AAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP/img.png|alignCenter|width=\"100%\" alt=\"성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식\"|_##]"
     }
   ]
 }

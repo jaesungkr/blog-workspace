@@ -1,0 +1,93 @@
+{
+  "id": 77,
+  "title": "스킬 최적화 방법 - SkillOpt를 API 키 없이 직접 돌려보기",
+  "url": "https://dop3n.tistory.com/entry/%EC%8A%A4%ED%82%AC-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B0%A9%EB%B2%95-SkillOpt%EB%A5%BC-API-%ED%82%A4-%EC%97%86%EC%9D%B4-%EC%A7%81%EC%A0%91-%EB%8F%8C%EB%A0%A4%EB%B3%B4%EA%B8%B0",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-07-30-skillopt-no-api-first-run",
+  "images": [
+    {
+      "alt": "현재 SKILL.md와 사용자가 남긴 과거 작업 기록, 성공 기준으로 회의록 스킬 수정 후보를 만들고 별도 사례 검사 뒤 adopt하는 흐름",
+      "complete": true,
+      "h": 1350,
+      "id": "skillopt-meeting-notes-flow",
+      "index": 0,
+      "rect": {
+        "bottom": 3993.9609375,
+        "height": 919.5,
+        "left": 272,
+        "right": 1008,
+        "top": 3074.4609375,
+        "width": 736,
+        "x": 272,
+        "y": 3074.4609375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdxlKg9%2FdJMb992GXvh%2FAAAAAAAAAAAAAAAAAAAAALHU3d3b4MAOIi75pqWQKLK-XlrtxJujVTRdIbuLPyOc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DV4a70uk6qG6xuxSBr%252BAHp%252F8I2Dc%253D",
+      "w": 1080
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "현재 SKILL.md와 사용자가 남긴 과거 작업 기록, 성공 기준으로 회의록 스킬 수정 후보를 만들고 별도 사례 검사 뒤 adopt하는 흐름",
+      "complete": true,
+      "h": 1350,
+      "id": "skillopt-meeting-notes-flow",
+      "index": 0,
+      "rect": {
+        "bottom": 1586.3828125,
+        "height": 359.5,
+        "left": 36,
+        "right": 324,
+        "top": 1226.8828125,
+        "width": 288,
+        "x": 36,
+        "y": 1226.8828125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdxlKg9%2FdJMb992GXvh%2FAAAAAAAAAAAAAAAAAAAAALHU3d3b4MAOIi75pqWQKLK-XlrtxJujVTRdIbuLPyOc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DV4a70uk6qG6xuxSBr%252BAHp%252F8I2Dc%253D",
+      "w": 1080
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-07-30 22:24"
+    ],
+    "public": true,
+    "slug": "스킬-최적화-방법-SkillOpt를-API-키-없이-직접-돌려보기"
+  },
+  "uploads": [
+    {
+      "id": "skillopt-meeting-notes-flow",
+      "rawToken": "[##_Image|kage@dxlKg9/dJMb992GXvh/AAAAAAAAAAAAAAAAAAAAALHU3d3b4MAOIi75pqWQKLK-XlrtxJujVTRdIbuLPyOc/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-07-30-skillopt-no-api-first-run/assets/infographics/skillopt-meeting-notes-flow-v5.png",
+      "sha256": "63dcdcff3de815800a0ca7725fb9beba9eed99b4f0f035e6cbd2865e1ffc0398",
+      "embed": "[##_Image|kage@dxlKg9/dJMb992GXvh/AAAAAAAAAAAAAAAAAAAAALHU3d3b4MAOIi75pqWQKLK-XlrtxJujVTRdIbuLPyOc/img.png|alignCenter|width=\"100%\" alt=\"현재 SKILL.md와 사용자가 남긴 과거 작업 기록, 성공 기준으로 회의록 스킬 수정 후보를 만들고 별도 사례 검사 뒤 adopt하는 흐름\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "현재 SKILL.md와 사용자가 남긴 과거 작업 기록, 성공 기준으로 회의록 스킬 수정 후보를 만들고 별도 사례 검사 뒤 adopt하는 흐름",
+      "complete": true,
+      "h": 1350,
+      "id": "skillopt-meeting-notes-flow",
+      "index": 0,
+      "rect": {
+        "bottom": 3663.9609375,
+        "height": 919.5,
+        "left": 212,
+        "right": 948,
+        "top": 2744.4609375,
+        "width": 736,
+        "x": 212,
+        "y": 2744.4609375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdxlKg9%2FdJMb992GXvh%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WIkwB2XLbFZuFg7hjj9VKchGiHvsrGvq7iwXr51plRauHwhLM3eioYM6PETu7xrMaKGOXHSsrvRH6-_yag5rQa%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Drl4oTMvdJXZlttmpYQ5AaavcDcI%253D",
+      "w": 1080
+    }
+  ],
+  "totalImages": 1,
+  "repairedImages": 1,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:44:10.333Z"
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 125,
+  "title": "오픈클로 2.0, 메일과 파일까지 다루는 개인 AI",
+  "url": "https://dop3n.tistory.com/entry/%EC%98%A4%ED%94%88%ED%81%B4%EB%A1%9C-20%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B0%9C%EC%9D%B8-AI%EC%9D%98-%EC%8B%9C%EC%9E%91%EA%B3%BC-%EC%9A%B4%EC%98%81%EC%9D%B4-%EB%8B%AC%EB%9D%BC%EC%A7%84-%EC%9D%B4%EC%9C%A0",
+  "checked_at": "2026-10-24T03:32:41.757Z",
+  "total_images_checked": 3,
+  "images_rebound": 3,
+  "normalized_prose_preserved": true,
+  "before_sha256": "f3c396b4947303b19c8fe02a92f2b5d34b79d5da6a49aa5356eefdd466e5c745",
+  "submitted_sha256": "4188eaac95eb4975d2a7c81bfbc3ce110caecd41d88394cd8c1651684b83ee06",
+  "metadata": {
+    "dates": [
+      "2026-09-02 00:56"
+    ],
+    "public": true,
+    "slug": "오픈클로-20은-무엇인가-개인-AI의-시작과-운영이-달라진-이유"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

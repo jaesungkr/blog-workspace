@@ -1,0 +1,435 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+/* Native attachment repair: retain Tistory file references. */
+.devlog-rich__native-media figure.imageblock { margin: 0 auto !important; transform: none !important; width: 100% !important; max-width: 100% !important; }
+.devlog-rich__native-media img { display: block; width: 100%; height: auto; border: 1px solid var(--rich-border); border-radius: 18px; background: var(--rich-image-surface); }
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">게임이나 Discord 음성 채팅에 들어가자마자 블루투스 이어폰 소리가 전화 통화처럼 먹먹해질 때가 있습니다. 통화에서 나오면 다시 선명해진다면 이어폰 고장보다 <b>Windows의 오디오 경로 전환</b>을 먼저 확인해야 합니다.</p>
+<p data-ke-size="size16"><b>먼저 Discord의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">입력 장치</code>를 블루투스 이어폰이 아닌 노트북&middot;USB 마이크로 바꾸세요.</b> 음질이 돌아오면 다른 Windows 설정은 건드릴 필요가 없습니다.</p>
+<p data-ke-size="size16">별도 마이크가 없다면 선택은 두 가지입니다. 음성 채팅을 끄고 스테레오 음질을 유지하거나, 이어폰 마이크를 쓰면서 통화 음질을 받아들여야 합니다. 일부 최신 PC&middot;이어폰 조합은 예외이며 세 번째 단계에서 확인할 수 있습니다.</p>
+<p data-ke-size="size16">아래 내용은 2026년 8월 10일 Microsoft와 Discord 공식 문서를 기준으로 정리했습니다.</p>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#1-discord-입력을-별도-마이크로-변경">Discord 입력을 별도 마이크로 변경</a></li>
+<li><a href="#2-그대로라면-discord-출력-장치-확인">그대로라면 Discord 출력 장치 확인</a></li>
+<li><a href="#3-이어폰-하나로-말하고-들으려면-le-audio-확인">이어폰 하나로 말하고 들으려면 LE Audio 확인</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="1-discord-입력을-별도-마이크로-변경">
+<h2 id="1-discord-입력을-별도-마이크로-변경" data-ke-size="size26">1. Discord 입력을 별도 마이크로 변경</h2>
+<p data-ke-size="size16">출력은 블루투스 이어폰으로 두고 입력만 바꿉니다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li>Discord 왼쪽 아래 톱니바퀴를 눌러 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">사용자 설정</code>을 엽니다.</li>
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">음성 및 비디오</code>로 이동합니다.</li>
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">입력 장치</code>에서 노트북&middot;USB&middot;웹캠 마이크를 직접 선택합니다.</li>
+<li>음악을 재생한 채 음성 채널에 들어가 음질을 비교합니다.</li>
+</ol>
+<p data-ke-size="size16"><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Default</code>는 다시 블루투스 이어폰 마이크를 고를 수 있습니다. 아래 공식 화면의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">INPUT DEVICE</code>에서 사용할 마이크 이름을 직접 지정하세요.</p>
+<div class="devlog-rich__figure devlog-rich__native-media devlog-rich__figure--scroll-mobile" style="--rich-media-width: 727px; --rich-mobile-scroll-width: 640px;" data-media-id="discord-input-device">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">[##_Image|kage@qzkjE/dJMcaaAzbzC/AAAAAAAAAAAAAAAAAAAAACMupjscaBmSv4QE_amgfSEQpcdhZ9j3NbEbkZIZDcrf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=FbTVs6Scp4O5OEavyS1eXk8FWCI%3D|CDM|1.3|{"originWidth":727,"originHeight":190,"style":"alignCenter","width":null,"alt":"Discord 음성 및 비디오 설정에서 입력 장치와 출력 장치를 고르는 화면"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">Discord 공식 영문 화면입니다. INPUT DEVICE에서 별도 마이크 이름을 고릅니다. 모바일에서는 이미지를 좌우로 밀어 입력&middot;출력 항목을 확인하세요.</p>
+<span class="devlog-rich__credit">&middot; <a href="https://support.discord.com/hc/en-us/articles/360045138471-Guide-How-to-configure-your-microphone" target="_blank" rel="noopener noreferrer">공식 자료</a></span></div>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://support.discord.com/hc/en-us/articles/214925018-Where-d-my-Audio-Input-go-Various-Voice-Issues" target="_blank" rel="noopener">Discord 공식 안내</a>와 같은 경로입니다. 마이크 테스트에서 목소리가 들어오는지도 확인하세요.</p>
+<p data-ke-size="size16">이 상태에서 음질이 유지되면 해결된 것입니다. 블루투스 이어폰 마이크가 통화용 오디오 전환 조건이었던 경우입니다.</p>
+<p data-ke-size="size16">게임을 켤 때만 다시 나빠진다면 게임 안의 음성 채팅도 확인하세요. 입력을 같은 별도 마이크로 바꾸거나 사용하지 않는 음성 채팅을 끕니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="2-그대로라면-discord-출력-장치-확인">
+<h2 id="2-그대로라면-discord-출력-장치-확인" data-ke-size="size26">2. 그대로라면 Discord 출력 장치 확인</h2>
+<p data-ke-size="size16">입력을 바꿔도 Discord 통화에 들어갈 때 음질이 떨어진다면 출력 장치를 분리해 봅니다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">사용자 설정 &gt; 음성 및 비디오</code>를 엽니다.</li>
+<li>Discord의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">출력 장치</code>를 노트북 스피커나 유선 장치로 바꿉니다.</li>
+<li>게임 소리는 블루투스 이어폰으로 재생한 채 음질을 비교합니다.</li>
+</ol>
+<p data-ke-size="size16">이때 게임 소리가 선명해지면 Discord의 통신용 출력이 전환 조건이었을 가능성이 큽니다. Discord 음성까지 같은 Bluetooth Classic 이어폰으로 들어야 한다면 모노 통신 품질이 남을 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="3-이어폰-하나로-말하고-들으려면-le-audio-확인">
+<h2 id="3-이어폰-하나로-말하고-들으려면-le-audio-확인" data-ke-size="size26">3. 이어폰 하나로 말하고 들으려면 LE Audio 확인</h2>
+<p data-ke-size="size16">LE Audio를 지원하지 않는 Bluetooth Classic 조합에서는 이어폰 하나로 마이크와 고음질 스테레오를 동시에 쓸 수 없습니다. 먼저 PC에 지원 메뉴가 있는지 확인하세요.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">설정 &gt; Bluetooth 및 장치 &gt; 장치</code>로 이동합니다.</li>
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">장치 설정</code>에서 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">사용 가능한 경우 LE 오디오 사용</code>을 찾습니다.</li>
+<li>항목이 있으면 켜고 이어폰의 LE Audio 지원도 확인합니다.</li>
+</ol>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://support.microsoft.com/en-US/Windows/Hardware/Bluetooth/check-if-a-windows-11-device-supports-bluetooth-low-energy-audio" target="_blank" rel="noopener">Microsoft 문서</a>에 따르면 이 메뉴가 없으면 현재 PC는 LE Audio를 지원하지 않습니다. 이 경우에는 별도 마이크를 사용하거나 통화 중 모노 음질을 받아들여야 합니다. Bluetooth 버전 숫자만으로는 지원 여부를 판단할 수 없습니다.</p>
+<p data-ke-size="size16">마이크를 사용하면서 스테레오까지 유지하려면 Windows 11 24H2&middot;빌드 26100.4484 이상이 필요합니다. PC의 공장 출하형 통합 LE Audio 지원, 제조사 드라이버와 호환 이어폰도 필요합니다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">설정 &gt; 시스템 &gt; 소리</code>를 엽니다.</li>
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">출력</code>에서 연결된 LE Audio 이어폰 오른쪽의 화살표를 누릅니다.</li>
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">출력 설정 &gt; 형식</code>을 펼칩니다.</li>
+<li><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">마이크가 활성 상태일 때 형식</code>에서 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">스테레오(채널 2개)</code>를 선택합니다.</li>
+</ol>
+<p data-ke-size="size16">아래는 Microsoft 영문 공식 화면입니다. <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Format when microphone is active</code>가 한국어 Windows의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">마이크가 활성 상태일 때 형식</code>입니다. 이 항목이 없으면 현재 조합은 마이크 사용 중 스테레오를 지원하지 않습니다.</p>
+<div class="devlog-rich__figure devlog-rich__native-media devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 720px;" data-media-id="windows-le-audio-stereo">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">[##_Image|kage@sqVoO/dJMb99OYJcI/AAAAAAAAAAAAAAAAAAAAALQdNsz-WhYqPWg8Qt-TjsUxHa9opdehgHlRC2UjLrvS/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=pJlRfVKfvOfG5zB5%2B0c5tUnHJOI%3D|CDM|1.3|{"originWidth":1520,"originHeight":350,"style":"alignCenter","width":null,"alt":"Windows 11 Bluetooth LE 오디오 출력 설정에서 마이크 활성 시 1채널과 2채널 형식을 고르는 화면"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">Microsoft 공식 영문 화면입니다. Format when microphone is active에 2 channels가 보여야 마이크 사용 중 스테레오 선택이 가능합니다. 모바일에서는 이미지를 좌우로 밀어 항목과 값을 확인하세요.</p>
+<span class="devlog-rich__credit">&middot; <a href="https://support.microsoft.com/en-us/windows/configure-bluetooth-le-audio-quality-settings-on-windows-11-0da9b3b9-7097-49ec-8134-a5389f6a3db1" target="_blank" rel="noopener noreferrer">공식 자료</a></span></div>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://support.microsoft.com/en-us/windows/hardware/bluetooth/configuring-bluetooth-le-audio-quality-settings-on-windows-11" target="_blank" rel="noopener">Microsoft 품질 설정 문서</a>는 호환 문제가 생기면 모노로 되돌려 비교하라고 안내합니다.</p>
+<p data-ke-size="size16"><b>왜 이런 일이 생길까?</b></p>
+<p data-ke-size="size16">Bluetooth Classic은 고음질 스테레오 재생과 이어폰 마이크를 동시에 처리하지 못합니다. 용도에 따라 두 가지 오디오 방식을 번갈아 사용합니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>방식</th>
+<th>용도</th>
+<th>들리는 소리</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A2DP</td>
+<td>음악&middot;영상&middot;게임 재생</td>
+<td>고음질 스테레오</td>
+</tr>
+<tr>
+<td>HFP</td>
+<td>이어폰 마이크와 통화 소리를 함께 처리</td>
+<td>8kHz 또는 16kHz 모노 통신 품질</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://learn.microsoft.com/en-us/windows-hardware/drivers/bluetooth/bluetooth-classic-audio" target="_blank" rel="noopener">Microsoft 문서</a>에 따르면 이어폰 마이크가 필요할 때 HFP가 선택됩니다. 앱이 출력을 통신용으로 분류할 때도 같은 전환이 일어날 수 있습니다. 공간감과 고음이 줄어드는 이유입니다.</p>
+<p data-ke-size="size16">Windows 11은 A2DP와 HFP를 하나의 장치로 표시합니다. <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Stereo</code>와 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Hands-Free</code>가 따로 보이지 않아도 정상입니다. <a style="color: #1a73e8; text-decoration: none;" href="https://learn.microsoft.com/en-us/windows/win32/coreaudio/communications-audio-format-capabilities" target="_blank" rel="noopener">Microsoft가 설명한 전환 조건</a>은 앱의 입력과 출력에서 확인해야 합니다.</p>
+<p data-ke-size="size16">통화를 끝내도 음질이 돌아오지 않는다면 이 문제와 원인이 다를 수 있습니다. 이때는 Windows 출력 장치, 드라이버, 무선 간섭과 음향 효과를 확인하세요.</p>
+</section>
+</article>

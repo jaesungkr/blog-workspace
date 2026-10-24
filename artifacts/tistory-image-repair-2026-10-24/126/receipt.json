@@ -1,0 +1,160 @@
+{
+  "id": 126,
+  "title": "Fable 5.1 vs Fable 5 - 클로드 모델 비교",
+  "url": "https://dop3n.tistory.com/entry/Fable-51-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-02-fable-5-1-vs-fable-5",
+  "images": [
+    {
+      "alt": "아이보리·금색의 Fable 5.1과 차콜·보라색의 Fable 5를 중앙 VS로 나란히 비교한 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "fable-5-1-vs-fable-5-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 701.84375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 286.96875,
+        "width": 736,
+        "x": 272,
+        "y": 286.96875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbZVSnj%2FdJMcaf2MIFO%2FAAAAAAAAAAAAAAAAAAAAAOrCloXqTxg_SzR2-OJ5hHwror6Tw7Z3Ji1491LioRwx%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dda2Pjj0trWCk1tzaddpv8O%252BPDX4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Fable 5.1의 공식 평가 우위, 캐시 읽기 가격 하락, max 과제당 비용 상승을 한 축에서 비교한 인포그래픽",
+      "complete": true,
+      "h": 800,
+      "id": "fable-5-1-upgrade-card",
+      "index": 1,
+      "rect": {
+        "bottom": 5138.90625,
+        "height": 460.75,
+        "left": 272,
+        "right": 1008,
+        "top": 4678.15625,
+        "width": 736,
+        "x": 272,
+        "y": 4678.15625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbh0YeC%2FdJMcaien6Km%2FAAAAAAAAAAAAAAAAAAAAAJiZbWxwU6RX_bq_-xk9M1iGIdiS83Xf6Z3vpAyuyobN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D9G4%252B945319JOULizCoEIAEdu3Js%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "아이보리·금색의 Fable 5.1과 차콜·보라색의 Fable 5를 중앙 VS로 나란히 비교한 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "fable-5-1-vs-fable-5-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 701.65625,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 538.78125,
+        "width": 288,
+        "x": 36,
+        "y": 538.78125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbZVSnj%2FdJMcaf2MIFO%2FAAAAAAAAAAAAAAAAAAAAAOrCloXqTxg_SzR2-OJ5hHwror6Tw7Z3Ji1491LioRwx%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dda2Pjj0trWCk1tzaddpv8O%252BPDX4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Fable 5.1의 공식 평가 우위, 캐시 읽기 가격 하락, max 과제당 비용 상승을 한 축에서 비교한 인포그래픽",
+      "complete": true,
+      "h": 800,
+      "id": "fable-5-1-upgrade-card",
+      "index": 1,
+      "rect": {
+        "bottom": 6686.765625,
+        "height": 180.75,
+        "left": 36,
+        "right": 324,
+        "top": 6506.015625,
+        "width": 288,
+        "x": 36,
+        "y": 6506.015625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbh0YeC%2FdJMcaien6Km%2FAAAAAAAAAAAAAAAAAAAAAJiZbWxwU6RX_bq_-xk9M1iGIdiS83Xf6Z3vpAyuyobN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D9G4%252B945319JOULizCoEIAEdu3Js%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-03 00:47"
+    ],
+    "public": true,
+    "slug": "Fable-51-vs-Fable-5-클로드-모델-비교"
+  },
+  "uploads": [
+    {
+      "id": "fable-5-1-vs-fable-5-hero",
+      "rawToken": "[##_Image|kage@bZVSnj/dJMcaf2MIFO/AAAAAAAAAAAAAAAAAAAAAOrCloXqTxg_SzR2-OJ5hHwror6Tw7Z3Ji1491LioRwx/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-02-fable-5-1-vs-fable-5/assets/fable-5-1-vs-fable-5-hero.png",
+      "sha256": "971dacb1b47028332cce343f6e116f509c613a25ce5713b080a4150853e47054",
+      "embed": "[##_Image|kage@bZVSnj/dJMcaf2MIFO/AAAAAAAAAAAAAAAAAAAAAOrCloXqTxg_SzR2-OJ5hHwror6Tw7Z3Ji1491LioRwx/img.png|alignCenter|width=\"100%\" alt=\"아이보리·금색의 Fable 5.1과 차콜·보라색의 Fable 5를 중앙 VS로 나란히 비교한 이미지\"|_##]"
+    },
+    {
+      "id": "fable-5-1-upgrade-card",
+      "rawToken": "[##_Image|kage@bh0YeC/dJMcaien6Km/AAAAAAAAAAAAAAAAAAAAAJiZbWxwU6RX_bq_-xk9M1iGIdiS83Xf6Z3vpAyuyobN/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-02-fable-5-1-vs-fable-5/assets/fable-5-1-upgrade-card-v3.png",
+      "sha256": "bef4e2f84365c1da6ffe099fdae64128cbe3b7f703becd96ea7af4259970cd48",
+      "embed": "[##_Image|kage@bh0YeC/dJMcaien6Km/AAAAAAAAAAAAAAAAAAAAAJiZbWxwU6RX_bq_-xk9M1iGIdiS83Xf6Z3vpAyuyobN/img.png|alignCenter|width=\"100%\" alt=\"Fable 5.1의 공식 평가 우위, 캐시 읽기 가격 하락, max 과제당 비용 상승을 한 축에서 비교한 인포그래픽\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "아이보리·금색의 Fable 5.1과 차콜·보라색의 Fable 5를 중앙 VS로 나란히 비교한 이미지",
+      "complete": true,
+      "h": 720,
+      "id": "fable-5-1-vs-fable-5-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1115.84375,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 700.96875,
+        "width": 736,
+        "x": 212,
+        "y": 700.96875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbZVSnj%2FdJMcaf2MIFO%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VJ5inrYViprB9AmTnthm-zvw-ROp9cqqJR_ggwPpIL_rVMVY9hhp-fatDwZGA7XsmyGr2AWSr3of8pr2NJ2MGq%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DoqiKkneSlHFrVqOAU7SeqH6z3sI%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Fable 5.1의 공식 평가 우위, 캐시 읽기 가격 하락, max 과제당 비용 상승을 한 축에서 비교한 인포그래픽",
+      "complete": true,
+      "h": 800,
+      "id": "fable-5-1-upgrade-card",
+      "index": 1,
+      "rect": {
+        "bottom": 5552.90625,
+        "height": 460.75,
+        "left": 212,
+        "right": 948,
+        "top": 5092.15625,
+        "width": 736,
+        "x": 212,
+        "y": 5092.15625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbh0YeC%2FdJMcaien6Km%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VHC44WCveQavXSHQPAjfAQJxxw_5SgaqK8nnqVX3u65zfRHzxuRPUzA3A40xUDkyGAH50OHF68PKD9TsvWJPxt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DZvWni1%252BhlO2u7%252BhFdrOkbIXThIM%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 2,
+  "repairedImages": 2,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:32:17.140Z"
+}

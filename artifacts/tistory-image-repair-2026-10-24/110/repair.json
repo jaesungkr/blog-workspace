@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 110,
+  "title": "중국 AI가 만만치 않은 이유 - 딥시크 이후 넓어진 경쟁",
+  "url": "https://dop3n.tistory.com/entry/%EC%A4%91%EA%B5%AD-AI%EA%B0%80-%EB%A7%8C%EB%A7%8C%EC%B9%98-%EC%95%8A%EC%9D%80-%EC%9D%B4%EC%9C%A0-%EB%94%A5%EC%8B%9C%ED%81%AC-%EC%9D%B4%ED%9B%84-%EB%84%93%EC%96%B4%EC%A7%84-%EA%B2%BD%EC%9F%81",
+  "checked_at": "2026-10-24T03:44:51.323Z",
+  "total_images_checked": 2,
+  "images_rebound": 2,
+  "normalized_prose_preserved": true,
+  "before_sha256": "336f8d6a8c724010465d76d8d208d7ea9f0f764ee814c45f1a27443a9f7937cf",
+  "submitted_sha256": "94e6aa70c9f932644747f1e66f484750ebc53ced0ea749a5a2a5c678c89a7b27",
+  "metadata": {
+    "dates": [
+      "2026-08-21 17:51"
+    ],
+    "public": true,
+    "slug": "중국-AI가-만만치-않은-이유-딥시크-이후-넓어진-경쟁"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

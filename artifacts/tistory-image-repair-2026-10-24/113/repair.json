@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 113,
+  "title": "세계 로봇 기업 지도: 누가 무엇을 잘하고 어디까지 왔나",
+  "url": "https://dop3n.tistory.com/entry/%EC%84%B8%EA%B3%84-%EB%A1%9C%EB%B4%87-%EA%B8%B0%EC%97%85-%EC%A7%80%EB%8F%84-%EB%88%84%EA%B0%80-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%9E%98%ED%95%98%EA%B3%A0-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%99%94%EB%82%98",
+  "checked_at": "2026-10-24T03:44:44.481Z",
+  "total_images_checked": 2,
+  "images_rebound": 2,
+  "normalized_prose_preserved": true,
+  "before_sha256": "79dfc600ff3692342b269456a8e66459be6479cd22689dafb90e2bf3f8ffbb5a",
+  "submitted_sha256": "cf72bfe668ed749392b1fb1a708056921edb2ba6b9033c6c75bf150e3096c77d",
+  "metadata": {
+    "dates": [
+      "2026-08-22 21:32"
+    ],
+    "public": true,
+    "slug": "세계-로봇-기업-지도-누가-무엇을-잘하고-어디까지-왔나"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

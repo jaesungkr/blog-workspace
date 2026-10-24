@@ -17,7 +17,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/living-cost-receipt-source.png",
       "publish_path": "assets/living-cost-receipt-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FE4Isz%2FdJMcadCXJUf%2FAAAAAAAAAAAAAAAAAAAAAB6-RIwoY0hCr7vj7DtmK-lVqnq2SQ3jGYQ70NJFbpG8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DDyOwvAmAQPog%252BKNWSZ20PKy8%252F%252Fw%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIgjPc%2FdJMcadjObG1%2FAAAAAAAAAAAAAAAAAAAAANHvMd0kWma0FrA8WJuucs7vCX3960jF5V8rpfKMrtYe%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dy9Knr7jBp4jOCzY2sEk0BRZiHGk%253D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -33,7 +33,8 @@
       ],
       "redactions": [],
       "sha256": "642e866daf1f9a5d24c2efe8e52ec696487a687730214560263c478bee98b880",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@IgjPc/dJMcadjObG1/AAAAAAAAAAAAAAAAAAAAANHvMd0kWma0FrA8WJuucs7vCX3960jF5V8rpfKMrtYe/img.png|alignCenter|width=\"100%\" alt=\"마트 계산대 위 영수증이 급등 그래프처럼 솟고, 파·자동차 열쇠·달걀이 놓인 장면\"|_##]"
     },
     {
       "id": "living-cost-144-overview",
@@ -52,7 +53,7 @@
       "source_url": "",
       "raw_path": "artifacts/render_living_cost_infographic.py",
       "publish_path": "assets/living-cost-144-overview-v3.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fc46aEM%2FdJMcahyLa34%2FAAAAAAAAAAAAAAAAAAAAAGcFRX3jSGfQIjf7LeOmBxRkXakkqM8Gap17U7w2oy4-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DCsnZiTd4dQva9UOiRgD5xUDbS4o%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJ6nCO%2FdJMcadjObG2%2FAAAAAAAAAAAAAAAAAAAAAHYECssaXgScC5BOtq-XnLqBhLqJwIGizWXJufbUs2Mh%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DJ%252FmPLGVbnabcDTzOrOVg5%252F%252BHq%252Fo%253D",
       "width": 1080,
       "height": 1350,
       "display_width": 760,
@@ -68,7 +69,8 @@
       ],
       "redactions": [],
       "sha256": "eaf90603994836b09e6d6b2d41243b6a284bb7aaa73e590398b928eefdcb3bcc",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@J6nCO/dJMcadjObG2/AAAAAAAAAAAAAAAAAAAAAHYECssaXgScC5BOtq-XnLqBhLqJwIGizWXJufbUs2Mh/img.png|alignCenter|width=\"100%\" alt=\"생활물가 144개 중 상승 98개·하락 38개·보합 8개를 점으로 나타내고, 급등한 경유·파·보험서비스료와 외식 20개 전부 상승을 비교한 인포그래픽\"|_##]"
     }
   ]
 }

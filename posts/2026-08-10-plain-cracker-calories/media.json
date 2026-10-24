@@ -20,7 +20,7 @@
       "source_url": "",
       "raw_path": "artifacts/plain-cracker-calorie-map-v3.svg",
       "publish_path": "assets/plain-cracker-calorie-map-v3.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fk3ZD3%2FdJMcadiNvly%2FAAAAAAAAAAAAAAAAAAAAAE0KQrJmBrjWu6bZVNuxPSi2DNBX8LI0VvDrFxL2DJ3X%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DMVXmeKP6pCTX3r5e2M%252BE1Gv%252FzKs%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FTOUtg%2FdJMcajxwP7u%2FAAAAAAAAAAAAAAAAAAAAAKfxM1oMuiyvLpqWF82rffjA-yYI-b44YW3RJauafxAb%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DMChJsGjkpQbUNAJxqK5GO4taINs%253D",
       "width": 1080,
       "height": 960,
       "display_width": 760,
@@ -35,7 +35,8 @@
       ],
       "redactions": [],
       "sha256": "cceecddcfab3e164321d9dc736a8eb2a610151fe524daf7689b5ba2cb689b538",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@TOUtg/dJMcajxwP7u/AAAAAAAAAAAAAAAAAAAAAKfxM1oMuiyvLpqWF82rffjA-yYI-b44YW3RJauafxAb/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=MChJsGjkpQbUNAJxqK5GO4taINs%3D|CDM|1.3|{\"originWidth\":1080,\"originHeight\":960,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"참크래커 한 봉 약 85kcal가 100g으로 환산하면 459.5kcal가 되는 과정을 봉지 수로 보여 주는 그림\"}_##]"
     }
   ]
 }

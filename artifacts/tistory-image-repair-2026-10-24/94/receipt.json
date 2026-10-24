@@ -1,0 +1,294 @@
+{
+  "id": 94,
+  "title": "Vercel 사용법, GitHub 첫 배포부터 환경 변수·도메인까지",
+  "url": "https://dop3n.tistory.com/entry/Vercel-%EC%82%AC%EC%9A%A9%EB%B2%95-GitHub-%EC%B2%AB-%EB%B0%B0%ED%8F%AC%EB%B6%80%ED%84%B0-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98%C2%B7%EB%8F%84%EB%A9%94%EC%9D%B8%EA%B9%8C%EC%A7%80",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide",
+  "images": [
+    {
+      "alt": "Vercel 삼각형 로고와 Getting started with Vercel 문구가 있는 공식 문서 대표 이미지",
+      "complete": true,
+      "h": 628,
+      "id": "vercel-getting-started",
+      "index": 0,
+      "rect": {
+        "bottom": -4575.875,
+        "height": 386.125,
+        "left": 272,
+        "right": 1008,
+        "top": -4962,
+        "width": 736,
+        "x": 272,
+        "y": -4962
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FtZ66D%2FdJMcabM6JUm%2FAAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DiEPl9Ko6eTlA4ZbtvepsRDlP81o%253D",
+      "w": 1200
+    },
+    {
+      "alt": "Vercel 대시보드 오른쪽 위 Add New 메뉴에서 Project 항목이 펼쳐진 화면",
+      "complete": true,
+      "h": 376,
+      "id": "vercel-add-new-project",
+      "index": 1,
+      "rect": {
+        "bottom": -1962.6953125,
+        "height": 217.609375,
+        "left": 272,
+        "right": 1008,
+        "top": -2180.3046875,
+        "width": 736,
+        "x": 272,
+        "y": -2180.3046875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FYEabS%2FdJMcafhxBP8%2FAAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Ds7ubdBBMMigKR0nugnt0zWnPXqM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Vercel 환경 변수 화면에 Sensitive 설정, Environments 선택, Key와 Value 입력란이 표시된 모습",
+      "complete": true,
+      "h": 762,
+      "id": "vercel-environment-variables",
+      "index": 2,
+      "rect": {
+        "bottom": 738.7734375,
+        "height": 438.953125,
+        "left": 272,
+        "right": 1008,
+        "top": 299.8203125,
+        "width": 736,
+        "x": 272,
+        "y": 299.8203125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcx9sMX%2FdJMcafhxBQi%2FAAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxUcV%252Bn2RjpGd%252FCLNaW8v0LYCp%252Fc%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Vercel Configure DNS 화면에 CNAME과 TXT 레코드의 Type, Name, Value가 표시된 모습",
+      "complete": true,
+      "h": 479,
+      "id": "vercel-domain-verification",
+      "index": 3,
+      "rect": {
+        "bottom": 2046.8359375,
+        "height": 276.671875,
+        "left": 272,
+        "right": 1008,
+        "top": 1770.1640625,
+        "width": 736,
+        "x": 272,
+        "y": 1770.1640625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcBCIfT%2FdJMcahfqYJI%2FAAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DkBVQtiVl7pJYDbA6c8BZ9E4pUbs%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "Vercel 삼각형 로고와 Getting started with Vercel 문구가 있는 공식 문서 대표 이미지",
+      "complete": true,
+      "h": 628,
+      "id": "vercel-getting-started",
+      "index": 0,
+      "rect": {
+        "bottom": 622.015625,
+        "height": 151.671875,
+        "left": 36,
+        "right": 324,
+        "top": 470.34375,
+        "width": 288,
+        "x": 36,
+        "y": 470.34375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FtZ66D%2FdJMcabM6JUm%2FAAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DiEPl9Ko6eTlA4ZbtvepsRDlP81o%253D",
+      "w": 1200
+    },
+    {
+      "alt": "Vercel 대시보드 오른쪽 위 Add New 메뉴에서 Project 항목이 펼쳐진 화면",
+      "complete": true,
+      "h": 376,
+      "id": "vercel-add-new-project",
+      "index": 1,
+      "rect": {
+        "bottom": 4660.421875,
+        "height": 86.0078125,
+        "left": 36,
+        "right": 324,
+        "top": 4574.4140625,
+        "width": 288,
+        "x": 36,
+        "y": 4574.4140625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FYEabS%2FdJMcafhxBP8%2FAAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Ds7ubdBBMMigKR0nugnt0zWnPXqM%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Vercel 환경 변수 화면에 Sensitive 설정, Environments 선택, Key와 Value 입력란이 표시된 모습",
+      "complete": true,
+      "h": 762,
+      "id": "vercel-environment-variables",
+      "index": 2,
+      "rect": {
+        "bottom": 8424.9921875,
+        "height": 172.2578125,
+        "left": 36,
+        "right": 324,
+        "top": 8252.734375,
+        "width": 288,
+        "x": 36,
+        "y": 8252.734375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcx9sMX%2FdJMcafhxBQi%2FAAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxUcV%252Bn2RjpGd%252FCLNaW8v0LYCp%252Fc%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Vercel Configure DNS 화면에 CNAME과 TXT 레코드의 Type, Name, Value가 표시된 모습",
+      "complete": true,
+      "h": 479,
+      "id": "vercel-domain-verification",
+      "index": 3,
+      "rect": {
+        "bottom": 10340.890625,
+        "height": 109.0234375,
+        "left": 36,
+        "right": 324,
+        "top": 10231.8671875,
+        "width": 288,
+        "x": 36,
+        "y": 10231.8671875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcBCIfT%2FdJMcahfqYJI%2FAAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DkBVQtiVl7pJYDbA6c8BZ9E4pUbs%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-10 14:09"
+    ],
+    "public": true,
+    "slug": "Vercel-사용법-GitHub-첫-배포부터-환경-변수·도메인까지"
+  },
+  "uploads": [
+    {
+      "id": "vercel-getting-started",
+      "rawToken": "[##_Image|kage@tZ66D/dJMcabM6JUm/AAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-getting-started.png",
+      "sha256": "49120e5aba964096551376e0015381ebccee1424f035b91992cd0daf4d906a40",
+      "embed": "[##_Image|kage@tZ66D/dJMcabM6JUm/AAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=iEPl9Ko6eTlA4ZbtvepsRDlP81o%3D|CDM|1.3|{\"originWidth\":1200,\"originHeight\":628,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 삼각형 로고와 Getting started with Vercel 문구가 있는 공식 문서 대표 이미지\"}_##]"
+    },
+    {
+      "id": "vercel-add-new-project",
+      "rawToken": "[##_Image|kage@YEabS/dJMcafhxBP8/AAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-add-new-project.png",
+      "sha256": "d46f775fde97174f5e8278160869879361e88b91efedec34ab293ca8d48daec5",
+      "embed": "[##_Image|kage@YEabS/dJMcafhxBP8/AAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=s7ubdBBMMigKR0nugnt0zWnPXqM%3D|CDM|1.3|{\"originWidth\":1652,\"originHeight\":486,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 대시보드 오른쪽 위 Add New 메뉴에서 Project 항목이 펼쳐진 화면\"}_##]"
+    },
+    {
+      "id": "vercel-environment-variables",
+      "rawToken": "[##_Image|kage@cx9sMX/dJMcafhxBQi/AAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-environment-variables.png",
+      "sha256": "ae7e68d58e720ccd6779fb9bc8e9e03921e68ca8d5eda27410d07473ff374c28",
+      "embed": "[##_Image|kage@cx9sMX/dJMcafhxBQi/AAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=xUcV%2Bn2RjpGd%2FCLNaW8v0LYCp%2Fc%3D|CDM|1.3|{\"originWidth\":1886,\"originHeight\":1124,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 환경 변수 화면에 Sensitive 설정, Environments 선택, Key와 Value 입력란이 표시된 모습\"}_##]"
+    },
+    {
+      "id": "vercel-domain-verification",
+      "rawToken": "[##_Image|kage@cBCIfT/dJMcahfqYJI/AAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-vercel-deployment-guide/assets/vercel-domain-verification.png",
+      "sha256": "b649bcfefee71fcb0abb22aeaeeb8792bfa111d788521822034e8e3f5a06fcd6",
+      "embed": "[##_Image|kage@cBCIfT/dJMcahfqYJI/AAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=kBVQtiVl7pJYDbA6c8BZ9E4pUbs%3D|CDM|1.3|{\"originWidth\":1868,\"originHeight\":700,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel Configure DNS 화면에 CNAME과 TXT 레코드의 Type, Name, Value가 표시된 모습\"}_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "Vercel 삼각형 로고와 Getting started with Vercel 문구가 있는 공식 문서 대표 이미지",
+      "complete": true,
+      "h": 628,
+      "id": "vercel-getting-started",
+      "index": 0,
+      "rect": {
+        "bottom": -4575.875,
+        "height": 386.125,
+        "left": 212,
+        "right": 948,
+        "top": -4962,
+        "width": 736,
+        "x": 212,
+        "y": -4962
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FtZ66D%2FdJMcabM6JUm%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Wp5h7Jof-JJWIx9gwcSneTEoPjALeZoXpuZJVjju50Qyf0IdVVT7Q-UJVgU-DCGe6i0SLEb8GbNFFEnp-OSiFI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dv76Mv69uEj%252FGT4M%252F1eLdbcpIHRs%253D",
+      "w": 1200
+    },
+    {
+      "alt": "Vercel 대시보드 오른쪽 위 Add New 메뉴에서 Project 항목이 펼쳐진 화면",
+      "complete": true,
+      "h": 376,
+      "id": "vercel-add-new-project",
+      "index": 1,
+      "rect": {
+        "bottom": -1962.6953125,
+        "height": 217.609375,
+        "left": 212,
+        "right": 948,
+        "top": -2180.3046875,
+        "width": 736,
+        "x": 212,
+        "y": -2180.3046875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FYEabS%2FdJMcafhxBP8%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UCpi_uLZ-kskXAsUiuEX5_Kbq4QC3eB_xhNFGLQrhajLUHlcc4laM0XfUCn4SHK3DA4OMqv4qc1wJotO8U_75O%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D7B0Spx3FGIS9qfMmiE9ntODnmh4%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Vercel 환경 변수 화면에 Sensitive 설정, Environments 선택, Key와 Value 입력란이 표시된 모습",
+      "complete": true,
+      "h": 762,
+      "id": "vercel-environment-variables",
+      "index": 2,
+      "rect": {
+        "bottom": 738.7734375,
+        "height": 438.953125,
+        "left": 212,
+        "right": 948,
+        "top": 299.8203125,
+        "width": 736,
+        "x": 212,
+        "y": 299.8203125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcx9sMX%2FdJMcafhxBQi%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1W6Nj9SJVqC4PL0FW9IscFkeBBEUk3N9OJXUioEnKCrKY09uNZ_IkXXm6Ko-IDnfg27KWuSrnXcZ9ZKcqCdhCRR%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dw0IxYPyfPz%252BNMB5O0aE6Me5QBKg%253D",
+      "w": 1280
+    },
+    {
+      "alt": "Vercel Configure DNS 화면에 CNAME과 TXT 레코드의 Type, Name, Value가 표시된 모습",
+      "complete": true,
+      "h": 479,
+      "id": "vercel-domain-verification",
+      "index": 3,
+      "rect": {
+        "bottom": 2046.8359375,
+        "height": 276.671875,
+        "left": 212,
+        "right": 948,
+        "top": 1770.1640625,
+        "width": 736,
+        "x": 212,
+        "y": 1770.1640625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcBCIfT%2FdJMcahfqYJI%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VvRld_rGZhPDo2M7USAQQQ9Bqdp56TAe0Fa7wy527d5nQ7UlQ0lu3329fohMjUv1r53U8K0uYek6vtX5iuJFNY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DmcX%252FHPXPu%252Fyq6HVFiv3kZ9Gvp5E%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 4,
+  "repairedImages": 4,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:47:36.374Z"
+}

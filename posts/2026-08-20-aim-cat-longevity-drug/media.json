@@ -16,7 +16,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/aim-black-ragdoll-kittens-hero-source-v4.png",
       "publish_path": "assets/aim-black-ragdoll-kittens-hero-v4.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdnvLjB%2FdJMcagNv8SX%2FAAAAAAAAAAAAAAAAAAAAAA8wAu_jaNtXeRIAKlQRdNSzXmI4hQQYj5TiVZ4DaQjL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dn2LZ8EpQPaSoTOb7qDGbUBZr3sY%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcxSDH6%2FdJMcab7gukN%2FAAAAAAAAAAAAAAAAAAAAAAdGyn02dB0Gjgs3lvQfBOu4owyyZZPxBXvdeAvizW2J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DA8mjazARwce66VHCCkXT2Ci%252BaPU%253D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -31,7 +31,8 @@
       ],
       "redactions": [],
       "sha256": "3aaca45561af647074de15e2b01567373e25d1a4a503ccba9415658f45b761c4",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@cxSDH6/dJMcab7gukN/AAAAAAAAAAAAAAAAAAAAAAdGyn02dB0Gjgs3lvQfBOu4owyyZZPxBXvdeAvizW2J/img.png|alignCenter|width=\"100%\" alt=\"창가에서 리넨 담요의 주름을 앞발로 건드리는 아기 검은 고양이와 곁에서 바라보는 푸른 눈의 아기 렉돌\"|_##]"
     },
     {
       "id": "aim-kidney-mechanism",
@@ -47,7 +48,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/aim-kidney-mechanism-source-v1.png",
       "publish_path": "assets/aim-kidney-mechanism-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmiImX%2FdJMcabrOFdn%2FAAAAAAAAAAAAAAAAAAAAAGqck8rcSi1DdB53ioixAGn2a5-Az7_kmijdyM4Xon0d%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DtbjCz9c%252F78wfEq%252BbFN3QiSWRti8%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbxFaLi%2FdJMcab7gukS%2FAAAAAAAAAAAAAAAAAAAAAAVK8EWdZeVYWVVsaAxpYBuf-YeUas2l7AVdSRRnI2Oy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DarT%252FHrRoHVwk6SriNnN%252Fh40Td8o%253D",
       "width": 1080,
       "height": 1350,
       "display_width": 760,
@@ -62,7 +63,8 @@
       ],
       "redactions": [],
       "sha256": "c423b9ce15caa21bf9524116b112e8f81287f581d783c7266501fdeb167be1c3",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bxFaLi/dJMcab7gukS/AAAAAAAAAAAAAAAAAAAAAAVK8EWdZeVYWVVsaAxpYBuf-YeUas2l7AVdSRRnI2Oy/img.png|alignCenter|width=\"100%\" alt=\"AIM이 IgM에서 분리돼 신장 찌꺼기에 붙는 흐름, 고양이에서 분리가 막히는 흐름, 재조합 AIM 보완 접근을 세 단계로 나타낸 도식\"|_##]"
     }
   ]
 }

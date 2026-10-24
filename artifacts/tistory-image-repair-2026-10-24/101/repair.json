@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 101,
+  "title": "짜게 먹고 잘 붓고 화장실이 답답하다면, 팥을 추천하는 이유",
+  "url": "https://dop3n.tistory.com/entry/%EC%A7%9C%EA%B2%8C-%EB%A8%B9%EA%B3%A0-%EC%9E%98-%EB%B6%93%EA%B3%A0-%ED%99%94%EC%9E%A5%EC%8B%A4%EC%9D%B4-%EB%8B%B5%EB%8B%B5%ED%95%98%EB%8B%A4%EB%A9%B4-%ED%8C%A5%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+  "checked_at": "2026-10-24T03:38:39.292Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "7d52c4a3b1de9fa134b080fc1d4139fa60437aecbf27a5d1f91b6812bba80c05",
+  "submitted_sha256": "fcfd8862d1a5af9445365d7aa42e40a9cea12985e177c29fd602b184b8eeadd8",
+  "metadata": {
+    "dates": [
+      "2026-08-15 15:53"
+    ],
+    "public": true,
+    "slug": "짜게-먹고-잘-붓고-화장실이-답답하다면-팥을-추천하는-이유"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 103,
+  "title": "물가는 올랐는데 무엇이 가장 비싸졌을까? 생활물가 144개 품목 분석",
+  "url": "https://dop3n.tistory.com/entry/%EB%AC%BC%EA%B0%80%EB%8A%94-%EC%98%AC%EB%9E%90%EB%8A%94%EB%8D%B0-%EB%AC%B4%EC%97%87%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EB%B9%84%EC%8B%B8%EC%A1%8C%EC%9D%84%EA%B9%8C-%EC%83%9D%ED%99%9C%EB%AC%BC%EA%B0%80-144%EA%B0%9C-%ED%92%88%EB%AA%A9-%EB%B6%84%EC%84%9D",
+  "checked_at": "2026-10-24T03:38:06.307Z",
+  "total_images_checked": 2,
+  "images_rebound": 2,
+  "normalized_prose_preserved": true,
+  "before_sha256": "48435092d746b2cad4e33145105417d34a12d5e54b92b4f3249aa9be1907e42f",
+  "submitted_sha256": "f71ddd19550a82436a48db07cb09bf5b6911122d1876de9b32b798a24128a426",
+  "metadata": {
+    "dates": [
+      "2026-08-17 23:54"
+    ],
+    "public": true,
+    "slug": "물가는-올랐는데-무엇이-가장-비싸졌을까-생활물가-144개-품목-분석"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

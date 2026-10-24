@@ -21,7 +21,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/raw/koreaconnect-fire-api-batch-v1.png",
       "publish_path": "assets/infographics/koreaconnect-fire-api-batch-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcyvwCf%2FdJMb99UTeLJ%2FAAAAAAAAAAAAAAAAAAAAAIbPzQgujtSXfWZuMMLmiGLXuydczb4QltpPB6RAdzqK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DFWrBN1Sl%252FLn6M9kVpcvnCkoHHQU%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdihXlF%2FdJMcafPvcHA%2FAAAAAAAAAAAAAAAAAAAAAD44qVeZGu7FPMv60Qi5yLXNl3grI-LNw8eVp1qKJgcM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D6m%252B97dg5RIuzzsthUrvemRlXliE%253D",
       "width": 1080,
       "height": 1350,
       "display_width": 760,
@@ -35,7 +35,8 @@
       ],
       "redactions": [],
       "sha256": "f8e213e979e03a259280fa75262b91f11c0d91f2ee360b6e2af7d46d2dff9669",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@dihXlF/dJMcafPvcHA/AAAAAAAAAAAAAAAAAAAAAD44qVeZGu7FPMv60Qi5yLXNl3grI-LNw8eVp1qKJgcM/img.png|alignCenter|width=\"100%\" alt=\"전국 화재 현황 API의 최신 접수일과 등록일, 확인일을 시간순으로 비교해 실시간 알림보다 배치 분석에 적합하다고 정리한 그림\"|_##]"
     }
   ]
 }

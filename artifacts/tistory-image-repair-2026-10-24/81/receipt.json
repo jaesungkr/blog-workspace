@@ -1,0 +1,93 @@
+{
+  "id": 81,
+  "title": "카카오 Kanana-2 경량 모델, 어디에 쓰면 좋을까?",
+  "url": "https://dop3n.tistory.com/entry/%EC%B9%B4%EC%B9%B4%EC%98%A4-Kanana-2-%EA%B2%BD%EB%9F%89-%EB%AA%A8%EB%8D%B8-%EC%96%B4%EB%94%94%EC%97%90-%EC%93%B0%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-01-kanana-2-open-source",
+  "images": [
+    {
+      "alt": "카카오 Kanana 공식 로고",
+      "complete": true,
+      "h": 275,
+      "id": "kanana-2-official-logo",
+      "index": 0,
+      "rect": {
+        "bottom": 1375.9296875,
+        "height": 159.6953125,
+        "left": 272,
+        "right": 1008,
+        "top": 1216.234375,
+        "width": 736,
+        "x": 272,
+        "y": 1216.234375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbe9VMd%2FdJMcablYfLS%2FAAAAAAAAAAAAAAAAAAAAAKAxYCEC7NUvK7jjHblK7ZY5GLpRdC7c-EHxdaQ24FjJ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DRK5BvQZB%252B2LCTYzOXLUBd%252BGfyNU%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "카카오 Kanana 공식 로고",
+      "complete": true,
+      "h": 275,
+      "id": "kanana-2-official-logo",
+      "index": 0,
+      "rect": {
+        "bottom": 807.1328125,
+        "height": 63.4453125,
+        "left": 36,
+        "right": 324,
+        "top": 743.6875,
+        "width": 288,
+        "x": 36,
+        "y": 743.6875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbe9VMd%2FdJMcablYfLS%2FAAAAAAAAAAAAAAAAAAAAAKAxYCEC7NUvK7jjHblK7ZY5GLpRdC7c-EHxdaQ24FjJ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DRK5BvQZB%252B2LCTYzOXLUBd%252BGfyNU%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-01 09:36"
+    ],
+    "public": true,
+    "slug": "카카오-Kanana-2-경량-모델-어디에-쓰면-좋을까"
+  },
+  "uploads": [
+    {
+      "id": "kanana-2-official-logo",
+      "rawToken": "[##_Image|kage@be9VMd/dJMcablYfLS/AAAAAAAAAAAAAAAAAAAAAKAxYCEC7NUvK7jjHblK7ZY5GLpRdC7c-EHxdaQ24FjJ/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-01-kanana-2-open-source/assets/screenshots/kanana-2-official-logo-dark.png",
+      "sha256": "1818b4cef7f5ef46df119609d384658443fb2acb723da3e1fd253c611f1a33f8",
+      "embed": "[##_Image|kage@be9VMd/dJMcablYfLS/AAAAAAAAAAAAAAAAAAAAAKAxYCEC7NUvK7jjHblK7ZY5GLpRdC7c-EHxdaQ24FjJ/img.png|alignCenter|width=\"100%\" alt=\"카카오 Kanana 공식 로고\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "카카오 Kanana 공식 로고",
+      "complete": true,
+      "h": 275,
+      "id": "kanana-2-official-logo",
+      "index": 0,
+      "rect": {
+        "bottom": 1045.9296875,
+        "height": 159.6953125,
+        "left": 212,
+        "right": 948,
+        "top": 886.234375,
+        "width": 736,
+        "x": 212,
+        "y": 886.234375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbe9VMd%2FdJMcablYfLS%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XwOqwXnApa7fZRV-cqnZF5RVlJFLlY_JBEVlNYJMRoQn_suYcqe0yh76zjHozecuY1RPQpcHbmk5MUTQN855pK%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DkXlVPpbz8WGdhw%252Fnf%252BQpTIcOUIE%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 1,
+  "repairedImages": 1,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:43:53.037Z"
+}

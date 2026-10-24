@@ -1,0 +1,160 @@
+{
+  "id": 95,
+  "title": "게임·디스코드에서 블루투스 이어폰 음질이 나빠지는 이유와 해결 순서",
+  "url": "https://dop3n.tistory.com/entry/%EA%B2%8C%EC%9E%84%C2%B7%EB%94%94%EC%8A%A4%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%9D%B4%EC%96%B4%ED%8F%B0-%EC%9D%8C%EC%A7%88%EC%9D%B4-%EB%82%98%EB%B9%A0%EC%A7%80%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%ED%95%B4%EA%B2%B0-%EC%88%9C%EC%84%9C",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-bluetooth-headset-audio-quality",
+  "images": [
+    {
+      "alt": "Discord 음성 및 비디오 설정에서 입력 장치와 출력 장치를 고르는 화면",
+      "complete": true,
+      "h": 190,
+      "id": "discord-input-device",
+      "index": 0,
+      "rect": {
+        "bottom": -1340.875,
+        "height": 191.4765625,
+        "left": 276.5,
+        "right": 1003.5,
+        "top": -1532.3515625,
+        "width": 727,
+        "x": 276.5,
+        "y": -1532.3515625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FqzkjE%2FdJMcaaAzbzC%2FAAAAAAAAAAAAAAAAAAAAACMupjscaBmSv4QE_amgfSEQpcdhZ9j3NbEbkZIZDcrf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFbTVs6Scp4O5OEavyS1eXk8FWCI%253D",
+      "w": 727
+    },
+    {
+      "alt": "Windows 11 Bluetooth LE 오디오 출력 설정에서 마이크 활성 시 1채널과 2채널 형식을 고르는 화면",
+      "complete": true,
+      "h": 294,
+      "id": "windows-le-audio-stereo",
+      "index": 1,
+      "rect": {
+        "bottom": 470.4921875,
+        "height": 170.5859375,
+        "left": 272,
+        "right": 1008,
+        "top": 299.90625,
+        "width": 736,
+        "x": 272,
+        "y": 299.90625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsqVoO%2FdJMb99OYJcI%2FAAAAAAAAAAAAAAAAAAAAALQdNsz-WhYqPWg8Qt-TjsUxHa9opdehgHlRC2UjLrvS%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DpJlRfVKfvOfG5zB5%252B0c5tUnHJOI%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "Discord 음성 및 비디오 설정에서 입력 장치와 출력 장치를 고르는 화면",
+      "complete": true,
+      "h": 190,
+      "id": "discord-input-device",
+      "index": 0,
+      "rect": {
+        "bottom": 890.3046875,
+        "height": 76.7421875,
+        "left": 36,
+        "right": 324,
+        "top": 813.5625,
+        "width": 288,
+        "x": 36,
+        "y": 813.5625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FqzkjE%2FdJMcaaAzbzC%2FAAAAAAAAAAAAAAAAAAAAACMupjscaBmSv4QE_amgfSEQpcdhZ9j3NbEbkZIZDcrf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFbTVs6Scp4O5OEavyS1eXk8FWCI%253D",
+      "w": 727
+    },
+    {
+      "alt": "Windows 11 Bluetooth LE 오디오 출력 설정에서 마이크 활성 시 1채널과 2채널 형식을 고르는 화면",
+      "complete": true,
+      "h": 294,
+      "id": "windows-le-audio-stereo",
+      "index": 1,
+      "rect": {
+        "bottom": 3563.96875,
+        "height": 67.6875,
+        "left": 36,
+        "right": 324,
+        "top": 3496.28125,
+        "width": 288,
+        "x": 36,
+        "y": 3496.28125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsqVoO%2FdJMb99OYJcI%2FAAAAAAAAAAAAAAAAAAAAALQdNsz-WhYqPWg8Qt-TjsUxHa9opdehgHlRC2UjLrvS%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DpJlRfVKfvOfG5zB5%252B0c5tUnHJOI%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-10 16:25"
+    ],
+    "public": true,
+    "slug": "게임·디스코드에서-블루투스-이어폰-음질이-나빠지는-이유와-해결-순서"
+  },
+  "uploads": [
+    {
+      "id": "discord-input-device",
+      "rawToken": "[##_Image|kage@qzkjE/dJMcaaAzbzC/AAAAAAAAAAAAAAAAAAAAACMupjscaBmSv4QE_amgfSEQpcdhZ9j3NbEbkZIZDcrf/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-bluetooth-headset-audio-quality/assets/discord-input-device.png",
+      "sha256": "a71060e7aa858785b2567af4242f6f7ac4c3179fafbf22697ad914627573d212",
+      "embed": "[##_Image|kage@qzkjE/dJMcaaAzbzC/AAAAAAAAAAAAAAAAAAAAACMupjscaBmSv4QE_amgfSEQpcdhZ9j3NbEbkZIZDcrf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=FbTVs6Scp4O5OEavyS1eXk8FWCI%3D|CDM|1.3|{\"originWidth\":727,\"originHeight\":190,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Discord 음성 및 비디오 설정에서 입력 장치와 출력 장치를 고르는 화면\"}_##]"
+    },
+    {
+      "id": "windows-le-audio-stereo",
+      "rawToken": "[##_Image|kage@sqVoO/dJMb99OYJcI/AAAAAAAAAAAAAAAAAAAAALQdNsz-WhYqPWg8Qt-TjsUxHa9opdehgHlRC2UjLrvS/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-10-bluetooth-headset-audio-quality/assets/windows-le-audio-stereo.png",
+      "sha256": "532e44b723ee4db329878cb9c316501c23f9828aeecb8e76bbc72e540152181d",
+      "embed": "[##_Image|kage@sqVoO/dJMb99OYJcI/AAAAAAAAAAAAAAAAAAAAALQdNsz-WhYqPWg8Qt-TjsUxHa9opdehgHlRC2UjLrvS/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=pJlRfVKfvOfG5zB5%2B0c5tUnHJOI%3D|CDM|1.3|{\"originWidth\":1520,\"originHeight\":350,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Windows 11 Bluetooth LE 오디오 출력 설정에서 마이크 활성 시 1채널과 2채널 형식을 고르는 화면\"}_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "Discord 음성 및 비디오 설정에서 입력 장치와 출력 장치를 고르는 화면",
+      "complete": true,
+      "h": 190,
+      "id": "discord-input-device",
+      "index": 0,
+      "rect": {
+        "bottom": -1340.875,
+        "height": 191.4765625,
+        "left": 216.5,
+        "right": 943.5,
+        "top": -1532.3515625,
+        "width": 727,
+        "x": 216.5,
+        "y": -1532.3515625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FqzkjE%2FdJMcaaAzbzC%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Xn-7F8my7c50gMa_rRysd_aYHqQdSmqqVl-OAEyVRlFAKmt003lDnYIzqmND8m3gQLFrTN8VH3VvLuahVGkLuj%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dox4BPK9NlqS0vEG7owaLo2hMcPE%253D",
+      "w": 727
+    },
+    {
+      "alt": "Windows 11 Bluetooth LE 오디오 출력 설정에서 마이크 활성 시 1채널과 2채널 형식을 고르는 화면",
+      "complete": true,
+      "h": 294,
+      "id": "windows-le-audio-stereo",
+      "index": 1,
+      "rect": {
+        "bottom": 470.4921875,
+        "height": 170.5859375,
+        "left": 212,
+        "right": 948,
+        "top": 299.90625,
+        "width": 736,
+        "x": 212,
+        "y": 299.90625
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsqVoO%2FdJMb99OYJcI%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Vq1kBSzEhzjon65IG4W2FqqVrsTLcUJldmiPiUQxigo-LlsGbTwBvmUyHWutvC6vZger6V2awX8x96VPImCLGP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D2nqZ0BiDcMfxMuwyvGIu734ugik%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 2,
+  "repairedImages": 2,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:47:19.461Z"
+}

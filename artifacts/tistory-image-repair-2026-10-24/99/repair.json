@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 99,
+  "title": "Grok Bot 사용법, 일론 머스크의 애착 에이전트",
+  "url": "https://dop3n.tistory.com/entry/Grok-Bot-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%9D%BC%EB%A1%A0-%EB%A8%B8%EC%8A%A4%ED%81%AC%EC%9D%98-%EC%95%A0%EC%B0%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8",
+  "checked_at": "2026-10-24T03:46:33.605Z",
+  "total_images_checked": 4,
+  "images_rebound": 4,
+  "normalized_prose_preserved": true,
+  "before_sha256": "21ebb79652108e13ef9ecf5857d904a8727730848b2d63300cb9f30e35ee7e13",
+  "submitted_sha256": "bfd952e427c2bb7639d9c8c662168246e8fcbf4b52040581c6cbc0c4284a7d07",
+  "metadata": {
+    "dates": [
+      "2026-08-14 01:18"
+    ],
+    "public": true,
+    "slug": "Grok-Bot-사용법-일론-머스크의-애착-에이전트"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

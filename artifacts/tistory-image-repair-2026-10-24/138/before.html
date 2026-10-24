@@ -1,0 +1,658 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://x.ai/news/grok-4-7" target="_blank" rel="noopener">Grok 4.7이 2026년 9월 21일 공개됐습니다.</a> 코딩과 문서 작업을 강화한 새 모델인 만큼, Fable 5.1을 쓰고 있다면 비교가 궁금할 만합니다. 지금 쓰는 모델을 바꿀 만큼 성능이 좋아졌을까요? 비슷한 결과를 더 적은 비용으로 얻을 수 있을까요?</p>
+<p data-ke-size="size16">공개 평가에서 Grok 4.7은 일부 개발&middot;전문 지식 과제에서 Fable 5.1보다 높은 점수를 받았고, API 이용 비용도 낮았습니다. 반면 여러 단계를 오래 이어 가는 작업과 외부 종합평가에서는 Fable이 앞섰습니다. <b>지금은 Fable을 계속 쓰면서, 비용 부담이 큰 반복 작업 일부를 Grok에 맡겨 볼 만합니다.</b></p>
+<figure class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="grok-fable-hero"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F1dVcN%2FdJMcabezy3f%2FAAAAAAAAAAAAAAAAAAAAAIOnjHUFp8Tw4TOYpjtYFMLpYDT4ZORA6lbzS4LZa_JG%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dz9YNtM4RrxlGcI15NnkG1n3nMI4%253D" alt="실버색 코드 괄호와 토큰으로 표현한 Grok 4.7, 보라색 책과 컴퍼스로 표현한 Fable 5.1 비교 이미지" width="1672" height="941" />
+<figcaption class="devlog-rich__caption">코드 괄호와 토큰은 Grok의 낮은 API 단가를, 책과 컴퍼스는 Fable의 장시간 계획&middot;문서 작업을 표현합니다.</figcaption>
+</figure>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#grok-47은-어떤-모델인가">Grok 4.7은 어떤 모델인가</a></li>
+<li><a href="#코딩과-문서-작업에서는-어느-쪽이-나을까">코딩과 문서 작업에서는 어느 쪽이 나을까?</a></li>
+<li><a href="#외부-평가에서-본-성능과-응답-속도">외부 평가에서 본 성능과 응답 속도</a></li>
+<li><a href="#api-비용은-얼마나-차이-날까">API 비용은 얼마나 차이 날까?</a></li>
+<li><a href="#긴-문서를-한-번에-읽힐-때의-차이">긴 문서를 한 번에 읽힐 때의 차이</a></li>
+<li><a href="#업무용-api를-연결하기-전-확인할-조건">업무용 API를 연결하기 전 확인할 조건</a></li>
+<li><a href="#fable-사용자가-grok으로-바꿔-볼-만한-작업">Fable 사용자가 Grok으로 바꿔 볼 만한 작업</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="grok-47은-어떤-모델인가">
+<h2 id="grok-47은-어떤-모델인가" data-ke-size="size26">Grok 4.7은 어떤 모델인가</h2>
+<p data-ke-size="size16">Grok 4.7은 SpaceXAI가 코딩과 지식 노동을 위해 내놓은 AI 모델입니다. 질문에 답하는 데서 그치지 않고, 개발 도구와 연결해 코드를 수정하거나 자료를 읽고 문서&middot;발표 자료를 만드는 작업을 겨냥합니다. 이런 도구를 사용하며 여러 단계를 수행하는 AI를 에이전트라고 부릅니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://x.ai/news/grok-4-7" target="_blank" rel="noopener">출시 발표</a>에 따르면 이전 Grok 4.6보다 큰 기반 모델을 사용하고, 오래 걸리는 과제를 더 많이 학습했습니다. 작업 결과를 스스로 점검하고 긴 자료를 다루는 능력도 개선했다는 설명입니다. 출시 시점에는 Cursor, Grok Build, Grok API 등에서 사용할 수 있습니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 720px;" data-media-id="grok-4-7-launch">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbjPMfi%2FdJMcaiLBpIU%2FAAAAAAAAAAAAAAAAAAAAAP0l6vwQyU9t_MSiqLS78NWSB9TYwlm7Qm056p4Ddd1N%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DZ4RmulRqJ74%252Fe1zP4WlvxK5qI3U%253D" alt="Grok 4.7 발표 제목과 코딩&middot;지식 노동용 모델이라는 설명이 보이는 SpaceXAI 화면" width="1280" height="570" /></div>
+<figcaption class="devlog-rich__caption">SpaceXAI는 2026년 9월 21일 Grok 4.7을 코딩과 지식 노동용 모델로 발표했습니다. 모바일에서는 화면을 좌우로 밀어 원문을 확인하세요.</figcaption>
+</figure>
+<p data-ke-size="size16">비교 대상인 <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank" rel="noopener">Claude Fable 5.1</a>은 Anthropic이 어려운 추론과 장시간 작업에 맞춘 모델입니다. 코드 수정뿐 아니라 여러 단계의 조사, 문서&middot;표&middot;슬라이드 작성까지 맡길 수 있습니다. 두 모델이 다루는 일이 겹치므로, 출시 시점보다 실제 과제에서 나타난 차이를 보는 편이 선택에 도움이 됩니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="코딩과-문서-작업에서는-어느-쪽이-나을까">
+<h2 id="코딩과-문서-작업에서는-어느-쪽이-나을까" data-ke-size="size26">코딩과 문서 작업에서는 어느 쪽이 나을까?</h2>
+<p data-ke-size="size16">코딩 평가만 보아도 결과가 엇갈립니다. xAI가 공개한 표에서 Grok은 소프트웨어 개발 평가인 DeepSWE에서 근소하게 앞섰지만, 장시간 코딩을 평가하는 CursorBench와 터미널 작업을 평가하는 Terminal-Bench에서는 Fable이 높았습니다.</p>
+<p data-ke-size="size16">아래는 <a style="color: #1a73e8; text-decoration: none;" href="https://x.ai/news/grok-4-7" target="_blank" rel="noopener">xAI 공식표</a>에서 두 모델의 값이 모두 있는 7개 평가를 옮긴 것입니다. 벤치마크는 정해진 과제를 수행하게 하고 결과를 채점하는 시험입니다. 모든 행에서 높은 값이 좋은 결과를 뜻하지만, 평가마다 과제와 단위가 달라 점수를 합산할 수는 없습니다.</p>
+<p data-ke-size="size16">표의 AA Briefcase는 문서&middot;표&middot;슬라이드 같은 사무 업무를 평가합니다. 이 항목은 백분율 대신 상대 평가 점수인 Elo를 사용합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/grok-4-7" target="_blank" rel="noopener">평가기관의 설명</a>에 따르면, 결과물의 분석 품질&middot;표현 품질&middot;채점 기준 충족도를 합친 값입니다.</p>
+<p data-ke-size="size16">평가에 사용한 추론 강도도 알아둘 필요가 있습니다. 추론 강도는 모델이 답을 내기 전에 얼마나 깊게 검토할지 조절하는 설정입니다. 이 표는 Grok에 주로 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">xhigh</code>, Fable에 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">max</code>를 사용했고, Grok의 DeepSWE만 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">high</code>입니다. 실행 도구까지 동일하게 맞춘 비교는 아닙니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>평가 항목</th>
+<th>Grok 4.7</th>
+<th>Fable 5.1</th>
+<th>높은 모델</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CursorBench 4.0 &middot; 장시간 코딩</td>
+<td>46.3%</td>
+<td><b>51.8%</b></td>
+<td>Fable</td>
+</tr>
+<tr>
+<td>DeepSWE v1.1 &middot; 소프트웨어 개발</td>
+<td><b>71.0%</b></td>
+<td>70.0%</td>
+<td>Grok</td>
+</tr>
+<tr>
+<td>EEBench &middot; 전기공학</td>
+<td><b>64.0%</b></td>
+<td>56.4%</td>
+<td>Grok</td>
+</tr>
+<tr>
+<td>AA Briefcase v1.1 &middot; 장시간 사무 업무</td>
+<td>1,657 Elo</td>
+<td><b>1,678 Elo</b></td>
+<td>Fable</td>
+</tr>
+<tr>
+<td>Terminal-Bench 4.0 &middot; 장시간 터미널 작업</td>
+<td>37.6%</td>
+<td><b>57.9%</b></td>
+<td>Fable</td>
+</tr>
+<tr>
+<td>Harvey Legal Agent &middot; 법률 업무</td>
+<td><b>19.6%</b></td>
+<td>6.7%</td>
+<td>Grok</td>
+</tr>
+<tr>
+<td>HealthBench Professional &middot; 임상 추론</td>
+<td>56.7%</td>
+<td><b>62.1%</b></td>
+<td>Fable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 820px; --rich-mobile-scroll-width: 820px;" data-media-id="grok-4-7-benchmark-table">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FccyJL5%2FdJMcadwFYRx%2FAAAAAAAAAAAAAAAAAAAAABftvPBZ_sG3yjGY852IijrJwVm4x5VlCAZL1wQBW10W%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DCeDpWIYWHExn699xkTy5kJVb67I%253D" alt="Grok 4.7과 Fable 5.1을 포함한 네 모델의 가격과 7개 평가 점수를 나란히 적은 공식 비교표" width="820" height="715" /></div>
+<figcaption class="devlog-rich__caption">xAI 공식표의 공통 7개 행을 다시 세면 Fable이 4개, Grok이 3개에서 앞섭니다. 모바일에서는 화면을 좌우로 밀어 Fable 열과 모델별 설정을 확인하세요.</figcaption>
+</figure>
+<p data-ke-size="size16">7개 행을 세면 Fable이 4개, Grok이 3개에서 앞섭니다. 다만 모델을 고를 때에는 승수보다 맡길 과제와 점수 차이가 중요합니다. Terminal-Bench에서는 Fable이 20.3%포인트 높아, 여러 도구를 쓰며 오래 진행하는 개발 작업이라면 Fable을 유지할 근거가 있습니다. Grok이 앞선 전기공학&middot;법률 평가 역시 해당 시험의 결과이며, 실제 전문 업무의 정확성을 보장하지는 않습니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 786px; --rich-mobile-scroll-width: 786px;" data-media-id="grok-4-7-cursorbench-cost">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbw8RFB%2FdJMcadwFYRw%2FAAAAAAAAAAAAAAAAAAAAAC4GoanMjRVkAyHZcKSll_-Ljmllzao61jBrIqX9z0ra%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DZs5UmLCyqGS3RVBhUgyEFC6jjk0%253D" alt="CursorBench 점수를 세로축, 평균 과제 비용을 가로축으로 표시한 모델별 선 그래프" width="786" height="464" /></div>
+<figcaption class="devlog-rich__caption">오른쪽 위에 가까울수록 높은 CursorBench 점수를 더 적은 비용으로 얻은 설정입니다. 모바일에서는 화면을 좌우로 밀어 축과 모델명을 확인하세요.</figcaption>
+</figure>
+<p data-ke-size="size16">xAI의 CursorBench 그래프는 가로축에 평균 과제 비용, 세로축에 성공률을 표시합니다. 비용 축이 오른쪽으로 갈수록 낮아지므로, 오른쪽 위일수록 적은 비용으로 높은 성공률을 얻은 설정입니다. Fable은 더 높은 성공률에 도달하지만, Grok은 그보다 낮은 비용으로 시도할 수 있습니다. 오류를 고치는 데 드는 시간까지 고려하면, 이 그래프에서 최고점 하나만 고르는 것으로는 충분하지 않습니다.</p>
+<p data-ke-size="size16">전문 직무의 결과물을 비교하는 GDPval에서도 Fable이 높았습니다. xAI가 공개한 값은 Fable 1,735 Elo, Grok 1,695 Elo입니다. 다만 40 Elo 차이가 실제 문서 품질에서 얼마나 크게 나타나는지는 공개된 차트만으로 알 수 없습니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 756px; --rich-mobile-scroll-width: 756px;" data-media-id="grok-4-7-knowledge-work">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbiIh8G%2FdJMcadwFYRy%2FAAAAAAAAAAAAAAAAAAAAAHiUbMnyzEByNYbNBCxi5OA-KNJPEMsYJdBUvoObL8g-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D21Mumuee5%252FWpCqYtZAagvsEZ3KU%253D" alt="GDPval 전문 지식 노동 평가에서 Fable 5.1 1735점과 Grok 4.7 1695점을 보여 주는 가로 막대그래프" width="756" height="476" /></div>
+<figcaption class="devlog-rich__caption">xAI의 GDPval 상대 평가에서는 Fable 5.1이 1,735 Elo, Grok 4.7이 1,695 Elo였습니다. 모바일에서는 화면을 좌우로 밀어 모델명과 값을 확인하세요.</figcaption>
+</figure>
+</section>
+<section class="devlog-rich__section" aria-labelledby="외부-평가에서-본-성능과-응답-속도">
+<h2 id="외부-평가에서-본-성능과-응답-속도" data-ke-size="size26">외부 평가에서 본 성능과 응답 속도</h2>
+<p data-ke-size="size16">제조사가 공개한 결과 밖에서도 Fable의 우위가 유지될까요? 별도 평가기관인 Artificial Analysis의 <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/grok-4-7" target="_blank" rel="noopener">Grok 4.7</a>과 <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/claude-fable-5-1" target="_blank" rel="noopener">Fable 5.1</a> 측정을 보면, 종합점수는 Fable이 높았습니다.</p>
+<p data-ke-size="size16">아래 종합지수는 문서 작업&middot;자동화&middot;과학&middot;추론 등 10개 평가를 가중 평균한 Intelligence Index v4.3.2입니다. 점수와 출력 속도는 높을수록, 과제당 비용은 낮을수록 좋습니다. 출력 속도의 토큰은 글을 나누어 처리하는 단위로, 초당 몇 단위를 생성하는지 나타냅니다.</p>
+<p data-ke-size="size16">Grok은 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">xhigh</code>, Fable은 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">max</code> 설정으로 평가했습니다. Fable에는 요청을 거절하면 다른 Claude 모델로 넘기는 기본 fallback도 포함돼 있습니다. 따라서 Fable 모델 하나만의 결과로 해석해서는 안 됩니다. 수치는 2026년 9월 23일 확인한 값입니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>Artificial Analysis 측정</th>
+<th>Grok 4.7 xhigh</th>
+<th>Fable 5.1 max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intelligence Index v4.3.2</td>
+<td>46</td>
+<td><b>53</b></td>
+</tr>
+<tr>
+<td>출력 속도</td>
+<td>초당 39.2토큰</td>
+<td><b>초당 65.5토큰</b></td>
+</tr>
+<tr>
+<td>지수 과제당 비용</td>
+<td><b>$3.74</b></td>
+<td>$7.63</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="aa-grok-4-7-summary">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Frgfvn%2FdJMcaiLBpIS%2FAAAAAAAAAAAAAAAAAAAAAJvUOPh8V0ZHkSTv_n5cdjnvsRKhRa_SLPtQu9UvN-Vr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dwvd21KIABGpRIHvDZlwj9pNz%252B2Q%253D" alt="Artificial Analysis가 표시한 Grok 4.7의 종합지수 46점, 속도 39.2, 과제당 비용 3.74달러, 출력량 240M" width="1280" height="590" /></div>
+<figcaption class="devlog-rich__caption">Artificial Analysis의 Grok 4.7 xhigh 화면에는 지수 46, 39.2 tok/s, 과제당 $3.74, 출력 240M이 표시됩니다. 모바일에서는 화면을 좌우로 밀어 네 카드를 확인하세요.</figcaption>
+</figure>
+<p data-ke-size="size16">Grok의 과제당 비용은 이 평가에서 약 51% 낮았습니다. 전체 평가에서 생성한 토큰은 Grok이 2억 4천만 개, Fable이 1억 9천만 개로 Grok이 더 많았지만, 낮은 단가 덕분에 평균 과제 비용은 적게 들었습니다. 단가와 실제 사용량을 함께 봐야 하는 이유입니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="aa-fable-5-1-summary">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdWsiyB%2FdJMcaiLBpIV%2FAAAAAAAAAAAAAAAAAAAAAG0WlYQROCt9kEtmNRhn7njMl1WPoqM8ODf9tzBxF5-e%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D1wLrv62EpA2lgcih7DSrcUt6gfs%253D" alt="Artificial Analysis가 표시한 Fable 5.1의 종합지수 53점, 속도 65.5, 과제당 비용 7.63달러, 출력량 190M" width="1280" height="590" /></div>
+<figcaption class="devlog-rich__caption">Artificial Analysis의 Fable 5.1 max&middot;기본 fallback 화면에는 지수 53, 65.5 tok/s, 과제당 $7.63, 출력 190M이 표시됩니다. 모바일에서는 화면을 좌우로 밀어 네 카드를 확인하세요.</figcaption>
+</figure>
+<p data-ke-size="size16">출력 속도는 Fable이 빨랐지만, 답변을 쓰기 전의 대기 시간이나 도구 실행 시간까지 포함한 작업 완료 속도는 아닙니다. 이 측정만으로 어느 모델이 항상 먼저 일을 끝낸다고 말할 수는 없습니다. 종합점수 역시 이 평가 묶음의 성과이므로, 개별 코딩&middot;문서 작업의 결과와는 차이가 날 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="api-비용은-얼마나-차이-날까">
+<h2 id="api-비용은-얼마나-차이-날까" data-ke-size="size26">API 비용은 얼마나 차이 날까?</h2>
+<p data-ke-size="size16">여기서 비교하는 가격은 앱의 월 구독료가 아니라, 프로그램에서 모델을 호출할 때 사용량에 따라 내는 API 요금입니다. 입력은 모델에 보내는 질문과 자료, 출력은 모델이 생성하는 내용입니다. 같은 자료를 다시 사용할 때에는 캐시 읽기 요금이 적용될 수 있습니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/models/grok-4.7" target="_blank" rel="noopener">xAI 가격표</a>와 <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="noopener">Anthropic 가격표</a>의 일반 API 단가는 다음과 같습니다. 단위는 모두 토큰 100만 개당 미국 달러입니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>요금 항목</th>
+<th>Grok 4.7</th>
+<th>Fable 5.1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>일반 입력</td>
+<td><b>$2</b></td>
+<td>$10</td>
+</tr>
+<tr>
+<td>일반 출력</td>
+<td><b>$6</b></td>
+<td>$50</td>
+</tr>
+<tr>
+<td>캐시 읽기</td>
+<td>$0.50</td>
+<td><b>$0.25</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">Grok의 위 요금은 입력 프롬프트가 20만 토큰 미만인 요청 기준입니다. 20만 토큰을 초과하면 초과분만이 아니라 요청 전체에 입력 $4&middot;캐시 읽기 $1&middot;출력 $12가 적용됩니다. Fable은 100만 토큰 문맥까지 표준 단가를 유지합니다. Cursor나 다른 중개 서비스의 요금은 이 직접 API 가격과 다를 수 있습니다.</p>
+<p data-ke-size="size16">단가 차이를 실제 금액으로 보기 위해, Codex가 같은 토큰 사용량 세 가지를 대입해 계산했습니다. 첫 번째 예시에서는 여러 요청에 걸쳐 입력 100만 토큰과 출력 20만 토큰을 사용합니다. Grok은 입력 $2에 출력 $1.20을 더해 $3.20, Fable은 각각 $10씩 더해 $20입니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>가정한 토큰 사용량</th>
+<th>Grok 4.7</th>
+<th>Fable 5.1</th>
+<th>Grok 절감률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>여러 요청의 합계: 입력 100만 + 출력 20만</td>
+<td><b>$3.20</b></td>
+<td>$20.00</td>
+<td>84.0%</td>
+</tr>
+<tr>
+<td>여러 요청의 합계: 일반 입력 200만 + 캐시 읽기 2,000만 + 출력 100만</td>
+<td><b>$20.00</b></td>
+<td>$75.00</td>
+<td>73.3%</td>
+</tr>
+<tr>
+<td>한 번의 긴 요청: 입력 30만 + 출력 5만</td>
+<td><b>$1.80</b></td>
+<td>$5.50</td>
+<td>67.3%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">첫째와 둘째 행은 각 요청의 프롬프트가 20만 토큰보다 짧다고 가정했습니다. 셋째 행에는 Grok의 장문 요금을 적용했습니다. 캐시 쓰기, 서버 도구, 세금, 중개 수수료는 제외했으며, 실제 모델을 실행한 청구액이 아닌 단가 계산입니다.</p>
+<p data-ke-size="size16">Fable이 더 저렴해질 여지도 있습니다. 같은 긴 자료를 반복해서 읽고 출력은 적은 작업이라면 낮은 캐시 읽기 단가가 유리합니다. 즉시 응답이 필요하지 않을 때 요청을 모아 나중에 처리하는 Batch API를 쓰면 입출력 요금도 50% 할인됩니다. Grok 4.7은 Batch API를 지원하지 않습니다.</p>
+<p data-ke-size="size16">실제 비용은 같은 일을 끝낼 때까지 계산해야 합니다. Grok에서 재시도하거나 사람이 수정하는 일이 늘어나면 표의 절감률이 그대로 남지는 않습니다. 반대로 결과 차이가 작은 반복 작업이라면 낮은 단가가 누적 비용을 줄여 줄 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="긴-문서를-한-번에-읽힐-때의-차이">
+<h2 id="긴-문서를-한-번에-읽힐-때의-차이" data-ke-size="size26">긴 문서를 한 번에 읽힐 때의 차이</h2>
+<p data-ke-size="size16">프로젝트 코드나 여러 문서를 한꺼번에 넣고 질문하려면, 모델이 한 요청에서 다룰 수 있는 자료의 양도 중요합니다. 이를 문맥 창이라고 하며, 입력 자료와 답변이 이 범위 안에 들어가야 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/grok-4-7" target="_blank" rel="noopener">Grok 4.7 문서</a>와 <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank" rel="noopener">Fable 5.1 사양</a>을 비교하면 다음과 같습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>항목</th>
+<th>Grok 4.7</th>
+<th>Fable 5.1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한 요청의 문맥 창</td>
+<td>50만 토큰</td>
+<td><b>100만 토큰</b></td>
+</tr>
+<tr>
+<td>최대 텍스트 출력</td>
+<td>문서상 별도 상한 없음</td>
+<td>12만 8천 토큰</td>
+</tr>
+<tr>
+<td>입력 &rarr; 출력</td>
+<td>글&middot;이미지 &rarr; 글</td>
+<td>글&middot;이미지 &rarr; 글</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="fable-5-1-api-specs">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbQegR5%2FdJMcaiLBpIT%2FAAAAAAAAAAAAAAAAAAAAAA0IA1b_hRdMIiQw2DJ1OYRJxrj2hMww34Rwst6zuPxf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DnRfHcFXZ1vEHcPVi853VNZPhAUk%253D" alt="Fable 5.1의 모델 ID, 요금, 100만 토큰 문맥, 12만 8천 토큰 출력을 보여 주는 공식 사양표" width="968" height="709" /></div>
+<figcaption class="devlog-rich__caption">Fable 5.1 공식 사양에는 입력&middot;출력&middot;캐시 가격, Batch API 할인, 1M 문맥과 128K 출력이 함께 표시됩니다. 모바일에서는 화면을 좌우로 밀어 각 값을 확인하세요.</figcaption>
+</figure>
+<p data-ke-size="size16">50만 토큰을 넘는 자료와 답변을 한 문맥에 유지해야 한다면 두 모델 가운데 Fable이 맞습니다. Grok의 출력에 별도 상한이 없다는 설명도 문맥 창의 제한까지 없다는 뜻은 아닙니다. 자료를 나누거나 필요한 부분을 검색해 넣을 수 있다면 Grok도 비교 대상에 남습니다. 문맥 창의 크기는 담을 수 있는 양을 뜻하므로, 자료 속 조건을 얼마나 정확하게 찾아 쓰는지는 결과물로 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="업무용-api를-연결하기-전-확인할-조건">
+<h2 id="업무용-api를-연결하기-전-확인할-조건" data-ke-size="size26">업무용 API를 연결하기 전 확인할 조건</h2>
+<p data-ke-size="size16">회사 자료를 넣는다면 보존 정책부터 확인해야 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/faq/security" target="_blank" rel="noopener">xAI 보안 문서</a>는 기본 보존 기간을 30일로 안내하며, 요청&middot;응답을 보존하지 않는 Zero Data Retention(ZDR)을 신청할 수 있다고 설명합니다. 대신 ZDR에서는 서버에 대화 상태를 저장하거나 Files&middot;Collections&middot;Batch를 사용하는 기능이 제한됩니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" target="_blank" rel="noopener">Anthropic 정책</a>에서 Fable 5.1은 별도 승인이 없는 한 30일 보존이 필요한 모델입니다. 회사가 ZDR을 요구한다면 성능과 별개로 적용 가능 여부와 계약 조건을 먼저 확인해야 합니다.</p>
+<p data-ke-size="size16">자동화에서는 요청 거절도 완료 응답과 구분해야 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback" target="_blank" rel="noopener">Fable의 거부 응답</a>은 HTTP <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">200</code>이어도 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">stop_reason: "refusal"</code>을 포함할 수 있습니다. 다른 모델로 재시도하는 서버측 fallback은 beta 기능이며, Batch API와 일부 클라우드에서는 직접 재시도를 구현해야 합니다. 성공률을 비교할 때에도 재시도 횟수와 실제 답변한 모델을 함께 기록해야 공정합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="fable-사용자가-grok으로-바꿔-볼-만한-작업">
+<h2 id="fable-사용자가-grok으로-바꿔-볼-만한-작업" data-ke-size="size26">Fable 사용자가 Grok으로 바꿔 볼 만한 작업</h2>
+<p data-ke-size="size16">공개 평가와 비용을 함께 고려하면, 지금 Fable에 맡기는 작업 가운데 무엇을 유지하고 무엇을 Grok으로 시험할지 다음처럼 나눌 수 있습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>지금 맡기는 작업</th>
+<th>권하는 시작점</th>
+<th>확인할 부분</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사람이 검토할 초안&middot;분류를 반복 생성</td>
+<td>Grok 4.7 시험</td>
+<td>줄어든 요금과 늘어난 수정 시간</td>
+</tr>
+<tr>
+<td>여러 도구를 쓰며 오래 진행하는 개발 작업</td>
+<td>기존 Fable 5.1 유지</td>
+<td>Grok에서도 같은 완료 조건을 충족하는지</td>
+</tr>
+<tr>
+<td>50만 토큰을 넘는 문맥을 한 번에 처리</td>
+<td>Fable 5.1</td>
+<td>자료를 나눠 처리해도 되는지</td>
+</tr>
+<tr>
+<td>비용을 우선해 새 API 자동화를 구성</td>
+<td>Grok 4.7부터 시험</td>
+<td>자체 과제의 성공률이 요구 수준에 이르는지</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">Grok을 처음 시험할 때에는 <a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/grok-4-7" target="_blank" rel="noopener">기본 추론 설정인 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">high</code></a>에서 시작할 수 있습니다. 결과가 부족하면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">xhigh</code>로 높여 보고, 현재 쓰는 Fable과 같은 입력&middot;도구&middot;완료 조건을 맞춰 비교하세요. 앞의 최고 강도 평가 점수가 기본 설정에서도 그대로 나온다고 가정해서는 안 됩니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://dop3n.tistory.com/entry/GPT-6-Astra-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90" target="_blank" rel="noopener">이전 Astra&middot;Fable 비교글</a>과 함께 모델을 고르는 중이라면, 평소 맡기는 업무에서 대표 사례를 골라 두는 것이 좋습니다. 예를 들어 20개 안팎의 사례에 같은 완료 조건을 적용하고, 성공 여부&middot;수정 횟수&middot;실제 요금&middot;완료 시간을 기록할 수 있습니다. 이는 통계적으로 충분한 표본이라는 뜻이 아니라, 전환 전에 차이를 확인하기 위한 출발점입니다.</p>
+<p data-ke-size="size16"><b>Grok 4.7을 도입할지는 실제로 줄어든 요금과 추가로 드는 수정 시간을 함께 보고 결정하는 편이 낫습니다.</b> 먼저 비용이 많이 드는 반복 작업 하나를 옮겨 보고, 결과가 유지될 때 사용 범위를 넓히는 것을 권합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="참고-자료">
+<h2 id="참고-자료" data-ke-size="size26">참고 자료</h2>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://x.ai/news/grok-4-7" target="_blank" rel="noopener">Introducing Grok 4.7 - SpaceXAI</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/grok-4-7" target="_blank" rel="noopener">Grok 4.7 API overview - SpaceXAI Docs</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/models/grok-4.7" target="_blank" rel="noopener">Grok 4.7 model pricing and limits - SpaceXAI Docs</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/release-notes" target="_blank" rel="noopener">SpaceXAI API release notes</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://docs.x.ai/developers/faq/security" target="_blank" rel="noopener">SpaceXAI API security and data retention</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank" rel="noopener">Claude Fable 5.1 overview - Anthropic</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="noopener">Claude API pricing - Anthropic</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" target="_blank" rel="noopener">Claude API data retention - Anthropic</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback" target="_blank" rel="noopener">Claude refusals and fallback - Anthropic</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/grok-4-7" target="_blank" rel="noopener">Grok 4.7 - Artificial Analysis</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/claude-fable-5-1" target="_blank" rel="noopener">Claude Fable 5.1 - Artificial Analysis</a></li>
+</ul>
+</section>
+</article>

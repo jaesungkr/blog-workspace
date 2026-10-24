@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 107,
+  "title": "고양이 신장병 치료제 AIM, 수명 연장 기대해도 될까?",
+  "url": "https://dop3n.tistory.com/entry/%EA%B3%A0%EC%96%91%EC%9D%B4-%EC%8B%A0%EC%9E%A5%EB%B3%91-%EC%B9%98%EB%A3%8C%EC%A0%9C-AIM-%EC%88%98%EB%AA%85-%EC%97%B0%EC%9E%A5-%EA%B8%B0%EB%8C%80%ED%95%B4%EB%8F%84-%EB%90%A0%EA%B9%8C",
+  "checked_at": "2026-10-24T03:37:04.257Z",
+  "total_images_checked": 2,
+  "images_rebound": 2,
+  "normalized_prose_preserved": true,
+  "before_sha256": "f4b4d5d65b6be3469b638cfc63d6157729a52a1821e18379169c6f70211cd6ab",
+  "submitted_sha256": "dbda7979bee1bdb6735fece87f68bcc27da73d812882219b63be803b87067bd4",
+  "metadata": {
+    "dates": [
+      "2026-08-21 14:46"
+    ],
+    "public": true,
+    "slug": "고양이-신장병-치료제-AIM-수명-연장-기대해도-될까"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

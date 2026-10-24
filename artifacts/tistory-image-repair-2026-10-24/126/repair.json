@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 126,
+  "title": "Fable 5.1 vs Fable 5 - 클로드 모델 비교",
+  "url": "https://dop3n.tistory.com/entry/Fable-51-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "checked_at": "2026-10-24T03:32:17.140Z",
+  "total_images_checked": 2,
+  "images_rebound": 2,
+  "normalized_prose_preserved": true,
+  "before_sha256": "0b51b66a7ef149805427d3aa3a6967f12e97d85dbd1181042416ac1f512d32e6",
+  "submitted_sha256": "624c4981d141bc7bf77aa4100b9cb040a4ad0c34bf176dc534d79852fc30e40e",
+  "metadata": {
+    "dates": [
+      "2026-09-03 00:47"
+    ],
+    "public": true,
+    "slug": "Fable-51-vs-Fable-5-클로드-모델-비교"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

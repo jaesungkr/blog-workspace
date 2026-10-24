@@ -1,0 +1,227 @@
+{
+  "id": 125,
+  "title": "오픈클로 2.0, 메일과 파일까지 다루는 개인 AI",
+  "url": "https://dop3n.tistory.com/entry/%EC%98%A4%ED%94%88%ED%81%B4%EB%A1%9C-20%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B0%9C%EC%9D%B8-AI%EC%9D%98-%EC%8B%9C%EC%9E%91%EA%B3%BC-%EC%9A%B4%EC%98%81%EC%9D%B4-%EB%8B%AC%EB%9D%BC%EC%A7%84-%EC%9D%B4%EC%9C%A0",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-01-openclaw-2",
+  "images": [
+    {
+      "alt": "어두운 배경의 중앙에 OpenClaw 캐릭터가 서 있고 메신저, 파일, 브라우저, 일정, 팀 작업 화면이 연결선으로 이어진 공식 대표 이미지",
+      "complete": true,
+      "h": 672,
+      "id": "openclaw-2-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 687.3125,
+        "height": 387.34375,
+        "left": 272,
+        "right": 1008,
+        "top": 299.96875,
+        "width": 736,
+        "x": 272,
+        "y": 299.96875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb20CZU%2FdJMcadYkPiy%2FAAAAAAAAAAAAAAAAAAAAAIIfvFbNijj3cHDv2_1IuZ9zAin5OdJfLvl1JjeUdUWt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVOOhVI%252FSDq%252BHabPikqmKPCwc%252BSc%253D",
+      "w": 1280
+    },
+    {
+      "alt": "OpenClaw 2.0의 Claw Patrol 새 세션 화면에서 작업 위치, workspace, Full access 권한, 모델 선택값이 입력창 주위에 표시된 모습",
+      "complete": true,
+      "h": 430,
+      "id": "openclaw-browser-ui",
+      "index": 1,
+      "rect": {
+        "bottom": 3340.75,
+        "height": 360.65625,
+        "left": 272,
+        "right": 1008,
+        "top": 2980.09375,
+        "width": 736,
+        "x": 272,
+        "y": 2980.09375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F1MR3R%2FdJMcahfqYqA%2FAAAAAAAAAAAAAAAAAAAAACCZYR_LIlCG4cANy818Wzu3qJ1stYqroBHh7AnUJiKI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtEAUXkJp%252BG4Kb6pKrsfD0uglWAk%253D",
+      "w": 880
+    },
+    {
+      "alt": "OpenClaw 공유 작업 공간의 왼쪽에 여러 세션과 참여자 목록이 있고 중앙에 The Daily Claw 대시보드가 열린 공식 화면",
+      "complete": true,
+      "h": 686,
+      "id": "openclaw-multiplayer-dashboard",
+      "index": 2,
+      "rect": {
+        "bottom": 5238.703125,
+        "height": 395.375,
+        "left": 272,
+        "right": 1008,
+        "top": 4843.328125,
+        "width": 736,
+        "x": 272,
+        "y": 4843.328125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbzODma%2FdJMcajqv2CQ%2FAAAAAAAAAAAAAAAAAAAAAO_ghZYunwX1r09IBjtb0EnW5sbzsFP0axq5QiImwd5M%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DYyLwMttoxjWEPngbrMT7XdH7JQ4%253D",
+      "w": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "어두운 배경의 중앙에 OpenClaw 캐릭터가 서 있고 메신저, 파일, 브라우저, 일정, 팀 작업 화면이 연결선으로 이어진 공식 대표 이미지",
+      "complete": true,
+      "h": 672,
+      "id": "openclaw-2-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 632.4609375,
+        "height": 152.1484375,
+        "left": 36,
+        "right": 324,
+        "top": 480.3125,
+        "width": 288,
+        "x": 36,
+        "y": 480.3125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb20CZU%2FdJMcadYkPiy%2FAAAAAAAAAAAAAAAAAAAAAIIfvFbNijj3cHDv2_1IuZ9zAin5OdJfLvl1JjeUdUWt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVOOhVI%252FSDq%252BHabPikqmKPCwc%252BSc%253D",
+      "w": 1280
+    },
+    {
+      "alt": "OpenClaw 2.0의 Claw Patrol 새 세션 화면에서 작업 위치, workspace, Full access 권한, 모델 선택값이 입력창 주위에 표시된 모습",
+      "complete": true,
+      "h": 430,
+      "id": "openclaw-browser-ui",
+      "index": 1,
+      "rect": {
+        "bottom": 4125.7109375,
+        "height": 141.75,
+        "left": 36,
+        "right": 324,
+        "top": 3983.9609375,
+        "width": 288,
+        "x": 36,
+        "y": 3983.9609375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F1MR3R%2FdJMcahfqYqA%2FAAAAAAAAAAAAAAAAAAAAACCZYR_LIlCG4cANy818Wzu3qJ1stYqroBHh7AnUJiKI%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtEAUXkJp%252BG4Kb6pKrsfD0uglWAk%253D",
+      "w": 880
+    },
+    {
+      "alt": "OpenClaw 공유 작업 공간의 왼쪽에 여러 세션과 참여자 목록이 있고 중앙에 The Daily Claw 대시보드가 열린 공식 화면",
+      "complete": true,
+      "h": 686,
+      "id": "openclaw-multiplayer-dashboard",
+      "index": 2,
+      "rect": {
+        "bottom": 6750.453125,
+        "height": 155.2734375,
+        "left": 36,
+        "right": 324,
+        "top": 6595.1796875,
+        "width": 288,
+        "x": 36,
+        "y": 6595.1796875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbzODma%2FdJMcajqv2CQ%2FAAAAAAAAAAAAAAAAAAAAAO_ghZYunwX1r09IBjtb0EnW5sbzsFP0axq5QiImwd5M%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DYyLwMttoxjWEPngbrMT7XdH7JQ4%253D",
+      "w": 1280
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-02 00:56"
+    ],
+    "public": true,
+    "slug": "오픈클로-20은-무엇인가-개인-AI의-시작과-운영이-달라진-이유"
+  },
+  "uploads": [
+    {
+      "id": "openclaw-2-hero",
+      "rawToken": "[##_Image|kage@b20CZU/dJMcadYkPiy/AAAAAAAAAAAAAAAAAAAAAIIfvFbNijj3cHDv2_1IuZ9zAin5OdJfLvl1JjeUdUWt/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-01-openclaw-2/assets/openclaw-2-hero.png",
+      "sha256": "e85b3b21eff3da88fcd3ac1741062a19c223c2f151ff3a026fec7a74219947c3",
+      "embed": "[##_Image|kage@b20CZU/dJMcadYkPiy/AAAAAAAAAAAAAAAAAAAAAIIfvFbNijj3cHDv2_1IuZ9zAin5OdJfLvl1JjeUdUWt/img.png|alignCenter|width=\"100%\" alt=\"어두운 배경의 중앙에 OpenClaw 캐릭터가 서 있고 메신저, 파일, 브라우저, 일정, 팀 작업 화면이 연결선으로 이어진 공식 대표 이미지\"|_##]"
+    },
+    {
+      "id": "openclaw-browser-ui",
+      "rawToken": "[##_Image|kage@1MR3R/dJMcahfqYqA/AAAAAAAAAAAAAAAAAAAAACCZYR_LIlCG4cANy818Wzu3qJ1stYqroBHh7AnUJiKI/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-01-openclaw-2/assets/openclaw-browser-ui.png",
+      "sha256": "6e64fe7d84be01124e91ca51d952b4a206f635dd4105c7251a3a2e3cf8602e6c",
+      "embed": "[##_Image|kage@1MR3R/dJMcahfqYqA/AAAAAAAAAAAAAAAAAAAAACCZYR_LIlCG4cANy818Wzu3qJ1stYqroBHh7AnUJiKI/img.png|alignCenter|width=\"100%\" alt=\"OpenClaw 2.0의 Claw Patrol 새 세션 화면에서 작업 위치, workspace, Full access 권한, 모델 선택값이 입력창 주위에 표시된 모습\"|_##]"
+    },
+    {
+      "id": "openclaw-multiplayer-dashboard",
+      "rawToken": "[##_Image|kage@bzODma/dJMcajqv2CQ/AAAAAAAAAAAAAAAAAAAAAO_ghZYunwX1r09IBjtb0EnW5sbzsFP0axq5QiImwd5M/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-01-openclaw-2/assets/openclaw-multiplayer-dashboard.png",
+      "sha256": "d942e6e36a34fa4a7d33a75dc890bdb8d17d4e79d5d03967beeec9bd7af925fa",
+      "embed": "[##_Image|kage@bzODma/dJMcajqv2CQ/AAAAAAAAAAAAAAAAAAAAAO_ghZYunwX1r09IBjtb0EnW5sbzsFP0axq5QiImwd5M/img.png|alignCenter|width=\"100%\" alt=\"OpenClaw 공유 작업 공간의 왼쪽에 여러 세션과 참여자 목록이 있고 중앙에 The Daily Claw 대시보드가 열린 공식 화면\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "어두운 배경의 중앙에 OpenClaw 캐릭터가 서 있고 메신저, 파일, 브라우저, 일정, 팀 작업 화면이 연결선으로 이어진 공식 대표 이미지",
+      "complete": true,
+      "h": 672,
+      "id": "openclaw-2-hero",
+      "index": 0,
+      "rect": {
+        "bottom": 1088.3125,
+        "height": 387.34375,
+        "left": 212,
+        "right": 948,
+        "top": 700.96875,
+        "width": 736,
+        "x": 212,
+        "y": 700.96875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb20CZU%2FdJMcadYkPiy%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XANR4QSu2vPU4FnPB24t7RftT6FqmK63pr6Obrx6ext-UQ6S21RN9KSyObv6jnr2UZgkVm-Zj7_uRuqlGWeEfU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D60Sb%252FRt1hOtk5dKaglU46AfCt1E%253D",
+      "w": 1280
+    },
+    {
+      "alt": "OpenClaw 2.0의 Claw Patrol 새 세션 화면에서 작업 위치, workspace, Full access 권한, 모델 선택값이 입력창 주위에 표시된 모습",
+      "complete": true,
+      "h": 430,
+      "id": "openclaw-browser-ui",
+      "index": 1,
+      "rect": {
+        "bottom": 3741.75,
+        "height": 360.65625,
+        "left": 212,
+        "right": 948,
+        "top": 3381.09375,
+        "width": 736,
+        "x": 212,
+        "y": 3381.09375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F1MR3R%2FdJMcahfqYqA%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UaRiNw8JxWkcFn5lPc8Ionh8LQ2SxwJPrparfIjWghPtSXtcVkCJp2J9MswXb1mx5S2k5CYAYUBCQbkXXlsuYa%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DN60%252FDndJspSJQfJdpq4xzAF2FOc%253D",
+      "w": 880
+    },
+    {
+      "alt": "OpenClaw 공유 작업 공간의 왼쪽에 여러 세션과 참여자 목록이 있고 중앙에 The Daily Claw 대시보드가 열린 공식 화면",
+      "complete": true,
+      "h": 686,
+      "id": "openclaw-multiplayer-dashboard",
+      "index": 2,
+      "rect": {
+        "bottom": 5639.703125,
+        "height": 395.375,
+        "left": 212,
+        "right": 948,
+        "top": 5244.328125,
+        "width": 736,
+        "x": 212,
+        "y": 5244.328125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbzODma%2FdJMcajqv2CQ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VtLrZ9KL9mOlB9j7HlCf9o_pS9fpjlj0D2EAF7XZ-GzphhWCCF1vm94TGCFoGXqsz_agBnQAjvW5lkoMCGYUVh%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DLzmlFmnw36YJhASUcnHzPhBst%252Fk%253D",
+      "w": 1280
+    }
+  ],
+  "totalImages": 3,
+  "repairedImages": 3,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:32:41.757Z"
+}

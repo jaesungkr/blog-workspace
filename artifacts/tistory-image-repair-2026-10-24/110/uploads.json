@@ -1,0 +1,16 @@
+[
+  {
+    "id": "china-ai-race-hero",
+    "rawToken": "[##_Image|kage@dHwImU/dJMb999mbCs/AAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-21-china-ai-rewrites-the-race/assets/china-ai-logo-roster-hero-v7.png",
+    "sha256": "e039b6d8660fab262db0023105c702f043ad0b367887377f0d5b650b5c989e29",
+    "embed": "[##_Image|kage@dHwImU/dJMb999mbCs/AAAAAAAAAAAAAAAAAAAAAIGLFGpoUeQM2EqBAxx8x9LJEEF6gAfrRy35O7YvvqRQ/img.png|alignCenter|width=\"100%\" alt=\"Kimi, Qwen, DeepSeek, Z.ai 공식 로고를 네 구역에 배치하고 딥시크만이 아니다라는 제목을 넣은 중국 AI 브랜드 로스터\"|_##]"
+  },
+  {
+    "id": "china-ai-three-signals",
+    "rawToken": "[##_Image|kage@bq0NRY/dJMb999mbCv/AAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-21-china-ai-rewrites-the-race/assets/china-ai-signal-field-v7.png",
+    "sha256": "755f5b71922af7b66e4757f1834763ac183faee85e55333c793efb97c28319db",
+    "embed": "[##_Image|kage@bq0NRY/dJMb999mbCv/AAAAAAAAAAAAAAAAAAAAAHXT34OqwTfBTOdcB-apzhbFXzFsvx6OEfwS29Q9SNIP/img.png|alignCenter|width=\"100%\" alt=\"성능 근접, 낮은 출력 단가, 개발자 확산의 세 데이터 신호가 하나의 재비교 축으로 합쳐지는 도식\"|_##]"
+  }
+]

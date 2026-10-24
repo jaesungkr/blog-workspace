@@ -16,7 +16,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/one-person-household-hero-v2-source.png",
       "publish_path": "assets/screenshots/one-person-household-hero-v2.png",
-      "tistory_url": "https://blog.kakaocdn.net/dna/YleUF/dJMcag7xbZk/AAAAAAAAAAAAAAAAAAAAAL58Bb9wp12yUEvdfyjSjiK5QhbCbehhf6p5ZCRSw3Gv/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=B2xyUVd72XQAUMLX57Rtgwg4wUM%3D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbwujgj%2FdJMcahTKMoX%2FAAAAAAAAAAAAAAAAAAAAAKy7wtI6-4GFpviiewrFYT1EFTG4c1unxqd3RLU08IuE%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DrEuSE%252Fjj8k09T3FiTgWgLnull3I%253D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -29,7 +29,8 @@
       ],
       "redactions": [],
       "sha256": "019734e8f63054a935b764b1759db4424f495b1f57472fa6a299a8e71895bdcc",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bwujgj/dJMcahTKMoX/AAAAAAAAAAAAAAAAAAAAAKy7wtI6-4GFpviiewrFYT1EFTG4c1unxqd3RLU08IuE/img.png|alignCenter|width=\"100%\" alt=\"햇살이 드는 작은 원룸에 1인용 식탁과 신발 한 켤레가 놓인 모습\"|_##]"
     }
   ]
 }

@@ -1,0 +1,160 @@
+{
+  "id": 103,
+  "title": "물가는 올랐는데 무엇이 가장 비싸졌을까? 생활물가 144개 품목 분석",
+  "url": "https://dop3n.tistory.com/entry/%EB%AC%BC%EA%B0%80%EB%8A%94-%EC%98%AC%EB%9E%90%EB%8A%94%EB%8D%B0-%EB%AC%B4%EC%97%87%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EB%B9%84%EC%8B%B8%EC%A1%8C%EC%9D%84%EA%B9%8C-%EC%83%9D%ED%99%9C%EB%AC%BC%EA%B0%80-144%EA%B0%9C-%ED%92%88%EB%AA%A9-%EB%B6%84%EC%84%9D",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-16-living-cost-144-items",
+  "images": [
+    {
+      "alt": "마트 계산대 위 영수증이 급등 그래프처럼 솟고, 파·자동차 열쇠·달걀이 놓인 장면",
+      "complete": true,
+      "h": 720,
+      "id": "living-cost-receipt",
+      "index": 0,
+      "rect": {
+        "bottom": 701.859375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 286.984375,
+        "width": 736,
+        "x": 272,
+        "y": 286.984375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIgjPc%2FdJMcadjObG1%2FAAAAAAAAAAAAAAAAAAAAANHvMd0kWma0FrA8WJuucs7vCX3960jF5V8rpfKMrtYe%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dy9Knr7jBp4jOCzY2sEk0BRZiHGk%253D",
+      "w": 1280
+    },
+    {
+      "alt": "생활물가 144개 중 상승 98개·하락 38개·보합 8개를 점으로 나타내고, 급등한 경유·파·보험서비스료와 외식 20개 전부 상승을 비교한 인포그래픽",
+      "complete": true,
+      "h": 1350,
+      "id": "living-cost-144-overview",
+      "index": 1,
+      "rect": {
+        "bottom": 3998.8984375,
+        "height": 919.5,
+        "left": 272,
+        "right": 1008,
+        "top": 3079.3984375,
+        "width": 736,
+        "x": 272,
+        "y": 3079.3984375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJ6nCO%2FdJMcadjObG2%2FAAAAAAAAAAAAAAAAAAAAAHYECssaXgScC5BOtq-XnLqBhLqJwIGizWXJufbUs2Mh%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DJ%252FmPLGVbnabcDTzOrOVg5%252F%252BHq%252Fo%253D",
+      "w": 1080
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "마트 계산대 위 영수증이 급등 그래프처럼 솟고, 파·자동차 열쇠·달걀이 놓인 장면",
+      "complete": true,
+      "h": 720,
+      "id": "living-cost-receipt",
+      "index": 0,
+      "rect": {
+        "bottom": 691.671875,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 528.796875,
+        "width": 288,
+        "x": 36,
+        "y": 528.796875
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIgjPc%2FdJMcadjObG1%2FAAAAAAAAAAAAAAAAAAAAANHvMd0kWma0FrA8WJuucs7vCX3960jF5V8rpfKMrtYe%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dy9Knr7jBp4jOCzY2sEk0BRZiHGk%253D",
+      "w": 1280
+    },
+    {
+      "alt": "생활물가 144개 중 상승 98개·하락 38개·보합 8개를 점으로 나타내고, 급등한 경유·파·보험서비스료와 외식 20개 전부 상승을 비교한 인포그래픽",
+      "complete": true,
+      "h": 1350,
+      "id": "living-cost-144-overview",
+      "index": 1,
+      "rect": {
+        "bottom": 3930.953125,
+        "height": 359.5,
+        "left": 36,
+        "right": 324,
+        "top": 3571.453125,
+        "width": 288,
+        "x": 36,
+        "y": 3571.453125
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJ6nCO%2FdJMcadjObG2%2FAAAAAAAAAAAAAAAAAAAAAHYECssaXgScC5BOtq-XnLqBhLqJwIGizWXJufbUs2Mh%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DJ%252FmPLGVbnabcDTzOrOVg5%252F%252BHq%252Fo%253D",
+      "w": 1080
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-08-17 23:54"
+    ],
+    "public": true,
+    "slug": "물가는-올랐는데-무엇이-가장-비싸졌을까-생활물가-144개-품목-분석"
+  },
+  "uploads": [
+    {
+      "id": "living-cost-receipt",
+      "rawToken": "[##_Image|kage@IgjPc/dJMcadjObG1/AAAAAAAAAAAAAAAAAAAAANHvMd0kWma0FrA8WJuucs7vCX3960jF5V8rpfKMrtYe/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-16-living-cost-144-items/assets/living-cost-receipt-v1.png",
+      "sha256": "642e866daf1f9a5d24c2efe8e52ec696487a687730214560263c478bee98b880",
+      "embed": "[##_Image|kage@IgjPc/dJMcadjObG1/AAAAAAAAAAAAAAAAAAAAANHvMd0kWma0FrA8WJuucs7vCX3960jF5V8rpfKMrtYe/img.png|alignCenter|width=\"100%\" alt=\"마트 계산대 위 영수증이 급등 그래프처럼 솟고, 파·자동차 열쇠·달걀이 놓인 장면\"|_##]"
+    },
+    {
+      "id": "living-cost-144-overview",
+      "rawToken": "[##_Image|kage@J6nCO/dJMcadjObG2/AAAAAAAAAAAAAAAAAAAAAHYECssaXgScC5BOtq-XnLqBhLqJwIGizWXJufbUs2Mh/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-16-living-cost-144-items/assets/living-cost-144-overview-v3.png",
+      "sha256": "eaf90603994836b09e6d6b2d41243b6a284bb7aaa73e590398b928eefdcb3bcc",
+      "embed": "[##_Image|kage@J6nCO/dJMcadjObG2/AAAAAAAAAAAAAAAAAAAAAHYECssaXgScC5BOtq-XnLqBhLqJwIGizWXJufbUs2Mh/img.png|alignCenter|width=\"100%\" alt=\"생활물가 144개 중 상승 98개·하락 38개·보합 8개를 점으로 나타내고, 급등한 경유·파·보험서비스료와 외식 20개 전부 상승을 비교한 인포그래픽\"|_##]"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "마트 계산대 위 영수증이 급등 그래프처럼 솟고, 파·자동차 열쇠·달걀이 놓인 장면",
+      "complete": true,
+      "h": 720,
+      "id": "living-cost-receipt",
+      "index": 0,
+      "rect": {
+        "bottom": 1193.859375,
+        "height": 414.875,
+        "left": 212,
+        "right": 948,
+        "top": 778.984375,
+        "width": 736,
+        "x": 212,
+        "y": 778.984375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FIgjPc%2FdJMcadjObG1%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XG6c2IHc6CneiWb7_qkVHxQGchL6Xa-wQp2aZanC_2qS76BNfIgADS9_o_KqOX6ZzAvlJVAPa2GUq5Ph770gVo%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVKDYX%252Fw2VocKvdF2Zioz3YAc2ao%253D",
+      "w": 1280
+    },
+    {
+      "alt": "생활물가 144개 중 상승 98개·하락 38개·보합 8개를 점으로 나타내고, 급등한 경유·파·보험서비스료와 외식 20개 전부 상승을 비교한 인포그래픽",
+      "complete": true,
+      "h": 1350,
+      "id": "living-cost-144-overview",
+      "index": 1,
+      "rect": {
+        "bottom": 4490.8984375,
+        "height": 919.5,
+        "left": 212,
+        "right": 948,
+        "top": 3571.3984375,
+        "width": 736,
+        "x": 212,
+        "y": 3571.3984375
+      },
+      "repaired": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJ6nCO%2FdJMcadjObG2%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VNLELoIP4WFcFBdbZaWliMh5IWxEQaH7aGnMZV7A5UXGLwtEflipU2BM_C3uM3GmRsO9wuGINRXS-bTuGWtau6%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVBB8gpSURr%252FUkZttJCt9ZUSBB5o%253D",
+      "w": 1080
+    }
+  ],
+  "totalImages": 2,
+  "repairedImages": 2,
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T03:38:06.307Z"
+}

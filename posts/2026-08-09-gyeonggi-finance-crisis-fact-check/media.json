@@ -19,7 +19,7 @@
       "source_url": "https://www.gg.go.kr/bbs/boardView.do?bIdx=223879621&bsIdx=684&menuId=1954",
       "raw_path": "artifacts/captures/raw/gyeonggi-finance-pressure-v1.png",
       "publish_path": "assets/infographics/gyeonggi-finance-pressure-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDndbD%2FdJMcaaM55gF%2FAAAAAAAAAAAAAAAAAAAAAJRzYBiNIKnVxtQypPJAU_tORunnCTw6kXlclV-cttpt%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D0XzgGPeuof8b8UdDw9fipGE4CIk%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbboXyd%2FdJMcagAGNFz%2FAAAAAAAAAAAAAAAAAAAAAHrPOt5rFCws_rQDVkczlgyyj4JrBbmrD9UIUAmyr-Cp%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DXumlpLESNzf9jb8zHmSfRPSNcwM%253D",
       "width": 1080,
       "height": 1350,
       "display_width": 916,
@@ -33,7 +33,8 @@
       ],
       "redactions": [],
       "sha256": "9415494656cbfc6e2487aba826abc4a141dd5e06f1f5e3e1ee3dcaaa4137f910",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bboXyd/dJMcagAGNFz/AAAAAAAAAAAAAAAAAAAAAHrPOt5rFCws_rQDVkczlgyyj4JrBbmrD9UIUAmyr-Cp/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=XumlpLESNzf9jb8zHmSfRPSNcwM%3D|CDM|1.3|{\"originWidth\":1080,\"originHeight\":1350,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"취득세 감소와 복지예산 증가가 경기도 재정 여력을 양쪽에서 압박하는 구조\"}_##]"
     }
   ]
 }

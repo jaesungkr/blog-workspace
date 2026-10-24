@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 77,
+  "title": "스킬 최적화 방법 - SkillOpt를 API 키 없이 직접 돌려보기",
+  "url": "https://dop3n.tistory.com/entry/%EC%8A%A4%ED%82%AC-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B0%A9%EB%B2%95-SkillOpt%EB%A5%BC-API-%ED%82%A4-%EC%97%86%EC%9D%B4-%EC%A7%81%EC%A0%91-%EB%8F%8C%EB%A0%A4%EB%B3%B4%EA%B8%B0",
+  "checked_at": "2026-10-24T03:44:10.333Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "ce660b6c623cdf34d4ee7f3ddb3289d8fc906524f9bae29dead13ea579457f4b",
+  "submitted_sha256": "153201727dc32e47a5556dcd2ba86fbe9f9db6150bd7302ea03b6c83ff4ca960",
+  "metadata": {
+    "dates": [
+      "2026-07-30 22:24"
+    ],
+    "public": true,
+    "slug": "스킬-최적화-방법-SkillOpt를-API-키-없이-직접-돌려보기"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

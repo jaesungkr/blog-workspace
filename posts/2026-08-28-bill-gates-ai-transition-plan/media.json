@@ -17,7 +17,7 @@
       "source_url": "https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/66ccdb81-246f-4180-8827-6fe2cfee3bb9/GN-PORTRAIT_760_680_desktop.jpg?w=760&h=680&fit=clip&fm=jpg&q=95",
       "raw_path": "artifacts/sources/bill-gates-source-portrait.jpg",
       "publish_path": "assets/bill-gates-source-portrait.jpg",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FCloa6%2FdJMcaaT3Bok%2FAAAAAAAAAAAAAAAAAAAAAGGhsgeY00t1fJYJqcOxYVdItFQP59AQ4acWFLDOyYPZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhXwMM9Vv6FEt7V67DV6CZFGIryA%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fctwb6O%2FdJMcadjObkJ%2FAAAAAAAAAAAAAAAAAAAAAN6ysPJ_79mudNvdJ6VawqWqnw_6bZBSrR8IJLsaqo2r%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DIk9Ei8mQ6P41nnQfMv3Hj%252F4YT%252BQ%253D",
       "width": 760,
       "height": 680,
       "display_width": 760,
@@ -30,7 +30,8 @@
       ],
       "redactions": [],
       "sha256": "4feee5791aa7bd2335b796cee93360b8c7f2f7ac07e0c74fbb69d8810f40cb21",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@ctwb6O/dJMcadjObkJ/AAAAAAAAAAAAAAAAAAAAAN6ysPJ_79mudNvdJ6VawqWqnw_6bZBSrR8IJLsaqo2r/img.jpg|alignCenter|width=\"100%\" alt=\"푸른 배경 앞에서 고개를 괴고 생각하는 Bill Gates를 색면으로 표현한 일러스트\"|_##]"
     }
   ]
 }

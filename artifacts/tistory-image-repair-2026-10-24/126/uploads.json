@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fable-5-1-vs-fable-5-hero",
+    "rawToken": "[##_Image|kage@bZVSnj/dJMcaf2MIFO/AAAAAAAAAAAAAAAAAAAAAOrCloXqTxg_SzR2-OJ5hHwror6Tw7Z3Ji1491LioRwx/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-02-fable-5-1-vs-fable-5/assets/fable-5-1-vs-fable-5-hero.png",
+    "sha256": "971dacb1b47028332cce343f6e116f509c613a25ce5713b080a4150853e47054",
+    "embed": "[##_Image|kage@bZVSnj/dJMcaf2MIFO/AAAAAAAAAAAAAAAAAAAAAOrCloXqTxg_SzR2-OJ5hHwror6Tw7Z3Ji1491LioRwx/img.png|alignCenter|width=\"100%\" alt=\"아이보리·금색의 Fable 5.1과 차콜·보라색의 Fable 5를 중앙 VS로 나란히 비교한 이미지\"|_##]"
+  },
+  {
+    "id": "fable-5-1-upgrade-card",
+    "rawToken": "[##_Image|kage@bh0YeC/dJMcaien6Km/AAAAAAAAAAAAAAAAAAAAAJiZbWxwU6RX_bq_-xk9M1iGIdiS83Xf6Z3vpAyuyobN/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-02-fable-5-1-vs-fable-5/assets/fable-5-1-upgrade-card-v3.png",
+    "sha256": "bef4e2f84365c1da6ffe099fdae64128cbe3b7f703becd96ea7af4259970cd48",
+    "embed": "[##_Image|kage@bh0YeC/dJMcaien6Km/AAAAAAAAAAAAAAAAAAAAAJiZbWxwU6RX_bq_-xk9M1iGIdiS83Xf6Z3vpAyuyobN/img.png|alignCenter|width=\"100%\" alt=\"Fable 5.1의 공식 평가 우위, 캐시 읽기 가격 하락, max 과제당 비용 상승을 한 축에서 비교한 인포그래픽\"|_##]"
+  }
+]

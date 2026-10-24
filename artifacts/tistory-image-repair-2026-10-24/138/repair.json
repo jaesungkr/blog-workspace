@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 138,
+  "title": "Grok 4.7 vs. Fable 5.1 - AI 모델 비교",
+  "url": "https://dop3n.tistory.com/entry/Grok-47-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "checked_at": "2026-10-24T03:31:11.786Z",
+  "total_images_checked": 8,
+  "images_rebound": 8,
+  "normalized_prose_preserved": true,
+  "before_sha256": "4612259267bee5e89c49fa62c95672cdd4fc365af7d9385103598ab5af8e63a5",
+  "submitted_sha256": "5fc0dcf76aebcbc6ac310d622f003ed2041e2578d4c07b20dac4b0ff6ae69d43",
+  "metadata": {
+    "dates": [
+      "2026-09-23 12:54"
+    ],
+    "public": true,
+    "slug": "Grok-47-vs-Fable-51-AI-모델-비교"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": false
+}

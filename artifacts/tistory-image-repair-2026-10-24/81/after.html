@@ -1,0 +1,625 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+
+/* Native attachment repair: retain Tistory file references. */
+.devlog-rich__native-media figure.imageblock { margin: 0 auto !important; transform: none !important; width: 100% !important; max-width: 100% !important; }
+.devlog-rich__native-media img { display: block; width: 100%; height: auto; border: 1px solid var(--rich-border); border-radius: 18px; background: var(--rich-image-surface); }
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">카카오가 Kanana-2를 오픈소스로 공개했다는 소식을 봤는데, 막상 이름을 검색하면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">30B-A3B</code>, <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">MoE</code>, <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">1.3B SLM</code> 같은 말부터 나옵니다. 그래서 이런 생각이 들 수 있습니다. <b>&ldquo;그래서 이 AI로 나는 무엇을 할 수 있고, 어떤 모델을 받아야 할까?&rdquo;</b></p>
+<p data-ke-size="size16">Kanana-2는 카카오가 만든 언어모델입니다. 문서 요약, 한국어 질문 답변, 간단한 코드 작성, 도구 호출 같은 작업에 활용할 수 있습니다. 다만 ChatGPT처럼 웹사이트에 접속해 바로 쓰는 서비스는 아닙니다. 모델 파일을 내려받아 내 컴퓨터나 서버에서 실행하는 오픈웨이트 모델입니다.</p>
+<p data-ke-size="size16">처음 보는 분이라면 가장 작은 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">1.3B Instruct</code>부터 살펴보면 됩니다. 조금 더 나은 답변 품질을 원하면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">3B Instruct</code>를 보고, 여러 사용자가 함께 쓰는 서버나 복잡한 도구 호출이 목적이라면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">30B-A3B</code>를 검토하는 순서가 현실적입니다. 이 글은 카나나-2가 어떤 모델인지부터 실제 활용법과 모델 선택, 다른 소형 모델과의 차이까지 독자가 궁금해할 순서로 풀어봅니다.</p>
+<p data-ke-size="size16">공식 자료와 모델 카드의 공개 사양&middot;평가표를 비교하고, 파라미터 수를 바탕으로 필요한 저장 공간의 최소값도 다시 계산했습니다. 공식 평가와 실제 사용 환경이 어떻게 다른지는 본문에서 따로 구분하겠습니다.</p>
+<div class="devlog-rich__figure devlog-rich__native-media" style="--rich-media-width: 916px;" data-media-id="kanana-2-official-logo">[##_Image|kage@be9VMd/dJMcablYfLS/AAAAAAAAAAAAAAAAAAAAAKAxYCEC7NUvK7jjHblK7ZY5GLpRdC7c-EHxdaQ24FjJ/img.png|alignCenter|width="100%" alt="카카오 Kanana 공식 로고"|_##]
+<p class="devlog-rich__caption">카카오 Kanana 공식 로고.</p>
+<span class="devlog-rich__credit"> <a href="https://raw.githubusercontent.com/kakao/kanana/main/assets/logo/kanana-logo-dark.png" target="_blank" rel="noopener noreferrer">공식 자료</a> </span></div>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#kanana-2는-어떤-ai인가요">Kanana-2는 어떤 AI인가요?</a></li>
+<li><a href="#어떤-모델부터-보면-될까요">어떤 모델부터 보면 될까요?</a></li>
+<li><a href="#집에서-써볼-수-있는-크기인가요">집에서 써볼 수 있는 크기인가요?</a></li>
+<li><a href="#소형-모델로-실제-어떤-일을-할-수-있나요">소형 모델로 실제 어떤 일을 할 수 있나요?</a></li>
+<li><a href="#카카오-모델은-다른-소형-모델보다-잘하나요">카카오 모델은 다른 소형 모델보다 잘하나요?</a></li>
+<li><a href="#한국어-외에-주목할-카나나-2의-장점">한국어 외에 주목할 카나나-2의 장점</a></li>
+<li><a href="#직접-써보려면-어디서-시작하나요">직접 써보려면 어디서 시작하나요?</a></li>
+<li><a href="#결국-어떤-사람에게-잘-맞을까요">결국 어떤 사람에게 잘 맞을까요?</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="kanana-2는-어떤-ai인가요">
+<h2 id="kanana-2는-어떤-ai인가요" data-ke-size="size26">Kanana-2는 어떤 AI인가요?</h2>
+<p data-ke-size="size16">쉽게 말하면 Kanana-2는 카카오가 연구자와 개발자에게 공개한 언어모델 묶음입니다. 질문에 답하고 글을 요약하는 기본 능력뿐 아니라, 사용자의 지시를 여러 단계로 나누어 수행하거나 외부 도구를 부르는 작업을 염두에 두고 만들어졌습니다. 카카오는 이를 <a style="color: #1a73e8; text-decoration: none;" href="https://tech.kakao.com/posts/804" target="_blank" rel="noopener">Agentic AI에 맞춘 모델</a>이라고 설명합니다.</p>
+<p data-ke-size="size16">여기서 Agentic AI는 어려운 별도 제품명이 아닙니다. &ldquo;오늘 일정에서 비어 있는 시간을 찾아 회의 초대장을 만들어 줘&rdquo;처럼 한 번의 요청 안에 여러 행동이 들어 있는 작업을 뜻합니다. 모델이 답변만 쓰는 것이 아니라, 필요한 도구를 선택하고 순서를 판단해야 한다는 점이 일반적인 대화형 AI와 다릅니다.</p>
+<p data-ke-size="size16">카나나-2로 생각해 볼 수 있는 일은 다음과 같습니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>긴 글이나 회의록을 짧게 요약하고 핵심 항목을 정리하기</li>
+<li>한국어 질문에 답하거나 한국어&middot;영어 문장을 바꾸기</li>
+<li>간단한 코드 예시를 만들고 오류 원인을 설명하기</li>
+<li>정해진 형식으로 문서를 분류하거나 정보를 추출하기</li>
+<li>API나 도구를 연결해 여러 단계를 처리하기</li>
+</ul>
+<p data-ke-size="size16">지금 공개된 것은 &ldquo;누구나 웹에서 바로 쓰는 카카오 챗봇&rdquo;이 아닙니다. 오픈웨이트는 모델의 가중치를 내려받아 직접 실행하거나 연구에 사용할 수 있다는 뜻입니다. 비개발자에게는 이 차이가 가장 중요합니다. 카나나-2는 지금 당장 가입해서 쓰는 서비스라기보다, 앞으로 여러 앱과 개발 도구 안에 들어갈 수 있는 재료에 가깝습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="어떤-모델부터-보면-될까요">
+<h2 id="어떤-모델부터-보면-될까요" data-ke-size="size26">어떤 모델부터 보면 될까요?</h2>
+<p data-ke-size="size16">카나나-2는 크기와 목적이 다른 모델을 함께 공개했습니다. 처음부터 30B 모델을 받을 필요는 없습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>모델</th>
+<th>쉽게 말하면</th>
+<th>잘 맞는 용도</th>
+<th>시작 난이도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">1.3B Instruct</code></td>
+<td>가장 작은 대화형 모델</td>
+<td>가벼운 한국어 요약&middot;분류&middot;질문 답변</td>
+<td>낮음</td>
+</tr>
+<tr>
+<td><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">3B Instruct</code></td>
+<td>품질과 크기의 균형형</td>
+<td>로컬 실험, 작은 서버, 코드&middot;도구 호출</td>
+<td>보통</td>
+</tr>
+<tr>
+<td><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">1.3B Base</code></td>
+<td>추가 학습용 재료</td>
+<td>파인튜닝&middot;연구</td>
+<td>높음</td>
+</tr>
+<tr>
+<td><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">3B Base</code></td>
+<td>더 큰 추가 학습용 재료</td>
+<td>연구&middot;서비스용 튜닝</td>
+<td>높음</td>
+</tr>
+<tr>
+<td><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">30B-A3B Instruct</code></td>
+<td>서버용 대형 모델</td>
+<td>복잡한 지시와 여러 단계의 작업</td>
+<td>높음</td>
+</tr>
+<tr>
+<td><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">30B-A3B Thinking</code></td>
+<td>어려운 문제에 오래 생각하는 모델</td>
+<td>수학&middot;코드&middot;추론</td>
+<td>높음</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">2025년 12월 19일 처음 공개된 30B-A3B 계열과, 2026년 7월 27일 공개된 3B&middot;1.3B SLM 계열은 공개 시점과 쓰임새가 다릅니다. SLM은 Small Language Model의 줄임말로, 작은 기기나 제한된 서버에 넣기 쉽도록 만든 모델을 말합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://huggingface.co/kakaocorp/kanana-2-1.3b-instruct" target="_blank" rel="noopener">현재 공개된 SLM은 3B와 1.3B의 Base&middot;Instruct 네 가지입니다.</a></p>
+<p data-ke-size="size16">처음 모델을 고르는 독자라면 이렇게 기억하면 됩니다. <b>내 컴퓨터에서 먼저 확인하려면 1.3B Instruct, 답변 품질을 조금 더 기대하면 3B Instruct, 직접 운영하는 서버가 있다면 30B-A3B</b>입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="집에서-써볼-수-있는-크기인가요">
+<h2 id="집에서-써볼-수-있는-크기인가요" data-ke-size="size26">집에서 써볼 수 있는 크기인가요?</h2>
+<p data-ke-size="size16">모델 이름에 붙은 숫자는 대략적인 파라미터 수입니다. 파라미터는 AI가 문장을 이해하고 다음 말을 고를 때 사용하는 내부 값이라고 생각하면 됩니다. 숫자가 커질수록 더 많은 정보를 담을 가능성이 있지만, 내려받을 파일과 실행에 필요한 메모리도 함께 커집니다.</p>
+<p data-ke-size="size16">Kanana-2의 30B-A3B는 이름 때문에 자주 오해를 받습니다. 전체 모델은 30B이지만, 한 토큰을 처리할 때 활성화되는 파라미터가 약 3B라는 뜻입니다. MoE(Mixture of Experts)는 모든 전문가를 매번 계산하지 않고, 입력에 필요한 일부 전문가만 골라 계산하는 구조입니다.</p>
+<p data-ke-size="size16">카카오 모델 카드에 따르면 30B-A3B는 128개 전문가 중 6개를 선택하고, 공유 전문가 2개를 추가로 사용합니다. 덕분에 토큰마다 계산하는 양은 줄어들지만, 전체 모델 가중치는 여전히 30B 규모입니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>모델</th>
+<th>계산에 쓰이는 규모</th>
+<th>BF16 가중치 최소량</th>
+<th>실제로 읽어야 할 의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30B-A3B</td>
+<td>활성 3B, 전체 30B</td>
+<td>약 60.0GB, 55.88GiB</td>
+<td>개인용 모델보다 서버 배포에 가까움</td>
+</tr>
+<tr>
+<td>3B SLM</td>
+<td>3B</td>
+<td>약 6.0GB, 5.59GiB</td>
+<td>작은 서버&middot;고성능 PC에서 검토할 수 있음</td>
+</tr>
+<tr>
+<td>1.3B SLM</td>
+<td>1.3B</td>
+<td>약 2.6GB, 2.42GiB</td>
+<td>가장 가벼운 출발점</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">이 계산은 <a style="color: #1a73e8; text-decoration: none;" href="https://huggingface.co/kakaocorp/kanana-2-30b-a3b-base" target="_blank" rel="noopener">공식 모델 카드</a>의 파라미터 수에 BF16 1개 값당 2바이트를 곱한 결과입니다. 실제 실행에는 양자화, KV cache, 프로그램 버퍼, 운영체제와 추론 엔진의 여유 공간이 추가됩니다. 그러니 1.3B도 &ldquo;2.6GB 그래픽카드면 무조건 실행된다&rdquo;는 뜻은 아닙니다. 30B-A3B 역시 3B 모델처럼 내려받으면 되는 크기가 아닙니다.</p>
+<p data-ke-size="size16">여기서 기억할 점은 하나입니다. MoE는 계산량을 아끼는 기술이지, 모델 전체를 저장할 필요가 없게 만드는 기술은 아닙니다. 활성 파라미터가 3B라는 이유만으로 3B 모델처럼 가볍게 받을 수 있는 것은 아닙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="소형-모델로-실제-어떤-일을-할-수-있나요">
+<h2 id="소형-모델로-실제-어떤-일을-할-수-있나요" data-ke-size="size26">소형 모델로 실제 어떤 일을 할 수 있나요?</h2>
+<p data-ke-size="size16">1.3B나 3B 모델을 처음 실행한다면 거창한 에이전트보다 실패해도 부담이 적은 작업부터 시도하는 편이 좋습니다. 예를 들어 회의록에서 할 일을 뽑거나, 고객 문의를 몇 가지 유형으로 나누거나, 짧은 Python 함수의 동작을 설명하게 할 수 있습니다.</p>
+<p data-ke-size="size16">작업별로 기대치를 나누면 다음과 같습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>해보고 싶은 일</th>
+<th>소형 모델의 현실적인 역할</th>
+<th>확인할 점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>문서 요약</td>
+<td>핵심 문장과 항목을 초안으로 만들기</td>
+<td>긴 문서에서 누락이 생기는지</td>
+</tr>
+<tr>
+<td>한국어 분류</td>
+<td>문의&middot;메모를 정해진 범주로 나누기</td>
+<td>범주가 애매할 때 일관적인지</td>
+</tr>
+<tr>
+<td>코드 보조</td>
+<td>짧은 함수 설명, 간단한 예제 생성</td>
+<td>실행 전 사람이 직접 검토하기</td>
+</tr>
+<tr>
+<td>정보 추출</td>
+<td>이름&middot;날짜&middot;금액을 JSON 형태로 정리</td>
+<td>형식이 자주 깨지는지</td>
+</tr>
+<tr>
+<td>도구 호출</td>
+<td>정해진 함수 하나를 선택하게 하기</td>
+<td>여러 단계를 이어 갈 때 안정적인지</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">큰 모델이 필요한 작업을 작은 모델로 억지로 대체할 필요는 없습니다. 대신 개인정보가 포함된 메모를 외부 서버에 보내기 어렵거나, 같은 분류 작업을 반복해서 처리하거나, 인터넷 연결 없이 동작해야 한다면 소형 오픈웨이트 모델이 의미를 가집니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="카카오-모델은-다른-소형-모델보다-잘하나요">
+<h2 id="카카오-모델은-다른-소형-모델보다-잘하나요" data-ke-size="size26">카카오 모델은 다른 소형 모델보다 잘하나요?</h2>
+<p data-ke-size="size16">이 질문에는 &ldquo;어떤 일에서 비교하느냐에 따라 다릅니다&rdquo;라고 답하는 것이 정확합니다. 카카오가 공개한 SLM 평가표는 Kanana-2 3B&middot;1.3B를 Qwen3.5-2B와 Qwen3-1.7B에 비교합니다. 아래 표에도 네 모델의 수치를 함께 옮겼습니다. 카카오가 공개한 평가 결과이며, 점수가 높을수록 좋은 지표입니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>평가 항목</th>
+<th>Kanana-2 3B</th>
+<th>Kanana-2 1.3B</th>
+<th>Qwen3.5-2B</th>
+<th>Qwen3-1.7B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국어 대화 KoMT-Bench</td>
+<td>6.92</td>
+<td>6.54</td>
+<td>5.21</td>
+<td>5.29</td>
+</tr>
+<tr>
+<td>지시 따르기 IFEval</td>
+<td>80.96</td>
+<td>77.63</td>
+<td>66.91</td>
+<td>68.39</td>
+</tr>
+<tr>
+<td>도구 호출 BFCL-v3 Live</td>
+<td>71.94</td>
+<td>69.64</td>
+<td>66.96</td>
+<td>65.48</td>
+</tr>
+<tr>
+<td>코드 생성 MBPP</td>
+<td>70.63</td>
+<td>69.05</td>
+<td>55.56</td>
+<td>62.17</td>
+</tr>
+<tr>
+<td>수학 MATH-500</td>
+<td>61.20</td>
+<td>61.40</td>
+<td>67.80</td>
+<td>72.00</td>
+</tr>
+<tr>
+<td>한국어 지식 KMMLU-CoT</td>
+<td>43.32</td>
+<td>42.79</td>
+<td>41.75</td>
+<td>37.84</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">카카오 공식 표에서 Kanana-2 SLM은 한국어 대화, 지시 따르기, 도구 호출, 코드 생성, 한국어 지식에서 두 Qwen 비교 모델보다 높은 값을 보입니다. 수학에서는 Qwen3.5-2B가 67.80, Qwen3-1.7B가 72.00으로 Kanana-2보다 높았습니다.</p>
+<p data-ke-size="size16">그래서 &ldquo;카카오가 무조건 세계 최고 모델을 내놓았다&rdquo;고 말하기는 어렵습니다. 다만 한국어와 도구 호출을 중요하게 보는 소형 모델 선택지로는 충분히 비교할 가치가 있습니다. 특히 카카오가 공개한 수치는 같은 회사가 고른 평가 조건의 결과이므로, 실제 선택 전에는 본인이 자주 하는 요약&middot;분류&middot;코드 입력으로 다시 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="한국어-외에-주목할-카나나-2의-장점">
+<h2 id="한국어-외에-주목할-카나나-2의-장점" data-ke-size="size26">한국어 외에 주목할 카나나-2의 장점</h2>
+<p data-ke-size="size16">Kanana-2는 한국어&middot;영어&middot;일본어&middot;중국어&middot;태국어&middot;베트남어 6개 언어를 지원한다고 모델 카드에 적혀 있습니다. 새 토크나이저는 이전 세대보다 한국어 토큰화 효율을 30% 이상 개선했다고 소개됩니다. 토큰화는 문장을 모델이 읽을 수 있는 작은 단위로 나누는 과정입니다. 토큰이 효율적으로 나뉘면 같은 문맥 안에 더 많은 내용을 넣을 여지가 생깁니다.</p>
+<p data-ke-size="size16">소형 모델에서는 긴 문서를 다루는 방식도 중요합니다. Kanana-2 SLM은 Sliding Window Attention(SWA)을 섞어 모든 토큰을 매번 전부 참조하지 않도록 설계했습니다. 카카오 모델 카드는 32K 문맥에서 full-attention-only 방식보다 KV cache 사용량을 최대 약 72.7% 줄였다고 설명합니다.</p>
+<p data-ke-size="size16">이 수치는 카카오의 공식 설명이며 모든 환경에서 같은 절감률이 나온다는 뜻은 아닙니다. 그럼에도 모델 파일만 줄인 것이 아니라, 작은 기기에서 긴 문맥을 처리하는 방법까지 함께 고민했다는 점은 분명한 장점입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="직접-써보려면-어디서-시작하나요">
+<h2 id="직접-써보려면-어디서-시작하나요" data-ke-size="size26">직접 써보려면 어디서 시작하나요?</h2>
+<p data-ke-size="size16">카나나-2는 웹 서비스가 아니므로, 현재는 Hugging Face 모델 카드에서 모델 파일과 실행 방법을 확인하는 경로가 가장 분명합니다. 비개발자라면 먼저 모델 카드의 설명과 파일 크기를 확인하고, 개발 환경이 있다면 1.3B Instruct부터 실행하면 됩니다.</p>
+<p data-ke-size="size16">모델 카드가 안내하는 Python 시작 예시는 다음과 같습니다.</p>
+<pre class="routeros" style="background: #f6f6f6; border: 1px solid #e5e5e5; border-radius: 4px; padding: 14px 16px; overflow-x: auto; font-size: 0.9em; line-height: 1.6; margin: 1.4em 0;"><code>from transformers import pipeline
+
+pipe = pipeline(
+    "text-generation",
+    model="kakaocorp/kanana-2-1.3b-instruct",
+    trust_remote_code=True,
+)
+
+messages = [
+    {
+        "role": "user",
+        "content": "회의 메모에서 해야 할 일을 세 가지로 정리해 주세요.",
+    }
+]
+
+print(pipe(messages))</code></pre>
+<p data-ke-size="size16">1.3B Instruct는 모델 카드에 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">transformers &gt;= 4.57</code>과 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">trust_remote_code</code>가 필요하다고 안내돼 있습니다. 원격 코드가 함께 로드되므로, 실행 전에 저장소와 코드를 확인하는 것이 좋습니다.</p>
+<p data-ke-size="size16">vLLM으로 서버를 열 때는 모델 카드에 다음 명령이 제공됩니다.</p>
+<pre class="properties" style="background: #f6f6f6; border: 1px solid #e5e5e5; border-radius: 4px; padding: 14px 16px; overflow-x: auto; font-size: 0.9em; line-height: 1.6; margin: 1.4em 0;"><code>vllm serve kakaocorp/kanana-2-1.3b-instruct \
+  --tensor-parallel-size 1 \
+  --max-model-len 32768 \
+  --trust-remote-code \
+  --enable-auto-tool-choice \
+  --tool-call-parser qwen3_coder</code></pre>
+<p data-ke-size="size16">처음부터 30B-A3B를 선택하는 것은 권하지 않습니다. 모델 파일을 보관할 공간과 GPU, 추론 엔진을 먼저 준비해야 하기 때문입니다. 먼저 1.3B에서 같은 프롬프트를 여러 번 실행해 보고, 답변 품질이 부족할 때 3B로 올리는 흐름이 비용과 시간을 아끼기 쉽습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="결국-어떤-사람에게-잘-맞을까요">
+<h2 id="결국-어떤-사람에게-잘-맞을까요" data-ke-size="size26">결국 어떤 사람에게 잘 맞을까요?</h2>
+<p data-ke-size="size16">카나나-2는 일반 사용자가 가입해서 바로 쓰는 서비스라기보다, 한국어와 도구 호출을 고려한 오픈웨이트 모델을 직접 운영하려는 사람에게 의미가 큽니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>작은 모델을 직접 돌려보고 싶다면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">1.3B Instruct</code></li>
+<li>품질과 실행 부담 사이에서 균형을 찾는다면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">3B Instruct</code></li>
+<li>파인튜닝이나 연구를 하려면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Base</code> 모델</li>
+<li>여러 단계의 지시와 서버형 도구 호출이 필요하다면 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">30B-A3B</code></li>
+</ul>
+<p data-ke-size="size16">카카오가 다른 소형 모델보다 모든 면에서 앞선다고 단정할 수는 없습니다. 공개된 평가에서 한국어&middot;지시 이행&middot;도구 호출&middot;코드 생성의 강점을 보여 주고, 1.3B와 3B까지 함께 공개했다는 점은 국내 오픈웨이트 모델을 찾는 사람에게 실제 선택지를 넓혀 줍니다.</p>
+<p data-ke-size="size16">처음이라면 모델 이름의 숫자부터 비교하기보다, 내가 하려는 일이 문서 요약인지, 반복 분류인지, 코드 보조인지부터 정해 보세요. 그다음 가장 작은 모델로 시작하면 Kanana-2가 내 환경에 필요한 모델인지 훨씬 빨리 판단할 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="참고-자료">
+<h2 id="참고-자료" data-ke-size="size26">참고 자료</h2>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://tech.kakao.com/posts/804" target="_blank" rel="noopener">카카오 기술 블로그 - 더 똑똑하고 효율적인 Kanana-2 오픈소스 공개</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://tech.kakao.com/posts/826" target="_blank" rel="noopener">카카오 기술 블로그 - 더 작고 강해진 Kanana SLM 개발</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://huggingface.co/kakaocorp/kanana-2-30b-a3b-base" target="_blank" rel="noopener">Kakao Corp. - Kanana-2-30B-A3B Base 모델 카드</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://huggingface.co/kakaocorp/kanana-2-1.3b-instruct" target="_blank" rel="noopener">Kakao Corp. - Kanana-2-1.3B Instruct 모델 카드</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://huggingface.co/kakaocorp" target="_blank" rel="noopener">Kakao Corp. - 공개 모델 목록</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://github.com/kakao/kanana" target="_blank" rel="noopener">Kakao - Kanana GitHub 저장소</a></li>
+</ul>
+</section>
+</article>

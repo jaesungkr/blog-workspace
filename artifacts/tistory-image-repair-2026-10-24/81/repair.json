@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 81,
+  "title": "카카오 Kanana-2 경량 모델, 어디에 쓰면 좋을까?",
+  "url": "https://dop3n.tistory.com/entry/%EC%B9%B4%EC%B9%B4%EC%98%A4-Kanana-2-%EA%B2%BD%EB%9F%89-%EB%AA%A8%EB%8D%B8-%EC%96%B4%EB%94%94%EC%97%90-%EC%93%B0%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C",
+  "checked_at": "2026-10-24T03:43:53.037Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "72815df8adf0e9e7ac15fde16e9e51ea93bbfdcfeb3d699f4426a430fac0c73a",
+  "submitted_sha256": "7c12de9c9f3cea0271f221f19d0d8d26da52db9e52cce40666326c24ffdc037b",
+  "metadata": {
+    "dates": [
+      "2026-08-01 09:36"
+    ],
+    "public": true,
+    "slug": "카카오-Kanana-2-경량-모델-어디에-쓰면-좋을까"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": false
+}

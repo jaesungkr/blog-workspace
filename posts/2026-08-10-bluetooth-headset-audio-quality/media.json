@@ -48,7 +48,7 @@
       "source_url": "https://support.discord.com/hc/en-us/articles/360045138471-Guide-How-to-configure-your-microphone",
       "raw_path": "artifacts/sources/discord-input-device.png",
       "publish_path": "assets/discord-input-device.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fdzhalj%2FdJMcahFnWrL%2FAAAAAAAAAAAAAAAAAAAAAAD3eKEV2-CtFNTGTi9XiRCfNXYvgWxQt9dmidoWhnhU%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Do49dMT1NZa7V2wEo4vFZEo2HkEw%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FqzkjE%2FdJMcaaAzbzC%2FAAAAAAAAAAAAAAAAAAAAACMupjscaBmSv4QE_amgfSEQpcdhZ9j3NbEbkZIZDcrf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFbTVs6Scp4O5OEavyS1eXk8FWCI%253D",
       "width": 727,
       "height": 190,
       "display_width": 727,
@@ -62,7 +62,8 @@
       ],
       "redactions": [],
       "sha256": "a71060e7aa858785b2567af4242f6f7ac4c3179fafbf22697ad914627573d212",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@qzkjE/dJMcaaAzbzC/AAAAAAAAAAAAAAAAAAAAACMupjscaBmSv4QE_amgfSEQpcdhZ9j3NbEbkZIZDcrf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=FbTVs6Scp4O5OEavyS1eXk8FWCI%3D|CDM|1.3|{\"originWidth\":727,\"originHeight\":190,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Discord 음성 및 비디오 설정에서 입력 장치와 출력 장치를 고르는 화면\"}_##]"
     },
     {
       "id": "windows-le-audio-stereo",
@@ -80,7 +81,7 @@
       "source_url": "https://support.microsoft.com/en-us/windows/configure-bluetooth-le-audio-quality-settings-on-windows-11-0da9b3b9-7097-49ec-8134-a5389f6a3db1",
       "raw_path": "artifacts/sources/microsoft-le-audio-format.png",
       "publish_path": "assets/windows-le-audio-stereo.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbScFEj%2FdJMcahFnWr3%2FAAAAAAAAAAAAAAAAAAAAACSBaK0B5syDH8RqESOZa_XBBFuswXwQ0oAWEkQ3vYL2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DhauP4jEllT0Usf5NBp%252FBpDJgc%252FM%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsqVoO%2FdJMb99OYJcI%2FAAAAAAAAAAAAAAAAAAAAALQdNsz-WhYqPWg8Qt-TjsUxHa9opdehgHlRC2UjLrvS%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DpJlRfVKfvOfG5zB5%252B0c5tUnHJOI%253D",
       "width": 1520,
       "height": 350,
       "display_width": 916,
@@ -94,7 +95,8 @@
       ],
       "redactions": [],
       "sha256": "532e44b723ee4db329878cb9c316501c23f9828aeecb8e76bbc72e540152181d",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@sqVoO/dJMb99OYJcI/AAAAAAAAAAAAAAAAAAAAALQdNsz-WhYqPWg8Qt-TjsUxHa9opdehgHlRC2UjLrvS/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=pJlRfVKfvOfG5zB5%2B0c5tUnHJOI%3D|CDM|1.3|{\"originWidth\":1520,\"originHeight\":350,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Windows 11 Bluetooth LE 오디오 출력 설정에서 마이크 활성 시 1채널과 2채널 형식을 고르는 화면\"}_##]"
     }
   ]
 }

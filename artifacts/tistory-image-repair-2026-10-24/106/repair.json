@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 106,
+  "title": "내가 아는 수녀님들은 죄다 불구덩이에 들어갈 예정이신 걸까?",
+  "url": "https://dop3n.tistory.com/entry/%EB%82%B4%EA%B0%80-%EC%95%84%EB%8A%94-%EC%88%98%EB%85%80%EB%8B%98%EB%93%A4%EC%9D%80-%EC%A3%84%EB%8B%A4-%EB%B6%88%EA%B5%AC%EB%8D%A9%EC%9D%B4%EC%97%90-%EB%93%A4%EC%96%B4%EA%B0%88-%EC%98%88%EC%A0%95%EC%9D%B4%EC%8B%A0-%EA%B1%B8%EA%B9%8C",
+  "checked_at": "2026-10-24T03:44:58.636Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "acee0e58c17dcecd91125e69268aaf09897d9d943bd93a45dbd70a1d43f51a4a",
+  "submitted_sha256": "1887e64b89d1b624de55b52d73ac6590560fec09b674b4260acb4eb8b80455f5",
+  "metadata": {
+    "dates": [
+      "2026-08-19 22:59"
+    ],
+    "public": true,
+    "slug": "내가-아는-수녀님들은-죄다-불구덩이에-들어갈-예정이신-걸까"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

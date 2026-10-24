@@ -17,7 +17,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/glm-5-3-flash-comparison-hero-v2-source.png",
       "publish_path": "assets/glm-5-3-flash-comparison-hero.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOrQxB%2FdJMcaf14tuI%2FAAAAAAAAAAAAAAAAAAAAAKoUoJ4c4AQjUmOLCKrJ1TdkCKBqJk0bIv0h20GDJWT9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DazzY8Cz4gSfof3NuWWPz0jIJ1Xk%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FzTx8d%2FdJMcafBOmEX%2FAAAAAAAAAAAAAAAAAAAAAJ8QPplV359m5QVMcTM_cwIQptO1eH7EAuV_pOnj0upg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DMiqhVp5sWkOHwlto2lldtRqyvmA%253D",
       "width": 1672,
       "height": 941,
       "sha256": "1df533ba91dfaa3fab34f9f413ebecc39828f6280779c29703cc27e86cf6543e",
@@ -33,7 +33,8 @@
         "Preserved the original candidate and stored the revised raw source separately"
       ],
       "redactions": [],
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@zTx8d/dJMcafBOmEX/AAAAAAAAAAAAAAAAAAAAAJ8QPplV359m5QVMcTM_cwIQptO1eH7EAuV_pOnj0upg/img.png|alignCenter|width=\"100%\" alt=\"OX ALPHA 외피에서 같은 내부 구조가 GLM-5.3-FLASH 금속 모듈로 이어지는 대표 이미지\"|_##]"
     }
   ]
 }

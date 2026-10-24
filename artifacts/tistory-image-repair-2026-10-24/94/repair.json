@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 94,
+  "title": "Vercel 사용법, GitHub 첫 배포부터 환경 변수·도메인까지",
+  "url": "https://dop3n.tistory.com/entry/Vercel-%EC%82%AC%EC%9A%A9%EB%B2%95-GitHub-%EC%B2%AB-%EB%B0%B0%ED%8F%AC%EB%B6%80%ED%84%B0-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98%C2%B7%EB%8F%84%EB%A9%94%EC%9D%B8%EA%B9%8C%EC%A7%80",
+  "checked_at": "2026-10-24T03:47:36.374Z",
+  "total_images_checked": 4,
+  "images_rebound": 4,
+  "normalized_prose_preserved": true,
+  "before_sha256": "36ff0a16ea5bc9dddc8d199383f2391f953201a50d18a5b6d79aa73c74d3c872",
+  "submitted_sha256": "a79a1f69b6c52e288cb814c72fa9c4fa03230aebb743271effaa16c485c85fec",
+  "metadata": {
+    "dates": [
+      "2026-08-10 14:09"
+    ],
+    "public": true,
+    "slug": "Vercel-사용법-GitHub-첫-배포부터-환경-변수·도메인까지"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

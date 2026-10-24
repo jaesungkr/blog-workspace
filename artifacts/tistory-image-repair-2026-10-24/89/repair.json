@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 89,
+  "title": "1인 가구 800만 시대, 혼자 사는 삶이 바꾼 한국의 일상",
+  "url": "https://dop3n.tistory.com/entry/1%EC%9D%B8-%EA%B0%80%EA%B5%AC-800%EB%A7%8C-%EC%8B%9C%EB%8C%80-%ED%98%BC%EC%9E%90-%EC%82%AC%EB%8A%94-%EC%82%B6%EC%9D%B4-%EB%B0%94%EA%BE%BC-%ED%95%9C%EA%B5%AD%EC%9D%98-%EC%9D%BC%EC%83%81",
+  "checked_at": "2026-10-24T03:45:29.873Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "2841b77521f41a7e9eea7f617d412bac7bf2feeabfbca4360e6741ddcb29ce10",
+  "submitted_sha256": "57e697fa1daf5eb91b1ae287c15339fcb2bee2bc3e98705b8477a9451447464c",
+  "metadata": {
+    "dates": [
+      "2026-08-09 03:31"
+    ],
+    "public": true,
+    "slug": "1인-가구-800만-시대-혼자-사는-삶이-바꾼-한국의-일상"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

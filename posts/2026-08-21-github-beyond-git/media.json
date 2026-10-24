@@ -13,7 +13,7 @@
       ],
       "source_url": "https://github.com/",
       "publish_path": "assets/github-homepage-user-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGjWFW%2FdJMcagmjMc1%2FAAAAAAAAAAAAAAAAAAAAAKRJ_R6mdSSw78nECBge6RRkLnPwa2NmXu4sIAFm5u3i%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DaEjVmjLV%252Bg%252FIZTDnQYWSAbagkTY%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FOHWpY%2FdJMb99OYI5w%2FAAAAAAAAAAAAAAAAAAAAAO0Xac2PO2-f1Ot0bLQ7qVNs24nwcMfkACnzF8OqutjR%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DaT5nSfFbVqxai7XjHnz63GTpElo%253D",
       "width": 1280,
       "height": 693,
       "display_width": 916,
@@ -26,7 +26,8 @@
       ],
       "redactions": [],
       "sha256": "4192195c786502251dc5a43ddd9fbf18cf1eea6492f3636e11e80a2ec9b02379",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@OHWpY/dJMb99OYI5w/AAAAAAAAAAAAAAAAAAAAAO0Xac2PO2-f1Ot0bLQ7qVNs24nwcMfkACnzF8OqutjR/img.png|alignCenter|width=\"100%\" alt=\"GitHub 홈페이지에 함께 일하고 더 많은 성과를 내라는 문구와 프로젝트 계획표가 표시된 화면\"|_##]"
     },
     {
       "id": "github-actions-workflow",

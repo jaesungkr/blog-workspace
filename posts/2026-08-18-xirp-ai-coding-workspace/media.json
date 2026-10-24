@@ -13,7 +13,7 @@
       ],
       "source_url": "https://backstage.spotify.com/docs/xirp",
       "publish_path": "assets/xirp-home-official-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbcySUr%2FdJMcacxsErG%2FAAAAAAAAAAAAAAAAAAAAAKhElEvVOga7wVy7_CYgJGMRAmTvc6wQJOMzN5Zkkz3l%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252BhGOQB5cTTedFTq5EP%252Fg7lDcHaA%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcceM77%2FdJMcabTGAqL%2FAAAAAAAAAAAAAAAAAAAAAA8xCd-yg_mEJm0eUSbz_lnJePyEiF38H3Ed4rpV4YDO%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DkqS49a0RSwQunYh0HwcMNrTzTFI%253D",
       "width": 1800,
       "height": 1153,
       "display_width": 916,
@@ -27,7 +27,8 @@
       ],
       "redactions": [],
       "sha256": "b1c870e980905bf419629b5d875780b0b0a5a1629d1f6a93ee00e146e200b7a2",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@cceM77/dJMcabTGAqL/AAAAAAAAAAAAAAAAAAAAAA8xCd-yg_mEJm0eUSbz_lnJePyEiF38H3Ed4rpV4YDO/img.png|alignCenter|width=\"100%\" alt=\"Xirp 공식 홈 화면에 Projects와 Sessions 메뉴, 새 세션 버튼, 목표 입력창이 표시된 모습\"|_##]"
     },
     {
       "id": "xirp-new-session",
@@ -40,7 +41,7 @@
       ],
       "source_url": "https://backstage.spotify.com/docs/xirp/sessions",
       "publish_path": "assets/xirp-new-session-official-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9IPpu%2FdJMcacEjsig%2FAAAAAAAAAAAAAAAAAAAAAGnmvD84IcqojIELI6CFlFo49JnqDSbt9hhfIVlZ1XoP%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DBN%252Br0g6nO3rw3GiZS4wTD%252B2zesk%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fnq2wQ%2FdJMcabTGAqM%2FAAAAAAAAAAAAAAAAAAAAACCvvWw1UB_viSMAFfdP_RpruDmY4J-3y4EuR6IrEvyy%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DQboGZlRWerue68dNEsKxzbNfrTU%253D",
       "width": 1800,
       "height": 1153,
       "display_width": 916,
@@ -55,7 +56,8 @@
       ],
       "redactions": [],
       "sha256": "7dd4f2d61896477b66b225e4fa433fe7c2ff34b8a086c7e8e610d292a4e9a681",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@nq2wQ/dJMcabTGAqM/AAAAAAAAAAAAAAAAAAAAACCvvWw1UB_viSMAFfdP_RpruDmY4J-3y4EuR6IrEvyy/img.png|alignCenter|width=\"100%\" alt=\"Xirp의 새 세션 창에 목표 입력란, worktree 선택 아이콘, Claude 에이전트 선택 메뉴, 시작 버튼이 보이는 공식 화면\"|_##]"
     },
     {
       "id": "xirp-grid-view",
@@ -67,7 +69,7 @@
       ],
       "source_url": "https://backstage.spotify.com/docs/xirp/sessions",
       "publish_path": "assets/xirp-grid-view-official-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FlDZFm%2FdJMcacEjsih%2FAAAAAAAAAAAAAAAAAAAAANnwV5L4rckfb9p6txhqoMO8DRe9Yiy5mCPrLXwHO1OL%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FqpaIcuis3Bq%252BlsBGIypfFx8uP0%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcYdY6s%2FdJMcaiSUY4m%2FAAAAAAAAAAAAAAAAAAAAAOolP1jWCHA_TsDxCcNNX1dcAMyeJ4RGOktY-8r9tSpe%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DpmZ58N49VgqDOH3GEJ%252B3u7w5vQ4%253D",
       "width": 1800,
       "height": 1153,
       "display_width": 916,
@@ -82,7 +84,8 @@
       ],
       "redactions": [],
       "sha256": "fa53347330d1c84ce632c8cc3cf8fb5ee0ba1986931a53f44e7a75e09e5006d2",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@cYdY6s/dJMcaiSUY4m/AAAAAAAAAAAAAAAAAAAAAOolP1jWCHA_TsDxCcNNX1dcAMyeJ4RGOktY-8r9tSpe/img.png|alignCenter|width=\"100%\" alt=\"Xirp Grid view 공식 화면의 왼쪽에 여러 세션과 idle 상태가 나열되고 오른쪽에 선택한 Claude Code 터미널이 표시된 모습\"|_##]"
     }
   ]
 }

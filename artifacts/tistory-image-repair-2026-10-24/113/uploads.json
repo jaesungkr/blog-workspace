@@ -1,0 +1,16 @@
+[
+  {
+    "id": "robot-market-hero",
+    "rawToken": "[##_Image|kage@A9fWD/dJMcackJe8c/AAAAAAAAAAAAAAAAAAAAACCE11dNEJWa8xGRnx30nBfcm25Qoi0HcouBf6DR0GW0/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-22-global-robotics-company-map/assets/robot-market-hero-v2.png",
+    "sha256": "6b39d26f2ae6b37fd4356536f7e7f2d9234443a395809fe6b38053b7b19c6638",
+    "embed": "[##_Image|kage@A9fWD/dJMcackJe8c/AAAAAAAAAAAAAAAAAAAAACCE11dNEJWa8xGRnx30nBfcm25Qoi0HcouBf6DR0GW0/img.png|alignCenter|width=\"100%\" alt=\"전용 작업 레인을 따라 산업용 팔·물류·정밀 로봇이 일하고, 갈라지는 길 끝에 휴머노이드가 서 있는 밝은 작업 공간\"|_##]"
+  },
+  {
+    "id": "robot-commercialization-map",
+    "rawToken": "[##_Image|kage@bW8Lwu/dJMcackJe8e/AAAAAAAAAAAAAAAAAAAAACo1nQ7q6CmkyebHiNBXBWOU67l0K4t7_ycld7T2KJQP/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-22-global-robotics-company-map/assets/robot-commercialization-map-v4.png",
+    "sha256": "63fb81fda3d458db75ecd97ef8d7804daaa5cd488bd369f75d5c730c0005d880",
+    "embed": "[##_Image|kage@bW8Lwu/dJMcackJe8e/AAAAAAAAAAAAAAAAAAAAACo1nQ7q6CmkyebHiNBXBWOU67l0K4t7_ycld7T2KJQP/img.png|alignCenter|width=\"100%\" alt=\"정돈된 환경의 대규모 운영에서 열린 환경의 개발·사전 주문까지 로봇 분야와 대표 기업을 네 단계로 나눈 지도\"|_##]"
+  }
+]

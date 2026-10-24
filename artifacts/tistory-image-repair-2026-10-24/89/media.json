@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "lead_id": "one-person-household-hero",
+  "items": [
+    {
+      "id": "one-person-household-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C08"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-08-09",
+      "environment": "OpenAI built-in image generation, targeted edit of original Japanese-animation-inspired editorial illustration",
+      "source_url": "",
+      "raw_path": "artifacts/captures/generated/one-person-household-hero-v2-source.png",
+      "publish_path": "assets/screenshots/one-person-household-hero-v2.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbwujgj%2FdJMcahTKMoX%2FAAAAAAAAAAAAAAAAAAAAAKy7wtI6-4GFpviiewrFYT1EFTG4c1unxqd3RLU08IuE%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DrEuSE%252Fjj8k09T3FiTgWgLnull3I%253D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "햇살이 드는 작은 원룸에 1인용 식탁과 신발 한 켤레가 놓인 모습",
+      "caption": "한 자리의 식탁과 한 켤레의 신발로 혼자 사는 집의 온도를 담았습니다.",
+      "processing": [
+        "targeted_edit_remove_person"
+      ],
+      "redactions": [],
+      "sha256": "019734e8f63054a935b764b1759db4424f495b1f57472fa6a299a8e71895bdcc",
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@bwujgj/dJMcahTKMoX/AAAAAAAAAAAAAAAAAAAAAKy7wtI6-4GFpviiewrFYT1EFTG4c1unxqd3RLU08IuE/img.png|alignCenter|width=\"100%\" alt=\"햇살이 드는 작은 원룸에 1인용 식탁과 신발 한 켤레가 놓인 모습\"|_##]"
+    }
+  ]
+}

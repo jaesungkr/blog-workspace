@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 76,
+  "title": "베드로를 예수님께 데려온 안드레",
+  "url": "https://dop3n.tistory.com/entry/%EB%B2%A0%EB%93%9C%EB%A1%9C%EB%A5%BC-%EC%98%88%EC%88%98%EB%8B%98%EA%BB%98-%EB%8D%B0%EB%A0%A4%EC%98%A8-%EC%95%88%EB%93%9C%EB%A0%88",
+  "checked_at": "2026-10-24T03:44:28.173Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "c8d132d88ba0046e012e64320288b328fd3a809f67dcd493e345cf35b370758c",
+  "submitted_sha256": "ea4af25477f1e0c3e18d70ab0405b94c8df96daa29988dc234a11b20b735b2c1",
+  "metadata": {
+    "dates": [
+      "2026-07-30 21:33"
+    ],
+    "public": true,
+    "slug": "베드로를-예수님께-데려온-안드레"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

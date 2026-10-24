@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 86,
+  "title": "공공데이터 API 활용기, 전국 화재 현황 29만 건을 받아보니",
+  "url": "https://dop3n.tistory.com/entry/%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0-API-%ED%99%9C%EC%9A%A9%EA%B8%B0-%EC%A0%84%EA%B5%AD-%ED%99%94%EC%9E%AC-%ED%98%84%ED%99%A9-29%EB%A7%8C-%EA%B1%B4%EC%9D%84-%EB%B0%9B%EC%95%84%EB%B3%B4%EB%8B%88",
+  "checked_at": "2026-10-24T03:42:41.325Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "edfcd218d5219abea8d1b0de1d851bd2f766f46af0134d2688c0f349f2a0ee27",
+  "submitted_sha256": "43235ba0449850165d4cec7ab300dce421dc7c366d91fd2cbe820a2ec3bad1f8",
+  "metadata": {
+    "dates": [
+      "2026-08-08 01:05"
+    ],
+    "public": true,
+    "slug": "공공데이터-API-활용기-전국-화재-현황-29만-건을-받아보니"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

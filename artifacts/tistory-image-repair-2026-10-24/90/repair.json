@@ -1,0 +1,26 @@
+{
+  "scope": "Existing published-post image binding repair; editorial approval and lifecycle unchanged",
+  "post_id": 90,
+  "title": "경기도 부도설, 사실일까? 7조 원 논란과 재정 위기의 핵심",
+  "url": "https://dop3n.tistory.com/entry/%EA%B2%BD%EA%B8%B0%EB%8F%84-%EB%B6%80%EB%8F%84%EC%84%A4-%EC%82%AC%EC%8B%A4%EC%9D%BC%EA%B9%8C-7%EC%A1%B0-%EC%9B%90-%EB%85%BC%EB%9E%80%EA%B3%BC-%EC%9E%AC%EC%A0%95-%EC%9C%84%EA%B8%B0%EC%9D%98-%ED%95%B5%EC%8B%AC",
+  "checked_at": "2026-10-24T03:49:35.603Z",
+  "total_images_checked": 1,
+  "images_rebound": 1,
+  "normalized_prose_preserved": true,
+  "before_sha256": "b4d9c9443824379e2902fd593bd83f8aa86f041f1d66b47bc0347143f953e0e3",
+  "submitted_sha256": "105adb5cfe07e9477094821dd1ff7e99e34a322f3575788cfd97e222c5e7f225",
+  "metadata": {
+    "dates": [
+      "2026-08-09 20:58"
+    ],
+    "public": true,
+    "slug": "경기도-부도설-사실일까-7조-원-논란과-재정-위기의-핵심"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "all_public_images_loaded": true,
+  "author_final_review": "pending",
+  "prior_full_article_qa": "historical after media change; not reapproved",
+  "local_draft_matches_live_body": "not asserted",
+  "local_manifest_was_tracked": true
+}

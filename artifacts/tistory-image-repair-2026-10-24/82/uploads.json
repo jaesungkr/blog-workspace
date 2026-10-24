@@ -1,0 +1,30 @@
+[
+  {
+    "id": "github-changelog-hero",
+    "rawToken": "[##_Image|kage@dcO2Vn/dJMcagHCf4S/AAAAAAAAAAAAAAAAAAAAAEV6NUpw93f0KJf-UsMidHFG2Q17hf6tjqzb2ekNPSrZ/img.jpg|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/assets/screenshots/github-changelog-hero.jpg",
+    "sha256": "126f9fe9ca0fb4b515e58056cea58b7adbea42b1f748b0b07c189552cdf9750c",
+    "embed": "[##_Image|kage@dcO2Vn/dJMcagHCf4S/AAAAAAAAAAAAAAAAAAAAAEV6NUpw93f0KJf-UsMidHFG2Q17hf6tjqzb2ekNPSrZ/img.jpg|alignCenter|width=\"100%\" alt=\"GitHub Stacked pull requests 공개 미리보기 제목과 여러 PR을 한 스택으로 병합하는 UI\"|_##]"
+  },
+  {
+    "id": "github-stack-workflow",
+    "rawToken": "[##_Image|kage@dfgMp2/dJMcahM4r1g/AAAAAAAAAAAAAAAAAAAAAPPlCh2BbE9RfCdVhTemR8OCwSaN0sdXcBuNp47u7evm/img.jpg|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/assets/screenshots/github-stack-workflow.jpg",
+    "sha256": "b51cab514c22406111f8d98b58aa1d70d7ce7180d47d1cfc54132b7772b89aea",
+    "embed": "[##_Image|kage@dfgMp2/dJMcahM4r1g/AAAAAAAAAAAAAAAAAAAAAPPlCh2BbE9RfCdVhTemR8OCwSaN0sdXcBuNp47u7evm/img.jpg|alignCenter|width=\"100%\" alt=\"GitHub 변경 로그의 gh stack init과 add 명령 데모 화면\"|_##]"
+  },
+  {
+    "id": "github-review-map",
+    "rawToken": "[##_Image|kage@AljFt/dJMcadcMlek/AAAAAAAAAAAAAAAAAAAAABc4xLCT-6HOxMZsT9rZ-MyJcKDOoloOjTgsnYVNX2PZ/img.jpg|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/assets/screenshots/github-review-map.jpg",
+    "sha256": "37cbf19583becd3a220141b89079b913cbaf2205ebf146c9b8569d85d226150f",
+    "embed": "[##_Image|kage@AljFt/dJMcadcMlek/AAAAAAAAAAAAAAAAAAAAABc4xLCT-6HOxMZsT9rZ-MyJcKDOoloOjTgsnYVNX2PZ/img.jpg|alignCenter|width=\"100%\" alt=\"GitHub pull request 화면에서 frontend, api, auth 세 레이어를 보여 주는 stack map\"|_##]"
+  },
+  {
+    "id": "github-merge-stack",
+    "rawToken": "[##_Image|kage@nhygh/dJMcadcMlel/AAAAAAAAAAAAAAAAAAAAAEhFfEjL5A1lGBp0V68g_GFr_9Gc37lNSxyCL6Wsmm3N/img.jpg|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-08-02-github-stacked-pull-requests/assets/screenshots/github-merge-stack.jpg",
+    "sha256": "4b771c6a796c46a1dc68486769b65560223c7d1e02b613560ba656d6c766e8d4",
+    "embed": "[##_Image|kage@nhygh/dJMcadcMlel/AAAAAAAAAAAAAAAAAAAAAEhFfEjL5A1lGBp0V68g_GFr_9Gc37lNSxyCL6Wsmm3N/img.jpg|alignCenter|width=\"100%\" alt=\"세 개 pull request가 Ready 상태로 연결되고 Merge stack 3 버튼이 표시된 GitHub UI\"|_##]"
+  }
+]

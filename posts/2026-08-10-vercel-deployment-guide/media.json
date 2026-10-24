@@ -17,7 +17,7 @@
       "source_url": "https://vercel.com/docs/getting-started-with-vercel",
       "raw_path": "artifacts/sources/vercel-getting-started-og.png",
       "publish_path": "assets/vercel-getting-started.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbtdRtu%2FdJMcadXkPP6%2FAAAAAAAAAAAAAAAAAAAAANLbuQrDdFjhWSKpiydnQMNE83BtVbJfETkYTel-jmME%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DoH1Fqg%252Bwl1JdSVnYtYXssTYcsGU%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FtZ66D%2FdJMcabM6JUm%2FAAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DiEPl9Ko6eTlA4ZbtvepsRDlP81o%253D",
       "width": 1200,
       "height": 628,
       "display_width": 916,
@@ -30,7 +30,8 @@
       ],
       "redactions": [],
       "sha256": "49120e5aba964096551376e0015381ebccee1424f035b91992cd0daf4d906a40",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@tZ66D/dJMcabM6JUm/AAAAAAAAAAAAAAAAAAAAAHIwfxz3iZn32XwKeiL1ie686z1-jFEVMRzCjX0snSee/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=iEPl9Ko6eTlA4ZbtvepsRDlP81o%3D|CDM|1.3|{\"originWidth\":1200,\"originHeight\":628,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 삼각형 로고와 Getting started with Vercel 문구가 있는 공식 문서 대표 이미지\"}_##]"
     },
     {
       "id": "vercel-add-new-project",
@@ -46,7 +47,7 @@
       "source_url": "https://vercel.com/docs/projects/managing-projects",
       "raw_path": "artifacts/sources/ui/add-new-project-light.png",
       "publish_path": "assets/vercel-add-new-project.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbL0YXZ%2FdJMcadv8NkO%2FAAAAAAAAAAAAAAAAAAAAAExrFA-N-JmTQKuQut2TpGa1wPrxsGF4PsU8XCw_0Qb8%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DYaFT%252BZRBcT18Bp1%252BLSQkYkl6CrM%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FYEabS%2FdJMcafhxBP8%2FAAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Ds7ubdBBMMigKR0nugnt0zWnPXqM%253D",
       "width": 1652,
       "height": 486,
       "display_width": 916,
@@ -60,7 +61,8 @@
       ],
       "redactions": [],
       "sha256": "d46f775fde97174f5e8278160869879361e88b91efedec34ab293ca8d48daec5",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@YEabS/dJMcafhxBP8/AAAAAAAAAAAAAAAAAAAAAMGZO5dIjfboVhmL-WjLecOmunrXKDeH_KTQu1eLK0ds/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=s7ubdBBMMigKR0nugnt0zWnPXqM%3D|CDM|1.3|{\"originWidth\":1652,\"originHeight\":486,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 대시보드 오른쪽 위 Add New 메뉴에서 Project 항목이 펼쳐진 화면\"}_##]"
     },
     {
       "id": "vercel-environment-variables",
@@ -76,7 +78,7 @@
       "source_url": "https://vercel.com/docs/environment-variables",
       "raw_path": "artifacts/sources/ui/env-var-section-light.png",
       "publish_path": "assets/vercel-environment-variables.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbbJF8k%2FdJMcagNngGI%2FAAAAAAAAAAAAAAAAAAAAAEHqkB2jWM_dVPfikjhQHn-SdNG_PCMYKBculF7xrxpR%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3D4UqsgxS9%252BK0a3VACOkh8l6FkVM4%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcx9sMX%2FdJMcafhxBQi%2FAAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxUcV%252Bn2RjpGd%252FCLNaW8v0LYCp%252Fc%253D",
       "width": 1886,
       "height": 1124,
       "display_width": 916,
@@ -90,7 +92,8 @@
       ],
       "redactions": [],
       "sha256": "ae7e68d58e720ccd6779fb9bc8e9e03921e68ca8d5eda27410d07473ff374c28",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@cx9sMX/dJMcafhxBQi/AAAAAAAAAAAAAAAAAAAAAIXzhuaLwUy-5etk6-FcyicR-Favk1k_SQPTOiu_4JTv/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=xUcV%2Bn2RjpGd%2FCLNaW8v0LYCp%2Fc%3D|CDM|1.3|{\"originWidth\":1886,\"originHeight\":1124,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel 환경 변수 화면에 Sensitive 설정, Environments 선택, Key와 Value 입력란이 표시된 모습\"}_##]"
     },
     {
       "id": "vercel-domain-verification",
@@ -106,7 +109,7 @@
       "source_url": "https://vercel.com/docs/domains/working-with-domains/add-a-domain",
       "raw_path": "artifacts/sources/ui/verify-domain-light.png",
       "publish_path": "assets/vercel-domain-verification.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcOOFPm%2FdJMcahSSpdp%2FAAAAAAAAAAAAAAAAAAAAAM1nYaTd_hr_MPPx7XkT7TKVBq6DpkPyLZEolctZVTsY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DZko82LtJu2xD9eohvXlJ0JKYJ5I%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcBCIfT%2FdJMcahfqYJI%2FAAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DkBVQtiVl7pJYDbA6c8BZ9E4pUbs%253D",
       "width": 1868,
       "height": 700,
       "display_width": 916,
@@ -120,7 +123,8 @@
       ],
       "redactions": [],
       "sha256": "b649bcfefee71fcb0abb22aeaeeb8792bfa111d788521822034e8e3f5a06fcd6",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@cBCIfT/dJMcahfqYJI/AAAAAAAAAAAAAAAAAAAAAOMt8GBWrSbpN4e-RRX8i28BU0vZLzQbWWJdhBA8wwlf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=kBVQtiVl7pJYDbA6c8BZ9E4pUbs%3D|CDM|1.3|{\"originWidth\":1868,\"originHeight\":700,\"style\":\"alignCenter\",\"width\":null,\"alt\":\"Vercel Configure DNS 화면에 CNAME과 TXT 레코드의 Type, Name, Value가 표시된 모습\"}_##]"
     }
   ]
 }

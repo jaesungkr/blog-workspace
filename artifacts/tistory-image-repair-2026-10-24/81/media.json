@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "lead_id": "kanana-2-official-logo",
+  "items": [
+    {
+      "id": "kanana-2-official-logo",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C04"
+      ],
+      "actor": "Kakao Kanana GitHub repository",
+      "captured_at": "2026-08-01",
+      "environment": "공개 GitHub raw asset, PNG 1492x321",
+      "source_url": "https://raw.githubusercontent.com/kakao/kanana/main/assets/logo/kanana-logo-dark.png",
+      "raw_path": "artifacts/captures/official/kanana-logo-dark.png",
+      "publish_path": "assets/screenshots/kanana-2-official-logo-dark.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbe9VMd%2FdJMcablYfLS%2FAAAAAAAAAAAAAAAAAAAAAKAxYCEC7NUvK7jjHblK7ZY5GLpRdC7c-EHxdaQ24FjJ%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DRK5BvQZB%252B2LCTYzOXLUBd%252BGfyNU%253D",
+      "width": 1492,
+      "height": 321,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "Kakao Kanana public repository asset reproduced with source attribution for editorial commentary",
+      "alt": "카카오 Kanana 공식 로고",
+      "caption": "카카오 Kanana 공식 로고입니다. 이 글의 대표 이미지는 모델 성능을 증명하는 캡처가 아니라 공개 프로젝트를 식별하는 공식 자산입니다.",
+      "processing": [
+        "downloaded from the official GitHub raw asset; byte-identical copy for publish candidate; selected dark wordmark for legibility on the article surface"
+      ],
+      "redactions": [],
+      "sha256": "1818b4cef7f5ef46df119609d384658443fb2acb723da3e1fd253c611f1a33f8",
+      "status": "captured",
+      "tistory_embed": "[##_Image|kage@be9VMd/dJMcablYfLS/AAAAAAAAAAAAAAAAAAAAAKAxYCEC7NUvK7jjHblK7ZY5GLpRdC7c-EHxdaQ24FjJ/img.png|alignCenter|width=\"100%\" alt=\"카카오 Kanana 공식 로고\"|_##]"
+    }
+  ]
+}

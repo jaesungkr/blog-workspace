@@ -1,0 +1,187 @@
+[
+  {
+    "id": 138,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 119,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 126,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 125,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 123,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 127,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 109,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 108,
+    "returncode": 1,
+    "output": "[ERROR] posts/2026-08-27-sell-o-used-phone-sale/assets/screenshots/sell-o-00-logo.png: 최종 대표 이미지 파일이 없습니다.\n검사 완료: 1개 글, 오류 1개, 경고 0개\n"
+  },
+  {
+    "id": 107,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 104,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 103,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 101,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 87,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 86,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 82,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 81,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 77,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 76,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 120,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 113,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 112,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 111,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 110,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 106,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 102,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 89,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 100,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 99,
+    "returncode": 1,
+    "output": "[ERROR] posts/2026-08-13-grok-bot-guide/assets/grok-bot-landing.png: 최종 대표 이미지 파일이 없습니다.\n검사 완료: 1개 글, 오류 1개, 경고 0개\n"
+  },
+  {
+    "id": 98,
+    "returncode": 1,
+    "output": "[ERROR] posts/2026-08-12-iphone-claude-instead-of-siri/assets/phone-harness-github-overview.jpg: 최종 대표 이미지 파일이 없습니다.\n검사 완료: 1개 글, 오류 1개, 경고 0개\n"
+  },
+  {
+    "id": 96,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 95,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 94,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 117,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 92,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 90,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 88,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  {
+    "id": 84,
+    "returncode": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  }
+]
