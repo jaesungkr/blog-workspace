@@ -118,18 +118,29 @@ def figure_markup(
         f'width="{width}" height="{height}" loading="{loading}" '
         'decoding="async">'
     )
+    native_embed = item.get("tistory_embed")
+    if native_embed:
+        content = native_embed.strip() if mode == "fragment" else image
+        image = f'<div class="devlog-rich__native-image {classes}">{content}</div>'
     if item.get("kind") == "gif":
         poster = items_by_id[item["poster_id"]]
         poster_src = html.escape(
             media_src(poster, mode, post_dir, output_dir), quote=True
         )
         poster_alt = html.escape(poster["alt"], quote=True)
-        image += (
+        poster_image = (
             f'<img class="devlog-rich__image devlog-rich__poster" '
             f'src="{poster_src}" alt="{poster_alt}" '
             f'width="{int(poster["width"])}" height="{int(poster["height"])}" '
             'loading="lazy" decoding="async">'
         )
+        if poster.get("tistory_embed"):
+            content = poster["tistory_embed"].strip() if mode == "fragment" else poster_image
+            poster_image = (
+                '<div class="devlog-rich__native-image devlog-rich__image '
+                f'devlog-rich__poster">{content}</div>'
+            )
+        image += poster_image
 
     figure_classes = "devlog-rich__figure"
     figure_style = f"--rich-media-width:{display_width}px"
@@ -142,12 +153,14 @@ def figure_markup(
             f"{image}</div>"
         )
 
+    outer_tag = "div" if native_embed else "figure"
+    caption_tag = "p" if native_embed else "figcaption"
     return (
-        f'<figure class="{figure_classes}" data-media-id="{item_id}" '
+        f'<{outer_tag} class="{figure_classes}" data-media-id="{item_id}" '
         f'style="{figure_style}">'
         f"{image}"
-        f'<figcaption class="devlog-rich__caption">{caption}'
-        "</figcaption></figure>"
+        f'<{caption_tag} class="devlog-rich__caption">{caption}'
+        f"</{caption_tag}></{outer_tag}>"
     )
 
 

@@ -82,17 +82,20 @@ test suite and `python3 scripts/blog.py check --all`.
 - Do not reintroduce rigid legacy rules such as a fixed character count,
   uniform paragraph or sentence lengths, a mandatory number or shape of
   headings, a bold-emphasis quota, a mandatory table, or a generic disclaimer.
-- Never publish a post or click Tistory's final publish control. This boundary
-  does not change even when the user authorizes other editor work. Rendering
-  stops at paste-ready HTML; the user always pastes, previews, and publishes
-  in Tistory, then supplies the final URL.
-- End every completed-post handoff with a user-facing
-  `<slug>-tistory-fragment.txt` file containing only the exact paste-ready HTML.
-  Make this `.txt` file the primary final link and provide the Tistory title
-  separately.
+- For explicitly invoked `dev-log-rich-post-workspace-v2`, follow its
+  author-approved direct-publication workflow. After the author approves the
+  specific article and says to publish (for example, `올리자`), Codex uses the
+  Codex in-app browser to attach images, enter the approved article, preview,
+  publish, and verify the live page. Drafting alone is not publication approval.
+  Other workflows stop at paste-ready HTML unless the user instructs otherwise.
+- Retain a user-facing `<slug>-tistory-fragment.txt` file containing only the
+  exact publication HTML. For direct v2 publication, the live article URL is
+  the primary final link and the exact submitted TXT is the backup. Other
+  workflows make the TXT primary.
 - A Git push to this workspace is part of the archive workflow and is not a
-  Tistory publication. Keep `status: ready` until the user supplies the live
-  Tistory URL.
+  Tistory publication. Keep `status: ready` until the live Tistory page is
+  verified; direct v2 publication obtains that URL from the successful browser
+  publication instead of requiring the author to send it.
 - Do not mark a post `ready` or `published` while TODOs, unresolved evidence,
   missing first-party value, or a missing final image remain.
 

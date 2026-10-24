@@ -7,6 +7,8 @@ import sys
 import tempfile
 import unittest
 import zlib
+from contextlib import redirect_stdout, redirect_stderr
+from io import StringIO
 from pathlib import Path
 
 
@@ -21,7 +23,10 @@ from rich_post_v2_common import (
     merge_browser_capture_viewports,
     validate_bundle,
     validate_source_pass,
+    native_attachment_error,
+    native_tistory_reference,
 )
+from tistory_media_map_v2 import run_set_url
 
 
 def png_bytes(width=760, height=480):
@@ -151,6 +156,112 @@ summary: "v2 게이트를 검증합니다."
         self.assertIn("<h1>v2 검증 글</h1>", preview)
         self.assertNotIn("<h1", fragment)
         self.assertIn("source-frozen article surface", preview)
+
+    def bind_native_fixture(self):
+        self.workflow["publication_mode"] = "codex-browser"
+        self.write_workflow()
+        path = self.post / "media.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        item = manifest["items"][0]
+        item["tistory_embed"] = (
+            '[##_Image|kage@asset/post/long-key/img.png|alignCenter|'
+            'width="100%" alt="공식 공개 화면"|_##]'
+        )
+        item["tistory_url"] = (
+            "https://blog.kakaocdn.net/dna/asset/post/signed-preview-key/img.png"
+            "?expires=1793458799&signature=example"
+        )
+        path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        return item
+
+    def test_native_publication_keeps_attachment_reference_out_of_preview_urls(self):
+        item = self.bind_native_fixture()
+        result = validate_bundle(self.post)
+        self.assertEqual([], result["errors"])
+        for theme in ("light", "dark"):
+            preview, fragment = render_outputs(
+                result, self.post / "dist", preview_media_source="remote",
+                preview_theme=theme,
+            )
+            self.assertIn(item["tistory_embed"], fragment)
+            self.assertNotIn('expires=1793458799', fragment)
+            self.assertNotIn('[##_Image|', preview)
+            self.assertIn('expires=1793458799', preview)
+            self.assertIn('<div class="devlog-rich__figure"', fragment)
+            self.assertNotIn('<figure class="devlog-rich__figure"', fragment)
+            self.assertIn('transform: none !important;', fragment)
+
+    def test_browser_release_cannot_use_only_a_signed_display_url(self):
+        self.bind_native_fixture()
+        path = self.post / "media.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        del manifest["items"][0]["tistory_embed"]
+        path.write_text(json.dumps(manifest), encoding="utf-8")
+        errors = validate_bundle(self.post, require_publish_urls=True)["errors"]
+        self.assertTrue(any('browser publication requires tistory_embed' in e for e in errors))
+
+    def test_native_binder_rejects_another_asset_without_mutating_manifest(self):
+        item = self.bind_native_fixture()
+        path = self.post / "media.json"
+        before = path.read_bytes()
+        result = validate_bundle(self.post)
+        with redirect_stderr(StringIO()), redirect_stdout(StringIO()):
+            status = run_set_url(
+                result, self.post, "lead",
+                "https://blog.kakaocdn.net/dna/another/post/key/img.png",
+                item["tistory_embed"],
+            )
+        self.assertEqual(1, status)
+        self.assertEqual(before, path.read_bytes())
+
+    def test_captured_native_block_can_be_bound_and_rendered_through_cli(self):
+        item = self.bind_native_fixture()
+        native = item["tistory_embed"]
+        url = item["tistory_url"]
+        path = self.post / "media.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        del manifest["items"][0]["tistory_embed"]
+        manifest["items"][0]["tistory_url"] = ""
+        path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        captured = self.post / "artifacts" / "qa-v2" / "attachments" / "lead.txt"
+        captured.parent.mkdir(parents=True)
+        captured.write_text(native, encoding="utf-8")
+        commands = [
+            ["record_source_pass_v2.py", str(self.post), "--by", "source reviewer"],
+            ["tistory_media_map_v2.py", "set-embed", str(self.post), "lead",
+             "--embed-file", str(captured), "--url", url],
+            ["render_rich_post_v2.py", str(self.post), "--output-dir",
+             str(self.post / "dist"), "--preview-media-source", "remote"],
+        ]
+        for command in commands:
+            completed = subprocess.run(
+                [sys.executable, str(SCRIPTS / command[0]), *command[1:]],
+                capture_output=True, text=True, check=False,
+            )
+            self.assertEqual(0, completed.returncode, completed.stderr)
+        fragment = (self.post / "dist" / "v2-test-tistory-fragment.html").read_text()
+        self.assertIn(native, fragment)
+        self.assertNotIn("expires=1793458799", fragment)
+
+    def test_native_block_validation_preserves_real_formats_and_rejects_extra_html(self):
+        item = self.bind_native_fixture()
+        reference = 'kage@asset/post/long-key/img.png'
+        self.assertEqual(reference, native_tistory_reference(item["tistory_embed"]))
+        cdm = '[##_Image|' + reference + '|CDM|1.3|{"originWidth":760,"style":"alignCenter"}_##]'
+        self.assertEqual(reference, native_tistory_reference(cdm))
+        signed = item["tistory_embed"].replace('img.png|', 'img.png?expires=123&amp;signature=test|')
+        self.assertIsNotNone(native_tistory_reference(signed))
+        for invalid in (
+            '<img src="https://blog.kakaocdn.net/image.png">',
+            item["tistory_embed"] + item["tistory_embed"],
+            item["tistory_embed"].replace('width="100%"', 'onerror="alert(1)"'),
+        ):
+            self.assertIsNone(native_tistory_reference(invalid))
+        from urllib.parse import quote
+        thumbnail = dict(item, tistory_url=(
+            'https://img1.daumcdn.net/thumb/R1280x0/?fname=' + quote(item['tistory_url'], safe='')
+        ))
+        self.assertIsNone(native_attachment_error(thumbnail))
 
     def test_public_caption_omits_internal_media_origin_label(self):
         result = validate_bundle(self.post)

@@ -15,7 +15,7 @@ from collections import Counter
 from datetime import datetime
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 
 SKILL_DIR = Path(__file__).resolve().parents[1]
@@ -156,6 +156,83 @@ def is_tistory_media_url(value: str) -> bool:
         hostname == suffix or hostname.endswith(f".{suffix}")
         for suffix in TISTORY_MEDIA_HOST_SUFFIXES
     )
+
+
+def native_tistory_reference(value: object) -> str | None:
+    """Read an editor-generated image block, never synthesize one from a URL."""
+    if not isinstance(value, str):
+        return None
+    token = value.strip()
+    if not token.startswith("[##_Image|") or not token.endswith("_##]"):
+        return None
+    payload = token[len("[##_Image|"):-len("_##]")]
+    if any(marker in payload for marker in ("[##_", "_##]", "<", ">")):
+        return None
+    parts = payload.split("|")
+    if len(parts) != 4 or parts[1] not in {
+        "alignCenter", "alignLeft", "alignRight", "CDM"
+    }:
+        return None
+    if re.search(r"\bon\w+\s*=|\b(?:javascript|vbscript)\s*:", payload, re.I):
+        return None
+    if parts[1] == "CDM":
+        if parts[2] != "1.3":
+            return None
+        try:
+            if not isinstance(json.loads(parts[3]), dict):
+                return None
+        except (ValueError, TypeError):
+            return None
+    elif parts[3] != "":
+        return None
+    reference = html.unescape(parts[0])
+    if not re.fullmatch(
+        r"kage@[A-Za-z0-9_-]+/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+/"
+        r"[A-Za-z0-9_.-]+\.(?:png|jpe?g|webp|gif)(?:\?[^\s\"'|]*)?",
+        reference,
+        re.I,
+    ):
+        return None
+    return reference
+
+
+def tistory_asset_identity(value: str) -> tuple[str, str, str] | None:
+    """Match an attachment across signed URLs and thumbnail transformations."""
+    candidate = html.unescape(value)
+    for _ in range(4):
+        if candidate.startswith("kage@"):
+            path = candidate[len("kage@"):].split("?", 1)[0]
+            break
+        if not is_tistory_media_url(candidate):
+            return None
+        parsed = urlparse(candidate)
+        nested = parse_qs(parsed.query).get("fname")
+        if nested:
+            candidate = nested[0]
+            continue
+        if not parsed.path.startswith("/dna/"):
+            return None
+        path = parsed.path[len("/dna/"):]
+        break
+    else:
+        return None
+    segments = path.split("/")
+    if len(segments) != 4 or not all(segments):
+        return None
+    # Tistory previews can change the long third path segment when signing.
+    return segments[0], segments[1], segments[3]
+
+
+def native_attachment_error(item: dict[str, Any]) -> str | None:
+    reference = native_tistory_reference(item.get("tistory_embed"))
+    if reference is None:
+        return "tistory_embed must be one captured native Tistory image block"
+    url = item.get("tistory_url")
+    if not isinstance(url, str) or (
+        tistory_asset_identity(reference) != tistory_asset_identity(url)
+    ):
+        return "native attachment and observed Tistory URL identify different assets"
+    return None
 
 
 def is_iso_timestamp(value: object) -> bool:
@@ -1810,7 +1887,10 @@ def validate_qa_data(
             fragment_markup,
             re.IGNORECASE,
         )
-        if not fragment_sources or not all(
+        native_blocks = re.findall(r"\[##_Image\|[\s\S]*?_##\]", fragment_markup)
+        if any(native_tistory_reference(block) is None for block in native_blocks):
+            errors.append("reviewed Tistory fragment has an invalid native image block")
+        if (not fragment_sources and not native_blocks) or not all(
             is_tistory_media_url(source) for source in fragment_sources
         ):
             errors.append(
@@ -2101,6 +2181,8 @@ def validate_bundle(
             errors.append("workflow-v2.json has an unsupported `profile`")
         if workflow.get("scope") not in {"draft", "complete"}:
             errors.append("workflow-v2.json `scope` must be `draft` or `complete`")
+        if workflow.get("publication_mode") not in {None, "codex-browser"}:
+            errors.append("workflow-v2.json has an unsupported publication_mode")
         for field in (
             "direct_capture",
             "gif",
@@ -2388,6 +2470,13 @@ def validate_bundle(
             seen_tistory_urls.add(tistory_url)
         if require_publish_urls and not tistory_url:
             errors.append(f"{item_id}: missing tistory_url for paste-ready output")
+        native_embed = raw_item.get("tistory_embed")
+        if native_embed is not None:
+            native_error = native_attachment_error(raw_item)
+            if native_error:
+                errors.append(f"{item_id}: {native_error}")
+        elif require_publish_urls and workflow.get("publication_mode") == "codex-browser":
+            errors.append(f"{item_id}: browser publication requires tistory_embed")
 
         if kind == "gif":
             poster_id = _required_string(raw_item, "poster_id", item_id, errors)

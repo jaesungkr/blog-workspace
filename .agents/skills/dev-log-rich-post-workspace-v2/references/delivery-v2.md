@@ -25,11 +25,22 @@ remote commit. Skill, script, template, CSS, or standard changes require the
 full unit suite and `scripts/blog.py check --all`; an isolated new post does
 not automatically require every repository regression test.
 
-## Publication boundary
+## Author-approved publication
 
-Codex never uploads Tistory media or creates or edits a Tistory draft. The user
-first uploads the handed-off local media privately and returns the CDN URLs;
-Codex then binds and validates those URLs and creates the final `.txt` HTML.
-The user pastes the `.txt`, checks the Tistory preview and hELLO theme toggle,
-and publishes. Keep `status: ready` until the user supplies the live URL.
-Validate the live desktop and mobile page before changing to `published`.
+Follow [tistory-publication-v2.md](tistory-publication-v2.md). The author reviews
+and approves the specific article and asks to publish; Codex then carries out
+the complete release in the Codex in-app browser without a second routine
+permission request. A request to draft or proofread is not approval to publish.
+
+Use the finalized TXT as the exact native-attachment fragment for the target
+editor. Check its actual Tistory preview before clicking the final public
+publish control. Validate the returned live URL at desktop and mobile widths,
+record publication evidence and the submitted hash, then set `published` and
+commit/push the lifecycle and evidence update. If publication succeeded but a
+verification or Git step failed, record that split state and resume from it;
+do not publish a duplicate or claim the article is still unpublished.
+
+Return the live article URL as the primary final link and the exact submitted
+TXT as a backup. Embed a screenshot that shows the verified result. When the
+author has not yet approved publication, provide the local review candidate
+and wait at `reviewing`; do not route routine upload/paste work back to them.

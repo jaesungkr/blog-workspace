@@ -43,15 +43,17 @@ class SkillStructureTests(unittest.TestCase):
             skill_dir / "references" / "delivery-v2.md"
         ).read_text(encoding="utf-8")
         for text in (skill_text, media_release, delivery):
-            with self.subTest(contract="user-owned-tistory-upload"):
-                self.assertIn("Codex never", text)
-                self.assertIn("user", text.lower())
-        self.assertIn("never accesses the Tistory editor", media_release)
-        self.assertIn("returns every required URL", media_release)
-        self.assertNotIn(
-            "Upload to an unpublished Tistory draft only with explicit authority",
-            media_release,
+            with self.subTest(contract="author-approved-browser-publication"):
+                self.assertIn("author", text.lower())
+                self.assertIn("Codex in-app browser", " ".join(text.split()))
+        self.assertNotIn("never accesses the Tistory editor", media_release)
+        publication = (skill_dir / "references" / "tistory-publication-v2.md").read_text(
+            encoding="utf-8"
         )
+        self.assertIn("이대로 올리자", publication)
+        self.assertIn("Do not ask for the same publication permission again", publication)
+        self.assertIn("Drafting, source-review approval", publication)
+        self.assertIn("native", publication)
         workflow = (
             skill_dir / "references" / "workflow-v2.md"
         ).read_text(encoding="utf-8")
@@ -83,6 +85,7 @@ class SkillStructureTests(unittest.TestCase):
             "references/editorial-voice-v2.md",
             "references/source-freeze-v2.md",
             "references/media-release-v2.md",
+            "references/tistory-publication-v2.md",
             "references/final-page-qa-v2.md",
             "references/delivery-v2.md",
             "scripts/init_bundle_v2.py",

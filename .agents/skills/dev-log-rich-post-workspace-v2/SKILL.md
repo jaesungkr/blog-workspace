@@ -1,13 +1,13 @@
 ---
 name: dev-log-rich-post-workspace-v2
-description: Create complete dev.log Tistory rich posts with a staged v2 workflow that freezes a concise evidence-backed source before remote media work, applies a dedicated Korean voice-and-density gate to AI-template phrasing, awkward headings, and semantic repetition, adds conditional reader-friction screenshots, performs one independent light/dark final-page approval, and produces paste-ready responsive HTML with Git delivery. Use only when the user explicitly invokes v2 or asks for the faster source-freeze rich-post workflow; use the original dev-log-rich-post-workspace for existing v1 bundles or when v1 is explicitly requested.
+description: Create and publish complete dev.log Tistory rich posts after the author approves the specific article and asks to publish. Freeze an evidence-backed Korean source, validate media and responsive light/dark layouts, then use the Codex in-app browser to attach images as native Tistory blocks, enter the article, publish, and verify the live page with Git delivery. Use only when the user explicitly invokes v2 or asks for the source-freeze rich-post workflow; use the original rich-post skill for v1 bundles.
 ---
 
 # dev.log rich-post workspace v2
 
-Produce a reader-first Tistory fragment and full preview without repeating the
-same editorial and browser approval. Keep the original rich-post skill and its
-artifacts untouched.
+Produce a reader-first article and publish it through the Codex in-app browser
+after the author approves that article and asks to publish. Keep the original
+rich-post skill and its artifacts untouched.
 
 ## Protect the repository
 
@@ -32,6 +32,8 @@ Read `references/workflow-v2.md` for every v2 task. Then load just in time:
   `references/editorial-voice-v2.md`;
 - before source approval: `references/source-freeze-v2.md`;
 - before final media or Tistory URL work: `references/media-release-v2.md`;
+- before Tistory editor access or publication:
+  `references/tistory-publication-v2.md`;
 - immediately before browser QA: `references/final-page-qa-v2.md`;
 - immediately before ready, Git, and handoff: `references/delivery-v2.md`.
 
@@ -245,23 +247,32 @@ validated `mobile_scroll_width` media field and a clear caption instruction so
 only the screenshot scrolls horizontally. Do not make lead art or ordinary
 images scroll.
 
-## Bind remote media
+## Author approval and browser media binding
 
-Print the deterministic user-upload queue with `tistory_media_map_v2.py` and
-hand the listed local files to the user. Codex never opens a Tistory editor,
-creates or edits a Tistory draft, uploads media to Tistory, or asks for upload
-permission. The user privately uploads every listed file and returns the final
-Tistory CDN URL for each stable media ID. Bind only those user-supplied URLs.
+Present the complete local article and publication images for the author's
+review. Keep `reviewing` until the author confirms the specific article and
+asks to publish, for example `이대로 올리자`. Record the actual instruction and
+approved source/media hashes in `artifacts/qa-v2/author-publication-approval.json`
+as described in `references/tistory-publication-v2.md`. This author approval is
+distinct from the independent source pass. Once it exists, continue through
+image upload, editor entry, preview, final publish, and live verification
+without asking for the same permission again.
 
-While waiting, keep the article at `reviewing` and report the exact media ID,
-file, dimensions, and SHA-256 that the user must upload. After all URLs arrive,
-resume in the same bundle, bind them, and finish the remote and final-page
-gates. Do not produce the final HTML/TXT before the URL map is complete.
+Use the Codex in-app browser, including for login and file upload. Print the
+media queue with `tistory_media_map_v2.py plan` for Codex's upload checklist.
+Upload each validated local asset in the target editor and capture the native
+`[##_Image|..._##]` code that Tistory generates. Bind that exact code with
+`set-embed --embed-file ... --url ...`; the URL is an observed preview/live
+address for byte verification, not the publication source. Set
+`publication_mode: codex-browser` in `workflow-v2.json` for this release.
+Do not infer an attachment code by rewriting a CDN URL.
 
-Record one remote baseline with `remote_media_v2.py record`. Run
-`remote_media_v2.py verify` only when the route requires a second fetch. A
-missing session, mapping, authority, or successful fetch leaves the article at
-`reviewing`.
+Record one remote baseline with `remote_media_v2.py record` and the routed
+second fetch. New browser releases require native attachment blocks for every
+media item. The fragment preserves them; local and remote previews use normal
+images for inspection. Check the exact native fragment in Tistory's own
+preview before publication. A missing login, attachment, approval, or valid
+fetch keeps the article at `reviewing` with a concrete resumption point.
 
 ## Run one final page gate
 
@@ -297,19 +308,23 @@ standards changed. Inspect the exact diff, stage only task files, commit, fetch
 and integrate without force, rerun affected checks, push to `origin/master`,
 and verify the remote commit.
 
-Make the byte-identical `<slug>-tistory-fragment.txt` the primary handoff only
-after the user has returned every CDN URL and the final gates pass. State the
-Tistory title separately. The user always uploads media privately, pastes the
-final HTML, previews it, toggles the real hELLO theme, and publishes. After the
-user supplies the live URL, validate desktop and mobile before setting
-`published`.
+After the final gates pass, enter the byte-identical
+`<slug>-tistory-fragment.txt` in the target Tistory editor. Check the exact
+native attachment result, title, category, public URL, and real hELLO light/dark
+preview; publish under the recorded author approval. Read the live public URL
+from the browser and validate desktop/mobile images and layout before setting
+`published`. Return that live URL as the primary handoff, with the exact TXT
+as a backup and a screenshot of the verified result. Finish Git delivery for
+the publication evidence and lifecycle update as well.
 
 ## Completion
 
 A v2 rich post is complete only when the source pass, validated local media,
 resolved remote URLs, required remote observation, exact remote light/dark
 candidate, one independent final-page record, strict final render, focused Git
-delivery, verified remote commit, and byte-identical paste file pass. Never
+delivery, verified remote commit, byte-identical submitted file, author
+publication approval, and verified live article pass. A reviewed draft without
+author publication approval is a review handoff, not a published post. Never
 accept an unresolved claim, unsupported hands-on statement, local media path,
 placeholder, duplicate H1, unreadable mobile evidence, hidden table content,
 stale gate, known visual defect, generic opening roadmap, abstract

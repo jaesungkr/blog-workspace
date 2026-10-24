@@ -12,5 +12,6 @@
   "include_390": false,
   "include_768": false,
   "second_remote_fetch": false,
-  "decision_note": ""
+  "decision_note": "",
+  "publication_mode": "codex-browser"
 }

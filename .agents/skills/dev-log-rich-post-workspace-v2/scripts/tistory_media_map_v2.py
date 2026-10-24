@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print the user-owned Tistory upload queue or bind a returned CDN URL."""
+"""Print the browser upload queue and bind captured Tistory attachments."""
 
 from __future__ import annotations
 
@@ -11,6 +11,7 @@ from pathlib import Path
 from rich_post_v2_common import (
     atomic_write_json,
     is_tistory_media_url,
+    native_attachment_error,
     validate_bundle,
     validate_source_pass,
 )
@@ -62,6 +63,7 @@ def run_set_url(
     post_dir: Path,
     media_id: str,
     url: str,
+    embed: str | None = None,
 ) -> int:
     if result["meta"].get("status") != "reviewing":
         print(
@@ -97,7 +99,15 @@ def run_set_url(
         print(f"ERROR: unknown media id: {media_id}", file=sys.stderr)
         return 1
 
-    selected["tistory_url"] = url
+    candidate = dict(selected, tistory_url=url)
+    if embed is not None:
+        candidate["tistory_embed"] = embed.strip()
+    if "tistory_embed" in candidate:
+        native_error = native_attachment_error(candidate)
+        if native_error:
+            print(f"ERROR: {media_id}: {native_error}", file=sys.stderr)
+            return 1
+    selected.update(candidate)
     manifest_path = post_dir / "media.json"
     try:
         atomic_write_json(manifest_path, manifest)
@@ -112,13 +122,13 @@ def run_set_url(
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Prepare the user's deterministic Tistory media upload queue "
-            "and bind CDN URLs returned by the user."
+            "Prepare the deterministic browser upload queue and bind "
+            "native attachment blocks captured from the Tistory editor."
         )
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
     plan = subparsers.add_parser(
-        "plan", help="Print the user's upload queue and identity data"
+        "plan", help="Print the browser upload queue and identity data"
     )
     plan.add_argument("post_dir")
     plan.add_argument("--json", action="store_true")
@@ -126,6 +136,13 @@ def main() -> int:
     bind.add_argument("post_dir")
     bind.add_argument("media_id")
     bind.add_argument("url")
+    native_bind = subparsers.add_parser(
+        "set-embed", help="Bind a captured native block and observed preview URL"
+    )
+    native_bind.add_argument("post_dir")
+    native_bind.add_argument("media_id")
+    native_bind.add_argument("--embed-file", required=True)
+    native_bind.add_argument("--url", required=True)
     args = parser.parse_args()
 
     post_dir = Path(args.post_dir).resolve()
@@ -137,6 +154,13 @@ def main() -> int:
         return 1
     if args.command == "plan":
         return run_plan(result, args.json)
+    if args.command == "set-embed":
+        try:
+            embed = Path(args.embed_file).read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            print(f"ERROR: cannot read captured attachment: {exc}", file=sys.stderr)
+            return 1
+        return run_set_url(result, post_dir, args.media_id, args.url, embed)
     return run_set_url(result, post_dir, args.media_id, args.url)
 
 

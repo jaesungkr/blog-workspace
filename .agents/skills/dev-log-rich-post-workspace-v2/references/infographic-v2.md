@@ -107,6 +107,6 @@ prompt. Return defects to `max-txt2img` under the retry budget above.
 Only an independent `pass` allows the orchestrator to mark the media validated.
 Record the result in `audit.md` and any focused evidence under
 `artifacts/qa-v2/infographic/`, never v1 QA paths. Then resume local preflight,
-the user-owned Tistory upload queue, URL binding, and the single final light/dark
+the Codex browser's Tistory upload queue, native binding, and the single final light/dark
 page gate. Neither this creator nor its validator uploads, publishes, commits,
 pushes, or sets the post ready.

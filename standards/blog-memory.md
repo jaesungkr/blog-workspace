@@ -88,16 +88,22 @@ them when decisions depend on current state.
 
 ## Tistory publication ownership
 
-- Codex never performs Tistory's final public-publish action. The user always
-  pastes the delivered HTML, checks the Tistory preview, and publishes the post.
-- This is a permanent workflow boundary, not an approval question. Do not ask
-  whether Codex should publicly publish a post.
-- Codex may prepare paste-ready HTML, validate mapped CDN media, and complete
-  repository delivery at `ready`. After the user publishes and supplies the
-  live URL, Codex may validate the live page and update publication metadata.
-- The user's preferred final handoff is a `.txt` file containing only the raw
-  paste-ready Tistory HTML, matching the Kimi K3 delivery. Always provide this
-  file as the primary final artifact and give the title separately.
+- For explicitly invoked `dev-log-rich-post-workspace-v2`, the author's
+  approval of the specific article plus an instruction such as `올리자`
+  authorizes Codex to upload images, enter the article, preview, publish, and
+  verify the live page in the Codex in-app browser. Do not use external Chrome
+  for this workflow or ask again for the same publication permission.
+- The 2026-10-24 author instruction supersedes the former user-only upload,
+  paste, and publication boundary for v2. Drafting alone does not authorize
+  publication. Other workflows retain their existing handoff unless the user
+  instructs otherwise.
+- Preserve editor-generated native image attachment references in publication
+  HTML. Keep observed signed CDN URLs only for preview and byte verification;
+  do not freeze them as the publication image source.
+- For direct v2 publication, return the verified live URL first and retain the
+  exact submitted `.txt` as a backup. Set `published` only after desktop/mobile
+  verification. For other workflows, the raw HTML TXT remains the primary
+  handoff and the author publishes it.
 - Do not show media-origin labels such as `사용자 제공`, `직접 캡처`, or
   `공식 자료` beside images in the public article. Keep provenance in
   `media.json` and the audit only; public captions contain the useful image

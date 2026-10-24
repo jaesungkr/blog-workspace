@@ -58,3 +58,25 @@ python3 .agents/skills/dev-log-rich-post-workspace-v2/scripts/record_final_page_
 This is the only manual page approval. Do not repeat the source editorial gate
 here. If a real text defect appears, return to writing and invalidate this
 candidate.
+
+## Exact Tistory attachment preview and live verification
+
+The standalone preview uses observed CDN URLs; the publication fragment uses
+native attachment blocks. After finalization, inspect that exact fragment in
+the actual Tistory editor preview before publication. Check image recognition,
+alt text, captions, order, and 1280/360 widths in real hELLO light/dark themes.
+This verifies the platform transformation; it does not reopen source review
+or add a second independent local-page approval. Return a real defect to its
+owning stage and refresh affected evidence before publication.
+
+Native Tistory blocks expand into `figure.imageblock`. Keep the outer media
+wrapper a `div` to avoid nested figures. Reset native centering transforms
+inside the scoped wrapper; the 2026-10-24 repair exposed a conflict between
+`margin: 0 auto` and Tistory's `translateX(-50%)` at mobile widths. The v2 CSS
+handles this only inside `.devlog-rich__native-image`.
+
+After publication, verify the public page itself, including successful image
+loads (`naturalWidth > 0`), captions, native imageblock markup, navigation,
+table/code scrolling, and both desktop/mobile layouts. Record the live URL,
+actual measurements, and screenshots in `artifacts/qa-v2/publication.json`.
+Do not equate a local preview pass or an editor save click with live success.

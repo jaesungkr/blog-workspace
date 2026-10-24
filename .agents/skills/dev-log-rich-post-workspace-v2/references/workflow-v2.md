@@ -43,7 +43,7 @@ Choose screenshots only where prose alone leaves one of these questions hard
 to answer. A normal guide often needs two to five, but this is not a quota.
 Require a different reader question for every selected image and record why an
 obvious candidate was excluded when it would be redundant or increase the
-user's Tistory upload burden without improving the explanation.
+browser's Tistory upload burden without improving the explanation.
 
 For a recommendation or benefit explainer aimed at non-specialists, record a
 reader-benefit contract in `brief.md` and summarize it in `decision_note`:
@@ -78,11 +78,23 @@ not enabled.
    voice-and-density gate, and polish.
 3. Run an independent cold-read source review and write `source-pass.json`.
 4. Finish publication media and local light/dark preflight.
-5. Bind final Tistory URLs and record the first remote observation.
-6. Prepare one remote-media light/dark candidate.
-7. Let one independent reviewer capture and inspect both themes.
-8. Record `final-page.json`, set `ready`, render, deliver Git, and hand off the
-   byte-identical paste file.
+5. Present the complete local candidate and images to the author. Record the
+   author's explicit approval of this article and instruction to publish.
+6. In the Codex in-app browser, attach the assets in the target editor, bind
+   native image blocks and observed preview URLs, and record remote bytes.
+7. Prepare one remote-media light/dark candidate. Let one independent reviewer
+   capture both themes and record `final-page.json`.
+8. Set `ready`, retain the exact native publication TXT, and check that same
+   fragment in the actual Tistory preview, including both hELLO themes.
+9. Publish using the existing author approval, verify the public desktop and
+   mobile page, record the live URL and evidence, set `published`, and finish
+   focused Git delivery. The live article URL is the primary result.
+
+Set `publication_mode: codex-browser` for new releases. Historical bundles
+without the field retain their legacy renderer compatibility; continuing an
+old bundle for a new publication requires explicitly selecting browser mode
+and rebinding native attachments before release. Do not publish or migrate
+other articles merely because they share an expired URL pattern.
 
 ## Invalidation
 
@@ -91,7 +103,8 @@ not enabled.
 | Title, article body, table, link, usage step | Source pass and final page |
 | Brief or evidence | Source pass and final page |
 | CSS, display size, media file, caption | Final page |
-| Tistory URL | Remote record and final page |
+| Native attachment block or observed Tistory URL | Remote record and final page |
+| Approved source or local media bytes | Author approval of the changed candidate |
 | Audit-only note | No page rerun |
 | Tool change with byte-identical final HTML | Keep the reviewed artifact; record the unchanged hash |
 

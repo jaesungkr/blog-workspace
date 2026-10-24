@@ -33,12 +33,12 @@ Put the screenshot directly after the relevant step. In the surrounding prose,
 explain all three parts: where the reader is, what to inspect or enter, and what
 to do next. Do not rely on a caption as the only instruction. Exclude screens
 that merely repeat an obvious list or button, and record that exclusion so the
-user's private Tistory upload queue stays purposeful. Two to five screenshots
+browser's Tistory upload queue stays purposeful. Two to five screenshots
 is a common range, not a quota.
 
 ## Local preflight
 
-Before asking the user to upload, run the v2 checker and render local light and
+Before opening the publication editor, run the v2 checker and render local light and
 dark previews. Inspect 1280 and 360 CSS pixels. Add 390 or 768 only when
 `workflow-v2.json` routes that profile. Fix layout and media defects here; if
 the text must change, return to the source gate.
@@ -56,40 +56,49 @@ mobile. State the horizontal-scroll action in the caption. Use this escape
 hatch only for screenshots whose labels must remain legible, not for lead art,
 photos, or decoration.
 
-## User-owned Tistory upload
+## Browser-owned attachment release
 
-Codex never accesses the Tistory editor, creates or edits a Tistory draft,
-uploads any file to Tistory, or asks whether it may do so. Always treat Tistory
-media upload as the user's action, even when a signed-in browser or another
-upload mechanism appears available.
+After the source pass and local preflight, obtain the author's approval of
+this specific article and instruction to publish. Follow
+[tistory-publication-v2.md](tistory-publication-v2.md) in the Codex in-app
+browser. Codex uploads the validated local files, inserts the approved article,
+previews it, and publishes under that approval. Login or two-factor prompts
+may require the author's participation; resume in the same draft afterwards.
 
-After the source pass and local preflight, print the queue and give the user
-the listed local files. Include each stable ID, dimensions, and SHA-256 so the
-returned CDN URL can be matched without relying on upload order. Stop the
-release sequence at `reviewing` until the user privately uploads the files and
-returns every required URL.
-
-## Map final URLs
-
-After the source pass:
+Print the deterministic queue for Codex, matching each upload by media ID,
+local publication path, dimensions, and SHA-256:
 
 ```bash
 python3 .agents/skills/dev-log-rich-post-workspace-v2/scripts/tistory_media_map_v2.py \
   plan posts/YYYY-MM-DD-slug
-python3 .agents/skills/dev-log-rich-post-workspace-v2/scripts/tistory_media_map_v2.py \
-  set-url posts/YYYY-MM-DD-slug <media-id> <https-tistory-cdn-url>
 ```
 
-Run `set-url` only with a URL the user returned for that media ID. Do not infer
-that a URL belongs to a file from its order alone. Once all URLs are bound,
-record the remote baseline and continue to the final page gate.
-
-Record one baseline GET:
+Capture the complete native `[##_Image|..._##]` block from the editor's HTML
+mode. Keep it in a bundle artifact such as
+`artifacts/qa-v2/attachments/<media-id>.txt`. Observe the matching image URL in
+the actual Tistory preview; use that URL only for remote byte observation and
+standalone previews. Bind both:
 
 ```bash
-python3 .agents/skills/dev-log-rich-post-workspace-v2/scripts/remote_media_v2.py \
-  record posts/YYYY-MM-DD-slug --by "<actual creator>"
+python3 .agents/skills/dev-log-rich-post-workspace-v2/scripts/tistory_media_map_v2.py \
+  set-embed posts/YYYY-MM-DD-slug <media-id> \
+  --embed-file <captured-native-block-file> --url <observed-preview-cdn-url>
 ```
 
-Run `verify` only when `second_remote_fetch` is true. This is mandatory for GIF
-and high-risk remote media, optional for ordinary static Tistory images.
+The manifest's `tistory_embed` is the publication source. Its `tistory_url` is
+an observation that can expire; never replace a native block with that URL in
+the final fragment. Never construct a `kage@` reference by stripping the query
+from a CDN address. If Tistory generates a native block containing a signed
+query, preserve it as generated and verify its actual editor attachment
+recognition. The validator also matches the captured block to the observed
+asset identity, including thumbnail-wrapped URLs.
+
+Record one baseline GET with `remote_media_v2.py record --by <actual creator>`.
+Run `verify` when `second_remote_fetch` is true, including GIF and high-risk
+remote media. For a GIF, capture both its own attachment and its validated
+poster, and confirm animation and reduced-motion fallback in the real preview.
+A currently successful URL fetch does not establish indefinite availability.
+
+Keep these raw editor blocks separate from the assembled final fragment.
+They allow re-rendering from stable native references instead of copying a
+month-specific display URL back into publication HTML.
