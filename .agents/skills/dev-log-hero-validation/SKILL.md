@@ -78,6 +78,6 @@ Record in `audit.md`:
 
 ## Handoff
 
-Return the stage result and evidence to `dev-log-workspace`. Do not approve or
-modify supporting infographics, set the article ready by yourself, commit, or
-push.
+Return the stage result and evidence to the owning dev.log orchestrator. Do
+not approve or modify supporting infographics, set the article ready by
+yourself, commit, or push.

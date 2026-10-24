@@ -1,6 +1,6 @@
 ---
 name: dev-log-rich-post-workspace
-description: Orchestrate complete reader-first dev.log Tistory posts whose final artifact is a designed, self-contained, responsive HTML page rather than plain Markdown. Use for rich posts, screenshot- or GIF-led software guides, hands-on product reviews, unfamiliar-product explainers, search-friendly introductions, concise headings, explicit comparison tables, actionable usage sections, custom Tistory HTML, semantic figures and captions, media manifests, mobile-consistent layouts, or requests modeled on a visually finished live article. Reuse the repository's writing, prose-polishing, evidence, article-validation, and Git-delivery contracts while owning media provenance, rich HTML rendering, responsive QA, and the format-specific ready decision.
+description: Maintain existing dev.log Tistory bundles with format rich-post or follow an explicitly requested v1 rich-post workflow. Own media provenance, responsive HTML rendering, validation, and Git delivery for those bundles. Use dev-log-rich-post-workspace-v2 for new complete posts selected by the repository AGENTS.md; do not silently migrate existing v1 artifacts.
 ---
 
 # dev.log rich-post workspace
@@ -47,10 +47,11 @@ Specialist stages do not commit or push. This orchestrator owns Git delivery.
 
 ## Route the request
 
-Use this workflow when the user explicitly invokes it or asks for a finished
-HTML page, a custom responsive Tistory format, actual product screens, GIFs,
-or a visually designed post. Use `dev-log-workspace` for an ordinary
-Markdown-led post without a rich-page requirement.
+Use this workflow for an existing `format: rich-post` bundle or an explicit
+request for v1. For new complete posts, follow the repository's default
+[v2 workflow](../dev-log-rich-post-workspace-v2/SKILL.md). For a limited
+Markdown-only edit, use the writing, prose-polishing, and article-validation
+specialists directly rather than loading another orchestrator.
 
 Never promise hands-on coverage when the required app, account, device, version,
 or safe test environment is unavailable. Downgrade the promise to a

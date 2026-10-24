@@ -1,6 +1,6 @@
 ---
 name: dev-log-rich-post-workspace-v2
-description: Create and publish complete dev.log Tistory rich posts after the author approves the specific article and asks to publish. Freeze an evidence-backed Korean source, validate media and responsive light/dark layouts, then use the Codex in-app browser to attach images as native Tistory blocks, enter the article, publish, and verify the live page with Git delivery. Use only when the user explicitly invokes v2 or asks for the source-freeze rich-post workflow; use the original rich-post skill for v1 bundles.
+description: Create and publish complete dev.log Tistory rich posts after the author approves the specific article and asks to publish. Freeze an evidence-backed Korean source, validate media and responsive light/dark layouts, then use the Codex in-app browser to attach images as native Tistory blocks, enter the article, publish, and verify the live page with Git delivery. Use when explicitly invoked, requested as a source-freeze workflow, or selected by the repository AGENTS.md; use the original rich-post skill for existing v1 bundles.
 ---
 
 # dev.log rich-post workspace v2
@@ -21,8 +21,29 @@ rich-post skill and its artifacts untouched.
 4. Use `format: rich-post-v2`, `media.json` version 2, `workflow-v2.json`, and
    `artifacts/qa-v2/`. Never write v2 evidence under the v1 QA paths.
 
-This skill is explicit-invocation only so it can coexist with v1. Do not
-silently migrate an existing `format: rich-post` bundle.
+This is the repository's default complete-post workflow when selected by
+`AGENTS.md`. Outside that repository, require explicit invocation or a request
+for this workflow; keep the global implicit-invocation policy unchanged. Do
+not silently migrate an existing `format: rich-post` bundle.
+
+## Direct specialist dependencies
+
+Load these stages directly; no base workspace orchestrator is required.
+
+| Stage | Skill |
+|---|---|
+| Write | [dev-log-writing](../dev-log-writing/SKILL.md) |
+| Polish prose | [dev-log-prose-polish](../dev-log-prose-polish/SKILL.md) |
+| Validate source | [dev-log-article-validation](../dev-log-article-validation/SKILL.md) |
+| Create a routed hero | [dev-log-hero-image](../dev-log-hero-image/SKILL.md) |
+| Validate a routed hero | [dev-log-hero-validation](../dev-log-hero-validation/SKILL.md) |
+| Validate a routed infographic | [dev-log-infographic-validation](../dev-log-infographic-validation/SKILL.md) |
+
+Run writing, prose polish, then source validation. Rerun
+`dev-log-prose-polish` before article validation after a material source
+revision. `references/infographic-v2.md` owns the v2 infographic creator
+selection. Specialist stages do not commit or push; this orchestrator owns
+Git delivery.
 
 ## Load only the current stage
 

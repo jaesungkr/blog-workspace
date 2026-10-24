@@ -10,17 +10,19 @@ framework that belongs on this blog.
 
 ## Start every blog task here
 
-- Use `.agents/skills/dev-log-rich-post-workspace/SKILL.md` when the request
-  explicitly calls for a finished responsive HTML page, actual product
-  screenshots, GIFs, semantic figures, or a visually designed Tistory post.
-- Otherwise use `.agents/skills/dev-log-workspace/SKILL.md` as the
-  orchestrator.
-- Let it load the separate writing, prose-polishing, hero creation, infographic
-  creation, article validation, hero validation, and infographic validation
-  skills under `.agents/skills/`.
-- Let the rich-post orchestrator reuse the applicable writing and validation
-  stages while owning its media manifest, full preview, paste fragment,
-  responsive QA, and format-specific ready decision.
+- Use `.agents/skills/dev-log-rich-post-workspace-v2/SKILL.md` as the default
+  orchestrator for new complete posts and revisions of v2 posts. This
+  repository instruction selects v2 even when the user does not name a skill.
+- Continue existing `format: rich-post` bundles with
+  `.agents/skills/dev-log-rich-post-workspace/SKILL.md` unless the user asks
+  to migrate them. Do not silently convert a v1 bundle to v2.
+- For a limited request such as research, prose editing, or image review,
+  load only the owning specialist and its applicable validator. Respect an
+  explicit request for a plain Markdown artifact.
+- The selected orchestrator loads writing, prose-polishing, image creation,
+  and validation skills directly. It owns the media manifest, responsive QA,
+  publication handoff, and Git delivery; no additional base orchestrator is
+  required.
 - Treat every Git-tracked `.agents/skills/dev-log-*` directory as the only
   editable copy. For global Codex discovery, link all of them with
   `scripts/link_codex_skill.sh`; do not maintain copied skills under
@@ -82,7 +84,7 @@ test suite and `python3 scripts/blog.py check --all`.
 - Do not reintroduce rigid legacy rules such as a fixed character count,
   uniform paragraph or sentence lengths, a mandatory number or shape of
   headings, a bold-emphasis quota, a mandatory table, or a generic disclaimer.
-- For explicitly invoked `dev-log-rich-post-workspace-v2`, follow its
+- For `dev-log-rich-post-workspace-v2`, follow its
   author-approved direct-publication workflow. After the author approves the
   specific article and says to publish (for example, `올리자`), Codex uses the
   Codex in-app browser to attach images, enter the approved article, preview,

@@ -16,7 +16,6 @@ STANDARD_SPECIALISTS = {
     "dev-log-infographic-validation",
 }
 ORCHESTRATORS = {
-    "dev-log-workspace",
     "dev-log-rich-post-workspace",
 }
 EXPECTED_SKILLS = STANDARD_SPECIALISTS | ORCHESTRATORS
@@ -123,18 +122,18 @@ class SkillStructureTests(unittest.TestCase):
                 self.assertIn(f"${name}", ui)
                 self.assertIn("allow_implicit_invocation: true", ui)
 
-    def test_standard_orchestrator_loads_every_standard_specialist(self):
+    def test_v2_orchestrator_loads_specialists_directly(self):
         orchestrator = (
-            SKILLS / "dev-log-workspace" / "SKILL.md"
+            SKILLS / V2_RICH_ORCHESTRATOR / "SKILL.md"
         ).read_text(encoding="utf-8")
 
-        for name in STANDARD_SPECIALISTS:
+        for name in STANDARD_SPECIALISTS - {"dev-log-infographic"}:
             with self.subTest(skill=name):
                 self.assertIn(f"../{name}/SKILL.md", orchestrator)
 
-        self.assertIn("Stage skills do not commit or push", orchestrator)
-        self.assertIn("This orchestrator owns Git delivery", orchestrator)
-        self.assertIn("../dev-log-rich-post-workspace/SKILL.md", orchestrator)
+        normalized = " ".join(orchestrator.split())
+        self.assertIn("Specialist stages do not commit or push", normalized)
+        self.assertIn("this orchestrator owns Git delivery", normalized)
 
     def test_rich_orchestrator_owns_media_render_and_git_delivery(self):
         rich_skill_dir = SKILLS / "dev-log-rich-post-workspace"
@@ -297,18 +296,18 @@ class SkillStructureTests(unittest.TestCase):
         self.assertIn("수치와 폐기한 실험의 의미", audit_template)
 
         orchestrator = (
-            SKILLS / "dev-log-workspace" / "SKILL.md"
+            SKILLS / V2_RICH_ORCHESTRATOR / "SKILL.md"
         ).read_text(encoding="utf-8")
-        writing_position = orchestrator.index("1. `dev-log-writing`")
-        polish_position = orchestrator.index("2. `dev-log-prose-polish`")
+        writing_position = orchestrator.index("| Write |")
+        polish_position = orchestrator.index("| Polish prose |")
         validation_position = orchestrator.index(
-            "3. `dev-log-article-validation`"
+            "| Validate source |"
         )
         self.assertLess(writing_position, polish_position)
         self.assertLess(polish_position, validation_position)
         self.assertIn(
             "Rerun `dev-log-prose-polish` before article validation",
-            orchestrator,
+            " ".join(orchestrator.split()),
         )
 
         audit_template = (ROOT / "templates" / "post" / "audit.md").read_text(
@@ -324,10 +323,6 @@ class SkillStructureTests(unittest.TestCase):
 
         self.assertIn('"$skill_sources"/dev-log-*', script)
         self.assertIn("for skill_source in", script)
-        self.assertNotIn(
-            'skill_source="$repository_root/.agents/skills/dev-log-workspace"',
-            script,
-        )
 
 
 if __name__ == "__main__":
