@@ -1,0 +1,107 @@
+{
+  "local_sha256": "03b79f1936ae0cd04ec3ac1b2d61c47ae6ac8e19cd9a323d1264e65f2f396c36",
+  "official_download_sha256": "03b79f1936ae0cd04ec3ac1b2d61c47ae6ac8e19cd9a323d1264e65f2f396c36",
+  "identical_bytes": true,
+  "pages": 183,
+  "patterns": {
+    "dB_unit": "\\bdB(?:\\s*\\(?A\\)?)?\\b",
+    "decibel": "decibel",
+    "sound_pressure": "sound\\s+pressure",
+    "sound_level": "sound\\s+level",
+    "fan_noise": "fan\\s+noise",
+    "cooling_fan": "cooling\\s+fans?",
+    "noise": "\\bnoise\\b"
+  },
+  "hits": {
+    "dB_unit": [],
+    "decibel": [],
+    "sound_pressure": [],
+    "sound_level": [],
+    "fan_noise": [
+      {
+        "page": 131,
+        "context": "rmal Normal: sets maximum lamp brightness. ECO ECO: reduces lamp brightness and fan noise, and saves power and lamp life. Setting Options Description Light Optimizer On Off When set to On, the lamp brightness is adjusted according to the p"
+      }
+    ],
+    "cooling_fan": [
+      {
+        "page": 161,
+        "context": "ble. • Even if Power Consumption is set to ECO in the projector's ECO menu, the cooling fans may run at high speed momentarily and cause an unexpected noise. This is normal. • If the volume for the computer is set to the minimum while the pro"
+      },
+      {
+        "page": 162,
+        "context": "vailable in the Remote Receiver setting in the projector's Settings menu. • The cooling fans may run in standby status depending on the projector settings. Also, when the projector wakes from standby status, the fans may cause an unexpected n"
+      }
+    ],
+    "noise": [
+      {
+        "page": 5,
+        "context": "......................................... 158 Solutions When the Image Contains Noise or Static..................................................... 159 Solutions When the Image is Fuzzy or Blurry ......................................"
+      },
+      {
+        "page": 64,
+        "context": " are applied for both left and right images. • Even if you make adjustments for Noise Reduction and Deinterlacing in the projector's Image menu, Noise Reduction is set to 0 and Deinterlacing is set to Off for the image on the right. s "
+      },
+      {
+        "page": 64,
+        "context": "djustments for Noise Reduction and Deinterlacing in the projector's Image menu, Noise Reduction is set to 0 and Deinterlacing is set to Off for the image on the right. s Image > Image Enhancement > Noise Reduction s Image > Advanced > "
+      },
+      {
+        "page": 64,
+        "context": "rlacing is set to Off for the image on the right. s Image > Image Enhancement > Noise Reduction s Image > Advanced > Deinterlacing • Even if you set Display Background to Logo in the projector's Extended menu, the blue screen appears w"
+      },
+      {
+        "page": 117,
+        "context": "), G (green), and B (blue) components of the offset and gain. Image Enhancement Noise Reduction Reduces flickering in analog images. Advanced Selects the various detailed color settings: Gamma Gamma: adjusts the coloring by selecting o"
+      },
+      {
+        "page": 118,
+        "context": " Power Consumption setting in the projector's ECO menu. • You cannot select the Noise Reduction setting when the following are being input. • A digital RGB signal is being input. • An interlaced signal (480i/576i/1080i) is being input."
+      },
+      {
+        "page": 131,
+        "context": " Normal: sets maximum lamp brightness. ECO ECO: reduces lamp brightness and fan noise, and saves power and lamp life. Setting Options Description Light Optimizer On Off When set to On, the lamp brightness is adjusted according to the p"
+      },
+      {
+        "page": 156,
+        "context": "s When the Image is not Rectangular\" p.158 • \"Solutions When the Image Contains Noise or Static\" p.159 • \"Solutions When the Image is Fuzzy or Blurry\" p.159 • \"Solutions When the Image Brightness or Colors are Incorrect\" p.160 • \"Solut"
+      },
+      {
+        "page": 159,
+        "context": "cting the Image Shape with Quick Corner\" p.44 Solutions When the Image Contains Noise or Static If the projected image contains electronic interference (noise) or static, try the following solutions: • Check the cables connecting your "
+      },
+      {
+        "page": 159,
+        "context": "ntains Noise or Static If the projected image contains electronic interference (noise) or static, try the following solutions: • Check the cables connecting your computer or video source to the projector. They should be: • Separated fr"
+      },
+      {
+        "page": 159,
+        "context": "ideo source. • If available for your video source, adjust the Deinterlacing and Noise Reduction settings in the projector's Image menu. s Image > Advanced > Deinterlacing s Image > Image Enhancement > Noise Reduction • Select a compute"
+      },
+      {
+        "page": 159,
+        "context": "'s Image menu. s Image > Advanced > Deinterlacing s Image > Image Enhancement > Noise Reduction • Select a computer video resolution and refresh rate that are compatible with the projector. • If you are projecting from a computer, pres"
+      },
+      {
+        "page": 161,
+        "context": "enu, the cooling fans may run at high speed momentarily and cause an unexpected noise. This is normal. • If the volume for the computer is set to the minimum while the projector is set to the maximum, the noise may be mixed. Turn up th"
+      },
+      {
+        "page": 161,
+        "context": "e computer is set to the minimum while the projector is set to the maximum, the noise may be mixed. Turn up the computer's volume and turn down the projector's volume. (When you use EasyMP Multi PC Projection or USB Display.) g gRelate"
+      },
+      {
+        "page": 162,
+        "context": " when the projector wakes from standby status, the fans may cause an unexpected noise. This is not a malfunction. g gRelated Links • \"Projector Setup Settings - ECO Menu\" p.131 • \"Projector Indicator Status\" p.153 • \"Projector Feature "
+      },
+      {
+        "page": 164,
+        "context": "ct again. • If the wireless connection is slow or your projected image contains noise, check for interference from other equipment, such as a Bluetooth device or"
+      },
+      {
+        "page": 165,
+        "context": "tion and an internet connection at the same time, the image may stop or contain noise. Disconnect the internet connection to expand your wireless bandwidth and improve the connection speed of the mobile device. • Make sure the projecti"
+      }
+    ]
+  }
+}

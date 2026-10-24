@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-24",
+  "status": "authentication_required",
+  "cli_version": "2.1.201",
+  "auth_status_command_reported_logged_in": true,
+  "actual_inference": "Not logged in · Please run /login",
+  "web_observation": "claude.ai redirected to login",
+  "completed_model_answers": 0,
+  "cost_usd": 0,
+  "note": "실험 요청은 인증 단계에서 실패했습니다. 읽기·추론 결과가 아니며 모델 성능 판정에서 제외합니다. 원본 실패 로그는 프로젝트리스 작업 폴더에만 보관하며 공개 저장소에 포함하지 않습니다."
+}

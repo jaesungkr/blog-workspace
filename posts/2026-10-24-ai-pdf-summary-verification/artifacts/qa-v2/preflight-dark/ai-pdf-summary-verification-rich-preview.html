@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI에게 PDF 요약을 맡겨도 될까?</title>
+  <meta name="description" content="183쪽 제품 설명서를 Claude에게 요약하게 한 뒤, 모델별 숫자·각주 조건·문서에 없는 정보를 원문과 대조했습니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>AI에게 PDF 요약을 맡겨도 될까?</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>183쪽짜리 제품 설명서에서 모델 두 개를 비교하려면 AI 요약이 편리해 보입니다. 그런데 깔끔하게 정리된 표를 받았다고 해서, 작은 각주까지 확인했다고 볼 수 있을까요?</p>
+<p><strong>요약을 받은 뒤에는 실제 선택에 필요한 숫자와 조건을 원문 페이지와 함께 다시 물어보세요.</strong> Epson 프로젝터 설명서를 대조한 실험에서는 Claude가 숫자 8개를 모두 맞혔지만, 바로 아래 설명에서 모델별 해상도를 잘못 묶었습니다.</p>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#183쪽-설명서-요약-한-번과-후속-질문-세-번">183쪽 설명서, 요약 한 번과 후속 질문 세 번</a></li>
+<li><a href="#숫자-표-아래에서-발견한-모델-혼동">숫자 표 아래에서 발견한 모델 혼동</a></li>
+<li><a href="#png-파일의-허용-크기를-바꾸는-각주">PNG 파일의 허용 크기를 바꾸는 각주</a></li>
+<li><a href="#팬-소음이-줄어든다는-설명에-없는-수치">팬 소음이 줄어든다는 설명에 없는 수치</a></li>
+<li><a href="#pdf-답변을-검증하는-후속-질문">PDF 답변을 검증하는 후속 질문</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="183쪽-설명서-요약-한-번과-후속-질문-세-번">
+<h2 id="183쪽-설명서-요약-한-번과-후속-질문-세-번">183쪽 설명서, 요약 한 번과 후속 질문 세 번</h2>
+<p><a href="https://platform.claude.com/docs/en/build-with-claude/pdf-support" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude 공식 문서</a>는 PDF의 글·표·그림·차트를 분석할 수 있다고 안내합니다. 이 실험에서는 제품 설명서에 관해 받은 답변을 원문과 대조했습니다.</p>
+<p>입력으로 고른 자료는 Epson이 공개한 <a href="https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf" style="color:#1a73e8;text-decoration:none;" target="_blank">EB-1795F·EB-1785W·EB-1781W·EB-1780W 사용 설명서</a>입니다. 여러 모델의 사양이 한 표에 들어 있고, 파일 지원 조건에는 작은 각주도 있습니다. 2016년 영문 설명서이므로 최신 제품을 추천하는 데 쓰지 않고, 문서 읽기를 검증하는 자료로 사용했습니다.</p>
+<p>실험은 Codex가 Claude 웹에서 진행했습니다. 2026년 10월 24일 화면에 표시된 모델은 <strong>Sonnet 5.5 · 중간</strong>이었습니다. PDF 파일 하나를 새 대화에 첨부하고 웹 검색을 끈 뒤, 먼저 중요한 사양 차이와 사용 조건을 12개 항목 이내로 요약해 달라고 요청했습니다. 이어서 같은 대화에서 아래 세 질문을 차례로 물었습니다. 정답과 판정 기준은 답변을 받기 전에 원문에서 확인해 두었습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>검증 질문</th><th>맞는 답의 조건</th></tr></thead><tbody><tr><td>모델별 숫자를 구분하는가?</td><td>해상도·램프 전력·본체 전력·무게를 모델과 단위에 맞게 제시해야 합니다.</td></tr><tr><td>각주를 적용하는가?</td><td>PNG 파일의 기본 제한과 1080p 모델의 예외를 연결해야 합니다.</td></tr><tr><td>근거 없는 수치를 만들지 않는가?</td><td>정확한 팬 소음 값이 확인되지 않으면 추정하지 않아야 합니다.</td></tr></tbody></table></div>
+<p>처음에는 특정 각주를 요청하지 않았으므로, 일반 요약에서 그 각주가 빠졌다는 이유만으로 오답 처리하지 않았습니다. 세 후속 질문도 같은 대화에 이어서 보냈으므로 독립 시행을 비교한 결과가 아닙니다.</p>
+<p>Claude 웹의 도구 기록에는 PDF에서 텍스트를 추출해 검색한 과정이 표시됐습니다. 이 실험으로는 183쪽 전체를 빠짐없이 읽었는지, 스캔한 표나 그림 속 작은 글씨까지 읽을 수 있는지 판정하지 않았습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="숫자-표-아래에서-발견한-모델-혼동">
+<h2 id="숫자-표-아래에서-발견한-모델-혼동">숫자 표 아래에서 발견한 모델 혼동</h2>
+<p>첫 검증에서는 EB-1795F와 EB-1780W의 해상도, 램프 전력, 220~240V 지역에서 동작할 때의 본체 전력, 무게를 물었습니다. 특히 램프의 전력과 본체 전체의 소비전력을 구분하고, PDF 페이지와 원문 항목도 적어 달라고 했습니다.</p>
+<p><a href="https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=173" style="color:#1a73e8;text-decoration:none;" target="_blank">설명서 173쪽</a>에서는 해상도 행과 램프 행에 묶인 모델이 서로 다릅니다. 아래 화면은 같은 페이지에서 이번 질문에 해당하는 행들을 발췌해 모은 것입니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="model-specifications" style="--rich-media-width:916px;--rich-mobile-scroll-width:700px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="../../../assets/model-specifications-detail.png" alt="173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면" width="955" height="1138" loading="eager" decoding="async"></div><figcaption class="devlog-rich__caption">173쪽의 해상도·램프·본체 전력·무게 행을 발췌했습니다. 모바일에서는 그림을 좌우로 밀어 모델명과 값을 확인해 주세요.</figcaption></figure>
+<p>Claude가 표에 적은 8개 값은 원문과 모두 일치했습니다. 아래 AI 답변 열에는 실제 응답의 값을 옮겼으며, 두 열 모두 EB-1795F → EB-1780W 순서입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>원문에서 확인한 값</th><th>AI 답변</th><th>대조 결과</th></tr></thead><tbody><tr><td>해상도: 1920×1080 / 1280×800</td><td>1920×1080 / 1280×800</td><td>두 모델을 맞게 구분했습니다.</td></tr><tr><td>램프 전력: 214W / 206W</td><td>214W / 206W</td><td>본체 전력과 구분했습니다.</td></tr><tr><td>본체 전력: 295W / 277W</td><td>295W / 277W</td><td>220~240V의 동작 값과 일치했습니다.</td></tr><tr><td>무게: 약 1.83kg / 약 1.77kg</td><td>약 1.83kg / 약 1.77kg</td><td>근삿값이라는 표현도 유지했습니다.</td></tr></tbody></table></div>
+<p>그런데 Claude는 표 아래에서 모델별 사양을 묶어 설명하다가 해상도를 잘못 분류했습니다.</p>
+<blockquote>1795F 값의 표기: 해상도, 램프, 본체 소비전력(295 W)은 “EB-1795F/EB-1785W/EB-1781W” 묶음 아래에 적혀 있습니다. 1785W·1781W와 같은 값입니다.</blockquote>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="claude-model-group" style="--rich-media-width:916px;--rich-mobile-scroll-width:916px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="../../../assets/claude-model-group-explanation.png" alt="Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변" width="1490" height="390" loading="lazy" decoding="async"></div><figcaption class="devlog-rich__caption">숫자 표 아래에 붙은 실제 설명입니다. 두 번째 항목에서 해상도까지 같은 값으로 묶었습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.</figcaption></figure>
+<p>인용한 문장에서 세 모델에 공통으로 적용되는 값은 <strong>램프 전력과 본체 소비전력</strong>입니다. 해상도는 EB-1795F만 1920×1080이고, EB-1785W·EB-1781W는 EB-1780W와 함께 1280×800으로 묶여 있습니다. 답변의 숫자 표는 맞았지만, 그 표를 설명하는 문장은 틀렸습니다.</p>
+<p>따라서 이 답변은 ‘숫자 8개 일치, 모델별 사양 설명에 오류’로 기록했습니다. 표의 값만 확인하면 “이 세 모델은 해상도도 같다”는 잘못된 설명을 놓칠 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="png-파일의-허용-크기를-바꾸는-각주">
+<h2 id="png-파일의-허용-크기를-바꾸는-각주">PNG 파일의 허용 크기를 바꾸는 각주</h2>
+<p>다음에는 USB에 저장한 이미지를 컴퓨터 없이 투사하는 PC Free 기능을 물었습니다. 조건은 <strong>1920×1080 크기의 비인터레이스 PNG 파일</strong>이며, 다른 파일 제한은 충족한다고 가정했습니다. 설명서에서 지원하지 않는 인터레이스 방식으로 저장한 파일은 이번 질문에서 제외했습니다.</p>
+<p><a href="https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=65" style="color:#1a73e8;text-decoration:none;" target="_blank">65쪽의 지원 파일 표</a>만 보면 PNG의 해상도 상한은 1280×800입니다. 그런데 별표를 따라가면 1080p 프로젝터에서는 1920×1200까지 허용한다는 예외가 나옵니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="png-footnote" style="--rich-media-width:916px;--rich-mobile-scroll-width:700px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="../../../assets/png-limit-footnote.png" alt="PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면" width="940" height="590" loading="lazy" decoding="async"></div><figcaption class="devlog-rich__caption">65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.</figcaption></figure>
+<p>Claude는 각주가 적힌 65쪽과 모델별 해상도가 적힌 173쪽을 함께 근거로 제시했습니다. 실제 답변을 짧게 발췌하면 다음과 같습니다.</p>
+<blockquote>EB-1795F에서는 투사할 수 있고, EB-1780W에서는 투사할 수 없습니다.</blockquote>
+<div class="rich-table-wrap"><table><thead><tr><th>원문 조건</th><th>AI가 적용한 조건</th><th>대조 결과</th></tr></thead><tbody><tr><td>1080p 모델의 PNG 상한은 1920×1200입니다.</td><td>EB-1795F에 각주를 적용했습니다.</td><td>주어진 파일은 허용 범위입니다.</td></tr><tr><td>그 밖의 PNG 상한은 1280×800입니다.</td><td>EB-1780W에는 기본 제한을 적용했습니다.</td><td>주어진 파일은 상한을 넘습니다.</td></tr></tbody></table></div>
+<p>각주에는 모델명이 직접 적혀 있지 않지만, Claude는 사양표에서 어떤 모델이 1080p인지 찾아 조건을 맞게 적용했습니다. 첫 일반 요약에는 없던 PNG 예외를 구체적인 파일과 사용 상황을 묻자 찾아낸 것입니다. 이 판정은 설명서의 허용 조건을 대조한 결과이며, 실제 기기에 파일을 넣어 투사하지는 않았습니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="팬-소음이-줄어든다는-설명에-없는-수치">
+<h2 id="팬-소음이-줄어든다는-설명에-없는-수치">팬 소음이 줄어든다는 설명에 없는 수치</h2>
+<p>마지막으로 EB-1795F를 ECO 모드로 사용할 때 팬 소음이 정확히 몇 dB(A)인지 물었습니다. dB(A)는 사람이 듣는 특성을 반영해 소음 수준을 나타내는 단위입니다. 문서에 수치가 없으면 추측하지 말고, 관련 설명과 구분해 달라고 요청했습니다.</p>
+<p><a href="https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=131" style="color:#1a73e8;text-decoration:none;" target="_blank">131쪽 ECO 메뉴 설명</a>에는 ECO 모드가 램프 밝기와 팬 소음을 줄인다고 적혀 있습니다. 얼마나 조용해지는지를 수치로 제시한 설명은 없습니다.</p>
+<figure class="devlog-rich__figure devlog-rich__figure--scroll-mobile" data-media-id="eco-noise" style="--rich-media-width:916px;--rich-mobile-scroll-width:700px"><div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤"><img class="devlog-rich__image" src="../../../assets/eco-noise-description.png" alt="ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표" width="925" height="345" loading="lazy" decoding="async"></div><figcaption class="devlog-rich__caption">131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.</figcaption></figure>
+<p>Claude는 다음과 같이 답했습니다.</p>
+<blockquote>정확한 값은 이 문서만으로 확인할 수 없고, 추정하지 않겠습니다.</blockquote>
+<div class="rich-table-wrap"><table><thead><tr><th>원문에서 확인한 내용</th><th>AI 답변</th><th>대조 결과</th></tr></thead><tbody><tr><td>ECO 모드가 팬 소음을 줄인다는 설명이 있습니다.</td><td>소음 감소에 관한 정성적 설명으로 구분했습니다.</td><td>설명의 범위를 유지했습니다.</td></tr><tr><td>관련 설명과 사양표에서 정확한 dB(A) 값을 확인하지 못했습니다.</td><td>구체적인 소음 수치를 제시하지 않았습니다.</td><td>근거 없는 숫자를 만들지 않았습니다.</td></tr></tbody></table></div>
+<p>Claude는 131쪽과 173쪽을 비롯한 관련 페이지를 근거로 제시했습니다. Codex도 별도로 PDF 전체에서 추출한 텍스트를 검색하고 두 페이지의 화면을 확인했습니다. 여기서 확인하지 못한 소음 수치가 다른 제품 자료에는 있을 수 있으므로, 구매 조건이라면 별도 사양 자료를 찾아 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="pdf-답변을-검증하는-후속-질문">
+<h2 id="pdf-답변을-검증하는-후속-질문">PDF 답변을 검증하는 후속 질문</h2>
+<p>다음 설명서를 올릴 때도 먼저 필요한 내용을 요약하게 한 뒤, 실제 결정에 쓰는 항목을 골라 물어보세요. 그 값을 설명한 문장도 함께 검증해 달라고 요청하세요.</p>
+<p><strong>숫자를 옮길 때</strong></p>
+<blockquote>이 PDF만 근거로 [모델 A]와 [모델 B]의 [확인할 사양]을 비교해 주세요. 각 값에 모델명, 단위, 측정·동작 조건, PDF 뷰어 기준 페이지를 붙여 주세요. 표 아래 설명에 등장하는 ‘같다’와 ‘다르다’도 같은 근거로 다시 확인해 주세요.</blockquote>
+<p><strong>사용 가능 여부를 판단할 때</strong></p>
+<blockquote>[내 파일·환경·설정]에서 [하려는 기능]을 쓸 수 있나요? 본문 표뿐 아니라 별표 각주와 예외 조건까지 적용해 주세요. 가능하거나 불가능하다고 판단한 조건과 근거 페이지를 나눠 적어 주세요.</blockquote>
+<p><strong>필요한 수치가 보이지 않을 때</strong></p>
+<blockquote>이 문서에서 [필요한 정보]의 정확한 값을 찾을 수 있나요? 없으면 추정하지 말고 ‘문서에서 확인할 수 없음’이라고 답해 주세요. 비슷해 보이는 설명과 실제 수치 근거를 구분하고, 계산하거나 추론한 값은 별도로 표시해 주세요.</blockquote>
+<p>마지막에는 AI가 가리킨 페이지를 직접 열어 보세요. 숫자가 원문과 일치하는지, <strong>내 모델과 사용 조건에도 해당하는지</strong> 확인하세요.</p>
+</section>
+</article>
+</body>
+</html>

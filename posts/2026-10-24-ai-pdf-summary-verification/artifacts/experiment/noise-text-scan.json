@@ -1,0 +1,9 @@
+{
+  "method": "Case-insensitive fixed-string scan of mechanically extracted, page-labeled PDF text; not a proof of global absence. Related rendered pages reviewed separately.",
+  "patterns": {
+    "dB(A)": [],
+    "dBA": [],
+    "decibel": [],
+    "fan noise": []
+  }
+}

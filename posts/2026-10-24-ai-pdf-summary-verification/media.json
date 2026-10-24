@@ -1,0 +1,128 @@
+{
+  "version": 2,
+  "lead_id": "model-specifications",
+  "items": [
+    {
+      "id": "model-specifications",
+      "role": "lead",
+      "origin": "official",
+      "publish_path": "assets/model-specifications-detail.png",
+      "claim_ids": [
+        "C02",
+        "C03",
+        "C08"
+      ],
+      "raw_path": "artifacts/sources/epson-page-173.png",
+      "source_url": "https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=173",
+      "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+      "caption": "173쪽의 해상도·램프·본체 전력·무게 행을 발췌했습니다. 모바일에서는 그림을 좌우로 밀어 모델명과 값을 확인해 주세요.",
+      "placement": "section:숫자 표 아래에서 발견한 모델 혼동; before:원문과 AI 숫자 대조표",
+      "processing": [
+        "PDF page 173 rasterized at width 2200 pixels with Poppler.",
+        "Three original table regions cropped and vertically assembled with white gaps; source labels, values and model groupings unchanged."
+      ],
+      "mobile_scroll_width": 700,
+      "kind": "screenshot",
+      "tistory_url": "",
+      "status": "validated",
+      "display_width": 916,
+      "redactions": [],
+      "width": 955,
+      "height": 1138,
+      "sha256": "b0329bf8d82c45852b6580e206708341517945f23aa85ec7b451046ad051571e",
+      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다."
+    },
+    {
+      "id": "claude-model-group",
+      "role": "error",
+      "origin": "first_party",
+      "publish_path": "assets/claude-model-group-explanation.png",
+      "claim_ids": [
+        "C08",
+        "C12"
+      ],
+      "raw_path": "artifacts/captures/raw/claude-q1-explanation.png",
+      "source_url": "https://claude.ai/chat/c37dafba-77e8-4e17-8f38-8c5ad038575f",
+      "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+      "caption": "숫자 표 아래에 붙은 실제 설명입니다. 두 번째 항목에서 해상도까지 같은 값으로 묶었습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
+      "placement": "section:숫자 표 아래에서 발견한 모델 혼동; after:실제 오류 문장 인용",
+      "processing": [
+        "Cropped observed response region x=270,y=225,width=745,height=195 from 1280x720 browser screenshot.",
+        "Resized 2x with Lanczos for a readable 916px CSS presentation; no content changes or redactions."
+      ],
+      "mobile_scroll_width": 916,
+      "actor": "Codex",
+      "captured_at": "2026-10-24",
+      "environment": "Claude web in Codex in-app browser; UI model Sonnet 5.5 중간; 1280x720 viewport.",
+      "kind": "screenshot",
+      "tistory_url": "",
+      "status": "validated",
+      "display_width": 916,
+      "redactions": [],
+      "width": 1490,
+      "height": 390,
+      "sha256": "d46d94e0d1fb522ee4370d4aa331d09997144737451a663e831cd1dd989dfb6c",
+      "rights": "Codex가 본 실험에서 생성된 Claude 응답 화면을 직접 캡처했습니다. 원문 검증과 비평을 위한 응답 발췌입니다."
+    },
+    {
+      "id": "png-footnote",
+      "role": "comparison",
+      "origin": "official",
+      "publish_path": "assets/png-limit-footnote.png",
+      "claim_ids": [
+        "C04",
+        "C05",
+        "C09"
+      ],
+      "raw_path": "artifacts/sources/epson-page-65.png",
+      "source_url": "https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=65",
+      "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+      "caption": "65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.",
+      "placement": "section:PNG 파일의 허용 크기를 바꾸는 각주; before:실제 PNG 답변",
+      "processing": [
+        "PDF page 65 rasterized at width 2200 pixels with Poppler.",
+        "Original right-column crop x=1145,y=725,width=940,height=590; PNG row and connected footnote retained."
+      ],
+      "mobile_scroll_width": 700,
+      "kind": "screenshot",
+      "tistory_url": "",
+      "status": "validated",
+      "display_width": 916,
+      "redactions": [],
+      "width": 940,
+      "height": 590,
+      "sha256": "dc7815a6ebddc14cb5a67864431ba4beca295a275a1357e9b90833ad12c2bff6",
+      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다."
+    },
+    {
+      "id": "eco-noise",
+      "role": "comparison",
+      "origin": "official",
+      "publish_path": "assets/eco-noise-description.png",
+      "claim_ids": [
+        "C06",
+        "C07",
+        "C10"
+      ],
+      "raw_path": "artifacts/sources/epson-page-131.png",
+      "source_url": "https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=131",
+      "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+      "caption": "131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
+      "placement": "section:팬 소음이 줄어든다는 설명에 없는 수치; before:실제 소음 답변",
+      "processing": [
+        "PDF page 131 rasterized at width 2200 pixels with Poppler.",
+        "Original left table crop x=125,y=880,width=925,height=345; complete Normal and ECO rows retained."
+      ],
+      "mobile_scroll_width": 700,
+      "kind": "screenshot",
+      "tistory_url": "",
+      "status": "validated",
+      "display_width": 916,
+      "redactions": [],
+      "width": 925,
+      "height": 345,
+      "sha256": "0bfb1f1a40d60931389efb71b6c14b58e1bec1a33daa9f30ca1fcabb155de717",
+      "rights": "Seiko Epson Corporation 저작권을 유지하는 원문 비평·검증용 발췌입니다. 재배포 라이선스나 별도 허가를 주장하지 않습니다."
+    }
+  ]
+}

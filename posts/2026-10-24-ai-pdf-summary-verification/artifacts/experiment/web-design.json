@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-24T13:54:57.430061+00:00",
+  "route": "Claude web; native PDF upload",
+  "input_pdf": "artifacts/sources/epson-eb17-user-guide.pdf",
+  "input_text_index": false,
+  "model_ui_label": "Sonnet 5.5 중간",
+  "design": "Same new conversation. One ordinary summary then three verification questions. No answer key supplied. Baseline omission is not an error against a question never asked. Targeted answers are judged with preregistered ground-truth.json.",
+  "external_search": "Prompt forbids outside sources; inspect actual UI for search use.",
+  "replicates": 1,
+  "changed_from": "CLI experiment could not authenticate. No successful CLI model output exists."
+}

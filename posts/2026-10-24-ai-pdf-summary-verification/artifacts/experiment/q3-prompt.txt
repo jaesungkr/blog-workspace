@@ -1,0 +1,5 @@
+공개 제품 설명서의 근거를 확인하는 실험입니다. 한국어로 답하세요. 웹 검색이나 기존 제품 지식으로 보충하지 말고, 아래 PDF와 같은 PDF에서 기계적으로 추출한 페이지 표시 텍스트만 사용하세요. 텍스트는 위치 탐색에 쓰고, 답의 근거가 되는 표·각주는 반드시 PDF 해당 페이지를 Read 도구로 직접 확인하세요. PDF 읽기는 한 번에 20쪽 이내로 하세요. 답마다 PDF 뷰어 기준 페이지 번호, 확인한 원문 항목, 적용 조건을 제시하세요. 문서에서 확인할 수 없는 정보는 그렇게 밝히고 숫자를 추측하지 마세요.
+PDF: /Users/ja2sng/dev/blog-workspace/posts/2026-10-24-ai-pdf-summary-verification/artifacts/sources/epson-eb17-user-guide.pdf
+페이지 표시 텍스트: /Users/ja2sng/dev/blog-workspace/posts/2026-10-24-ai-pdf-summary-verification/artifacts/sources/epson-eb17-page-index.txt
+
+EB-1795F를 ECO 모드로 사용할 때 팬 소음은 정확히 몇 dB(A)인가요? 이 PDF에 근거가 있는 수치만 답해 주세요. 관련 설명은 있지만 정확한 수치가 없다면 그 차이를 밝혀 주세요.

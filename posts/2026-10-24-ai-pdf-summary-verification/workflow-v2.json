@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "evidence-rich",
+  "scope": "complete",
+  "primary_reader": "긴 PDF를 AI로 요약하되 구매 판단에 필요한 숫자와 제한을 확인하려는 일반 독자",
+  "direct_capture": true,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": true,
+  "high_risk_remote_media": false,
+  "include_390": true,
+  "include_768": true,
+  "second_remote_fetch": false,
+  "decision_note": "CLI 인증 실패를 제외하고 Claude 웹에 원본 PDF를 첨부해 일반 요약과 같은 대화의 검증 질문 3개를 관찰한 실험. 표 숫자, 각주 제한, 문서 밖 정보 거절을 원문 화면·실제 답변·대조 판정으로 비교한다. 공식 PDF 사양표 발췌를 lead로 사용하고 실제 Claude 설명 오류 화면을 함께 보여 준다. max-txt2img와 diagram-design을 검토했으나 입력-출력 관계는 원문 캡처와 3열 대조표가 직접 증거이므로 장식 설명 그림은 생략한다. 모바일 표 전환을 390/768에서도 확인한다. 요청한 게시 카테고리는 AI·개발 > AI 이해·활용이며 저장소의 기존 분류값 Log > AI 개념 · 실전은 도구 호환을 위해 유지한다.",
+  "publication_mode": "codex-browser"
+}

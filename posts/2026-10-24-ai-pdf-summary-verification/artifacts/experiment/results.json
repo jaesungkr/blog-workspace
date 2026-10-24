@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-24",
+  "actor": "Codex",
+  "interface": "Claude web native PDF attachment",
+  "model_display": "Sonnet 5.5 · 중간",
+  "model_internal_id": "not exposed; do not infer",
+  "conversation_url": "https://claude.ai/chat/c37dafba-77e8-4e17-8f38-8c5ad038575f",
+  "web_search_ui_disabled": true,
+  "replicates": 1,
+  "design": "baseline and three follow-ups in the same conversation",
+  "q1": {
+    "numeric_matches": 8,
+    "numeric_total": 8,
+    "page_citation": 173,
+    "status": "partial",
+    "error": "The explanatory bullet says resolution, lamp and 295 W are grouped under EB-1795F/EB-1785W/EB-1781W and are the same values. Resolution is actually 1920x1080 for EB-1795F alone, versus 1280x800 for EB-1785W/EB-1781W/EB-1780W. The numeric answer table itself is correct.",
+    "raw": "artifacts/experiment/q1-web-answer.txt"
+  },
+  "q2": {
+    "status": "pass",
+    "pages": [
+      65,
+      173
+    ],
+    "answer": {
+      "EB-1795F": "allowed within documented limits",
+      "EB-1780W": "exceeds PNG limits"
+    },
+    "note": "No physical projection was performed. Other file constraints were assumed satisfied.",
+    "raw": "artifacts/experiment/q2-web-answer.txt"
+  },
+  "q3": {
+    "status": "pass",
+    "answer": "No exact dB(A) figure can be confirmed from this PDF; no numerical guess supplied.",
+    "primary_related_pages": [
+      131,
+      173
+    ],
+    "raw": "artifacts/experiment/q3-web-answer.txt"
+  },
+  "baseline_observation": "The original twelve-row summary did not mention the PNG footnote. This omission was not graded as an error because the specific PNG condition had not been asked.",
+  "limitation": "A small prompted document-verification observation, not a global benchmark or proof every page/image was read."
+}

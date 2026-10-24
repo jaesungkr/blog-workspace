@@ -1,0 +1,554 @@
+[
+  {
+    "background": "rgb(30, 31, 33)",
+    "h1": 1,
+    "height": 900,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      }
+    ],
+    "scrollHeight": 7556,
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      }
+    ],
+    "width": 1280,
+    "theme": "dark"
+  },
+  {
+    "background": "rgb(30, 31, 33)",
+    "h1": 1,
+    "height": 800,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 320,
+        "width": 700
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 320,
+        "width": 916
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 320,
+        "width": 700
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 320,
+        "width": 700
+      }
+    ],
+    "scrollHeight": 9238,
+    "scrollWidth": 360,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      }
+    ],
+    "width": 360,
+    "theme": "dark"
+  },
+  {
+    "background": "rgb(30, 31, 33)",
+    "h1": 1,
+    "height": 844,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 350,
+        "width": 700
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 350,
+        "width": 916
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 350,
+        "width": 700
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 350,
+        "width": 700
+      }
+    ],
+    "scrollHeight": 8952,
+    "scrollWidth": 390,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      }
+    ],
+    "width": 390,
+    "theme": "dark"
+  },
+  {
+    "background": "rgb(30, 31, 33)",
+    "h1": 1,
+    "height": 900,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      }
+    ],
+    "scrollHeight": 7140,
+    "scrollWidth": 768,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      }
+    ],
+    "width": 768,
+    "theme": "dark"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "h1": 1,
+    "height": 900,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 916,
+        "width": 916
+      }
+    ],
+    "scrollHeight": 7556,
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 760,
+        "width": 760
+      }
+    ],
+    "width": 1280,
+    "theme": "light"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "h1": 1,
+    "height": 800,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 320,
+        "width": 700
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 320,
+        "width": 916
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 320,
+        "width": 700
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 320,
+        "width": 700
+      }
+    ],
+    "scrollHeight": 9238,
+    "scrollWidth": 360,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 320,
+        "width": 620
+      }
+    ],
+    "width": 360,
+    "theme": "light"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "h1": 1,
+    "height": 844,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 350,
+        "width": 700
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 916,
+        "scrollParentWidth": 350,
+        "width": 916
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 350,
+        "width": 700
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "auto",
+        "scrollParentScrollWidth": 700,
+        "scrollParentWidth": 350,
+        "width": 700
+      }
+    ],
+    "scrollHeight": 8952,
+    "scrollWidth": 390,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 350,
+        "width": 620
+      }
+    ],
+    "width": 390,
+    "theme": "light"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "h1": 1,
+    "height": 900,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "complete": true,
+        "naturalWidth": 955,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "complete": true,
+        "naturalWidth": 1490,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "complete": true,
+        "naturalWidth": 940,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "complete": true,
+        "naturalWidth": 925,
+        "overflowX": "visible",
+        "scrollParentScrollWidth": 704,
+        "scrollParentWidth": 704,
+        "width": 704
+      }
+    ],
+    "scrollHeight": 7140,
+    "scrollWidth": 768,
+    "tables": [
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      },
+      {
+        "overflowX": "auto",
+        "parentWidth": 704,
+        "width": 704
+      }
+    ],
+    "width": 768,
+    "theme": "light"
+  }
+]

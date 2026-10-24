@@ -1,0 +1,94 @@
+Claude 응답: 결론: 이 PDF에는 EB-1795F의 ECO 모드 팬 소음 dB(A) 수치가 없습니다.
+명령 3개 실행함
+
+명령 3개 실행함
+Searching the document for noise or decibel references.
+명령 실행함
+
+
+bash
+
+cd /mnt/user-data/uploads && echo "=== dB / dBA / decibel / acoustic / sound pressure / sound level"; pdftotext -layout epson-eb17-user-guide.pdf /tmp/g2.txt; grep -n -i -E "dB ?\(?A?\)?|decibel|acoustic|sound pressure|sound level|fan noise|quiet|noise level" /tmp/g2.txt | cut -c1-220; echo; echo "=== pages with ECO + fan"; for p in $(seq 1 183); do t=$(pdftotext -f $p -l $p -layout epson-eb17-user-guide.pdf - 2>/dev/null); if echo "$t" | grep -q -i -E "fan noise|fan speed|noise"; then echo "p$p: $(echo "$t" | grep -i -E "fan noise|fan speed|noise" | head -3 | cut -c1-200 | tr '\n' '|')"; fi; done
+
+출력
+
+=== dB / dBA / decibel / acoustic / sound pressure / sound level
+761:                 • Charging does not work when the projector is in standby mode     Attention
+971:       projector is receiving power, but is not yet turned on (it is in standby
+2666:                                                                                                      5 minutes, and the projector switches to standby mode. If this happens,
+2845: k Tostandby
+2860:       address on the LAN standby screen.
+3036:                                                                                       The LAN standby screen is displayed. Verify that an SSID and IP
+3174:       You see the Screen Mirroring standby screen.
+3181:                                                                                             on the Screen Mirroring standby screen or at the bottom
+3208:       You see the Screen Mirroring standby screen.
+3218:                                                                                                  on the Screen Mirroring standby screen or at the bottom
+3242:        You see the Screen Mirroring standby screen.
+3253:                       on the Screen Mirroring standby screen or at the bottom
+3840:                                         high temperature warning on your                                              standby mode.
+4098:                                characters, use your Web browser. After                         Off                   network standby screen and Home
+4103:                                                                                                Off                   on the network standby screen and
+4243:                               network problem; see the list of Event ID codes.                    standby screen or at the bottom right of the projected image. If this
+4765:                                                                                        Power: Lit blue            Standby or sleep mode.
+4778:  A On/Standby (power) indicator                                                                                     with dust or obstructed by nearby objects.
+4888: • Press the projector's power button to wake it from standby or sleep mode.     Display Function
+5113:  • "Solution When "The Battery that Saves Your Clock Settings is Running           • The cooling fans may run in standby status depending on the projector
+5114:    Low" Message Appears" p.163                                                       settings. Also, when the projector wakes from standby status, the fans may
+5500:                      section)                                                                    Standby power consumption: 0.18 W
+5503:                      EB‑‑1785W/EB‑‑1781W/EB‑‑1780W:                                              Standby power consumption: 0.18 W
+5507:                                                                                                  Standby power consumption: 0.34 W
+5513:                                                                                                  Standby power consumption: 0.34 W
+5699: X                 IEC60417     Standby, partial standby
+
+=== pages with ECO + fan
+p5:   Solutions When the Image Contains Noise or Static..................................................... 159                                                  External Dimensions ......................|
+p60:   Do not start a presentation at a high volume setting. Sudden loud noises may cause|
+p64:   • Even if you make adjustments for Noise Reduction and Deinterlacing in|    the projector's Image menu, Noise Reduction is set to 0 and Deinterlacing|    s Image > Image Enhancement > Noise Reduction|
+p117:                                                                                      Image         Noise Reduction     Reduces flickering in analog images.|
+p118:            • You cannot select the Noise Reduction setting when the following|
+p131:                                         noise, and saves power and lamp life.                                                  menu to their default settings.|
+p156:  • "Solutions When the Image Contains Noise or Static" p.159                         s Settings > Lock Setting > Control Panel Lock|
+p159: Solutions When the Image Contains Noise or Static|  If the projected image contains electronic interference (noise) or static, try the   Solutions When the Image is Fuzzy or Blurry|  • If available for your video source, adjust the Deinterlacing and Noise|
+p161:    unexpected noise. This is normal.|   set to the maximum, the noise may be mixed. Turn up the computer's|
+p162:   • "Solutions to Gesture Presenter Problems" p.163                                   cause an unexpected noise. This is not a malfunction.|
+p164:   you are using the correct ID and password.                                           • If the wireless connection is slow or your projected image contains noise,|
+p165:                                                                                      same time, the image may stop or contain noise. Disconnect the internet|
+
+Debugging a regex pattern matching unintended substrings.
+명령 실행함
+
+Cross-checking page labels and spec details for accuracy.
+명령 실행함
+
+Filtering matches for noise and decibel references.
+
+결론: 이 PDF에는 EB-1795F의 ECO 모드 팬 소음 dB(A) 수치가 없습니다. 있는 것은 소음이 줄어든다는 정성적 설명뿐입니다. 정확한 값은 이 문서만으로 확인할 수 없고, 추정하지 않겠습니다.
+
+검색 결과
+
+183쪽 전체 텍스트에서 단위 dB, dB(A), dBA, decibel, sound pressure, sound level을 검색했고, 일치하는 곳이 없습니다.
+소음 수치가 들어갈 만한 사양 표(173쪽, Projector Specifications)에는 소음 행이 없습니다. 이 표에서 Lamp life는 ECO 모드 최대 7,000시간으로 적혀 있지만 소음은 적혀 있지 않습니다.
+
+관련 설명과 수치의 차이
+
+쪽	원문	성격
+131 (ECO Menu, Power Consumption)	“ECO: reduces lamp brightness and fan noise, and saves power and lamp life.”	소음이 줄어든다는 방향만 제시하고, 얼마나 줄어드는지는 없음
+131	Power Consumption 설정은 고지대(high altitude)나 고온(high temperatures) 환경에서는 선택할 수 없음	사용 조건
+161 (Solutions 항목)	ECO로 설정해도 냉각팬이 잠깐 고속으로 돌아 예상치 못한 소음이 날 수 있으며 정상이라는 설명	소음이 완전히 일정하지 않을 수 있다는 설명이며 수치 없음
+
+함께 확인한 페이지
+
+18, 123, 124, 153, 154쪽: High Altitude Mode 설명입니다. 123쪽에는 “regulates the projector’s operating temperature at altitudes above 1500 m”라고만 적혀 있고, 팬 속도나 소음 수치는 없습니다.
+162쪽: 설정에 따라 대기 상태에서도 냉각팬이 돌 수 있다는 설명입니다.
+
+조건이 바뀔 때
+
+dB(A) 값이 필요하면 이 사용 설명서(User’s Guide) 외의 제품 사양 문서가 필요합니다. 이 PDF에는 그 수치가 실려 있지 않습니다.
+
+스프레드시트 만들기
+
+
+
+
+
+2분 전

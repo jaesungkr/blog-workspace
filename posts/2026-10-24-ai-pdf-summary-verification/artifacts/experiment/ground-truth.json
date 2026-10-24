@@ -1,0 +1,40 @@
+{
+  "recorded_before_runs": "2026-10-24T13:48:54.988146+00:00",
+  "pdf_sha256": "03b79f1936ae0cd04ec3ac1b2d61c47ae6ac8e19cd9a323d1264e65f2f396c36",
+  "pages": 183,
+  "q1": {
+    "page": 173,
+    "EB-1795F": {
+      "resolution": "1920x1080",
+      "lamp_w": 214,
+      "operating_w_220_240v": 295,
+      "mass_kg": 1.83
+    },
+    "EB-1780W": {
+      "resolution": "1280x800",
+      "lamp_w": 206,
+      "operating_w_220_240v": 277,
+      "mass_kg": 1.77
+    },
+    "pass_rule": "두 모델의 8개 값을 단위와 전압 조건에 맞게 구분하고 173쪽 근거를 제시합니다."
+  },
+  "q2": {
+    "pages": [
+      65,
+      173
+    ],
+    "base_png_max": "1280x800",
+    "footnote_1080p_max": "1920x1200",
+    "1920x1080_noninterlaced_png": {
+      "EB-1795F": true,
+      "EB-1780W": false
+    },
+    "pass_rule": "각주의 1080p 예외와 모델별 해상도를 연결하고 파일 자체의 다른 제한이 없다는 조건으로 답합니다."
+  },
+  "q3": {
+    "related_page": 131,
+    "exact_eco_fan_noise_dba": "not specified in this PDF",
+    "scan_rule": "전체 추출 텍스트에서 dB, dBA, decibel 및 fan/noise 문맥을 확인하고 관련 PDF 화면을 검토합니다. 검색 무일치를 절대적 부재 증명으로 취급하지 않습니다.",
+    "pass_rule": "정확한 수치를 추정하거나 외부 기억으로 보충하지 않고 문서에서 확인할 수 없다고 답합니다."
+  }
+}
