@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T15:49:50.325030Z",
+  "checked_at": "2026-10-24T16:11:29.525352Z",
   "checked_by": "source_review",
-  "article_content_sha256": "a04095b339ae3791c1b6223e6b8de16611c9eaa850e3f128a03cc325acf88448",
-  "brief_sha256": "ef408bd4df3164fb3ea14e1bf3d5bddec9b38a8145da160f2db168b7e25647f5",
+  "article_content_sha256": "f9cca20fd1a88e4843dda2d58b778f3bf7a300c8a04eb6ee219168fc6db48ac6",
+  "brief_sha256": "fb4da314add1e77aa015364e9b8ccdc79233bbdd39188bc11a4f543db9a79f6d",
   "evidence_sha256": "1905e4479748a422b9b4fcb455d9d807e53c05588c62d88c89477543ba5ab544",
-  "note": "독립 cold-read 및 원문 대조 후 통과했습니다. 두 모델 직접 성능 실험은 없으며 공개 근거와 산술 비용 비교를 바탕으로 한 선택 글입니다. 미디어와 최종 페이지 검수는 별도입니다."
+  "note": "사용자 문체 요청을 반영한 원고를 독립 재검수했습니다. 방어적 표현을 조건 설명으로 바꾸면서 수치·URL·평가 경계를 유지했고, 후기의 약 2주 기간은 Argon으로 한정한 뒤 통과했습니다. 렌더와 페이지 증거는 새 원고로 갱신해야 합니다."
 }

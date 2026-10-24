@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "status": "reviewing",
+  "stage": "author_review_candidate",
+  "source_review": "pass",
+  "hero_review": "pass",
+  "local_preflight": {
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      1280,
+      360
+    ],
+    "images_loaded": true,
+    "document_overflow_px": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "publication_approval": null,
+  "tistory_uploaded": false,
+  "remote_final_page_review": "not_started_before_author_approval",
+  "output_files": {
+    "gemini-4-argon-vs-gpt-6-astra-hero-prompt.txt": {
+      "sha256": "c741264d279eebbcb9b7c63b72812b522f313a81b7566f192a370174d8e32fe3",
+      "bytes": 2932
+    },
+    "gemini-4-argon-vs-gpt-6-astra-hero-v1.png": {
+      "sha256": "20ec7448274b5226bd8fee70e1440a2e13645a6b8a4c750713b1466986ae2af9",
+      "bytes": 2210897
+    },
+    "gemini-4-argon-vs-gpt-6-astra-review-dark.html": {
+      "sha256": "78edbb3be7a77d1b948b1f1ba2e4d8e7be71ba2df85f348253258cf96586e377",
+      "bytes": 2978517
+    },
+    "gemini-4-argon-vs-gpt-6-astra-review.html": {
+      "sha256": "ed311f1acc13048304906477255b0825ae7ff506c1a40bc32f77d5fcdbd6a617",
+      "bytes": 2978504
+    },
+    "gemini-4-argon-vs-gpt-6-astra-review.md": {
+      "sha256": "1b6f68392e37576e4645714dd31af013cfa2ce5e372c09994dc68a7fe0fddcdf",
+      "bytes": 14457
+    }
+  },
+  "source_pass": {
+    "version": 2,
+    "result": "pass",
+    "checked_at": "2026-10-24T15:49:50.325030Z",
+    "checked_by": "source_review",
+    "article_content_sha256": "a04095b339ae3791c1b6223e6b8de16611c9eaa850e3f128a03cc325acf88448",
+    "brief_sha256": "ef408bd4df3164fb3ea14e1bf3d5bddec9b38a8145da160f2db168b7e25647f5",
+    "evidence_sha256": "1905e4479748a422b9b4fcb455d9d807e53c05588c62d88c89477543ba5ab544",
+    "note": "독립 cold-read 및 원문 대조 후 통과했습니다. 두 모델 직접 성능 실험은 없으며 공개 근거와 산술 비용 비교를 바탕으로 한 선택 글입니다. 미디어와 최종 페이지 검수는 별도입니다."
+  }
+}

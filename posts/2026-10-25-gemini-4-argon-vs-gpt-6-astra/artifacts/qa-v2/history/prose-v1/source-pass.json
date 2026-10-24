@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T15:49:50.325030Z",
+  "checked_by": "source_review",
+  "article_content_sha256": "a04095b339ae3791c1b6223e6b8de16611c9eaa850e3f128a03cc325acf88448",
+  "brief_sha256": "ef408bd4df3164fb3ea14e1bf3d5bddec9b38a8145da160f2db168b7e25647f5",
+  "evidence_sha256": "1905e4479748a422b9b4fcb455d9d807e53c05588c62d88c89477543ba5ab544",
+  "note": "독립 cold-read 및 원문 대조 후 통과했습니다. 두 모델 직접 성능 실험은 없으며 공개 근거와 산술 비용 비교를 바탕으로 한 선택 글입니다. 미디어와 최종 페이지 검수는 별도입니다."
+}
