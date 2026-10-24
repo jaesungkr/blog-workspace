@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T05:28:13.576731Z",
+  "checked_by": "review_thoughts_cadence",
+  "article_content_sha256": "617c00568770ec6dde5643d510a4a3e746a34d83da2a172f491c262fe2f648e0",
+  "brief_sha256": "9660683fa80ffb4a399471a5a3d12e511cec3f5286ec9d3392628b0ba967df1b",
+  "evidence_sha256": "902c8d63bb1075528fe8a429e748fafc78e90ee71a2c054d1b181d87b03ca5eb",
+  "note": "음식 행동에서 식욕으로 넘어가는 세 문장의 연결과 저자성을 재검토했습니다. appetite-transition-review.md 참조."
+}
