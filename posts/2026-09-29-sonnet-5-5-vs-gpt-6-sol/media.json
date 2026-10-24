@@ -18,7 +18,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/hero-v1-source.png",
       "publish_path": "assets/hero-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbjgVrX%2FdJMcahe65sr%2FAAAAAAAAAAAAAAAAAAAAAN2c1-LtnsDB_YFnIgTG3N8yn3xavsDIThhPx3KkY5IY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D8G05ejmyCJ4TEuvzbIlxZ6g54SU%253D",
+      "tistory_url": "https://blog.kakaocdn.net/dna/wHZd1/dJMcadYkMjh/AAAAAAAAAAAAAAAAAAAAAOuugmF4IMFMkFzprzmYYdlPeo9iT302LRKPjr07JsIk/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=Kv5hs9iybZ9dV%2BmH0Y%2Bw%2Fzx%2BRDY%3D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -33,7 +33,8 @@
       ],
       "redactions": [],
       "sha256": "8d11a947888ef9eda8600c0918a5a41006a127d96740fefed28f75f4f3ec1f4d",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@wHZd1/dJMcadYkMjh/AAAAAAAAAAAAAAAAAAAAAOuugmF4IMFMkFzprzmYYdlPeo9iT302LRKPjr07JsIk/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=Kv5hs9iybZ9dV%2BmH0Y%2Bw%2Fzx%2BRDY%3D|CDM|1.3|{\"originWidth\":1672,\"originHeight\":941,\"style\":\"alignCenter\",\"alt\":\"문서와 펜촉을 결합한 Sonnet 5.5 조형물과 검색&middot;문서&middot;코드&middot;컴퓨터 아이콘을 단 GPT-6 Sol의 금색 구체가 마주 선 모습\"}_##]"
     }
   ]
 }

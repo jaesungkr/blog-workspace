@@ -1,0 +1,36 @@
+{
+  "scope": "image-only repair; author final review pending",
+  "authorization": "내 블로그의 만료된 이미지를 정상적으로 표기되도록 10개 페이지를 수정하고 완료 후 링크 10개를 제공해 달라는 작성자의 요청",
+  "post_id": 131,
+  "url": "https://dop3n.tistory.com/entry/%EB%B3%B5%EC%9D%84-%EA%B5%AC%ED%95%9C-%EC%95%BC%EB%B2%A0%EC%8A%A4",
+  "title": "복을 구한 야베스",
+  "checked_at": "2026-10-24T02:10:49.083Z",
+  "image_count": 1,
+  "native_attachment_refs": [
+    {
+      "id": "jabez-prayer-hero",
+      "local_sha256": "57175c9def33858b56e193cdb75a7c93c899a95213cf2cd298967d11b5ee76f7",
+      "native_block": "[##_Image|kage@cgtjW1/dJMcab0BRif/AAAAAAAAAAAAAAAAAAAAAFp8Pxer2uSy-UUaXqV7SuDcbsfL18TH8jnpAbsKwSPE/img.png|alignCenter|width=\"100%\" alt=\"족보를 나타내는 종이와 흙 인형 행렬 사이에서 한 인물이 무릎을 꿇고, 종이가 넓은 땅으로 이어지는 모습을 만든 미니어처\"|_##]"
+    }
+  ],
+  "editor_html_before_sha256": "e1281ae445ed4e708d24d1e3b101f6a3348e5708ad8cfa0980a2a681c514a0b5",
+  "editor_html_after_sha256": "ddc0c55819a31fff52aa70008099d99afed824cac5df13c153e81e23fac06393",
+  "non_image_content_preserved": true,
+  "normalized_prose_comparison": "equal",
+  "metadata": {
+    "dates": [
+      "2026-09-15 23:59"
+    ],
+    "public": true,
+    "slug": "복을-구한-야베스"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "live_images_loaded": true,
+  "raw_receipt": "receipt.json",
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "archive_note": "Existing full-post QA records are historical after this media change. This receipt validates the live image repair only; it does not claim the local article draft equals the published body."
+}

@@ -16,7 +16,7 @@
       "source_url": "",
       "raw_path": "assets/opus-5-5-vs-gpt-6-astra-hero-v1.png",
       "publish_path": "assets/opus-5-5-vs-gpt-6-astra-hero-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FkSKyt%2FdJMcacSaQVH%2FAAAAAAAAAAAAAAAAAAAAAB9dJFTJwJ2Wum2th-qxh7nxtkERxiA1Nt_JzsTNlYia%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DmP3HU731pTS67YW5%252B6nDUj5u2YY%253D",
+      "tistory_url": "https://blog.kakaocdn.net/dna/CQN9m/dJMcaaAy8p8/AAAAAAAAAAAAAAAAAAAAAHoG5CY758tMMtGfHcOFWvDo7em_h4HolXj4zs_GpWhB/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=uftVDYYm%2BwTKUh%2FxKbLvoG4ocYg%3D",
       "width": 1671,
       "height": 941,
       "display_width": 916,
@@ -33,7 +33,8 @@
       ],
       "redactions": [],
       "sha256": "4bd1954f118b463ca13d91f029f27f278d277fff71e1cee8301fba92f70d1951",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@CQN9m/dJMcaaAy8p8/AAAAAAAAAAAAAAAAAAAAAHoG5CY758tMMtGfHcOFWvDo7em_h4HolXj4zs_GpWhB/img.png|alignCenter|width=\"100%\" alt=\"푸른 정밀 조형물로 표현한 Opus 5.5와 금색 커서 조형물로 표현한 GPT-6 Astra를 같은 비중으로 배치한 비교 이미지\"|_##]"
     }
   ]
 }

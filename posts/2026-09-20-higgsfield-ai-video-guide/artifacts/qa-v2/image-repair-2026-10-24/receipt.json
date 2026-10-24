@@ -1,0 +1,85 @@
+{
+  "id": 136,
+  "title": "힉스필드 AI란? 광고·숏폼 제작 기능과 주목받는 이유",
+  "url": "https://dop3n.tistory.com/entry/%ED%9E%89%EC%8A%A4%ED%95%84%EB%93%9C-AI%EB%9E%80-%EA%B4%91%EA%B3%A0%C2%B7%EC%88%8F%ED%8F%BC-%EC%A0%9C%EC%9E%91-%EA%B8%B0%EB%8A%A5%EA%B3%BC-%EC%A3%BC%EB%AA%A9%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-20-higgsfield-ai-video-guide",
+  "images": [
+    {
+      "alt": "왼쪽에 로그인 입력란이 있고 오른쪽에 여러 영상 모델의 예시 카드가 배치된 Higgsfield API 화면",
+      "complete": true,
+      "id": "higgsfield-ai-hero",
+      "naturalHeight": 647,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 966.7265625,
+        "height": 373.0078125,
+        "left": 272,
+        "right": 1008,
+        "top": 593.71875,
+        "width": 736,
+        "x": 272,
+        "y": 593.71875
+      },
+      "src": "https://blog.kakaocdn.net/dna/bOgyd2/dJMcacrF2jl/AAAAAAAAAAAAAAAAAAAAABhGdaDerLVxUUNSkj85GdJRfMsS_eZCQR4j2mQNdfGs/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=zwsGAVScc3MfvJyis6b1lElyFw0%3D"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "왼쪽에 로그인 입력란이 있고 오른쪽에 여러 영상 모델의 예시 카드가 배치된 Higgsfield API 화면",
+      "complete": true,
+      "id": "higgsfield-ai-hero",
+      "naturalHeight": 647,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 808.5,
+        "height": 237.546875,
+        "left": 36,
+        "right": 504,
+        "top": 570.953125,
+        "width": 468,
+        "x": 36,
+        "y": 570.953125
+      },
+      "src": "https://blog.kakaocdn.net/dna/bOgyd2/dJMcacrF2jl/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WzK4fwo3nyEpOYzfwkz-tAPHKw5eMYrU1F0eazq_OgdBcVlBnlgM2xc4drqw9dCUC8Yncfs4kDdh7B5OssL3tr/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=Z%2BQYoe9uBZIFJeAUc8dPbl5xocg%3D"
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "왼쪽에 로그인 입력란이 있고 오른쪽에 여러 영상 모델의 예시 카드가 배치된 Higgsfield API 화면",
+      "complete": true,
+      "id": "higgsfield-ai-hero",
+      "naturalHeight": 647,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 503.453125,
+        "height": 146.5625,
+        "left": 36,
+        "right": 324,
+        "top": 356.890625,
+        "width": 288,
+        "x": 36,
+        "y": 356.890625
+      },
+      "src": "https://blog.kakaocdn.net/dna/bOgyd2/dJMcacrF2jl/AAAAAAAAAAAAAAAAAAAAABhGdaDerLVxUUNSkj85GdJRfMsS_eZCQR4j2mQNdfGs/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=zwsGAVScc3MfvJyis6b1lElyFw0%3D"
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-20 18:52"
+    ],
+    "public": true,
+    "slug": "힉스필드-AI란-광고·숏폼-제작-기능과-주목받는-이유"
+  },
+  "uploads": [
+    {
+      "id": "higgsfield-ai-hero",
+      "rawToken": "[##_Image|kage@bOgyd2/dJMcacrF2jl/AAAAAAAAAAAAAAAAAAAAABhGdaDerLVxUUNSkj85GdJRfMsS_eZCQR4j2mQNdfGs/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-20-higgsfield-ai-video-guide/assets/higgsfield-ai-user-screenshot-v1.png",
+      "sha256": "1398bde0370428a2e8310ef842f2e1f68c5bb7ff9f19a2e8e3de136443280a99",
+      "embed": "[##_Image|kage@bOgyd2/dJMcacrF2jl/AAAAAAAAAAAAAAAAAAAAABhGdaDerLVxUUNSkj85GdJRfMsS_eZCQR4j2mQNdfGs/img.png|alignCenter|width=\"100%\" alt=\"왼쪽에 로그인 입력란이 있고 오른쪽에 여러 영상 모델의 예시 카드가 배치된 Higgsfield API 화면\"|_##]"
+    }
+  ],
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T02:08:40.344Z"
+}

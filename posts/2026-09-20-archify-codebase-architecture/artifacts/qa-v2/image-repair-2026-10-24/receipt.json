@@ -1,0 +1,85 @@
+{
+  "id": 135,
+  "title": "Archify란? AI가 읽은 코드 구조를 검증 가능한 다이어그램으로 만드는 방법",
+  "url": "https://dop3n.tistory.com/entry/Archify%EB%9E%80-AI%EA%B0%80-%EC%9D%BD%EC%9D%80-%EC%BD%94%EB%93%9C-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EA%B2%80%EC%A6%9D-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B0%A9%EB%B2%95",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-20-archify-codebase-architecture",
+  "images": [
+    {
+      "alt": "코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인",
+      "complete": true,
+      "id": "archify-pipeline",
+      "naturalHeight": 825,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 1554.8359375,
+        "height": 475.0859375,
+        "left": 272,
+        "right": 1008,
+        "top": 1079.75,
+        "width": 736,
+        "x": 272,
+        "y": 1079.75
+      },
+      "src": "https://blog.kakaocdn.net/dna/c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=9dKAl8ieTld4P39DtsRTMN%2FIZ0Q%3D"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인",
+      "complete": true,
+      "id": "archify-pipeline",
+      "naturalHeight": 825,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 1087.8046875,
+        "height": 302.3515625,
+        "left": 36,
+        "right": 504,
+        "top": 785.453125,
+        "width": 468,
+        "x": 36,
+        "y": 785.453125
+      },
+      "src": "https://blog.kakaocdn.net/dna/c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UlNA64LxJuXlttSvSHOZawGTmZuup1WnlEU2zehRCrwaUs20RFU8L-hetSXSB0zvAwq1h2kPhQpZdlpYJQO-7n/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=7Olrsqi%2Fwt8thM1zT0noVPGOrwg%3D"
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인",
+      "complete": true,
+      "id": "archify-pipeline",
+      "naturalHeight": 825,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 676.1640625,
+        "height": 186.3359375,
+        "left": 36,
+        "right": 324,
+        "top": 489.828125,
+        "width": 288,
+        "x": 36,
+        "y": 489.828125
+      },
+      "src": "https://blog.kakaocdn.net/dna/c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=9dKAl8ieTld4P39DtsRTMN%2FIZ0Q%3D"
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-20 18:39"
+    ],
+    "public": true,
+    "slug": "Archify란-AI가-읽은-코드-구조를-검증-가능한-다이어그램으로-만드는-방법"
+  },
+  "uploads": [
+    {
+      "id": "archify-pipeline",
+      "rawToken": "[##_Image|kage@c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-20-archify-codebase-architecture/assets/archify-pipeline.png",
+      "sha256": "f95599e5bbff414c917e39f8dd58ba078ea41acd834afb122241da52a9aa4218",
+      "embed": "[##_Image|kage@c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png|alignCenter|width=\"100%\" alt=\"코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인\"|_##]"
+    }
+  ],
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T02:09:02.015Z"
+}

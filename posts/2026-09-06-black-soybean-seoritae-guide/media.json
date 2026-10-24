@@ -17,7 +17,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/black-soybean-seoritae-hero-v3-source.png",
       "publish_path": "assets/black-soybean-seoritae-hero.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbZoYgk%2FdJMcagfL9z8%2FAAAAAAAAAAAAAAAAAAAAAOaOHKthFLga_FjuDGFI-qK5IIpBxXfN3T3bXybDEkaT%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dp3fZemOq1llXm9UXOXHSXYEAqUw%253D",
+      "tistory_url": "https://blog.kakaocdn.net/dna/b9z8kD/dJMcaiyDsVt/AAAAAAAAAAAAAAAAAAAAAIbtLw3fCnj1QQPRvrntiTKfstpgi0oSjud_N4J2uJen/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=6VJBM8JS8CKN7mGxcFOM1cfWk1o%3D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -34,7 +34,8 @@
       ],
       "redactions": [],
       "sha256": "efdcadd855ae881d586ea2eadcc1f70a976146490eef3c381a9b60738ddbc407",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@b9z8kD/dJMcaiyDsVt/AAAAAAAAAAAAAAAAAAAAAIbtLw3fCnj1QQPRvrntiTKfstpgi0oSjud_N4J2uJen/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=6VJBM8JS8CKN7mGxcFOM1cfWk1o%3D|CDM|1.3|{\"originWidth\":1672,\"originHeight\":941,\"style\":\"alignCenter\",\"alt\":\"검은 껍질과 푸른 속이 드러난 서리태가 도자기 그릇과 나무 숟가락에 담긴 모습\"}_##]"
     },
     {
       "id": "black-soybean-claims",
@@ -57,7 +58,7 @@
       "source_url": "",
       "raw_path": "artifacts/captures/generated/black-soybean-claims-infographic-v2-source.png",
       "publish_path": "assets/black-soybean-claims-infographic-v2.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FqJE8P%2FdJMcadDcfzC%2FAAAAAAAAAAAAAAAAAAAAALrLoxWOWtdLuwuSTRiswsgg_aRt38-sDTvADZgkMcBB%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DBxRg6deknXtfWcZ%252FR8JpJkrcyrs%253D",
+      "tistory_url": "https://blog.kakaocdn.net/dna/w4k5y/dJMcaiyDsVw/AAAAAAAAAAAAAAAAAAAAABQULLJQDqNfdz2I-soqpL016rCRF4l6yP5G0wolxsqa/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=s1rgs%2FBSPYHE4ZWXpOVowDRo5JA%3D",
       "width": 1672,
       "height": 941,
       "display_width": 916,
@@ -74,7 +75,8 @@
       ],
       "redactions": [],
       "sha256": "5403f6440429ab296296f658a716ca19b7ee47267a7310385261876468a0d3cb",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@w4k5y/dJMcaiyDsVw/AAAAAAAAAAAAAAAAAAAAABQULLJQDqNfdz2I-soqpL016rCRF4l6yP5G0wolxsqa/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=s1rgs%2FBSPYHE4ZWXpOVowDRo5JA%3D|CDM|1.3|{\"originWidth\":1672,\"originHeight\":941,\"style\":\"alignCenter\",\"alt\":\"검은콩의 확인된 영양, 22명&middot;4주 혈관 연구의 초기 신호, 흰머리&middot;가슴 크기의 직접 근거 없음이라는 세 단계를 비교한 인포그래픽\"}_##]"
     }
   ]
 }

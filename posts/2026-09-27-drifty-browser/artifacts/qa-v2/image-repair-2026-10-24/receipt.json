@@ -1,0 +1,146 @@
+{
+  "id": 140,
+  "title": "Drifty, 고양이 AI 시간 관리 앱",
+  "url": "https://dop3n.tistory.com/entry/Drifty-%EA%B3%A0%EC%96%91%EC%9D%B4-AI-%EC%8B%9C%EA%B0%84-%EA%B4%80%EB%A6%AC-%EC%95%B1",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser",
+  "images": [
+    {
+      "alt": "Drifty 로고와 데스크톱 고양이, 집중·중립·딴짓 분류 막대가 배치된 대표 이미지",
+      "complete": true,
+      "id": "drifty-lead",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 1387.375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 972.5,
+        "width": 736,
+        "x": 272,
+        "y": 972.5
+      },
+      "src": "https://blog.kakaocdn.net/dna/W2cwD/dJMcagtVTxn/AAAAAAAAAAAAAAAAAAAAAFdOj7okgiWokCKkSd4A-5E-ZOEbKb6TfpKVjpFjO8u9/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=w020V4Ac1M7KeuJO%2FMblB%2FGHrB4%3D"
+    },
+    {
+      "alt": "고양이 아래에 활동 타임라인, 집중·딴짓 비중, 자주 쓴 앱을 보여 주는 Drifty 공식 홈페이지 예시 화면",
+      "complete": true,
+      "id": "drifty-dashboard",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 3559.265625,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 3144.390625,
+        "width": 736,
+        "x": 272,
+        "y": 3144.390625
+      },
+      "src": "https://blog.kakaocdn.net/dna/wgJYx/dJMcad4Y8Ho/AAAAAAAAAAAAAAAAAAAAAOCOIvXi4UxlMpi75eLPK3TVA3k65xI8ZDTuZUYW4s1H/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=2LxH%2FdY4YCELSVOrLseW6%2FPO0Ns%3D"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "Drifty 로고와 데스크톱 고양이, 집중·중립·딴짓 분류 막대가 배치된 대표 이미지",
+      "complete": true,
+      "id": "drifty-lead",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 913.09375,
+        "height": 264.125,
+        "left": 36,
+        "right": 504,
+        "top": 648.96875,
+        "width": 468,
+        "x": 36,
+        "y": 648.96875
+      },
+      "src": "https://blog.kakaocdn.net/dna/W2cwD/dJMcagtVTxn/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1ULD905HdrjliXodbHeYZZqZ9giv509QROPkYpbxSQwCHnfJ3PA_2JPEt0T8lfvhX2NE80XsQU-3ABvAQLES4bs/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=EouI8c6cSEgKaTKc%2B6bmprTqdhI%3D"
+    },
+    {
+      "alt": "고양이 아래에 활동 타임라인, 집중·딴짓 비중, 자주 쓴 앱을 보여 주는 Drifty 공식 홈페이지 예시 화면",
+      "complete": true,
+      "id": "drifty-dashboard",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 3297.2109375,
+        "height": 264.125,
+        "left": 36,
+        "right": 504,
+        "top": 3033.0859375,
+        "width": 468,
+        "x": 36,
+        "y": 3033.0859375
+      },
+      "src": "https://blog.kakaocdn.net/dna/wgJYx/dJMcad4Y8Ho/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQl5I7DssrGHHlB-0b3VsgSnaMzd45C07Irxb5qiYKCK4p_dDVynExzFJOLZ5xcVarHfmoxF06nM8nLuWPcgGw/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=cHjBIekVmWFjcSSHEG3Tk9TiVg0%3D"
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "Drifty 로고와 데스크톱 고양이, 집중·중립·딴짓 분류 막대가 배치된 대표 이미지",
+      "complete": true,
+      "id": "drifty-lead",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 566.515625,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 403.640625,
+        "width": 288,
+        "x": 36,
+        "y": 403.640625
+      },
+      "src": "https://blog.kakaocdn.net/dna/W2cwD/dJMcagtVTxn/AAAAAAAAAAAAAAAAAAAAAFdOj7okgiWokCKkSd4A-5E-ZOEbKb6TfpKVjpFjO8u9/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=w020V4Ac1M7KeuJO%2FMblB%2FGHrB4%3D"
+    },
+    {
+      "alt": "고양이 아래에 활동 타임라인, 집중·딴짓 비중, 자주 쓴 앱을 보여 주는 Drifty 공식 홈페이지 예시 화면",
+      "complete": true,
+      "id": "drifty-dashboard",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 3485,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 3322.125,
+        "width": 288,
+        "x": 36,
+        "y": 3322.125
+      },
+      "src": "https://blog.kakaocdn.net/dna/wgJYx/dJMcad4Y8Ho/AAAAAAAAAAAAAAAAAAAAAOCOIvXi4UxlMpi75eLPK3TVA3k65xI8ZDTuZUYW4s1H/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=2LxH%2FdY4YCELSVOrLseW6%2FPO0Ns%3D"
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-27 22:50"
+    ],
+    "public": true,
+    "slug": "Drifty-고양이-AI-시간-관리-앱"
+  },
+  "uploads": [
+    {
+      "id": "drifty-lead",
+      "rawToken": "[##_Image|kage@W2cwD/dJMcagtVTxn/AAAAAAAAAAAAAAAAAAAAAFdOj7okgiWokCKkSd4A-5E-ZOEbKb6TfpKVjpFjO8u9/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/assets/drifty-hero.png",
+      "sha256": "4c1e7633eb1415081a89101f599d1de341f142929bb46d76d90a3ee41f472538",
+      "embed": "[##_Image|kage@W2cwD/dJMcagtVTxn/AAAAAAAAAAAAAAAAAAAAAFdOj7okgiWokCKkSd4A-5E-ZOEbKb6TfpKVjpFjO8u9/img.png|alignCenter|width=\"100%\" alt=\"Drifty 로고와 데스크톱 고양이, 집중·중립·딴짓 분류 막대가 배치된 대표 이미지\"|_##]"
+    },
+    {
+      "id": "drifty-dashboard",
+      "rawToken": "[##_Image|kage@wgJYx/dJMcad4Y8Ho/AAAAAAAAAAAAAAAAAAAAAOCOIvXi4UxlMpi75eLPK3TVA3k65xI8ZDTuZUYW4s1H/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-27-drifty-browser/assets/drifty-dashboard.png",
+      "sha256": "512a5ff64ccd4712fd7d9a97117e9c498937e7e9c0d048b3d4a0c421170cd890",
+      "embed": "[##_Image|kage@wgJYx/dJMcad4Y8Ho/AAAAAAAAAAAAAAAAAAAAAOCOIvXi4UxlMpi75eLPK3TVA3k65xI8ZDTuZUYW4s1H/img.png|alignCenter|width=\"100%\" alt=\"고양이 아래에 활동 타임라인, 집중·딴짓 비중, 자주 쓴 앱을 보여 주는 Drifty 공식 홈페이지 예시 화면\"|_##]"
+    }
+  ],
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T02:08:19.520Z"
+}

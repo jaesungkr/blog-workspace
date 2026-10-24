@@ -1,0 +1,85 @@
+{
+  "id": 133,
+  "title": "제브(Jev), InstructGPT 연구자가 만든 판단 전용 AI",
+  "url": "https://dop3n.tistory.com/entry/%EC%A0%9C%EB%B8%8CJev-InstructGPT-%EC%97%B0%EA%B5%AC%EC%9E%90%EA%B0%80-%EB%A7%8C%EB%93%A0-%ED%8C%90%EB%8B%A8-%EC%A0%84%EC%9A%A9-AI",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-17-zeb-ai-model-diogo-almeida",
+  "images": [
+    {
+      "alt": "분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지",
+      "complete": true,
+      "id": "typesafe-jev-homepage",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 1057.375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 642.5,
+        "width": 736,
+        "x": 272,
+        "y": 642.5
+      },
+      "src": "https://blog.kakaocdn.net/dna/dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAMCFPZ4kstWJyo1SY2_sunWed4TndZuyZoiWEaDOqKVU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=3QpFFwEASMZI3m80xVhnNHYQ4Pc%3D"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지",
+      "complete": true,
+      "id": "typesafe-jev-homepage",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 913.09375,
+        "height": 264.125,
+        "left": 36,
+        "right": 504,
+        "top": 648.96875,
+        "width": 468,
+        "x": 36,
+        "y": 648.96875
+      },
+      "src": "https://blog.kakaocdn.net/dna/dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1W6gqfWRtdLDw2JSD-H-A5XD4LLNtNdLl6gCKmBUtuz00zXshh4DyTs82IjvJQlYh0TckeQC8wGYLqXIV3zLNQQ/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=2bmhrfwSD591WITT6cIy%2FD8Xy70%3D"
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지",
+      "complete": true,
+      "id": "typesafe-jev-homepage",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 586.25,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 423.375,
+        "width": 288,
+        "x": 36,
+        "y": 423.375
+      },
+      "src": "https://blog.kakaocdn.net/dna/dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAMCFPZ4kstWJyo1SY2_sunWed4TndZuyZoiWEaDOqKVU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=3QpFFwEASMZI3m80xVhnNHYQ4Pc%3D"
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-17 23:16"
+    ],
+    "public": true,
+    "slug": "제브Jev-InstructGPT-연구자가-만든-판단-전용-AI"
+  },
+  "uploads": [
+    {
+      "id": "typesafe-jev-homepage",
+      "rawToken": "[##_Image|kage@dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAMCFPZ4kstWJyo1SY2_sunWed4TndZuyZoiWEaDOqKVU/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-17-zeb-ai-model-diogo-almeida/assets/typesafe-jev-homepage-v1.png",
+      "sha256": "f3a51f8e2d327d268f518c0bbeaa8019614fe9e97a43512698dc2d7cc9247505",
+      "embed": "[##_Image|kage@dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAMCFPZ4kstWJyo1SY2_sunWed4TndZuyZoiWEaDOqKVU/img.png|alignCenter|width=\"100%\" alt=\"분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지\"|_##]"
+    }
+  ],
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T02:09:24.238Z"
+}

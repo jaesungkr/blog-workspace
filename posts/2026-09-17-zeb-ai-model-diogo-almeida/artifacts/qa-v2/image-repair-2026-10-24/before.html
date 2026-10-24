@@ -1,0 +1,444 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">온라인 쇼핑몰에 상품이 아직 도착하지 않았다는 문의가 들어왔다고 가정해 보겠습니다. 답장을 쓰기 전에 배송팀으로 보낼지, 얼마나 급한 일인지부터 정해야 합니다. 고객마다 표현이 달라서 단어 몇 개만으로 분류하기 어려운 문의도 있습니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">TypeSafe AI가 2026년 9월 15일 공개한 제브(Jev)</a>는 <b>프로그램이 다음 행동을 정할 수 있도록 선택과 확률을 돌려주는 AI 모델</b>입니다. 고객에게 보낼 답장보다 그 앞에 있는 분류와 판단을 맡습니다.</p>
+<figure class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="typesafe-jev-homepage"><img class="devlog-rich__image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4VQ8F%2FdJMcaf2lRuv%2FAAAAAAAAAAAAAAAAAAAAAHxuqKauKb78kPxiG8nMIG-UlgHIHkSnUH1ZqkM2Ztbc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DfeXFGZrqgrVdzDz1780bx2L5cYQ%253D" alt="분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지" width="1280" height="720" />
+<figcaption class="devlog-rich__caption">TypeSafe 첫 화면은 제브를 &lsquo;대화를 넘어선 지능&rsquo;으로 소개합니다. 본문에서는 이 문구를 소프트웨어가 쓰는 판단 모델이라는 뜻으로 풀어 봅니다.</figcaption>
+<span class="devlog-rich__credit">&middot; <a href="https://typesafe.ai/" target="_blank" rel="noopener noreferrer">공식 자료</a></span></figure>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#배송-문의-한-건을-제브에-맡기면">배송 문의 한 건을 제브에 맡기면</a></li>
+<li><a href="#디오고-알메이다와-챗gpt의-연결고리">디오고 알메이다와 챗GPT의 연결고리</a></li>
+<li><a href="#1936배-빠르고-4446배-저렴하다는-주장">193.6배 빠르고 444.6배 저렴하다는 주장</a></li>
+<li><a href="#환각-0의-정확한-범위">환각 0%의 정확한 범위</a></li>
+<li><a href="#제브를-연결해-볼-만한-업무">제브를 연결해 볼 만한 업무</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="배송-문의-한-건을-제브에-맡기면">
+<h2 id="배송-문의-한-건을-제브에-맡기면" data-ke-size="size26">배송 문의 한 건을 제브에 맡기면</h2>
+<p data-ke-size="size16">다음은 작동 방식을 설명하기 위해 만든 <b>가상의 문의와 응답 예시</b>입니다. 아래 수치는 실제 제브를 호출해서 얻은 결과가 아닙니다.</p>
+<blockquote data-ke-style="style1">고객 문의: &ldquo;주문한 물건이 사흘째 도착하지 않았습니다. 내일 선물해야 하는데 배송 상황을 확인해 주세요.&rdquo;</blockquote>
+<p data-ke-size="size16">개발자는 이 문의와 함께 판단할 질문을 보냅니다. 담당 팀을 고르는 질문이라면 선택지를 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">배송&middot;결제&middot;계정</code>으로 미리 정합니다. 제브가 가령 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">배송 92%, 결제 5%, 계정 3%</code>를 돌려주면, 프로그램은 그 값을 읽어 배송팀에 문의를 배정할 수 있습니다. <b>문의 배정은 프로그램이 실행하고, 제브는 그때 사용할 판단값을 제공합니다.</b></p>
+<p data-ke-size="size16">같은 문의에 긴급도나 수령 기한이 있는지를 물을 수도 있습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://docs.typesafe.ai/introduction" target="_blank" rel="noopener">공식 문서</a>는 질문을 다음 세 유형으로 구분합니다. 표는 이해를 돕기 위해 응답의 핵심 값만 간추린 예시입니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>질문 유형</th>
+<th>미리 정할 질문</th>
+<th>가상의 응답 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Choice: 선택</td>
+<td>배송&middot;결제&middot;계정 중 담당 팀은?</td>
+<td>배송 92%, 결제 5%, 계정 3%</td>
+</tr>
+<tr>
+<td>Score: 점수</td>
+<td>여유 있음(0)&middot;빠른 확인 필요(1)&middot;즉시 확인 필요(2) 중 긴급도는?</td>
+<td>1.7점. 즉시 확인이 필요한 쪽에 가까움</td>
+</tr>
+<tr>
+<td>Noul: 참일 확률</td>
+<td>고객이 특정 기한 전 수령을 요구하는가?</td>
+<td>0.85. 제브가 추정한 확률로는 85%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">공식 문서에서 문의 내용처럼 판단할 자료는 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">상태(state)</code>, 답의 형태를 미리 정한 질문은 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">정형 질문(typed questions)</code>이라고 부릅니다. Choice와 Score는 선택값이나 점수에 더해 확률 분포와 신뢰도 정보도 제공합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://docs.typesafe.ai/primitives/score" target="_blank" rel="noopener">Score의 점수</a>는 단계마다 부여한 확률을 반영한 평균이어서 소수로 나올 수 있습니다. 세 유형의 질문은 한 요청에 묶을 수 있으며, 각 질문은 같은 자료를 보고 서로 독립적으로 평가됩니다.</p>
+<p data-ke-size="size16">이 예시의 92%는 모델이 특정 선택지에 부여한 확률입니다. 배송 문의를 실제로 100건 시험했을 때 92건을 맞혔다는 뜻은 아닙니다. 어느 정도 확신할 때 자동으로 배정할지는 개발자가 실제 문의로 검증해 정해야 합니다.</p>
+<p data-ke-size="size16">챗GPT 같은 언어 모델에도 분류를 시키거나 정해진 형식으로 답하게 할 수 있습니다. 제브가 내세우는 차이는 이런 판단을 위한 출력 방식에 있습니다. 문장을 한 단어씩 이어 쓰는 대신, 미리 정한 질문의 답과 확률을 병렬로 계산합니다. 고객에게 보낼 안내문이 필요하다면 그 뒤에 사람이나 생성형 언어 모델이 작성하도록 연결합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="디오고-알메이다와-챗gpt의-연결고리">
+<h2 id="디오고-알메이다와-챗gpt의-연결고리" data-ke-size="size26">디오고 알메이다와 챗GPT의 연결고리</h2>
+<p data-ke-size="size16">제브를 만든 TypeSafe 창업자 디오고 알메이다는 <a style="color: #1a73e8; text-decoration: none;" href="https://arxiv.org/abs/2203.02155" target="_blank" rel="noopener">2022년 InstructGPT 논문</a>의 공동 저자입니다. 이 연구는 사람이 선호하는 답을 학습에 반영해 GPT-3가 지시를 더 잘 따르도록 만든 작업입니다. 알메이다는 <a style="color: #1a73e8; text-decoration: none;" href="https://arxiv.org/abs/2303.08774" target="_blank" rel="noopener">GPT-4 기술 보고서</a>에도 이름을 올렸습니다.</p>
+<p data-ke-size="size16">&lsquo;챗GPT 공동 개발자&rsquo;라는 소개는 이 연구 이력에서 나온 표현으로 이해하면 됩니다. <a style="color: #1a73e8; text-decoration: none;" href="https://typesafe.ai/team" target="_blank" rel="noopener">TypeSafe는 알메이다의 연구가 ChatGPT와 GPT-4로 이어졌다고 소개</a>합니다. 논문으로 직접 확인할 수 있는 이력은 InstructGPT 공동 저자이자 GPT-4 기술 보고서 참여자라는 점입니다. 제브에서는 대화에 필요한 문장 생성보다, 소프트웨어가 반복해서 수행하는 판단에 초점을 맞췄습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="1936배-빠르고-4446배-저렴하다는-주장">
+<h2 id="1936배-빠르고-4446배-저렴하다는-주장" data-ke-size="size26">193.6배 빠르고 444.6배 저렴하다는 주장</h2>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://typesafe.ai/" target="_blank" rel="noopener">TypeSafe 홈페이지</a>는 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">193.6배 빠르고 444.6배 저렴하다</code>는 수치를 내세웁니다. 문의가 들어올 때마다 AI를 부르는 서비스라면 속도와 호출 비용이 중요합니다. 다만 이 배수를 읽으려면 회사가 무엇을 비교했는지부터 확인해야 합니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://evals.typesafe.ai/" target="_blank" rel="noopener">공개 평가</a>는 보안 사고, 에이전트 기록, 송장, 고객 서비스의 네 업무를 여러 개의 좁은 질문으로 나눕니다. 모델마다 같은 처리 절차를 수행하게 하고 네 업무에 동일한 비중을 줬습니다. 답의 품질은 공개 데이터셋의 독립 정답 대신 GPT-6 Astra와 Claude Fable 5.1이 낸 확률의 평균과 비교했습니다. 평가용 코드가 옳다는 가정도 들어갑니다.</p>
+<p data-ke-size="size16">TypeSafe도 내부 인력이 만든 업무 절차에 편향이 남을 수 있으며, 발표한 개선치가 실제 환경에서 얻을 수 있는 높은 쪽의 수치일 수 있다고 밝혔습니다. 발표 문구와 확인 범위를 나누면 다음과 같습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>홈페이지 문구</th>
+<th>확인된 범위</th>
+<th>아직 필요한 확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>193.6배 빠름</td>
+<td>제브에 맞춘 회사의 네 가지 구조화 워크플로 평가</td>
+<td>다른 지역&middot;업무&middot;입력 길이에서의 독립 재현</td>
+</tr>
+<tr>
+<td>444.6배 저렴함</td>
+<td>같은 평가의 API 비용 계산</td>
+<td>장기 가격과 실제 운영 비용</td>
+</tr>
+<tr>
+<td>기존 LLM과 비슷한 지능</td>
+<td>회사가 정한 질문에서 기준 모델의 확률과 비교</td>
+<td>공개 정답 데이터와 실패 사례를 포함한 외부 평가</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">공식 발표 가격은 입력 100만 토큰당 0.042달러이며 출력 토큰은 무료입니다. 토큰은 AI가 텍스트를 처리할 때 나누는 단위입니다. 회사는 요청을 보내고 응답을 받기까지 70~500ms가 걸린다고 설명합니다. 공개 속도 평가는 대체로 서비스가 위치한 미국 서부의 노트북에서 실행했으므로, 한국에서 같은 속도가 나오는지는 별도로 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="환각-0의-정확한-범위">
+<h2 id="환각-0의-정확한-범위" data-ke-size="size26">환각 0%의 정확한 범위</h2>
+<p data-ke-size="size16">&lsquo;환각 0%&rsquo;라는 문구도 앞의 배송 문의에 대입하면 뜻이 분명해집니다. 선택지를 배송&middot;결제&middot;계정으로 정했다면, 제브는 목록에 없는 부서를 새로 만들어 답하지 않는다는 주장입니다. 그렇다고 배송 문의를 결제 문의로 잘못 분류할 가능성까지 사라지는 것은 아닙니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">TypeSafe가 보장한다고 설명한 대상</a>은 <b>미리 정한 출력 형식인 &lsquo;스키마&rsquo;와의 일치</b>입니다. 회사도 0%가 실제 오답을 세어 얻은 수치는 아니라고 밝혔습니다. 출력 형식이 맞는지와 판단 내용이 맞는지는 각각 검증해야 합니다. 답이 애매한 문의를 사람이 다시 확인할 수 있도록 처리 경로를 두는 이유도 여기에 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="제브를-연결해-볼-만한-업무">
+<h2 id="제브를-연결해-볼-만한-업무" data-ke-size="size26">제브를 연결해 볼 만한 업무</h2>
+<p data-ke-size="size16">제브를 검토할 만한 곳은 <b>답의 후보를 정할 수 있고 같은 판단을 자주 반복하는 업무</b>입니다. 이메일을 읽고 스팸일 확률을 구하거나, AI 에이전트가 사용할 도구를 정해 둔 목록에서 고르는 일이 여기에 해당합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway" target="_blank" rel="noopener">Vercel도 9월 16일 AI Gateway에 제브를 추가</a>하며 도구 선택, 재시도, 사람 확인 여부 같은 용도를 제시했습니다.</p>
+<p data-ke-size="size16">실제 서비스에 쓰려면 개발자가 자신의 프로그램에 API를 연결합니다. API는 프로그램이 다른 서비스에 요청을 보내고 결과를 받는 통로입니다. 9월 17일 기준 TypeSafe 콘솔은 초기 접근 단계이며, Vercel AI Gateway에서도 제브를 호출할 수 있습니다. 접근 권한이 있다면 <a style="color: #1a73e8; text-decoration: none;" href="https://docs.typesafe.ai/introduction/quickstart" target="_blank" rel="noopener">공식 빠른 시작 문서</a>에 안내된 Playground에서 텍스트와 질문을 넣어 보는 것부터 시작할 수 있습니다.</p>
+<p data-ke-size="size16"><code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">Jev</code>라는 이름은 효율이 높아져 사용 비용이 내려가면 전체 소비가 오히려 늘 수 있다는 제번스의 역설에서 왔습니다. TypeSafe는 판단 비용이 낮아지면 AI를 쓸 곳도 늘어날 것으로 기대합니다. 국내 서비스에서 도입을 검토한다면, 이미 담당 팀이 정해진 한국어 문의를 제브에도 분류하게 해 보는 것이 구체적인 출발점입니다. 그 결과를 실제 배정 기록과 대조하고 응답 시간과 비용을 측정해야, 홈페이지의 큰 배수가 자신의 업무에서도 의미가 있는지 판단할 수 있습니다.</p>
+</section>
+</article>

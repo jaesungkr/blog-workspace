@@ -1,0 +1,36 @@
+{
+  "scope": "image-only repair; author final review pending",
+  "authorization": "내 블로그의 만료된 이미지를 정상적으로 표기되도록 10개 페이지를 수정하고 완료 후 링크 10개를 제공해 달라는 작성자의 요청",
+  "post_id": 133,
+  "url": "https://dop3n.tistory.com/entry/%EC%A0%9C%EB%B8%8CJev-InstructGPT-%EC%97%B0%EA%B5%AC%EC%9E%90%EA%B0%80-%EB%A7%8C%EB%93%A0-%ED%8C%90%EB%8B%A8-%EC%A0%84%EC%9A%A9-AI",
+  "title": "제브(Jev), InstructGPT 연구자가 만든 판단 전용 AI",
+  "checked_at": "2026-10-24T02:09:24.238Z",
+  "image_count": 1,
+  "native_attachment_refs": [
+    {
+      "id": "typesafe-jev-homepage",
+      "local_sha256": "f3a51f8e2d327d268f518c0bbeaa8019614fe9e97a43512698dc2d7cc9247505",
+      "native_block": "[##_Image|kage@dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAMCFPZ4kstWJyo1SY2_sunWed4TndZuyZoiWEaDOqKVU/img.png|alignCenter|width=\"100%\" alt=\"분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지\"|_##]"
+    }
+  ],
+  "editor_html_before_sha256": "4094641c61df91ff215ffeb1bc3325e04d574190d9e52ba095d62eb876d160fd",
+  "editor_html_after_sha256": "e39ec601cf058bc86b2302522824085d000f79e9448ad7bc536371e8eb51b112",
+  "non_image_content_preserved": true,
+  "normalized_prose_comparison": "equal",
+  "metadata": {
+    "dates": [
+      "2026-09-17 23:16"
+    ],
+    "public": true,
+    "slug": "제브Jev-InstructGPT-연구자가-만든-판단-전용-AI"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "live_images_loaded": true,
+  "raw_receipt": "receipt.json",
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "archive_note": "Existing full-post QA records are historical after this media change. This receipt validates the live image repair only; it does not claim the local article draft equals the published body."
+}

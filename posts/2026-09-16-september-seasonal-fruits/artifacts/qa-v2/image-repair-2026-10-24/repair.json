@@ -1,0 +1,36 @@
+{
+  "scope": "image-only repair; author final review pending",
+  "authorization": "내 블로그의 만료된 이미지를 정상적으로 표기되도록 10개 페이지를 수정하고 완료 후 링크 10개를 제공해 달라는 작성자의 요청",
+  "post_id": 132,
+  "url": "https://dop3n.tistory.com/entry/9%EC%9B%94-%EC%A0%9C%EC%B2%A0-%EA%B3%BC%EC%9D%BC-%EC%B6%94%EC%B2%9C",
+  "title": "9월 제철 과일 추천",
+  "checked_at": "2026-10-24T02:09:54.277Z",
+  "image_count": 1,
+  "native_attachment_refs": [
+    {
+      "id": "september-seasonal-fruits-hero",
+      "local_sha256": "835e4a138e2d1c394743619f3e05cd5bce871ec5a53371adbe0ea49f94be3880",
+      "native_block": "[##_Image|kage@Qw7iq/dJMcagAGK01/AAAAAAAAAAAAAAAAAAAAAOdJtflmOPwa_x0F5gUJq9ApGF2vbncMoJKOcBkpcvbV/img.png|alignCenter|width=\"100%\" alt=\"초가을 햇빛 아래 붉은 사과와 황금빛 배, 반으로 갈라 붉은 속이 보이는 무화과가 놓인 9월 과일 정물\"|_##]"
+    }
+  ],
+  "editor_html_before_sha256": "2504e6ec8c2bd5870263e4060466e997933ddf809c0702a2c475a7a80992b4b3",
+  "editor_html_after_sha256": "90f86448fffe7b4f0697c83b4feee02df24c49638030981e9110ad70957aadac",
+  "non_image_content_preserved": true,
+  "normalized_prose_comparison": "equal",
+  "metadata": {
+    "dates": [
+      "2026-09-17 00:14"
+    ],
+    "public": true,
+    "slug": "9월-제철-과일-추천"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "live_images_loaded": true,
+  "raw_receipt": "receipt.json",
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "archive_note": "Existing full-post QA records are historical after this media change. This receipt validates the live image repair only; it does not claim the local article draft equals the published body."
+}

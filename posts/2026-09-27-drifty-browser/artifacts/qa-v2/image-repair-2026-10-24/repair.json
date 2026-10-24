@@ -1,0 +1,41 @@
+{
+  "scope": "image-only repair; author final review pending",
+  "authorization": "내 블로그의 만료된 이미지를 정상적으로 표기되도록 10개 페이지를 수정하고 완료 후 링크 10개를 제공해 달라는 작성자의 요청",
+  "post_id": 140,
+  "url": "https://dop3n.tistory.com/entry/Drifty-%EA%B3%A0%EC%96%91%EC%9D%B4-AI-%EC%8B%9C%EA%B0%84-%EA%B4%80%EB%A6%AC-%EC%95%B1",
+  "title": "Drifty, 고양이 AI 시간 관리 앱",
+  "checked_at": "2026-10-24T02:08:19.520Z",
+  "image_count": 2,
+  "native_attachment_refs": [
+    {
+      "id": "drifty-lead",
+      "local_sha256": "4c1e7633eb1415081a89101f599d1de341f142929bb46d76d90a3ee41f472538",
+      "native_block": "[##_Image|kage@W2cwD/dJMcagtVTxn/AAAAAAAAAAAAAAAAAAAAAFdOj7okgiWokCKkSd4A-5E-ZOEbKb6TfpKVjpFjO8u9/img.png|alignCenter|width=\"100%\" alt=\"Drifty 로고와 데스크톱 고양이, 집중·중립·딴짓 분류 막대가 배치된 대표 이미지\"|_##]"
+    },
+    {
+      "id": "drifty-dashboard",
+      "local_sha256": "512a5ff64ccd4712fd7d9a97117e9c498937e7e9c0d048b3d4a0c421170cd890",
+      "native_block": "[##_Image|kage@wgJYx/dJMcad4Y8Ho/AAAAAAAAAAAAAAAAAAAAAOCOIvXi4UxlMpi75eLPK3TVA3k65xI8ZDTuZUYW4s1H/img.png|alignCenter|width=\"100%\" alt=\"고양이 아래에 활동 타임라인, 집중·딴짓 비중, 자주 쓴 앱을 보여 주는 Drifty 공식 홈페이지 예시 화면\"|_##]"
+    }
+  ],
+  "editor_html_before_sha256": "f37de97b08d2a00b701aec5fb83029a7098d91d3df88a47e23771536f0805c99",
+  "editor_html_after_sha256": "6ba883fb32caee320550ce9968a1a19821bfe8f0d29606d5d78c03cbb76bbaf4",
+  "non_image_content_preserved": true,
+  "normalized_prose_comparison": "equal",
+  "metadata": {
+    "dates": [
+      "2026-09-27 22:50"
+    ],
+    "public": true,
+    "slug": "Drifty-고양이-AI-시간-관리-앱"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "live_images_loaded": true,
+  "raw_receipt": "receipt.json",
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "archive_note": "Existing full-post QA records are historical after this media change. This receipt validates the live image repair only; it does not claim the local article draft equals the published body."
+}

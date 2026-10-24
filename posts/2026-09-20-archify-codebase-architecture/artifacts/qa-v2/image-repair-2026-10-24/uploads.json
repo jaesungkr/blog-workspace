@@ -1,0 +1,9 @@
+[
+  {
+    "id": "archify-pipeline",
+    "rawToken": "[##_Image|kage@c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png|alignCenter|width=\"100%\"|_##]",
+    "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-20-archify-codebase-architecture/assets/archify-pipeline.png",
+    "sha256": "f95599e5bbff414c917e39f8dd58ba078ea41acd834afb122241da52a9aa4218",
+    "embed": "[##_Image|kage@c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png|alignCenter|width=\"100%\" alt=\"코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인\"|_##]"
+  }
+]

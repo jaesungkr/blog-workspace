@@ -17,7 +17,7 @@
       "source_url": "https://typesafe.ai/",
       "raw_path": "artifacts/sources/typesafe-jev-homepage-2026-09-17.png",
       "publish_path": "assets/typesafe-jev-homepage-v1.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4VQ8F%2FdJMcaf2lRuv%2FAAAAAAAAAAAAAAAAAAAAAHxuqKauKb78kPxiG8nMIG-UlgHIHkSnUH1ZqkM2Ztbc%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DfeXFGZrqgrVdzDz1780bx2L5cYQ%253D",
+      "tistory_url": "https://blog.kakaocdn.net/dna/dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAMCFPZ4kstWJyo1SY2_sunWed4TndZuyZoiWEaDOqKVU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=3QpFFwEASMZI3m80xVhnNHYQ4Pc%3D",
       "width": 1280,
       "height": 720,
       "display_width": 916,
@@ -32,7 +32,8 @@
       ],
       "redactions": [],
       "sha256": "f3a51f8e2d327d268f518c0bbeaa8019614fe9e97a43512698dc2d7cc9247505",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@dJOoBD/dJMcaiZqSan/AAAAAAAAAAAAAAAAAAAAAMCFPZ4kstWJyo1SY2_sunWed4TndZuyZoiWEaDOqKVU/img.png|alignCenter|width=\"100%\" alt=\"분홍빛 구름 배경 위에 제브 공개 알림과 Intelligence beyond chat 문구가 보이는 TypeSafe AI 홈페이지\"|_##]"
     }
   ]
 }

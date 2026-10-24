@@ -19,7 +19,7 @@
       "source_url": "https://github.com/tt-a1i/archify",
       "raw_path": "artifacts/captures/archify-pipeline-2048x1320-dark.png",
       "publish_path": "assets/archify-pipeline.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdB66jg%2FdJMcag73sXb%2FAAAAAAAAAAAAAAAAAAAAAKnoEAZeeFB_pTAgDkOyqD0aNHeIc0dPFTsF8n7lHHvr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO7p5%252FOTjCA7%252F%252FcqpdqR1zAQQ4ls%253D",
+      "tistory_url": "https://blog.kakaocdn.net/dna/c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=9dKAl8ieTld4P39DtsRTMN%2FIZ0Q%3D",
       "width": 2048,
       "height": 1320,
       "display_width": 916,
@@ -36,7 +36,8 @@
       ],
       "redactions": [],
       "sha256": "f95599e5bbff414c917e39f8dd58ba078ea41acd834afb122241da52a9aa4218",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png|alignCenter|width=\"100%\" alt=\"코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인\"|_##]"
     }
   ]
 }

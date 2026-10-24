@@ -1,0 +1,36 @@
+{
+  "scope": "image-only repair; author final review pending",
+  "authorization": "내 블로그의 만료된 이미지를 정상적으로 표기되도록 10개 페이지를 수정하고 완료 후 링크 10개를 제공해 달라는 작성자의 요청",
+  "post_id": 135,
+  "url": "https://dop3n.tistory.com/entry/Archify%EB%9E%80-AI%EA%B0%80-%EC%9D%BD%EC%9D%80-%EC%BD%94%EB%93%9C-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EA%B2%80%EC%A6%9D-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B0%A9%EB%B2%95",
+  "title": "Archify란? AI가 읽은 코드 구조를 검증 가능한 다이어그램으로 만드는 방법",
+  "checked_at": "2026-10-24T02:09:02.015Z",
+  "image_count": 1,
+  "native_attachment_refs": [
+    {
+      "id": "archify-pipeline",
+      "local_sha256": "f95599e5bbff414c917e39f8dd58ba078ea41acd834afb122241da52a9aa4218",
+      "native_block": "[##_Image|kage@c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png|alignCenter|width=\"100%\" alt=\"코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인\"|_##]"
+    }
+  ],
+  "editor_html_before_sha256": "0de70e80cd47622418655b288ab282ca600cfa13d409df37c06beb25b3db9b92",
+  "editor_html_after_sha256": "9ed793a8b05200adf408f03163728a1021f8aeadbb1104889e55e6f1d533946f",
+  "non_image_content_preserved": true,
+  "normalized_prose_comparison": "equal",
+  "metadata": {
+    "dates": [
+      "2026-09-20 18:39"
+    ],
+    "public": true,
+    "slug": "Archify란-AI가-읽은-코드-구조를-검증-가능한-다이어그램으로-만드는-방법"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "live_images_loaded": true,
+  "raw_receipt": "receipt.json",
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "archive_note": "Existing full-post QA records are historical after this media change. This receipt validates the live image repair only; it does not claim the local article draft equals the published body."
+}

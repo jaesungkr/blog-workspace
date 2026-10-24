@@ -1,0 +1,36 @@
+{
+  "scope": "image-only repair; author final review pending",
+  "authorization": "내 블로그의 만료된 이미지를 정상적으로 표기되도록 10개 페이지를 수정하고 완료 후 링크 10개를 제공해 달라는 작성자의 요청",
+  "post_id": 136,
+  "url": "https://dop3n.tistory.com/entry/%ED%9E%89%EC%8A%A4%ED%95%84%EB%93%9C-AI%EB%9E%80-%EA%B4%91%EA%B3%A0%C2%B7%EC%88%8F%ED%8F%BC-%EC%A0%9C%EC%9E%91-%EA%B8%B0%EB%8A%A5%EA%B3%BC-%EC%A3%BC%EB%AA%A9%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+  "title": "힉스필드 AI란? 광고·숏폼 제작 기능과 주목받는 이유",
+  "checked_at": "2026-10-24T02:08:40.344Z",
+  "image_count": 1,
+  "native_attachment_refs": [
+    {
+      "id": "higgsfield-ai-hero",
+      "local_sha256": "1398bde0370428a2e8310ef842f2e1f68c5bb7ff9f19a2e8e3de136443280a99",
+      "native_block": "[##_Image|kage@bOgyd2/dJMcacrF2jl/AAAAAAAAAAAAAAAAAAAAABhGdaDerLVxUUNSkj85GdJRfMsS_eZCQR4j2mQNdfGs/img.png|alignCenter|width=\"100%\" alt=\"왼쪽에 로그인 입력란이 있고 오른쪽에 여러 영상 모델의 예시 카드가 배치된 Higgsfield API 화면\"|_##]"
+    }
+  ],
+  "editor_html_before_sha256": "17d905b5c39da810478280976fdd2b72d271e9542b19924afbe16807be72dd20",
+  "editor_html_after_sha256": "981104bc8322a232922b1256612f67066cf9ef9e4315c192ca2ab4241b76a8f3",
+  "non_image_content_preserved": true,
+  "normalized_prose_comparison": "equal",
+  "metadata": {
+    "dates": [
+      "2026-09-20 18:52"
+    ],
+    "public": true,
+    "slug": "힉스필드-AI란-광고·숏폼-제작-기능과-주목받는-이유"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "live_images_loaded": true,
+  "raw_receipt": "receipt.json",
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "archive_note": "Existing full-post QA records are historical after this media change. This receipt validates the live image repair only; it does not claim the local article draft equals the published body."
+}

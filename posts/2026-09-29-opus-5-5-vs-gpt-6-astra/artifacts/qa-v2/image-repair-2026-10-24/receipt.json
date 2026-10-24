@@ -1,0 +1,65 @@
+{
+  "id": 141,
+  "title": "Opus 5.5 vs GPT-6 Astra - AI 모델 비교",
+  "url": "https://dop3n.tistory.com/entry/Opus-55-vs-GPT-6-Astra-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-29-opus-5-5-vs-gpt-6-astra",
+  "images": [
+    {
+      "alt": "푸른 정밀 조형물로 표현한 Opus 5.5와 금색 커서 조형물로 표현한 GPT-6 Astra를 같은 비중으로 배치한 비교 이미지",
+      "complete": true,
+      "id": "opus-5-5-vs-gpt-6-astra-hero",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 1135.390625,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 720.515625,
+        "width": 736,
+        "x": 272,
+        "y": 720.515625
+      },
+      "src": "https://blog.kakaocdn.net/dna/CQN9m/dJMcaaAy8p8/AAAAAAAAAAAAAAAAAAAAAHoG5CY758tMMtGfHcOFWvDo7em_h4HolXj4zs_GpWhB/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=uftVDYYm%2BwTKUh%2FxKbLvoG4ocYg%3D"
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "푸른 정밀 조형물로 표현한 Opus 5.5와 금색 커서 조형물로 표현한 GPT-6 Astra를 같은 비중으로 배치한 비교 이미지",
+      "complete": true,
+      "id": "opus-5-5-vs-gpt-6-astra-hero",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 644.734375,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 481.859375,
+        "width": 288,
+        "x": 36,
+        "y": 481.859375
+      },
+      "src": "https://blog.kakaocdn.net/dna/CQN9m/dJMcaaAy8p8/AAAAAAAAAAAAAAAAAAAAAHoG5CY758tMMtGfHcOFWvDo7em_h4HolXj4zs_GpWhB/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=uftVDYYm%2BwTKUh%2FxKbLvoG4ocYg%3D"
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-29 23:41"
+    ],
+    "public": true,
+    "slug": "Opus-55-vs-GPT-6-Astra-AI-모델-비교"
+  },
+  "uploads": [
+    {
+      "id": "opus-5-5-vs-gpt-6-astra-hero",
+      "rawToken": "[##_Image|kage@CQN9m/dJMcaaAy8p8/AAAAAAAAAAAAAAAAAAAAAHoG5CY758tMMtGfHcOFWvDo7em_h4HolXj4zs_GpWhB/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-29-opus-5-5-vs-gpt-6-astra/assets/opus-5-5-vs-gpt-6-astra-hero-v1.png",
+      "sha256": "4bd1954f118b463ca13d91f029f27f278d277fff71e1cee8301fba92f70d1951",
+      "embed": "[##_Image|kage@CQN9m/dJMcaaAy8p8/AAAAAAAAAAAAAAAAAAAAAHoG5CY758tMMtGfHcOFWvDo7em_h4HolXj4zs_GpWhB/img.png|alignCenter|width=\"100%\" alt=\"푸른 정밀 조형물로 표현한 Opus 5.5와 금색 커서 조형물로 표현한 GPT-6 Astra를 같은 비중으로 배치한 비교 이미지\"|_##]"
+    }
+  ],
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T02:04:31.540Z"
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "image-only repair; author final review pending",
+  "authorization": "내 블로그의 만료된 이미지를 정상적으로 표기되도록 10개 페이지를 수정하고 완료 후 링크 10개를 제공해 달라는 작성자의 요청",
+  "post_id": 141,
+  "url": "https://dop3n.tistory.com/entry/Opus-55-vs-GPT-6-Astra-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "title": "Opus 5.5 vs GPT-6 Astra - AI 모델 비교",
+  "checked_at": "2026-10-24T02:04:31.540Z",
+  "image_count": 1,
+  "native_attachment_refs": [
+    {
+      "id": "opus-5-5-vs-gpt-6-astra-hero",
+      "local_sha256": "4bd1954f118b463ca13d91f029f27f278d277fff71e1cee8301fba92f70d1951",
+      "native_block": "[##_Image|kage@CQN9m/dJMcaaAy8p8/AAAAAAAAAAAAAAAAAAAAAHoG5CY758tMMtGfHcOFWvDo7em_h4HolXj4zs_GpWhB/img.png|alignCenter|width=\"100%\" alt=\"푸른 정밀 조형물로 표현한 Opus 5.5와 금색 커서 조형물로 표현한 GPT-6 Astra를 같은 비중으로 배치한 비교 이미지\"|_##]"
+    }
+  ],
+  "editor_html_before_sha256": "23576681a1b16683ec3f580b3d0243b398261857a99e852325fd9b43638411d2",
+  "editor_html_after_sha256": "2902daff05694d8f75fa308e539a4815178e2e7b53016646093f0fc138f82466",
+  "non_image_content_preserved": true,
+  "normalized_prose_comparison": "equal",
+  "metadata": {
+    "dates": [
+      "2026-09-29 23:41"
+    ],
+    "public": true,
+    "slug": "Opus-55-vs-GPT-6-Astra-AI-모델-비교"
+  },
+  "desktop_width": 1280,
+  "mobile_width": 360,
+  "live_images_loaded": true,
+  "raw_receipt": "receipt.json",
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "archive_note": "Existing full-post QA records are historical after this media change. This receipt validates the live image repair only; it does not claim the local article draft equals the published body."
+}

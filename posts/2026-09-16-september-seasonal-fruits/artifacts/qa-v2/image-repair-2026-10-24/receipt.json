@@ -1,0 +1,85 @@
+{
+  "id": 132,
+  "title": "9월 제철 과일 추천",
+  "url": "https://dop3n.tistory.com/entry/9%EC%9B%94-%EC%A0%9C%EC%B2%A0-%EA%B3%BC%EC%9D%BC-%EC%B6%94%EC%B2%9C",
+  "bundle": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-16-september-seasonal-fruits",
+  "images": [
+    {
+      "alt": "초가을 햇빛 아래 붉은 사과와 황금빛 배, 반으로 갈라 붉은 속이 보이는 무화과가 놓인 9월 과일 정물",
+      "complete": true,
+      "id": "september-seasonal-fruits-hero",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 1057.375,
+        "height": 414.875,
+        "left": 272,
+        "right": 1008,
+        "top": 642.5,
+        "width": 736,
+        "x": 272,
+        "y": 642.5
+      },
+      "src": "https://blog.kakaocdn.net/dna/Qw7iq/dJMcagAGK01/AAAAAAAAAAAAAAAAAAAAAOdJtflmOPwa_x0F5gUJq9ApGF2vbncMoJKOcBkpcvbV/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=9PpV5soEq7IVJdyTK0fR5Z1ocwY%3D"
+    }
+  ],
+  "previewImages": [
+    {
+      "alt": "초가을 햇빛 아래 붉은 사과와 황금빛 배, 반으로 갈라 붉은 속이 보이는 무화과가 놓인 9월 과일 정물",
+      "complete": true,
+      "id": "september-seasonal-fruits-hero",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 942.328125,
+        "height": 264.125,
+        "left": 36,
+        "right": 504,
+        "top": 678.203125,
+        "width": 468,
+        "x": 36,
+        "y": 678.203125
+      },
+      "src": "https://blog.kakaocdn.net/dna/Qw7iq/dJMcagAGK01/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VDrPvxj9qHUS85jy99xVSWeXIUCCnY0rsYzw2rjCviewKF_mjPVx6Xp5o_LUo2yCwZElL6NihPQ6A3XAc4TYu1/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=V3zsthUagoA4XQwXMC3Zx1hf8z4%3D"
+    }
+  ],
+  "mobile": [
+    {
+      "alt": "초가을 햇빛 아래 붉은 사과와 황금빛 배, 반으로 갈라 붉은 속이 보이는 무화과가 놓인 9월 과일 정물",
+      "complete": true,
+      "id": "september-seasonal-fruits-hero",
+      "naturalHeight": 720,
+      "naturalWidth": 1280,
+      "rect": {
+        "bottom": 586.25,
+        "height": 162.875,
+        "left": 36,
+        "right": 324,
+        "top": 423.375,
+        "width": 288,
+        "x": 36,
+        "y": 423.375
+      },
+      "src": "https://blog.kakaocdn.net/dna/Qw7iq/dJMcagAGK01/AAAAAAAAAAAAAAAAAAAAAOdJtflmOPwa_x0F5gUJq9ApGF2vbncMoJKOcBkpcvbV/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=9PpV5soEq7IVJdyTK0fR5Z1ocwY%3D"
+    }
+  ],
+  "metadata": {
+    "dates": [
+      "2026-09-17 00:14"
+    ],
+    "public": true,
+    "slug": "9월-제철-과일-추천"
+  },
+  "uploads": [
+    {
+      "id": "september-seasonal-fruits-hero",
+      "rawToken": "[##_Image|kage@Qw7iq/dJMcagAGK01/AAAAAAAAAAAAAAAAAAAAAOdJtflmOPwa_x0F5gUJq9ApGF2vbncMoJKOcBkpcvbV/img.png|alignCenter|width=\"100%\"|_##]",
+      "file": "/Users/ja2sng/dev/blog-workspace/posts/2026-09-16-september-seasonal-fruits/assets/september-seasonal-fruits-hero-v2.png",
+      "sha256": "835e4a138e2d1c394743619f3e05cd5bce871ec5a53371adbe0ea49f94be3880",
+      "embed": "[##_Image|kage@Qw7iq/dJMcagAGK01/AAAAAAAAAAAAAAAAAAAAAOdJtflmOPwa_x0F5gUJq9ApGF2vbncMoJKOcBkpcvbV/img.png|alignCenter|width=\"100%\" alt=\"초가을 햇빛 아래 붉은 사과와 황금빛 배, 반으로 갈라 붉은 속이 보이는 무화과가 놓인 9월 과일 정물\"|_##]"
+    }
+  ],
+  "contentPreserved": true,
+  "status": "repaired",
+  "checkedAt": "2026-10-24T02:09:54.277Z"
+}
