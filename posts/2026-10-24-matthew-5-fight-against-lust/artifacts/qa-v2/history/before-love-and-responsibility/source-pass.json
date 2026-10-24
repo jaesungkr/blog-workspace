@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T05:30:35.741888Z",
+  "checked_by": "review_thoughts_cadence",
+  "article_content_sha256": "dda487019725dbaa0a8813f7ddf288133ed1d758d7c3a89c4ca0ed0d0485effe",
+  "brief_sha256": "9660683fa80ffb4a399471a5a3d12e511cec3f5286ec9d3392628b0ba967df1b",
+  "evidence_sha256": "902c8d63bb1075528fe8a429e748fafc78e90ee71a2c054d1b181d87b03ca5eb",
+  "note": "익숙한 설교의 내용에서 생각의 책임에 관한 개인적 의문으로 이어지는 세 문단을 재검토했습니다. sermon-question-bridge-review.md 참조."
+}

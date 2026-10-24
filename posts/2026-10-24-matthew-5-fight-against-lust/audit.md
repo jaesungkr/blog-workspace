@@ -167,3 +167,11 @@
 - 원고와 기존 승인은 history/before-sermon-question-bridge에 보존했습니다. 새로운 경험·주장·결론을 추가하지 않았습니다.
 
 - 독립 재검토 결과: review_thoughts_cadence의 pass입니다. 독해 연결, 돈에 관한 다른 설교와 이번 설교의 구분, 실제 설교와 저자의 질문을 확인했습니다. article SHA256은 f44715fcb74f01dbc90e8712d6edfcac14ba483e1d2ffa95f112cfa67d9c1a1a입니다. blog.py check 오류·경고 0개이며 공백 검사와 Thoughts 사본 일치도 확인했습니다.
+
+## 비유의 질문을 사랑으로 수정하고 책임 설명의 긴장 추가
+
+- 사용자 요청에 따라 강아지 비유 마지막 문장을, 예측한 결과를 그대로 두었다면 정말 사랑한 것이 맞는지 묻는 표현으로 바꿨습니다.
+- 기존 인간·동물의 차이와 자유의지에 관한 문단 뒤에, 인간에게 필요한 일이었다는 설명을 가정할 때 인간의 잘못으로만 이야기하는 것이 맞는지 묻는 두 문장을 추가했습니다.
+- 새로운 교리 사실이나 실제 발언을 주장하지 않고 조건문과 저자의 느낌으로 표현했습니다. 원고·근거·승인은 history/before-love-and-responsibility에 보존했습니다.
+
+- 독립 재검토 결과: review_thoughts_cadence의 pass입니다. 사랑과 책임의 의문이 사용자 요청과 일치하고 조건문의 범위가 유지됨을 확인했습니다. article SHA256은 6f35956324ccb990fb56a9d9ab6f734f2afc6cae893cb415f76d214a58bd6a8f입니다. blog.py check 오류·경고 0개이며 공백 검사와 Thoughts 사본 일치도 확인했습니다.
