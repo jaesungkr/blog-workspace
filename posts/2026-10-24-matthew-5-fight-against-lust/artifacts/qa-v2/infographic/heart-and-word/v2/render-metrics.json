@@ -1,0 +1,159 @@
+{
+  "renderer": "Host-provisioned Node Playwright and Google Chrome; no runtime installation",
+  "viewport": [
+    640,
+    900
+  ],
+  "viewBox": [
+    320,
+    572
+  ],
+  "raster": [
+    640,
+    1144
+  ],
+  "metrics": [
+    {
+      "text": "마음에 말씀을 두기",
+      "family": "\"Instrument Serif\", \"Noto Serif KR\", serif",
+      "size": "28px",
+      "bbox": {
+        "x": 40,
+        "y": 28,
+        "width": 225.90625,
+        "height": 37
+      }
+    },
+    {
+      "text": "죄를 끊어 내기",
+      "family": "Geist, \"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "size": "12px",
+      "bbox": {
+        "x": 180,
+        "y": 198,
+        "width": 72.078125,
+        "height": 16
+      }
+    },
+    {
+      "text": "말씀을 두기",
+      "family": "Geist, \"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "size": "12px",
+      "bbox": {
+        "x": 180,
+        "y": 342,
+        "width": 58.125,
+        "height": 16
+      }
+    },
+    {
+      "text": "욕망을 숨기는 마음",
+      "family": "Geist, \"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "size": "16px",
+      "bbox": {
+        "x": 97.34375,
+        "y": 126,
+        "width": 125.3125,
+        "height": 21
+      }
+    },
+    {
+      "text": "회개하며",
+      "family": "Geist, \"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "size": "16px",
+      "bbox": {
+        "x": 130.5546875,
+        "y": 256,
+        "width": 58.890625,
+        "height": 21
+      }
+    },
+    {
+      "text": "돌이키는 마음",
+      "family": "Geist, \"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "size": "16px",
+      "bbox": {
+        "x": 113.953125,
+        "y": 280,
+        "width": 92.09375,
+        "height": 21
+      }
+    },
+    {
+      "text": "말씀으로 채워 가는 마음",
+      "family": "Geist, \"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "size": "16px",
+      "bbox": {
+        "x": 80.7421875,
+        "y": 408,
+        "width": 158.515625,
+        "height": 21
+      }
+    },
+    {
+      "text": "하나님을 향한 사랑과 말씀",
+      "family": "Geist, \"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "size": "12px",
+      "bbox": {
+        "x": 94.90625,
+        "y": 440,
+        "width": 130.1875,
+        "height": 16
+      }
+    }
+  ],
+  "fonts": [
+    {
+      "selector": "svg>text:first-of-type",
+      "fonts": [
+        {
+          "familyName": "Instrument Serif",
+          "postScriptName": "InstrumentSerif-Regular",
+          "isCustomFont": true,
+          "glyphCount": 2
+        },
+        {
+          "familyName": "Noto Serif KR ExtraLight",
+          "postScriptName": "NotoSerifKRExtraLight-Regular",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": "svg g[font-size=\"16\"] text",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 2
+        },
+        {
+          "familyName": "Noto Sans KR Thin",
+          "postScriptName": "NotoSansKR-Thin_SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": "svg g[font-size=\"12\"] text",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist-Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        },
+        {
+          "familyName": "Noto Sans KR Thin",
+          "postScriptName": "NotoSansKR-Thin_Medium",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

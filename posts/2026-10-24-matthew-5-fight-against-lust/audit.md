@@ -62,3 +62,20 @@
 - 보호한 내용: 호감 자체와 정욕의 구별, 암논·다윗의 행동, 회개와 삶의 변화, 공동체·예배·말씀, 예수님의 십자가 승리와 성령. 사용자 경험이나 새 적용은 추가하지 않았습니다.
 - 이전 요약과 검토 기록은 artifacts/qa-v2/history/summary-v1/에 보존했습니다. 현재 요약은 독립 재검토를 거칩니다. 전체 글은 Thoughts 작성 전 reviewing 상태를 유지합니다.
 - 수정 후 독립 검토: review_sermon_draft가 현재 파일을 다시 읽고 녹취와 대조하여 draft_summary_pass를 기록했습니다. 간접 해설 말투의 감소, 문단 연결과 근거 보존을 확인했으며 추가 수정 요청은 없었습니다. 도식 바이트와 근거 관계는 변하지 않아 이미지 검수를 반복하지 않았습니다.
+
+## diagram-design 직접 적용: v2 도식
+
+- 사용자 요청에 따라 기존 도식을 diagram-design의 상태 변화형 도식으로 다시 구성했습니다. 사용자가 스타일 질문에 “diagram-design 기본 회색·주황색 사용”을 선택했습니다.
+- 기본 스타일을 적용하되 전역 스타일과 프로젝트 프로필은 변경하지 않았습니다.
+- 구조: 욕망을 숨기는 마음 → 회개하며 돌이키는 마음 → 하나님을 향한 사랑과 말씀으로 채워 가는 마음. C6·C8에 한정하며 자동적·불가역적인 성공 단계를 뜻하지 않습니다.
+- 원본: artifacts/qa-v2/infographic/heart-and-word/v2/heart-and-word-diagram-v2.html. 같은 폴더에 SVG와 렌더링 기록이 있습니다.
+- PNG: assets/heart-and-word-diagram-v2.png, 640×1144, SHA-256 263a7aa32f6fc1550c212407ecf731e094f4f61741d37d5e8f94ba5ba4d6b786. 게시 폭은 320px입니다.
+- 제목은 Instrument Serif/Noto Serif KR, 이름은 Geist/Noto Sans KR입니다. 실제 웹 폰트 로드와 요청 실패가 없음을 확인했습니다.
+- self_check.py 통과, export_svg.py 실행. PNG는 기존 호스트 제공 Node Playwright와 Google Chrome으로 출력했으며 의존성을 설치하지 않았습니다.
+- HTML은 320px 최소 폭과 내부 스크롤을 유지하며 PNG에는 불투명 회색 배경이 있습니다.
+- 본문·성경·Thoughts는 수정하지 않았으며 article.md의 SHA-256은 기존 독립 검토 당시와 같습니다. 동일 미디어 ID에 새 후보를 연결했습니다.
+- v1과 승인 이력은 보존했습니다. 새 도식의 독립 검수와 글 전체의 승인은 구분합니다.
+
+- v2 독립 검수 발견: 마지막 상태 아래에 의미 없는 여백 100px가 남았습니다. 범례가 없어 불필요했던 60px를 삭제하고, 바깥 여백 40px만 남긴 v3으로 수정했습니다. 문구와 요소 위치는 유지했습니다.
+- 새 후보: assets/heart-and-word-diagram-v3.png, 640×1024, SHA-256 39a0263af95f017d79d50a29f6dfa1f070a898289946b4b8ea7127fd82e00eb9. 동일 후보의 전체 재검사를 요청합니다.
+- v3 독립 재검수: review_sermon_diagram이 원본·320px 게시 표시·360px 화면 및 모든 글자·전환·화살촉 확대 영역을 다시 검사하여 pass를 기록했습니다. 하단 여백은 약 39.4px이며 12px 한국어 가독성, 글자 간격, 연결선과 근거가 유지되었습니다. 기록은 v3/infographic-review.md에 보존하고 새 PNG만 validated로 등록합니다.

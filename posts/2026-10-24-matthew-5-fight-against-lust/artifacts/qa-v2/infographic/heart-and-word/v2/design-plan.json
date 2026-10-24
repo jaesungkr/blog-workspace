@@ -1,0 +1,37 @@
+{
+  "creator": "Codex",
+  "skill": "diagram-design",
+  "style_choice": "user-selected shipped default gray-orange",
+  "palette": {
+    "paper": "#f5f5f5",
+    "ink": "#2d3142",
+    "muted": "#4f5d75",
+    "accent": "#bf4520"
+  },
+  "type": "state",
+  "semantic_pattern": "none; the sermon does not describe a finite software lifecycle",
+  "size_preset": "fit",
+  "viewBox": [
+    0,
+    0,
+    320,
+    572
+  ],
+  "type_ramp": "presentation node-name 16; default title 28; Korean transition labels 12",
+  "primary_nodes": 3,
+  "arrows": 2,
+  "focal_nodes": 1,
+  "claim_ids": [
+    "C6",
+    "C8"
+  ],
+  "placement": "existing heart-and-word-diagram directive after summary 3",
+  "cuts": [
+    "No survey numbers or sermon-wide summary",
+    "No claim of automatic or irreversible spiritual progress",
+    "No terminal success state or invented relapse transitions"
+  ],
+  "font_source": "web, as shipped default; actual resolution must be checked",
+  "content_boundary": "Conceptual relation from the supplied sermon, not a measured or compulsory sequence",
+  "profile_persistence": "No global style guide or project marker changed"
+}

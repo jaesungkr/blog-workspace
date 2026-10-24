@@ -1,0 +1,75 @@
+{
+  "method": "Original pixels, summed RGB distance >110; viewBox logical units are half raster pixels.",
+  "bounds": [
+    {
+      "name": "title",
+      "logical": {
+        "left": 41,
+        "top": 31.5,
+        "right": 262,
+        "bottom": 59,
+        "height": 27.5
+      }
+    },
+    {
+      "name": "first-transition",
+      "logical": {
+        "left": 180.5,
+        "top": 199.5,
+        "right": 251,
+        "bottom": 211,
+        "height": 11.5
+      }
+    },
+    {
+      "name": "second-transition",
+      "logical": {
+        "left": 180.5,
+        "top": 343.5,
+        "right": 237,
+        "bottom": 355,
+        "height": 11.5
+      }
+    },
+    {
+      "name": "middle-line1",
+      "logical": {
+        "left": 131,
+        "top": 258.5,
+        "right": 188,
+        "bottom": 273.5,
+        "height": 15
+      }
+    },
+    {
+      "name": "middle-line2",
+      "logical": {
+        "left": 114.5,
+        "top": 282.5,
+        "right": 205.5,
+        "bottom": 297.5,
+        "height": 15
+      }
+    },
+    {
+      "name": "final-main",
+      "logical": {
+        "left": 81.5,
+        "top": 410.5,
+        "right": 238.5,
+        "bottom": 425.5,
+        "height": 15
+      }
+    },
+    {
+      "name": "final-support",
+      "logical": {
+        "left": 95,
+        "top": 441.5,
+        "right": 224.5,
+        "bottom": 453,
+        "height": 11.5
+      }
+    }
+  ]
+}
