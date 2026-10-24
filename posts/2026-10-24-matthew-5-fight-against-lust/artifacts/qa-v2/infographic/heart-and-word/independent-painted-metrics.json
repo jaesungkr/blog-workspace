@@ -1,0 +1,151 @@
+{
+  "method": "Direct pixel bounds of original raster, distance from #f7f4ee greater than 100 summed RGB; no derivative image produced.",
+  "bounds": [
+    {
+      "name": "headline",
+      "source_pixels": {
+        "left": 68,
+        "top": 58,
+        "right": 650,
+        "bottom": 108,
+        "width": 583,
+        "height": 51
+      },
+      "logical": {
+        "left": 34,
+        "top": 29,
+        "right": 325.5,
+        "bottom": 54.5,
+        "height": 25.5
+      }
+    },
+    {
+      "name": "hidden-main",
+      "source_pixels": {
+        "left": 305,
+        "top": 208,
+        "right": 618,
+        "bottom": 251,
+        "width": 314,
+        "height": 44
+      },
+      "logical": {
+        "left": 152.5,
+        "top": 104,
+        "right": 309.5,
+        "bottom": 126,
+        "height": 22
+      }
+    },
+    {
+      "name": "hidden-support",
+      "source_pixels": {
+        "left": 305,
+        "top": 295,
+        "right": 680,
+        "bottom": 330,
+        "width": 376,
+        "height": 36
+      },
+      "logical": {
+        "left": 152.5,
+        "top": 147.5,
+        "right": 340.5,
+        "bottom": 165.5,
+        "height": 18
+      }
+    },
+    {
+      "name": "repent-main",
+      "source_pixels": {
+        "left": 305,
+        "top": 488,
+        "right": 656,
+        "bottom": 532,
+        "width": 352,
+        "height": 45
+      },
+      "logical": {
+        "left": 152.5,
+        "top": 244,
+        "right": 328.5,
+        "bottom": 266.5,
+        "height": 22.5
+      }
+    },
+    {
+      "name": "repent-support",
+      "source_pixels": {
+        "left": 305,
+        "top": 575,
+        "right": 642,
+        "bottom": 610,
+        "width": 338,
+        "height": 36
+      },
+      "logical": {
+        "left": 152.5,
+        "top": 287.5,
+        "right": 321.5,
+        "bottom": 305.5,
+        "height": 18
+      }
+    },
+    {
+      "name": "word-main",
+      "source_pixels": {
+        "left": 306,
+        "top": 768,
+        "right": 701,
+        "bottom": 811,
+        "width": 396,
+        "height": 44
+      },
+      "logical": {
+        "left": 153,
+        "top": 384,
+        "right": 351,
+        "bottom": 406,
+        "height": 22
+      }
+    },
+    {
+      "name": "word-support",
+      "source_pixels": {
+        "left": 305,
+        "top": 855,
+        "right": 714,
+        "bottom": 890,
+        "width": 410,
+        "height": 36
+      },
+      "logical": {
+        "left": 152.5,
+        "top": 427.5,
+        "right": 357.5,
+        "bottom": 445.5,
+        "height": 18
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "group": 1,
+      "gap": 21.5,
+      "smaller_height": 18,
+      "ratio": 1.1944444444444444
+    },
+    {
+      "group": 2,
+      "gap": 21,
+      "smaller_height": 18,
+      "ratio": 1.1666666666666667
+    },
+    {
+      "group": 3,
+      "gap": 21.5,
+      "smaller_height": 18,
+      "ratio": 1.1944444444444444
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "draft",
+  "primary_reader": "김한나 목사님의 설교를 요약으로 되짚고 자신의 Thoughts를 쓰려는 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": true,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "사용자가 Thoughts를 직접 작성한다고 명시한 요약 선행 초안입니다. 본문과 설교 요약 및 도식 후보까지만 준비하고, Thoughts와 첫인칭 고백은 대신 작성하지 않습니다. 사용자에게 명시적으로 호출된 blog-diagram-design으로 편집 가능한 HTML/SVG 도식을 제작하며 max-txt2img 경로의 영구 변경으로 해석하지 않습니다. 대표 이미지는 Thoughts를 받은 뒤 별도 제작·검수합니다. source freeze, 원격 미디어와 최종 HTML 전달은 후속 단계입니다. 직접 캡처·GIF·추가 폭·두 번째 원격 관찰은 불필요합니다. 최초 외부 대조는 번들 초기화 직전에 수행했으며 본 기록을 사전 라우팅으로 소급하지 않습니다."
+}

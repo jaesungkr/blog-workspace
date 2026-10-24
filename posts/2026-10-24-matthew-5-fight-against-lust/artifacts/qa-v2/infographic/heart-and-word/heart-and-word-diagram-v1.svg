@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" role="img" aria-labelledby="heart-word-title heart-word-desc" id="heart-and-word-diagram-v1-root">
+<title id="heart-word-title">비워 낸 마음에 말씀을 두기</title>
+<desc id="heart-word-desc">죄를 숨기던 마음에서 회개하며 죄로 이끄는 것을 끊어 내고, 하나님을 향한 사랑과 말씀으로 마음을 채우는 설교의 권면을 보여 줍니다.</desc>
+<defs><marker id="heart-and-word-diagram-v1-heart-word-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#77716a" stroke-width="1.5"/></marker></defs>
+<rect width="480" height="520" fill="#f7f4ee"/>
+<g font-family="'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif" fill="#292d32">
+<text x="32" y="52" font-size="28" font-weight="600">비워 낸 마음에 말씀을 두기</text>
+<!-- Arrows occupy their own quiet column and never pass behind text. -->
+<path d="M80 172 V224" fill="none" stroke="#77716a" stroke-width="1.5" marker-end="url(#heart-and-word-diagram-v1-heart-word-arrow)"/>
+<path d="M80 312 V364" fill="none" stroke="#77716a" stroke-width="1.5" marker-end="url(#heart-and-word-diagram-v1-heart-word-arrow)"/>
+<!-- A closed interior, then an opened boundary, then the same interior holding a book. -->
+<rect x="40" y="92" width="80" height="80" rx="4" fill="#efebe4" stroke="#77716a" stroke-width="1.5"/>
+<g fill="none" stroke="#77716a" stroke-width="2" stroke-linecap="round"><path d="M56 112 C100 100 60 152 104 140 M60 148 C52 116 112 152 100 112 M56 124 L100 148 M72 108 L88 156"/></g>
+<text x="152" y="124" font-size="24" font-weight="600">죄를 숨기던 마음</text>
+<text x="152" y="164" font-size="20" fill="#625c55">은밀한 자리에 품은 욕망</text>
+<path d="M120 232 H44 Q40 232 40 236 V308 Q40 312 44 312 H120" fill="none" stroke="#77716a" stroke-width="1.5"/>
+<path d="M60 284 L76 264 M80 288 L92 276" fill="none" stroke="#77716a" stroke-width="2" stroke-linecap="round"/>
+<path d="M104 272 H132" stroke="#77716a" stroke-width="1.5" marker-end="url(#heart-and-word-diagram-v1-heart-word-arrow)"/>
+<text x="152" y="264" font-size="24" font-weight="600">회개하며 끊어 내기</text>
+<text x="152" y="304" font-size="20" fill="#625c55">죄로 이끄는 것을 버림</text>
+<rect x="40" y="372" width="80" height="80" rx="4" fill="#f8e9df" stroke="#b74420" stroke-width="1.5"/>
+<g fill="none" stroke="#b74420" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M80 396 Q68 388 56 396 V428 Q68 420 80 428 Q92 420 104 428 V396 Q92 388 80 396 V428"/><path d="M62 402 Q68 398 74 402 M86 402 Q92 398 98 402 M62 410 Q68 406 74 410 M86 410 Q92 406 98 410"/></g>
+<text x="152" y="404" font-size="24" font-weight="600" fill="#a73a1b">말씀으로 채우는 마음</text>
+<text x="152" y="444" font-size="20" fill="#625c55">하나님을 향한 사랑과 말씀</text>
+</g></svg>

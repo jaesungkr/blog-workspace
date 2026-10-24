@@ -1,0 +1,4 @@
+rich-post-v2: revision_required
+media 1 · directives 1
+ERROR: media.json `lead_id` must reference a registered item
+ERROR: exactly one media item must use role `lead` and match lead_id

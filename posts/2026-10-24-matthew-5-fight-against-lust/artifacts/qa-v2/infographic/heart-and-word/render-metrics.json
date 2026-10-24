@@ -1,0 +1,98 @@
+{
+  "renderer": "Playwright Node Chromium",
+  "canvas": [
+    480,
+    520
+  ],
+  "raster": [
+    960,
+    1040
+  ],
+  "metrics": [
+    {
+      "text": "비워 낸 마음에 말씀을 두기",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", system-ui, sans-serif",
+      "size": "28px",
+      "bbox": {
+        "x": 32,
+        "y": 27,
+        "width": 295.890625,
+        "height": 33
+      }
+    },
+    {
+      "text": "죄를 숨기던 마음",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", system-ui, sans-serif",
+      "size": "24px",
+      "bbox": {
+        "x": 152,
+        "y": 102,
+        "width": 157.953125,
+        "height": 29
+      }
+    },
+    {
+      "text": "은밀한 자리에 품은 욕망",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", system-ui, sans-serif",
+      "size": "20px",
+      "bbox": {
+        "x": 152,
+        "y": 146,
+        "width": 188.78125,
+        "height": 24
+      }
+    },
+    {
+      "text": "회개하며 끊어 내기",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", system-ui, sans-serif",
+      "size": "24px",
+      "bbox": {
+        "x": 152,
+        "y": 242,
+        "width": 178.71875,
+        "height": 29
+      }
+    },
+    {
+      "text": "죄로 이끄는 것을 버림",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", system-ui, sans-serif",
+      "size": "20px",
+      "bbox": {
+        "x": 152,
+        "y": 286,
+        "width": 171.484375,
+        "height": 24
+      }
+    },
+    {
+      "text": "말씀으로 채우는 마음",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", system-ui, sans-serif",
+      "size": "24px",
+      "bbox": {
+        "x": 152,
+        "y": 382,
+        "width": 199.46875,
+        "height": 29
+      }
+    },
+    {
+      "text": "하나님을 향한 사랑과 말씀",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", system-ui, sans-serif",
+      "size": "20px",
+      "bbox": {
+        "x": 152,
+        "y": 426,
+        "width": 206.09375,
+        "height": 24
+      }
+    }
+  ],
+  "actualFonts": [
+    {
+      "familyName": "Apple SD Gothic Neo",
+      "postScriptName": "AppleSDGothicNeo-SemiBold",
+      "isCustomFont": false,
+      "glyphCount": 15
+    }
+  ]
+}
