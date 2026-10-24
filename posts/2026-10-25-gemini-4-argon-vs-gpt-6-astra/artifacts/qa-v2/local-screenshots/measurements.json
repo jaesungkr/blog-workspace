@@ -1,0 +1,118 @@
+[
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/preflight/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+    "inner_width": 1280,
+    "inner_height": 900,
+    "client_width": 1280,
+    "client_height": 900,
+    "scroll_width": 1280,
+    "scroll_height": 6282,
+    "h1_count": 1,
+    "toc_anchor_count": 7,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/assets/gemini-4-argon-vs-gpt-6-astra-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "full_height": 6282,
+    "scope": "creator_local_preflight_only",
+    "browser": "Chrome/155.0.8059.85"
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/preflight/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+    "inner_width": 360,
+    "inner_height": 800,
+    "client_width": 360,
+    "client_height": 800,
+    "scroll_width": 360,
+    "scroll_height": 8934,
+    "h1_count": 1,
+    "toc_anchor_count": 7,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/assets/gemini-4-argon-vs-gpt-6-astra-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "light",
+    "width": 360,
+    "height": 800,
+    "full_height": 8934,
+    "scope": "creator_local_preflight_only",
+    "browser": "Chrome/155.0.8059.85"
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/preflight-dark/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+    "inner_width": 1280,
+    "inner_height": 900,
+    "client_width": 1280,
+    "client_height": 900,
+    "scroll_width": 1280,
+    "scroll_height": 6282,
+    "h1_count": 1,
+    "toc_anchor_count": 7,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/assets/gemini-4-argon-vs-gpt-6-astra-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "dark",
+    "width": 1280,
+    "height": 900,
+    "full_height": 6282,
+    "scope": "creator_local_preflight_only",
+    "browser": "Chrome/155.0.8059.85"
+  },
+  {
+    "ready_state": "complete",
+    "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/preflight-dark/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+    "inner_width": 360,
+    "inner_height": 800,
+    "client_width": 360,
+    "client_height": 800,
+    "scroll_width": 360,
+    "scroll_height": 8934,
+    "h1_count": 1,
+    "toc_anchor_count": 7,
+    "toc_targets_unique": true,
+    "image_count": 1,
+    "images_loaded": true,
+    "images": [
+      {
+        "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/assets/gemini-4-argon-vs-gpt-6-astra-hero-v1.png",
+        "complete": true,
+        "natural_width": 1672,
+        "natural_height": 941
+      }
+    ],
+    "theme": "dark",
+    "width": 360,
+    "height": 800,
+    "full_height": 8934,
+    "scope": "creator_local_preflight_only",
+    "browser": "Chrome/155.0.8059.85"
+  }
+]

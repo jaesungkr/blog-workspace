@@ -1,0 +1,16 @@
+/* Keep this article's compact comparison tables readable without side scrolling. */
+@media (max-width: 640px) {
+  .devlog-rich .rich-table-wrap table {
+    min-width: 0;
+    table-layout: fixed;
+    font-size: 14px;
+  }
+  .devlog-rich .rich-table-wrap th,
+  .devlog-rich .rich-table-wrap td {
+    padding: 10px 8px;
+    overflow-wrap: anywhere;
+  }
+  .devlog-rich .rich-table-wrap th:first-child {
+    width: 48%;
+  }
+}

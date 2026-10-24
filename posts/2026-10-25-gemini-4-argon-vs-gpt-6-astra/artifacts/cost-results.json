@@ -1,0 +1,31 @@
+{
+  "kind": "arithmetic_scenario_not_api_test",
+  "actor": "Codex",
+  "as_of": "2026-10-25",
+  "usage": {
+    "input_tokens": 100000,
+    "billable_output_tokens": 10000
+  },
+  "cost_usd": {
+    "argon_intro": "0.3",
+    "argon_december": "0.6",
+    "astra_standard": "1.5"
+  },
+  "equal_token_intro_price_ratio": "5",
+  "aa_observed_task_cost": {
+    "argon_high": "1.99",
+    "astra_max": "3.26"
+  },
+  "aa_observed_cost_ratio": "1.638190954773869346733668342",
+  "exclusions": [
+    "cache",
+    "tools",
+    "batch/flex",
+    "fast",
+    "retries"
+  ],
+  "assumptions": [
+    "billable output includes thinking tokens",
+    "input below Astra 272K surcharge"
+  ]
+}

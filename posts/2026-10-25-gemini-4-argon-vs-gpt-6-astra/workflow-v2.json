@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "ChatGPT나 Gemini를 업무에 쓰며 새 모델로 바꿀 이유를 알고 싶은 일반 사용자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 성능표와 공개 사용 후기를 분리한 standard-rich 비교. 익숙한 AI에서 갈아탈 이유를 묻는 독자에게 현재 도구를 유지하되 막히는 업무로 대안을 시험하도록 권한다. 생성 히어로는 승인된 v9 비교 템플릿을 따른다. max-txt2img와 diagram-design을 검토했으나 입력 형식·성능·비용은 짧은 HTML 표가 모바일에서 더 명확해 supporting infographic은 not_applicable. 직접 사용·실험 성능은 주장하지 않는다.",
+  "publication_mode": "codex-browser"
+}

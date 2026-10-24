@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "lead_id": "hero",
+  "items": [
+    {
+      "id": "hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C02",
+        "C03",
+        "C15"
+      ],
+      "actor": "Codex / built-in imagegen",
+      "source_url": "",
+      "publish_path": "assets/gemini-4-argon-vs-gpt-6-astra-hero-v1.png",
+      "tistory_url": "",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original generated artwork; reference is the author-approved dev.log v9 artwork",
+      "alt": "파란 겹판 별과 초록 커서 조형물이 Gemini 4 Argon과 GPT-6 Astra를 각각 나타냅니다.",
+      "caption": "다양한 자료를 받는 Argon과 복잡한 코드 작업에 쓰는 Astra를 상징한 비교 이미지입니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "20ec7448274b5226bd8fee70e1440a2e13645a6b8a4c750713b1466986ae2af9",
+      "status": "validated",
+      "generation_prompt": "artifacts/qa-v2/hero/prompt-v1.txt",
+      "validation_record": "artifacts/qa-v2/hero/validation-v1.md"
+    }
+  ]
+}
