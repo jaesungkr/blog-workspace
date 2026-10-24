@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T05:18:20.431441Z",
+  "checked_by": "review_thoughts_cadence",
+  "article_content_sha256": "90e8dc8a1d343bfe426b62332c0f087ee75b9b659af1fe8d322af69d38458e0d",
+  "brief_sha256": "9660683fa80ffb4a399471a5a3d12e511cec3f5286ec9d3392628b0ba967df1b",
+  "evidence_sha256": "9c9bcd9367c3f04323c6ef60052717eed9008ebf5d9fa18b71d117a2ee9e88b8",
+  "note": "기존 전체 원고 검토에 이어 사용자 지정 두 대목의 문구와 발언 귀속을 재검토했습니다. thoughts-attribution-review.md 참조."
+}

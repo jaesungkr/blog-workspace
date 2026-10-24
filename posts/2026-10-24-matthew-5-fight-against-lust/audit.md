@@ -134,3 +134,11 @@
 - 두 대목과 근거 기록만 수정했으며 전체 Thoughts 사본을 동기화했습니다. 이전 source pass는 history/before-thoughts-attribution에 보존하고 기존 독립 검토자에게 변경 대목 재검토를 요청합니다.
 
 - 두 대목 독립 재검토 결과: pass. review_thoughts_cadence가 다른 설교와의 비교 및 가정 표현을 확인했습니다. article SHA256은 89ca8b2c53207646e0cc4f30d9936f25a9f79c9362fed58e58ed46d0edded28d입니다. blog.py check 오류·경고 0개이며 source pass를 갱신했습니다.
+
+## 음식 예시에 기준의 일관성 질문 추가
+
+- 사용자가 몸을 소중히 지킨다는 같은 원리에도 행동에 따라 경고의 기준이 달라 보인다는 생각을 덧붙이도록 요청했습니다.
+- 과도한 식사가 죄인지 묻는 문단 다음에 새 문단을 넣었습니다. 다음 문단의 먹고 싶은 생각 자체에 관한 질문까지 자연스럽게 이어지는지 검토합니다.
+- 기독교가 음식의 절제를 전혀 가르치지 않는다는 보편적 사실 주장으로 바꾸지 않고, 저자가 접한 설명에 관한 인상으로 표현했습니다. 이전 원고와 승인은 history/before-thoughts-consistency에 보존했습니다.
+
+- 추가 문단 독립 검토 결과: review_thoughts_cadence의 pass입니다. 저자가 접한 설교에 관한 인상으로 한정되고 전후 예시가 자연스럽게 연결됨을 확인했습니다. article SHA256은 7ba365280fd535f6cf6c7fd6a95670609668b520062c4b48a7e170c4cb11b168입니다. blog.py check 오류·경고 0개, diff 공백 검사와 Thoughts 사본 일치 확인을 완료했습니다.

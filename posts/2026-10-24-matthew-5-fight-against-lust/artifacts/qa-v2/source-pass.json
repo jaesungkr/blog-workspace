@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T05:18:20.431441Z",
+  "checked_at": "2026-10-24T05:20:28.369263Z",
   "checked_by": "review_thoughts_cadence",
-  "article_content_sha256": "90e8dc8a1d343bfe426b62332c0f087ee75b9b659af1fe8d322af69d38458e0d",
+  "article_content_sha256": "338e7bdfcd3d6a4293faaf52a3370df1ac0914e683b10050a11c1df253e0024c",
   "brief_sha256": "9660683fa80ffb4a399471a5a3d12e511cec3f5286ec9d3392628b0ba967df1b",
-  "evidence_sha256": "9c9bcd9367c3f04323c6ef60052717eed9008ebf5d9fa18b71d117a2ee9e88b8",
-  "note": "기존 전체 원고 검토에 이어 사용자 지정 두 대목의 문구와 발언 귀속을 재검토했습니다. thoughts-attribution-review.md 참조."
+  "evidence_sha256": "5776be1051da4ddba5d32e36f859bbed97c229fc38aa9b3a7b7316e157e7ef85",
+  "note": "기존 원고 검토에 이어 사용자 추가 문단의 기준 일관성 질문, 저자성 및 문맥을 재검토했습니다. thoughts-consistency-review.md 참조."
 }
