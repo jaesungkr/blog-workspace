@@ -1,0 +1,46 @@
+{
+  "status": "published_and_live_verified",
+  "post_id": 146,
+  "url": "https://dop3n.tistory.com/entry/REA%EB%9E%80-AI%EB%A1%9C-%EC%95%B1%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC%EB%A5%BC-%EC%95%8C%EC%95%84%EB%82%B4%EB%8A%94-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EB%8F%84%EA%B5%AC",
+  "title": "REA란? 메모 앱으로 이해하는 소프트웨어 역공학",
+  "original_publication_date": "2026-10-17 12:21",
+  "category": "Log/개발 · 디지털",
+  "verified_at": "2026-10-24T20:16:25.935702+09:00",
+  "verified_by": "/root",
+  "approval_record_sha256": "4f250581bdbc34ca1cdfd47208192aa65ffe2fe2abfdd363a54c9a1f46ca79db",
+  "submitted_fragment_sha256": "fb2aacd2b88eceb01c9c7c49c222f4a08cb41a853b6e937f6ea55adde4b7ba37",
+  "submitted_fragment_path": "artifacts/qa-v2/publication-2026-10-24/editor-submission-observed.html",
+  "public_test_checks": [
+    "approved title/body",
+    "original URL/date/category",
+    "three native image blocks loaded with alt",
+    "1280 and 360 light/dark actual page",
+    "no horizontal page overflow after fresh viewport load",
+    "table fits article width",
+    "TOC targets resolve",
+    "exact three code blocks preserved after highlight",
+    "mobile code horizontal scroll observed"
+  ],
+  "browser": "Codex in-app browser via CUA",
+  "independent_review": "artifacts/qa-v2/publication-2026-10-24/independent-page-review.md",
+  "strict_helper_gate": {
+    "status": "not_run",
+    "reason": "capture_rich_qa_v2.py requires external Chrome/CDP, forbidden by higher-priority CUA-only browser instructions; actual CUA captures and independent visual review used; no fabricated helper receipt or finalizer pass"
+  },
+  "measurements": "artifacts/qa-v2/publication-2026-10-24/live-measurements.json",
+  "screenshots": [
+    "artifacts/qa-v2/publication-2026-10-24/live-light-1280.jpg",
+    "artifacts/qa-v2/publication-2026-10-24/live-light-360.jpg",
+    "artifacts/qa-v2/publication-2026-10-24/live-dark-1280.jpg",
+    "artifacts/qa-v2/publication-2026-10-24/live-dark-360.jpg"
+  ],
+  "proof_screenshot": "artifacts/qa-v2/publication-2026-10-24/live-published-final.jpg",
+  "strict_v2_check_after_publication": {
+    "result": "revision_required",
+    "errors": [
+      "missing artifacts/qa-v2/final-page.json for paste-ready output",
+      "paste-ready output requires a current final-page pass"
+    ],
+    "distinction": "publication actually succeeded and live was verified; the external-Chrome-only automated gate was not executed under CUA-only instructions"
+  }
+}

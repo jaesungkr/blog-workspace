@@ -4,7 +4,7 @@ slug: rea-open-source
 date: 2026-10-17
 category: "Log"
 subcategory: "개발 · 디지털"
-status: reviewing
+status: published
 format: rich-post-v2
 tags: [REA, 오픈소스, 역공학, AI, 개발도구]
 summary: "REA에 무엇을 넣고 어떤 결과를 얻는지, 메모 앱의 내보내기 기능을 조사한 과정으로 설명합니다."

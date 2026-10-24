@@ -13,7 +13,7 @@
       "source_url": "https://raw.githubusercontent.com/morluto/rea/0c7b6d834af2d044b23196e0e522cc2468327a1e/website/public/assets/social-card.svg",
       "raw_path": "artifacts/sources/website--public--assets--social-card.svg",
       "publish_path": "assets/rea-official-lead.png",
-      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAABtFhPSisUJdbXxi2x5BNN0lX7XQJOTboZvRRoGWRwcf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtwZBbJrq0uqyUk%252FgmBCxXJHu2u8%253D",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UCP6QWxA36uNC2bjZABxmQSytUiXo2h-L42oKcK2nLewHc97RtUjqrsNmOtz75u-kaRuzBNw3JTw6f_O52T2X4%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdoVNEKYKiRDHITzp%252FWt4maXmt9I%253D",
       "width": 1200,
       "height": 630,
       "placement": "after:opening",
@@ -26,7 +26,8 @@
       ],
       "redactions": [],
       "sha256": "f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@yDE89/dJMcaa1sAE5/AAAAAAAAAAAAAAAAAAAAABtFhPSisUJdbXxi2x5BNN0lX7XQJOTboZvRRoGWRwcf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=twZBbJrq0uqyUk%2FgmBCxXJHu2u8%3D|CDM|1.3|{\"originWidth\":1200,\"originHeight\":630,\"style\":\"alignCenter\",\"filename\":\"rea-official-lead.png\",\"alt\":\"AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드\"}_##]"
     },
     {
       "id": "rea-notes-flow",
@@ -41,7 +42,7 @@
       "source_url": "",
       "raw_path": "",
       "publish_path": "assets/rea-notes-flow-v1.png",
-      "tistory_url": "",
+      "tistory_url": "https://blog.kakaocdn.net/dna/b0NkCE/dJMcadjOmFu/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U5OGuQytD02vJ3aj33kGhR42qiSZD9t9-7r01Weu0NdcabFIrH8Z6JYiBAPDgvCzxP3PuzCnO49tiSnz_gsa_7/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=d3ci3mbEsUUi2zaRJaGOHtsaJ3A%3D",
       "width": 1024,
       "height": 1536,
       "display_width": 540,
@@ -52,7 +53,8 @@
       "processing": [],
       "redactions": [],
       "sha256": "03869a32b8e065a1e8df558d57fdc6a8c473063698ab2c1976ead2e333acceff",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@b0NkCE/dJMcadjOmFu/AAAAAAAAAAAAAAAAAAAAADbXNYcMGOQabvmL6K2MaKMl5_X_JLPBkmcKi5zdEr2X/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=ob8xDS2E9pc2b8QGJWEfgq%2FFsP0%3D|CDM|1.3|{\"originWidth\":1024,\"originHeight\":1536,\"style\":\"alignCenter\",\"filename\":\"rea-notes-flow-v1.png\",\"alt\":\"버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림\"}_##]"
     },
     {
       "id": "rea-csv-escaping",
@@ -66,7 +68,7 @@
       "source_url": "",
       "raw_path": "",
       "publish_path": "assets/rea-csv-escaping-v2.jpg",
-      "tistory_url": "",
+      "tistory_url": "https://blog.kakaocdn.net/dna/dFz0h3/dJMcahTKVJR/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VoAA8iCVp4rxjOvSlIN5uBysAcbHDNCB7SMGcOJ2rCjZw6h8e0gtDTzjcd9rQ_b-f2yVo4GbwKfTMTWSsHso6-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=buATBizNw5e3ZthaXcyCcKk3Bbg%3D",
       "width": 1280,
       "height": 1760,
       "display_width": 540,
@@ -77,7 +79,8 @@
       "processing": [],
       "redactions": [],
       "sha256": "ffd6982ae5268692a58120e9e314a2603074a54280aaee75965b0c7b4f1e1016",
-      "status": "validated"
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@dFz0h3/dJMcahTKVJR/AAAAAAAAAAAAAAAAAAAAAC1Xdpa-W0TScardOCmvYr8je0thNzgr59migvAoi_PB/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=kHoTXTD%2F7GSSkMKnDrLY7WYB1bQ%3D|CDM|1.3|{\"originWidth\":1280,\"originHeight\":1760,\"style\":\"alignCenter\",\"filename\":\"rea-csv-escaping-v2.jpg\",\"alt\":\"제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림\"}_##]"
     }
   ]
 }

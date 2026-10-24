@@ -277,3 +277,25 @@ blog.py check는 오류·경고 0개이며 rich-post-v2 검사도 통과했습�
 네 전체 JPEG와 실제 DOM 측정은 clarity 디렉터리에 있습니다. self-contained review.html과 outputs/rea-review.html은 현재 원고·3개 이미지·새 캡션·현재 CSS를 반영합니다. outputs/rea-revised-article.md도 갱신했습니다. viewport override는 해제했고 검토용 탭을 유지했습니다. 현재는 reviewing인 저자 검토 후보이며 Tistory 편집기·공개 글은 수정하지 않았습니다. 이전의 발행 승인이나 최종 page 승인 기록을 재사용하지 않습니다.
 
 검사 결과: 이 글의 blog.py check는 오류·경고 0개, rich-post-v2 검사도 pass입니다. 로컬 CSS 변경에 따라 69개 단위 테스트도 실행해 모두 통과했습니다. 전체 85개 글 검사는 시작 전부터 삭제 상태였던 다른 세 글의 대표 이미지가 없어 오류 3개를 반환했습니다. 해당 경로는 iphone-claude-instead-of-siri의 phone-harness-github-overview.jpg, grok-bot-guide의 grok-bot-landing.png, sell-o-used-phone-sale의 sell-o-00-logo.png입니다. 이번 작업에서 그 파일을 복원하거나 다른 글을 수정하지 않았습니다.
+
+## 2026-10-24: 저자 승인 후 기존 146번 글 수정 발행
+
+사용자의 실제 지시는 “훌륭해 게시해줘”였습니다. 승인 당시 source-pass·article·미디어 SHA를 author-publication-approval.json에 고정했습니다. 기존 티스토리 146번 글의 정확한 HTML·제목·카테고리는 publication-2026-10-24/editor-before.html과 metadata에 백업했습니다. 공개 여부·URL·발행일 2026-10-17 12:21·Log/개발 · 디지털은 유지했습니다. 기존 대표 이미지 등록을 재사용하고 검증한 설명 그림 2장을 같은 편집기에 첨부했습니다.
+
+HTML 모드에서 티스토리가 만든 native 블록을 캡처했습니다. 승인된 alt는 해당 블록의 메타데이터에 입력했고 실제 native 미리보기 DOM에서 3개가 적용됨을 확인했습니다. 업로드 직후 블록과 최종 편집기 관찰 블록을 attachments/에 따로 보존합니다. native 자산 경로나 서명은 새로 만들지 않았습니다. 원격 관찰 URL은 actual preview에서 읽어 manifest에 연결했고 creator baseline 및 실제 독립 검토자의 second fetch가 통과했습니다. 처음 제 호출에서 검토자 이름을 잘못 넣었던 verify는 실제 독립 검토자가 직접 다시 실행한 현재 기록으로 대체했고 그 이전 결과를 독립 근거로 사용하지 않습니다.
+
+저자가 본 검토본과 기존 공개 글에도 있던 전체 MIT 고지를 최종 HTML 하단에 보존했습니다. 현재 렌더러는 그 고지를 자동 추가하지 않으므로 최종 원격 후보와 native fragment에 같은 footer를 붙였습니다. 본문 주장·제목·추천·이미지 내용은 변경하지 않았습니다. 최종 HTML은 편집기에서 전체 선택·복사한 원문과 정확히 일치하고, 출력 TXT도 같은 바이트입니다. 제출 SHA와 경로는 publication.json에 기록했습니다.
+
+### 도구 제약과 실제 독립 페이지 검토
+
+상위 브라우저 지침은 모든 조작을 CUA로 제한하지만 v2 capture helper는 외부 headless Chrome/CDP만 지원합니다. 해당 helper·strict receipt·record_final_page·finalizer를 실행한 것으로 가장하지 않았습니다. 실제 원격 canonical HTML을 CUA에서 1280/360 light/dark로 캡처하고 DOM을 기록했으며 독립 검토자가 원본·전체·필요 구간·HTML을 직접 판독했습니다. 실제 티스토리 native 미리보기의 두 폭·두 테마도 따로 확인했고 검토자가 같은 원본을 독립 판독해 visual pass를 남겼습니다. 이 수동 대체 검토는 strict 자동 게이트를 통과한 기록과 구별합니다. 공용 스크립트·스킬을 우회하도록 수정하거나 가짜 helper receipt를 만들지 않았습니다.
+
+긴 명령의 실제 가로 스크롤을 추가 확인했습니다. canonical 모바일에서 client318/scroll942/scrollLeft624.5였고, 공개 페이지에서는 highlight code가 별도 스크롤을 가져 client239/scroll917/scrollLeft678에서 마지막 문자가 보였습니다. 다크 PC 도식이 view_image 전체 표시에서 흰색처럼 보이는 문제가 있어 검토를 재개했습니다. 실제 파일의 새 경로 원본 픽셀 crop에서 내용이 정상임을 두 번 확인했고 독립 검토자가 초기 빈 이미지 판단을 철회했습니다. 실제 자산의 지속적인 결함은 발견하지 못했으며 도구 표시 문제의 원인은 확정하지 않았습니다.
+
+### 공개 결과 확인
+
+공개 발행 버튼 뒤 글 관리 목록에서 새 제목과 기존 URL을 확인했고, 기존 public URL을 새 탭에서 열어 live 본문을 확인했습니다. 실제 원고·세 이미지·alt·native figure3개·네 소제목·네 목차 대상·표를 확인했습니다. 1280/360의 light/dark 네 경우 새로 불러온 문서에서 scrollWidth=clientWidth였으며, PC1265/mobile345의 유효 문서폭은 세로 스크롤바를 제외한 폭입니다. 360px에서 PC 광고 크기를 그대로 둔 resize 관찰은 별도 역사로 보존하고, 각 폭에서 실제 새로 로드한 결과를 최종 측정으로 사용했습니다. 원격 이미지 3개가 모두 로드됐고 표는 본문폭에 맞았습니다. 플랫폼 코드 강조 후 CSV와 터미널 명령 3개도 원고와 문자 단위로 같았습니다. 목차 링크 이동과 긴 code 가로 조작을 직접 수행했습니다. 실제 발행 시 원고/미디어는 승인 내용 그대로입니다.
+
+현재 상태는 실제 게시 결과를 반영한 published입니다. strict helper/finalizer pass를 주장하지 않으며, 공개 페이지 검증·독립 수동 판독·정확한 제출 바이트를 publication.json 및 해당 디렉터리에 남깁니다. 출력 TXT는 제출본 백업이고 outputs/rea-published-verified.jpg는 공개 글 제목과 도입을 보여주는 실제 화면입니다. Git은 이번 글의 발행 근거와 lifecycle 파일만 추가합니다.
+
+발행 후 blog.py check는 오류·경고 0개입니다. rich-post-v2 검사는 실제 published 상태에서 strict final-page.json이 없다는 이유로 revision_required를 반환합니다. 실제 CUA-only 지침과 외부 Chrome helper의 불일치로 생긴 자동 게이트 미충족이며, 독립 수동 검수·현재 live 검증과 구별해 보존합니다. 이 오류를 지우기 위한 가짜 승인 파일을 만들지 않았습니다. 실제 공개 글을 published로 기록한 사실은 유지합니다.

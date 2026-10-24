@@ -1,0 +1,162 @@
+[
+  {
+    "clientWidth": 1280,
+    "h1": 1,
+    "headings": [
+      "REA는 앱에서 무엇을 찾아줄까?",
+      "메모 앱을 분석해 알아낸 것",
+      "찾아낸 코드도 실행해 확인하기",
+      "같은 예제를 직접 분석하는 방법"
+    ],
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "left": 272,
+        "naturalWidth": 1200,
+        "width": 736
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "left": 370,
+        "naturalWidth": 1024,
+        "width": 540
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "left": 370,
+        "naturalWidth": 1280,
+        "width": 540
+      }
+    ],
+    "nativeFigures": 3,
+    "scrollWidth": 1280,
+    "table": [
+      {
+        "parent": 736,
+        "scroll": 736,
+        "width": 736
+      }
+    ],
+    "theme": "scroll-smooth"
+  },
+  {
+    "clientWidth": 1280,
+    "h1": 1,
+    "headings": [
+      "REA는 앱에서 무엇을 찾아줄까?",
+      "메모 앱을 분석해 알아낸 것",
+      "찾아낸 코드도 실행해 확인하기",
+      "같은 예제를 직접 분석하는 방법"
+    ],
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "left": 272,
+        "naturalWidth": 1200,
+        "width": 736
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "left": 370,
+        "naturalWidth": 1024,
+        "width": 540
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "left": 370,
+        "naturalWidth": 1280,
+        "width": 540
+      }
+    ],
+    "nativeFigures": 3,
+    "scrollWidth": 1280,
+    "table": [
+      {
+        "parent": 736,
+        "scroll": 736,
+        "width": 736
+      }
+    ],
+    "theme": "scroll-smooth dark"
+  },
+  {
+    "clientWidth": 360,
+    "h1": 1,
+    "headings": [
+      "REA는 앱에서 무엇을 찾아줄까?",
+      "메모 앱을 분석해 알아낸 것",
+      "찾아낸 코드도 실행해 확인하기",
+      "같은 예제를 직접 분석하는 방법"
+    ],
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "left": 36,
+        "naturalWidth": 1200,
+        "width": 288
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "left": 36,
+        "naturalWidth": 1024,
+        "width": 288
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "left": 36,
+        "naturalWidth": 1280,
+        "width": 288
+      }
+    ],
+    "nativeFigures": 3,
+    "scrollWidth": 360,
+    "table": [
+      {
+        "parent": 288,
+        "scroll": 288,
+        "width": 288
+      }
+    ],
+    "theme": "scroll-smooth"
+  },
+  {
+    "clientWidth": 360,
+    "h1": 1,
+    "headings": [
+      "REA는 앱에서 무엇을 찾아줄까?",
+      "메모 앱을 분석해 알아낸 것",
+      "찾아낸 코드도 실행해 확인하기",
+      "같은 예제를 직접 분석하는 방법"
+    ],
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "left": 36,
+        "naturalWidth": 1200,
+        "width": 288
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "left": 36,
+        "naturalWidth": 1024,
+        "width": 288
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "left": 36,
+        "naturalWidth": 1280,
+        "width": 288
+      }
+    ],
+    "nativeFigures": 3,
+    "scrollWidth": 360,
+    "table": [
+      {
+        "parent": 288,
+        "scroll": 288,
+        "width": 288
+      }
+    ],
+    "theme": "scroll-smooth dark"
+  }
+]

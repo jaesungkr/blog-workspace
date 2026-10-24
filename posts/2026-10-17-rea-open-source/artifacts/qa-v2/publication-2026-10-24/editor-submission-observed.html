@@ -1,0 +1,499 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+/* Keep the two-column findings readable together on narrow screens. */
+.devlog-rich .rich-table-wrap table {
+  min-width: 0;
+  table-layout: fixed;
+}
+.devlog-rich .rich-table-wrap th:first-child,
+.devlog-rich .rich-table-wrap td:first-child {
+  width: 28%;
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>완성된 앱을 보고 “이 기능은 어떻게 만들었을까?” 궁금할 때가 있습니다. <strong>REA(Reverse Engineer Anything)는 앱의 파일을 분석해, AI가 그 기능의 작동 방식을 설명하도록 돕는 오픈소스 도구</strong>입니다.</p>
+<p>처음 접한다면 <a href="https://rea.tools/first-investigation/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 실습의 작은 메모 앱</a>으로 시작해 보세요. 이번 실험에서는 이 앱의 파일을 REA로 분석해 ‘내보내기’ 기능을 처리하는 코드를 찾았습니다. 그 코드를 읽어 저장 방식을 알아내고, 일부는 직접 실행해 설명이 맞는지도 확인했습니다.</p>
+<div class="devlog-rich__figure" data-media-id="rea-official-lead" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@yDE89/dJMcaa1sAE5/AAAAAAAAAAAAAAAAAAAAABtFhPSisUJdbXxi2x5BNN0lX7XQJOTboZvRRoGWRwcf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=twZBbJrq0uqyUk%2FgmBCxXJHu2u8%3D|CDM|1.3|{"originWidth":1200,"originHeight":630,"style":"alignCenter","filename":"rea-official-lead.png","alt":"AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드"}_##]</div><p class="devlog-rich__caption">REA가 AI와 분석 도구를 연결하는 관계를 보여주는 공식 소개 카드입니다. · MIT, Copyright (c) 2026 morluto</p></div>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#rea는-앱에서-무엇을-찾아줄까">REA는 앱에서 무엇을 찾아줄까?</a></li>
+<li><a href="#메모-앱을-분석해-알아낸-것">메모 앱을 분석해 알아낸 것</a></li>
+<li><a href="#찾아낸-코드도-실행해-확인하기">찾아낸 코드도 실행해 확인하기</a></li>
+<li><a href="#같은-예제를-직접-분석하는-방법">같은 예제를 직접 분석하는 방법</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="rea는-앱에서-무엇을-찾아줄까">
+<h2 id="rea는-앱에서-무엇을-찾아줄까">REA는 앱에서 무엇을 찾아줄까?</h2>
+<p>보통 앱을 만들 때는 코드를 작성해 기능을 구현합니다. 역공학은 이미 만들어진 프로그램을 조사해 내부에서 어떤 처리를 하는지 알아내는 작업입니다. 예를 들어 메모 앱의 ‘내보내기’ 기능을 조사한다면, 버튼을 누른 뒤 메모가 어떤 형식으로 바뀌고 어느 파일에 저장되는지 찾습니다.</p>
+<p>REA는 이런 조사에 필요한 분석 도구를 AI가 사용할 수 있게 연결합니다. AI는 REA가 찾은 코드와 위치를 참고해 작동 방식을 설명합니다. <a href="https://rea.tools/faq/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 FAQ</a>에 따르면 JavaScript·Electron 앱, 실행 파일, 웹페이지 등을 분석할 수 있으며 대상에 따라 필요한 도구가 달라집니다.</p>
+<p>이번에 사용한 메모 앱은 <strong>소스 코드가 함께 제공되는 연습용 예제</strong>입니다. 실행 파일에서 원래 코드를 복원한 실험은 아닙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="메모-앱을-분석해-알아낸-것">
+<h2 id="메모-앱을-분석해-알아낸-것">메모 앱을 분석해 알아낸 것</h2>
+<p>이 앱에는 메모를 파일로 꺼내는 ‘Export notes’ 버튼이 있습니다. 여기서 ‘내보내기’란 앱 안의 데이터를 다른 프로그램에서도 열 수 있는 파일로 만드는 기능입니다. 조사할 질문은 하나였습니다.</p>
+<blockquote>이 버튼을 누르면 메모를 어디에, 어떤 형태로 저장할까?</blockquote>
+<p>실험에서는 여섯 파일로 된 예제 폴더를 REA에 전달했습니다. REA는 JavaScript 파일 네 개를 분석했고, 내보내기 요청을 보내는 코드와 그 요청을 받아 처리하는 코드를 연결했습니다. 그 연결을 따라 원본 코드도 읽어 저장 위치와 파일 내용을 확인했습니다.</p>
+<p>아래는 REA의 분석 결과와 원본 코드를 함께 읽어 정리한 답입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>확인하려던 내용</th><th>코드에서 찾은 내용</th></tr></thead><tbody><tr><td>어디에 저장하나요?</td><td>사용자의 다운로드 폴더에 저장하도록 되어 있습니다.</td></tr><tr><td>파일 이름은 무엇인가요?</td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">notes.csv</code>입니다.</td></tr><tr><td>어떤 내용이 들어가나요?</td><td>메모 번호와 제목이 들어갑니다. 열 이름은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">id</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">title</code>입니다.</td></tr><tr><td>어떤 형식인가요?</td><td>엑셀 같은 프로그램으로 열 수 있는 CSV입니다. 데이터를 행과 열로 나눈 텍스트 형식입니다.</td></tr></tbody></table></div>
+<p>화면의 버튼과 파일을 저장하는 코드는 서로 다른 파일에 들어 있습니다. 버튼은 저장을 요청하고, 앱 내부의 다른 코드가 메모를 파일로 바꿔 저장합니다. REA가 연결해 준 부분은 이 요청과 처리 코드입니다. 아래 그림은 해당 코드를 읽어 정리한 전체 순서입니다.</p>
+<div class="devlog-rich__figure" data-media-id="rea-notes-flow" style="--rich-media-width:540px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@b0NkCE/dJMcadjOmFu/AAAAAAAAAAAAAAAAAAAAADbXNYcMGOQabvmL6K2MaKMl5_X_JLPBkmcKi5zdEr2X/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=ob8xDS2E9pc2b8QGJWEfgq%2FFsP0%3D|CDM|1.3|{"originWidth":1024,"originHeight":1536,"style":"alignCenter","filename":"rea-notes-flow-v1.png","alt":"버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림"}_##]</div><p class="devlog-rich__caption">예제 코드를 따라 정리한 메모 내보내기 순서입니다.</p></div>
+<p>실제 파일에서 확인할 때는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">renderer.js</code>의 버튼 처리부터 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">preload.js</code>의 요청 전달, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">main.js</code>의 저장 처리 순으로 읽으면 됩니다. <a href="https://rea.tools/examples/notes-electron/main.js" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 예제의 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">main.js</code> 8~12행</a>에 다운로드 폴더와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">notes.csv</code>라는 파일 이름이 나옵니다. 메모를 CSV로 바꾸는 함수는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">csv.js</code>에 있습니다.</p>
+<p>이렇게 얻은 결과는 <strong>‘저장 기능을 구현한 코드가 어디에 있고, 무엇을 하도록 작성됐는가’에 대한 설명</strong>입니다. 앱을 실행해 다운로드 폴더에 실제 파일을 저장해 보지는 않았습니다. 폴더 권한이나 디스크 문제로 저장에 실패할 때의 동작은 별도로 확인해야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="찾아낸-코드도-실행해-확인하기">
+<h2 id="찾아낸-코드도-실행해-확인하기">찾아낸 코드도 실행해 확인하기</h2>
+<p>저장 코드를 찾은 뒤에는 그 안에서 쓰는 변환 함수가 설명대로 동작하는지 확인했습니다. 이 앱은 메모 번호와 제목을 CSV로 바꾼 다음 파일에 씁니다. <strong>CSV 변환을 확인한 이유는, 분석에서 찾은 코드의 동작을 실제 입력과 출력으로 대조하기 위해서입니다.</strong></p>
+<p>확인할 입력으로는 제목에 쉼표가 들어간 메모를 골랐습니다. CSV도 쉼표로 열을 나누기 때문에, 제목 속 쉼표를 잘못 처리하면 제목이 두 칸으로 나뉠 수 있습니다. <a href="https://rea.tools/first-investigation/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 실습</a>에서도 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Hello, "REA"</code>라는 제목으로 이 부분을 확인합니다.</p>
+<p>원본 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">csv.js</code>를 수정하지 않고 변환 함수인 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">toCsv</code>에 메모 번호 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">1</code>과 제목 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Hello, "REA"</code>를 넣었습니다. 함수가 실제로 만든 CSV는 다음과 같습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">id,title
+1,"Hello, ""REA"""</code></pre>
+<p>큰따옴표가 늘어난 것은 CSV에 제목을 기록하는 규칙 때문입니다. 제목 전체를 큰따옴표로 감싸고, 제목 안에 있던 큰따옴표는 두 번 적습니다. 이 CSV를 다시 읽으면 제목은 처음 넣은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Hello, "REA"</code>로 돌아옵니다.</p>
+<div class="devlog-rich__figure" data-media-id="rea-csv-escaping" style="--rich-media-width:540px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@dFz0h3/dJMcahTKVJR/AAAAAAAAAAAAAAAAAAAAAC1Xdpa-W0TScardOCmvYr8je0thNzgr59migvAoi_PB/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=kHoTXTD%2F7GSSkMKnDrLY7WYB1bQ%3D|CDM|1.3|{"originWidth":1280,"originHeight":1760,"style":"alignCenter","filename":"rea-csv-escaping-v2.jpg","alt":"제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림"}_##]</div><p class="devlog-rich__caption">메모 제목이 CSV에 기록됐다가 원래 문자열로 읽히는 과정입니다. 가운데에는 CSV의 제목 칸만 표시했습니다.</p></div>
+<p>같은 방식으로 일반 제목, 한국어가 들어간 제목, 줄바꿈이 있는 제목, 빈 메모 목록까지 총 다섯 경우를 확인했습니다. 예상 문자열을 먼저 정해 실제 출력과 비교하고, Python으로 CSV를 다시 읽었습니다. 다섯 경우 모두 예상한 문자열이 나왔고, 다시 읽은 데이터도 입력과 같았습니다.</p>
+<p>여기서 REA는 조사할 코드의 연결을 찾는 데 쓰였고, Node.js와 Python은 찾은 변환 함수의 결과를 확인하는 데 쓰였습니다. 메모의 쉼표 처리는 REA의 기능이 아니라, <strong>분석 대상인 메모 앱의 동작</strong>입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="같은-예제를-직접-분석하는-방법">
+<h2 id="같은-예제를-직접-분석하는-방법">같은 예제를 직접 분석하는 방법</h2>
+<p>위 과정이 궁금하다면 <a href="https://rea.tools/examples/notes-example.zip" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 예제 ZIP</a>을 내려받아 압축을 풀어 보세요. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">notes-example</code> 폴더가 나옵니다. 이 예제는 데스크톱 앱을 만드는 Electron으로 작성됐지만, 코드를 분석하고 변환 함수만 실행할 때는 Electron을 설치하지 않아도 됩니다.</p>
+<p>JavaScript 실행 프로그램인 Node.js와 패키지 관리 도구인 npm은 필요합니다. 아래 명령은 REA 6.7.0을 사용하며, 지원하는 Node.js 버전은 다음과 같습니다.</p>
+<ul><li>22 계열: 22.19 이상</li><li>24 계열: 24.11 이상</li><li>26 이상</li></ul>
+<p>실험 환경은 macOS arm64, Node.js 26.0.0, npm 11.12.1, REA 6.7.0이었습니다. 본문의 명령은 macOS·Linux의 Bash/Zsh 기준입니다. Windows PowerShell 명령은 <a href="https://rea.tools/first-investigation/#check" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 실습</a>을 참고하세요.</p>
+<p><strong>앱을 분석하려면</strong> 터미널에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">notes-example</code> 폴더가 들어 있는 상위 폴더로 이동해 아래 명령을 실행하세요. npm에 포함된 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">npx</code>가 REA를 내려받아 실행합니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">npx -y rea-agents@6.7.0 analyze-javascript-application \
+  ./notes-example --format json --full-output</code></pre>
+<p>결과는 JSON 형식의 텍스트로 나옵니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">ok</code>가 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">true</code>인지, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">parse_failures</code>가 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">0</code>인지 확인하세요. 각각 분석 완료와 파일 해석 실패가 없음을 뜻합니다. 위에서 설명한 저장 위치는 분석 결과에 나온 관련 파일을 열어 확인하면 됩니다.</p>
+<p><strong>CSV 변환을 확인하려면</strong> <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">notes-example</code> 폴더 안으로 이동해 아래 명령을 실행하세요. 앱 전체를 실행하는 대신, 메모를 CSV로 바꾸는 함수만 호출합니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">node -e 'const {toCsv}=require("./csv.js"); process.stdout.write(toCsv([{id:1,title:"Hello, \"REA\""}]))'</code></pre>
+<p>AI와 대화하며 조사하는 방법은 <a href="https://rea.tools/get-started/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 시작 안내</a>에 나와 있습니다. AI가 REA 도구를 호출하도록 연결하는 MCP 설정을 안내합니다. 위 실험에서는 이 연결 설정 없이 REA를 터미널에서 실행했습니다.</p>
+<p>파일이 여섯 개뿐인 이 예제는 개발용 AI에 폴더를 주고 직접 읽게 해도 됩니다. 이번 실험으로 두 방식의 속도나 정확도를 비교한 것은 아닙니다. REA를 함께 쓸 때는 “이 기능을 분석하고, 어떤 파일의 어느 코드에서 확인했는지 보여줘”처럼 조사 대상과 확인할 동작을 구체적으로 알려 주세요.</p>
+<p>실행 파일의 내부를 자세히 분석하려면 Hopper·Ghidra·IDA 같은 별도 도구가 필요합니다. 웹페이지를 분석한다고 비공개 서버 코드까지 볼 수는 없고, 실행 파일에 원래 있던 주석이나 변수 이름을 모두 되찾을 수도 없습니다.</p>
+<p>REA 자체는 <a href="https://github.com/morluto/rea/blob/main/LICENSE" style="color:#1a73e8;text-decoration:none;" target="_blank">MIT 라이선스</a>로 공개되어 있으며, 함께 쓰는 AI 서비스나 일부 분석 도구에는 별도 비용이 들 수 있습니다. 회사나 고객의 앱을 분석한다면 <a href="https://rea.tools/faq/#sharing" style="color:#1a73e8;text-decoration:none;" target="_blank">모델 제공자의 데이터 정책</a>도 먼저 확인하세요.</p>
+<p>자신이 만들었거나 분석을 허가받은 앱에서도 처음에는 기능 하나만 골라 보세요. “어디에 저장하나요?”, “어떤 데이터를 보내나요?”처럼 답을 코드와 대조할 수 있는 질문부터 시작하면 됩니다.</p>
+</section>
+<section class="devlog-rich__section"><details class="devlog-rich__license"><summary>대표 이미지 출처 · REA MIT License</summary><p>대표 이미지: <a href="https://github.com/morluto/rea/blob/0c7b6d834af2d044b23196e0e522cc2468327a1e/website/public/assets/social-card.svg" target="_blank" rel="noopener noreferrer">REA 공식 소개 카드</a>. Copyright (c) 2026 morluto.</p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>MIT License
+
+Copyright (c) 2026 morluto
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</code></pre></details></section>
+</article>

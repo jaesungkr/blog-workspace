@@ -1,0 +1,504 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* Rich article surface; visual QA status is recorded separately. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+/* Keep Tistory's native attachment blocks inside the article media column. */
+.devlog-rich__native > p:first-child { margin: 0; }
+.devlog-rich__native figure.imageblock {
+  display: block; width: 100% !important; max-width: 100% !important;
+  min-width: 0 !important; margin: 0 auto !important;
+  /* hELLO injects margin-left:50% plus translateX(-50%). Override both:
+     overriding just the margin shifts the image left by half its width. */
+  transform: none !important; translate: none !important;
+  position: static !important; inset: auto !important; float: none !important;
+}
+.devlog-rich__native figure.imageblock > span {
+  display: block; width: 100% !important; max-width: 100% !important;
+}
+.devlog-rich__native img {
+  display: block; width: 100% !important; max-width: 100%; height: auto !important;
+  border: 1px solid var(--rich-border); border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+.devlog-rich__license {
+  width: min(100%, var(--rich-reading)); margin: 24px auto 0;
+  color: var(--rich-muted); font-size: 13px; line-height: 1.6;
+}
+.devlog-rich__license summary { cursor: pointer; }
+.devlog-rich__license pre {
+  white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; padding: 16px;
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">계산기의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">%</code> 버튼은 어떤 원리 또는 계산으로 작동하는걸까요? 버튼을 눌러 결과를 볼 수는 있어도, 화면만으로 내부 계산을 알기는 어렵습니다.</p>
+<p data-ke-size="size16">이처럼 &ldquo;앱 안에서는 실제로 어떤 일이 일어날까?&rdquo;라는 질문을 AI에게 맡길 때 쓰는 도구가 <b>REA(Reverse Engineer Anything)</b>입니다. AI가 프로그램을 살펴보고, 기능이 작동하는 규칙을 찾아 설명하도록 돕습니다. 찾아낸 규칙으로 비슷한 기능을 새로 만드는 데도 활용합니다.</p>
+<p data-ke-size="size16">REA의 용도가 궁금하다면 <a style="color: #1a73e8; text-decoration: none;" href="https://rea.tools/" target="_blank" rel="noopener">공식 홈페이지의 계산기와 게임 예제</a>부터 보세요. 버튼을 눌러 계산을 해보거나 게임 속도를 바꿔보면서, 어떤 결과물을 만들 수 있는지 먼저 확인할 수 있습니다.</p>
+<div class="devlog-rich__figure devlog-rich__native" style="--rich-media-width: 916px;" data-media-id="rea-official-lead">[##_Image|kage@yDE89/dJMcaa1sAE5/AAAAAAAAAAAAAAAAAAAAABtFhPSisUJdbXxi2x5BNN0lX7XQJOTboZvRRoGWRwcf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=twZBbJrq0uqyUk%2FgmBCxXJHu2u8%3D|CDM|1.3|{"originWidth":"1200","originHeight":"630","style":"alignCenter","filename":"rea-official-lead.png"}_##]
+<p class="devlog-rich__caption" data-ke-size="size16">AI가 REA에 연결된 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여줍니다.</p>
+</div>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#계산기에서-버튼의-규칙을-알아내기">계산기에서 버튼의 규칙을 알아내기</a></li>
+<li><a href="#공룡-게임에-속도-조절-기능-더하기">공룡 게임에 속도 조절 기능 더하기</a></li>
+<li><a href="#메모가-어느-파일에-저장되는지-찾기">메모가 어느 파일에 저장되는지 찾기</a></li>
+<li><a href="#평소-쓰는-ai와-무엇이-다를까">평소 쓰는 AI와 무엇이 다를까?</a></li>
+<li><a href="#코드를-몰라도-써볼-수-있을까">코드를 몰라도 써볼 수 있을까?</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="계산기에서-버튼의-규칙을-알아내기">
+<h2 id="계산기에서-버튼의-규칙을-알아내기" data-ke-size="size26">계산기에서 버튼의 규칙을 알아내기</h2>
+<p data-ke-size="size16">계산기의 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">%</code>는 앞에 어떤 연산을 눌렀는지에 따라 다르게 작동합니다. 공식 계산기 사례에서 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">200 + 10%</code>는 200에 그 값의 10%인 20을 더하므로 답이 220입니다. <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">200 &times; 10%</code>는 200에 0.1을 곱하므로 결과가 20입니다.</p>
+<p data-ke-size="size16">REA를 연결한 AI에는 다음처럼 요청할 수 있습니다. 아래 문구는 공식 사례의 질문을 쉽게 풀어 쓴 예시입니다.</p>
+<blockquote data-ke-style="style1">이 계산기에서 % 버튼을 누르면 어떤 계산을 하는지 찾아주세요. 더하기와 곱하기에서 어떻게 달라지는지 설명하고, 같은 방식으로 계산하는 작은 계산기를 만들어 주세요.</blockquote>
+<p data-ke-size="size16">코드는 프로그램이 어떤 작업을 할지 적어 둔 내용입니다. AI는 REA를 통해 계산기 프로그램에서 해당 처리를 담당하는 코드를 살펴봅니다. 그런 다음 계산 규칙을 설명하고, 그 규칙을 사용하는 새 계산기를 작성합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://rea.tools/#calculator" target="_blank" rel="noopener">공식 예제</a>에는 이렇게 재현한 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">%</code> 버튼을 눌러보는 화면이 있습니다. 분석 대상은 Windows 계산기 11.2508.4.0이며, 다른 계산기도 모두 같다고 단정할 수는 없습니다.</p>
+<div class="devlog-rich__figure devlog-rich__native" style="--rich-media-width: 540px;" data-media-id="rea-calculator-flow">[##_Image|kage@BejZ1/dJMcabeQDk0/AAAAAAAAAAAAAAAAAAAAAAr7ijozS0qUc2RcL4gZVrWCSYPojyzY55_rPOzd1AZH/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=FTE2wCTvF2g9zK7mdEDJfTDLUCM%3D|CDM|1.3|{"originWidth":"1024","originHeight":"1536","style":"alignCenter","filename":"rea-calculator-flow-infographic-v2.png"}_##]
+<p class="devlog-rich__caption" data-ke-size="size16">계산 규칙이 궁금하다고 질문하면 REA로 앱을 조사하고, AI가 알아낸 규칙으로 새 계산기를 만듭니다. 실제 앱 화면을 그대로 옮긴 그림은 아닙니다.</p>
+</div>
+<p data-ke-size="size16">이런 기능 분석은 오래된 프로그램의 계산 결과를 새 프로그램에서도 똑같이 내야 할 때 활용할 수 있습니다. 무엇을 계산하는지 알아낸 다음, 새로 만든 기능이 같은 답을 내는지 비교하는 방식입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="공룡-게임에-속도-조절-기능-더하기">
+<h2 id="공룡-게임에-속도-조절-기능-더하기" data-ke-size="size26">공룡 게임에 속도 조절 기능 더하기</h2>
+<p data-ke-size="size16">크롬의 공룡 게임처럼 달리며 장애물을 피하는 게임은 시간이 지나면 점점 빨라집니다. 이 게임을 천천히 연습하고 싶다면, 속도가 어떻게 바뀌는지 알아야 합니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://rea.tools/examples/dino-lab/" target="_blank" rel="noopener">REA의 공룡 게임 사례</a>에서는 웹에서 실행되는 공룡 게임의 코드를 조사해 속도가 올라가는 규칙을 찾았습니다. 그 규칙으로 작은 게임을 새로 만들고, 사용자가 속도를 조절하는 막대를 붙였습니다.</p>
+<blockquote data-ke-style="style1">이 게임이 왜 점점 빨라지는지 알아봐 주세요. 같은 속도 변화 규칙으로 작은 게임을 만들고, 제가 속도를 직접 조절할 수 있게 해주세요.</blockquote>
+<p data-ke-size="size16">예제 페이지에서 Play(시작)를 누르고 속도 막대를 움직여보면 결과를 확인할 수 있습니다. 원래 게임 전체를 복원한 사례는 아닙니다. 속도 규칙을 가져왔고, 그림과 점프&middot;충돌 처리는 교육용으로 새로 작성했습니다.</p>
+<div class="devlog-rich__figure devlog-rich__native" style="--rich-media-width: 680px;" data-media-id="rea-game-change">[##_Image|kage@TQ3Ln/dJMcabeQDkZ/AAAAAAAAAAAAAAAAAAAAAJ81iDWJtp982kMJfyD2KXHoYVtlqKZLcgJbyE-yw7yx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=j8IqtqKaCy1EA9VrUc%2FXzva2W0s%3D|CDM|1.3|{"originWidth":"1254","originHeight":"1254","style":"alignCenter","filename":"rea-game-change-infographic-v1.png"}_##]
+<p class="devlog-rich__caption" data-ke-size="size16">기존 웹 게임의 속도 규칙을 조사한 뒤, 그 규칙을 재현한 작은 게임에 속도 조절을 더하는 예시입니다. 게임 전체를 복원한 결과는 아닙니다.</p>
+</div>
+</section>
+<section class="devlog-rich__section" aria-labelledby="메모가-어느-파일에-저장되는지-찾기">
+<h2 id="메모가-어느-파일에-저장되는지-찾기" data-ke-size="size26">메모가 어느 파일에 저장되는지 찾기</h2>
+<p data-ke-size="size16">앱에서 &lsquo;내보내기&rsquo;를 눌렀는데 파일이 어디에 생기는지 모르겠다고 가정해 보겠습니다. 파일을 찾으려면 저장 폴더와 파일 이름부터 알아야 합니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://rea.tools/first-investigation/" target="_blank" rel="noopener">REA의 첫 분석 연습</a>은 작은 메모 앱에서 이 경로를 따라갑니다. AI에 앱 파일을 주고 &ldquo;메모 내보내기 버튼을 누르면 어떤 파일이 어디에 만들어지나요?&rdquo;라고 묻습니다. 예제에서는 다운로드 폴더에 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">notes.csv</code>가 생기고, 메모의 번호와 제목이 들어간다는 내용을 코드에서 확인합니다.</p>
+<p data-ke-size="size16">CSV는 데이터를 행과 열로 저장하는 텍스트 파일이며, 엑셀 같은 스프레드시트 프로그램으로 열 수 있습니다. 이 예제에서 확인하는 것은 <b>버튼을 누른 뒤 내 메모가 어디로 가는지</b>입니다.</p>
+<p data-ke-size="size16">이렇게 파일이 만들어지는 위치를 찾으면, 내보내기가 안 될 때 어느 처리를 살펴봐야 할지도 좁힐 수 있습니다. 공식 연습은 &ldquo;파일을 쓰지 못하면 오류가 화면까지 어떻게 전달되나요?&rdquo;라는 후속 질문도 제시합니다. 오류의 원인과 해결 방법까지 자동으로 확정해 준다는 뜻은 아닙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="평소-쓰는-ai와-무엇이-다를까">
+<h2 id="평소-쓰는-ai와-무엇이-다를까" data-ke-size="size26">평소 쓰는 AI와 무엇이 다를까?</h2>
+<p data-ke-size="size16">이처럼 완성된 프로그램을 살펴보며 작동 원리를 알아내는 작업을 <b>역공학</b>이라고 부릅니다. REA는 이 조사에 필요한 도구를 AI가 사용하도록 연결합니다.</p>
+<p data-ke-size="size16">REA를 쓸지 고민된다면, 개념을 배우려는지 특정 프로그램의 동작을 확인하려는지 구분해 보세요. &ldquo;10%는 어떻게 계산하나요?&rdquo;에는 보통의 AI 대화로도 답을 구할 수 있습니다. &ldquo;이 계산기는 % 버튼을 누르면 실제로 무엇을 계산하나요?&rdquo;에는 그 프로그램을 조사한 근거가 필요합니다. REA는 두 번째 작업에 쓰입니다.</p>
+<p data-ke-size="size16">답변에서 볼 것은 설명과 그 설명을 뒷받침하는 파일&middot;코드 위치입니다. 프로그램 전체에 관한 긴 보고서보다 버튼 하나의 처리 과정을 확인하는 편이 처음에는 이해하기 쉽습니다. 새 기능을 만들었다면 같은 값을 넣었을 때 원래 프로그램과 같은 답을 내는지도 비교해야 합니다.</p>
+<p data-ke-size="size16">분석할 수 있는 범위는 확보한 자료에 따라 달라집니다. 웹페이지를 조사한다고 그 서비스의 비공개 서버 코드까지 얻는 것은 아닙니다. 실행 파일을 분석해도 원래 개발자가 작성한 주석과 이름까지 그대로 되돌아오지는 않습니다. 앱 전체를 복제할 수 있다는 약속으로 읽기보다, 확인할 기능 하나를 정해 접근하는 것이 현실적입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="코드를-몰라도-써볼-수-있을까">
+<h2 id="코드를-몰라도-써볼-수-있을까" data-ke-size="size26">코드를 몰라도 써볼 수 있을까?</h2>
+<p data-ke-size="size16">REA가 어떤 도구인지 이해하거나 공식 예제의 결과물을 보는 데 코딩 지식이 필요하지는 않습니다. AI와 대화하며 직접 분석하려면 Claude Code&middot;Codex&middot;Cursor처럼 컴퓨터의 파일을 읽고 도구를 실행하는 개발용 AI에 REA를 연결해야 합니다. REA는 그 AI가 사용할 분석 도구를 제공하고, 사용자는 AI 채팅에 질문을 입력합니다. 이 연결 방식을 MCP라고 부릅니다. 설치나 분석 결과의 정확성을 확인하는 과정에서는 개발 지식이나 개발자의 도움이 필요할 수 있습니다.</p>
+<p data-ke-size="size16">설치를 시작한다면 <a style="color: #1a73e8; text-decoration: none;" href="https://rea.tools/get-started/" target="_blank" rel="noopener">공식 시작 안내</a>의 Notes 메모 앱 예제를 먼저 선택하세요. 작은 예제 파일을 받아 내보내기 기능을 조사하는 연습입니다. 앱 종류에 따라 준비물이 달라지며, 실행 파일을 깊게 분석할 때는 Hopper&middot;Ghidra&middot;IDA 같은 별도 분석 도구가 필요합니다. REA 자체는 <a style="color: #1a73e8; text-decoration: none;" href="https://github.com/morluto/rea/blob/main/LICENSE" target="_blank" rel="noopener">MIT 라이선스로 공개</a>되어 있지만 AI 서비스나 일부 분석 도구의 이용료는 별도입니다.</p>
+<p data-ke-size="size16">분석 대상은 자신이 만들었거나 분석을 허가받은 프로그램으로 정하세요. 프로젝트의 <a style="color: #1a73e8; text-decoration: none;" href="https://github.com/morluto/rea/blob/main/DISCLAIMER.md" target="_blank" rel="noopener">이용 원칙</a>은 라이선스 검사 우회와 다른 소프트웨어의 보호된 코드&middot;이미지 등 자산 복제를 지원하지 않는다고 명시합니다. 회사 앱이나 고객 자료를 다룬다면 <a style="color: #1a73e8; text-decoration: none;" href="https://rea.tools/faq/#sharing" target="_blank" rel="noopener">데이터 처리 안내</a>도 확인해야 합니다. 분석은 내 컴퓨터에서 이루어지지만, 그 결과는 AI에 전달되고 모델 제공자의 데이터 정책을 따릅니다.</p>
+<p data-ke-size="size16">처음에는 &ldquo;이 앱을 전부 만들어줘&rdquo;보다 &ldquo;이 버튼을 누르면 무슨 일이 일어나는지 쉬운 말로 설명해 줘&rdquo;라고 요청해 보세요. 설명을 이해한 뒤 &ldquo;그 규칙으로 작은 예제를 만들어 줘&rdquo;라고 이어가면, REA가 찾아낸 정보가 새 기능으로 어떻게 쓰이는지 확인하기 좋습니다.</p>
+</section>
+<section class="devlog-rich__section"><details class="devlog-rich__license">
+<summary>대표 이미지 출처 &middot; REA MIT License</summary>
+<p data-ke-size="size16">대표 이미지: <a href="https://github.com/morluto/rea/blob/0c7b6d834af2d044b23196e0e522cc2468327a1e/website/public/assets/social-card.svg" target="_blank" rel="noopener noreferrer">REA 공식 소개 카드</a>. Copyright (c) 2026 morluto.</p>
+<pre class="sql"><code>MIT License
+
+Copyright (c) 2026 morluto
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</code></pre>
+</details></section>
+</article>

@@ -1,0 +1,16 @@
+{
+  "author_instruction": "훌륭해 게시해줘",
+  "approved_at": "2026-10-24T19:57:11.960896+09:00",
+  "timezone": "Asia/Seoul",
+  "target_blog": "https://dop3n.tistory.com",
+  "target_post_id": 146,
+  "mode": "update existing published post; preserve URL/date/category",
+  "approved_source_pass_sha256": "5972f70dc2c5587ef111b07564115fea59c082931f390a9e9b04bb087a7ffcea",
+  "approved_article_sha256": "0972b1dd93dd7113b370157fc7c25352e45c5be1fa4021f8ac1fdb4fdea0903f",
+  "approved_media": {
+    "rea-official-lead": "f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078",
+    "rea-notes-flow": "03869a32b8e065a1e8df558d57fdc6a8c473063698ab2c1976ead2e333acceff",
+    "rea-csv-escaping": "ffd6982ae5268692a58120e9e314a2603074a54280aaee75965b0c7b4f1e1016"
+  },
+  "approved_candidate": "clarity-2026-10-24/review.html"
+}

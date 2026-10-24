@@ -1,0 +1,194 @@
+[
+  {
+    "clientWidth": 1280,
+    "h1": 1,
+    "h2": 4,
+    "height": 900,
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "naturalHeight": 630,
+        "naturalWidth": 1200,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UCP6QWxA36uNC2bjZABxmQSytUiXo2h-L42oKcK2nLewHc97RtUjqrsNmOtz75u-kaRuzBNw3JTw6f_O52T2X4%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdoVNEKYKiRDHITzp%252FWt4maXmt9I%253D",
+        "width": 914
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "naturalHeight": 1536,
+        "naturalWidth": 1024,
+        "src": "https://blog.kakaocdn.net/dna/b0NkCE/dJMcadjOmFu/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U5OGuQytD02vJ3aj33kGhR42qiSZD9t9-7r01Weu0NdcabFIrH8Z6JYiBAPDgvCzxP3PuzCnO49tiSnz_gsa_7/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=d3ci3mbEsUUi2zaRJaGOHtsaJ3A%3D",
+        "width": 538
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "naturalHeight": 1760,
+        "naturalWidth": 1280,
+        "src": "https://blog.kakaocdn.net/dna/dFz0h3/dJMcahTKVJR/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VoAA8iCVp4rxjOvSlIN5uBysAcbHDNCB7SMGcOJ2rCjZw6h8e0gtDTzjcd9rQ_b-f2yVo4GbwKfTMTWSsHso6-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=buATBizNw5e3ZthaXcyCcKk3Bbg%3D",
+        "width": 538
+      }
+    ],
+    "scrollWidth": 1280,
+    "table": [
+      {
+        "parent": 760,
+        "scroll": 760,
+        "width": 760
+      }
+    ],
+    "theme": "",
+    "toc": [
+      {
+        "hash": "#rea%EB%8A%94-%EC%95%B1%EC%97%90%EC%84%9C-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%B0%BE%EC%95%84%EC%A4%84%EA%B9%8C",
+        "text": "REA는 앱에서 무엇을 찾아줄까?"
+      },
+      {
+        "hash": "#%EB%A9%94%EB%AA%A8-%EC%95%B1%EC%9D%84-%EB%B6%84%EC%84%9D%ED%95%B4-%EC%95%8C%EC%95%84%EB%82%B8-%EA%B2%83",
+        "text": "메모 앱을 분석해 알아낸 것"
+      },
+      {
+        "hash": "#%EC%B0%BE%EC%95%84%EB%82%B8-%EC%BD%94%EB%93%9C%EB%8F%84-%EC%8B%A4%ED%96%89%ED%95%B4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0",
+        "text": "찾아낸 코드도 실행해 확인하기"
+      },
+      {
+        "hash": "#%EA%B0%99%EC%9D%80-%EC%98%88%EC%A0%9C%EB%A5%BC-%EC%A7%81%EC%A0%91-%EB%B6%84%EC%84%9D%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95",
+        "text": "같은 예제를 직접 분석하는 방법"
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "clientWidth": 360,
+    "h1": 1,
+    "h2": 4,
+    "height": 800,
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "naturalHeight": 630,
+        "naturalWidth": 1200,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UCP6QWxA36uNC2bjZABxmQSytUiXo2h-L42oKcK2nLewHc97RtUjqrsNmOtz75u-kaRuzBNw3JTw6f_O52T2X4%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdoVNEKYKiRDHITzp%252FWt4maXmt9I%253D",
+        "width": 318
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "naturalHeight": 1536,
+        "naturalWidth": 1024,
+        "src": "https://blog.kakaocdn.net/dna/b0NkCE/dJMcadjOmFu/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U5OGuQytD02vJ3aj33kGhR42qiSZD9t9-7r01Weu0NdcabFIrH8Z6JYiBAPDgvCzxP3PuzCnO49tiSnz_gsa_7/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=d3ci3mbEsUUi2zaRJaGOHtsaJ3A%3D",
+        "width": 318
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "naturalHeight": 1760,
+        "naturalWidth": 1280,
+        "src": "https://blog.kakaocdn.net/dna/dFz0h3/dJMcahTKVJR/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VoAA8iCVp4rxjOvSlIN5uBysAcbHDNCB7SMGcOJ2rCjZw6h8e0gtDTzjcd9rQ_b-f2yVo4GbwKfTMTWSsHso6-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=buATBizNw5e3ZthaXcyCcKk3Bbg%3D",
+        "width": 318
+      }
+    ],
+    "scrollWidth": 360,
+    "table": [
+      {
+        "parent": 320,
+        "scroll": 320,
+        "width": 320
+      }
+    ],
+    "theme": "",
+    "toc": [
+      {
+        "hash": "#rea%EB%8A%94-%EC%95%B1%EC%97%90%EC%84%9C-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%B0%BE%EC%95%84%EC%A4%84%EA%B9%8C",
+        "text": "REA는 앱에서 무엇을 찾아줄까?"
+      },
+      {
+        "hash": "#%EB%A9%94%EB%AA%A8-%EC%95%B1%EC%9D%84-%EB%B6%84%EC%84%9D%ED%95%B4-%EC%95%8C%EC%95%84%EB%82%B8-%EA%B2%83",
+        "text": "메모 앱을 분석해 알아낸 것"
+      },
+      {
+        "hash": "#%EC%B0%BE%EC%95%84%EB%82%B8-%EC%BD%94%EB%93%9C%EB%8F%84-%EC%8B%A4%ED%96%89%ED%95%B4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0",
+        "text": "찾아낸 코드도 실행해 확인하기"
+      },
+      {
+        "hash": "#%EA%B0%99%EC%9D%80-%EC%98%88%EC%A0%9C%EB%A5%BC-%EC%A7%81%EC%A0%91-%EB%B6%84%EC%84%9D%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95",
+        "text": "같은 예제를 직접 분석하는 방법"
+      }
+    ],
+    "width": 360
+  },
+  {
+    "clientWidth": 360,
+    "h1": 1,
+    "h2": 4,
+    "height": 800,
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "naturalHeight": 630,
+        "naturalWidth": 1200,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UCP6QWxA36uNC2bjZABxmQSytUiXo2h-L42oKcK2nLewHc97RtUjqrsNmOtz75u-kaRuzBNw3JTw6f_O52T2X4%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdoVNEKYKiRDHITzp%252FWt4maXmt9I%253D",
+        "width": 318
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "naturalHeight": 1536,
+        "naturalWidth": 1024,
+        "src": "https://blog.kakaocdn.net/dna/b0NkCE/dJMcadjOmFu/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U5OGuQytD02vJ3aj33kGhR42qiSZD9t9-7r01Weu0NdcabFIrH8Z6JYiBAPDgvCzxP3PuzCnO49tiSnz_gsa_7/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=d3ci3mbEsUUi2zaRJaGOHtsaJ3A%3D",
+        "width": 318
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "naturalHeight": 1760,
+        "naturalWidth": 1280,
+        "src": "https://blog.kakaocdn.net/dna/dFz0h3/dJMcahTKVJR/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VoAA8iCVp4rxjOvSlIN5uBysAcbHDNCB7SMGcOJ2rCjZw6h8e0gtDTzjcd9rQ_b-f2yVo4GbwKfTMTWSsHso6-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=buATBizNw5e3ZthaXcyCcKk3Bbg%3D",
+        "width": 318
+      }
+    ],
+    "scrollWidth": 360,
+    "table": [
+      {
+        "parent": 320,
+        "scroll": 320,
+        "width": 320
+      }
+    ],
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "clientWidth": 1280,
+    "h1": 1,
+    "h2": 4,
+    "height": 900,
+    "images": [
+      {
+        "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+        "naturalHeight": 630,
+        "naturalWidth": 1200,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UCP6QWxA36uNC2bjZABxmQSytUiXo2h-L42oKcK2nLewHc97RtUjqrsNmOtz75u-kaRuzBNw3JTw6f_O52T2X4%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdoVNEKYKiRDHITzp%252FWt4maXmt9I%253D",
+        "width": 914
+      },
+      {
+        "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+        "naturalHeight": 1536,
+        "naturalWidth": 1024,
+        "src": "https://blog.kakaocdn.net/dna/b0NkCE/dJMcadjOmFu/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U5OGuQytD02vJ3aj33kGhR42qiSZD9t9-7r01Weu0NdcabFIrH8Z6JYiBAPDgvCzxP3PuzCnO49tiSnz_gsa_7/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=d3ci3mbEsUUi2zaRJaGOHtsaJ3A%3D",
+        "width": 538
+      },
+      {
+        "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+        "naturalHeight": 1760,
+        "naturalWidth": 1280,
+        "src": "https://blog.kakaocdn.net/dna/dFz0h3/dJMcahTKVJR/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VoAA8iCVp4rxjOvSlIN5uBysAcbHDNCB7SMGcOJ2rCjZw6h8e0gtDTzjcd9rQ_b-f2yVo4GbwKfTMTWSsHso6-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=buATBizNw5e3ZthaXcyCcKk3Bbg%3D",
+        "width": 538
+      }
+    ],
+    "scrollWidth": 1280,
+    "table": [
+      {
+        "parent": 760,
+        "scroll": 760,
+        "width": 760
+      }
+    ],
+    "theme": "dark",
+    "width": 1280
+  }
+]
