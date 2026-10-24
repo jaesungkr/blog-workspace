@@ -1,7 +1,7 @@
 interface:
   display_name: "dev.log Rich Post Workspace v2"
   short_description: "작성자 승인 후 이미지 첨부부터 발행까지 처리하는 Tistory 워크플로"
-  default_prompt: "$dev-log-rich-post-workspace-v2를 사용해 제목이 만든 독자 질문과 주제 범위를 먼저 잠그고, 근거·문체·반응형 QA를 거쳐 작성해 주세요. 제가 원고를 확정하고 올리자고 하면 Codex 내 브라우저에서 이미지와 본문을 게시하고 공개 페이지까지 확인해 주세요."
+  default_prompt: "$dev-log-rich-post-workspace-v2를 사용해 글의 목적과 설명의 흐름을 독자가 이해할 수 있도록 자연스러운 한국어와 문단 연결을 다듬어 주세요. 설명에 도움이 되는 그림은 max-txt2img 또는 diagram-design으로 적극 제작하고 근거·문체·반응형 QA를 거쳐 주세요. 제가 원고를 확정하고 올리자고 하면 Codex 내 브라우저에서 이미지와 본문을 게시하고 공개 페이지까지 확인해 주세요."
 
 policy:
   allow_implicit_invocation: false

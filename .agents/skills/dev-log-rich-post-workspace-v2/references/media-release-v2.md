@@ -16,10 +16,15 @@ and blurring them later.
 
 ## Generated infographic
 
-When `workflow-v2.json` enables `infographic`, read
-[infographic-v2.md](infographic-v2.md). Use `max-txt2img` for creation and
-`dev-log-infographic-validation` for independent approval before marking the
-media item validated. Preserve the final English prompt with the candidate.
+When outlining a post, actively consider whether a visual can explain a
+relationship that takes several connected sentences to follow. When
+`workflow-v2.json` enables `infographic`, read
+[infographic-v2.md](infographic-v2.md). Select `max-txt2img` for generated
+explanatory illustration or `diagram-design` for exact labels, values, and
+connections; both routes need `dev-log-infographic-validation` before the media
+item is validated. Preserve the final prompt or editable HTML/SVG source and
+the actual export record with the candidate. Introduce the question the image
+answers in the preceding prose; a caption cannot repair an unexplained image.
 
 ## Instructional screenshot gate
 

@@ -8,6 +8,16 @@ Finish substantive writing before release QA. The reviewer must first cold-read
 verify:
 
 - claims, numbers, dates, links, quotations, and authorship;
+- an independent comprehension account from the article alone: its question,
+  purpose, supplied material or subject, relevant actor/tool actions, actual
+  finding, and the reason for each secondary test or figure. For a software
+  investigation, separate the app's behavior from the tool's analysis and any
+  manual interpretation or execution check;
+- natural Korean across paragraph boundaries: concrete actors and verbs,
+  sufficient particles, understandable references, and a real reason for a
+  change of subject. Reject an unexplained example even if each sentence is
+  individually fluent; do not accept a generic assurance disclaimer in place
+  of a specific, decision-relevant scope statement;
 - the primary reader, plain identity, easiest start, and evidence boundary;
 - for a broad explainer, a locked map of the questions created by the title and
   opening, one owner section for each question, and explicit adjacent-topic

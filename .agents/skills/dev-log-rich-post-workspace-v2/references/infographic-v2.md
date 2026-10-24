@@ -1,112 +1,165 @@
-# Infographic creation and validation in v2
+# Supporting diagrams and infographics in v2
 
-## Ownership and scope
+## Ownership and creator selection
 
-For `format: rich-post-v2`, use
-[max-txt2img](../../max-txt2img/SKILL.md) to create supporting infographics and
+For `format: rich-post-v2`, actively use either of these creator skills when a
+visual makes an explanation easier to follow:
+
+- [max-txt2img](../../max-txt2img/SKILL.md): generate a complete raster
+  illustration for a concept, mechanism, process, or relationship. Requests
+  referring to `max2image` in this workflow use this installed creator.
+- `diagram-design`: build a deterministic, self-contained HTML/inline-SVG
+  diagram when exact strings, numeric values, labels, or connector geometry
+  carry the meaning. Resolve and read its `SKILL.md` from the active skill
+  catalog; the current installation is `~/.codex/skills/diagram-design/`.
+
+Both routes hand the exact publication raster to
 [dev-log-infographic-validation](../../dev-log-infographic-validation/SKILL.md)
 for independent approval. The v2 orchestrator owns route selection, media
-registration, source invalidation, final-page QA, and Git delivery.
+registration, source invalidation, final-page QA, and Git delivery. Neither
+creator validates its own final work, uploads, publishes, commits, pushes, or
+sets the article ready. The hero workflow remains separate.
 
-This route implements the user's requested image-generation workflow. For
-these candidates only, it supersedes the deterministic-copy and generated-
-illustration-only production clauses in `standards/image-guide.md`,
+This replaces v2's earlier max-txt2img-only creator restriction. For the
+max-txt2img route, generate the complete image, including the approved labels;
+do not silently substitute a text-free layer or HTML layout. For the
+explicitly selected diagram-design route, editable HTML/SVG is the intended
+production source. Preserve the shared standards' accuracy, scope, spacing,
+and actual publication-size readability in both routes. Standard posts and
+v1 posts retain their existing creator routing.
+
+For v2 max-txt2img candidates only, this supersedes the deterministic-copy and
+generated-illustration-only production clauses in `standards/image-guide.md`,
 `standards/image-art-direction.md`, and
-`standards/supporting-infographic-guide.md`. Generate the complete infographic,
-including its exact approved labels, with the image tool. Do not silently
-replace it with an HTML/SVG layout or a text-free generated layer. Retain the
-standards' factual accuracy, necessary caveats, clear relationships, spacing,
-and publication-size readability requirements. Hero-specific campaign media
-and physical-material preferences do not replace max-txt2img's flat infographic
-style. Standard posts, v1 posts, and hero creation retain their existing routes.
+`standards/supporting-infographic-guide.md`. Hero-specific campaign or
+physical-material preferences do not replace this route's flat infographic
+style. The selected diagram-design route retains deterministic copy.
 
-## Decide before the source freeze
+## Plan visuals while outlining
 
-Set `infographic` in `workflow-v2.json` only when a diagram materially reduces
-the effort needed to understand a process, mechanism, decision, comparison,
-experiment, or troubleshooting path. An explicit infographic request also
-qualifies. Record the reader question, one retained message, relationship,
-reason prose or a table is insufficient, and exact placement in `brief.md`.
-Do not add an infographic just to fill space. When omitted, record the reason
-and `not_applicable` in `audit.md`.
+Look for the passages where a reader has to keep several steps, actors,
+locations, transformations, or alternatives in mind. Prefer creating a focused
+visual there instead of waiting for the author to request more images. This
+is a decision based on reading effort, not an image quota.
 
-Plan its role and source claims before the freeze; generate final media after
-the source pass. Give max-txt2img the approved article section, relevant evidence
-and claim IDs, the intended placement, and existing references or candidates.
-Do not ask it to illustrate an entire article when one relationship is enough.
+For each candidate, record the reader question, one retained message,
+relationship, evidence claim IDs, intended width, placement, and selected
+creator in `brief.md`; summarize the route in the existing `decision_note` of
+`workflow-v2.json`. Turn on `infographic` when a supporting visual is selected.
+Do not add creator fields to the workflow schema. If prose or a compact table
+is clearer, omit the diagram and record a short reason with `not_applicable`
+in `audit.md`. Avoid charts that only repeat a list or decorate a paragraph.
+
+| What the reader needs to understand | Creator to consider first |
+|---|---|
+| A conceptual mechanism or a short process helped by visual motifs | `max-txt2img` |
+| Input → analysis → finding, actors and handoffs, or data transformation | Either; choose by illustration value versus precision needs |
+| Exact quoted strings, code characters, measured values, schemas, or branching connections | `diagram-design` |
+
+Different figures in one article may use different creators. In the REA case,
+the export sequence benefited from a generated process illustration, while
+CSV quotation marks required deterministic lettering. Reuse the reasoning,
+not those specific figures or an obligatory pair of images. A generated
+diagram is an explanation, never evidence that an app was run or a result
+measured.
+
+Plan the role and claims before the source freeze; create final media after
+the source pass. Provide the selected creator with the approved section,
+relevant evidence, exact permitted copy, placement, and existing references.
+Do not ask it to illustrate every detail of an entire article. Introduce in
+the preceding paragraph why this figure matters to the current question.
 
 ## Create with max-txt2img
 
-Follow its complete pipeline: read source, extract structure, choose the diagram,
-write and validate the English prompt, generate, inspect, and correct a clear
-defect once. Preserve its prompt-only, same-prompt regeneration, and targeted
-edit branches. A prompt-only result cannot count as validated publication media.
+Follow its source → structure → diagram choice → English prompt validation →
+generation → inspection pipeline. Preserve prompt-only, same-prompt
+regeneration, and targeted edit requests. A prompt-only result is not final
+publication media.
 
-- Default to Korean labels for a Korean post and a 16:9 canvas unless the user
-  specifies otherwise. Use minimal, professional, corporate-friendly flat
-  illustration with restrained gradients and generous white space.
-- Keep the exact number, order, direction, conditions, names, and values from
-  the source. Use short labels and at most three keywords per component; this
-  is a maximum, not a quota. List every permitted visible string in the prompt.
-- Inspect the original generated raster at full resolution and at the actual
-  article width, including the 360 CSS-pixel page. If a landscape diagram is
-  unreadable there, simplify optional copy or adapt the layout when the aspect
-  ratio was only a default. Do not crop meaningful content or enable screenshot
-  scrolling for an infographic. A fixed user ratio and essential labels remain
-  constraints; report an unresolved failure if they cannot both pass.
-- Preserve Korean labels through correction. Do not silently translate to
-  English, substitute numbers, or remove a decision-changing caveat to pass.
-- Keep the same candidate's correction attempts within max-txt2img's one-retry
-  budget, including defects found by the independent validator. A later explicit
-  user revision can start a new attempt. If defects remain, preserve the
-  candidate, prompt, and observed issue with `revision_required`; keep the post
-  `reviewing`. Never switch to the old creator or claim an uninspected pass.
+- Use Korean labels for a Korean post unless the author specifies otherwise.
+  Keep the exact names, number of stages, order, direction, conditions, and
+  values. Use short labels and at most three keywords per component; list all
+  permitted visible strings in the prompt.
+- Use the approved blog style and a simple, readable illustration. A 16:9
+  canvas is a default, not a reason to squeeze essential Korean labels into
+  unreadable text. Adapt the layout when the ratio was not fixed by the user.
+- Inspect the actual returned raster and respect max-txt2img's one-correction
+  budget, including defects found by the independent validator. Preserve each
+  attempt. If a defect remains, keep `revision_required`; do not manufacture a
+  pass, substitute English or numbers for required Korean, or use another tool
+  as an unrecorded way around the failed candidate.
 
-## Persist the candidate and provenance
+## Create with diagram-design
 
-Save a versioned publication raster under the post's `assets/`, for example
-`<slug>-infographic-v1.png`. Never overwrite an earlier candidate. Preserve the
-tool's actual format and dimensions rather than renaming its extension or
-claiming the requested ratio was achieved without checking it.
+Read its setup gate and the chosen semantic-pattern/type references before
+rendering. Set the audience, content, size, and static layout for the article.
+Use Korean-capable fonts for labels and reserve monospace for technical
+strings. Follow its complexity, connector, typography, accessibility, and
+self-check requirements; do not copy its entire type catalog into the post.
 
-Save each candidate's final English prompt and any edit prompt under
-`artifacts/qa-v2/infographic/`. In that directory, also save a copy map from all
-visible factual strings to article/evidence claim IDs and the actual generation
-record: creator `max-txt2img`, tool used, references, output path, dimensions,
-SHA-256, requested and observed ratio, correction count, and inspection result.
-Record only returned settings; do not invent model, seed, source font sizes,
-editable SVG, or rendering code. The prompt is the reusable production source.
+Reuse the project's established approved style instead of reopening an
+answered style question. The REA project choice was white, black, and blue;
+resolve the relevant marker/profile or documented project choice for the
+current task. If no choice exists, follow diagram-design's first-use gate.
+Do not overwrite the installed default style guide, saved profile, or unrelated
+project configuration merely to style one blog figure.
 
-Record the candidate, intended publication width, type, placement, alt text,
-caption, production method, and known concerns in `audit.md`. Register it using
-the existing media version 2 schema with `origin: generated`, `kind: image`,
-and `role: concept` (or `comparison` for a comparison infographic), claim IDs,
-provenance, rights, dimensions, hash, and local path. Do not invent a
-`supporting` role or represent generated art as a real product state.
-Do not add fields to `media.json` for the creator or
-prompt; keep those details in the generation record. Use `{{media:id}}` at the
-planned placement, never a local filesystem Markdown image link.
+Keep the self-contained HTML and inline SVG as editable source, then follow
+its export reference to create a standalone publication raster. Selecting
+this route for a complete Tistory post includes producing that raster. Use
+only currently permitted rendering/browser tools; if an export helper cannot
+run within those constraints, document the actual allowed export method or
+leave a concrete blocker. Do not claim a helper ran when it did not.
 
-Source changes or substantive caption changes return to source review and
-invalidate downstream evidence. Replacing the raster requires fresh visual and
-final-page evidence. Do not rewrite frozen prose merely to fit an image.
+Verify exact characters and values against the evidence before and after
+export. Preserve any real fallback font, actual pixel dimensions, MIME type,
+and bytes. A script self-check cannot establish visual legibility. On a
+creator-route change, record the reason and a new candidate, preserve the
+failed version, and validate the new raster independently.
+
+## Persist and inspect the publication candidate
+
+Save a versioned raster under the post's `assets/`; never overwrite an earlier
+candidate or rename JPEG bytes as PNG. Preserve these records under
+`artifacts/qa-v2/infographic/`:
+
+- for max-txt2img: final English prompt, edit prompts, tool return and actual
+  output details; do not invent a seed, model, source font size, or SVG source;
+- for diagram-design: editable HTML/SVG, effective style/font choices,
+  self-check result, actual export method, and source/export hashes;
+- for both: a copy map from visible factual strings to evidence claim IDs,
+  creator, actual tool, output path, dimensions, SHA-256, intended width,
+  requested/observed ratio, corrections, and inspection findings.
+
+Register the existing media version 2 fields with `origin: generated`,
+`kind: image`, `role: concept` (or `comparison` when appropriate), claim IDs,
+provenance, rights, dimensions, hash, alt text, caption, and local path. Keep
+creator-specific data in the generation record, not new media schema fields.
+Use `{{media:id}}` at the planned position. Captions must identify explanations
+as such and not imply an unobserved product screen or completed experiment.
+
+Inspect the untouched raster at full resolution and its actual displayed
+width on a 360 CSS-pixel article page, including narrower skin gutters. Read
+every Korean label, essential number, code character, and caveat. Simplify or
+restructure an unreadable figure; do not crop meaningful content or use the
+UI-screenshot scrolling escape hatch for a normal infographic. Essential
+content and a user-fixed ratio remain constraints. Record unresolved failures.
+
+Source or substantive caption changes return to source review and invalidate
+downstream evidence. A new raster needs fresh visual and final-page evidence.
+Do not rewrite approved facts to accommodate a diagram.
 
 ## Independent validation and return
 
-Hand the exact raster, final prompt, copy map, generation record, evidence,
-placement, and intended width to the infographic validator. The creator's
-self-check does not replace independent approval.
+Hand the exact raster, prompt or editable source, copy map, production record,
+evidence, placement, and intended width to the independent validator. Its
+full-raster, actual-size, enlarged-region, glyph, connector, contrast, spacing,
+and copy checks apply to both creators. Inspect painted bounds in generated
+art and source geometry in deterministic diagrams where available; do not
+invent unavailable measurements or approve from a good prompt alone.
 
-The validator keeps its full-raster, intended-size, enlarged-region, glyph,
-connector, contrast, spacing, and content checks. Inspect the untouched
-publication raster, including every label and caveat. For generated artwork,
-use observable painted bounds; source font settings and code assertions are
-unavailable, not failed requirements. Do not infer a good image from a good
-prompt. Return defects to `max-txt2img` under the retry budget above.
-
-Only an independent `pass` allows the orchestrator to mark the media validated.
-Record the result in `audit.md` and any focused evidence under
-`artifacts/qa-v2/infographic/`, never v1 QA paths. Then resume local preflight,
-the Codex browser's Tistory upload queue, native binding, and the single final light/dark
-page gate. Neither this creator nor its validator uploads, publishes, commits,
-pushes, or sets the post ready.
+Return defects to the selected creator, respecting that route's actual retry
+constraints. Only an independent `pass` allows the media item to become
+validated. Record the result in `audit.md` and focused evidence in this v2
+artifact directory, then resume local preflight, native Tistory binding, and
+the final light/dark page gate.

@@ -40,6 +40,78 @@ fillers, invented anecdotes, fake uncertainty, or unsupported `~죠`,
 `~거든요`, and `~했어요` endings. Keep the established Korean honorific
 style. Uneven rhythm must come from the thought, not manufactured imperfection.
 
+## Comprehension before sentence polish
+
+This pass comes from the REA revision: the author accepted the improved tone
+but still could not tell what the investigation did or why a CSV check appeared.
+Use that failure as a comprehension test, not as a mandatory article outline.
+Natural grammar and a clean analyzer report do not establish understanding.
+
+Before the line edit, write a private explanation in ordinary language: what
+question the article answers, why it matters, what was examined or supplied,
+who or which tool did each relevant action, and what was learned. For an
+experiment, distinguish the subject's behavior, the analysis tool's findings,
+manual source interpretation, and a separate execution check. For other article
+types, apply only the relevant questions; do not invent a test to fill slots.
+
+Read the opening, headings, and each section as a first-time reader:
+
+- Establish the subject and the actual task before commands, internal file
+  names, acronyms, metrics, or a secondary experiment. Put optional reproduction
+  steps after the explanation when installation would obscure the main point;
+  keep a tutorial's necessary first action early when doing the task is its
+  main promise.
+- At each new example, test, or figure, make its connection to the current
+  question understandable before showing the detail. A CSV check in an app
+  investigation belongs because it tests the formatter found in the export
+  code. It must not read as an unrelated lesson about punctuation.
+- Make headings identify the section's job for this reader. `내보내기 버튼에서
+  저장 코드까지` can require unexplained implementation knowledge; `메모 앱을
+  분석해 알아낸 것` names the finding. Do not imply an action that never
+  happened: `메모 앱에 넣은 질문` can suggest a chat interface when the actual
+  input was a folder path.
+- Give the finding in plain words before detailed evidence. Keep the smallest
+  code excerpt, input/output pair, or result table needed to understand and
+  check it. Preserve omitted logs, file lists, commands, and detailed cases in
+  `evidence.md` or artifacts rather than making the public article a work log.
+- If the reader still cannot explain what happened and why, revise the
+  explanation structure before improving cadence. Do not hide a weak bridge
+  by adding `즉`, `쉽게 말하면`, or another summary of the same passage.
+
+### Natural Korean and connected paragraphs
+
+Prefer Korean that can be said aloud without translating abstract nouns back
+into actions. Keep the established honorific voice, the actor where needed,
+and particles that make relationships clear. Split a sentence when it hides
+who did what; join fragments when separate sentences interrupt one thought.
+Do not force casual endings, rhetorical questions, equal paragraph lengths,
+or manufactured human anecdotes.
+
+Read the end of each paragraph beside the start of the next. The next thought
+must follow from an actual result, reason, unresolved question, example, or
+needed distinction. If it introduces a new subject, explain why that subject
+belongs here or move it. A connector alone cannot supply a missing reason.
+
+Use the following examples to diagnose the pattern, not as replacement text
+for every article:
+
+| Problem in the REA draft | Better editorial decision |
+|---|---|
+| `앱의 모든 기능이 정확하다는 보증은 아닙니다.` | Remove the generic disclaimer. Beside the affected finding, state what was actually checked, such as a path read from code, and whether a real save was tested. Do not merely change `보증` to `보장`. |
+| `이 분석만으로 파일 저장 성공을 확정할 수는 없습니다.` | Use a concrete scope sentence when it matters: `앱을 실행해 다운로드 폴더에 실제 파일을 저장해 보지는 않았습니다.` Keep untested permissions or disk failures close to this scope. |
+| `모든 앱의 내보내기 기능을 평가한 결과로 확대할 수는 없습니다.` | Bound the observed result directly, for example `이 예제에서는 다섯 입력 모두 예상한 문자열로 변환됐습니다.` Preserve any consequential exception; omit a repeated blanket defense. |
+| A section abruptly asks whether commas survive export. | Explain first that the investigated export function converts notes to CSV, then show that running this function checks the explanation against actual output. |
+
+Do not polish away factual limits or turn source reading into actual app use.
+The public prose need not narrate the editing agent's work unless material to
+reader trust; keep actual test authorship and evidence internally accurate and
+never attribute agent execution to the author.
+
+Record representative structural and sentence repairs in `audit.md`, including
+why a secondary check remains, what detail moved out of the body, and which
+facts and boundaries were protected. The source reviewer must cold-read the
+article before seeing this explanation.
+
 ## Pass 0: lock the reader-benefit contract
 
 Use this pass for recommendation and benefit explainers aimed at

@@ -41,11 +41,15 @@ Use the repository writing, prose-polishing, and article-validation skills for
 their owning stages. Run article validation as a source-level gate before the
 freeze; do not rerun its editorial interrogation after browser QA. Use the
 separate hero creator/validator only when routed. For a routed infographic,
-read [references/infographic-v2.md](references/infographic-v2.md), create with
-[../max-txt2img/SKILL.md](../max-txt2img/SKILL.md), and hand the candidate to
+read [references/infographic-v2.md](references/infographic-v2.md), select
+`max-txt2img` or `diagram-design` for the reader's question, and hand every
+publication raster to
 [../dev-log-infographic-validation/SKILL.md](../dev-log-infographic-validation/SKILL.md).
-In v2, `max-txt2img` replaces `dev-log-infographic` as the creator; the
-independent validator remains responsible for approval.
+Use [../max-txt2img/SKILL.md](../max-txt2img/SKILL.md) for generated explanatory
+illustrations. Resolve `diagram-design` from the active skill catalog for
+precise HTML/SVG diagrams. These are both supported v2 creator routes; neither
+replaces independent validation. Do not modify their global installation or
+profiles as a side effect of writing an article.
 
 ## Route the work
 
@@ -69,6 +73,14 @@ Record the decision in `workflow-v2.json` before research.
   and details that the article will deliberately leave out. Do not frame the
   title around a folk association, search behavior, nutrient, mechanism, or
   feature that the intended reader may not know.
+- Actively plan supporting visuals while outlining, especially for unfamiliar
+  concepts, multi-step processes, data transformations, and handoffs between
+  people or tools. Evaluate `max-txt2img` and `diagram-design` before deciding
+  prose is sufficient. Record the question, message, placement, and selected
+  creator in `brief.md` and the existing `decision_note`; do not add schema
+  fields. A useful diagram is part of the normal workflow, not an optional
+  extra that waits for the author to ask. Keep a short reason when omitted;
+  do not enforce an image count or turn every list into a diagram.
 - Never claim hands-on work when the required app, account, device, version,
   or safe environment is unavailable. Narrow the promise instead.
 
@@ -164,7 +176,13 @@ as evidence.
    evidence or remove it. Broadly helpful advice does not earn space merely
    because it may benefit the same audience. The title-created questions, not
    the source's full list of adjacent recommendations, own the outline.
-5. Run the full voice-and-density revision in
+5. Before polishing individual sentences, apply the REA-calibrated
+   [comprehension and natural-Korean pass](references/editorial-voice-v2.md#comprehension-before-sentence-polish).
+   A reader must understand the task, its purpose, the input or subject, who
+   did what, and the result before encountering implementation details or a
+   secondary check. If that chain is missing, return to writing and reorder or
+   remove material; synonym changes cannot repair the structure. Then run the
+   full voice-and-density revision in
    `references/editorial-voice-v2.md` before the normal prose-polish stage. It
    has six required surfaces: the reader-benefit contract, opening movement,
    heading strip, AI-template sentence frames, paragraph-level new information,
@@ -179,7 +197,11 @@ as evidence.
 6. Hand the still-`reviewing` bundle to an independent source reviewer. The
    reviewer must first cold-read `article.md` without the prior approvals or
    audit conclusions, including separate first-screen and
-   title-plus-headings-only passes. Then the reviewer reads the brief,
+   title-plus-headings-only passes. For an experiment or software explainer,
+   have the reviewer state from the article alone what was supplied, what each
+   tool found, what was checked separately, and why that check belongs here.
+   Return the article if those answers require the brief or prior conversation.
+   Then the reviewer reads the brief,
    evidence, audit, `references/editorial-voice-v2.md`, and
    `references/source-freeze-v2.md`. Return the source when a heading sounds
    like a compressed explanatory sentence, joins separate decisions for
@@ -327,7 +349,9 @@ publication approval, and verified live article pass. A reviewed draft without
 author publication approval is a review handoff, not a published post. Never
 accept an unresolved claim, unsupported hands-on statement, local media path,
 placeholder, duplicate H1, unreadable mobile evidence, hidden table content,
-stale gate, known visual defect, generic opening roadmap, abstract
+stale gate, known visual defect, a fluent article whose purpose or actual work
+cannot be explained by its intended reader, an unmotivated test or diagram,
+generic opening roadmap, abstract
 result-summary opening, canned `결론부터 말하면` pivot, sentence-shaped
 contrast heading, paragraph without new reader value, full takeaway repeated
 across sections, a specialist-assuming title for a non-specialist reader, a

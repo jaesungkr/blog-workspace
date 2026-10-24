@@ -26,7 +26,8 @@ Turn on only the risks that actually exist:
 - `gif`: require the poster and second remote fetch;
 - `generated_lead`: use the separate hero creator and validator;
 - `infographic`: only when the visual reduces reading effort, follow
-  [infographic-v2.md](infographic-v2.md), create with `max-txt2img`, then use
+  [infographic-v2.md](infographic-v2.md), actively select `max-txt2img` or
+  `diagram-design` for the relationship and precision needed, then use
   `dev-log-infographic-validation` for independent approval;
 - `complex_layout`: inspect the affected component and set `include_390` or
   `include_768` only when the transition needs it;
