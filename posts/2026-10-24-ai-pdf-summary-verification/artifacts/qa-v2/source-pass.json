@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T14:45:32.350334Z",
-  "checked_by": "/root/source_revision_2 (independent Codex agent)",
-  "article_content_sha256": "0955a3840daf0bbfd53897aac8e1996f7cb3a41f4582b2beaba4479c5f988643",
-  "brief_sha256": "763fd5e58b9ee851def6655fe301fb705eaa35dcfffc43d3fc3abf122dc32912",
-  "evidence_sha256": "745070a70a380a80b985e66dd43e4867fc77c954bb90a880e90feaca30636e37",
-  "note": "Revision 2: cold-read comprehension and raw PDF/answer comparison passed. Local preview only; no publication or final-page approval."
+  "checked_at": "2026-10-24T14:54:13.897195Z",
+  "checked_by": "/root/source_revision_3 (independent Codex agent)",
+  "article_content_sha256": "03c205cb935385f080b48501eebaff99ecef285dfa95fc8b17ebdb4f5f870be7",
+  "brief_sha256": "b4593324b99b3f7b7def1288ad2817862e0978e2776e6ad3c24b366b86ab77ae",
+  "evidence_sha256": "c9b787a9e82e2ab236acab46451c826c969ddf20a5a8508a29848b2bf4b06fa6",
+  "note": "Author-requested result summary replaces follow-up prompts. Three verdicts preserve raw results; local author review only."
 }

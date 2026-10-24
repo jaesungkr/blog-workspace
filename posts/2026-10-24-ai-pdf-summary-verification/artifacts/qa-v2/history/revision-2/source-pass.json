@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T14:45:32.350334Z",
+  "checked_by": "/root/source_revision_2 (independent Codex agent)",
+  "article_content_sha256": "0955a3840daf0bbfd53897aac8e1996f7cb3a41f4582b2beaba4479c5f988643",
+  "brief_sha256": "763fd5e58b9ee851def6655fe301fb705eaa35dcfffc43d3fc3abf122dc32912",
+  "evidence_sha256": "745070a70a380a80b985e66dd43e4867fc77c954bb90a880e90feaca30636e37",
+  "note": "Revision 2: cold-read comprehension and raw PDF/answer comparison passed. Local preview only; no publication or final-page approval."
+}

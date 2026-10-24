@@ -1,9 +1,9 @@
 {
-  "revision": 2,
+  "revision": 3,
   "stage": "local_creator_preflight",
   "status": "pass",
   "by": "/root (Codex creator)",
-  "source_sha256": "eded1d4dce2bdd24fe58b6f2ba03f8c0d02311f7025c2be54a2a10db24a2d86b",
+  "source_sha256": "60d3d4bab1c6fd5bc9fe2b96b61181eee9ef4259a06ca2eb515cc79f93ef45c4",
   "profiles": [
     {
       "theme": "light",
@@ -54,6 +54,6 @@
       "images_loaded": 4
     }
   ],
-  "visual_inspection": "Read complete revised 360px light page and representative dark/desktop sections. Four unchanged source/answer images load in every profile. Tables and evidence images scroll individually; body overflow is zero. Previous UI horizontal-scroll verification remains applicable to unchanged media and CSS.",
-  "final_page_gate": "not run: pending author approval and native remote attachments"
+  "visual_inspection": "Inspected changed final result table and conclusion at desktop/mobile in light/dark. Verdict column precedes details for mobile scanning. Existing media/CSS and preceding sections unchanged. Tables retain individual horizontal scrolling.",
+  "final_page_gate": "not run: author requested revision before publication"
 }

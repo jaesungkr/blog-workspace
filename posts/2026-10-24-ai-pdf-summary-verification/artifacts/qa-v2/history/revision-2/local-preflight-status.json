@@ -1,0 +1,59 @@
+{
+  "revision": 2,
+  "stage": "local_creator_preflight",
+  "status": "pass",
+  "by": "/root (Codex creator)",
+  "source_sha256": "eded1d4dce2bdd24fe58b6f2ba03f8c0d02311f7025c2be54a2a10db24a2d86b",
+  "profiles": [
+    {
+      "theme": "light",
+      "width": 1280,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "page_overflow": 0,
+      "images_loaded": 4
+    }
+  ],
+  "visual_inspection": "Read complete revised 360px light page and representative dark/desktop sections. Four unchanged source/answer images load in every profile. Tables and evidence images scroll individually; body overflow is zero. Previous UI horizontal-scroll verification remains applicable to unchanged media and CSS.",
+  "final_page_gate": "not run: pending author approval and native remote attachments"
+}
