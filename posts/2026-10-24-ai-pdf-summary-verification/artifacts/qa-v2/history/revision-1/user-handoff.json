@@ -1,0 +1,26 @@
+{
+  "stage": "author_review",
+  "lifecycle": "reviewing",
+  "source_pass_sha256": "7151a61f5522f949e6585f07dca445b791669068858ec93b40eaa2a7a4e3a162",
+  "source_article_sha256": "c1b5746cc8da6c6e8ffff40f4774479fa5918d44b18cfd6f121bb109fb93a0be",
+  "publication_category": "AI·개발 → AI 이해·활용",
+  "media": {
+    "model-specifications": "b0329bf8d82c45852b6580e206708341517945f23aa85ec7b451046ad051571e",
+    "claude-model-group": "d46d94e0d1fb522ee4370d4aa331d09997144737451a663e831cd1dd989dfb6c",
+    "png-footnote": "dc7815a6ebddc14cb5a67864431ba4beca295a275a1357e9b90833ad12c2bff6",
+    "eco-noise": "0bfb1f1a40d60931389efb71b6c14b58e1bec1a33daa9f30ca1fcabb155de717"
+  },
+  "outputs": {
+    "ai-pdf-summary-verification.md": "aaabe595ed8aa3c64b193765c381b104d92449b61c20bad4ce86cdde5399caf7",
+    "ai-pdf-summary-verification-review-dark.html": "d3d09f2dd611048dba3547ec66505786ad24daed372605f01f6b56cf37b0d185",
+    "ai-pdf-summary-verification-review.html": "09950dcc91ba2da3cf6f24343c7d44d14ecf49b210bb98c0ffb37ebe2be4c08f"
+  },
+  "pending": [
+    "author approval and instruction to publish",
+    "native Tistory image attachment binding",
+    "remote media observation",
+    "independent final light/dark page gate",
+    "live publication and verification"
+  ],
+  "note": "Review HTML embeds the approved local media and shows the requested publication category in the preview header. Publication body text is unchanged. No paste-ready or final-page pass is asserted."
+}

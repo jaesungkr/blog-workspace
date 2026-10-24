@@ -1,8 +1,8 @@
 {
   "stage": "author_review",
   "lifecycle": "reviewing",
-  "source_pass_sha256": "7151a61f5522f949e6585f07dca445b791669068858ec93b40eaa2a7a4e3a162",
-  "source_article_sha256": "c1b5746cc8da6c6e8ffff40f4774479fa5918d44b18cfd6f121bb109fb93a0be",
+  "source_pass_sha256": "e57326cea230c9941a94b374bda4aa2e75f9b6b2931a4f9d6f0edd8a6df092b0",
+  "source_article_sha256": "eded1d4dce2bdd24fe58b6f2ba03f8c0d02311f7025c2be54a2a10db24a2d86b",
   "publication_category": "AI·개발 → AI 이해·활용",
   "media": {
     "model-specifications": "b0329bf8d82c45852b6580e206708341517945f23aa85ec7b451046ad051571e",
@@ -11,9 +11,9 @@
     "eco-noise": "0bfb1f1a40d60931389efb71b6c14b58e1bec1a33daa9f30ca1fcabb155de717"
   },
   "outputs": {
-    "ai-pdf-summary-verification.md": "aaabe595ed8aa3c64b193765c381b104d92449b61c20bad4ce86cdde5399caf7",
-    "ai-pdf-summary-verification-review-dark.html": "d3d09f2dd611048dba3547ec66505786ad24daed372605f01f6b56cf37b0d185",
-    "ai-pdf-summary-verification-review.html": "09950dcc91ba2da3cf6f24343c7d44d14ecf49b210bb98c0ffb37ebe2be4c08f"
+    "ai-pdf-summary-verification.md": "03afd73fb7536df31dc8d352bbb5be98a64e038ac6ef88e6b577bb67478b153a",
+    "ai-pdf-summary-verification-review-dark.html": "9947bfa57e6695e52208a62cd2860c359dcbe280e1fe0e978f156e4c9a967968",
+    "ai-pdf-summary-verification-review.html": "7a1208315f9f64738f1786f80f135b6e61fa3c138a526a9ed73d75ece48638da"
   },
   "pending": [
     "author approval and instruction to publish",

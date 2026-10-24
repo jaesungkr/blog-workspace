@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T14:15:36.736582Z",
-  "checked_by": "/root/source_review (independent Codex agent)",
-  "article_content_sha256": "50e5cb642fbd64a6a1b5c475ed301e6c87638be64aeca0ca15bb24ae2a9af3ee",
-  "brief_sha256": "56c9a6a0eebf87e819ffb42976218f612ba8fa1479c1f1d16ed7db8bbbfc1547",
-  "evidence_sha256": "8294219ab7f3db641a4bce4044a7776c30de423ef9f30d814dde4368d17afd5a",
-  "note": ""
+  "checked_at": "2026-10-24T14:45:32.350334Z",
+  "checked_by": "/root/source_revision_2 (independent Codex agent)",
+  "article_content_sha256": "0955a3840daf0bbfd53897aac8e1996f7cb3a41f4582b2beaba4479c5f988643",
+  "brief_sha256": "763fd5e58b9ee851def6655fe301fb705eaa35dcfffc43d3fc3abf122dc32912",
+  "evidence_sha256": "745070a70a380a80b985e66dd43e4867fc77c954bb90a880e90feaca30636e37",
+  "note": "Revision 2: cold-read comprehension and raw PDF/answer comparison passed. Local preview only; no publication or final-page approval."
 }

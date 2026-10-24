@@ -78,7 +78,7 @@
       "source_url": "https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=65",
       "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
       "caption": "65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.",
-      "placement": "section:PNG 파일의 허용 크기를 바꾸는 각주; before:실제 PNG 답변",
+      "placement": "section:같은 PNG 파일을 두 모델에서 쓸 수 있을까?; before:실제 PNG 답변",
       "processing": [
         "PDF page 65 rasterized at width 2200 pixels with Poppler.",
         "Original right-column crop x=1145,y=725,width=940,height=590; PNG row and connected footnote retained."
@@ -108,7 +108,7 @@
       "source_url": "https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf#page=131",
       "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
       "caption": "131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
-      "placement": "section:팬 소음이 줄어든다는 설명에 없는 수치; before:실제 소음 답변",
+      "placement": "section:정확한 소음 수치가 문서에 없다면?; before:실제 소음 답변",
       "processing": [
         "PDF page 131 rasterized at width 2200 pixels with Poppler.",
         "Original left table crop x=125,y=880,width=925,height=345; complete Normal and ECO rows retained."

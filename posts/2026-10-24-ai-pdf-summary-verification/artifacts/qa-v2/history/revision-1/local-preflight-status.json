@@ -1,0 +1,58 @@
+{
+  "stage": "local_creator_preflight",
+  "status": "pass",
+  "by": "/root (Codex creator)",
+  "source_sha256": "c1b5746cc8da6c6e8ffff40f4774479fa5918d44b18cfd6f121bb109fb93a0be",
+  "profiles": [
+    {
+      "theme": "dark",
+      "width": 1280,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "light",
+      "width": 1280,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "page_overflow": 0,
+      "images_loaded": 4
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "page_overflow": 0,
+      "images_loaded": 4
+    }
+  ],
+  "visual_inspection": "Read complete 360px light layout and representative dark/desktop sections. Source values, captions and quote crops match originals. Tested mobile image horizontal scrolling with actual UI; ECO description readable after scrolling. Tables remain horizontally scrollable.",
+  "final_page_gate": "not run: pending author approval and native remote attachments"
+}
