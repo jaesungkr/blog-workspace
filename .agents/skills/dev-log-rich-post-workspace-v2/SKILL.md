@@ -45,6 +45,12 @@ revision. `references/infographic-v2.md` owns the v2 infographic creator
 selection. Specialist stages do not commit or push; this orchestrator owns
 Git delivery.
 
+Apply the [direct-statement rule](references/editorial-voice-v2.md#direct-statements-without-rhetorical-reversals)
+to titles, headings, body, captions, and closing before source freeze. State
+the fact or judgment directly; remove invented rebuttals, defensive caveats,
+generic self-testing endings, and unsolicited product-switching advice. The
+source reviewer must enforce these criteria even for a single occurrence.
+
 ## Load only the current stage
 
 Read `references/workflow-v2.md` for every v2 task. Then load just in time:

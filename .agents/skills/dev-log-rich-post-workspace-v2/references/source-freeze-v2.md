@@ -21,6 +21,12 @@ verify:
   change of subject. Reject an unexplained example even if each sentence is
   individually fluent; do not accept a generic assurance disclaimer in place
   of a specific, decision-relevant scope statement;
+- direct statements throughout the title, headings, body, tables, captions,
+  and closing, following `editorial-voice-v2.md#direct-statements-without-rhetorical-reversals`.
+  Return even a single invented rebuttal such as `A가 아니라 B` or `A라고
+  해서 B는 아닙니다`, and defensive judgments such as `단정할 근거는
+  없습니다`. Preserve direct factual negatives, exact quotations, code, and
+  material warnings; require the actual scope or condition where it matters;
 - the primary reader, plain identity, easiest start, and evidence boundary;
 - for a broad explainer, a locked map of the questions created by the title and
   opening, one owner section for each question, and explicit adjacent-topic
@@ -85,6 +91,12 @@ verify:
   answers the title's question. Verify its verdicts against the detailed
   evidence, including partial success and scope, rather than rejecting all
   repeated outcomes. Follow `editorial-voice-v2.md#results-that-answer-the-title`;
+- for comparisons, a closing judgment connected to the presented findings and
+  the author's stated purpose and current use. Return a generic `직접 써 보고
+  결정하세요` ending or unsolicited trial, additional subscription, or migration
+  advice. A necessary personal test must name a concrete condition and the
+  observation that would change the decision; preserve both products' evidence
+  and do not treat the author's preference as a universal performance result;
 - natural cadence without forced slang, deliberate mistakes, invented
   anecdotes, or unsupported casual endings.
 

@@ -130,6 +130,12 @@ non-specialists. Record the following in `brief.md` and the revision result in
 - the practical choice or use the article supports;
 - evidence detail and adjacent benefits deliberately excluded from the article.
 
+For comparisons, also record the author's stated current use, purpose of the
+comparison, and any stated adoption or switching intent in `brief.md`. Mark
+unstated intent as unknown. A request to compare products does not establish
+an intention to switch. Preserve favorable and unfavorable evidence for each
+product; keep the author's preference distinct from measured performance.
+
 Reject a title or opening that assumes the reader already knows a folk
 association, search habit, nutrient, metric, feature, or mechanism. `붓기에
 팥물을 찾는다면` assumes a connection that a first-time reader may not know;
@@ -255,10 +261,10 @@ through changing reader needs, not seven slogans built from the same mold.
 
 ## Pass 2: break AI-template sentence frames
 
-Search in context for the following patterns. They are review prompts, not a
-keyword ban:
+First apply the direct-statement rule below. Then review these other patterns
+in context; their keywords alone do not determine whether a sentence passes:
 
-- repeated `단순히 A가 아니라 B`, `A를 넘어 B`, `A에 그치지 않고 B`;
+- rhetorical escalation such as `A를 넘어 B` and `A에 그치지 않고 B`;
 - repeated `~하는 순간, ~이 됩니다` or `~하면, ~이 됩니다`;
 - generic `우리` that turns a bounded observation into a universal claim;
 - comma chains that hide the actor and action;
@@ -278,12 +284,48 @@ keyword ban:
 Replace the frame, not only the trigger word. Name an actor and direct verb,
 show the condition that changes the recommendation, or delete the sentence
 when the neighboring evidence already carries the meaning. Preserve a
-contrast when the distinction itself is the claim.
+factual difference by stating each relevant result or condition directly.
 
 Do not mechanically vary connectors or endings. A paragraph may start without
 a connector when the heading or previous sentence already establishes the
 relationship. Let sentence length change with the amount of thought. Split a
 comma chain when its actor, action, or result becomes hard to say aloud.
+
+### Direct statements without rhetorical reversals
+
+In public article prose, do not introduce a point by inventing an expectation
+and then denying it. Rewrite rhetorical frames such as `A가 아니라 B`,
+`단순히 A는 아닙니다`, `A라고 해서 B는 아닙니다`, `A했을 때 B라는 뜻은
+아닙니다`, and `중요한 것은 A가 아니라 B입니다` even when they occur only
+once. State the intended fact, condition, or judgment immediately. Do not
+replace one reversal frame with another or silently move it to a heading,
+caption, table, or closing.
+
+A factual negative may be the whole useful answer: `이 API는 음성 입력을
+지원하지 않습니다.` Keep that direct wording when accurate. If the question
+is whether two things are equivalent, `두 기능은 같지 않습니다` can state
+the answer directly. Do not preface either answer with an imagined reader
+mistake or an extra `~라고 해서` clause. Preserve exact quotations and code.
+
+Remove defensive judgments such as `단정할 근거는 없습니다`, `확정할 수는
+없습니다`, and `확대 해석해서는 안 됩니다`. When a boundary changes the
+claim, state the actual source, language, period, setting, or missing evidence
+and its practical consequence beside that claim. When the sentence adds no
+needed boundary, delete it. Do not add `결과가 다를 수 있습니다` mechanically;
+name the relevant condition. Preserve consequential factual limits and safety
+warnings without surrounding them with a rhetorical rebuttal.
+
+These examples diagnose the decision; do not copy them as a fixed template:
+
+| Rewrite or remove | Direct wording when supported |
+|---|---|
+| `영어권 개인 후기이므로 한국어 문장 품질까지 더 낫다고 단정할 근거는 없습니다.` | `영어권 사용자의 후기라 한국어로 글을 쓸 때는 결과가 다를 수 있습니다.` |
+| `Argon 후기는 일반 공개 후 약 2주 동안의 초기 반응으로 읽어야 합니다.` | `일반 공개 후 약 2주 동안 올라온 후기를 참고했습니다.` |
+| `API 가격이 낮다고 해서 모든 작업에서 더 좋은 모델이라는 뜻은 아닙니다.` | State the observed price and performance separately: `Argon의 API 단가는 더 낮고, 종합 평가 점수는 두 모델이 같습니다.` |
+| `Astra는 단순히 코드를 작성하는 모델이 아닙니다.` | Name the supported capability directly: `Astra는 여러 파일의 코드를 수정하고 도구를 실행할 수 있습니다.` |
+
+Review the rhetorical function as well as the wording. A clean keyword scan
+does not pass a sentence that still invents a misconception to refute it.
 
 ## Pass 3: run the new-information test
 
@@ -349,7 +391,8 @@ article is being compressed.
 
 The closing must change or settle the reader's decision. Do not repeat the
 article outline, copy the comparison table into prose, or restate every safety
-rule. A bounded recommendation, unresolved risk, or next check is enough.
+rule. Finish with the supported judgment or a specific unresolved question.
+Include a next check only when it is needed for this article's actual task.
 
 ### Results that answer the title
 
@@ -366,6 +409,26 @@ Retain practical examples when the author requests them or they serve the
 article's actual purpose, but do not let them displace that answer. This is
 permission for one useful synthesis, not a required table or closing template
 for every post. Do not repeat the table's rows again in the following prose.
+
+Do not abandon the comparison's findings with `직접 써 보고 결정하세요`,
+`해결하지 못했던 작업을 다른 모델에도 맡겨 보세요`, or a generic section
+about choosing a subscription. Connect the answer to the evidence already
+presented. If the evidence leaves the choice unresolved, name the specific
+unresolved difference. Recommend a personal test only when the article is
+about testing or identifies a concrete user-dependent condition and explains
+what observation would change the decision. A test suggestion cannot replace
+the article's supported answer.
+
+Keep observed strengths, task-specific recommendations, and a subscription or
+product-switching recommendation separate. Praise for one feature does not
+establish an overall reason to migrate. Recommend trying, adding, or replacing
+a product only when it serves the stated reader or author purpose and the
+evidence supports that action. Do not turn a comparison into an adoption pitch
+by adding `기존 제품을 쓰면서 새 제품도 써 보세요`. In the Argon/Astra case,
+the author already used Astra and stated an intention to keep using it;
+preserve Argon's strengths and that stated decision without inventing hands-on
+experience or treating the preference as proof of Astra's overall superiority.
+Do not carry this product preference into unrelated articles.
 
 Read the complete article aloud in spirit. Mark passages that sound like a
 press release, lecture script, generated checklist, or perfectly balanced
@@ -384,6 +447,11 @@ Record:
   topics, and topic-link test decisions;
 - the original and selected heading strip, with the job of each section;
 - representative template frames removed or justified;
+- representative rhetorical reversals and defensive caveats removed or made
+  concrete, with any material boundary preserved;
+- for comparisons, the connection from findings to the closing judgment and
+  the author's stated intent, including any justified self-test or switching
+  recommendation;
 - paragraphs deleted or merged by the new-information test;
 - representative numbers or evidence detail moved out of repeated prose;
 - caveats kept beside their claims and any separate safety section justified by
