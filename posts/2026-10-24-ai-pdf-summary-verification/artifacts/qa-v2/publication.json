@@ -1,0 +1,80 @@
+{
+  "status": "published_verified",
+  "post_id": 149,
+  "url": "https://dop3n.tistory.com/entry/ai-pdf-summary-verification",
+  "title": "AI에게 PDF 요약을 맡겨도 될까?",
+  "category": "AI·개발/AI 이해·활용",
+  "published_at": "2026-10-25T00:09:00+09:00",
+  "verified_at": "2026-10-25T00:20:30.130932+09:00",
+  "timezone": "Asia/Seoul",
+  "published_with": "Codex in-app browser",
+  "approval_record_sha256": "6b4dc09a6e4bd5f739dd2ae6bb68eff81af7b29a9188968aaf6cfd3fbba4915d",
+  "source_pass_sha256": "6968426d01907b541fa33fb689abcd81ae4e92782ae30c9eac93d5e58d106a75",
+  "final_page_sha256": "f38a6b79e75443b1dd1e20e5db3d5ab31242ce74eccc93e713c394f11a63f0bd",
+  "submitted_fragment_path": "artifacts/qa-v2/cover-repair/editor-submitted.html",
+  "submitted_fragment_sha256": "940d9450aeb04ea930084ee021a283a226a8413745e9791bb242b95615db281b",
+  "paste_file_sha256": "940d9450aeb04ea930084ee021a283a226a8413745e9791bb242b95615db281b",
+  "approved_article_text_matches_public": true,
+  "body_unchanged_during_cover_repair": true,
+  "cover_repair": {
+    "post_css": "assets/post.css",
+    "overlay": "rgba(0, 0, 0, 0.72)",
+    "title_color": "#ffffff",
+    "url_and_original_publication_date_preserved": true,
+    "evidence": "artifacts/qa-v2/cover-repair/"
+  },
+  "profiles": [
+    {
+      "theme": "dark",
+      "width": 1280,
+      "page_overflow": 0,
+      "native_figures": 4,
+      "images_loaded": 4,
+      "nonempty_alt": 4,
+      "toc_targets_valid": true
+    },
+    {
+      "theme": "light",
+      "width": 1280,
+      "page_overflow": 0,
+      "native_figures": 4,
+      "images_loaded": 4,
+      "nonempty_alt": 4,
+      "toc_targets_valid": true
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "page_overflow": 0,
+      "native_figures": 4,
+      "images_loaded": 4,
+      "nonempty_alt": 4,
+      "toc_targets_valid": true
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "page_overflow": 0,
+      "native_figures": 4,
+      "images_loaded": 4,
+      "nonempty_alt": 4,
+      "toc_targets_valid": true
+    }
+  ],
+  "mobile_table_scroll": {
+    "scrollLeft": 345,
+    "scrollWidth": 620,
+    "width": 273
+  },
+  "screenshots": [
+    "artifacts/qa-v2/live/light-1280.png",
+    "artifacts/qa-v2/live/light-360.png",
+    "artifacts/qa-v2/live/dark-1280.png",
+    "artifacts/qa-v2/live/dark-360.png"
+  ],
+  "notes": [
+    "Initial desktop-to-mobile viewport resize retained a 797px third-party ad host and produced 453px page overflow. Fresh mobile page loads pass in both themes; retained in live/resize-observation.json. Article tables/images remain individual scroll regions.",
+    "Initial public cover automatically used the first specification image. Added post-scoped CSS to darken its overlay, reran independent final page gates, and repaired the same post without changing body, assets, URL or original publication date.",
+    "No indefinite CDN lifetime or expiry-boundary guarantee is asserted; publication uses native Tistory references."
+  ]
+}

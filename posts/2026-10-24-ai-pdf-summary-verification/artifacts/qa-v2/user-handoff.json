@@ -1,26 +1,10 @@
 {
-  "stage": "author_review",
-  "lifecycle": "reviewing",
-  "source_pass_sha256": "6968426d01907b541fa33fb689abcd81ae4e92782ae30c9eac93d5e58d106a75",
-  "source_article_sha256": "60d3d4bab1c6fd5bc9fe2b96b61181eee9ef4259a06ca2eb515cc79f93ef45c4",
-  "publication_category": "AI·개발 → AI 이해·활용",
-  "media": {
-    "model-specifications": "b0329bf8d82c45852b6580e206708341517945f23aa85ec7b451046ad051571e",
-    "claude-model-group": "d46d94e0d1fb522ee4370d4aa331d09997144737451a663e831cd1dd989dfb6c",
-    "png-footnote": "dc7815a6ebddc14cb5a67864431ba4beca295a275a1357e9b90833ad12c2bff6",
-    "eco-noise": "0bfb1f1a40d60931389efb71b6c14b58e1bec1a33daa9f30ca1fcabb155de717"
-  },
-  "outputs": {
-    "ai-pdf-summary-verification.md": "7da2e202dc458ee4de7251c366591e2ae1ecd75655ef1cfaa16019ec55c938e9",
-    "ai-pdf-summary-verification-review-dark.html": "3659b3f768b51a12c2097c552403b05ceb626e4af71e31c971c8cf4e0eba3b25",
-    "ai-pdf-summary-verification-review.html": "822f2e844d2216a86041f9aca3a64874c706394e05f343c6c822256adaa76c86"
-  },
-  "pending": [
-    "author approval and instruction to publish",
-    "native Tistory image attachment binding",
-    "remote media observation",
-    "independent final light/dark page gate",
-    "live publication and verification"
-  ],
-  "note": "Review HTML embeds the approved local media and shows the requested publication category in the preview header. Publication body text is unchanged. No paste-ready or final-page pass is asserted."
+  "stage": "published",
+  "lifecycle": "published",
+  "url": "https://dop3n.tistory.com/entry/ai-pdf-summary-verification",
+  "publication_record": "artifacts/qa-v2/publication.json",
+  "submitted_fragment_sha256": "940d9450aeb04ea930084ee021a283a226a8413745e9791bb242b95615db281b",
+  "publication_category": "AI·개발/AI 이해·활용",
+  "pending": [],
+  "note": "Public page verified; exact final native HTML TXT retained in task outputs."
 }

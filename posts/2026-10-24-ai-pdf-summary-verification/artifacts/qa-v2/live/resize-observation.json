@@ -1,0 +1,562 @@
+[
+  {
+    "requestedTheme": "light",
+    "requestedWidth": 1280,
+    "articleWidth": 800,
+    "captions": [
+      "173쪽의 해상도·램프·본체 전력·무게 행을 발췌했습니다. 모바일에서는 그림을 좌우로 밀어 모델명과 값을 확인해 주세요.",
+      "숫자 표 아래에 붙은 실제 설명입니다. 두 번째 항목에서 해상도까지 같은 값으로 묶었습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
+      "65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.",
+      "131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요."
+    ],
+    "h1": [
+      "AI에게 PDF 요약을 맡겨도 될까?"
+    ],
+    "height": 900,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "bounds": {
+          "bottom": -3768.3125,
+          "height": 876.6484375,
+          "left": 272,
+          "right": 1008,
+          "top": -4644.9609375,
+          "width": 736,
+          "x": 272,
+          "y": -4644.9609375
+        },
+        "loaded": true,
+        "naturalHeight": 1138,
+        "naturalWidth": 955,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsnUWM%2FdJMcac58sjG%2FAAAAAAAAAAAAAAAAAAAAAKrzluuftBmRKiusJ_ki1xBEQvpgiVVSP-aAwzX-dAr-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DBt6AZxIFQo%252BziCaH8AOqBTPHVNc%253D"
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "bounds": {
+          "bottom": -2871.921875,
+          "height": 194.1015625,
+          "left": 272,
+          "right": 1008,
+          "top": -3066.0234375,
+          "width": 736,
+          "x": 272,
+          "y": -3066.0234375
+        },
+        "loaded": true,
+        "naturalHeight": 335,
+        "naturalWidth": 1280,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqAXyl%2FdJMcaiFmbct%2FAAAAAAAAAAAAAAAAAAAAAIBmwSdPEN5k5bUM4GNoXtXw93-m4Wc1RvltAFbidmh-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdOfofcKN2H6TZFqj9p3isJufOjI%253D"
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "bounds": {
+          "bottom": -1571.1328125,
+          "height": 462.6953125,
+          "left": 272,
+          "right": 1008,
+          "top": -2033.828125,
+          "width": 736,
+          "x": 272,
+          "y": -2033.828125
+        },
+        "loaded": true,
+        "naturalHeight": 590,
+        "naturalWidth": 940,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHOjel%2FdJMcablYuii%2FAAAAAAAAAAAAAAAAAAAAAIoKZS78lzW8tziEqLur1ewxgiby0uiNdQivVPQHP42-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dph3KyVvtpG7gX0caFs9RVuml3qg%253D"
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "bounds": {
+          "bottom": -216.6171875,
+          "height": 275.7578125,
+          "left": 272,
+          "right": 1008,
+          "top": -492.375,
+          "width": 736,
+          "x": 272,
+          "y": -492.375
+        },
+        "loaded": true,
+        "naturalHeight": 345,
+        "naturalWidth": 925,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbV9SIA%2FdJMcaiFmbcs%2FAAAAAAAAAAAAAAAAAAAAAJkWOQF7cCp2fjS2kdcFohFA-cymGZmnyZkHCdtycJx9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxXoCSR3Lck5FHzW3xvbBbEDIyCM%253D"
+      }
+    ],
+    "lastSection": "\n세 가지 질문으로 확인한 PDF 읽기 정확도\n확인 항목판정실제 답변과 대조한 결과모델별 사양부분 성공숫자 여덟 개는 모두 맞았습니다. 다만 부연 설명에서 서로 다른 모델의 해상도를 같은 값으로 잘못 묶었습니다.각주의 예외 조건성공PNG의 기본 제한과 1080p 모델에 적용되는 예외를 구분해, 두 제품의 사용 가능 여부를 맞게 판단했습니다.문서에 없는 정보성공정확한 소음 수치를 제시하지 않고, 이 설명서만으로는 확인할 수 없다고 답했습니다.\n이번 실험에서 Claude는 필요한 숫자와 각주를 찾았지만, 그 내용을 모두 정확하게 설명하지는 못했습니다. PDF 요약은 문서의 주요 내용을 파악하는 데 활용할 수 있습니다. 실제 제품을 고르거나 기능 사용 여부를 결정할 때는, 답변에 적힌 값뿐 아니라 어느 모델과 조건에 해당하는지도 원문에서 확인해야 합니다.\n이번 실험은 텍스트를 추출할 수 있는 영문 설명서 한 개와 Claude 대화 한 건을 대상으로 했습니다. 스캔한 표나 그림 속 작은 글씨를 읽는 능력까지 시험한 결과는 아닙니다.\n",
+    "nativeFigures": 4,
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      }
+    ],
+    "theme": "scroll-smooth",
+    "toc": [
+      {
+        "href": "#왜-프로젝터-설명서를-골랐을까",
+        "valid": true
+      },
+      {
+        "href": "#숫자-표-아래에서-발견한-모델-혼동",
+        "valid": true
+      },
+      {
+        "href": "#같은-png-파일을-두-모델에서-쓸-수-있을까",
+        "valid": true
+      },
+      {
+        "href": "#정확한-소음-수치가-문서에-없다면",
+        "valid": true
+      },
+      {
+        "href": "#세-가지-질문으로-확인한-pdf-읽기-정확도",
+        "valid": true
+      }
+    ],
+    "url": "https://dop3n.tistory.com/entry/ai-pdf-summary-verification",
+    "width": 1280
+  },
+  {
+    "requestedTheme": "light",
+    "requestedWidth": 360,
+    "articleWidth": 328,
+    "captions": [
+      "173쪽의 해상도·램프·본체 전력·무게 행을 발췌했습니다. 모바일에서는 그림을 좌우로 밀어 모델명과 값을 확인해 주세요.",
+      "숫자 표 아래에 붙은 실제 설명입니다. 두 번째 항목에서 해상도까지 같은 값으로 묶었습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
+      "65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.",
+      "131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요."
+    ],
+    "h1": [
+      "AI에게 PDF 요약을 맡겨도 될까?"
+    ],
+    "height": 800,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "bounds": {
+          "bottom": -5737.5078125,
+          "height": 833.75,
+          "left": 36,
+          "right": 736,
+          "top": -6571.2578125,
+          "width": 700,
+          "x": 36,
+          "y": -6571.2578125
+        },
+        "loaded": true,
+        "naturalHeight": 1138,
+        "naturalWidth": 955,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsnUWM%2FdJMcac58sjG%2FAAAAAAAAAAAAAAAAAAAAAKrzluuftBmRKiusJ_ki1xBEQvpgiVVSP-aAwzX-dAr-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DBt6AZxIFQo%252BziCaH8AOqBTPHVNc%253D"
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "bounds": {
+          "bottom": -4449.5546875,
+          "height": 241.2109375,
+          "left": 36,
+          "right": 952,
+          "top": -4690.765625,
+          "width": 916,
+          "x": 36,
+          "y": -4690.765625
+        },
+        "loaded": true,
+        "naturalHeight": 335,
+        "naturalWidth": 1280,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqAXyl%2FdJMcaiFmbct%2FAAAAAAAAAAAAAAAAAAAAAIBmwSdPEN5k5bUM4GNoXtXw93-m4Wc1RvltAFbidmh-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdOfofcKN2H6TZFqj9p3isJufOjI%253D"
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "bounds": {
+          "bottom": -2477.2734375,
+          "height": 440.1015625,
+          "left": 36,
+          "right": 736,
+          "top": -2917.375,
+          "width": 700,
+          "x": 36,
+          "y": -2917.375
+        },
+        "loaded": true,
+        "naturalHeight": 590,
+        "naturalWidth": 940,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHOjel%2FdJMcablYuii%2FAAAAAAAAAAAAAAAAAAAAAIoKZS78lzW8tziEqLur1ewxgiby0uiNdQivVPQHP42-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dph3KyVvtpG7gX0caFs9RVuml3qg%253D"
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "bounds": {
+          "bottom": -481.28125,
+          "height": 262.328125,
+          "left": 36,
+          "right": 736,
+          "top": -743.609375,
+          "width": 700,
+          "x": 36,
+          "y": -743.609375
+        },
+        "loaded": true,
+        "naturalHeight": 345,
+        "naturalWidth": 925,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbV9SIA%2FdJMcaiFmbcs%2FAAAAAAAAAAAAAAAAAAAAAJkWOQF7cCp2fjS2kdcFohFA-cymGZmnyZkHCdtycJx9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxXoCSR3Lck5FHzW3xvbBbEDIyCM%253D"
+      }
+    ],
+    "lastSection": "\n세 가지 질문으로 확인한 PDF 읽기 정확도\n확인 항목판정실제 답변과 대조한 결과모델별 사양부분 성공숫자 여덟 개는 모두 맞았습니다. 다만 부연 설명에서 서로 다른 모델의 해상도를 같은 값으로 잘못 묶었습니다.각주의 예외 조건성공PNG의 기본 제한과 1080p 모델에 적용되는 예외를 구분해, 두 제품의 사용 가능 여부를 맞게 판단했습니다.문서에 없는 정보성공정확한 소음 수치를 제시하지 않고, 이 설명서만으로는 확인할 수 없다고 답했습니다.\n이번 실험에서 Claude는 필요한 숫자와 각주를 찾았지만, 그 내용을 모두 정확하게 설명하지는 못했습니다. PDF 요약은 문서의 주요 내용을 파악하는 데 활용할 수 있습니다. 실제 제품을 고르거나 기능 사용 여부를 결정할 때는, 답변에 적힌 값뿐 아니라 어느 모델과 조건에 해당하는지도 원문에서 확인해야 합니다.\n이번 실험은 텍스트를 추출할 수 있는 영문 설명서 한 개와 Claude 대화 한 건을 대상으로 했습니다. 스캔한 표나 그림 속 작은 글씨를 읽는 능력까지 시험한 결과는 아닙니다.\n",
+    "nativeFigures": 4,
+    "scrollWidth": 813,
+    "tables": [
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      }
+    ],
+    "theme": "scroll-smooth",
+    "toc": [
+      {
+        "href": "#왜-프로젝터-설명서를-골랐을까",
+        "valid": true
+      },
+      {
+        "href": "#숫자-표-아래에서-발견한-모델-혼동",
+        "valid": true
+      },
+      {
+        "href": "#같은-png-파일을-두-모델에서-쓸-수-있을까",
+        "valid": true
+      },
+      {
+        "href": "#정확한-소음-수치가-문서에-없다면",
+        "valid": true
+      },
+      {
+        "href": "#세-가지-질문으로-확인한-pdf-읽기-정확도",
+        "valid": true
+      }
+    ],
+    "url": "https://dop3n.tistory.com/entry/ai-pdf-summary-verification",
+    "width": 360
+  },
+  {
+    "requestedTheme": "dark",
+    "requestedWidth": 1280,
+    "articleWidth": 800,
+    "captions": [
+      "173쪽의 해상도·램프·본체 전력·무게 행을 발췌했습니다. 모바일에서는 그림을 좌우로 밀어 모델명과 값을 확인해 주세요.",
+      "숫자 표 아래에 붙은 실제 설명입니다. 두 번째 항목에서 해상도까지 같은 값으로 묶었습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
+      "65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.",
+      "131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요."
+    ],
+    "h1": [
+      "AI에게 PDF 요약을 맡겨도 될까?"
+    ],
+    "height": 900,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "bounds": {
+          "bottom": -3768.3125,
+          "height": 876.6484375,
+          "left": 272,
+          "right": 1008,
+          "top": -4644.9609375,
+          "width": 736,
+          "x": 272,
+          "y": -4644.9609375
+        },
+        "loaded": true,
+        "naturalHeight": 1138,
+        "naturalWidth": 955,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsnUWM%2FdJMcac58sjG%2FAAAAAAAAAAAAAAAAAAAAAKrzluuftBmRKiusJ_ki1xBEQvpgiVVSP-aAwzX-dAr-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DBt6AZxIFQo%252BziCaH8AOqBTPHVNc%253D"
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "bounds": {
+          "bottom": -2871.921875,
+          "height": 194.1015625,
+          "left": 272,
+          "right": 1008,
+          "top": -3066.0234375,
+          "width": 736,
+          "x": 272,
+          "y": -3066.0234375
+        },
+        "loaded": true,
+        "naturalHeight": 335,
+        "naturalWidth": 1280,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqAXyl%2FdJMcaiFmbct%2FAAAAAAAAAAAAAAAAAAAAAIBmwSdPEN5k5bUM4GNoXtXw93-m4Wc1RvltAFbidmh-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdOfofcKN2H6TZFqj9p3isJufOjI%253D"
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "bounds": {
+          "bottom": -1571.1328125,
+          "height": 462.6953125,
+          "left": 272,
+          "right": 1008,
+          "top": -2033.828125,
+          "width": 736,
+          "x": 272,
+          "y": -2033.828125
+        },
+        "loaded": true,
+        "naturalHeight": 590,
+        "naturalWidth": 940,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHOjel%2FdJMcablYuii%2FAAAAAAAAAAAAAAAAAAAAAIoKZS78lzW8tziEqLur1ewxgiby0uiNdQivVPQHP42-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dph3KyVvtpG7gX0caFs9RVuml3qg%253D"
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "bounds": {
+          "bottom": -216.6171875,
+          "height": 275.7578125,
+          "left": 272,
+          "right": 1008,
+          "top": -492.375,
+          "width": 736,
+          "x": 272,
+          "y": -492.375
+        },
+        "loaded": true,
+        "naturalHeight": 345,
+        "naturalWidth": 925,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbV9SIA%2FdJMcaiFmbcs%2FAAAAAAAAAAAAAAAAAAAAAJkWOQF7cCp2fjS2kdcFohFA-cymGZmnyZkHCdtycJx9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxXoCSR3Lck5FHzW3xvbBbEDIyCM%253D"
+      }
+    ],
+    "lastSection": "\n세 가지 질문으로 확인한 PDF 읽기 정확도\n확인 항목판정실제 답변과 대조한 결과모델별 사양부분 성공숫자 여덟 개는 모두 맞았습니다. 다만 부연 설명에서 서로 다른 모델의 해상도를 같은 값으로 잘못 묶었습니다.각주의 예외 조건성공PNG의 기본 제한과 1080p 모델에 적용되는 예외를 구분해, 두 제품의 사용 가능 여부를 맞게 판단했습니다.문서에 없는 정보성공정확한 소음 수치를 제시하지 않고, 이 설명서만으로는 확인할 수 없다고 답했습니다.\n이번 실험에서 Claude는 필요한 숫자와 각주를 찾았지만, 그 내용을 모두 정확하게 설명하지는 못했습니다. PDF 요약은 문서의 주요 내용을 파악하는 데 활용할 수 있습니다. 실제 제품을 고르거나 기능 사용 여부를 결정할 때는, 답변에 적힌 값뿐 아니라 어느 모델과 조건에 해당하는지도 원문에서 확인해야 합니다.\n이번 실험은 텍스트를 추출할 수 있는 영문 설명서 한 개와 Claude 대화 한 건을 대상으로 했습니다. 스캔한 표나 그림 속 작은 글씨를 읽는 능력까지 시험한 결과는 아닙니다.\n",
+    "nativeFigures": 4,
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 736,
+        "width": 736
+      }
+    ],
+    "theme": "scroll-smooth dark",
+    "toc": [
+      {
+        "href": "#왜-프로젝터-설명서를-골랐을까",
+        "valid": true
+      },
+      {
+        "href": "#숫자-표-아래에서-발견한-모델-혼동",
+        "valid": true
+      },
+      {
+        "href": "#같은-png-파일을-두-모델에서-쓸-수-있을까",
+        "valid": true
+      },
+      {
+        "href": "#정확한-소음-수치가-문서에-없다면",
+        "valid": true
+      },
+      {
+        "href": "#세-가지-질문으로-확인한-pdf-읽기-정확도",
+        "valid": true
+      }
+    ],
+    "url": "https://dop3n.tistory.com/entry/ai-pdf-summary-verification",
+    "width": 1280
+  },
+  {
+    "requestedTheme": "dark",
+    "requestedWidth": 360,
+    "articleWidth": 328,
+    "captions": [
+      "173쪽의 해상도·램프·본체 전력·무게 행을 발췌했습니다. 모바일에서는 그림을 좌우로 밀어 모델명과 값을 확인해 주세요.",
+      "숫자 표 아래에 붙은 실제 설명입니다. 두 번째 항목에서 해상도까지 같은 값으로 묶었습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요.",
+      "65쪽의 PNG 행과 별표 각주입니다. 모바일에서는 그림을 좌우로 밀어 기본 제한과 예외를 함께 확인해 주세요.",
+      "131쪽의 ECO 행은 소음 감소를 설명하지만 정확한 소음 수치를 제시하지 않습니다. 모바일에서는 그림을 좌우로 밀어 읽어 주세요."
+    ],
+    "h1": [
+      "AI에게 PDF 요약을 맡겨도 될까?"
+    ],
+    "height": 800,
+    "images": [
+      {
+        "alt": "173쪽 사양표에서 EB-1795F의 해상도는 단독으로 표시되고 다른 세 모델의 해상도는 별도 묶음으로 표시된 화면",
+        "bounds": {
+          "bottom": -5737.5078125,
+          "height": 833.75,
+          "left": 36,
+          "right": 736,
+          "top": -6571.2578125,
+          "width": 700,
+          "x": 36,
+          "y": -6571.2578125
+        },
+        "loaded": true,
+        "naturalHeight": 1138,
+        "naturalWidth": 955,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsnUWM%2FdJMcac58sjG%2FAAAAAAAAAAAAAAAAAAAAAKrzluuftBmRKiusJ_ki1xBEQvpgiVVSP-aAwzX-dAr-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DBt6AZxIFQo%252BziCaH8AOqBTPHVNc%253D"
+      },
+      {
+        "alt": "Claude가 해상도까지 EB-1795F와 EB-1785W 및 EB-1781W의 공통값이라고 설명한 실제 답변",
+        "bounds": {
+          "bottom": -4449.5546875,
+          "height": 241.2109375,
+          "left": 36,
+          "right": 952,
+          "top": -4690.765625,
+          "width": 916,
+          "x": 36,
+          "y": -4690.765625
+        },
+        "loaded": true,
+        "naturalHeight": 335,
+        "naturalWidth": 1280,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqAXyl%2FdJMcaiFmbct%2FAAAAAAAAAAAAAAAAAAAAAIBmwSdPEN5k5bUM4GNoXtXw93-m4Wc1RvltAFbidmh-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DdOfofcKN2H6TZFqj9p3isJufOjI%253D"
+      },
+      {
+        "alt": "PNG의 1280×800 제한 옆 별표와 1080p 프로젝터에서는 1920×1200까지 허용한다는 각주가 함께 보이는 화면",
+        "bounds": {
+          "bottom": -2477.2734375,
+          "height": 440.1015625,
+          "left": 36,
+          "right": 736,
+          "top": -2917.375,
+          "width": 700,
+          "x": 36,
+          "y": -2917.375
+        },
+        "loaded": true,
+        "naturalHeight": 590,
+        "naturalWidth": 940,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FHOjel%2FdJMcablYuii%2FAAAAAAAAAAAAAAAAAAAAAIoKZS78lzW8tziEqLur1ewxgiby0uiNdQivVPQHP42-%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dph3KyVvtpG7gX0caFs9RVuml3qg%253D"
+      },
+      {
+        "alt": "ECO 모드가 램프 밝기와 팬 소음을 줄인다는 설명이 있지만 dB(A) 값은 적혀 있지 않은 표",
+        "bounds": {
+          "bottom": -481.28125,
+          "height": 262.328125,
+          "left": 36,
+          "right": 736,
+          "top": -743.609375,
+          "width": 700,
+          "x": 36,
+          "y": -743.609375
+        },
+        "loaded": true,
+        "naturalHeight": 345,
+        "naturalWidth": 925,
+        "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbV9SIA%2FdJMcaiFmbcs%2FAAAAAAAAAAAAAAAAAAAAAJkWOQF7cCp2fjS2kdcFohFA-cymGZmnyZkHCdtycJx9%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxXoCSR3Lck5FHzW3xvbBbEDIyCM%253D"
+      }
+    ],
+    "lastSection": "\n세 가지 질문으로 확인한 PDF 읽기 정확도\n확인 항목판정실제 답변과 대조한 결과모델별 사양부분 성공숫자 여덟 개는 모두 맞았습니다. 다만 부연 설명에서 서로 다른 모델의 해상도를 같은 값으로 잘못 묶었습니다.각주의 예외 조건성공PNG의 기본 제한과 1080p 모델에 적용되는 예외를 구분해, 두 제품의 사용 가능 여부를 맞게 판단했습니다.문서에 없는 정보성공정확한 소음 수치를 제시하지 않고, 이 설명서만으로는 확인할 수 없다고 답했습니다.\n이번 실험에서 Claude는 필요한 숫자와 각주를 찾았지만, 그 내용을 모두 정확하게 설명하지는 못했습니다. PDF 요약은 문서의 주요 내용을 파악하는 데 활용할 수 있습니다. 실제 제품을 고르거나 기능 사용 여부를 결정할 때는, 답변에 적힌 값뿐 아니라 어느 모델과 조건에 해당하는지도 원문에서 확인해야 합니다.\n이번 실험은 텍스트를 추출할 수 있는 영문 설명서 한 개와 Claude 대화 한 건을 대상으로 했습니다. 스캔한 표나 그림 속 작은 글씨를 읽는 능력까지 시험한 결과는 아닙니다.\n",
+    "nativeFigures": 4,
+    "scrollWidth": 813,
+    "tables": [
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      },
+      {
+        "overflow": "auto",
+        "scrollWidth": 620,
+        "width": 288
+      }
+    ],
+    "theme": "scroll-smooth dark",
+    "toc": [
+      {
+        "href": "#왜-프로젝터-설명서를-골랐을까",
+        "valid": true
+      },
+      {
+        "href": "#숫자-표-아래에서-발견한-모델-혼동",
+        "valid": true
+      },
+      {
+        "href": "#같은-png-파일을-두-모델에서-쓸-수-있을까",
+        "valid": true
+      },
+      {
+        "href": "#정확한-소음-수치가-문서에-없다면",
+        "valid": true
+      },
+      {
+        "href": "#세-가지-질문으로-확인한-pdf-읽기-정확도",
+        "valid": true
+      }
+    ],
+    "url": "https://dop3n.tistory.com/entry/ai-pdf-summary-verification",
+    "width": 360
+  }
+]

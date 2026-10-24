@@ -1,0 +1,94 @@
+{
+  "purpose": "Cover contrast CSS regression validation; previous full-page readability findings retained for byte-identical body and media.",
+  "post_css_sha256": "20f0b285d10c5442e137135be2d0514c68a016bead5d8c580d0a823f1fdcd20c",
+  "article_unchanged": true,
+  "media_manifest_unchanged": true,
+  "canonical_change_only_inserted_post_css": {
+    "final-rendered/ai-pdf-summary-verification-rich-preview.html": true,
+    "final-dark-rendered/ai-pdf-summary-verification-rich-preview.html": true,
+    "final-rendered/ai-pdf-summary-verification-tistory-fragment.html": true
+  },
+  "viewports": [
+    {
+      "theme": "light",
+      "width": 1280,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "screenshot_unchanged": true,
+      "page_height_unchanged": true,
+      "horizontal_overflow": 0,
+      "images_loaded": true,
+      "image_count": 4,
+      "toc_targets_unique": true
+    }
+  ],
+  "limitation": "Local canonical previews contain no hELLO cover. The publishing agent verifies actual cover and public page."
+}

@@ -6,12 +6,12 @@ category: "Log"
 subcategory: "AI 개념 · 실전"
 publication_category: "AI·개발"
 publication_subcategory: "AI 이해·활용"
-status: ready
+status: published
 format: rich-post-v2
 tags: ["AI", "Claude", "PDF 요약", "문서 검증", "환각"]
 summary: "183쪽 제품 설명서를 Claude에게 요약하게 한 뒤, 모델별 숫자·각주 조건·문서에 없는 정보를 원문과 대조했습니다."
 hero_image: assets/model-specifications-detail.png
-published_url: ""
+published_url: "https://dop3n.tistory.com/entry/ai-pdf-summary-verification"
 sources:
   - https://platform.claude.com/docs/en/build-with-claude/pdf-support
   - https://download.epson.com.sg/manuals/EB-1785W_1795F_User%20Guide.pdf

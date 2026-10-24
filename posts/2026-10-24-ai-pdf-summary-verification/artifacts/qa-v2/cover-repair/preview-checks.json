@@ -1,0 +1,34 @@
+[
+  {
+    "overlay": "rgba(0, 0, 0, 0.72)",
+    "scrollWidth": 1265,
+    "theme": "scroll-smooth",
+    "title": "AI에게 PDF 요약을 맡겨도 될까?",
+    "titleColor": "rgb(255, 255, 255)",
+    "width": 1280
+  },
+  {
+    "overlay": "rgba(0, 0, 0, 0.72)",
+    "scrollWidth": 345,
+    "theme": "scroll-smooth",
+    "title": "AI에게 PDF 요약을 맡겨도 될까?",
+    "titleColor": "rgb(255, 255, 255)",
+    "width": 360
+  },
+  {
+    "overlay": "rgba(0, 0, 0, 0.72)",
+    "scrollWidth": 1265,
+    "theme": "scroll-smooth dark",
+    "title": "AI에게 PDF 요약을 맡겨도 될까?",
+    "titleColor": "rgb(255, 255, 255)",
+    "width": 1280
+  },
+  {
+    "overlay": "rgba(0, 0, 0, 0.72)",
+    "scrollWidth": 345,
+    "theme": "scroll-smooth dark",
+    "title": "AI에게 PDF 요약을 맡겨도 될까?",
+    "titleColor": "rgb(255, 255, 255)",
+    "width": 360
+  }
+]
