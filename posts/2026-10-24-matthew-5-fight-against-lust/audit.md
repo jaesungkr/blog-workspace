@@ -126,3 +126,11 @@
 - 제목과 본문·설교 요약은 바꾸지 않았습니다. 이전 원고와 source pass는 history/before-thoughts-cadence에 보존하고 새 원고는 독립 검토 전 reviewing으로 둡니다.
 
 - 독립 검토 완료: review_thoughts_cadence가 전체 원고를 처음 읽고 원문 및 근거와 대조하여 pass를 기록하고 source pass를 갱신했습니다. article SHA256은 bb11d6ef276e6400d6a7e55a7800dcf73458972ee8c680910d7560d00324318b입니다. blog.py check 오류·경고 0개, diff 공백 검사 통과, 설교·성경과 Thoughts 사본의 일치를 확인했습니다. 이 검토는 문장에 관한 사용자의 최종 선호를 대신하지 않습니다.
+
+## 사용자 지정 문구 및 설교 귀속 정정
+
+- 강아지 앞에 간식을 놓는 장면이 떠오른다는 문장을 장면을 가정해 보겠다는 표현으로 수정했습니다.
+- 돈과 정욕을 한 문장에 병렬로 배치해 이번 설교에서 모두 언급한 것처럼 보이던 문장을 수정했습니다. 다른 죄를 다룬 설교에서 들었던 돈에 관한 설명과 이번 설교를 비교하는 저자의 뜻을 명시했습니다.
+- 두 대목과 근거 기록만 수정했으며 전체 Thoughts 사본을 동기화했습니다. 이전 source pass는 history/before-thoughts-attribution에 보존하고 기존 독립 검토자에게 변경 대목 재검토를 요청합니다.
+
+- 두 대목 독립 재검토 결과: pass. review_thoughts_cadence가 다른 설교와의 비교 및 가정 표현을 확인했습니다. article SHA256은 89ca8b2c53207646e0cc4f30d9936f25a9f79c9362fed58e58ed46d0edded28d입니다. blog.py check 오류·경고 0개이며 source pass를 갱신했습니다.
