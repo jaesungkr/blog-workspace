@@ -5,8 +5,8 @@
   "total_images_inspected": 186,
   "initial_broken_posts": 14,
   "initial_broken_images": 16,
-  "repaired_and_verified_posts": 36,
-  "rebound_images": 82,
+  "repaired_and_verified_posts": 37,
+  "rebound_images": 84,
   "untracked_source_bundles_preserved_as_work_in_progress": [
     "posts/2026-09-23-grok-4-7-vs-fable-5-1",
     "posts/2026-08-01-kanana-2-open-source"
@@ -299,19 +299,19 @@
       "image_count": 1,
       "rebound_count": 1,
       "checked_at": "2026-10-24T03:49:37.953Z"
-    }
-  ],
-  "saved_posts": 37,
-  "saved_native_image_refs": 84,
-  "pending_posts": [
+    },
     {
       "id": 84,
       "title": "Qwen3.8-Max 성능 비교, 중국 AI의 추격은 어디까지 왔나",
       "url": "https://dop3n.tistory.com/entry/Qwen38-Max-%EC%84%B1%EB%8A%A5-%EB%B9%84%EA%B5%90-%EC%A4%91%EA%B5%AD-AI%EC%9D%98-%EC%B6%94%EA%B2%A9%EC%9D%80-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%99%94%EB%82%98",
-      "status": "saved-awaiting-tistory-image-scan",
-      "blocked_media_id": "qwen38-official-performance"
+      "image_count": 2,
+      "rebound_count": 2,
+      "checked_at": "2026-10-24T03:55:34.623Z"
     }
   ],
+  "saved_posts": 37,
+  "saved_native_image_refs": 84,
+  "pending_posts": [],
   "local_bundle_checks": {
     "passed": 34,
     "preexisting_missing_asset_failures": [
@@ -319,6 +319,6 @@
       99,
       98
     ],
-    "note": "Missing local originals were already deleted in the worktree before this task. Identical Git-tracked original bytes were recovered into task scratch for browser uploads, preserving those user worktree deletions."
+    "note": "Existing local asset deletions were preserved; matching original Git bytes were recovered to scratch for uploads."
   }
 }
