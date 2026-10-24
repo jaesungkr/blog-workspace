@@ -1,0 +1,187 @@
+<!doctype html><html lang="ko" ><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VibeThinker-3B 개정 원고</title><style>body{margin:0;background:#ffffff;font-family:Arial,"Apple SD Gothic Neo",sans-serif;}main{max-width:390px;margin:0 auto;padding:28px 20px;box-sizing:border-box;}h1{font-size:25px;line-height:1.5;color:#333333;margin:0 0 36px;}img{max-width:100%;}</style><main><h1>VibeThinker-3B 사용 후기 - 맥북 실험과 한국어 한계</h1><div>
+<style>
+.devlog-dark-compatible {
+  --devlog-text: #333333;
+  --devlog-muted: #636366;
+  --devlog-link: #0066cc;
+  --devlog-border: #d1d1d6;
+  --devlog-soft-bg: #f5f5f7;
+  --devlog-code-bg: #f5f5f7;
+  --devlog-code-text: #2c2c2e;
+  color: var(--devlog-text);
+  color-scheme: light;
+}
+
+.dark .devlog-dark-compatible,
+[data-theme="dark"] .devlog-dark-compatible,
+.theme-dark .devlog-dark-compatible {
+  --devlog-text: #f2f2f7;
+  --devlog-muted: #aeaeb2;
+  --devlog-link: #64a8ff;
+  --devlog-border: #48484a;
+  --devlog-soft-bg: #2c2c2e;
+  --devlog-code-bg: #1c1c1e;
+  --devlog-code-text: #f2f2f7;
+  color-scheme: dark;
+}
+
+.devlog-dark-compatible :where(p, h2, h3, h4, h5, h6, span, b, strong, em, li, td, th, blockquote) {
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible :where(p, td, th) {
+  overflow-wrap: anywhere;
+}
+
+.devlog-dark-compatible a,
+.devlog-dark-compatible a[style] {
+  color: var(--devlog-link) !important;
+  text-decoration-color: currentColor;
+}
+
+.devlog-dark-compatible a :where(span, b, strong, em) {
+  color: inherit !important;
+}
+
+.devlog-dark-compatible table {
+  border-color: var(--devlog-border) !important;
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible th,
+.devlog-dark-compatible td {
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible tbody tr:first-child > :is(th, td) {
+  background: var(--devlog-soft-bg) !important;
+  font-weight: 700;
+}
+
+.devlog-dark-compatible .devlog-table-scroll {
+  max-width: 100%;
+  margin: 1em 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-dark-compatible .devlog-table-scroll > table {
+  width: max-content !important;
+  min-width: 640px;
+  margin: 0 !important;
+}
+
+.devlog-dark-compatible blockquote {
+  background: var(--devlog-soft-bg) !important;
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible pre,
+.devlog-dark-compatible pre[style] {
+  background: var(--devlog-code-bg) !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  border-color: var(--devlog-border) !important;
+  overflow-x: auto;
+}
+
+.devlog-dark-compatible pre code,
+.devlog-dark-compatible pre code[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+}
+
+.devlog-dark-compatible pre code *,
+.devlog-dark-compatible pre code *[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  text-shadow: none !important;
+}
+
+.devlog-dark-compatible :where(ul, ol) {
+  padding-left: 1.5em;
+}
+
+.devlog-dark-compatible ul {
+  list-style: disc outside !important;
+}
+
+.devlog-dark-compatible ol {
+  list-style: decimal outside !important;
+}
+
+.devlog-dark-compatible li {
+  display: list-item;
+}
+
+.devlog-dark-compatible li + li {
+  margin-top: 0.45em;
+}
+
+.devlog-dark-compatible :where(ul, ol) + p {
+  margin-top: 1em;
+}
+
+.devlog-dark-compatible li::marker {
+  color: var(--devlog-muted);
+}
+
+.devlog-dark-compatible img {
+  filter: none !important;
+}
+
+.devlog-dark-compatible th {background:var(--devlog-soft-bg)!important;}
+.devlog-dark-compatible table thead + tbody tr:first-child > td {background:transparent!important;font-weight:400;}
+.devlog-dark-compatible :not(pre) > code {color:var(--devlog-code-text)!important;background:var(--devlog-soft-bg)!important;overflow-wrap:anywhere;}
+.devlog-dark-compatible .devlog-table-scroll {margin:1.5em 0;}
+.devlog-dark-compatible h3 {scroll-margin-top:80px;}
+</style>
+</div>
+<article class="devlog-dark-compatible">
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">안녕하세요. dev.log입니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">노트북에서 실행하는 작은 AI도 수학이나 코딩 문제를 풀 수 있을까요? VibeThinker-3B는 이런 기대를 갖게 하는 공개형 언어 모델입니다. 제작사가 발표한 점수만으로 판단하기 어려워 맥북 에어에서 수학, 코딩, 한국어 질문을 각각 넣어 봤습니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;"><strong>수학에서는 계산 실수를 스스로 고쳤고, 코딩에서는 효율적인 풀이를 제시했지만, 한국어 속담의 뜻은 제대로 설명하지 못했습니다.</strong></p>
+<h3 style="font-size:1.15em;font-weight:700;margin:1.9em 0 0.6em;word-break:keep-all;">VibeThinker-3B는 어떤 모델인가요?</h3>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">VibeThinker-3B는 WeiboAI가 공개한 30억 파라미터의 추론 모델입니다. 파라미터는 모델이 학습 과정에서 조정하는 수치이며, ‘3B’는 그 수가 약 30억 개라는 뜻입니다. 모델 파일을 내려받아 자신의 컴퓨터에서 실행할 수 있습니다. <a href="https://github.com/WeiboAI/VibeThinker" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 저장소</a></p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">기반은 기존의 Qwen2.5-Coder-3B입니다. 여기에 여러 풀이 과정을 학습시키고, 답을 검증할 수 있는 문제에서 올바른 풀이를 강화하는 후처리를 적용했습니다. 작은 모델의 수학·코딩 추론을 개선하는 데 집중한 접근입니다. <a href="https://huggingface.co/WeiboAI/VibeThinker-3B" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 모델 카드</a></p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">아래는 제작사가 보고한 평가 결과입니다. AIME와 IMO-AnswerBench는 수학 문제 평가이고, LiveCodeBench는 코드를 작성해 테스트를 통과하는지 확인하는 평가입니다. 모두 점수가 높을수록 좋지만, 서로 다른 시험이므로 점수를 직접 비교하거나 평균 내서는 안 됩니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">모바일에서는 표를 좌우로 밀어 모든 열을 확인하세요.</p>
+<div class="devlog-table-scroll"><table style="border-collapse:collapse;width:100%;margin:1.6em 0;font-size:0.95em;line-height:1.7;"><thead><tr><th style="border:1px solid #ddd;padding:10px 12px;background:#f7f7f7;font-weight:700;word-break:keep-all;text-align:left;">제작사 평가</th><th style="border:1px solid #ddd;padding:10px 12px;background:#f7f7f7;font-weight:700;word-break:keep-all;text-align:right;">보고 점수</th><th style="border:1px solid #ddd;padding:10px 12px;background:#f7f7f7;font-weight:700;word-break:keep-all;text-align:left;">평가 대상</th></tr></thead><tbody><tr><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">AIME 2026</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">94.3</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">수학 경시 문제</td></tr><tr><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">LiveCodeBench v6</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">80.2</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">코드의 첫 제출 통과 비율인 Pass@1</td></tr><tr><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">IMO-AnswerBench</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">76.4</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">올림피아드 수준 수학 문제</td></tr></tbody></table></div>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">출처는 <a href="https://arxiv.org/abs/2606.16140" style="color:#1a73e8;text-decoration:none;" target="_blank">VibeThinker-3B 기술 보고서</a>입니다. 이 수치는 제작사 평가이며, 아래 맥북 실험으로 같은 성능을 재현했다는 뜻은 아닙니다.</p>
+<img alt="제작사가 공개한 VibeThinker-3B 수학·코딩 평가 비교 화면" style="width:100%;height:auto" src="https://blog.kakaocdn.net/dna/KeysW/dJMcahrq8Fb/AAAAAAAAAAAAAAAAAAAAACN-C9JLv5pFbSme3HSnTiaf96KQB0iUMLswpWF2XSCk/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=%2Bq31TeJzPwD%2Bf66eoQJSmQYx76Q%3D">
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">제작사의 공식 평가 화면입니다. 빗금 부분은 추가 추론 기법인 CLR을 적용한 결과이며, 이 글의 맥북 실험에는 CLR을 적용하지 않았습니다.</p>
+<h3 style="font-size:1.15em;font-weight:700;margin:1.9em 0 0.6em;word-break:keep-all;">맥북에서 확인한 세 가지 질문</h3>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">기존 실행 환경은 Apple Silicon 맥북 에어, 메모리 16GB입니다. Apple Silicon에서 모델을 실행하는 도구인 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">mlx-lm</code>으로 <a href="https://huggingface.co/mlx-community/VibeThinker-3B-8bit" style="color:#1a73e8;text-decoration:none;" target="_blank">MLX Community의 8bit 변환 모델</a>을 사용했습니다. 8bit는 모델의 수치를 더 적은 비트로 저장하는 방식으로, 제작사의 원본 모델과 실행 조건이 다릅니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">수학은 정답과 계산 과정, 코딩은 요구한 조건을 만족하는 알고리즘, 한국어는 속담의 뜻과 실제 유사 속담을 답하는지 살폈습니다. 첨부 로그에는 질문별 실행이 한 번씩 남아 있습니다. 다음 표의 토큰은 생성한 텍스트의 양이고, 메모리는 실행 도구가 출력한 최고 사용량입니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">모바일에서는 표를 좌우로 밀어 모든 열을 확인하세요.</p>
+<div class="devlog-table-scroll"><table style="border-collapse:collapse;width:100%;margin:1.6em 0;font-size:0.95em;line-height:1.7;"><thead><tr><th style="border:1px solid #ddd;padding:10px 12px;background:#f7f7f7;font-weight:700;word-break:keep-all;text-align:left;">질문</th><th style="border:1px solid #ddd;padding:10px 12px;background:#f7f7f7;font-weight:700;word-break:keep-all;text-align:left;">실행 기록에서 확인한 결과</th><th style="border:1px solid #ddd;padding:10px 12px;background:#f7f7f7;font-weight:700;word-break:keep-all;text-align:right;">생성 토큰</th><th style="border:1px solid #ddd;padding:10px 12px;background:#f7f7f7;font-weight:700;word-break:keep-all;text-align:right;">최고 메모리</th></tr></thead><tbody><tr><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">1~100의 3 또는 5의 배수 합</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">계산을 수정한 뒤 정답 2,418 도출</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">3,483</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">3.475GB</td></tr><tr><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">조건을 만족하는 가장 긴 연속 구간</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">슬라이딩 윈도우와 두 개의 덱으로 풀이</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">4,505</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">3.547GB</td></tr><tr><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">한국 속담의 뜻과 유사 속담</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:left;">뜻을 잘못 설명하고 새로운 표현 제시</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">7,166</td><td style="border:1px solid #ddd;padding:10px 12px;word-break:keep-all;text-align:right;">3.685GB</td></tr></tbody></table></div>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">세 실행에서 기록된 생성 속도는 초당 약 31~32토큰이었습니다. 메모리 수치는 컴퓨터 전체의 메모리 사용량이나 모델 파일의 크기를 뜻하지 않습니다.</p>
+<h3 style="font-size:1.15em;font-weight:700;margin:1.9em 0 0.6em;word-break:keep-all;">계산 오류를 고친 수학 답변과 코딩 풀이</h3>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">첫 질문은 1부터 100까지의 정수 중 3 또는 5의 배수인 수를 모두 더하는 문제였습니다. 정답은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">1,683 + 1,050 - 315 = 2,418</code>입니다. 3의 배수 합과 5의 배수 합을 더한 뒤, 중복되는 15의 배수 합을 한 번 빼면 됩니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">모델은 처음에 3의 배수 합을 구하면서 첫 항을 1로 잘못 넣어 1,650을 계산했습니다. 이후 첫 항은 3이어야 한다는 점을 알아내 1,683으로 고쳤습니다. 최종 답을 낸 뒤에는 해당 숫자들을 나열해 합을 다시 확인했습니다. 이 한 번의 실행에서는 <strong>최종 정답뿐 아니라 오류를 찾아 수정하는 과정</strong>도 확인할 수 있었습니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">코딩 질문은 배열에서 ‘최댓값과 최솟값의 차이가 k 이하인 가장 긴 연속 구간’을 찾는 문제였습니다. 예를 들어 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">[8, 2, 4, 7]</code>에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">k=4</code>라면 조건을 만족하는 최대 길이는 2입니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">모델은 구간의 양 끝을 옮기는 슬라이딩 윈도우와, 최댓값·최솟값을 관리하는 두 개의 덱을 사용했습니다. 덱은 양쪽 끝에서 값을 넣고 뺄 수 있는 자료구조입니다. 각 원소를 제한된 횟수만 다루므로 입력 길이에 비례해 처리하는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">O(n)</code> 접근입니다. 로그에는 Python 함수와 정당성 설명이 함께 남아 있습니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">다만 로그에 별도의 테스트 실행 결과까지 있는 것은 아닙니다. 이 결과로 복잡한 개발 업무나 다른 모델과의 우열을 판단하기는 어렵습니다. 생성된 함수와 전체 답변은 글 아래의 실행 로그에서 확인할 수 있습니다.</p>
+<h3 style="font-size:1.15em;font-weight:700;margin:1.9em 0 0.6em;word-break:keep-all;">한국어 속담에서 드러난 한계</h3>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">같은 모델에 ‘서당 개 삼 년이면 풍월을 읊는다’의 뜻과 비슷한 속담 두 개를 물었습니다. 이 속담은 배우지 못한 사람도 오랫동안 보고 들으면 자연스럽게 지식과 능력을 갖추게 된다는 뜻입니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">모델은 ‘서당’을 남쪽의 학교나 전통처럼 해석했고, 속담의 뜻을 수확과 연결해 잘못 설명했습니다. 비슷한 실제 속담을 묻는 요청에는 ‘서대·3-path’, ‘서대·시-경’처럼 새로 만든 표현을 내놓았습니다. 답변에서도 기존 속담이 아닌 새로운 표현이라고 밝혔지만, 요청한 결과를 제공하지 못한 것은 같습니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">이 답변에는 7,166토큰이 쓰였습니다. 수학과 코딩 질문보다 길게 답했지만 정확하지 않았습니다. 설명이 길거나 표로 정리되어 있다는 이유만으로 내용을 신뢰하기 어려운 사례입니다. 다만 한국어 질문 한 건의 결과이므로, 한국어 능력 전체를 평가한 결과로 확대해서는 안 됩니다.</p>
+<h3 style="font-size:1.15em;font-weight:700;margin:1.9em 0 0.6em;word-break:keep-all;">써 본다면 정답을 확인할 수 있는 문제부터</h3>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">VibeThinker-3B는 로컬 환경에서 수학 풀이와 알고리즘 문제를 시험해 보고 싶은 경우에 검토할 만합니다. 제작사도 정답을 검증할 수 있는 문제를 주요 용도로 안내하며, 도구 호출이나 자율 코딩 에이전트 작업에는 권장하지 않습니다. <a href="https://huggingface.co/WeiboAI/VibeThinker-3B#usage-guidelines" style="color:#1a73e8;text-decoration:none;" target="_blank">제작사의 사용 안내</a></p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">기존 로그에 남은 코딩·한국어 실행 명령은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">temperature=1.0</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">top_p=0.95</code>, 최대 생성량 8,000토큰을 사용했습니다. 아래는 당시 한국어 질문의 실행 명령입니다. 먼저 <a href="https://huggingface.co/mlx-community/VibeThinker-3B-8bit" style="color:#1a73e8;text-decoration:none;" target="_blank">MLX 배포 페이지</a>에서 설치 방법을 확인한 뒤 사용할 수 있습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">mlx_lm.generate \
+  --model mlx-community/VibeThinker-3B-8bit \
+  --max-tokens 8000 \
+  --temp 1.0 \
+  --top-p 0.95 \
+  --prompt "한국 속담 '서당 개 삼 년이면 풍월을 읊는다'의 뜻을 설명하고, 비슷한 의미의 다른 속담을 두 개 들어라."</code></pre>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">샘플링을 사용하는 설정이므로 다시 실행하면 답변이 달라질 수 있습니다. 기존 기록에는 정확한 칩 세대, 도구 버전, 시드가 없어 완전히 같은 출력을 재현할 조건까지 갖추지는 못했습니다.</p>
+<p style="margin:0 0 1.15em;line-height:1.9;word-break:keep-all;">처음에는 답을 직접 계산하거나 코드로 확인할 수 있는 작은 문제를 맡겨 보세요. 한국어 설명이나 사실 확인이 중요한 작업에서는 별도의 검증이 필요합니다.</p>
+<h3 style="font-size:1.15em;font-weight:700;margin:1.9em 0 0.6em;word-break:keep-all;">참고 자료</h3>
+<ul style="margin:0 0 1.25em;padding-left:1.6em;line-height:1.9;"><li style="margin-bottom:0.4em;word-break:keep-all;"><a href="https://github.com/WeiboAI/VibeThinker" style="color:#1a73e8;text-decoration:none;" target="_blank">WeiboAI 공식 저장소</a></li><li style="margin-bottom:0.4em;word-break:keep-all;"><a href="https://huggingface.co/WeiboAI/VibeThinker-3B" style="color:#1a73e8;text-decoration:none;" target="_blank">VibeThinker-3B 공식 모델 카드</a></li><li style="margin-bottom:0.4em;word-break:keep-all;"><a href="https://arxiv.org/abs/2606.16140" style="color:#1a73e8;text-decoration:none;" target="_blank">VibeThinker-3B 기술 보고서</a></li><li style="margin-bottom:0.4em;word-break:keep-all;"><a href="https://huggingface.co/mlx-community/VibeThinker-3B-8bit" style="color:#1a73e8;text-decoration:none;" target="_blank">MLX Community 8bit 배포</a></li><li>이 블로그의 기존 실행 로그는 아래 첨부 파일에서 확인할 수 있습니다.</li></ul>
+
+<p><a href="https://blog.kakaocdn.net/dna/z0ksA/dJMcad3wAnC/AAAAAAAAAAAAAAAAAAAAALXL1rq0DwlfETs80bZKQE3Wdb3uiccsVgPvO80oHTjD/cmd.txt?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=2wF8F%2FqqnyyMJ7DwGN2TAEyWxA0%3D&amp;attach=1&amp;knm=tfile.txt">cmd.txt · 기존 실행 로그 다운로드</a></p>
+</article>
+</main></html>
