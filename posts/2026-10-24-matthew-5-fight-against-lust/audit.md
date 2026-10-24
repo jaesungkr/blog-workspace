@@ -150,3 +150,11 @@
 - 이전 원고와 source pass는 history/before-thoughts-consistency-example에 보존했습니다. 다른 문단과 도식 제외 상태는 그대로입니다.
 
 - 두 문단 독립 재검토: review_thoughts_cadence의 pass입니다. 가정임을 분명히 하고 긴 문장을 나눈 최신 원고의 SHA256은 f5e58bb7af0b528423b139b0c6fcf16a60239ae476b6b3cf5b7604b4e6dfec91입니다. source pass를 갱신했으며 Thoughts 사본 일치와 공백 검사를 확인했습니다.
+
+## 식사 행동에서 식욕으로 넘어가는 문장 수정
+
+- 사용자는 ‘아직 먹지도 않았는데’라는 문장이 성욕 논의와 갑작스럽게 겹쳐 식욕에 관한 질문으로 읽기 어렵다고 지적했습니다.
+- 실제로 먹는 양과 식욕이 생기는 일을 먼저 구별하고, 디저트를 보고 입맛이 당기는 상황을 넣은 뒤 생각의 책임으로 연결했습니다. 새로운 경험을 넣지 않은 일반 예시이며 기존 의문과 이후 성욕·식욕의 비교는 유지합니다.
+- 이전 원고와 승인은 history/before-appetite-transition에 보존했습니다. 해당 문단만 재검토합니다.
+
+- 재검토 완료: review_thoughts_cadence의 pass입니다. 식욕 사례에서 책임의 질문으로 이어지는 연결과 저자성을 확인했습니다. article SHA256은 3940e39e5dd55e48784a456426c9e207fa416c848cedbd7696b366365e870408입니다. blog.py check 오류·경고 0개, diff 공백 검사와 Thoughts 사본 일치 확인을 완료했습니다.
