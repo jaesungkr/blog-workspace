@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 880" role="img" aria-labelledby="rea-csv-escaping-v2-title rea-csv-escaping-v2-desc" id="rea-csv-escaping-v2-root">
+<title id="rea-csv-escaping-v2-title">제목 속 쉼표와 따옴표</title>
+<desc id="rea-csv-escaping-v2-desc">Hello, "REA"라는 제목을 CSV 제목 칸에서 큰따옴표로 감싸고 내부 큰따옴표를 두 번 적은 뒤 다시 읽으면 원래 제목이 유지됩니다.</desc>
+<defs>
+      <style>#rea-csv-escaping-v2-root .diagram-container { width: 100%; overflow-x: auto; scrollbar-width: none; }
+      #rea-csv-escaping-v2-root .diagram-container::-webkit-scrollbar { display: none; }
+      #rea-csv-escaping-v2-root .label { font-family: 'Noto Sans KR','Apple SD Gothic Neo',system-ui,sans-serif; }
+      #rea-csv-escaping-v2-root .value { font-family: Menlo,ui-monospace,monospace; }
+      @media print {
+#rea-csv-escaping-v2-root .diagram-container { overflow-x: visible; }
+}</style><marker id="rea-csv-escaping-v2-rea-csv-escaping-v2-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#636366" stroke-width="2"/></marker></defs>
+<rect x="0" y="0" width="640" height="880" fill="#ffffff"/>
+<text class="label" x="48" y="64" font-size="34" font-weight="700" fill="#1d1d1f">제목 속 쉼표와 따옴표</text>
+<!-- Same-axis connectors precede nodes. -->
+<line x1="320" y1="320" x2="320" y2="392" stroke="#636366" stroke-width="2" marker-end="url(#rea-csv-escaping-v2-rea-csv-escaping-v2-arrow)"/>
+<line x1="320" y1="600" x2="320" y2="688" stroke="#636366" stroke-width="2" marker-end="url(#rea-csv-escaping-v2-rea-csv-escaping-v2-arrow)"/>
+<!-- Input: a bounded start node. -->
+<rect x="64" y="144" width="512" height="176" rx="20" fill="#f5f5f7" stroke="#636366" stroke-width="1.5"/>
+<text class="label" x="320" y="196" text-anchor="middle" font-size="28" font-weight="600" fill="#1d1d1f">입력한 제목</text>
+<text class="value" x="320" y="264" text-anchor="middle" font-size="38" fill="#1d1d1f">Hello, "REA"</text>
+<!-- One focal transformation node; exact ASCII quote characters. -->
+<rect x="48" y="392" width="544" height="208" rx="8" fill="#edf5ff" stroke="#0066cc" stroke-width="2"/>
+<text class="label" x="320" y="436" text-anchor="middle" font-size="28" font-weight="600" fill="#1d1d1f">CSV의 제목 칸</text>
+<text class="value" id="encoded-title" x="320" y="504" text-anchor="middle" font-size="38" fill="#1d1d1f"><tspan fill="#0066cc">"</tspan><tspan>Hello, </tspan><tspan fill="#0066cc">""</tspan><tspan>REA</tspan><tspan fill="#0066cc">"""</tspan></text>
+<text class="label" x="320" y="564" text-anchor="middle" font-size="24" fill="#636366">전체를 감싸기 · 안쪽은 두 번</text>
+<!-- Output: a bounded end node. -->
+<rect x="80" y="688" width="480" height="152" rx="20" fill="#ffffff" stroke="#636366" stroke-width="1.5"/>
+<text class="label" x="320" y="736" text-anchor="middle" font-size="28" font-weight="600" fill="#1d1d1f">다시 읽은 제목</text>
+<text class="value" x="320" y="800" text-anchor="middle" font-size="38" fill="#1d1d1f">Hello, "REA"</text>
+</svg>

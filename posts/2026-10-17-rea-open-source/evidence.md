@@ -41,6 +41,9 @@
 | C23 | 서버 비공개 소스나 원래 주석·이름의 완전 복원을 보장하지 않습니다. | FAQ What code does REA return? | 분석한 자료를 넘어선 성과를 약속하지 않습니다. |
 | C24 | REA MIT와 외부 AI/분석 도구 비용, 모델 데이터 정책은 별개입니다. | LICENSE, FAQ sharing, provider 준비 안내 | 가격·일반 법률 판단을 하지 않습니다. |
 
+| C25 | 내보내기 버튼 → 요청 전달 → CSV 변환 → 코드가 지정한 파일 저장 경로를 그림으로 설명합니다. | C18·C19, 원본 renderer/preload/main/csv 파일 | 설명 그림이며 실제 파일 저장 성공 화면이 아닙니다. |
+| C26 | 입력 title → 정확한 CSV title 필드 → 원래 title 복원의 관계를 그림으로 설명합니다. | C20, csv-results.json의 comma-and-quotes, csv-roundtrip.json | 가운데 문자열은 전체 CSV가 아니라 title 필드 하나입니다. |
+
 ## 예상 값과 판정 기준
 
 다섯 입력 각각에서 실제 toCsv 출력이 고정 예상 문자열과 정확히 같아야 합니다. Python csv.reader로 읽었을 때 첫 행은 ['id','title'], 나머지 행은 입력의 id와 title을 그대로 가져야 통과입니다. 5/5가 두 조건을 모두 통과했습니다.
@@ -67,3 +70,11 @@
 공식 social-card.svg를 원본 크기 1200×630으로 래스터화한 기존 rea-official-lead.png를 유지합니다. sha256 f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078입니다. MIT 고지는 assets/REA-LICENSE.txt 및 원본 PNG 메타데이터에 있습니다. 로컬 원본 이미지를 열어 텍스트·관계·출처를 확인했고, 직접 분석 화면으로 소개하지 않습니다. 본문에는 공식 자료라는 caption과 MIT 고지를 유지합니다.
 
 새 그림·이미지 편집은 없습니다. 로컬 1280/360 light/dark preflight 이후 author review handoff를 제공합니다. 기존 Tistory URL·게시일·카테고리는 수정 발행 때 유지하며, 구체 후보 승인 전에는 원격 staging이나 공개 글 수정을 하지 않습니다.
+
+## 2026-10-24 추가 설명 그림의 근거
+
+C25(저장 흐름)는 C18·C19와 fixture의 실제 renderer/preload/main/csv 코드에 근거합니다. 그림은 기능 단계 네 개를 보여 주며, main handler가 변환 함수를 호출한 뒤 저장한다는 순서를 바꾸지 않습니다. 파일 저장 단계는 코드가 지정한 동작이며 실제 폴더 쓰기 성공이라는 새 결과가 아닙니다. Caption: '예제 코드의 내보내기 처리 순서를 나타낸 설명 그림입니다. 실제 파일 저장을 확인한 화면은 아닙니다.'
+
+C26(CSV 제목 변환)는 C20과 csv-results.json의 comma-and-quotes actual, csv-roundtrip.json의 원래 값 복원에 근거합니다. 그림의 가운데 값은 전체 CSV가 아니라 title 필드 하나인 `"Hello, ""REA"""`입니다. 감싸는 큰따옴표와 내부 큰따옴표를 두 번 적는 규칙을 정확하게 보존합니다. Caption: 'CSV의 제목 칸에 기록되는 문자열과 다시 읽은 제목을 연결한 설명 그림입니다. 따옴표의 개수와 위치는 실제 변환 결과를 따릅니다.'
+
+두 후보의 실제 바이트·원본 프롬프트 또는 HTML/SVG·폰트와 색상·해시·검토 기록은 artifacts/qa-v2/visuals-2026-10-24/에 보존합니다. 첫 후보는 max-txt2img, 두 번째는 사용자가 명시한 diagram-design을 사용합니다. 사용자가 색상으로 현재 블로그의 흰색·검정·파랑을 선택했습니다. 설치된 diagram-design의 기본 파일을 덮어쓰거나 전역 프로필을 저장하지 않습니다. 어느 그림도 실제 제품 UI나 새 성능 측정 자료가 아닙니다.

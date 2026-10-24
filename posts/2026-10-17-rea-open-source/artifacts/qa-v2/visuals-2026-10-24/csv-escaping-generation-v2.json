@@ -1,0 +1,34 @@
+{
+  "creator": "diagram-design",
+  "production": "deterministic self-contained HTML with inline SVG; captured through the documented Codex in-app browser screenshot API at twice the SVG viewBox size",
+  "source": "rea-csv-escaping-v2.html",
+  "svg_export": "rea-csv-escaping-v2.svg",
+  "style": "effective-style-guide.md",
+  "publication_path": "assets/rea-csv-escaping-v2.jpg",
+  "actual_format": "JPEG (browser-returned bytes preserved, no re-encoding)",
+  "dimensions": [
+    1280,
+    1760
+  ],
+  "sha256": "ffd6982ae5268692a58120e9e314a2603074a54280aaee75965b0c7b4f1e1016",
+  "source_viewbox": [
+    640,
+    880
+  ],
+  "capture_viewport": [
+    1280,
+    1760
+  ],
+  "correction_count": 1,
+  "source_font_sizes": {
+    "heading": 34,
+    "node_label": 28,
+    "value": 38,
+    "support": 24
+  },
+  "visible_encoded_title": "\"Hello, \"\"REA\"\"\"",
+  "inspection": "independent pass: original raster, focused full-resolution regions, and actual 540px/320px CUA display captures independently inspected",
+  "export_note": "The packaged SVG helper is used. PNG helper launches a separate browser; browser interaction policy requires CUA, so the browser screenshot API exports the exact diagram instead. Returned JPEG format is retained honestly.",
+  "revision": "Removed redundant subtitle at independent reviewer request; increased label/value painted gaps in all three nodes. Exact values unchanged.",
+  "validation_record": "independent-image-review.md"
+}

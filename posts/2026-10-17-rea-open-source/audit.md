@@ -193,3 +193,23 @@ Codex in-app browser의 문서화된 viewport 기능으로 1280×900과 360×800
 검토용 review.html은 원고와 같은 본문·대표 이미지를 포함하며 PNG를 내장해 외부 파일 없이 열립니다. 밝은/어두운 화면 전환과 기존 공식 이미지의 전체 MIT 고지를 검토 UI에 덧붙였습니다. 이는 Tistory 발행 TXT가 아닙니다. 출력 디렉터리에 동일 파일과 본문 Markdown을 복사했고, review HTML의 자산 해시는 author-review-handoff.json에 기록했습니다.
 
 현재 구체 원고를 사용자에게 제시하는 단계입니다. v2의 author approval이 아직 없으므로 공개 글은 수정하지 않았고, 새 native attachment 관찰·remote record·독립 final-page gate·정확한 Tistory preview·수정 발행·live 검증은 승인을 받은 뒤 이어갑니다. lifecycle은 reviewing입니다. 이번 Git 기록은 검토 후보와 재현 근거의 보관이며 게시 완료가 아닙니다.
+
+## 2026-10-24: 그림 두 장 추가 요청
+
+사용자가 본문 그림 보강 및 max-txt2img·diagram-design 활용 검토를 요청했습니다. diagram-design 초기 스타일 질문에는 현재 블로그와 같은 흰색·검정·파랑을 선택했습니다. 저장 흐름은 max-txt2img, 정확한 따옴표 변환은 diagram-design으로 분담합니다. 첫 도식은 기능 4단계의 과정이고, 두 도식은 title 필드의 입력·직렬화·재해석을 잇는 3단계입니다. 그림의 서브 라벨은 세 개 이하로 제한합니다. 기존 상세 표와 코드의 근거는 보존하되, 기능 흐름과 글자 변환을 먼저 이해할 수 있게 그림을 해당 위치에 넣습니다. 실험 수치·코드·수행 주체는 바꾸지 않았습니다.
+
+이전 source pass와 본문·기획·근거·media/workflow는 visuals-2026-10-24/before/에 보존했습니다. 두 directive와 캡션 계획은 source 재검토가 필요하며 이전 page·author review 기록을 현재 것으로 재사용하지 않습니다. lifecycle은 reviewing입니다.
+
+### 두 스킬의 분담과 최종 그림 검수
+
+저장 흐름은 max-txt2img로 생성한 assets/rea-notes-flow-v1.png(1024×1536)입니다. 네 기능 단계·한글·화살표·파일 경로를 포함하며, 프롬프트·실제 도구 반환 경로·해시는 notes-flow-generation-v1.json에 보존했습니다. 생성 래스터의 원본 폰트 크기는 제공되지 않았습니다. 수정 예산은 사용하지 않았습니다.
+
+정확한 따옴표가 핵심인 CSV 제목 칸은 사용자 요청에 따라 diagram-design의 HTML/SVG로 작성했습니다. 현재 블로그의 색상과 로컬 한국어 sans/기술 문자열 mono를 effective-style-guide.md에 기록했습니다. 전역 스킬·프로필·프로젝트 marker는 변경하지 않았습니다. 오프라인 self_check와 패키지 SVG export를 통과했습니다. 브라우저 조작은 CUA로 한정했고 640×880 viewBox를 1280×1760으로 표시한 정확한 SVG만 캡처했습니다. 실제 반환 형식인 JPEG를 .jpg로 보존했습니다.
+
+- 문제: CSV v1 부제가 세 노드의 내용을 반복하고 이름과 문자열 사이 간격이 좁았습니다. → 수정: 독립 검토 의견에 따라 부제를 삭제하고 노드 높이와 글자 간격을 조정한 v2를 별도 생성했습니다. → 재확인: 정확한 따옴표 문자열을 유지한 상태에서 원본·확대·320px 검토를 통과했습니다. v1·v2와 제작 기록을 보존했고 수정 예산 한 번을 사용했습니다.
+
+독립 검토자 /root/rea_source_review가 원고 승인과 별개인 infographic 단계에서 최종 두 래스터를 실제 열었습니다. 원본 전체, 최종 아홉 확대 영역, 540px/320px 표시 화면을 판독한 뒤 independent-image-review.md에 pass를 기록했습니다. 검토자 환경에 CUA 브라우저가 없어 부모가 촬영한 intended-size 화면을 독립 판독했습니다. 검토자가 직접 캡처했다고 기록하지 않습니다. 원본별 글리프·화살표·간격 관찰과 해시는 independent-painted-bounds.json에 있습니다. 이 독립 pass 뒤 두 media item을 validated로 전환했습니다.
+
+로컬 원고를 1280/360 light/dark에서 확인했습니다. 네 경우 모두 페이지 전체 가로 넘침이 없고 H1 1개·H2 5개·목차 대상이 맞습니다. 대표 이미지는 PC 916px, 새 그림은 각각 540px이며 모바일에서는 세 이미지 모두 320px입니다. 실제 그림 위치로 이동해 지연 로딩을 완료한 뒤 세 이미지의 naturalWidth>0을 확인하고 전체 페이지 JPEG를 저장했습니다. 원본을 CSS 크기로 표시했고 축소 QA 자산은 따로 만들지 않았습니다. viewport override는 검사 뒤 reset했습니다.
+
+검토용 review.html에는 세 이미지의 정확한 바이트를 내장했습니다. 본문에 Codex 수행 표기를 추가하지 않았고 실험 수치·명령·귀속·한계를 유지했습니다. 이 검사는 local preflight와 그림 검수이며 remote final-page 또는 Tistory 변환 승인이 아닙니다. 구체 후보의 저자 발행 승인은 아직 없으므로 공개 글은 수정하지 않습니다.

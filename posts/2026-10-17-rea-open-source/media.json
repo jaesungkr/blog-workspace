@@ -27,6 +27,57 @@
       "redactions": [],
       "sha256": "f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078",
       "status": "validated"
+    },
+    {
+      "id": "rea-notes-flow",
+      "kind": "image",
+      "origin": "generated",
+      "role": "concept",
+      "claim_ids": [
+        "C18",
+        "C19",
+        "C25"
+      ],
+      "source_url": "",
+      "raw_path": "",
+      "publish_path": "assets/rea-notes-flow-v1.png",
+      "tistory_url": "",
+      "width": 1024,
+      "height": 1536,
+      "display_width": 540,
+      "placement": "after:내보내기-흐름-소개",
+      "rights": "Created for dev.log as a conceptual explanation; not an actual product screenshot.",
+      "alt": "버튼 클릭, 요청 전달, CSV 변환, 다운로드 폴더의 notes.csv 저장으로 이어지는 설명 그림",
+      "caption": "예제 코드의 내보내기 처리 순서를 나타낸 설명 그림입니다. 실제 파일 저장을 확인한 화면은 아닙니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "03869a32b8e065a1e8df558d57fdc6a8c473063698ab2c1976ead2e333acceff",
+      "status": "validated"
+    },
+    {
+      "id": "rea-csv-escaping",
+      "kind": "image",
+      "origin": "generated",
+      "role": "concept",
+      "claim_ids": [
+        "C20",
+        "C26"
+      ],
+      "source_url": "",
+      "raw_path": "",
+      "publish_path": "assets/rea-csv-escaping-v2.jpg",
+      "tistory_url": "",
+      "width": 1280,
+      "height": 1760,
+      "display_width": 540,
+      "placement": "after:실제-CSV-출력",
+      "rights": "Created for dev.log as a conceptual explanation; not an actual product screenshot.",
+      "alt": "제목을 큰따옴표로 감싸고 안쪽 따옴표를 두 번 적어 CSV로 기록한 뒤 원래 제목으로 읽는 설명 그림",
+      "caption": "CSV의 제목 칸에 기록되는 문자열과 다시 읽은 제목을 연결한 설명 그림입니다. 따옴표의 개수와 위치는 실제 변환 결과를 따릅니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "ffd6982ae5268692a58120e9e314a2603074a54280aaee75965b0c7b4f1e1016",
+      "status": "validated"
     }
   ]
 }

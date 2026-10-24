@@ -1,0 +1,40 @@
+{
+  "rea-notes-flow": {
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C25"
+    ],
+    "visible_strings": [
+      "메모를 내보내면",
+      "버튼 클릭",
+      "화면",
+      "요청 전달",
+      "앱 내부",
+      "CSV 변환",
+      "번호 · 제목",
+      "파일 저장",
+      "다운로드 폴더",
+      "notes.csv",
+      "코드에서 확인한 경로"
+    ],
+    "relationship": "button -> request -> CSV conversion -> source-defined file write"
+  },
+  "rea-csv-escaping": {
+    "claim_ids": [
+      "C20",
+      "C26"
+    ],
+    "visible_strings": [
+      "제목 속 쉼표와 따옴표",
+      "입력한 제목",
+      "Hello, \"REA\"",
+      "CSV의 제목 칸",
+      "\"Hello, \"\"REA\"\"\"",
+      "전체를 감싸기 · 안쪽은 두 번",
+      "다시 읽은 제목",
+      "Hello, \"REA\""
+    ],
+    "relationship": "input title -> exact serialized title field -> parsed title"
+  }
+}

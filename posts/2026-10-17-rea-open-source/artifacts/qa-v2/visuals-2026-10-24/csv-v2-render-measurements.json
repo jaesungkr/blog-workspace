@@ -1,0 +1,139 @@
+{
+  "encoded": "\"Hello, \"\"REA\"\"\"",
+  "labels": [
+    {
+      "bounds": {
+        "bottom": 148.5,
+        "height": 81.5,
+        "left": 96,
+        "right": 679.0390625,
+        "top": 67,
+        "width": 583.0390625,
+        "x": 96,
+        "y": 67
+      },
+      "family": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, sans-serif",
+      "size": "34px",
+      "text": "제목 속 쉼표와 따옴표"
+    },
+    {
+      "bounds": {
+        "bottom": 409,
+        "height": 67.5,
+        "left": 511.53515625,
+        "right": 768.46484375,
+        "top": 341.5,
+        "width": 256.9296875,
+        "x": 511.53515625,
+        "y": 341.5
+      },
+      "family": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, sans-serif",
+      "size": "28px",
+      "text": "입력한 제목"
+    },
+    {
+      "bounds": {
+        "bottom": 546,
+        "height": 88.5,
+        "left": 365.46484375,
+        "right": 914.53515625,
+        "top": 457.5,
+        "width": 549.0703125,
+        "x": 365.46484375,
+        "y": 457.5
+      },
+      "family": "Menlo, ui-monospace, monospace",
+      "size": "38px",
+      "text": "Hello, \"REA\""
+    },
+    {
+      "bounds": {
+        "bottom": 889,
+        "height": 67.5,
+        "left": 480.84765625,
+        "right": 799.15234375,
+        "top": 821.5,
+        "width": 318.3046875,
+        "x": 480.84765625,
+        "y": 821.5
+      },
+      "family": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, sans-serif",
+      "size": "28px",
+      "text": "CSV의 제목 칸"
+    },
+    {
+      "bounds": {
+        "bottom": 1026,
+        "height": 88.5,
+        "left": 273.94140625,
+        "right": 1006.05859375,
+        "top": 937.5,
+        "width": 732.1171875,
+        "x": 273.94140625,
+        "y": 937.5
+      },
+      "family": "Menlo, ui-monospace, monospace",
+      "size": "38px",
+      "text": "\"Hello, \"\"REA\"\"\""
+    },
+    {
+      "bounds": {
+        "bottom": 1142.5,
+        "height": 57.5,
+        "left": 372.8046875,
+        "right": 907.1953125,
+        "top": 1085,
+        "width": 534.390625,
+        "x": 372.8046875,
+        "y": 1085
+      },
+      "family": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, sans-serif",
+      "size": "24px",
+      "text": "전체를 감싸기 · 안쪽은 두 번"
+    },
+    {
+      "bounds": {
+        "bottom": 1489,
+        "height": 67.5,
+        "left": 479.94921875,
+        "right": 800.05078125,
+        "top": 1421.5,
+        "width": 320.1015625,
+        "x": 479.94921875,
+        "y": 1421.5
+      },
+      "family": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, sans-serif",
+      "size": "28px",
+      "text": "다시 읽은 제목"
+    },
+    {
+      "bounds": {
+        "bottom": 1618,
+        "height": 88.5,
+        "left": 365.46484375,
+        "right": 914.53515625,
+        "top": 1529.5,
+        "width": 549.0703125,
+        "x": 365.46484375,
+        "y": 1529.5
+      },
+      "family": "Menlo, ui-monospace, monospace",
+      "size": "38px",
+      "text": "Hello, \"REA\""
+    }
+  ],
+  "svg": {
+    "bottom": 1760,
+    "height": 1760,
+    "left": 0,
+    "right": 1280,
+    "top": 0,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  "viewport": [
+    1280,
+    1760
+  ]
+}

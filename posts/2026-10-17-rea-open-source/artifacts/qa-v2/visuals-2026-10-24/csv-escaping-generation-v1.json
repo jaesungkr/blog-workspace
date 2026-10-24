@@ -1,0 +1,32 @@
+{
+  "creator": "diagram-design",
+  "production": "deterministic self-contained HTML with inline SVG; captured through the documented Codex in-app browser screenshot API at twice the SVG viewBox size",
+  "source": "rea-csv-escaping.html",
+  "svg_export": "rea-csv-escaping.svg",
+  "style": "effective-style-guide.md",
+  "publication_path": "assets/rea-csv-escaping-v1.jpg",
+  "actual_format": "JPEG (browser-returned bytes preserved, no re-encoding)",
+  "dimensions": [
+    1280,
+    1760
+  ],
+  "sha256": "a17328fb93efe80e56a1dc8547fbd21c94a26a39a25c901be38082f58a0d6877",
+  "source_viewbox": [
+    640,
+    880
+  ],
+  "capture_viewport": [
+    1280,
+    1760
+  ],
+  "correction_count": 0,
+  "source_font_sizes": {
+    "heading": 34,
+    "node_label": 28,
+    "value": 38,
+    "support": 24
+  },
+  "visible_encoded_title": "\"Hello, \"\"REA\"\"\"",
+  "inspection": "creator inspected HTML rendering and exact string; independent full-raster and intended-size validation pending",
+  "export_note": "The packaged SVG helper is used. PNG helper launches a separate browser; browser interaction policy requires CUA, so the browser screenshot API exports the exact diagram instead. Returned JPEG format is retained honestly."
+}

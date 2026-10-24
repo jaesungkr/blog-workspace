@@ -1,0 +1,88 @@
+[
+  {
+    "documentWidth": 580,
+    "images": [
+      {
+        "natural": [
+          1024,
+          1536
+        ],
+        "rect": {
+          "bottom": 830,
+          "height": 810,
+          "left": 20,
+          "right": 560,
+          "top": 20,
+          "width": 540,
+          "x": 20,
+          "y": 20
+        },
+        "src": "http://127.0.0.1:8765/posts/2026-10-17-rea-open-source/assets/rea-notes-flow-v1.png"
+      },
+      {
+        "natural": [
+          1280,
+          1760
+        ],
+        "rect": {
+          "bottom": 1654.8984375,
+          "height": 742.5,
+          "left": 20,
+          "right": 560,
+          "top": 912.3984375,
+          "width": 540,
+          "x": 20,
+          "y": 912.3984375
+        },
+        "src": "http://127.0.0.1:8765/posts/2026-10-17-rea-open-source/assets/rea-csv-escaping-v2.jpg"
+      }
+    ],
+    "viewport": [
+      580,
+      900
+    ]
+  },
+  {
+    "documentWidth": 360,
+    "images": [
+      {
+        "natural": [
+          1024,
+          1536
+        ],
+        "rect": {
+          "bottom": 500,
+          "height": 480,
+          "left": 20,
+          "right": 340,
+          "top": 20,
+          "width": 320,
+          "x": 20,
+          "y": 20
+        },
+        "src": "http://127.0.0.1:8765/posts/2026-10-17-rea-open-source/assets/rea-notes-flow-v1.png"
+      },
+      {
+        "natural": [
+          1280,
+          1760
+        ],
+        "rect": {
+          "bottom": 1022.3984375,
+          "height": 440,
+          "left": 20,
+          "right": 340,
+          "top": 582.3984375,
+          "width": 320,
+          "x": 20,
+          "y": 582.3984375
+        },
+        "src": "http://127.0.0.1:8765/posts/2026-10-17-rea-open-source/assets/rea-csv-escaping-v2.jpg"
+      }
+    ],
+    "viewport": [
+      360,
+      900
+    ]
+  }
+]

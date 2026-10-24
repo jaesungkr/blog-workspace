@@ -1,0 +1,126 @@
+{
+  "rea-notes-flow-v1.png": {
+    "sha256": "03869a32b8e065a1e8df558d57fdc6a8c473063698ab2c1976ead2e333acceff",
+    "raster_dark_blue_painted_bounds": {
+      "heading": [
+        200,
+        58,
+        824,
+        150
+      ],
+      "button-label": [
+        603,
+        270,
+        848,
+        332
+      ],
+      "button-sub": [
+        604,
+        354,
+        688,
+        400
+      ],
+      "request-label": [
+        649,
+        582,
+        897,
+        645
+      ],
+      "request-sub": [
+        650,
+        668,
+        794,
+        714
+      ],
+      "csv-label": [
+        654,
+        903,
+        922,
+        965
+      ],
+      "csv-sub": [
+        653,
+        992,
+        871,
+        1038
+      ],
+      "save-label": [
+        648,
+        1223,
+        893,
+        1284
+      ],
+      "save-sub": [
+        652,
+        1309,
+        922,
+        1354
+      ],
+      "filename": [
+        652,
+        1375,
+        852,
+        1409
+      ],
+      "caveat": [
+        337,
+        1471,
+        690,
+        1509
+      ]
+    }
+  },
+  "rea-csv-escaping-v2.jpg": {
+    "sha256": "ffd6982ae5268692a58120e9e314a2603074a54280aaee75965b0c7b4f1e1016",
+    "raster_dark_blue_painted_bounds": {
+      "heading": [
+        96,
+        72,
+        677,
+        134
+      ],
+      "input-label": [
+        514,
+        346,
+        767,
+        397
+      ],
+      "input-value": [
+        370,
+        469,
+        904,
+        541
+      ],
+      "middle-label": [
+        483,
+        826,
+        799,
+        877
+      ],
+      "middle-value": [
+        281,
+        949,
+        995,
+        1020
+      ],
+      "middle-support": [
+        375,
+        1089,
+        903,
+        1131
+      ],
+      "output-label": [
+        483,
+        1426,
+        799,
+        1477
+      ],
+      "output-value": [
+        370,
+        1541,
+        904,
+        1612
+      ]
+    }
+  }
+}

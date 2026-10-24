@@ -1,0 +1,19 @@
+{
+  "creator": "max-txt2img",
+  "tool": "image_gen.imagegen",
+  "prompt": "notes-flow-prompt-v1.txt",
+  "references": [],
+  "returned_path": "/Users/ja2sng/.codex/generated_images/01a16c8e-9254-7143-a12c-75bd0c1b17ec/exec-a8daeced-41c9-4bc5-a884-eb73590ef64a.png",
+  "publication_path": "assets/rea-notes-flow-v1.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "sha256": "03869a32b8e065a1e8df558d57fdc6a8c473063698ab2c1976ead2e333acceff",
+  "requested_ratio": "2:3",
+  "observed_ratio": "1024:1536",
+  "correction_count": 0,
+  "source_font_sizes": "unavailable; generated raster",
+  "inspection": "independent pass: original raster, focused full-resolution regions, and actual 540px/320px CUA display captures independently inspected",
+  "validation_record": "independent-image-review.md"
+}
