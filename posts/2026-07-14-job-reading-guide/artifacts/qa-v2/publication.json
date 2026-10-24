@@ -5,91 +5,55 @@
   "url": "https://dop3n.tistory.com/entry/%EC%9A%A5%EA%B8%B0-1%EC%9E%A542%EC%9E%A5-%EC%89%AC%EC%9A%B4%EB%A7%90-%EC%84%B1%EA%B2%BD",
   "title": "욥기 쉽게 읽기, 42장의 줄거리와 친구들의 말",
   "published_time": "2026-07-14T17:51:22+09:00",
-  "modified_time": "2026-10-24T22:15:03+09:00",
-  "verified_at": "2026-10-24T22:19:24.802119+09:00",
-  "submitted_fragment_sha256": "7eaf8d7110a2772edcb4a7d40a9715500c78ab43c4d2066b1dbdacc6bede2267",
-  "approval_record_sha256": "c4d1bc3815eeda3b85e566bae30a2fc4673e3912340f6a042bcb5f67dcdeeb8a",
+  "modified_time": "2026-10-24T22:36:02+09:00",
+  "verified_at": "2026-10-24T22:37:42.493254+09:00",
+  "submitted_fragment_sha256": "fc4ea8dd1ce53e17e94e8f72ed29ac3b977d36b58b1eeb2370d3b4ea044201d7",
+  "approval_record_sha256": "aa117cf0f6d1898682d0bdef5ff587af2a269d570dc645ca2daf70237997d658",
   "editor_exact_match": true,
-  "editor_character_count": 18267,
+  "editor_character_count": 77575,
   "category": "신앙·묵상",
   "visibility": "public",
   "original_url_preserved": true,
   "original_date_preserved": true,
+  "exposition_unchanged": true,
+  "restored_chapters": 42,
+  "restored_verses": 1070,
+  "restored_paragraphs": 1112,
   "desktop": {
-    "articleScrollWidth": 800,
-    "articleWidth": 800,
-    "canonical": "https://dop3n.tistory.com/entry/%EC%9A%A5%EA%B8%B0-1%EC%9E%A542%EC%9E%A5-%EC%89%AC%EC%9A%B4%EB%A7%90-%EC%84%B1%EA%B2%BD",
+    "appendixParagraphs": 1112,
+    "appendixTargetCount": 1,
+    "articleClient": 800,
+    "articleScroll": 800,
     "images": [
       {
         "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
         "complete": true,
-        "naturalHeight": 720,
         "naturalWidth": 1280
       }
     ],
-    "modifiedTime": "2026-10-24T22:15:03+09:00",
-    "nativeImages": 1,
+    "modifiedTime": "2026-10-24T22:36:02+09:00",
     "publishedTime": "2026-07-14T17:51:22+09:00",
     "title": "욥기 쉽게 읽기, 42장의 줄거리와 친구들의 말",
-    "toc": [
+    "tocCount": 7,
+    "url": "https://dop3n.tistory.com/entry/%EC%9A%A5%EA%B8%B0-1%EC%9E%A542%EC%9E%A5-%EC%89%AC%EC%9A%B4%EB%A7%90-%EC%84%B1%EA%B2%BD#%EC%9A%A5%EA%B8%B0-%EB%B3%B8%EB%AC%B8-%EC%89%AC%EC%9A%B4%EC%84%B1%EA%B2%BD",
+    "viewport": 1280,
+    "exactOriginalParagraphMatch": true
+  },
+  "mobile": {
+    "measurements": [
       {
-        "href": "#욥기-42장의-큰-흐름",
-        "targetCount": 1
-      },
-      {
-        "href": "#욥은-무엇을-잘못했을까",
-        "targetCount": 1
-      },
-      {
-        "href": "#친구들의-위로는-어디서-어긋났을까",
-        "targetCount": 1
-      },
-      {
-        "href": "#28장의-지혜와-엘리후의-등장",
-        "targetCount": 1
-      },
-      {
-        "href": "#하나님은-왜-창조-세계를-물으실까",
-        "targetCount": 1
-      },
-      {
-        "href": "#마지막-회복에서-함께-읽어야-할-장면",
-        "targetCount": 1
+        "appendixClient": 328,
+        "appendixScroll": 328,
+        "viewport": 360
       }
     ],
-    "url": "https://dop3n.tistory.com/entry/%EC%9A%A5%EA%B8%B0-1%EC%9E%A542%EC%9E%A5-%EC%89%AC%EC%9A%B4%EB%A7%90-%EC%84%B1%EA%B2%BD",
-    "viewport": 1280
+    "exactOriginalParagraphMatch": true,
+    "paragraphs": 1112
   },
-  "mobile": [
-    {
-      "articleScrollWidth": 328,
-      "articleWidth": 328,
-      "images": [
-        {
-          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
-          "complete": true,
-          "naturalHeight": 720,
-          "naturalWidth": 1280
-        }
-      ],
-      "table": [
-        {
-          "overflowX": "auto",
-          "scrollWidth": 620,
-          "wrapperWidth": 288
-        }
-      ],
-      "tocLinkDisplay": "inline",
-      "viewport": 360
-    }
-  ],
-  "mobile_method": "Live public URL loaded inside ordinary localhost test iframe with actual document clientWidth 360; browser viewport override did not resize this existing tab, so no desktop screenshot was mislabeled mobile.",
-  "actual_tistory_preview": "tistory-preview/review.json",
+  "restoration_reference": "restore-scripture-2026-10-24/restoration-plan.json",
   "screenshots": [
-    "live/desktop-body.png",
-    "live/mobile-dark.png",
-    "live/mobile-light.png",
-    "live/indexing-requested.png"
+    "restore-scripture-2026-10-24/live-restored.png",
+    "restore-scripture-2026-10-24/live-mobile-end.png"
   ],
-  "search_console_record": "search-console.json"
+  "search_console_note": "The same URL was already accepted into the priority crawl queue earlier this session. No duplicate request was submitted for this restoration."
 }

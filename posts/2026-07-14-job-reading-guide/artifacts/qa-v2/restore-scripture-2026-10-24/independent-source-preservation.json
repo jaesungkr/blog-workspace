@@ -1,0 +1,284 @@
+{
+  "checked_at": "2026-10-24T13:28:24.742700+00:00",
+  "checked_by": "Codex independent job_reviewer",
+  "result": "pass",
+  "scope": "Preservation of author-supplied original scripture and unchanged commentary; no retranslation or scripture prose editing",
+  "checks": {
+    "commentary_exact_prefix_including_whitespace": true,
+    "only_boundary_newlines_after_previous_commentary": true,
+    "original_html_equals_extracted_json_without_content_normalization": true,
+    "original_html_equals_restored_paragraphs_without_content_normalization": true,
+    "chapter_order_1_to_42": true,
+    "verse_numbers_consecutive_and_match_original_header_ranges": true,
+    "chapter_labels_bold_only_no_h4": true,
+    "counts_1112_paragraphs_42_chapters_1070_verses": true,
+    "translation_marker_clear": true
+  },
+  "original_html_total_paragraphs": 1166,
+  "excluded_format_only_paragraphs": 54,
+  "excluded_format_only_values": {
+    "U+200B": 52,
+    "U+00A0": 2
+  },
+  "meaningful_paragraphs": 1112,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 22,
+      "first_verse": 1,
+      "last_verse": 22
+    },
+    {
+      "chapter": 2,
+      "verse_count": 13,
+      "first_verse": 1,
+      "last_verse": 13
+    },
+    {
+      "chapter": 3,
+      "verse_count": 26,
+      "first_verse": 1,
+      "last_verse": 26
+    },
+    {
+      "chapter": 4,
+      "verse_count": 21,
+      "first_verse": 1,
+      "last_verse": 21
+    },
+    {
+      "chapter": 5,
+      "verse_count": 27,
+      "first_verse": 1,
+      "last_verse": 27
+    },
+    {
+      "chapter": 6,
+      "verse_count": 30,
+      "first_verse": 1,
+      "last_verse": 30
+    },
+    {
+      "chapter": 7,
+      "verse_count": 21,
+      "first_verse": 1,
+      "last_verse": 21
+    },
+    {
+      "chapter": 8,
+      "verse_count": 22,
+      "first_verse": 1,
+      "last_verse": 22
+    },
+    {
+      "chapter": 9,
+      "verse_count": 35,
+      "first_verse": 1,
+      "last_verse": 35
+    },
+    {
+      "chapter": 10,
+      "verse_count": 22,
+      "first_verse": 1,
+      "last_verse": 22
+    },
+    {
+      "chapter": 11,
+      "verse_count": 20,
+      "first_verse": 1,
+      "last_verse": 20
+    },
+    {
+      "chapter": 12,
+      "verse_count": 25,
+      "first_verse": 1,
+      "last_verse": 25
+    },
+    {
+      "chapter": 13,
+      "verse_count": 28,
+      "first_verse": 1,
+      "last_verse": 28
+    },
+    {
+      "chapter": 14,
+      "verse_count": 22,
+      "first_verse": 1,
+      "last_verse": 22
+    },
+    {
+      "chapter": 15,
+      "verse_count": 35,
+      "first_verse": 1,
+      "last_verse": 35
+    },
+    {
+      "chapter": 16,
+      "verse_count": 22,
+      "first_verse": 1,
+      "last_verse": 22
+    },
+    {
+      "chapter": 17,
+      "verse_count": 16,
+      "first_verse": 1,
+      "last_verse": 16
+    },
+    {
+      "chapter": 18,
+      "verse_count": 21,
+      "first_verse": 1,
+      "last_verse": 21
+    },
+    {
+      "chapter": 19,
+      "verse_count": 29,
+      "first_verse": 1,
+      "last_verse": 29
+    },
+    {
+      "chapter": 20,
+      "verse_count": 29,
+      "first_verse": 1,
+      "last_verse": 29
+    },
+    {
+      "chapter": 21,
+      "verse_count": 34,
+      "first_verse": 1,
+      "last_verse": 34
+    },
+    {
+      "chapter": 22,
+      "verse_count": 30,
+      "first_verse": 1,
+      "last_verse": 30
+    },
+    {
+      "chapter": 23,
+      "verse_count": 17,
+      "first_verse": 1,
+      "last_verse": 17
+    },
+    {
+      "chapter": 24,
+      "verse_count": 25,
+      "first_verse": 1,
+      "last_verse": 25
+    },
+    {
+      "chapter": 25,
+      "verse_count": 6,
+      "first_verse": 1,
+      "last_verse": 6
+    },
+    {
+      "chapter": 26,
+      "verse_count": 14,
+      "first_verse": 1,
+      "last_verse": 14
+    },
+    {
+      "chapter": 27,
+      "verse_count": 23,
+      "first_verse": 1,
+      "last_verse": 23
+    },
+    {
+      "chapter": 28,
+      "verse_count": 28,
+      "first_verse": 1,
+      "last_verse": 28
+    },
+    {
+      "chapter": 29,
+      "verse_count": 25,
+      "first_verse": 1,
+      "last_verse": 25
+    },
+    {
+      "chapter": 30,
+      "verse_count": 31,
+      "first_verse": 1,
+      "last_verse": 31
+    },
+    {
+      "chapter": 31,
+      "verse_count": 40,
+      "first_verse": 1,
+      "last_verse": 40
+    },
+    {
+      "chapter": 32,
+      "verse_count": 22,
+      "first_verse": 1,
+      "last_verse": 22
+    },
+    {
+      "chapter": 33,
+      "verse_count": 33,
+      "first_verse": 1,
+      "last_verse": 33
+    },
+    {
+      "chapter": 34,
+      "verse_count": 37,
+      "first_verse": 1,
+      "last_verse": 37
+    },
+    {
+      "chapter": 35,
+      "verse_count": 16,
+      "first_verse": 1,
+      "last_verse": 16
+    },
+    {
+      "chapter": 36,
+      "verse_count": 33,
+      "first_verse": 1,
+      "last_verse": 33
+    },
+    {
+      "chapter": 37,
+      "verse_count": 24,
+      "first_verse": 1,
+      "last_verse": 24
+    },
+    {
+      "chapter": 38,
+      "verse_count": 41,
+      "first_verse": 1,
+      "last_verse": 41
+    },
+    {
+      "chapter": 39,
+      "verse_count": 30,
+      "first_verse": 1,
+      "last_verse": 30
+    },
+    {
+      "chapter": 40,
+      "verse_count": 24,
+      "first_verse": 1,
+      "last_verse": 24
+    },
+    {
+      "chapter": 41,
+      "verse_count": 34,
+      "first_verse": 1,
+      "last_verse": 34
+    },
+    {
+      "chapter": 42,
+      "verse_count": 17,
+      "first_verse": 1,
+      "last_verse": 17
+    }
+  ],
+  "sha256": {
+    "article.md": "99bc9f84c66a66164b522cb2f757d4a7060dfc75408e77c25ac003f4bee06392",
+    "artifacts/qa-v2/restore-scripture-2026-10-24/before-article.md": "b21aec72ec9856f3e492d2e804c3dc81f748f48690cac265b940dad0347a2db5",
+    "artifacts/qa-v2/restore-scripture-2026-10-24/original-paragraphs.json": "a8e3243e0d26301102cfd78aaf391024352a9c4a4204cb3a2a43bcf217f2ae94",
+    "artifacts/qa-v2/publication-backup/editor-before.html": "05dbdfffb65c116b4d56d2dab8832d245d25c2fba0de6e5d4a201872d90d6462"
+  }
+}

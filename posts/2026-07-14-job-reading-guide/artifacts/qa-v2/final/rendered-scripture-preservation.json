@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-24T13:31:30.233828+00:00",
+  "checked_by": "Codex independent job_reviewer",
+  "method": "Independent HTMLParser extraction below appendix H2; exact string-array comparison with preserved original paragraphs",
+  "records": [
+    {
+      "path": "final-rendered/job-reading-guide-rich-preview.html",
+      "sha256": "aadeb58f381d52b59cc14c26379f445b5a93dba7870581028f308426fc82fa2a",
+      "appendix_paragraphs": 1112,
+      "chapter_labels": 42,
+      "verse_paragraphs": 1070,
+      "exact_text_and_order_preserved": true,
+      "h1_count": 1
+    },
+    {
+      "path": "final-dark-rendered/job-reading-guide-rich-preview.html",
+      "sha256": "851fa904e2fb7ce9e79f5b5aa5afb078be24b747ded0276c815bd1711ffd1aca",
+      "appendix_paragraphs": 1112,
+      "chapter_labels": 42,
+      "verse_paragraphs": 1070,
+      "exact_text_and_order_preserved": true,
+      "h1_count": 1
+    },
+    {
+      "path": "final-rendered/job-reading-guide-tistory-fragment.html",
+      "sha256": "fc4ea8dd1ce53e17e94e8f72ed29ac3b977d36b58b1eeb2370d3b4ea044201d7",
+      "appendix_paragraphs": 1112,
+      "chapter_labels": 42,
+      "verse_paragraphs": 1070,
+      "exact_text_and_order_preserved": true,
+      "h1_count": 0
+    }
+  ]
+}

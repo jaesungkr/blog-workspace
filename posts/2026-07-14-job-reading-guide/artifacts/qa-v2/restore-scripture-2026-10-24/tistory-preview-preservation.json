@@ -1,0 +1,21 @@
+{
+  "exact_tistory_preview_paragraph_match": true,
+  "paragraph_count": 1112,
+  "chapters": 42,
+  "verses": 1070,
+  "desktop_preview_width": 1160,
+  "mobile_preview_width": 360,
+  "mobile_appendix_width": 328,
+  "mobile_appendix_scroll_width": 328,
+  "themes": [
+    "hELLO light",
+    "hELLO dark"
+  ],
+  "checked_locations": [
+    "appendix start Job1",
+    "middle Job21",
+    "end Job42"
+  ],
+  "method": "Actual IAB Tistory preview. Compared DOM paragraph textContent arrays to original-paragraphs.json; clicked plain chapter label text to reveal reading positions.",
+  "preview_toc_navigation_note": "Editor preview resolves hash links against the manage editor URL. Public anchor navigation is checked after publication; the exact href and unique target were preserved."
+}

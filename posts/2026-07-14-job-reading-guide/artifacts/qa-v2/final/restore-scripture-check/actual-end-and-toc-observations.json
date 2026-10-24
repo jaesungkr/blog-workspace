@@ -1,0 +1,94 @@
+{
+  "checked_by": "Codex independent job_reviewer",
+  "method": "Actual seventh TOC anchor click and last-verse viewport capture in fresh local-only headless Chrome sessions",
+  "records": [
+    {
+      "mode": "final-light",
+      "width": 1280,
+      "height": 900,
+      "checked_at": "2026-10-24T13:34:30.342763Z",
+      "preview_sha256": "aadeb58f381d52b59cc14c26379f445b5a93dba7870581028f308426fc82fa2a",
+      "observed": {
+        "tocClick": {
+          "hash": "#욥기-본문-쉬운성경",
+          "heading": "욥기 본문 (쉬운성경)",
+          "targetTop": 23.59375
+        },
+        "lastVerse": "17 오래 살다가 세상을 떠났습니다.",
+        "lastVerseTop": 795.40625,
+        "lastVerseBottom": 824.640625,
+        "scrollY": 60793,
+        "scrollHeight": 61693,
+        "innerHeight": 900
+      },
+      "screenshot": "artifacts/qa-v2/final/restore-scripture-check/final-light-1280-appendix-last-verse.png",
+      "screenshot_sha256": "08cd59f384fdf3f3b8608a81fe6ff8f6bec5ad2d71c51dd74c0a4479d9f33be7"
+    },
+    {
+      "mode": "final-light",
+      "width": 360,
+      "height": 800,
+      "checked_at": "2026-10-24T13:34:30.465587Z",
+      "preview_sha256": "aadeb58f381d52b59cc14c26379f445b5a93dba7870581028f308426fc82fa2a",
+      "observed": {
+        "tocClick": {
+          "hash": "#욥기-본문-쉬운성경",
+          "heading": "욥기 본문 (쉬운성경)",
+          "targetTop": 23.59375
+        },
+        "lastVerse": "17 오래 살다가 세상을 떠났습니다.",
+        "lastVerseTop": 703.625,
+        "lastVerseBottom": 732.859375,
+        "scrollY": 97046,
+        "scrollHeight": 97846,
+        "innerHeight": 800
+      },
+      "screenshot": "artifacts/qa-v2/final/restore-scripture-check/final-light-360-appendix-last-verse.png",
+      "screenshot_sha256": "1ae0f9ff75be77f73dc0b8b197d216b4b0013d20c108aa649e9a1af8409cba94"
+    },
+    {
+      "mode": "final-dark",
+      "width": 1280,
+      "height": 900,
+      "checked_at": "2026-10-24T13:34:31.908485Z",
+      "preview_sha256": "851fa904e2fb7ce9e79f5b5aa5afb078be24b747ded0276c815bd1711ffd1aca",
+      "observed": {
+        "tocClick": {
+          "hash": "#욥기-본문-쉬운성경",
+          "heading": "욥기 본문 (쉬운성경)",
+          "targetTop": 23.59375
+        },
+        "lastVerse": "17 오래 살다가 세상을 떠났습니다.",
+        "lastVerseTop": 795.40625,
+        "lastVerseBottom": 824.640625,
+        "scrollY": 60793,
+        "scrollHeight": 61693,
+        "innerHeight": 900
+      },
+      "screenshot": "artifacts/qa-v2/final/restore-scripture-check/final-dark-1280-appendix-last-verse.png",
+      "screenshot_sha256": "ca6cb1dcd36fdb59e82b19e7b703f54c0838ee259b835775c0523f18b706a654"
+    },
+    {
+      "mode": "final-dark",
+      "width": 360,
+      "height": 800,
+      "checked_at": "2026-10-24T13:34:32.034891Z",
+      "preview_sha256": "851fa904e2fb7ce9e79f5b5aa5afb078be24b747ded0276c815bd1711ffd1aca",
+      "observed": {
+        "tocClick": {
+          "hash": "#욥기-본문-쉬운성경",
+          "heading": "욥기 본문 (쉬운성경)",
+          "targetTop": 23.59375
+        },
+        "lastVerse": "17 오래 살다가 세상을 떠났습니다.",
+        "lastVerseTop": 703.625,
+        "lastVerseBottom": 732.859375,
+        "scrollY": 97046,
+        "scrollHeight": 97846,
+        "innerHeight": 800
+      },
+      "screenshot": "artifacts/qa-v2/final/restore-scripture-check/final-dark-360-appendix-last-verse.png",
+      "screenshot_sha256": "2934779684953d1ec67ece0084b99ec00e559cefb53c8b8d93626378f51a9595"
+    }
+  ]
+}

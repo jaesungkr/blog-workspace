@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T13:03:28.362997Z",
+  "checked_at": "2026-10-24T13:28:24.903919Z",
   "checked_by": "Codex independent job_reviewer",
-  "article_content_sha256": "e0ee385149795c664332c9e7930d621df123cbf3042a4e1e8e72b339365b9e48",
-  "brief_sha256": "da5837cea4a4ea0b8dc9ecd7a572fb2d85bffd6fbe53593dd559e842ac45b1bc",
-  "evidence_sha256": "bee7a5537c5f595bec8ff65b3d8a276ba77166278ea2fd00d0aedf89b3fa87b0",
-  "note": "Source pass renewed after one mobile-table scrolling instruction. Removing that exact sentence reproduces the previously reviewed article SHA-256. Wording matches creator-reported 360px viewport and overflowX auto table wrapper. Final remote page behavior remains subject to independent page review."
+  "article_content_sha256": "5b458f4aceaf1ebe2507de0dc9d8a63a2f8f44afe11b0cdae4c35357082e182e",
+  "brief_sha256": "649a9df14761e18f7454489fea03b7b290da8b924fde05be84e2b4da9973d100",
+  "evidence_sha256": "960a4b22429a2bd533fbb5c5a01087ad5f13093efae4dd84d270f11e8050f392",
+  "note": "Source pass renewed for author-requested restoration of supplied Easy Bible appendix. Independent original HTML extraction equals 1112 restored paragraph strings in order: 42 chapter labels and 1070 consecutively numbered verses. Existing commentary body remains an exact unchanged prefix. KRV commentary links and Easy Bible appendix labels are distinct. No scripture prose editing or retranslation. Final-page QA must be renewed for the extended article."
 }

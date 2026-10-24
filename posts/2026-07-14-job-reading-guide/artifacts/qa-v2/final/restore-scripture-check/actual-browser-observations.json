@@ -1,0 +1,614 @@
+{
+  "checked_by": "Codex independent job_reviewer",
+  "method": "Actual additional fresh headless Chrome sessions using unchanged capture_rich_qa_v2 module; browser textContent exact comparison and viewport screenshots. Canonical receipts remain separate.",
+  "records": [
+    {
+      "mode": "final-light",
+      "width": 1280,
+      "height": 900,
+      "checked_at": "2026-10-24T13:32:36.287813+00:00",
+      "browser": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:53220/devtools/browser/b3a17c1d-b0be-458d-bda9-93db913a2ce0"
+      },
+      "preview_sha256": "aadeb58f381d52b59cc14c26379f445b5a93dba7870581028f308426fc82fa2a",
+      "first_screenshot_sha256": "fe0a86a557a777a348190b9c12ef470131f5b9e3b8285cde9ce067b399e158db",
+      "page_measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 1280,
+        "inner_height": 900,
+        "client_width": 1280,
+        "client_height": 900,
+        "scroll_width": 1280,
+        "scroll_height": 61693,
+        "h1_count": 1,
+        "toc_anchor_count": 7,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "fe0a86a557a777a348190b9c12ef470131f5b9e3b8285cde9ce067b399e158db",
+        "screenshot_pixel_width": 1280,
+        "screenshot_pixel_height": 900,
+        "width": 1280,
+        "height": 900,
+        "status": "pass"
+      },
+      "all_1112_browser_paragraphs_equal_preserved_original": true,
+      "observations": {
+        "appendixParagraphs": 1112,
+        "appendixChapterLabels": 42,
+        "appendixVerseParagraphs": 1070,
+        "appendixParagraphsOverflowing": 0,
+        "appendixParagraphsHidden": 0,
+        "appendixLastText": "17 오래 살다가 세상을 떠났습니다.",
+        "appendixTocTargetCount": 1,
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "filter": "none",
+          "width": 916,
+          "naturalWidth": 1672,
+          "naturalHeight": 941
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "table": {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflowX": "auto"
+        },
+        "toc": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름",
+            "display": "inline"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까",
+            "display": "inline"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까",
+            "display": "inline"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장",
+            "display": "inline"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까",
+            "display": "inline"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면",
+            "display": "inline"
+          },
+          {
+            "text": "욥기 본문 (쉬운성경)",
+            "href": "#욥기-본문-쉬운성경",
+            "display": "inline"
+          }
+        ]
+      },
+      "screenshots": [
+        {
+          "label": "media-toc",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-1280-media-toc.png",
+          "sha256": "020f224a09a26f0ebee6d95bc06133831eaaa69f68be74d95e74567bb26505e1",
+          "position": {
+            "scrollY": 502,
+            "targetText": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+            "targetTop": -0.109375
+          }
+        },
+        {
+          "label": "appendix-start",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-1280-appendix-start.png",
+          "sha256": "5e5113a5b6ce9f92107cc238d94cada62cf3d37c465d3822018eecf278d1d203",
+          "position": {
+            "scrollY": 5145,
+            "targetText": "욥기 본문 (쉬운성경)",
+            "targetTop": 23.59375
+          }
+        },
+        {
+          "label": "appendix-ch21",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-1280-appendix-ch21.png",
+          "sha256": "12754c8f408ca61b320ef7ee275f6f6e9e2cbd2244a4c41dec1addaa65fea74c",
+          "position": {
+            "scrollY": 31023,
+            "targetText": "[욥21:1-34, 쉬운성경]",
+            "targetTop": 0.3125
+          }
+        },
+        {
+          "label": "appendix-ch42",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-1280-appendix-ch42.png",
+          "sha256": "b36d73cd02d490755ddba64a397875b9362ff6eaa37942460751cfede293b16b",
+          "position": {
+            "scrollY": 60525,
+            "targetText": "[욥42:1-17, 쉬운성경]",
+            "targetTop": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "mode": "final-light",
+      "width": 360,
+      "height": 800,
+      "checked_at": "2026-10-24T13:32:47.736149+00:00",
+      "browser": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:53220/devtools/browser/b3a17c1d-b0be-458d-bda9-93db913a2ce0"
+      },
+      "preview_sha256": "aadeb58f381d52b59cc14c26379f445b5a93dba7870581028f308426fc82fa2a",
+      "first_screenshot_sha256": "8a895b6dec06b17a2ce8c4fdcac4f4561536365e9e5d91480e3522d4945387d7",
+      "page_measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 360,
+        "inner_height": 800,
+        "client_width": 360,
+        "client_height": 800,
+        "scroll_width": 360,
+        "scroll_height": 97846,
+        "h1_count": 1,
+        "toc_anchor_count": 7,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "8a895b6dec06b17a2ce8c4fdcac4f4561536365e9e5d91480e3522d4945387d7",
+        "screenshot_pixel_width": 360,
+        "screenshot_pixel_height": 800,
+        "width": 360,
+        "height": 800,
+        "status": "pass"
+      },
+      "all_1112_browser_paragraphs_equal_preserved_original": true,
+      "observations": {
+        "appendixParagraphs": 1112,
+        "appendixChapterLabels": 42,
+        "appendixVerseParagraphs": 1070,
+        "appendixParagraphsOverflowing": 0,
+        "appendixParagraphsHidden": 0,
+        "appendixLastText": "17 오래 살다가 세상을 떠났습니다.",
+        "appendixTocTargetCount": 1,
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "filter": "none",
+          "width": 320,
+          "naturalWidth": 1672,
+          "naturalHeight": 941
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "table": {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflowX": "auto"
+        },
+        "toc": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름",
+            "display": "inline"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까",
+            "display": "inline"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까",
+            "display": "inline"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장",
+            "display": "inline"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까",
+            "display": "inline"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면",
+            "display": "inline"
+          },
+          {
+            "text": "욥기 본문 (쉬운성경)",
+            "href": "#욥기-본문-쉬운성경",
+            "display": "inline"
+          }
+        ]
+      },
+      "screenshots": [
+        {
+          "label": "media-toc",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-360-media-toc.png",
+          "sha256": "59974b3d67f492c211ba3c8c508d7d118d0a08af55c3e8ca3efd00d21cbc7517",
+          "position": {
+            "scrollY": 642,
+            "targetText": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+            "targetTop": -0.3125
+          }
+        },
+        {
+          "label": "appendix-start",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-360-appendix-start.png",
+          "sha256": "cb712b5db2fedf16bb248c8538c2720754e33e7d7721dd73d4fe16d209adbefc",
+          "position": {
+            "scrollY": 7107,
+            "targetText": "욥기 본문 (쉬운성경)",
+            "targetTop": 23.59375
+          }
+        },
+        {
+          "label": "appendix-ch21",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-360-appendix-ch21.png",
+          "sha256": "eed68c54b9cc38257db3ce363281e4e6c68217d1daef86513919a65b8a13552a",
+          "position": {
+            "scrollY": 48738,
+            "targetText": "[욥21:1-34, 쉬운성경]",
+            "targetTop": -0.359375
+          }
+        },
+        {
+          "label": "appendix-ch42",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-360-appendix-ch42.png",
+          "sha256": "4093aac41a43bc43834e1c0d1435febe3002a306151d7b08aa6656bc03be92a7",
+          "position": {
+            "scrollY": 95985,
+            "targetText": "[욥42:1-17, 쉬운성경]",
+            "targetTop": -0.15625
+          }
+        },
+        {
+          "label": "table-right",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-light-360-table-right.png",
+          "sha256": "69db6931de64390846ad856a341651273a38fab5678a3d4645968d24e8b32262",
+          "position": {
+            "scrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620
+          }
+        }
+      ]
+    },
+    {
+      "mode": "final-dark",
+      "width": 1280,
+      "height": 900,
+      "checked_at": "2026-10-24T13:32:55.682130+00:00",
+      "browser": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:53253/devtools/browser/a5049458-4772-492b-8a9d-73c9de7adb6f"
+      },
+      "preview_sha256": "851fa904e2fb7ce9e79f5b5aa5afb078be24b747ded0276c815bd1711ffd1aca",
+      "first_screenshot_sha256": "bb101c9de57e79ed96d68d7db78fd32539ceeef1831574aab800b4dbfdb79f22",
+      "page_measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-dark-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 1280,
+        "inner_height": 900,
+        "client_width": 1280,
+        "client_height": 900,
+        "scroll_width": 1280,
+        "scroll_height": 61693,
+        "h1_count": 1,
+        "toc_anchor_count": 7,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "bb101c9de57e79ed96d68d7db78fd32539ceeef1831574aab800b4dbfdb79f22",
+        "screenshot_pixel_width": 1280,
+        "screenshot_pixel_height": 900,
+        "width": 1280,
+        "height": 900,
+        "status": "pass"
+      },
+      "all_1112_browser_paragraphs_equal_preserved_original": true,
+      "observations": {
+        "appendixParagraphs": 1112,
+        "appendixChapterLabels": 42,
+        "appendixVerseParagraphs": 1070,
+        "appendixParagraphsOverflowing": 0,
+        "appendixParagraphsHidden": 0,
+        "appendixLastText": "17 오래 살다가 세상을 떠났습니다.",
+        "appendixTocTargetCount": 1,
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "filter": "none",
+          "width": 916,
+          "naturalWidth": 1672,
+          "naturalHeight": 941
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "table": {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflowX": "auto"
+        },
+        "toc": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름",
+            "display": "inline"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까",
+            "display": "inline"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까",
+            "display": "inline"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장",
+            "display": "inline"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까",
+            "display": "inline"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면",
+            "display": "inline"
+          },
+          {
+            "text": "욥기 본문 (쉬운성경)",
+            "href": "#욥기-본문-쉬운성경",
+            "display": "inline"
+          }
+        ]
+      },
+      "screenshots": [
+        {
+          "label": "media-toc",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-1280-media-toc.png",
+          "sha256": "a909428e45bd5db7127cbf9a5e727518459977787cffbaa5acae39158dd0b140",
+          "position": {
+            "scrollY": 502,
+            "targetText": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+            "targetTop": -0.109375
+          }
+        },
+        {
+          "label": "appendix-start",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-1280-appendix-start.png",
+          "sha256": "52ac0bc29d901b4369fcbf178d65fb1002c56a3926473bb0efe065530982b2f5",
+          "position": {
+            "scrollY": 5145,
+            "targetText": "욥기 본문 (쉬운성경)",
+            "targetTop": 23.59375
+          }
+        },
+        {
+          "label": "appendix-ch21",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-1280-appendix-ch21.png",
+          "sha256": "870bc86605816a6bf766ee2ded298f4f74e7368688fbf321c52bbec276b0bc36",
+          "position": {
+            "scrollY": 31023,
+            "targetText": "[욥21:1-34, 쉬운성경]",
+            "targetTop": 0.3125
+          }
+        },
+        {
+          "label": "appendix-ch42",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-1280-appendix-ch42.png",
+          "sha256": "c6413e7e97331682e77738b84c78157968d41b8004df7d22e59dd5cda6392533",
+          "position": {
+            "scrollY": 60525,
+            "targetText": "[욥42:1-17, 쉬운성경]",
+            "targetTop": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "mode": "final-dark",
+      "width": 360,
+      "height": 800,
+      "checked_at": "2026-10-24T13:33:07.179352+00:00",
+      "browser": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:53253/devtools/browser/a5049458-4772-492b-8a9d-73c9de7adb6f"
+      },
+      "preview_sha256": "851fa904e2fb7ce9e79f5b5aa5afb078be24b747ded0276c815bd1711ffd1aca",
+      "first_screenshot_sha256": "79437b1aadbb3ef1cbd17096686b97346d1b6e9c40056b611d736811180fb0fe",
+      "page_measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-dark-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 360,
+        "inner_height": 800,
+        "client_width": 360,
+        "client_height": 800,
+        "scroll_width": 360,
+        "scroll_height": 97846,
+        "h1_count": 1,
+        "toc_anchor_count": 7,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "79437b1aadbb3ef1cbd17096686b97346d1b6e9c40056b611d736811180fb0fe",
+        "screenshot_pixel_width": 360,
+        "screenshot_pixel_height": 800,
+        "width": 360,
+        "height": 800,
+        "status": "pass"
+      },
+      "all_1112_browser_paragraphs_equal_preserved_original": true,
+      "observations": {
+        "appendixParagraphs": 1112,
+        "appendixChapterLabels": 42,
+        "appendixVerseParagraphs": 1070,
+        "appendixParagraphsOverflowing": 0,
+        "appendixParagraphsHidden": 0,
+        "appendixLastText": "17 오래 살다가 세상을 떠났습니다.",
+        "appendixTocTargetCount": 1,
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "filter": "none",
+          "width": 320,
+          "naturalWidth": 1672,
+          "naturalHeight": 941
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "table": {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflowX": "auto"
+        },
+        "toc": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름",
+            "display": "inline"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까",
+            "display": "inline"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까",
+            "display": "inline"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장",
+            "display": "inline"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까",
+            "display": "inline"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면",
+            "display": "inline"
+          },
+          {
+            "text": "욥기 본문 (쉬운성경)",
+            "href": "#욥기-본문-쉬운성경",
+            "display": "inline"
+          }
+        ]
+      },
+      "screenshots": [
+        {
+          "label": "media-toc",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-360-media-toc.png",
+          "sha256": "bdbe1a55ecef12a6153c7ab6f01d8f4d6147a9f80bde5d1a0b18d233526db30a",
+          "position": {
+            "scrollY": 642,
+            "targetText": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+            "targetTop": -0.3125
+          }
+        },
+        {
+          "label": "appendix-start",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-360-appendix-start.png",
+          "sha256": "5422a8f4385b5103c06efdfe455c214ce79c8dec8a378d6df7fae045bf067be1",
+          "position": {
+            "scrollY": 7107,
+            "targetText": "욥기 본문 (쉬운성경)",
+            "targetTop": 23.59375
+          }
+        },
+        {
+          "label": "appendix-ch21",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-360-appendix-ch21.png",
+          "sha256": "4a671da9453e4f4c53665a969ac25f255ca971a7f5e34d466131b8dcf19f3a11",
+          "position": {
+            "scrollY": 48738,
+            "targetText": "[욥21:1-34, 쉬운성경]",
+            "targetTop": -0.359375
+          }
+        },
+        {
+          "label": "appendix-ch42",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-360-appendix-ch42.png",
+          "sha256": "a4eb41e1c1db86979a98dd247d720ac3a90e1923a712e8853990aca15613d1b5",
+          "position": {
+            "scrollY": 95985,
+            "targetText": "[욥42:1-17, 쉬운성경]",
+            "targetTop": -0.15625
+          }
+        },
+        {
+          "label": "table-right",
+          "path": "artifacts/qa-v2/final/restore-scripture-check/final-dark-360-table-right.png",
+          "sha256": "f77762cd15264e376137057701a8dba525af35ce5af17a5e916f96474bc508f1",
+          "position": {
+            "scrollLeft": 300,
+            "clientWidth": 320,
+            "scrollWidth": 620
+          }
+        }
+      ]
+    }
+  ]
+}

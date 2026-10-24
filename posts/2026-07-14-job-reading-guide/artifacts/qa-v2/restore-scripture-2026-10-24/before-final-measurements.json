@@ -1,0 +1,40 @@
+{
+  "viewports": [
+    {
+      "width": 1280,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 360,
+      "readable_media": true,
+      "status": "pass"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "readable_media": true,
+      "status": "pass"
+    },
+    {
+      "width": 360,
+      "readable_media": true,
+      "status": "pass"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  },
+  "checked_at": "2026-10-24T13:13:36.979232+00:00",
+  "checked_by": "Codex independent job_reviewer"
+}

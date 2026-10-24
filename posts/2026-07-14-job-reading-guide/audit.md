@@ -51,3 +51,14 @@
 - Verified live desktop native image, alt/caption and six unique TOC targets; checked actual public URL in a 360px test iframe in light/dark mode. Browser viewport override did not resize the existing Tistory tab, so responsive live evidence uses this explicit iframe and records its actual DOM width.
 - Search Console live test returned available to Google / can be indexed; one request returned Indexing requested. This records crawl-queue acceptance, not completed indexing.
 - Exact original editor HTML and public-before DOM remain local backups. They are excluded from Git delivery because a full copy of the prior scripture compilation is unnecessary to the focused revised article. Metadata backup is delivered.
+
+## 저자 요청에 따른 기존 본문 복원
+- 사용자가 욥기를 따로 읽으려고 기존 본문을 보관했다는 의도를 밝혔습니다. 해설 위주의 이전 편집 판단보다 이 요청을 우선합니다.
+- 기존 해설·이미지·주소·날짜는 유지하고 하단에 원래 쉬운성경 42장 1,070절을 복원합니다. 원문 단어를 수정하지 않고 장 표제만 장 표제으로 표시합니다.
+- 공용 코드와 스킬은 변경하지 않습니다. 이번 변경은 새 집필이 아니라 기존 본문 복원이므로 원문 문법에는 문장 다듬기를 적용하지 않습니다. 원본 대조와 부록의 밝은/어두운 화면 가독성을 검증합니다.
+
+## 복원 게시 완료
+- 독립 원본 대조와 최종 밝은/어두운 1280/360 검증을 통과했습니다. 원문은 수정하지 않았으므로 앞서 문장을 다듬은 해설의 prose 분석 기록은 그대로 보존합니다.
+- 최종 TXT와 실제 HTML 편집 원문이 77,575자로 정확히 일치했습니다. 기존 공개 글49에 저장하고 기존 URL·카테고리·2026-07-14 발행일을 유지했습니다.
+- 공개 데스크톱과 실제360px 공개 iframe 양쪽에서 복원1,112문단 전체가 원본 배열과 정확히 일치했습니다. 7번째 목차의 본문 연결과 마지막42장도 확인했습니다. 공개 모바일 부록 폭328px/scrollWidth328px입니다.
+- 앞서 동일URL에 접수한 색인 요청은 유지하고 중복 제출하지 않았습니다.
