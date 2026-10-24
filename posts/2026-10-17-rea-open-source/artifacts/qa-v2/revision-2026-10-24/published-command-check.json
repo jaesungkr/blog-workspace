@@ -1,0 +1,7 @@
+{
+  "command": "node -e 'const {toCsv}=require(\"./csv.js\"); process.stdout.write(toCsv([{id:1,title:\"Hello, \\\"REA\\\"\"}]))'",
+  "shell": "bash",
+  "exit_code": 0,
+  "actual": "id,title\n1,\"Hello, \"\"REA\"\"\"\n",
+  "matches_recorded_case": true
+}

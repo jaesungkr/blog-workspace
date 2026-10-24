@@ -1,0 +1,53 @@
+{
+  "statistics": {
+    "relevant_files": 6,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 1817,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 4,
+    "skipped_javascript_files": 0,
+    "visited_ast_nodes": 241,
+    "findings": 21,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "summary": {
+    "browser_windows": 1,
+    "explicit_web_preferences": 1,
+    "preload_entrypoints": 1,
+    "context_bridge_apis": 1,
+    "exposed_api_members": 1,
+    "ipc": {
+      "operations": 2,
+      "literal_channels": 1,
+      "dynamic_channel_operations": 0,
+      "renderer_transmissions": 1,
+      "renderer_listeners": 0,
+      "main_handlers": 1,
+      "paired_renderer_transmissions": 1,
+      "ambiguous_renderer_transmissions": 0,
+      "unpaired_literal_renderer_transmissions": 0
+    },
+    "sender_validation_observations": 0,
+    "utility_processes": 0,
+    "resolved_utility_entrypoints": 0,
+    "native_addon_bindings": 0,
+    "resolved_native_addon_bindings": 0
+  },
+  "limitations": [
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "Electron API identity follows proven lexical module aliases and structurally verified module-namespace interop. Other reassignments, dynamic selections, and visibly overwritten namespace members are unresolved; missing findings do not establish absence. Arbitrary call side effects and runtime registration are not evaluated.",
+    "Electron relationships are derived from inert syntax; runtime registration, reachability, defaults, and enforcement remain unproven.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ],
+  "source_trace": {
+    "renderer.js:1-4": "click -> window.notes.exportCsv()",
+    "preload.js:3-5": "notes.exportCsv -> ipcRenderer.invoke(notes:export)",
+    "main.js:8-12": "ipcMain.handle(notes:export) -> downloads/notes.csv, toCsv, writeFileSync",
+    "csv.js:1-9": "id,title; quote every title; double quotes; newline at end"
+  },
+  "trace_basis": "REA observations and manual source line inspection; the end-to-end Electron UI was not launched"
+}

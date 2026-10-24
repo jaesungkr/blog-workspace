@@ -1,0 +1,61 @@
+{
+  "actor": "Codex",
+  "method": "Call the unmodified official toCsv function; compare exact strings fixed before execution.",
+  "results": [
+    {
+      "name": "plain",
+      "input": [
+        {
+          "id": 1,
+          "title": "First note"
+        }
+      ],
+      "expected": "id,title\n1,\"First note\"\n",
+      "actual": "id,title\n1,\"First note\"\n",
+      "pass": true
+    },
+    {
+      "name": "comma-and-quotes",
+      "input": [
+        {
+          "id": 1,
+          "title": "Hello, \"REA\""
+        }
+      ],
+      "expected": "id,title\n1,\"Hello, \"\"REA\"\"\"\n",
+      "actual": "id,title\n1,\"Hello, \"\"REA\"\"\"\n",
+      "pass": true
+    },
+    {
+      "name": "korean",
+      "input": [
+        {
+          "id": 2,
+          "title": "서울, \"메모\""
+        }
+      ],
+      "expected": "id,title\n2,\"서울, \"\"메모\"\"\"\n",
+      "actual": "id,title\n2,\"서울, \"\"메모\"\"\"\n",
+      "pass": true
+    },
+    {
+      "name": "embedded-newline",
+      "input": [
+        {
+          "id": 3,
+          "title": "첫째 줄\n둘째 줄"
+        }
+      ],
+      "expected": "id,title\n3,\"첫째 줄\n둘째 줄\"\n",
+      "actual": "id,title\n3,\"첫째 줄\n둘째 줄\"\n",
+      "pass": true
+    },
+    {
+      "name": "empty-list",
+      "input": [],
+      "expected": "id,title\n",
+      "actual": "id,title\n",
+      "pass": true
+    }
+  ]
+}

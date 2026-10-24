@@ -1,0 +1,16 @@
+{
+  "stage": "author-review-ready; not published",
+  "title": "REA 사용법: 메모 앱 분석으로 확인한 기능과 한계",
+  "review_html_sha256": "a27a8956c3023c39b113635768ece09d9c0e858aed9801797f064d6e865ad59d",
+  "article_sha256": "0222cb032ddbac19c3b1553409692111e050a50407727b8b092e5281a46bb0a9",
+  "source_pass_sha256": "b195d4182784e6129d741495d4f99155197d7c9e7d7680049183afc5e6b3081e",
+  "media_sha256": "f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078",
+  "self_contained_images": 1,
+  "local_paths_in_review": false,
+  "pending": [
+    "author approval of the specific candidate and instruction to publish",
+    "native attachment binding and remote media records",
+    "independent final-page gate",
+    "exact Tistory preview, update and live verification"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npx",
+    "-y",
+    "rea-agents@6.7.0",
+    "analyze-javascript-application",
+    "/Users/ja2sng/dev/blog-workspace/posts/2026-10-17-rea-open-source/artifacts/qa-v2/revision-2026-10-24/fixture/notes-example",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.817
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "코딩 경험 없이 REA가 무엇을 하고 어떤 결과물을 만드는지 이해하려는 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": true,
+  "complex_layout": false,
+  "high_risk_remote_media": true,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": true,
+  "decision_note": "사용자가 비개발자의 이해를 돕는 스크린샷이나 설명 그림을 추가로 요청했습니다. max-txt2img로 두 관계를 시각화합니다: 계산기 질문→REA의 규칙 조사→AI의 새 계산기 제작, 기존 웹 게임의 자동 가속→속도 규칙 조사→속도 조절이 가능한 새 교육용 게임. 실제 UI 캡처인 것처럼 그리지 않고 설명 그림으로 표시합니다. 기존 공식 lead는 유지하며 두 그림은 각 사례의 핵심 설명 직후에 배치합니다. 모바일 가독성을 위해 기본 가로비 대신 세로형·정사각형 배치를 선택합니다. 과거 브라우저 정책 차단을 우회하지 않으며 공식 PNG 중 설명력이 없는 사례 모음이나 Hopper 전체 화면은 제외합니다. User-returned media URLs use the Daum thumbnail service and contain signed source query parameters; require an independent second fetch and preserve the exact supplied URLs. Do not infer durable URLs by stripping query fields."
+}

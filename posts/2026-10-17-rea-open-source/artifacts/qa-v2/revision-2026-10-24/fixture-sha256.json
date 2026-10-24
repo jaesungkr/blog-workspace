@@ -1,0 +1,8 @@
+{
+  "fixture/notes-example/preload.js": "3cb814f2a0822c2fef437ba722374a2eabf6c6795905f41656d9c33fe8d5d9c4",
+  "fixture/notes-example/renderer.js": "b24aa22ed969c0849dd9da1102935a6b36b96bae46870234bdea10039dd9a5a0",
+  "fixture/notes-example/index.html": "457b22543aa956fe2cd005fc6bda42d2798eb05040b75c4cb4957e3b66d0ea09",
+  "fixture/notes-example/main.js": "cc5b00911bfe428754d94ca40e8c0f354cfaae86f716873423aa5a62b9e0379a",
+  "fixture/notes-example/package.json": "bfef2a7cba39a989715f56e304ca2578807159f28bdb040b75893bb341caaee7",
+  "fixture/notes-example/csv.js": "6875aeecc1d3e6c1ff5b888a199c26b377d812d5b10e5fb4025e192a206b0018"
+}

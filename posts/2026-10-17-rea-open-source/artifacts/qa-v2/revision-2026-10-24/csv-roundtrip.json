@@ -1,0 +1,73 @@
+[
+  {
+    "name": "plain",
+    "exact_output_pass": true,
+    "parsed_rows": [
+      [
+        "id",
+        "title"
+      ],
+      [
+        "1",
+        "First note"
+      ]
+    ],
+    "roundtrip_pass": true
+  },
+  {
+    "name": "comma-and-quotes",
+    "exact_output_pass": true,
+    "parsed_rows": [
+      [
+        "id",
+        "title"
+      ],
+      [
+        "1",
+        "Hello, \"REA\""
+      ]
+    ],
+    "roundtrip_pass": true
+  },
+  {
+    "name": "korean",
+    "exact_output_pass": true,
+    "parsed_rows": [
+      [
+        "id",
+        "title"
+      ],
+      [
+        "2",
+        "서울, \"메모\""
+      ]
+    ],
+    "roundtrip_pass": true
+  },
+  {
+    "name": "embedded-newline",
+    "exact_output_pass": true,
+    "parsed_rows": [
+      [
+        "id",
+        "title"
+      ],
+      [
+        "3",
+        "첫째 줄\n둘째 줄"
+      ]
+    ],
+    "roundtrip_pass": true
+  },
+  {
+    "name": "empty-list",
+    "exact_output_pass": true,
+    "parsed_rows": [
+      [
+        "id",
+        "title"
+      ]
+    ],
+    "roundtrip_pass": true
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "lead_id": "rea-official-lead",
+  "items": [
+    {
+      "id": "rea-official-lead",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01"
+      ],
+      "source_url": "https://raw.githubusercontent.com/morluto/rea/0c7b6d834af2d044b23196e0e522cc2468327a1e/website/public/assets/social-card.svg",
+      "raw_path": "artifacts/sources/website--public--assets--social-card.svg",
+      "publish_path": "assets/rea-official-lead.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAABtFhPSisUJdbXxi2x5BNN0lX7XQJOTboZvRRoGWRwcf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtwZBbJrq0uqyUk%252FgmBCxXJHu2u8%253D",
+      "width": 1200,
+      "height": 630,
+      "placement": "after:opening",
+      "rights": "MIT, Copyright (c) 2026 morluto. Full license in PNG Copyright text and assets/REA-LICENSE.txt; upstream license in artifacts/sources/LICENSE.",
+      "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+      "caption": "AI가 REA에 연결된 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여줍니다.",
+      "processing": [
+        "SVG rasterized to PNG with sharp at original 1200x630; no content edits",
+        "Embedded full MIT license in PNG Copyright metadata"
+      ],
+      "redactions": [],
+      "sha256": "f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078",
+      "status": "captured"
+    },
+    {
+      "id": "rea-calculator-flow",
+      "kind": "image",
+      "origin": "generated",
+      "role": "concept",
+      "claim_ids": [
+        "C01",
+        "C03",
+        "C15"
+      ],
+      "source_url": "",
+      "raw_path": "",
+      "publish_path": "assets/rea-calculator-flow-infographic-v2.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FBejZ1%2FdJMcabeQDk0%2FAAAAAAAAAAAAAAAAAAAAAAr7ijozS0qUc2RcL4gZVrWCSYPojyzY55_rPOzd1AZH%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DFTE2wCTvF2g9zK7mdEDJfTDLUCM%253D",
+      "width": 1024,
+      "height": 1536,
+      "display_width": 540,
+      "placement": "after:calculator-code-and-rebuild",
+      "rights": "Created for dev.log with the built-in image generation tool; conceptual illustration based on cited official REA examples.",
+      "alt": "계산기 버튼을 AI에게 질문하고 REA로 계산 규칙을 조사한 뒤 AI가 같은 규칙의 새 계산기를 만드는 세 단계 설명 그림",
+      "caption": "계산 규칙이 궁금하다고 질문하면 REA로 앱을 조사하고, AI가 알아낸 규칙으로 새 계산기를 만듭니다. 실제 앱 화면을 그대로 옮긴 그림은 아닙니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "a12c8934aec3fd68e5936b4517dc311d8fa52925d29701b9b4ed57c5abbd35de",
+      "status": "captured"
+    },
+    {
+      "id": "rea-game-change",
+      "kind": "image",
+      "origin": "generated",
+      "role": "comparison",
+      "claim_ids": [
+        "C01",
+        "C13"
+      ],
+      "source_url": "",
+      "raw_path": "",
+      "publish_path": "assets/rea-game-change-infographic-v1.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FTQ3Ln%2FdJMcabeQDkZ%2FAAAAAAAAAAAAAAAAAAAAAJ81iDWJtp982kMJfyD2KXHoYVtlqKZLcgJbyE-yw7yx%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3Dj8IqtqKaCy1EA9VrUc%252FXzva2W0s%253D",
+      "width": 1254,
+      "height": 1254,
+      "display_width": 680,
+      "placement": "after:dino-speed-control",
+      "rights": "Created for dev.log with the built-in image generation tool; conceptual illustration based on cited official REA examples.",
+      "alt": "점점 빨라지는 기존 웹 게임에서 속도 규칙을 조사하고 속도를 직접 조절하는 새 작은 게임을 만드는 비교 설명 그림",
+      "caption": "기존 웹 게임의 속도 규칙을 조사한 뒤, 그 규칙을 재현한 작은 게임에 속도 조절을 더하는 예시입니다. 게임 전체를 복원한 결과는 아닙니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "796947489acd5a2c9aaa71f15aadf3fe41566b53ccbd8daf7c6b7c965ce077ab",
+      "status": "captured"
+    }
+  ]
+}

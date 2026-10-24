@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "lead_id": "rea-official-lead",
+  "items": [
+    {
+      "id": "rea-official-lead",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C01"
+      ],
+      "source_url": "https://raw.githubusercontent.com/morluto/rea/0c7b6d834af2d044b23196e0e522cc2468327a1e/website/public/assets/social-card.svg",
+      "raw_path": "artifacts/sources/website--public--assets--social-card.svg",
+      "publish_path": "assets/rea-official-lead.png",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FyDE89%2FdJMcaa1sAE5%2FAAAAAAAAAAAAAAAAAAAAABtFhPSisUJdbXxi2x5BNN0lX7XQJOTboZvRRoGWRwcf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DtwZBbJrq0uqyUk%252FgmBCxXJHu2u8%253D",
+      "width": 1200,
+      "height": 630,
+      "placement": "after:opening",
+      "rights": "MIT, Copyright (c) 2026 morluto. Full license in PNG Copyright text and assets/REA-LICENSE.txt; upstream license in artifacts/sources/LICENSE.",
+      "alt": "AI가 REA와 분석 도구를 이용해 프로그램의 코드와 근거를 받는 관계를 보여주는 소개 카드",
+      "caption": "REA가 AI와 분석 도구를 연결하는 관계를 보여주는 공식 소개 카드입니다. · MIT, Copyright (c) 2026 morluto",
+      "processing": [
+        "SVG rasterized to PNG with sharp at original 1200x630; no content edits",
+        "Embedded full MIT license in PNG Copyright metadata"
+      ],
+      "redactions": [],
+      "sha256": "f368346a7e2a4dd5101d9762ad3f86d0a3df604d303cae98ad5b8bc4549e6078",
+      "status": "validated"
+    }
+  ]
+}
