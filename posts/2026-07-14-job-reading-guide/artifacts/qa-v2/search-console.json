@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "url": "https://dop3n.tistory.com/entry/%EC%9A%A5%EA%B8%B0-1%EC%9E%A542%EC%9E%A5-%EC%89%AC%EC%9A%B4%EB%A7%90-%EC%84%B1%EA%B2%BD",
+  "site_property": "https://dop3n.tistory.com/",
+  "previous_state": "Crawled - currently not indexed",
+  "previous_last_crawl": "Jul 15, 2026, 1:52:10 PM (Search Console display)",
+  "live_test_display_time": "Oct 24, 2026, 10:16 PM",
+  "live_test_result": "URL is available to Google; Page can be indexed",
+  "request_result": "Indexing requested",
+  "request_confirmation": "URL was added to a priority crawl queue. Submitting a page multiple times will not change its queue position or priority.",
+  "recorded_at": "2026-10-24T22:19:24.802119+09:00",
+  "indexing_confirmed": false,
+  "request_count_this_revision": 1,
+  "screenshot": "live/indexing-requested.png"
+}

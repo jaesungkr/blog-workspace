@@ -1,0 +1,4 @@
+/* Keep wrapped TOC text aligned with its list marker in the hELLO skin. */
+.devlog-rich .devlog-rich__toc li > a {
+  display: inline !important;
+}

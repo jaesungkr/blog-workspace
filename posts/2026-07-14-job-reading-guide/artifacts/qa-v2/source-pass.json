@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T13:03:28.362997Z",
+  "checked_by": "Codex independent job_reviewer",
+  "article_content_sha256": "e0ee385149795c664332c9e7930d621df123cbf3042a4e1e8e72b339365b9e48",
+  "brief_sha256": "da5837cea4a4ea0b8dc9ecd7a572fb2d85bffd6fbe53593dd559e842ac45b1bc",
+  "evidence_sha256": "bee7a5537c5f595bec8ff65b3d8a276ba77166278ea2fd00d0aedf89b3fa87b0",
+  "note": "Source pass renewed after one mobile-table scrolling instruction. Removing that exact sentence reproduces the previously reviewed article SHA-256. Wording matches creator-reported 360px viewport and overflowX auto table wrapper. Final remote page behavior remains subject to independent page review."
+}

@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-24T22:14:22.141231+09:00",
+  "checked_by": "Codex creator via actual Tistory editor preview",
+  "fragment_sha256": "7eaf8d7110a2772edcb4a7d40a9715500c78ab43c4d2066b1dbdacc6bede2267",
+  "source": "Existing editor 49, IAB CUA real UI",
+  "desktop_preview_controls": {
+    "width": 1280,
+    "height": 900
+  },
+  "mobile_preview_controls": {
+    "width": 360,
+    "height": 800
+  },
+  "themes": [
+    "hELLO light",
+    "hELLO dark"
+  ],
+  "native_image_count": 1,
+  "loaded_natural_width": 1280,
+  "alt_verified": true,
+  "caption_verified": true,
+  "toc_native_display": "inline",
+  "mobile_article_measurements": "mobile-measurements.json",
+  "representative_image": "same validated hero uploaded via separate publication cover-image chooser, replacing old cover",
+  "original_date_confirmed": "2026-07-14 17:51",
+  "original_url_confirmed": true,
+  "public_visibility_confirmed": true,
+  "screenshots": [
+    "desktop-light.png",
+    "desktop-dark.png",
+    "mobile-light.png",
+    "mobile-dark.png"
+  ]
+}

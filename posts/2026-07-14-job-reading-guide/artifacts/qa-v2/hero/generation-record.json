@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen.imagegen",
+  "source_file": "/Users/ja2sng/.codex/generated_images/01a16c8e-9254-7143-a12c-75bd0c1b17ec/exec-7d0d52fb-6f72-4f7b-ab1d-b897375f6146.png",
+  "publication_file": "assets/job-silent-friends-hero-v1.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "33e41b5576096c38f0ec51c6c1fde8b2d5f4e5041d2959295ae58d6b0d2b48a0",
+  "prompt_file": "artifacts/qa-v2/hero/prompt-v1.txt",
+  "corrections": 0
+}

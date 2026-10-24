@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "683b78c9-3190-4153-9ecb-c66ec62e4f4c",
+  "recorded_at": "2026-10-24T13:09:21.291665Z",
+  "recorded_by": "Codex",
+  "media_sha256": "330821055b20e88c2a3471c952d4c668a19aa61012909b3c2c623901824b7d60",
+  "fetcher_sha256": "7c9a17fea2b169ea015e020504a4dd5e3776a4c3d96b62997deac45100a994ab",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "972a6689cf51a2a884c4ef05487a574e9d644863c7c43c3be0193e525dc5e38e"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "job-silent-friends",
+      "requested_url": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+      "final_url": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+      "redirect_chain": [],
+      "observed_at": "2026-10-24T13:09:21.291269Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 3039736,
+      "byte_length": 3039736,
+      "sha256": "33e41b5576096c38f0ec51c6c1fde8b2d5f4e5041d2959295ae58d6b0d2b48a0",
+      "format": "png",
+      "width": 1672,
+      "height": 941,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "author_instruction": "오케이. 그럼 다음은 욥기글 개선해서 색인 요청까지 진행해줘",
+  "authorization_scope": "Explicit end-to-end instruction to improve the existing published Job article and request indexing. This is authorization of the editorial task, not a claim that the author separately reviewed this exact revised candidate.",
+  "target_blog": "https://dop3n.tistory.com/",
+  "target_post_id": 49,
+  "source_pass_sha256": "6140afb0a4c76253a130ac673d1c0b0056a9564428bf908fd7114f64333c2b4f",
+  "media_sha256": {
+    "job-silent-friends": "33e41b5576096c38f0ec51c6c1fde8b2d5f4e5041d2959295ae58d6b0d2b48a0"
+  },
+  "recorded_at": "2026-10-24T22:09:51.925391+09:00",
+  "publication_mode": "codex-browser"
+}

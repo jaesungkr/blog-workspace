@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "lead_id": "job-silent-friends",
+  "items": [
+    {
+      "id": "job-silent-friends",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C03"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-10-24",
+      "environment": "Built-in imagegen, original handmade paper relief concept",
+      "source_url": "",
+      "raw_path": "artifacts/qa-v2/hero/job-silent-friends-source-v1.png",
+      "publish_path": "assets/job-silent-friends-hero-v1.png",
+      "tistory_url": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening-speaker-question",
+      "rights": "dev.log original AI-generated interpretive illustration",
+      "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+      "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+      "processing": [
+        "Built-in image generation from original prompt",
+        "Creator full-size inspection; four seated figures, ash and pottery shard, no text or supernatural figure",
+        "Independent full-size and 360px hero validation pass by /root/job_reviewer"
+      ],
+      "redactions": [],
+      "sha256": "33e41b5576096c38f0ec51c6c1fde8b2d5f4e5041d2959295ae58d6b0d2b48a0",
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAADfiVav5cLg4dzjYpedXlK9s4tKbJ5NjuCV7jiZLtl7-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=baKc5xQQa3FgqUsIrrbZNg6dLEo%3D|CDM|1.3|{\"originWidth\":1672,\"originHeight\":941,\"style\":\"alignCenter\",\"alt\":\"재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화\",\"filename\":\"job-silent-friends-hero-v1.png\"}_##]"
+    }
+  ]
+}

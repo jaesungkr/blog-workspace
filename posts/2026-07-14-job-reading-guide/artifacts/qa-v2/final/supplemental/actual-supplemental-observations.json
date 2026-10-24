@@ -1,0 +1,496 @@
+{
+  "checked_by": "Codex independent job_reviewer",
+  "method": "Actual supplementary captures using capture_rich_qa_v2 ChromeProcess/CDP implementation; distinct from canonical browser receipts",
+  "records": [
+    {
+      "mode": "final-light",
+      "width": 1280,
+      "browser_version": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:52831/devtools/browser/86916809-b4ae-4f68-adf5-385052293ddd"
+      },
+      "checked_at": "2026-10-24T13:12:35.351541Z",
+      "preview_sha256": "df310b379ed40f4468b1ecc05783c3e435bfbfcd3c97490496030379d0a1746e",
+      "measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 1280,
+        "inner_height": 900,
+        "client_width": 1280,
+        "client_height": 900,
+        "scroll_width": 1280,
+        "scroll_height": 5082,
+        "h1_count": 1,
+        "toc_anchor_count": 6,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "fe0a86a557a777a348190b9c12ef470131f5b9e3b8285cde9ce067b399e158db",
+        "screenshot_pixel_width": 1280,
+        "screenshot_pixel_height": 900,
+        "width": 1280,
+        "height": 900,
+        "status": "pass"
+      },
+      "observations": {
+        "table": {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflowX": "auto"
+        },
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "width": 916,
+          "height": 516.390625,
+          "filter": "none"
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "bodyColor": "rgb(51, 51, 51)",
+        "pageBackground": "rgb(255, 255, 255)",
+        "links": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면"
+          }
+        ],
+        "lists": 1,
+        "codeBlocks": 0
+      },
+      "full_page": "artifacts/qa-v2/final/supplemental/final-light-1280-full-page.png",
+      "full_page_sha256": "b9afece38f8617a81afa8d7a08600dde593787b89478ecfb44bf5d40c06021bc",
+      "actual_page_segments": [
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-1280-1.png",
+          "y": 0,
+          "width": 1280,
+          "height": 1800,
+          "sha256": "4e871b49678b1cf0b4e8b5484d9482f677fa9ea642cdbbb975a615cac1924644"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-1280-2.png",
+          "y": 1800,
+          "width": 1280,
+          "height": 1800,
+          "sha256": "dc78c6998debc3231778a7937b64c327cb193f3c700315420a4c0679cfa93b47"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-1280-3.png",
+          "y": 3600,
+          "width": 1280,
+          "height": 1482,
+          "sha256": "a7c67ce804f47bae236983ee7caaba9a86fe1605df168006351ecee199e31443"
+        }
+      ]
+    },
+    {
+      "mode": "final-light",
+      "width": 360,
+      "browser_version": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:52831/devtools/browser/86916809-b4ae-4f68-adf5-385052293ddd"
+      },
+      "checked_at": "2026-10-24T13:12:37.418011Z",
+      "preview_sha256": "df310b379ed40f4468b1ecc05783c3e435bfbfcd3c97490496030379d0a1746e",
+      "measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 360,
+        "inner_height": 800,
+        "client_width": 360,
+        "client_height": 800,
+        "scroll_width": 360,
+        "scroll_height": 7052,
+        "h1_count": 1,
+        "toc_anchor_count": 6,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "8a895b6dec06b17a2ce8c4fdcac4f4561536365e9e5d91480e3522d4945387d7",
+        "screenshot_pixel_width": 360,
+        "screenshot_pixel_height": 800,
+        "width": 360,
+        "height": 800,
+        "status": "pass"
+      },
+      "observations": {
+        "table": {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflowX": "auto"
+        },
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "width": 320,
+          "height": 180.96875,
+          "filter": "none"
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "bodyColor": "rgb(51, 51, 51)",
+        "pageBackground": "rgb(255, 255, 255)",
+        "links": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면"
+          }
+        ],
+        "lists": 1,
+        "codeBlocks": 0
+      },
+      "full_page": "artifacts/qa-v2/final/supplemental/final-light-360-full-page.png",
+      "full_page_sha256": "684c70e3199943e6b3ab95042534df9bd6a3368cc7c3735bcd197a3c0ffcf494",
+      "actual_page_segments": [
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-360-1.png",
+          "y": 0,
+          "width": 360,
+          "height": 1500,
+          "sha256": "aeaed91bb86b8dbfbf5438730492bee494aa5da15b16e1a8d02cc631e4890957"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-360-2.png",
+          "y": 1500,
+          "width": 360,
+          "height": 1500,
+          "sha256": "686ffe477fa08f8a518d90e6d6e1acbf7184b9d7beb67c1983886797f7b4152f"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-360-3.png",
+          "y": 3000,
+          "width": 360,
+          "height": 1500,
+          "sha256": "2c0d29fd1ec31108ce7968daa945c2e87a882d2797079560dc6a8dd01c62b0e1"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-360-4.png",
+          "y": 4500,
+          "width": 360,
+          "height": 1500,
+          "sha256": "e51be1490957a15ab75246d8ea966a0882e165098ed719205a043ecc7db99a6c"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/light-360-5.png",
+          "y": 6000,
+          "width": 360,
+          "height": 1052,
+          "sha256": "6bf805302af1c7616f8149cb7bf34ffead442c17108d728d3631b754694dd675"
+        }
+      ],
+      "table_scroll_test": {
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320
+      },
+      "table_right": "artifacts/qa-v2/final/supplemental/final-light-360-table-right.png",
+      "table_right_sha256": "9901a76ad9c1cc638ec940d40041c8c52dee3cd67d0e5ffa8f7a891c18f920f3"
+    },
+    {
+      "mode": "final-dark",
+      "width": 1280,
+      "browser_version": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:52851/devtools/browser/0345a121-c8fe-4741-ab44-b28849c5fe4d"
+      },
+      "checked_at": "2026-10-24T13:12:39.614730Z",
+      "preview_sha256": "17b82a6d162dc416c083bafe1e6b119b4511365c555b5c2b2bc8436b2dcef8d8",
+      "measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-dark-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 1280,
+        "inner_height": 900,
+        "client_width": 1280,
+        "client_height": 900,
+        "scroll_width": 1280,
+        "scroll_height": 5082,
+        "h1_count": 1,
+        "toc_anchor_count": 6,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "bb101c9de57e79ed96d68d7db78fd32539ceeef1831574aab800b4dbfdb79f22",
+        "screenshot_pixel_width": 1280,
+        "screenshot_pixel_height": 900,
+        "width": 1280,
+        "height": 900,
+        "status": "pass"
+      },
+      "observations": {
+        "table": {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflowX": "auto"
+        },
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "width": 916,
+          "height": 516.390625,
+          "filter": "none"
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "bodyColor": "rgb(209, 209, 214)",
+        "pageBackground": "rgb(30, 31, 33)",
+        "links": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면"
+          }
+        ],
+        "lists": 1,
+        "codeBlocks": 0
+      },
+      "full_page": "artifacts/qa-v2/final/supplemental/final-dark-1280-full-page.png",
+      "full_page_sha256": "dc995b2be91432eedab88cc3b37e26a9677a0a4e5f12784e7337e8c891cbec8d",
+      "actual_page_segments": [
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-1280-1.png",
+          "y": 0,
+          "width": 1280,
+          "height": 1800,
+          "sha256": "1abc70ccadc72d7320b2ffac8abc86c89967b1497d5f0a5e826c9e097e26c03a"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-1280-2.png",
+          "y": 1800,
+          "width": 1280,
+          "height": 1800,
+          "sha256": "857166890dd6693533b7538d468645f127d623474b260a30e2bbaa1df8a0aedb"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-1280-3.png",
+          "y": 3600,
+          "width": 1280,
+          "height": 1482,
+          "sha256": "d124cf97902792352a18485335bcf7a15682c39583b84a2b619048598899d83e"
+        }
+      ]
+    },
+    {
+      "mode": "final-dark",
+      "width": 360,
+      "browser_version": {
+        "Browser": "Chrome/155.0.8059.85",
+        "Protocol-Version": "1.3",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "V8-Version": "15.5.35.25",
+        "WebKit-Version": "537.36 (@0e66b94549a8bd85f03fbdf189b752d6e7b63c32)",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:52851/devtools/browser/0345a121-c8fe-4741-ab44-b28849c5fe4d"
+      },
+      "checked_at": "2026-10-24T13:12:41.545375Z",
+      "preview_sha256": "17b82a6d162dc416c083bafe1e6b119b4511365c555b5c2b2bc8436b2dcef8d8",
+      "measurements": {
+        "ready_state": "complete",
+        "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-07-14-job-reading-guide/artifacts/qa-v2/final-dark-rendered/job-reading-guide-rich-preview.html",
+        "inner_width": 360,
+        "inner_height": 800,
+        "client_width": 360,
+        "client_height": 800,
+        "scroll_width": 360,
+        "scroll_height": 7052,
+        "h1_count": 1,
+        "toc_anchor_count": 6,
+        "toc_targets_unique": true,
+        "image_count": 1,
+        "images_loaded": true,
+        "images": [
+          {
+            "src": "https://blog.kakaocdn.net/dna/Ijkxz/dJMcag1DIVP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UPo3K6gvhEMcwrh51cIv6zQsD7wjsr5lybPwUTuB0YmHyGRdrjyoiEmosy1sWdS1WnbGLmAltFGMf6a0rpQx8e/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=NW8YaXnq9cR974ESaRbKd%2F4RRvU%3D",
+            "complete": true,
+            "natural_width": 1672,
+            "natural_height": 941
+          }
+        ],
+        "screenshot_sha256": "79437b1aadbb3ef1cbd17096686b97346d1b6e9c40056b611d736811180fb0fe",
+        "screenshot_pixel_width": 360,
+        "screenshot_pixel_height": 800,
+        "width": 360,
+        "height": 800,
+        "status": "pass"
+      },
+      "observations": {
+        "table": {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflowX": "auto"
+        },
+        "image": {
+          "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+          "width": 320,
+          "height": 180.96875,
+          "filter": "none"
+        },
+        "caption": "욥의 고통을 보고 말없이 곁에 앉은 세 친구를 표현한 삽화입니다(욥기 2:8, 11~13).",
+        "bodyColor": "rgb(209, 209, 214)",
+        "pageBackground": "rgb(30, 31, 33)",
+        "links": [
+          {
+            "text": "욥기 42장의 큰 흐름",
+            "href": "#욥기-42장의-큰-흐름"
+          },
+          {
+            "text": "욥은 무엇을 잘못했을까?",
+            "href": "#욥은-무엇을-잘못했을까"
+          },
+          {
+            "text": "친구들의 위로는 어디서 어긋났을까?",
+            "href": "#친구들의-위로는-어디서-어긋났을까"
+          },
+          {
+            "text": "28장의 지혜와 엘리후의 등장",
+            "href": "#28장의-지혜와-엘리후의-등장"
+          },
+          {
+            "text": "하나님은 왜 창조 세계를 물으실까?",
+            "href": "#하나님은-왜-창조-세계를-물으실까"
+          },
+          {
+            "text": "마지막 회복에서 함께 읽어야 할 장면",
+            "href": "#마지막-회복에서-함께-읽어야-할-장면"
+          }
+        ],
+        "lists": 1,
+        "codeBlocks": 0
+      },
+      "full_page": "artifacts/qa-v2/final/supplemental/final-dark-360-full-page.png",
+      "full_page_sha256": "2dacb895644c3f2aea99c922ded57504c95036a44f9b3d81224bbc29148d73e7",
+      "actual_page_segments": [
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-360-1.png",
+          "y": 0,
+          "width": 360,
+          "height": 1500,
+          "sha256": "3d08054e2a3ca1168b79902baffe76e34928892eb7c394c75747fe7e437407c5"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-360-2.png",
+          "y": 1500,
+          "width": 360,
+          "height": 1500,
+          "sha256": "e3e246780b87ba5c554da5f096d0476b08d9f22988bd263b213914c07c4b768b"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-360-3.png",
+          "y": 3000,
+          "width": 360,
+          "height": 1500,
+          "sha256": "940bfba03eb00df3e872c58785f5c810881e2f72dbe19719f47a33f755c12dcf"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-360-4.png",
+          "y": 4500,
+          "width": 360,
+          "height": 1500,
+          "sha256": "5c3c6ce078eb0ad4e9a6812c2056188b8a1188447348dd032c397702614c957f"
+        },
+        {
+          "path": "artifacts/qa-v2/final/supplemental/view-crops/dark-360-5.png",
+          "y": 6000,
+          "width": 360,
+          "height": 1052,
+          "sha256": "9c65c4d8159c877875fb06839df7a5e78e71ef2e6291fd64e5baffad043d55db"
+        }
+      ],
+      "table_scroll_test": {
+        "scrollLeft": 300,
+        "scrollWidth": 620,
+        "clientWidth": 320
+      },
+      "table_right": "artifacts/qa-v2/final/supplemental/final-dark-360-table-right.png",
+      "table_right_sha256": "653049d292f1a173665ed29f4874456c8c0a0789763edaf0ea4c3c40c56a0d60"
+    }
+  ]
+}

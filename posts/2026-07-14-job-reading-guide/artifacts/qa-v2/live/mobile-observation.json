@@ -1,0 +1,23 @@
+[
+  {
+    "articleScrollWidth": 328,
+    "articleWidth": 328,
+    "images": [
+      {
+        "alt": "재 위에서 기와 조각을 든 욥과 말없이 곁에 앉은 세 친구를 표현한 종이 부조 삽화",
+        "complete": true,
+        "naturalHeight": 720,
+        "naturalWidth": 1280
+      }
+    ],
+    "table": [
+      {
+        "overflowX": "auto",
+        "scrollWidth": 620,
+        "wrapperWidth": 288
+      }
+    ],
+    "tocLinkDisplay": "inline",
+    "viewport": 360
+  }
+]

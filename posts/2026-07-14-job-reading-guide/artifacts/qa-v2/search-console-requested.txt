@@ -1,0 +1,18 @@
+Browser tab: 33, Title: "URL Inspection", URL: "https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fdop3n.tistory.com%2F&id=wIBwNuzfDVNYaxyMXELDfA&alt_id=RnZpCQB7HHQCXBuavEMWCQ".
+0 AXWebArea URL Inspection, URL: search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fdop3n.tistory.com%2F&id=wIBwNuzfDVNYaxyMXELDfA&alt_id=RnZpCQB7HHQCXBuavEMWCQ
+	1 container
+		15 container
+			16 container Indexing requested
+				17 container
+					18 heading Indexing requested, Value: 2
+						19 text Indexing requested
+					20 text URL was added to a priority crawl queue. Submitting a page multiple times will not change its queue position or priority.
+					21 link Description: Learn more., Value: support.google.com/webmasters/answer/6065812
+				22 button Dismiss
+					23 text Dismiss
+		11 container reCAPTCHA
+			12 AXWebArea reCAPTCHA, URL: google.com/recaptcha/api2/anchor?ar=1&k=6LeKMsIjAAAAAGP5PskdMId0tLXc7dL3LiO07Avf&co=aHR0cHM6Ly9zZWFyY2guZ29vZ2xlLmNvbTo0NDM.&hl=en&v=NhfdZHzre16wrc2m6BxEdu7J&size=invisible&anchor-ms=20000&execute-ms=30000&cb=1q19e8ycl228
+				13 text protected by
+				14 text reCAPTCHA
+
+The focused UI element is 22 button Dismiss

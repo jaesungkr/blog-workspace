@@ -1,0 +1,6 @@
+				78 text https://dop3n.tistory.com/entry/욥기-1장42장-쉬운말-성경
+						87 text URL is not on Google This page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed.
+					95 button (expanded) Page indexing Page is not indexed: Crawled - currently not indexed, Secondary Actions: Collapse
+							98 text Page is not indexed:  Crawled - currently not indexed
+						100 text Discovery Sitemaps https://dop3n.tistory.com/sitemap.xml Referring page https://dop3n.tistory.com/?page=7 Crawl Last crawl Jul 15, 2026, 1:52:10 PM Crawled as Googlebot smartphone Crawl allowed? Yes Page fetch Successful Indexing allowed? Yes Indexing User-declared canonical https://dop3n.tistory.com/entry/%EC%9A%A5%EA%B8%B0-1%EC%9E%A542%EC%9E%A5-%EC%89%AC%EC%9A%B4%EB%A7%90-%EC%84%B1%EA%B2%BD Google-selected canonical
+						102 text Inspected URL

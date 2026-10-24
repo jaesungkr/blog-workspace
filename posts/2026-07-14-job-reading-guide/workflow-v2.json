@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "욥기를 처음 읽다가 친구들과 욥의 긴 대화에서 길을 잃은 성경 입문 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "기존 글 ID 49의 성경 본문 나열을 줄거리·화자 구분·핵심 장면 읽기 안내로 재작성합니다. 실제 티스토리 카테고리는 신앙·묵상이며 도구의 기존 Reflections/성경 읽기 값은 아카이브 호환용입니다. max-txt2img와 diagram-design을 검토했으나 장 구간을 나눈 짧은 3열 읽기 표가 모바일에서 더 잘 읽히므로 보조 도식은 생략합니다. 대표 이미지는 욥기의 질그릇 조각과 재, 세 친구가 함께 앉아 있는 장면을 절제된 종이 부조로 표현합니다. 인물의 외모·공간은 해석적 삽화이며 역사적 재현으로 제시하지 않습니다.",
+  "publication_mode": "codex-browser"
+}
