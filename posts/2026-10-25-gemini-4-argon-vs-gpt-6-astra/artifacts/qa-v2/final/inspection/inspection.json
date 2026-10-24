@@ -1,0 +1,502 @@
+[
+  {
+    "theme": "light",
+    "width": 1280,
+    "preview_sha256": "dfaf146ea05cd148eb26de6ebedbe463825f501a19794f1d8e83eb283619acb2",
+    "browser": "Chrome/155.0.8059.85",
+    "scope": "independent_supplementary_full_page_inspection",
+    "measurements": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/final-rendered/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5806,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/peFbx/dJMcajxw7nH/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VCgI-mt91v4wTJGuPun0g1_Rtx7cs6ijLzno3CbtGN50eOGZe05h6wlPCiS6eeVohLZyJ7mKddE_xFBc5xCRfM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=y096hJXD%2F6AocRUSiaf7mxOI9Ic%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ]
+    },
+    "details": {
+      "headings": [
+        {
+          "text": "Argon이 주목받는 작업",
+          "y": 1565
+        },
+        {
+          "text": "복잡한 코드 작업에서의 Astra",
+          "y": 2118
+        },
+        {
+          "text": "같은 종합 점수 안의 차이",
+          "y": 2975
+        },
+        {
+          "text": "사용 후기가 엇갈리는 지점",
+          "y": 3637
+        },
+        {
+          "text": "API 가격 차이는 얼마나 클까",
+          "y": 4267
+        },
+        {
+          "text": "Astra를 쓰고 있다면",
+          "y": 5077
+        },
+        {
+          "text": "참고 자료",
+          "y": 5512
+        }
+      ],
+      "tables": [
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "font": "15px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "font": "15px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "font": "15px",
+          "color": "rgb(51, 51, 51)"
+        }
+      ],
+      "listMarkers": [
+        {
+          "type": "disc",
+          "items": 3
+        }
+      ],
+      "images": [
+        {
+          "alt": "파란 겹판 별과 초록 커서 조형물이 Gemini 4 Argon과 GPT-6 Astra를 각각 나타냅니다.",
+          "filter": "none",
+          "width": 916
+        }
+      ],
+      "styles": {
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBackground": "rgb(255, 255, 255)"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-1280-full.png",
+        "sha256": "a6b482a1d95966f93456a0778e90299205b58ea1ac49f2704f465ab30f3d8ad3"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-1280-reading-1.png",
+        "sha256": "003c75f16ccb53599da86091836f023e5ed872f959f033413578af0dc8d846a0"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-1280-reading-2.png",
+        "sha256": "950da89e0444353f91ca5c997c7f27cd0da986c8cefa91be290bba2b41ed3cec"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-1280-reading-3.png",
+        "sha256": "72f000f738a6631d8644cc998486621e377a06ad86350cc765d5382c65319b5d"
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 360,
+    "preview_sha256": "dfaf146ea05cd148eb26de6ebedbe463825f501a19794f1d8e83eb283619acb2",
+    "browser": "Chrome/155.0.8059.85",
+    "scope": "independent_supplementary_full_page_inspection",
+    "measurements": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/final-rendered/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 8008,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/peFbx/dJMcajxw7nH/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VCgI-mt91v4wTJGuPun0g1_Rtx7cs6ijLzno3CbtGN50eOGZe05h6wlPCiS6eeVohLZyJ7mKddE_xFBc5xCRfM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=y096hJXD%2F6AocRUSiaf7mxOI9Ic%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ]
+    },
+    "details": {
+      "headings": [
+        {
+          "text": "Argon이 주목받는 작업",
+          "y": 1468
+        },
+        {
+          "text": "복잡한 코드 작업에서의 Astra",
+          "y": 2379
+        },
+        {
+          "text": "같은 종합 점수 안의 차이",
+          "y": 3675
+        },
+        {
+          "text": "사용 후기가 엇갈리는 지점",
+          "y": 4602
+        },
+        {
+          "text": "API 가격 차이는 얼마나 클까",
+          "y": 5679
+        },
+        {
+          "text": "Astra를 쓰고 있다면",
+          "y": 6962
+        },
+        {
+          "text": "참고 자료",
+          "y": 7610
+        }
+      ],
+      "tables": [
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "14px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "14px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "14px",
+          "color": "rgb(51, 51, 51)"
+        }
+      ],
+      "listMarkers": [
+        {
+          "type": "disc",
+          "items": 3
+        }
+      ],
+      "images": [
+        {
+          "alt": "파란 겹판 별과 초록 커서 조형물이 Gemini 4 Argon과 GPT-6 Astra를 각각 나타냅니다.",
+          "filter": "none",
+          "width": 320
+        }
+      ],
+      "styles": {
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBackground": "rgb(255, 255, 255)"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-full.png",
+        "sha256": "c86ccf875b7ce4132f3e8cb58dfaa6c9b9ecf0fbb418127ed843c63bd4c401ff"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-reading-1.png",
+        "sha256": "82c1c93c21c422cd7865e1bfa8c11f2c72758fb1920ca00242a46859cc748f3d"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-reading-2.png",
+        "sha256": "16439fc6a19b0a273d718074a5ca442be6663536c8b613295a9747d534670e02"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-reading-3.png",
+        "sha256": "35f7712533a6864f480c0f17fde76ece89ac6f1ed4d0c0554e3105f6e31311d0"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-reading-4.png",
+        "sha256": "5488ede5448526cf088f8c801cdeac5421385bb1955a218eb60423c292a52ec3"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-reading-5.png",
+        "sha256": "e38ed73a9f37fe3abfda8d0c14d9e3abff3bf87f606062104e39df8347df673f"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-table.png",
+        "sha256": "6befd62321e0b3d6e30aed204b8f04652d280ac0ce51b8f40897832133aea2e8"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/light-360-ending.png",
+        "sha256": "a0bf07c7febe44890146c1552ac877f9d7f80b33c0c5b90ca2b92ff3156d87ab"
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1280,
+    "preview_sha256": "acd6f802a569848324bb26e3f236eabc1703e800d5be1100f8f02d748ba73234",
+    "browser": "Chrome/155.0.8059.85",
+    "scope": "independent_supplementary_full_page_inspection",
+    "measurements": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/final-dark-rendered/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5806,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/peFbx/dJMcajxw7nH/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VCgI-mt91v4wTJGuPun0g1_Rtx7cs6ijLzno3CbtGN50eOGZe05h6wlPCiS6eeVohLZyJ7mKddE_xFBc5xCRfM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=y096hJXD%2F6AocRUSiaf7mxOI9Ic%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ]
+    },
+    "details": {
+      "headings": [
+        {
+          "text": "Argon이 주목받는 작업",
+          "y": 1565
+        },
+        {
+          "text": "복잡한 코드 작업에서의 Astra",
+          "y": 2118
+        },
+        {
+          "text": "같은 종합 점수 안의 차이",
+          "y": 2975
+        },
+        {
+          "text": "사용 후기가 엇갈리는 지점",
+          "y": 3637
+        },
+        {
+          "text": "API 가격 차이는 얼마나 클까",
+          "y": 4267
+        },
+        {
+          "text": "Astra를 쓰고 있다면",
+          "y": 5077
+        },
+        {
+          "text": "참고 자료",
+          "y": 5512
+        }
+      ],
+      "tables": [
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "font": "15px",
+          "color": "rgb(209, 209, 214)"
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "font": "15px",
+          "color": "rgb(209, 209, 214)"
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "font": "15px",
+          "color": "rgb(209, 209, 214)"
+        }
+      ],
+      "listMarkers": [
+        {
+          "type": "disc",
+          "items": 3
+        }
+      ],
+      "images": [
+        {
+          "alt": "파란 겹판 별과 초록 커서 조형물이 Gemini 4 Argon과 GPT-6 Astra를 각각 나타냅니다.",
+          "filter": "none",
+          "width": 916
+        }
+      ],
+      "styles": {
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBackground": "rgb(30, 31, 33)"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-1280-full.png",
+        "sha256": "fc6b18beddc49ce92bf2de59f95587de1fb464f4e6055d1337ab73c9dbf37915"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-1280-reading-1.png",
+        "sha256": "323e4be4237ffe211691b174049afcc136722e7f345a93d01ddeb56189d2256f"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-1280-reading-2.png",
+        "sha256": "bd5f7e68aa88a61d7db877d8bf4c038ebe5fe4282297ac616fad91b6357d4064"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-1280-reading-3.png",
+        "sha256": "bf6919c85794004cb733ced669c2c9ef5844d452807822000d815dc084640c4f"
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 360,
+    "preview_sha256": "acd6f802a569848324bb26e3f236eabc1703e800d5be1100f8f02d748ba73234",
+    "browser": "Chrome/155.0.8059.85",
+    "scope": "independent_supplementary_full_page_inspection",
+    "measurements": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/final-dark-rendered/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 8008,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/peFbx/dJMcajxw7nH/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VCgI-mt91v4wTJGuPun0g1_Rtx7cs6ijLzno3CbtGN50eOGZe05h6wlPCiS6eeVohLZyJ7mKddE_xFBc5xCRfM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=y096hJXD%2F6AocRUSiaf7mxOI9Ic%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ]
+    },
+    "details": {
+      "headings": [
+        {
+          "text": "Argon이 주목받는 작업",
+          "y": 1468
+        },
+        {
+          "text": "복잡한 코드 작업에서의 Astra",
+          "y": 2379
+        },
+        {
+          "text": "같은 종합 점수 안의 차이",
+          "y": 3675
+        },
+        {
+          "text": "사용 후기가 엇갈리는 지점",
+          "y": 4602
+        },
+        {
+          "text": "API 가격 차이는 얼마나 클까",
+          "y": 5679
+        },
+        {
+          "text": "Astra를 쓰고 있다면",
+          "y": 6962
+        },
+        {
+          "text": "참고 자료",
+          "y": 7610
+        }
+      ],
+      "tables": [
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "14px",
+          "color": "rgb(209, 209, 214)"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "14px",
+          "color": "rgb(209, 209, 214)"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "14px",
+          "color": "rgb(209, 209, 214)"
+        }
+      ],
+      "listMarkers": [
+        {
+          "type": "disc",
+          "items": 3
+        }
+      ],
+      "images": [
+        {
+          "alt": "파란 겹판 별과 초록 커서 조형물이 Gemini 4 Argon과 GPT-6 Astra를 각각 나타냅니다.",
+          "filter": "none",
+          "width": 320
+        }
+      ],
+      "styles": {
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBackground": "rgb(30, 31, 33)"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-full.png",
+        "sha256": "12071f34869095f1bc38a352f2003eedebda49b1a8c1176c700d3ba950c7adf9"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-reading-1.png",
+        "sha256": "6c45762f2ceee117b3d7a2ecf295b4ab3127f806170a20fe4135ed0cb3174204"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-reading-2.png",
+        "sha256": "fc5cfea2a7568baf01527064036add82cc2565740603542d73875954dbbe84a1"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-reading-3.png",
+        "sha256": "12adc3a17c94b7fdb59bbfa8afb05da13a32833d504a51bf0844f1b9eefa5aad"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-reading-4.png",
+        "sha256": "92a5c8b4bc15f7c22b235ef8fb1eecfbd42544d2117e58830ec5f602f19257ce"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-reading-5.png",
+        "sha256": "2e5288a7c3ea2611719e51f2d1ae54fdc27324963c16a0ce594ac5ec6dd41b00"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-table.png",
+        "sha256": "50429d54153fad2c6239ca26fce423f0c3e5bc2d698f456c30ad5852228c3f00"
+      },
+      {
+        "path": "artifacts/qa-v2/final/inspection/dark-360-ending.png",
+        "sha256": "bc317810c671809547eea046e902d5bd18b4792c796ffcd91945166967704a66"
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "scope": "actual Tistory native attachment preflight",
+  "editor_url": "https://dop3n.tistory.com/manage/newpost",
+  "category": "AI·개발/AI 모델·비교",
+  "native_block_path": "artifacts/qa-v2/attachments/hero.txt",
+  "editor_staging_exact_match": true,
+  "native_alt_matches_manifest": true,
+  "actual_preview_themes": [
+    "light",
+    "dark"
+  ],
+  "desktop_inner_width": 1280,
+  "fresh_mobile_inner_width": 360,
+  "fresh_mobile_client_width": 345,
+  "fresh_mobile_scroll_width": 345,
+  "resize_ad_overflow_observed": {
+    "id": "aswift_1_host",
+    "right": 678,
+    "article_tables_fit": true,
+    "fresh_mobile_ad_width": 313
+  },
+  "skin_cover_presented_in_new_post_preview": false,
+  "cover_requires_first_live_check": true,
+  "source_unchanged": true
+}

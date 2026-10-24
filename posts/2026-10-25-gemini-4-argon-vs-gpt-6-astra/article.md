@@ -4,7 +4,7 @@ slug: gemini-4-argon-vs-gpt-6-astra
 date: 2026-10-25
 category: "Log"
 subcategory: "AI 모델 · 비교"
-status: reviewing
+status: ready
 format: rich-post-v2
 tags: [Gemini, Gemini 4 Argon, GPT-6 Astra, AI 모델 비교, ChatGPT]
 summary: "Gemini 4 Argon과 GPT-6 Astra의 성능, 사용자 평가와 API 비용을 비교하고 기존 Astra 사용자가 주목할 차이를 정리합니다."

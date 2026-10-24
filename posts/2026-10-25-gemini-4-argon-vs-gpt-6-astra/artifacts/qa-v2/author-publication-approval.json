@@ -1,0 +1,14 @@
+{
+  "author_instruction": "확정. 게시해줘",
+  "approved_at": "2026-10-25T01:28:45+09:00",
+  "timezone": "Asia/Seoul",
+  "target_blog": "https://dop3n.tistory.com",
+  "mode": "new public article",
+  "approved_source_pass_sha256": "19af084c8ed2e723a62b205370bc42541b1769d0279a585ca3695aef02c18630",
+  "approved_article_sha256": "9ce35bb820381820c8d199d75679672984a65179d1a6288edf4ebd933930dcc3",
+  "approved_media": {
+    "hero": "20ec7448274b5226bd8fee70e1440a2e13645a6b8a4c750713b1466986ae2af9"
+  },
+  "approved_candidate": "/Users/ja2sng/Documents/Codex/2026-10-25/dev-log-rich-post-workspace-v2-2/outputs/gemini-4-argon-vs-gpt-6-astra-review-v5.html",
+  "approved_candidate_sha256": "d9ded46a57015819ad89e3ef81e6d77eccc1a3f6984b310fd11a30f8fda93164"
+}

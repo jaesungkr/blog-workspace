@@ -1,0 +1,23 @@
+{
+  "ad": [
+    {
+      "id": "aswift_1_host",
+      "width": 313
+    },
+    {
+      "id": "aswift_0_host",
+      "width": 0
+    },
+    {
+      "id": "aswift_0",
+      "width": 0
+    }
+  ],
+  "clientWidth": 345,
+  "coverPresented": false,
+  "height": 927,
+  "imageLoaded": 1280,
+  "scrollWidth": 345,
+  "theme": "scroll-smooth",
+  "width": 360
+}

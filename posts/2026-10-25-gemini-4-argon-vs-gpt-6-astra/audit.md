@@ -165,3 +165,10 @@
 - 5차 독립 원고 검수를 통과했습니다. 본문 수치와 URL은 보존됐으며, Argon 호평과 Astra 불만을 지우지 않고 저자의 유지 판단을 구분했다는 검수 결과를 받았습니다.
 - 새 원고로 1280/360px의 라이트·다크 화면을 갱신했습니다. 각 조합에서 이미지 로드와 문서 가로 넘침 0px을 확인하고 모바일의 결말을 실제로 열어 읽었습니다. 원고와 이미지의 의미도 일치합니다.
 - 사용자 outputs의 기본 미리보기와 본문을 갱신하고, 이전 화면이 남아 있는 경우에도 새 내용을 열 수 있도록 review-v5.html도 제공했습니다. source pass와 출력 해시는 새로운 author-review-handoff.json에 기록합니다. 게시 상태는 reviewing입니다.
+
+## 독립 최종 페이지 검수
+
+- source_review가 final-light/final-dark를 별도의 새 Chrome 세션에서 각각 캡처하고 1280/360 전체 페이지를 실제로 확인했습니다. 정규 receipt 두 개가 pass이며, 긴 캡처가 축소되는 문제를 보완한 연속 읽기 구간과 모바일 AA 표·결말 화면도 열었습니다.
+- 원격 이미지의 실제 페인트, 캡션, 목차 일곱 대상, H1 하나, 문서 가로 넘침 0px, 모든 표의 양쪽 모델 열과 숫자, 참고 불릿과 다크 대비가 통과했습니다. 모바일 표는 320px 안에서 14px 문자로 보입니다.
+- 게시 조각은 H1·로컬 경로·미해결 미디어 지시문이 0개이며 manifest의 native 블록과 alt를 보존합니다. 실제 Tistory의 변환 결과와 공개 페이지는 게시 담당 단계에서 이어서 확인합니다.
+- final-measurements.json의 사람 판단 필드만 채우고 record_final_page_v2.py로 유일한 final-page.json을 기록했습니다. 원고·CSS·미디어는 수정하지 않았습니다. 관찰과 추가 캡처 기록은 final/inspection/review.md와 inspection.json에 있습니다.

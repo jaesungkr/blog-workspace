@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-10-24T16:35:18.851262Z",
+  "checked_by": "source_review",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+  "preview_sha256": "dfaf146ea05cd148eb26de6ebedbe463825f501a19794f1d8e83eb283619acb2",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/155.0.8059.85",
+  "protocol_version": "1.3",
+  "session": "bfa28641-a84b-4630-8700-2aaaf2afe1ee",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/final-rendered/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5806,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/peFbx/dJMcajxw7nH/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VCgI-mt91v4wTJGuPun0g1_Rtx7cs6ijLzno3CbtGN50eOGZe05h6wlPCiS6eeVohLZyJ7mKddE_xFBc5xCRfM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=y096hJXD%2F6AocRUSiaf7mxOI9Ic%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "screenshot_sha256": "3147a7f866f3b73a40a8e8de380a29e0cadff833829d3ece51bf1dc199648698",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-gemini-4-argon-vs-gpt-6-astra/artifacts/qa-v2/final-rendered/gemini-4-argon-vs-gpt-6-astra-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 8008,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/peFbx/dJMcajxw7nH/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VCgI-mt91v4wTJGuPun0g1_Rtx7cs6ijLzno3CbtGN50eOGZe05h6wlPCiS6eeVohLZyJ7mKddE_xFBc5xCRfM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=y096hJXD%2F6AocRUSiaf7mxOI9Ic%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "screenshot_sha256": "a81bdaf508cfb8856d19afb16369f15d7f5697cee85b33469611da2aeed5a61d",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    }
+  ]
+}
