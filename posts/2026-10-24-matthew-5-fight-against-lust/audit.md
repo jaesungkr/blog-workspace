@@ -183,3 +183,20 @@
 - 이전 원고·근거·승인은 history/before-direct-tone-health-line에 보존했습니다.
 
 - 독립 재검토: review_thoughts_cadence의 pass입니다. 첫 문장의 저자성 및 건강 설명의 과다 섭취 범위와 문맥을 확인했습니다. article SHA256은 e435c341c7f7bf32d070bfbaf0fa07d5cb5e2296264f1b520402da595a74fe2f입니다. blog.py check 오류·경고 0개, 공백 검사 및 Thoughts 사본 일치 확인을 완료했습니다.
+
+## 티스토리 편집기 입력 준비
+
+- 사용자 요청: 본문 영상 링크 제거, 마무리 자연스럽게 수정, 편집기 입력 후 마지막 게시 버튼은 사용자에게 남김.
+- 원문과 마지막 source pass는 history/before-editor-staging에 보존했습니다. 본문 문구 및 대표 이미지 지시문을 반영한 원고를 재검토합니다. status는 최종 게이트 전 reviewing입니다.
+
+## 대표 이미지 v1
+
+- imagegen으로 생성한 assets/sermon-hero-v1.png, 1672×941, SHA256 85fe375bf04f42b9faf5628650fcb48a364a98003c38fa9c522fc046c04fbcd0. 전체 원본을 확인했으며 밝은 종이와 겹쳐 돌아오는 곡선이 질문의 반복을 표현합니다. 해결·승리를 주장하는 상징은 없습니다.
+- 영문 프롬프트: artifacts/hero-prompt-v1.txt. 배치는 도입 뒤이며 도식과 별개인 추상 대표 이미지입니다. 별도 독립 검수 후 validated로 등록합니다.
+
+## 최종 편집기 준비
+
+- 원고·대표 이미지·독립 최종 페이지 검수 통과. 최종 TXT와 실제 HTML 편집기 본문이 완전히 일치합니다.
+- 실제 hELLO 미리보기에서 이미지의 inline width/max-width 때문에 잘리는 현상을 발견해 v2 scoped CSS 두 속성에 !important를 추가했습니다. 1280/360 밝은·어두운 화면에서 이미지와 본문을 확인했습니다.
+- 임시저장 후 발행 설정 화면까지 열었습니다. 사용자의 명시적 요청에 따라 공개 발행 버튼은 누르지 않았으며 lifecycle은 ready입니다.
+- 전체 unit test 69개 통과. check --all은 작업 전부터 삭제된 다른 글의 대표 이미지 세 개 때문에 오류가 남았습니다. 이번 글 검사는 통과합니다.

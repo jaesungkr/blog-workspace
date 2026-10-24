@@ -266,8 +266,8 @@
   background: transparent;
 }
 .devlog-rich__native-image figure.imageblock {
-  width: 100%;
-  max-width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   margin: 0 auto !important;
   transform: none !important;
 }

@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T05:36:18.639290Z",
+  "checked_at": "2026-10-24T05:43:35.633231Z",
   "checked_by": "review_thoughts_cadence",
-  "article_content_sha256": "1418c7c0fde8f555c1175b3c9b020b862b872cc9ca4cd2b59df282c2d1ea4634",
-  "brief_sha256": "9660683fa80ffb4a399471a5a3d12e511cec3f5286ec9d3392628b0ba967df1b",
-  "evidence_sha256": "9f7f7bf951ad957545e026e5b6af717cd210b273181cdfeb783eca783d66bb99",
-  "note": "사용자 지정 첫인상의 직접적 표현과 당분·소금 과다 섭취에 관한 한 줄을 재검토했습니다. direct-tone-health-line-review.md 참조."
+  "article_content_sha256": "9712abc09cdbb3858b5767ecc6c3c8e9a979d160cb670100312caabbb6cd4d2c",
+  "brief_sha256": "15ba84d69a4eee38069e8630e8ae47d1ccc3d90a4ca8993e34b8567c5ceee665",
+  "evidence_sha256": "014d8182aececd8da8fd1d3443977a5d8bdba5301f507c607719fc1ae77b5d97",
+  "note": "사용자의 최종 문구 수정과 대표 이미지 배치 참조를 반영한 전체 source pass. 마지막 게시 버튼은 사용자 직접 클릭."
 }

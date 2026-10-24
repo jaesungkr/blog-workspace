@@ -1,0 +1,11 @@
+{
+  "instruction": "설교 영상 부분 제거하고 마지막을 자연스럽게 바꿔 직접 글을 올려줘. 마지막 게시 버튼만 내가 누르게 남겨줘.",
+  "source_pass_sha256": "ed5b19946a277c892afad7d1e4cc2d0c6fec86bb66ef0db750203abc403e73de",
+  "media_sha256": {
+    "sermon-hero": "85fe375bf04f42b9faf5628650fcb48a364a98003c38fa9c522fc046c04fbcd0"
+  },
+  "target_blog": "https://dop3n.tistory.com",
+  "recorded_at": "2026-10-24T14:46:00.577858+09:00",
+  "authorized_scope": "editor_staging_and_preview",
+  "final_publish_authorized": false
+}

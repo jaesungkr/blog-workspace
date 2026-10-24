@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "60a961a6-8c44-4822-b3bf-3bcf103571c5",
+  "recorded_at": "2026-10-24T05:50:37.877980Z",
+  "recorded_by": "Codex",
+  "media_sha256": "84fdb03fb17bd262fd58ae5759845cfa2171438c21f02cc06e373ae044ac2ced",
+  "fetcher_sha256": "7c9a17fea2b169ea015e020504a4dd5e3776a4c3d96b62997deac45100a994ab",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "972a6689cf51a2a884c4ef05487a574e9d644863c7c43c3be0193e525dc5e38e"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "sermon-hero",
+      "requested_url": "https://blog.kakaocdn.net/dna/bp4tB0/dJMcagm7xGs/AAAAAAAAAAAAAAAAAAAAAKnqLyVdPjdiCtF1_iQdjqmwWMhha1ZOZQonc2O8sB8q/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=J57YwAmd1Y9OZ8ONvGMtJZhQrUc%3D",
+      "final_url": "https://blog.kakaocdn.net/dna/bp4tB0/dJMcagm7xGs/AAAAAAAAAAAAAAAAAAAAAKnqLyVdPjdiCtF1_iQdjqmwWMhha1ZOZQonc2O8sB8q/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=J57YwAmd1Y9OZ8ONvGMtJZhQrUc%3D",
+      "redirect_chain": [],
+      "observed_at": "2026-10-24T05:50:37.877519Z",
+      "http_status": 200,
+      "content_type": "image/png",
+      "content_encoding": "",
+      "header_content_length": 2897890,
+      "byte_length": 2897890,
+      "sha256": "85fe375bf04f42b9faf5628650fcb48a364a98003c38fa9c522fc046c04fbcd0",
+      "format": "png",
+      "width": 1672,
+      "height": 941,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": null
+    }
+  ]
+}

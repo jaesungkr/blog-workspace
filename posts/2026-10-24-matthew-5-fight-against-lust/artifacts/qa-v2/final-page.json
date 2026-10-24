@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "checked_at": "2026-10-24",
+  "checked_by": "independent-final-page-reviewer-review_sermon_final_page",
+  "browser": "Chrome/155.0.8059.85",
+  "session": "62e7cd45-f8d7-404f-ad06-7c678dc2513c",
+  "capture_receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "capture_receipt_sha256": "2df7ccc4072fb9525ce93b4491cac9faf61d78f094b0bd52c05970549f98a08d",
+  "capture_tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "dark_capture_receipt_path": "artifacts/qa-v2/final/dark/browser-capture.json",
+  "dark_capture_receipt_sha256": "2fd437715976d73bf0741cc6497af98280d6596a7d04d58ce66d4f1ff35e8d50",
+  "source_pass_sha256": "ed5b19946a277c892afad7d1e4cc2d0c6fec86bb66ef0db750203abc403e73de",
+  "article_content_sha256": "9712abc09cdbb3858b5767ecc6c3c8e9a979d160cb670100312caabbb6cd4d2c",
+  "media_sha256": "84fdb03fb17bd262fd58ae5759845cfa2171438c21f02cc06e373ae044ac2ced",
+  "renderer_sha256": "ff20392d99ceafa4615fc7a5f1cf4828ed0e8f12eb738c0288b111f5c16a4a51",
+  "css_sha256": "017972d95240fa5dd385178d6ba28cd7a978eed114a3779033c902e080822866",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "remote_media_sha256": "e45b42e421af413f38107b256a7ed26614f941721a0cba0973b85adae1f34db0",
+  "preview_media_source": "remote",
+  "preview_path": "artifacts/qa-v2/final-rendered/matthew-5-fight-against-lust-rich-preview.html",
+  "preview_sha256": "0b4231accd9f23f3cbdf8ad53d5f43b82e9dd6e7bd540bbed9c0d89ad5537b4b",
+  "preview_structure_sha256": "e8ce3e0bdda3d2620aacab20c76241a204cdfb25611b72e7fdc5de105ca2e328",
+  "dark_preview_path": "artifacts/qa-v2/final-dark-rendered/matthew-5-fight-against-lust-rich-preview.html",
+  "dark_preview_sha256": "d2262dba74331842b5fceebfc111f5dd4fa87bacbefb603e7248c8ce19c4cab4",
+  "fragment_path": "artifacts/qa-v2/final-rendered/matthew-5-fight-against-lust-tistory-fragment.html",
+  "fragment_sha256": "aab4aa033b94e75ed4a78fbfb1233655fa9ebdcd661ba44c647346224d306521",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "c1aa1236901acf5748efdd82156f3757d83d9e282fdfa9997f3a6ca525787659"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "88ddc1d91c2889431cc3845859aaee9fe0fc8f4bee9b59b37b6d1bd8f2a057e9"
+    }
+  ],
+  "dark_viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "client_width": 1280,
+      "scroll_width": 1280,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/desktop-1280.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "screenshot_sha256": "8ec524f58682ee2e93cdd388cdbff794b117e799e976785609bbd9ef568d4b88"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "client_width": 360,
+      "scroll_width": 360,
+      "h1_count": 1,
+      "toc_targets_unique": true,
+      "images_loaded": true,
+      "screenshot": "artifacts/qa-v2/final/dark/mobile-360.png",
+      "readable_media": true,
+      "status": "pass",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "screenshot_sha256": "29da0eeffc6d766462c2a7113dff51a85a00aa2acb6effd8639eb5c3c38ac0af"
+    }
+  ],
+  "fragment": {
+    "h1_count": 0,
+    "unresolved_placeholders": 0,
+    "local_paths": 0,
+    "status": "pass"
+  },
+  "dark_theme": {
+    "contrast": true,
+    "inline_styles": true,
+    "image_surrounds": true,
+    "status": "pass"
+  }
+}

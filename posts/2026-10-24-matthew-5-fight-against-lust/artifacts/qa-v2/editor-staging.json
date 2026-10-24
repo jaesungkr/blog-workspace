@@ -1,0 +1,27 @@
+{
+  "status": "staged_for_user_publication",
+  "published": false,
+  "final_publish_clicked": false,
+  "editor_url": "https://dop3n.tistory.com/manage/newpost",
+  "title": "마태복음 5:27-30, 정욕과의 싸움",
+  "category": "Reflections/말씀 묵상",
+  "visibility": "public",
+  "date_mode": "now",
+  "draft_saved": true,
+  "submitted_fragment_sha256": "aab4aa033b94e75ed4a78fbfb1233655fa9ebdcd661ba44c647346224d306521",
+  "editor_matches_exact_fragment": true,
+  "preview_checks": {
+    "desktop_light": 1280,
+    "desktop_dark": 1280,
+    "mobile_light": 360,
+    "mobile_dark": 360,
+    "article_overflow": false,
+    "native_image_loaded": true,
+    "alt_present": true,
+    "removed_video_link": true,
+    "updated_closing": true
+  },
+  "user_remaining_action": "공개 발행 버튼 클릭",
+  "recorded_at": "2026-10-24T14:54:18.724092+09:00",
+  "screenshot": "artifacts/qa-v2/tistory-ready-to-publish.png"
+}

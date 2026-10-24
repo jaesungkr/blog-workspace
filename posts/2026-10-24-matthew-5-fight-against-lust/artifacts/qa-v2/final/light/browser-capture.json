@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-10-24T05:52:46.734879Z",
+  "checked_by": "independent-final-page-reviewer-review_sermon_final_page",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/matthew-5-fight-against-lust-rich-preview.html",
+  "preview_sha256": "0b4231accd9f23f3cbdf8ad53d5f43b82e9dd6e7bd540bbed9c0d89ad5537b4b",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/155.0.8059.85",
+  "protocol_version": "1.3",
+  "session": "62e7cd45-f8d7-404f-ad06-7c678dc2513c",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-24-matthew-5-fight-against-lust/artifacts/qa-v2/final-rendered/matthew-5-fight-against-lust-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5559,
+      "h1_count": 1,
+      "toc_anchor_count": 3,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/bp4tB0/dJMcagm7xGs/AAAAAAAAAAAAAAAAAAAAAKnqLyVdPjdiCtF1_iQdjqmwWMhha1ZOZQonc2O8sB8q/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=J57YwAmd1Y9OZ8ONvGMtJZhQrUc%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "screenshot_sha256": "c1aa1236901acf5748efdd82156f3757d83d9e282fdfa9997f3a6ca525787659",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-24-matthew-5-fight-against-lust/artifacts/qa-v2/final-rendered/matthew-5-fight-against-lust-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 8934,
+      "h1_count": 1,
+      "toc_anchor_count": 3,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/bp4tB0/dJMcagm7xGs/AAAAAAAAAAAAAAAAAAAAAKnqLyVdPjdiCtF1_iQdjqmwWMhha1ZOZQonc2O8sB8q/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=J57YwAmd1Y9OZ8ONvGMtJZhQrUc%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "screenshot_sha256": "88ddc1d91c2889431cc3845859aaee9fe0fc8f4bee9b59b37b6d1bd8f2a057e9",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    }
+  ]
+}
