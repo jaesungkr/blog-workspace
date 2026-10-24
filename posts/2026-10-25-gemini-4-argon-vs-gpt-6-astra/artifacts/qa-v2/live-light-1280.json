@@ -1,0 +1,69 @@
+{
+  "category": "AI·개발/AI 모델·비교",
+  "clientWidth": 1265,
+  "closing": true,
+  "coverBackground": "rgba(0, 0, 0, 0.58)",
+  "date": "2026. 10. 25. 01:41",
+  "height": 900,
+  "images": [
+    {
+      "alt": "파란 겹판 별과 초록 커서 조형물이 Gemini 4 Argon과 GPT-6 Astra를 각각 나타냅니다.",
+      "height": 720,
+      "loaded": true,
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpeFbx%2FdJMcajxw7nH%2FAAAAAAAAAAAAAAAAAAAAACOl5gHO5xs4eEo08_hOAQr2DhgknuMktt1v5X11KWwN%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D2Oskfqyh1XPKRV%252BuOa7CHhNj3eY%253D",
+      "width": 1280
+    }
+  ],
+  "nativeFigures": 1,
+  "scrollWidth": 1265,
+  "tables": [
+    {
+      "container": 736,
+      "width": 736
+    },
+    {
+      "container": 736,
+      "width": 736
+    },
+    {
+      "container": 736,
+      "width": 736
+    }
+  ],
+  "theme": "scroll-smooth",
+  "title": "Gemini 4 Argon vs GPT-6 Astra, 내 작업에는 어떤 AI가 맞을까",
+  "titleColor": "rgb(255, 255, 255)",
+  "titleShadow": "rgba(0, 0, 0, 0.65) 0px 1px 3px",
+  "toc": [
+    {
+      "href": "#argon이-주목받는-작업",
+      "targetExists": true
+    },
+    {
+      "href": "#복잡한-코드-작업에서의-astra",
+      "targetExists": true
+    },
+    {
+      "href": "#같은-종합-점수-안의-차이",
+      "targetExists": true
+    },
+    {
+      "href": "#사용-후기가-엇갈리는-지점",
+      "targetExists": true
+    },
+    {
+      "href": "#api-가격-차이는-얼마나-클까",
+      "targetExists": true
+    },
+    {
+      "href": "#astra를-쓰고-있다면",
+      "targetExists": true
+    },
+    {
+      "href": "#참고-자료",
+      "targetExists": true
+    }
+  ],
+  "url": "https://dop3n.tistory.com/entry/Gemini-4-Argon-vs-GPT-6-Astra-%EB%82%B4-%EC%9E%91%EC%97%85%EC%97%90%EB%8A%94-%EC%96%B4%EB%96%A4-AI%EA%B0%80-%EB%A7%9E%EC%9D%84%EA%B9%8C",
+  "width": 1280
+}

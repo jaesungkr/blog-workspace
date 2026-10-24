@@ -1,0 +1,10 @@
+[
+  {
+    "check": "repository-tests",
+    "exit_code": 0
+  },
+  {
+    "check": "repository-check-all",
+    "exit_code": 0
+  }
+]

@@ -14,3 +14,24 @@
     width: 48%;
   }
 }
+
+/* The live hELLO cover needs contrast over this article's metallic hero. */
+body:has(.devlog-rich) main header > .info {
+  background-color: rgba(0, 0, 0, 0.58);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+}
+body:has(.devlog-rich) main header > .info h1,
+body:has(.devlog-rich) main header > .info .desc {
+  color: #fff;
+}
+body:has(.devlog-rich) main header > .info .desc {
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4px;
+  padding-inline: 12px;
+}
+body:has(.devlog-rich) main header > .info .desc time,
+body:has(.devlog-rich) main header > .info .desc .category {
+  white-space: nowrap;
+}

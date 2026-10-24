@@ -1,5 +1,8 @@
 {
   "exact_match": true,
-  "characters": 21825,
-  "editor_url": "https://dop3n.tistory.com/manage/newpost"
+  "paste_file": "/Users/ja2sng/Documents/Codex/2026-10-25/dev-log-rich-post-workspace-v2-2/outputs/gemini-4-argon-vs-gpt-6-astra-tistory-fragment.txt",
+  "editor_copy_file": "editor-submitted.html",
+  "verified_at": "2026-10-24T16:56:05.801Z",
+  "method": "UI select-all and copy after paste",
+  "revision": "mobile metadata wrapping CSS only"
 }

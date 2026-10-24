@@ -1,0 +1,54 @@
+{
+  "status": "published_and_verified",
+  "post_id": 150,
+  "url": "https://dop3n.tistory.com/entry/Gemini-4-Argon-vs-GPT-6-Astra-%EB%82%B4-%EC%9E%91%EC%97%85%EC%97%90%EB%8A%94-%EC%96%B4%EB%96%A4-AI%EA%B0%80-%EB%A7%9E%EC%9D%84%EA%B9%8C",
+  "visibility": "public",
+  "category": "AI·개발/AI 모델·비교",
+  "observed_publication_time": "2026-10-25T01:41:00+09:00",
+  "publication_time_precision": "minute from Tistory editor and live time",
+  "verified_at": "2026-10-25T01:57:28+09:00",
+  "method": "Codex in-app browser UI",
+  "submitted_fragment_sha256": "e81226a09b978ffddcd684d8d474517c990e5e85bacef0b1ba39aa2233cb6f0e",
+  "submitted_fragment": "artifacts/qa-v2/attachments/editor-submitted.html",
+  "approval_record_sha256": "741e8b24640a1fb3ea890000b0fe6cf35f608015f2cb5f8fb48762848cae42d1",
+  "source_pass_sha256": "19af084c8ed2e723a62b205370bc42541b1769d0279a585ca3695aef02c18630",
+  "final_page_sha256": "1b0ad7a33f3aeaec191ca3a62e5c69a0fdbb35ce61882501490ab50914cdd379",
+  "media_manifest_sha256": "fd3b78073b8143b2be8f04b026ce321748212d60391e430ce5e979289061722d",
+  "live_views": "artifacts/qa-v2/publication-live-views.json",
+  "screenshots": {
+    "published": {
+      "path": "artifacts/qa-v2/live-final/published.png",
+      "sha256": "5fd9e5f480b39b2033d187ca07017011366a931ddf8f2be9bfb6101156db8822"
+    },
+    "published-dark": {
+      "path": "artifacts/qa-v2/live-final/published-dark.png",
+      "sha256": "a32a78c04ae8c6ad3a9ea34d7013694214df66693495e9d7dfe9e80bdd3181c0"
+    },
+    "published-mobile": {
+      "path": "artifacts/qa-v2/live-final/published-mobile.png",
+      "sha256": "6402a2ee7607c47fe3d40b011fd9c844d7783c69c6cd46eadd16160952343947"
+    },
+    "published-mobile-dark": {
+      "path": "artifacts/qa-v2/live-final/published-mobile-dark.png",
+      "sha256": "5f436a8d25ffd7b568e7c9b99b373d44f7cec1fc00fe3926c8cccd3a6609573a"
+    },
+    "published-mobile-table": {
+      "path": "artifacts/qa-v2/live-final/published-mobile-table.png",
+      "sha256": "129a1da179bea0b8524dd77c485d79cff640f0c4d819b94f6802b959f5ba5eb1"
+    }
+  },
+  "outcomes": {
+    "native_image_loaded": true,
+    "native_alt_and_caption_verified": true,
+    "all_seven_toc_targets_exist": true,
+    "toc_navigation_verified": true,
+    "desktop_mobile_light_dark_verified": true,
+    "fresh_360_horizontal_overflow_px": 0,
+    "cover_title_contrast_fixed": true,
+    "mobile_date_category_do_not_break_midword": true,
+    "approved_prose_preserved": true,
+    "url_and_original_date_preserved": true
+  },
+  "layout_repairs": "Scoped post.css cover contrast and metadata wrapping; same post 150 saved. Article body after style is byte-identical to approved submitted body. Independent final-page gate refreshed for each CSS revision.",
+  "preview_limit": "New-post preview omitted eventual cover; actual cover checked and corrected live. Desktop-to-mobile preview AdSense resize overflow is separately recorded; fresh mobile view passes."
+}
