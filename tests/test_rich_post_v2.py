@@ -263,6 +263,127 @@ summary: "v2 게이트를 검증합니다."
         ))
         self.assertIsNone(native_attachment_error(thumbnail))
 
+    def test_native_alt_matches_manifest_in_cdm_and_attribute_formats(self):
+        item = self.bind_native_fixture()
+        reference = 'kage@asset/post/long-key/img.png?expires=123&amp;signature=test'
+        expected = 'A & B 사양 화면'
+        blocks = [
+            '[##_Image|' + reference + '|CDM|1.3|'
+            + json.dumps({"originWidth": 760, "alt": expected}, ensure_ascii=False)
+            + '_##]',
+            '[##_Image|' + reference + '|alignCenter|'
+            'width="100%" alt="A &amp; B 사양 화면"|_##]',
+            '[##_Image|' + reference + "|alignLeft|alt='A &amp; B 사양 화면'|_##]",
+        ]
+        for block in blocks:
+            with self.subTest(block=block):
+                candidate = dict(item, alt=expected, tistory_embed=block)
+                self.assertIsNone(native_attachment_error(candidate))
+
+    def test_native_alt_rejects_missing_blank_wrong_and_ambiguous_values(self):
+        item = self.bind_native_fixture()
+        reference = 'kage@asset/post/long-key/img.png'
+        metadata = [{}, {"alt": None}, {"alt": 123}, {"alt": ""},
+                    {"alt": " \n "}, {"alt": "다른 이미지 설명"}]
+        blocks = [
+            '[##_Image|' + reference + '|CDM|1.3|'
+            + json.dumps(value, ensure_ascii=False) + '_##]'
+            for value in metadata
+        ]
+        blocks.extend(
+            '[##_Image|' + reference + '|alignCenter|' + attrs + '|_##]'
+            for attrs in (
+                'width="100%"',
+                'alt=""',
+                'alt="  "',
+                'alt="다른 이미지 설명"',
+                'data-alt="공식 공개 화면"',
+                'alt="공식 공개 화면" alt="다른 이미지 설명"',
+            )
+        )
+        for block in blocks:
+            with self.subTest(block=block):
+                error = native_attachment_error(dict(item, tistory_embed=block))
+                self.assertIsNotNone(error)
+                self.assertIn('alt', error)
+
+    def test_invalid_native_alt_blocks_binding_without_mutating_manifest(self):
+        item = self.bind_native_fixture()
+        path = self.post / "media.json"
+        before = path.read_bytes()
+        result = validate_bundle(self.post)
+        for alt in (None, '다른 이미지 설명'):
+            metadata = {} if alt is None else {"alt": alt}
+            block = ('[##_Image|kage@asset/post/long-key/img.png|CDM|1.3|'
+                     + json.dumps(metadata, ensure_ascii=False) + '_##]')
+            with self.subTest(alt=alt), redirect_stderr(StringIO()), redirect_stdout(StringIO()):
+                status = run_set_url(result, self.post, "lead", item["tistory_url"], block)
+                self.assertEqual(1, status)
+                self.assertEqual(before, path.read_bytes())
+
+    def test_bundle_rejects_native_alt_that_only_exists_in_manifest(self):
+        self.bind_native_fixture()
+        path = self.post / "media.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifest["items"][0]["tistory_embed"] = (
+            '[##_Image|kage@asset/post/long-key/img.png|CDM|1.3|'
+            '{"originWidth":760,"style":"alignCenter"}_##]'
+        )
+        path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        errors = validate_bundle(self.post, require_publish_urls=True)["errors"]
+        self.assertTrue(any('native attachment must include nonempty alt' in e for e in errors))
+
+    def test_cli_can_repair_selected_native_alt_but_keeps_other_errors(self):
+        item = self.bind_native_fixture()
+        path = self.post / "media.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifest["items"][0]["tistory_embed"] = (
+            '[##_Image|kage@asset/post/long-key/img.png|CDM|1.3|{}_##]'
+        )
+        broken_manifest = json.dumps(manifest, ensure_ascii=False)
+        captured = self.post / "repaired.txt"
+        captured.write_text(item["tistory_embed"], encoding="utf-8")
+        source = subprocess.run(
+            [sys.executable, str(SCRIPTS / "record_source_pass_v2.py"),
+             str(self.post), "--by", "source reviewer"],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(0, source.returncode, source.stderr)
+        path.write_text(broken_manifest, encoding="utf-8")
+        command = [sys.executable, str(SCRIPTS / "tistory_media_map_v2.py"),
+                   "set-embed", str(self.post), "lead", "--embed-file", str(captured),
+                   "--url", item["tistory_url"]]
+        repaired = subprocess.run(command, capture_output=True, text=True)
+        self.assertEqual(0, repaired.returncode, repaired.stderr)
+        self.assertEqual([], validate_bundle(self.post)["errors"])
+
+        # The selected-alt repair exception must not permit an unreviewed source.
+        path.write_text(broken_manifest, encoding="utf-8")
+        article = self.post / "article.md"
+        article.write_text(article.read_text(encoding="utf-8") + "\n추가한 주장입니다.\n",
+                           encoding="utf-8")
+        rejected = subprocess.run(command, capture_output=True, text=True)
+        self.assertEqual(1, rejected.returncode)
+        self.assertEqual(broken_manifest, path.read_text(encoding="utf-8"))
+
+    def test_alt_repair_cli_reports_malformed_manifest_without_traceback(self):
+        item = self.bind_native_fixture()
+        path = self.post / "media.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifest["items"] = None
+        path.write_text(json.dumps(manifest), encoding="utf-8")
+        captured = self.post / "captured.txt"
+        captured.write_text(item["tistory_embed"], encoding="utf-8")
+        result = subprocess.run(
+            [sys.executable, str(SCRIPTS / "tistory_media_map_v2.py"),
+             "set-embed", str(self.post), "lead", "--embed-file", str(captured),
+             "--url", item["tistory_url"]],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(1, result.returncode)
+        self.assertNotIn("Traceback", result.stderr)
+        self.assertIn("ERROR:", result.stderr)
+
     def test_public_caption_omits_internal_media_origin_label(self):
         result = validate_bundle(self.post)
         self.assertEqual([], result["errors"])

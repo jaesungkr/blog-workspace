@@ -44,6 +44,13 @@ Use focused screenshots only after an automated failure, for a new component,
 or when a risky table state is not visible in the canonical evidence. Do not
 capture every repeated table or list.
 
+Loaded dimensions alone do not prove that image pixels were painted. If a
+full-page capture has a blank media region despite valid `naturalWidth`, bring
+that image into the viewport and take a focused screenshot, including the
+needed horizontal-scroll position. Preserve both observations. A normal focused
+view can distinguish a capture paint omission; if that view is also blank,
+leave the defect unresolved rather than retrying until a pass appears.
+
 Fill only the human decisions in `final-measurements.json`, then run:
 
 ```bash
@@ -80,3 +87,18 @@ loads (`naturalWidth > 0`), captions, native imageblock markup, navigation,
 table/code scrolling, and both desktop/mobile layouts. Record the live URL,
 actual measurements, and screenshots in `artifacts/qa-v2/publication.json`.
 Do not equate a local preview pass or an editor save click with live success.
+
+Test a fresh load at each required public viewport, not only a page resized
+from desktop to mobile. If resizing exposes overflow, locate its owner and
+record that observation separately from the fresh-load result. An ad iframe
+that retains its desktop width is still a resize defect; a passing mobile
+reload does not erase it or prove that all responsive behavior passed. Keep
+article scroll regions distinct from document overflow and do not hide the
+problem with page-wide overflow suppression.
+
+Include the live title/metadata contrast over the actual skin cover, following
+the publication preflight. A cover-only CSS correction requires current
+candidate hashes, affected capture records, and an actual cover recheck. When
+the article body is byte-identical, reuse its substantive review and inspect
+the changed component instead of reopening editorial review or rereading every
+unchanged section. Never reuse a stale final-page pass.

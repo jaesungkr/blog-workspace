@@ -64,7 +64,12 @@ Read the opening, headings, and each section as a first-time reader:
 - At each new example, test, or figure, make its connection to the current
   question understandable before showing the detail. A CSV check in an app
   investigation belongs because it tests the formatter found in the export
-  code. It must not read as an unrelated lesson about punctuation.
+  code. It must not read as an unrelated lesson about punctuation. A product
+  manual used to test PDF reading needs its selection reason before the brand
+  and specifications: its model table and footnotes provide checkable answers.
+  Before a quotation introduces additional product names, explain where those
+  names came from and why their distinction changes the result. Supply the
+  missing relationship, not a glossary of every term.
 - Make headings identify the section's job for this reader. `내보내기 버튼에서
   저장 코드까지` can require unexplained implementation knowledge; `메모 앱을
   분석해 알아낸 것` names the finding. Do not imply an action that never
@@ -294,7 +299,9 @@ job and one new unit it contributes:
 Delete or merge a paragraph when removing it loses none of those units. A
 sentence that only announces the next section, says the topic is important,
 repeats the heading, paraphrases a table, or summarizes the previous paragraph
-does not count as new information.
+does not count as new information. A final synthesis that compares findings
+across separate tests and answers the title's question has a different job;
+assess it by the criteria below rather than rejecting it as repetition.
 
 For a recommendation or benefit explainer, each retained paragraph must also
 help the reader answer at least one of these questions: `나에게 왜 필요한가`,
@@ -343,6 +350,22 @@ article is being compressed.
 The closing must change or settle the reader's decision. Do not repeat the
 article outline, copy the comparison table into prose, or restate every safety
 rule. A bounded recommendation, unresolved risk, or next check is enough.
+
+### Results that answer the title
+
+For an experiment or comparison, decide what the title asks the reader to
+judge before choosing the closing. When results are spread across sections,
+a compact table of the tested item, observed outcome, and verdict can provide
+the needed synthesis. Preserve partial success, exceptions, and the tested
+scope; do not turn a few cases into an overall accuracy percentage or model
+ranking. Put the item and verdict before long details when horizontal mobile
+scrolling would otherwise hide the judgment.
+
+End with the supported answer, not an automatic prompt list or generic tips.
+Retain practical examples when the author requests them or they serve the
+article's actual purpose, but do not let them displace that answer. This is
+permission for one useful synthesis, not a required table or closing template
+for every post. Do not repeat the table's rows again in the following prose.
 
 Read the complete article aloud in spirit. Mark passages that sound like a
 press release, lecture script, generated checklist, or perfectly balanced

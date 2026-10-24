@@ -49,10 +49,12 @@ login, resume the same publication rather than requesting approval again.
    signature to make a supposedly permanent URL, or use the current display
    URL as the final `<img src>`.
 4. Observe each matching CDN URL from Tistory's actual preview. Bind the code
-   and observation with `tistory_media_map_v2.py set-embed`, record remote
-   media, and complete the one independent local light/dark page gate. The
-   generated final fragment contains native blocks; its standalone preview
-   uses observed URLs. GIF and poster attachments both need mapping.
+   and observation with `tistory_media_map_v2.py set-embed` and run the native
+   attachment preflight below. After any attachment corrections, finalize the
+   binding, record remote media, and complete the independent local light/dark
+   page gate. The generated final fragment contains native blocks; its
+   standalone preview uses observed URLs. GIF and poster attachments both
+   need mapping.
 5. Use `finalize_rich_post_v2.py` and paste the exact resulting TXT into this
    editor. Preserve the attachment registrations by using the same editor
    instance. Verify the current editor text against the submitted artifact;
@@ -63,6 +65,37 @@ If a file-chooser action fails, inspect the UI before retrying. The successful
 AX click on the actual file input when a Playwright click failed. Use fresh
 element indices from the current state. This is a fallback, not a fixed selector
 or a reason to switch browsers.
+
+## Native attachment preflight
+
+Set each image's approved `media.json` alt in the editor or the native block's
+valid metadata before binding it. Keep the untouched upload block separately
+when adding metadata; retain its exact attachment reference and signed query.
+Do not synthesize a new reference. `set-embed` and the bundle checker reject
+missing, blank, or mismatched native alt in both CDM JSON and attribute blocks.
+Manifest alt alone does not establish that the published image has alt text.
+Use `set-embed` with the corrected captured block to repair an already bound
+alt; this permits only the selected alt repair and retains other bundle/source
+errors. Keep a published post's lifecycle history when staging such a repair.
+
+Assemble a provisional fragment in the same editor and inspect its real
+preview before freezing the final page candidate. Confirm actual image alt,
+captions, dimensions, and the skin's representative-image behavior; then make
+the final native binding, remote record, and canonical candidate. This catches
+attachment corrections before they invalidate an expensive final-page pass.
+After finalization, compare the exact TXT with the editor HTML and verify its
+preview as usual. A byte-identical fragment needs no duplicate manual review.
+
+Treat a body lead image and a skin cover as different uses. A readable table
+crop can make a poor background behind a title. Check the actual title, date,
+and category over the selected cover at desktop/mobile widths in both themes.
+Prefer a suitable approved asset or a scoped `assets/post.css` contrast repair
+when needed; do not impose a dark overlay or a new generated hero on every
+post. If a new-post preview does not show the eventual automatic cover, record
+that it was not represented and check it immediately on the first live page.
+Repair that same post under the existing layout authorization, preserving its
+URL/date, instead of publishing a duplicate. Refresh the affected final-page
+evidence for CSS changes; reopen source review only for a material source edit.
 
 ## Preview, publish, verify
 

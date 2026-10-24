@@ -11,6 +11,7 @@ from pathlib import Path
 from rich_post_v2_common import (
     atomic_write_json,
     is_tistory_media_url,
+    native_attachment_alt_error,
     native_attachment_error,
     validate_bundle,
     validate_source_pass,
@@ -149,6 +150,17 @@ def main() -> int:
     result = validate_bundle(post_dir)
     if result["article_path"].is_file():
         validate_source_pass(post_dir, result["article_path"], result["errors"])
+    if args.command == "set-embed":
+        # A selected attachment with old/missing alt must remain repairable.
+        # Validate the replacement in run_set_url; keep every other error.
+        items = result["manifest"].get("items")
+        for item in items if isinstance(items, list) else []:
+            if not isinstance(item, dict) or item.get("id") != args.media_id:
+                continue
+            old_error = native_attachment_error(item)
+            if old_error and old_error == native_attachment_alt_error(item):
+                selected_error = f"{args.media_id}: {old_error}"
+                result["errors"] = [e for e in result["errors"] if e != selected_error]
     print_errors(result)
     if result["errors"]:
         return 1

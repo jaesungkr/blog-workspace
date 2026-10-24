@@ -13,6 +13,7 @@ import tempfile
 import zlib
 from collections import Counter
 from datetime import datetime
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qs, urlparse
@@ -223,6 +224,39 @@ def tistory_asset_identity(value: str) -> tuple[str, str, str] | None:
     return segments[0], segments[1], segments[3]
 
 
+class _NativeAltParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.values: list[str | None] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "img":
+            self.values.extend(value for name, value in attrs if name == "alt")
+
+
+def native_tistory_alt(value: object) -> str | None:
+    """Read alt from a valid native block without changing its reference."""
+    if not isinstance(value, str) or native_tistory_reference(value) is None:
+        return None
+    parts = value.strip()[len("[##_Image|"):-len("_##]")].split("|")
+    if parts[1] == "CDM":
+        alt = json.loads(parts[3]).get("alt")
+        return alt if isinstance(alt, str) else None
+    parser = _NativeAltParser()
+    parser.feed(f"<img {parts[2]}>")
+    return parser.values[0] if len(parser.values) == 1 else None
+
+
+def native_attachment_alt_error(item: dict[str, Any]) -> str | None:
+    alt = native_tistory_alt(item.get("tistory_embed"))
+    if not isinstance(alt, str) or not alt.strip():
+        return "native attachment must include nonempty alt text"
+    expected_alt = item.get("alt")
+    if not isinstance(expected_alt, str) or alt.strip() != expected_alt.strip():
+        return "native attachment alt must match media.json alt"
+    return None
+
+
 def native_attachment_error(item: dict[str, Any]) -> str | None:
     reference = native_tistory_reference(item.get("tistory_embed"))
     if reference is None:
@@ -232,7 +266,7 @@ def native_attachment_error(item: dict[str, Any]) -> str | None:
         tistory_asset_identity(reference) != tistory_asset_identity(url)
     ):
         return "native attachment and observed Tistory URL identify different assets"
-    return None
+    return native_attachment_alt_error(item)
 
 
 def is_iso_timestamp(value: object) -> bool:

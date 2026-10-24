@@ -98,6 +98,11 @@ query, preserve it as generated and verify its actual editor attachment
 recognition. The validator also matches the captured block to the observed
 asset identity, including thumbnail-wrapped URLs.
 
+Before the final remote record and page gate, complete the
+[native attachment preflight](tistory-publication-v2.md#native-attachment-preflight).
+The checker also requires nonempty native alt matching `media.json`; an alt
+present only in the manifest is insufficient.
+
 Record one baseline GET with `remote_media_v2.py record --by <actual creator>`.
 Run `verify` when `second_remote_fetch` is true, including GIF and high-risk
 remote media. For a GIF, capture both its own attachment and its validated

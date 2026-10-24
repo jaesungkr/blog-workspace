@@ -12,7 +12,10 @@ verify:
   purpose, supplied material or subject, relevant actor/tool actions, actual
   finding, and the reason for each secondary test or figure. For a software
   investigation, separate the app's behavior from the tool's analysis and any
-  manual interpretation or execution check;
+  manual interpretation or execution check. Have the reviewer explain why the
+  chosen material is suitable, what each test condition checks, and why any
+  additional product/model names appear. Identify the introducing passage;
+  an explanation supplied only by the brief or reviewer does not pass;
 - natural Korean across paragraph boundaries: concrete actors and verbs,
   sufficient particles, understandable references, and a real reason for a
   change of subject. Reject an unexplained example even if each sentence is
@@ -77,7 +80,11 @@ verify:
 - limitations placed beside the claims they narrow, with a separate caution
   section only for a distinct safety decision and no material warning removed;
 - one owner section for each central claim and action, with no full takeaway
-  repeated across the opening, body sections, and closing;
+  repeated across the opening, body sections, and closing. For an experiment
+  or comparison, allow one compact synthesis of the separate results when it
+  answers the title's question. Verify its verdicts against the detailed
+  evidence, including partial success and scope, rather than rejecting all
+  repeated outcomes. Follow `editorial-voice-v2.md#results-that-answer-the-title`;
 - natural cadence without forced slang, deliberate mistakes, invented
   anecdotes, or unsupported casual endings.
 
