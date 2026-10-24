@@ -7,7 +7,7 @@ subcategory: "AI 모델 · 비교"
 status: reviewing
 format: rich-post-v2
 tags: [Gemini, Gemini 4 Argon, GPT-6 Astra, AI 모델 비교, ChatGPT]
-summary: "Gemini 4 Argon과 GPT-6 Astra의 입력 방식, 코딩 성능, 초기 사용자 평가와 API 비용을 비교하고 업무별 선택 기준을 제안합니다."
+summary: "Gemini 4 Argon과 GPT-6 Astra의 성능, 사용자 평가와 API 비용을 비교하고 기존 Astra 사용자가 주목할 차이를 정리합니다."
 hero_image: assets/gemini-4-argon-vs-gpt-6-astra-hero-v1.png
 published_url: ""
 sources:
@@ -21,21 +21,21 @@ sources:
 
 안녕하세요. dev.log입니다.
 
-Gemini 4 Argon이 공개되면서 ChatGPT를 쓰던 분들도 다시 비교할 이유가 생겼습니다. Argon은 Google, GPT-6 Astra는 OpenAI가 만든 AI 모델로, 문서를 읽고 글을 쓰거나 코드를 고치는 일을 맡길 수 있습니다.
+Gemini 4 Argon이 공개됐습니다. Astra를 쓰는 입장에서는 Argon이 어떤 작업에 강한지 궁금합니다. Argon은 Google, GPT-6 Astra는 OpenAI가 만든 AI 모델로, 문서를 읽고 글을 쓰거나 코드를 고치는 일을 맡길 수 있습니다.
 
 영상과 음성을 분석하는 일과 여러 파일의 코드를 고치는 일에서는 필요한 기능이 다릅니다. Argon은 9월 30일 제한 공개를 거쳐 10월 13일부터 Gemini 앱의 Pro·Ultra 사용자와 개발자 등에게 공개됐습니다. 비교에 사용한 자료는 2026년 10월 25일 기준입니다. Argon 후기는 일반 공개 후 약 2주 동안 올라온 글을 참고했습니다. [Google 공개 안내](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)
 
 {{media:hero}}
 
-### Argon을 먼저 써 볼 작업
+### Argon이 주목받는 작업
 
-Argon 후기에서는 글쓰기와 자료 정리를 좋게 평가한 의견이 눈에 띕니다. Reddit에는 그래프와 시각화가 유용했다는 반응, 복잡한 PDF를 빠르게 처리해 만족했다는 경험담이 올라왔습니다. 코딩에는 다른 모델을 선호하면서도 글쓰기는 Argon이 더 좋았다는 의견도 있었습니다. **자료를 읽고 설명 자료나 글로 바꾸는 작업**에 써 볼 만합니다. 다만 영어권 사용자의 후기라 한국어로 글을 쓸 때는 결과가 다를 수 있습니다. [Argon 사용자 토론](https://www.reddit.com/r/GeminiAI/comments/1x1y2a4/people_who_tried_gemini_4_argon/)
+Argon 후기에서는 글쓰기와 자료 정리를 좋게 평가한 의견이 눈에 띕니다. Reddit에는 그래프와 시각화가 유용했다는 반응, 복잡한 PDF를 빠르게 처리해 만족했다는 경험담이 올라왔습니다. 코딩에는 다른 모델을 선호하면서도 글쓰기는 Argon이 더 좋았다는 의견도 있었습니다. **자료를 읽고 설명 자료나 글로 바꾸는 작업**에서 나온 호평입니다. 다만 영어권 사용자의 후기라 한국어로 글을 쓸 때는 결과가 다를 수 있습니다. [Argon 사용자 토론](https://www.reddit.com/r/GeminiAI/comments/1x1y2a4/people_who_tried_gemini_4_argon/)
 
-Argon은 Google AI Pro·Ultra 계정의 Gemini 앱에서 사용할 수 있습니다. Google은 채팅에서 작업 모드로 전환해 Google 앱 등을 연결하는 기능도 함께 안내했습니다. 이미 Google 앱으로 일하고 있다면 익숙한 환경에서 Argon을 써 볼 수 있다는 장점이 있습니다. 필요한 앱을 연결할 수 있는지는 사용 중인 계정에서 확인해 보세요. [Gemini 앱 업데이트](https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/)
+Argon은 Google AI Pro·Ultra 계정의 Gemini 앱에서 사용할 수 있습니다. Google은 채팅에서 작업 모드로 전환해 Google 앱 등을 연결하는 기능도 함께 안내했습니다. 연결 가능한 앱은 사용 중인 계정에서 확인할 수 있습니다. [Gemini 앱 업데이트](https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/)
 
 서비스에 모델을 연결해 쓰는 API 작업에서는 입력 형식도 차이가 납니다. Argon API는 텍스트·이미지·오디오·비디오·PDF를 받고, Astra API는 텍스트와 이미지를 받습니다. 회의 녹음이나 영상을 미리 글이나 이미지로 바꾸지 않고 넣고 싶다면 Argon이 편리합니다. 여기서 비교한 API 입력 형식과 ChatGPT 앱의 음성 기능은 서로 다릅니다. [Argon API](https://ai.google.dev/gemini-api/docs/models/gemini-4-argon/) · [Astra API](https://developers.openai.com/api/docs/models/gpt-6-astra)
 
-### 복잡한 코드 작업에 써 볼 Astra
+### 복잡한 코드 작업에서의 Astra
 
 Astra는 ChatGPT의 작업용 기능인 Work와 개발 도구 Codex에서 쓸 수 있습니다. 자신의 계정에 제공된다면 모델 선택기에서 Astra를 고르면 됩니다. [OpenAI 이용 안내](https://learn.chatgpt.com/docs/whats-new)
 
@@ -64,7 +64,7 @@ OpenAI는 Astra를 복잡한 추론과 코딩, 컴퓨터 조작, 조사, 문서 
 
 종합 점수는 같지만 업무 자동화에서는 Argon이, 긴 PDF를 읽고 질문에 답하는 평가에서는 Astra가 앞섰습니다. 영상이나 녹음을 바로 입력받는 기능과 문서 내용을 정확히 짚어 답하는 능력은 서로 다른 장점입니다. 자료를 넣기 편한지와 답변이 정확한지를 함께 살펴봐야 합니다. [Artificial Analysis 비교](https://artificialanalysis.ai/models/comparisons/gemini-4-argon-vs-gpt-6-astra)
 
-종합 지수는 주로 영어 텍스트를 다루는 10개 평가를 합친 점수입니다. 한국어 글쓰기나 영상 분석이 주된 용도라면, 해당 작업의 결과를 따로 비교해 보세요. [평가 방법과 범위](https://artificialanalysis.ai/methodology/intelligence-benchmarking)
+종합 지수는 주로 영어 텍스트를 다루는 10개 평가를 합친 점수입니다. [평가 방법과 범위](https://artificialanalysis.ai/methodology/intelligence-benchmarking)
 
 ### 사용 후기가 엇갈리는 지점
 
@@ -91,15 +91,13 @@ Argon은 2026년 11월 30일까지 도입기 요금을 적용합니다. 12월 1�
 
 실제로 같은 일을 맡기면 모델마다 생각하고 답하는 데 쓰는 토큰 수가 달라집니다. Artificial Analysis가 평가별 비중을 반영해 계산한 과제당 평균 비용은 Argon $1.99, Astra $3.26이었습니다. 도입기 단가는 5배 차이지만, 이 평가에서의 작업 비용은 약 1.6배 차이였습니다. 반복 호출하는 서비스를 만든다면 단가와 함께 실제 토큰 사용량, 실패 후 다시 시도하는 비용까지 계산해야 합니다. [과제 비용 비교](https://artificialanalysis.ai/models/comparisons/gemini-4-argon-vs-gpt-6-astra)
 
-### 업무별로 권하는 모델
+### Astra를 쓰고 있다면
 
-| 주로 맡기는 일 | 추천 모델과 이유 |
-|---|---|
-| 글쓰기와 설명 자료 만들기 | **Argon**을 추천합니다. 사용자 후기에서 글쓰기와 시각화에 좋은 평가가 나왔습니다. |
-| 영상·녹음 원본을 분석하는 API 작업 | **Argon**을 추천합니다. 오디오와 비디오를 직접 입력받아 자료를 미리 변환하는 수고를 줄일 수 있습니다. |
-| API를 반복 호출하는 자동화 | **Argon**을 추천합니다. 현재 기본 단가와 독립 평가의 과제당 비용이 모두 낮고, 업무 자동화 평가에서도 앞섰습니다. |
-| 복잡한 코드 수정 | **Astra**를 추천합니다. 코딩 평가 중 FrontierSWE에서 앞섰고, 긴 작업을 잘 마친다는 사용자 평가도 있습니다. |
-| 긴 PDF를 읽고 정확한 답 찾기 | **Astra**를 추천합니다. 독립 평가의 GDP.pdf에서 Argon보다 높은 점수를 받았습니다. |
+Argon은 오디오·비디오를 직접 받는 API와 낮은 호출 비용이 매력적입니다. 영상·녹음 원본을 처리하는 서비스를 만들거나 API를 대량으로 호출한다면 중요한 차이입니다. 다만 API 요금은 앱의 월 구독료와 별도이므로, 단가가 낮다는 이유만으로 기존 구독을 옮길 필요는 없습니다.
+
+성능에서는 어느 한쪽이 일관되게 앞서지 않았습니다. 독립 종합 평가의 점수는 같고, 코딩 평가에서는 우열이 갈렸으며, 긴 PDF를 읽고 답하는 평가에서는 Astra가 앞섰습니다. Argon의 글쓰기와 시각화에 대한 호평도 있지만, 기존 Astra 사용자가 전반적인 성능 향상을 기대하며 옮길 만큼 압도적인 차이는 아니라고 봅니다.
+
+**저는 이미 Astra를 사용하고 있고, 현재로서는 계속 쓸 생각입니다.**
 
 ### 참고 자료
 

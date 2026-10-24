@@ -12,6 +12,6 @@
   "include_390": false,
   "include_768": false,
   "second_remote_fetch": false,
-  "decision_note": "공식 성능표와 공개 사용 후기를 분리한 standard-rich 비교. 본문의 기능·후기·개별 평가·비용을 종합해 업무별 추천을 직접 제시한다. 일반적인 직접 시험 권고는 사용자의 요청으로 삭제했다. 생성 히어로는 승인된 v9 비교 템플릿을 따른다. max-txt2img와 diagram-design을 검토했으나 입력 형식·성능·비용은 짧은 HTML 표가 모바일에서 더 명확해 supporting infographic은 not_applicable. 직접 사용·실험 성능은 주장하지 않는다.",
+  "decision_note": "공식 성능표와 공개 사용 후기를 분리한 standard-rich 비교. 이미 Astra를 쓰는 저자의 입장에서 성능·기능·비용 차이를 살핀다. Argon의 장점은 보존하되 전환 권유로 연결하지 않고, 독립 지수 동률·코딩 우열 반전·PDF Astra 우위를 근거로 현재 Astra를 유지한다는 저자 판단으로 마친다. 일반적인 직접 시험 권고는 사용자의 요청으로 삭제했다. 생성 히어로는 승인된 v9 비교 템플릿을 따른다. max-txt2img와 diagram-design을 검토했으나 짧은 HTML 표가 더 명확해 infographic은 not_applicable이다. 직접 사용·실험 성능은 주장하지 않는다.",
   "publication_mode": "codex-browser"
 }

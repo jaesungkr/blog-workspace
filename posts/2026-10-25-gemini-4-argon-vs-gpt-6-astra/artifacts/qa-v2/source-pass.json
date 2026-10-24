@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T16:18:10.404687Z",
+  "checked_at": "2026-10-24T16:26:18.185959Z",
   "checked_by": "source_review",
-  "article_content_sha256": "205ec165f0b8976626f7257f9be21693293446bf247a5b49ff692f011a5c8c58",
-  "brief_sha256": "f5136115f247a122d536e007a07993a42f7bce1a56af685545bd64a60045b105",
-  "evidence_sha256": "282d6debbd50617e542fb26776ae354e65f631a06deecd4ed0a9f6708bfa5f08",
-  "note": "새 업무별 추천표를 본문의 기능·후기·개별 평가·비용과 대조해 통과했습니다. 추천의 이유와 기존 조건이 유지되며 직접 시험하라는 일반 조언은 복원하지 않았습니다. 최신 brief와 evidence C15를 포함해 원고를 동결합니다."
+  "article_content_sha256": "cf405e6a5d09c94bd03f6503bf9f83dbda27335361fa1e4e8f6511c763eb8801",
+  "brief_sha256": "ff60e5d9a9006e1a4113834b07d9bc543f830568df2de3a85b44b754434edd6d",
+  "evidence_sha256": "1d038a9f383b0f75204862b3a999ff4828d4ed606b28079d1775c7f0c3c17b3a",
+  "note": "기존 Astra 사용자의 관점으로 독립 재검수했습니다. Argon의 우위·호평과 Astra의 불만을 보존하고, 유지 의사는 사용자가 밝힌 판단으로 구분합니다. 새 실험·경험을 만들지 않았으며 최신 brief와 evidence를 포함해 통과했습니다."
 }

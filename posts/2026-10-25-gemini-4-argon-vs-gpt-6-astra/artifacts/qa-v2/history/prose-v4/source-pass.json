@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T16:18:10.404687Z",
+  "checked_by": "source_review",
+  "article_content_sha256": "205ec165f0b8976626f7257f9be21693293446bf247a5b49ff692f011a5c8c58",
+  "brief_sha256": "f5136115f247a122d536e007a07993a42f7bce1a56af685545bd64a60045b105",
+  "evidence_sha256": "282d6debbd50617e542fb26776ae354e65f631a06deecd4ed0a9f6708bfa5f08",
+  "note": "새 업무별 추천표를 본문의 기능·후기·개별 평가·비용과 대조해 통과했습니다. 추천의 이유와 기존 조건이 유지되며 직접 시험하라는 일반 조언은 복원하지 않았습니다. 최신 brief와 evidence C15를 포함해 원고를 동결합니다."
+}
