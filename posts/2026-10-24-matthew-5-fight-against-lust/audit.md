@@ -79,3 +79,10 @@
 - v2 독립 검수 발견: 마지막 상태 아래에 의미 없는 여백 100px가 남았습니다. 범례가 없어 불필요했던 60px를 삭제하고, 바깥 여백 40px만 남긴 v3으로 수정했습니다. 문구와 요소 위치는 유지했습니다.
 - 새 후보: assets/heart-and-word-diagram-v3.png, 640×1024, SHA-256 39a0263af95f017d79d50a29f6dfa1f070a898289946b4b8ea7127fd82e00eb9. 동일 후보의 전체 재검사를 요청합니다.
 - v3 독립 재검수: review_sermon_diagram이 원본·320px 게시 표시·360px 화면 및 모든 글자·전환·화살촉 확대 영역을 다시 검사하여 pass를 기록했습니다. 하단 여백은 약 39.4px이며 12px 한국어 가독성, 글자 간격, 연결선과 근거가 유지되었습니다. 기록은 v3/infographic-review.md에 보존하고 새 PNG만 validated로 등록합니다.
+
+## 사용자 요청: 도식 제외
+
+- 최종 시각적 취향에 따라 사용자가 이 글에서 diagram을 제외하라고 명시했습니다. 앞선 기술적 검수 통과와 별개로 이 지시를 우선 적용합니다.
+- 본문의 heart-and-word-diagram 지시문과 media.json의 게시 등록을 제거했습니다. workflow-v2.json의 infographic은 false이며 현재 판단은 not_applicable입니다.
+- brief의 현재 제작 계획을 도식 없음으로 갱신했습니다. 기존 이미지·HTML·SVG·검수 기록은 이력으로 보존하지만 게시나 업로드 대상이 아닙니다. 이전 미디어 등록은 artifacts/qa-v2/excluded-diagram-media.json에 보존했습니다.
+- 성경 본문과 설교 요약의 문장은 수정하지 않았습니다. Thoughts는 계속 사용자가 직접 작성할 부분이며 reviewing 상태를 유지합니다. 도식 제외에 새로운 독립 시각 검수는 필요하지 않습니다.
