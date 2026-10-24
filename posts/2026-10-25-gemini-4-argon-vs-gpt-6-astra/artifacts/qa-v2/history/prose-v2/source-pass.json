@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T16:11:29.525352Z",
+  "checked_by": "source_review",
+  "article_content_sha256": "f9cca20fd1a88e4843dda2d58b778f3bf7a300c8a04eb6ee219168fc6db48ac6",
+  "brief_sha256": "fb4da314add1e77aa015364e9b8ccdc79233bbdd39188bc11a4f543db9a79f6d",
+  "evidence_sha256": "1905e4479748a422b9b4fcb455d9d807e53c05588c62d88c89477543ba5ab544",
+  "note": "사용자 문체 요청을 반영한 원고를 독립 재검수했습니다. 방어적 표현을 조건 설명으로 바꾸면서 수치·URL·평가 경계를 유지했고, 후기의 약 2주 기간은 Argon으로 한정한 뒤 통과했습니다. 렌더와 페이지 증거는 새 원고로 갱신해야 합니다."
+}

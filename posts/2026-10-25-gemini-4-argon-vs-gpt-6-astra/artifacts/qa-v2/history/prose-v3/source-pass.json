@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T16:14:52.950523Z",
+  "checked_by": "source_review",
+  "article_content_sha256": "34dc7b37e0b74055ca4b6c35a9927b4bd1562e13b9144c48de451abf06d46b17",
+  "brief_sha256": "fb4da314add1e77aa015364e9b8ccdc79233bbdd39188bc11a4f543db9a79f6d",
+  "evidence_sha256": "1905e4479748a422b9b4fcb455d9d807e53c05588c62d88c89477543ba5ab544",
+  "note": "사용자가 지정한 도입 한 문장만 삭제됐음을 이전 원고와 문자 단위로 대조했습니다. 연결과 의미, 수치·URL·표·조건을 보존했고 대체 권고 없이 통과했습니다. 렌더와 페이지 증거는 현재 원고로 갱신해야 합니다."
+}

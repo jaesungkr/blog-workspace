@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-24T16:11:29.525352Z",
+  "checked_at": "2026-10-24T16:18:10.404687Z",
   "checked_by": "source_review",
-  "article_content_sha256": "f9cca20fd1a88e4843dda2d58b778f3bf7a300c8a04eb6ee219168fc6db48ac6",
-  "brief_sha256": "fb4da314add1e77aa015364e9b8ccdc79233bbdd39188bc11a4f543db9a79f6d",
-  "evidence_sha256": "1905e4479748a422b9b4fcb455d9d807e53c05588c62d88c89477543ba5ab544",
-  "note": "사용자 문체 요청을 반영한 원고를 독립 재검수했습니다. 방어적 표현을 조건 설명으로 바꾸면서 수치·URL·평가 경계를 유지했고, 후기의 약 2주 기간은 Argon으로 한정한 뒤 통과했습니다. 렌더와 페이지 증거는 새 원고로 갱신해야 합니다."
+  "article_content_sha256": "205ec165f0b8976626f7257f9be21693293446bf247a5b49ff692f011a5c8c58",
+  "brief_sha256": "f5136115f247a122d536e007a07993a42f7bce1a56af685545bd64a60045b105",
+  "evidence_sha256": "282d6debbd50617e542fb26776ae354e65f631a06deecd4ed0a9f6708bfa5f08",
+  "note": "새 업무별 추천표를 본문의 기능·후기·개별 평가·비용과 대조해 통과했습니다. 추천의 이유와 기존 조건이 유지되며 직접 시험하라는 일반 조언은 복원하지 않았습니다. 최신 brief와 evidence C15를 포함해 원고를 동결합니다."
 }

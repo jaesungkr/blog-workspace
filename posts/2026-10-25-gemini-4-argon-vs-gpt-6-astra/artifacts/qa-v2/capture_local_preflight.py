@@ -38,7 +38,7 @@ with ChromeProcess(find_chrome(None), 20) as chrome:
                 if width == 360:
                     positions = client.call('Runtime.evaluate', {'expression':"JSON.stringify(Array.from(document.querySelectorAll('h2')).map(h=>({text:h.innerText,y:Math.floor(h.getBoundingClientRect().top+scrollY)})))",'returnByValue':True})
                     headings = json.loads(positions['result']['value'])
-                    for label, needle in [('benchmark', '같은 종합'), ('choice', '기존 구독')]:
+                    for label, needle in [('benchmark', '같은 종합'), ('choice', '업무별')]:
                         y = max(0,next(h['y'] for h in headings if needle in h['text']) - 20)
                         shot(f'{theme}-{width}-{label}.png', y, min(1800,full_height-y))
                 m.update(theme=theme,width=width,height=height,full_height=full_height,scope='creator_local_preflight_only',browser=chrome.version.get('Browser'))

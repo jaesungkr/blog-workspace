@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "revision": 2,
+  "status": "reviewing",
+  "stage": "author_review_candidate",
+  "source_review": "pass",
+  "hero_review": "pass",
+  "local_preflight": {
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      1280,
+      360
+    ],
+    "images_loaded": true,
+    "document_overflow_px": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "publication_approval": null,
+  "tistory_uploaded": false,
+  "remote_final_page_review": "not_started_before_author_approval",
+  "output_files": {
+    "gemini-4-argon-vs-gpt-6-astra-hero-prompt.txt": {
+      "sha256": "c741264d279eebbcb9b7c63b72812b522f313a81b7566f192a370174d8e32fe3",
+      "bytes": 2932
+    },
+    "gemini-4-argon-vs-gpt-6-astra-hero-v1.png": {
+      "sha256": "20ec7448274b5226bd8fee70e1440a2e13645a6b8a4c750713b1466986ae2af9",
+      "bytes": 2210897
+    },
+    "gemini-4-argon-vs-gpt-6-astra-review-dark.html": {
+      "sha256": "00add39a16f62ecff809de4cd045e7cd3e7899ce682d0bae1978e8fc4e9acbae",
+      "bytes": 2977513
+    },
+    "gemini-4-argon-vs-gpt-6-astra-review.html": {
+      "sha256": "41293943e22e1d0952f66db086933f511d78a22e6049dec9bfd037c012cbed2d",
+      "bytes": 2977500
+    },
+    "gemini-4-argon-vs-gpt-6-astra-review.md": {
+      "sha256": "a2a9c7a4341053349a67601cd5e6a24fd695f13959011e1d28d1336adcb77bea",
+      "bytes": 13465
+    }
+  },
+  "source_pass": {
+    "version": 2,
+    "result": "pass",
+    "checked_at": "2026-10-24T16:11:29.525352Z",
+    "checked_by": "source_review",
+    "article_content_sha256": "f9cca20fd1a88e4843dda2d58b778f3bf7a300c8a04eb6ee219168fc6db48ac6",
+    "brief_sha256": "fb4da314add1e77aa015364e9b8ccdc79233bbdd39188bc11a4f543db9a79f6d",
+    "evidence_sha256": "1905e4479748a422b9b4fcb455d9d807e53c05588c62d88c89477543ba5ab544",
+    "note": "사용자 문체 요청을 반영한 원고를 독립 재검수했습니다. 방어적 표현을 조건 설명으로 바꾸면서 수치·URL·평가 경계를 유지했고, 후기의 약 2주 기간은 Argon으로 한정한 뒤 통과했습니다. 렌더와 페이지 증거는 새 원고로 갱신해야 합니다."
+  }
+}
