@@ -1,0 +1,303 @@
+{
+  "checks": [
+    {
+      "captions": 5,
+      "date": "2026. 10. 25. 10:14",
+      "metadata": [
+        {
+          "height": 20,
+          "text": "2026. 10. 25. 10:14",
+          "width": 120
+        },
+        {
+          "height": 20,
+          "text": "·",
+          "width": 6.78125
+        },
+        {
+          "height": 20,
+          "text": "AI·개발/AI 모델·비교",
+          "width": 124.25
+        },
+        {
+          "height": 20,
+          "text": "수정삭제공개",
+          "width": 81.4296875
+        }
+      ],
+      "nativeFigures": 5,
+      "scrollWidth": 360,
+      "theme": "scroll-smooth dark",
+      "tocTargets": [
+        {
+          "exists": true,
+          "href": "#kimi-웹에서-질문하고-파일-넣기"
+        },
+        {
+          "exists": true,
+          "href": "#긴-자료를-읽고-결과물을-만드는-방식"
+        },
+        {
+          "exists": true,
+          "href": "#글과-이미지로-시작하는-3d-제작"
+        },
+        {
+          "exists": true,
+          "href": "#opus와-비교하면-어느-정도일까"
+        },
+        {
+          "exists": true,
+          "href": "#일반형과-고속형의-api-비용"
+        },
+        {
+          "exists": true,
+          "href": "#참고-자료"
+        }
+      ],
+      "viewport": 360
+    },
+    {
+      "images": [
+        {
+          "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+          "complete": true,
+          "height": 370,
+          "width": 840
+        },
+        {
+          "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+          "complete": true,
+          "height": 345,
+          "width": 790
+        },
+        {
+          "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+          "complete": true,
+          "height": 535,
+          "width": 790
+        },
+        {
+          "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+          "complete": true,
+          "height": 500,
+          "width": 480
+        },
+        {
+          "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+          "complete": true,
+          "height": 345,
+          "width": 715
+        }
+      ],
+      "media": [
+        {
+          "client": 288,
+          "scroll": 790
+        },
+        {
+          "client": 288,
+          "scroll": 790
+        },
+        {
+          "client": 288,
+          "scroll": 480
+        },
+        {
+          "client": 288,
+          "scroll": 715
+        }
+      ],
+      "scrollWidth": 360,
+      "tables": [
+        {
+          "client": 288,
+          "scroll": 620
+        },
+        {
+          "client": 288,
+          "scroll": 620
+        },
+        {
+          "client": 288,
+          "scroll": 620
+        }
+      ],
+      "theme": "scroll-smooth",
+      "viewport": 360
+    },
+    {
+      "date": "2026. 10. 25. 10:14",
+      "images": [
+        {
+          "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+          "complete": true,
+          "height": 370,
+          "width": 840
+        },
+        {
+          "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+          "complete": true,
+          "height": 345,
+          "width": 790
+        },
+        {
+          "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+          "complete": true,
+          "height": 535,
+          "width": 790
+        },
+        {
+          "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+          "complete": true,
+          "height": 500,
+          "width": 480
+        },
+        {
+          "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+          "complete": true,
+          "height": 345,
+          "width": 715
+        }
+      ],
+      "metadataWrap": "wrap",
+      "overlay": "rgba(0, 0, 0, 0.66)",
+      "scrollWidth": 1280,
+      "theme": "scroll-smooth",
+      "viewport": 1280
+    },
+    {
+      "date": "2026. 10. 25. 10:14",
+      "scrollWidth": 1280,
+      "theme": "scroll-smooth dark",
+      "viewport": 1280
+    }
+  ],
+  "earlierChecks": [
+    {
+      "captions": 5,
+      "h1_count": 2,
+      "images": [
+        {
+          "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+          "h": 370,
+          "id": "kimi-home",
+          "loaded": true,
+          "w": 840
+        },
+        {
+          "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+          "h": 345,
+          "id": "kimi-attach",
+          "loaded": true,
+          "w": 790
+        },
+        {
+          "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+          "h": 535,
+          "id": "kimi-3d",
+          "loaded": true,
+          "w": 790
+        },
+        {
+          "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+          "h": 500,
+          "id": "aa-intelligence",
+          "loaded": true,
+          "w": 480
+        },
+        {
+          "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+          "h": 345,
+          "id": "kimi-pricing",
+          "loaded": true,
+          "w": 715
+        }
+      ],
+      "native_figures": 5,
+      "scroll_width": 1280,
+      "theme": "scroll-smooth",
+      "toc_unique": true,
+      "width": 1280
+    },
+    {
+      "all_images_loaded": true,
+      "cover_overlay": "rgba(0, 0, 0, 0.66)",
+      "scroll_width": 1280,
+      "theme": "scroll-smooth dark",
+      "title_color": "rgb(255, 255, 255)",
+      "width": 1280
+    },
+    {
+      "article_h1": 0,
+      "date": "2026. 10. 25. 10:14",
+      "images": [
+        {
+          "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+          "h": 370,
+          "loaded": true,
+          "w": 840
+        },
+        {
+          "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+          "h": 345,
+          "loaded": true,
+          "w": 790
+        },
+        {
+          "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+          "h": 535,
+          "loaded": true,
+          "w": 790
+        },
+        {
+          "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+          "h": 500,
+          "loaded": true,
+          "w": 480
+        },
+        {
+          "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+          "h": 345,
+          "loaded": true,
+          "w": 715
+        }
+      ],
+      "screenshots": [
+        {
+          "client": 288,
+          "scroll": 790
+        },
+        {
+          "client": 288,
+          "scroll": 790
+        },
+        {
+          "client": 288,
+          "scroll": 480
+        },
+        {
+          "client": 288,
+          "scroll": 715
+        }
+      ],
+      "scroll_width": 360,
+      "tables": [
+        {
+          "client": 288,
+          "scroll": 620
+        },
+        {
+          "client": 288,
+          "scroll": 620
+        },
+        {
+          "client": 288,
+          "scroll": 620
+        }
+      ],
+      "theme": "scroll-smooth dark",
+      "visible_h1": 1,
+      "width": 360
+    }
+  ]
+}

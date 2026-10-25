@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "post_id": 152,
+  "url": "https://dop3n.tistory.com/entry/Kimi-K31-Pro%EB%9E%80-%EB%AC%B8%EC%84%9C%C2%B7%EC%BD%94%EB%94%A9-AI%EC%9D%98-%EC%9E%A5%EC%A0%90%EA%B3%BC-Opus-55-%EB%B9%84%EA%B5%90",
+  "published": true,
+  "published_at": "2026-10-25T10:14:00+09:00",
+  "publication_time_basis": "Actual post list and live page display minute; seconds not supplied",
+  "verification_status": "pass",
+  "submitted_fragment_sha256": "7746e322933d04f47f303a37a722980a6df4567d982853bf1c36d3e34ad0809d",
+  "approval_record_sha256": "dbf55b330daa8d8330161c3128bd8d3e9368eafa36ecdb7e2bcf5ab6a4b42251",
+  "live_category": "AI·개발/AI 모델·비교",
+  "visibility": "PUBLIC",
+  "no_duplicate_publication": true,
+  "initial_submitted_fragment_sha256": "a64bb22de39a463d9cdaccd92eef5c237033061041bc6e76accc2982d166c380",
+  "submitted_fragment_path": "artifacts/qa-v2/submitted-native-fragment-final.html",
+  "verified_at": "2026-10-25T10:25:56.064672+09:00",
+  "live_measurements": "artifacts/qa-v2/live/final-live-measurements.json",
+  "screenshots": [
+    "artifacts/qa-v2/live/final-desktop-light-top.jpg",
+    "artifacts/qa-v2/live/final-desktop-dark-top.jpg",
+    "artifacts/qa-v2/live/final-mobile-light-top.jpg",
+    "artifacts/qa-v2/live/final-mobile-dark-top.jpg"
+  ],
+  "corrections": [
+    "Post-local cover contrast CSS",
+    "Post-local metadata wrapping for logged-in mobile view"
+  ],
+  "preserved_date_and_url": true,
+  "native_images_verified": 5,
+  "fresh_load_viewports": [
+    1280,
+    360
+  ],
+  "themes_verified": [
+    "light",
+    "dark"
+  ],
+  "resize_observation": "Desktop-to-mobile resizing retained an 800px AdSense host in an earlier preview. Fresh 360px loads passed; no global overflow suppression was added."
+}

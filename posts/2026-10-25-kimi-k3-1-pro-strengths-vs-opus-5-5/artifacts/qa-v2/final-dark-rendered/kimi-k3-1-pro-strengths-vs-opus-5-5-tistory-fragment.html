@@ -402,6 +402,32 @@
   }
 }
 
+/* This article's white UI screenshot becomes the hELLO thumbnail cover.
+   Keep its title and metadata readable in both themes without changing media. */
+#header[data-header-style="thumbnail"] > .img::before {
+  background-color: rgba(0, 0, 0, 0.66) !important;
+}
+#header[data-header-style="thumbnail"] .info .tit,
+#header[data-header-style="thumbnail"] .info .desc,
+#header[data-header-style="thumbnail"] .info .desc a,
+#header[data-header-style="thumbnail"] .info .desc button {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+/* Logged-in hELLO views add edit/delete/public controls to the metadata row. */
+#header[data-header-style="thumbnail"] .info .desc {
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4px;
+  max-width: 100%;
+}
+#header[data-header-style="thumbnail"] .info .desc > .date,
+#header[data-header-style="thumbnail"] .info .desc > .category,
+#header[data-header-style="thumbnail"] .info .desc > #admin {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 </style>
 <article class="devlog-rich">
 <section class="devlog-rich__section is-intro">

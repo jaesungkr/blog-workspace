@@ -70,3 +70,13 @@ Pending independent reviewer: cold-read source before this audit; verify claim v
 - Light/dark source/media are identical; white screenshots retain original pixels on neutral surrounds. No failed rendered component remained.
 - Self-contained HTML review files include all five JPEGs as data URIs. Portable review changes only image addressing; no article prose or styles were modified. A rendered top screenshot is provided as proof.
 - This is creator preflight and author review, not final remote/native-page approval. No Tistory editor was opened, no media uploaded, and no publication occurred. Remaining release gates are recorded in author-review-handoff.json.
+
+## Live cover correction after first publication
+
+Publication 152 succeeded at 10:14 Asia/Seoul. The actual hELLO thumbnail cover (absent from editor preview) used the white Kimi input screenshot under white title/meta with 20% dark overlay. Contrast was visibly insufficient. Added only post-scoped assets/post.css: thumbnail overlay 66%, white title/meta and slight text shadow. Approved prose and five media bytes are unchanged; no source re-review or author approval is needed for this bounded layout fix. Archive returned from ready to reviewing while final page hashes are refreshed; live post remains published. Preserve URL/date and update the same post after finalization.
+
+The public mobile owner view additionally includes edit/delete/public controls; its unwrapped metadata row split date/category into fragments. Added a scoped wrapping row and nowrap on each date/category/admin group. This keeps each label intact and permits multiple centered rows. No body/media/source change. Refresh final candidate hashes and check actual public owner header after saving the same post.
+
+## 게시 완료
+
+티스토리 152번 글의 공개 페이지를 1280px와 360px의 밝은 테마·어두운 테마에서 확인했습니다. 네이티브 이미지 5장, 캡션 5개, 목차 대상 6개를 확인했고 표와 넓은 스크린샷은 본문 내부에서 스크롤됩니다. 표지 대비와 로그인 모바일 메타데이터 줄바꿈만 글별 CSS로 보정했습니다. 최초 게시 본문은 바이트 단위로 동일하며 URL과 2026-10-25 10:14 발행 시각을 유지했습니다. 데스크톱에서 모바일로 크기만 줄일 때 광고 호스트가 이전 너비를 유지한 관찰은 별도로 보존했습니다.

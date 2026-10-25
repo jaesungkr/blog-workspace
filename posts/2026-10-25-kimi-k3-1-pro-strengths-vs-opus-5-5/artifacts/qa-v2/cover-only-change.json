@@ -1,0 +1,7 @@
+{
+  "article_body_byte_identical": true,
+  "article_body_sha256": "42737961eff749d6958f7853afcadd38cfb84f95db07105e7f0d3454a17d6bc6",
+  "initial_fragment_sha256": "a64bb22de39a463d9cdaccd92eef5c237033061041bc6e76accc2982d166c380",
+  "final_fragment_sha256": "7746e322933d04f47f303a37a722980a6df4567d982853bf1c36d3e34ad0809d",
+  "scope": "CSS preceding article element only; cover contrast and metadata wrapping"
+}

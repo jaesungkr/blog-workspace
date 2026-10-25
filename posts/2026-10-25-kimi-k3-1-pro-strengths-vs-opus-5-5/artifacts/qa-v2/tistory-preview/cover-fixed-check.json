@@ -1,0 +1,14 @@
+{
+  "fresh_mobile": {
+    "overlay": "rgba(0, 0, 0, 0.66)",
+    "scroll_width": 360,
+    "theme": "scroll-smooth dark",
+    "title_color": "rgb(255, 255, 255)",
+    "width": 360
+  },
+  "resize_observation": {
+    "document_scroll_width": 816,
+    "reason": "AdSense aswift_1_host retained desktop width 800 when iframe was resized; fresh mobile iframe has no document overflow"
+  },
+  "unchanged_body": true
+}
