@@ -327,6 +327,33 @@ These examples diagnose the decision; do not copy them as a fixed template:
 Review the rhetorical function as well as the wording. A clean keyword scan
 does not pass a sentence that still invents a misconception to refute it.
 
+### Concrete predicates instead of abstract nominal judgments
+
+In Korean reader-facing prose, state what the reader should check, what the
+product does, or what the evidence suggests. Rewrite a sentence when an
+abstract noun phrase such as `도입 판단의 첫 조건입니다`, `선택의 핵심
+기준입니다`, or `활용의 출발점입니다` merely labels an action or judgment
+that a verb would express more clearly. Such labels can hide the actor and
+action and add an unsupported priority such as `첫` or `핵심`.
+
+| Abstract label | Direct wording when supported |
+|---|---|
+| `현재 활성화할 수 있는 계정인지가 도입 판단의 첫 조건입니다.` | `내 계정으로 지금 이용할 수 있는지 확인해야 합니다.` |
+| `이 차이는 제품 선택의 핵심 기준입니다.` | Name the actual choice and reason, such as `기존 로컬 Codex 작업을 이어가려면 Dots의 지원 범위를 확인하세요.` |
+
+The defect is the unnecessary noun-centered framing, not the copula
+`~입니다` or every occurrence of `조건`, `기준`, or `판단`. Keep ordinary
+definitions, actual eligibility requirements, and explicitly defined
+evaluation criteria. Preserve the original force: a tentative interpretation
+may use `중요해 보입니다`; a documented requirement may use `필요합니다` or
+`확인해야 합니다`. Do not soften every conclusion or turn every closing into
+an instruction.
+
+Read the whole closing after the rewrite. If the sentence only repeats an
+earlier eligibility check and the article's question has already been
+answered, remove it or end with the supported judgment the reader came for.
+Do not invent a `첫 조건` or `출발점` merely to make the ending sound complete.
+
 ## Pass 3: run the new-information test
 
 Make a private reverse outline in `audit.md`. Give each paragraph one primary

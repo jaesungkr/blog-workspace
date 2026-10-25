@@ -27,6 +27,13 @@ verify:
   해서 B는 아닙니다`, and defensive judgments such as `단정할 근거는
   없습니다`. Preserve direct factual negatives, exact quotations, code, and
   material warnings; require the actual scope or condition where it matters;
+- concrete predicates, following
+  `editorial-voice-v2.md#concrete-predicates-instead-of-abstract-nominal-judgments`.
+  Return an abstract label such as `도입 판단의 첫 조건입니다` when it hides
+  the actual action or adds an unsupported priority. Accept natural
+  definitions and genuine criteria; do not reject `~입니다` by itself or
+  require tentative endings for established facts. Check that the closing
+  answers the article's question rather than repeating an earlier check;
 - the primary reader, plain identity, easiest start, and evidence boundary;
 - for a broad explainer, a locked map of the questions created by the title and
   opening, one owner section for each question, and explicit adjacent-topic

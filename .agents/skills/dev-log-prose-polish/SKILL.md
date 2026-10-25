@@ -148,6 +148,13 @@ Then perform five human checks:
   `한편`, `따라서`, or `이를 통해`.
 - Replace chains of abstract nouns with an actor and a direct verb. Explain what
   changed for the reader before naming an implementation detail.
+- Rewrite nominal labels such as `도입 판단의 첫 조건입니다` when they only
+  rename an action: `내 계정으로 지금 이용할 수 있는지 확인해야 합니다`.
+  State the supported action or judgment and remove an unsupported priority
+  such as `첫` or `핵심`. Keep ordinary definitions and actual conditions or
+  evaluation criteria; `~입니다` itself is not a defect. Preserve the source's
+  certainty rather than mechanically changing endings to `중요해 보입니다`.
+  Remove a closing sentence if it merely repeats an earlier check.
 - Keep necessary caveats, but combine repeated `A가 아니라 B`, `다만`, and
   `그렇다고` defenses when one precise boundary can do the work.
 - Remove mechanical roadmaps and repeated takeaways. A section does not need a

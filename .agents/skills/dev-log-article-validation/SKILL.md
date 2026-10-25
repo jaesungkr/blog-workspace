@@ -53,6 +53,10 @@ Read the article from greeting to closing and verify:
   example, question, or deliberate reset instead of a connector-only bridge;
 - 존대어, Korean sentence hygiene, paragraph flow, sentence rhythm, tables,
   emphasis, and closing follow the editorial standard;
+- noun-centered labels such as `도입 판단의 첫 조건입니다` do not replace a
+  clearer action or supported judgment. Return unnecessary abstract framing
+  and unsupported priority words to prose polish, including in the closing;
+  preserve ordinary definitions, real conditions, and justified criteria;
 - prose polishing did not change numbers, sources, code, tables, test
   authorship, uncertainty, or limitations and did not invent human signals;
 - unresolved facts, TODOs, invented details, and unsupported certainty are

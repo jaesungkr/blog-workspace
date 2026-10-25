@@ -50,6 +50,9 @@ to titles, headings, body, captions, and closing before source freeze. State
 the fact or judgment directly; remove invented rebuttals, defensive caveats,
 generic self-testing endings, and unsolicited product-switching advice. The
 source reviewer must enforce these criteria even for a single occurrence.
+Also apply the [concrete-predicate rule](references/editorial-voice-v2.md#concrete-predicates-instead-of-abstract-nominal-judgments):
+replace unnecessary nominal labels such as `도입 판단의 첫 조건입니다` with
+the actual action or supported judgment, including in the closing.
 
 ## Load only the current stage
 
