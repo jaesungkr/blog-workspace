@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-10-25T01:10:46.510799Z",
+  "checked_by": "/root/source_cold_review",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+  "preview_sha256": "c507c032fdbcbb4722ff79e7b24e2af656c445e9c4962b4d2422880f26637e30",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/155.0.8059.85",
+  "protocol_version": "1.3",
+  "session": "1143258b-51ef-4dc1-a263-013fb45f5278",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7930,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "aaf1d2542081e253de28394e767ce4b916460b15d6d71baf75786fe4364750a2",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10625,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "e3694d8c71d69c3eb47de26cd5ad050debe0328042680c0107ae0b59b655b337",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 10147,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "30bfa9f6a1b660b62956e6d872bfebfaadf8ddbd3fbf4530658281eb38ee91e6",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-390.png"
+    }
+  ]
+}

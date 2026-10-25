@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "author_instruction": "응 게시해줘",
+  "target_blog": "https://dop3n.tistory.com",
+  "approved_at": "2026-10-25T10:00:57+09:00",
+  "timezone": "Asia/Seoul",
+  "source_pass_sha256": "4604f65ea849793d7b9c0b3c8281b8ec9072cd224b16964717812238b9b22002",
+  "article_sha256": "1459caf4545a71ce3905dc5c23e4ad5a8b31b4697f98791efac5cd921b21e0a0",
+  "media_sha256": {
+    "kimi-home": "d150b6710c23f09e29d48b973f71c0602dee72e59cfdb7947b08add6cb7dbc05",
+    "kimi-attach": "c6cc31596fde62cdc2775337d38933da2c2a76e1af9ea06731732ccb38e6b748",
+    "kimi-3d": "d816828161cebc103e78d2f6c620773f2d3cea12bb42bd11dbf5c03500189a51",
+    "aa-intelligence": "b4bd4890da02262d589f50ff1cb324396e2b1a224b9be5d69cccb93df903b9f8",
+    "kimi-pricing": "ba87c4cda06f781a9a653004d8d3a40701fdbac2f40b7ee5c95487e79b5c4034"
+  },
+  "approval_context": "Author approved the complete self-contained review HTML and five images presented in this chat."
+}

@@ -4,7 +4,7 @@ slug: kimi-k3-1-pro-strengths-vs-opus-5-5
 date: 2026-10-25
 category: "Log"
 subcategory: "AI 모델 · 비교"
-status: reviewing
+status: ready
 format: rich-post-v2
 tags: [Kimi, Kimi K3.1 Pro, Moonshot AI, Opus 5.5, AI 모델 비교]
 summary: "Kimi를 처음 접하는 독자를 위해 이용 화면과 문서·코딩·3D 제작 기능을 소개하고, Opus 5.5 대비 공개 평가와 API 비용을 비교합니다."

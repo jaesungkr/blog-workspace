@@ -1,0 +1,2315 @@
+{
+  "reviewer": "/root/source_cold_review",
+  "records": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7930,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "aaf1d2542081e253de28394e767ce4b916460b15d6d71baf75786fe4364750a2",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "theme": "light",
+      "detail": {
+        "paragraphs": 31,
+        "images": [
+          {
+            "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+            "rect": {
+              "x": 220,
+              "y": 501.890625,
+              "w": 840,
+              "h": 371.109375
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+            "rect": {
+              "x": 245,
+              "y": 1573.8125,
+              "w": 790,
+              "h": 346.125
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+            "rect": {
+              "x": 245,
+              "y": 3233.328125,
+              "w": 790,
+              "h": 535.640625
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+            "rect": {
+              "x": 400,
+              "y": 4918.03125,
+              "w": 480,
+              "h": 499.90625
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+            "rect": {
+              "x": 282.5,
+              "y": 6620.421875,
+              "w": 715,
+              "h": 346.03125
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "tables": [
+          {
+            "rect": {
+              "x": 260,
+              "y": 4624.328125,
+              "w": 760,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 760,
+            "parentScroll": 760,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 260,
+              "y": 5635.015625,
+              "w": 760,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 760,
+            "parentScroll": 760,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 260,
+              "y": 6395.421875,
+              "w": 760,
+              "h": 189
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 760,
+            "parentScroll": 760,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "scrolls": [],
+        "lists": [
+          {
+            "rect": {
+              "x": 287,
+              "y": 1086.265625,
+              "w": 706,
+              "h": 182.34375
+            },
+            "style": "decimal",
+            "items": 6
+          },
+          {
+            "rect": {
+              "x": 260,
+              "y": 7647.640625,
+              "w": 760,
+              "h": 209.390625
+            },
+            "style": "disc",
+            "items": 6
+          }
+        ],
+        "bodyStyle": {
+          "color": "rgb(29, 29, 31)",
+          "bg": "rgb(255, 255, 255)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        },
+        "articleStyle": {
+          "color": "rgb(29, 29, 31)",
+          "bg": "rgb(255, 255, 255)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        }
+      },
+      "full": "artifacts/qa-v2/final/inspection/light-1280-full.png",
+      "scroll_tests": [],
+      "segments": [
+        "artifacts/qa-v2/final/inspection/light-1280-y0.png",
+        "artifacts/qa-v2/final/inspection/light-1280-y1800.png",
+        "artifacts/qa-v2/final/inspection/light-1280-y3600.png",
+        "artifacts/qa-v2/final/inspection/light-1280-y5400.png",
+        "artifacts/qa-v2/final/inspection/light-1280-y7200.png"
+      ]
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10625,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "e3694d8c71d69c3eb47de26cd5ad050debe0328042680c0107ae0b59b655b337",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "theme": "light",
+      "detail": {
+        "paragraphs": 31,
+        "images": [
+          {
+            "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+            "rect": {
+              "x": 20,
+              "y": 738.546875,
+              "w": 320,
+              "h": 142.0625
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+            "rect": {
+              "x": 20,
+              "y": 1728.546875,
+              "w": 790,
+              "h": 346.125
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+            "rect": {
+              "x": 20,
+              "y": 4265.390625,
+              "w": 790,
+              "h": 535.640625
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+            "rect": {
+              "x": 20,
+              "y": 6645.125,
+              "w": 480,
+              "h": 499.90625
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+            "rect": {
+              "x": 20,
+              "y": 8866.421875,
+              "w": 715,
+              "h": 346.03125
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "tables": [
+          {
+            "rect": {
+              "x": 20,
+              "y": 6267.71875,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 320,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 7525.96875,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 320,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 8645.421875,
+              "w": 620,
+              "h": 189
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 320,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "scrolls": [
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 1728.546875,
+              "w": 320,
+              "h": 346.125
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 4265.390625,
+              "w": 320,
+              "h": 535.640625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 6267.71875,
+              "w": 320,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 480,
+            "rect": {
+              "x": 20,
+              "y": 6645.125,
+              "w": 320,
+              "h": 499.90625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 7525.96875,
+              "w": 320,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 8645.421875,
+              "w": 320,
+              "h": 189
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 715,
+            "rect": {
+              "x": 20,
+              "y": 8866.421875,
+              "w": 320,
+              "h": 346.03125
+            }
+          }
+        ],
+        "lists": [
+          {
+            "rect": {
+              "x": 41,
+              "y": 1107.5625,
+              "w": 278,
+              "h": 182.34375
+            },
+            "style": "decimal",
+            "items": 6
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 10350.53125,
+              "w": 320,
+              "h": 209.390625
+            },
+            "style": "disc",
+            "items": 6
+          }
+        ],
+        "bodyStyle": {
+          "color": "rgb(29, 29, 31)",
+          "bg": "rgb(255, 255, 255)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        },
+        "articleStyle": {
+          "color": "rgb(29, 29, 31)",
+          "bg": "rgb(255, 255, 255)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        }
+      },
+      "full": "artifacts/qa-v2/final/inspection/light-360-full.png",
+      "scroll_tests": [
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 470,
+          "max": 470,
+          "documentWidth": 360
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 470,
+          "max": 470,
+          "documentWidth": 360
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 300,
+          "max": 300,
+          "documentWidth": 360
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 160,
+          "max": 160,
+          "documentWidth": 360
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 300,
+          "max": 300,
+          "documentWidth": 360
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 300,
+          "max": 300,
+          "documentWidth": 360
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 395,
+          "max": 395,
+          "documentWidth": 360
+        }
+      ],
+      "segments": [
+        "artifacts/qa-v2/final/inspection/light-360-y0.png",
+        "artifacts/qa-v2/final/inspection/light-360-y1800.png",
+        "artifacts/qa-v2/final/inspection/light-360-y3600.png",
+        "artifacts/qa-v2/final/inspection/light-360-y5400.png",
+        "artifacts/qa-v2/final/inspection/light-360-y7200.png",
+        "artifacts/qa-v2/final/inspection/light-360-y9000.png"
+      ],
+      "toc_jump": {
+        "target": "참고-자료",
+        "exists": true,
+        "hash": "#%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C"
+      }
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 10147,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "30bfa9f6a1b660b62956e6d872bfebfaadf8ddbd3fbf4530658281eb38ee91e6",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "theme": "light",
+      "detail": {
+        "paragraphs": 31,
+        "images": [
+          {
+            "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+            "rect": {
+              "x": 20,
+              "y": 670.921875,
+              "w": 350,
+              "h": 155.28125
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+            "rect": {
+              "x": 20,
+              "y": 1674.140625,
+              "w": 790,
+              "h": 346.125
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+            "rect": {
+              "x": 20,
+              "y": 4123.28125,
+              "w": 790,
+              "h": 535.640625
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+            "rect": {
+              "x": 20,
+              "y": 6393.625,
+              "w": 480,
+              "h": 499.90625
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+            "rect": {
+              "x": 20,
+              "y": 8468.75,
+              "w": 715,
+              "h": 346.03125
+            },
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "tables": [
+          {
+            "rect": {
+              "x": 20,
+              "y": 6016.21875,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 350,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 7245.234375,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 350,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 8247.75,
+              "w": 620,
+              "h": 189
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 350,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(29, 29, 31)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "scrolls": [
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 1674.140625,
+              "w": 350,
+              "h": 346.125
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 4123.28125,
+              "w": 350,
+              "h": 535.640625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 6016.21875,
+              "w": 350,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 480,
+            "rect": {
+              "x": 20,
+              "y": 6393.625,
+              "w": 350,
+              "h": 499.90625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 7245.234375,
+              "w": 350,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 8247.75,
+              "w": 350,
+              "h": 189
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 715,
+            "rect": {
+              "x": 20,
+              "y": 8468.75,
+              "w": 350,
+              "h": 346.03125
+            }
+          }
+        ],
+        "lists": [
+          {
+            "rect": {
+              "x": 41,
+              "y": 1053.15625,
+              "w": 308,
+              "h": 182.34375
+            },
+            "style": "decimal",
+            "items": 6
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 9872.703125,
+              "w": 350,
+              "h": 209.390625
+            },
+            "style": "disc",
+            "items": 6
+          }
+        ],
+        "bodyStyle": {
+          "color": "rgb(29, 29, 31)",
+          "bg": "rgb(255, 255, 255)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        },
+        "articleStyle": {
+          "color": "rgb(29, 29, 31)",
+          "bg": "rgb(255, 255, 255)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        }
+      },
+      "full": "artifacts/qa-v2/final/inspection/light-390-full.png",
+      "scroll_tests": [
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 440,
+          "max": 440,
+          "documentWidth": 390
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 440,
+          "max": 440,
+          "documentWidth": 390
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 270,
+          "max": 270,
+          "documentWidth": 390
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 130,
+          "max": 130,
+          "documentWidth": 390
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 270,
+          "max": 270,
+          "documentWidth": 390
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 270,
+          "max": 270,
+          "documentWidth": 390
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 365,
+          "max": 365,
+          "documentWidth": 390
+        }
+      ],
+      "segments": [
+        "artifacts/qa-v2/final/inspection/light-390-y0.png",
+        "artifacts/qa-v2/final/inspection/light-390-y1800.png",
+        "artifacts/qa-v2/final/inspection/light-390-y3600.png",
+        "artifacts/qa-v2/final/inspection/light-390-y5400.png",
+        "artifacts/qa-v2/final/inspection/light-390-y7200.png",
+        "artifacts/qa-v2/final/inspection/light-390-y9000.png"
+      ],
+      "toc_jump": {
+        "target": "참고-자료",
+        "exists": true,
+        "hash": "#%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C"
+      }
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7930,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "f2b4d6267b882575e0a7f667fd8da52ef8b04139f6d1a1c8a0fcac332b553f53",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "theme": "dark",
+      "detail": {
+        "paragraphs": 31,
+        "images": [
+          {
+            "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+            "rect": {
+              "x": 220,
+              "y": 501.890625,
+              "w": 840,
+              "h": 371.109375
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+            "rect": {
+              "x": 245,
+              "y": 1573.8125,
+              "w": 790,
+              "h": 346.125
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+            "rect": {
+              "x": 245,
+              "y": 3233.328125,
+              "w": 790,
+              "h": 535.640625
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+            "rect": {
+              "x": 400,
+              "y": 4918.03125,
+              "w": 480,
+              "h": 499.90625
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+            "rect": {
+              "x": 282.5,
+              "y": 6620.421875,
+              "w": 715,
+              "h": 346.03125
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "tables": [
+          {
+            "rect": {
+              "x": 260,
+              "y": 4624.328125,
+              "w": 760,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 760,
+            "parentScroll": 760,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 260,
+              "y": 5635.015625,
+              "w": 760,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 760,
+            "parentScroll": 760,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 260,
+              "y": 6395.421875,
+              "w": 760,
+              "h": 189
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 760,
+            "parentScroll": 760,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "scrolls": [],
+        "lists": [
+          {
+            "rect": {
+              "x": 287,
+              "y": 1086.265625,
+              "w": 706,
+              "h": 182.34375
+            },
+            "style": "decimal",
+            "items": 6
+          },
+          {
+            "rect": {
+              "x": 260,
+              "y": 7647.640625,
+              "w": 760,
+              "h": 209.390625
+            },
+            "style": "disc",
+            "items": 6
+          }
+        ],
+        "bodyStyle": {
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgb(30, 31, 33)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        },
+        "articleStyle": {
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgb(30, 31, 33)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        }
+      },
+      "full": "artifacts/qa-v2/final/inspection/dark-1280-full.png",
+      "scroll_tests": [],
+      "segments": [
+        "artifacts/qa-v2/final/inspection/dark-1280-y0.png",
+        "artifacts/qa-v2/final/inspection/dark-1280-y1800.png",
+        "artifacts/qa-v2/final/inspection/dark-1280-y3600.png",
+        "artifacts/qa-v2/final/inspection/dark-1280-y5400.png",
+        "artifacts/qa-v2/final/inspection/dark-1280-y7200.png"
+      ]
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10625,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "c357431902b49cfd7e1503e291712f8ba855b85d8e1f31aea7a9cff875342a3a",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "theme": "dark",
+      "detail": {
+        "paragraphs": 31,
+        "images": [
+          {
+            "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+            "rect": {
+              "x": 20,
+              "y": 738.546875,
+              "w": 320,
+              "h": 142.0625
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+            "rect": {
+              "x": 20,
+              "y": 1728.546875,
+              "w": 790,
+              "h": 346.125
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+            "rect": {
+              "x": 20,
+              "y": 4265.390625,
+              "w": 790,
+              "h": 535.640625
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+            "rect": {
+              "x": 20,
+              "y": 6645.125,
+              "w": 480,
+              "h": 499.90625
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+            "rect": {
+              "x": 20,
+              "y": 8866.421875,
+              "w": 715,
+              "h": 346.03125
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "tables": [
+          {
+            "rect": {
+              "x": 20,
+              "y": 6267.71875,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 320,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 7525.96875,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 320,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 8645.421875,
+              "w": 620,
+              "h": 189
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 320,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "scrolls": [
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 1728.546875,
+              "w": 320,
+              "h": 346.125
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 4265.390625,
+              "w": 320,
+              "h": 535.640625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 6267.71875,
+              "w": 320,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 480,
+            "rect": {
+              "x": 20,
+              "y": 6645.125,
+              "w": 320,
+              "h": 499.90625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 7525.96875,
+              "w": 320,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 8645.421875,
+              "w": 320,
+              "h": 189
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 320,
+            "scrollWidth": 715,
+            "rect": {
+              "x": 20,
+              "y": 8866.421875,
+              "w": 320,
+              "h": 346.03125
+            }
+          }
+        ],
+        "lists": [
+          {
+            "rect": {
+              "x": 41,
+              "y": 1107.5625,
+              "w": 278,
+              "h": 182.34375
+            },
+            "style": "decimal",
+            "items": 6
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 10350.53125,
+              "w": 320,
+              "h": 209.390625
+            },
+            "style": "disc",
+            "items": 6
+          }
+        ],
+        "bodyStyle": {
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgb(30, 31, 33)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        },
+        "articleStyle": {
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgb(30, 31, 33)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        }
+      },
+      "full": "artifacts/qa-v2/final/inspection/dark-360-full.png",
+      "scroll_tests": [
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 470,
+          "max": 470,
+          "documentWidth": 360
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 470,
+          "max": 470,
+          "documentWidth": 360
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 300,
+          "max": 300,
+          "documentWidth": 360
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 160,
+          "max": 160,
+          "documentWidth": 360
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 300,
+          "max": 300,
+          "documentWidth": 360
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 300,
+          "max": 300,
+          "documentWidth": 360
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 395,
+          "max": 395,
+          "documentWidth": 360
+        }
+      ],
+      "segments": [
+        "artifacts/qa-v2/final/inspection/dark-360-y0.png",
+        "artifacts/qa-v2/final/inspection/dark-360-y1800.png",
+        "artifacts/qa-v2/final/inspection/dark-360-y3600.png",
+        "artifacts/qa-v2/final/inspection/dark-360-y5400.png",
+        "artifacts/qa-v2/final/inspection/dark-360-y7200.png",
+        "artifacts/qa-v2/final/inspection/dark-360-y9000.png"
+      ],
+      "toc_jump": {
+        "target": "참고-자료",
+        "exists": true,
+        "hash": "#%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C"
+      }
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-kimi-k3-1-pro-strengths-vs-opus-5-5/artifacts/qa-v2/final-dark-rendered/kimi-k3-1-pro-strengths-vs-opus-5-5-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 10147,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 5,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/zUcWX/dJMcacrGsKX/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XIZtpFuDWezS1pFz6qRD5S0-2Y55twL23VeT0yCgAObJ2GF8PnuSSdZtBmNRLuQY4jz95fqARwggv86W3VT4Sv/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=iIc0Zlg0bhxjaXuUVzn3QbzFElA%3D",
+          "complete": true,
+          "natural_width": 840,
+          "natural_height": 370
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/7jG0z/dJMcajjZpeT/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UQbbRN0jA_qTEIyCyOcn1yzzL6tqhiz0RBpbOYddWnTq0OGj8R5Nocg4DddZh1JWMPAZj2ibZ1mH7tzaQFDIHR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=b0yNrKW8AcjejWQ8kYtbLcnyolk%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 345
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/lciMx/dJMcajjZpeU/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WBTycCrkGuf-oLB0ZK53ZbIhvf2TlHnoeYY99_22P8_vrsHgsTx0lVT7bZGBL2iSEuIYdxKCCGNejydhMzk5zq/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VUayKrBqbUEcwxHt3DuLDUt0BsU%3D",
+          "complete": true,
+          "natural_width": 790,
+          "natural_height": 535
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bnXMku/dJMcajjZpeV/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XPswFY8N--cIKAMMnrTCLjW2eP8PUwmiuOEpVRVgfrVE-HoViOnC41VePbjruOWziSE_SeRVixcO9B2J5_EyBi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=W3cDhzRVGjtmaY6eUa60SXKPmNk%3D",
+          "complete": true,
+          "natural_width": 480,
+          "natural_height": 500
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/d08plu/dJMcacrGsKY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1U3Kl9AkF7tNmaW9R321PoPUkJthQ-0J9L-pstVG1JagRqYxoDFjwkiQaqDibKZeT43L3nJDqftcNtGbNSSzP1W/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=G7fcH4HqDqTGD98tJVan6Clwhd8%3D",
+          "complete": true,
+          "natural_width": 715,
+          "natural_height": 345
+        }
+      ],
+      "screenshot_sha256": "f9dbe123dca867930c7718704e5ec6cc8f327f2878af98f4b8cb3454a3cf95f9",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "theme": "dark",
+      "detail": {
+        "paragraphs": 31,
+        "images": [
+          {
+            "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+            "rect": {
+              "x": 20,
+              "y": 670.921875,
+              "w": 350,
+              "h": 155.28125
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+            "rect": {
+              "x": 20,
+              "y": 1674.140625,
+              "w": 790,
+              "h": 346.125
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+            "rect": {
+              "x": 20,
+              "y": 4123.28125,
+              "w": 790,
+              "h": 535.640625
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+            "rect": {
+              "x": 20,
+              "y": 6393.625,
+              "w": 480,
+              "h": 499.90625
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+            "rect": {
+              "x": 20,
+              "y": 8468.75,
+              "w": 715,
+              "h": 346.03125
+            },
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgb(245, 245, 247)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            },
+            "parentStyle": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "clip",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "tables": [
+          {
+            "rect": {
+              "x": 20,
+              "y": 6016.21875,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 350,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 7245.234375,
+              "w": 620,
+              "h": 142
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 350,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 8247.75,
+              "w": 620,
+              "h": 189
+            },
+            "parentClass": "rich-table-wrap",
+            "parentWidth": 350,
+            "parentScroll": 620,
+            "style": {
+              "color": "rgb(245, 245, 247)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "overflowX": "auto",
+              "filter": "none",
+              "opacity": "1",
+              "mixBlendMode": "normal"
+            }
+          }
+        ],
+        "scrolls": [
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 1674.140625,
+              "w": 350,
+              "h": 346.125
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 790,
+            "rect": {
+              "x": 20,
+              "y": 4123.28125,
+              "w": 350,
+              "h": 535.640625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 6016.21875,
+              "w": 350,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 480,
+            "rect": {
+              "x": 20,
+              "y": 6393.625,
+              "w": 350,
+              "h": 499.90625
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 7245.234375,
+              "w": 350,
+              "h": 142
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "rich-table-wrap",
+            "width": 350,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 8247.75,
+              "w": 350,
+              "h": 189
+            }
+          },
+          {
+            "tag": "DIV",
+            "cls": "devlog-rich__media-scroll",
+            "width": 350,
+            "scrollWidth": 715,
+            "rect": {
+              "x": 20,
+              "y": 8468.75,
+              "w": 350,
+              "h": 346.03125
+            }
+          }
+        ],
+        "lists": [
+          {
+            "rect": {
+              "x": 41,
+              "y": 1053.15625,
+              "w": 308,
+              "h": 182.34375
+            },
+            "style": "decimal",
+            "items": 6
+          },
+          {
+            "rect": {
+              "x": 20,
+              "y": 9872.703125,
+              "w": 350,
+              "h": 209.390625
+            },
+            "style": "disc",
+            "items": 6
+          }
+        ],
+        "bodyStyle": {
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgb(30, 31, 33)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        },
+        "articleStyle": {
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgb(30, 31, 33)",
+          "overflowX": "visible",
+          "filter": "none",
+          "opacity": "1",
+          "mixBlendMode": "normal"
+        }
+      },
+      "full": "artifacts/qa-v2/final/inspection/dark-390-full.png",
+      "scroll_tests": [
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 440,
+          "max": 440,
+          "documentWidth": 390
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 440,
+          "max": 440,
+          "documentWidth": 390
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 270,
+          "max": 270,
+          "documentWidth": 390
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 130,
+          "max": 130,
+          "documentWidth": 390
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 270,
+          "max": 270,
+          "documentWidth": 390
+        },
+        {
+          "cls": "rich-table-wrap",
+          "start": 0,
+          "end": 270,
+          "max": 270,
+          "documentWidth": 390
+        },
+        {
+          "cls": "devlog-rich__media-scroll",
+          "start": 0,
+          "end": 365,
+          "max": 365,
+          "documentWidth": 390
+        }
+      ],
+      "segments": [
+        "artifacts/qa-v2/final/inspection/dark-390-y0.png",
+        "artifacts/qa-v2/final/inspection/dark-390-y1800.png",
+        "artifacts/qa-v2/final/inspection/dark-390-y3600.png",
+        "artifacts/qa-v2/final/inspection/dark-390-y5400.png",
+        "artifacts/qa-v2/final/inspection/dark-390-y7200.png",
+        "artifacts/qa-v2/final/inspection/dark-390-y9000.png"
+      ],
+      "toc_jump": {
+        "target": "참고-자료",
+        "exists": true,
+        "hash": "#%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C"
+      }
+    }
+  ]
+}

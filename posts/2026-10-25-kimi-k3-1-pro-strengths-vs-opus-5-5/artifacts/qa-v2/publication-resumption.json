@@ -1,0 +1,23 @@
+{
+  "state": "final_page_review",
+  "published": false,
+  "approval_record": "author-publication-approval.json",
+  "user_authorized_publication": true,
+  "tab_id": "13",
+  "provider_tab_id": "browser-use:f69fdbf1-c774-4362-8b7d-8d60dc7f0241",
+  "editor_url": "https://dop3n.tistory.com/manage/newpost/?type=post&returnURL=%2Fmanage%2Fposts%2F",
+  "title": "Kimi K3.1 Pro란? 문서·코딩 AI의 장점과 Opus 5.5 비교",
+  "category": "AI·개발 > AI 모델·비교",
+  "uploaded_count": 5,
+  "uploaded_proof": "uploaded-image-observations.json",
+  "blocker": null,
+  "attempts": [
+    "documented JS-dialog API",
+    "native AX click and state",
+    "browser AX state",
+    "Return key",
+    "fresh tab recovery preserving all five uploaded images"
+  ],
+  "next_action": "Independent final page review, finalize exact native fragment, publish in same editor",
+  "mode_confirmation_resolved_by": "Author clicked 확인 after tool controls stalled"
+}

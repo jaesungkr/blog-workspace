@@ -1,0 +1,40 @@
+{
+  "scope": "native attachment preflight in actual Tistory hELLO iframe",
+  "cover": "automatic eventual cover not represented; check immediately after first live publication",
+  "checks": [
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "native_images": 5,
+      "scroll_width": 1280,
+      "theme": "scroll-smooth",
+      "width": 1280
+    },
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "native_images": 5,
+      "scroll_width": 1280,
+      "theme": "scroll-smooth dark",
+      "width": 1280
+    },
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "native_images": 5,
+      "scroll_width": 360,
+      "theme": "scroll-smooth dark",
+      "width": 360
+    },
+    {
+      "captions": 5,
+      "h1_count": 1,
+      "images_loaded": true,
+      "native_images": 5,
+      "overflow_elems": 0,
+      "scroll_width": 360,
+      "theme": "scroll-smooth",
+      "width": 360
+    }
+  ]
+}
