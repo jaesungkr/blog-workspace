@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "lead_id": "duet-dots-hero",
+  "items": [
+    {
+      "id": "duet-dots-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C-hero"
+      ],
+      "actor": "Codex using built-in image_gen",
+      "source": "artifacts/qa-v2/hero/hero-v2-prompt.txt",
+      "raw_path": "assets/claude-duet-chatgpt-dots-hero-v2.png",
+      "publish_path": "assets/claude-duet-chatgpt-dots-hero-v2.png",
+      "rights": "Generated for this article using OpenAI image generation; no third-party reference image used.",
+      "alt": "새 편지와 변경된 일정 카드 옆에 회의 자료가 펼쳐져 있고, 사람이 문서 모서리를 들어 검토하는 모습입니다.",
+      "caption": "메일과 일정의 변화를 회의 자료에 반영하고, 공유할 내용은 사용자가 검토하는 장면입니다.",
+      "placement": "제품의 기본 개념과 정보 확인 기준일을 설명한 도입부 다음, Duet 소개 절 앞",
+      "processing": [],
+      "redactions": [],
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "sha256": "dffec38348f566bc8dc11851167fd41da3041beb99fa1d3930d815f284287a16",
+      "status": "validated",
+      "tistory_url": ""
+    }
+  ]
+}

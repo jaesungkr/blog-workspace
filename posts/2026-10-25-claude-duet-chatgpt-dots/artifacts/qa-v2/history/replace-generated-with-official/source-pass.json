@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T23:46:10.351485Z",
+  "checked_by": "/root/source_review (independent Codex agent)",
+  "article_content_sha256": "d1dffccdd112ca4eba4902f2f153a1752ad40035f090700f8c28fd64c1a118fd",
+  "brief_sha256": "f7865fd1cfb04f00f4cc1945a8567942406d37a1102aa74ae46b94b755617630",
+  "evidence_sha256": "eca43b532d7819fc575b090d22ee67212278a391d9dbeaa0e9915c5f9c00bc2a",
+  "note": "대표 이미지 v2 배치와 모바일 표 가로 스크롤 안내, 문체 수정 및 공식 이용 조건 재확인을 검증했습니다. 로컬 검토용이며 게시·배포하지 않습니다."
+}

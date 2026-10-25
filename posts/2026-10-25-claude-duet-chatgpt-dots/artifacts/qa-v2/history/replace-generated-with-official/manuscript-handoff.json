@@ -1,0 +1,26 @@
+{
+  "scope": "local-review-with-validated-hero",
+  "status": "reviewing",
+  "article_sha256": "872d8916b157273e80920e0bf3d9ee64066080d9ab4003d4530f488bad1cc0e5",
+  "outputs": [
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-review.html",
+      "sha256": "d6e8098c0eb6894d3ef9507c59316aae1d246cfb28193b6a3e5f454735c14ebf"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-review-dark.html",
+      "sha256": "db41facdaac857af9ce75785d802fea91af6dac55f4b6580d011dfd3dec66330"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-manuscript.md",
+      "sha256": "db61bb85d1d6207b37aa0889e1429326ecdd2f07fc891cfb73f914532446233d"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-hero.png",
+      "sha256": "dffec38348f566bc8dc11851167fd41da3041beb99fa1d3930d815f284287a16"
+    }
+  ],
+  "published": false,
+  "pushed": false,
+  "remote_publication_gate": false
+}

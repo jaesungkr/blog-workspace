@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-24T23:25:25.321293Z",
+  "checked_by": "/root/source_review (independent Codex agent)",
+  "article_content_sha256": "bf4d8697788e65320beb8a547ac94af58344d4f282ed7eccd6baf502ce834944",
+  "brief_sha256": "cb7ad62c6501037fb20df565bafa6685a8c7f161e67abcd09ef44b76bfd232ba",
+  "evidence_sha256": "9107aba567ea6110a54e49f359b23d329bacc40c715c6b855ca2201856289160",
+  "note": "완성 원고 검토용 인계. 실제 제품 사용·출판용 미디어·페이지·발행 검증을 포함하지 않으며, 사용자 요청에 따라 게시·배포하지 않습니다."
+}

@@ -1,0 +1,169 @@
+[
+  {
+    "coverDisplay": "none",
+    "date": "2026. 10. 25. 09:20",
+    "headerBackground": "rgb(30, 31, 33)",
+    "headerColor": "rgb(245, 245, 247)",
+    "profile": "desktop-dark",
+    "scrollWidth": 1440,
+    "theme": "scroll-smooth dark",
+    "url": "https://dop3n.tistory.com/entry/Claude-Duet%EA%B3%BC-ChatGPT-Dots-AI%EC%97%90%EA%B2%8C-%EA%B3%84%EC%86%8D-%EC%97%85%EB%AC%B4%EB%A5%BC-%EB%A7%A1%EA%B8%B0%EB%8A%94-%EB%B0%A9%EB%B2%95",
+    "width": 1440
+  },
+  {
+    "headerBackground": "rgb(255, 255, 255)",
+    "headerColor": "rgb(29, 29, 31)",
+    "profile": "desktop-light",
+    "scrollWidth": 1440,
+    "theme": "scroll-smooth",
+    "toc": [
+      {
+        "target": true,
+        "text": "Claude Duet은 어디에서 무엇을 하나요?"
+      },
+      {
+        "target": true,
+        "text": "ChatGPT Dots는 ChatGPT 안에서 만드는 개인 에이전트"
+      },
+      {
+        "target": true,
+        "text": "“내일 회의 준비를 도와줘”를 맡기는 세 가지 방식"
+      },
+      {
+        "target": true,
+        "text": "Duet과 Dots의 작업 방식 비교"
+      },
+      {
+        "target": true,
+        "text": "맡긴 일을 확인하고 멈추는 방법"
+      },
+      {
+        "target": true,
+        "text": "한국에서의 이용 조건과 사용량"
+      },
+      {
+        "target": true,
+        "text": "회의 준비부터 개발 후속 점검까지"
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "captions": [
+      "Tasks에서 작업 상태를 확인하는 화면입니다.",
+      "무엇을 지켜보고 언제 알릴지 정하는 대화 예시입니다. 휴대폰에서는 이미지를 좌우로 밀어 읽을 수 있습니다."
+    ],
+    "images": [
+      {
+        "alt": "Claude Duet의 Tasks 목록에 Ready for review, Needs input, Working 상태로 작업이 나뉘어 표시된 화면입니다.",
+        "h": 1990,
+        "src": "https://blog.kakaocdn.net/dna/bWYp6W/dJMcacZouSF/AAAAAAAAAAAAAAAAAAAAAK91p9aSEMaXS4bfLOGpAozF9kwdCD16JK-3lxt70xQk/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=VNMzcFLm1Jw5m0kMJHlPR88O0EI%3D",
+        "w": 970
+      },
+      {
+        "alt": "Dots가 대화 사이에도 일을 이어가며 무엇을 지켜보고 언제 알려줄지 요청하는 공식 소개의 대화 예시입니다.",
+        "h": 324,
+        "src": "https://blog.kakaocdn.net/dna/bopWF7/dJMcaatNKgP/AAAAAAAAAAAAAAAAAAAAAP22eWzJ2OvOtyu4ubcTAH7czMrEoqyWtMSwTnbI9Qko/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=eXIx22e33kJqpyIkelTGjHGkCow%3D",
+        "w": 600
+      }
+    ],
+    "profile": "images-loaded"
+  },
+  {
+    "coverDisplay": "none",
+    "date": "2026. 10. 25. 09:20",
+    "dots": {
+      "left": 312,
+      "scrollWidth": 600,
+      "width": 288
+    },
+    "headerBg": "rgb(30, 31, 33)",
+    "headerColor": "rgb(245, 245, 247)",
+    "images": [
+      {
+        "alt": "Claude Duet의 Tasks 목록에 Ready for review, Needs input, Working 상태로 작업이 나뉘어 표시된 화면입니다.",
+        "h": 1990,
+        "w": 970
+      },
+      {
+        "alt": "Dots가 대화 사이에도 일을 이어가며 무엇을 지켜보고 언제 알려줄지 요청하는 공식 소개의 대화 예시입니다.",
+        "h": 324,
+        "w": 600
+      }
+    ],
+    "profile": "mobile-dark-final",
+    "scrollWidth": 816,
+    "table": {
+      "left": 332,
+      "scrollWidth": 620,
+      "width": 288
+    },
+    "theme": "scroll-smooth dark",
+    "url": "https://dop3n.tistory.com/entry/Claude-Duet%EA%B3%BC-ChatGPT-Dots-AI%EC%97%90%EA%B2%8C-%EA%B3%84%EC%86%8D-%EC%97%85%EB%AC%B4%EB%A5%BC-%EB%A7%A1%EA%B8%B0%EB%8A%94-%EB%B0%A9%EB%B2%95",
+    "width": 360
+  },
+  {
+    "coverDisplay": "none",
+    "date": "2026. 10. 25. 09:20",
+    "headerBg": "rgb(255, 255, 255)",
+    "headerColor": "rgb(29, 29, 31)",
+    "images": [
+      {
+        "alt": "Claude Duet의 Tasks 목록에 Ready for review, Needs input, Working 상태로 작업이 나뉘어 표시된 화면입니다.",
+        "h": 1990,
+        "w": 970
+      },
+      {
+        "alt": "Dots가 대화 사이에도 일을 이어가며 무엇을 지켜보고 언제 알려줄지 요청하는 공식 소개의 대화 예시입니다.",
+        "h": 324,
+        "w": 600
+      }
+    ],
+    "profile": "desktop-light-final",
+    "scrollWidth": 1280,
+    "theme": "scroll-smooth",
+    "title": "Claude Duet과 ChatGPT Dots, AI에게 계속 업무를 맡기는 방법",
+    "toc": [
+      {
+        "exists": true,
+        "label": "Claude Duet은 어디에서 무엇을 하나요?"
+      },
+      {
+        "exists": true,
+        "label": "ChatGPT Dots는 ChatGPT 안에서 만드는 개인 에이전트"
+      },
+      {
+        "exists": true,
+        "label": "“내일 회의 준비를 도와줘”를 맡기는 세 가지 방식"
+      },
+      {
+        "exists": true,
+        "label": "Duet과 Dots의 작업 방식 비교"
+      },
+      {
+        "exists": true,
+        "label": "맡긴 일을 확인하고 멈추는 방법"
+      },
+      {
+        "exists": true,
+        "label": "한국에서의 이용 조건과 사용량"
+      },
+      {
+        "exists": true,
+        "label": "회의 준비부터 개발 후속 점검까지"
+      }
+    ],
+    "url": "https://dop3n.tistory.com/entry/Claude-Duet%EA%B3%BC-ChatGPT-Dots-AI%EC%97%90%EA%B2%8C-%EA%B3%84%EC%86%8D-%EC%97%85%EB%AC%B4%EB%A5%BC-%EB%A7%A1%EA%B8%B0%EB%8A%94-%EB%B0%A9%EB%B2%95",
+    "width": 1280
+  },
+  {
+    "articleScrollWidth": 328,
+    "articleWidth": 328,
+    "bodyOverflowX": "hidden",
+    "documentScrollWidth": 816,
+    "outsideOverflow": "Google ad host aswift_1_host is 800px within body overflow-x:hidden; article is 328px and has no external overflow.",
+    "profile": "mobile-outer-skin",
+    "scrollX": 0,
+    "width": 360
+  }
+]

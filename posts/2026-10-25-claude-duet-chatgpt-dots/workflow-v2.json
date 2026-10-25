@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Claude·ChatGPT 대화 경험은 있지만 지속적인 업무 위임은 처음인 개발자와 지식 노동자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "The author explicitly requested publication after reviewing the final article and the two official screenshots. Publish the approved candidate through the Codex in-app browser. Preserve native Tistory attachment blocks, verify remote media and exact light/dark layouts, publish once and verify the live URL. Keep unrelated repository changes untouched.",
+  "publication_mode": "codex-browser"
+}

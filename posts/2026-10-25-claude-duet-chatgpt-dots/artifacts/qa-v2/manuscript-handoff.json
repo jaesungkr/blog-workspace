@@ -1,0 +1,46 @@
+{
+  "scope": "local-review-with-official-screens",
+  "status": "reviewing",
+  "article_sha256": "68efe5221855f6b334b0068c9a59fea856d7533c9d1e5c2d4f3dc7ed6ad3a9f2",
+  "outputs": [
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-tasks-official-v1.png",
+      "sha256": "d39ef22562f6b05453eed55ea3fdf9391bc94b1b0c4832305cb0b3476fc8ce18"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-hero.png",
+      "sha256": "d39ef22562f6b05453eed55ea3fdf9391bc94b1b0c4832305cb0b3476fc8ce18"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/chatgpt-dots-ongoing-work-official-v1.jpg",
+      "sha256": "3badfaafcea0625b07ca068898505cb3fa984196a556aef9bc3ce9b028524de1"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-review.html",
+      "sha256": "4894ee17890589e5bc190a40ef69ae89363605534ecf6a4df04df7c682e10653"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-review-dark.html",
+      "sha256": "a195bbb4e3307e428a1c985beded2e8e1c941c6f976771959b59f87d2441a501"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-manuscript.md",
+      "sha256": "a7be134b0bf86dd583f7d5b53e248fcc26e5a4c63b100e62349a1661df0ef221"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-official-review.html",
+      "sha256": "4894ee17890589e5bc190a40ef69ae89363605534ecf6a4df04df7c682e10653"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-official-review-dark.html",
+      "sha256": "a195bbb4e3307e428a1c985beded2e8e1c941c6f976771959b59f87d2441a501"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-screen-mobile-preview.jpg",
+      "sha256": "8ad0ab403b09f42680e3f03a4605d4b63fd9840c20e81eae909c61f1852ff712"
+    }
+  ],
+  "published": false,
+  "pushed": false,
+  "remote_publication_gate": false
+}

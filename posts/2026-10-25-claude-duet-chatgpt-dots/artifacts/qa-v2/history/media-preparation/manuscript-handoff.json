@@ -1,0 +1,21 @@
+{
+  "scope": "manuscript-only",
+  "status": "reviewing",
+  "article_sha256": "2b63bd01ca1e0f16c84d1ea738cb432e98ff8c1073463ad7c44df43a27be2c8f",
+  "outputs": [
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-manuscript.md",
+      "sha256": "471add2facf16fdeb030559df8df5753d47a384a1cf760ca09e1003a9cffadb6"
+    },
+    {
+      "path": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-review.html",
+      "sha256": "2bac4aca7aacec2361adc409a83aac1c32a0aa098bc3caf5998b9b69c20abad2"
+    }
+  ],
+  "table_rows_including_header": 9,
+  "links": 37,
+  "page_validation": "not_applicable_to_source_handoff",
+  "published": false,
+  "pushed": false,
+  "revision": "User-requested direct wording in closing sentence; no factual changes."
+}

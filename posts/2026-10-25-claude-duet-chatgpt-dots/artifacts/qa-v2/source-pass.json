@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-25T00:02:43.600479Z",
+  "checked_by": "/root/source_review (independent Codex agent)",
+  "article_content_sha256": "720b8d470c911097299b0b201ea20f609ad533396b1136dd1c94679fee6692b5",
+  "brief_sha256": "ccddd713afd84414f7e231b28072549593d61670a333da7a16d89191c142fff2",
+  "evidence_sha256": "8193f366b58527b2f86e1256ccf94bc9fe8436601621add355d35757c12a9c97",
+  "note": "사용자 요청에 따라 생성 그림을 제거하고 공식 Tasks 화면과 Dots 대화 예시로 교체했습니다. 추가 설명과 출처, 실제 사용 경험과의 구분을 검증했습니다. 로컬 검토용이며 게시·배포하지 않습니다."
+}

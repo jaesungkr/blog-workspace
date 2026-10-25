@@ -1,0 +1,30 @@
+{
+  "checked_date": "2026-10-25 Asia/Seoul",
+  "scope": "official vendor examples, not hands-on product use",
+  "duet": {
+    "page_url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+    "asset_url": "https://assets.claude.com/2ea9a7ae6dfe5a96c7e3e0fb759df5a0703704b1.png",
+    "raw": "artifacts/sources/official-screens/duet-task-list-original.png",
+    "published": "assets/claude-duet-tasks-official-v1.png",
+    "crop": {
+      "x": 930,
+      "y": 90,
+      "width": 970,
+      "height": 1990
+    }
+  },
+  "dots": {
+    "page_url": "https://learn.chatgpt.com/docs/dots#how-dots-work",
+    "browser": "Codex in-app browser",
+    "raw": "artifacts/sources/official-screens/dots-ongoing-work-original.jpg",
+    "published": "assets/chatgpt-dots-ongoing-work-official-v1.jpg",
+    "context": "artifacts/sources/official-screens/dots-source-context.jpg",
+    "clip": {
+      "x": 336,
+      "y": 153.140625,
+      "width": 600,
+      "height": 324
+    },
+    "changes": "none"
+  }
+}

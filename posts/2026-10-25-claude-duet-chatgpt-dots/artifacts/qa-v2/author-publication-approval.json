@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "author_instruction": "게시해줘",
+  "recorded_at": "2026-10-25T09:05:40+09:00",
+  "timezone": "Asia/Seoul",
+  "target_blog": "https://dop3n.tistory.com",
+  "title": "Claude Duet과 ChatGPT Dots, AI에게 계속 업무를 맡기는 방법",
+  "approved_source_pass_sha256": "b013ae9bed6ffec4fed29d15c6720157a6c5b1df756159d725d4a2d298d0c5e2",
+  "approved_article_sha256": "68efe5221855f6b334b0068c9a59fea856d7533c9d1e5c2d4f3dc7ed6ad3a9f2",
+  "approved_source_content_sha256": "720b8d470c911097299b0b201ea20f609ad533396b1136dd1c94679fee6692b5",
+  "approved_media_sha256": {
+    "duet-tasks-screen": "d39ef22562f6b05453eed55ea3fdf9391bc94b1b0c4832305cb0b3476fc8ce18",
+    "dots-ongoing-screen": "3badfaafcea0625b07ca068898505cb3fa984196a556aef9bc3ce9b028524de1"
+  },
+  "publication_mode": "codex-browser",
+  "public_visibility": true
+}

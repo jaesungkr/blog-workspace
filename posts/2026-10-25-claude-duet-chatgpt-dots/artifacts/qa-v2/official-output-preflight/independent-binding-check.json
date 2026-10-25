@@ -1,0 +1,14 @@
+[
+  {
+    "file": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-review.html",
+    "sha256": "4894ee17890589e5bc190a40ef69ae89363605534ecf6a4df04df7c682e10653",
+    "data_uri_count": 2,
+    "matches_media_json": true
+  },
+  {
+    "file": "/Users/ja2sng/Documents/Codex/2026-10-25/new-chat-4/outputs/claude-duet-chatgpt-dots-review-dark.html",
+    "sha256": "a195bbb4e3307e428a1c985beded2e8e1c941c6f976771959b59f87d2441a501",
+    "data_uri_count": 2,
+    "matches_media_json": true
+  }
+]

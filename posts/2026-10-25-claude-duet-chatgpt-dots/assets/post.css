@@ -1,0 +1,23 @@
+/* Keep the official task screenshot in the article, where its labels are readable.
+   hELLO otherwise crops that same screenshot behind the publication title. */
+body:has(.devlog-rich [data-media-id="duet-tasks-screen"]) #post > #header > .img {
+  display: none;
+}
+body:has(.devlog-rich [data-media-id="duet-tasks-screen"]) #post > #header > .info {
+  background: #ffffff;
+  color: #1d1d1f !important;
+}
+.dark body:has(.devlog-rich [data-media-id="duet-tasks-screen"]) #post > #header > .info {
+  background: #1e1f21;
+  color: #f5f5f7 !important;
+}
+body:has(.devlog-rich [data-media-id="duet-tasks-screen"]) #post > #header .desc {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body:has(.devlog-rich [data-media-id="duet-tasks-screen"]) #post > #header .date,
+body:has(.devlog-rich [data-media-id="duet-tasks-screen"]) #post > #header .category,
+body:has(.devlog-rich [data-media-id="duet-tasks-screen"]) #post > #header #admin {
+  white-space: nowrap;
+  flex-shrink: 0;
+}

@@ -1,0 +1,327 @@
+{
+  "checked_by": "/root/source_review",
+  "checked_at": "2026-10-25T00:17:03.982068Z",
+  "scope": "supplemental exact remote-preview visual observations",
+  "records": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/final-rendered/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7203,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/bWYp6W/dJMcacZouSF/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UjUdOuVxP-ONHwFJ_hzuEADLq0GXahjfvSCH3KJKrHfaks11PfionA8Y0qvtsv2rOLnxz4lQmpLLO0bgDXigPc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=RGFPql1LQ9ACHa%2FkXXgRKKTbKYY%3D",
+          "complete": true,
+          "natural_width": 970,
+          "natural_height": 1990
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bopWF7/dJMcaatNKgP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VVk33izlyTHCJAX0YeSmD4e93q8ByEqwM6tDuoYetA3oR3V-AxCQmZg0ilx3d24V0JOeRWz-XUktJeFSyc09O-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=ypJOGrqKh160yxj9BtR7ZzDGQqg%3D",
+          "complete": true,
+          "natural_width": 600,
+          "natural_height": 324
+        }
+      ],
+      "screenshot_sha256": "528f3a5e52d1643b730ef30e79b469348ec627ca077310306c7ee2ddf94961d1",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "supplemental_full": "artifacts/qa-v2/final/supplemental/light-1280-full.png",
+      "layout": {
+        "figures": [
+          {
+            "width": 430,
+            "height": 923.734375,
+            "images": [
+              {
+                "width": 430,
+                "height": 880.046875,
+                "complete": true,
+                "naturalWidth": 970
+              }
+            ]
+          },
+          {
+            "width": 600,
+            "height": 368.59375,
+            "images": [
+              {
+                "width": 600,
+                "height": 324.90625,
+                "complete": true,
+                "naturalWidth": 600
+              }
+            ]
+          }
+        ],
+        "scrolls": [
+          {
+            "width": 600,
+            "contentWidth": 600,
+            "scrollLeft": 0
+          },
+          {
+            "width": 760,
+            "contentWidth": 760,
+            "scrollLeft": 0
+          }
+        ],
+        "text": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)"
+      },
+      "theme": "light",
+      "preview_sha256": "fa3d2db7300bd9d116180b5b41b516f52442664e515cd5a1c6ca4c71ba4ed402"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/final-rendered/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10829,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/bWYp6W/dJMcacZouSF/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UjUdOuVxP-ONHwFJ_hzuEADLq0GXahjfvSCH3KJKrHfaks11PfionA8Y0qvtsv2rOLnxz4lQmpLLO0bgDXigPc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=RGFPql1LQ9ACHa%2FkXXgRKKTbKYY%3D",
+          "complete": true,
+          "natural_width": 970,
+          "natural_height": 1990
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bopWF7/dJMcaatNKgP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VVk33izlyTHCJAX0YeSmD4e93q8ByEqwM6tDuoYetA3oR3V-AxCQmZg0ilx3d24V0JOeRWz-XUktJeFSyc09O-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=ypJOGrqKh160yxj9BtR7ZzDGQqg%3D",
+          "complete": true,
+          "natural_width": 600,
+          "natural_height": 324
+        }
+      ],
+      "screenshot_sha256": "0a46a828d1e4e2ea1f913d846fb4261deeb2e524d11f547cc341bbf4991c1115",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "supplemental_full": "artifacts/qa-v2/final/supplemental/light-360-full.png",
+      "layout": {
+        "figures": [
+          {
+            "width": 320,
+            "height": 698.078125,
+            "images": [
+              {
+                "width": 320,
+                "height": 654.390625,
+                "complete": true,
+                "naturalWidth": 970
+              }
+            ]
+          },
+          {
+            "width": 320,
+            "height": 390.28125,
+            "images": [
+              {
+                "width": 600,
+                "height": 324.90625,
+                "complete": true,
+                "naturalWidth": 600
+              }
+            ]
+          }
+        ],
+        "scrolls": [
+          {
+            "width": 320,
+            "contentWidth": 600,
+            "scrollLeft": 0
+          },
+          {
+            "width": 320,
+            "contentWidth": 620,
+            "scrollLeft": 0
+          }
+        ],
+        "text": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)"
+      },
+      "theme": "light",
+      "preview_sha256": "fa3d2db7300bd9d116180b5b41b516f52442664e515cd5a1c6ca4c71ba4ed402"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/final-dark-rendered/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7203,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/bWYp6W/dJMcacZouSF/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UjUdOuVxP-ONHwFJ_hzuEADLq0GXahjfvSCH3KJKrHfaks11PfionA8Y0qvtsv2rOLnxz4lQmpLLO0bgDXigPc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=RGFPql1LQ9ACHa%2FkXXgRKKTbKYY%3D",
+          "complete": true,
+          "natural_width": 970,
+          "natural_height": 1990
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bopWF7/dJMcaatNKgP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VVk33izlyTHCJAX0YeSmD4e93q8ByEqwM6tDuoYetA3oR3V-AxCQmZg0ilx3d24V0JOeRWz-XUktJeFSyc09O-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=ypJOGrqKh160yxj9BtR7ZzDGQqg%3D",
+          "complete": true,
+          "natural_width": 600,
+          "natural_height": 324
+        }
+      ],
+      "screenshot_sha256": "1d2917b2310561a4ae20c403abf7ebf3c83375c0322285afecd1f92f6ac1576b",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "supplemental_full": "artifacts/qa-v2/final/supplemental/dark-1280-full.png",
+      "layout": {
+        "figures": [
+          {
+            "width": 430,
+            "height": 923.734375,
+            "images": [
+              {
+                "width": 430,
+                "height": 880.046875,
+                "complete": true,
+                "naturalWidth": 970
+              }
+            ]
+          },
+          {
+            "width": 600,
+            "height": 368.59375,
+            "images": [
+              {
+                "width": 600,
+                "height": 324.90625,
+                "complete": true,
+                "naturalWidth": 600
+              }
+            ]
+          }
+        ],
+        "scrolls": [
+          {
+            "width": 600,
+            "contentWidth": 600,
+            "scrollLeft": 0
+          },
+          {
+            "width": 760,
+            "contentWidth": 760,
+            "scrollLeft": 0
+          }
+        ],
+        "text": "rgb(245, 245, 247)",
+        "background": "rgb(30, 31, 33)"
+      },
+      "theme": "dark",
+      "preview_sha256": "641ee4400dbc088faa8bb41cdd1f02c47e90879fcfefa747e056515947c999fb"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/final-dark-rendered/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10829,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/bWYp6W/dJMcacZouSF/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UjUdOuVxP-ONHwFJ_hzuEADLq0GXahjfvSCH3KJKrHfaks11PfionA8Y0qvtsv2rOLnxz4lQmpLLO0bgDXigPc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=RGFPql1LQ9ACHa%2FkXXgRKKTbKYY%3D",
+          "complete": true,
+          "natural_width": 970,
+          "natural_height": 1990
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/bopWF7/dJMcaatNKgP/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VVk33izlyTHCJAX0YeSmD4e93q8ByEqwM6tDuoYetA3oR3V-AxCQmZg0ilx3d24V0JOeRWz-XUktJeFSyc09O-/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=ypJOGrqKh160yxj9BtR7ZzDGQqg%3D",
+          "complete": true,
+          "natural_width": 600,
+          "natural_height": 324
+        }
+      ],
+      "screenshot_sha256": "cd0cb607ecb2f324e4b3afa99b8fe4db184a0751e13d538391efa822fb4f736e",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "supplemental_full": "artifacts/qa-v2/final/supplemental/dark-360-full.png",
+      "layout": {
+        "figures": [
+          {
+            "width": 320,
+            "height": 698.078125,
+            "images": [
+              {
+                "width": 320,
+                "height": 654.390625,
+                "complete": true,
+                "naturalWidth": 970
+              }
+            ]
+          },
+          {
+            "width": 320,
+            "height": 390.28125,
+            "images": [
+              {
+                "width": 600,
+                "height": 324.90625,
+                "complete": true,
+                "naturalWidth": 600
+              }
+            ]
+          }
+        ],
+        "scrolls": [
+          {
+            "width": 320,
+            "contentWidth": 600,
+            "scrollLeft": 0
+          },
+          {
+            "width": 320,
+            "contentWidth": 620,
+            "scrollLeft": 0
+          }
+        ],
+        "text": "rgb(245, 245, 247)",
+        "background": "rgb(30, 31, 33)"
+      },
+      "theme": "dark",
+      "preview_sha256": "641ee4400dbc088faa8bb41cdd1f02c47e90879fcfefa747e056515947c999fb"
+    }
+  ]
+}

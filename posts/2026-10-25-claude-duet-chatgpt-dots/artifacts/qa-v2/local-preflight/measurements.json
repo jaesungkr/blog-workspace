@@ -1,0 +1,167 @@
+{
+  "scope": "local-preflight-only",
+  "actor": "Codex",
+  "records": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/preflight/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6233,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "width": 916,
+          "height": 516.390625,
+          "alt": "새 편지와 변경된 일정 카드 옆에 회의 자료가 펼쳐져 있고, 사람이 문서 모서리를 들어 검토하는 모습입니다."
+        }
+      ],
+      "tables": [
+        {
+          "rows": 9,
+          "cols": 3
+        }
+      ],
+      "table_scroll_width": 760,
+      "table_client_width": 760,
+      "body_background": "rgb(255, 255, 255)",
+      "article_text_color": "rgb(29, 29, 31)",
+      "headings": [],
+      "font": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, -apple-system, \"system-ui\", sans-serif",
+      "theme": "light",
+      "viewport_width": 1280,
+      "preview_sha256": "e41a65353f2457cc8d818eaaa090cb43f515a7271405ce3c9fdb83282efa720d",
+      "viewport_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/light-1280-top.png",
+      "full_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/light-1280-full.png",
+      "status": "pass"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/preflight/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 9640,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "width": 320,
+          "height": 180.96875,
+          "alt": "새 편지와 변경된 일정 카드 옆에 회의 자료가 펼쳐져 있고, 사람이 문서 모서리를 들어 검토하는 모습입니다."
+        }
+      ],
+      "tables": [
+        {
+          "rows": 9,
+          "cols": 3
+        }
+      ],
+      "table_scroll_width": 620,
+      "table_client_width": 320,
+      "body_background": "rgb(255, 255, 255)",
+      "article_text_color": "rgb(29, 29, 31)",
+      "headings": [],
+      "font": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, -apple-system, \"system-ui\", sans-serif",
+      "theme": "light",
+      "viewport_width": 360,
+      "preview_sha256": "e41a65353f2457cc8d818eaaa090cb43f515a7271405ce3c9fdb83282efa720d",
+      "viewport_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/light-360-top.png",
+      "full_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/light-360-full.png",
+      "status": "pass"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/preflight-dark/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6233,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "width": 916,
+          "height": 516.390625,
+          "alt": "새 편지와 변경된 일정 카드 옆에 회의 자료가 펼쳐져 있고, 사람이 문서 모서리를 들어 검토하는 모습입니다."
+        }
+      ],
+      "tables": [
+        {
+          "rows": 9,
+          "cols": 3
+        }
+      ],
+      "table_scroll_width": 760,
+      "table_client_width": 760,
+      "body_background": "rgb(30, 31, 33)",
+      "article_text_color": "rgb(245, 245, 247)",
+      "headings": [],
+      "font": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, -apple-system, \"system-ui\", sans-serif",
+      "theme": "dark",
+      "viewport_width": 1280,
+      "preview_sha256": "f32464b225f11dcb19a1f93591d1e702c610988ee20a2d730a477d7d15ce917e",
+      "viewport_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/dark-1280-top.png",
+      "full_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/dark-1280-full.png",
+      "status": "pass"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/preflight-dark/claude-duet-chatgpt-dots-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 9640,
+      "h1_count": 1,
+      "toc_anchor_count": 7,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "width": 320,
+          "height": 180.96875,
+          "alt": "새 편지와 변경된 일정 카드 옆에 회의 자료가 펼쳐져 있고, 사람이 문서 모서리를 들어 검토하는 모습입니다."
+        }
+      ],
+      "tables": [
+        {
+          "rows": 9,
+          "cols": 3
+        }
+      ],
+      "table_scroll_width": 620,
+      "table_client_width": 320,
+      "body_background": "rgb(30, 31, 33)",
+      "article_text_color": "rgb(245, 245, 247)",
+      "headings": [],
+      "font": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", system-ui, -apple-system, \"system-ui\", sans-serif",
+      "theme": "dark",
+      "viewport_width": 360,
+      "preview_sha256": "f32464b225f11dcb19a1f93591d1e702c610988ee20a2d730a477d7d15ce917e",
+      "viewport_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/dark-360-top.png",
+      "full_screenshot": "/Users/ja2sng/dev/blog-workspace/posts/2026-10-25-claude-duet-chatgpt-dots/artifacts/qa-v2/local-preflight/dark-360-full.png",
+      "status": "pass"
+    }
+  ],
+  "publication_gate": false
+}
