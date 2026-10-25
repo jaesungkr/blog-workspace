@@ -1,0 +1,20 @@
+{
+  "state": "reviewing",
+  "handoff": "author review of complete local candidate before publication",
+  "source_review": "pass by /root/source_cold_review",
+  "media_review": "five exact publication assets passed independent source asset review",
+  "local_preflight": "pass; 1280/390/360 light and dark; no page overflow, image and table horizontal scrolling checked",
+  "pending": [
+    "specific author instruction to publish",
+    "native Tistory attachments",
+    "remote byte observation",
+    "independent final remote page gate",
+    "live publication verification"
+  ],
+  "outputs": {
+    "kimi-k3-1-pro-preview.jpg": "dcfad7f4b2754d521c8a17d7c0d47335e6dd3efd8760bfdc590ad702cdabde0c",
+    "kimi-k3-1-pro-article.md": "8578d9dc27b62604956a165cb222c724f61b9e369ecd45d8bbc7e1bff4fb71ee",
+    "kimi-k3-1-pro-review.html": "59dd13ae5a01daf630071fbf1ae51061f62d30833a401f11cf04605038ed3169",
+    "kimi-k3-1-pro-review-dark.html": "464e51923c9914df33fc068cdeb7a76910ada6b3aba603ab09f0058712dc0852"
+  }
+}

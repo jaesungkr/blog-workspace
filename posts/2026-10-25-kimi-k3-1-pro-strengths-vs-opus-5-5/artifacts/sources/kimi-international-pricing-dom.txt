@@ -1,0 +1,304 @@
+- blockquote:
+  - heading [level=2]: Documentation Index
+  - paragraph:
+    - text: "Fetch the complete documentation index at:"
+    - link:
+      - /url: /docs/llms.txt
+      - text: /docs/llms.txt
+  - paragraph: Use this file to discover all available pages before exploring further.
+- link "Skip to main content":
+  - /url: "#content-area"
+- banner:
+  - paragraph:
+    - text: 🎉 Kimi K3.1 Pro has launched!
+    - link "Start exploring now!":
+      - /url: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
+  - button "Dismiss banner":
+  - link "Kimi API Platform home page light logo":
+    - /url: https://platform.kimi.ai
+    - generic: Kimi API Platform home page
+    - img "light logo"
+  - navigation "Main":
+    - list:
+      - link "Guides":
+        - /url: /docs/get-your-api-key
+      - link "API Reference":
+        - /url: /docs/api/overview
+      - link "Models & Pricing":
+        - /url: /docs/pricing/chat
+      - button "Resources":
+        - text: Resources
+  - button "Open search":
+  - list:
+    - link "Kimi Business":
+      - /url: https://www.kimi.com/membership/pricing?from=platform_page&open=business
+      - generic: Kimi Business
+    - link "Contact Sales":
+      - /url: https://platform.kimi.ai/contact-sales
+      - generic: Contact Sales
+    - link "User Center":
+      - /url: https://platform.kimi.ai/console/account
+      - generic: User Center
+  - button "Change theme preference":
+- navigation "Pages":
+  - heading "Model Pricing" [level=3]
+  - list:
+    - link "Overview":
+      - /url: /docs/pricing/chat
+      - generic: Overview
+  - heading "Other Pricing" [level=3]
+  - list:
+    - link "BatchJob Pricing":
+      - /url: /docs/pricing/batch
+      - generic: BatchJob Pricing
+    - link "WebSearch Pricing":
+      - /url: /docs/pricing/websearch
+      - generic: WebSearch Pricing
+  - heading "Top-up & Rate Limits" [level=3]
+  - list:
+    - link "Recharge and Rate Limits":
+      - /url: /docs/pricing/limits
+      - generic: Recharge and Rate Limits
+  - heading "Models" [level=3]
+  - list:
+    - link "Kimi K3.1 Pro":
+      - /url: /docs/guide/kimi-k3-1-pro-quickstart
+      - generic: Kimi K3.1 Pro
+    - link "Kimi K3":
+      - /url: /docs/guide/kimi-k3-quickstart
+      - generic: Kimi K3
+    - link "Kimi K2.7 Code":
+      - /url: /docs/guide/kimi-k2-7-code-quickstart
+      - generic: Kimi K2.7 Code
+    - link "Kimi K2.6":
+      - /url: /docs/guide/kimi-k2-6-quickstart
+      - generic: Kimi K2.6
+    - link "Model List":
+      - /url: /docs/models
+      - generic: Model List
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem: Model Pricing
+  - heading "Model Inference Pricing Explanation" [level=1]
+  - button "Copy page":
+    - generic: Copy page
+  - button "More actions":
+  - paragraph: Understand token billing, input and output charges, cache discounts, and pricing links for Kimi model inference.
+  - heading "Navigate to header Model Pricing" [level=2]:
+    - link "Navigate to header":
+      - /url: "#model-pricing"
+    - generic: Model Pricing
+  - heading "Navigate to header K3 Series Models" [level=3]:
+    - link "Navigate to header":
+      - /url: "#k3-series-models"
+    - generic: K3 Series Models
+  - generic: All K3 series models support a 1,048,576-token context window.
+  - table:
+    - rowgroup:
+      - row "Model Base tokens Prompt caching":
+        - columnheader "Model"
+        - columnheader "Base tokens"
+        - columnheader "Prompt caching"
+      - row "Name Input Output Cached Input 5m writes 1h writes":
+        - columnheader "Name"
+        - columnheader "Input"
+        - columnheader "Output"
+        - columnheader "Cached Input":
+          - button "Cached Input"
+        - columnheader "5m writes":
+          - button "5m writes"
+        - columnheader "1h writes":
+          - button "1h writes"
+    - rowgroup:
+      - row "kimi-k3.1-pro $2.00 / MTok $10.00 / MTok $0.20 / MTok $2.00 / MTok $4.00 / MTok":
+        - cell "kimi-k3.1-pro":
+          - link "kimi-k3.1-pro":
+            - /url: /docs/guide/kimi-k3-1-pro-quickstart
+        - cell "$2.00 / MTok":
+          - generic: $2.00 / MTok
+        - cell "$10.00 / MTok":
+          - generic: $10.00 / MTok
+        - cell "$0.20 / MTok":
+          - generic: $0.20 / MTok
+        - cell "$2.00 / MTok":
+          - generic: $2.00 / MTok
+        - cell "$4.00 / MTok":
+          - generic: $4.00 / MTok
+      - row "kimi-k3.1-pro-highspeed $4.00 / MTok $20.00 / MTok $0.20 / MTok $4.00 / MTok $8.00 / MTok":
+        - cell "kimi-k3.1-pro-highspeed":
+          - link "kimi-k3.1-pro-highspeed":
+            - /url: /docs/guide/kimi-k3-1-pro-quickstart
+        - cell "$4.00 / MTok":
+          - generic: $4.00 / MTok
+        - cell "$20.00 / MTok":
+          - generic: $20.00 / MTok
+        - cell "$0.20 / MTok":
+          - generic: $0.20 / MTok
+        - cell "$4.00 / MTok":
+          - generic: $4.00 / MTok
+        - cell "$8.00 / MTok":
+          - generic: $8.00 / MTok
+      - row "kimi-k3 $3.00 / MTok $15.00 / MTok $0.30 / MTok $3.00 / MTok $6.00 / MTok":
+        - cell "kimi-k3":
+          - link "kimi-k3":
+            - /url: /docs/guide/kimi-k3-quickstart
+        - cell "$3.00 / MTok":
+          - generic: $3.00 / MTok
+        - cell "$15.00 / MTok":
+          - generic: $15.00 / MTok
+        - cell "$0.30 / MTok":
+          - generic: $0.30 / MTok
+        - cell "$3.00 / MTok":
+          - generic: $3.00 / MTok
+        - cell "$6.00 / MTok":
+          - generic: $6.00 / MTok
+  - text: "Note: The Kimi API"
+  - strong: automatically enables
+  - text: context caching billing for repeated request prefixes, with a default TTL (time-to-live) of 5m. For TTL settings and cost optimization tips, see
+  - link "Best Practices for Context Caching":
+    - /url: /docs/guide/context-caching
+  - text: .
+  - heading "Navigate to header K2 Series Models" [level=3]:
+    - link "Navigate to header":
+      - /url: "#k2-series-models"
+    - generic: K2 Series Models
+  - generic: All K2 series models support a 262,144-token context window.
+  - note "Note":
+    - text: Dear Kimi Users, starting October 31, 2026, K2 series models will no longer be available to newly registered users; existing users are not affected. We plan to retire all K2 series models by the end of December 2026, please
+    - link "prepare your migration":
+      - /url: /docs/guide/kimi-k3-1-pro-quickstart
+    - text: in advance.
+  - table:
+    - rowgroup:
+      - row "Model Base tokens Prompt caching":
+        - columnheader "Model"
+        - columnheader "Base tokens"
+        - columnheader "Prompt caching"
+      - row "Name Input Output Cached Input":
+        - columnheader "Name"
+        - columnheader "Input"
+        - columnheader "Output"
+        - columnheader "Cached Input":
+          - button "Cached Input"
+    - rowgroup:
+      - row "kimi-k2.7-code $0.95 / MTok $4.00 / MTok $0.19 / MTok":
+        - cell "kimi-k2.7-code":
+          - link "kimi-k2.7-code":
+            - /url: /docs/guide/kimi-k2-7-code-quickstart
+        - cell "$0.95 / MTok":
+          - generic: $0.95 / MTok
+        - cell "$4.00 / MTok":
+          - generic: $4.00 / MTok
+        - cell "$0.19 / MTok":
+          - generic: $0.19 / MTok
+      - row "kimi-k2.7-code-highspeed $1.90 / MTok $8.00 / MTok $0.38 / MTok":
+        - cell "kimi-k2.7-code-highspeed":
+          - link "kimi-k2.7-code-highspeed":
+            - /url: /docs/guide/kimi-k2-7-code-quickstart
+        - cell "$1.90 / MTok":
+          - generic: $1.90 / MTok
+        - cell "$8.00 / MTok":
+          - generic: $8.00 / MTok
+        - cell "$0.38 / MTok":
+          - generic: $0.38 / MTok
+      - row "kimi-k2.6 $0.95 / MTok $4.00 / MTok $0.16 / MTok":
+        - cell "kimi-k2.6":
+          - link "kimi-k2.6":
+            - /url: /docs/guide/kimi-k2-6-quickstart
+        - cell "$0.95 / MTok":
+          - generic: $0.95 / MTok
+        - cell "$4.00 / MTok":
+          - generic: $4.00 / MTok
+        - cell "$0.16 / MTok":
+          - generic: $0.16 / MTok
+  - generic: Here, 1 MTok = 1,000,000 tokens. The prices in the table represent the cost per MTok consumed.
+  - strong: "Explanation: Prices exclude applicable taxes. Specific tax obligations are subject to local tax regulations and will be calculated at checkout based on your jurisdiction."
+  - heading "Navigate to header Concepts" [level=2]:
+    - link "Navigate to header":
+      - /url: "#concepts"
+    - generic: Concepts
+  - note "Note":
+    - text: Model inference on the Kimi API platform is billed on a pay-as-you-go basis, with no subscription plan. It differs from products such as the Kimi membership and Kimi Code.
+    - link "See the product comparison":
+      - /url: /docs/guide/product-plans
+    - text: .
+  - heading "Navigate to header Billing Unit" [level=3]:
+    - link "Navigate to header":
+      - /url: "#billing-unit"
+    - generic: Billing Unit
+  - text: "Token: A token represents a common sequence of characters. The number of tokens used for each English character may vary. For example, a single character like “antidisestablishmentarianism” might be broken down into several tokens, while a short and common phrase like “word” might use just one token. Generally speaking, for a typical English text, 1 token is roughly equivalent to 3-4 English characters. The exact number of tokens generated by each call can be obtained through the"
+  - link "Token Calculation API":
+    - /url: /docs/api/estimate
+  - text: .
+  - heading "Navigate to header Billing Logic" [level=3]:
+    - link "Navigate to header":
+      - /url: "#billing-logic"
+    - generic: Billing Logic
+  - text: Model inference APIs bill both Input and Output based on usage. For K3 series models, cache writes are billed separately by TTL (5min / 1h); cached input is billed at the cache-hit price only, with no additional cache write charge. If you upload and extract content from a document and then pass the extracted content as Input to the model, the document content will also be billed based on usage. File-related APIs (file content extraction and file storage) are
+  - strong: temporarily free
+  - text: ": if you only upload and extract a document, the file APIs themselves incur no charges. For tips on improving cache hit rates and choosing a TTL tier, see"
+  - link "Best Practices for Context Caching":
+    - /url: /docs/guide/context-caching
+  - text: .
+  - heading "Navigate to header Model Notes" [level=2]:
+    - link "Navigate to header":
+      - /url: "#model-notes"
+    - generic: Model Notes
+  - generic: "See each model’s guide for capabilities and recommended use cases:"
+  - list:
+    - link "Kimi K3.1 Pro":
+      - /url: /docs/guide/kimi-k3-1-pro-quickstart
+    - link "Kimi K3":
+      - /url: /docs/guide/kimi-k3-quickstart
+    - link "Kimi K2.7 Code":
+      - /url: /docs/guide/kimi-k2-7-code-quickstart
+    - link "Kimi K2.6":
+      - /url: /docs/guide/kimi-k2-6-quickstart
+  - paragraph: Was this page helpful?
+  - button "Yes":
+    - generic: "Yes"
+  - button "No":
+    - generic: "No"
+  - navigation "Pagination":
+    - link "BatchJob Pricing Next":
+      - /url: /docs/pricing/batch
+      - generic: BatchJob Pricing
+      - generic: Next
+  - link "x":
+    - /url: https://x.com/Kimi_Moonshot
+    - generic: x
+  - link "github":
+    - /url: https://github.com/MoonshotAI
+    - generic: github
+  - link "linkedin":
+    - /url: https://www.linkedin.com/company/kimi-ai-linkedin
+    - generic: linkedin
+  - link "discord":
+    - /url: https://discord.com/invite/TYU2fdJykW?source=docs_footer
+    - generic: discord
+  - link "website":
+    - /url: https://forum.moonshot.ai/?source=docs_footer
+    - generic: website
+  - navigation "On this page":
+    - heading "On this page" [level=2]:
+      - button "On this page":
+        - generic: On this page
+    - list:
+      - link "Model Pricing":
+        - /url: "#model-pricing"
+      - list:
+        - link "K3 Series Models":
+          - /url: "#k3-series-models"
+        - link "K2 Series Models":
+          - /url: "#k2-series-models"
+      - link "Concepts":
+        - /url: "#concepts"
+      - list:
+        - link "Billing Unit":
+          - /url: "#billing-unit"
+        - link "Billing Logic":
+          - /url: "#billing-logic"
+      - link "Model Notes":
+        - /url: "#model-notes"
+- alert

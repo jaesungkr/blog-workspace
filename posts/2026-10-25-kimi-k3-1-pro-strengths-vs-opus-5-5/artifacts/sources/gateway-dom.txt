@@ -1,0 +1,1467 @@
+- link "Skip to content":
+  - /url: "#geist-skip-nav"
+- banner:
+  - link "Vercel":
+    - /url: /home
+  - navigation "Main navigation":
+    - button "Products":
+      - text: Products
+    - button "Resources":
+      - text: Resources
+    - link "Enterprise":
+      - /url: /enterprise
+      - generic: Enterprise
+    - link "Pricing":
+      - /url: /pricing
+      - generic: Pricing
+  - link "Get a Demo":
+    - /url: /contact/sales
+    - generic: Get a Demo
+  - link "Log In":
+    - /url: /login
+    - generic: Log In
+  - link "Sign Up":
+    - /url: /signup
+    - generic: Sign Up
+- link "AI Gateway":
+  - /url: /ai-gateway
+- navigation "AI Gateway":
+  - link "Overview":
+    - /url: /ai-gateway
+    - generic: Overview
+  - link "Models":
+    - /url: /ai-gateway/models
+    - generic: Models
+  - link "Leaderboards":
+    - /url: /ai-gateway/leaderboards/models
+    - generic: Leaderboards
+  - link "Docs":
+    - /url: https://vercel.com/docs/ai-gateway
+    - text: Docs
+    - generic: ↗
+- article:
+  - link "Moonshot AI":
+    - /url: /ai-gateway/models/labs/moonshotai
+  - heading "Kimi K3.1 Pro" [level=1]
+  - button "Copy model identifier":
+  - paragraph:
+    - text: Kimi K3.1 Pro is a frontier model from Moonshot AI for complex reasoning, coding, and agentic workflows, with support for vision, tool use, structured outputs, and long-context tasks.
+    - text: Your use is subject to Moonshot AI's
+    - link "Terms":
+      - /url: https://platform.moonshot.ai/docs/agreement/modeluse.en-US
+    - text: "&"
+    - link "Privacy":
+      - /url: https://platform.moonshot.ai/docs/agreement/userprivacy.en-US
+    - text: Policies.
+  - link "View API reference":
+    - /url: "#api"
+  - term:
+    - text: Input / output price
+    - generic: Input and output price
+  - definition:
+    - generic: Input $2, Output $10, Per 1M tokens
+    - generic: $2 / $10
+    - generic: per 1M
+  - term: 24h uptime
+  - definition:
+    - 'link "AI Gateway uptime over the past 24 hours: 99.95%"':
+      - /url: /ai-gateway/models/kimi-k3.1-pro#uptime
+      - text: 99.95%
+  - link "Get API key":
+    - /url: https://vercel.com/d?to=%2F%5Bteam%5D%2F~%2Fai-gateway%2Fquick-start%3FshowCreateKeyModal%3Dauto%26utm_source%3Dgateway-model-page%26utm_campaign%3Dai-gateway-models&title=Get%20API%20key
+    - generic: Get API key
+  - link "Read the docs":
+    - /url: https://vercel.com/docs/ai-gateway
+    - generic: Read the docs
+  - tablist "Set up this model":
+    - tab "API" [selected]:
+      - generic: API
+      - generic: API
+    - tab "Claude Code":
+      - generic: Claude Code
+      - generic: Claude Code
+    - tab "Codex":
+      - generic: Codex
+      - generic: Codex
+    - tab "Hermes":
+      - generic: Hermes
+      - generic: Hermes
+    - tab "Command Code":
+      - generic: Command Code
+      - generic: Command Code
+    - tab "OpenClaw":
+      - generic: OpenClaw
+      - generic: OpenClaw
+    - tab "fx":
+      - generic: fx
+      - generic: fx
+  - tabpanel "API":
+    - generic "Example using streamText and AI Gateway":
+      - generic: AI SDK
+      - combobox "Gateway API":
+        - option "AI SDK" [selected]
+        - option "Chat Completions"
+        - option "Messages"
+        - option "Responses"
+      - tablist "Snippet language":
+        - tab "TypeScript" [selected]:
+          - generic: TypeScript
+          - generic: TypeScript
+        - tab "Python in public beta":
+          - generic: Python
+          - generic: Python
+          - img "in public beta"
+      - button "Copy to clipboard":
+      - code:
+        - button: "1"
+        - generic: "import { streamText } from 'ai'"
+        - button: "2"
+        - button: "3"
+        - generic: "const result = streamText({"
+        - button: "4"
+        - generic: "model: 'moonshotai/kimi-k3.1-pro',"
+        - button: "5"
+        - generic: "prompt: 'Why is the sky blue?'"
+        - button: "6"
+        - generic: "})"
+    - button "Copy for agent":
+      - generic: Copy for agent
+    - link "Read docs":
+      - /url: https://vercel.com/docs/ai-gateway/sdks-and-apis/ai-sdk
+      - text: Read docs
+  - navigation "Model sections":
+    - link "Overview":
+      - /url: "#overview"
+    - link "Playground":
+      - /url: "#playground"
+    - link "Providers":
+      - /url: "#providers"
+    - link "Uptime":
+      - /url: "#uptime"
+    - link "Status":
+      - /url: "#status"
+    - link "Throughput":
+      - /url: "#throughput"
+    - link "Latency":
+      - /url: "#latency"
+    - link "API":
+      - /url: "#api"
+    - link "Similar":
+      - /url: "#similar"
+  - heading "Copy link to heading Playground" [level=2]:
+    - link "Copy link to heading":
+      - /url: "#playground"
+      - generic: Copy link to heading
+    - text: Playground
+  - paragraph: Try out Kimi K3.1 Pro by Moonshot AI. Usage is billed to your team at API rates. Free users (those who haven't made a payment) get $5 of credits every 30 days.
+  - img "moonshotai logo"
+  - generic: Kimi K3.1 Pro
+  - button "Reset playground":
+  - log:
+    - img "moonshotai logo"
+    - paragraph: Kimi K3.1 Pro
+    - button "Explain quantum computing in simple terms"
+    - button "Write a haiku about the ocean"
+    - button "What are the tradeoffs of TypeScript vs JavaScript?"
+  - textbox "Ask Kimi K3.1 Pro…"
+  - button "Add files":
+  - button "Send message":
+  - heading "Copy link to heading Providers" [level=2]:
+    - link "Copy link to heading":
+      - /url: "#providers"
+      - generic: Copy link to heading
+    - text: Providers
+  - paragraph:
+    - text: Route requests across multiple providers. Copy a provider slug to set your preference. Visit the
+    - link "docs":
+      - /url: /docs/ai-gateway/provider-options
+      - text: docs
+    - text: for more info. Using a provider means you agree to their terms, listed under Legal.
+  - button "Columns (14)":
+    - text: Columns
+    - generic: (14)
+  - table:
+    - rowgroup:
+      - row "Provider":
+        - generic: Provider
+  - table:
+    - rowgroup:
+      - row "Context Max Output Latency Throughput Cache Hit Input Output Cache Search Capabilities ZDR No Training Free AI Gateway Credit Release Date":
+        - columnheader "Context":
+          - generic: Context
+        - columnheader "Max Output":
+          - generic: Max Output
+        - columnheader "Latency":
+          - generic: Latency
+        - columnheader "Throughput":
+          - generic: Throughput
+        - columnheader "Cache Hit":
+          - generic: Cache Hit
+        - columnheader "Input":
+          - generic: Input
+        - columnheader "Output":
+          - generic: Output
+        - columnheader "Cache":
+          - generic: Cache
+        - columnheader "Search":
+          - generic: Search
+        - columnheader "Capabilities":
+          - generic: Capabilities
+        - columnheader "ZDR":
+          - generic: ZDR
+        - columnheader "No Training":
+          - generic: No Training
+        - columnheader "Free AI Gateway Credit":
+          - generic: Free AI Gateway Credit
+        - columnheader "Release Date":
+          - generic: Release Date
+        - columnheader
+  - table:
+    - rowgroup:
+      - 'row "moonshotai logo Moonshot AI Legal: Terms • Privacy Copy provider slug 1M 1M 4.8 s 65 tps 97% Vercel price: $2/M Vercel price: $10/M Read Cache read price: $0.20/M Write Cache write (5m) price: $2/M No web search price is listed. +2 Zero Data Retention: Yes No Training on Prompt Data: Yes Free AI Gateway Credit: No 10/23/2026"':
+        - 'cell "moonshotai logo Moonshot AI Legal: Terms • Privacy Copy provider slug"':
+          - img "moonshotai logo"
+          - link "Moonshot AI":
+            - /url: /ai-gateway/models/providers/moonshotai
+          - generic: "Legal:"
+          - link "Terms":
+            - /url: https://platform.moonshot.ai/docs/agreement/modeluse.en-US
+          - generic: •
+          - link "Privacy":
+            - /url: https://platform.moonshot.ai/docs/agreement/userprivacy.en-US
+          - button "Copy provider slug":
+        - cell "1M"
+        - cell "1M"
+        - cell "4.8 s":
+          - generic: 4.8 s
+        - cell "65 tps":
+          - generic: 65 tps
+        - cell "97%":
+          - generic: 97%
+        - 'cell "Vercel price: $2/M"':
+          - 'generic "Vercel price: $2/M"': $2/M
+        - 'cell "Vercel price: $10/M"':
+          - 'generic "Vercel price: $10/M"': $10/M
+        - 'cell "Read Cache read price: $0.20/M Write Cache write (5m) price: $2/M"':
+          - generic: Read
+          - 'generic "Cache read price: $0.20/M"': $0.20/M
+          - generic: Write
+          - 'generic "Cache write (5m) price: $2/M"': $2/M
+        - cell "No web search price is listed.":
+          - generic "No web search price is listed.": —
+        - cell "+2":
+          - generic: "+2"
+        - 'cell "Zero Data Retention: Yes"':
+          - 'img "Zero Data Retention: Yes"'
+        - 'cell "No Training on Prompt Data: Yes"':
+          - 'img "No Training on Prompt Data: Yes"'
+        - 'cell "Free AI Gateway Credit: No"':
+          - 'img "Free AI Gateway Credit: No"'
+        - cell "10/23/2026":
+          - generic: 10/23/2026
+        - cell
+  - heading "Copy link to heading Uptime 24 hours" [level=2]:
+    - link "Copy link to heading":
+      - /url: "#uptime"
+      - generic: Copy link to heading
+    - generic: Uptime
+    - generic: 24 hours
+  - radio "1W"
+  - generic: 1W
+  - radio "1D" [checked]
+  - generic: 1D
+  - radio "1H"
+  - generic: 1H
+  - button "Share Uptime":
+  - paragraph:
+    - text: Direct request success rate on AI Gateway and per-provider. Visit the
+    - link "docs":
+      - /url: https://vercel.com/docs/ai-gateway/models-and-providers/uptime
+      - text: docs
+    - text: for more info.
+  - button "1 AI Gateway 99.95%":
+    - generic: "1"
+    - generic: AI Gateway
+    - generic: 99.95%
+  - button "2 Moonshot AI 99.90%":
+    - generic: "2"
+    - generic: Moonshot AI
+    - generic: 99.90%
+  - heading "Copy link to heading Status 24 hours" [level=2]:
+    - link "Copy link to heading":
+      - /url: "#status"
+      - generic: Copy link to heading
+    - generic: Status
+    - generic: 24 hours
+  - radio "1W"
+  - generic: 1W
+  - radio "1D" [checked]
+  - generic: 1D
+  - radio "1H"
+  - generic: 1H
+  - button "Share Status":
+  - paragraph:
+    - text: Reliability of providers. Visit the
+    - link "docs":
+      - /url: https://vercel.com/docs/ai-gateway/models-and-providers/uptime
+      - text: docs
+    - text: for more info.
+  - generic: AI Gateway
+  - generic: 99.95%
+  - listbox "Uptime history. Use left and right arrow keys to navigate time buckets.":
+    - option "Good, Oct 24, 9:30 AM"
+    - option "Good, Oct 24, 9:45 AM"
+    - option "Good, Oct 24, 10:00 AM"
+    - option "Good, Oct 24, 10:15 AM"
+    - option "Good, Oct 24, 10:30 AM"
+    - option "Good, Oct 24, 10:45 AM"
+    - option "Good, Oct 24, 11:00 AM"
+    - option "Good, Oct 24, 11:15 AM"
+    - option "Good, Oct 24, 11:30 AM"
+    - option "Good, Oct 24, 11:45 AM"
+    - option "Good, Oct 24, 12:00 PM"
+    - option "Good, Oct 24, 12:15 PM"
+    - option "Good, Oct 24, 12:30 PM"
+    - option "Good, Oct 24, 12:45 PM"
+    - option "Good, Oct 24, 1:00 PM"
+    - option "Good, Oct 24, 1:15 PM"
+    - option "Good, Oct 24, 1:30 PM"
+    - option "Good, Oct 24, 1:45 PM"
+    - option "Good, Oct 24, 2:00 PM"
+    - option "Good, Oct 24, 2:15 PM"
+    - option "Good, Oct 24, 2:30 PM"
+    - option "Good, Oct 24, 2:45 PM"
+    - option "Good, Oct 24, 3:00 PM"
+    - option "Good, Oct 24, 3:15 PM"
+    - option "Good, Oct 24, 3:30 PM"
+    - option "Good, Oct 24, 3:45 PM"
+    - option "Good, Oct 24, 4:00 PM"
+    - option "Good, Oct 24, 4:15 PM"
+    - option "Good, Oct 24, 4:30 PM"
+    - option "Good, Oct 24, 4:45 PM"
+    - option "Good, Oct 24, 5:00 PM"
+    - option "Good, Oct 24, 5:15 PM"
+    - option "Good, Oct 24, 5:30 PM"
+    - option "Good, Oct 24, 5:45 PM"
+    - option "Good, Oct 24, 6:00 PM"
+    - option "Good, Oct 24, 6:15 PM"
+    - option "Good, Oct 24, 6:30 PM"
+    - option "Good, Oct 24, 6:45 PM"
+    - option "Good, Oct 24, 7:00 PM"
+    - option "Good, Oct 24, 7:15 PM"
+    - option "Good, Oct 24, 7:30 PM"
+    - option "Good, Oct 24, 7:45 PM"
+    - option "Good, Oct 24, 8:00 PM"
+    - option "Good, Oct 24, 8:15 PM"
+    - option "Good, Oct 24, 8:30 PM"
+    - option "Good, Oct 24, 8:45 PM"
+    - option "Good, Oct 24, 9:00 PM"
+    - option "Good, Oct 24, 9:15 PM"
+    - option "Good, Oct 24, 9:30 PM"
+    - option "Good, Oct 24, 9:45 PM"
+    - option "Good, Oct 24, 10:00 PM"
+    - option "Good, Oct 24, 10:15 PM"
+    - option "Good, Oct 24, 10:30 PM"
+    - option "Good, Oct 24, 10:45 PM"
+    - option "Good, Oct 24, 11:00 PM"
+    - option "Good, Oct 24, 11:15 PM"
+    - option "Good, Oct 24, 11:30 PM"
+    - option "Good, Oct 24, 11:45 PM"
+    - option "Good, Oct 25, 12:00 AM"
+    - option "Good, Oct 25, 12:15 AM"
+    - option "Good, Oct 25, 12:30 AM"
+    - option "Good, Oct 25, 12:45 AM"
+    - option "Good, Oct 25, 1:00 AM"
+    - option "Good, Oct 25, 1:15 AM"
+    - option "Good, Oct 25, 1:30 AM"
+    - option "Good, Oct 25, 1:45 AM"
+    - option "Good, Oct 25, 2:00 AM"
+    - option "Good, Oct 25, 2:15 AM"
+    - option "Good, Oct 25, 2:30 AM"
+    - option "Good, Oct 25, 2:45 AM"
+    - option "Good, Oct 25, 3:00 AM"
+    - option "Good, Oct 25, 3:15 AM"
+    - option "Good, Oct 25, 3:30 AM"
+    - option "Good, Oct 25, 3:45 AM"
+    - option "Good, Oct 25, 4:00 AM"
+    - option "Good, Oct 25, 4:15 AM"
+    - option "Good, Oct 25, 4:30 AM"
+    - option "Good, Oct 25, 4:45 AM"
+    - option "Good, Oct 25, 5:00 AM"
+    - option "Good, Oct 25, 5:15 AM"
+    - option "Good, Oct 25, 5:30 AM"
+    - option "Good, Oct 25, 5:45 AM"
+    - option "Good, Oct 25, 6:00 AM"
+    - option "Good, Oct 25, 6:15 AM"
+    - option "Good, Oct 25, 6:30 AM"
+    - option "Good, Oct 25, 6:45 AM"
+    - option "Good, Oct 25, 7:00 AM"
+    - option "Good, Oct 25, 7:15 AM"
+    - option "Good, Oct 25, 7:30 AM"
+    - option "Good, Oct 25, 7:45 AM"
+    - option "Good, Oct 25, 8:00 AM"
+    - option "Good, Oct 25, 8:15 AM"
+    - option "Good, Oct 25, 8:30 AM"
+    - option "Good, Oct 25, 8:45 AM"
+    - option "Good, Oct 25, 9:00 AM"
+    - option "Good, Oct 25, 9:15 AM"
+  - generic: Moonshot AI
+  - generic: 99.90%
+  - listbox "Uptime history. Use left and right arrow keys to navigate time buckets.":
+    - option "Good, Oct 24, 9:30 AM"
+    - option "Good, Oct 24, 9:45 AM"
+    - option "Good, Oct 24, 10:00 AM"
+    - option "Good, Oct 24, 10:15 AM"
+    - option "Good, Oct 24, 10:30 AM"
+    - option "Good, Oct 24, 10:45 AM"
+    - option "Good, Oct 24, 11:00 AM"
+    - option "Good, Oct 24, 11:15 AM"
+    - option "Good, Oct 24, 11:30 AM"
+    - option "Good, Oct 24, 11:45 AM"
+    - option "Good, Oct 24, 12:00 PM"
+    - option "Good, Oct 24, 12:15 PM"
+    - option "Good, Oct 24, 12:30 PM"
+    - option "Good, Oct 24, 12:45 PM"
+    - option "Good, Oct 24, 1:00 PM"
+    - option "Good, Oct 24, 1:15 PM"
+    - option "Good, Oct 24, 1:30 PM"
+    - option "Good, Oct 24, 1:45 PM"
+    - option "Good, Oct 24, 2:00 PM"
+    - option "Good, Oct 24, 2:15 PM"
+    - option "Good, Oct 24, 2:30 PM"
+    - option "Good, Oct 24, 2:45 PM"
+    - option "Good, Oct 24, 3:00 PM"
+    - option "Good, Oct 24, 3:15 PM"
+    - option "Good, Oct 24, 3:30 PM"
+    - option "Good, Oct 24, 3:45 PM"
+    - option "Good, Oct 24, 4:00 PM"
+    - option "Good, Oct 24, 4:15 PM"
+    - option "Good, Oct 24, 4:30 PM"
+    - option "Good, Oct 24, 4:45 PM"
+    - option "Good, Oct 24, 5:00 PM"
+    - option "Good, Oct 24, 5:15 PM"
+    - option "Good, Oct 24, 5:30 PM"
+    - option "Good, Oct 24, 5:45 PM"
+    - option "Good, Oct 24, 6:00 PM"
+    - option "Good, Oct 24, 6:15 PM"
+    - option "Good, Oct 24, 6:30 PM"
+    - option "Good, Oct 24, 6:45 PM"
+    - option "Good, Oct 24, 7:00 PM"
+    - option "Good, Oct 24, 7:15 PM"
+    - option "Good, Oct 24, 7:30 PM"
+    - option "Good, Oct 24, 7:45 PM"
+    - option "Good, Oct 24, 8:00 PM"
+    - option "Good, Oct 24, 8:15 PM"
+    - option "Good, Oct 24, 8:30 PM"
+    - option "Good, Oct 24, 8:45 PM"
+    - option "Good, Oct 24, 9:00 PM"
+    - option "Good, Oct 24, 9:15 PM"
+    - option "Good, Oct 24, 9:30 PM"
+    - option "Good, Oct 24, 9:45 PM"
+    - option "Good, Oct 24, 10:00 PM"
+    - option "Good, Oct 24, 10:15 PM"
+    - option "Good, Oct 24, 10:30 PM"
+    - option "Good, Oct 24, 10:45 PM"
+    - option "Good, Oct 24, 11:00 PM"
+    - option "Good, Oct 24, 11:15 PM"
+    - option "Good, Oct 24, 11:30 PM"
+    - option "Good, Oct 24, 11:45 PM"
+    - option "Good, Oct 25, 12:00 AM"
+    - option "Good, Oct 25, 12:15 AM"
+    - option "Good, Oct 25, 12:30 AM"
+    - option "Good, Oct 25, 12:45 AM"
+    - option "Good, Oct 25, 1:00 AM"
+    - option "Good, Oct 25, 1:15 AM"
+    - option "Good, Oct 25, 1:30 AM"
+    - option "Good, Oct 25, 1:45 AM"
+    - option "Good, Oct 25, 2:00 AM"
+    - option "Good, Oct 25, 2:15 AM"
+    - option "Good, Oct 25, 2:30 AM"
+    - option "Good, Oct 25, 2:45 AM"
+    - option "Good, Oct 25, 3:00 AM"
+    - option "Good, Oct 25, 3:15 AM"
+    - option "Good, Oct 25, 3:30 AM"
+    - option "Good, Oct 25, 3:45 AM"
+    - option "Good, Oct 25, 4:00 AM"
+    - option "Good, Oct 25, 4:15 AM"
+    - option "Good, Oct 25, 4:30 AM"
+    - option "Good, Oct 25, 4:45 AM"
+    - option "Good, Oct 25, 5:00 AM"
+    - option "Good, Oct 25, 5:15 AM"
+    - option "Good, Oct 25, 5:30 AM"
+    - option "Good, Oct 25, 5:45 AM"
+    - option "Good, Oct 25, 6:00 AM"
+    - option "Good, Oct 25, 6:15 AM"
+    - option "Good, Oct 25, 6:30 AM"
+    - option "Good, Oct 25, 6:45 AM"
+    - option "Good, Oct 25, 7:00 AM"
+    - option "Good, Oct 25, 7:15 AM"
+    - option "Good, Oct 25, 7:30 AM"
+    - option "Good, Oct 25, 7:45 AM"
+    - option "Good, Oct 25, 8:00 AM"
+    - option "Good, Oct 25, 8:15 AM"
+    - option "Good, Oct 25, 8:30 AM"
+    - option "Good, Oct 25, 8:45 AM"
+    - option "Good, Oct 25, 9:00 AM"
+    - option "Good, Oct 25, 9:15 AM"
+  - generic: Oct 24, 9:30 AM
+  - generic: Oct 25, 9:15 AM
+  - heading "Copy link to heading Throughput 24 hours" [level=2]:
+    - link "Copy link to heading":
+      - /url: "#throughput"
+      - generic: Copy link to heading
+    - generic: Throughput
+    - generic: 24 hours
+  - radio "1W"
+  - generic: 1W
+  - radio "1D" [checked]
+  - generic: 1D
+  - button "Share Throughput":
+  - paragraph:
+    - text: P50 throughput on live AI Gateway traffic, in tokens per second (TPS). Visit the
+    - link "docs":
+      - /url: https://vercel.com/docs/ai-gateway/models-and-providers/metrics
+      - text: docs
+    - text: for more info.
+  - button "1 Moonshot AI 60.10 tps":
+    - generic: "1"
+    - generic: Moonshot AI
+    - generic: 60.10 tps
+  - heading "Copy link to heading Latency 24 hours" [level=2]:
+    - link "Copy link to heading":
+      - /url: "#latency"
+      - generic: Copy link to heading
+    - generic: Latency
+    - generic: 24 hours
+  - radio "1W"
+  - generic: 1W
+  - radio "1D" [checked]
+  - generic: 1D
+  - button "Share Latency":
+  - paragraph:
+    - text: P50 time to first token (TTFT) on live AI Gateway traffic, in milliseconds. View the
+    - link "docs":
+      - /url: https://vercel.com/docs/ai-gateway/models-and-providers/metrics
+      - text: docs
+    - text: for more info.
+  - button "1 Moonshot AI 5.31 s":
+    - generic: "1"
+    - generic: Moonshot AI
+    - generic: 5.31 s
+  - region "API reference":
+    - heading "Getting started" [level=2]
+    - paragraph:
+      - text: Call Kimi K3.1 Pro through AI Gateway with the AI SDK
+      - code: generateText
+      - text: and
+      - code: streamText
+      - text: functions, or through the OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages APIs by changing the base URL. AI Gateway authenticates the request and routes it to an available provider.
+    - paragraph:
+      - text: Install the AI SDK (
+      - code: pnpm add ai dotenv
+      - text: ), create an API key from the
+      - link "API Keys page":
+        - /url: /d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fapi-keys&title=AI+Gateway+API+Keys
+      - text: ", and set it as"
+      - code: AI_GATEWAY_API_KEY
+      - text: in your environment. Full setup is covered in the
+      - link "text generation quickstart":
+        - /url: /docs/ai-gateway/getting-started/text
+      - text: .
+    - generic "Getting started with Kimi K3.1 Pro":
+      - generic: index.ts
+      - button "Copy to clipboard":
+      - code:
+        - button: "1"
+        - generic: "import { generateText } from 'ai';"
+        - button: "2"
+        - generic: import 'dotenv/config';
+        - button: "3"
+        - button: "4"
+        - generic: "async function main() {"
+        - button: "5"
+        - generic: "const result = await generateText({"
+        - button: "6"
+        - generic: "model: 'moonshotai/kimi-k3.1-pro',"
+        - button: "7"
+        - generic: "prompt: 'Why is the sky blue?',"
+        - button: "8"
+        - generic: "});"
+        - button: "9"
+        - button: "10"
+        - generic: console.log(result.text);
+        - button: "11"
+        - generic: "}"
+        - button: "12"
+        - button: "13"
+        - generic: main().catch(console.error);
+    - heading "Top-level parameters" [level=2]
+    - paragraph: The same Kimi K3.1 Pro request in each API format AI Gateway supports.
+    - tablist "Top-level parameters":
+      - tab "AI SDK v7" [selected]
+      - tab "Chat Completions"
+      - tab "Responses API"
+      - tab "Messages API"
+    - generic "Top-level parameters":
+      - generic: top-level-params.ts
+      - button "Copy to clipboard":
+      - code:
+        - button: "1"
+        - generic: "import { generateText } from 'ai';"
+        - button: "2"
+        - generic: import 'dotenv/config';
+        - button: "3"
+        - button: "4"
+        - generic: "async function main() {"
+        - button: "5"
+        - generic: "const result = await generateText({"
+        - button: "6"
+        - generic: "model: 'moonshotai/kimi-k3.1-pro',"
+        - button: "7"
+        - generic: "system: 'You are a concise technical assistant.',"
+        - button: "8"
+        - generic: "prompt: 'Summarize the tradeoffs between static generation and SSR.',"
+        - button: "9"
+        - generic: "maxOutputTokens: 1024,"
+        - button: "10"
+        - generic: "});"
+        - button: "11"
+        - button: "12"
+        - generic: console.log(result.text);
+        - button: "13"
+        - generic: "}"
+        - button: "14"
+        - button: "15"
+        - generic: main().catch(console.error);
+    - paragraph:
+      - text: Standard parameters like
+      - code: prompt
+      - text: ","
+      - code: messages
+      - text: ","
+      - code: temperature
+      - text: ", and"
+      - code: tools
+      - text: work as documented in the AI SDK docs. These are the parameters with model-specific behavior.
+    - table:
+      - rowgroup:
+        - row "Parameter Type Required Description":
+          - columnheader "Parameter"
+          - columnheader "Type"
+          - columnheader "Required"
+          - columnheader "Description"
+      - rowgroup
+      - rowgroup:
+        - row "model string Yes Model ID in the form creator/model, e.g. moonshotai/kimi-k3.1-pro. AI Gateway routes the request to an available provider.":
+          - cell "model":
+            - code: model
+          - cell "string":
+            - code: string
+          - cell "Yes"
+          - cell "Model ID in the form creator/model, e.g. moonshotai/kimi-k3.1-pro. AI Gateway routes the request to an available provider.":
+            - text: Model ID in the form
+            - code: creator/model
+            - text: ", e.g."
+            - code: moonshotai/kimi-k3.1-pro
+            - text: . AI Gateway routes the request to an available provider.
+        - row "maxOutputTokens number No Hard cap on generated tokens. Kimi K3.1 Pro supports up to 1,048,576 output tokens. Reasoning tokens count toward this limit.":
+          - cell "maxOutputTokens":
+            - code: maxOutputTokens
+          - cell "number":
+            - code: number
+          - cell "No"
+          - cell "Hard cap on generated tokens. Kimi K3.1 Pro supports up to 1,048,576 output tokens. Reasoning tokens count toward this limit.":
+            - text: Hard cap on generated tokens. Kimi K3.1 Pro supports up to
+            - code: 1,048,576
+            - text: output tokens. Reasoning tokens count toward this limit.
+        - row "reasoning 'provider-default' | 'none' | 'minimal' | 'low' | 'medium' | 'high' | 'xhigh' No Provider-agnostic reasoning effort, available in AI SDK 7 or later. Maps to the provider’s native reasoning configuration; reasoning settings under providerOptions take precedence when both are set. See the Reasoning section below.":
+          - cell "reasoning":
+            - code: reasoning
+          - cell "'provider-default' | 'none' | 'minimal' | 'low' | 'medium' | 'high' | 'xhigh'":
+            - code: "'provider-default' | 'none' | 'minimal' | 'low' | 'medium' | 'high' | 'xhigh'"
+          - cell "No"
+          - cell "Provider-agnostic reasoning effort, available in AI SDK 7 or later. Maps to the provider’s native reasoning configuration; reasoning settings under providerOptions take precedence when both are set. See the Reasoning section below.":
+            - text: Provider-agnostic reasoning effort, available in AI SDK 7 or later. Maps to the provider’s native reasoning configuration; reasoning settings under
+            - code: providerOptions
+            - text: take precedence when both are set. See the Reasoning section below.
+        - row "providerOptions Record<string, JSONValue> No AI Gateway routing options under gateway, plus any provider-native options under the provider’s own namespace — see the table below.":
+          - cell "providerOptions":
+            - code: providerOptions
+          - cell "Record<string, JSONValue>":
+            - code: Record<string, JSONValue>
+          - cell "No"
+          - cell "AI Gateway routing options under gateway, plus any provider-native options under the provider’s own namespace — see the table below.":
+            - text: AI Gateway routing options under
+            - code: gateway
+            - text: ", plus any provider-native options under the provider’s own namespace — see the table below."
+    - heading "Input limits" [level=2]
+    - table:
+      - rowgroup:
+        - row "Input Formats Sources Max count Max size Limits":
+          - columnheader "Input"
+          - columnheader "Formats"
+          - columnheader "Sources"
+          - columnheader "Max count"
+          - columnheader "Max size"
+          - columnheader "Limits"
+      - rowgroup
+      - rowgroup:
+        - row "Text — — — — Prompt and response share the 1M-token context window":
+          - cell "Text"
+          - cell "—"
+          - cell "—"
+          - cell "—"
+          - cell "—"
+          - cell "Prompt and response share the 1M-token context window"
+        - row "Image — URL, base64, Uint8Array — — Sent as image parts in messages; counts as input tokens":
+          - cell "Image"
+          - cell "—"
+          - cell "URL, base64, Uint8Array"
+          - cell "—"
+          - cell "—"
+          - cell "Sent as image parts in messages; counts as input tokens"
+    - heading "Provider options" [level=2]
+    - paragraph:
+      - text: Set AI Gateway routing options under
+      - code: providerOptions.gateway
+      - text: . For provider-specific options, pass them under the provider’s namespace as documented by the AI SDK.
+    - paragraph:
+      - text: Learn more in the
+      - link "AI SDK moonshotai provider docs":
+        - /url: https://ai-sdk.dev/providers/ai-sdk-providers/moonshotai
+      - text: .
+    - generic "Provider options":
+      - generic: provider-options.ts
+      - button "Copy to clipboard":
+      - code:
+        - button: "1"
+        - generic: "import { generateText } from 'ai';"
+        - button: "2"
+        - generic: import 'dotenv/config';
+        - button: "3"
+        - button: "4"
+        - generic: "async function main() {"
+        - button: "5"
+        - generic: "const result = await generateText({"
+        - button: "6"
+        - generic: "model: 'moonshotai/kimi-k3.1-pro',"
+        - button: "7"
+        - generic: "prompt: 'Why is the sky blue?',"
+        - button: "8"
+        - generic: "providerOptions: {"
+        - button: "9"
+        - generic: "gateway: {"
+        - button: "10"
+        - generic: "only: ['moonshotai'],"
+        - button: "11"
+        - generic: "},"
+        - button: "12"
+        - generic: "},"
+        - button: "13"
+        - generic: "});"
+        - button: "14"
+        - button: "15"
+        - generic: console.log(result.text);
+        - button: "16"
+        - generic: "}"
+        - button: "17"
+        - button: "18"
+        - generic: main().catch(console.error);
+    - paragraph:
+      - text: These AI Gateway routing options apply to every model. Provider-specific options pass through under the provider’s own namespace (for example
+      - code: providerOptions.anthropic
+      - text: ) exactly as documented by the AI SDK.
+    - table:
+      - rowgroup:
+        - row "Parameter Type Required Description":
+          - columnheader "Parameter"
+          - columnheader "Type"
+          - columnheader "Required"
+          - columnheader "Description"
+      - rowgroup
+      - rowgroup:
+        - row "providerOptions.gateway.only string[] No Restrict routing to these provider slugs. Requests fail over only within the listed providers.":
+          - cell "providerOptions.gateway.only":
+            - code: providerOptions.gateway.only
+          - cell "string[]":
+            - code: string[]
+          - cell "No"
+          - cell "Restrict routing to these provider slugs. Requests fail over only within the listed providers."
+        - row "providerOptions.gateway.order string[] No Preferred provider order. Listed providers are tried first; unlisted providers remain available as fallbacks.":
+          - cell "providerOptions.gateway.order":
+            - code: providerOptions.gateway.order
+          - cell "string[]":
+            - code: string[]
+          - cell "No"
+          - cell "Preferred provider order. Listed providers are tried first; unlisted providers remain available as fallbacks."
+        - row "providerOptions.gateway.sort 'cost' | 'ttft' | 'tps' No Rank candidate providers by price, time to first token, or tokens per second instead of the default routing order.":
+          - cell "providerOptions.gateway.sort":
+            - code: providerOptions.gateway.sort
+          - cell "'cost' | 'ttft' | 'tps'":
+            - code: "'cost' | 'ttft' | 'tps'"
+          - cell "No"
+          - cell "Rank candidate providers by price, time to first token, or tokens per second instead of the default routing order."
+        - row "providerOptions.gateway.zeroDataRetention boolean No Route only to providers with a zero-data-retention policy for this model.":
+          - cell "providerOptions.gateway.zeroDataRetention":
+            - code: providerOptions.gateway.zeroDataRetention
+          - cell "boolean":
+            - code: boolean
+          - cell "No"
+          - cell "Route only to providers with a zero-data-retention policy for this model."
+    - heading "Routing across providers" [level=3]
+    - paragraph:
+      - text: AI Gateway serves the same model through multiple providers and fails over automatically.
+      - code: order
+      - text: expresses a preference while keeping every provider eligible;
+      - code: only
+      - text: is a hard allowlist — if none of the listed providers are available the request fails instead of falling back.
+    - paragraph:
+      - text: Options under a provider's own namespace (for example
+      - code: providerOptions.anthropic
+      - text: ) are forwarded to that provider with the request. Providers ignore option namespaces that don't apply to them, so it is safe to set provider options alongside
+      - code: gateway
+      - text: routing options.
+    - heading "Reasoning" [level=2]
+    - paragraph:
+      - text: AI Gateway bridges reasoning across every API format. The AI SDK exposes a provider-agnostic top-level
+      - code: reasoning
+      - text: level (
+      - code: none
+      - text: ","
+      - code: minimal
+      - text: ","
+      - code: low
+      - text: ","
+      - code: medium
+      - text: ","
+      - code: high
+      - text: ", or"
+      - code: xhigh
+      - text: ); the Chat Completions and Responses formats take the same effort under
+      - code: reasoning.effort
+      - text: ; and the Anthropic Messages format uses a native
+      - code: thinking
+      - text: token budget. Whichever you send, the gateway maps it to the target model’s native configuration, converting between effort levels and token budgets as needed. Reasoning-related settings under
+      - code: providerOptions
+      - text: take full precedence over the top-level
+      - code: reasoning
+      - text: value and are never merged. Reasoning tokens typically count toward your output-token usage, though how they’re reported and billed varies by provider.
+    - paragraph:
+      - text: Learn more in the
+      - link "AI Gateway reasoning guide":
+        - /url: /docs/ai-gateway/models-and-providers/reasoning
+      - text: .
+    - tablist "Reasoning":
+      - tab "AI SDK v7" [selected]
+      - tab "Chat Completions"
+      - tab "Responses API"
+      - tab "Messages API"
+    - generic "Reasoning":
+      - generic: reasoning.ts
+      - button "Copy to clipboard":
+      - code:
+        - button: "1"
+        - generic: "import { generateText } from 'ai';"
+        - button: "2"
+        - generic: import 'dotenv/config';
+        - button: "3"
+        - button: "4"
+        - generic: "async function main() {"
+        - button: "5"
+        - generic: "const result = await generateText({"
+        - button: "6"
+        - generic: "model: 'moonshotai/kimi-k3.1-pro',"
+        - button: "7"
+        - generic: "prompt: 'Explain the Monty Hall problem step by step.',"
+        - button: "8"
+        - generic: "reasoning: 'high',"
+        - button: "9"
+        - generic: "});"
+        - button: "10"
+        - button: "11"
+        - generic: console.log(result.text);
+        - button: "12"
+        - generic: "}"
+        - button: "13"
+        - button: "14"
+        - generic: main().catch(console.error);
+    - heading "Image input" [level=2]
+    - paragraph: Send images alongside text as message parts. Images count as input tokens.
+    - generic "Image input":
+      - generic: image-input.ts
+      - button "Copy to clipboard":
+      - code:
+        - button: "1"
+        - generic: "import { generateText } from 'ai';"
+        - button: "2"
+        - generic: import 'dotenv/config';
+        - button: "3"
+        - button: "4"
+        - generic: "async function main() {"
+        - button: "5"
+        - generic: "const result = await generateText({"
+        - button: "6"
+        - generic: "model: 'moonshotai/kimi-k3.1-pro',"
+        - button: "7"
+        - generic: "messages: ["
+        - button: "8"
+        - generic: "{"
+        - button: "9"
+        - generic: "role: 'user',"
+        - button: "10"
+        - generic: "content: ["
+        - button: "11"
+        - generic: "{ type: 'text', text: 'Describe this image.' },"
+        - button: "12"
+        - generic: "{ type: 'image', image: 'https://example.com/photo.jpg' },"
+        - button: "13"
+        - generic: "],"
+        - button: "14"
+        - generic: "},"
+        - button: "15"
+        - generic: "],"
+        - button: "16"
+        - generic: "});"
+        - button: "17"
+        - button: "18"
+        - generic: console.log(result.text);
+        - button: "19"
+        - generic: "}"
+        - button: "20"
+        - button: "21"
+        - generic: main().catch(console.error);
+    - heading "Tool calling" [level=2]
+    - paragraph: Expose tools the model can call. Define each tool’s inputs with a Zod schema.
+    - generic "Tool calling":
+      - generic: tool-calling.ts
+      - button "Copy to clipboard":
+      - code:
+        - button: "1"
+        - generic: "import { generateText, tool } from 'ai';"
+        - button: "2"
+        - generic: "import { z } from 'zod';"
+        - button: "3"
+        - generic: import 'dotenv/config';
+        - button: "4"
+        - button: "5"
+        - generic: "async function main() {"
+        - button: "6"
+        - generic: "const result = await generateText({"
+        - button: "7"
+        - generic: "model: 'moonshotai/kimi-k3.1-pro',"
+        - button: "8"
+        - generic: "prompt: 'What is the weather in San Francisco?',"
+        - button: "9"
+        - generic: "tools: {"
+        - button: "10"
+        - generic: "getWeather: tool({"
+        - button: "11"
+        - generic: "description: 'Get the current weather for a location',"
+        - button: "12"
+        - generic: "inputSchema: z.object({ location: z.string() }),"
+        - button: "13"
+        - generic: "execute: async ({ location }) => ({ location, temperatureC: 18 }),"
+        - button: "14"
+        - generic: "}),"
+        - button: "15"
+        - generic: "},"
+        - button: "16"
+        - generic: "});"
+        - button: "17"
+        - button: "18"
+        - generic: console.log(result.text);
+        - button: "19"
+        - generic: "}"
+        - button: "20"
+        - button: "21"
+        - generic: main().catch(console.error);
+  - heading "Copy link to heading More models by Moonshot AI" [level=2]:
+    - link "Copy link to heading":
+      - /url: "#similar"
+      - generic: Copy link to heading
+    - text: More models by Moonshot AI
+  - radio "All" [checked]
+  - generic: All
+  - radio "Text"
+  - generic: Text
+  - radio "Code"
+  - generic: Code
+  - radio "Video Input"
+  - generic: Video Input
+  - button "Columns (13)":
+    - text: Columns
+    - generic: (13)
+  - table:
+    - rowgroup:
+      - row "Model":
+        - generic: Model
+  - table:
+    - rowgroup:
+      - row "Context Latency Throughput Input Output Cache Search Capabilities Providers ZDR No Training Free AI Gateway Credit Release Date":
+        - columnheader "Context":
+          - generic: Context
+        - columnheader "Latency":
+          - generic: Latency
+        - columnheader "Throughput":
+          - generic: Throughput
+        - columnheader "Input":
+          - generic: Input
+        - columnheader "Output":
+          - generic: Output
+        - columnheader "Cache":
+          - generic: Cache
+        - columnheader "Search":
+          - generic: Search
+        - columnheader "Capabilities":
+          - generic: Capabilities
+        - columnheader "Providers":
+          - generic: Providers
+        - columnheader "ZDR":
+          - generic: ZDR
+        - columnheader "No Training":
+          - generic: No Training
+        - columnheader "Free AI Gateway Credit":
+          - generic: Free AI Gateway Credit
+        - columnheader "Release Date":
+          - generic: Release Date
+        - columnheader
+  - table:
+    - rowgroup:
+      - 'row "moonshotai logo moo nshotai/kimi-k3.1-pro-h ighspeed Copy model slug 1M 5.0 s 123 tps Vercel price: $4/M Vercel price: $20/M Read Cache read price: $0.20/M Write Cache write (5m) price: $4/M No web search price is listed. +2 moonshotai logo Zero Data Retention: Yes No Training on Prompt Data: Yes Free AI Gateway Credit: No 10/23/2026"':
+        - cell "moonshotai logo moo nshotai/kimi-k3.1-pro-h ighspeed Copy model slug":
+          - img "moonshotai logo"
+          - link "moo nshotai/kimi-k3.1-pro-h ighspeed":
+            - /url: /ai-gateway/models/kimi-k3.1-pro-highspeed
+            - generic: moo
+            - generic: nshotai/kimi-k3.1-pro-h
+            - generic: ighspeed
+          - button "Copy model slug":
+        - cell "1M"
+        - cell "5.0 s":
+          - generic: 5.0 s
+        - cell "123 tps":
+          - generic: 123 tps
+        - 'cell "Vercel price: $4/M"':
+          - 'generic "Vercel price: $4/M"': $4/M
+        - 'cell "Vercel price: $20/M"':
+          - 'generic "Vercel price: $20/M"': $20/M
+        - 'cell "Read Cache read price: $0.20/M Write Cache write (5m) price: $4/M"':
+          - generic: Read
+          - 'generic "Cache read price: $0.20/M"': $0.20/M
+          - generic: Write
+          - 'generic "Cache write (5m) price: $4/M"': $4/M
+        - cell "No web search price is listed.":
+          - generic "No web search price is listed.": —
+        - cell "+2":
+          - generic: "+2"
+        - cell "moonshotai logo":
+          - img "moonshotai logo"
+        - 'cell "Zero Data Retention: Yes"':
+          - 'img "Zero Data Retention: Yes"'
+        - 'cell "No Training on Prompt Data: Yes"':
+          - 'img "No Training on Prompt Data: Yes"'
+        - 'cell "Free AI Gateway Credit: No"':
+          - 'img "Free AI Gateway Credit: No"'
+        - cell "10/23/2026":
+          - generic: 10/23/2026
+        - cell
+      - 'row "moonshotai logo moo nshotai/kimi -k3-fast Copy model slug 1M 0.2 s 164 tps Vercel price: $4.50/M Vercel price: $22.50/M Read Cache read price: $0.45/M No web search price is listed. +3 fireworks logo morph logo Zero Data Retention: Yes No Training on Prompt Data: Yes Free AI Gateway Credit: No 07/27/2026"':
+        - cell "moonshotai logo moo nshotai/kimi -k3-fast Copy model slug":
+          - img "moonshotai logo"
+          - link "moo nshotai/kimi -k3-fast":
+            - /url: /ai-gateway/models/kimi-k3-fast
+            - generic: moo
+            - generic: nshotai/kimi
+            - generic: "-k3-fast"
+          - button "Copy model slug":
+        - cell "1M"
+        - cell "0.2 s":
+          - generic: 0.2 s
+        - cell "164 tps":
+          - generic: 164 tps
+        - 'cell "Vercel price: $4.50/M"':
+          - 'generic "Vercel price: $4.50/M"': $4.50/M
+        - 'cell "Vercel price: $22.50/M"':
+          - 'generic "Vercel price: $22.50/M"': $22.50/M
+        - 'cell "Read Cache read price: $0.45/M"':
+          - generic: Read
+          - 'generic "Cache read price: $0.45/M"': $0.45/M
+        - cell "No web search price is listed.":
+          - generic "No web search price is listed.": —
+        - cell "+3":
+          - generic: "+3"
+        - cell "fireworks logo morph logo":
+          - img "fireworks logo"
+          - img "morph logo"
+        - 'cell "Zero Data Retention: Yes"':
+          - 'img "Zero Data Retention: Yes"'
+        - 'cell "No Training on Prompt Data: Yes"':
+          - 'img "No Training on Prompt Data: Yes"'
+        - 'cell "Free AI Gateway Credit: No"':
+          - 'img "Free AI Gateway Credit: No"'
+        - cell "07/27/2026":
+          - generic: 07/27/2026
+        - cell
+      - 'row "moonshotai logo moo nshotai /kimi-k3 Copy model slug 1M 0.2 s 373 tps Vercel price: $0.19/M +1 more Vercel price: $8.94/M +1 more Read Cache read price: $0.19/M Write Cache write (5m) price: $3/M No web search price is listed. +3 alibaba logo baseten logo bedrock logo +14 Zero Data Retention: Yes No Training on Prompt Data: Yes Free AI Gateway Credit: No 07/16/2026"':
+        - cell "moonshotai logo moo nshotai /kimi-k3 Copy model slug":
+          - img "moonshotai logo"
+          - link "moo nshotai /kimi-k3":
+            - /url: /ai-gateway/models/kimi-k3
+            - generic: moo
+            - generic: nshotai
+            - generic: /kimi-k3
+          - button "Copy model slug":
+        - cell "1M"
+        - cell "0.2 s":
+          - generic: 0.2 s
+        - cell "373 tps":
+          - generic: 373 tps
+        - 'cell "Vercel price: $0.19/M +1 more"':
+          - 'generic "Vercel price: $0.19/M"': $0.19/M
+          - generic: +1 more
+        - 'cell "Vercel price: $8.94/M +1 more"':
+          - 'generic "Vercel price: $8.94/M"': $8.94/M
+          - generic: +1 more
+        - 'cell "Read Cache read price: $0.19/M Write Cache write (5m) price: $3/M"':
+          - generic: Read
+          - 'generic "Cache read price: $0.19/M"': $0.19/M
+          - generic: Write
+          - 'generic "Cache write (5m) price: $3/M"': $3/M
+        - cell "No web search price is listed.":
+          - generic "No web search price is listed.": —
+        - cell "+3":
+          - generic: "+3"
+        - cell "alibaba logo baseten logo bedrock logo +14":
+          - img "alibaba logo"
+          - img "baseten logo"
+          - img "bedrock logo"
+          - generic: "+14"
+        - 'cell "Zero Data Retention: Yes"':
+          - 'img "Zero Data Retention: Yes"'
+        - 'cell "No Training on Prompt Data: Yes"':
+          - 'img "No Training on Prompt Data: Yes"'
+        - 'cell "Free AI Gateway Credit: No"':
+          - 'img "Free AI Gateway Credit: No"'
+        - cell "07/16/2026":
+          - generic: 07/16/2026
+        - cell
+      - 'row "moonshotai logo moo nshotai/kimi-k 2.7-code Copy model slug 256K 2.3 s 96 tps Vercel price: $0.95/M +1 more Vercel price: $4/M +1 more Read Cache read price: $0.19/M No web search price is listed. +3 moonshotai logo Zero Data Retention: Yes No Training on Prompt Data: Yes Free AI Gateway Credit: Yes 06/12/2026"':
+        - cell "moonshotai logo moo nshotai/kimi-k 2.7-code Copy model slug":
+          - img "moonshotai logo"
+          - link "moo nshotai/kimi-k 2.7-code":
+            - /url: /ai-gateway/models/kimi-k2.7-code
+            - generic: moo
+            - generic: nshotai/kimi-k
+            - generic: 2.7-code
+          - button "Copy model slug":
+        - cell "256K"
+        - cell "2.3 s":
+          - generic: 2.3 s
+        - cell "96 tps":
+          - generic: 96 tps
+        - 'cell "Vercel price: $0.95/M +1 more"':
+          - 'generic "Vercel price: $0.95/M"': $0.95/M
+          - generic: +1 more
+        - 'cell "Vercel price: $4/M +1 more"':
+          - 'generic "Vercel price: $4/M"': $4/M
+          - generic: +1 more
+        - 'cell "Read Cache read price: $0.19/M"':
+          - generic: Read
+          - 'generic "Cache read price: $0.19/M"': $0.19/M
+        - cell "No web search price is listed.":
+          - generic "No web search price is listed.": —
+        - cell "+3":
+          - generic: "+3"
+        - cell "moonshotai logo":
+          - img "moonshotai logo"
+        - 'cell "Zero Data Retention: Yes"':
+          - 'img "Zero Data Retention: Yes"'
+        - 'cell "No Training on Prompt Data: Yes"':
+          - 'img "No Training on Prompt Data: Yes"'
+        - 'cell "Free AI Gateway Credit: Yes"':
+          - 'img "Free AI Gateway Credit: Yes"'
+        - cell "06/12/2026":
+          - generic: 06/12/2026
+        - cell
+      - 'row "moonshotai logo moo nshotai/k imi-k2.6 Copy model slug 262K 1.3 s 155 tps Vercel price: $0.80/M Vercel price: $3.40/M Read Cache read price: $0.16/M No web search price is listed. +1 moonshotai logo novita logo Zero Data Retention: Yes No Training on Prompt Data: Yes Free AI Gateway Credit: No 04/20/2026"':
+        - cell "moonshotai logo moo nshotai/k imi-k2.6 Copy model slug":
+          - img "moonshotai logo"
+          - link "moo nshotai/k imi-k2.6":
+            - /url: /ai-gateway/models/kimi-k2.6
+            - generic: moo
+            - generic: nshotai/k
+            - generic: imi-k2.6
+          - button "Copy model slug":
+        - cell "262K"
+        - cell "1.3 s":
+          - generic: 1.3 s
+        - cell "155 tps":
+          - generic: 155 tps
+        - 'cell "Vercel price: $0.80/M"':
+          - 'generic "Vercel price: $0.80/M"': $0.80/M
+        - 'cell "Vercel price: $3.40/M"':
+          - 'generic "Vercel price: $3.40/M"': $3.40/M
+        - 'cell "Read Cache read price: $0.16/M"':
+          - generic: Read
+          - 'generic "Cache read price: $0.16/M"': $0.16/M
+        - cell "No web search price is listed.":
+          - generic "No web search price is listed.": —
+        - cell "+1":
+          - generic: "+1"
+        - cell "moonshotai logo novita logo":
+          - img "moonshotai logo"
+          - img "novita logo"
+        - 'cell "Zero Data Retention: Yes"':
+          - 'img "Zero Data Retention: Yes"'
+        - 'cell "No Training on Prompt Data: Yes"':
+          - 'img "No Training on Prompt Data: Yes"'
+        - 'cell "Free AI Gateway Credit: No"':
+          - 'img "Free AI Gateway Credit: No"'
+        - cell "04/20/2026":
+          - generic: 04/20/2026
+        - cell
+      - 'row "moonshotai logo moo nshotai /kimi-k2 Copy model slug 131K 2.0 s 74 tps Vercel price: $0.57/M Vercel price: $2.30/M No web search price is listed. novita logo Zero Data Retention: No No Training on Prompt Data: No Free AI Gateway Credit: Yes 07/11/2025"':
+        - cell "moonshotai logo moo nshotai /kimi-k2 Copy model slug":
+          - img "moonshotai logo"
+          - link "moo nshotai /kimi-k2":
+            - /url: /ai-gateway/models/kimi-k2
+            - generic: moo
+            - generic: nshotai
+            - generic: /kimi-k2
+          - button "Copy model slug":
+        - cell "131K"
+        - cell "2.0 s":
+          - generic: 2.0 s
+        - cell "74 tps":
+          - generic: 74 tps
+        - 'cell "Vercel price: $0.57/M"':
+          - 'generic "Vercel price: $0.57/M"': $0.57/M
+        - 'cell "Vercel price: $2.30/M"':
+          - 'generic "Vercel price: $2.30/M"': $2.30/M
+        - cell
+        - cell "No web search price is listed.":
+          - generic "No web search price is listed.": —
+        - cell:
+        - cell "novita logo":
+          - img "novita logo"
+        - 'cell "Zero Data Retention: No"':
+          - 'img "Zero Data Retention: No"'
+        - 'cell "No Training on Prompt Data: No"':
+          - 'img "No Training on Prompt Data: No"'
+        - 'cell "Free AI Gateway Credit: Yes"':
+          - 'img "Free AI Gateway Credit: Yes"'
+        - cell "07/11/2025":
+          - generic: 07/11/2025
+        - cell
+- contentinfo:
+  - navigation "Vercel Directory":
+    - heading "Agent Stack" [level=2]
+    - list:
+      - link "AI SDK":
+        - /url: /ai-sdk
+      - link "AI Gateway":
+        - /url: /ai-gateway
+      - link "Sandbox":
+        - /url: /sandbox
+      - link "Workflows":
+        - /url: /workflows
+      - link "Connect New":
+        - /url: /connect
+        - text: Connect
+        - generic: New
+      - link "Passport New":
+        - /url: /passport
+        - text: Passport
+        - generic: New
+      - link "eve New":
+        - /url: /eve
+        - text: eve
+        - generic: New
+    - heading "Core Platform" [level=2]
+    - list:
+      - link "CI/CD":
+        - /url: /products/previews
+      - link "Content Delivery":
+        - /url: /cdn
+      - link "Fluid Compute":
+        - /url: /fluid
+      - link "Observability":
+        - /url: /products/observability
+    - heading "Security" [level=2]
+    - list:
+      - link "Platform Security":
+        - /url: /security
+      - link "WAF":
+        - /url: /security/web-application-firewall
+      - link "Bot Management":
+        - /url: /security/bot-management
+      - link "BotID":
+        - /url: /botid
+    - heading "Tools" [level=2]
+    - list:
+      - link "Vercel Drop":
+        - /url: /drop
+      - link "Vercel Agent":
+        - /url: /agent
+      - link "Vercel Plugin":
+        - /url: /plugin
+      - link "Agent Skills":
+        - /url: https://skills.sh
+      - link "Domains":
+        - /url: /domains
+      - link "v0":
+        - /url: https://v0.app
+    - heading "Frameworks" [level=2]
+    - list:
+      - link "eve New":
+        - /url: https://eve.dev/
+        - text: eve
+        - generic: New
+      - link "Next.js":
+        - /url: /frameworks/nextjs
+      - link "Nuxt":
+        - /url: /docs/frameworks/full-stack/nuxt
+      - link "SvelteKit":
+        - /url: /docs/frameworks/full-stack/sveltekit
+      - link "Nitro":
+        - /url: /docs/frameworks/backend/nitro
+      - link "Turborepo":
+        - /url: /solutions/turborepo
+      - link "Tanstack Start":
+        - /url: /docs/frameworks/full-stack/tanstack-start
+      - link "FastAPI":
+        - /url: /docs/frameworks/backend/fastapi
+      - link "All frameworks":
+        - /url: /docs/frameworks
+    - heading "SDKs" [level=2]
+    - list:
+      - link "Vercel SDK":
+        - /url: /docs/rest-api/sdk
+      - link "Workflow SDK":
+        - /url: /workflows
+      - link "Flags SDK":
+        - /url: /docs/flags/flags-sdk-reference
+      - link "Chat SDK":
+        - /url: /chat
+      - link "Queues SDK":
+        - /url: /docs/queues/sdk
+      - link "Streamdown":
+        - /url: https://streamdown.ai
+    - heading "Build" [level=2]
+    - list:
+      - link "AI Apps":
+        - /url: /solutions/ai-apps
+      - link "Web Apps":
+        - /url: /for/web-apps
+      - link "Marketing Sites":
+        - /url: /solutions/marketing-sites
+      - link "Platforms":
+        - /url: /for/platforms
+      - link "Commerce":
+        - /url: /solutions/composable-commerce
+      - link "Platform Engineers":
+        - /url: /solutions/platform-engineering
+      - link "Design Engineers":
+        - /url: /solutions/design-engineering
+    - heading "Learn" [level=2]
+    - list:
+      - link "Docs":
+        - /url: /docs
+      - link "Blog":
+        - /url: /blog
+      - link "Changelog":
+        - /url: /changelog
+      - link "Knowledge Base":
+        - /url: /kb
+      - link "Academy":
+        - /url: /academy
+      - link "Articles":
+        - /url: /i
+      - link "Community":
+        - /url: https://community.vercel.com
+      - link "Is Agentic":
+        - /url: https://is-agentic.com
+    - heading "Explore" [level=2]
+    - list:
+      - link "Customers":
+        - /url: /customers
+      - link "Marketplace":
+        - /url: /marketplace
+      - link "Templates":
+        - /url: /templates
+      - link "Partner Finder":
+        - /url: /partners/solution-partners
+      - link "Vercel + AWS":
+        - /url: /partners/aws
+    - heading "Company" [level=2]
+    - list:
+      - link "About":
+        - /url: /about
+      - link "Careers":
+        - /url: /careers
+      - link "Press":
+        - /url: /press
+      - link "Events":
+        - /url: /events
+      - link "Startups":
+        - /url: /startups
+      - link "Shipped on Vercel":
+        - /url: /shipped
+      - link "Open Source Program":
+        - /url: /open-source-program
+      - link "Enterprise":
+        - /url: /enterprise
+      - link "Pricing":
+        - /url: /pricing
+      - link "Help":
+        - /url: /help
+    - heading "Legal & Trust" [level=2]
+    - list:
+      - link "Privacy Policy":
+        - /url: /legal/privacy-notice
+      - link "Terms of Service":
+        - /url: /legal/terms
+      - link "Cookie Policy":
+        - /url: /legal/cookie-policy
+      - link "DPA":
+        - /url: /legal/dpa
+      - link "Acceptable Use Policy":
+        - /url: /legal/acceptable-use-policy
+      - link "Legal (all documents)":
+        - /url: /legal
+      - link "Trust Center":
+        - /url: https://security.vercel.com
+      - link "Status":
+        - /url: https://www.vercel-status.com
+      - button "Cookie Preferences"
+    - heading "Social" [level=2]
+    - list:
+      - link "GitHub":
+        - /url: https://github.com/vercel
+      - link "X":
+        - /url: https://x.com/vercel
+      - link "LinkedIn":
+        - /url: https://linkedin.com/company/vercel
+      - link "YouTube":
+        - /url: https://youtube.com/@VercelHQ
+      - link "Instagram":
+        - /url: https://www.instagram.com/vercel/
+    - list:
+      - link "Vercel":
+        - /url: /home
+        - img "Vercel"
+  - link "Loading status…":
+    - /url: https://www.vercel-status.com
+    - paragraph: Loading status…
+  - group "Select a display theme:":
+    - generic: "Select a display theme:"
+    - radio "system"
+    - generic: system
+    - radio "light"
+    - generic: light
+    - radio "dark"
+    - generic: dark
+  - button "View as AI agent":
+- complementary
+- alert
+- generic: Oct 24, 9:00 AM

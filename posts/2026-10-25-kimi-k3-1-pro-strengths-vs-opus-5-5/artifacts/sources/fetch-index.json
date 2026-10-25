@@ -1,0 +1,58 @@
+[
+  {
+    "id": "kimi-launch",
+    "url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+    "exit": 0,
+    "bytes": 332669,
+    "error": ""
+  },
+  {
+    "id": "kimi-research-list",
+    "url": "https://www.kimi.com/en/blog/",
+    "exit": 0,
+    "bytes": 142223,
+    "error": ""
+  },
+  {
+    "id": "kimi-api-guide",
+    "url": "https://platform.kimi.com/docs/guide/kimi-k3-1-pro-quickstart",
+    "exit": 0,
+    "bytes": 773075,
+    "error": ""
+  },
+  {
+    "id": "kimi-api-pricing",
+    "url": "https://platform.kimi.com/docs/pricing/chat",
+    "exit": 0,
+    "bytes": 300395,
+    "error": ""
+  },
+  {
+    "id": "kimi-work",
+    "url": "https://www.kimi.com/en/products/kimi-work",
+    "exit": 0,
+    "bytes": 180670,
+    "error": ""
+  },
+  {
+    "id": "kimi-code",
+    "url": "https://www.kimi.com/code/en",
+    "exit": 0,
+    "bytes": 52151,
+    "error": ""
+  },
+  {
+    "id": "aa-launch",
+    "url": "https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks",
+    "exit": 0,
+    "bytes": 363739,
+    "error": ""
+  },
+  {
+    "id": "opus-launch",
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "exit": 0,
+    "bytes": 531343,
+    "error": ""
+  }
+]

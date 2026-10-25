@@ -1,0 +1,151 @@
+{
+  "version": 2,
+  "lead_id": "kimi-home",
+  "items": [
+    {
+      "id": "kimi-home",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-10-25",
+      "environment": "Codex in-app browser, anonymous public pages, 1280×720 viewport",
+      "source_url": "https://www.kimi.com/",
+      "raw_path": "artifacts/captures/raw/kimi-home-focused.jpg",
+      "publish_path": "assets/kimi-home.jpg",
+      "tistory_url": "",
+      "width": 840,
+      "height": 370,
+      "placement": "after:opening",
+      "rights": "Codex capture of public product/documentation UI and proportionate quoted chart for review and explanation; underlying marks and graphics belong to respective publishers.",
+      "alt": "Kimi 첫 화면의 입력창과 문서·발표자료·3D 제작 메뉴",
+      "caption": "입력창 아래에서 PPT·문서·표·3D 제작 등 작업 종류를 고를 수 있습니다.",
+      "processing": [
+        "viewport screenshot crop; no pixel alteration"
+      ],
+      "redactions": [],
+      "sha256": "d150b6710c23f09e29d48b973f71c0602dee72e59cfdb7947b08add6cb7dbc05",
+      "status": "validated"
+    },
+    {
+      "id": "kimi-attach",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "action",
+      "claim_ids": [
+        "C02"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-10-25",
+      "environment": "Codex in-app browser, anonymous public pages, 1280×720 viewport",
+      "source_url": "https://www.kimi.com/",
+      "raw_path": "artifacts/captures/raw/kimi-attach.jpg",
+      "publish_path": "assets/kimi-attach.jpg",
+      "tistory_url": "",
+      "width": 790,
+      "height": 345,
+      "placement": "after:Kimi 웹에서 질문하고 파일 넣기",
+      "rights": "Codex capture of public product/documentation UI and proportionate quoted chart for review and explanation; underlying marks and graphics belong to respective publishers.",
+      "alt": "Kimi 입력창의 더하기 버튼을 눌러 파일과 이미지 추가 메뉴를 펼친 화면",
+      "caption": "파일 첨부는 + 메뉴의 맨 위 항목입니다. 모바일에서는 이미지를 좌우로 밀어 메뉴 이름을 확인할 수 있습니다.",
+      "processing": [
+        "viewport screenshot crop; no pixel alteration"
+      ],
+      "redactions": [],
+      "sha256": "c6cc31596fde62cdc2775337d38933da2c2a76e1af9ea06731732ccb38e6b748",
+      "status": "validated",
+      "mobile_scroll_width": 790
+    },
+    {
+      "id": "kimi-3d",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "action",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-10-25",
+      "environment": "Codex in-app browser, anonymous public pages, 1280×720 viewport",
+      "source_url": "https://www.kimi.com/make3d",
+      "raw_path": "artifacts/captures/raw/kimi-3d.jpg",
+      "publish_path": "assets/kimi-3d.jpg",
+      "tistory_url": "",
+      "width": 790,
+      "height": 535,
+      "placement": "after:글과 이미지로 시작하는 3D 제작",
+      "rights": "Codex capture of public product/documentation UI and proportionate quoted chart for review and explanation; underlying marks and graphics belong to respective publishers.",
+      "alt": "Kimi 3D Make의 제작 입력창과 건축물·게임 장면 템플릿",
+      "caption": "제작 요청을 입력하거나 아래의 템플릿에서 시작할 수 있습니다. 모바일에서는 이미지를 좌우로 밀어 확인할 수 있습니다.",
+      "processing": [
+        "viewport screenshot crop; no pixel alteration"
+      ],
+      "redactions": [],
+      "sha256": "d816828161cebc103e78d2f6c620773f2d3cea12bb42bd11dbf5c03500189a51",
+      "status": "validated",
+      "mobile_scroll_width": 790
+    },
+    {
+      "id": "aa-intelligence",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "comparison",
+      "claim_ids": [
+        "C07"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-10-25",
+      "environment": "Codex in-app browser, anonymous public pages, 1280×720 viewport",
+      "source_url": "https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks",
+      "raw_path": "artifacts/captures/raw/aa-intelligence-v3.jpg",
+      "publish_path": "assets/aa-intelligence.jpg",
+      "tistory_url": "",
+      "width": 480,
+      "height": 500,
+      "placement": "after:Opus와 비교하면 어느 정도일까",
+      "rights": "Codex capture of public product/documentation UI and proportionate quoted chart for review and explanation; underlying marks and graphics belong to respective publishers.",
+      "alt": "Artificial Analysis 종합 지능 지수에서 Kimi K3.1 Pro 55점과 Opus 5.5 58점을 보여주는 차트",
+      "caption": "비교 대상이 있는 차트의 왼쪽 구간입니다. 파란 막대가 K3.1 Pro이며, 모바일에서는 이미지를 좌우로 밀어 모델 이름과 설정을 확인할 수 있습니다.",
+      "processing": [
+        "browser screenshot of published chart, left 480px region at x=8,y=106; no pixel alteration"
+      ],
+      "redactions": [],
+      "sha256": "b4bd4890da02262d589f50ff1cb324396e2b1a224b9be5d69cccb93df903b9f8",
+      "status": "validated",
+      "mobile_scroll_width": 480
+    },
+    {
+      "id": "kimi-pricing",
+      "kind": "screenshot",
+      "origin": "first_party",
+      "role": "comparison",
+      "claim_ids": [
+        "C10"
+      ],
+      "actor": "Codex",
+      "captured_at": "2026-10-25",
+      "environment": "Codex in-app browser, anonymous public pages, 1280×720 viewport",
+      "source_url": "https://platform.kimi.ai/docs/pricing/chat",
+      "raw_path": "artifacts/captures/raw/kimi-api-pricing.jpg",
+      "publish_path": "assets/kimi-pricing.jpg",
+      "tistory_url": "",
+      "width": 715,
+      "height": 345,
+      "placement": "after:일반형과 고속형의 API 비용",
+      "rights": "Codex capture of public product/documentation UI and proportionate quoted chart for review and explanation; underlying marks and graphics belong to respective publishers.",
+      "alt": "Kimi 국제 API 가격표의 일반형과 Highspeed 입출력·캐시 요금",
+      "caption": "일반형과 Highspeed의 입력·출력 단가가 다릅니다. 모바일에서는 이미지를 좌우로 밀어 가격 열을 확인할 수 있습니다.",
+      "processing": [
+        "viewport screenshot crop; no pixel alteration"
+      ],
+      "redactions": [],
+      "sha256": "ba87c4cda06f781a9a653004d8d3a40701fdbac2f40b7ee5c95487e79b5c4034",
+      "status": "validated",
+      "mobile_scroll_width": 715
+    }
+  ]
+}

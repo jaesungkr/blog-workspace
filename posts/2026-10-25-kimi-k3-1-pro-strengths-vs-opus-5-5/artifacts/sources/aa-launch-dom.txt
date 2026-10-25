@@ -1,0 +1,134 @@
+- main:
+  - navigation "Main":
+    - link "Artificial Analysis":
+      - /url: /
+      - generic: Artificial Analysis
+    - list:
+      - button "Models"
+      - button "Coding Agents"
+      - button "Image, Speech, Video"
+      - button "Inference"
+      - button "Leaderboards"
+      - button "About"
+      - link "AI Trends":
+        - /url: /trends
+    - link "Premium":
+      - /url: /pricing?source=nav&from=%2Farticles%2Fkimi-k3-1-pro-launch-benchmarks
+    - link "Log in":
+      - /url: /login
+    - button:
+    - button "Social links":
+  - paragraph:
+    - link "All articles":
+      - /url: /articles
+      - text: All articles
+  - paragraph: October 23, 2026
+  - heading "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published" [level=1]
+  - link "See model page":
+    - /url: /models/kimi-k3-1-pro
+    - text: See model page
+  - paragraph
+  - paragraph: Moonshot's new reasoning model gains 11 points over Kimi K3 (max, 44). It trails only Claude Opus 5.5 (max with fallback, 58), Claude Sonnet 5.5 (max with fallback, 56), and Muse Wonder Full (max, 56) on the Intelligence Index.
+  - paragraph: Once the weights for K3.1 Pro are released it will be the highest-scoring open weights model and the gap between the leading open weights and proprietary models on the Intelligence Index will narrow from 12 points to 3.
+  - paragraph: "Key results: ➤ Large gains in agentic performance: Kimi K3.1 Pro scores 3rd on GDPval-AA with 1,846 Elo, up 312 Elo from Kimi K3, behind only Claude Opus 5.5 (1,866 Elo) and Muse Wonder Full (1,857 Elo). Kimi K3.1 Pro also achieves the highest score of any model on Terminal-Bench 4.0. K3.1 Pro scores 67%, up from 13% for Kimi K3 and ahead of Claude Sonnet 5.5 (64%). AutomationBench-AA, which tests agentic SaaS workflows, rises from 58% to 73%."
+  - paragraph
+  - paragraph: "➤ Gains in other evals are more moderate: Humanity's Last Exam rises from 47% to 52%, CritPt from 23% to 25%, and SciCode from 59% to 61%. AA-Omniscience Index rises from 20 to 30, as the hallucination rate falls from 53% to 44% and accuracy rises from 48% to 51%."
+  - paragraph
+  - paragraph: "➤ Cost per Task roughly equal to Kimi K3 at $1.98 per Task: K3.1 Pro uses 55K output tokens per Intelligence Index task, 14% more than Kimi K3 at 48K, while its first-party token prices are 33% lower."
+  - paragraph
+  - paragraph: "Additional model details: ➤ Context window: 1M tokens. ➤ Size: 2.8T total, 104B active parameters ➤ Input modalities: Text and image ➤ Weights and license: Weights currently not published, Moonshot is expected to release the weights soon after launch ➤ Pricing: $2/$10/$0.20 per 1M input/output/cache hit tokens, 33% lower than Kimi K3 on all three rates."
+  - paragraph
+  - paragraph: "Individual eval results:"
+  - paragraph: Newsletter
+  - heading "Get notified about new articles" [level=2]
+  - generic: Email address
+  - textbox "Email address Email address":
+    - /placeholder: What's your email?
+  - button "Subscribe"
+  - paragraph: We'll email you when we publish something new.
+  - heading "Read the latest" [level=4]
+  - 'link "Announcing AA-PersonalityBench: measuring how AI models communicate AA-PersonalityBench measures the personality and communication style of AI models. A panel of LLM judges compares answers pairwise on 30 personality traits, which roll up into 8 personality indexes, alongside 21 communication characteristics measured directly from every response. October 19, 2026"':
+    - /url: /articles/aa-personalitybench
+    - 'heading "Announcing AA-PersonalityBench: measuring how AI models communicate" [level=3]'
+    - paragraph: AA-PersonalityBench measures the personality and communication style of AI models. A panel of LLM judges compares answers pairwise on 30 personality traits, which roll up into 8 personality indexes, alongside 21 communication characteristics measured directly from every response.
+    - paragraph: October 19, 2026
+  - 'link "HealthBench and HealthBench Professional: Evaluating models in realistic health conversations We’re launching leaderboards for HealthBench and HealthBench Professional, two benchmarks evaluating how AI models respond in realistic health conversations October 19, 2026"':
+    - /url: /articles/healthbench-professional-health-conversations
+    - 'heading "HealthBench and HealthBench Professional: Evaluating models in realistic health conversations" [level=3]'
+    - paragraph: We’re launching leaderboards for HealthBench and HealthBench Professional, two benchmarks evaluating how AI models respond in realistic health conversations
+    - paragraph: October 19, 2026
+  - 'link "Reflection has released Beam, their first model launch Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models October 16, 2026"':
+    - /url: /articles/reflection-beam
+    - heading "Reflection has released Beam, their first model launch" [level=3]
+    - paragraph: "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models"
+    - paragraph: October 16, 2026
+  - region "Notifications alt+T"
+  - button "Back to top":
+  - link "Artificial Analysis":
+    - /url: /
+  - paragraph: Get notified about new articles
+  - generic: Email address
+  - textbox "What's your email?"
+  - button "Subscribe"
+  - paragraph: Artificial Analysis
+  - paragraph: Explore
+  - list:
+    - link "LLM Leaderboard":
+      - /url: /leaderboards/models
+    - link "Image Arena":
+      - /url: /image/arena
+    - link "Video Arena":
+      - /url: /video/arena
+    - link "AI Agents":
+      - /url: /agents/coding-agents
+    - link "Evaluations":
+      - /url: /evaluations
+  - paragraph: Products
+  - list:
+    - link "Optima":
+      - /url: /optima
+    - link "MicroEvals":
+      - /url: /microevals
+    - link "Model Recommender":
+      - /url: /models/recommend
+    - link "Data Playground":
+      - /url: /data-playground
+    - link "Image Lab":
+      - /url: /image/image-lab
+  - paragraph: Company
+  - list:
+    - link "About":
+      - /url: /about
+    - link "Methodology":
+      - /url: /methodology
+    - link "Contact":
+      - /url: /contact
+    - link "Articles":
+      - /url: /articles
+    - link "Careers":
+      - /url: /careers
+  - link "X":
+    - /url: https://x.com/ArtificialAnlys
+    - generic: X
+  - link "LinkedIn":
+    - /url: https://www.linkedin.com/company/artificial-analysis/
+    - generic: LinkedIn
+  - link "YouTube":
+    - /url: https://www.youtube.com/@ArtificialAnalysisAI
+    - generic: YouTube
+  - link "Rednote":
+    - /url: https://www.xiaohongshu.com/user/profile/69ea6345000000000d034c02
+    - generic: Rednote
+  - link "Discord":
+    - /url: https://discord.gg/Mk298GPZ7V
+    - generic: Discord
+  - paragraph: © 2026 Artificial Analysis
+  - link "Terms of Use":
+    - /url: /terms-of-use
+  - link "Data Platform Terms":
+    - /url: https://artificialanalysiscdn.com/legal/ProDataPlatformTerms.pdf
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - combobox "Select language":
+    - text: English
+- alert

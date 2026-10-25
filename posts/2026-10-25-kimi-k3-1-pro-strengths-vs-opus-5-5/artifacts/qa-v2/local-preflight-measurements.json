@@ -1,0 +1,87 @@
+{
+  "reviewer": "Codex creator local preflight",
+  "not_final_page_gate": true,
+  "measurements": [
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "screenshot_scrollers": [
+        {
+          "client": 320,
+          "left": 0,
+          "scroll": 790
+        },
+        {
+          "client": 320,
+          "left": 0,
+          "scroll": 790
+        },
+        {
+          "client": 320,
+          "left": 0,
+          "scroll": 480
+        },
+        {
+          "client": 320,
+          "left": 360,
+          "scroll": 715
+        }
+      ],
+      "scroll_width": 360,
+      "tables": [
+        {
+          "client": 320,
+          "left": 300,
+          "scroll": 620
+        },
+        {
+          "client": 320,
+          "left": 0,
+          "scroll": 620
+        },
+        {
+          "client": 320,
+          "left": 0,
+          "scroll": 620
+        }
+      ],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "scroll_width": 390,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "scroll_width": 1280,
+      "theme": "light",
+      "width": 1280
+    },
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "scroll_width": 1280,
+      "theme": "dark",
+      "width": 1280
+    },
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "scroll_width": 360,
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "h1_count": 1,
+      "images_loaded": true,
+      "scroll_width": 390,
+      "theme": "dark",
+      "width": 390
+    }
+  ]
+}

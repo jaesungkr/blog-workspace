@@ -1,0 +1,106 @@
+- complementary:
+  - link "新建会话":
+    - /url: /?chat_enter_method=new_chat
+  - link "新建会话 ⌘ K":
+    - /url: /?chat_enter_method=new_chat
+    - text: 新建会话
+    - generic: ⌘
+    - generic: K
+  - region "Primary Navigation":
+    - link "我的 Kimi":
+      - /url: /mykimi
+      - generic: 我的 Kimi
+    - link "插件":
+      - /url: /plugins
+      - generic: 插件
+    - link "定时任务":
+      - /url: /tasks
+      - generic: 定时任务
+    - link "灵感库":
+      - /url: /inspiration
+      - generic: 灵感库
+    - link "PPT":
+      - /url: /slides
+      - generic: PPT
+    - link "3D Make New":
+      - /url: /make3d
+      - generic: 3D Make
+      - generic "New"
+    - button "更多":
+      - generic: 更多
+  - region "项目":
+    - button "项目" [expanded]:
+      - generic: 项目
+    - button "新建项目":
+      - generic: 新建项目
+  - region "对话":
+    - generic: 对话
+    - button "登录以同步历史会话"
+  - button "登录":
+    - generic: 登录
+  - button "获取应用程序":
+- button "展开导航":
+- button "登录":
+  - generic: 登录
+- button "下载桌面端":
+  - generic: 下载桌面端
+- img "Kimi Doodle"
+- textbox:
+  - paragraph
+- generic: 尽管问，或做个 Agent 任务...
+- button "上传文件 / 查看更多工具" [expanded] [active]:
+- generic: K3.1 Pro
+- generic: 进阶
+- menu "上传文件 / 查看更多工具":
+  - menuitem "添加文件与图片 从电脑中上传":
+    - generic: 添加文件与图片
+    - generic: 从电脑中上传
+  - menuitem "插件 将外部工具接入 Kimi，使它可以使用应用和服务完成任务":
+    - generic: 插件
+    - generic: 将外部工具接入 Kimi，使它可以使用应用和服务完成任务
+  - menuitem "技能 将经验、方法和文档转化为技能，相似任务轻松复用":
+    - generic: 技能
+    - generic: 将经验、方法和文档转化为技能，相似任务轻松复用
+  - menuitem "集群 海量搜索、批量处理一次完成更多 集群已移至此处":
+    - generic: 集群
+    - generic: 海量搜索、批量处理一次完成更多
+    - generic: 集群已移至此处
+  - menuitem "目标 设置持续完成的任务":
+    - generic: 目标
+    - generic: 设置持续完成的任务
+- button "选择项目":
+  - generic: 选择项目
+- button "插件":
+  - generic: 插件
+- navigation "发布器快捷入口":
+  - link "3D Make":
+    - /url: /make3d
+    - generic: 3D Make
+  - link "PPT":
+    - /url: /slides
+    - generic: PPT
+  - link "深度研究":
+    - /url: /deep-research
+    - generic: 深度研究
+  - link "文档":
+    - /url: /docs
+    - generic: 文档
+  - link "构建应用":
+    - /url: /build
+    - generic: 构建应用
+  - link "表格":
+    - /url: /sheets
+    - generic: 表格
+  - link "设计":
+    - /url: /design
+    - generic: 设计
+- generic: 内容由AI生成，请仔细甄别
+- generic: © 2026 北京月之暗面科技有限公司
+- link "京ICP备2023011302号-14":
+  - /url: https://beian.miit.gov.cn/#/Integrated/recordQuery
+- link "京B2-20240852":
+  - /url: https://tsm.miit.gov.cn/dxxzsp/xkz/xkzgl/resource/qiyesearch.jsp?num=%25E4%25BA%25ACB2-20240852&type=xuke
+- link "京公网安备11010802043150号":
+  - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802043150
+- button "探索灵感":
+  - generic: 探索灵感

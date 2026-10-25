@@ -1,0 +1,23 @@
+{
+  "actor": "Codex arithmetic only; no model inference",
+  "input_tokens": 100000,
+  "billed_output_tokens": 10000,
+  "excluded": [
+    "cache writes",
+    "cache input",
+    "search",
+    "tools",
+    "taxes"
+  ],
+  "kimi": {
+    "input": 0.2,
+    "output": 0.1,
+    "total": 0.3
+  },
+  "opus": {
+    "input": 0.4,
+    "output": 0.2,
+    "total": 0.6
+  },
+  "official_terminal_difference_pp": 0.7
+}

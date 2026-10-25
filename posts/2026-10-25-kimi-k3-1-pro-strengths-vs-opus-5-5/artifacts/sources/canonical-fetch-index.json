@@ -1,0 +1,20 @@
+[
+  {
+    "id": "kimi-international-guide",
+    "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+    "exit": 0,
+    "bytes": 768807
+  },
+  {
+    "id": "kimi-international-pricing",
+    "url": "https://platform.kimi.ai/docs/pricing/chat",
+    "exit": 0,
+    "bytes": 300661
+  },
+  {
+    "id": "claude-pricing",
+    "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "exit": 0,
+    "bytes": 1327710
+  }
+]

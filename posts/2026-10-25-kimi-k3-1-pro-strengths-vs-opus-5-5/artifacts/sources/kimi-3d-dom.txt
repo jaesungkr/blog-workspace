@@ -1,0 +1,117 @@
+- complementary:
+  - link "新建会话":
+    - /url: /?chat_enter_method=new_chat
+  - link "新建会话 ⌘ K":
+    - /url: /?chat_enter_method=new_chat
+    - text: 新建会话
+    - generic: ⌘
+    - generic: K
+  - region "Primary Navigation":
+    - link "我的 Kimi":
+      - /url: /mykimi
+      - generic: 我的 Kimi
+    - link "插件":
+      - /url: /plugins
+      - generic: 插件
+    - link "定时任务":
+      - /url: /tasks
+      - generic: 定时任务
+    - link "灵感库":
+      - /url: /inspiration
+      - generic: 灵感库
+    - link "PPT":
+      - /url: /slides
+      - generic: PPT
+    - link "3D Make New":
+      - /url: /make3d
+      - generic: 3D Make
+      - generic "New"
+    - button "更多":
+      - generic: 更多
+  - region "项目":
+    - button "项目" [expanded]:
+      - generic: 项目
+    - button "新建项目":
+      - generic: 新建项目
+  - region "对话":
+    - generic: 对话
+    - button "登录以同步历史会话"
+  - button "登录":
+    - generic: 登录
+  - button "获取应用程序":
+- button "展开导航":
+- button "登录":
+  - generic: 登录
+- button "下载桌面端":
+  - generic: 下载桌面端
+- img "KIMI"
+- textbox:
+  - paragraph
+- generic: 做一个 3D 打印的电脑支架...
+- button "上传文件 / 查看更多工具":
+- generic: 3D Make
+- button "选择类型":
+  - generic: 选择类型
+- generic: K3.1 Pro
+- generic: 进阶
+- button "选择项目":
+  - generic: 选择项目
+- button "插件":
+  - generic: 插件
+- generic: 精选模板
+- generic: 设计与艺术
+- generic: 生活好物
+- generic: 建筑设计
+- generic: 科技探索
+- generic: 游戏
+- generic: 其他
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- button "做同款":
+  - button "做同款":
+    - text: 做同款
+- generic: 内容由AI生成，请仔细甄别
+- generic: © 2026 北京月之暗面科技有限公司
+- link "京ICP备2023011302号-14":
+  - /url: https://beian.miit.gov.cn/#/Integrated/recordQuery
+- link "京B2-20240852":
+  - /url: https://tsm.miit.gov.cn/dxxzsp/xkz/xkzgl/resource/qiyesearch.jsp?num=%25E4%25BA%25ACB2-20240852&type=xuke
+- link "京公网安备11010802043150号":
+  - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802043150
