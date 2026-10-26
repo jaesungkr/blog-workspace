@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "lead_id": "hero",
+  "items": [
+    {
+      "id": "hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C04"
+      ],
+      "actor": "Codex via built-in image_gen",
+      "source_url": "",
+      "raw_path": "assets/ai-video-tools-hero-v1.png",
+      "publish_path": "assets/ai-video-tools-hero-v1.png",
+      "rights": "Original AI-generated editorial illustration with the author-approved dev.log comparison reference; no vendor logos or UI reproduced.",
+      "alt": "Kling·Wan·Seedance를 카메라와 필름 조형물로 표현한 영상 AI 비교 이미지",
+      "caption": "영상 수정, 다양한 입력, 장면 연결처럼 필요한 작업에 따라 모델을 살펴볼 수 있습니다.",
+      "processing": [
+        "Built-in image_gen generation using approved v9 composition reference; original PNG copied without pixel changes."
+      ],
+      "redactions": [],
+      "width": 1672,
+      "height": 941,
+      "placement": "after:opening",
+      "sha256": "4c0f9a7d855969a681538c14394839d2b53ac8ac2f560465fe299a826ab4c305",
+      "status": "validated",
+      "tistory_url": ""
+    },
+    {
+      "id": "workflow",
+      "kind": "image",
+      "origin": "generated",
+      "role": "concept",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C04",
+        "C19"
+      ],
+      "actor": "Codex via built-in image_gen",
+      "source_url": "",
+      "raw_path": "assets/ai-video-workflow-v2.png",
+      "publish_path": "assets/ai-video-workflow-v2.png",
+      "rights": "Original generated educational illustration; fictional unbranded product; not a service screenshot or an observed model output.",
+      "alt": "제품 사진과 자료를 준비하고 영상 클립을 생성한 뒤 자막과 소리를 편집하는 과정을 보여 주는 설명 이미지",
+      "caption": "제품 사진을 활용한 제작 과정의 개념도입니다. 실제 서비스 화면이나 생성 결과를 재현한 이미지는 아닙니다.",
+      "processing": [
+        "Built-in image_gen generation followed by one targeted label-size edit; original returned PNG copied without pixel changes."
+      ],
+      "redactions": [],
+      "width": 1448,
+      "height": 1086,
+      "placement": "after:workflow-explanation-before-cost",
+      "sha256": "dd38baef647a28f70504a2549aed6e28751603ded5e5100f073f80ffa7acdc9e",
+      "status": "validated",
+      "tistory_url": ""
+    }
+  ]
+}

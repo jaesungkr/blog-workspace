@@ -1,0 +1,17 @@
+Create a refined Korean editorial process illustration for a blog about choosing AI video tools. This is a conceptual explanation, never a screenshot or claimed result from an actual video model.
+
+Core message: A prepared product photo becomes generated video clips; selected clips are then assembled and finished with captions and audio.
+
+Composition: landscape 4:3 canvas. Exactly three clearly connected scenes arranged along an open diagonal path from upper left, through center, to lower right. Use the full canvas without an enclosing card, poster headline, or decorative footer. The three stages should occupy distinct clear areas, with large recognizable illustrations and generous quiet space. Two simple thin charcoal directional arrows connect the scenes without touching labels. Reading order must be immediately clear.
+
+Scene 1, upper left: a single rectangular product photograph of a matte teal running shoe with a cream sole, and one small text-free paper sheet behind it indicating prepared reference material. Label directly above this scene: "자료 준비".
+Scene 2, central: three sequential video frames of the SAME teal shoe, showing a gradual turn from side view toward three-quarter view, with a compact triangular play symbol on the first frame. The strip of three frames must read as motion over time. Label directly above this scene: "클립 생성".
+Scene 3, lower right: a simplified editorial assembly diagram, NOT a branded app or fake screenshot. A larger final frame of the SAME shoe, with an abstract caption bar below the shoe, and directly beneath it three adjacent thumbnail blocks plus a slim sound waveform track. This makes clip assembly, captions, and audio visually understandable without extra text. Label directly above this scene: "최종 편집".
+
+Exact permitted visible text, each once, in clear Korean sans-serif lettering:
+자료 준비
+클립 생성
+최종 편집
+No other text, numbers, stage badges, headings, logos, pseudo-writing, model names, or watermarks. These three short labels must remain readable when the complete image is displayed at 320 CSS pixels wide. They should be modest relative to each illustration, not a giant title. Keep ample visible clearance around all glyphs, arrows, and scene objects.
+
+Art direction: contemporary flat-vector editorial illustration, soft warm ivory ground, charcoal outlines, restrained teal accents, muted gray secondary shapes, subtle tonal gradients. Calm, clean, diagram-led, precise geometry without stiffness. Avoid card grids, dashboard styling, glowing AI brains, neon, generic feature icons, excessive 3D, photorealism, and decorative filler. Do not imply rankings, guaranteed perfect outputs, or a mandatory three-service workflow.

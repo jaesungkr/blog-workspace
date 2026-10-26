@@ -1,0 +1,48 @@
+{
+  "source": [
+    1448,
+    1086
+  ],
+  "source_font_sizes": "unavailable, generated raster",
+  "labels": [
+    {
+      "text": "자료 준비",
+      "painted_bounds_px": [
+        156,
+        26,
+        379,
+        82
+      ],
+      "painted_width_px": 223,
+      "painted_height_px": 56,
+      "painted_height_at_320_css_px": 12.38,
+      "method": "Dark-pixel bounds within isolated label ROI (all RGB channels <130); no font-size inference."
+    },
+    {
+      "text": "클립 생성",
+      "painted_bounds_px": [
+        633,
+        341,
+        862,
+        399
+      ],
+      "painted_width_px": 229,
+      "painted_height_px": 58,
+      "painted_height_at_320_css_px": 12.82,
+      "method": "Dark-pixel bounds within isolated label ROI (all RGB channels <130); no font-size inference."
+    },
+    {
+      "text": "최종 편집",
+      "painted_bounds_px": [
+        1083,
+        623,
+        1317,
+        681
+      ],
+      "painted_width_px": 234,
+      "painted_height_px": 58,
+      "painted_height_at_320_css_px": 12.82,
+      "method": "Dark-pixel bounds within isolated label ROI (all RGB channels <130); no font-size inference."
+    }
+  ]
+}

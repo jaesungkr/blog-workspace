@@ -1,0 +1,30 @@
+{
+  "reviewer": "/root/hero_review",
+  "inspection": "Direct view_image original-size images and 420px derivatives; sips generated inspection-only thumbnails without changing publication PNG.",
+  "files": [
+    {
+      "path": "posts/2026-10-26-ai-video-tools-guide/assets/ai-video-tools-hero-v1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4c0f9a7d855969a681538c14394839d2b53ac8ac2f560465fe299a826ab4c305"
+    },
+    {
+      "path": "posts/2026-09-23-grok-4-7-vs-fable-5-1/assets/grok-4-7-vs-fable-5-1-hero-v9.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8fa3c67097d51fa225e8e9d2bb9738b6d1d659f519c2d2c2ac42979ab8d3b560"
+    },
+    {
+      "path": "posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/hero-inspection/candidate-420.png",
+      "width": 420,
+      "height": 236,
+      "sha256": "2ef38229f17f9435bba201763e1dedd19f269b4c1dee8428c62ce839fbdaceb7"
+    },
+    {
+      "path": "posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/hero-inspection/reference-420.png",
+      "width": 420,
+      "height": 236,
+      "sha256": "6474157ca29ccb006aed1304f195edaee1df5f9c191786277f1e3b48b454cd13"
+    }
+  ]
+}

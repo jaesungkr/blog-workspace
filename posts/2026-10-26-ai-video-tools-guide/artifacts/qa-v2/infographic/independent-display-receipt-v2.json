@@ -1,0 +1,94 @@
+{
+  "reviewer": "/root/hero_review",
+  "purpose": "Independent supporting-image actual-size display and enlarged regions; untouched original image, not a reduced derivative",
+  "source_sha256": "dd38baef647a28f70504a2549aed6e28751603ded5e5100f073f80ffa7acdc9e",
+  "captures": [
+    {
+      "file": "actual-320-browser-viewport-v2.png",
+      "clip": [
+        0,
+        0,
+        360,
+        315
+      ],
+      "scale": 1,
+      "sha256": "5f1f50a9aae562349f99c5a84532653de84367440fdb43428858e38c7a3e8006"
+    },
+    {
+      "file": "preparation-label-and-scene-enlarged-v2.png",
+      "clip": [
+        20,
+        376,
+        555,
+        350
+      ],
+      "scale": 1.5,
+      "sha256": "7caee90fa311d4caf3cac1ab355ba97a6e79f0ad04dc488bde0011adc752ad86"
+    },
+    {
+      "file": "generation-label-and-frames-enlarged-v2.png",
+      "clip": [
+        350,
+        696,
+        790,
+        275
+      ],
+      "scale": 1.5,
+      "sha256": "22f2d0c56d30cc98f27ca9a8c0006e2eabd88689c6067edb3102598c3d0f0469"
+    },
+    {
+      "file": "editing-label-and-timeline-enlarged-v2.png",
+      "clip": [
+        935,
+        976,
+        525,
+        460
+      ],
+      "scale": 1.5,
+      "sha256": "4234f186924c13700660c4b82216eca6d6e53c300684ed7a50d0073acd6b4c42"
+    },
+    {
+      "file": "connector-preparation-generation-enlarged-v2.png",
+      "clip": [
+        535,
+        626,
+        380,
+        165
+      ],
+      "scale": 1.5,
+      "sha256": "74b42691ccec458525ef3297b365c8a3495e03c422576111897651bce643c83c"
+    },
+    {
+      "file": "connector-generation-editing-enlarged-v2.png",
+      "clip": [
+        1085,
+        891,
+        305,
+        190
+      ],
+      "scale": 1.5,
+      "sha256": "f77599e0d885c40ade830f48d7cfd2be3b8607f5856de14672b2ef4fd55dbf7d"
+    }
+  ],
+  "browser": "Chrome/155.0.8059.85",
+  "displays": [
+    {
+      "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/assets/ai-video-workflow-v2.png",
+      "width": 320,
+      "height": 240,
+      "x": 20,
+      "y": 50,
+      "naturalWidth": 1448,
+      "naturalHeight": 1086
+    },
+    {
+      "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/assets/ai-video-workflow-v2.png",
+      "width": 1448,
+      "height": 1086,
+      "x": 20,
+      "y": 376,
+      "naturalWidth": 1448,
+      "naturalHeight": 1086
+    }
+  ]
+}

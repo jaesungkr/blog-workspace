@@ -1,0 +1,10 @@
+{
+  "actor": "Codex",
+  "kind": "arithmetic illustration, not a measured success rate",
+  "api_usd_per_second": 0.2,
+  "seconds": 5,
+  "per_generation_usd": 1.0,
+  "generations": 5,
+  "accepted_clips": 1,
+  "per_accepted_clip_usd": 5.0
+}

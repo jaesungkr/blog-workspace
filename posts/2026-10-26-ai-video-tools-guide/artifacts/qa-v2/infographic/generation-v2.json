@@ -1,0 +1,17 @@
+{
+  "creator": "max-txt2img",
+  "tool": "built-in image_gen.imagegen",
+  "original_output": "/Users/ja2sng/.codex/generated_images/01a1786a-28a8-7c22-a9a6-d60df39e029d/exec-72731f68-efb5-4357-9570-cfbd044ace6d.png",
+  "candidate": "posts/2026-10-26-ai-video-tools-guide/assets/ai-video-workflow-v2.png",
+  "width": 1448,
+  "height": 1086,
+  "sha256": "dd38baef647a28f70504a2549aed6e28751603ded5e5100f073f80ffa7acdc9e",
+  "requested_ratio": "4:3",
+  "observed_ratio": 1.3333333333333333,
+  "intended_mobile_width": 320,
+  "prompt": "edit-prompt-v2.txt",
+  "corrections": 1,
+  "source_font_sizes": "unavailable; generated raster",
+  "inspection": "Creator inspected full generated raster: labels enlarged, exact three strings preserved, arrows moved clear of glyphs. Independent review pending.",
+  "reference": "assets/ai-video-workflow-v1.png"
+}

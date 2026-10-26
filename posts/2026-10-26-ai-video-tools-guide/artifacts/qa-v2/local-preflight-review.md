@@ -1,0 +1,35 @@
+# 로컬 검토본 사전 점검
+
+## 2차 폴리싱과 추가 이미지 반영
+
+아래의 초기 기록 이후 사용자 요청으로 원고의 도입과 문단 연결을 수정하고 supporting workflow 이미지를 추가했다. 현재 캡처와 local-preflight-measurements.json은 최신 원고 및 ai-video-workflow-v2.png를 가리킨다. 1280·360 light/dark 네 프로필 모두 이미지 두 개의 로드, 가로 넘침 없음, 단일 H1, 목차 대상 연결을 확인했다. 이미지의 실제 폭은 916px/320px이다. 도입, workflow 이미지와 비용으로 이어지는 문단, 서비스 표의 오른쪽 열, 맺음의 실제 PNG를 다시 열었다. v1의 작은 한글 문제는 v2에서 수정됐으며, 그림 자체의 승인 근거는 infographic/independent-review-v2.md에 별도로 남긴다. 이전 기록의 단일 hero 설명은 1차 후보에 해당한다.
+
+- 실행/검토: Codex, 2026-10-26
+- 범위: 로컬 미디어를 포함한 저자 검토본. 원격 미디어 검증·최종 독립 페이지 승인·게시 승인을 대체하지 않는다.
+- 브라우저: Chrome/155.0.8059.85, 임시 headless 프로필, 저장소의 기존 표준 라이브러리 CDP 캡처 모듈을 재사용했다.
+- 정확한 입력: preflight/ai-video-tools-guide-rich-preview.html 및 preflight-dark/ai-video-tools-guide-rich-preview.html. 해시는 local-preflight-measurements.json에 보존했다.
+- 1280×900 및 360×800, light/dark 네 프로필에서 document scrollWidth가 viewport와 같고, H1은 하나이며, 목차 링크가 서로 다른 실제 소제목으로 연결되고, hero PNG가 로드됐다.
+
+## 실제 시각 점검
+
+전체 desktop light 페이지에서 도입·대표 이미지·목차·모든 절·표·참고 자료를 확인했다. dark desktop 도입과 hero, mobile light/dark 도입·서비스 표·선택표·맺음과 참고 자료를 실제 PNG로 열었다. 글자와 링크 대비가 충분하고 본문 줄바꿈과 목록 기호·단락 간격이 유지됐다. 실제 렌더의 문장과 원고를 대조해 이름과 버전, 숫자, 한글 조사가 누락되지 않았음을 읽었다.
+
+표는 viewport 내부 컨테이너에서 가로로 이동한다. 360px 서비스표와 선택표의 왼쪽/오른쪽 끝을 실제로 캡처하고 열어 마지막 열 전체에 접근할 수 있음을 확인했다. 표의 사이트/후보가 먼저 보이고 조건/이유는 좌우 이동으로 읽힌다. 본문과 hero에 가로 스크롤을 적용하지 않았다. 첫 표 앞의 모바일 안내가 현재 표 동작과 일치한다.
+
+생성 hero는 전체/420px에서 독립 검수를 받았다. 기사 내 표기 크기에서도 모델 이름이 구분된다. 사진은 성능 입증 캡처가 아닌 편집용 대표 이미지이며 공개 캡션이 provenance 라벨을 노출하지 않는다.
+
+원고와 HTML에 Instagram·사용자 소셜 게시물 URL·참고 사실이 들어 있지 않음을 문자열 검사와 육안으로 확인했다. 참고 자료는 공식 제품 문서와 독립 평가 원문만 싣는다.
+
+## 수정과 재확인
+
+첫 캡처 스크립트는 생성된 preview 파일명의 rich 접미사를 빠뜨려 파일을 열지 못했다. 경로를 실제 렌더 출력명으로 고친 뒤 네 프로필을 새로 캡처했다. 오류 화면을 통과 증거로 쓰지 않았다.
+
+모바일 표 안내 한 문장을 추가한 뒤 prose polish·독립 source 재검수·source-pass·light/dark 렌더·네 프로필 캡처를 모두 갱신했다. 현재 검수 기록은 수정된 원고와 연결된다.
+
+## 저자 검토용 포장
+
+outputs의 HTML은 같은 렌더 본문·CSS에서 img src만 동일 PNG 바이트의 data URI로 교체했다. 로컬 경로 의존 없이 글 전체와 이미지를 열 수 있다. user-review-handoff.json에 검토용 HTML과 원본 렌더 해시를 함께 기록했다. 이 HTML은 티스토리 네이티브 첨부용 제출 파일이 아니다.
+
+## 남은 게시 단계
+
+라이프사이클 reviewing. 특정 원고/이미지 승인과 게시 요청을 받으면 in-app browser로 이미지 업로드와 native attachment 바인딩, 원격 관측, 최종 원격 light/dark 독립 검수, strict render/TXT, 실제 티스토리 미리보기·게시·공개 페이지 확인을 계속한다.

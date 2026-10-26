@@ -1,0 +1,17 @@
+{
+  "claims": [
+    "C01",
+    "C02",
+    "C04",
+    "C19"
+  ],
+  "labels": [
+    "자료 준비",
+    "클립 생성",
+    "최종 편집"
+  ],
+  "meaning": "Preparation of reference inputs, generation of video clips, and final clip/caption/audio assembly. A conceptual example, not a measured result or mandatory separate-service sequence.",
+  "placement": "After the production-process paragraph in the final choice/cost section.",
+  "caption": "제품 사진을 활용한 제작 과정의 개념도입니다. 실제 서비스 화면이나 생성 결과를 재현한 이미지는 아닙니다.",
+  "alt": "제품 사진과 자료를 준비하고 영상 클립을 생성한 뒤 자막과 소리를 편집하는 과정을 보여 주는 설명 이미지"
+}

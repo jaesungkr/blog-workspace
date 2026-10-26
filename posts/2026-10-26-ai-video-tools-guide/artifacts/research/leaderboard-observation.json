@@ -1,0 +1,66 @@
+{
+  "observed_on": "2026-10-26",
+  "actor": "Codex",
+  "method": "Selected factual rows transcribed from web tool output; not an original HTML capture",
+  "aa": {
+    "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+    "board": "AA-Video-T2V v2.1 Overall With Audio",
+    "rows": [
+      {
+        "rank": 1,
+        "model": "Wan 3.0",
+        "elo": 1175,
+        "interval_95": [
+          1160,
+          1190
+        ],
+        "api_usd_per_min": 12.0
+      },
+      {
+        "rank": 2,
+        "model": "Utopai X",
+        "elo": 1167,
+        "interval_95": [
+          1152,
+          1182
+        ]
+      },
+      {
+        "rank": 3,
+        "model": "HeyGen Video 1",
+        "elo": 1160,
+        "interval_95": [
+          1145,
+          1175
+        ]
+      },
+      {
+        "rank": 4,
+        "model": "MiniMax H3 (768p)",
+        "elo": 1158,
+        "interval_95": [
+          1143,
+          1173
+        ]
+      },
+      {
+        "rank": 5,
+        "model": "Dreamina Seedance 2.5",
+        "elo": 1158,
+        "interval_95": [
+          1143,
+          1173
+        ],
+        "api_usd_per_min": 34.12
+      }
+    ],
+    "kling_4_entry": false
+  },
+  "arena": {
+    "url": "https://arena.ai/leaderboard/video/text-to-video",
+    "displayed_update": "2026-09-21",
+    "leader": "Gemini Omni 1.1 Flash",
+    "kling_4_entry": false,
+    "scope": "Text-to-video; configurations and samples differ by entry"
+  }
+}

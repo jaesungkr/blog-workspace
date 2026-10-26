@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "첫 AI 숏폼 영상을 만들 도구를 고르는 비전문 개인 제작자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": true,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 자료와 독립 평가를 확인하는 standard-rich. 독자는 생성 모델과 사이트를 아직 구분하지 못한다. 여러 모델을 비교할 시작점으로 Higgsfield를 소개하고 새 장면 생성/원본 수정/예산에 따라 선택한다. 실제 생성 성능·한국어 대사·대기 시간은 측정하지 않는다. max-txt2img와 diagram-design을 검토했으나 모델-사이트 관계는 짧은 정의와 3열 표가 더 정확하고 용도별 분기도 표로 충분하여 supporting infographic not_applicable. 절차형 가이드가 아니므로 UI 스크린샷 생략. 대표 이미지는 승인된 v9 비교 구도를 영상 모델 3개에 맞게 변형한다. 평가 표기일과 확인일을 구분한다. Revision: user requested one more image and fuller prose transitions. The prior infographic omission is superseded by a max-txt2img process illustration: input preparation, clip generation, final editing. It explains transformation using one fictional product; it is not UI or test evidence. Diagram-design is unnecessary because no exact numeric geometry is involved.",
+  "publication_mode": "codex-browser"
+}

@@ -1,0 +1,519 @@
+{
+  "title": "AI 영상 제작 툴 비교: 선두 모델과 용도별 추천 사이트",
+  "headings": [
+    {
+      "line": 32,
+      "level": 3,
+      "text": "영상 모델과 이용 사이트의 차이",
+      "generic_signals": []
+    },
+    {
+      "line": 46,
+      "level": 3,
+      "text": "지금 영상 생성 AI의 선두권",
+      "generic_signals": []
+    },
+    {
+      "line": 63,
+      "level": 3,
+      "text": "Kling 4.0·Wan 3.0·Seedance 2.5의 장단점",
+      "generic_signals": []
+    },
+    {
+      "line": 91,
+      "level": 3,
+      "text": "함께 살펴볼 영상 AI 사이트",
+      "generic_signals": []
+    },
+    {
+      "line": 114,
+      "level": 3,
+      "text": "첫 도구를 고르는 기준과 생성 비용",
+      "generic_signals": []
+    },
+    {
+      "line": 136,
+      "level": 3,
+      "text": "참고 자료",
+      "generic_signals": []
+    }
+  ],
+  "summary": {
+    "heading_count": 6,
+    "headings_with_generic_signal": 0,
+    "sentence_count": 99,
+    "average_sentence_chars_no_spaces": 39.2,
+    "sentences_over_50_chars": 24,
+    "sentences_over_70_chars": 2,
+    "hangul_chars": 3074,
+    "abstract_nouns_per_1000_hangul": 10.1,
+    "corrective_frames_per_1000_hangul": 0.7
+  },
+  "stock_phrases": {},
+  "abstract_nouns": {
+    "범위": 1,
+    "기준": 3,
+    "결과": 11,
+    "구성": 1,
+    "경우": 3,
+    "관계": 1,
+    "차이": 2,
+    "설명": 8,
+    "방식": 1
+  },
+  "corrective_frames": {
+    "다만": 2
+  },
+  "matched_lines": [
+    {
+      "line": 24,
+      "kind": "abstract_noun",
+      "signal": "설명",
+      "excerpt": "사진 한 장을 움직이는 제품 영상으로 바꾸거나, 촬영하기 어려운 장면을 짧은 영상으로 만들고 싶을 때 영상 생성 AI를 찾게 됩니다. 설명이나 사진을 입력하면 새로운 영상 클립을 만드는 도구인데, 막상 고르려면 Kling, Wan, Seedance 같은 모델 이름에 Higgsfield, Runway 같은 사이트 이름까지 섞여 나옵니다."
+    },
+    {
+      "line": 28,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "생성 품질의 선두권은 별도로 살펴봐야 합니다. 2026년 10월 26일 확인한 독립 평가에서는 Wan 3.0과 Google의 Gemini Omni 계열이 각각 다른 평가에서 앞섰습니다. Kling 4.0처럼 막 공개된 버전은 공식 기능과 이전 버전의 평가 결과를 구분해서 읽어야 합니다."
+    },
+    {
+      "line": 38,
+      "kind": "abstract_noun",
+      "signal": "방식",
+      "excerpt": "같은 모델도 이용 사이트에 따라 선택할 수 있는 버전과 기능, 크레딧 차감 방식이 달라집니다. 비교할 때에는 사이트 이름과 선택한 모델 이름을 함께 기록해야 합니다. 모바일에서는 아래 표들을 좌우로 밀어 마지막 열까지 확인할 수 있습니다."
+    },
+    {
+      "line": 50,
+      "kind": "abstract_noun",
+      "signal": "차이",
+      "excerpt": "Artificial Analysis의 AA-Video-T2V v2.1은 같은 설명으로 만든 영상을 모델 이름을 가린 상태에서 비교합니다. 소리가 포함된 텍스트→영상 평가에서 Wan 3.0이 표시 순위 1위였습니다. Utopai X, HeyGen Video 1, MiniMax H3, Dreamina Seedance 2.5가 뒤를 이었습니다. 상위 모델들의 점수 구간이 겹쳐, 순위 한 칸의 차이만으로 품질 격차를 크게 해석하기는 어렵습니다."
+    },
+    {
+      "line": 50,
+      "kind": "abstract_noun",
+      "signal": "설명",
+      "excerpt": "Artificial Analysis의 AA-Video-T2V v2.1은 같은 설명으로 만든 영상을 모델 이름을 가린 상태에서 비교합니다. 소리가 포함된 텍스트→영상 평가에서 Wan 3.0이 표시 순위 1위였습니다. Utopai X, HeyGen Video 1, MiniMax H3, Dreamina Seedance 2.5가 뒤를 이었습니다. 상위 모델들의 점수 구간이 겹쳐, 순위 한 칸의 차이만으로 품질 격차를 크게 해석하기는 어렵습니다."
+    },
+    {
+      "line": 61,
+      "kind": "abstract_noun",
+      "signal": "기준",
+      "excerpt": "이 기준에서는 Wan 3.0과 Gemini Omni 계열을 선두 후보로 살펴볼 만합니다. Seedance 2.5도 두 평가에서 상위권에 들었습니다. Kling 4.0은 확인한 두 표에 별도 항목이 없었습니다."
+    },
+    {
+      "line": 69,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "Kling 공식 사용 안내에 따르면 4.0은 사진·영상·음성·인물 요소 등 여러 자료를 함께 참조하고, 3~30초 영상을 생성합니다. 결과물은 최대 4K를 지원합니다. 수정할 장면에서 어떤 자료의 인물이나 동작을 사용할지 지정할 수 있어, 촬영한 동작을 활용하거나 같은 장면을 여러 모습으로 바꾸려는 작업에 검토할 만합니다."
+    },
+    {
+      "line": 71,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "장점은 참조 자료와 수정 의도를 구체적으로 줄 수 있다는 점입니다. 사진은 인물 외형에, 영상은 동작에 사용하도록 역할을 나누면 원하는 결과를 설명하기 쉬워집니다. 공식 문서도 자료의 역할을 지정하지 않으면 모델이 용도를 추정해 결과를 예측하기 어려워질 수 있다고 안내합니다."
+    },
+    {
+      "line": 71,
+      "kind": "abstract_noun",
+      "signal": "설명",
+      "excerpt": "장점은 참조 자료와 수정 의도를 구체적으로 줄 수 있다는 점입니다. 사진은 인물 외형에, 영상은 동작에 사용하도록 역할을 나누면 원하는 결과를 설명하기 쉬워집니다. 공식 문서도 자료의 역할을 지정하지 않으면 모델이 용도를 추정해 결과를 예측하기 어려워질 수 있다고 안내합니다."
+    },
+    {
+      "line": 77,
+      "kind": "abstract_noun",
+      "signal": "구성",
+      "excerpt": "Alibaba 공식 설명에 따르면 Wan 3.0은 글·사진·영상·음성에 더해 문서와 웹페이지를 입력으로 활용하고, 한 번에 최대 30초를 생성합니다. 제품 사진과 소개 자료를 바탕으로 설명 영상을 구성하려는 경우처럼, 이미 가진 자료가 여러 형태일 때 검토할 이유가 있습니다."
+    },
+    {
+      "line": 77,
+      "kind": "abstract_noun",
+      "signal": "경우",
+      "excerpt": "Alibaba 공식 설명에 따르면 Wan 3.0은 글·사진·영상·음성에 더해 문서와 웹페이지를 입력으로 활용하고, 한 번에 최대 30초를 생성합니다. 제품 사진과 소개 자료를 바탕으로 설명 영상을 구성하려는 경우처럼, 이미 가진 자료가 여러 형태일 때 검토할 이유가 있습니다."
+    },
+    {
+      "line": 77,
+      "kind": "abstract_noun",
+      "signal": "설명",
+      "excerpt": "Alibaba 공식 설명에 따르면 Wan 3.0은 글·사진·영상·음성에 더해 문서와 웹페이지를 입력으로 활용하고, 한 번에 최대 30초를 생성합니다. 제품 사진과 소개 자료를 바탕으로 설명 영상을 구성하려는 경우처럼, 이미 가진 자료가 여러 형태일 때 검토할 이유가 있습니다."
+    },
+    {
+      "line": 79,
+      "kind": "corrective_frame",
+      "signal": "다만",
+      "excerpt": "독립 평가에서는 앞서 본 오디오 포함 텍스트→영상 평가의 선두였습니다. 공식 API는 해상도별 초 단위 요금을 공개해, 생성 길이에 따른 비용을 계산하기도 쉽습니다. 다만 문서를 넣어 영상을 만드는 기능은 이용 사이트마다 제공 여부가 다를 수 있으므로, 필요한 입력 기능이 실제 작업 화면에 있는지 살펴봐야 합니다."
+    },
+    {
+      "line": 81,
+      "kind": "abstract_noun",
+      "signal": "설명",
+      "excerpt": "약점도 공식 설명에 나와 있습니다. Alibaba는 오디오 질감과 화면 속 글자 정확도를 개선 과제로 꼽았습니다. 가격이나 제품명처럼 정확해야 하는 문구는 생성된 화면에서 다시 확인하고, 최종 자막은 편집 도구에서 넣는 편이 관리하기 쉽습니다."
+    },
+    {
+      "line": 87,
+      "kind": "corrective_frame",
+      "signal": "다만",
+      "excerpt": "장점은 여러 장면의 연결과 참조 자료를 활용하는 기능입니다. 다만 장면 전환과 인물 유지가 실제로 얼마나 안정적인지는 입력과 장면에 따라 살펴봐야 합니다. 공식 시연은 제공사가 고른 결과입니다."
+    },
+    {
+      "line": 87,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "장점은 여러 장면의 연결과 참조 자료를 활용하는 기능입니다. 다만 장면 전환과 인물 유지가 실제로 얼마나 안정적인지는 입력과 장면에 따라 살펴봐야 합니다. 공식 시연은 제공사가 고른 결과입니다."
+    },
+    {
+      "line": 89,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "비용도 함께 봐야 합니다. 앞서 본 Artificial Analysis의 API 가격 표에서는 같은 기본 조건의 Wan 3.0보다 Seedance 2.5의 분당 생성 비용이 높았습니다. 이 값은 사이트 구독료와 다르며, 플랫폼 할인이나 생성 모드에 따라 실제 차이는 달라집니다. 여러 장면이 이어지는 결과가 필요한지 먼저 정하면 비용을 들일 이유도 분명해집니다."
+    },
+    {
+      "line": 89,
+      "kind": "abstract_noun",
+      "signal": "차이",
+      "excerpt": "비용도 함께 봐야 합니다. 앞서 본 Artificial Analysis의 API 가격 표에서는 같은 기본 조건의 Wan 3.0보다 Seedance 2.5의 분당 생성 비용이 높았습니다. 이 값은 사이트 구독료와 다르며, 플랫폼 할인이나 생성 모드에 따라 실제 차이는 달라집니다. 여러 장면이 이어지는 결과가 필요한지 먼저 정하면 비용을 들일 이유도 분명해집니다."
+    },
+    {
+      "line": 110,
+      "kind": "abstract_noun",
+      "signal": "범위",
+      "excerpt": "Runway의 Gen-4.5 공식 설명은 복잡한 카메라 움직임과 순서가 있는 지시를 강조합니다. 동시에 인과관계, 물체가 사라졌다 나타나는 현상, 시간 순서 같은 한계도 공개합니다. Luma는 Ray3 안내와 모델별 가이드에서 원본 영상 변형과 HDR 지원 범위를 설명합니다. 촬영한 영상을 바꾸려는 사람은 이런 수정 기능을 비교하는 편이 목적에 맞습니다."
+    },
+    {
+      "line": 110,
+      "kind": "abstract_noun",
+      "signal": "관계",
+      "excerpt": "Runway의 Gen-4.5 공식 설명은 복잡한 카메라 움직임과 순서가 있는 지시를 강조합니다. 동시에 인과관계, 물체가 사라졌다 나타나는 현상, 시간 순서 같은 한계도 공개합니다. Luma는 Ray3 안내와 모델별 가이드에서 원본 영상 변형과 HDR 지원 범위를 설명합니다. 촬영한 영상을 바꾸려는 사람은 이런 수정 기능을 비교하는 편이 목적에 맞습니다."
+    },
+    {
+      "line": 110,
+      "kind": "abstract_noun",
+      "signal": "설명",
+      "excerpt": "Runway의 Gen-4.5 공식 설명은 복잡한 카메라 움직임과 순서가 있는 지시를 강조합니다. 동시에 인과관계, 물체가 사라졌다 나타나는 현상, 시간 순서 같은 한계도 공개합니다. Luma는 Ray3 안내와 모델별 가이드에서 원본 영상 변형과 HDR 지원 범위를 설명합니다. 촬영한 영상을 바꾸려는 사람은 이런 수정 기능을 비교하는 편이 목적에 맞습니다."
+    },
+    {
+      "line": 116,
+      "kind": "abstract_noun",
+      "signal": "기준",
+      "excerpt": "영상 한 편에서 가장 어려운 작업을 기준으로 후보를 줄일 수 있습니다. 다음 표는 공식 기능을 실제 제작 상황에 연결한 선택 기준입니다."
+    },
+    {
+      "line": 126,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "예산은 월 구독료와 생성 비용을 나누어 계산해야 합니다. 구독형 서비스에서는 작업마다 크레딧을 차감하는 경우가 많고, API는 생성 길이·해상도·모드에 따라 사용료를 매깁니다. 같은 ‘영상 한 편’이라도 5초 초안과 30초 고해상도 결과물의 비용은 달라집니다."
+    },
+    {
+      "line": 126,
+      "kind": "abstract_noun",
+      "signal": "경우",
+      "excerpt": "예산은 월 구독료와 생성 비용을 나누어 계산해야 합니다. 구독형 서비스에서는 작업마다 크레딧을 차감하는 경우가 많고, API는 생성 길이·해상도·모드에 따라 사용료를 매깁니다. 같은 ‘영상 한 편’이라도 5초 초안과 30초 고해상도 결과물의 비용은 달라집니다."
+    },
+    {
+      "line": 130,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "이렇게 채택한 클립 한 개를 얻는 비용으로 계산하면 저렴한 생성 모드와 결과를 고치기 쉬운 모델을 함께 평가할 수 있습니다. 결제 전에는 목표 해상도·길이·소리 조건을 맞춘 뒤, 해당 모델의 차감량과 워터마크·내보내기 조건을 확인해야 합니다. Higgsfield의 무제한 안내처럼 별도 대기열과 동시 작업 조건이 있는 경우도 있으므로, 적용 모델과 생성 속도를 함께 확인해야 합니다."
+    },
+    {
+      "line": 130,
+      "kind": "abstract_noun",
+      "signal": "경우",
+      "excerpt": "이렇게 채택한 클립 한 개를 얻는 비용으로 계산하면 저렴한 생성 모드와 결과를 고치기 쉬운 모델을 함께 평가할 수 있습니다. 결제 전에는 목표 해상도·길이·소리 조건을 맞춘 뒤, 해당 모델의 차감량과 워터마크·내보내기 조건을 확인해야 합니다. Higgsfield의 무제한 안내처럼 별도 대기열과 동시 작업 조건이 있는 경우도 있으므로, 적용 모델과 생성 속도를 함께 확인해야 합니다."
+    },
+    {
+      "line": 132,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "실제 제품명이나 한국어 문장이 영상에 들어간다면 글자가 유지되는지, 대사가 있다면 발음과 입 모양이 맞는지 살펴봐야 합니다. 여러 장면에서는 같은 인물과 제품이 유지되는지도 중요합니다. 상업용 결과물은 사용한 인물·사진·음악의 권리와 선택한 모델의 이용 조건을 함께 확인해야 합니다. Firefly도 Adobe 모델과 파트너 모델의 조건을 구분해서 안내합니다."
+    },
+    {
+      "line": 134,
+      "kind": "abstract_noun",
+      "signal": "결과",
+      "excerpt": "새 장면의 품질을 우선한다면 Wan 3.0과 Gemini Omni 계열의 평가 결과부터 살펴볼 만합니다. 촬영한 원본을 활용하려면 Kling 4.0 등의 수정 기능이 선택에 더 직접적으로 영향을 줍니다. 필요한 수정 기능까지 지원하는 모델을 고르면, 장면 전체를 다시 생성하는 작업을 줄일 수 있습니다."
+    }
+  ],
+  "long_sentences": [
+    {
+      "line": 24,
+      "chars_no_spaces": 55,
+      "ending": "됩니다",
+      "excerpt": "사진 한 장을 움직이는 제품 영상으로 바꾸거나, 촬영하기 어려운 장면을 짧은 영상으로 만들고 싶을 때 영상 생성 AI를 찾게 됩니다."
+    },
+    {
+      "line": 24,
+      "chars_no_spaces": 91,
+      "ending": "-니다",
+      "excerpt": "설명이나 사진을 입력하면 새로운 영상 클립을 만드는 도구인데, 막상 고르려면 Kling, Wan, Seedance 같은 모델 이름에 Higgsfield, Runway 같은 사이트 이름까지 섞여 나옵니다."
+    },
+    {
+      "line": 28,
+      "chars_no_spaces": 62,
+      "ending": "-습니다",
+      "excerpt": "2026년 10월 26일 확인한 독립 평가에서는 Wan 3.0과 Google의 Gemini Omni 계열이 각각 다른 평가에서 앞섰습니다."
+    },
+    {
+      "line": 34,
+      "chars_no_spaces": 52,
+      "ending": "합니다",
+      "excerpt": "텍스트로 새 장면을 만들거나, 사진을 움직이게 하거나, 원본 영상에서 인물과 배경을 바꾸는 기능을 모델별로 제공합니다."
+    },
+    {
+      "line": 36,
+      "chars_no_spaces": 70,
+      "ending": "합니다",
+      "excerpt": "Higgsfield는 여러 회사의 모델과 편집 기능을 모아 제공하고, Adobe Firefly도 Adobe 자체 모델과 파트너 모델을 선택할 수 있게 합니다."
+    },
+    {
+      "line": 36,
+      "chars_no_spaces": 63,
+      "ending": "-습니다",
+      "excerpt": "Runway와 Pika 역시 자체 모델을 개발하면서 다른 모델을 함께 제공하므로, 회사 이름만 보고 실제 생성 모델을 판단하면 혼동하기 쉽습니다."
+    },
+    {
+      "line": 50,
+      "chars_no_spaces": 64,
+      "ending": "합니다",
+      "excerpt": "Artificial Analysis의 AA-Video-T2V v2.1은 같은 설명으로 만든 영상을 모델 이름을 가린 상태에서 비교합니다."
+    },
+    {
+      "line": 50,
+      "chars_no_spaces": 59,
+      "ending": "-습니다",
+      "excerpt": "Utopai X, HeyGen Video 1, MiniMax H3, Dreamina Seedance 2.5가 뒤를 이었습니다."
+    },
+    {
+      "line": 65,
+      "chars_no_spaces": 52,
+      "ending": "-습니다",
+      "excerpt": "선택할 때에는 최대 해상도와 함께, 내가 가진 원본을 얼마나 구체적으로 지정하고 수정할 수 있는지 살펴보는 편이 좋습니다."
+    },
+    {
+      "line": 69,
+      "chars_no_spaces": 59,
+      "ending": "합니다",
+      "excerpt": "Kling 공식 사용 안내에 따르면 4.0은 사진·영상·음성·인물 요소 등 여러 자료를 함께 참조하고, 3~30초 영상을 생성합니다."
+    },
+    {
+      "line": 69,
+      "chars_no_spaces": 67,
+      "ending": "합니다",
+      "excerpt": "수정할 장면에서 어떤 자료의 인물이나 동작을 사용할지 지정할 수 있어, 촬영한 동작을 활용하거나 같은 장면을 여러 모습으로 바꾸려는 작업에 검토할 만합니다."
+    },
+    {
+      "line": 73,
+      "chars_no_spaces": 53,
+      "ending": "있습니다",
+      "excerpt": "독립 평가에서 4.0의 성적은 아직 따로 확인되지 않았으므로, 현재 추천 근거는 공식적으로 제공하는 제어 기능에 있습니다."
+    },
+    {
+      "line": 77,
+      "chars_no_spaces": 67,
+      "ending": "합니다",
+      "excerpt": "Alibaba 공식 설명에 따르면 Wan 3.0은 글·사진·영상·음성에 더해 문서와 웹페이지를 입력으로 활용하고, 한 번에 최대 30초를 생성합니다."
+    },
+    {
+      "line": 77,
+      "chars_no_spaces": 53,
+      "ending": "있습니다",
+      "excerpt": "제품 사진과 소개 자료를 바탕으로 설명 영상을 구성하려는 경우처럼, 이미 가진 자료가 여러 형태일 때 검토할 이유가 있습니다."
+    },
+    {
+      "line": 79,
+      "chars_no_spaces": 62,
+      "ending": "합니다",
+      "excerpt": "다만 문서를 넣어 영상을 만드는 기능은 이용 사이트마다 제공 여부가 다를 수 있으므로, 필요한 입력 기능이 실제 작업 화면에 있는지 살펴봐야 합니다."
+    },
+    {
+      "line": 81,
+      "chars_no_spaces": 56,
+      "ending": "-습니다",
+      "excerpt": "가격이나 제품명처럼 정확해야 하는 문구는 생성된 화면에서 다시 확인하고, 최종 자막은 편집 도구에서 넣는 편이 관리하기 쉽습니다."
+    },
+    {
+      "line": 85,
+      "chars_no_spaces": 70,
+      "ending": "합니다",
+      "excerpt": "ByteDance의 Seedance 2.5 소개는 한 번에 최대 30초의 영상과 오디오를 함께 생성하고, 장면 연결·참조 영상 활용·수정 기능을 강조합니다."
+    },
+    {
+      "line": 89,
+      "chars_no_spaces": 71,
+      "ending": "-습니다",
+      "excerpt": "앞서 본 Artificial Analysis의 API 가격 표에서는 같은 기본 조건의 Wan 3.0보다 Seedance 2.5의 분당 생성 비용이 높았습니다."
+    },
+    {
+      "line": 108,
+      "chars_no_spaces": 68,
+      "ending": "합니다",
+      "excerpt": "Gemini Omni는 대화로 영상을 단계적으로 수정하는 기능을 강조하고, Omni 1.1 Flash는 시작·끝 프레임 지정과 장면 연장을 지원합니다."
+    },
+    {
+      "line": 126,
+      "chars_no_spaces": 54,
+      "ending": "-니다",
+      "excerpt": "구독형 서비스에서는 작업마다 크레딧을 차감하는 경우가 많고, API는 생성 길이·해상도·모드에 따라 사용료를 매깁니다."
+    },
+    {
+      "line": 130,
+      "chars_no_spaces": 51,
+      "ending": "있습니다",
+      "excerpt": "이렇게 채택한 클립 한 개를 얻는 비용으로 계산하면 저렴한 생성 모드와 결과를 고치기 쉬운 모델을 함께 평가할 수 있습니다."
+    },
+    {
+      "line": 130,
+      "chars_no_spaces": 52,
+      "ending": "합니다",
+      "excerpt": "결제 전에는 목표 해상도·길이·소리 조건을 맞춘 뒤, 해당 모델의 차감량과 워터마크·내보내기 조건을 확인해야 합니다."
+    },
+    {
+      "line": 130,
+      "chars_no_spaces": 61,
+      "ending": "합니다",
+      "excerpt": "Higgsfield의 무제한 안내처럼 별도 대기열과 동시 작업 조건이 있는 경우도 있으므로, 적용 모델과 생성 속도를 함께 확인해야 합니다."
+    },
+    {
+      "line": 132,
+      "chars_no_spaces": 54,
+      "ending": "합니다",
+      "excerpt": "실제 제품명이나 한국어 문장이 영상에 들어간다면 글자가 유지되는지, 대사가 있다면 발음과 입 모양이 맞는지 살펴봐야 합니다."
+    }
+  ],
+  "sentence_endings": {
+    "합니다": 36,
+    "-습니다": 16,
+    "입니다": 14,
+    "-니다": 12,
+    "있습니다": 11,
+    "other": 4,
+    "였습니다": 3,
+    "됩니다": 2,
+    "-세요": 1
+  },
+  "sentence_ending_samples": {
+    "-세요": [
+      {
+        "line": 22,
+        "chars_no_spaces": 6,
+        "ending": "-세요",
+        "excerpt": "안녕하세요."
+      }
+    ],
+    "입니다": [
+      {
+        "line": 22,
+        "chars_no_spaces": 11,
+        "ending": "입니다",
+        "excerpt": "dev.log입니다."
+      },
+      {
+        "line": 34,
+        "chars_no_spaces": 26,
+        "ending": "입니다",
+        "excerpt": "영상 모델은 실제로 장면을 생성하거나 수정하는 AI입니다."
+      }
+    ],
+    "됩니다": [
+      {
+        "line": 24,
+        "chars_no_spaces": 55,
+        "ending": "됩니다",
+        "excerpt": "사진 한 장을 움직이는 제품 영상으로 바꾸거나, 촬영하기 어려운 장면을 짧은 영상으로 만들고 싶을 때 영상 생성 AI를 찾게 됩니다."
+      },
+      {
+        "line": 108,
+        "chars_no_spaces": 30,
+        "ending": "됩니다",
+        "excerpt": "Veo 3.1은 소리가 포함된 짧은 영상 생성 모델로 별도 제공됩니다."
+      }
+    ],
+    "-니다": [
+      {
+        "line": 24,
+        "chars_no_spaces": 91,
+        "ending": "-니다",
+        "excerpt": "설명이나 사진을 입력하면 새로운 영상 클립을 만드는 도구인데, 막상 고르려면 Kling, Wan, Seedance 같은 모델 이름에 Higgsfield, Runway 같은 사이트 이름까지 섞여 나옵니다."
+      },
+      {
+        "line": 26,
+        "chars_no_spaces": 32,
+        "ending": "-니다",
+        "excerpt": "새 장면을 만들지, 이미 있는 영상을 수정할지 정하면 선택지도 줄어듭니다."
+      }
+    ],
+    "합니다": [
+      {
+        "line": 26,
+        "chars_no_spaces": 46,
+        "ending": "합니다",
+        "excerpt": "여러 모델을 한곳에서 살펴보려는 첫 사용자에게는 Higgsfield를 비교의 출발점으로 추천합니다."
+      },
+      {
+        "line": 28,
+        "chars_no_spaces": 20,
+        "ending": "합니다",
+        "excerpt": "생성 품질의 선두권은 별도로 살펴봐야 합니다."
+      }
+    ],
+    "-습니다": [
+      {
+        "line": 26,
+        "chars_no_spaces": 47,
+        "ending": "-습니다",
+        "excerpt": "같은 사이트 안에서 모델을 고를 수 있어, 서비스마다 계정을 만들기 전에 어떤 기능이 필요한지 좁히기 좋습니다."
+      },
+      {
+        "line": 28,
+        "chars_no_spaces": 62,
+        "ending": "-습니다",
+        "excerpt": "2026년 10월 26일 확인한 독립 평가에서는 Wan 3.0과 Google의 Gemini Omni 계열이 각각 다른 평가에서 앞섰습니다."
+      }
+    ],
+    "other": [
+      {
+        "line": 30,
+        "chars_no_spaces": 14,
+        "ending": "other",
+        "excerpt": "{{media:hero}}"
+      },
+      {
+        "line": 67,
+        "chars_no_spaces": 26,
+        "ending": "other",
+        "excerpt": "Kling 4.0: 원본 영상과 여러 참조 자료를 이용한 수정"
+      }
+    ],
+    "있습니다": [
+      {
+        "line": 38,
+        "chars_no_spaces": 31,
+        "ending": "있습니다",
+        "excerpt": "모바일에서는 아래 표들을 좌우로 밀어 마지막 열까지 확인할 수 있습니다."
+      },
+      {
+        "line": 65,
+        "chars_no_spaces": 34,
+        "ending": "있습니다",
+        "excerpt": "세 모델은 모두 새 영상을 만들면서 참조 자료를 활용하는 기능을 넓히고 있습니다."
+      }
+    ],
+    "였습니다": [
+      {
+        "line": 50,
+        "chars_no_spaces": 34,
+        "ending": "였습니다",
+        "excerpt": "소리가 포함된 텍스트→영상 평가에서 Wan 3.0이 표시 순위 1위였습니다."
+      },
+      {
+        "line": 52,
+        "chars_no_spaces": 47,
+        "ending": "였습니다",
+        "excerpt": "Arena의 텍스트→영상 평가에서는 Gemini Omni 1.1 Flash가 표시 순위 1위였습니다."
+      }
+    ]
+  },
+  "repeated_paragraph_openers": {},
+  "repeated_paragraph_opener_matches": [],
+  "note": "Signals are review prompts, not pass/fail rules."
+}

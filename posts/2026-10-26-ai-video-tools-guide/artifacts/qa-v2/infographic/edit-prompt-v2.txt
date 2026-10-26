@@ -1,0 +1,10 @@
+Edit the attached conceptual AI video workflow illustration. Preserve its 4:3 aspect ratio, canvas, ivory background, teal shoe, all product photo frames, the three-stage reading order, and the refined photographic/editorial style. This is a narrow typography accessibility correction, not a redesign.
+
+The only defect is that all three Korean labels are too small when the full image is displayed at 320 CSS pixels wide. Increase the ACTUAL PAINTED GLYPH HEIGHT of each of the three labels by about 1.65 times: from roughly 37-38 pixels in the attached 1448-pixel-wide source to approximately 61-63 pixels at that same source width. Make all three labels equally readable, strong charcoal sans-serif, with exact text:
+자료 준비
+클립 생성
+최종 편집
+
+Keep each label on one line near its existing associated scene, but move it into the nearby empty ivory area as needed. Preserve at least 18 source pixels of clear visible air between letters and any illustration, arrow tip, edge, or other mark. In particular, move the middle label slightly upward from the clip strip and adjust the first arrow endpoint so it points toward the scene without entering the larger label. Move the final label slightly upward above the final preview and adjust the second arrow endpoint to maintain the same clear zone. Keep the top label comfortably inside the canvas. The canvas has ample empty space; use it rather than squeezing any label. Maintain the original two scene-connecting arrows and clear directional order.
+
+Do not add text, numerals, title, footer, watermark, logos, cards, or decoration. Do not change the shoe, scene details, abstract caption bars, or audio track. The result should look like the same finished illustration with comfortably legible Korean stage names on a small phone screen.

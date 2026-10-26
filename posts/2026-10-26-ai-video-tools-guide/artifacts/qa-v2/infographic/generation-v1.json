@@ -1,0 +1,16 @@
+{
+  "creator": "max-txt2img",
+  "tool": "built-in image_gen.imagegen",
+  "original_output": "/Users/ja2sng/.codex/generated_images/01a1786a-28a8-7c22-a9a6-d60df39e029d/exec-db991c66-326a-4039-a46e-b3f451ad395d.png",
+  "candidate": "posts/2026-10-26-ai-video-tools-guide/assets/ai-video-workflow-v1.png",
+  "width": 1448,
+  "height": 1086,
+  "sha256": "b57f0fbcda0d5df5b14ac86d6d2b9078269463a669994fb2d234b51c0f9cc1e7",
+  "requested_ratio": "4:3",
+  "observed_ratio": 1.3333333333333333,
+  "intended_mobile_width": 320,
+  "prompt": "prompt-v1.txt",
+  "corrections": 0,
+  "source_font_sizes": "unavailable; generated raster",
+  "inspection": "Creator inspected returned full raster: exact three Korean labels; sequence and product reference consistent; no actual product UI or test result. Independent actual-size inspection pending."
+}
