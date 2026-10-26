@@ -12,6 +12,6 @@
   "include_390": false,
   "include_768": false,
   "second_remote_fetch": false,
-  "decision_note": "2차 수정: 저자가 제목과 문체가 딱딱하다고 평가했다. 제목은 담배를 끊고 세 달째로 단순화하고, 개인 회고를 먼저 이어 읽은 뒤 준비할 도움과 연구 표 1개를 제공한다. 개인 경과 비교표는 문장으로 풀었다. 이미지와 출처·연구 수치는 유지한다. supporting infographic은 표 중복·개인 경과 보편화 위험 때문에 생략한다. standard-rich, 1280/360 light/dark preflight, 게시 승인 전 reviewing.",
+  "decision_note": "3차 수정: 저자가 시기별 구성을 요청했다. 금연 전에 알아둘 일반 금단 증상과 전형적 경과를 상단에서 공식 자료로 설명하고, 금연 전 흡연 상태→첫날→첫주→2~3개월차→현재 경험을 연결한다. 연구효과·수명 비교표는 제거하고 증상별 쉬운 표로 대체한다. 새 사진 v2를 제작·독립 검증하며 설명식 이미지 caption은 제거한다. 표가 정보를 직접 전달하므로 추가 infographic은 생략한다. standard-rich,1280/360 light/dark,게시 승인 전 reviewing.",
   "publication_mode": "codex-browser"
 }

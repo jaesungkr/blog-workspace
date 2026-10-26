@@ -10,7 +10,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 5340,
+      "scroll_height": 5031,
       "h1_count": 1,
       "toc_anchor_count": 6,
       "toc_targets_unique": true,
@@ -18,7 +18,7 @@
       "images_loaded": true,
       "images": [
         {
-          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v2.png",
           "complete": true,
           "natural_width": 1672,
           "natural_height": 941
@@ -33,26 +33,22 @@
             "scrollWidth": 760,
             "rect": {
               "x": 260,
-              "y": 4494.578125,
+              "y": 1010.859375,
               "width": 760,
-              "height": 332,
-              "top": 4494.578125,
+              "height": 330,
+              "top": 1010.859375,
               "right": 1020,
-              "bottom": 4826.578125,
+              "bottom": 1340.859375,
               "left": 260
             },
             "overflow": "auto",
             "td": [
               {
-                "width": 124.375,
+                "width": 273.234375,
                 "font": "15px"
               },
               {
-                "width": 236.296875,
-                "font": "15px"
-              },
-              {
-                "width": 398.328125,
+                "width": 485.765625,
                 "font": "15px"
               }
             ]
@@ -70,7 +66,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 7249,
+      "scroll_height": 6785,
       "h1_count": 1,
       "toc_anchor_count": 6,
       "toc_targets_unique": true,
@@ -78,7 +74,7 @@
       "images_loaded": true,
       "images": [
         {
-          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v2.png",
           "complete": true,
           "natural_width": 1672,
           "natural_height": 941
@@ -90,29 +86,25 @@
         "tables": [
           {
             "clientWidth": 320,
-            "scrollWidth": 620,
+            "scrollWidth": 320,
             "rect": {
               "x": 20,
-              "y": 6031.515625,
+              "y": 1066.03125,
               "width": 320,
-              "height": 332,
-              "top": 6031.515625,
+              "height": 498,
+              "top": 1066.03125,
               "right": 340,
-              "bottom": 6363.515625,
+              "bottom": 1564.03125,
               "left": 20
             },
             "overflow": "auto",
             "td": [
               {
-                "width": 107.40625,
+                "width": 114.828125,
                 "font": "15px"
               },
               {
-                "width": 194.34375,
-                "font": "15px"
-              },
-              {
-                "width": 317.25,
+                "width": 204.171875,
                 "font": "15px"
               }
             ]
@@ -130,7 +122,7 @@
       "client_width": 1280,
       "client_height": 900,
       "scroll_width": 1280,
-      "scroll_height": 5340,
+      "scroll_height": 5031,
       "h1_count": 1,
       "toc_anchor_count": 6,
       "toc_targets_unique": true,
@@ -138,7 +130,7 @@
       "images_loaded": true,
       "images": [
         {
-          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v2.png",
           "complete": true,
           "natural_width": 1672,
           "natural_height": 941
@@ -153,26 +145,22 @@
             "scrollWidth": 760,
             "rect": {
               "x": 260,
-              "y": 4494.578125,
+              "y": 1010.859375,
               "width": 760,
-              "height": 332,
-              "top": 4494.578125,
+              "height": 330,
+              "top": 1010.859375,
               "right": 1020,
-              "bottom": 4826.578125,
+              "bottom": 1340.859375,
               "left": 260
             },
             "overflow": "auto",
             "td": [
               {
-                "width": 124.375,
+                "width": 273.234375,
                 "font": "15px"
               },
               {
-                "width": 236.296875,
-                "font": "15px"
-              },
-              {
-                "width": 398.328125,
+                "width": 485.765625,
                 "font": "15px"
               }
             ]
@@ -190,7 +178,7 @@
       "client_width": 360,
       "client_height": 800,
       "scroll_width": 360,
-      "scroll_height": 7249,
+      "scroll_height": 6785,
       "h1_count": 1,
       "toc_anchor_count": 6,
       "toc_targets_unique": true,
@@ -198,7 +186,7 @@
       "images_loaded": true,
       "images": [
         {
-          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v2.png",
           "complete": true,
           "natural_width": 1672,
           "natural_height": 941
@@ -210,29 +198,25 @@
         "tables": [
           {
             "clientWidth": 320,
-            "scrollWidth": 620,
+            "scrollWidth": 320,
             "rect": {
               "x": 20,
-              "y": 6031.515625,
+              "y": 1066.03125,
               "width": 320,
-              "height": 332,
-              "top": 6031.515625,
+              "height": 498,
+              "top": 1066.03125,
               "right": 340,
-              "bottom": 6363.515625,
+              "bottom": 1564.03125,
               "left": 20
             },
             "overflow": "auto",
             "td": [
               {
-                "width": 107.40625,
+                "width": 114.828125,
                 "font": "15px"
               },
               {
-                "width": 194.34375,
-                "font": "15px"
-              },
-              {
-                "width": 317.25,
+                "width": 204.171875,
                 "font": "15px"
               }
             ]
@@ -242,17 +226,5 @@
       },
       "theme": "dark"
     }
-  ],
-  "revision": 2,
-  "creator_observations": {
-    "result": "pass",
-    "by": "Codex /root",
-    "notes": [
-      "새 제목과 6개 소제목, 연구 표 1개를 확인했다.",
-      "밝음·어두움1280/360에서 문서 가로 넘침 없이 이미지가 로드되고 목차 대상이 일치한다.",
-      "모바일 표의 양쪽 끝을 실제 캡처해 마지막 결과 열까지 읽을 수 있음을 확인했다.",
-      "원문부터 렌더까지 문단 연결과 결말을 다시 읽었다. 개인 경험 중심의 순서와 필요한 의학적 경계가 유지된다.",
-      "로컬 사전 점검이며 티스토리 최종 페이지 승인이나 게시 완료를 뜻하지 않는다."
-    ]
-  }
+  ]
 }

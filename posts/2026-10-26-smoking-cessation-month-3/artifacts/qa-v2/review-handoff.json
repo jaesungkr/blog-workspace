@@ -5,26 +5,27 @@
   "source_pass": "artifacts/qa-v2/source-pass.json",
   "hero_review": "artifacts/qa-v2/hero-review.md",
   "local_preflight": "artifacts/qa-v2/local-preflight-browser.json",
+  "caption_exception": "artifacts/qa-v2/caption-exception.json",
   "outputs": [
     {
       "name": "smoking-cessation-month-3-review.html",
-      "sha256": "c526c7bd42891baf452080416658d0d615a3db21f635a84f5947fb86ed42ca4f"
+      "sha256": "6964e0f3cd5e60b1f09030e4fcc58ff699504377071f836a8ec56ac028124ba1"
     },
     {
       "name": "smoking-cessation-month-3-review-dark.html",
-      "sha256": "d5693b4f8755456e3b0bbc7a903c841ebaee57ede03741a6f5137c5940da0cdd"
+      "sha256": "332b356d7f7259dd26f22776cf1c4c8539bb04238a09e480e3a9fed23a3d4bcf"
     },
     {
-      "name": "smoking-cessation-month-3-hero-v1.png",
-      "sha256": "76164e89f05f22b27d4e0871ed77c6921c33f600c10a7314ef0b971d53aaf22b"
+      "name": "smoking-cessation-month-3-hero-v2.png",
+      "sha256": "ba57e8b7857da2724311f266f42464fda5899e88b428d02a609f150dfc9b6a88"
     },
     {
       "name": "smoking-cessation-month-3-review.md",
-      "sha256": "fb754c525b092367be966cbc0d46da4ce35e964ba018850b98f4e3ff6f86db07"
+      "sha256": "bd874b335c88c6893797f3f1863e31470142c26d97d43677c1c8b787bbb768d0"
     },
     {
-      "name": "hero-prompt-v1.txt",
-      "sha256": "943378d01fe031d40af703fa4014cf6af30c21fd5c57b754fefd653553375974"
+      "name": "hero-prompt-v2.txt",
+      "sha256": "ea08bb0279194135347bd12132f6db11eb8ccf57774f3cc6bff777425fc587e2"
     }
   ],
   "next": "Author approves this specific source and media and explicitly asks to publish; then bind native Tistory media and run remote/final-page/publication gates."

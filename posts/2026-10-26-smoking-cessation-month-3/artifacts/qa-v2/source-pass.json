@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-10-26T13:57:22.698839Z",
-  "checked_by": "Codex /root/source_reviewer_v2",
-  "article_content_sha256": "b7a2198483da433803bf50645b6fac80e6cafe7d69e7bb565987d15282710300",
-  "brief_sha256": "9528b4c4cfd4be862d29fde48fe31eed83e082cde23b3c6eaf31b7da9a2c61b9",
-  "evidence_sha256": "a1e746295b76cb403ff2962124cad904a7d15dd45d166fa87fd4a40554ad41e1",
-  "note": ""
+  "checked_at": "2026-10-26T14:54:59.833716Z",
+  "checked_by": "Codex /root/source_reviewer_v3",
+  "article_content_sha256": "6039558145a3fb1ee8878593ed67a0f0a55560ef25e93737dafe60c1c0b12af2",
+  "brief_sha256": "c66c29601139cc96f5cb8966f151d9e3e64062be5110c954294aa34180ee30ae",
+  "evidence_sha256": "a413f890104f5ae7fac5796525ff2918782edd7a612086872399eead72f28777",
+  "note": "Revision 3: chronological personal account with official withdrawal guidance; independent source pass; reviewing. Empty image caption is an explicit author-requested local review exception."
 }

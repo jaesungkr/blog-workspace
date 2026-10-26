@@ -1,0 +1,11 @@
+{
+  "scope": "local author-review candidate",
+  "reason": "Author explicitly requested removal of the abstract image explanation; caption is intentionally omitted.",
+  "standard_validator_errors": [
+    "smoking-cessation-month-3-hero: `caption` must be a non-empty string"
+  ],
+  "accepted_exception": "smoking-cessation-month-3-hero: `caption` must be a non-empty string",
+  "other_errors": [],
+  "warnings": [],
+  "publication_approved": false
+}

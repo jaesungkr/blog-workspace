@@ -10,12 +10,7 @@
 | A04 | 3개월차 식후·취침 전 큰 욕구 감소, 간헐적 욕구 잔존 | 현재 저자 보고 | 측정 일지·생체 검사 없음. 개인 회고 |
 | A05 | 2~3개월차 소화불량·가스, 현재 개선 | 현재 저자 보고 | 발생 원인·진단 미확인. 금단 일반론으로 확정하지 않음 |
 | A06 | 적은 주변 흡연, 도구 전부 치움 | 현재 메시지·이전 원본 메모 | 환경의 인과적 효과량이나 기기 폐기 실제 성공 보장 없음 |
-| M01 | NRT 대 위약/미사용, 6개월 이상 금연 RR1.55 | Hartmann-Boyce et al. Cochrane 2018. 133 studies/64,640 primary comparison; 95%CI1.49–1.61. https://pubmed.ncbi.nlm.nih.gov/29852054/ | 전체 선정 136편과 주 분석 133편 구분. 주로 연초 성인 흡연자. 55%포인트로 읽지 않음 |
-| M02 | 패치+속효성 NRT 병용 대 단일 RR1.27 | Theodoulou et al. Cochrane 2023, 16 studies/12,169, 95%CI1.17–1.37. https://pubmed.ncbi.nlm.nih.gov/37335995/ | 장기(최소 6개월) 금연, high certainty. 개인 전자담배 금연 성공 확률로 환산하지 않음 |
-| M03 | 줄인 뒤 금연 대 정한 날 중단에서 차이 불명확 | Lindson et al. Cochrane 2019. 직접 비교 22 trials/9,219, RR1.01,95%CI0.87–1.17. https://www.cochrane.org/evidence/CD013183_can-people-stop-smoking-cutting-down-amount-they-smoke-first | 전체 51편/22,000명+와 직접 비교 구분. 근거 검색 2018-10. '같음 입증'이나 감연 우월 주장 없음. 패치 용량 감량과 별개 |
-| M04 | 35~44세 금연, 지속 흡연 대비 기대수명 약9년 차이 | Jha et al. NEJM2013, doi10.1056/NEJMsa1211128; 미국 202,248명 흡연 이력과 사망 추적. https://pubmed.ncbi.nlm.nih.gov/23343063/ | 관찰연구의 집단 추정. 저자의 나이 추정 또는 개인 9년 보장 금지. 연초 연구를 전자담배 금연 회복 일정으로 이식하지 않음 |
 | M05 | 패치의 일정 공급, 껌·로젠지 욕구 대응, 계획적 감량 | CDC How to Use Nicotine Patches. https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quit-smoking-medications/how-to-use-quit-smoking-medicines/how-to-use-a-nicotine-patch.html | 미국 제품 용량을 국내 처방처럼 제시하지 않음. 다른 담배 형태/전자담배 사용자는 healthcare provider 상담을 권고함. 전자담배 개비 환산은 하지 않음 |
-| M06 | 상담+약물, 바레니클린·부프로피온 선택지 | CDC How to Quit Smoking. https://www.cdc.gov/tobacco/about/how-to-quit.html | 처방과 선택은 의료진 상담. 약물끼리 효과 순위 없음 |
 | M07 | 첫3일 정점·첫주 가장 심함, 첫달 감소, 일부 수개월 증상·장기 간헐욕구, 변비 | NCI withdrawal fact sheet. https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco/withdrawal-fact-sheet | 전형적 경과, 개인 차이. 특정일이면 사라진다는 보장 없음. 소화불량·가스의 3개월 지속을 직접 입증하지 않음 |
 | M08 | 담배 권유 중단 요청, 도구 치움·금연일 계획 | NCI Smokefree My Quit Plan. https://smokefree.gov/build-your-quit-plan-results | 흡연·vaping 조건별 계획. '환경 완벽해질 때까지 흡연 지속'의 근거로 쓰지 않음 |
 | M09 | 반복·지속 팽만, 체중감소·혈변 진료, 급성 심한 복통·토혈 응급 | NHS Bloating. https://www.nhs.uk/symptoms/bloating/ | 영국 111/999는 국내 독자에게 옮기지 않음. 소화 증상 원인 목록과 개인 진단을 분리 |
@@ -27,10 +22,19 @@
 - WHO2024 guideline은 치료·상담 권고 교차 확인용으로 열람했으나 본문 링크를 과도하게 늘리지 않기 위해 제외했다.
 - CDC 연초 회복 시간표도 확인했으나 전자담배 중단 경험의 특정 건강 개선으로 보이기 쉬워 채택하지 않았다.
 - 기존 PMC 본문이 한 번 CAPTCHA를 반환해 동일 논문의 PubMed 초록과 검색 색인으로 수치·연도·주 분석 표본을 교차 확인하고 독자 링크도 PubMed로 바꿨다.
-- 연구효과는 표 한 곳에서 설명하고 본문은 상대효과의 비교 기준과 전자담배 적용 범위만 설명한다.
 
 ## 남은 사실
 새로 필요한 공개 사실 없음. 패치의 이후 사용 이력·정확한 시작일은 미상이며 해당 문장을 원고에 만들지 않았다. 현재 후보의 저자 표현을 승인받기 전 게시하지 않는다.
 
 ## 2차 편집 범위
 저자의 어조 수정 요청에 따라 제목·순서·표현을 고쳤다. 연구 네 편의 수치·대상·한계, 기존 출처와 개인 경험은 유지했다. 개인 경과 표는 본문 관찰로 풀었다. 첫 초안에 추가한 경험·감정은 없으며, 패치를 미룬 선택의 후회와 주변의 도움은 기존 저자 메모에서 확인된다. 새 임상·원인 주장은 추가하지 않았다.
+
+## 3차 수정의 현재 근거
+이전 연구효과·수명 비교표는 사용자 요청으로 본문에서 제거했다. M01~M04·M06은 현재 원고의 주장이 아니며 이전 근거표는 artifacts/evidence-before-revision-3.md에 남겼다.
+
+| ID | 현재 주장 | 공식 출처 | 경계 |
+| --- | --- | --- | --- |
+| M11 | 욕구·짜증·불안·초조·집중·수면·식욕 변화, 비교적 덜 흔한 변비 | NCI https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco/withdrawal-fact-sheet 및 CDC https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/7-common-withdrawal-symptoms/index.html | 모든 사람에게 발생한다고 말하지 않음. 개인의 가스·소화불량을 변비로 진단하지 않음 |
+| M12 | 니코틴 중단 후 수 시간 내 시작 가능, 첫 주와 특히 3일이 가장 심함, 보통 3~4주 감소, 일부 수개월 | NHS https://www.nhs.uk/better-health/quit-smoking/staying-smoke-free/managing-nicotine-withdrawal-symptoms/ | 평균적 경과. 저자의 첫날·5일차·3개월차와 일치하도록 시점을 조작하지 않음 |
+
+위 공식 페이지들은 2026-10-26 웹으로 확인했다. 현재 안내를 저자가 금연 전에 특정 페이지에서 읽었다고 귀속하지 않는다. 저자가 금연 전에 궁금해했던 정보를 이번 글에서 공식 자료로 정리하는 맥락이다. 원인 미상의 소화불량·가스는 개인 관찰이며 첫 주의 불안·초조와 장기 간헐적 욕구만 일반적 안내와 연결한다.

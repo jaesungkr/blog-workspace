@@ -1,0 +1,258 @@
+{
+  "purpose": "local preflight, not final-page approval",
+  "reviewer": "Codex /root",
+  "records": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/artifacts/qa-v2/preflight/smoking-cessation-month-3-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5340,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "width": 1280,
+      "height": 900,
+      "layout": {
+        "tables": [
+          {
+            "clientWidth": 760,
+            "scrollWidth": 760,
+            "rect": {
+              "x": 260,
+              "y": 4494.578125,
+              "width": 760,
+              "height": 332,
+              "top": 4494.578125,
+              "right": 1020,
+              "bottom": 4826.578125,
+              "left": 260
+            },
+            "overflow": "auto",
+            "td": [
+              {
+                "width": 124.375,
+                "font": "15px"
+              },
+              {
+                "width": 236.296875,
+                "font": "15px"
+              },
+              {
+                "width": 398.328125,
+                "font": "15px"
+              }
+            ]
+          }
+        ],
+        "bodyFont": "17px"
+      },
+      "theme": "light"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/artifacts/qa-v2/preflight/smoking-cessation-month-3-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7249,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "width": 360,
+      "height": 800,
+      "layout": {
+        "tables": [
+          {
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 6031.515625,
+              "width": 320,
+              "height": 332,
+              "top": 6031.515625,
+              "right": 340,
+              "bottom": 6363.515625,
+              "left": 20
+            },
+            "overflow": "auto",
+            "td": [
+              {
+                "width": 107.40625,
+                "font": "15px"
+              },
+              {
+                "width": 194.34375,
+                "font": "15px"
+              },
+              {
+                "width": 317.25,
+                "font": "15px"
+              }
+            ]
+          }
+        ],
+        "bodyFont": "17px"
+      },
+      "theme": "light"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/artifacts/qa-v2/preflight-dark/smoking-cessation-month-3-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 5340,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "width": 1280,
+      "height": 900,
+      "layout": {
+        "tables": [
+          {
+            "clientWidth": 760,
+            "scrollWidth": 760,
+            "rect": {
+              "x": 260,
+              "y": 4494.578125,
+              "width": 760,
+              "height": 332,
+              "top": 4494.578125,
+              "right": 1020,
+              "bottom": 4826.578125,
+              "left": 260
+            },
+            "overflow": "auto",
+            "td": [
+              {
+                "width": 124.375,
+                "font": "15px"
+              },
+              {
+                "width": 236.296875,
+                "font": "15px"
+              },
+              {
+                "width": 398.328125,
+                "font": "15px"
+              }
+            ]
+          }
+        ],
+        "bodyFont": "17px"
+      },
+      "theme": "dark"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/artifacts/qa-v2/preflight-dark/smoking-cessation-month-3-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7249,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 1,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-smoking-cessation-month-3/assets/smoking-cessation-month-3-hero-v1.png",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        }
+      ],
+      "width": 360,
+      "height": 800,
+      "layout": {
+        "tables": [
+          {
+            "clientWidth": 320,
+            "scrollWidth": 620,
+            "rect": {
+              "x": 20,
+              "y": 6031.515625,
+              "width": 320,
+              "height": 332,
+              "top": 6031.515625,
+              "right": 340,
+              "bottom": 6363.515625,
+              "left": 20
+            },
+            "overflow": "auto",
+            "td": [
+              {
+                "width": 107.40625,
+                "font": "15px"
+              },
+              {
+                "width": 194.34375,
+                "font": "15px"
+              },
+              {
+                "width": 317.25,
+                "font": "15px"
+              }
+            ]
+          }
+        ],
+        "bodyFont": "17px"
+      },
+      "theme": "dark"
+    }
+  ],
+  "revision": 2,
+  "creator_observations": {
+    "result": "pass",
+    "by": "Codex /root",
+    "notes": [
+      "새 제목과 6개 소제목, 연구 표 1개를 확인했다.",
+      "밝음·어두움1280/360에서 문서 가로 넘침 없이 이미지가 로드되고 목차 대상이 일치한다.",
+      "모바일 표의 양쪽 끝을 실제 캡처해 마지막 결과 열까지 읽을 수 있음을 확인했다.",
+      "원문부터 렌더까지 문단 연결과 결말을 다시 읽었다. 개인 경험 중심의 순서와 필요한 의학적 경계가 유지된다.",
+      "로컬 사전 점검이며 티스토리 최종 페이지 승인이나 게시 완료를 뜻하지 않는다."
+    ]
+  }
+}
