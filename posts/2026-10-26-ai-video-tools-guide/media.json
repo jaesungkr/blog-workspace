@@ -47,7 +47,7 @@
       "publish_path": "assets/ai-video-workflow-v2.png",
       "rights": "Original generated educational illustration; fictional unbranded product; not a service screenshot or an observed model output.",
       "alt": "제품 사진과 자료를 준비하고 영상 클립을 생성한 뒤 자막과 소리를 편집하는 과정을 보여 주는 설명 이미지",
-      "caption": "제품 사진을 활용한 제작 과정의 개념도입니다. 실제 서비스 화면이나 생성 결과를 재현한 이미지는 아닙니다.",
+      "caption": "제품 사진으로 짧은 광고를 만드는 과정",
       "processing": [
         "Built-in image_gen generation followed by one targeted label-size edit; original returned PNG copied without pixel changes."
       ],

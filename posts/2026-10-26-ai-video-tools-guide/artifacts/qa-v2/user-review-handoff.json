@@ -1,6 +1,6 @@
 {
   "status": "reviewing",
-  "revision": "final prose polish and supporting image",
+  "revision": "third prose edit: concrete title, natural wording, removed redundant recap and defensive caption",
   "publication_approval": false,
   "source_review": "/root/source_review",
   "supporting_image_review": "/root/hero_review",
@@ -8,15 +8,15 @@
     {
       "path": "/Users/ja2sng/Documents/Codex/2026-10-26/new-chat-3/outputs/ai-video-tools-guide.html",
       "theme": "light",
-      "sha256": "ba0db857e7faa0b27507b7ce6435ee328a2840825f257f4ab3243b33100924f3",
-      "source_preview_sha256": "537f3577729323a0a54e7a205c5742f99a6b702b801f7ef82d62a3bae2c2effb",
+      "sha256": "521d4f06761b906ff43304518c289d86d68913d546a0a78f1525185481406dc8",
+      "source_preview_sha256": "4dbf85c74a792b47aefc4923f1512feee8b4beecd60420acab7648bd6fabefab",
       "embedded_images": 2
     },
     {
       "path": "/Users/ja2sng/Documents/Codex/2026-10-26/new-chat-3/outputs/ai-video-tools-guide-dark.html",
       "theme": "dark",
-      "sha256": "3230cc4ed5a4a62aeed90887ae84a6b95ee5154c72433474ed8d4d08dbd69543",
-      "source_preview_sha256": "c490fc6f3ac82a0b0375b4f4221688e4cd9ca28401756e28b8e7e94b7752de40",
+      "sha256": "64b379d0081eb725f4db2a31df56e4ba072b2c4c4a049a85cd1ae7a685b8e01b",
+      "source_preview_sha256": "0b5acbffe30cde344a368db9d80f3fabb5b5196c6d1ac256d198c44e06fd44df",
       "embedded_images": 2
     }
   ],

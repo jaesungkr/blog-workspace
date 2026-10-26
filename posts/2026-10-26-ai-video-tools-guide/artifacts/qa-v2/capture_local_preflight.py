@@ -33,17 +33,19 @@ with ChromeProcess(find_chrome(None), 20) as chrome:
                     return r['result'].get('value')
                 tables=eval_js("JSON.stringify(Array.from(document.querySelectorAll('table')).map(e=>{let r=e.getBoundingClientRect();return {top:r.top+scrollY,width:r.width,height:r.height,client:e.clientWidth,scroll:e.scrollWidth,text:e.innerText}}))")
                 m['tables']=json.loads(tables)
+                services_index=len(m['tables'])-2
+                selection_index=len(m['tables'])-1
                 m['image_count']=eval_js('document.images.length')
                 assert m['image_count']==2, m
                 image_top=eval_js('document.images[1].getBoundingClientRect().top+scrollY')
                 m['theme']=theme
                 m['preview_sha256']=hashlib.sha256(preview.read_bytes()).hexdigest()
                 shots=[]
-                for name,top in [('top',0),('workflow',image_top-120),('services',m['tables'][2]['top']-24),('selection',m['tables'][3]['top']-24),('closing',max(0,m['scroll_height']-height))]:
+                for name,top in [('top',0),('workflow',image_top-120),('services',m['tables'][services_index]['top']-24),('selection',m['tables'][selection_index]['top']-24),('closing',max(0,m['scroll_height']-height))]:
                     eval_js(f'window.scrollTo(0,{max(0,int(top))})')
                     shot=c.call('Page.captureScreenshot',{'format':'png','fromSurface':True,'captureBeyondViewport':False})
                     dest=out/f'{width}-{name}.png';dest.write_bytes(base64.b64decode(shot['data']));shots.append(dest.name)
-                for name,index in ([('services',2),('selection',3)] if width==360 else []):
+                for name,index in ([('services',services_index),('selection',selection_index)] if width==360 else []):
                     top=max(0,int(m['tables'][index]['top']-24))
                     eval_js(f'window.scrollTo(0,{top});document.querySelectorAll(".rich-table-wrap")[{index}].scrollLeft=10000')
                     shot=c.call('Page.captureScreenshot',{'format':'png','fromSurface':True,'captureBeyondViewport':False})
