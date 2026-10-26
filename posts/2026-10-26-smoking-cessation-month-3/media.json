@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "lead_id": "smoking-cessation-month-3-hero",
+  "items": [
+    {
+      "id": "smoking-cessation-month-3-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "A01",
+        "A06"
+      ],
+      "actor": "OpenAI built-in image generation under Codex art direction",
+      "captured_at": "2026-10-26",
+      "environment": "OpenAI built-in image generation; symbolic editorial still life, not an actual photograph of the author’s possessions",
+      "source_url": "",
+      "raw_path": "assets/smoking-cessation-month-3-hero-v1.png",
+      "publish_path": "assets/smoking-cessation-month-3-hero-v1.png",
+      "tistory_url": "",
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "placement": "after:opening",
+      "rights": "dev.log original AI-generated editorial artwork",
+      "alt": "부러뜨린 담배가 놓인 재떨이 옆에 전자담배 기기와 분리한 팟을 내려놓은 모습",
+      "caption": "담배와 전자담배를 내려놓고 금연을 이어 가는 시간을 표현했습니다.",
+      "processing": [],
+      "redactions": [],
+      "sha256": "76164e89f05f22b27d4e0871ed77c6921c33f600c10a7314ef0b971d53aaf22b",
+      "status": "validated"
+    }
+  ]
+}

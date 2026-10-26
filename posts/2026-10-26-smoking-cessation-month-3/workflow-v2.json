@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "니코틴 의존이 강해 첫 금연을 두려워하거나 초기 금단을 겪는 성인 흡연자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "저자의 5일차와 3개월차 경험을 비교하는 standard-rich 회고. 권고는 시작 전에 금연상담과 니코틴 대체요법을 준비하는 것. 의학적 연구는 경험을 해석하는 범위로 제한한다. 금단 시간표와 연구 비교는 본문 표로 제공한다. max-txt2img의 설명 그림과 diagram-design의 시간표를 검토했으나 개인 경험을 보편적 회복 일정처럼 보이게 할 위험과 표 중복 때문에 supporting infographic은 생략한다. 생성 hero는 금연 주제를 즉시 알아보는 정적인 담백한 이미지로 제작하고 독립 검증한다. 정확한 흡연 기간과 패치 사용 이력은 저자 답변을 기다린다. 개인 회고를 중심으로 쓰며 새로 찾은 연구를 저자가 당시 읽은 자료로 소급하지 않는다.",
+  "publication_mode": "codex-browser"
+}
