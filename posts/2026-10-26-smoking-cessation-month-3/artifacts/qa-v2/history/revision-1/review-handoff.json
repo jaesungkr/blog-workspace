@@ -1,0 +1,31 @@
+{
+  "stage": "author-review",
+  "lifecycle": "reviewing",
+  "publication_approved": false,
+  "source_pass": "artifacts/qa-v2/source-pass.json",
+  "hero_review": "artifacts/qa-v2/hero-review.md",
+  "local_preflight": "artifacts/qa-v2/local-preflight-browser.json",
+  "outputs": [
+    {
+      "name": "smoking-cessation-month-3-review.html",
+      "sha256": "d6ca803ec699bbe0287423fcc968319f9f6561ed6cd16a9f2f907d07545a41f2"
+    },
+    {
+      "name": "smoking-cessation-month-3-review-dark.html",
+      "sha256": "ae9ba011e756729e45e6d447c7a9b99848bc7e44623c10b686543dec3318143e"
+    },
+    {
+      "name": "smoking-cessation-month-3-hero-v1.png",
+      "sha256": "76164e89f05f22b27d4e0871ed77c6921c33f600c10a7314ef0b971d53aaf22b"
+    },
+    {
+      "name": "smoking-cessation-month-3-review.md",
+      "sha256": "aed29efe2a1f9002a1cbe02c0c8ecec1fe3567d6435bb4d8bdf669f3c29b6f46"
+    },
+    {
+      "name": "hero-prompt-v1.txt",
+      "sha256": "943378d01fe031d40af703fa4014cf6af30c21fd5c57b754fefd653553375974"
+    }
+  ],
+  "next": "Author approves this specific source and media and explicitly asks to publish; then bind native Tistory media and run remote/final-page/publication gates."
+}

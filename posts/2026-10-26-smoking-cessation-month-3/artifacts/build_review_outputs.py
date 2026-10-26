@@ -20,7 +20,8 @@ for theme,root in [('light','preflight'),('dark','preflight-dark')]:
 shutil.copy2(asset,out/asset.name);files.append(out/asset.name)
 article=(bundle/'article.md').read_text();body=article.split('---',2)[2].lstrip()
 body=body.replace('{{media:smoking-cessation-month-3-hero}}',f'![부러뜨린 담배와 분리된 전자담배 기기]({asset.name})\n\n담배와 전자담배를 내려놓고 금연을 이어 가는 시간을 표현했습니다.')
-p=out/f'{slug}-review.md';p.write_text('# 17년 흡연자의 금연 3개월차 후기\n\n'+body);files.append(p)
+title=re.search(r'^title: \"(.*)\"$',article,re.M).group(1)
+p=out/f'{slug}-review.md';p.write_text('# '+title+'\n\n'+body);files.append(p)
 shutil.copy2(bundle/'artifacts/hero-prompt-v1.txt',out/'hero-prompt-v1.txt');files.append(out/'hero-prompt-v1.txt')
 record={'stage':'author-review','lifecycle':'reviewing','publication_approved':False,'source_pass':'artifacts/qa-v2/source-pass.json','hero_review':'artifacts/qa-v2/hero-review.md','local_preflight':'artifacts/qa-v2/local-preflight-browser.json','outputs':[{'name':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files],'next':'Author approves this specific source and media and explicitly asks to publish; then bind native Tistory media and run remote/final-page/publication gates.'}
 (bundle/'artifacts/qa-v2/review-handoff.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')

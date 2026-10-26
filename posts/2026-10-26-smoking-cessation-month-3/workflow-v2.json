@@ -12,6 +12,6 @@
   "include_390": false,
   "include_768": false,
   "second_remote_fetch": false,
-  "decision_note": "저자의 5일차와 3개월차 경험을 비교하는 standard-rich 회고. 권고는 시작 전에 금연상담과 니코틴 대체요법을 준비하는 것. 의학적 연구는 경험을 해석하는 범위로 제한한다. 금단 시간표와 연구 비교는 본문 표로 제공한다. max-txt2img의 설명 그림과 diagram-design의 시간표를 검토했으나 개인 경험을 보편적 회복 일정처럼 보이게 할 위험과 표 중복 때문에 supporting infographic은 생략한다. 생성 hero는 금연 주제를 즉시 알아보는 정적인 담백한 이미지로 제작하고 독립 검증한다. 정확한 흡연 기간과 패치 사용 이력은 저자 답변을 기다린다. 개인 회고를 중심으로 쓰며 새로 찾은 연구를 저자가 당시 읽은 자료로 소급하지 않는다.",
+  "decision_note": "2차 수정: 저자가 제목과 문체가 딱딱하다고 평가했다. 제목은 담배를 끊고 세 달째로 단순화하고, 개인 회고를 먼저 이어 읽은 뒤 준비할 도움과 연구 표 1개를 제공한다. 개인 경과 비교표는 문장으로 풀었다. 이미지와 출처·연구 수치는 유지한다. supporting infographic은 표 중복·개인 경과 보편화 위험 때문에 생략한다. standard-rich, 1280/360 light/dark preflight, 게시 승인 전 reviewing.",
   "publication_mode": "codex-browser"
 }

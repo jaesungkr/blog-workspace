@@ -8,11 +8,11 @@
   "outputs": [
     {
       "name": "smoking-cessation-month-3-review.html",
-      "sha256": "d6ca803ec699bbe0287423fcc968319f9f6561ed6cd16a9f2f907d07545a41f2"
+      "sha256": "c526c7bd42891baf452080416658d0d615a3db21f635a84f5947fb86ed42ca4f"
     },
     {
       "name": "smoking-cessation-month-3-review-dark.html",
-      "sha256": "ae9ba011e756729e45e6d447c7a9b99848bc7e44623c10b686543dec3318143e"
+      "sha256": "d5693b4f8755456e3b0bbc7a903c841ebaee57ede03741a6f5137c5940da0cdd"
     },
     {
       "name": "smoking-cessation-month-3-hero-v1.png",
@@ -20,7 +20,7 @@
     },
     {
       "name": "smoking-cessation-month-3-review.md",
-      "sha256": "aed29efe2a1f9002a1cbe02c0c8ecec1fe3567d6435bb4d8bdf669f3c29b6f46"
+      "sha256": "fb754c525b092367be966cbc0d46da4ce35e964ba018850b98f4e3ff6f86db07"
     },
     {
       "name": "hero-prompt-v1.txt",
