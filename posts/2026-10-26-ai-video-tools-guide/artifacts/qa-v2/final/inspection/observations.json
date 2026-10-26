@@ -1,0 +1,498 @@
+[
+  {
+    "theme": "light",
+    "width": 1280,
+    "height": 900,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/final-rendered/ai-video-tools-guide-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7994,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+          "complete": true,
+          "natural_width": 1448,
+          "natural_height": 1086
+        }
+      ]
+    },
+    "details": {
+      "figures": [
+        {
+          "id": "hero",
+          "x": 182,
+          "y": 609.140625,
+          "width": 916,
+          "height": 560.078125,
+          "color": "rgb(29, 29, 31)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "영상 수정, 다양한 입력, 장면 연결처럼 필요한 작업에 따라 모델을 살펴볼 수 있습니다.",
+          "img": {
+            "x": 182,
+            "y": 609.140625,
+            "width": 916,
+            "height": 516.390625,
+            "color": "rgb(29, 29, 31)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "workflow",
+          "x": 182,
+          "y": 6248.453125,
+          "width": 916,
+          "height": 731.1875,
+          "color": "rgb(29, 29, 31)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "제품 사진으로 짧은 광고를 만드는 과정",
+          "img": {
+            "x": 182,
+            "y": 6248.453125,
+            "width": 916,
+            "height": 687.5,
+            "color": "rgb(29, 29, 31)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        }
+      ],
+      "tables": [
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "height": 189,
+          "tableRows": 3
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "height": 758,
+          "tableRows": 10
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "height": 355,
+          "tableRows": 5
+        }
+      ],
+      "headings": [],
+      "lists": [
+        {
+          "items": 6,
+          "style": "decimal",
+          "x": 287,
+          "y": 1338.796875,
+          "width": 706,
+          "height": 182.34375,
+          "color": "rgb(29, 29, 31)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        },
+        {
+          "items": 7,
+          "style": "disc",
+          "x": 260,
+          "y": 7675.609375,
+          "width": 760,
+          "height": 245.421875,
+          "color": "rgb(51, 51, 51)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        }
+      ],
+      "link": "rgb(0, 102, 204)"
+    }
+  },
+  {
+    "theme": "light",
+    "width": 360,
+    "height": 800,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/final-rendered/ai-video-tools-guide-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10210,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+          "complete": true,
+          "natural_width": 1448,
+          "natural_height": 1086
+        }
+      ]
+    },
+    "details": {
+      "figures": [
+        {
+          "id": "hero",
+          "x": 20,
+          "y": 904.265625,
+          "width": 320,
+          "height": 246.34375,
+          "color": "rgb(29, 29, 31)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "영상 수정, 다양한 입력, 장면 연결처럼 필요한 작업에 따라 모델을 살펴볼 수 있습니다.",
+          "img": {
+            "x": 20,
+            "y": 904.265625,
+            "width": 320,
+            "height": 180.96875,
+            "color": "rgb(29, 29, 31)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "workflow",
+          "x": 20,
+          "y": 8535.609375,
+          "width": 320,
+          "height": 284.1875,
+          "color": "rgb(29, 29, 31)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "제품 사진으로 짧은 광고를 만드는 과정",
+          "img": {
+            "x": 20,
+            "y": 8535.609375,
+            "width": 320,
+            "height": 240.5,
+            "color": "rgb(29, 29, 31)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        }
+      ],
+      "tables": [
+        {
+          "width": 320,
+          "scrollWidth": 620,
+          "height": 237,
+          "tableRows": 3
+        },
+        {
+          "width": 320,
+          "scrollWidth": 620,
+          "height": 758,
+          "tableRows": 10
+        },
+        {
+          "width": 320,
+          "scrollWidth": 620,
+          "height": 403,
+          "tableRows": 5
+        }
+      ],
+      "headings": [],
+      "lists": [
+        {
+          "items": 6,
+          "style": "decimal",
+          "x": 41,
+          "y": 1312.1875,
+          "width": 278,
+          "height": 212.734375,
+          "color": "rgb(29, 29, 31)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        },
+        {
+          "items": 7,
+          "style": "disc",
+          "x": 20,
+          "y": 9900.046875,
+          "width": 320,
+          "height": 245.421875,
+          "color": "rgb(51, 51, 51)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        }
+      ],
+      "link": "rgb(0, 102, 204)"
+    }
+  },
+  {
+    "theme": "dark",
+    "width": 1280,
+    "height": 900,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/final-dark-rendered/ai-video-tools-guide-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7994,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+          "complete": true,
+          "natural_width": 1448,
+          "natural_height": 1086
+        }
+      ]
+    },
+    "details": {
+      "figures": [
+        {
+          "id": "hero",
+          "x": 182,
+          "y": 609.140625,
+          "width": 916,
+          "height": 560.078125,
+          "color": "rgb(245, 245, 247)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "영상 수정, 다양한 입력, 장면 연결처럼 필요한 작업에 따라 모델을 살펴볼 수 있습니다.",
+          "img": {
+            "x": 182,
+            "y": 609.140625,
+            "width": 916,
+            "height": 516.390625,
+            "color": "rgb(245, 245, 247)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "workflow",
+          "x": 182,
+          "y": 6248.453125,
+          "width": 916,
+          "height": 731.1875,
+          "color": "rgb(245, 245, 247)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "제품 사진으로 짧은 광고를 만드는 과정",
+          "img": {
+            "x": 182,
+            "y": 6248.453125,
+            "width": 916,
+            "height": 687.5,
+            "color": "rgb(245, 245, 247)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        }
+      ],
+      "tables": [
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "height": 189,
+          "tableRows": 3
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "height": 758,
+          "tableRows": 10
+        },
+        {
+          "width": 760,
+          "scrollWidth": 760,
+          "height": 355,
+          "tableRows": 5
+        }
+      ],
+      "headings": [],
+      "lists": [
+        {
+          "items": 6,
+          "style": "decimal",
+          "x": 287,
+          "y": 1338.796875,
+          "width": 706,
+          "height": 182.34375,
+          "color": "rgb(245, 245, 247)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        },
+        {
+          "items": 7,
+          "style": "disc",
+          "x": 260,
+          "y": 7675.609375,
+          "width": 760,
+          "height": 245.421875,
+          "color": "rgb(209, 209, 214)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        }
+      ],
+      "link": "rgb(102, 179, 255)"
+    }
+  },
+  {
+    "theme": "dark",
+    "width": 360,
+    "height": 800,
+    "page": {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/final-dark-rendered/ai-video-tools-guide-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10210,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+          "complete": true,
+          "natural_width": 1448,
+          "natural_height": 1086
+        }
+      ]
+    },
+    "details": {
+      "figures": [
+        {
+          "id": "hero",
+          "x": 20,
+          "y": 904.265625,
+          "width": 320,
+          "height": 246.34375,
+          "color": "rgb(245, 245, 247)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "영상 수정, 다양한 입력, 장면 연결처럼 필요한 작업에 따라 모델을 살펴볼 수 있습니다.",
+          "img": {
+            "x": 20,
+            "y": 904.265625,
+            "width": 320,
+            "height": 180.96875,
+            "color": "rgb(245, 245, 247)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "workflow",
+          "x": 20,
+          "y": 8535.609375,
+          "width": 320,
+          "height": 284.1875,
+          "color": "rgb(245, 245, 247)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none",
+          "caption": "제품 사진으로 짧은 광고를 만드는 과정",
+          "img": {
+            "x": 20,
+            "y": 8535.609375,
+            "width": 320,
+            "height": 240.5,
+            "color": "rgb(245, 245, 247)",
+            "background": "rgb(245, 245, 247)",
+            "filter": "none"
+          }
+        }
+      ],
+      "tables": [
+        {
+          "width": 320,
+          "scrollWidth": 620,
+          "height": 237,
+          "tableRows": 3
+        },
+        {
+          "width": 320,
+          "scrollWidth": 620,
+          "height": 758,
+          "tableRows": 10
+        },
+        {
+          "width": 320,
+          "scrollWidth": 620,
+          "height": 403,
+          "tableRows": 5
+        }
+      ],
+      "headings": [],
+      "lists": [
+        {
+          "items": 6,
+          "style": "decimal",
+          "x": 41,
+          "y": 1312.1875,
+          "width": 278,
+          "height": 212.734375,
+          "color": "rgb(245, 245, 247)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        },
+        {
+          "items": 7,
+          "style": "disc",
+          "x": 20,
+          "y": 9900.046875,
+          "width": 320,
+          "height": 245.421875,
+          "color": "rgb(209, 209, 214)",
+          "background": "rgba(0, 0, 0, 0)",
+          "filter": "none"
+        }
+      ],
+      "link": "rgb(102, 179, 255)"
+    }
+  }
+]

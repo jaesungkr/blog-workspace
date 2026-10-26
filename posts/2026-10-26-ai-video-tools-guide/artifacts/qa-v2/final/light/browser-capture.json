@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-10-26T15:09:23.134921Z",
+  "checked_by": "/root/source_review",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/ai-video-tools-guide-rich-preview.html",
+  "preview_sha256": "d4f4a8db3ab730c615c93775714bd5e0a8354d602bf9b0e4f77effb4332b9e7a",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/155.0.8059.85",
+  "protocol_version": "1.3",
+  "session": "6164fbeb-12a1-46f3-9d50-5ce70ae5a674",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/final-rendered/ai-video-tools-guide-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 7994,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+          "complete": true,
+          "natural_width": 1448,
+          "natural_height": 1086
+        }
+      ],
+      "screenshot_sha256": "7420005f4ff2e2d555d831cca91edd551e0c0dbb4169810a7b9bd46b21b86cb0",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-10-26-ai-video-tools-guide/artifacts/qa-v2/final-rendered/ai-video-tools-guide-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 10210,
+      "h1_count": 1,
+      "toc_anchor_count": 6,
+      "toc_targets_unique": true,
+      "image_count": 2,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+          "complete": true,
+          "natural_width": 1672,
+          "natural_height": 941
+        },
+        {
+          "src": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+          "complete": true,
+          "natural_width": 1448,
+          "natural_height": 1086
+        }
+      ],
+      "screenshot_sha256": "672efc98eb3aaa86dc1b373727bbd858363989500bbfb79bf4850ff9f6c4b346",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    }
+  ]
+}

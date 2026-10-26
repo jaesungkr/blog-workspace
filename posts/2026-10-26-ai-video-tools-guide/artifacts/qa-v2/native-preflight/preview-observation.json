@@ -1,0 +1,25 @@
+{
+  "captions": [
+    "영상 수정, 다양한 입력, 장면 연결처럼 필요한 작업에 따라 모델을 살펴볼 수 있습니다.",
+    "제품 사진으로 짧은 광고를 만드는 과정"
+  ],
+  "chars": 6685,
+  "cover": "<header class=\"px-4 mb-10 lg:px-0 lg:mb-16\" id=\"header\" x-ref=\"header\" data-header-style=\"thumbnail\">\n          \n          <div class=\"info border-b border-solid border-b-h-300 dark:border-b-h-600 min-h-[theme(spacing.h)] flex flex-col justify-center items-center gap-y-1 relative z-20 text-h-800 dark:text-h-200\">\n            <h1 class=\"tit text-center font-bold text-3xl max-w-screen-lg\">AI 영상 제작 툴 비교: Kling·Wan·Seedance와 추천 사이트</h1>\n            <div class=\"desc flex gap-x-1 text-sm\"><time class=\"date\">2026. 10. 27. 00:08</time><span class=\"delimiter\">·</span><a class=\"category\" href=\"/category/AI%C2%B7%EA%B0%9C%EB%B0%9C/AI%20%EB%AA%A8%EB%8D%B8%C2%B7%EB%B9%84%EA%B5%90\">AI·개발/AI 모델·비교</a><span class=\"flex gap-x-1\" id=\"admin\">\n                \n              </span></div>\n          </div>\n        </header>",
+  "images": [
+    {
+      "alt": "Kling·Wan·Seedance를 카메라와 필름 조형물로 표현한 영상 AI 비교 이미지",
+      "h": 720,
+      "src": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+      "w": 1280
+    },
+    {
+      "alt": "제품 사진과 자료를 준비하고 영상 클립을 생성한 뒤 자막과 소리를 편집하는 과정을 보여 주는 설명 이미지",
+      "h": 960,
+      "src": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+      "w": 1280
+    }
+  ],
+  "title": "AI 영상 제작 툴 비교: Kling·Wan·Seedance와 추천 사이트",
+  "coverRepresented": false,
+  "observedAt": "2026-10-26T15:09:08.916Z"
+}

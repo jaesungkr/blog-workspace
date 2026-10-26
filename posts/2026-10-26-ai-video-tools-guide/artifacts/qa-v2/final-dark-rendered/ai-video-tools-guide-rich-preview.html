@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 영상 제작 툴 비교: Kling·Wan·Seedance와 추천 사이트</title>
+  <meta name="description" content="Kling 4.0·Wan 3.0·Seedance 2.5의 장단점과 Google·Runway·Higgsfield 등 주요 영상 AI 서비스를 비교합니다. 모델별로 잘 맞는 작업과 이용할 수 있는 사이트, 생성 비용을 살펴봅니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>AI 영상 제작 툴 비교: Kling·Wan·Seedance와 추천 사이트</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>제품 사진에 움직임을 더해 짧은 광고를 만들거나, 직접 촬영하기 어려운 장면을 영상에 넣고 싶을 때가 있습니다. 영상 생성 AI는 이럴 때 설명이나 사진을 바탕으로 새로운 영상 클립을 만들어 줍니다. 만들고 싶은 장면은 있어도 어떤 도구로 시작해야 할지는 쉽게 정하기 어렵습니다.</p>
+<p>찾아보면 Kling, Wan, Seedance 같은 이름과 Higgsfield, Runway 같은 사이트가 함께 나옵니다. 이 가운데는 영상을 만드는 AI 모델도 있고, 여러 모델을 골라 쓸 수 있는 서비스도 있습니다. 처음에는 사이트마다 가입해 보기보다, 한곳에서 모델별 기능과 이용 조건을 살펴보는 편이 비교하기 수월합니다.</p>
+<p><strong>여러 모델을 한곳에서 살펴보려는 첫 사용자에게는 Higgsfield를 비교의 출발점으로 추천합니다.</strong> 한 사이트 안에서 모델을 선택할 수 있어, 새 장면을 만들지, 가진 영상을 수정할지에 따라 후보를 좁히기 좋습니다.</p>
+<div class="devlog-rich__figure" data-media-id="hero" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image"><img class="devlog-rich__image" src="https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D" alt="Kling·Wan·Seedance를 카메라와 필름 조형물로 표현한 영상 AI 비교 이미지" width="1672" height="941" loading="eager" decoding="async"></div><p class="devlog-rich__caption">영상 수정, 다양한 입력, 장면 연결처럼 필요한 작업에 따라 모델을 살펴볼 수 있습니다.</p></div>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#higgsfield에서-kling을-쓴다는-뜻">Higgsfield에서 Kling을 쓴다는 뜻</a></li>
+<li><a href="#지금-영상을-가장-잘-만드는-ai는">지금 영상을 가장 잘 만드는 AI는?</a></li>
+<li><a href="#kling-40wan-30seedance-25의-장단점">Kling 4.0·Wan 3.0·Seedance 2.5의 장단점</a></li>
+<li><a href="#영상-ai를-쓸-수-있는-사이트-10곳">영상 AI를 쓸 수 있는 사이트 10곳</a></li>
+<li><a href="#용도별-추천과-생성-비용">용도별 추천과 생성 비용</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="higgsfield에서-kling을-쓴다는-뜻">
+<h2 id="higgsfield에서-kling을-쓴다는-뜻">Higgsfield에서 Kling을 쓴다는 뜻</h2>
+<p>Higgsfield에서 Kling을 선택해 영상을 만든다면, 실제로 장면을 생성하는 AI는 Kling입니다. 이렇게 영상을 생성하거나 수정하는 AI를 모델이라고 부릅니다. Wan 3.0과 Seedance 2.5도 모델 이름입니다. 텍스트로 새 장면을 만들거나, 사진을 움직이게 하거나, 원본 영상에서 인물과 배경을 바꾸는 기능을 모델별로 제공합니다.</p>
+<p>사이트는 그 모델을 이용하는 작업 공간입니다. <a href="https://higgsfield.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">Higgsfield</a>는 여러 회사의 모델과 편집 기능을 모아 제공하고, <a href="https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-using-non-adobe-models.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Adobe Firefly</a>도 Adobe 자체 모델과 파트너 모델을 선택할 수 있게 합니다. Runway와 Pika 역시 자체 모델을 개발하면서 다른 모델을 함께 제공하므로, 회사 이름만 보고 실제 생성 모델을 판단하면 혼동하기 쉽습니다.</p>
+<p>모델로 만든 짧은 클립을 연결하고 자막과 음량을 조절해 한 편으로 완성하는 작업에는 Premiere Pro나 CapCut 같은 편집 도구도 쓰입니다. 모바일에서는 아래 표들을 좌우로 밀어 마지막 열까지 확인할 수 있습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>구분</th><th>예시</th><th>선택할 때 볼 것</th></tr></thead><tbody><tr><td>영상을 만드는 모델</td><td>Kling, Wan, Seedance, Gemini Omni</td><td>입력 자료, 장면 제어, 수정 기능</td></tr><tr><td>모델을 이용하는 서비스</td><td>Higgsfield, Dreamina, Firefly, Google Flow</td><td>지원 버전, 요금, 저장·편집 기능</td></tr><tr><td>완성본을 편집하는 도구</td><td>Premiere Pro, CapCut 등</td><td>클립 연결, 자막, 음량, 최종 내보내기</td></tr></tbody></table></div>
+<p>같은 Kling이라도 사이트에 따라 제공하는 버전과 기능, 한 번 생성할 때 드는 크레딧이 다를 수 있습니다. <strong>사이트 이름 옆에 어떤 모델과 버전을 쓰는지</strong>까지 살펴봐야 하는 이유입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="지금-영상을-가장-잘-만드는-ai는">
+<h2 id="지금-영상을-가장-잘-만드는-ai는">지금 영상을 가장 잘 만드는 AI는?</h2>
+<p>어떤 AI가 영상을 가장 잘 만드는지는 평가마다 답이 조금씩 다릅니다. 글로 새 장면을 만드는 능력과 기존 영상을 고치는 능력을 따로 봐야 하고, 평가에 쓰는 장면과 조건도 다릅니다. 2026년 10월 26일 확인한 두 평가도 글로 영상을 만드는 작업을 다루지만, 1위 모델은 달랐습니다.</p>
+<p><a href="https://artificialanalysis.ai/video/leaderboard/text-to-video" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis의 AA-Video-T2V v2.1</a>은 같은 설명으로 만든 영상을 모델 이름을 가린 상태에서 비교합니다. 소리가 포함된 텍스트→영상 평가에서 Wan 3.0이 1위였습니다. Utopai X, HeyGen Video 1, MiniMax H3, Dreamina Seedance 2.5가 뒤를 이었습니다. 상위권 모델 사이의 점수 차이는 평가 오차 안에 들어가는 경우도 있습니다.</p>
+<p><a href="https://arena.ai/leaderboard/video/text-to-video" style="color:#1a73e8;text-decoration:none;" target="_blank">Arena의 텍스트→영상 평가</a>에서는 Gemini Omni 1.1 Flash가 1위였습니다. 이 표는 2026년 9월 21일에 갱신된 자료이며, 모델마다 해상도와 받은 투표 수도 다릅니다.</p>
+<p>Seedance 2.5도 두 평가에서 상위권에 들었습니다. Kling 4.0은 아직 이 두 평가표에 올라 있지 않아, 아래에서는 공식 안내에 나온 기능을 중심으로 살펴봅니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="kling-40wan-30seedance-25의-장단점">
+<h2 id="kling-40wan-30seedance-25의-장단점">Kling 4.0·Wan 3.0·Seedance 2.5의 장단점</h2>
+<p>영상을 만들다 보면 준비한 사진이나 원본 영상을 그대로 활용하고 싶을 때가 있습니다. 제품 사진을 움직이고 싶은 경우와 이미 촬영한 영상의 배경을 바꾸고 싶은 경우에는 필요한 기능이 다릅니다. Kling 4.0·Wan 3.0·Seedance 2.5는 모두 참조 자료를 활용하지만, 공식 안내에서 강조하는 작업에는 차이가 있습니다.</p>
+<p><strong>Kling 4.0: 원본 영상과 여러 참조 자료를 이용한 수정</strong></p>
+<p><a href="https://kling.ai/quickstart/kling-4-model-user-guide" style="color:#1a73e8;text-decoration:none;" target="_blank">Kling 공식 사용 안내</a>에 따르면 4.0은 사진·영상·음성·인물 요소 등 여러 자료를 함께 참조하고, 3~30초 영상을 생성합니다. 결과물은 최대 4K를 지원합니다. 수정할 장면에서 어떤 자료의 인물이나 동작을 사용할지 지정할 수 있어, 촬영한 동작을 살리면서 인물이나 배경을 바꾸는 작업에 활용할 수 있습니다.</p>
+<p>예를 들어 사진 속 인물의 외형과 영상 속 동작을 따로 지정할 수 있습니다. 무엇을 유지하고 무엇을 바꿀지 세밀하게 지시할 수 있다는 점이 장점입니다. 공식 문서는 자료의 역할을 지정하지 않으면 모델이 용도를 추정해 결과를 예측하기 어려워질 수 있다고 안내합니다.</p>
+<p>여러 자료를 세밀하게 활용하는 만큼 준비할 내용도 늘어납니다. 얼굴만 바꾸고 싶은지, 동작과 구도도 바꿀지 분명하게 정해야 합니다.</p>
+<p><strong>Wan 3.0: 다양한 자료를 넣어 만드는 영상</strong></p>
+<p><a href="https://www.alibabacloud.com/blog/wan3-0-30-second-ai-video-generation-from-any-input_603452" style="color:#1a73e8;text-decoration:none;" target="_blank">Alibaba 공식 설명</a>에 따르면 Wan 3.0은 글·사진·영상·음성에 더해 문서와 웹페이지를 입력으로 활용하고, 한 번에 최대 30초를 생성합니다. 제품 사진과 소개 문서를 함께 넣어 설명 영상을 만들고 싶을 때 눈여겨볼 만합니다.</p>
+<p>문서 입력 같은 기능은 사이트에 따라 지원하지 않을 수 있습니다. 사용할 사이트에 필요한 입력 기능이 있는지 확인해야 합니다.</p>
+<p>제품 소개 영상에서는 글자와 소리가 특히 눈에 띕니다. Alibaba도 오디오 질감과 글자 정확도를 아직 개선할 부분으로 꼽았습니다. 가격이나 제품명처럼 정확해야 하는 문구는 생성된 화면에서 다시 확인하고, 최종 자막은 편집 도구에서 넣는 편이 관리하기 쉽습니다.</p>
+<p><strong>Seedance 2.5: 장면을 이어 가는 짧은 이야기</strong></p>
+<p><a href="https://seed.bytedance.com/en/seedance2_5" style="color:#1a73e8;text-decoration:none;" target="_blank">ByteDance의 Seedance 2.5 소개</a>는 한 번에 최대 30초의 영상과 오디오를 함께 생성하고, 장면 연결·참조 영상 활용·수정 기능을 강조합니다. 제품을 보여 주고 사용 장면으로 넘어가는 짧은 광고처럼, 몇 개의 장면이 이어지는 영상을 만들 때 살펴볼 만합니다. 공식 체험 경로는 Dreamina이며, <a href="https://github.com/higgsfield-ai/skills/blob/main/higgsfield-generate/references/model-catalog.md" style="color:#1a73e8;text-decoration:none;" target="_blank">Higgsfield의 모델 목록</a>에서도 지원 여부를 확인할 수 있습니다.</p>
+<p>이런 영상에서는 장면이 바뀌어도 같은 인물과 제품이 유지되어야 합니다. Seedance가 강조하는 참조 기능도 이 부분을 돕습니다. 다만 연결이 얼마나 자연스러운지는 입력 자료와 장면에 따라 달라지며, 공식 시연에는 제공사가 고른 결과가 담겨 있습니다.</p>
+<p>여러 장면을 한 번에 만들려면 생성 비용도 따져야 합니다. 앞서 본 Artificial Analysis의 API 가격 표에서는 같은 기본 조건의 Wan 3.0보다 Seedance 2.5의 분당 생성 비용이 높았습니다. 이 값은 사이트 구독료와 다르며, 플랫폼 할인이나 생성 모드에 따라 실제 차이는 달라집니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="영상-ai를-쓸-수-있는-사이트-10곳">
+<h2 id="영상-ai를-쓸-수-있는-사이트-10곳">영상 AI를 쓸 수 있는 사이트 10곳</h2>
+<p>Kling AI나 Dreamina처럼 특정 모델을 바로 이용할 수 있는 사이트도 있고, Higgsfield처럼 여러 모델을 모아 둔 서비스도 있습니다. 대본을 읽는 아바타가 필요하다면 HeyGen처럼 설명 영상에 특화된 서비스도 함께 볼 만합니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>사이트</th><th>이런 작업에 쓸 수 있습니다</th><th>알아둘 점</th></tr></thead><tbody><tr><td><a href="https://higgsfield.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">Higgsfield</a></td><td>여러 모델과 광고·카메라 연출 도구를 한곳에서 비교합니다.</td><td>모델과 생성 모드에 따라 드는 크레딧이 다릅니다.</td></tr><tr><td><a href="https://kling.ai/" style="color:#1a73e8;text-decoration:none;" target="_blank">Kling AI</a></td><td>Kling 모델의 참조·수정 기능을 공식 안내와 함께 이용합니다.</td><td>버전마다 넣을 수 있는 자료와 생성 모드가 다릅니다.</td></tr><tr><td><a href="https://dreamina.capcut.com/" style="color:#1a73e8;text-decoration:none;" target="_blank">Dreamina</a></td><td>Seedance를 이용하는 공식 경로입니다.</td><td>지역과 계정에 따라 제공하는 버전과 기능이 달라질 수 있습니다.</td></tr><tr><td><a href="https://flow.google.com/" style="color:#1a73e8;text-decoration:none;" target="_blank">Google Flow</a></td><td>Gemini Omni와 Veo를 이용해 장면을 만들고 수정합니다.</td><td>구독과 지역에 따라 쓸 수 있는 모델이 달라질 수 있습니다.</td></tr><tr><td><a href="https://runwayml.com/" style="color:#1a73e8;text-decoration:none;" target="_blank">Runway</a></td><td>생성 장면의 카메라 움직임과 연출을 지정합니다.</td><td>복잡한 장면에서는 동작의 앞뒤가 맞지 않거나 물체가 사라질 수 있습니다.</td></tr><tr><td><a href="https://lumalabs.ai/dream-machine" style="color:#1a73e8;text-decoration:none;" target="_blank">Luma Dream Machine</a></td><td>Ray 계열로 원본 영상을 변형하고 참조 자료를 활용합니다.</td><td>HDR 등 고급 출력은 모델과 모드별 지원 범위가 다릅니다.</td></tr><tr><td><a href="https://firefly.adobe.com/" style="color:#1a73e8;text-decoration:none;" target="_blank">Adobe Firefly</a></td><td>Adobe 도구와 연결하고 여러 파트너 모델을 선택합니다.</td><td>Adobe 자체 모델과 파트너 모델에 적용되는 이용 조건이 다릅니다.</td></tr><tr><td><a href="https://pika.art/" style="color:#1a73e8;text-decoration:none;" target="_blank">Pika</a></td><td>영상 생성·교체·연장과 소리 작업을 기능별 도구로 제공합니다.</td><td>같은 사이트 안에서도 선택한 모델에 따라 기능이 달라집니다.</td></tr><tr><td><a href="https://hailuoai.video/" style="color:#1a73e8;text-decoration:none;" target="_blank">Hailuo AI</a></td><td><a href="https://www.minimax.io/blog/minimax-h3" style="color:#1a73e8;text-decoration:none;" target="_blank">MiniMax H3</a>의 공식 체험 경로입니다.</td><td>API와 웹 서비스에서 지원하는 해상도와 기능이 다를 수 있습니다.</td></tr><tr><td><a href="https://www.heygen.com/" style="color:#1a73e8;text-decoration:none;" target="_blank">HeyGen</a></td><td>말하는 아바타와 번역·더빙을 활용한 설명 영상을 만듭니다.</td><td>사용하는 언어와 대본에 따라 아바타 연기와 번역 품질이 달라질 수 있습니다.</td></tr></tbody></table></div>
+<p>이 가운데 Google Flow를 살펴본다면 Veo와 Gemini Omni의 차이가 궁금할 수 있습니다. <a href="https://deepmind.google/models/gemini-omni/" style="color:#1a73e8;text-decoration:none;" target="_blank">Gemini Omni</a>는 대화로 영상을 단계적으로 수정하는 기능을 강조하고, <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/" style="color:#1a73e8;text-decoration:none;" target="_blank">Omni 1.1 Flash</a>는 시작·끝 프레임 지정과 장면 연장을 지원합니다. <a href="https://ai.google.dev/gemini-api/docs/veo" style="color:#1a73e8;text-decoration:none;" target="_blank">Veo 3.1</a>은 소리가 포함된 짧은 영상 생성 모델로 별도 제공됩니다.</p>
+<p>카메라 움직임을 세밀하게 지시하거나 촬영한 영상을 변형하려면 Runway와 Luma의 기능도 비교해 볼 만합니다. Runway의 <a href="https://runwayml.com/research/introducing-runway-gen-4.5" style="color:#1a73e8;text-decoration:none;" target="_blank">Gen-4.5 공식 설명</a>은 복잡한 카메라 움직임과 순서가 있는 지시를 강조합니다. 동시에 인과관계, 물체가 사라졌다 나타나는 현상, 시간 순서 같은 한계도 공개합니다. Luma는 <a href="https://lumalabs.ai/learning-hub/ray3-faqs" style="color:#1a73e8;text-decoration:none;" target="_blank">Ray3 안내</a>와 <a href="https://lumalabs.ai/learning-hub/luma-video-models-guide-ray3.14-veo-sora-kling-compared" style="color:#1a73e8;text-decoration:none;" target="_blank">모델별 가이드</a>에서 원본 영상 변형과 HDR 지원 범위를 설명합니다.</p>
+<p>예전 소개 글에서 Sora를 보고 찾아왔다면 서비스 종료 소식도 알아둘 필요가 있습니다. <a href="https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 안내</a>에 따르면 웹·앱은 2026년 4월 26일 종료됐고, API 종료일은 9월 24일입니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="용도별-추천과-생성-비용">
+<h2 id="용도별-추천과-생성-비용">용도별 추천과 생성 비용</h2>
+<p>촬영해 둔 영상의 배경을 바꾸는 일과 자료만으로 제품 광고를 만드는 일에는 서로 다른 기능이 필요합니다. 만들려는 영상에 맞춰 추천 대상을 정리하면 다음과 같습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>만들려는 결과</th><th>먼저 살펴볼 후보</th><th>선택 이유</th></tr></thead><tbody><tr><td>여러 모델을 한곳에서 비교</td><td>Higgsfield</td><td>여러 모델을 같은 사이트에서 살펴볼 수 있습니다.</td></tr><tr><td>기존 영상의 인물·배경·장면 수정</td><td>Kling 4.0, Gemini Omni, Luma</td><td>원본과 참조 자료를 사용하는 수정 기능을 제공합니다.</td></tr><tr><td>여러 자료로 구성하는 제품 소개 영상</td><td>Wan 3.0</td><td>사진·문서 등 다양한 입력을 지원합니다.</td></tr><tr><td>몇 개의 장면이 이어지는 짧은 광고</td><td>Seedance 2.5</td><td>장면 연결과 참조 활용을 강조합니다.</td></tr><tr><td>진행자가 대본을 읽는 안내·교육 영상</td><td>HeyGen</td><td>말하는 아바타와 번역 기능을 제공합니다.</td></tr></tbody></table></div>
+<p>제품 사진으로 광고를 만든다면 사진을 넣어 짧은 클립을 만든 뒤, 쓸 만한 장면을 골라 자막과 소리를 붙이게 됩니다.</p>
+<div class="devlog-rich__figure" data-media-id="workflow" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image"><img class="devlog-rich__image" src="https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D" alt="제품 사진과 자료를 준비하고 영상 클립을 생성한 뒤 자막과 소리를 편집하는 과정을 보여 주는 설명 이미지" width="1448" height="1086" loading="lazy" decoding="async"></div><p class="devlog-rich__caption">제품 사진으로 짧은 광고를 만드는 과정</p></div>
+<p>제품명이나 한국어 문장이 영상에 들어간다면 글자가 유지되는지, 대사가 있다면 발음과 입 모양이 맞는지 살펴봐야 합니다. 여러 장면에서는 같은 인물과 제품이 유지되는지도 중요합니다. 상업용 결과물은 사용한 인물·사진·음악의 권리와 선택한 모델의 이용 조건을 함께 확인해야 합니다. Firefly도 <a href="https://helpx.adobe.com/creative-cloud/apps/generative-ai/non-adobe-models-in-adobe-products.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Adobe 모델과 파트너 모델의 조건</a>을 구분해서 안내합니다.</p>
+<p>마음에 드는 장면이 한 번에 나오면 좋겠지만, 여러 번 다시 만들 수도 있습니다. 예산을 잡을 때에는 월 구독료에 포함된 생성량과 추가 비용을 함께 봐야 합니다. 구독형 서비스에서는 작업마다 크레딧을 차감하는 경우가 많고, API는 생성 길이·해상도·모드에 따라 사용료를 매깁니다. 같은 ‘영상 한 편’이라도 5초 초안과 30초 고해상도 결과물의 비용은 달라집니다.</p>
+<p>사이트의 구독료와 별도로, API를 직접 사용할 때의 요금도 있습니다. <a href="https://www.alibabacloud.com/blog/wan3-0-30-second-ai-video-generation-from-any-input_603452" style="color:#1a73e8;text-decoration:none;" target="_blank">Wan 3.0의 공식 API 안내</a>는 1080p 생성 비용을 초당 0.20달러로 제시합니다. 이 요율에서 5초 영상을 한 번 생성하면 1달러입니다. 가령 다섯 번 만들어 한 개를 쓴다면 그 장면에만 5달러가 듭니다.</p>
+<p>결제 화면에서는 월 요금과 함께 원하는 해상도·길이로 만들 때 드는 크레딧, 워터마크 유무도 살펴보는 편이 좋습니다. ‘무제한’ 요금제에도 조건은 있습니다. <a href="https://higgsfield.ai/blog/new-unlimited-more-models" style="color:#1a73e8;text-decoration:none;" target="_blank">Higgsfield의 무제한 안내</a>는 적용 모델뿐 아니라 별도 대기열과 동시에 진행할 수 있는 작업의 조건도 설명합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="참고-자료">
+<h2 id="참고-자료">참고 자료</h2>
+<ul><li><a href="https://kling.ai/quickstart/kling-4-model-user-guide" style="color:#1a73e8;text-decoration:none;" target="_blank">Kling 4.0 공식 사용 안내</a></li><li><a href="https://www.alibabacloud.com/blog/wan3-0-30-second-ai-video-generation-from-any-input_603452" style="color:#1a73e8;text-decoration:none;" target="_blank">Alibaba Wan 3.0 기능·제약·API 요금</a></li><li><a href="https://seed.bytedance.com/en/seedance2_5" style="color:#1a73e8;text-decoration:none;" target="_blank">ByteDance Seedance 2.5</a></li><li><a href="https://deepmind.google/models/gemini-omni/" style="color:#1a73e8;text-decoration:none;" target="_blank">Google Gemini Omni</a> · <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/" style="color:#1a73e8;text-decoration:none;" target="_blank">Omni 1.1 Flash</a></li><li><a href="https://runwayml.com/research/introducing-runway-gen-4.5" style="color:#1a73e8;text-decoration:none;" target="_blank">Runway Gen-4.5</a> · <a href="https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-using-non-adobe-models.html" style="color:#1a73e8;text-decoration:none;" target="_blank">Adobe 파트너 영상 모델</a></li><li><a href="https://artificialanalysis.ai/video/leaderboard/text-to-video" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis 영상 모델 평가</a></li><li><a href="https://arena.ai/leaderboard/video/text-to-video" style="color:#1a73e8;text-decoration:none;" target="_blank">Arena 텍스트→영상 평가</a></li></ul>
+</section>
+</article>
+</body>
+</html>

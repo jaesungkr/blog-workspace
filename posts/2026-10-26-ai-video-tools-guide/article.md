@@ -4,12 +4,12 @@ slug: ai-video-tools-guide
 date: 2026-10-26
 category: "Log"
 subcategory: "AI 모델 · 비교"
-status: reviewing
+status: published
 format: rich-post-v2
 tags: [AI영상, 영상생성AI, Kling, Wan, Seedance, Higgsfield]
 summary: "Kling 4.0·Wan 3.0·Seedance 2.5의 장단점과 Google·Runway·Higgsfield 등 주요 영상 AI 서비스를 비교합니다. 모델별로 잘 맞는 작업과 이용할 수 있는 사이트, 생성 비용을 살펴봅니다."
 hero_image: assets/ai-video-tools-hero-v1.png
-published_url: ""
+published_url: "https://dop3n.tistory.com/entry/AI-%EC%98%81%EC%83%81-%EC%A0%9C%EC%9E%91-%ED%88%B4-%EB%B9%84%EA%B5%90-Kling%C2%B7Wan%C2%B7Seedance%EC%99%80-%EC%B6%94%EC%B2%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8"
 sources:
   - https://kling.ai/quickstart/kling-4-model-user-guide
   - https://seed.bytedance.com/en/seedance2_5

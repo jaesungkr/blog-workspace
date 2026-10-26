@@ -1,0 +1,18 @@
+{
+  "status": "published",
+  "post_id": 153,
+  "url": "https://dop3n.tistory.com/entry/AI-%EC%98%81%EC%83%81-%EC%A0%9C%EC%9E%91-%ED%88%B4-%EB%B9%84%EA%B5%90-Kling%C2%B7Wan%C2%B7Seedance%EC%99%80-%EC%B6%94%EC%B2%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8",
+  "published_at": "2026-10-26T15:14:02.140Z",
+  "recorded_at": "2026-10-27T00:14:41.618290+09:00",
+  "submitted_fragment_sha256": "6eca239e5e72f4365719911380f3496da19ad63a85af149275482d8980c9b9b4",
+  "approval_record_sha256": "9e4e8b45adf3211462eecd17e7af5b6d6002e989cea9abd5e415c7cddd8c4c17",
+  "editor_preview": "Native image recognition, alt, captions, desktop and fresh mobile light/dark verified before publishing. Editor content matched finalized fragment byte-for-byte.",
+  "publish_observation": "Public publish returned to post management; the exact title link appeared. Public page opened and displayed matching H1, date 2026.10.27 00:13, category AI·개발/AI 모델·비교, and edit link for post 153.",
+  "additional_live_qa": "waived_by_author",
+  "author_instruction": "응 게시하고나서는 추가 검수는 필요없어. 뭐 제목 뒤에 흰배경이라서 제목이 잘안보이고 뭐이런건 굳이신경안써도돼 내가 체크할테니",
+  "limitations": [
+    "No additional public-page layout, cover contrast, or viewport verification performed after the author requested to handle those checks.",
+    "The pre-publication resize-only ad overflow is preserved separately in native-preflight/review.md."
+  ],
+  "screenshot": "artifacts/qa-v2/publication-live.png"
+}

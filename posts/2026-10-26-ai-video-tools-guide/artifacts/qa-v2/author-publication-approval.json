@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "author_instruction": "게시해줘",
+  "approved_title": "AI 영상 제작 툴 비교: Kling·Wan·Seedance와 추천 사이트",
+  "approved_source_pass_sha256": "fb65ddd0470e004a3617b99df85241f7e3aab3dac24f2e2910f9093d430a2e87",
+  "approved_article_sha256": "e4d6ac3df91280782e64e39fd4fc20103091bc7d3fc9d4f9cbd854062c1a0b45",
+  "media_sha256": {
+    "hero": "4c0f9a7d855969a681538c14394839d2b53ac8ac2f560465fe299a826ab4c305",
+    "workflow": "dd38baef647a28f70504a2549aed6e28751603ded5e5100f073f80ffa7acdc9e"
+  },
+  "target_blog": "https://dop3n.tistory.com",
+  "approved_at": "2026-10-26T23:50:50.804722+09:00",
+  "approval_scope": "Upload approved images, assemble reviewed article, publish publicly now, verify live page. Explicit author request follows full article review in this chat."
+}

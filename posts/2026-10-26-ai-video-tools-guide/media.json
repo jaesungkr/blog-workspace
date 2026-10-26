@@ -28,7 +28,8 @@
       "placement": "after:opening",
       "sha256": "4c0f9a7d855969a681538c14394839d2b53ac8ac2f560465fe299a826ab4c305",
       "status": "validated",
-      "tistory_url": ""
+      "tistory_url": "https://blog.kakaocdn.net/dna/cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XSfIifUaPIrO2tjQQbgDvrqbf2NpOd-EZ7h2nMDEKrYqBXhTexJtgAfZeDtuEEHNC5suN-GCbvlw4F-1ODMIEx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=vpDDldTA812a%2BEeJrV1ApDNf2ZQ%3D",
+      "tistory_embed": "[##_Image|kage@cRm5nM/dJMcahM5QFb/AAAAAAAAAAAAAAAAAAAAAN2JC0wKtyVm2-Hx9A3PqSdqMQOkDuE4tYYkJuCmRaDu/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=ssy%2FoEZ1ISyJgeFO8iMINOAfn1o%3D|CDM|1.3|{\"originWidth\":1672,\"originHeight\":941,\"style\":\"alignCenter\",\"filename\":\"ai-video-tools-hero-v1.png\",\"alt\":\"Kling·Wan·Seedance를 카메라와 필름 조형물로 표현한 영상 AI 비교 이미지\"}_##]"
     },
     {
       "id": "workflow",
@@ -57,7 +58,8 @@
       "placement": "after:workflow-explanation-before-cost",
       "sha256": "dd38baef647a28f70504a2549aed6e28751603ded5e5100f073f80ffa7acdc9e",
       "status": "validated",
-      "tistory_url": ""
+      "tistory_url": "https://blog.kakaocdn.net/dna/8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XnjnExlZUyl1qyK1n_fSaj2024fgIJ9D4BialGYM3vQv_cQ4FHMd4PwKVYzBBN0FZIiiKfOofRm9UaH54HYe6B/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=imNVWygSlr%2BjFbAO7t1hzMRJ%2B38%3D",
+      "tistory_embed": "[##_Image|kage@8VjSL/dJMcabsDSUv/AAAAAAAAAAAAAAAAAAAAAF1vW_WJPPmxoSZG5nERHr_ojdldxgJnOCdyl4nUAnf8/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1793458799&amp;allow_ip=&amp;allow_referer=&amp;signature=jezhDmkpE92IyndbweAcTv%2F65Jk%3D|CDM|1.3|{\"originWidth\":1448,\"originHeight\":1086,\"style\":\"alignCenter\",\"filename\":\"ai-video-workflow-v2.png\",\"alt\":\"제품 사진과 자료를 준비하고 영상 클립을 생성한 뒤 자막과 소리를 편집하는 과정을 보여 주는 설명 이미지\"}_##]"
     }
   ]
 }
