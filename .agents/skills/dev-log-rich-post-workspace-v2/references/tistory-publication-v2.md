@@ -6,12 +6,14 @@ The author first reviews the complete article and publication images. An
 instruction such as `이대로 올리자`, `확정했어. 게시해 줘`, or an equivalent
 explicit instruction authorizes Codex to upload those images, assemble the
 approved article in Tistory, preview, click the final publish control, and
-verify the result. Do not ask for the same publication permission again.
+confirm the successful publication and article URL.
+Do not ask for the same publication permission again. The author handles post-publication checks;
+additional visual inspection or repair requires an explicit request.
 Drafting, source-review approval by another agent, and silence do not authorize
 publication. A material title, claim, recommendation, or media-content change
 after author approval needs the author's approval of that changed candidate.
-Routine attachment binding and layout corrections within the approved content
-do not require another approval.
+Routine attachment binding and pre-publication layout corrections within the
+approved content do not require another approval.
 
 Record the real approval in `artifacts/qa-v2/author-publication-approval.json`:
 the author's instruction, the approved source-pass hash, an ID-to-local-media
@@ -92,12 +94,12 @@ and category over the selected cover at desktop/mobile widths in both themes.
 Prefer a suitable approved asset or a scoped `assets/post.css` contrast repair
 when needed; do not impose a dark overlay or a new generated hero on every
 post. If a new-post preview does not show the eventual automatic cover, record
-that it was not represented and check it immediately on the first live page.
-Repair that same post under the existing layout authorization, preserving its
-URL/date, instead of publishing a duplicate. Refresh the affected final-page
-evidence for CSS changes; reopen source review only for a material source edit.
+that it was not represented and leave the live cover check to the author.
+Do not add a post-publication inspection or contrast repair on that basis.
+For pre-publication CSS changes, refresh the affected final-page evidence;
+reopen source review only for a material source edit.
 
-## Preview, publish, verify
+## Preview, publish, confirm
 
 Inspect the exact native fragment in Tistory's own preview at desktop and
 mobile widths, including real hELLO light/dark behavior. Confirm native image
@@ -111,19 +113,26 @@ unless the author specified another setting.
 
 Under the recorded author approval, click the final publish/save control and
 wait for an observable success state. If the result is ambiguous, inspect the
-post list or live URL before retrying; do not create a second publication.
-Read the live article URL from the successful browser result and verify the
-public page, including desktop/mobile images, captions, TOC, and scrolling.
-Record actual outcomes and screenshots in `artifacts/qa-v2/publication.json`,
-including the post ID, URL, submitted fragment SHA-256, approval-record hash,
-and publication/verification time. Distinguish editor preview, actual publish,
-and public-page verification in the evidence.
+post list or resulting URL only to establish whether publication succeeded
+before retrying; do not create a second publication.
+Read the article URL from the successful browser result or matching post-list
+entry. This publication confirmation is the stopping point for browser work.
+Do not run additional desktop/mobile, image, caption, TOC, scrolling, theme,
+or title/cover-contrast checks, and do not make automatic visual repairs after
+publication. The author handles those checks unless they explicitly ask for
+further inspection or repair. Do not ask them to waive these checks each time.
 
-Set `published` only after live verification. If publishing succeeded but
-verification or Git delivery failed, record that split state and continue
-from the existing post. Do not claim that no post exists or publish a duplicate.
-Finish the focused commit/push and verify the remote commit. Return the live
-URL first, the exact submitted TXT as a backup, and an embedded screenshot.
+Record actual outcomes in `artifacts/qa-v2/publication.json`, including the post
+ID when observed, URL, submitted fragment SHA-256, approval-record hash, and
+publication time. Record post-publication QA as omitted by the standing author
+preference; never label unperformed checks as passed. If a completion screenshot
+is needed, use the already observed success state without a new inspection pass.
+
+Set `published` after publication is confirmed. If publication succeeded but Git
+delivery failed, record that split state and continue from the existing post.
+Do not claim that no post exists or publish a duplicate. Finish the focused
+commit/push and verify the remote commit. Return the article URL first and the
+exact submitted TXT as a backup.
 
 ## Address lifetime
 

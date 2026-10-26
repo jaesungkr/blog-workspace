@@ -34,13 +34,16 @@ permission request. A request to draft or proofread is not approval to publish.
 
 Use the finalized TXT as the exact native-attachment fragment for the target
 editor. Check its actual Tistory preview before clicking the final public
-publish control. Validate the returned live URL at desktop and mobile widths,
-record publication evidence and the submitted hash, then set `published` and
-commit/push the lifecycle and evidence update. If publication succeeded but a
-verification or Git step failed, record that split state and resume from it;
+publish control. Confirm the successful result and article URL, record the
+publication and submitted hash, then set `published` and commit/push the
+lifecycle and evidence update. Leave subsequent visual checks and repairs to
+the author unless explicitly requested; do not reopen the live page to inspect
+images, responsive layout, themes, or title/cover contrast. If publication
+succeeded but Git delivery failed, record that split state and resume from it;
 do not publish a duplicate or claim the article is still unpublished.
 
 Return the live article URL as the primary final link and the exact submitted
-TXT as a backup. Embed a screenshot that shows the verified result. When the
+TXT as a backup. If a completion screenshot is needed, capture the already
+observed success state without starting a new inspection pass. When the
 author has not yet approved publication, provide the local review candidate
 and wait at `reviewing`; do not route routine upload/paste work back to them.

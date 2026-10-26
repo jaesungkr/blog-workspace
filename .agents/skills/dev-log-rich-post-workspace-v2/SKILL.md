@@ -1,6 +1,6 @@
 ---
 name: dev-log-rich-post-workspace-v2
-description: Create and publish complete dev.log Tistory rich posts after the author approves the specific article and asks to publish. Freeze an evidence-backed Korean source, validate media and responsive light/dark layouts, then use the Codex in-app browser to attach images as native Tistory blocks, enter the article, publish, and verify the live page with Git delivery. Use when explicitly invoked, requested as a source-freeze workflow, or selected by the repository AGENTS.md; use the original rich-post skill for existing v1 bundles.
+description: Create and publish complete dev.log Tistory rich posts after the author approves the specific article and asks to publish. Freeze an evidence-backed Korean source, validate media and responsive light/dark layouts before publication, then use the Codex in-app browser to attach native Tistory images, enter the article, publish, and record the resulting URL with Git delivery. Post-publication visual checks belong to the author unless requested. Use when explicitly invoked, requested as a source-freeze workflow, or selected by the repository AGENTS.md; use the original rich-post skill for existing v1 bundles.
 ---
 
 # dev.log rich-post workspace v2
@@ -8,6 +8,11 @@ description: Create and publish complete dev.log Tistory rich posts after the au
 Produce a reader-first article and publish it through the Codex in-app browser
 after the author approves that article and asks to publish. Keep the original
 rich-post skill and its artifacts untouched.
+
+After publication, confirm only the successful publish result and article URL.
+The author handles post-publication checks. Do not run additional desktop/mobile,
+image, layout, theme, or title/cover-contrast checks or automatic visual repairs
+unless the author explicitly requests them. Keep the pre-publication gates.
 
 ## Protect the repository
 
@@ -307,7 +312,7 @@ asks to publish, for example `이대로 올리자`. Record the actual instructio
 approved source/media hashes in `artifacts/qa-v2/author-publication-approval.json`
 as described in `references/tistory-publication-v2.md`. This author approval is
 distinct from the independent source pass. Once it exists, continue through
-image upload, editor entry, preview, final publish, and live verification
+image upload, editor entry, preview, final publish, and publication confirmation
 without asking for the same permission again.
 
 Use the Codex in-app browser, including for login and file upload. Print the
@@ -363,10 +368,12 @@ and verify the remote commit.
 After the final gates pass, enter the byte-identical
 `<slug>-tistory-fragment.txt` in the target Tistory editor. Check the exact
 native attachment result, title, category, public URL, and real hELLO light/dark
-preview; publish under the recorded author approval. Read the live public URL
-from the browser and validate desktop/mobile images and layout before setting
-`published`. Return that live URL as the primary handoff, with the exact TXT
-as a backup and a screenshot of the verified result. Finish Git delivery for
+preview; publish under the recorded author approval. Confirm publication from
+the browser's success state or matching post-list entry, read the article URL,
+and set `published`. Do not open the public page for additional visual QA.
+Return that URL as the primary handoff, with the exact TXT as a backup. If a
+completion screenshot is needed, use the observed success state without a new
+inspection pass. Finish Git delivery for
 the publication evidence and lifecycle update as well.
 
 ## Completion
@@ -375,7 +382,8 @@ A v2 rich post is complete only when the source pass, validated local media,
 resolved remote URLs, required remote observation, exact remote light/dark
 candidate, one independent final-page record, strict final render, focused Git
 delivery, verified remote commit, byte-identical submitted file, author
-publication approval, and verified live article pass. A reviewed draft without
+publication approval, and confirmed publication with its resulting URL. Routine
+post-publication visual QA is not a completion gate. A reviewed draft without
 author publication approval is a review handoff, not a published post. Never
 accept an unresolved claim, unsupported hands-on statement, local media path,
 placeholder, duplicate H1, unreadable mobile evidence, hidden table content,

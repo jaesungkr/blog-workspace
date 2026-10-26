@@ -66,7 +66,7 @@ This is the only manual page approval. Do not repeat the source editorial gate
 here. If a real text defect appears, return to writing and invalidate this
 candidate.
 
-## Exact Tistory attachment preview and live verification
+## Exact Tistory attachment preview before publication
 
 The standalone preview uses observed CDN URLs; the publication fragment uses
 native attachment blocks. After finalization, inspect that exact fragment in
@@ -82,23 +82,11 @@ inside the scoped wrapper; the 2026-10-24 repair exposed a conflict between
 `margin: 0 auto` and Tistory's `translateX(-50%)` at mobile widths. The v2 CSS
 handles this only inside `.devlog-rich__native-image`.
 
-After publication, verify the public page itself, including successful image
-loads (`naturalWidth > 0`), captions, native imageblock markup, navigation,
-table/code scrolling, and both desktop/mobile layouts. Record the live URL,
-actual measurements, and screenshots in `artifacts/qa-v2/publication.json`.
-Do not equate a local preview pass or an editor save click with live success.
-
-Test a fresh load at each required public viewport, not only a page resized
-from desktop to mobile. If resizing exposes overflow, locate its owner and
-record that observation separately from the fresh-load result. An ad iframe
-that retains its desktop width is still a resize defect; a passing mobile
-reload does not erase it or prove that all responsive behavior passed. Keep
-article scroll regions distinct from document overflow and do not hide the
-problem with page-wide overflow suppression.
-
-Include the live title/metadata contrast over the actual skin cover, following
-the publication preflight. A cover-only CSS correction requires current
-candidate hashes, affected capture records, and an actual cover recheck. When
-the article body is byte-identical, reuse its substantive review and inspect
-the changed component instead of reopening editorial review or rereading every
-unchanged section. Never reuse a stale final-page pass.
+Complete this gate before publication. After publishing, confirm the successful
+result and article URL as described in [tistory-publication-v2.md](tistory-publication-v2.md#preview-publish-confirm),
+then stop browser QA. The author handles live-page layout, images, navigation,
+themes, and title/cover contrast. Do not reload the public page, repeat viewport
+captures, inspect the cover, or make visual repairs unless explicitly requested.
+If the editor preview does not show the eventual cover, record that limitation
+without adding a later live-page gate. Do not equate an editor save click with
+publication success or report omitted checks as passed.

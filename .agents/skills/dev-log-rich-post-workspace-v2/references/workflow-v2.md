@@ -87,9 +87,10 @@ not enabled.
    capture both themes and record `final-page.json`.
 8. Set `ready`, retain the exact native publication TXT, and check that same
    fragment in the actual Tistory preview, including both hELLO themes.
-9. Publish using the existing author approval, verify the public desktop and
-   mobile page, record the live URL and evidence, set `published`, and finish
-   focused Git delivery. The live article URL is the primary result.
+9. Publish using the existing author approval, confirm the successful result
+   and article URL, record the publication, set `published`, and finish focused
+   Git delivery. The article URL is the primary result. Leave post-publication
+   visual checks to the author unless explicitly requested.
 
 Set `publication_mode: codex-browser` for new releases. Historical bundles
 without the field retain their legacy renderer compatibility; continuing an

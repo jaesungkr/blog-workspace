@@ -88,16 +88,20 @@ test suite and `python3 scripts/blog.py check --all`.
   author-approved direct-publication workflow. After the author approves the
   specific article and says to publish (for example, `올리자`), Codex uses the
   Codex in-app browser to attach images, enter the approved article, preview,
-  publish, and verify the live page. Drafting alone is not publication approval.
+  publish, and confirm the successful publication and article URL. The author
+  handles post-publication checks; do not run additional live layout, image,
+  theme, or title/cover-contrast checks or repairs unless explicitly requested.
+  Drafting alone is not publication approval.
   Other workflows stop at paste-ready HTML unless the user instructs otherwise.
 - Retain a user-facing `<slug>-tistory-fragment.txt` file containing only the
   exact publication HTML. For direct v2 publication, the live article URL is
   the primary final link and the exact submitted TXT is the backup. Other
   workflows make the TXT primary.
 - A Git push to this workspace is part of the archive workflow and is not a
-  Tistory publication. Keep `status: ready` until the live Tistory page is
-  verified; direct v2 publication obtains that URL from the successful browser
-  publication instead of requiring the author to send it.
+  Tistory publication. For direct v2 publication, keep `status: ready` until the
+  browser confirms publication and provides the article URL, then set
+  `published`; a separate live-page inspection is not required. Other workflows
+  retain their own publication requirements.
 - Do not mark a post `ready` or `published` while TODOs, unresolved evidence,
   missing first-party value, or a missing final image remain.
 
