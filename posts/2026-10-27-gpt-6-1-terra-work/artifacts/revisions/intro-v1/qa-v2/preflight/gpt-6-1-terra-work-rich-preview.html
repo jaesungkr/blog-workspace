@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT-6.1 Terra, 화면을 읽고 앱 작업을 돕는 AI</title>
+  <meta name="description" content="GPT-6.1 Terra의 ChatGPT Work 제공 범위와 화면 작업 활용법, API 비용의 의미를 공식 문서로 확인합니다.">
+  <style>
+    html { scrollbar-width:none; }
+    html::-webkit-scrollbar { display:none; }
+    body { margin:0; background:#ffffff; color:#1d1d1f; }
+    html.dark { color-scheme: dark; }
+    html.dark body { background:#1e1f21; color:#f5f5f7; }
+    .rich-preview-header { width:min(calc(100% - 40px), 1040px); margin:0 auto;
+      padding:56px 0 44px; font-family:"Noto Sans KR","Apple SD Gothic Neo",
+      system-ui,sans-serif; }
+    .rich-preview-header p { margin:0 0 10px; color:#0066cc; font-size:15px;
+      font-weight:700; }
+    html.dark .rich-preview-header p { color:#66b3ff; }
+    .rich-preview-header h1 { margin:0; font-size:42px; line-height:1.2;
+      letter-spacing:-0.025em; word-break:keep-all; }
+    @media (max-width:735px) {
+      .rich-preview-header { padding:36px 0 30px; }
+      .rich-preview-header h1 { font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="rich-preview-header">
+    <p>Log</p>
+    <h1>GPT-6.1 Terra, 화면을 읽고 앱 작업을 돕는 AI</h1>
+  </header>
+  <style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>ChatGPT에서 이미지 속 내용을 읽게 한 뒤, 그 내용을 다른 앱에 옮기는 일까지 맡기고 싶을 때가 있습니다. GPT-6.1 Terra는 이런 화면 이해와 컴퓨터 작업을 함께 처리하도록 소개된 OpenAI의 AI 모델입니다. 사용할 곳을 찾는다면 <strong>ChatGPT Work와 Codex</strong>를 확인해야 합니다. 일반 Chat에는 제공되지 않습니다. <a href="https://learn.chatgpt.com/docs/whats-new/october-26-30-2026" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI의 이번 주 업데이트</a>가 이 차이를 명시하고 있습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="terra-lead" style="--rich-media-width:916px"><img class="devlog-rich__image" src="../../../assets/terra-visual-action-v1.png" alt="도면이 입체 모형으로 이어지는 경계에 놓인 초록색 커서" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">화면에서 읽은 정보를 실제 작업으로 연결하는 과정을 표현한 개념 이미지입니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#terra를-선택할-수-있는-곳">Terra를 선택할 수 있는 곳</a></li>
+<li><a href="#이미지-설명에서-앱-작업으로">이미지 설명에서 앱 작업으로</a></li>
+<li><a href="#api-요금과-chatgpt-사용-한도">API 요금과 ChatGPT 사용 한도</a></li>
+<li><a href="#성능-평가의-범위와-미지원-입출력">성능 평가의 범위와 미지원 입출력</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="terra를-선택할-수-있는-곳">
+<h2 id="terra를-선택할-수-있는-곳">Terra를 선택할 수 있는 곳</h2>
+<p>공식 모델명은 <strong>GPT-6.1 Terra</strong>입니다. 개발자가 프로그램에서 호출할 때 쓰는 이름은 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">gpt-6.1-terra</code>이며, <a href="https://developers.openai.com/api/docs/changelog" style="color:#1a73e8;text-decoration:none;" target="_blank">API 변경 기록</a>에 2026년 10월 26일 출시가 올라와 있습니다. ChatGPT라는 서비스 이름과 그 안에서 선택하는 모델 이름을 구분하면 제공 범위를 읽기 편합니다.</p>
+<p><a href="https://learn.chatgpt.com/docs/whats-new/october-26-30-2026" style="color:#1a73e8;text-decoration:none;" target="_blank">ChatGPT 공식 안내</a>에 따르면 Plus, Pro, Business, Enterprise, Edu에서 ChatGPT Work와 Codex를 통해 사용할 수 있습니다. 데스크톱 앱이나 웹의 ChatGPT Work에서 Advanced의 모델 목록을 열어 선택하며, 모바일 Work도 지원합니다. 기업 계정은 워크스페이스의 모델 제공 여부와 관리자 설정에 영향을 받습니다.</p>
+<p>따라서 일반 Chat에서 이름이 보이지 않는다면 먼저 Work를 보고 있는지 확인하는 편이 좋습니다. 브라우저와 컴퓨터를 조작하는 기능에는 각각 별도 설정과 접근 요건이 있습니다. 앱 작업을 맡기려면 해당 도구가 접근할 수 있는 환경을 준비해야 합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="이미지-설명에서-앱-작업으로">
+<h2 id="이미지-설명에서-앱-작업으로">이미지 설명에서 앱 작업으로</h2>
+<p>OpenAI가 <a href="https://openai.com/index/introducing-gpt-6-1-terra/" style="color:#1a73e8;text-decoration:none;" target="_blank">출시 글</a>에서 강조한 변화는 시각적 추론, 컴퓨터 조작, 자연스러운 글쓰기입니다. 시각적 추론은 이미지에 무엇이 있는지 알아보는 데서 더 나아가, 배치와 관계를 읽고 작업에 필요한 판단을 하는 능력을 뜻합니다.</p>
+<p>예를 들어 공급업체의 상품 사진을 카탈로그와 대조한 뒤 해당 항목을 찾아 수정하는 일이 여기에 해당합니다. <a href="https://learn.chatgpt.com/docs/whats-new/october-26-30-2026" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 사용 안내</a>는 캠페인 이미지의 잘림이나 글자 배치를 확인하고 수정 작업을 정리하는 예도 듭니다. 화면에서 얻은 정보가 다음 앱 작업의 입력으로 이어지는 셈입니다.</p>
+<p>다만 사진을 읽는 능력과 외부 서비스에서 변경을 끝내는 능력은 나눠서 판단해야 합니다. dev.log의 글 작성 흐름에 대입하면 원고를 다듬는 일, 미리보기에서 이미지를 확인하는 일, 로그인한 티스토리 편집기에 글을 넣는 일은 각각 다른 조건을 요구합니다. 아래 표는 작업을 맡기기 전에 필요한 조건을 나눈 판단표입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>맡길 작업</th><th>준비할 자료·환경</th><th>완료를 확인할 대상</th></tr></thead><tbody><tr><td>원고 다듬기</td><td>원고와 보존할 사실·출처</td><td>수정 원고의 사실과 문체</td></tr><tr><td>이미지 배치 검토</td><td>실제 미리보기 또는 화면 이미지</td><td>글자 잘림과 본문에서의 크기</td></tr><tr><td>티스토리 편집기 입력</td><td>로그인과 브라우저 접근 권한</td><td>편집기에 반영된 글과 첨부 이미지</td></tr></tbody></table></div>
+<p>원고가 완성됐어도 편집기에 접근하지 못하면 게시 작업은 남습니다. 이처럼 결과물과 실행 환경을 분리해 두면 ‘화면 작업을 지원한다’는 설명을 실제로 맡길 수 있는 일로 바꿀 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="api-요금과-chatgpt-사용-한도">
+<h2 id="api-요금과-chatgpt-사용-한도">API 요금과 ChatGPT 사용 한도</h2>
+<p><a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">API 모델 문서</a>의 표준 텍스트 요금은 입력 100만 토큰당 1달러, 출력 100만 토큰당 5달러입니다. 토큰은 모델이 글을 처리할 때 쓰는 단위이며 한국어 글자 수와 일치하지 않습니다. 이 수치는 프로그램에서 API를 호출할 때의 요금으로, ChatGPT 월 구독료와는 별개입니다.</p>
+<p>단순 계산으로 입력 1만 토큰과 출력 2천 토큰을 사용하면 텍스트 요금은 0.02달러입니다. 입력 요금 0.01달러에 출력 요금 0.01달러를 더한 값입니다. 이는 캐시와 도구 요금 등을 제외한 표준 텍스트 계산 예시이며, 실제 청구액은 측정하지 않았습니다. 긴 입력이나 다른 처리 모드에는 별도 요금 조건이 적용되므로 예상 비용을 잡을 때는 문서의 조건까지 확인해야 합니다.</p>
+<p>ChatGPT Work와 Codex에 대해서는 <a href="https://openai.com/index/introducing-gpt-6-1-terra/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI가 같은 사용 한도로 더 많은 작업을 처리할 수 있다고 설명</a>합니다. 실제 처리 가능한 작업량은 작업 내용과 사용 한도에 따라 달라집니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="성능-평가의-범위와-미지원-입출력">
+<h2 id="성능-평가의-범위와-미지원-입출력">성능 평가의 범위와 미지원 입출력</h2>
+<p>출시 글에는 화면 조작과 코딩 평가 결과가 실려 있습니다. 이 결과는 OpenAI가 공개한 평가 조건에서 나온 수치입니다. 개별 한국어 원고의 품질이나 특정 웹사이트에서의 작업 성공률을 그대로 알려 주지는 않습니다. OpenAI도 <a href="https://openai.com/index/introducing-gpt-6-1-terra/" style="color:#1a73e8;text-decoration:none;" target="_blank">가장 복잡한 코딩 작업에는 GPT-6.1 Sol과 GPT-6 Astra를 더 적합한 선택으로 안내</a>합니다.</p>
+<p>입출력 방식에도 구분이 필요합니다. <a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">API 문서</a>에 표시된 기본 입출력은 텍스트 입출력과 이미지 입력입니다. 네이티브 오디오·비디오 입출력은 지원하지 않습니다. 출시 글의 ‘영상 편집’ 활용 예시는 컴퓨터 도구를 사용하는 작업 맥락으로 읽어야 합니다. 모델 자체가 영상 파일을 직접 입출력하는 지원 항목과는 다릅니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="참고-자료">
+<h2 id="참고-자료">참고 자료</h2>
+<ul><li><a href="https://openai.com/index/introducing-gpt-6-1-terra/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI: GPT-6.1 Terra 출시 발표</a></li><li><a href="https://learn.chatgpt.com/docs/whats-new/october-26-30-2026" style="color:#1a73e8;text-decoration:none;" target="_blank">ChatGPT: 2026년 10월 26~30일 업데이트</a></li><li><a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI API: GPT-6.1 Terra 모델 문서</a></li><li><a href="https://developers.openai.com/api/docs/changelog" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI API: 변경 기록</a></li></ul>
+</section>
+</article>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "status": "published",
+  "post_id": 154,
+  "url": "https://dop3n.tistory.com/entry/GPT-61-Terra-vs-Claude-Opus-55-%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B0%80%EA%B2%A9%EC%9C%BC%EB%A1%9C-%EB%B3%B8-%EC%84%A0%ED%83%9D",
+  "title": "GPT-6.1 Terra vs Claude Opus 5.5, 성능과 가격으로 본 선택",
+  "published_at": "2026-10-27T12:40:00+09:00",
+  "timestamp_precision": "minute; Tistory post-list displayed 2026-10-27 12:40 KST",
+  "visibility": "public",
+  "schedule": "now",
+  "observed_category": "AI·개발/AI 모델·비교",
+  "archive_category": "Log / AI 모델 · 비교",
+  "confirmation": "parent observed /manage/posts/ first row post154 matching title after one publish click",
+  "actor": "parent dot cloud browser",
+  "captcha": "none",
+  "submitted_fragment_sha256": "5d991f6cb739b561891fcf13ddc8c2b76e3cca454df432f0f505d1f6d85a2a4f",
+  "submitted_fragment_path": "delivery/gpt-6-1-terra-work-tistory-fragment.txt",
+  "approval_record_sha256": "34521b16e58d625641f250caf9fdc0ed199c57db60073020944f52fe1411ae47",
+  "exception_record_sha256": "ce7d080b785a413caced4a221ded7fdb8df5edbf4817e7ebc1f5e5e8a95d0e8b",
+  "source_qa": "full pass",
+  "visual_strict_qa": "incomplete; explicit per-post user exception",
+  "unverified": [
+    "1280px desktop viewport",
+    "actual TOC click navigation in preview sandbox"
+  ],
+  "actual_preview_widths": [
+    1060,
+    360
+  ],
+  "actual_preview_themes": [
+    "light",
+    "dark"
+  ],
+  "post_publication_visual_qa": "not performed; author responsibility per standing preference",
+  "git_delivery": "authorized for archival commit and normal push to origin/master; outcome verified separately"
+}

@@ -1,0 +1,4 @@
+검사 완료: 1개 글, 오류 0개, 경고 0개
+rich-post-v2: pass
+media 1 · directives 1
+WARNING: terra-lead: status is `captured`, not `validated`

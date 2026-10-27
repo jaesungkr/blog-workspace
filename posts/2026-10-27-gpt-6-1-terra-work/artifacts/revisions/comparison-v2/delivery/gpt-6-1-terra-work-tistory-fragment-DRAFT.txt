@@ -1,0 +1,474 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>OpenAI가 새 작업용 AI인 <strong>GPT-6.1 Terra</strong>를 공개했습니다. 화면 속 자료를 읽고 앱을 조작하거나 글을 쓰는 모델입니다. 이미 클로드나 Sol을 쓰고 있다면, 더 저렴한 Terra로 바꿔도 원하는 결과를 얻을 수 있을지 궁금해집니다.</p>
+<p><strong>화면 기반 반복 업무와 API 비용 절감에는 Terra를 검토할 만하고, 어려운 작업의 해결 능력을 우선한다면 Opus를 유지할 이유가 있습니다.</strong> 독립 종합 평가에서는 Opus가 앞서지만, Terra의 기본 API 단가는 Opus의 4분의 1입니다. 2026년 10월 27일 확인한 공식 자료와 독립 평가, 초기 공개 후기를 나눠 살펴봤습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="terra-lead" style="--rich-media-width:916px"><img class="devlog-rich__image" src="__TISTORY_MEDIA_TERRA_LEAD__" alt="도면 위 커서로 표현한 GPT-6.1 Terra와 복잡한 구조물로 표현한 Claude Opus 5.5 비교" width="1672" height="941" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">화면 작업과 복잡한 문제 해결의 차이를 표현한 비교 이미지입니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#terra의-특징과-opus를-비교하는-이유">Terra의 특징과 Opus를 비교하는 이유</a></li>
+<li><a href="#공식-평가에서-드러난-화면-작업의-강점">공식 평가에서 드러난 화면 작업의 강점</a></li>
+<li><a href="#독립-종합-평가에서는-opus-우위">독립 종합 평가에서는 Opus 우위</a></li>
+<li><a href="#초기-후기에서-갈린-속도와-사용량">초기 후기에서 갈린 속도와 사용량</a></li>
+<li><a href="#기본-api-단가는-opus의-4분의-1">기본 API 단가는 Opus의 4분의 1</a></li>
+<li><a href="#지금-쓰는-모델을-바꿀-만할까">지금 쓰는 모델을 바꿀 만할까</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="terra의-특징과-opus를-비교하는-이유">
+<h2 id="terra의-특징과-opus를-비교하는-이유">Terra의 특징과 Opus를 비교하는 이유</h2>
+<p>Terra는 OpenAI가 시각적 추론과 컴퓨터 조작, 글쓰기에 초점을 맞춰 소개한 모델입니다. 상품 사진을 카탈로그 항목과 대조하거나, 화면에 있는 정보를 읽어 앱에 입력하는 일을 떠올리면 됩니다. <a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 모델 문서</a></p>
+<p>비교할 모델은 <strong>Claude Opus 5.5</strong>입니다. Anthropic은 Opus를 장시간 코딩과 지식 업무용으로 안내합니다. OpenAI의 Terra 발표에도 Opus와 비교한 작업 비용과 과학 연구 평가가 있어, 작업을 맡길 후보로 함께 살펴볼 수 있습니다. OpenAI 안에서의 위치는 Sol 6.1과 Astra를 보조 기준으로 확인하겠습니다. <a href="https://platform.claude.com/docs/en/models/opus-5-5/overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus 모델 문서</a>, <a href="https://openai.com/index/introducing-gpt-6-1-terra/" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 발표</a></p>
+<p>Terra는 일반 Chat에는 제공되지 않습니다. Plus·Pro·Business·Enterprise·Edu의 ChatGPT Work와 Codex에서 이용하며, 웹이나 데스크톱의 Work에서는 Advanced 모델 목록에서 선택합니다. 계정과 관리자 설정에 따라 제공 여부가 달라질 수 있습니다. <a href="https://learn.chatgpt.com/docs/whats-new/october-26-30-2026" style="color:#1a73e8;text-decoration:none;" target="_blank">ChatGPT 이용 안내</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="공식-평가에서-드러난-화면-작업의-강점">
+<h2 id="공식-평가에서-드러난-화면-작업의-강점">공식 평가에서 드러난 화면 작업의 강점</h2>
+<p>OpenAI가 소개한 평가는 서로 다른 일을 측정합니다. <strong>MMMU-Pro</strong>는 이미지가 포함된 여러 분야의 문제를 이해하는 능력, <strong>Agents’ Last Exam</strong>은 도면을 3D 모형으로 만드는 등 도구를 사용한 전문 업무 수행, <strong>Terminal-Bench-Science 0.1</strong>은 코드를 이용한 과학 연구 작업을 봅니다. 성적은 높을수록 좋고, 과제당 비용은 낮을수록 적은 돈을 쓴 것입니다.</p>
+<p><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">medium</code>과 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">max</code>는 모델이 답을 만들기 전에 얼마나 추론할지 조절하는 설정입니다. 같은 이름이라도 모델별 실제 계산량은 다를 수 있습니다. <a href="https://learn.chatgpt.com/docs/models" style="color:#1a73e8;text-decoration:none;" target="_blank">추론 설정 설명</a></p>
+<p>아래는 <a href="https://openai.com/index/introducing-gpt-6-1-terra/" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 발표 본문</a>에서 확인한 비교입니다. 그래프에서 읽지 못한 절대 점수는 채우지 않았습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>OpenAI 공개 평가</th><th>발표에서 확인되는 비교</th><th>해석할 때의 조건</th></tr></thead><tbody><tr><td>MMMU-Pro · 시각 추론</td><td>Terra가 Sol·Astra에 근접</td><td>해당 이미지 문제 평가</td></tr><tr><td>Agents’ Last Exam · 전문 업무</td><td>Terra medium이 Astra와 대등한 수준</td><td>발표의 중간 추론 설정</td></tr><tr><td>같은 전문 업무 평가의 비용</td><td>max에서 Terra의 과제당 비용이 Opus의 약 1/9</td><td>토큰 사용량과 단가를 함께 반영</td></tr><tr><td>Terminal-Bench-Science 0.1</td><td>Terra max가 Sol을 앞서고 Opus와 5점 이내 차이</td><td>Opus 대비 추정 비용은 1/5 미만</td></tr></tbody></table></div>
+<p>표의 비용 차이는 해당 평가의 과제와 설정에서 사용한 토큰 및 단가를 반영합니다.</p>
+<p>Terra의 장점은 화면을 이해하고 도구를 쓰는 일부 업무에서 상위 모델에 가까운 성적을 더 적은 비용으로 제시했다는 점입니다. OpenAI는 동시에 <strong>가장 복잡한 코딩에는 Sol과 Astra가 더 적합하다</strong>고 안내합니다. 시각 작업의 성적과 장시간 코드 작업의 선택은 나눠 볼 필요가 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="독립-종합-평가에서는-opus-우위">
+<h2 id="독립-종합-평가에서는-opus-우위">독립 종합 평가에서는 Opus 우위</h2>
+<p>독립 평가 기관인 Artificial Analysis의 <strong>Intelligence Index v4.3.2</strong>는 코딩·문서·추론 등을 포함한 10개 평가를 묶은 지수입니다. 높을수록 이 평가 묶음에서 성적이 좋다는 의미이며, 정답률을 나타내는 백분율은 아닙니다. 아래는 10월 27일 모델별 페이지에 표시된 값입니다.</p>
+<p>Opus 행은 Artificial Analysis가 표시한 <strong>default fallback</strong> 평가 구성입니다. 거절이 발생하면 다른 모델로 재시도하는 조건을 포함합니다. <a href="https://platform.claude.com/docs/en/models/opus-5-5/whats-new-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus의 평가 조건 설명</a> 이 표는 공개된 모델·서비스 설정을 비교한 것입니다. 동일한 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">max</code> 표기가 같은 연산량을 보장하지 않으며, 과제당 비용도 해당 지수의 가중 평균입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>모델 · 추론 설정</th><th>종합 지수 ↑</th><th>지수 과제당 비용 ↓</th></tr></thead><tbody><tr><td>GPT-6.1 Terra · max</td><td>48</td><td>$0.40</td></tr><tr><td>GPT-6.1 Sol · max</td><td>52</td><td>$0.72</td></tr><tr><td>GPT-6 Astra · max</td><td>53</td><td>$3.26</td></tr><tr><td>Claude Opus 5.5 · max, default fallback</td><td>58</td><td>$5.98</td></tr></tbody></table></div>
+<p><a href="https://artificialanalysis.ai/models/gpt-6-1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 측정</a>, <a href="https://artificialanalysis.ai/models/gpt-6-1-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">Sol 측정</a>, <a href="https://artificialanalysis.ai/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 측정</a>, <a href="https://artificialanalysis.ai/models/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus 측정과 평가 구성</a></p>
+<p>이 범위에서는 Opus가 Terra보다 10점 높습니다. Terra는 비용이 크게 낮지만 종합 능력에는 격차가 남습니다. Sol과 비교해도 Terra는 4점 낮고 과제당 비용은 더 적습니다.</p>
+<p>코딩을 좁혀 봐도 같은 구분이 필요합니다. <a href="https://artificialanalysis.ai/articles/gpt-6-1-terra-pushes-the-cost-efficiency-frontier" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis의 Terra 출시 분석</a>에서는 <strong>Coding Agent Index v2.0</strong>이 Terra 48점, Sol 54점이었습니다. 한편 터미널에서 코딩 과제를 푸는 Terminal-Bench 4.0에서는 Terra max가 Sol과 경쟁하는 수준으로 올라왔다고 설명합니다. 특정 코딩 과제의 개선과 여러 코딩 과제를 합친 성적은 다릅니다.</p>
+<p>이 분석은 Terra의 종합 지수 대비 비용 효율에서 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">low</code>와 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">medium</code>을 주목했습니다. 무조건 max를 고르는 것보다 맡길 일에 맞는 추론 설정을 함께 봐야 하는 이유입니다. 이 지수들은 한국어 블로그 문체를 직접 평가한 점수는 아닙니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="초기-후기에서-갈린-속도와-사용량">
+<h2 id="초기-후기에서-갈린-속도와-사용량">초기 후기에서 갈린 속도와 사용량</h2>
+<p>출시 직후 공개 후기에는 빨라졌다는 반응이 있습니다. 한 Reddit 사용자는 평소 Sol에서 오래 기다리던 Codex 작업을 Terra가 더 빠르게 마쳤다고 평가했습니다. 다만 같은 입력과 추론 설정을 통제한 비교 자료는 제시하지 않았습니다. <a href="https://www.reddit.com/r/ChatGPT/comments/1xg7rfk/its_my_impression_or_terra_61_is_fing_fast/" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 속도에 관한 공개 후기</a></p>
+<p>반대 경험도 나왔습니다. 픽셀 스타일 프로젝트 관리 화면을 만든 다른 사용자는 Terra high의 결과가 단순해 max로 올렸지만, Sol medium과 Opus medium의 결과를 더 선호했다고 썼습니다. Terra에서 더 많은 사용량을 소모했다고도 보고했습니다. 서로 다른 추론 설정과 서비스의 사용량 표시를 비교한 사례이므로 API 비용이나 모델 전체의 성능 순위로 환산할 수는 없습니다. <a href="https://www.reddit.com/r/codex/comments/1xgcjjb/gpt_61_terra_on_gpt_plus/" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra·Sol·Opus 제작 후기</a></p>
+<p>두 사례는 출시 직후 일부 사용자의 경험입니다. 첫 결과가 나오는 속도와 원하는 결과까지 수정하는 데 드는 시간·사용량은 다르게 느껴질 수 있습니다. 장기 안정성이나 한국어 작업의 만족도는 이 후기만으로 판단하기 어렵습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="기본-api-단가는-opus의-4분의-1">
+<h2 id="기본-api-단가는-opus의-4분의-1">기본 API 단가는 Opus의 4분의 1</h2>
+<p>API는 프로그램에서 모델을 호출하고 사용량만큼 요금을 내는 방식으로, ChatGPT·Claude의 월 구독료와 별도입니다. 아래는 10월 27일 확인한 표준 텍스트 단가이며, <strong>100만 토큰당 미국 달러</strong>입니다. 토큰은 모델이 글 등을 처리하는 단위로 한국어 글자 수와 일치하지 않습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>모델</th><th>기본 입력</th><th>출력</th><th>캐시 입력</th></tr></thead><tbody><tr><td>GPT-6.1 Terra</td><td>$1</td><td>$5</td><td>$0.05</td></tr><tr><td>Claude Opus 5.5</td><td>$4</td><td>$20</td><td>$0.20</td></tr><tr><td>GPT-6.1 Sol</td><td>$2</td><td>$10</td><td>$0.10</td></tr><tr><td>GPT-6 Astra</td><td>$10</td><td>$50</td><td>$1</td></tr></tbody></table></div>
+<p><a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 요금</a>, <a href="https://platform.claude.com/docs/en/models/opus-5-5/whats-new-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus 요금</a>, <a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">Sol 요금</a>, <a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra 요금</a></p>
+<p>캐시 입력은 이미 보낸 자료를 다시 사용할 때 적용됩니다. 캐시를 처음 저장하는 비용은 별도입니다. 기본 입력 10만 토큰과 청구 대상 출력 1만 토큰을 쓴다고 가정하면 Terra는 <strong>$0.15</strong>, Opus는 <strong>$0.60</strong>, Sol은 <strong>$0.30</strong>, Astra는 <strong>$1.50</strong>입니다. 입력 단가에 0.1, 출력 단가에 0.01을 곱해 더했습니다. 캐시·도구·모드별 할증·세금은 제외한 계산 예시입니다.</p>
+<p>고정한 처리량으로 Terra를 네 번 호출하면 Opus 한 번과 같은 텍스트 비용입니다. 저렴한 모델이 같은 결과를 내기 위해 몇 번 더 수정해야 하는지도 선택에 영향을 줍니다. 실제 재시도에서는 대화가 길어지고 출력량도 바뀌므로, 네 번이라는 값은 위 가정에서만 성립합니다.</p>
+<p>또한 Terra는 입력이 <strong>272,000토큰을 넘으면 요청 전체의 입력·캐시 단가가 2배, 출력 단가가 1.5배</strong>가 됩니다. 길게 이어지는 작업에서는 첫 요청의 단가뿐 아니라 마지막 수정까지 쓴 토큰을 확인해야 합니다. <a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 장문 과금 조건</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="지금-쓰는-모델을-바꿀-만할까">
+<h2 id="지금-쓰는-모델을-바꿀-만할까">지금 쓰는 모델을 바꿀 만할까</h2>
+<p>공개 평가와 비용을 실제 작업에 대입하면 다음처럼 나눠 볼 수 있습니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>지금 맡기는 일</th><th>선택 방향</th><th>판단 근거</th></tr></thead><tbody><tr><td>화면·이미지 해석 후 반복 입력</td><td>Terra 검토</td><td>공식 시각·도구 평가와 낮은 단가</td></tr><tr><td>어려운 코드·추론, Opus 결과에 만족</td><td>Opus 유지</td><td>독립 종합 지수의 격차, 작업 품질 우선</td></tr><tr><td>복잡한 업무와 비용을 함께 고려</td><td>Sol도 비교</td><td>Terra보다 높은 종합·코딩 지수</td></tr><tr><td>Astra로 고난도 연구·판단 수행</td><td>필요한 작업에 유지</td><td>OpenAI가 권장하는 최고 난도 용도</td></tr></tbody></table></div>
+<p>Astra의 용도는 <a href="https://learn.chatgpt.com/docs/models" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 모델 선택 안내</a>를 기준으로 했습니다. 이 표는 공개 근거를 종합한 작업별 선택이며 직접 실행한 성능 순위가 아닙니다.</p>
+<p>같은 품질에 도달할 때까지 수정이 크게 늘어나면 Terra의 비용 절감 효과가 줄어듭니다. 비교할 작업을 고른다면 이미지에서 항목을 읽어 입력하는 업무 한 건처럼 결과를 확인할 수 있는 대상을 정하고, 누락·오입력과 완료까지의 총비용을 함께 보는 편이 좋습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="참고-자료">
+<h2 id="참고-자료">참고 자료</h2>
+<ul><li>공식 발표·문서: <a href="https://openai.com/index/introducing-gpt-6-1-terra/" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 발표</a>, <a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra API</a>, <a href="https://platform.claude.com/docs/en/models/opus-5-5/overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus API</a>, <a href="https://platform.claude.com/docs/en/models/opus-5-5/whats-new-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus 요금</a>, <a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">Sol API</a>, <a href="https://developers.openai.com/api/docs/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra API</a>, <a href="https://learn.chatgpt.com/docs/whats-new/october-26-30-2026" style="color:#1a73e8;text-decoration:none;" target="_blank">Work 제공 범위</a></li><li>독립 평가: <a href="https://artificialanalysis.ai/articles/gpt-6-1-terra-pushes-the-cost-efficiency-frontier" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra 출시 분석</a>, <a href="https://artificialanalysis.ai/models/gpt-6-1-terra" style="color:#1a73e8;text-decoration:none;" target="_blank">Terra</a>, <a href="https://artificialanalysis.ai/models/claude-opus-5-5" style="color:#1a73e8;text-decoration:none;" target="_blank">Opus</a>, <a href="https://artificialanalysis.ai/models/gpt-6-1-sol" style="color:#1a73e8;text-decoration:none;" target="_blank">Sol</a>, <a href="https://artificialanalysis.ai/models/gpt-6-astra" style="color:#1a73e8;text-decoration:none;" target="_blank">Astra</a></li><li>공개 사용자 경험: <a href="https://www.reddit.com/r/ChatGPT/comments/1xg7rfk/its_my_impression_or_terra_61_is_fing_fast/" style="color:#1a73e8;text-decoration:none;" target="_blank">속도 후기</a>, <a href="https://www.reddit.com/r/codex/comments/1xgcjjb/gpt_61_terra_on_gpt_plus/" style="color:#1a73e8;text-decoration:none;" target="_blank">제작 결과와 사용량 후기</a></li></ul>
+</section>
+</article>

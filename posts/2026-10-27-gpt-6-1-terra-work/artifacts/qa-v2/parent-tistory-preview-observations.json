@@ -1,0 +1,45 @@
+{
+  "evidence_source": "parent thread 01a17b1d-533f-7360-b18f-0974e4f7203b actual Tistory preview observations",
+  "observed_date": "2026-10-27",
+  "fragment_sha256": "5d991f6cb739b561891fcf13ddc8c2b76e3cca454df432f0f505d1f6d85a2a4f",
+  "observed_widths": [
+    1060,
+    360
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "reported_checks": {
+    "image_legible": true,
+    "single_caption": true,
+    "table_and_text_contrast": true,
+    "table_internal_horizontal_scroll": true,
+    "body_and_title_remain_fixed_during_table_scroll": true,
+    "page_overflow": false,
+    "image_caption_order": true
+  },
+  "desktop_1280": "not verified; native Tistory width input clamps requested 1280 to actual 1060",
+  "height": "not supplied",
+  "screenshots": "not transferred to this environment",
+  "toc_and_exact_editor_readback": {
+    "exact_readback": "pass reported by parent",
+    "characters": 19734,
+    "sha256": "5d991f6cb739b561891fcf13ddc8c2b76e3cca454df432f0f505d1f6d85a2a4f",
+    "toc_structure": "pass",
+    "toc_visual_navigation": "not verified; clicking in actual preview sandbox showed no confirmed visual movement"
+  },
+  "remote_image": {
+    "actor": "parent environment HTTP GET",
+    "http_status": 200,
+    "mime": "image/png",
+    "size_bytes": 2631655,
+    "width": 1672,
+    "height": 941,
+    "sha256": "47b71d0bf93f308a080251f021539f2feda0cb735e0449dc81844d7ac5f2c8bb",
+    "matches_approved_image": true
+  },
+  "strict_repository_gate": "not passed; exact1280 canonical captures unavailable",
+  "publication": "not published; strict gate still incomplete",
+  "local_actions": "no render or browser retry, approved article unchanged"
+}

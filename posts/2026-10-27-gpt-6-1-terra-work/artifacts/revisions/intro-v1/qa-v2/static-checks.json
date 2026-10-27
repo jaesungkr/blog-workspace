@@ -1,0 +1,27 @@
+[
+  {
+    "theme": "light",
+    "h1_count": 1,
+    "duplicate_ids": 0,
+    "broken_anchors": [],
+    "images": 1,
+    "images_have_alt": true,
+    "unresolved_media_directives": false,
+    "visual_qa": "blocked: browser administrator denies file URL"
+  },
+  {
+    "theme": "dark",
+    "h1_count": 1,
+    "duplicate_ids": 0,
+    "broken_anchors": [],
+    "images": 1,
+    "images_have_alt": true,
+    "unresolved_media_directives": false,
+    "visual_qa": "blocked: browser administrator denies file URL"
+  },
+  {
+    "fragment_h1_count": 0,
+    "native_attachment_bound": false,
+    "publication_ready": false
+  }
+]

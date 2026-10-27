@@ -1,0 +1,18 @@
+{
+  "change": "removed exactly one duplicate external caption; native block unchanged",
+  "approved_article_unchanged": true,
+  "only_external_caption_removed": true,
+  "native_block_exact": true,
+  "native_caption_occurrences": 1,
+  "external_caption_occurrences": 0,
+  "h1": 0,
+  "tables": 3,
+  "duplicate_ids": 0,
+  "broken_anchors": [],
+  "native_blocks": 1,
+  "placeholder_present": false,
+  "local_path_present": false,
+  "sha256": "5d991f6cb739b561891fcf13ddc8c2b76e3cca454df432f0f505d1f6d85a2a4f",
+  "visual_qa": "parent observed duplicate; corrected candidate awaits parent preview",
+  "render_note": "scoped post-render correction; rerender would restore duplicate until same correction applied"
+}

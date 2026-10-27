@@ -1,0 +1,24 @@
+[
+  {
+    "theme": "light",
+    "h1": 1,
+    "duplicate_ids": 0,
+    "broken_anchors": [],
+    "tables": 4,
+    "images": 1,
+    "alt": true,
+    "unresolved": false,
+    "visual_qa": "NOT RUN; prior file URL administrator denial; no browser retry"
+  },
+  {
+    "theme": "dark",
+    "h1": 1,
+    "duplicate_ids": 0,
+    "broken_anchors": [],
+    "tables": 4,
+    "images": 1,
+    "alt": true,
+    "unresolved": false,
+    "visual_qa": "NOT RUN; prior file URL administrator denial; no browser retry"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "lead_id": "terra-lead",
+  "items": [
+    {
+      "id": "terra-lead",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C3"
+      ],
+      "actor": "Codex via built-in image_gen",
+      "source_url": "",
+      "raw_path": "assets/terra-visual-action-v1.png",
+      "publish_path": "assets/terra-visual-action-v1.png",
+      "rights": "Original AI-generated editorial concept; no vendor logo or UI reproduced.",
+      "alt": "도면이 입체 모형으로 이어지는 경계에 놓인 초록색 커서",
+      "caption": "화면에서 읽은 정보를 실제 작업으로 연결하는 과정을 표현한 개념 이미지입니다.",
+      "processing": [
+        "Built-in image_gen; original PNG copied without pixel edits."
+      ],
+      "redactions": [],
+      "width": 1672,
+      "height": 941,
+      "placement": "after:opening",
+      "sha256": "5f333fe06baae60341e52b280111cdd822a6f09248dd876173a49509be65c048",
+      "status": "validated",
+      "tistory_url": ""
+    }
+  ]
+}

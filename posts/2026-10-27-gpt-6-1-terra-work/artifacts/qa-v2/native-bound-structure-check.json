@@ -1,0 +1,15 @@
+{
+  "source_file_unchanged": true,
+  "non_media_fragment_unchanged": true,
+  "h1": 0,
+  "tables": 3,
+  "duplicate_ids": 0,
+  "broken_anchors": [],
+  "native_blocks": 1,
+  "native_block_exact": true,
+  "placeholder_present": false,
+  "local_path_present": false,
+  "sha256": "8f76e10beec10a68107ed44626c97b66dff51558496988e88723a067dc43e7a6",
+  "visual_qa": "pending parent browser",
+  "strict_finalizer": "not passed: captured hero, remote-media and final-page missing"
+}

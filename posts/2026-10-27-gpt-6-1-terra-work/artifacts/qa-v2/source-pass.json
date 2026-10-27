@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-27T03:14:34.602791Z",
+  "checked_by": "independent source reviewer /root/source_review; chart collection by parent independent verifier",
+  "article_content_sha256": "84fa6b9f57d5b2140bbfefa158183ad451888700e1e56440caa43041e1b2b0aa",
+  "brief_sha256": "a820fd3caeabd70470fed4b76fafbf5be1033c3d4f2da4701253b7825ca1b7a2",
+  "evidence_sha256": "ebc86dd3448f06fa49d228f9a9df3a02c27c91b1d7292bc4f311fefedb78653b",
+  "note": ""
+}

@@ -1,0 +1,88 @@
+Title: GPT-6.1 Terra vs Claude Opus 5.5, 성능과 가격으로 본 선택
+Summary: 7 headings, 0 generic-heading signals, 77 prose sentences, average 29.6 chars
+Density: 9.5 abstract nouns / 1,000 Hangul, 1.9 corrective frames / 1,000 Hangul
+Long sentences: 5 over 50 chars, 0 over 70 chars
+
+Headings:
+- L34 H3: Terra는 어떤 일을 맡기는 모델일까
+- L42 H3: 시험별 점수로 보면 달라지는 순위
+- L59 H3: 여러 능력을 합치면 Opus 우위
+- L74 H3: 초기 사용자들은 어떻게 느꼈을까
+- L82 H3: API 가격 차이는 얼마나 클까
+- L99 H3: 지금 쓰는 모델을 바꿀 만할까
+- L107 H3: 참고 자료
+
+Stock phrases:
+- none
+
+Abstract nouns:
+- 기준: 1
+- 결과: 7
+- 경우: 1
+- 차이: 6
+
+Corrective frames:
+- 아닙니다: 1
+- 다만: 1
+- 반면: 1
+
+Sentence endings:
+- 입니다: 20
+- -습니다: 16
+- -니다: 10
+- other: 10
+- 합니다: 8
+- 있습니다: 6
+- 했습니다: 3
+- -세요: 1
+- question: 1
+- 봅니다: 1
+- 됩니다: 1
+
+Repeated paragraph openers:
+- none
+
+Matched lines:
+- L30 abstract_noun:결과: 공개된 결과를 보면 화면을 다루는 반복 업무에는 Terra가 매력적입니다. 어려운 코딩과 추론에서는 Opus·Sol·Astra가 여전히 앞서는 부분이 있습니다. 가격 차이는 큽니다. Terra의 기본 API 입력·출력 단가는 Opus 5.5의 4분의 1입니다.
+- L30 abstract_noun:차이: 공개된 결과를 보면 화면을 다루는 반복 업무에는 Terra가 매력적입니다. 어려운 코딩과 추론에서는 Opus·Sol·Astra가 여전히 앞서는 부분이 있습니다. 가격 차이는 큽니다. Terra의 기본 API 입력·출력 단가는 Opus 5.5의 4분의 1입니다.
+- L44 abstract_noun:결과: 먼저 OpenAI가 공개한 시험 결과입니다. 화면을 이해하는 능력부터 전문 업무와 코딩까지, 같은 시험 안에서 모델별 점수를 나란히 놓았습니다.
+- L53 abstract_noun:경우: 출처: OpenAI Terra 발표의 시험별 차트. 모두 최대 추론 설정(max), 높을수록 좋습니다. max가 모델마다 같은 계산량을 뜻하지는 않습니다. —는 해당 차트에 점수가 없는 경우입니다. *과학 연구 코딩의 Opus는 다른 모델로 재시도하는 w/ fallbacks 조건입니다.
+- L55 abstract_noun:결과: Terra는 전문 업무 시험에서 Sol·Astra와 비슷한 성적을 냈습니다. 이미지 문제에서도 두 모델과 차이가 작습니다. 화면을 읽고 도구를 쓰는 일을 저렴하게 처리하려는 목적에 잘 맞는 결과입니다.
+- L55 abstract_noun:차이: Terra는 전문 업무 시험에서 Sol·Astra와 비슷한 성적을 냈습니다. 이미지 문제에서도 두 모델과 차이가 작습니다. 화면을 읽고 도구를 쓰는 일을 저렴하게 처리하려는 목적에 잘 맞는 결과입니다.
+- L57 abstract_noun:차이: 코딩에서는 시험에 따라 갈립니다. Terra는 과학 연구 코딩에서 Sol을 조금 앞섰지만, 터미널 코딩에서는 뒤처졌습니다. Astra와의 차이도 더 벌어집니다. OpenAI가 복잡한 코딩에는 Sol과 Astra를 권하는 이유를 이 표에서도 볼 수 있습니다.
+- L70 abstract_noun:기준: 출처: Artificial Analysis의 Terra, Opus, Sol, Astra. 2026년 10월 27일, Intelligence Index v4.3.2, 모두 max 기준입니다. 백분율이 아닌 종합 점수이며, Opus는 다른 모델로 재시도하는 default fallback을 포함합니다.
+- L72 abstract_noun:차이: 여기서는 Opus가 가장 높고 Terra가 가장 낮습니다. Terra의 화면 작업 강점과 전반적인 업무 성적 사이에는 차이가 있습니다. 어려운 문제를 풀거나 긴 코드 작업을 끝내는 능력을 우선한다면, 상위 모델을 계속 쓸 이유가 남습니다.
+- L78 abstract_noun:결과: 다른 사용자는 픽셀 스타일의 프로젝트 관리 화면을 만들면서 Sol과 Opus의 결과를 더 마음에 들어 했습니다. Terra의 추론 설정을 high에서 max로 올렸지만 만족스럽지 않았고, 사용량도 더 많이 썼다고 합니다. 제작 후기
+- L80 corrective_frame:아닙니다: 두 후기 모두 개인 사례입니다. 입력과 추론 설정이 통일된 비교는 아닙니다. 다만 빠르게 답을 받는 것과 원하는 결과를 빨리 완성하는 것은 별개라는 점은 생각해 볼 만합니다. 수정을 여러 번 해야 한다면 처음의 속도 이점도 줄어듭니다.
+- L80 corrective_frame:다만: 두 후기 모두 개인 사례입니다. 입력과 추론 설정이 통일된 비교는 아닙니다. 다만 빠르게 답을 받는 것과 원하는 결과를 빨리 완성하는 것은 별개라는 점은 생각해 볼 만합니다. 수정을 여러 번 해야 한다면 처음의 속도 이점도 줄어듭니다.
+- L80 abstract_noun:결과: 두 후기 모두 개인 사례입니다. 입력과 추론 설정이 통일된 비교는 아닙니다. 다만 빠르게 답을 받는 것과 원하는 결과를 빨리 완성하는 것은 별개라는 점은 생각해 볼 만합니다. 수정을 여러 번 해야 한다면 처음의 속도 이점도 줄어듭니다.
+- L84 abstract_noun:차이: 직접 프로그램을 만들어 모델을 호출한다면 비용 차이가 분명합니다. 아래는 사용한 글의 양에 따라 청구되는 API 요금입니다. ChatGPT나 Claude의 월 구독료와는 별도입니다.
+- L101 abstract_noun:결과: Terra는 비용이 많이 드는 반복 업무를 맡길 때 눈길이 갑니다. 특히 화면에서 정보를 읽고 앱에 옮기는 작업이라면, 이번 전문 업무·이미지 시험 결과와 낮은 단가가 함께 뒷받침합니다.
+- L103 corrective_frame:반면: 반면 Opus로 어려운 작업을 잘 처리하고 있다면, 가격만 보고 전부 바꿀 이유는 적습니다. 종합 지수에서는 차이가 있고, 코딩 시험에서도 Terra가 일관되게 앞서지는 않았습니다. Sol과 Astra 역시 복잡한 코드나 연구 작업에서 남겨 둘 만한 근거가 있습니다.
+- L103 abstract_noun:차이: 반면 Opus로 어려운 작업을 잘 처리하고 있다면, 가격만 보고 전부 바꿀 이유는 적습니다. 종합 지수에서는 차이가 있고, 코딩 시험에서도 Terra가 일관되게 앞서지는 않았습니다. Sol과 Astra 역시 복잡한 코드나 연구 작업에서 남겨 둘 만한 근거가 있습니다.
+- L105 abstract_noun:결과: 결국 나눠 맡기는 쪽이 자연스럽습니다. 반복 입력에는 Terra를, 해결하기 어려운 문제에는 기존 상위 모델을 쓰는 식입니다. Terra가 저렴한 단가만큼 실제 작업 비용도 줄여 주는지는 원하는 결과까지 몇 번을 고쳐야 하는지에 달려 있습니다.
+
+Long sentences:
+- L38 (54 chars): 코딩과 긴 업무를 맡길 때 함께 고려할 모델이고, OpenAI도 Terra 발표에서 Opus와 성능·비용을 비교했습니다.
+- L40 (59 chars): Plus·Pro·Business·Enterprise·Edu가 대상이고 계정·관리자 설정에 따라 제공 여부가 달라집니다.
+- L61 (56 chars): 위 표가 개별 시험이라면, Artificial Analysis의 종합 지수는 코딩·문서·추론 등 10개 평가를 묶어 봅니다.
+- L97 (57 chars): Terra는 입력이 272,000토큰을 넘을 때 요청 전체의 입력 단가가 2배, 출력 단가가 1.5배가 되는 점도 확인해야 합니다.
+- L101 (51 chars): 특히 화면에서 정보를 읽고 앱에 옮기는 작업이라면, 이번 전문 업무·이미지 시험 결과와 낮은 단가가 함께 뒷받침합니다.
+
+Sentence-ending samples:
+- -세요: L26 안녕하세요.
+- 입니다: L26 dev.log입니다. | L28 화면을 읽고 앱을 조작하는 데 힘을 준 OpenAI의 새 모델입니다.
+- -습니다: L28 GPT-6.1 Terra가 나왔습니다. | L36 글쓰기에도 초점을 맞췄습니다.
+- question: L28 더 저렴한 Terra로도 그 일을 잘 끝낼 수 있을까요?
+- 있습니다: L30 어려운 코딩과 추론에서는 Opus·Sol·Astra가 여전히 앞서는 부분이 있습니다. | L40 Terra는 ChatGPT Work와 Codex에서 쓸 수 있습니다.
+- -니다: L30 가격 차이는 큽니다. | L40 Plus·Pro·Business·Enterprise·Edu가 대상이고 계정·관리자 설정에 따라 제공 여부가 달라집니다.
+- other: L32 {{media:terra-lead}} | L36 OpenAI 발표
+- 했습니다: L38 코딩과 긴 업무를 맡길 때 함께 고려할 모델이고, OpenAI도 Terra 발표에서 Opus와 성능·비용을 비교했습니다. | L78 다른 사용자는 픽셀 스타일의 프로젝트 관리 화면을 만들면서 Sol과 Opus의 결과를 더 마음에 들어 했습니다.
+- 합니다: L40 일반 Chat에는 제공되지 않으며, Work의 Advanced 모델 목록에서 선택합니다. | L61 모델을 여러 업무에 두루 쓰려는 사람에게 참고할 만합니다.
+- 봅니다: L61 위 표가 개별 시험이라면, Artificial Analysis의 종합 지수는 코딩·문서·추론 등 10개 평가를 묶어 봅니다.
+- 됩니다: L95 같은 양을 처리하는 계산에서는 Terra를 네 번 호출해야 Opus 한 번 비용이 됩니다.
+
+Repeated opener matches:
+- none
+
+Signals are review prompts, not pass/fail rules.

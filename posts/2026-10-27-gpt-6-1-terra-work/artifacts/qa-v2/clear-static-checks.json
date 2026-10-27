@@ -1,0 +1,24 @@
+[
+  {
+    "theme": "light",
+    "h1": 1,
+    "tables": 3,
+    "images": 1,
+    "all_alt": true,
+    "duplicate_ids": 0,
+    "broken_anchors": [],
+    "unresolved_media": false,
+    "visual_check": "not performed"
+  },
+  {
+    "theme": "dark",
+    "h1": 1,
+    "tables": 3,
+    "images": 1,
+    "all_alt": true,
+    "duplicate_ids": 0,
+    "broken_anchors": [],
+    "unresolved_media": false,
+    "visual_check": "not performed"
+  }
+]

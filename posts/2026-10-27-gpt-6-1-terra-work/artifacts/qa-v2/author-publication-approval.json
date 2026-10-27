@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "author_instruction": "훌륭해 게시해줘 그리고 앞으로도 이런식으로 모델비교글은 작성되면 좋을거같네 훌륭해",
+  "approval_evidence": "trusted transcript relayed by parent cloud thread 01a17b1d-533f-7360-b18f-0974e4f7203b",
+  "approved_at": "2026-10-27T12:19:01+09:00",
+  "time_note": "approval receipt recorded at current clock time; original user message timestamp not supplied",
+  "target_blog": "https://dop3n.tistory.com",
+  "approved_library_versions": {
+    "article": 2,
+    "image": 1,
+    "light": 2,
+    "dark": 2
+  },
+  "source_pass_sha256": "8d85681c8fbeb637acdc31dc96aa87942b5ad94ea81dcda26705a2726eea754d",
+  "article_file_sha256": "f97ba4e7fb2ab1898e30b80cad4fe9b39ffe196da50db51a60bc3384bc41d67e",
+  "article_content_sha256": "84fa6b9f57d5b2140bbfefa158183ad451888700e1e56440caa43041e1b2b0aa",
+  "approved_user_manuscript_sha256": "57eb753619f451533a84eda24f5150b5356aee1142f1c3b2fefe186d307959e3",
+  "media_sha256": {
+    "terra-lead": "47b71d0bf93f308a080251f021539f2feda0cb735e0449dc81844d7ac5f2c8bb"
+  },
+  "provisional_fragment_sha256": "563128f783cec469d964b08096647b2c75447a034d5555e01ed4f065ce756ba5",
+  "publication_owner": "parent dot cloud browser",
+  "status": "approved; attachment and prepublication QA pending"
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Work/Codex에서 작업별 모델을 고르는 비전문가",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Terra vs Opus 주 비교, Sol/Astra 보조. 공식 업무별 관계→AA v4.3.2 max(default fallback 명시)→초기 개별 후기→standard API fixed-token→유지/분담. 새 equal-weight comparison hero; 보조 그림은 표와 중복해 제외. file URL 정책 우회 금지; reviewing; 발행/push 금지. 2026-10-27 사용자 Library 원고v2·이미지v1 게시 승인. 부모 dot브라우저에서 native첨부 및 게시 전 QA 후 발행. 현재 준비 단계 push 보류.",
+  "publication_mode": "codex-browser"
+}

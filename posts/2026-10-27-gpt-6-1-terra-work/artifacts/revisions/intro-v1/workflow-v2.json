@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "ChatGPT로 글·이미지 작업을 하는 비전문가",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Work 제공 범위와 실제 작업 조건을 구분한다. 생성 hero는 이미지→앱 작업의 개념 은유. max-txt2img/diagram-design 검토 후 3행 판단표와 중복되어 보조 그림 제외. 계정 UI 실사용 약속이 없어 screenshot 미선택. 로컬 검수 후 승인 대기; 발행/push 금지.",
+  "publication_mode": "codex-browser"
+}

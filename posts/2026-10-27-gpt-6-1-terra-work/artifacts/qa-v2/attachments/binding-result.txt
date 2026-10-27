@@ -1,0 +1,3 @@
+bound terra-lead: https://blog.kakaocdn.net/dna/3xFZy/dJMcabTIb6v/AAAAAAAAAAAAAAAAAAAAAB03g2BFnybAclf4Z7yp4JjAG4JSoBCnAATTdG17eg7F/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=mQL5AhrRXX8RHQ212bAOsT0bh8I%3D
+NOTE: rerun the v2 remote record and the one final-page gate.
+WARNING: terra-lead: status is `captured`, not `validated`

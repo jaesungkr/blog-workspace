@@ -194,3 +194,16 @@ scoring at least 8/10, with no zero for first-party evidence.
   sources, independent evaluations, and hands-on tests. This series-level
   reference list is required even when the same links already appear beside
   claims in the body.
+
+
+## Model-comparison prose preference - 2026-10-27
+
+- The author approved the revised Terra vs Opus article and asked to keep this
+  style for future model comparisons: plain Korean, natural paragraph links,
+  restrained conversational prose, and no invented personal experience.
+- Prefer a compact per-test table with models as columns and verified scores
+  as cells; explain each test briefly beside its name. Keep aggregate indices
+  and prices separate. Put necessary settings, units, missing values, fallback
+  conditions, and sources in short notes below the relevant table.
+- Remove repeated caveats, unsupported rankings, abrupt jargon, and repeated
+  conclusions. Connect the choice to the work and cost the reader cares about.

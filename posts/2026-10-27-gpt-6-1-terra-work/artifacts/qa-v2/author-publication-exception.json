@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "scope": "this article only; no global QA rule changes",
+  "target_blog": "https://dop3n.tistory.com",
+  "article_slug": "gpt-6-1-terra-work",
+  "recorded_at": "2026-10-27T12:40:16.979286+09:00",
+  "time_note": "record creation time; exact user message timestamp not supplied",
+  "evidence_source": "trusted transcript relayed by parent thread 01a17b1d-533f-7360-b18f-0974e4f7203b",
+  "question": "게시 직전 확인은 거의 끝났어요. PC 1060px·모바일 360px의 밝은/어두운 화면에서 본문·표·이미지는 정상이고, 입력된 글도 승인본과 일치합니다.\n\n다만 두 가지는 확인하지 못했어요. 티스토리 미리보기가 1280px 설정을 허용하지 않고, 미리보기 안에서는 목차 클릭 이동도 확인되지 않았습니다. 기존 검사 기준을 전부 통과했다고 할 수는 없어요.\n\n이번에는 이 두 항목을 미확인으로 남기고 게시해도 될까요? 게시 후에는 재성님이 화면을 직접 확인하시는 기존 방식으로 진행하겠습니다.",
+  "answer": "응 괜찮아 게시해줘",
+  "approved_exceptions": [
+    "1280px desktop visual inspection not performed; actual desktop width1060",
+    "TOC visual click navigation not confirmed in preview sandbox; anchor structure passed"
+  ],
+  "actual_qa": {
+    "widths": [
+      1060,
+      360
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "body_tables_images": "parent visually checked normal",
+    "single_native_caption": true,
+    "table_internal_scroll": true,
+    "page_overflow": false,
+    "editor_exact_readback": {
+      "characters": 19734,
+      "sha256": "5d991f6cb739b561891fcf13ddc8c2b76e3cca454df432f0f505d1f6d85a2a4f"
+    },
+    "remote_image_sha256": "47b71d0bf93f308a080251f021539f2feda0cb735e0449dc81844d7ac5f2c8bb",
+    "remote_image_matches_approved": true
+  },
+  "strict_qa_status": "incomplete; not pass",
+  "release_basis": "author-approved article-specific exception",
+  "publication_status": "confirmed published post154",
+  "post_publication_visual_qa": "author responsibility; not performed by agent",
+  "source_or_html_modified": false,
+  "publication_url": "https://dop3n.tistory.com/entry/GPT-61-Terra-vs-Claude-Opus-55-%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B0%80%EA%B2%A9%EC%9C%BC%EB%A1%9C-%EB%B3%B8-%EC%84%A0%ED%83%9D"
+}
