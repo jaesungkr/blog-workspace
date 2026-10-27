@@ -1,0 +1,11 @@
+{
+  "file_count": 23,
+  "all_nonempty": true,
+  "approved_image_sha256_matches": true,
+  "redacted_html_sha256_matches": true,
+  "native_image_blocks": 3,
+  "access_query_values_found": 0,
+  "secret_pattern_matches": 0,
+  "excluded_simulation_and_prior_drafts": true,
+  "strict_final_qa": "not passed; approved exception retained"
+}

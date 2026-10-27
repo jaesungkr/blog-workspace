@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "method": "Expand each directive back into approved image Markdown and caption; compare original and expanded full article after whitespace normalization only.",
+  "approved_prose_links_alt_captions_unchanged": true,
+  "approved_body_sha256": "7278b46ed7c916702c8c228c11262550b8662d629c2da7ba5b272028e70c926b",
+  "before_article_sha256": "98171a95d62f91e85fb119528a6983477d013c2ae216782f07eb6a5263b663ca",
+  "after_article_sha256": "414edc02244063971c053e1a850950e15ea31ec89f3b3613f880a2b60a66aa5b",
+  "mapping": {
+    "record-flow": {
+      "markdown_image": "![녹화 시작부터 업무 시연, 검토·저장, 재사용으로 이어지는 설명용 흐름도](assets/record-to-skill-flow-ko.png)",
+      "caption": "공식 기능 설명을 바탕으로 재구성한 흐름도입니다. 제품 화면이 아니며, 스킬 저장과 정기 실행 설정은 별개입니다.",
+      "full_original_caption": "공식 기능 설명을 바탕으로 재구성한 흐름도입니다. 제품 화면이 아니며, 스킬 저장과 정기 실행 설정은 별개입니다."
+    },
+    "record-guide": {
+      "markdown_image": "![스킬 녹화 기능과 녹화 전 준비사항을 설명한 공식 문서](assets/official-record-entry.jpg)",
+      "caption": "녹화 기능의 공식 문서 화면입니다. 실제 제품 UI가 아닙니다.",
+      "full_original_caption": "녹화 기능의 공식 문서 화면입니다. 실제 제품 UI가 아닙니다. 출처: [Anthropic 공식 안내](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)."
+    },
+    "review-guide": {
+      "markdown_image": "![녹화 후 스킬 검토와 저장을 설명한 공식 문서](assets/official-skill-review.jpg)",
+      "caption": "스킬 검토·저장과 녹화 자료 보관을 설명한 공식 문서 화면입니다.",
+      "full_original_caption": "스킬 검토·저장과 녹화 자료 보관을 설명한 공식 문서 화면입니다. 출처: [Anthropic 공식 안내](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)."
+    }
+  }
+}

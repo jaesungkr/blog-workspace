@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-27T05:29:30.787716Z",
+  "checked_by": "beginner_source_review",
+  "article_content_sha256": "f63e21229857e26dd3c48120b1560dede4182839dde08bb45b8c3860e7c55edb",
+  "brief_sha256": "347a2854504cf47d97f51f0b050d3f184e81b85837d97db0a86269708c39007f",
+  "evidence_sha256": "24795b26ed9078640fdca3aa6e5ee69fcd5af71a0a53f100bc48622e0f5dee99",
+  "note": "Existing independent prose pass retained; media-only technical conversion verified by whitespace-normalized roundtrip of approved text, links, alt and captions. Actual media bytes and page gates remain pending. Archive-only frontmatter sources/hero completed; approved prose, links, alt and captions remain unchanged. No final-page strict pass claimed.",
+  "previous_article_content_sha256": "90b2e59ee144569d9b916e6559c869d4c44143010ac93203707c40361b496bc5"
+}

@@ -1,0 +1,18 @@
+{
+  "source_repository": "jaesungkr/blog-workspace",
+  "record_flow_blob_sha": "280d65a3a08971daf3822071fb7b732c1c3aad8c",
+  "record_guide_blob_sha": "9dd89a9a30637caca171a2645dd0da7ba74c7b6c",
+  "review_guide_blob_sha": "b1a172d407c952ad1a428c0491479e86b827be44",
+  "redacted_html_blob_sha": "0e181fd7ebac1634b242ed4a3f6c34d8bb101d87",
+  "original_submitted_html_sha256": "d571a3f537e82db8f44f2961af1d77854931499ac3f40f345551ca9c35ac73ee",
+  "original_submitted_html_size_bytes": 23361,
+  "archived_redacted_html_sha256": "726f50005fcfda9c9475acb6d207531e2b8c8a6f91f1d622eb123658f2c6019b",
+  "archived_redacted_html_size_bytes": 22924,
+  "redaction": "Only transient signed query strings on 3 native image references removed by parent; original published content not changed.",
+  "exact_original_in_git": false,
+  "original_location": "Existing user Library only",
+  "original_html_upload_denial": "Parent create_blob rejected before execution because image URL queries contained access information; no alternate original upload attempted.",
+  "image_transport": "Approved image-only base64 text blobs decoded locally; transport text excluded from commit.",
+  "local_asset_inspection": "Actual 3 raster files decoded and inspected for archival integrity. No post-publication live-page inspection.",
+  "strict_qa": "No strict final-page pass. Article-specific informed exception and parent manual evidence retained."
+}

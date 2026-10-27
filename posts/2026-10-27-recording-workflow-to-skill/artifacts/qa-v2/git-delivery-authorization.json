@@ -1,0 +1,16 @@
+{
+  "target": "jaesungkr/blog-workspace",
+  "branch": "master",
+  "instruction": "응",
+  "scope": "Published post155 recording-workflow-to-skill article/images/redacted publication HTML/approval-review-publication records",
+  "explicit_question": "방금 게시한 글의 원고·이미지·게시 HTML·검수 기록만 jaesungkr/blog-workspace의 master에 올려도 될까요? 미게시 초안과 비밀정보는 제외하겠습니다.",
+  "exclude": [
+    "simulation-to-skill unpublished bundle",
+    "superseded drafts/candidate HTML",
+    "access query values",
+    "transport base64 text",
+    "unrelated changes"
+  ],
+  "force": false,
+  "safe_archive_adjustment": "Parent reported original signed HTML upload denial; user informed of exclusion; redacted archive only."
+}

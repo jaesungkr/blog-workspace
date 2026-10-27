@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "업무 화면 녹화로 반복 업무를 AI에 맡기는 기능을 이해하려는 비개발자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "사용자 영상 기반 기능 안내. 직접 계정 녹화/설치/실행하지 않음. 영상 설명·챕터와 공식 문서 대조. 부모가 실제 캡처를 확보하며 세 장은 녹화/검토/실행 각 독자 질문에 대응. 필요시 공식 진입/보관 화면 추가. 생성 이미지·데모 불필요. 게시·push 금지.",
+  "publication_mode": "codex-browser"
+}

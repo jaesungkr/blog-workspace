@@ -1,0 +1,24 @@
+{
+  "instruction": "응 좋아 게시해줘",
+  "trusted_evidence": "parent top-level codex_delegation transcript_evidence",
+  "approved_article_library_id": "libfile_ff59bf7f3c108191b1cb68939a5e108a",
+  "approved_article_version": 1,
+  "approved_review_library_id": "libfile_cc56a8b1a2fc819186362340b1b59e97",
+  "approved_review_version": 3,
+  "approved_source_pass_sha256": "b7ea03318a19dcd51487b62e828f0ca609c131c6bf6afd6a2664a66b9c96a498",
+  "approved_markdown_sha256": "ccc9030eee1afb840ba7f7600421e1dd001d47f8e00de09887c75113433c6854",
+  "target_blog": "dev.log",
+  "approval_time": null,
+  "approval_time_note": "exact user-message time not provided; do not substitute observation time",
+  "observed_at_asia_seoul": "2026-10-27T14:25:29+09:00",
+  "media_sha256": {
+    "record-flow": null,
+    "record-guide": null,
+    "review-guide": null
+  },
+  "record_complete": false,
+  "missing": "local image bytes/hash and exact approval timestamp",
+  "scope": "publish only latest file-organization recording-workflow-to-skill article",
+  "strict_exception_approved": false,
+  "git_commit_push_authorized": false
+}

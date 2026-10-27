@@ -1,0 +1,466 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>다운로드한 파일을 정리할 때마다 이름을 바꾸고, 알맞은 폴더로 옮기는 일이 반복됩니다. AI에게 맡기려면 어느 파일을 어떻게 정리할지 설명해야 하는데, 평소 하던 모습을 한 번 보여 줄 수 있다면 조금 수월하겠죠.</p>
+<p><strong>ChatGPT와 Claude에는 작업 화면을 녹화해 스킬을 만드는 기능이 있습니다.</strong> 내가 하는 일을 보여 주면 AI가 다음에도 참고할 작업 설명서를 만들고, 내가 내용을 확인해 저장하는 방식입니다. 이 작업 설명서를 <strong>스킬</strong>이라고 합니다.</p>
+<div class="devlog-rich__figure" data-media-id="record-flow" style="--rich-media-width:900px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@GGyt4/dJMcafBQcN4/AAAAAAAAAAAAAAAAAAAAACsZiOvdB1hsJhRIK1dK6ZG8GzA1CX0XaJkPXQrzCEDH/img.png|CDM|1.3|{"originWidth":900,"originHeight":1420,"style":"alignCenter","alt":"녹화 시작부터 업무 시연, 검토&middot;저장, 재사용으로 이어지는 설명용 흐름도","caption":"공식 기능 설명을 바탕으로 재구성한 흐름도입니다. 제품 화면이 아니며, 스킬 저장과 정기 실행 설정은 별개입니다.","filename":"record-to-skill-flow-ko.png"}_##]</div></div>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#파일-하나를-정리하는-모습부터">파일 하나를 정리하는 모습부터</a></li>
+<li><a href="#녹화를-켠-뒤-평소처럼-작업하기">녹화를 켠 뒤 평소처럼 작업하기</a></li>
+<li><a href="#저장-전에-이번-파일에만-맞춰져-있지-않은지-확인하기">저장 전에 이번 파일에만 맞춰져 있지 않은지 확인하기</a></li>
+<li><a href="#다음에는-다른-파일을-같은-방식으로">다음에는 다른 파일을 같은 방식으로</a></li>
+<li><a href="#두-서비스-모두-있지만-지원-환경은-확인하기">두 서비스 모두 있지만, 지원 환경은 확인하기</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="파일-하나를-정리하는-모습부터">
+<h2 id="파일-하나를-정리하는-모습부터">파일 하나를 정리하는 모습부터</h2>
+<p>아래는 이해를 돕기 위해 만든 가상의 연습 예시입니다. <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">정리연습</code> 폴더에 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">자료1.pdf</code>가 있고, 이 파일에 붙일 날짜는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">2026-10-01</code>, 주제는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">여행계획</code>이라고 미리 정했다고 해 보겠습니다.</p>
+<p>내가 보여 줄 일은 간단합니다. 파일 이름을 <strong><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">2026-10-01_여행계획.pdf</code></strong>로 바꾸고, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">정리연습</code> 안의 <strong><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">2026-10</code> 폴더</strong>로 옮깁니다. AI가 파일 내용을 보고 날짜나 주제를 추측하게 하는 것이 아니라, 내가 정한 이름 규칙을 보여 주는 예시입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>정리 전</th><th>정리 후</th></tr></thead><tbody><tr><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">정리연습/자료1.pdf</code></td><td><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">정리연습/2026-10/2026-10-01_여행계획.pdf</code></td></tr></tbody></table></div>
+<p>녹화를 시작하기 전에 범위를 알려 주면 좋습니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">‘정리연습’ 폴더 안에서만 작업하는 모습을 보여 줄게.
+내가 알려 준 날짜와 주제로 ‘날짜_주제.pdf’라는 이름을 붙이고,
+그 날짜의 연도와 월에 맞는 폴더로 옮겨 줘.
+같은 이름의 파일이 있으면 덮어쓰지 말고 물어봐. 파일은 삭제하지 마.</code></pre>
+<p>중요한 것은 파일 하나의 이름을 외우게 하는 일이 아닙니다. <strong>다음에도 적용할 규칙을 남기는 것</strong>입니다. 이 예시라면 사용할 날짜와 주제를 입력받고, 이름을 바꾸고, 해당 월의 폴더로 옮기는 순서가 됩니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="녹화를-켠-뒤-평소처럼-작업하기">
+<h2 id="녹화를-켠-뒤-평소처럼-작업하기">녹화를 켠 뒤 평소처럼 작업하기</h2>
+<p>Claude를 예로 들면, 최신 Mac 앱의 Cowork에서 <strong><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">+ → Record a skill</code></strong>을 선택합니다. Cowork는 여러 단계의 업무를 맡기는 작업 모드입니다. 처음에는 요청되는 macOS 접근성·화면 기록 권한을 허용해야 합니다. <a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 녹화 안내</a>를 기준으로 합니다.</p>
+<div class="devlog-rich__figure" data-media-id="record-guide" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@bU83l8/dJMcac6aahq/AAAAAAAAAAAAAAAAAAAAAJOe3jEOQ6BhMh7hTV8TR2yiPhKEw563NHua2SBKKZP9/img.jpg|CDM|1.3|{"originWidth":1165,"originHeight":747,"style":"alignCenter","alt":"스킬 녹화 기능과 녹화 전 준비사항을 설명한 공식 문서","caption":"녹화 기능의 공식 문서 화면입니다. 실제 제품 UI가 아닙니다.","filename":"claude-record-a-skill-official-docs.png"}_##]</div></div>
+<p>출처: <a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic 공식 안내</a>.</p>
+<p>녹화를 켠 뒤에는 연습 파일의 이름을 바꾸고 월별 폴더로 옮기는 과정을 보여 줍니다. 필요하면 마이크로 “날짜와 주제는 매번 제가 알려 줄 값입니다”, “같은 이름이 있으면 먼저 확인합니다”처럼 화면만으로 알기 어려운 기준도 말합니다. 작업이 끝나면 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Done</code>을 누릅니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="저장-전에-이번-파일에만-맞춰져-있지-않은지-확인하기">
+<h2 id="저장-전에-이번-파일에만-맞춰져-있지-않은지-확인하기">저장 전에 이번 파일에만 맞춰져 있지 않은지 확인하기</h2>
+<p>녹화가 끝나면 AI가 스킬을 제안합니다. Claude에서는 제안 카드의 <strong><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Content</code></strong>를 열어 내용을 읽고, 새 스킬은 <strong><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Save</code></strong>, 기존 스킬 수정은 <strong><code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">Update</code></strong>로 반영합니다.</p>
+<div class="devlog-rich__figure" data-media-id="review-guide" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@dbaKYi/dJMcac6aaiR/AAAAAAAAAAAAAAAAAAAAAA_mVaUu2-nrnf6k-PAQBXZ2XpcC3NeKBphLOrQdkz9n/img.jpg|CDM|1.3|{"originWidth":1165,"originHeight":747,"style":"alignCenter","alt":"녹화 후 스킬 검토와 저장을 설명한 공식 문서","caption":"스킬 검토&middot;저장과 녹화 자료 보관을 설명한 공식 문서 화면입니다.","filename":"claude-review-generated-skill-official-docs.png"}_##]</div></div>
+<p>출처: <a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills" style="color:#1a73e8;text-decoration:none;" target="_blank">Anthropic 공식 안내</a>.</p>
+<p>파일 정리 예시에서는 다음 세 가지를 살펴보면 됩니다.</p>
+<ul><li>날짜와 주제가 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">2026-10-01</code>, <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">여행계획</code>으로 고정되지 않고, 다음 요청에서 받은 값을 쓰는지</li><li>지정한 연습 폴더 안에서만 이름을 바꾸고 이동하는지</li><li>같은 이름의 파일을 덮어쓰거나 파일을 삭제하지 않는지</li></ul>
+<p>이 기준을 빠뜨렸다면 저장 전에 고칩니다. 한 번 시연한 내용에서 빠진 조건까지 AI가 모두 알아서 채워 준다고 기대하기보다는, <strong>반복해서 쓸 초안을 얻고 내가 확인한다</strong>고 생각하면 됩니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="다음에는-다른-파일을-같은-방식으로">
+<h2 id="다음에는-다른-파일을-같은-방식으로">다음에는 다른 파일을 같은 방식으로</h2>
+<p>저장한 스킬을 사용할 수 있게 켠 뒤, 새 대화에서 이름을 지정해 요청합니다. Claude의 저장된 스킬은 <strong>Customize → Skills</strong>에서 확인할 수 있습니다. <a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 스킬 사용 안내</a>에 따른 흐름입니다.</p>
+<pre style="background:#f6f6f6;border:1px solid #e5e5e5;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:0.9em;line-height:1.6;margin:1.4em 0;"><code style="font-family:Menlo,Consolas,monospace;white-space:pre;">저장한 ‘파일 정리’ 스킬을 사용해 줘.
+이번에는 ‘정리연습/자료2.pdf’를 정리할 거야.
+날짜는 2026-11-03, 주제는 모임안내로 해 줘.</code></pre>
+<p>앞서 정한 규칙을 적용하면 기대하는 결과는 <code style="background:#f0f0f0;border-radius:3px;padding:2px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;">정리연습/2026-11/2026-11-03_모임안내.pdf</code>입니다. 이번에는 파일 이름을 붙이는 방법과 월별 폴더를 고르는 규칙을 다시 설명하지 않아도 됩니다. 실제로 이 파일을 정리한 결과가 아니라, 스킬을 재사용하는 방법을 보여 주는 예시입니다.</p>
+<p>처음 다시 사용할 때는 복사해 둔 연습 파일로 결과를 확인하세요. 지정한 파일만 바뀌었는지, 이름과 폴더가 맞는지 살펴본 뒤 필요한 기준을 보완하면 됩니다. 스킬에 방법을 저장해도 실제 파일에 접근할 도구와 권한은 별도로 필요합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="두-서비스-모두-있지만-지원-환경은-확인하기">
+<h2 id="두-서비스-모두-있지만-지원-환경은-확인하기">두 서비스 모두 있지만, 지원 환경은 확인하기</h2>
+<p>Claude의 <strong>Record a skill</strong> 녹화는 현재 <strong>Mac용 Cowork의 Pro·Max·Team</strong>에서 지원합니다. 일반 채팅·Windows·Free·Enterprise는 제외됩니다. 일반 스킬을 사용할 수 있는 범위와 녹화 기능의 범위는 다릅니다. <a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills" style="color:#1a73e8;text-decoration:none;" target="_blank">Claude 녹화 지원 조건</a>.</p>
+<p>ChatGPT에도 <strong>Record &amp; Replay</strong>라는 같은 종류의 기능이 있습니다. 공식 안내상 <strong>macOS에서 Computer Use가 제공되고 활성화돼 있어야</strong> 하며, 녹화로 만든 스킬을 새 대화에서 바뀐 입력값과 함께 재사용합니다. <a href="https://learn.chatgpt.com/docs/extend/record-and-replay" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 공식 안내</a>.</p>
+<p>녹화 전에는 비밀번호나 사적인 대화가 보이는 창을 닫아 두세요. Claude는 검토 후 영상·음성을 보관하지 않지만 작업의 스크린샷은 남습니다. <a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills#whats-kept-from-a-recording" style="color:#1a73e8;text-decoration:none;" target="_blank">녹화 자료 보관 안내</a>.</p>
+<p>스킬을 저장했다고 매일 자동으로 정리가 시작되는 것은 아닙니다. 정해진 시간에 실행하려면 예약을 따로 설정해야 합니다. 먼저 작은 연습 작업 하나를 보여 주고, 다음 파일에서도 같은 규칙으로 처리되는지 확인하는 것부터 시작하면 됩니다.</p>
+</section>
+</article>

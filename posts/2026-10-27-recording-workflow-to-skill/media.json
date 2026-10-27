@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "lead_id": "record-flow",
+  "items": [
+    {
+      "id": "record-flow",
+      "kind": "image",
+      "origin": "first_party",
+      "role": "lead",
+      "claim_ids": [
+        "C-record-workflow"
+      ],
+      "source_url": "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+      "publish_path": "assets/record-to-skill-flow-ko.png",
+      "rights": "Original explanatory diagram created by parent; not product UI.",
+      "alt": "녹화 시작부터 업무 시연, 검토·저장, 재사용으로 이어지는 설명용 흐름도",
+      "caption": "공식 기능 설명을 바탕으로 재구성한 흐름도입니다. 제품 화면이 아니며, 스킬 저장과 정기 실행 설정은 별개입니다.",
+      "processing": [
+        "Parent approved image; exact bytes recovered via approved repository text blob transport and SHA-256 verified."
+      ],
+      "redactions": [],
+      "width": 900,
+      "height": 1420,
+      "sha256": "6f157a4ba18a4580f33de30cdbbcab132dc90cf00bab6a6156a7b55295a34859",
+      "status": "captured",
+      "placement": "after:opening",
+      "tistory_url": "",
+      "actor": "parent image assembly",
+      "environment": "Parent normal rendering environment; local bytes pending",
+      "captured_at": "2026-10-27",
+      "raw_path": "artifacts/captures/record-to-skill-flow-ko.png"
+    },
+    {
+      "id": "record-guide",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C-record-entry"
+      ],
+      "source_url": "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+      "publish_path": "assets/official-record-entry.jpg",
+      "rights": "Official documentation excerpt for attributed feature explanation.",
+      "alt": "스킬 녹화 기능과 녹화 전 준비사항을 설명한 공식 문서",
+      "caption": "녹화 기능의 공식 문서 화면입니다. 실제 제품 UI가 아닙니다.",
+      "processing": [
+        "Parent approved image; exact bytes recovered via approved repository text blob transport and SHA-256 verified."
+      ],
+      "redactions": [],
+      "width": 1165,
+      "height": 747,
+      "sha256": "40889d43481643c08478e105ff84f5c39bfd4c13b753be69da51a75fa2510e9c",
+      "status": "captured",
+      "placement": "after:record-entry",
+      "tistory_url": ""
+    },
+    {
+      "id": "review-guide",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C-review-save"
+      ],
+      "source_url": "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+      "publish_path": "assets/official-skill-review.jpg",
+      "rights": "Official documentation excerpt for attributed feature explanation.",
+      "alt": "녹화 후 스킬 검토와 저장을 설명한 공식 문서",
+      "caption": "스킬 검토·저장과 녹화 자료 보관을 설명한 공식 문서 화면입니다.",
+      "processing": [
+        "Parent approved image; exact bytes recovered via approved repository text blob transport and SHA-256 verified."
+      ],
+      "redactions": [],
+      "width": 1165,
+      "height": 747,
+      "sha256": "f8724f7773f8cd8ad25d8531d65bb096c3372f923e23f0a96f7e894dd8b8c81e",
+      "status": "captured",
+      "placement": "after:review-save",
+      "tistory_url": ""
+    }
+  ]
+}

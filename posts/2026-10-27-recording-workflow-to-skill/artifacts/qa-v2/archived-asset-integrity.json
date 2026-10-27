@@ -1,0 +1,20 @@
+[
+  {
+    "id": "record-flow",
+    "size": 138382,
+    "sha256": "6f157a4ba18a4580f33de30cdbbcab132dc90cf00bab6a6156a7b55295a34859",
+    "verified": true
+  },
+  {
+    "id": "record-guide",
+    "size": 104319,
+    "sha256": "40889d43481643c08478e105ff84f5c39bfd4c13b753be69da51a75fa2510e9c",
+    "verified": true
+  },
+  {
+    "id": "review-guide",
+    "size": 112620,
+    "sha256": "f8724f7773f8cd8ad25d8531d65bb096c3372f923e23f0a96f7e894dd8b8c81e",
+    "verified": true
+  }
+]

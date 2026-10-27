@@ -1,0 +1,13 @@
+{
+  "reviewer": "beginner_source_review",
+  "source": "pass",
+  "beginner_comprehension": "pass",
+  "required_changes": [],
+  "source_derived_word_estimate": 180,
+  "not_reviewed": [
+    "pixels",
+    "assembled page",
+    "mobile"
+  ],
+  "date": "2026-10-27"
+}

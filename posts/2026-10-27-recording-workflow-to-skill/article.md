@@ -1,0 +1,96 @@
+---
+title: "한 번 보여 주면 다음부터 맡길 수 있을까? 화면 녹화로 AI 스킬 만들기"
+slug: recording-workflow-to-skill
+date: 2026-10-27
+category: "Log"
+subcategory: "AI 개념 · 실전"
+status: published
+format: rich-post-v2
+tags: [AI스킬, 화면녹화, 파일정리, ChatGPT, Claude, Cowork, RecordAndReplay]
+summary: "작업 화면을 녹화해 반복 업무 절차를 스킬로 정리하고, 검토한 뒤 다른 입력으로 재사용하는 방법입니다."
+hero_image: assets/record-to-skill-flow-ko.png
+published_url: "https://dop3n.tistory.com/entry/%ED%95%9C-%EB%B2%88-%EB%B3%B4%EC%97%AC-%EC%A3%BC%EB%A9%B4-%EB%8B%A4%EC%9D%8C%EB%B6%80%ED%84%B0-%EB%A7%A1%EA%B8%B8-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%ED%99%94%EB%A9%B4-%EB%85%B9%ED%99%94%EB%A1%9C-AI-%EC%8A%A4%ED%82%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0"
+sources:
+  - https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+  - https://support.claude.com/en/articles/12512180-use-skills-in-claude
+  - https://learn.chatgpt.com/docs/extend/record-and-replay
+---
+
+안녕하세요. dev.log입니다.
+
+다운로드한 파일을 정리할 때마다 이름을 바꾸고, 알맞은 폴더로 옮기는 일이 반복됩니다. AI에게 맡기려면 어느 파일을 어떻게 정리할지 설명해야 하는데, 평소 하던 모습을 한 번 보여 줄 수 있다면 조금 수월하겠죠.
+
+**ChatGPT와 Claude에는 작업 화면을 녹화해 스킬을 만드는 기능이 있습니다.** 내가 하는 일을 보여 주면 AI가 다음에도 참고할 작업 설명서를 만들고, 내가 내용을 확인해 저장하는 방식입니다. 이 작업 설명서를 **스킬**이라고 합니다.
+
+{{media:record-flow}}
+
+### 파일 하나를 정리하는 모습부터
+
+아래는 이해를 돕기 위해 만든 가상의 연습 예시입니다. `정리연습` 폴더에 `자료1.pdf`가 있고, 이 파일에 붙일 날짜는 `2026-10-01`, 주제는 `여행계획`이라고 미리 정했다고 해 보겠습니다.
+
+내가 보여 줄 일은 간단합니다. 파일 이름을 **`2026-10-01_여행계획.pdf`**로 바꾸고, `정리연습` 안의 **`2026-10` 폴더**로 옮깁니다. AI가 파일 내용을 보고 날짜나 주제를 추측하게 하는 것이 아니라, 내가 정한 이름 규칙을 보여 주는 예시입니다.
+
+| 정리 전 | 정리 후 |
+|---|---|
+| `정리연습/자료1.pdf` | `정리연습/2026-10/2026-10-01_여행계획.pdf` |
+
+녹화를 시작하기 전에 범위를 알려 주면 좋습니다.
+
+```text
+‘정리연습’ 폴더 안에서만 작업하는 모습을 보여 줄게.
+내가 알려 준 날짜와 주제로 ‘날짜_주제.pdf’라는 이름을 붙이고,
+그 날짜의 연도와 월에 맞는 폴더로 옮겨 줘.
+같은 이름의 파일이 있으면 덮어쓰지 말고 물어봐. 파일은 삭제하지 마.
+```
+
+중요한 것은 파일 하나의 이름을 외우게 하는 일이 아닙니다. **다음에도 적용할 규칙을 남기는 것**입니다. 이 예시라면 사용할 날짜와 주제를 입력받고, 이름을 바꾸고, 해당 월의 폴더로 옮기는 순서가 됩니다.
+
+### 녹화를 켠 뒤 평소처럼 작업하기
+
+Claude를 예로 들면, 최신 Mac 앱의 Cowork에서 **`+ → Record a skill`**을 선택합니다. Cowork는 여러 단계의 업무를 맡기는 작업 모드입니다. 처음에는 요청되는 macOS 접근성·화면 기록 권한을 허용해야 합니다. [공식 녹화 안내](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)를 기준으로 합니다.
+
+{{media:record-guide}}
+
+출처: [Anthropic 공식 안내](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+
+녹화를 켠 뒤에는 연습 파일의 이름을 바꾸고 월별 폴더로 옮기는 과정을 보여 줍니다. 필요하면 마이크로 “날짜와 주제는 매번 제가 알려 줄 값입니다”, “같은 이름이 있으면 먼저 확인합니다”처럼 화면만으로 알기 어려운 기준도 말합니다. 작업이 끝나면 `Done`을 누릅니다.
+
+### 저장 전에 이번 파일에만 맞춰져 있지 않은지 확인하기
+
+녹화가 끝나면 AI가 스킬을 제안합니다. Claude에서는 제안 카드의 **`Content`**를 열어 내용을 읽고, 새 스킬은 **`Save`**, 기존 스킬 수정은 **`Update`**로 반영합니다.
+
+{{media:review-guide}}
+
+출처: [Anthropic 공식 안내](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+
+파일 정리 예시에서는 다음 세 가지를 살펴보면 됩니다.
+
+- 날짜와 주제가 `2026-10-01`, `여행계획`으로 고정되지 않고, 다음 요청에서 받은 값을 쓰는지
+- 지정한 연습 폴더 안에서만 이름을 바꾸고 이동하는지
+- 같은 이름의 파일을 덮어쓰거나 파일을 삭제하지 않는지
+
+이 기준을 빠뜨렸다면 저장 전에 고칩니다. 한 번 시연한 내용에서 빠진 조건까지 AI가 모두 알아서 채워 준다고 기대하기보다는, **반복해서 쓸 초안을 얻고 내가 확인한다**고 생각하면 됩니다.
+
+### 다음에는 다른 파일을 같은 방식으로
+
+저장한 스킬을 사용할 수 있게 켠 뒤, 새 대화에서 이름을 지정해 요청합니다. Claude의 저장된 스킬은 **Customize → Skills**에서 확인할 수 있습니다. [공식 스킬 사용 안내](https://support.claude.com/en/articles/12512180-use-skills-in-claude)에 따른 흐름입니다.
+
+```text
+저장한 ‘파일 정리’ 스킬을 사용해 줘.
+이번에는 ‘정리연습/자료2.pdf’를 정리할 거야.
+날짜는 2026-11-03, 주제는 모임안내로 해 줘.
+```
+
+앞서 정한 규칙을 적용하면 기대하는 결과는 `정리연습/2026-11/2026-11-03_모임안내.pdf`입니다. 이번에는 파일 이름을 붙이는 방법과 월별 폴더를 고르는 규칙을 다시 설명하지 않아도 됩니다. 실제로 이 파일을 정리한 결과가 아니라, 스킬을 재사용하는 방법을 보여 주는 예시입니다.
+
+처음 다시 사용할 때는 복사해 둔 연습 파일로 결과를 확인하세요. 지정한 파일만 바뀌었는지, 이름과 폴더가 맞는지 살펴본 뒤 필요한 기준을 보완하면 됩니다. 스킬에 방법을 저장해도 실제 파일에 접근할 도구와 권한은 별도로 필요합니다.
+
+### 두 서비스 모두 있지만, 지원 환경은 확인하기
+
+Claude의 **Record a skill** 녹화는 현재 **Mac용 Cowork의 Pro·Max·Team**에서 지원합니다. 일반 채팅·Windows·Free·Enterprise는 제외됩니다. 일반 스킬을 사용할 수 있는 범위와 녹화 기능의 범위는 다릅니다. [Claude 녹화 지원 조건](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+
+ChatGPT에도 **Record & Replay**라는 같은 종류의 기능이 있습니다. 공식 안내상 **macOS에서 Computer Use가 제공되고 활성화돼 있어야** 하며, 녹화로 만든 스킬을 새 대화에서 바뀐 입력값과 함께 재사용합니다. [OpenAI 공식 안내](https://learn.chatgpt.com/docs/extend/record-and-replay).
+
+녹화 전에는 비밀번호나 사적인 대화가 보이는 창을 닫아 두세요. Claude는 검토 후 영상·음성을 보관하지 않지만 작업의 스크린샷은 남습니다. [녹화 자료 보관 안내](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills#whats-kept-from-a-recording).
+
+스킬을 저장했다고 매일 자동으로 정리가 시작되는 것은 아닙니다. 정해진 시간에 실행하려면 예약을 따로 설정해야 합니다. 먼저 작은 연습 작업 하나를 보여 주고, 다음 파일에서도 같은 규칙으로 처리되는지 확인하는 것부터 시작하면 됩니다.

@@ -1,0 +1,31 @@
+{
+  "scope": "recording-workflow-to-skill only",
+  "approval_instruction": "응 게시해주",
+  "disclosure": "PC·모바일 밝은/어두운 본문·이미지 배치 확인. 모바일 공식 문서캡처 글자 작음, 이미지 확대·목차 이동 미확인. 환경 문제로 자동 검사 일부를 실제 화면·원본 파일 대조로 대체. 승인본문 그대로.",
+  "evidence_source": "parent trusted transcript_evidence",
+  "strict_qa_pass": false,
+  "approved_exception": true,
+  "exact_candidate_sha256": "d571a3f537e82db8f44f2961af1d77854931499ac3f40f345551ca9c35ac73ee",
+  "exact_candidate_size_bytes": 23361,
+  "parent_reported_verified": [
+    "editor readback byte identical",
+    "1280 and 360 light/dark previews",
+    "3 native images loaded",
+    "captions appear once",
+    "body readability",
+    "horizontal table scrolling",
+    "3 original CDN file hashes match"
+  ],
+  "unverified": [
+    "small detailed text in mobile document screenshots",
+    "image enlargement behavior",
+    "actual TOC navigation",
+    "some structured QA receipts replaced with manual evidence due to technical errors"
+  ],
+  "representative_image": "first explanatory flow diagram",
+  "actual_tistory_category": "AI·개발 > AI 이해·활용",
+  "source_content_changed": false,
+  "publication_status": "parent final publication in progress; success URL pending",
+  "local_media_status": "planned; no local image bytes",
+  "commit_push_authorized": false
+}
