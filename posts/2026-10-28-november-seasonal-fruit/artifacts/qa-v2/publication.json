@@ -5,12 +5,12 @@
   "url": "https://dop3n.tistory.com/entry/11%EC%9B%94-%EC%A0%9C%EC%B2%A0%EA%B3%BC%EC%9D%BC-%EB%AD%98-%EB%A8%B9%EC%9D%84%EA%B9%8C",
   "published_time_ui": "2026-10-28 11:49 KST",
   "initial_publication_confirmed_at_utc": "2026-10-28T02:49:52Z",
-  "latest_revision_confirmed_at_utc": "2026-10-28T03:00:11Z",
-  "submitted_fragment_sha256": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504",
+  "latest_revision_confirmed_at_utc": "2026-10-28T03:22:43Z",
+  "submitted_fragment_sha256": "c6589d8b2bdac37f04be2cc9eb10ff16d38764fb2ab51adc02d8b101d6192e53",
   "initial_submitted_fragment_sha256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
   "submitted_html_stored": false,
-  "sanitized_html": "width-correction/corrected-body-SANITIZED-NOT-REPUBLISHABLE.html",
-  "sanitized_html_sha256": "76e289b3ab11042d964f1ae30dd804b7a639991e0beca5129af7f1cf62ece875",
+  "sanitized_html": "prose-ending-revision/revised-body-SANITIZED-NOT-REPUBLISHABLE.html",
+  "sanitized_html_sha256": "30da9535f5d280b4041ca46891ed160ae8b935b7aaa965956e0caa15f7f00228",
   "sanitized_is_exact_submitted_file": false,
   "repository_category": {
     "category": "Health",
@@ -32,6 +32,12 @@
   "evidence": [
     "history/initial-publication/publication-receipt.json",
     "width-correction/repair-receipt.json",
-    "width-correction/independent-live-width-review.json"
-  ]
+    "width-correction/independent-live-width-review.json",
+    "prose-ending-revision/independent-sentence-review.json",
+    "prose-ending-revision/save-receipt.json"
+  ],
+  "saved_normalized_native_sha256": "163476f5f9c6daf97c6d4a3b5b1e4116026089e7f9c50ce0fe68f791d28fe8b8",
+  "source_readback_utc": "2026-10-28T03:24:00Z",
+  "latest_revision_scope": "three specified sentence endings only",
+  "latest_revision_receipt": "prose-ending-revision/save-receipt.json"
 }

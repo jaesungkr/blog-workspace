@@ -13,5 +13,6 @@
   "exact_submitted_html_available": false,
   "publication_confirmed": true,
   "exact_1280_qa": "not performed; current-post exception approved 2026-10-28T02:49:13Z",
-  "submitted_fragment_sha256": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504"
+  "submitted_fragment_sha256": "c6589d8b2bdac37f04be2cc9eb10ff16d38764fb2ab51adc02d8b101d6192e53",
+  "saved_normalized_native_sha256": "163476f5f9c6daf97c6d4a3b5b1e4116026089e7f9c50ce0fe68f791d28fe8b8"
 }

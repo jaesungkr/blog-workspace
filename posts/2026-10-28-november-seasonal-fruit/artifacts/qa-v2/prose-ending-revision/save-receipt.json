@@ -1,0 +1,36 @@
+{
+  "status": "saved_and_live_verified",
+  "post_id": 157,
+  "all_other_text_unchanged_ignoring_serialization_whitespace": true,
+  "all_13_links_unchanged": true,
+  "native_widthContent_count": 3,
+  "live_image_widths": [
+    800,
+    800,
+    800
+  ],
+  "title_unchanged": true,
+  "category_id": 847700,
+  "original_publication_time": "2026-10-28 11:49 KST",
+  "submitted_native_sha256": "c6589d8b2bdac37f04be2cc9eb10ff16d38764fb2ab51adc02d8b101d6192e53",
+  "saved_normalized_native_sha256": "163476f5f9c6daf97c6d4a3b5b1e4116026089e7f9c50ce0fe68f791d28fe8b8",
+  "verified_utc": "2026-10-28T03:22:43Z",
+  "source_readback_utc": "2026-10-28T03:24:00Z",
+  "note": "Editor indentation and closing-tag normalization accounted for; persisted native source read back without further save.",
+  "changes": [
+    {
+      "before": "사과와 단감도 한창 눈에 들어오는 때고요.",
+      "after": "사과와 단감도 한창 눈에 들어오는 계절입니다."
+    },
+    {
+      "before": "품종 고유의 색과 고른 외관도 함께 살펴보면 좋고요.",
+      "after": "품종 고유의 색과 고른 외관도 함께 살펴보면 좋겠습니다."
+    },
+    {
+      "before": "먹기 좋게 말랑해지면 그때 냉장고로 옮겨 두면 되고요.",
+      "after": "먹기 좋게 말랑해지면 그때 냉장고로 옮겨 주세요."
+    }
+  ],
+  "evidence_source": "Parent browser publisher safe receipt; raw signed source retained only in parent local environment",
+  "review_scope": "three sentence endings and preservation checks only; no new whole-page QA pass"
+}

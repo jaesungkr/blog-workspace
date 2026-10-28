@@ -85,3 +85,14 @@
 - blog.py check: 오류0, 경고0.
 - published strict v2 checker: revision_required 9건. tistory_url3/native embed3/remote-media/final-page/current final-pass 누락. 사용자 요구로 signed 원본을 Git에 넣지 않으며 별도 redacted 증거를 canonical 완전PASS로 위조하지 않음.
 - 본문·사진 무결성 및 번들 signed-query scan PASS. 실제 게시상태와 검수 한계를 함께 보관.
+
+## 사용자 요청 문장 끝맺음 수정 준비
+- 사용자 Sentinel_dcec2ad0400c81918718beb715033b14의 말투 개선 요청. 부모 지정3문장만 변경. 내용·링크·이미지·캡션·제목·카테고리·published URL 유지.
+- source-pass.json을 prose-ending-revision/historical-source-pass-before-prose-edit.json으로 이동하여 이전원고 검수를 새원고에 적용하지 않음.
+- 실제브라우저 저장영수증/새제출해시 대기. 이전시각검수는 역사기록. commit/push 보류.
+
+## 세 문장 수정 실제 저장 확인
+- 부모 안전 영수증: 저장 및 라이브확인03:22:43UTC, 추가저장 없는 native원문 readback03:24:00UTC.
+- 제출SHA256 c6589d8b2bdac37f04be2cc9eb10ff16d38764fb2ab51adc02d8b101d6192e53; 저장정규화readbackSHA256 163476f5f9c6daf97c6d4a3b5b1e4116026089e7f9c50ce0fe68f791d28fe8b8. 들여쓰기/닫는태그 정규화 차이이며 추가문구변경 없음.
+- 링크13개·제목·카테고리847700·11:49발행시각 유지. native widthContent3개 및 라이브사진800px3개 유지.
+- 기존 비식별HTML에서 같은3문장만 바꾼 최신 파생본 보존. 최초/폭수정 역사패키지 불변. 새전체시각검수나 전체source-pass로 표시하지 않음.

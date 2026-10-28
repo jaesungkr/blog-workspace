@@ -1,0 +1,23 @@
+{
+  "derived_from": "../width-correction/corrected-body-SANITIZED-NOT-REPUBLISHABLE.html",
+  "before_sha256": "76e289b3ab11042d964f1ae30dd804b7a639991e0beca5129af7f1cf62ece875",
+  "sanitized_sha256": "30da9535f5d280b4041ca46891ed160ae8b935b7aaa965956e0caa15f7f00228",
+  "changes": [
+    {
+      "before": "사과와 단감도 한창 눈에 들어오는 때고요.",
+      "after": "사과와 단감도 한창 눈에 들어오는 계절입니다."
+    },
+    {
+      "before": "품종 고유의 색과 고른 외관도 함께 살펴보면 좋고요.",
+      "after": "품종 고유의 색과 고른 외관도 함께 살펴보면 좋겠습니다."
+    },
+    {
+      "before": "먹기 좋게 말랑해지면 그때 냉장고로 옮겨 두면 되고요.",
+      "after": "먹기 좋게 말랑해지면 그때 냉장고로 옮겨 주세요."
+    }
+  ],
+  "exact_submitted_bytes": false,
+  "exact_saved_readback_bytes": false,
+  "republishable": false,
+  "note": "Only the three requested sentences were replaced in the existing sanitized HTML; historical packages and their hashes remain untouched."
+}

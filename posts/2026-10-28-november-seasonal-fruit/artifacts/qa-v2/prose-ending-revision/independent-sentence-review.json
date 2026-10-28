@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "result": "pass",
+  "checked_by": "approved_source_review",
+  "checked_at": "2026-10-28T03:21:08.227621+00:00",
+  "baseline_git_commit": "547a535f16c5e54efbccf849ae8aab7eb5c4173f",
+  "request_message_id": "Sentinel_dcec2ad0400c81918718beb715033b14",
+  "scope": "Independent verification of exactly three authorized sentence replacements in article.md and editable delivery manuscript; not a full source pass or visual/page/publication approval.",
+  "files": [
+    {
+      "path": "article.md",
+      "before_sha256": "457ffc3bbb90623fd03eec3703c4849f44879e8f21ab2d005c28710962c6b9ea",
+      "after_sha256": "43e7f622174c256127b421fb24320e561865161f27611f7d96c2b9d719a9388f",
+      "exact_requested_replacements_only": true
+    },
+    {
+      "path": "delivery/november-seasonal-fruit-article.md",
+      "before_sha256": "a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e",
+      "after_sha256": "c41d612acda6c09141fb7c321a6d3b1b2c6f42fd2bb5c0e5a24a0e8f9c179628",
+      "exact_requested_replacements_only": true
+    }
+  ],
+  "metadata_unchanged": true,
+  "links_unchanged": true,
+  "other_prose_unchanged": true,
+  "published_status_retained": true,
+  "media": [
+    {
+      "path": "media.json",
+      "sha256": "9f333e8eadf0d25402f231998be490f4a24dabb41d69429891339f5d49575600",
+      "unchanged_from_head": true
+    },
+    {
+      "path": "assets/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "unchanged_from_head": true
+    },
+    {
+      "path": "assets/01-satsuma.jpg",
+      "sha256": "6520fe95f681976776f7d0d00f26f441314fdfef92b612bcc0f896bdbe798994",
+      "unchanged_from_head": true
+    },
+    {
+      "path": "assets/02-fuji-apples.jpg",
+      "sha256": "1a85380e57268185680487d2857f4be73b23afe67af70da57f47c7e6779c8a48",
+      "unchanged_from_head": true
+    },
+    {
+      "path": "assets/03-fuyu-persimmon.jpg",
+      "sha256": "f1cb81276b388bd921224b30b87030afee83c1c605de376364da9edb8834307c",
+      "unchanged_from_head": true
+    }
+  ],
+  "historical_source_pass_not_applied_to_revised_source": true,
+  "publication_revision_status": "awaiting browser save receipt and actual submitted hash",
+  "visual_qa": "not performed in this review"
+}
