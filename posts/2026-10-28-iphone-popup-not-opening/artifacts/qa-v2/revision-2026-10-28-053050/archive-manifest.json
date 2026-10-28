@@ -1,0 +1,47 @@
+[
+  {
+    "file": "README.txt",
+    "bytes": 875,
+    "sha256": "e3e53118b2e0d72ed2b57449eabf59c54038cbcc5e0f0bd5c62179cf1e35a83e"
+  },
+  {
+    "file": "article.md",
+    "bytes": 2607,
+    "sha256": "f2a57f0b918ae7d90f5a9c1a78f49aaf67a6a51f17768d5142960e70062214fb"
+  },
+  {
+    "file": "independent-narrow-review-redacted.json",
+    "bytes": 1207,
+    "sha256": "88519252f379a0f43d22ea1b59efb3d13db3166323f4ad48ab26b20c9b6b30c3"
+  },
+  {
+    "file": "minimal-diff-check.json",
+    "bytes": 191,
+    "sha256": "89227e1f7c79668827324b506ed4d2288afd907a85cd43ea7c0eff5c8b33eb87"
+  },
+  {
+    "file": "narrow-text.diff",
+    "bytes": 2396,
+    "sha256": "54b246da5c0336c054c3e0c6321ff89ae8c662170f378e8c771e52d815ebff78"
+  },
+  {
+    "file": "native-payload-sanitized.html",
+    "bytes": 3758,
+    "sha256": "b75bc5fa0c030bebabb85581ed0a1397f3fdb65a8859d066c0925c0f074a8e4b"
+  },
+  {
+    "file": "public-readback-text.txt",
+    "bytes": 2213,
+    "sha256": "3db0afdc2d0ddda3f82527ca97cf0ae2374c2a5496eb046149c013f1d53bcc63"
+  },
+  {
+    "file": "revision-receipt-redacted.json",
+    "bytes": 1899,
+    "sha256": "dcd537dcfd9c8c9adf68b034c2fcdc64a9c54af8d654508837763203292adcd1"
+  },
+  {
+    "file": "revision-source-manifest.json",
+    "bytes": 1500,
+    "sha256": "b773c3f49c82430ceecd8eec97ffaec671765b5dd94f9616438be2cb42e55fc1"
+  }
+]

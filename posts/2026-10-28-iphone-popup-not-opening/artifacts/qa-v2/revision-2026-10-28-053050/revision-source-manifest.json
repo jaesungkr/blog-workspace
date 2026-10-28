@@ -1,0 +1,35 @@
+{
+  "approved_markdown_sha256": "2c6e56d6822061f5e4057b89679a95a801b90e2dadf6aec054a87b621b415617",
+  "portable_markdown_sha256": "f2a57f0b918ae7d90f5a9c1a78f49aaf67a6a51f17768d5142960e70062214fb",
+  "markdown_transformation": "Only private Library image URL replaced by existing local image path.",
+  "raw_native_sha256": "9a29ea7d8542447e9025a799f88723a20f2c280772738ee1e56304ae62f0fdc9",
+  "raw_native_bytes": 4061,
+  "raw_native_archived": false,
+  "native_transformation": "One native image token replaced with existing local image reference; sanitized copy is not byte-identical or repost-ready.",
+  "prior_archive_commit": "b14bfff8721df14a2f9dff3e20f4de94738f8ac9",
+  "image_unchanged_sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5",
+  "image_bytes_in_delta": false,
+  "browser_screenshots_in_delta": false,
+  "preview_evidence_hashes": [
+    {
+      "file": "pc1280-intro.png",
+      "sha256": "3dc1e17d7e35582861d8910ffd4f21728a7d6fbebd1d13fa29d0c73f48ad0040",
+      "bytes": 85638
+    },
+    {
+      "file": "pc1280-sections.png",
+      "sha256": "bfd987529a1f8f432b098a9950361f51b791ad911bc23278585f014bcbd5d906",
+      "bytes": 92813
+    },
+    {
+      "file": "mobile360-intro.png",
+      "sha256": "74fbcbd3de9144c5d090475e3c1c044b134b837af4dbcc21508ca1fff3668c20",
+      "bytes": 71664
+    },
+    {
+      "file": "mobile360-sections.png",
+      "sha256": "93e9ab86fd01ac8531e5d6b88e97fb3db6d4d70f23d794be6e56819594bf65e4",
+      "bytes": 79893
+    }
+  ]
+}

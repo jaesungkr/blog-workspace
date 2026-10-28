@@ -1,0 +1,30 @@
+{
+  "status": "published_revision_confirmed",
+  "post_id": 159,
+  "title": "아이폰 팝업창이 안 열릴 때",
+  "public_url": "https://dop3n.tistory.com/entry/%EC%95%84%EC%9D%B4%ED%8F%B0-%ED%8C%9D%EC%97%85%EC%B0%BD%EC%9D%B4-%EC%95%88-%EC%97%B4%EB%A6%B4-%EB%95%8C",
+  "save_click_utc": "2026-10-28T05:30:50Z",
+  "confirmed_utc": "2026-10-28T05:31:26Z",
+  "save_clicks": 1,
+  "published_display_kst_unchanged": "2026-10-28 14:06",
+  "category_unchanged": "생활·기록 > 생활정보·비교",
+  "visibility": "public",
+  "scope": "Four paragraphs only: general popup opening problem before ticket example; conditional ticket queue caution; trusted site rather than booking site; final troubleshooting generalized. Prior choice explanation and author preference preserved.",
+  "exact_editor_sha256": "9a29ea7d8542447e9025a799f88723a20f2c280772738ee1e56304ae62f0fdc9",
+  "exact_editor_chars": 2779,
+  "copy_verification": "Actual CodeMirror copied with clipboard sentinel; exact match to prepared minimal-diff HTML.",
+  "image_style_and_prior_prose_unchanged": true,
+  "independent_narrow_review": "independent-narrow-review-redacted.json",
+  "independent_pass_received_utc": "2026-10-28T05:30:45Z",
+  "preview_evidence": [
+    "pc1280-intro.png",
+    "pc1280-sections.png",
+    "mobile360-intro.png",
+    "mobile360-sections.png"
+  ],
+  "old_full_visual_qa_not_relabelled": true,
+  "readback": "Save returned to management with post159 and old14:06 time. Opened observed public URL once and read actual article text; four changed paragraphs and previous author/choice text confirmed. Full AX header confirmed14:06 unchanged.",
+  "no_global_skin_or_other_post_changes": true,
+  "private_backup_warning": "Native private HTML includes signed image reference; exclude raw files from Git. Sanitized archive is not exact-byte repost backup.",
+  "public_readback_text": "public-readback-text.txt"
+}

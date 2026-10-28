@@ -1,0 +1,24 @@
+{
+  "zip_bytes": 9705,
+  "zip_sha256": "8feb11ff423b25d0e13da184cf6d2d965e9f394e3644d7db833fe78dba3b1681",
+  "manifest": "PASS all 9 entries",
+  "approved_prose_equivalence": "PASS",
+  "changed_paragraph_count": 4,
+  "frontmatter_and_image": "unchanged",
+  "historical_evidence": "unchanged; no new full light/dark QA claim",
+  "private_reference_scan": "PASS",
+  "strict_v2_check": "revision_required; existing archive limitations",
+  "strict_errors": [
+    "ERROR: safari-popup-setting: missing tistory_url for paste-ready output",
+    "ERROR: safari-popup-setting: browser publication requires tistory_embed",
+    "ERROR: missing artifacts/qa-v2/remote-media.json",
+    "ERROR: missing artifacts/qa-v2/source-pass.json",
+    "ERROR: missing artifacts/qa-v2/final-page.json for paste-ready output",
+    "ERROR: paste-ready output requires a current final-page pass"
+  ],
+  "whitespace_note": "Two producer diff header trailing spaces retained to preserve manifest hashes.",
+  "basic_bundle_check": {
+    "errors": 0,
+    "warnings": 0
+  }
+}
