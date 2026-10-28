@@ -1,0 +1,8 @@
+rich-post-v2: revision_required
+media 1 · directives 1
+ERROR: safari-popup-setting: missing tistory_url for paste-ready output
+ERROR: safari-popup-setting: browser publication requires tistory_embed
+ERROR: missing artifacts/qa-v2/remote-media.json
+ERROR: missing artifacts/qa-v2/source-pass.json
+ERROR: missing artifacts/qa-v2/final-page.json for paste-ready output
+ERROR: paste-ready output requires a current final-page pass

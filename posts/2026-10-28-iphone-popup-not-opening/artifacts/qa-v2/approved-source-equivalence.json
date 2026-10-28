@@ -1,0 +1,5 @@
+{
+  "result": "PASS",
+  "comparison": "Reverse only frontmatter, H2/H3 and media directive transformation; body equals portable approved Markdown exactly",
+  "portable_sha256": "26d84081723f1a732304dd88a69bc34bc37be53e760af91be1bb9dd338918039"
+}

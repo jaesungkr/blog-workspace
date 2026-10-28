@@ -1,0 +1,116 @@
+{
+  "status": "PASS independent source, native preview prose/link/alt, and full visual review",
+  "title": "아이폰 팝업창이 안 열릴 때",
+  "md_sha256": "d89c3ea89efa703cf0aa190758b10f784fecf43007cb756438be14098005f357",
+  "preview_dom_sha256": "2f8ca5fc689988580b9cf94b45da9b5186f0409c8c58625436074802a7de19c4",
+  "prepared_native_sha256": "abc801ce695d2216d4d155bbbc9600ebe63299d1939270eccf99bd46a891e687",
+  "prose": "HTMLParser extracted iphone-popup-guide wrapper text, normalized whitespace and compared with Markdown minus title/formatting/image; exact match including caption.",
+  "official_links": [
+    "https://support.apple.com/ko-kr/105082",
+    "https://support.apple.com/ko-kr/102524",
+    "https://support.apple.com/ko-kr/guide/iphone/-iphb01fc3c85/ios"
+  ],
+  "actual_native_alt": "Safari 일반 설정의 팝업 차단 스위치가 회색 OFF인 실제 화면",
+  "pc": "1280 CSS innerWidth, client=scroll1261; body/image800px, native942px. P margin16px/line28.8px, H2top48px.",
+  "mobile": "360 CSS innerWidth, client=scroll341; body/image309.2578125px; no overflow.",
+  "visual": "Individually inspected19 supplied screenshots covering entire title/body/image/caption in PC1280/mobile360 light/dark. Gray OFF UI matches explanation, legible, no improper enlargement or clipping. Initial coverage gaps resolved by pc1280-light-image, pc1280-dark-sections3, mobile360-dark-image2, mobile360-light-sections3.",
+  "remote_asset_receipt": {
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 43813,
+    "sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5",
+    "dimensions": [
+      942,
+      708
+    ],
+    "pixel_equal": true,
+    "source_sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5"
+  },
+  "screenshots": {
+    "mobile360-dark-bottom.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-image.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-image2.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-middle.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-top.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-bottom.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-middle.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-sections.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-sections3.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-top.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-bottom.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-middle.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-sections.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-sections2.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-sections3.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-top.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-bottom.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-image.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-middle.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-top.png": [
+      1844,
+      1183
+    ]
+  },
+  "limitations": [
+    "Review is independent read-only inspection of publisher-provided native DOM/metrics/screenshots, not separate browser control.",
+    "1280/360 are CSS preview widths; full screenshots include editor chrome.",
+    "No publish action performed by reviewer. Publisher must verify saved public post."
+  ]
+}

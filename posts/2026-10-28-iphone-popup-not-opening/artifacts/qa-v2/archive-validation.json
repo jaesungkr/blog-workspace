@@ -1,0 +1,22 @@
+{
+  "transport_zip_bytes": 53028,
+  "transport_zip_sha256": "688fe1ab46de341353807e4c08488b99122cf20f2ed6742350076d57eaeb43df",
+  "input_manifest_hashes": "PASS all 14 entries",
+  "screenshot_pixels": "consumer inspected: gray OFF switch; no personal information visible",
+  "strict_v2_gate": "NOT CLAIMED; raw signed native attachment and canonical release evidence omitted",
+  "publication": "confirmed by supplied publisher receipt; no republish",
+  "browser_qa_bytes": "not provided; hash inventory and independent review retained",
+  "basic_bundle_check": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "strict_v2_check": "revision_required",
+  "strict_errors": [
+    "ERROR: safari-popup-setting: missing tistory_url for paste-ready output",
+    "ERROR: safari-popup-setting: browser publication requires tistory_embed",
+    "ERROR: missing artifacts/qa-v2/remote-media.json",
+    "ERROR: missing artifacts/qa-v2/source-pass.json",
+    "ERROR: missing artifacts/qa-v2/final-page.json for paste-ready output",
+    "ERROR: paste-ready output requires a current final-page pass"
+  ]
+}

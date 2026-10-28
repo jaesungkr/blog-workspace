@@ -1,0 +1,29 @@
+{
+  "article_title": "아이폰 팝업창이 안 열릴 때",
+  "approved_markdown_sha256": "d89c3ea89efa703cf0aa190758b10f784fecf43007cb756438be14098005f357",
+  "portable_markdown_sha256": "26d84081723f1a732304dd88a69bc34bc37be53e760af91be1bb9dd338918039",
+  "markdown_transformation": "Only private Library image URL replaced with local safari-popup-setting.png path. Prose unchanged.",
+  "image": {
+    "file": "safari-popup-setting.png",
+    "sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5",
+    "dimensions": [
+      942,
+      708
+    ],
+    "source": "User-provided real iPhone Safari settings screenshot",
+    "crop_box_in_original": [
+      0,
+      1290,
+      942,
+      1998
+    ],
+    "transformation": "Crop only, no synthetic content or changed switch state",
+    "privacy": "Crop visually inspected: no name, contact, account or payment information",
+    "observed_state": "Block Pop-ups toggle gray, OFF"
+  },
+  "official_sources": [
+    "https://support.apple.com/ko-kr/105082",
+    "https://support.apple.com/ko-kr/102524",
+    "https://support.apple.com/ko-kr/guide/iphone/-iphb01fc3c85/ios"
+  ]
+}

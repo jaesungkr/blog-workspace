@@ -1,0 +1,31 @@
+{
+  "status": "published",
+  "title": "아이폰 팝업창이 안 열릴 때",
+  "post_id": 159,
+  "public_url": "https://dop3n.tistory.com/entry/%EC%95%84%EC%9D%B4%ED%8F%B0-%ED%8C%9D%EC%97%85%EC%B0%BD%EC%9D%B4-%EC%95%88-%EC%97%B4%EB%A6%B4-%EB%95%8C",
+  "published_display_kst": "2026-10-28 14:06",
+  "save_click_utc": "2026-10-28T05:06:54Z",
+  "confirmed_utc": "2026-10-28T05:07:17Z",
+  "category": "생활·기록 > 생활정보·비교",
+  "category_id": 847699,
+  "home_topic": "생활정보",
+  "visibility": "public",
+  "representative": "safari-popup-setting.png",
+  "save_clicks": 1,
+  "editor_exact_sha256": "abc801ce695d2216d4d155bbbc9600ebe63299d1939270eccf99bd46a891e687",
+  "editor_exact_chars": 2639,
+  "editor_copy_verification": "Clipboard replaced with sentinel; actual CodeMirror selection copied; exact output matched prepared native HTML, not sentinel.",
+  "preview_profiles": [
+    "PC 1280 light",
+    "PC 1280 dark",
+    "mobile 360 light",
+    "mobile 360 dark"
+  ],
+  "independent_pass_received_utc": "2026-10-28T05:06:33Z",
+  "remote_image_byte_validation": "remote-byte-validation-redacted.json",
+  "article_image_count": 1,
+  "official_link_count": 3,
+  "scope": "Only this new article; no other posts or global skin changed.",
+  "confirmation": "Publish save returned to management; new post159 and public link observed; public link opened once to confirm title/visibility. No additional post-publication visual inspection or repair.",
+  "publication_backup_note": "Exact native HTML contains signed media references; keep private. Sanitized archive copies must not claim exact-byte or repost-ready status."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS source gate only",
+  "reviewed_utc": "2026-10-28T04:57:00Z",
+  "title": "아이폰 팝업창이 안 열릴 때",
+  "md_sha256": "d89c3ea89efa703cf0aa190758b10f784fecf43007cb756438be14098005f357",
+  "sources": [
+    {
+      "url": "https://support.apple.com/ko-kr/105082",
+      "verified": "Settings > Apps > Safari; removing website data removes stored login information. Read lines43-57."
+    },
+    {
+      "url": "https://support.apple.com/ko-kr/102524",
+      "verified": "Settings > Apps > Safari; Block Pop-ups toggle; popup phishing risks. Read lines32-43."
+    },
+    {
+      "url": "https://support.apple.com/ko-kr/guide/iphone/-iphb01fc3c85/ios",
+      "verified": "Separate cross-site tracking prevention and fraudulent website warning functions. Read lines1222-1233."
+    }
+  ],
+  "scope": "First substantive paragraph limits topic to Safari popup-blocking as one possible cause, not all app/browser problems; no cure promise. Queue caution, temporarily allow trusted required popups, and re-enable afterward are author safety recommendations rather than claimed Apple quotes.",
+  "image": "User-provided942x708 cropped settings screenshot independently visually inspected. Gray switch knob at left=OFF, matches caption/body. No personal account/name/contact/notification visible.",
+  "copyright_review": "Minimal functional UI crop supplied by user plus original explanatory prose, no reproduced full Apple article or long quotation. No apparent editorial reuse concern identified; not a legal rights clearance guarantee.",
+  "limitations": "This is independently browsed source and image review, not final Tistory visual or publication verification. Pending publisher evidence."
+}

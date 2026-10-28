@@ -1,0 +1,87 @@
+{
+  "browser_screenshots_in_archive": false,
+  "reason": "Text QA and hashes only; browser screenshots retained locally, not Library deliverables.",
+  "final_evidence": [
+    {
+      "filename": "pc1280-light-top.png",
+      "bytes": 74785,
+      "sha256": "f0643e52f9655055c467b392dd2ff3f74f18a03414df388657acf9e749cb9b93"
+    },
+    {
+      "filename": "pc1280-light-middle.png",
+      "bytes": 87558,
+      "sha256": "d97c8c85bd30a5031e7528c8e6b6b9ca64201ec98defaf00b1f69b4aa23bd89b"
+    },
+    {
+      "filename": "pc1280-light-bottom.png",
+      "bytes": 64964,
+      "sha256": "689241c2fb444abdec7e9d8c56a860f970a5ba6ea8e27cf4a1c603967a4ea408"
+    },
+    {
+      "filename": "pc1280-dark-top.png",
+      "bytes": 79036,
+      "sha256": "cb2c05dce377775f6b0a950969a912330ca551b06b1c813e4389d160d1ac561c"
+    },
+    {
+      "filename": "pc1280-dark-middle.png",
+      "bytes": 69875,
+      "sha256": "91746e0c90f10dc80735fd20e602be8723ce2d1c2901b0cbf10eb67a473c50e3"
+    },
+    {
+      "filename": "pc1280-dark-bottom.png",
+      "bytes": 70421,
+      "sha256": "0a5dce315bbb285a1b958e8444f12d47930f42ba96db9d52848b44c49881a237"
+    },
+    {
+      "filename": "mobile360-light-top.png",
+      "bytes": 68452,
+      "sha256": "9bcea9bfba01869d699c2583417c420748822693473fb3390d247c05b040e06c"
+    },
+    {
+      "filename": "mobile360-light-middle.png",
+      "bytes": 68874,
+      "sha256": "c855ec6028ddd2e3fe96366241328bd2ca68f031d3d1150fa526d797a4b71ca1"
+    },
+    {
+      "filename": "mobile360-light-bottom.png",
+      "bytes": 52306,
+      "sha256": "0d297af43f6d72ef2a8e90de11009d6b773b270544984e175880b029d70bc141"
+    },
+    {
+      "filename": "mobile360-dark-top.png",
+      "bytes": 70693,
+      "sha256": "d8167f77ada69e56087a65e645c53e11effc142bdcd569b15c9ac953fa787372"
+    },
+    {
+      "filename": "mobile360-dark-middle.png",
+      "bytes": 77600,
+      "sha256": "308f4d0159583cf2e7395303c63918580738e00876dde7bccb6fe1537bcf22ca"
+    },
+    {
+      "filename": "mobile360-dark-bottom.png",
+      "bytes": 55129,
+      "sha256": "cdcaecc89ab38e284ff44345b1456b992aa8f174fef9f9de0a566fc58683dc0c"
+    },
+    {
+      "filename": "pc1280-light-image.png",
+      "bytes": 63392,
+      "sha256": "5dfa206797501799865a6256940dc3ef8ce3d72d6925989f88021667087544bc"
+    },
+    {
+      "filename": "pc1280-dark-sections3.png",
+      "bytes": 96479,
+      "sha256": "2f3d00f4eaa394ff682a2678b9426939081444117284af194c10f1566a3e9cc6"
+    },
+    {
+      "filename": "mobile360-dark-image2.png",
+      "bytes": 73183,
+      "sha256": "214043bda23ad9d769d5ea3aa8e4614bb93f83f984b96a9ea74f590499d03edf"
+    },
+    {
+      "filename": "mobile360-light-sections3.png",
+      "bytes": 75541,
+      "sha256": "be934dc137b5d4975d520e65dd0a2cbd883097399bc60469ea7e9e2310a803b4"
+    }
+  ],
+  "review_note": "Reviewer report includes 20 screenshot entries (its visual prose says 19); final coverage set is 12 basic plus 4 final supplemental captures, confirmed by publisher. No screenshot bytes included."
+}

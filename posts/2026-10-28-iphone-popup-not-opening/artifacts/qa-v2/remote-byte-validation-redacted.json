@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "content_type": "image/png",
+  "bytes": 43813,
+  "sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5",
+  "dimensions": [
+    942,
+    708
+  ],
+  "pixel_equal": true,
+  "source_sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5"
+}

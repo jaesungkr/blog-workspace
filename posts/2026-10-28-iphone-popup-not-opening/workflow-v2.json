@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Safari 예매 새 창이 열리지 않는 아이폰 사용자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Published archive only. User-provided OFF-state screenshot clarifies setting; no new capture, generated hero or infographic. Historical source/native preview reviews retained; canonical strict gates not reconstructed.",
+  "publication_mode": "codex-browser"
+}

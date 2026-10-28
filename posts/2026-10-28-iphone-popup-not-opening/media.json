@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "lead_id": "safari-popup-setting",
+  "items": [
+    {
+      "id": "safari-popup-setting",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "lead",
+      "status": "validated",
+      "claim_ids": [
+        "C2"
+      ],
+      "alt": "Safari 일반 설정의 팝업 차단 항목. 스위치가 회색으로 꺼져 있다.",
+      "caption": "실제 설정 화면의 ‘일반’ 영역. 팝업 차단이 꺼져 있어 이미 팝업을 허용한 상태입니다.",
+      "placement": "Safari 설정으로 이동 절의 설정 설명 직후",
+      "rights": "User-provided screenshot crop for this article; Apple interface shown for explanation.",
+      "publish_path": "assets/safari-popup-setting.png",
+      "sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5",
+      "width": 942,
+      "height": 708,
+      "processing": [
+        "Producer crop only; consumer pixels unchanged"
+      ],
+      "redactions": []
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "path": "README.txt",
+    "bytes": 1065,
+    "sha256": "4f45952d5512c828edcd63ce3b69e5abeb5a67e646914ec3659a13892b7c326d"
+  },
+  {
+    "path": "article.md",
+    "bytes": 2312,
+    "sha256": "26d84081723f1a732304dd88a69bc34bc37be53e760af91be1bb9dd338918039"
+  },
+  {
+    "path": "browser-qa-hash-inventory.json",
+    "bytes": 3009,
+    "sha256": "af48dbc2147be36deb45c238ca7a7a7f4413e0d6f63824062b5ed43cbe6ea486"
+  },
+  {
+    "path": "independent-preview-review-redacted.json",
+    "bytes": 3413,
+    "sha256": "c448c0ff1fd91bb1de6f7103b8df9789077c1d944c4bf129b281c0a90e617f24"
+  },
+  {
+    "path": "independent-source-review.json",
+    "bytes": 1715,
+    "sha256": "54a49dbe0df4743bcf8298c15f5acda4eeac742a866464d50a2f18929f65557b"
+  },
+  {
+    "path": "mobile360-metrics.json",
+    "bytes": 188,
+    "sha256": "54a4e0c470640433a346b673a18e941ba651cffc4c848deccb905e78bf4dcf45"
+  },
+  {
+    "path": "native-payload-sanitized.html",
+    "bytes": 3484,
+    "sha256": "8d100d02c990b9cb09b31f8e8b4a11aca91403be5eeb5aed2deea7ee7cb18614"
+  },
+  {
+    "path": "native-preview-article-sanitized.html",
+    "bytes": 1612,
+    "sha256": "53b63ecc5bc5f537596926e5277342819ccd0827482cdb3da7d9cd36e8652ff5"
+  },
+  {
+    "path": "observed-native-source-hashes.json",
+    "bytes": 337,
+    "sha256": "1e0acc1b76def86305564c72ef8fbc89546f8b09b15d01bed20c9a5c0caa9538"
+  },
+  {
+    "path": "pc1280-initial-metrics.json",
+    "bytes": 3551,
+    "sha256": "6ab4ada8b5577d59359a995b83ff7d5117018e7f9ef36c1a33ce6b535d649877"
+  },
+  {
+    "path": "publication-receipt-redacted.json",
+    "bytes": 1639,
+    "sha256": "c45e485ab0f8317ae11c368508f8719228587c9771582699c16c00cd40da1c99"
+  },
+  {
+    "path": "remote-byte-validation-redacted.json",
+    "bytes": 298,
+    "sha256": "5533b279d9530212dd44a98c0cdc0ebfe75a7277c680e78ef7455869f461713b"
+  },
+  {
+    "path": "safari-popup-setting.png",
+    "bytes": 43813,
+    "sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5"
+  },
+  {
+    "path": "source-manifest.json",
+    "bytes": 1146,
+    "sha256": "d68fa3a556558007fe112dc0c5553009b0e191fd1485120e574d6052a0268304"
+  }
+]
