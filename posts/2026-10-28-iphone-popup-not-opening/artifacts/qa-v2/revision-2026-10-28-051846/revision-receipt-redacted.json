@@ -1,0 +1,28 @@
+{
+  "status": "published_revision_confirmed",
+  "post_id": 159,
+  "title": "아이폰 팝업창이 안 열릴 때",
+  "public_url": "https://dop3n.tistory.com/entry/%EC%95%84%EC%9D%B4%ED%8F%B0-%ED%8C%9D%EC%97%85%EC%B0%BD%EC%9D%B4-%EC%95%88-%EC%97%B4%EB%A6%B4-%EB%95%8C",
+  "save_click_utc": "2026-10-28T05:18:46Z",
+  "confirmed_utc": "2026-10-28T05:18:54Z",
+  "save_clicks": 1,
+  "published_display_kst_unchanged": "2026-10-28 14:06",
+  "category_unchanged": "생활·기록 > 생활정보·비교",
+  "visibility": "public",
+  "scope": "Sections 2 and 3 only; explanation of popup protection, optional re-enabling, author keeps popups allowed; remove contradictory temporarily-only wording.",
+  "exact_editor_sha256": "25d27147436c6d934258d6d552775c51fabe6347366a1cecf561be7142c2c799",
+  "exact_editor_chars": 2777,
+  "copy_verification": "Actual CodeMirror copied with clipboard sentinel; exact match to prepared minimal-diff HTML.",
+  "image_style_and_prior_prose_unchanged": true,
+  "independent_narrow_review": "independent-narrow-review-redacted.json",
+  "independent_pass_received_utc": "2026-10-28T05:18:41Z",
+  "preview_evidence": [
+    "pc1280-last-section.png",
+    "mobile360-section2.png",
+    "mobile360-section3.png"
+  ],
+  "old_full_visual_qa_not_relabelled": true,
+  "readback": "Save returned to same public entry URL/post159. Original time and new section2/3 text observed in actual public DOM.",
+  "no_global_skin_or_other_post_changes": true,
+  "private_backup_warning": "Native private HTML includes signed image reference; exclude raw files from Git. Sanitized archive is not exact-byte repost backup."
+}

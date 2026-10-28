@@ -11,3 +11,7 @@ C2: assets/safari-popup-setting.png는 사용자 제공 실제 화면의 crop이
 | ID | 근거 | 범위 |
 |---|---|---|
 | C2 | 사용자 제공 실제 Safari 설정 crop | 팝업 차단 OFF 위치 식별 |
+
+## 게시 후 좁은 수정: 2026-10-28 05:18:46 UTC
+
+현재 원고는 2·3절의 팝업 차단 목적, 재활성화 선택 사항, 사용자 본인의 팝업 허용 사용 진술을 반영합니다. 새 승인 원고·실제 저장 영수증·narrow source/PC1280/mobile360 검토는 artifacts/qa-v2/revision-2026-10-28-051846/에 보관합니다. 기존 source 및 전체 light/dark 검토와 원본 exact hash는 최초 게시 이력이며 새 문장의 전체 QA로 재사용하지 않습니다. 새 exact private native SHA256은 25d27147436c6d934258d6d552775c51fabe6347366a1cecf561be7142c2c799입니다. 서명 HTML과 브라우저 QA 이미지 바이트는 여전히 미포함이고 sanitized HTML은 재게시용이 아닙니다. URL, 게시 시각, 이미지 및 1절은 그대로입니다.

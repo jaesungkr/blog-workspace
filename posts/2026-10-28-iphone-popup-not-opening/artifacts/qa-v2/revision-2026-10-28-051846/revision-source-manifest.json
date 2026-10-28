@@ -1,0 +1,30 @@
+{
+  "approved_markdown_sha256": "0ad66d2f3173aeebdcda687f6eaa457317a484b755aa10f1ac7a1affbaabc9ba",
+  "portable_markdown_sha256": "083b1b86b32e2c6b7c7049b945e72d386579e61367d143e1b484d215119e58c4",
+  "markdown_transformation": "Only private Library image URL replaced by existing local image path.",
+  "raw_native_sha256": "25d27147436c6d934258d6d552775c51fabe6347366a1cecf561be7142c2c799",
+  "raw_native_bytes": 4051,
+  "raw_native_archived": false,
+  "native_transformation": "One native image token replaced with existing local image reference; sanitized copy is not byte-identical or repost-ready.",
+  "prior_archive_commit": "ed0b6fcf212fc2405a8406c29044e8e90911541b",
+  "image_unchanged_sha256": "da200e526b7615ee6e6941ba7d180a8978b6e95e7eefade6911844511d6c95b5",
+  "image_bytes_in_delta": false,
+  "browser_screenshots_in_delta": false,
+  "preview_evidence_hashes": [
+    {
+      "file": "pc1280-last-section.png",
+      "sha256": "5af43c4b48b30ecc4b61df8c0251c7d214596d1a61f6fd340379c3a855dbfb44",
+      "bytes": 96001
+    },
+    {
+      "file": "mobile360-section2.png",
+      "sha256": "5b42d924ae2a5caecf9946114fc1490233ba81a1024804e8d2c69dfd96f54547",
+      "bytes": 68201
+    },
+    {
+      "file": "mobile360-section3.png",
+      "sha256": "d586dc66fe79bd0eb288a1391d7226912fa7df2e4202db327691d99fb0738d3c",
+      "bytes": 83101
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS narrow revision source/minimum-diff and preview review",
+  "source": "Apple https://support.apple.com/ko-kr/102524 re-read: popup ads/unwanted windows and phishing risk supported; no default-value assertion. User supplied first-person preference preserved.",
+  "consistency": "Section2 temporary-only wording removed to align with optional re-enabling in section3; separate security controls still left unchanged.",
+  "before_section2_byte_equal": true,
+  "image_token_unchanged": true,
+  "styles_unchanged": true,
+  "after_sha256": "25d27147436c6d934258d6d552775c51fabe6347366a1cecf561be7142c2c799",
+  "visual": "Inspected pc1280-last-section.png and mobile360-section2.png/mobile360-section3.png: changed sections readable, spacing preserved, no visible horizontal overflow. Mobile final pre-existing paragraph reaches viewport edge but all changed text fully inspected.",
+  "links": "Original3 Apple link instances retained, one102524 source link added:4 link instances/3 uniqueURLs.",
+  "scope": "Only2/3section text replaced as shown by actual before/after native diff. Original full QA remains historical and unmodified. No edit/publish performed by reviewer; post-save verification belongs to publisher."
+}
