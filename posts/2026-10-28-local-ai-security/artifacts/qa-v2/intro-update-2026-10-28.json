@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "scope": "introduction only",
+  "status": "live_update_confirmed",
+  "user_request_message_id": "Sentinel_bc9f7569870c8191ac5b179c3e303a10",
+  "user_reaffirmation_message_id": "Sentinel_8a09f8ff476c81918c999fc51f96e93b",
+  "user_reaffirmation": "응 좋아",
+  "post_id": 156,
+  "updated_at_utc": "2026-10-28T00:26:28.743Z",
+  "original_publication_time_preserved": "2026-10-28 00:13 KST",
+  "parent_browser_receipt": {
+    "same_post_and_url": true,
+    "no_new_images": true,
+    "native_html_outside_intro_byte_identical": true,
+    "live_intro_normalized_text_exact": true,
+    "preview_widths": [
+      1280,
+      360
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "mobile_intro_client_width": 313,
+    "mobile_intro_scroll_width": 313,
+    "toc_and_enlargement": "not retested; original exception retained"
+  },
+  "submitted_native_html_sha256": "090ca2e5ce50dc1a9439e526bb62f201a49a72a466c39672b923ceb51d5fd38b",
+  "raw_native_html_archived_in_git": false,
+  "local_verification": {
+    "old_article_sha256": "84939124f7f49e83bed01b730b55857cc53b92fb59f012d2021534ddb073a9f5",
+    "new_article_sha256": "f2b4e8cb7185c8692a4939c41e00ea6901e340d8f8a9e72864d24d8830ad9fb4",
+    "new_intro_sha256": "6d9ea02b26005657a5b21717f073ff3ce44b8c978f2bff5b3df0626b3b649907",
+    "unchanged_section_suffix_sha256": "7d6268f8c10e8fe902637cf30360408ab35bc0f8d1b943a3de686dd0f9c6b6c8",
+    "metadata_unchanged": true,
+    "all_content_from_first_section_unchanged": true,
+    "image_sha256": {
+      "supporting.png": "67813333f7cd36205a726e11dd2046ea53ffadc785de8f7d1ca92b8f6eb829c6",
+      "hero.png": "f97ac0fd4ad677387804ceaca9f29e67fcae1bf2f65ced944b1d31138953fbc5"
+    },
+    "standard_check_exit_code": 0,
+    "standard_check_output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  "source_review_status": "Previous source pass is historical and does not cover new introduction bytes. Scoped preservation and standard checks performed; no new independent full-source or strict-page pass claimed.",
+  "historical_source_receipt": "artifacts/qa-v2/history/source-pass-original-publication.json",
+  "historical_publication_records": "Original publication-result, exact-submitted-fragment-reference, approved-source and original check artifacts remain unchanged and describe original publication."
+}
