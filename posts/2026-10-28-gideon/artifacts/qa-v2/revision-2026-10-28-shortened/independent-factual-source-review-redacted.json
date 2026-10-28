@@ -1,0 +1,48 @@
+{
+  "report_type": "independent_factual_source_review",
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-28T10:04:51Z",
+  "reviewer": "research_gideon_character",
+  "markdown_path": "output/gideon-character/shortened-review/기드온-축약-검토본.md",
+  "markdown_sha256": "9e73a0b23fa4c20ae01f9a395e5f98d2d8ec7511f1140526de678bdfc05ff8eb",
+  "historical_note": "Earlier PASS reported at 09:33 UTC for this same SHA. This report is a new full-text reread and hash verification, not a backdated record.",
+  "scope": [
+    "Chronology and causal claims preserved under shortening",
+    "Threshing/winepress, angel greeting and question, fearful night action, repeated fleece confirmation",
+    "32000 to 10000 to 300; another soldier's dream; divine agency in Judges 7:22",
+    "Ephod worship and snare retained; physical form unspecified; no unqualified success story",
+    "Two previously source-verified 쉬운성경 excerpts match exactly; 15 Korean space-delimited words total",
+    "Both images labeled later depictions; Korean GODpia chapter links retained"
+  ],
+  "sources": [
+    "https://www.biblegateway.com/passage/?search=Judges%206-8&version=NIV",
+    "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=6",
+    "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=7",
+    "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=8"
+  ],
+  "translation": {
+    "name": "쉬운성경",
+    "publisher": "㈜아가페출판사",
+    "provider": "GODpia"
+  },
+  "quotations": [
+    {
+      "reference": "Judges 6:13 excerpt",
+      "text": "여호와께서 우리와 함께 계시다면, 왜 이토록 많은 괴로움을 겪어야 합니까?"
+    },
+    {
+      "reference": "Judges 7:15 excerpt",
+      "text": "하나님께 감사드리고 이스라엘의 진으로 돌아왔습니다."
+    }
+  ],
+  "quoted_word_count": 15,
+  "browser_render_verified_by_this_report": false,
+  "native_payload_parity_verified_by_this_report": false,
+  "live_publication_verified_by_this_report": false,
+  "limitations": [
+    "Source/content review only; no live page, browser layout, native parity or publication-state assertions.",
+    "Artwork later-depiction labels checked; artwork provenance and license not independently re-investigated.",
+    "Provider licensed-display notice is not a blanket third-party republication license."
+  ],
+  "private_user_material_included": false
+}

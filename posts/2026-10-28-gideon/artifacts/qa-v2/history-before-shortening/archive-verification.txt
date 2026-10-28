@@ -1,0 +1,2 @@
+PASS archive integrity: 24 manifest entries, 25 package files, body parity, footer-only deletion after historical path normalization, 5 links/sections, 15 quoted words, 2 unchanged assets, 42 historical screenshot inventory entries.
+NOT CHECKED: absent screenshot pixels, private native bytes, canonical strict gates, fresh live page or new factual-source investigation.

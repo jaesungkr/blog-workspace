@@ -1,0 +1,21 @@
+{
+  "archive_bytes": 1127915,
+  "archive_sha256": "1f1306a17088ef2fed3f2560221b2dd44b7af258137273dc2e41afa054553141",
+  "transport": "Authorized Git blob, decoded once",
+  "git_blob": "fab109a61a6849310aac33b0ed180f206d7092bb",
+  "package_files": 25,
+  "manifest_entries_verified": 24,
+  "manifest_coverage_complete": true,
+  "portable_markdown_sha256": "b62793d8fef6b8e8df940da103003108afc65527b49090e008392fa99562ea29",
+  "original_markdown_sha256_reported": "16c0b623d1bd6c30f04b51fba5377d10b1f31a75d2e1688a672015430e25e523",
+  "footer_only_deletion_verified": true,
+  "historical_path_normalization": "../images/ to images/ for two artwork destinations",
+  "remaining_godpia_links": 5,
+  "sections": 5,
+  "quote_words": 15,
+  "artworks_pixels_inspected": true,
+  "artworks_bytes_unchanged": true,
+  "screenshot_bytes_available": false,
+  "strict_gate_pass": false,
+  "live_actions_performed": false
+}

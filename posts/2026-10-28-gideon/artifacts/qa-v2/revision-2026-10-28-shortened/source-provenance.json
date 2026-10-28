@@ -1,0 +1,43 @@
+{
+  "prior_repo_commit": "85efbb6aca591f97a095e19310d6660a0cb5f68d",
+  "prior_approved_markdown_sha256": "16c0b623d1bd6c30f04b51fba5377d10b1f31a75d2e1688a672015430e25e523",
+  "current_approved_markdown_sha256": "9e73a0b23fa4c20ae01f9a395e5f98d2d8ec7511f1140526de678bdfc05ff8eb",
+  "portable_markdown_sha256": "40730b5aaaa3de64421c12ff8f7b52c4b372496016e2a8901bd8d2cc06e472ba",
+  "markdown_transformation": "Only two public remote artwork image destinations replaced with existing local images paths.",
+  "representative_image": "images/gideon-and-angel-bol.jpg",
+  "image_bytes_in_delta": false,
+  "browser_qa_screenshot_bytes_in_delta": false,
+  "images_unchanged": [
+    {
+      "file": "gideon-and-angel-bol.jpg",
+      "sha256": "fb75f31bc4caf97b4763234956984ba0436fcd16f411173534cee650d1677add"
+    },
+    {
+      "file": "gideon-wringing-fleece-1873.jpg",
+      "sha256": "237c4a52f699f5a1d0401a5cf29f30b9ccede88b7037e8d6195d49ecdf72b3ab"
+    }
+  ],
+  "private_native_observed": {
+    "before-native-private.txt": {
+      "bytes": 12932,
+      "sha256": "18faa86870965084a1d47977c2075e6df42fb06b5645d2e46efede4772eb66e1",
+      "raw_archived": false
+    },
+    "exact-native-private.txt": {
+      "bytes": 8911,
+      "sha256": "dc133accde5617048b7b4bedb626fa6994061ebf42a1dfea900a0794f15fda48",
+      "raw_archived": false
+    },
+    "preview-dom-private.html": {
+      "bytes": 8334,
+      "sha256": "1b033b37941264171ef5c5394367ff466759bcfb984e4ad3d87ee21e6a6d61cd",
+      "raw_archived": false
+    },
+    "live-readback-private.json": {
+      "bytes": 15399,
+      "sha256": "ca2167d901e683947c44fd5dbc5115096b9f2398e00638dacf195bb8d0b56691",
+      "raw_archived": false
+    }
+  },
+  "native_transformation": "Actual final native HTML parsed and image src references replaced with original local images. Attribute serialization changed. NOT exact-byte or repost-ready."
+}

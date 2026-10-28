@@ -1,0 +1,9 @@
+[ERROR] posts/2026-10-28-gideon/article.md: 본문 소제목은 `###`를 사용하세요: 1. 숨어 있던 자리에서 나온 질문
+[ERROR] posts/2026-10-28-gideon/article.md: 본문 소제목은 `###`를 사용하세요: 2. 두려워서 밤에 한 일
+[ERROR] posts/2026-10-28-gideon/article.md: 본문 소제목은 `###`를 사용하세요: 3. 양털로 거듭 확인하다
+[ERROR] posts/2026-10-28-gideon/article.md: 소제목이 `~다`로 끝납니다: 3. 양털로 거듭 확인하다
+[ERROR] posts/2026-10-28-gideon/article.md: 본문 소제목은 `###`를 사용하세요: 4. 군사는 300명만 남았다
+[ERROR] posts/2026-10-28-gideon/article.md: 소제목이 `~다`로 끝납니다: 4. 군사는 300명만 남았다
+[ERROR] posts/2026-10-28-gideon/article.md: 본문 소제목은 `###`를 사용하세요: 5. 승리 뒤에 남은 문제
+[ERROR] posts/2026-10-28-gideon/article.md: em dash(`—`) 대신 하이픈을 사용하세요.
+검사 완료: 1개 글, 오류 8개, 경고 0개

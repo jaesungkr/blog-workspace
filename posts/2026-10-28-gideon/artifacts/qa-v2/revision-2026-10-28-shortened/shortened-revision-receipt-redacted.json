@@ -1,0 +1,31 @@
+{
+  "postId": 160,
+  "title": "확신이 없었던 기드온",
+  "url": "https://dop3n.tistory.com/entry/확신이-없었던-기드온",
+  "revision": "Approved shortened manuscript applied",
+  "savedAtUTC": "2026-10-28T10:03:17Z",
+  "saveClickCount": 1,
+  "originalPublicationTimeKST": "2026-10-28 16:21",
+  "categoryId": 848725,
+  "representativeImage": "gideon-and-angel-bol.jpg",
+  "sourceMD": "shortened-review/기드온-축약-검토본.md",
+  "sourceSha256": "9e73a0b23fa4c20ae01f9a395e5f98d2d8ec7511f1140526de678bdfc05ff8eb",
+  "exactNativeSha256": "dc133accde5617048b7b4bedb626fa6994061ebf42a1dfea900a0794f15fda48",
+  "beforeNativeSha256": "18faa86870965084a1d47977c2075e6df42fb06b5645d2e46efede4772eb66e1",
+  "liveNormalizedTextExact": true,
+  "godpiaLinks": 5,
+  "commonsLinks": 2,
+  "sections": 5,
+  "images": 2,
+  "footerAbsent": true,
+  "independentReview": "independent-shortened-review-redacted.json",
+  "qaInventory": "qa-screenshot-inventory-redacted.json",
+  "qaScreenshotCount": 30,
+  "newImageUploads": 0,
+  "otherPostsOrGlobalStyleChanged": false,
+  "postPublicationFullVisualQA": false,
+  "notes": [
+    "Exact native and live readback files are private-only because image URLs may contain signed credentials.",
+    "Preview date was current simulation time; save dialog and live time confirmed original16:21 retained."
+  ]
+}

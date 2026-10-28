@@ -1,10 +1,9 @@
 {
-  "transforms": [
-    "Add repository frontmatter",
-    "Remove duplicate portable H1; preserve title in frontmatter",
-    "Change two image paths from images/ to assets/"
-  ],
+  "source": "revision-2026-10-28-shortened/article.md",
   "body_equal_after_inverse_transform": true,
-  "source_sha256": "b62793d8fef6b8e8df940da103003108afc65527b49090e008392fa99562ea29",
-  "archive_article_sha256": "50ad7479b52d221cc193b488ef54c2b93b706955365fb02b30a5998fd1314c87"
+  "transform": [
+    "frontmatter",
+    "remove duplicate H1",
+    "two assets paths"
+  ]
 }

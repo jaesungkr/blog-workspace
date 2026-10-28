@@ -5,16 +5,13 @@ import json
 import re
 from html.parser import HTMLParser
 p = Path(__file__).resolve().parents[2]
-s = p / 'artifacts/approved-source'
+s = p / 'artifacts/qa-v2/revision-2026-10-28-shortened'
 entries = json.loads((s / 'archive-manifest.json').read_text())
 for e in entries:
     b = (s / e['path']).read_bytes()
     assert len(b) == e['bytes'] and sha256(b).hexdigest() == e['sha256'], e['path']
 assert {e['path'] for e in entries} == {str(f.relative_to(s)) for f in s.rglob('*') if f.is_file()} - {'archive-manifest.json'}
 md = (s / 'article.md').read_text()
-old = (s / 'initial-publication-history/article.md').read_text().replace('](../images/', '](images/')
-removed = [line for line in old.splitlines(keepends=True) if line.startswith('본문 읽기:')]
-assert len(removed) == 1 and old.replace(removed[0], '') == md
 body = (p / 'article.md').read_text().split('---\n', 2)[2].lstrip('\n')
 assert body.replace('](assets/', '](images/') == md.split('\n\n', 1)[1]
 assert md.count('\n## ') == 5 and md.count('https://www.godpia.com/') == 5
@@ -30,11 +27,18 @@ class Counts(HTMLParser):
 c = Counts(); html = (s / 'native-payload-sanitized.html').read_text(); c.feed(html)
 assert (c.h2, c.images, c.godpia) == (5, 2, 5)
 assert '본문 읽기:' not in html
-for a in json.loads((s / 'images/manifest.json').read_text())['images']:
-    assert (p / 'assets' / a['file']).read_bytes() == (s / 'images' / a['file']).read_bytes()
+prov = json.loads((s / 'source-provenance.json').read_text())
+for a in prov['images_unchanged']:
+    assert sha256((p / 'assets' / a['file']).read_bytes()).hexdigest() == a['sha256']
 inv = json.loads((s / 'qa-screenshot-inventory-redacted.json').read_text())
-report = json.loads((s / 'independent-preview-review-redacted.json').read_text())
-assert len(inv) == 42 and {x['file'] for x in inv} == set(report['screenshots'])
+report = json.loads((s / 'independent-shortened-review-redacted.json').read_text())
+assert len(inv) == 30 and {x['file'] for x in inv} == {x['file'] for x in report['screenshots']}
 assert all(re.fullmatch(r'[a-f0-9]{64}', x['sha256']) for x in inv)
-print('PASS archive integrity: 24 manifest entries, 25 package files, body parity, footer-only deletion after historical path normalization, 5 links/sections, 15 quoted words, 2 unchanged assets, 42 historical screenshot inventory entries.')
-print('NOT CHECKED: absent screenshot pixels, private native bytes, canonical strict gates, fresh live page or new factual-source investigation.')
+assert md.count('https://commons.wikimedia.org/') == 2
+receipt = json.loads((s / 'shortened-revision-receipt-redacted.json').read_text())
+assert receipt['sourceSha256'] == prov['current_approved_markdown_sha256'] == report['md_sha256']
+assert receipt['exactNativeSha256'] == report['prepared_sha256']
+assert receipt['originalPublicationTimeKST'] == '2026-10-28 16:21'
+assert '본문 읽기:' not in md
+print('PASS: 9 manifest entries / 10 delta files; current shortened body parity; 5 sections / 5 GODpia / 2 Commons links; 15 quoted words; two unchanged image hashes; 30 current screenshot inventory entries; matching source/native provenance across reports.')
+print('NOT CHECKED: absent screenshot pixels/private native bytes/canonical strict gates, producer body-word counting method, fresh live page or new factual-source investigation.')

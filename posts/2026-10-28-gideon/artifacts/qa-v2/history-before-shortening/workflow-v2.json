@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "성경을 처음 접하며 기드온을 알아가는 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Published archive only; two public-domain historical illustrations, no generated media or new publication. Preserve historical reviews separately from latest footer-only deletion. Private native and canonical gate evidence unavailable; no strict PASS claimed.",
+  "publication_mode": "codex-browser"
+}

@@ -22,3 +22,11 @@ media origin `user_supplied`는 전달 패키지에서 받은 파일이라는 �
 | --- | --- | --- |
 | ART1 | 볼의 기드온과 천사, 원본 images/manifest.json | 후대 예술적 묘사 |
 | ART2 | 1873년 양털 삽화, 원본 images/manifest.json | 작가 미상, 후대 예술적 묘사 |
+
+## 현재 승인 축약본 (2026-10-28 10:03:17 UTC 저장)
+
+위의 25개 파일·footer-only·42장 검토 설명은 이전 전체 원고의 역사적 증거입니다. 현재 원본 패키지는 artifacts/qa-v2/revision-2026-10-28-shortened/이며 10개 파일과 manifest 9개 항목을 검증했습니다. 현재 factual PASS, 전체 native preview 30장 검토, 저장·정규화 live text 일치 영수증을 각각 구분하여 보관합니다. 이 소비자가 새 성경 조사나 live 검사, 부재한 스크린샷 픽셀 검사를 수행한 것은 아닙니다.
+
+현재 승인 MD SHA-256: 9e73a0b23fa4c20ae01f9a395e5f98d2d8ec7511f1140526de678bdfc05ff8eb. portable MD SHA-256: 40730b5aaaa3de64421c12ff8f7b52c4b372496016e2a8901bd8d2cc06e472ba. 이미지 경로만 바뀌었으며 저장소 article.md는 frontmatter·중복 H1 제거·assets 경로 변환만 더합니다. 다섯째 절은 승인본대로 사사기 8:22~28을 가리킵니다. 이미지·권리 원본 manifest와 EXIF 방향은 이전 패키지에 그대로 보존합니다.
+
+831→485 본문 단어 및 약 41.6% 감소는 생산자 고정 집계에 따른 전달 수치입니다. 해당 집계 구현은 이 delta에 없으므로 소비자 재계산 PASS로 표시하지 않습니다.
