@@ -1,0 +1,27 @@
+{
+  "file": "yes24-faq-question-thumbnail.png",
+  "source_url": "https://www.yes24.com/Mall/Help/Faq?faqquery=%uC608%uB9E4%20%uB0B4%uC5ED%uC774%20%uC5C6%uC5B4%uC694",
+  "source_category_url": "https://www.yes24.com/Mall/Help/FAQ?faqGb=38&faqSubGb=YG2",
+  "captured_at_utc": "2026-10-28T03:50:09.985Z",
+  "raw_dimensions": [
+    1157,
+    742
+  ],
+  "crop_box": [
+    325,
+    275,
+    885,
+    585
+  ],
+  "dimensions": [
+    560,
+    310
+  ],
+  "title": "[티켓 결제]결제 완료 메시지를 받았는데 예매 내역이 없어요.",
+  "caption": "예스24 공식 FAQ에서 해당 증상 질문을 검색한 실제 화면. 답변은 펼치지 않았다.",
+  "action": "공식 FAQ에서 예매 내역이 없어요 검색; 방해 팝업 닫기; 실제 화면 캡처 후 직사각형 크롭만 적용.",
+  "editing": "Crop only. No compositing, generated pixels, UI reconstruction, or added text.",
+  "rights": "YES24 copyrighted interface; limited contextual screenshot. Not a free-stock photo.",
+  "sha256": "e4377b97f15a449b73b9506e4b425e4420871bdc6a7764f575a59dbbea3332a0",
+  "raw_capture_archived": false
+}

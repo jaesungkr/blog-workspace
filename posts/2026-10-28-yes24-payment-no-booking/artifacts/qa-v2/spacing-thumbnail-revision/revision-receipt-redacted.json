@@ -1,0 +1,35 @@
+{
+  "post_id": 158,
+  "saved_utc": "2026-10-28T03:55:53Z",
+  "publication_time_unchanged": "2026-10-28T12:44:25+09:00",
+  "scope": "article-only spacing CSS plus representative image replacement",
+  "css_only_body_diff": true,
+  "raw_editor_sha256": "a87f565cafd53d96cf4e7cc310e80447b31b06aa0e7da25e1945057a5e65266d",
+  "prepared_payload_sha256": "f8d5f19827f4de5641996b4e9cb4e969e7ebd3b5885f04353d6823ab234cbdc2",
+  "trim_normalized_equal": true,
+  "representative": "yes24-faq-question-thumbnail.png",
+  "live_og_and_twitter_new_asset_match": true,
+  "body_images_unchanged": 3,
+  "official_links_unchanged": 4,
+  "before": {
+    "paragraph_margin_bottom_px": 0,
+    "paragraph_line_height_px": 32,
+    "h2_margin_top_px": 20,
+    "figure_margin_bottom_px": 20
+  },
+  "after": {
+    "paragraph_margin_bottom_px": 16,
+    "paragraph_line_height_px": 28.8,
+    "h2_margin_top_px": 48,
+    "figure_margin_bottom_px": 8
+  },
+  "preview": "PC1280 and mobile360 measured no horizontal overflow; scoped CSS only; light theme spot visual",
+  "live": "fresh save redirect public page computed styles and visual inspected",
+  "evidence": [
+    "after-live-metrics.json",
+    "after-live-sections.jpg",
+    "pc1280-metrics-final.json",
+    "mobile360-metrics-final.json",
+    "added.css"
+  ]
+}

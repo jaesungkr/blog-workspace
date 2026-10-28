@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "reviewer": "/root/research_ticketing_troubleshooting_topics",
+  "reviewed_at": "2026-10-28T03:27:00Z",
+  "provenance": "Parent relayed independent reviewer result; not a newly executed independent review by consuming agent",
+  "approved_md_sha256": "cd32e7a7e6da860f72866080cc41c2d91581485737b32a4bf478aedefb8e79a1",
+  "zip_sha256": "c68d43c45227beb6f6b5b2bbf269d084d7248c42920f60b541dcc892e317458d",
+  "blob_sha": "ac81d4b811f933716ee75305a08d16a46a105f1a",
+  "scope": [
+    "source facts",
+    "official FAQ conditions",
+    "three linked public UI screenshots"
+  ],
+  "excluded": [
+    "responsive render QA"
+  ],
+  "adapter_changes": [
+    "frontmatter added",
+    "title stored in frontmatter",
+    "H2 to H3",
+    "Markdown image links to v2 directives",
+    "non-public HTML comments removed"
+  ],
+  "public_prose_changed": false,
+  "consumer_images_hashes_and_dimensions_verified": true
+}

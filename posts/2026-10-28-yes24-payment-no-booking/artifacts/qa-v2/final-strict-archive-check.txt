@@ -1,0 +1,11 @@
+rich-post-v2: revision_required
+media 3 · directives 3
+ERROR: booking-menu: missing tistory_url for paste-ready output
+ERROR: booking-menu: browser publication requires tistory_embed
+ERROR: ticket-contact: missing tistory_url for paste-ready output
+ERROR: ticket-contact: browser publication requires tistory_embed
+ERROR: inquiry-entry: missing tistory_url for paste-ready output
+ERROR: inquiry-entry: browser publication requires tistory_embed
+ERROR: missing artifacts/qa-v2/remote-media.json
+ERROR: missing artifacts/qa-v2/final-page.json for paste-ready output
+ERROR: paste-ready output requires a current final-page pass

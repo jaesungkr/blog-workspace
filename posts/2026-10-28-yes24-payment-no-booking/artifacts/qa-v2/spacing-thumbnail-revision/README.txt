@@ -1,0 +1,5 @@
+Post 158 saved revision: paragraph/section spacing and representative image replacement.
+
+This incremental archive supersedes initial styling and representative-image state only; preserve the initial publication QA as historical evidence. The revised HTML is a sanitized derivative of the actual prepared native payload: all three native Tistory image tokens replaced with local approved-image references. It is not a byte-identical raw original. Original hashes and the terminal-newline editor parity are separately recorded. Original three source PNGs remain in the approved source package. No signed URLs, native image tokens, raw editor, raw image metadata, save-dialog code screen or raw FAQ capture is included.
+
+Evidence: publisher supplied saved receipt, live computed metrics, live public-page sections screenshot, PC1280/mobile360 preview metrics. New thumbnail is a crop-only public YES24 FAQ question row, not a full answer. Post-revision dark-theme testing was not claimed; prior 12 light/dark preview screenshots describe the initial publication.

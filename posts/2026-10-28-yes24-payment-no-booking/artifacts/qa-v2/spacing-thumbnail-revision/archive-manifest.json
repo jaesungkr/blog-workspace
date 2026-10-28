@@ -1,0 +1,57 @@
+[
+  {
+    "path": "README.txt",
+    "bytes": 1061,
+    "sha256": "d9e311203654e89e1737a3296657de101d3e0d1a9b09f83a84a3256a289fbe17"
+  },
+  {
+    "path": "added.css",
+    "bytes": 371,
+    "sha256": "4c79b16d7e7bef07c89ee4f5c10575cbfafc9020390cd8f0642933574ca9e9d5"
+  },
+  {
+    "path": "after-live-metrics.json",
+    "bytes": 2692,
+    "sha256": "a094a34f9ec795ed61e342557b80f7de3a9d7eeb3eb187e91ad6ebb969ffd19a"
+  },
+  {
+    "path": "after-live-sections.jpg",
+    "bytes": 99686,
+    "sha256": "a70e586a327ee43f5fe1761c8787013a5b5bf99623b11dc975020b3710015bab"
+  },
+  {
+    "path": "mobile360-metrics-final.json",
+    "bytes": 2327,
+    "sha256": "7d29642a40b94b625d5ac09ecfecb43bf8fde31f7deca1e5c0992a237cd92438"
+  },
+  {
+    "path": "observed-source-hashes.json",
+    "bytes": 396,
+    "sha256": "78ffd09eec492ecbc21fb78d592ee1e8068bb5ffdd3ffee40329803516034330"
+  },
+  {
+    "path": "pc1280-metrics-final.json",
+    "bytes": 2334,
+    "sha256": "c3c0f979117d4f9b3b6d5b8a005264988fccaf00c2fdc1e8145971cc1c7eb00f"
+  },
+  {
+    "path": "revised-native-payload-sanitized.html",
+    "bytes": 4086,
+    "sha256": "803b0044b7e38489ebfb52eeb351e3cffa9e2c3740568b39da518042a62069a7"
+  },
+  {
+    "path": "revision-receipt-redacted.json",
+    "bytes": 1284,
+    "sha256": "b567eb66288aba4c826daa18cbe7270fff3db59f688c16696d29d1c66c20ac1a"
+  },
+  {
+    "path": "thumbnail-manifest.json",
+    "bytes": 1115,
+    "sha256": "582dc37476b3a861f06fa6056723cea2b62f0f0776251014654dbb948849cbb0"
+  },
+  {
+    "path": "yes24-faq-question-thumbnail.png",
+    "bytes": 40174,
+    "sha256": "e4377b97f15a449b73b9506e4b425e4420871bdc6a7764f575a59dbbea3332a0"
+  }
+]

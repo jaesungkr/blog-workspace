@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-10-28",
+  "actor": "Codex",
+  "method": "web.open",
+  "url": "https://www.yes24.com/Mall/Help/FAQ?faqGb=38&faqSubGb=YG2",
+  "target_lines": [
+    486,
+    504
+  ],
+  "result": "Target FAQ text directly observed",
+  "not_performed": [
+    "payment reproduction",
+    "booking account access",
+    "refund timing test",
+    "screenshot inspection"
+  ]
+}

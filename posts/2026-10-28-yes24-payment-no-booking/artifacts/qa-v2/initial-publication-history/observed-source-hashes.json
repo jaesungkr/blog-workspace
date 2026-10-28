@@ -1,0 +1,18 @@
+{
+  "editor-payload-final.html": {
+    "bytes": 4667,
+    "sha256": "190860081a3ef1d9ce417b45918126931ad6929ad330a709af070e31bd4d6bae",
+    "archived_raw": false
+  },
+  "editor-exact-final.html": {
+    "bytes": 4668,
+    "sha256": "b032c9beef07d26d82d639759719b06914d3c044ae664618b80bc4fd11d2e553",
+    "archived_raw": false
+  },
+  "final-preview-dom.html": {
+    "bytes": 9565,
+    "sha256": "2318db0cd0ffaadcfc54cd1906d9da91679f3cdcd7d080287841dedd659d88fe",
+    "archived_raw": false
+  },
+  "editor_parity_verified": "editor-exact-final.html equals editor-payload-final.html plus one terminal newline"
+}

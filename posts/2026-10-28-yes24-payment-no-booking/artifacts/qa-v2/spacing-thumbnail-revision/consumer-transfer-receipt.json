@@ -1,0 +1,11 @@
+{
+  "blob_sha": "d2ea465c01b2ca9253ba6f830383a0700be7ae62",
+  "zip_bytes": 128972,
+  "zip_sha256": "463a62dc98788ed15127e76000fe51f5ca667240c2ade657139c5f23ccdc8dba",
+  "zip_hash_verified": true,
+  "manifest_entries_verified": 11,
+  "thumbnail_hash_verified": true,
+  "consumer_thumbnail_opened": true,
+  "independent_review_pending": false,
+  "archive_ready_for_git": true
+}

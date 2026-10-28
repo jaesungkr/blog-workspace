@@ -1,0 +1,21 @@
+{
+  "status": "published",
+  "postId": 158,
+  "title": "예스24 티켓, 결제됐는데 예매 내역이 없을 때",
+  "publicUrl": "https://dop3n.tistory.com/entry/%EC%98%88%EC%8A%A424-%ED%8B%B0%EC%BC%93-%EA%B2%B0%EC%A0%9C%EB%90%90%EB%8A%94%EB%8D%B0-%EC%98%88%EB%A7%A4-%EB%82%B4%EC%97%AD%EC%9D%B4-%EC%97%86%EC%9D%84-%EB%95%8C",
+  "publishedDisplayTime": "2026-10-28 12:44 KST",
+  "confirmedAtUTC": "2026-10-28T03:45:01.572Z",
+  "visibility": "public",
+  "category": "생활·기록/생활정보·비교",
+  "homeTopic": "생활정보",
+  "representative": "03-ticket-contact.png",
+  "reviewedPayloadSha256": "190860081a3ef1d9ce417b45918126931ad6929ad330a709af070e31bd4d6bae",
+  "exactEditorSha256": "b032c9beef07d26d82d639759719b06914d3c044ae664618b80bc4fd11d2e553",
+  "editorParity": "exact after trim; raw editor has one terminal newline",
+  "publishClickCount": 1,
+  "untouchedPosts": [
+    156,
+    157
+  ],
+  "postPublicationVisualQA": "not performed; not requested"
+}

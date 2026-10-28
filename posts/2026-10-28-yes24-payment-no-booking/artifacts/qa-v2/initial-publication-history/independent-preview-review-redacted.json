@@ -1,0 +1,125 @@
+{
+  "status": "PASS: final native preview source and visual review",
+  "approved_md_sha256": "cd32e7a7e6da860f72866080cc41c2d91581485737b32a4bf478aedefb8e79a1",
+  "final_payload_sha256": "190860081a3ef1d9ce417b45918126931ad6929ad330a709af070e31bd4d6bae",
+  "final_native_preview_dom_sha256": "2318db0cd0ffaadcfc54cd1906d9da91679f3cdcd7d080287841dedd659d88fe",
+  "normalized_prose_matches_approved_md": true,
+  "official_links": [
+    "https://www.yes24.com/Mall/Help/FAQ?faqGb=38&faqSubGb=YG2",
+    "https://ticket.yes24.com/UserGuide/FAQ",
+    "https://ticket.yes24.com/UserGuide/FAQ",
+    "https://ticket.yes24.com/UserGuide/FAQ"
+  ],
+  "actual_native_alt": [
+    "전체 메뉴 하단의 MY티켓과 예매확인/취소 메뉴",
+    "예스24 티켓 고객센터 전화번호와 운영 시간",
+    "예스24 티켓 이용안내의 1:1문의 문의하기 버튼"
+  ],
+  "pc_metrics": {
+    "clientWidth": 1261,
+    "images": [
+      {
+        "alt": "전체 메뉴 하단의 MY티켓과 예매확인/취소 메뉴",
+        "height": 75.99609375,
+        "naturalWidth": 205,
+        "width": 205
+      },
+      {
+        "alt": "예스24 티켓 고객센터 전화번호와 운영 시간",
+        "height": 145,
+        "naturalWidth": 520,
+        "width": 520
+      },
+      {
+        "alt": "예스24 티켓 이용안내의 1:1문의 문의하기 버튼",
+        "height": 51.9921875,
+        "naturalWidth": 180,
+        "width": 180
+      }
+    ],
+    "innerWidth": 1280,
+    "scrollWidth": 1261
+  },
+  "mobile_metrics": {
+    "clientWidth": 341,
+    "images": [
+      {
+        "alt": "전체 메뉴 하단의 MY티켓과 예매확인/취소 메뉴",
+        "height": 75.99609375,
+        "naturalWidth": 205,
+        "width": 205
+      },
+      {
+        "alt": "예스24 티켓 고객센터 전화번호와 운영 시간",
+        "height": 86.23046875,
+        "naturalWidth": 520,
+        "width": 309.2578125
+      },
+      {
+        "alt": "예스24 티켓 이용안내의 1:1문의 문의하기 버튼",
+        "height": 51.9921875,
+        "naturalWidth": 180,
+        "width": 180
+      }
+    ],
+    "innerWidth": 360,
+    "scrollWidth": 341
+  },
+  "visual_review": "All 12 final top/middle/bottom captures individually inspected: PC1280 and mobile360, light and dark. Complete title/body/captions and three UI images readable, no overflow/clipping or full FAQ screenshot. Mobile contact image proportionally reduced. Initial mobile overflow was caught and fixed before final review.",
+  "screenshots": {
+    "final-mobile360-dark-bottom.jpg": [
+      1844,
+      1183
+    ],
+    "final-mobile360-dark-middle.jpg": [
+      1844,
+      1183
+    ],
+    "final-mobile360-dark-top.jpg": [
+      1844,
+      1183
+    ],
+    "final-mobile360-light-bottom.jpg": [
+      1844,
+      1183
+    ],
+    "final-mobile360-light-middle.jpg": [
+      1844,
+      1183
+    ],
+    "final-mobile360-light-top.jpg": [
+      1844,
+      1183
+    ],
+    "final-pc1280-dark-bottom.jpg": [
+      1844,
+      1183
+    ],
+    "final-pc1280-dark-middle.jpg": [
+      1844,
+      1183
+    ],
+    "final-pc1280-dark-top.jpg": [
+      1844,
+      1183
+    ],
+    "final-pc1280-light-bottom.jpg": [
+      1844,
+      1183
+    ],
+    "final-pc1280-light-middle.jpg": [
+      1844,
+      1183
+    ],
+    "final-pc1280-light-top.jpg": [
+      1844,
+      1183
+    ]
+  },
+  "remote_asset_evidence": "remote-byte-validation-redacted.json: three HTTP200 PNGs, exact original SHA256 and pixels, dimensions205x76/520x145/180x52 (parent verified).",
+  "limitations": [
+    "Read-only independent review of publisher-provided native DOM, metrics and screenshots; reviewer did not control publisher tab or click publish.",
+    "1280/360 are native preview CSS innerWidth, not full screenshot width. Browser native zoom80% allowed PC1280; screenshots include surrounding editor chrome.",
+    "Review covers staged preview, not post-publication persistence; publisher must verify saved public post."
+  ]
+}

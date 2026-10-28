@@ -1,0 +1,79 @@
+{
+  "primary_use": [
+    "02-booking-menu-detail.png",
+    "03-ticket-contact.png",
+    "04-inquiry-entry.png"
+  ],
+  "optional": [],
+  "screenshots": [
+    {
+      "file": "02-booking-menu-detail.png",
+      "crop_box": [
+        0,
+        579,
+        205,
+        655
+      ],
+      "url": "https://ticket.yes24.com/UserGuide/FAQ",
+      "captured_at_utc": "2026-10-28T03:09:41Z",
+      "caption_ko": "MY티켓의 예매확인/취소 메뉴.",
+      "reader_question": "내역 확인 메뉴 이름은?",
+      "rights": "YES24 website screenshot. Attribution required.",
+      "pixel_dimensions": [
+        205,
+        76
+      ],
+      "browser": "dot cloud Chrome (cdp)",
+      "public_capture": true,
+      "sha256": "143d9cb38acd864daafb9e5b59de8f1dec5ade95ab5a3e1b3de3611e75d9c4a1"
+    },
+    {
+      "file": "03-ticket-contact.png",
+      "crop_box": [
+        70,
+        370,
+        590,
+        515
+      ],
+      "browser": "dot cloud Chrome (cdp)",
+      "viewport_note": "Captured rendered viewport, no UI reconstruction; screenshot pixel dimensions recorded.",
+      "captured_at_utc": "2026-10-28T03:09:15Z",
+      "url": "https://ticket.yes24.com/UserGuide/FAQ",
+      "action": "공개 이용안내 상단 고객센터 확인",
+      "reader_question": "취소되지 않은 결제는 어디로 문의하나?",
+      "caption_ko": "티켓 고객센터 전화번호와 운영 시간.",
+      "rights": "YES24 website screenshot; copyrighted interface/content. Limited contextual excerpt for explanatory draft, attribution required; not a free stock photo.",
+      "pixel_dimensions": [
+        520,
+        145
+      ],
+      "public_capture": true,
+      "sha256": "fce43e7d1474772a5d2a984334f9891d6f53a722aefd4220593b2ba151b884e9"
+    },
+    {
+      "file": "04-inquiry-entry.png",
+      "crop_box": [
+        765,
+        375,
+        945,
+        427
+      ],
+      "browser": "dot cloud Chrome (cdp)",
+      "viewport_note": "Captured rendered viewport, no UI reconstruction; screenshot pixel dimensions recorded.",
+      "captured_at_utc": "2026-10-28T03:09:15Z",
+      "url": "https://ticket.yes24.com/UserGuide/FAQ",
+      "action": "공개 이용안내의 1:1문의 버튼 확인; 제출하지 않음",
+      "reader_question": "온라인 문의는 어디로 들어가나?",
+      "caption_ko": "이용안내의 1:1 문의 버튼.",
+      "rights": "YES24 website screenshot; copyrighted interface/content. Limited contextual excerpt for explanatory draft, attribution required; not a free stock photo.",
+      "pixel_dimensions": [
+        180,
+        52
+      ],
+      "public_capture": true,
+      "sha256": "6e4a981429701eece5314a5d74a2668dfd054be1601b5920e5f1fe8a6f300ac9"
+    }
+  ],
+  "privacy": "Only public interface crops. No account details, payment details, login screenshots, or form submissions included.",
+  "rights": "YES24 interface screenshots used as limited contextual excerpts, with original source attribution. Not stock images."
+}

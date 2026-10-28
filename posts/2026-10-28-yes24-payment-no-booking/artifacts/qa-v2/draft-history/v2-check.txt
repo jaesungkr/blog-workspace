@@ -1,0 +1,8 @@
+rich-post-v2: revision_required
+media 0 · directives 3
+ERROR: media.json `items` must be a non-empty array
+ERROR: media.json `lead_id` must reference a registered item
+ERROR: exactly one media item must use role `lead` and match lead_id
+ERROR: booking-menu: article directive is not registered
+ERROR: payment-faq: article directive is not registered
+ERROR: contact-route: article directive is not registered

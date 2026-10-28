@@ -1,0 +1,13 @@
+{
+  "editor-exact.html": {
+    "bytes": 5021,
+    "sha256": "a87f565cafd53d96cf4e7cc310e80447b31b06aa0e7da25e1945057a5e65266d",
+    "raw_archived": false
+  },
+  "revised-payload.html": {
+    "bytes": 5020,
+    "sha256": "f8d5f19827f4de5641996b4e9cb4e969e7ebd3b5885f04353d6823ab234cbdc2",
+    "raw_archived": false
+  },
+  "parity": "raw editor equals prepared payload plus one terminal newline"
+}

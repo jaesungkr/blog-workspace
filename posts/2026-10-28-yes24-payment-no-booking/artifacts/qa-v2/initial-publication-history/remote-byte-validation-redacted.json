@@ -1,0 +1,56 @@
+[
+  {
+    "file": "02-booking-menu-detail.png",
+    "http_status": 200,
+    "mime": "image/png",
+    "decoded_format": "PNG",
+    "dimensions": [
+      205,
+      76
+    ],
+    "original_dimensions": [
+      205,
+      76
+    ],
+    "sha256": "143d9cb38acd864daafb9e5b59de8f1dec5ade95ab5a3e1b3de3611e75d9c4a1",
+    "original_sha256": "143d9cb38acd864daafb9e5b59de8f1dec5ade95ab5a3e1b3de3611e75d9c4a1",
+    "pixels_equal": true,
+    "status": "pass"
+  },
+  {
+    "file": "03-ticket-contact.png",
+    "http_status": 200,
+    "mime": "image/png",
+    "decoded_format": "PNG",
+    "dimensions": [
+      520,
+      145
+    ],
+    "original_dimensions": [
+      520,
+      145
+    ],
+    "sha256": "fce43e7d1474772a5d2a984334f9891d6f53a722aefd4220593b2ba151b884e9",
+    "original_sha256": "fce43e7d1474772a5d2a984334f9891d6f53a722aefd4220593b2ba151b884e9",
+    "pixels_equal": true,
+    "status": "pass"
+  },
+  {
+    "file": "04-inquiry-entry.png",
+    "http_status": 200,
+    "mime": "image/png",
+    "decoded_format": "PNG",
+    "dimensions": [
+      180,
+      52
+    ],
+    "original_dimensions": [
+      180,
+      52
+    ],
+    "sha256": "6e4a981429701eece5314a5d74a2668dfd054be1601b5920e5f1fe8a6f300ac9",
+    "original_sha256": "6e4a981429701eece5314a5d74a2668dfd054be1601b5920e5f1fe8a6f300ac9",
+    "pixels_equal": true,
+    "status": "pass"
+  }
+]

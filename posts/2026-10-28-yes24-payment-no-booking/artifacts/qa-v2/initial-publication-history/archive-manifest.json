@@ -1,0 +1,112 @@
+[
+  {
+    "path": "README.txt",
+    "bytes": 985,
+    "sha256": "9e653874585c194b5860563a68bc91efc94bd81fb9cdd0cdb55e6f2e95910635"
+  },
+  {
+    "path": "final-native-payload-sanitized.html",
+    "bytes": 3733,
+    "sha256": "2b0d8b06536199fe19b9963b789012989f303c743351da5e02e8e445539bd1d8"
+  },
+  {
+    "path": "final-preview-dom-sanitized.html",
+    "bytes": 4787,
+    "sha256": "9b15baa89af59183e34882f93b46a878da57b24ba9e46d8f8753342d0bafa0a8"
+  },
+  {
+    "path": "independent-preview-review-redacted.json",
+    "bytes": 3984,
+    "sha256": "e0248622006f2ddfcfe4ebc204151ccecfbfb7179b82991f82c93c77524a0771"
+  },
+  {
+    "path": "mobile360-metrics-final.json",
+    "bytes": 588,
+    "sha256": "6226b89ee899b9d450610b059863536676c02b2224b8e75bec595b38ef70e4c0"
+  },
+  {
+    "path": "observed-source-hashes.json",
+    "bytes": 607,
+    "sha256": "b15d1a75d3b26b5e3ee1746d1f304989f0a7fea6811eee90eba517b0ed74e806"
+  },
+  {
+    "path": "pc1280-metrics-final.json",
+    "bytes": 575,
+    "sha256": "8be784be3981fc15fbcd11675bc372db6906bbad4ed07c0b05980562c021f4f7"
+  },
+  {
+    "path": "publication-receipt-redacted.json",
+    "bytes": 977,
+    "sha256": "082786b35b1927cf7384974a7e38fbddb42dbf168f090bba7c1a668f71bebd2c"
+  },
+  {
+    "path": "remote-byte-validation-redacted.json",
+    "bytes": 1349,
+    "sha256": "3a0fe0359e3fde74b23dc4924f2b782716fa07ce65bb52ce0cac302735f2a9d5"
+  },
+  {
+    "path": "screenshots/final-mobile360-dark-bottom.jpg",
+    "bytes": 74558,
+    "sha256": "abc400c111a507439d2e8fbaca965276b9489551919453e903f69126b8dc5a5a"
+  },
+  {
+    "path": "screenshots/final-mobile360-dark-middle.jpg",
+    "bytes": 83660,
+    "sha256": "c2143bffcb87728cc3179b6de25e069d34538b2999458bd89028687b6beddab7"
+  },
+  {
+    "path": "screenshots/final-mobile360-dark-top.jpg",
+    "bytes": 73022,
+    "sha256": "c397acc412b7ef348b7358679257b0833e34ff3a89d03aca6aa9d2e598ae3da8"
+  },
+  {
+    "path": "screenshots/final-mobile360-light-bottom.jpg",
+    "bytes": 71645,
+    "sha256": "fe642e1e58c3d2c1e2d33bb1873777dec4f88c7a479c913c539db85219baa9ea"
+  },
+  {
+    "path": "screenshots/final-mobile360-light-middle.jpg",
+    "bytes": 82719,
+    "sha256": "2c46372b4f8c94e62c9482e2b3f8709d3d84539bf801723bbea035626d670a84"
+  },
+  {
+    "path": "screenshots/final-mobile360-light-top.jpg",
+    "bytes": 71922,
+    "sha256": "30c9b885095faddd9e0a350341337bb9bfea0049b33acc8e3df0b4323b76fb2f"
+  },
+  {
+    "path": "screenshots/final-pc1280-dark-bottom.jpg",
+    "bytes": 98124,
+    "sha256": "ee91f8d9435c84550d56f63514ff8de7ff531aafd2523ca4a8807caf7631bf6a"
+  },
+  {
+    "path": "screenshots/final-pc1280-dark-middle.jpg",
+    "bytes": 105207,
+    "sha256": "83dec45ed861408d2bf1d7ca0a02d613fef8878833573a07ce99157e2132ba43"
+  },
+  {
+    "path": "screenshots/final-pc1280-dark-top.jpg",
+    "bytes": 99122,
+    "sha256": "d1e447328143d3bfd0547f009121ec9bf70b6433cab0cc2d8a2bce0261b1001a"
+  },
+  {
+    "path": "screenshots/final-pc1280-light-bottom.jpg",
+    "bytes": 92310,
+    "sha256": "16b8cfef938f3bab45406c2961cf8c217848dfabb6185f3e70eacc2c1affdecf"
+  },
+  {
+    "path": "screenshots/final-pc1280-light-middle.jpg",
+    "bytes": 100815,
+    "sha256": "372f4fcec3917f5132ed12ec657201e2f8012c1859d3ab1c359ca7a9fc7d242b"
+  },
+  {
+    "path": "screenshots/final-pc1280-light-top.jpg",
+    "bytes": 94072,
+    "sha256": "8783b52b35d0931027968f5b8300cf75e9bf35e18fe18697fea57244efae1628"
+  },
+  {
+    "path": "source-image-manifest.json",
+    "bytes": 2983,
+    "sha256": "5cb825b486fc7a0147a196d1ec467d27cac39a3c5eec16dbdc416fa60a439ea1"
+  }
+]

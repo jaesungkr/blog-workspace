@@ -1,0 +1,26 @@
+{
+  "checked_date_utc": "2026-10-28",
+  "sources": [
+    {
+      "url": "https://www.yes24.com/Mall/Help/FAQ?faqGb=38&faqSubGb=YG2",
+      "observed_at_utc": "2026-10-28T03:07:31Z",
+      "use": "Official factual source; link and short paraphrase only. Full answer screenshot intentionally excluded.",
+      "supported_points": [
+        "Payment notification alone does not establish a normal reservation if no reservation number exists.",
+        "Payment completed without a booking is described as automatically canceled within 2–3 business days.",
+        "If still not canceled after 3 business days, the booker should check payment approval information and contact ticket support or online inquiry.",
+        "The FAQ does not specify the card issuer’s final refund timing."
+      ]
+    },
+    {
+      "url": "https://ticket.yes24.com/UserGuide/FAQ",
+      "observed_at_utc": [
+        "2026-10-28T03:09:15Z",
+        "2026-10-28T03:09:41Z"
+      ],
+      "use": "Public menu, support phone/hours and inquiry entry screenshots."
+    }
+  ],
+  "editorial_note": "Preparation details for inquiries and contacting support before an imminent performance are practical editorial advice, not promises of expedited cancellation/refund.",
+  "render_status": "Source screenshots visually inspected. Review HTML static checks passed. Local browser render unavailable because Playwright browser executable is not installed."
+}

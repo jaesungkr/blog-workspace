@@ -1,0 +1,427 @@
+[
+  {
+    "path": "article.md",
+    "bytes": 3102,
+    "sha256": "33beee566fea5c4ad0a7dd8f29eb69e3d74533ccc0b3671c23faf4b1d370e87e"
+  },
+  {
+    "path": "artifacts/.gitkeep",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "artifacts/approved-source/README.txt",
+    "bytes": 592,
+    "sha256": "2bc94c4f1d64cbe2f271a3b2f67f12a41aa6b8349da538b655e084efe3429021"
+  },
+  {
+    "path": "artifacts/approved-source/article.md",
+    "bytes": 3263,
+    "sha256": "cd32e7a7e6da860f72866080cc41c2d91581485737b32a4bf478aedefb8e79a1"
+  },
+  {
+    "path": "artifacts/approved-source/evidence.json",
+    "bytes": 1426,
+    "sha256": "9bd48bb3f1ce4a7e53fab3965622cb682338f906ea032008775f85467afc133d"
+  },
+  {
+    "path": "artifacts/approved-source/screenshots/02-booking-menu-detail.png",
+    "bytes": 5558,
+    "sha256": "143d9cb38acd864daafb9e5b59de8f1dec5ade95ab5a3e1b3de3611e75d9c4a1"
+  },
+  {
+    "path": "artifacts/approved-source/screenshots/03-ticket-contact.png",
+    "bytes": 41051,
+    "sha256": "fce43e7d1474772a5d2a984334f9891d6f53a722aefd4220593b2ba151b884e9"
+  },
+  {
+    "path": "artifacts/approved-source/screenshots/04-inquiry-entry.png",
+    "bytes": 9486,
+    "sha256": "6e4a981429701eece5314a5d74a2668dfd054be1601b5920e5f1fe8a6f300ac9"
+  },
+  {
+    "path": "artifacts/approved-source/screenshots/manifest.json",
+    "bytes": 2983,
+    "sha256": "5cb825b486fc7a0147a196d1ec467d27cac39a3c5eec16dbdc416fa60a439ea1"
+  },
+  {
+    "path": "artifacts/approved-source/static-checks.json",
+    "bytes": 608,
+    "sha256": "b9241bde14d85628ae2d801ad13e550ea0ef6dee2519208326fd3dd4b6f5b324"
+  },
+  {
+    "path": "artifacts/qa-v2/approved-preflight/yes24-payment-no-booking-rich-preview.html",
+    "bytes": 15289,
+    "sha256": "85fbae5d046ecb0c5b3c5db9766e9b8459c5573134fcc498409547d23d21639c"
+  },
+  {
+    "path": "artifacts/qa-v2/approved-preflight/yes24-payment-no-booking-tistory-fragment.html",
+    "bytes": 13836,
+    "sha256": "a33e0001b4ca74433e23efffc65b75d94d6ffa969c90e2d586b28c9efcf6f14e"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/article-before-polish.md",
+    "bytes": 2727,
+    "sha256": "b274c898272f78384a268e96a1ca6627845a2af8ed97b821a2f0b52a82728103"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/article.md",
+    "bytes": 2760,
+    "sha256": "b6de446a36bc72b21c4f45ccd821adf085ca4ac26ee726a25125e79fd55ef124"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/audit.md",
+    "bytes": 3549,
+    "sha256": "e4923beb3f6b8790aa9992aa4f7557c55d9864e348d34b5fffdbf82c2dae21b7"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/blog-check.txt",
+    "bytes": 50,
+    "sha256": "6426fdf2162709da2a5434ef7d7ffb0d1a70e6e366176ae5a8b59106a591d374"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/brief.md",
+    "bytes": 2107,
+    "sha256": "789a381bea74fa2021cad6dc12c7fccf93cdda06d90fe73a5b888f9af215f74a"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/capture-plan.md",
+    "bytes": 2173,
+    "sha256": "c6a6e9c51a2651bb8924746bb2b13e2a7761c2aa84df9b5f040c48a823579c29"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/evidence.md",
+    "bytes": 2689,
+    "sha256": "5fbb93d01e8be4c630c9a46e185a38e8771b28fe68b99a75dffd259a0b4aeb09"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/media.json",
+    "bytes": 63,
+    "sha256": "c43aadbe717154a6e664f876b4988f616f44131d59e419ebd6a8996059b2ca2c"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/prose-after.txt",
+    "bytes": 4205,
+    "sha256": "4576f4d75f9243daf6d87e94928a7e21be8e148a03c71dfa139810e23af16bbb"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/prose-before.txt",
+    "bytes": 3998,
+    "sha256": "3e6a1bfdf424371a7451510efca4279c98fe87f052cf9ce4fda95fa544d5868c"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/review.html",
+    "bytes": 4507,
+    "sha256": "a4bf6a4b9479ba9f4f5b84d07b61404e884b4e1a4a1996c1b02b237458edd45d"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/v2-check.txt",
+    "bytes": 409,
+    "sha256": "6454237f887fb870b1fed2a5e9a979bda7b2220234814f478038fa99d0831612"
+  },
+  {
+    "path": "artifacts/qa-v2/draft-history/workflow-v2.json",
+    "bytes": 790,
+    "sha256": "d81c109f79a0b2d44223619f0b0073fbc2030d16f38fb792cbc5f1bcbba5618b"
+  },
+  {
+    "path": "artifacts/qa-v2/final-basic-check.txt",
+    "bytes": 50,
+    "sha256": "6426fdf2162709da2a5434ef7d7ffb0d1a70e6e366176ae5a8b59106a591d374"
+  },
+  {
+    "path": "artifacts/qa-v2/final-strict-archive-check.txt",
+    "bytes": 626,
+    "sha256": "887fa4d48cfa9982286905a5b09daefbd72ded2b8c1aee42bf7929e7b21a0ec6"
+  },
+  {
+    "path": "artifacts/qa-v2/independent-source-review-relay.json",
+    "bytes": 922,
+    "sha256": "385f16dfb645e23e3d2a847e67ad6d20d23730ab45cecbef9ca386cc71e4759e"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/README.txt",
+    "bytes": 985,
+    "sha256": "9e653874585c194b5860563a68bc91efc94bd81fb9cdd0cdb55e6f2e95910635"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/archive-manifest.json",
+    "bytes": 3546,
+    "sha256": "83fc86db0e8d679257ceb7c0a77b323c60546430df4e14d1737b71f335d5ec45"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/consumer-transfer-receipt.json",
+    "bytes": 482,
+    "sha256": "4c970aa32904bec4aa097fea1faf76036e54d8ae946c753a3b2b7255cc10f7ef"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/final-native-payload-sanitized.html",
+    "bytes": 3733,
+    "sha256": "2b0d8b06536199fe19b9963b789012989f303c743351da5e02e8e445539bd1d8"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/final-preview-dom-sanitized.html",
+    "bytes": 4787,
+    "sha256": "9b15baa89af59183e34882f93b46a878da57b24ba9e46d8f8753342d0bafa0a8"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/independent-preview-review-redacted.json",
+    "bytes": 3984,
+    "sha256": "e0248622006f2ddfcfe4ebc204151ccecfbfb7179b82991f82c93c77524a0771"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/mobile360-metrics-final.json",
+    "bytes": 588,
+    "sha256": "6226b89ee899b9d450610b059863536676c02b2224b8e75bec595b38ef70e4c0"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/observed-source-hashes.json",
+    "bytes": 607,
+    "sha256": "b15d1a75d3b26b5e3ee1746d1f304989f0a7fea6811eee90eba517b0ed74e806"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/pc1280-metrics-final.json",
+    "bytes": 575,
+    "sha256": "8be784be3981fc15fbcd11675bc372db6906bbad4ed07c0b05980562c021f4f7"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/publication-receipt-redacted.json",
+    "bytes": 977,
+    "sha256": "082786b35b1927cf7384974a7e38fbddb42dbf168f090bba7c1a668f71bebd2c"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/remote-byte-validation-redacted.json",
+    "bytes": 1349,
+    "sha256": "3a0fe0359e3fde74b23dc4924f2b782716fa07ce65bb52ce0cac302735f2a9d5"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-mobile360-dark-bottom.jpg",
+    "bytes": 74558,
+    "sha256": "abc400c111a507439d2e8fbaca965276b9489551919453e903f69126b8dc5a5a"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-mobile360-dark-middle.jpg",
+    "bytes": 83660,
+    "sha256": "c2143bffcb87728cc3179b6de25e069d34538b2999458bd89028687b6beddab7"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-mobile360-dark-top.jpg",
+    "bytes": 73022,
+    "sha256": "c397acc412b7ef348b7358679257b0833e34ff3a89d03aca6aa9d2e598ae3da8"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-mobile360-light-bottom.jpg",
+    "bytes": 71645,
+    "sha256": "fe642e1e58c3d2c1e2d33bb1873777dec4f88c7a479c913c539db85219baa9ea"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-mobile360-light-middle.jpg",
+    "bytes": 82719,
+    "sha256": "2c46372b4f8c94e62c9482e2b3f8709d3d84539bf801723bbea035626d670a84"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-mobile360-light-top.jpg",
+    "bytes": 71922,
+    "sha256": "30c9b885095faddd9e0a350341337bb9bfea0049b33acc8e3df0b4323b76fb2f"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-pc1280-dark-bottom.jpg",
+    "bytes": 98124,
+    "sha256": "ee91f8d9435c84550d56f63514ff8de7ff531aafd2523ca4a8807caf7631bf6a"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-pc1280-dark-middle.jpg",
+    "bytes": 105207,
+    "sha256": "83dec45ed861408d2bf1d7ca0a02d613fef8878833573a07ce99157e2132ba43"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-pc1280-dark-top.jpg",
+    "bytes": 99122,
+    "sha256": "d1e447328143d3bfd0547f009121ec9bf70b6433cab0cc2d8a2bce0261b1001a"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-pc1280-light-bottom.jpg",
+    "bytes": 92310,
+    "sha256": "16b8cfef938f3bab45406c2961cf8c217848dfabb6185f3e70eacc2c1affdecf"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-pc1280-light-middle.jpg",
+    "bytes": 100815,
+    "sha256": "372f4fcec3917f5132ed12ec657201e2f8012c1859d3ab1c359ca7a9fc7d242b"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/screenshots/final-pc1280-light-top.jpg",
+    "bytes": 94072,
+    "sha256": "8783b52b35d0931027968f5b8300cf75e9bf35e18fe18697fea57244efae1628"
+  },
+  {
+    "path": "artifacts/qa-v2/initial-publication-history/source-image-manifest.json",
+    "bytes": 2983,
+    "sha256": "5cb825b486fc7a0147a196d1ec467d27cac39a3c5eec16dbdc416fa60a439ea1"
+  },
+  {
+    "path": "artifacts/qa-v2/publication-archive-policy.json",
+    "bytes": 1052,
+    "sha256": "2e73795f670c8eeab3c991a89ed5e560fa3669b3930fcc781f693ca708c9fa6a"
+  },
+  {
+    "path": "artifacts/qa-v2/publication.json",
+    "bytes": 1252,
+    "sha256": "9d709fe219cb6b24fdf626a5e990a98f4af9622ff6b52ae526693ab5dc2fb9c3"
+  },
+  {
+    "path": "artifacts/qa-v2/source-pass.json",
+    "bytes": 722,
+    "sha256": "baab299ca3374d4bebc8923937dc7f18872bed90ef057c19f973a8e1431ebdd3"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/README.txt",
+    "bytes": 1061,
+    "sha256": "d9e311203654e89e1737a3296657de101d3e0d1a9b09f83a84a3256a289fbe17"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/added.css",
+    "bytes": 371,
+    "sha256": "4c79b16d7e7bef07c89ee4f5c10575cbfafc9020390cd8f0642933574ca9e9d5"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/after-live-metrics.json",
+    "bytes": 2692,
+    "sha256": "a094a34f9ec795ed61e342557b80f7de3a9d7eeb3eb187e91ad6ebb969ffd19a"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/after-live-sections.jpg",
+    "bytes": 99686,
+    "sha256": "a70e586a327ee43f5fe1761c8787013a5b5bf99623b11dc975020b3710015bab"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/archive-manifest.json",
+    "bytes": 1645,
+    "sha256": "be24183061cbbfd0381235155e3f5a00b8574f1c43a7d74966bd21424fba2c22"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/consumer-transfer-receipt.json",
+    "bytes": 376,
+    "sha256": "cfbbc5e977ece10254233a3895a4dfdd4a9f070643a676c8e42d8676f28cd455"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/independent-revision-review-relay.json",
+    "bytes": 1137,
+    "sha256": "8b0bd8742c74006ac2e452b802bb67abbee8f14094274caf0d242678c4130eab"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/mobile360-metrics-final.json",
+    "bytes": 2327,
+    "sha256": "7d29642a40b94b625d5ac09ecfecb43bf8fde31f7deca1e5c0992a237cd92438"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/observed-source-hashes.json",
+    "bytes": 396,
+    "sha256": "78ffd09eec492ecbc21fb78d592ee1e8068bb5ffdd3ffee40329803516034330"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/pc1280-metrics-final.json",
+    "bytes": 2334,
+    "sha256": "c3c0f979117d4f9b3b6d5b8a005264988fccaf00c2fdc1e8145971cc1c7eb00f"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/revised-native-payload-sanitized.html",
+    "bytes": 4086,
+    "sha256": "803b0044b7e38489ebfb52eeb351e3cffa9e2c3740568b39da518042a62069a7"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/revision-receipt-redacted.json",
+    "bytes": 1284,
+    "sha256": "b567eb66288aba4c826daa18cbe7270fff3db59f688c16696d29d1c66c20ac1a"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/thumbnail-manifest.json",
+    "bytes": 1115,
+    "sha256": "582dc37476b3a861f06fa6056723cea2b62f0f0776251014654dbb948849cbb0"
+  },
+  {
+    "path": "artifacts/qa-v2/spacing-thumbnail-revision/yes24-faq-question-thumbnail.png",
+    "bytes": 40174,
+    "sha256": "e4377b97f15a449b73b9506e4b425e4420871bdc6a7764f575a59dbbea3332a0"
+  },
+  {
+    "path": "artifacts/sources/faq-verification.json",
+    "bytes": 378,
+    "sha256": "93afff3fb97dc69a4f1d08cff9e930240e5d00fb48767f74af7e7b08d574db1b"
+  },
+  {
+    "path": "assets/.gitkeep",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "assets/02-booking-menu-detail.png",
+    "bytes": 5558,
+    "sha256": "143d9cb38acd864daafb9e5b59de8f1dec5ade95ab5a3e1b3de3611e75d9c4a1"
+  },
+  {
+    "path": "assets/03-ticket-contact.png",
+    "bytes": 41051,
+    "sha256": "fce43e7d1474772a5d2a984334f9891d6f53a722aefd4220593b2ba151b884e9"
+  },
+  {
+    "path": "assets/04-inquiry-entry.png",
+    "bytes": 9486,
+    "sha256": "6e4a981429701eece5314a5d74a2668dfd054be1601b5920e5f1fe8a6f300ac9"
+  },
+  {
+    "path": "assets/yes24-faq-question-thumbnail.png",
+    "bytes": 40174,
+    "sha256": "e4377b97f15a449b73b9506e4b425e4420871bdc6a7764f575a59dbbea3332a0"
+  },
+  {
+    "path": "audit.md",
+    "bytes": 4234,
+    "sha256": "ef577130e85f120335de05014a234de16a89bed6cca9eda430fdc74d02063481"
+  },
+  {
+    "path": "brief.md",
+    "bytes": 1188,
+    "sha256": "888eeb83bc81230e5583883e961b892d6f99ed11b457fbf960f4bf7c836f5c6f"
+  },
+  {
+    "path": "capture-plan.md",
+    "bytes": 632,
+    "sha256": "d1bce1eb4921835fdfdc8cceba60ede9651100c6ec952a570495fbcff5cbedb7"
+  },
+  {
+    "path": "delivery/README.md",
+    "bytes": 912,
+    "sha256": "2ec88ef4035099cb508a323829fde6a8dfb1b27276afbd700756f0b2debdcb72"
+  },
+  {
+    "path": "delivery/yes24-payment-no-booking-SANITIZED-NOT-REPUBLISHABLE.html",
+    "bytes": 4086,
+    "sha256": "803b0044b7e38489ebfb52eeb351e3cffa9e2c3740568b39da518042a62069a7"
+  },
+  {
+    "path": "evidence.md",
+    "bytes": 1949,
+    "sha256": "74b20100f5d896a1d8322e37671e7ec9e060cefaafb0b6e1a4d509bcf1faf165"
+  },
+  {
+    "path": "media.json",
+    "bytes": 2823,
+    "sha256": "a2f091c60305879ecbccbf0992fd9bce9ca9eab3d4c5ddf58fc2655dbca79267"
+  },
+  {
+    "path": "representative-image.json",
+    "bytes": 436,
+    "sha256": "b29efcd811d1cd474f0a5cbed3cf66e74e00b42891929d962e1f22c1a701543b"
+  },
+  {
+    "path": "review.html",
+    "bytes": 79352,
+    "sha256": "d8418e47a61158c6bf9bd98672b52034051495aa2e8fe33134a3f67dd0c3822d"
+  },
+  {
+    "path": "workflow-v2.json",
+    "bytes": 730,
+    "sha256": "c7fd29725cd88565c90f3c527c9a2c1a9c4c7c76bb9fda1bc329ae284893573e"
+  }
+]

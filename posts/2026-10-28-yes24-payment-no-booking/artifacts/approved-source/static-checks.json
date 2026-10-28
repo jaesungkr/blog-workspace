@@ -1,0 +1,25 @@
+{
+  "article_sha256": "cd32e7a7e6da860f72866080cc41c2d91581485737b32a4bf478aedefb8e79a1",
+  "article_exact_approved_bytes": true,
+  "image_count": 3,
+  "all_markdown_image_paths_exist": true,
+  "full_faq_screenshot_included": false,
+  "private_or_login_screenshots_included": false,
+  "image_dimensions": {
+    "02-booking-menu-detail.png": [
+      205,
+      76
+    ],
+    "03-ticket-contact.png": [
+      520,
+      145
+    ],
+    "04-inquiry-entry.png": [
+      180,
+      52
+    ]
+  },
+  "review_html_h1_count": 1,
+  "review_html_embedded_image_count": 3,
+  "publication_performed_by_packaging": false
+}

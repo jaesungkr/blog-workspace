@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "draft",
+  "primary_reader": "결제 알림을 받았지만 예스24 티켓 예매 내역이 보이지 않는 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "로컬 초안 한정. 부모 수집 공개 메뉴·FAQ·문의 화면 3장 수신 예정. 메뉴 식별/취소 조건/문의 경로에 각각 배치. 실제 오류 재현 없음. 생성 이미지·다이어그램은 실제 화면 탐색보다 도움이 적어 생략. 외부 에디터 저장·게시·push 금지.",
+  "publication_mode": "codex-browser"
+}

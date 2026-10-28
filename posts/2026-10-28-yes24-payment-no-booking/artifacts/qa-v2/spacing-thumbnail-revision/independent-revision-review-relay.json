@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "scope": "narrow post-publication spacing and representative-image revision",
+  "checked_by": "/root/review_yes24_publication_preview",
+  "checked_at": "2026-10-28T04:00:00Z",
+  "provenance": "Independent review result relayed by parent thread",
+  "body_diff": "article-scoped CSS only",
+  "editor_parity": "equal after trimming terminal newline",
+  "observed": [
+    "live screenshot paragraph/section spacing and figure-caption grouping improved",
+    "PC1280/mobile360 no horizontal overflow",
+    "three body images, alt text and four official links unchanged",
+    "560x310 public FAQ question thumbnail; answer body not included"
+  ],
+  "h2_margin_top_px": {
+    "desktop": 48,
+    "mobile": 40
+  },
+  "figure_caption_gap_px": 8,
+  "does_not_supersede_initial_full_qa": true,
+  "post_revision_dark_theme_full_qa": false,
+  "prepared_payload_sha256": "f8d5f19827f4de5641996b4e9cb4e969e7ebd3b5885f04353d6823ab234cbdc2",
+  "raw_editor_sha256": "a87f565cafd53d96cf4e7cc310e80447b31b06aa0e7da25e1945057a5e65266d",
+  "archive_manifest_sha256": "be24183061cbbfd0381235155e3f5a00b8574f1c43a7d74966bd21424fba2c22"
+}

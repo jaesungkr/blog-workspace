@@ -1,0 +1,13 @@
+{
+  "publication_confirmed": true,
+  "exact_submitted_html_available": false,
+  "reason": "Raw native HTML carries native tokens/signed references; archive contains explicitly sanitized derivatives and original hashes only",
+  "initial_qa": "PC CSS1280 and mobile CSS360, light/dark 12 native previews; independent PASS",
+  "latest_qa": "Scoped spacing/thumbnail revision, PC1280/mobile360 metrics and live screenshot; independent narrow PASS",
+  "post_revision_dark_theme_full_qa": false,
+  "machine_final_gate": "Not claimed: signed media/native embeds and native-browser receipts are intentionally not transformed into repository capture-helper records",
+  "submitted_fragment_sha256": "f8d5f19827f4de5641996b4e9cb4e969e7ebd3b5885f04353d6823ab234cbdc2",
+  "saved_raw_editor_sha256": "a87f565cafd53d96cf4e7cc310e80447b31b06aa0e7da25e1945057a5e65266d",
+  "current_representative": "assets/yes24-faq-question-thumbnail.png",
+  "article_hero_image": "Source-freeze body lead, separate from Tistory representative image; see representative-image.json"
+}

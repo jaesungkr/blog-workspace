@@ -1,0 +1,9 @@
+{
+  "purpose": "Tistory representative image only; not an additional body image",
+  "path": "assets/yes24-faq-question-thumbnail.png",
+  "sha256": "e4377b97f15a449b73b9506e4b425e4420871bdc6a7764f575a59dbbea3332a0",
+  "width": 560,
+  "height": 310,
+  "source_manifest": "artifacts/qa-v2/spacing-thumbnail-revision/thumbnail-manifest.json",
+  "published_representative_confirmed_by": "publisher receipt and live og/twitter asset match"
+}

@@ -1,0 +1,135 @@
+{
+  "children": [
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "14px",
+      "line": "29px",
+      "tag": "H2",
+      "top": "40px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "8px",
+      "line": "32px",
+      "tag": "FIGURE",
+      "top": "20px"
+    },
+    {
+      "bottom": "20.88px",
+      "line": "22.272px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "14px",
+      "line": "29px",
+      "tag": "H2",
+      "top": "40px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "14px",
+      "line": "29px",
+      "tag": "H2",
+      "top": "40px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "8px",
+      "line": "32px",
+      "tag": "FIGURE",
+      "top": "20px"
+    },
+    {
+      "bottom": "20.88px",
+      "line": "22.272px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "8px",
+      "line": "32px",
+      "tag": "FIGURE",
+      "top": "20px"
+    },
+    {
+      "bottom": "20.88px",
+      "line": "22.272px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    },
+    {
+      "bottom": "16px",
+      "line": "28.8px",
+      "tag": "P",
+      "top": "0px"
+    }
+  ],
+  "clientWidth": 341,
+  "images": [
+    {
+      "alt": "전체 메뉴 하단의 MY티켓과 예매확인/취소 메뉴",
+      "width": 205
+    },
+    {
+      "alt": "예스24 티켓 고객센터 전화번호와 운영 시간",
+      "width": 309.2578125
+    },
+    {
+      "alt": "예스24 티켓 이용안내의 1:1문의 문의하기 버튼",
+      "width": 180
+    }
+  ],
+  "innerWidth": 360,
+  "scrollWidth": 341
+}

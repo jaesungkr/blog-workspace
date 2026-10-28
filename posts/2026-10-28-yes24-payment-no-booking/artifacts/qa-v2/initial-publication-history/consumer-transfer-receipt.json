@@ -1,0 +1,12 @@
+{
+  "blob_sha": "fdf2ad9002d9263b42ab7d3445c2afd19d0a4baa",
+  "zip_bytes": 811898,
+  "zip_sha256": "77cf5800a150cb9bfa1b3bf5754e01722a101ecc95076c11bf2b9a682e1932c6",
+  "files": 23,
+  "consumer_zip_hash_verified": true,
+  "classification": "initial publication history; subsequent spacing and thumbnail revision pending",
+  "raw_native_html_archived": false,
+  "sanitized_html_is_exact_publication_payload": false,
+  "commit_push_pending": true,
+  "manifest_entries_verified": 22
+}

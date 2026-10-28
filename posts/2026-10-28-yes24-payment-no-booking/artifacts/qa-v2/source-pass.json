@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-28T03:32:33.280230Z",
+  "checked_by": "/root/research_ticketing_troubleshooting_topics",
+  "article_content_sha256": "3883a4a98bc22dfdebe10ab6a0c65922c561b2ac5e3a197a265c6ed9b5753b1a",
+  "brief_sha256": "888eeb83bc81230e5583883e961b892d6f99ed11b457fbf960f4bf7c836f5c6f",
+  "evidence_sha256": "74b20100f5d896a1d8322e37671e7ec9e060cefaafb0b6e1a4d509bcf1faf165",
+  "note": "Parent-relayed 2026-10-28T03:27Z independent source review of approved MD cd32e7a7e6da860f72866080cc41c2d91581485737b32a4bf478aedefb8e79a1 and three UI crops. Format-only adapter, image claim registration and byte comparison checked in consuming environment. No responsive QA claimed."
+}

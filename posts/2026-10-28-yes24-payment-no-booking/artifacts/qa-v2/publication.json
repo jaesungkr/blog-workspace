@@ -1,0 +1,19 @@
+{
+  "status": "published",
+  "post_id": 158,
+  "public_url": "https://dop3n.tistory.com/entry/%EC%98%88%EC%8A%A424-%ED%8B%B0%EC%BC%93-%EA%B2%B0%EC%A0%9C%EB%90%90%EB%8A%94%EB%8D%B0-%EC%98%88%EB%A7%A4-%EB%82%B4%EC%97%AD%EC%9D%B4-%EC%97%86%EC%9D%84-%EB%95%8C",
+  "published_at": "2026-10-28T12:44:25+09:00",
+  "updated_at": "2026-10-28T03:55:53Z",
+  "live_category": "생활·기록/생활정보·비교",
+  "repository_category": "Log/개발 · 디지털",
+  "approved_md_sha256": "cd32e7a7e6da860f72866080cc41c2d91581485737b32a4bf478aedefb8e79a1",
+  "representative_image": "assets/yes24-faq-question-thumbnail.png",
+  "submitted_fragment_sha256": "f8d5f19827f4de5641996b4e9cb4e969e7ebd3b5885f04353d6823ab234cbdc2",
+  "saved_raw_editor_sha256": "a87f565cafd53d96cf4e7cc310e80447b31b06aa0e7da25e1945057a5e65266d",
+  "trim_normalized_equal": true,
+  "initial_receipt": "initial-publication-history/publication-receipt-redacted.json",
+  "current_revision_receipt": "spacing-thumbnail-revision/revision-receipt-redacted.json",
+  "current_independent_review": "spacing-thumbnail-revision/independent-revision-review-relay.json",
+  "raw_submitted_html_archived": false,
+  "sanitized_html": "spacing-thumbnail-revision/revised-native-payload-sanitized.html"
+}
