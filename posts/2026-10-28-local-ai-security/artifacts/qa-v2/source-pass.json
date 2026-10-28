@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-27T15:16:03.764812Z",
+  "checked_by": "/root/research_openweight_security_report",
+  "article_content_sha256": "a4910eb98020f32c3913c534804494058a4a1b7e11152cd6c118177cb2cc955d",
+  "brief_sha256": "4d25d8783f4e7387e4872e0499f4495bc8851762b146665b0f72cb4e354bfda3",
+  "evidence_sha256": "a7b80e42aaa2bf811237b6da149452b34610543493d77acfcbd780d733e07eb9",
+  "note": "Actual final approved source and canonical article/brief/evidence/audit reviewed 2026-10-27T15:14:59Z; factual/source coherence pass. C5 verified from successful14:30:49Zprimaryretrieval; freshfetchinaccessible. Author explicitly required approved body preserved, overriding generic style preferences. Not image, remote-byte, or final-page QA."
+}

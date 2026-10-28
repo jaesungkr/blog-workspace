@@ -1,0 +1,12 @@
+{
+  "errors": [
+    "hero: status is `captured`, not `validated`",
+    "supporting: status is `captured`, not `validated`",
+    "supporting: native attachment alt must match media.json alt",
+    "missing artifacts/qa-v2/remote-media.json",
+    "missing artifacts/qa-v2/source-pass.json",
+    "missing artifacts/qa-v2/final-page.json for paste-ready output",
+    "paste-ready output requires a current final-page pass"
+  ],
+  "warnings": []
+}

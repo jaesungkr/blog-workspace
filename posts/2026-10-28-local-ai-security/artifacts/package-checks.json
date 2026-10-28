@@ -1,0 +1,14 @@
+{
+  "body_roundtrip_exact": true,
+  "source_note_unchanged": true,
+  "publication_date": "2026-10-28",
+  "timezone": "Asia/Seoul",
+  "link_count": 7,
+  "h3_count": 4,
+  "body_h1_count": 0,
+  "unresolved_markers": false,
+  "em_dash_count": 0,
+  "source_pass": "not recorded",
+  "media_validation": "pending",
+  "final_page_qa": "blocked: required capture script supports macOS only"
+}

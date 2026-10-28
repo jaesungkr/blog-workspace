@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "245da5e52b717d8ffa861c81a107b0dfa7c3d8778aa6e14f3349f1bad7c95b57",
+  "archive_bytes": 2656901,
+  "safe_archive_paths": true,
+  "asset_hashes_match": true,
+  "approved_body_roundtrip_exact": true,
+  "source_pass_hash_binding": "pass",
+  "checks": {
+    "standard": {
+      "exit_code": 0,
+      "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+    },
+    "strict": {
+      "exit_code": 1,
+      "output": "{\n  \"post_dir\": \"/workspace/blog-workspace/posts/2026-10-28-local-ai-security\",\n  \"media_count\": 2,\n  \"directive_count\": 2,\n  \"require_publish_urls\": true,\n  \"require_final_pass\": true,\n  \"require_remote_verification\": false,\n  \"errors\": [\n    \"hero: status is `captured`, not `validated`\",\n    \"hero: missing tistory_url for paste-ready output\",\n    \"hero: browser publication requires tistory_embed\",\n    \"supporting: status is `captured`, not `validated`\",\n    \"supporting: missing tistory_url for paste-ready output\",\n    \"supporting: browser publication requires tistory_embed\",\n    \"missing artifacts/qa-v2/remote-media.json\",\n    \"missing artifacts/qa-v2/final-page.json for paste-ready output\",\n    \"paste-ready output requires a current final-page pass\"\n  ],\n  \"warnings\": [],\n  \"status\": \"revision_required\"\n}\n"
+    }
+  },
+  "strict_failure_handling": "Retained under article-specific author exception; sanitized Git archive deliberately excludes native signed attachment values.",
+  "live_article_modified": false
+}

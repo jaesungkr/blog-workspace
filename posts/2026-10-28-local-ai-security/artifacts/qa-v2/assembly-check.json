@@ -1,0 +1,19 @@
+{
+  "source_sha256": "18bc66f916bceb96e54fcaea8fa110822fa042cb054e32370ab3219bf92699fb",
+  "fragment_sha256": "4700ac81ce8abb5935eb4d6b6f8a24beb0a1b951369e062ac0a3a69313034f5e",
+  "fragment_bytes": 21760,
+  "normalized_text_identical": true,
+  "normalized_text_sha256": "8818954a81d5f4e14df569aac65ad6c7c0a3296b85c0fde8dbc4a85666c6a248",
+  "bodyH1": 0,
+  "native_images": 2,
+  "source_links": 7,
+  "sections": 4,
+  "errors": [
+    "permissions: native attachment alt must match media.json alt",
+    "missing evidence.md"
+  ],
+  "warnings": [
+    "incident: status is `captured`, not `validated`",
+    "permissions: status is `captured`, not `validated`"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "candidateSha256": "4700ac81ce8abb5935eb4d6b6f8a24beb0a1b951369e062ac0a3a69313034f5e",
+  "editorExactBytesVerified": 21760,
+  "category": "AI·개발/테크·산업",
+  "categoryId": 847698,
+  "preview": "Tistory native preview iframe with actual skin",
+  "screenshots": [
+    "desktop-dark-image-click.png",
+    "desktop-dark-incident.png",
+    "desktop-dark-top.png",
+    "desktop-light-incident.png",
+    "desktop-light-permissions.png",
+    "mobile-dark-incident.png",
+    "mobile-dark-permissions.png",
+    "mobile-light-incident.png",
+    "mobile-light-permissions.png"
+  ],
+  "desktop": {
+    "widthInput": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "lightAndDarkObserved": true
+  },
+  "mobile": {
+    "widthInput": 360,
+    "clientWidth": 360,
+    "documentScrollWidth": 816,
+    "articleClientWidth": 328,
+    "articleScrollWidth": 328,
+    "articleDescendantsOutsideViewport": 0,
+    "lightAndDarkObserved": true
+  },
+  "images": {
+    "count": 2,
+    "bothLoaded": true,
+    "naturalWidth": 1280,
+    "naturalHeight": 720,
+    "canonicalAltsObserved": true,
+    "enlargement": "Clicked both images; no lightbox appeared in native preview. Not verified."
+  },
+  "toc": {
+    "structural": "4 links and 4 headings rendered",
+    "interaction": "Clicking section3 link navigated preview iframe to blank editor. Not passed."
+  },
+  "sourceLinks": {
+    "count": 7,
+    "rendered": true
+  },
+  "limitations": [
+    "Screenshots cover selected native preview viewports, not full-page stitched visual audit.",
+    "Mobile skin document scrollWidth exceeds viewport though article itself does not overflow.",
+    "CDN downloaded-byte identity not checked.",
+    "TOC navigation and image enlargement not passed in native preview."
+  ]
+}
