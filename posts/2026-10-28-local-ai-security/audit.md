@@ -19,3 +19,9 @@ Published once as post 156 on 2026-10-28 00:13 KST; management success confirmed
 ## Archive handling
 
 Original prompts, final PNGs, source, evidence, and sanitized receipts retained. Raw signed attachment/CDN values omitted from Git. Exact submitted TXT remains separately in Library and is referenced by hash. The sanitized bundle intentionally does not pass exact regeneration checks.
+
+## First-image screenshot update
+
+The author approved the actual Cohere report screenshot for the first body image and representative thumbnail. The original generated server illustration is retained only under historical provenance. The revised introduction, remaining prose, and second image were preserved byte-for-byte in the repository. Source screenshot JPEG size, dimensions and SHA-256 were verified; pixels directly inspected. The image is third-party editorial material, not generated or freely licensed.
+
+Parent confirms the existing post was saved at 2026-10-28T00:58:29Z with only the first native image and linked attribution changed. Representative selection was verified in native UI and live og:image. Native preview showed the screenshot and correct alt without figure overflow. The initial live observation showed a platform-review placeholder; that pending state is preserved in the update record history. At 2026-10-28T01:34:36Z the parent browser worker confirmed review cleared and normal body display with natural dimensions 1152×648, correct alt and linked Cohere attribution. No reupload or review bypass. See artifacts/qa-v2/source-screenshot-update.json for the exact submission digest and observations. No new strict QA pass is claimed.

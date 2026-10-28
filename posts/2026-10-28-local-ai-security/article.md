@@ -8,7 +8,7 @@ status: published
 format: rich-post-v2
 tags: ["AI 보안", "자체 호스팅", "Qwen", "에이전트"]
 summary: "자체 호스팅 AI에서도 파일 접근, 명령 실행, 외부 접속 권한을 작업에 맞게 제한해야 하는 이유를 설명합니다."
-hero_image: assets/hero.png
+hero_image: assets/cohere-report-source-thumbnail.jpg
 published_url: "https://dop3n.tistory.com/entry/%EB%82%B4-%EC%84%9C%EB%B2%84%EC%9D%98-AI-%EC%A0%95%EB%A7%90-%EC%95%88%EC%A0%84%ED%95%A0%EA%B9%8C"
 sources: ["https://news.hada.io/topic?id=36062","https://cohere.com/about","https://www.alibabagroup.com/en-US/ai-governance/qwen","https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model","https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces","https://qwen.readthedocs.io/en/stable/getting_started/concepts.html","https://genai.owasp.org/llmrisk/llm062025-excessive-agency/"]
 ---

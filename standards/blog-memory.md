@@ -59,6 +59,15 @@ them when decisions depend on current state.
   unrelated products, or leave a cold reader unable to answer `그래서 이걸로
   무슨 일을 하는가?`.
 
+## Screenshot preference - 2026-10-28
+
+- The author asked to use relevant actual screenshots more often in future
+  posts. Prefer official source pages and actual product screens when they
+  help readers recognize the subject or understand the evidence, with clear
+  source attribution and links for third-party material.
+- Use generated illustrations when they materially improve explanation; this
+  preference does not ban generated images or authorize fabricated screenshots.
+
 ## Proven strengths
 
 - `게임 내 한글 채팅 오류 해결 방법`: exact Windows environment and a

@@ -1,0 +1,61 @@
+{
+  "status": "live_saved_normal_body_display_verified",
+  "scope": "first image, attribution and representative thumbnail only",
+  "user_message_id": "Sentinel_f06f0de2c9c08191bf92d8666d6d8f4a",
+  "user_message": "좋아 본문에도 넣어주면 좋을거같네",
+  "source_url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+  "library_file_id": "libfile_c2316f103d488191b857413a9113be1a",
+  "image_sha256": "0d133fc5359806f903fd9ec5f2b0c54a62407d93ecb5c9a5615221c4a2ebf655",
+  "image_bytes": 89660,
+  "dimensions": [
+    1152,
+    648
+  ],
+  "pixel_observation": "Directly opened actual JPEG: Cohere masthead, October 26 2026 date, report headline and introductory paragraph visible. No claim of full mobile or thumbnail specialist QA.",
+  "linked_caption_html": "출처: Cohere, 「<a href=\"https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model\">Concerning behavior from a popular open-weight AI model</a>」(2026.10.26) 원문 화면 일부.",
+  "renderer_limit": "Current repository renderer HTML-escapes manifest captions; source URL and intended linked caption retained here without changing shared renderer. Parent confirmed linked caption in exact submitted live HTML; raw signed HTML excluded from Git.",
+  "historical_generated_image": "artifacts/provenance/historical/generated-server-hero.png",
+  "strict_qa": "No new strict-pass receipt; existing exception is historical.",
+  "live_update": {
+    "post_id": 156,
+    "saved_at_utc": "2026-10-28T00:58:29Z",
+    "submitted_html_sha256": "edb88fd0dfde442e110eeb08cd3265b1b6446978f1b5d2bc1a68e196b7954db5",
+    "same_url_title_category_original_date": true,
+    "native_scope_verification": "Only first image token and linked attribution caption changed; latest introduction, remaining prose and second image unchanged",
+    "native_preview": {
+      "screenshot_dimensions": [
+        1152,
+        648
+      ],
+      "correct_alt": true,
+      "mobile_figure_width": 288,
+      "figure_overflow": false
+    },
+    "representative_image": "Explicit native UI selection and live og:image verified by parent browser worker",
+    "live_body_image": "Normal screenshot display verified by parent browser worker at 2026-10-28T01:34:36Z",
+    "observation_source": "Parent native browser worker receipt; not executor live inspection",
+    "no_reupload_or_review_bypass": true
+  },
+  "local_standard_check": {
+    "exit_code": 0,
+    "output": "검사 완료: 1개 글, 오류 0개, 경고 0개\n"
+  },
+  "platform_review_history": [
+    {
+      "state": "pending",
+      "observation": "Generic platform-review placeholder; display pending, neither rejection nor verified display",
+      "observed_after_save_at_utc": "2026-10-28T00:58:29Z",
+      "exact_observation_time": "not supplied"
+    },
+    {
+      "state": "cleared",
+      "verified_at_utc": "2026-10-28T01:34:36Z",
+      "observation": "Parent browser worker verified normal live body screenshot display, natural dimensions 1152×648, correct alt and linked Cohere attribution."
+    }
+  ],
+  "archive_validation": {
+    "unit_tests": "75 passed",
+    "repository_standard_check": "83 posts; zero errors/warnings",
+    "strict_page_gate": "No new strict pass claimed; prior exception and historical receipts retained"
+  }
+}

@@ -5,13 +5,13 @@
   "primary_reader": "회사 문서를 다루는 자체 호스팅 AI 도입 검토자",
   "direct_capture": false,
   "gif": false,
-  "generated_lead": true,
+  "generated_lead": false,
   "infographic": true,
   "complex_layout": false,
   "high_risk_remote_media": false,
   "include_390": false,
   "include_768": false,
   "second_remote_fetch": false,
-  "decision_note": "승인 본문과 두 번째 그림 유지, 첫 생성 그림 교체. 차단된 업로드 흐름과 작업별 권한 비교를 설명. 기존 미디어 제작 근거 및 독립 검증 대기.",
+  "decision_note": "승인된 Cohere 원문 화면 일부로 첫 이미지와 대표 썸네일 교체. 현재 서론과 나머지 본문 및 두 번째 권한 비교 그림 유지. 기존 생성 리드는 과거 제작 자료로만 보존. 기존 기사별 검수 예외는 과거 기록으로 유지.",
   "publication_mode": "codex-browser"
 }
