@@ -1,0 +1,17 @@
+{
+  "keep": [
+    "approved article bytes",
+    "local publication images and license evidence",
+    "submitted HTML SHA256 supplied by publisher",
+    "redacted publication receipt and actual category mapping"
+  ],
+  "exclude": [
+    "raw signed editor HTML",
+    "signed CDN URLs",
+    "transport base64 and ZIP"
+  ],
+  "exact_submitted_html_available": false,
+  "publication_confirmed": true,
+  "exact_1280_qa": "not performed; current-post exception approved 2026-10-28T02:49:13Z",
+  "submitted_fragment_sha256": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504"
+}

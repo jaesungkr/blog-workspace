@@ -1,0 +1,13 @@
+{
+  "repository": {
+    "category": "Health",
+    "subcategory": "영양 · 식단"
+  },
+  "tistory": {
+    "category": "생활·기록",
+    "subcategory": "음식·장보기",
+    "category_id": 847700
+  },
+  "status": "published; category confirmed in management listing",
+  "instruction": "Parent explicitly separates repository taxonomy from actual Tistory taxonomy."
+}

@@ -1,0 +1,276 @@
+{
+  "title": "11월 제철과일, 뭘 먹을까?",
+  "post_id": 157,
+  "url": "https://dop3n.tistory.com/entry/11%EC%9B%94-%EC%A0%9C%EC%B2%A0%EA%B3%BC%EC%9D%BC-%EB%AD%98-%EB%A8%B9%EC%9D%84%EA%B9%8C",
+  "category": "생활·기록/음식·장보기",
+  "published_time_ui": "2026-10-28 11:49 KST",
+  "confirmed_at_utc": "2026-10-28T02:49:52Z",
+  "source_markdown_sha256": "a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e",
+  "ORIGINAL_SUBMITTED_HTML_SHA256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
+  "original_submitted_bytes": 7795,
+  "sanitized_html_file": "submitted-body-SANITIZED-NOT-REPUBLISHABLE.html",
+  "SANITIZED_HTML_SHA256": "c9ab380f29652791d1e90e042d8199c4bda791a790701c33f99b3d807984bc02",
+  "sanitized_is_exact_submitted_file": false,
+  "archive_content": "QA and publication evidence only; approved Markdown/photos/licenses already transported separately",
+  "redaction": "All native image tokens and their signed URLs replaced with inert image metadata. Body outside attachment blocks unchanged. Raw native DOM, raw clipboard, AX dumps, settings/account screenshots, and original photo duplicates omitted.",
+  "one_time_1280_exception": {
+    "approved": true,
+    "approved_at_utc_reported": "2026-10-28T02:49:13Z",
+    "user_message_id": "Sentinel_aa643e7e3cb881919b2870847779551d",
+    "user_text": "응 게시해줘",
+    "scope": "This article only; desktop1280 unavailable, observed1060desktop and360mobile light/dark retained. No full required1280 gate pass claimed."
+  },
+  "screenshot_policy": "Unmodified preview-only screenshots from independent review evidence; no management/account/settings screenshots.",
+  "files": [
+    {
+      "path": "exact-input-comparison.json",
+      "bytes": 205,
+      "sha256": "553b9247e3d85e4c10c9a17ddf26d58e8e21d38364ffa3a83e7d0ec40f74cb20"
+    },
+    {
+      "path": "independent-visual-review.json",
+      "bytes": 4902,
+      "sha256": "21ae09396d23769e89094771150572b5fc9929535f39fa6f3e09ee8fca571ca1"
+    },
+    {
+      "path": "prepublication-receipt.json",
+      "bytes": 1099,
+      "sha256": "3af2218ddad3df59d454b711f79d0adfdd0a97f3777a3c1c403aecb80fb4e5df"
+    },
+    {
+      "path": "publication-receipt.json",
+      "bytes": 838,
+      "sha256": "340dc79660a52c7a6a67ebb8d6f5a14bbe047ce4a8e69547d4c6e50c21501331"
+    },
+    {
+      "path": "remote-checks/receipt-redacted.json",
+      "bytes": 3785,
+      "sha256": "541a5bfbb4d15d3edb2fa59b5cce40a255600eaa51aad8ca07c04689fd925dfc"
+    },
+    {
+      "path": "screenshots/desktop-dark-0.png",
+      "bytes": 48188,
+      "sha256": "97c617bb2f0cc3ad1ec96829bb439c5ceeb5930912a613664c448f8026dfeaec"
+    },
+    {
+      "path": "screenshots/desktop-dark-1.png",
+      "bytes": 124291,
+      "sha256": "76badc3f1165585f52ceb7068ef7063c01601135a7fbc32f7d3773d4b17c87d5"
+    },
+    {
+      "path": "screenshots/desktop-dark-2.png",
+      "bytes": 106180,
+      "sha256": "82955a83f17ebc77b59b38dec07bf2061fb54100bc8413c25769c02e36c9427c"
+    },
+    {
+      "path": "screenshots/desktop-dark-3.png",
+      "bytes": 75683,
+      "sha256": "5e4da54057855414df71806e447b0759de32dd7091f12ce09c324a6cdfd00265"
+    },
+    {
+      "path": "screenshots/desktop-dark-4.png",
+      "bytes": 107902,
+      "sha256": "083cf2bf49105c45277064684daba5fe609b9c727cbc631aa49eb507ec8ed8a9"
+    },
+    {
+      "path": "screenshots/desktop-dark-5.png",
+      "bytes": 99462,
+      "sha256": "68177a7297d2a3a98db2c23434f4d78d47a142cc2aca01012331ed83f065977d"
+    },
+    {
+      "path": "screenshots/desktop-dark-6.png",
+      "bytes": 59306,
+      "sha256": "93d4b4d225bad71c1c82d7d6d6e6f5b56a0458e9148d9715f7aede7ea965526c"
+    },
+    {
+      "path": "screenshots/desktop-dark-7.png",
+      "bytes": 94110,
+      "sha256": "ef241df27785718043921dc499ac3a577c76c6e706eb48f6be0cdde71d47d7fa"
+    },
+    {
+      "path": "screenshots/desktop-dark-8.png",
+      "bytes": 49613,
+      "sha256": "7a6cb5d13956013b1b57447d62dc715ae929193e706240826e17176c92bdd34b"
+    },
+    {
+      "path": "screenshots/desktop-light-0.png",
+      "bytes": 46252,
+      "sha256": "b48666cf0a40c6153a4e340eda69dae63962a98571518ea3c3f052825d6a584a"
+    },
+    {
+      "path": "screenshots/desktop-light-1.png",
+      "bytes": 123280,
+      "sha256": "1df346697ddb1d1b4931c298292991f245ca3e2a82d28c90a74083e27d48f284"
+    },
+    {
+      "path": "screenshots/desktop-light-2.png",
+      "bytes": 105008,
+      "sha256": "0c85b0f0ada088a1052e90c50548a0f845e4ca245713b974d7cc9516828ba684"
+    },
+    {
+      "path": "screenshots/desktop-light-3.png",
+      "bytes": 71809,
+      "sha256": "2af336bf749cd798bdf717415deb1d09e26f175bdffa6ec4902f51b0927d9f2c"
+    },
+    {
+      "path": "screenshots/desktop-light-4.png",
+      "bytes": 108320,
+      "sha256": "10b4649529c4c8f3dc7529ffeb1ad3f3a2841c18435ade82492a2a22d741a995"
+    },
+    {
+      "path": "screenshots/desktop-light-5.png",
+      "bytes": 100489,
+      "sha256": "a4de34424319e814dd647fbad6196d5acba4b909b91adbbeec6908f422ebba7c"
+    },
+    {
+      "path": "screenshots/desktop-light-6.png",
+      "bytes": 61236,
+      "sha256": "dd8410cde29e5ef659d2c3eda9e4f55b8aa8bbdaba1a7f70a821e8c73eba53d0"
+    },
+    {
+      "path": "screenshots/desktop-light-7.png",
+      "bytes": 94434,
+      "sha256": "1e618cb057690f648c7aba6a4a744806cc5bcb8f66fed40c0e5ef6f25a782a34"
+    },
+    {
+      "path": "screenshots/desktop-light-8.png",
+      "bytes": 59712,
+      "sha256": "896397f0188c006bc6c2ebc97bed89a97e3c37f8b5462493d156aa7863e56613"
+    },
+    {
+      "path": "screenshots/desktop-light-9.png",
+      "bytes": 35656,
+      "sha256": "24f73868319f0a8936bd08cd12f7b1dd6dbb392bc58212d4c1e0f86e68f823e6"
+    },
+    {
+      "path": "screenshots/mobile-dark-0.png",
+      "bytes": 33253,
+      "sha256": "67bc8ba693013c3361052e68720e9df157ee90963470b9fe77a5ccb27437fb14"
+    },
+    {
+      "path": "screenshots/mobile-dark-1.png",
+      "bytes": 59970,
+      "sha256": "432d7aa01e8f161e2cbcb83462729db0d9480c90b0f787a48a1af88283113305"
+    },
+    {
+      "path": "screenshots/mobile-dark-2.png",
+      "bytes": 45371,
+      "sha256": "a9cf6e48f894abc030cd69414e4ebbab203161953644a72cb5523554e53caca5"
+    },
+    {
+      "path": "screenshots/mobile-dark-3.png",
+      "bytes": 48028,
+      "sha256": "1b82a668dbc92873da4e5e21e0bfab812f121c86faa236801a32f1d7981a300b"
+    },
+    {
+      "path": "screenshots/mobile-dark-4.png",
+      "bytes": 52600,
+      "sha256": "fa3480040ad46cb52bbd65f1f36b744e2197bf10fd2b70672aeb4672a0b4708d"
+    },
+    {
+      "path": "screenshots/mobile-dark-5.png",
+      "bytes": 45483,
+      "sha256": "58037e1572d4b081c0dd7be699ea9a67c3bdc0e6c4e9feeaafe88e38e45e412f"
+    },
+    {
+      "path": "screenshots/mobile-dark-6.png",
+      "bytes": 54806,
+      "sha256": "36a8334dc39d7bde6d65467fe0a4941aaf59d7c34743800eb5618dcb19f88f30"
+    },
+    {
+      "path": "screenshots/mobile-dark-7.png",
+      "bytes": 44992,
+      "sha256": "11652a0d9bc9ebb701672f540b41ae649612b23d4e06f9faf0fae4b6a3dc1cab"
+    },
+    {
+      "path": "screenshots/mobile-dark-8.png",
+      "bytes": 33499,
+      "sha256": "d55e81c7997416a8b86aba5d00dbeaad2dda50400a0c939e67a4c7fad8de14e0"
+    },
+    {
+      "path": "screenshots/mobile-dark-9.png",
+      "bytes": 33499,
+      "sha256": "d55e81c7997416a8b86aba5d00dbeaad2dda50400a0c939e67a4c7fad8de14e0"
+    },
+    {
+      "path": "screenshots/mobile-light-0.png",
+      "bytes": 31147,
+      "sha256": "956f057124ed7a1cbf3325b0d1a30b04b93c00badab8a4242a235a13b91af75a"
+    },
+    {
+      "path": "screenshots/mobile-light-1.png",
+      "bytes": 58650,
+      "sha256": "db959f493238cd08a4ed7079690a626deacf49239be49434f7b696f64fd8b368"
+    },
+    {
+      "path": "screenshots/mobile-light-2.png",
+      "bytes": 43817,
+      "sha256": "26afbf3383a8c1da63308c2bd0092daf259deed3eb26367cfaba783d777c9a5d"
+    },
+    {
+      "path": "screenshots/mobile-light-3.png",
+      "bytes": 46749,
+      "sha256": "9ae51c27ccfee7bc34cbec9c1b9fe153c3cb8afde526ffe9f8b757f60ff9eaf4"
+    },
+    {
+      "path": "screenshots/mobile-light-4.png",
+      "bytes": 52234,
+      "sha256": "32bdf3d20f805bd738ff954f643eb44a60e09b57ec128bccf8a0abb70aec75f6"
+    },
+    {
+      "path": "screenshots/mobile-light-5.png",
+      "bytes": 44758,
+      "sha256": "87914f7a504178c91e1d92d190a20936fd5b637018699ce10296e386f13b8aae"
+    },
+    {
+      "path": "screenshots/mobile-light-6.png",
+      "bytes": 53246,
+      "sha256": "3633b87cf12babc52f981f9f226e5a91561d74c2710636f430d2afac23bc706a"
+    },
+    {
+      "path": "screenshots/mobile-light-7.png",
+      "bytes": 42217,
+      "sha256": "74b0975a579bb6b2708e477b94f8ba9101454e78bd3820f8be836fb4c9b1facd"
+    },
+    {
+      "path": "screenshots/mobile-light-8.png",
+      "bytes": 31285,
+      "sha256": "978d744126b01c7f38de298477038a6e6eeb5c4ea9a4c94d0b62ae8dbd64a0b8"
+    },
+    {
+      "path": "screenshots/mobile-light-9.png",
+      "bytes": 31285,
+      "sha256": "978d744126b01c7f38de298477038a6e6eeb5c4ea9a4c94d0b62ae8dbd64a0b8"
+    },
+    {
+      "path": "screenshots/table-desktop-dark-fixed.png",
+      "bytes": 80566,
+      "sha256": "437195312e721c711136485309c3dc8a8053da08d6637935be1fd76a49be88f0"
+    },
+    {
+      "path": "screenshots/table-desktop-light-fixed.png",
+      "bytes": 77386,
+      "sha256": "20062fd1db1aa92397afb7bc07cdd4f04a97edc987bf05d5f913f7fcd03af353"
+    },
+    {
+      "path": "screenshots/table-mobile-dark-fixed.png",
+      "bytes": 43992,
+      "sha256": "45930da1b16510822364b743a965732e1902d8dcb4859daa379e01eb6a8bfd33"
+    },
+    {
+      "path": "screenshots/table-mobile-light-fixed.png",
+      "bytes": 40818,
+      "sha256": "652f80816171c0ccddf90d743a59b763961cd2e877f58996a28e3ec0a6460637"
+    },
+    {
+      "path": "source-review-receipt.json",
+      "bytes": 417,
+      "sha256": "49abca49c125b30ac1123dea0c58aea231fc4aafa4d3bb45db9e72930bfe9338"
+    },
+    {
+      "path": "submitted-body-SANITIZED-NOT-REPUBLISHABLE.html",
+      "bytes": 6932,
+      "sha256": "c9ab380f29652791d1e90e042d8199c4bda791a790701c33f99b3d807984bc02"
+    }
+  ]
+}

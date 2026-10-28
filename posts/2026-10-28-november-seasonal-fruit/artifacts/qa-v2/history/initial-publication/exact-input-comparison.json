@@ -1,0 +1,6 @@
+{
+  "match": "exact after retaining two keyboard Tab whitespace characters",
+  "substantive_change": false,
+  "chars": 5687,
+  "sha256": "6d7451a10b144694720a8e0bc9ca90dc666b2cd23f556ef872d0a162d6e16ba1"
+}

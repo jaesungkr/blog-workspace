@@ -1,0 +1,91 @@
+{
+  "reviewer": "review_fruit_post_preview",
+  "status": "BOUNDED_PASS_WITH_REQUIRED_EXCEPTION_PENDING",
+  "final_fragment_sha256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
+  "approved_markdown_sha256": "a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e",
+  "checks": {
+    "final_txt_equals_editor_clipboard": true,
+    "native_normalized_body_text_equals_final_txt": true,
+    "native_13_external_links_equal_final_txt": true,
+    "approved_markdown_normalized_body_and_links_match": true,
+    "three_photos_visually_loaded_and_match_expected_subjects": true,
+    "captions_and_CC_links_visible": true,
+    "article_content_fits_observed_widths": true,
+    "dark_table_header_contrast_fix_visually_verified": true
+  },
+  "visual_scope": {
+    "desktop_frame_width": 1060,
+    "desktop_client_width": 1045,
+    "mobile_frame_width": 360,
+    "mobile_client_width": 345,
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "coverage": "Overlapping native-preview screenshots cover full article; not a true full-page capture. Corrected table rechecked in all four combinations."
+  },
+  "required_gate_deviations": [
+    {
+      "requirement": "1280px desktop light/dark native-preview inspection",
+      "status": "UNTESTED_EXCEPTION_PENDING",
+      "reason": "Publisher native preview clamped to1060; parent requested user waiver. This receipt does not establish full specified gate PASS."
+    }
+  ],
+  "limitations": [
+    "Reviewer browser handoff unavailable; independently inspected publisher-captured native screenshots and saved native DOM/editor evidence.",
+    "Publisher reported global overflow attributable to third-party ad container; article prose/table/images fit observed screenshots.",
+    "Publisher reported preview top-link navigation and image-enlargement limitations; no successful interaction verification claimed."
+  ],
+  "evidence": {
+    "screenshots": [
+      "output/november-fruit/publication/desktop-dark-0.png",
+      "output/november-fruit/publication/desktop-dark-1.png",
+      "output/november-fruit/publication/desktop-dark-2.png",
+      "output/november-fruit/publication/desktop-dark-3.png",
+      "output/november-fruit/publication/desktop-dark-4.png",
+      "output/november-fruit/publication/desktop-dark-5.png",
+      "output/november-fruit/publication/desktop-dark-6.png",
+      "output/november-fruit/publication/desktop-dark-7.png",
+      "output/november-fruit/publication/desktop-dark-8.png",
+      "output/november-fruit/publication/desktop-light-0.png",
+      "output/november-fruit/publication/desktop-light-1.png",
+      "output/november-fruit/publication/desktop-light-2.png",
+      "output/november-fruit/publication/desktop-light-3.png",
+      "output/november-fruit/publication/desktop-light-4.png",
+      "output/november-fruit/publication/desktop-light-5.png",
+      "output/november-fruit/publication/desktop-light-6.png",
+      "output/november-fruit/publication/desktop-light-7.png",
+      "output/november-fruit/publication/desktop-light-8.png",
+      "output/november-fruit/publication/desktop-light-9.png",
+      "output/november-fruit/publication/mobile-dark-0.png",
+      "output/november-fruit/publication/mobile-dark-1.png",
+      "output/november-fruit/publication/mobile-dark-2.png",
+      "output/november-fruit/publication/mobile-dark-3.png",
+      "output/november-fruit/publication/mobile-dark-4.png",
+      "output/november-fruit/publication/mobile-dark-5.png",
+      "output/november-fruit/publication/mobile-dark-6.png",
+      "output/november-fruit/publication/mobile-dark-7.png",
+      "output/november-fruit/publication/mobile-dark-8.png",
+      "output/november-fruit/publication/mobile-dark-9.png",
+      "output/november-fruit/publication/mobile-light-0.png",
+      "output/november-fruit/publication/mobile-light-1.png",
+      "output/november-fruit/publication/mobile-light-2.png",
+      "output/november-fruit/publication/mobile-light-3.png",
+      "output/november-fruit/publication/mobile-light-4.png",
+      "output/november-fruit/publication/mobile-light-5.png",
+      "output/november-fruit/publication/mobile-light-6.png",
+      "output/november-fruit/publication/mobile-light-7.png",
+      "output/november-fruit/publication/mobile-light-8.png",
+      "output/november-fruit/publication/mobile-light-9.png",
+      "output/november-fruit/publication/table-desktop-dark-fixed.png",
+      "output/november-fruit/publication/table-desktop-light-fixed.png",
+      "output/november-fruit/publication/table-mobile-dark-fixed.png",
+      "output/november-fruit/publication/table-mobile-light-fixed.png"
+    ],
+    "source_files": [
+      "output/november-fruit/publication/november-seasonal-fruit-tistory-fragment.txt",
+      "output/november-fruit/publication/editor-source-clipboard.txt",
+      "output/november-fruit/publication/native-preview-dom-fixed.html"
+    ]
+  }
+}

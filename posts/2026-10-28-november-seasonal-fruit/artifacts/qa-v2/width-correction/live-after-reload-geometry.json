@@ -1,0 +1,39 @@
+{
+  "articleWidth": 800,
+  "figures": [
+    {
+      "cls": "imageblock widthContent",
+      "img": {
+        "alt": "주황빛 온주밀감이 여러 개 모여 있는 모습",
+        "h": 533,
+        "w": 800
+      },
+      "w": 800,
+      "x": 182.5
+    },
+    {
+      "cls": "imageblock widthContent",
+      "img": {
+        "alt": "체크무늬 천 위에 놓인 붉고 노란 후지 사과 세 개",
+        "h": 655,
+        "w": 800
+      },
+      "w": 800,
+      "x": 182.5
+    },
+    {
+      "cls": "imageblock widthContent",
+      "img": {
+        "alt": "검은 배경 위에 놓인 부유 단감과 반으로 자른 단면",
+        "h": 534,
+        "w": 800
+      },
+      "w": 800,
+      "x": 182.5
+    }
+  ],
+  "paragraph": {
+    "w": 800,
+    "x": 182.5
+  }
+}

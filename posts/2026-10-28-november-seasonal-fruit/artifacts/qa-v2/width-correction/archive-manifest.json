@@ -1,0 +1,76 @@
+{
+  "post_id": 157,
+  "url": "https://dop3n.tistory.com/entry/11%EC%9B%94-%EC%A0%9C%EC%B2%A0%EA%B3%BC%EC%9D%BC-%EB%AD%98-%EB%A8%B9%EC%9D%84%EA%B9%8C",
+  "revision_scope": "Native article image width alignment only; no new photos, prose or global skin changes",
+  "ORIGINAL_CORRECTED_SUBMITTED_SHA256": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504",
+  "original_corrected_submitted_bytes": 7832,
+  "sanitized_html": "corrected-body-SANITIZED-NOT-REPUBLISHABLE.html",
+  "SANITIZED_HTML_SHA256": "76e289b3ab11042d964f1ae30dd804b7a639991e0beca5129af7f1cf62ece875",
+  "sanitized_is_exact_submitted_file": false,
+  "initial_publication_blob": "875b5b3c7363de9e2c8a159330916126414f9cad",
+  "initial_submission_sha256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
+  "independent_review_status": "PASS_NARROW_LIVE_DESKTOP_IMAGE_ALIGNMENT",
+  "limitations": [
+    "Live mobile and light-theme repair rendering not tested",
+    "This repair does not retroactively pass initial1280prepublicationgate"
+  ],
+  "lesson": "Use Tistory native 본문 폭 맞춤 (widthContent) when article images must match text width. Validate actual skin result: alignCenter can expand images beyond prose.",
+  "redaction": "Raw native tokens and signed URLs removed; original submitted hash kept distinct from sanitized file hash. Before-geometry HTML field omitted because it embedded signed URLs.",
+  "files": [
+    {
+      "path": "corrected-body-SANITIZED-NOT-REPUBLISHABLE.html",
+      "bytes": 7089,
+      "sha256": "76e289b3ab11042d964f1ae30dd804b7a639991e0beca5129af7f1cf62ece875"
+    },
+    {
+      "path": "independent-live-width-review.json",
+      "bytes": 2212,
+      "sha256": "e9f55d60c4513d22dbb48ed73377ba523caaef1a1bd4369b40c9febe47cb91c4"
+    },
+    {
+      "path": "live-after-loaded-full.png",
+      "bytes": 493016,
+      "sha256": "731180d22ed4caac59e7ff8cd7a59ef7ce7e8c22341e602cfc085fc10af4f62f"
+    },
+    {
+      "path": "live-after-reload-geometry.json",
+      "bytes": 778,
+      "sha256": "d6cc6da3fd93f219109076d08eda7a537dd615cb3d9dbdc55ae1aef65027952b"
+    },
+    {
+      "path": "live-apple-loaded.png",
+      "bytes": 94631,
+      "sha256": "2c444fae90b53a4048e6b0fc8c2954f0c50c5d3eeff70ff31ef04c620ad1720d"
+    },
+    {
+      "path": "live-before-geometry-REDACTED.json",
+      "bytes": 952,
+      "sha256": "b9922f2a9b113fedee3ca1bccd080447506bb70d8b8916917a2dc9cc0669585b"
+    },
+    {
+      "path": "live-before.png",
+      "bytes": 498322,
+      "sha256": "127fff97980677b0403379827d7564b9bae5e8e3890e138f20a63eb13c3dbd70"
+    },
+    {
+      "path": "live-loaded-images.json",
+      "bytes": 517,
+      "sha256": "1711ce297f4f76b3f90de53dd9fbae2cf46f0a33c66ad8bbafe3a8901204fa8c"
+    },
+    {
+      "path": "live-persimmon-loaded.png",
+      "bytes": 58831,
+      "sha256": "be6c69400f326b642a7be248808b3b60416158c39aafec50e431dea775e96246"
+    },
+    {
+      "path": "repair-receipt.json",
+      "bytes": 1364,
+      "sha256": "a13df60b9a6fa201b2a0b3a31d13d60c86c4ec678469822c98853b9603843789"
+    },
+    {
+      "path": "source-comparison.json",
+      "bytes": 337,
+      "sha256": "632dd0adc1a26582f7bf81dc02eccdd6d6c6be63d4e452cad983ec0e3a1fe37f"
+    }
+  ]
+}

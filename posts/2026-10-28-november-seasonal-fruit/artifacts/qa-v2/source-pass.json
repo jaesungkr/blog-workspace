@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-28T02:46:44.279973Z",
+  "checked_by": "approved_source_review",
+  "article_content_sha256": "9f36dc9ad96f44443efdbbf10343f4a359bdff35aef23c8a6a113de3a11ac47c",
+  "brief_sha256": "d71f9adbca7d8dfc605db50d5892a183579421b65325f35bb7d0261d51fcc6da",
+  "evidence_sha256": "85525d7aed8c5eb592db004190a4e056aec8721b64e94d21facdd07f80dc2fbf",
+  "note": "Independent source review retained; metadata/brief category mapping rechecked. Repository Health > 영양 · 식단 maps separately to Tistory 생활·기록 > 음식·장보기 ID847700. Exact reverse transformation still matches approved raw source SHA256 a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e; no prose changes. Upstream research_november_seasonal_fruits factual/rights PASS supplied by parent. Previous source-pass preserved. Rendering and exact1280px final QA are not approved by this record; upload-start/stop ordering deviation remains recorded."
+}

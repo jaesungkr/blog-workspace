@@ -1,0 +1,51 @@
+{
+  "reviewer": "review_fruit_post_preview",
+  "status": "PASS_NARROW_LIVE_DESKTOP_IMAGE_ALIGNMENT",
+  "final_submitted_native_sha256": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504",
+  "finding": "On refreshed live desktop page, all three article figures/images align with paragraph column after native widthContent change. Original native-preview PASS did not guarantee actual live hELLO JavaScript layout.",
+  "before": {
+    "paragraph_width": 800,
+    "paragraph_x": 182.5,
+    "all_three_figure_widths": 1100,
+    "all_three_figure_x": 32.5
+  },
+  "after": {
+    "paragraph_width": 800,
+    "paragraph_x": 182.5,
+    "all_three_figure_and_image_widths": 800,
+    "all_three_figure_x": 182.5,
+    "all_images_complete": true,
+    "natural_widths": [
+      1280,
+      1280,
+      1280
+    ],
+    "display_heights": [
+      533,
+      654,
+      533
+    ]
+  },
+  "preservation_checks": {
+    "normalized_body_text_unchanged": true,
+    "all_13_external_links_unchanged": true,
+    "all_three_native_image_asset_identifiers_unchanged": true,
+    "all_three_alt_texts_unchanged": true
+  },
+  "evidence": [
+    "output/november-fruit/publication/width-fix/live-before.png",
+    "output/november-fruit/publication/width-fix/live-before-geometry.json",
+    "output/november-fruit/publication/width-fix/live-after-reload.png",
+    "output/november-fruit/publication/width-fix/live-after-reload-geometry.json",
+    "output/november-fruit/publication/width-fix/live-apple-loaded.png",
+    "output/november-fruit/publication/width-fix/live-persimmon-loaded.png",
+    "output/november-fruit/publication/width-fix/live-loaded-images.json",
+    "output/november-fruit/publication/width-fix/final-submitted-native.txt"
+  ],
+  "limitations": [
+    "Reviewed publisher-captured live screenshots and saved geometry, no independent browser control.",
+    "Actual live mobile and light-theme repair rendering not tested; no corresponding PASS claimed.",
+    "Initial full-page after screenshot had blank lazy-loaded second/third photos; later viewport screenshots and completion evidence confirmed both loaded.",
+    "This narrow repair review is not a reapproval of all original publication gates."
+  ]
+}

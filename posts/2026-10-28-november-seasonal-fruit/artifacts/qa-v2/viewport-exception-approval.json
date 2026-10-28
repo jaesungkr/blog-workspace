@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "scope": "this article only: november-seasonal-fruit",
+  "exception": "exact 1280px pre-publication visual QA not performed due browser preview clamp at 1060px",
+  "actual_checked_viewports": [
+    1060,
+    360
+  ],
+  "actual_checked_themes": [
+    "light",
+    "dark"
+  ],
+  "approved_at_utc": "2026-10-28T02:49:13Z",
+  "approved_at_asia_seoul": "2026-10-28T11:49:13+09:00",
+  "question_message_id": "Sentinel_15ccd8cf76fc819194e2ea610085188b",
+  "question": "모바일과 PC 미리보기에서 본문·사진·표를 확인했고, 어두운 화면에서 표 제목이 흐리던 부분도 고쳤습니다.\n다만 PC 미리보기가 1060px까지만 표시돼, 정해 둔 1280px 검수는 못 했습니다. 확인한 화면에서는 문제가 없는데, 이번 글은 이 제한을 감안하고 게시해도 될까요?",
+  "answer_message_id": "Sentinel_aa643e7e3cb881919b2870847779551d",
+  "answer": "응 게시해줘",
+  "approved_source_sha256": "a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e",
+  "submitted_fragment_sha256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
+  "source_and_media_approval_unchanged": true,
+  "exact_1280_performed": false,
+  "strict_all_gates_pass": false,
+  "publication_success_confirmed": true
+}

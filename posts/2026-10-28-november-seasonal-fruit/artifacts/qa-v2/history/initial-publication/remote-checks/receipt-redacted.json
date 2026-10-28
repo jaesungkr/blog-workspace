@@ -1,0 +1,108 @@
+{
+  "checked_at_utc": "2026-10-28T02:40:58.005217+00:00",
+  "method": "GET exact observed src URLs; no URL alteration; no upload",
+  "results": [
+    {
+      "image": "01-satsuma.jpg",
+      "remote_host": "img1.daumcdn.net",
+      "observed_url_sha256": "509a43b29d412304d3a9b90b7206947e48246c33e28c11342dc869a9ae5920c9",
+      "reference_sha256": "6520fe95f681976776f7d0d00f26f441314fdfef92b612bcc0f896bdbe798994",
+      "reference_bytes": 343970,
+      "observed_dimensions": [
+        1280,
+        853
+      ],
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 242809,
+      "sha256": "0c3bb224dd80fdf0fd95932bbf91d24fa3c1f9ce40dbc8427c75908cd79f66bd",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "format": "JPEG",
+      "exact_byte_match": false,
+      "dimensions_match": true,
+      "status": "verified",
+      "pixel_comparison": {
+        "method": "reference resized to CDN dimensions with Pillow LANCZOS, then RGB comparison",
+        "rgb_mean_absolute_difference_0_255": 2.5319668327471665,
+        "rgb_rmse_0_255": 3.891425827845432,
+        "psnr_db": 36.32862846798488,
+        "interpretation": "Low differences consistent with CDN resizing/recompression. Visual inspection confirms correct fruit image."
+      },
+      "reference_dimensions": [
+        1600,
+        1067
+      ]
+    },
+    {
+      "image": "02-fuji-apples.jpg",
+      "remote_host": "img1.daumcdn.net",
+      "observed_url_sha256": "52dd7e40a40f84054b09dedbe187706bd17359facc34a3f2cf98117cb652b0e9",
+      "reference_sha256": "1a85380e57268185680487d2857f4be73b23afe67af70da57f47c7e6779c8a48",
+      "reference_bytes": 319167,
+      "observed_dimensions": [
+        1280,
+        1047
+      ],
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 225939,
+      "sha256": "843ea311fa1cf30c7d2f7bf45625de96d3ccaa2999944d9d308eaffa7ad6c859",
+      "dimensions": [
+        1280,
+        1047
+      ],
+      "format": "JPEG",
+      "exact_byte_match": false,
+      "dimensions_match": true,
+      "status": "verified",
+      "pixel_comparison": {
+        "method": "reference resized to CDN dimensions with Pillow LANCZOS, then RGB comparison",
+        "rgb_mean_absolute_difference_0_255": 1.6489633078637376,
+        "rgb_rmse_0_255": 2.3813998291866434,
+        "psnr_db": 40.594157245885555,
+        "interpretation": "Low differences consistent with CDN resizing/recompression. Visual inspection confirms correct fruit image."
+      },
+      "reference_dimensions": [
+        1600,
+        1309
+      ]
+    },
+    {
+      "image": "03-fuyu-persimmon.jpg",
+      "remote_host": "img1.daumcdn.net",
+      "observed_url_sha256": "b39f2292c9ed97503c500dd256b9fae73fe8cf05eb702e740ab50c7382b9f6e5",
+      "reference_sha256": "f1cb81276b388bd921224b30b87030afee83c1c605de376364da9edb8834307c",
+      "reference_bytes": 132397,
+      "observed_dimensions": [
+        1280,
+        853
+      ],
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 94931,
+      "sha256": "21aa4919f72c4106eb45f19afa8c688807b32661ea84bb10d0d975de3886e0f7",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "format": "JPEG",
+      "exact_byte_match": false,
+      "dimensions_match": true,
+      "status": "verified",
+      "pixel_comparison": {
+        "method": "reference resized to CDN dimensions with Pillow LANCZOS, then RGB comparison",
+        "rgb_mean_absolute_difference_0_255": 0.9410029552559595,
+        "rgb_rmse_0_255": 2.271061492099848,
+        "psnr_db": 41.00622573874415,
+        "interpretation": "Low differences consistent with CDN resizing/recompression. Visual inspection confirms correct fruit image."
+      },
+      "reference_dimensions": [
+        1600,
+        1067
+      ]
+    }
+  ]
+}

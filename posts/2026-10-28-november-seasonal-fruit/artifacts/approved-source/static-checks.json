@@ -1,0 +1,14 @@
+{
+  "article_sha256": "a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e",
+  "approved_source": "User approved current v4 prose, Library current version 3, 2026-10-28",
+  "image_references": [
+    "images-web/01-satsuma.jpg",
+    "images-web/02-fuji-apples.jpg",
+    "images-web/03-fuyu-persimmon.jpg"
+  ],
+  "all_image_references_resolve": true,
+  "image_license_captions": 3,
+  "static_checks": "pass",
+  "visual_checks": "not performed in producer: Chromium failed with process socket permission and bwrap setup error",
+  "publication_checks": "handled separately by browser publisher; not asserted by this package"
+}

@@ -1,0 +1,28 @@
+{
+  "approved_sha256": "a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e",
+  "zip_sha256": "a004e47caad3ac44e76765de93bcf595becfff00d61bb0646cd8a55ec7d7236e",
+  "transport_git_blob": "03c02b729c699c97d9ac9f11a9dba17d92d7e94e",
+  "reconstruction_exact_bytes": true,
+  "transformations": [
+    "H1 moved to frontmatter",
+    "H2 changed to H3",
+    "image Markdown replaced with media directives; attribution paragraphs retained verbatim"
+  ],
+  "media_mapping": [
+    {
+      "directive": "{{media:satsuma-lead}}",
+      "approved_markdown": "![주황빛 온주밀감이 여러 개 모여 있는 모습](images-web/01-satsuma.jpg)"
+    },
+    {
+      "directive": "{{media:fuji-photo}}",
+      "approved_markdown": "![체크무늬 천 위에 놓인 붉고 노란 후지 사과 세 개](images-web/02-fuji-apples.jpg)"
+    },
+    {
+      "directive": "{{media:fuyu-photo}}",
+      "approved_markdown": "![검은 배경 위에 놓인 부유 단감과 반으로 자른 단면](images-web/03-fuyu-persimmon.jpg)"
+    }
+  ],
+  "independent_reviewer": "research_november_seasonal_fruits",
+  "reported_result": "pass",
+  "rendering_reviewed": false
+}

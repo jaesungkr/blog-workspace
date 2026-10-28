@@ -1,0 +1,38 @@
+[
+  {
+    "alt": "주황빛 온주밀감이 여러 개 모여 있는 모습",
+    "author": "Sfullenwider",
+    "title": "Satsuma oranges",
+    "source": "https://commons.wikimedia.org/wiki/File:Satsuma_oranges.jpg",
+    "path": "images-web/01-satsuma.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modifications": "크기 축소 및 JPEG 최적화",
+    "sha256": "6520fe95f681976776f7d0d00f26f441314fdfef92b612bcc0f896bdbe798994",
+    "bytes": 343970
+  },
+  {
+    "alt": "체크무늬 천 위에 놓인 붉고 노란 후지 사과 세 개",
+    "author": "Takeaway",
+    "title": "Fuji apples",
+    "source": "https://commons.wikimedia.org/wiki/File:Fuji_apples.jpg",
+    "path": "images-web/02-fuji-apples.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modifications": "크기 축소 및 JPEG 최적화",
+    "sha256": "1a85380e57268185680487d2857f4be73b23afe67af70da57f47c7e6779c8a48",
+    "bytes": 319167
+  },
+  {
+    "alt": "검은 배경 위에 놓인 부유 단감과 반으로 자른 단면",
+    "author": "© Frank Schulenburg",
+    "title": "Fuyu persimmon fruits, one cut open",
+    "source": "https://commons.wikimedia.org/wiki/File:Fuyu_persimmon_fruits,_one_cut_open.jpg",
+    "path": "images-web/03-fuyu-persimmon.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modifications": "크기 축소 및 JPEG 최적화",
+    "sha256": "f1cb81276b388bd921224b30b87030afee83c1c605de376364da9edb8834307c",
+    "bytes": 132397
+  }
+]

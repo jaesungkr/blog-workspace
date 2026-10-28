@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "status": "published",
+  "post_id": 157,
+  "url": "https://dop3n.tistory.com/entry/11%EC%9B%94-%EC%A0%9C%EC%B2%A0%EA%B3%BC%EC%9D%BC-%EB%AD%98-%EB%A8%B9%EC%9D%84%EA%B9%8C",
+  "published_time_ui": "2026-10-28 11:49 KST",
+  "initial_publication_confirmed_at_utc": "2026-10-28T02:49:52Z",
+  "latest_revision_confirmed_at_utc": "2026-10-28T03:00:11Z",
+  "submitted_fragment_sha256": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504",
+  "initial_submitted_fragment_sha256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
+  "submitted_html_stored": false,
+  "sanitized_html": "width-correction/corrected-body-SANITIZED-NOT-REPUBLISHABLE.html",
+  "sanitized_html_sha256": "76e289b3ab11042d964f1ae30dd804b7a639991e0beca5129af7f1cf62ece875",
+  "sanitized_is_exact_submitted_file": false,
+  "repository_category": {
+    "category": "Health",
+    "subcategory": "영양 · 식단"
+  },
+  "tistory_category": {
+    "name": "생활·기록 > 음식·장보기",
+    "id": 847700
+  },
+  "representative_image": "01-satsuma.jpg",
+  "viewport_exception": "viewport-exception-approval.json",
+  "all_strict_gates_passed": false,
+  "post_publication_review": {
+    "authorized_by_user_message": "Sentinel_146d7e2b5dd481918ec153b9d4ad4648",
+    "scope": "post157 image-width correction only",
+    "result": "PASS_NARROW_LIVE_DESKTOP_IMAGE_ALIGNMENT",
+    "live_mobile_and_light_theme_repair_review": "not performed"
+  },
+  "evidence": [
+    "history/initial-publication/publication-receipt.json",
+    "width-correction/repair-receipt.json",
+    "width-correction/independent-live-width-review.json"
+  ]
+}

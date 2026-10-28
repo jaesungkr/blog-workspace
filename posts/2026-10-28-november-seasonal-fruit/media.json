@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "lead_id": "satsuma-lead",
+  "items": [
+    {
+      "id": "satsuma-lead",
+      "kind": "image",
+      "origin": "user_supplied",
+      "role": "lead",
+      "claim_ids": [
+        "PHOTO1"
+      ],
+      "actor": "Sfullenwider",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Satsuma_oranges.jpg",
+      "raw_path": "assets/01-satsuma.jpg",
+      "publish_path": "assets/01-satsuma.jpg",
+      "rights": "Sfullenwider; CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/; 크기 축소 및 JPEG 최적화; resized derivative remains CC BY-SA 4.0",
+      "alt": "주황빛 온주밀감이 여러 개 모여 있는 모습",
+      "caption": "온주밀감.",
+      "processing": [
+        "크기 축소 및 JPEG 최적화 (parent supplied; unchanged in consumer)"
+      ],
+      "redactions": [],
+      "width": 1600,
+      "height": 1067,
+      "placement": "after:opening",
+      "sha256": "6520fe95f681976776f7d0d00f26f441314fdfef92b612bcc0f896bdbe798994",
+      "status": "validated",
+      "tistory_url": ""
+    },
+    {
+      "id": "fuji-photo",
+      "kind": "image",
+      "origin": "user_supplied",
+      "role": "concept",
+      "claim_ids": [
+        "PHOTO2"
+      ],
+      "actor": "Takeaway",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fuji_apples.jpg",
+      "raw_path": "assets/02-fuji-apples.jpg",
+      "publish_path": "assets/02-fuji-apples.jpg",
+      "rights": "Takeaway; CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/; 크기 축소 및 JPEG 최적화; resized derivative remains CC BY-SA 4.0",
+      "alt": "체크무늬 천 위에 놓인 붉고 노란 후지 사과 세 개",
+      "caption": "후지 사과.",
+      "processing": [
+        "크기 축소 및 JPEG 최적화 (parent supplied; unchanged in consumer)"
+      ],
+      "redactions": [],
+      "width": 1600,
+      "height": 1309,
+      "placement": "section:사과를 고른다면 부사부터",
+      "sha256": "1a85380e57268185680487d2857f4be73b23afe67af70da57f47c7e6779c8a48",
+      "status": "validated",
+      "tistory_url": ""
+    },
+    {
+      "id": "fuyu-photo",
+      "kind": "image",
+      "origin": "user_supplied",
+      "role": "concept",
+      "claim_ids": [
+        "PHOTO3"
+      ],
+      "actor": "© Frank Schulenburg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fuyu_persimmon_fruits,_one_cut_open.jpg",
+      "raw_path": "assets/03-fuyu-persimmon.jpg",
+      "publish_path": "assets/03-fuyu-persimmon.jpg",
+      "rights": "© Frank Schulenburg; CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/; 크기 축소 및 JPEG 최적화; resized derivative remains CC BY-SA 4.0",
+      "alt": "검은 배경 위에 놓인 부유 단감과 반으로 자른 단면",
+      "caption": "부유 단감과 단면.",
+      "processing": [
+        "크기 축소 및 JPEG 최적화 (parent supplied; unchanged in consumer)"
+      ],
+      "redactions": [],
+      "width": 1600,
+      "height": 1067,
+      "placement": "section:아삭한 단감이 당기는 날에는",
+      "sha256": "f1cb81276b388bd921224b30b87030afee83c1c605de376364da9edb8834307c",
+      "status": "validated",
+      "tistory_url": ""
+    }
+  ]
+}

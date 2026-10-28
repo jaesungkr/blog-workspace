@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-10-28T02:44:00.460957Z",
+  "checked_by": "approved_source_review",
+  "article_content_sha256": "ef2f02f5553c770d37dbade4e90e2cdf472f25d8dacb85b7b749e7b6ae4265fb",
+  "brief_sha256": "3b6bcb5593518aa68e807412a1b1ed0cfdd2d6fb8a1b30e52f0b44b370763286",
+  "evidence_sha256": "85525d7aed8c5eb592db004190a4e056aec8721b64e94d21facdd07f80dc2fbf",
+  "note": "Independent cold-read and reversible v2 adaptation/brief/evidence linkage review passed. Approved raw source SHA256 a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e independently matched by exact reverse transformation. Upstream research_november_seasonal_fruits source/factual/rights PASS supplied by parent; current reviewer checked local original/media hashes and source consistency. This is not rendering or final-page approval; exact 1280px QA pending. Source pass recorded after reported upload-start/stop ordering deviation, not backdated."
+}

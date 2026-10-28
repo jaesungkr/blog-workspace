@@ -1,0 +1,18 @@
+{
+  "basic_bundle_check": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "strict_v2_check": "revision_required",
+  "strict_errors": [
+    "3 missing tistory_url",
+    "3 missing tistory_embed",
+    "missing canonical remote-media.json",
+    "missing canonical final-page.json",
+    "no current canonical final-page pass"
+  ],
+  "explanation": "User explicitly requires raw signed HTML/URLs excluded from Git. Redacted independent remote checks and actual preview review are archived separately; exact1280 one-post exception retained. These records are not fabricated into canonical full-gate pass.",
+  "source_and_photo_integrity": "approved original and photo manifest hash match",
+  "publication": "confirmed and width-corrected; not an unpublished draft",
+  "final_hash": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504"
+}

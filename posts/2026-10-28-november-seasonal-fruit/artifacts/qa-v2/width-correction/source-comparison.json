@@ -1,0 +1,8 @@
+{
+  "same_text": true,
+  "final_sha256": "45e4e40d024040f3539b1f806e462e4b42db6eb491c07535245e1c6e9477a504",
+  "native_widthContent_count": 3,
+  "native_alignCenter_count": 0,
+  "same_text_ignoring_formatting_whitespace": true,
+  "note": "Native editor normalizes block whitespace; all nonwhitespace text characters exactly identical."
+}

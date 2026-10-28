@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "reviewer": "research_november_seasonal_fruits",
+  "relayed_by": "parent",
+  "md_sha256": "a2e018dc26d1ce0ed52fb8caef37292c5f9967fc8b094f03178949da81bfa80e",
+  "finding": "package exact; photos/licenses/hashes match; official claims/title fit; no blockers",
+  "ordering_deviation": "Native image upload preceded formal independent source review; insertion and final staging held until pass."
+}

@@ -1,0 +1,39 @@
+{
+  "evidence_type": "parent reported independent browser QA; raw safe package pending",
+  "source": "parent delegation",
+  "viewports": [
+    1060,
+    360
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "coverage": "entire article in section captures",
+  "reported_pass": [
+    "3 images, captions, license links, table and body readability",
+    "body-width layout",
+    "dark table header contrast after CSS-only correction",
+    "final TXT equals actual editor clipboard",
+    "approved prose and 13 external links match"
+  ],
+  "submitted_fragment_sha256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
+  "submitted_fragment_chars": 5729,
+  "exact_1280_tested": false,
+  "exception_requested_at": "2026-10-28T02:45:49Z",
+  "exception_status": "approved for this article only",
+  "publication_status": "initial publication confirmed; later image-width revision separately archived",
+  "settings_reported": {
+    "visibility": "PUBLIC",
+    "publish_time": "now",
+    "category_id": 847700,
+    "cover": "satsuma"
+  },
+  "separate_unverified": [
+    "global skin advertisement overflow",
+    "preview anchors",
+    "image enlargement"
+  ],
+  "not_a_canonical_full_gate_pass": true,
+  "exception_approval_record": "viewport-exception-approval.json"
+}

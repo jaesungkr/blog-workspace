@@ -1,0 +1,22 @@
+{
+  "status": "awaiting_1280_waiver",
+  "title": "11월 제철과일, 뭘 먹을까?",
+  "category": {
+    "id": 847700,
+    "name": "생활·기록 > 음식·장보기"
+  },
+  "representative_image": "01-satsuma.jpg, verified in public publication dialog",
+  "fragment_sha256": "a936ac729830074314189670a6ffd5d487a8645994462cd218beac5b0a204624",
+  "fragment_exact_editor_clipboard": true,
+  "reviewer": "review_fruit_post_preview",
+  "review_scope": "Actual Tistory hELLO preview desktop1060/mobile360 both light/dark; overlapping scroll screenshots",
+  "visual_result": "pass after explicit table header color CSS-only fix",
+  "limitations": [
+    "1280 desktop not verified; custom preview fields did not resize iframe",
+    "True full-page capture unavailable; complete article in overlapping viewport screenshots",
+    "Native preview sandbox top anchor navigation/lightbox interaction not validated"
+  ],
+  "publication": "not yet clicked",
+  "post156": "not edited",
+  "source_ordering_deviation": "Native uploads occurred before source-pass; remaining staging paused until source approved"
+}

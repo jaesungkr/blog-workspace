@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "11월 국내산 과일을 장보는 일반 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "사용자 승인 최종 원고(v4), 실제 티스토리 카테고리847700 별도 매핑. 사진3장과 비교표. post157 게시 및 요청받은 사진폭 widthContent 수정 확인. 정확1280 미검수는 이번글 한정 예외승인; 수정후 실제모바일/light 미검수. 엄격gate 완전PASS 아님.",
+  "publication_mode": "codex-browser"
+}
