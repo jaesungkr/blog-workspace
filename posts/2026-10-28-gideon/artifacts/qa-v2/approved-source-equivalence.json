@@ -1,5 +1,5 @@
 {
-  "source": "revision-2026-10-28-shortened/article.md",
+  "source": "revision-2026-10-28-polish/article.md",
   "body_equal_after_inverse_transform": true,
   "transform": [
     "frontmatter",

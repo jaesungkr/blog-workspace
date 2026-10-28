@@ -1,0 +1,47 @@
+[
+  {
+    "file": "README.txt",
+    "bytes": 934,
+    "sha256": "443f509585a835966b4f01a31da982e9f94671972cc9cba538cdba391286aee7"
+  },
+  {
+    "file": "article.md",
+    "bytes": 6626,
+    "sha256": "19ed6c716dea9b6c86b96c0b36507b90ab6412f749bcb49925275703ab1715ab"
+  },
+  {
+    "file": "changes.json",
+    "bytes": 1362,
+    "sha256": "ecb606aaca1324dfe4244fa8b28313f5a6159d235af6d2d7b872b3c9262df689"
+  },
+  {
+    "file": "independent-reader-review-redacted.json",
+    "bytes": 1139,
+    "sha256": "418f8b4f985971df742d5f8fa5cc975ea289b1307e8e72d99b1e02a3440942a2"
+  },
+  {
+    "file": "native-payload-sanitized.html",
+    "bytes": 8346,
+    "sha256": "2b9a98b658fc6aab1876dfef86a438b889690b804d8e8e03ad88c11d177f853d"
+  },
+  {
+    "file": "polish-revision-receipt-redacted.json",
+    "bytes": 829,
+    "sha256": "274775346520d405a6db01a4b020f6c81112b138926acfcb0ad5921f3a80c00c"
+  },
+  {
+    "file": "proposed-polish.diff",
+    "bytes": 4547,
+    "sha256": "f5af6e232c908df5e67a94a2341c57855b1bd44b67f535eb313d2ecb7d6e46b3"
+  },
+  {
+    "file": "qa-inventory-redacted.json",
+    "bytes": 510,
+    "sha256": "737767a7841e6c2ff0b81e785af325aa7910eeeb24bb49a063d2f5cbf7928e28"
+  },
+  {
+    "file": "source-provenance.json",
+    "bytes": 1798,
+    "sha256": "385b4e097c846bcd312e0bd096dda208445750b954b511817fbe71934c658bb2"
+  }
+]

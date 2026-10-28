@@ -1,9 +1,7 @@
-# Current published shortened revision — not republishable
+# Current four-location polish — not republishable
 
-https://dop3n.tistory.com/entry/확신이-없었던-기드온 — post160, original publication 2026-10-28 16:21 KST.
+https://dop3n.tistory.com/entry/확신이-없었던-기드온 — post160; original publication 2026-10-28 16:21 KST.
 
-Current source and receipt: artifacts/qa-v2/revision-2026-10-28-shortened/. This is the full approved shortened revision saved at 10:03:17 UTC, not merely the earlier footer removal. Relative images/ references in this unchanged delta package resolve to the same existing assets/ files listed in source-provenance.json; no image bytes were included in the delta.
+Current package: artifacts/qa-v2/revision-2026-10-28-polish/. Four approved replacements saved successfully once at 10:30:50 UTC; current receipt supersedes the earlier unexecuted denied attempt. Raw signed native HTML remains private. SANITIZED HTML IS NOT BYTE-IDENTICAL OR REPUBLISHABLE. Relative images/ in preserved delta files refer to existing unchanged assets/ originals.
 
-Earlier full article and footer removal package: artifacts/approved-source/ (historical, no longer current). Earlier repository source and QA: artifacts/qa-v2/history-before-shortening/. Preserve the historical reports without treating their 42 screenshots as the current review. Current independent full native preview report covers 30 new captures; only text and hashes are archived.
-
-All native-payload-sanitized.html files are SANITIZED, NOT BYTE-IDENTICAL, NOT REPUBLISHABLE. Raw signed native/preview/live-readback bytes and exact submitted TXT are intentionally excluded. No new live action occurred during archiving.
+Prior shortened package and 30-capture full preview remain at revision-2026-10-28-shortened; prior repository files at history-before-polish. Earlier full article/footer removal and 42-capture preview remain historical. Current narrow four-capture preview is not a new full QA. No live action during archiving.

@@ -1,0 +1,2 @@
+PASS: 9 manifest entries / 10 delta files; current shortened body parity; 5 sections / 5 GODpia / 2 Commons links; 15 quoted words; two unchanged image hashes; 30 current screenshot inventory entries; matching source/native provenance across reports.
+NOT CHECKED: absent screenshot pixels/private native bytes/canonical strict gates, producer body-word counting method, fresh live page or new factual-source investigation.

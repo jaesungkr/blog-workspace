@@ -1,9 +1,9 @@
-# 현재 축약 수정 보관 검토
+# 네 곳 문장 수정 보관 검토
 
-사용자 승인된 전체 축약 원고를 읽고 새 패키지 크기·SHA-256·전체 manifest, 저장소 본문 동등성, 5절·5 GODpia 링크·2 Commons 링크·15 인용 단어, 두 이미지 바이트 불변을 검증합니다. 그림 설명 및 다섯째 절의 본문 참조는 승인 축약본에 맞게 보존했습니다. 제목·분류·URL·원래 게시 시각 metadata는 유지했습니다.
+현재 패키지 크기·SHA-256과 9개 manifest 항목(10개 파일)을 검증했습니다. 네 before 문자열은 이전 축약 portable 원고에서 각각 한 번 나타나며, 정확히 네 번 교체한 결과가 현재 portable 원고와 같습니다. 저장소 본문은 frontmatter·중복 H1 제거·이미지 경로 변환 외에는 동일합니다. 이미지와 인용·링크는 보존했습니다.
 
-새 factual PASS와 30장 native preview 검토는 생산자 측 독립 검토 기록입니다. 현재 저장·live 정규화 텍스트 readback 영수증과 구분합니다. 이 소비자는 스크린샷 바이트를 받지 않아 방향·픽셀을 다시 검사하지 않았습니다. 앞선 42장 기록은 historical이며 새 QA로 재표시하지 않습니다. 원본 그림 바이트는 앞서 실제 픽셀을 검사한 것과 동일합니다.
+독립 reader PASS는 local source/diff의 의미·흐름 검토입니다. 변경 단락 native preview PASS와 저장·public readback은 게시자 영수증입니다. 이번 네 장의 캡처 해시 목록은 좁은 변경 단락 검토이며 새 전체 light/dark QA 또는 사실 조사 PASS로 표시하지 않습니다. 이미지 픽셀과 캡처를 새로 검사하지 않았습니다.
 
-이전 article.md·metadata·checker 결과·audit는 history-before-shortening에 보존했습니다. artifacts/approved-source의 이전 25개 원본 파일도 변경하지 않았습니다. 현재 원고의 기존 승인 스타일(H2, 두 ~다 절 제목, em dash)은 checker 규칙에 맞추려고 변경하지 않습니다. 기본 검사 실패는 live 저장 실패나 누락된 archive metadata가 아닙니다.
+이전 축약 원고·30장 전체 QA·기존 사실 검토는 revision-2026-10-28-shortened와 history-before-polish에 보존합니다. 최초 원고·footer 삭제·42장 검토도 기존 위치에 유지합니다. 현재 성공 영수증은 이전 미실행 거부 상태와 구분합니다.
 
-private native·canonical gate 증거가 없으므로 strict PASS를 주장하지 않습니다. sanitized HTML은 정확한 native 또는 재게시용 파일이 아닙니다. 사용자 승인 근거는 “기드온 반영해줘”이며 Git 커밋·푸시는 standing authorization에 따릅니다. live 작업과 다른 글 작업은 하지 않았습니다.
+기본 checker의 8개 승인 스타일 불일치(H2 5개, ~다 절 제목 2개, em dash 1개)는 내용 보관 누락이나 live 저장 실패가 아닙니다. strict native/canonical 증거 누락은 그대로이며 PASS를 만들지 않습니다. sanitized HTML은 비공개 raw native의 정확한 바이트 또는 재게시용 파일이 아닙니다.

@@ -1,17 +1,12 @@
 {
-  "revision": "approved full shortened manuscript",
-  "archive_bytes": 19400,
-  "archive_sha256": "a4c026adf4980428e68cf8d0e5cb26da863d92474bd35e1aa42fc3a243d0129e",
-  "git_blob": "d89cd30a1fc6b1fe7e9a476e2652c7a1b98dc751",
+  "revision": "four approved prose replacements",
+  "archive_bytes": 13053,
+  "archive_sha256": "1701a69ae1d2cc1e958ab5e8d03dbe2e1e57892c25c0d79e87cbe34746e5d3dc",
+  "git_blob": "6facbf85ba75d96e89628632a98e7a53a2031193",
   "manifest_entries": 9,
   "package_files": 10,
-  "original_md_sha256": "9e73a0b23fa4c20ae01f9a395e5f98d2d8ec7511f1140526de678bdfc05ff8eb",
-  "portable_md_sha256": "40730b5aaaa3de64421c12ff8f7b52c4b372496016e2a8901bd8d2cc06e472ba",
-  "producer_reported_body_words": [
-    831,
-    485
-  ],
-  "producer_count_method_not_reexecuted": true,
+  "exact_four_replacements": true,
+  "portable_md_sha256": "19ed6c716dea9b6c86b96c0b36507b90ab6412f749bcb49925275703ab1715ab",
   "strict_gate_pass": false,
   "live_actions": false
 }

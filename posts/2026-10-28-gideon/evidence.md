@@ -30,3 +30,7 @@ media origin `user_supplied`는 전달 패키지에서 받은 파일이라는 �
 현재 승인 MD SHA-256: 9e73a0b23fa4c20ae01f9a395e5f98d2d8ec7511f1140526de678bdfc05ff8eb. portable MD SHA-256: 40730b5aaaa3de64421c12ff8f7b52c4b372496016e2a8901bd8d2cc06e472ba. 이미지 경로만 바뀌었으며 저장소 article.md는 frontmatter·중복 H1 제거·assets 경로 변환만 더합니다. 다섯째 절은 승인본대로 사사기 8:22~28을 가리킵니다. 이미지·권리 원본 manifest와 EXIF 방향은 이전 패키지에 그대로 보존합니다.
 
 831→485 본문 단어 및 약 41.6% 감소는 생산자 고정 집계에 따른 전달 수치입니다. 해당 집계 구현은 이 delta에 없으므로 소비자 재계산 PASS로 표시하지 않습니다.
+
+## 현재 네 곳 문장 수정 (10:30:50 UTC 저장)
+
+최신 패키지는 artifacts/qa-v2/revision-2026-10-28-polish입니다. 그 이전 설명의 축약본·30장 전체 검토는 역사적 증거입니다. 현재 승인 원고 SHA-256은 bb2aa50fda2e5750e1ee803bbe247927183da026de6918d860a38281fedc4795, portable 원고는 19ed6c716dea9b6c86b96c0b36507b90ab6412f749bcb49925275703ab1715ab입니다. changes.json의 네 교체만 적용하여 본문을 직접 대조했습니다. reader 검토는 local source/diff 범위, 네 장 preview 해시는 변경 단락 범위, live 일치 검증은 게시자 영수증 범위입니다. 현재 consumer는 새 사실·전체 화면·live 검사를 수행하지 않았습니다.

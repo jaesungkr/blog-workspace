@@ -1,0 +1,18 @@
+[
+  {
+    "file": "changed-section-0.png",
+    "sha256": "a3f7ae45118c9db9470578b694a0dce464bff43fee21347de25604340b391825"
+  },
+  {
+    "file": "changed-section-1.png",
+    "sha256": "ecf703bda3debea6fd6681325cdd553391bec40a9820a658cd21e74cc249584f"
+  },
+  {
+    "file": "changed-section-2.png",
+    "sha256": "01631a621e10442f60d1a78e8ef894498086d5c71fb539d76758828c9972bcee"
+  },
+  {
+    "file": "changed-section-3.png",
+    "sha256": "c607197d535fe13d013df0e0fe005bf7166b52504d866e7c59653d9b7a12b0cd"
+  }
+]

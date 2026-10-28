@@ -1,0 +1,9 @@
+{
+  "source": "revision-2026-10-28-shortened/article.md",
+  "body_equal_after_inverse_transform": true,
+  "transform": [
+    "frontmatter",
+    "remove duplicate H1",
+    "two assets paths"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "revision": "approved full shortened manuscript",
+  "archive_bytes": 19400,
+  "archive_sha256": "a4c026adf4980428e68cf8d0e5cb26da863d92474bd35e1aa42fc3a243d0129e",
+  "git_blob": "d89cd30a1fc6b1fe7e9a476e2652c7a1b98dc751",
+  "manifest_entries": 9,
+  "package_files": 10,
+  "original_md_sha256": "9e73a0b23fa4c20ae01f9a395e5f98d2d8ec7511f1140526de678bdfc05ff8eb",
+  "portable_md_sha256": "40730b5aaaa3de64421c12ff8f7b52c4b372496016e2a8901bd8d2cc06e472ba",
+  "producer_reported_body_words": [
+    831,
+    485
+  ],
+  "producer_count_method_not_reexecuted": true,
+  "strict_gate_pass": false,
+  "live_actions": false
+}
