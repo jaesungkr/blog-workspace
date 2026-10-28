@@ -1,0 +1,38 @@
+{
+  "title": "확신이 없었던 기드온",
+  "url": "https://dop3n.tistory.com/entry/확신이-없었던-기드온",
+  "postId": 160,
+  "visibility": "PUBLIC",
+  "category": "신앙·묵상/성경 인물",
+  "categoryId": 848725,
+  "publishedAtDisplayedKST": "2026-10-28 16:21",
+  "publishClickCount": 1,
+  "managementListConfirmed": true,
+  "sourceMarkdownSha256": "ece23fbd1bc13656788b10a3ed258490416447e5a695c6903e01f777dfaf6445",
+  "exactNativeFragmentSha256": "5ef16a46522f4084d0f8fd4ceb93205c8cda70e8cd50c2c78e906c3bae2f54b9",
+  "preparedNativeSha256": "5ef16a46522f4084d0f8fd4ceb93205c8cda70e8cd50c2c78e906c3bae2f54b9",
+  "representativeImage": "gideon-and-angel-bol.jpg",
+  "independentPreviewReport": "independent-preview-review-redacted.json",
+  "remoteImageVerification": "remote-images-verification.json",
+  "qaInventory": "qa-screenshot-inventory-redacted.json",
+  "qaScreenshotCount": 42,
+  "mobileFinalDocumentClientScroll": [
+    341,
+    341
+  ],
+  "mobileFinalArticleClientScroll": [
+    309,
+    309
+  ],
+  "mobileEarlierTransientScrollWidth": 816,
+  "globalStylesOrOtherPostsChanged": false,
+  "postPublicationFullVisualQA": false,
+  "notes": [
+    "Raw native HTML/private signed image URLs remain local-only and must not be archived.",
+    "Second image Tistory JPEG recompression changes bytes/pixels slightly; oriented1700x1142 and same content validated.",
+    "No new prose changes during publication."
+  ],
+  "publicPageTitleConfirmed": "확신이 없었던 기드온 — dev.log",
+  "publicPageURLConfirmed": true,
+  "visibilityEvidence": "Public selected in final publish dialog; public publish clicked once; resulting public URL opened with correct page title."
+}

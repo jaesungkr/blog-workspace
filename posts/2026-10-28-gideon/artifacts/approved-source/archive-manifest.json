@@ -1,0 +1,122 @@
+[
+  {
+    "path": "README.txt",
+    "bytes": 1734,
+    "sha256": "fee434a154348c4c29a970b210836f87d499b98d3e0df3fb552159334f17976c"
+  },
+  {
+    "path": "article.md",
+    "bytes": 10363,
+    "sha256": "b62793d8fef6b8e8df940da103003108afc65527b49090e008392fa99562ea29"
+  },
+  {
+    "path": "footer-removal-audit.json",
+    "bytes": 685,
+    "sha256": "91d11b706508786858f0470dee2eab95e7fd8bf3e0b51e9aae01d0f0bcf9ea20"
+  },
+  {
+    "path": "footer-removal-receipt-redacted.json",
+    "bytes": 1044,
+    "sha256": "9b15c58c744cc58e0021d4ff2c350b1b7ed86ab8766ce5c0c05faaf23ecae9ef"
+  },
+  {
+    "path": "footer-removal.diff",
+    "bytes": 399,
+    "sha256": "310027d9f1bdc0bd0a928ba1d6c56ab57eadf5f13c3d75f4a64454532e1921ae"
+  },
+  {
+    "path": "images/README.md",
+    "bytes": 1701,
+    "sha256": "3536412fd523efd8dd851507411d9be25417acf8dcfd41a0eeae1c9545fdcd0c"
+  },
+  {
+    "path": "images/gideon-and-angel-bol.jpg",
+    "bytes": 96709,
+    "sha256": "fb75f31bc4caf97b4763234956984ba0436fcd16f411173534cee650d1677add"
+  },
+  {
+    "path": "images/gideon-wringing-fleece-1873.jpg",
+    "bytes": 997147,
+    "sha256": "237c4a52f699f5a1d0401a5cf29f30b9ccede88b7037e8d6195d49ecdf72b3ab"
+  },
+  {
+    "path": "images/manifest.json",
+    "bytes": 3457,
+    "sha256": "08e41566785f7031df80faff4605a7e229e0051ab9f46d009fbf99dae603689c"
+  },
+  {
+    "path": "independent-factual-source-review-redacted.json",
+    "bytes": 3006,
+    "sha256": "edbb7efe6786646d74805c06bcc033d3c4c323ed4d2679b91b38002462e448f2"
+  },
+  {
+    "path": "independent-preview-review-redacted.json",
+    "bytes": 6192,
+    "sha256": "0651915022e65d8e6af373a2d38fbc3a5d62a9fde739a6364715b96cfaa0348c"
+  },
+  {
+    "path": "independent-source-parity.json",
+    "bytes": 1195,
+    "sha256": "91bfb39c3cfab7631e0f975658eacfa1a5345c51461bc1ef17f69f2a4e466c43"
+  },
+  {
+    "path": "initial-publication-history/article.md",
+    "bytes": 10685,
+    "sha256": "b0bfee1aa2f38477bab215f272526c8a30b5a94c4047a6306593c5f531b852db"
+  },
+  {
+    "path": "initial-publication-history/native-payload-sanitized.html",
+    "bytes": 12517,
+    "sha256": "c1bb1342be949e698dc30059dcad1812ebb1dd69511c9f99b52449d70c7ea349"
+  },
+  {
+    "path": "initial-publication-history/publication-receipt-redacted.json",
+    "bytes": 1696,
+    "sha256": "0d03f6d4a1e7a5a93a0fa79f43921e967bf31041478cba9c11bc7a5a161e3a93"
+  },
+  {
+    "path": "initial-publication-history/source-provenance.json",
+    "bytes": 1316,
+    "sha256": "7a980fa41c9452ab286dbe5e43467c07b25f2b6552e994afd0463d959e5aaae0"
+  },
+  {
+    "path": "mobile360-metrics.json",
+    "bytes": 1349,
+    "sha256": "15d63b774cbb10b711a26d9198c50630221834505434a9653531849254ee4da9"
+  },
+  {
+    "path": "mobile360-overflow-recheck.json",
+    "bytes": 351,
+    "sha256": "2768efb2deb2527fc509e17d4da957c0760938c7da1bf0cedf88cd4c8b0453fb"
+  },
+  {
+    "path": "native-payload-sanitized.html",
+    "bytes": 11931,
+    "sha256": "caed3d8d0a56426ef874d7987bea2e876844c25009f0dfbee8a1ea1114581731"
+  },
+  {
+    "path": "pc1280-metrics.json",
+    "bytes": 1315,
+    "sha256": "ba25d390883758dba6a6aee7315b0e3eea629752e4b4b768a032343df8145b5c"
+  },
+  {
+    "path": "publication-receipt-redacted.json",
+    "bytes": 1696,
+    "sha256": "0d03f6d4a1e7a5a93a0fa79f43921e967bf31041478cba9c11bc7a5a161e3a93"
+  },
+  {
+    "path": "qa-screenshot-inventory-redacted.json",
+    "bytes": 5639,
+    "sha256": "0c966661b64fd1ed81fe43053eb831f7b0b2cb98a25df6f16f4056abe65ac4f3"
+  },
+  {
+    "path": "remote-images-verification.json",
+    "bytes": 933,
+    "sha256": "b00850c8e703db18b19b55cbe0148962a4de41cef6c994a16f3c29e73a42f7a7"
+  },
+  {
+    "path": "source-provenance.json",
+    "bytes": 1156,
+    "sha256": "e80c20339a4dc03d3b0bf1ba0690ab217ca027e7698f1d62e004c1f7d53665ce"
+  }
+]

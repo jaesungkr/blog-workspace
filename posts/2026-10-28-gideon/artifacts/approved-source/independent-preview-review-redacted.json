@@ -1,0 +1,224 @@
+{
+  "status": "PASS independent native preview visual and prose/link/alt parity",
+  "parity": {
+    "prose_equal": true,
+    "links": [
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=6",
+      "https://commons.wikimedia.org/wiki/File:Bol_-_Gideon_and_the_Angel.JPG",
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=6",
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=6",
+      "https://commons.wikimedia.org/wiki/File:Gideon_wringing_the_fleece.jpg",
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=7",
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=8",
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=6",
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=7",
+      "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=8"
+    ],
+    "alt": [
+      "천사가 바위 위 제물에 지팡이를 대고 기드온이 뒤로 물러서는 모습을 그린 흑백 판화.",
+      "기드온이 천막 앞에서 양털을 두 손으로 짜고, 아래의 그릇에 물이 떨어지는 흑백 삽화."
+    ],
+    "md_sha256": "ece23fbd1bc13656788b10a3ed258490416447e5a695c6903e01f777dfaf6445",
+    "dom_sha256": "7d5dcbc7388ebaf4a7566bb29b37efa83602e0df6cae1c0c02864b2a6495db20"
+  },
+  "prepared_native_sha256": "5ef16a46522f4084d0f8fd4ceb93205c8cda70e8cd50c2c78e906c3bae2f54b9",
+  "visual": "Individually inspected all42 approved screenshots: PC1280 light/dark9each, mobile360 light/dark12each. Full article overlap coverage confirmed, title/5sections/2quotes/2artworks and attribution captions readable. Dark quote color repaired to inherit and verified.",
+  "image_geometry": "PC portrait460x595 without enlargement; fleece800x537.4 from correctly oriented1700x1142. Mobile both309.26px width, proportional heights400/207.73. Native alt matches approved MD.",
+  "links": "8GODpia chapter links plus2Commons artwork-source links, exact targets preserved. Full normalized prose including captions and2quotes exact approvedMD.",
+  "layout": "PC inner1280 client=scroll1261. Mobile inner360 final documentclient=scroll341; articleclient=scroll309; offenders none. Initial mobile scroll816 was caught; publisher reset viewport and remeasured without changingCSS, stable no-overflow receipt supersedes initial value. Cause suspected transient external ad/layout, not conclusively established.",
+  "mobile_recheck": {
+    "article": {
+      "client": 309,
+      "rect": {
+        "bottom": 5547.87109375,
+        "height": 6321.875,
+        "left": 15.99609375,
+        "right": 325.25390625,
+        "top": -774.00390625,
+        "width": 309.2578125,
+        "x": 15.99609375,
+        "y": -774.00390625
+      },
+      "scroll": 309
+    },
+    "client": 341,
+    "offenders": [],
+    "scroll": 341
+  },
+  "screenshots": {
+    "mobile360-dark-approved00.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved01.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved02.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved03.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved04.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved05.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved06.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved07.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved08.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved09.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved10.png": [
+      1844,
+      1183
+    ],
+    "mobile360-dark-approved11.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved00.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved01.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved02.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved03.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved04.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved05.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved06.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved07.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved08.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved09.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved10.png": [
+      1844,
+      1183
+    ],
+    "mobile360-light-approved11.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved00.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved01.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved02.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved03.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved04.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved05.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved06.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved07.png": [
+      1844,
+      1183
+    ],
+    "pc1280-dark-approved08.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved00.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved01.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved02.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved03.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved04.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved05.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved06.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved07.png": [
+      1844,
+      1183
+    ],
+    "pc1280-light-approved08.png": [
+      1844,
+      1183
+    ]
+  },
+  "limitations": [
+    "Independent read-only review of shared native screenshots/DOM/metrics, not direct publishing.",
+    "Source factual gate is separately owned by research_gideon_character; this review verifies rendering and preservation, not a new Bible/source investigation.",
+    "Remote-byte asset validation remains separate publisher gate pending receipt.",
+    "No publish action taken; saved public post requires publisher verification."
+  ]
+}

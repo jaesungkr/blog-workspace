@@ -1,0 +1,14 @@
+rich-post-v2: revision_required
+media 2 · directives 0
+ERROR: rich posts must use `{{media:id}}` instead of Markdown images
+ERROR: gideon-angel: missing tistory_url for paste-ready output
+ERROR: gideon-angel: browser publication requires tistory_embed
+ERROR: gideon-fleece: missing tistory_url for paste-ready output
+ERROR: gideon-fleece: browser publication requires tistory_embed
+ERROR: lead media must appear in article.md
+ERROR: gideon-angel: registered media is unused
+ERROR: gideon-fleece: registered media is unused
+ERROR: missing artifacts/qa-v2/remote-media.json
+ERROR: missing artifacts/qa-v2/source-pass.json
+ERROR: missing artifacts/qa-v2/final-page.json for paste-ready output
+ERROR: paste-ready output requires a current final-page pass

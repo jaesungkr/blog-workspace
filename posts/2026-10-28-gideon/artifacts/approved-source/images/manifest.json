@@ -1,0 +1,57 @@
+{
+  "purpose": "Draft Korean Gideon blog — later artistic interpretations, not documentary evidence. No AI-generated images.",
+  "images": [
+    {
+      "file": "gideon-and-angel-bol.jpg",
+      "title": "Gideon and the Angel",
+      "artist": "Ferdinand Bol (1616–1680)",
+      "date": "c. 1640",
+      "source": "https://commons.wikimedia.org/wiki/File:Bol_-_Gideon_and_the_Angel.JPG",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Bol_-_Gideon_and_the_Angel.JPG",
+      "collection": "University of Michigan Museum of Art (per Commons)",
+      "license": "Public domain; PD-Art (PD-old-100-expired), Public Domain Mark",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "dimensions": [
+        460,
+        595
+      ],
+      "caption_ko": "페르디난트 볼, 「기드온과 천사」, 약 1640년. 사사기 6장 21절의 장면을 후대에 그린 판화. Wikimedia Commons, 퍼블릭 도메인.",
+      "alt_ko": "천사가 바위 위 제물에 지팡이를 대고 기드온이 뒤로 물러서는 모습을 그린 흑백 판화.",
+      "placement": "After initial calling / reassurance passage, not threshing caption. Render no wider than 460 CSS px to avoid needless enlargement.",
+      "verified": "Downloaded original JPEG; visually inspected, Gideon and angel with offering fire, no battle violence.",
+      "bytes": 96709,
+      "sha256": "fb75f31bc4caf97b4763234956984ba0436fcd16f411173534cee650d1677add",
+      "retrieved": "2026-10-28",
+      "edits": "None; original bytes retained."
+    },
+    {
+      "file": "gideon-wringing-fleece-1873.jpg",
+      "title": "Gideon wringing the fleece",
+      "artist": "Unknown illustrator (do not credit book author as image artist)",
+      "date": "1873",
+      "source": "https://commons.wikimedia.org/wiki/File:Gideon_wringing_the_fleece.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Gideon_wringing_the_fleece.jpg",
+      "collection": "Illustration from The story of the Bible from Genesis to Revelation (1873)",
+      "license": "Public domain (Commons PD-US-expired; published 1873 in Hartford, Connecticut)",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-US-expired",
+      "source_country_support": "https://search.worldcat.org/title/story-of-the-bible-from-genesis-to-revelation-told-in-simple-language-for-the-young/oclc/905311114?ht=edition&referer=di",
+      "dimensions_display": [
+        1700,
+        1142
+      ],
+      "dimensions_raw": [
+        1142,
+        1700
+      ],
+      "exif_orientation": 8,
+      "caption_ko": "양털에서 이슬을 짜내는 기드온. 사사기 6장 36~40절을 후대에 그린 1873년 성경 삽화. 작가 미상, Wikimedia Commons, 퍼블릭 도메인.",
+      "alt_ko": "기드온이 천막 앞에서 양털을 두 손으로 짜고, 아래의 그릇에 물이 떨어지는 흑백 삽화.",
+      "placement": "Beside fleece / reassurance discussion. Respect EXIF orientation 8; browser display is landscape 1700×1142. Do not strip EXIF without rotating correctly.",
+      "verified": "Downloaded original JPEG; visually inspected upright with tool respecting EXIF. Explicit fleece and vessel, no battle violence.",
+      "bytes": 997147,
+      "sha256": "237c4a52f699f5a1d0401a5cf29f30b9ccede88b7037e8d6195d49ecdf72b3ab",
+      "retrieved": "2026-10-28",
+      "edits": "None; original bytes retained."
+    }
+  ]
+}

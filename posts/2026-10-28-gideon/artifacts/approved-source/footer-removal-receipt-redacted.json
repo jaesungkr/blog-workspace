@@ -1,0 +1,22 @@
+{
+  "action": "Remove only final consolidated Bible reading paragraph",
+  "postId": 160,
+  "url": "https://dop3n.tistory.com/entry/확신이-없었던-기드온",
+  "savedAtUTC": "2026-10-28T07:25:57Z",
+  "originalPublishedTimePreservedKST": "2026-10-28 16:21",
+  "saveClickCount": 1,
+  "nativeBeforeSha256": "ba267933be23bcc36995f6fc9c694a046efc255cef732bda5183c639d85cef48",
+  "nativeAfterSha256": "f6b8e1092dd994fd457ef90db2b83725943014c96b5575fb1157d3e4fa076e8c",
+  "exactOneParagraphDeletion": true,
+  "remainingGodpiaLinks": 5,
+  "sections": 5,
+  "figures": 2,
+  "liveFooterAbsent": true,
+  "liveLastParagraph": "본문: 사사기 8:4~35 · 쉬운성경",
+  "titleURLCategoryAndOriginalTimeUnchanged": true,
+  "nativeFilesPrivateOnly": true,
+  "notes": [
+    "Editing existing published content serialized HTML with Tistory data-ke attributes and entity normalization. Before/after native revision proves only requested paragraph removed.",
+    "No prose/style/image changes made; original publication visual QA remains historical."
+  ]
+}

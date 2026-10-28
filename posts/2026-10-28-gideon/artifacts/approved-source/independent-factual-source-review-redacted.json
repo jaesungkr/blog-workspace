@@ -1,0 +1,50 @@
+{
+  "report_type": "independent_factual_source_review",
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-28T07:25:21Z",
+  "reviewer": "research_gideon_character",
+  "current_markdown_sha256": "16c0b623d1bd6c30f04b51fba5377d10b1f31a75d2e1688a672015430e25e523",
+  "historical_markdown_sha256": "ece23fbd1bc13656788b10a3ed258490416447e5a695c6903e01f777dfaf6445",
+  "historical_note": "Earlier conversation records a content PASS at approximately 06:59 UTC without a contemporaneous hash. The supplied historical SHA was independently reconstructed and verified now; this report does not backdate hash verification.",
+  "current_verification": "Current Markdown read in full. Relative to verified historical content, only the final three-chapter reading-links paragraph is removed; substantive article text is unchanged.",
+  "scope": [
+    "Judges 6-8 event sequence and distinction between scripture report and interpretation",
+    "Threshing/winepress and messenger explanations; fearful action; repeated fleece requests",
+    "Army recruitment then reduction 32000 to 10000 to 300; another soldier's dream; divine agency in 7:22",
+    "Ephod shape left unspecified; worship/snare and mixed aftermath preserved",
+    "Two short Korean quotations and attribution; Korean chapter links",
+    "Both artwork captions explicitly identify later depictions, not contemporaneous evidence"
+  ],
+  "sources": [
+    "https://www.biblegateway.com/passage/?search=Judges%206-8&version=NIV",
+    "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=6",
+    "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=7",
+    "https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=8"
+  ],
+  "korean_translation": {
+    "name": "쉬운성경",
+    "publisher": "㈜아가페출판사",
+    "provider": "GODpia",
+    "provider_permission_notice_verified": true,
+    "verification_method": "Reading-page initialization and public reading_body.asp responses inspected; actual quote text verified in earlier source review. Provider permission is not asserted to be a blanket third-party republication license."
+  },
+  "quotations": [
+    {
+      "reference": "Judges 6:13 excerpt",
+      "text": "여호와께서 우리와 함께 계시다면, 왜 이토록 많은 괴로움을 겪어야 합니까?"
+    },
+    {
+      "reference": "Judges 7:15 excerpt",
+      "text": "하나님께 감사드리고 이스라엘의 진으로 돌아왔습니다."
+    }
+  ],
+  "total_quoted_korean_space_delimited_words": 15,
+  "browser_render_verified_by_this_reviewer": false,
+  "native_payload_parity_verified_by_this_report": false,
+  "live_publication_verified_by_this_report": false,
+  "limitations": [
+    "Factual/source gate only; not browser layout, native payload parity, publication receipt, or comprehensive rights clearance.",
+    "Artwork metadata/license provenance was not independently re-investigated in this review; later-depiction labeling was checked."
+  ],
+  "private_user_material_included": false
+}

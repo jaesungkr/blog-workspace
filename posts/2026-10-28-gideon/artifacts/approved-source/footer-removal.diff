@@ -1,0 +1,7 @@
+--- article-draft.md before
++++ article-draft.md after
+@@ -94,4 +94,3 @@
+ 
+ ---
+ 
+-본문 읽기: [사사기 6장](https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=6) · [7장](https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=7) · [8장](https://www.godpia.com/read/reading.asp?ver=easy&vol=jdg&chap=8) — GODpia 쉬운성경. 링크는 해당 장으로 연결됩니다.

@@ -1,0 +1,21 @@
+{
+  "current_approved_markdown_sha256": "16c0b623d1bd6c30f04b51fba5377d10b1f31a75d2e1688a672015430e25e523",
+  "portable_markdown_sha256": "b62793d8fef6b8e8df940da103003108afc65527b49090e008392fa99562ea29",
+  "markdown_transformation": "Two public remote artwork destinations replaced with local image paths only.",
+  "representative_image": "images/gideon-and-angel-bol.jpg",
+  "latest_revision": "Requested final consolidated reading paragraph removed;5 section GODpia links retained.",
+  "browser_qa_screenshot_bytes_archived": false,
+  "original_private_native_sources": {
+    "footer-removal-before-native-private.txt": {
+      "bytes": 13350,
+      "sha256": "ba267933be23bcc36995f6fc9c694a046efc255cef732bda5183c639d85cef48",
+      "raw_archived": false
+    },
+    "footer-removal-after-native-private.txt": {
+      "bytes": 12933,
+      "sha256": "f6b8e1092dd994fd457ef90db2b83725943014c96b5575fb1157d3e4fa076e8c",
+      "raw_archived": false
+    }
+  },
+  "native_transformation": "Two signed native image blocks replaced with local original images. Not exact-byte or repost-ready. Source fleece has EXIF8; published image reencoded by platform."
+}

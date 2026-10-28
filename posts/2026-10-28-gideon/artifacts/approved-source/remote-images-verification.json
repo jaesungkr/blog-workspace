@@ -1,0 +1,37 @@
+[
+  {
+    "local": "gideon-and-angel-bol.jpg",
+    "remote": "remote-bol.jpg",
+    "bytes": 96709,
+    "sha256": "fb75f31bc4caf97b4763234956984ba0436fcd16f411173534cee650d1677add",
+    "byteEqual": true,
+    "orientedSize": [
+      460,
+      595
+    ],
+    "pixelEqual": true
+  },
+  {
+    "local": "gideon-wringing-fleece-1873.jpg",
+    "remote": "remote-fleece.jpg",
+    "bytes": 513739,
+    "sha256": "697b341e3f6595b232e32f6ae6dd70cb4d66490bac84cfad3ebb2a67aef1064b",
+    "byteEqual": false,
+    "orientedSize": [
+      1700,
+      1142
+    ],
+    "pixelEqual": false,
+    "meanAbsoluteErrorRGB": [
+      3.814910373956938,
+      3.814910373956938,
+      3.814910373956938
+    ],
+    "rootMeanSquareErrorRGB": [
+      5.046002296661472,
+      5.046002296661472,
+      5.046002296661472
+    ],
+    "interpretation": "Tistory JPEG recompression; same oriented dimensions and content, slight per-pixel compression differences"
+  }
+]

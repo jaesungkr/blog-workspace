@@ -1,0 +1,21 @@
+{
+  "approved_markdown_sha256": "ece23fbd1bc13656788b10a3ed258490416447e5a695c6903e01f777dfaf6445",
+  "portable_markdown_sha256": "b0bfee1aa2f38477bab215f272526c8a30b5a94c4047a6306593c5f531b852db",
+  "markdown_transformation": "Only two public remote artwork image destinations replaced with included local paths; captions, source links and prose unchanged.",
+  "representative_image": "images/gideon-and-angel-bol.jpg",
+  "browser_qa_screenshot_bytes_archived": false,
+  "original_private_native_sources": {
+    "gideon-tistory-fragment.txt": {
+      "bytes": 12974,
+      "sha256": "5ef16a46522f4084d0f8fd4ceb93205c8cda70e8cd50c2c78e906c3bae2f54b9",
+      "raw_archived": false
+    },
+    "preview-dom-raw.html": {
+      "bytes": 64673,
+      "sha256": "7d5dcbc7388ebaf4a7566bb29b37efa83602e0df6cae1c0c02864b2a6495db20",
+      "raw_archived": false
+    }
+  },
+  "native_transformation": "Actual final native HTML parsed and image src replaced with included original local images. Attribute serialization changed. NOT exact-byte or repost-ready. Second published image was recompressed by platform; this archive preserves source original with EXIF orientation.",
+  "history_local_path_note": "Local artwork references now ../images/ for history subdirectory; original approved/raw native hashes remain original."
+}
