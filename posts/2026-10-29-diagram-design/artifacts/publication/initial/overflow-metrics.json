@@ -1,0 +1,20 @@
+[
+  {
+    "articleClient": 309,
+    "articleScroll": 309,
+    "bodyClient": 341,
+    "bodyScroll": 816,
+    "documentClient": 341,
+    "documentScroll": 816,
+    "viewport": 360
+  },
+  {
+    "articleClient": 800,
+    "articleScroll": 800,
+    "bodyClient": 1261,
+    "bodyScroll": 1261,
+    "documentClient": 1261,
+    "documentScroll": 1261,
+    "viewport": 1280
+  }
+]

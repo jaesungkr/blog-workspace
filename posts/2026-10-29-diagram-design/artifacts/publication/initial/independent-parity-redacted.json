@@ -1,0 +1,9 @@
+{
+  "normalized_prose_tables_captions_equal": true,
+  "links_exact": true,
+  "native_alts_exact": true,
+  "links_count": 9,
+  "md_sha256": "b37be6df7055ae5c7a09a8e15c8a0ab37b2682e288097ad2ef038cc1b466a6bf",
+  "native_dom_sha256": "97e64f34a31699b84852356ea0ff31bff93ad6474e49ab239020171c0bb3c3ac",
+  "editor_readback_exact": true
+}

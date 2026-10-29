@@ -1,0 +1,403 @@
+{
+  "status": "PASS_WITH_EXTERNAL_PREVIEW_LIMITATION",
+  "article_gate": "PASS",
+  "scope": "Independent prepublication visual inspection, 48 full viewport screenshots + actual representative thumbnail selection screenshot. No editing, publication or postpublication visual inspection.",
+  "parity": {
+    "normalized_prose_tables_captions_equal": true,
+    "links_exact": true,
+    "native_alts_exact": true,
+    "links_count": 9,
+    "md_sha256": "b37be6df7055ae5c7a09a8e15c8a0ab37b2682e288097ad2ef038cc1b466a6bf",
+    "native_dom_sha256": "97e64f34a31699b84852356ea0ff31bff93ad6474e49ab239020171c0bb3c3ac",
+    "editor_readback_exact": true
+  },
+  "visual": {
+    "coverage": "Whole article in PC1280/mobile360, light/dark; captions, prompts, table and final date covered. Overlaps cover sticky/header/ad occlusions.",
+    "image_order": [
+      "GitHub README nine types",
+      "moving summary",
+      "room layout",
+      "shared time Venn"
+    ],
+    "desktop_image_widths": [
+      716,
+      440,
+      520,
+      520
+    ],
+    "mobile_image_width": 309,
+    "readability": "Body, prompts, table and diagram labels readable; section spacing clear. README microtext is illustrative overview, original link retained.",
+    "spacing": "Scoped paragraph bottom18px, line-height1.8; H2top48px desktop/40px mobile; caption margin8px.",
+    "thumbnail": "Actual publication dialog shows first GitHub nine-types screenshot as square representative. Three-by-three diagram motif retained at small size, appropriate to topic; tiny label text is not readable at thumbnail size."
+  },
+  "overflow": [
+    {
+      "articleClient": 309,
+      "articleScroll": 309,
+      "bodyClient": 341,
+      "bodyScroll": 816,
+      "documentClient": 341,
+      "documentScroll": 816,
+      "viewport": 360
+    },
+    {
+      "articleClient": 800,
+      "articleScroll": 800,
+      "bodyClient": 1261,
+      "bodyScroll": 1261,
+      "documentClient": 1261,
+      "documentScroll": 1261,
+      "viewport": 1280
+    }
+  ],
+  "external_limitation": {
+    "description": "Mobile re-opened native preview has document/client 341 vs scroll816. Article itself client=scroll309. Supplied offending-node receipt identifies outside-article AdSense hosts width800/right816. Thus whole-document no-overflow is NOT passed. Resize-artifact explanation is plausible, not proven. No global skin/ad setting change requested.",
+    "evidence": "git-safe/external-ad-overflow.json"
+  },
+  "screenshots": [
+    {
+      "file": "desktop-light-top-15.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-gap-16.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-01.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-02.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-03.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-04.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-05.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-06.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-07.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-08.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-09.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-10.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-light-full-11.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-17.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-18.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-19.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-20.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-21.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-22.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-23.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-24.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-25.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-26.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "desktop-dark-27.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-28.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-29.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-30.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-31.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-32.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-33.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-34.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-35.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-36.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-37.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-38.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-dark-39.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-40.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-41.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-42.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-43.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-44.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-45.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-46.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-47.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-48.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-49.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-50.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "mobile-light-51.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "publish-settings-thumbnail.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    }
+  ],
+  "source_gate": "Previously completed by source reviewer; this report does not independently recertify upstream factual sources."
+}

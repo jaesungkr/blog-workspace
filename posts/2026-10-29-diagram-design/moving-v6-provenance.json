@@ -1,0 +1,37 @@
+{
+  "revision": "v6 candidate",
+  "method": "Directly read/applied diagram-design SKILL/design instructions. User requested synthesis instead of all20task fidelity. Authored new standalone HTML first; extracted inlineSVG; rendered with local Inkscape. No plugin/API call, fakeUI, upstream renderer/linter claim.",
+  "sources_read_this_revision": [
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/type-process.md",
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/type-timeline.md",
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/semantic-patterns.md"
+  ],
+  "existing_sources_read_v5": [
+    "SKILL.md",
+    "references/style-guide.md",
+    "references/type-swimlane.md"
+  ],
+  "design_type_note": "Custom qualitative process overview. Deliberately not a formal timeline (no time scale), parametric actor/tools Process grid, or20-task swimlane. Single line indicates reading flow only; local phrases retain selected factual dependencies.",
+  "canvas": [
+    400,
+    704
+  ],
+  "content_synthesis_map": "semantic-group-map-v6.json",
+  "original_vector_icons": true,
+  "published_or_library_saved": false,
+  "status": "parent_approved_direction_final_text_revision",
+  "font_floor_hangul": 14,
+  "svg_sha256": "3a4ebd2768ea9839bc555011d1473dec7b487f6df9b0d668e649244a8ff226d5",
+  "renderer": "local Inkscape",
+  "actual_pngs_inspected": [
+    [
+      800,
+      1408
+    ],
+    [
+      346,
+      609
+    ]
+  ],
+  "checks": "qa/v6/summary-checks.json"
+}

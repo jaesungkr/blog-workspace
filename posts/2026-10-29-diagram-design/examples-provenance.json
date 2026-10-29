@@ -1,0 +1,320 @@
+{
+  "revision": "v7",
+  "method": "Read and directly apply official diagram-design SKILL and relevant references; no plugin installation, installed-plugin invocation, or fabricated UI screenshots",
+  "prompt_status": "Copyable example requests, not recorded plugin/API invocation logs",
+  "upstream_skill_version": "2.6",
+  "reference_check_date": "2026-10-29",
+  "article_and_howto_sources": [
+    "https://github.com/cathrynlavery/diagram-design",
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/SKILL.md",
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/output-spec.md",
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/export.md",
+    "https://support.claude.com/en/articles/13837440-use-plugins-in-claude"
+  ],
+  "moving_example": {
+    "revision": "v6 candidate",
+    "method": "Directly read/applied diagram-design SKILL/design instructions. User requested synthesis instead of all20task fidelity. Authored new standalone HTML first; extracted inlineSVG; rendered with local Inkscape. No plugin/API call, fakeUI, upstream renderer/linter claim.",
+    "sources_read_this_revision": [
+      "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/type-process.md",
+      "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/type-timeline.md",
+      "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/references/semantic-patterns.md"
+    ],
+    "existing_sources_read_v5": [
+      "SKILL.md",
+      "references/style-guide.md",
+      "references/type-swimlane.md"
+    ],
+    "design_type_note": "Custom qualitative process overview. Deliberately not a formal timeline (no time scale), parametric actor/tools Process grid, or20-task swimlane. Single line indicates reading flow only; local phrases retain selected factual dependencies.",
+    "canvas": [
+      400,
+      704
+    ],
+    "content_synthesis_map": "semantic-group-map-v6.json",
+    "original_vector_icons": true,
+    "published_or_library_saved": false,
+    "status": "parent_approved_direction_final_text_revision",
+    "font_floor_hangul": 14,
+    "svg_sha256": "3a4ebd2768ea9839bc555011d1473dec7b487f6df9b0d668e649244a8ff226d5",
+    "renderer": "local Inkscape",
+    "actual_pngs_inspected": [
+      [
+        800,
+        1408
+      ],
+      [
+        346,
+        609
+      ]
+    ],
+    "checks": "qa/v6/summary-checks.json"
+  },
+  "moving_source_history": [
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/0cf73c3fcc56667ad91a9a04c439ac6ccfabc9d1/skills/diagram-design/SKILL.md",
+    "https://raw.githubusercontent.com/cathrynlavery/diagram-design/0cf73c3fcc56667ad91a9a04c439ac6ccfabc9d1/skills/diagram-design/references/style-guide.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-swimlane.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/semantic-patterns.md"
+  ],
+  "process_evidence": "process-evidence-v7.json",
+  "additional_examples": {
+    "revision": "v7 text-only revision of v3",
+    "method": "Read official upstream instructions and directly applied them to authored standalone HTML, then extracted its inline SVG and rendered using local Inkscape. No installed-plugin invocation, model API invocation, fabricated UI capture, upstream exporter or upstream linter claimed.",
+    "source_base": "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/",
+    "sources_read": [
+      "SKILL.md",
+      "references/style-guide.md",
+      "references/type-axonometric-plan.md",
+      "references/type-exploded.md",
+      "references/type-venn.md",
+      "references/output-spec.md",
+      "references/layout-budget.md"
+    ],
+    "source_date": "2026-10-29",
+    "skill_version": "2.6",
+    "existing_project_palette": "default light palette retained from established article",
+    "font_source": "system/offline",
+    "size": "fit, compact 400-wide artwork; standalone HTML preserves 400px min-width with local scroller; article embedding is separately checked at346px",
+    "examples": [
+      {
+        "key": "v3-room-layout",
+        "html": "images/v3-room-layout.html",
+        "svg": "images/v3-room-layout.svg",
+        "svg_sha256": "fb7fead33402d2817bd82e6950d8012655d821ad2045d74d16fdfca646debb69",
+        "visual_type": "Axonometric plan",
+        "input": "가상의 방은 안쪽 바닥 기준 3.2m × 3.6m입니다. 침대는 1.0m × 2.0m로 왼쪽에, 책상은 1.2m × 0.6m로 뒤쪽에, 낮은 수납장은 0.5m × 1.0m로 오른쪽에 놓습니다. 높이는 침대 0.45m, 책상 0.75m, 수납장 1.2m로 가정합니다. 앞쪽은 입구 쪽입니다. 실제 집이나 제품의 치수가 아닌 배치 설명용 조건입니다.",
+        "copyable_request_not_execution_log": "diagram-design으로 작은 방에 침대랑 책상, 수납장을 배치해줘.",
+        "model_units_per_metre": 40,
+        "room_inner_model_rect": [
+          0,
+          0,
+          128,
+          144
+        ],
+        "projection": "(208+x-y,160+(x+y)/2-z)",
+        "furniture": [
+          {
+            "name": "침대",
+            "model_rect": [
+              12,
+              56,
+              52,
+              136
+            ],
+            "height": 18
+          },
+          {
+            "name": "책상",
+            "model_rect": [
+              70,
+              12,
+              118,
+              36
+            ],
+            "height": 30
+          },
+          {
+            "name": "낮은 수납장",
+            "model_rect": [
+              106,
+              82,
+              126,
+              122
+            ],
+            "height": 48
+          }
+        ],
+        "omitted_for_view": "two near walls; no windows or exact door design invented",
+        "limitations": "fictional concept layout, not an architectural survey, clearance/safety assessment or purchasing recommendation",
+        "png_sha256": "b9fb9bb84b15a9e5bcab544e70e1d8ec7f1de876749c447fbe9b2986549891c1",
+        "latest_mobile_visual_review": "qa/v7/v3-room-layout-mobile-346.png"
+      },
+      {
+        "key": "v3-shared-time",
+        "html": "images/v3-shared-time.html",
+        "svg": "images/v3-shared-time.svg",
+        "svg_sha256": "4d4483990cd12c31884d6f95bf2d19c0da70c6d59588a84ec77f5fc763169092",
+        "visual_type": "Venn",
+        "input": "같은 가상 날짜에 만날 시작 시각을 고르고 있습니다. 나는 10·12·14시, 친구 A는 12·14·16시, 친구 B는 12·16·18시에 시작할 수 있습니다. 각 후보는 하루 안의 시각이며, 약속 길이는 아직 정하지 않았습니다.",
+        "copyable_request_not_execution_log": "diagram-design으로 세 사람이 같이 만날 수 있는 시간을 한눈에 정리해줘.",
+        "sets": {
+          "나": [
+            10,
+            12,
+            14
+          ],
+          "친구 A": [
+            12,
+            14,
+            16
+          ],
+          "친구 B": [
+            12,
+            16,
+            18
+          ]
+        },
+        "regions": {
+          "10": [
+            "나"
+          ],
+          "12": [
+            "나",
+            "친구 A",
+            "친구 B"
+          ],
+          "14": [
+            "나",
+            "친구 A"
+          ],
+          "16": [
+            "친구 A",
+            "친구 B"
+          ],
+          "18": [
+            "친구 B"
+          ]
+        },
+        "common_start_times": [
+          12
+        ],
+        "meeting_duration": "unknown",
+        "same_fictional_day": true,
+        "equal_set_cardinality": 3,
+        "empty_regions": [
+          "친구 A만",
+          "나와친구 B만"
+        ],
+        "png_sha256": "ac8ac0a1c1c7816291ea288bc8cf5ca6236569bfb00a7e05b86915d576da9ee2",
+        "latest_mobile_visual_review": "qa/v7/v3-shared-time-mobile-346.png"
+      }
+    ],
+    "render_verification": {
+      "pending": false,
+      "renderer": "Inkscape local SVG rasterization",
+      "widths": [
+        800,
+        346
+      ],
+      "actual_images_visually_inspected": true,
+      "checks": "qa/v3/varied-example-checks.json",
+      "source_truth": "standalone HTML;SVG extracted from inline node",
+      "upstream_export_or_linter_run": false,
+      "browser_html_rendered": false
+    },
+    "revision_method": "Remove user-rejected caveats only; no geometry/model changes; local Inkscape PNG rerender. Short copyable prompts are illustrative, not historical execution transcripts."
+  },
+  "retired_from_article": "Prior fictional order-system example remains in local files and its existing Library item but is omitted from v3 to avoid excessive length and repeated flow-box imagery",
+  "article_browser_render": "not verified; prior blocked renderer was not retried",
+  "diagram_validation": "actual PNGs viewed at 800px and346px; custom geometry/content checks plus independent source/visual review, not upstream-linter certification",
+  "revision_scope": "User-requested narrow removal of needless caveats and shortening two illustrative prompts; no other prose/figure geometry change",
+  "simplified_setup": "A copyable conditional natural-language request asks Claude/GPT to inspect the repository and prepare the skill where possible, or explain the required settings. No universal or permanent installation promise.",
+  "github_screenshot": {
+    "captured_at_utc": "2026-10-29T01:48:36.813Z",
+    "source_url": "https://github.com/cathrynlavery/diagram-design#what-it-makes",
+    "source_page": "Official GitHub repository README, What it makes section",
+    "capture_method": "Cloud browser screenshot of the genuine live GitHub README. Browser-native JPEG retained as original; final PNG is a crop and lossless re-encoding of those captured pixels.",
+    "original_file": "04-github-types-original.jpg",
+    "original_dimensions": [
+      1165,
+      747
+    ],
+    "final_file": "04-github-diagram-types.png",
+    "final_dimensions": [
+      716,
+      555
+    ],
+    "crop_box_left_top_right_bottom": [
+      63,
+      188,
+      779,
+      743
+    ],
+    "pixel_verification": "Final PNG pixel bytes exactly equal the stated crop from the original JPEG decode.",
+    "content": "First three rows of the actual README table: Architecture, IT current-state, Flowchart; Sequence, State machine, ER/data model; Timeline, Swimlane, Quadrant.",
+    "alterations": "Crop only; no rearrangement, compositing, retouching, recoloring, redrawing, synthetic UI, overlays, or AI generation.",
+    "deliberate_scope": "Format-preview thumbnails. Type names and subtitles are readable at approximately 716 px body width; not intended for reading every tiny node label.",
+    "caption_ko": "GitHub 공식 README에 소개된 그림 예시 중 일부.",
+    "alt_ko": "Diagram Design의 GitHub README에 있는 아키텍처, 플로차트, 시퀀스, 스윔레인 등 아홉 가지 그림 형식의 실제 미리보기 표",
+    "license": {
+      "name": "MIT",
+      "copyright": "Copyright (c) 2025 Cathryn Lavery",
+      "url": "https://github.com/cathrynlavery/diagram-design/blob/main/LICENSE",
+      "root_license_blob_sha": "5270ecfc40942fc2da652a7a2f3e687fc6851ba3",
+      "local_license": "LICENSE-diagram-design.txt",
+      "check": "Root LICENSE rechecked on 2026-10-29; no additional LICENSE/COPYING/NOTICE files in docs/, docs/screenshots/, or docs/screenshots/thumbs/. Upstream THIRD_PARTY_LICENSES.md retained. This is a screenshot of official README examples, not a claim of a user-authored result."
+    },
+    "loaded_dom_images": [
+      {
+        "alt": "Architecture",
+        "complete": true,
+        "naturalHeight": 673,
+        "naturalWidth": 1400,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/architecture.webp"
+      },
+      {
+        "alt": "IT current-state",
+        "complete": true,
+        "naturalHeight": 313,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/it-state.webp"
+      },
+      {
+        "alt": "Flowchart",
+        "complete": true,
+        "naturalHeight": 360,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/flowchart.webp"
+      },
+      {
+        "alt": "Sequence",
+        "complete": true,
+        "naturalHeight": 350,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/sequence.webp"
+      },
+      {
+        "alt": "State machine",
+        "complete": true,
+        "naturalHeight": 276,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/state.webp"
+      },
+      {
+        "alt": "ER",
+        "complete": true,
+        "naturalHeight": 288,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/er.webp"
+      },
+      {
+        "alt": "Timeline",
+        "complete": true,
+        "naturalHeight": 252,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/timeline.webp"
+      },
+      {
+        "alt": "Swimlane",
+        "complete": true,
+        "naturalHeight": 288,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/swimlane.webp"
+      },
+      {
+        "alt": "Quadrant",
+        "complete": true,
+        "naturalHeight": 300,
+        "naturalWidth": 600,
+        "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/quadrant.webp"
+      }
+    ],
+    "original_sha256": "8ae5257838e3d57b75737f48600fc52ecb9e214230e749362c4bfd94c8982896",
+    "final_sha256": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954",
+    "library": "To be saved once by draft_diagram_skill_article to avoid duplicate Library items."
+  },
+  "moving_library_alias": "images/korean-team-workflow.png",
+  "article_diagram_display": "moving figure capped at440px to avoid large upscaled typography; screenshot capped at captured716px; mobile preview346px",
+  "synthesis_map": "semantic-group-map-v6.json",
+  "not_full_checklist": true,
+  "parent_candidate_visual_review": "Viewed actual candidate PNG and approved direction before Library replacement; three final wording refinements applied and rendered",
+  "publication_status": "Initial v6 published; live v7 correction coordinated separately under publication/"
+}

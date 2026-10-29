@@ -1,0 +1,12 @@
+{
+  "saved_editor_sha256": "f9f3e58eedda52571b5f062202bbded476b5a7a2e4796d5e2b400f1ff0170d9a",
+  "payload_sha256": "80b049f9fa6369fc2f1537588e5e603705a5a5df3763a7d76036da098543b752",
+  "saved_exact_payload": false,
+  "native_image_count": 4,
+  "saved_normalized_exact_payload": true,
+  "normalization_only": [
+    "HTML entity encoding",
+    "JSON image-metadata key ordering"
+  ],
+  "verified_at": "2026-10-29T03:39:19Z"
+}

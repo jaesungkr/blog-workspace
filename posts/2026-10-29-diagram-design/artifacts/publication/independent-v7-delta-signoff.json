@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "scope": "v7 narrow delta: 7 approved prose/prompt/caption replacements and two updated illustrations. Read-only pre-save review; no postpublication visual review.",
+  "parity": {
+    "normalized_prose_tables_captions_equal": true,
+    "links_exact": true,
+    "native_alts_exact": true,
+    "links_count": 9,
+    "md_sha256": "e410cbdc3451d7dc3f569d35760719b9ff0dcc67be2c5fc660e7ba24dcc3bfe4",
+    "native_dom_sha256": "887b9fd4f7504bf2e3a90b32f051fb3e274f5d376cb201a78c469f1bed726101",
+    "editor_readback_exact": true
+  },
+  "actual_editor_sha256": "80b049f9fa6369fc2f1537588e5e603705a5a5df3763a7d76036da098543b752",
+  "style_unchanged_from_actual_before": true,
+  "visual": "All 16 supplied affected-range screenshots opened and inspected: PC1280/mobile360 light/dark. AI-selected form explanation, shorter room/Venn prompts, two shorter captions present. Room caveat removed; Venn footer now common start12 only. Diagram geometry, furniture/time values and labels retained; no visible clipping in affected ranges. All changed text covered by overlapping shots. Native prompt alignment is centered in these captures, still readable; CSS unchanged from actual pre-revision backup.",
+  "screenshots": [
+    {
+      "file": "delta-desktop-dark-56.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-desktop-dark-57.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-desktop-dark-58.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-desktop-dark-59.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-desktop-light-52.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-desktop-light-53.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-desktop-light-54.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-desktop-light-55.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-dark-60.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-dark-61.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-dark-62.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-dark-63.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-light-64.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-light-65.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-light-66.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    },
+    {
+      "file": "delta-mobile-light-67.png",
+      "dimensions": [
+        1844,
+        1183
+      ]
+    }
+  ],
+  "limitations": [
+    "No new full48-shot QA; original v6 report retained separately.",
+    "delta-metrics-private.json is empty and explicitly not used. No new numerical document-wide overflow certification; prior external AdSense limitation not cleared.",
+    "Title/URL/date retention and actual save are publisher responsibilities."
+  ]
+}

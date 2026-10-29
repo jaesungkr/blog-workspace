@@ -1,0 +1,122 @@
+{
+  "reviewed_at_utc": "2026-10-29T02:11:58Z",
+  "artifact": "article-draft.md",
+  "artifact_sha256": "b37be6df7055ae5c7a09a8e15c8a0ab37b2682e288097ad2ef038cc1b466a6bf",
+  "status": "PASS",
+  "mandatory_fixes": [],
+  "checks": {
+    "html_png": "PASS: Remaining HTML/SVG/PNG and style summary is supported by official sources. Removed email/how-to details are no longer treated as article claims. No export-button, auto-PNG or native-PDF guarantee.",
+    "privacy": "NOT IN ARTICLE: User-requested privacy paragraph removed; no contrary all-local or no-network claim is introduced.",
+    "user_experience": "PASS: New intro follows the trusted user-provided wording about team-lead recommendation, frequent team/personal use and wanting to recommend it. Other personal use claims remain from prior trusted transcript; no invented private material or quantified benefit.",
+    "chatgpt_web": "PASS: No categorical statement that ChatGPT web cannot use skills or plugins.",
+    "publication": "NOT PERFORMED",
+    "generated_examples": "PASS: v6 is a new qualitative process overview directly applying upstream guidance, authored as HTML then SVG extracted and locally rendered by Inkscape. It is not labeled a strict timed timeline or20-task swimlane. Existing room/Venn and official screenshot remain unchanged. No installed-plugin/API/upstream-export execution claim.",
+    "diagram_text_and_arrows": "PASS: All visible group phrases match the synthesis map and original memo. Six explicitly ordered local relationships2->4,3->4,8->9,11->15,13->15,18->19 are source-supported. Contextual1->2 and14->20 are not overcounted as explicit ordering. No dependency arrowheads; the single vertical line is a reading guide, not an all-to-all prerequisite claim. Missing details are acceptable and declared.",
+    "svg_integrity": "PASS: Four embedded images decode byte-for-byte to current source files. New v6 SVG parses, has exact synthesis-group labels and no dependency-arrow marker. Screenshot and other two diagrams match previously reviewed hashes. Moving PNG Library alias equals final v6 PNG.",
+    "visual_scope": "PASS: Actual final v6 mobile346px raster independently viewed. Genuine GitHub screenshot and room/Venn visual review carry forward by unchanged hashes. Article static structure checked; whole-article browser rendering remains unverified. No completeness or formal upstream-linter certification claimed.",
+    "moving_schedule_and_safety": "PASS: No concrete date, duration, legal deadline or professional moving-plan completeness is introduced. Source memo retains unknown moving date. Four scenes are a qualitative preparation overview; grouping is not asserted as a strict dependency between every task.",
+    "production_records": "PASS: examples-provenance.json, moving-v6-provenance.json, process-evidence-v6.json, semantic-group-map-v6.json, production-notes.md and qa/v6 records reflect actual summary scope, selected/omitted source content, original vector icons, direct instruction application and actual Inkscape renders. Parent selected direction before final text revision. Whole-article browser verification remains explicitly absent.",
+    "actual_process_evidence": "PASS: process-evidence-v6.json accurately separates educational copyable prompts from actual generation history. semantic-group-map-v6.json records4 scenes/8 groups representing15 source tasks, with5 details and all owner labels intentionally omitted. The article and caption call it a summary rather than a complete task/dependency map.",
+    "visual_type_style_format": "PASS: The verified45 visual types remain separate from HTML/SVG/PNG file formats and light/dark/full editorial styles. Six usage groups are explicitly editorial; Korean descriptions correspond to supported types. Simplification does not add unsupported formats.",
+    "room_geometry": "PASS: Independently recalculated 3.2x3.6m room and 1x2m bed, 1.2x0.6m desk, 0.5x1m storage from 40 model units/metre. All footprints contained and pairwise disjoint. Furniture polygon vertices match stated 2:1 dimetric projection. Fictional concept, not clearance, construction or safety certification.",
+    "venn_membership": "PASS: Independently checked exact memberships for 10,12,14,16,18 and each SVG text anchor in its intended geometric region. Three equal-size sets of three; only 12 belongs to all. Same fictional day, start times not durations; unknown duration preserved.",
+    "simple_setup_request": "PASS: A copyable request gives the repository URL and asks the AI to prepare the existing skill, add it only if its current environment permits, otherwise explain necessary settings. The next sentence preserves that distinction. Official Claude conversation-based skill creation and OpenAI skill-building documentation support natural-language assistance; the article does not promise automatic persistent installation in every web chat.",
+    "user_simplification_request": "PASS: The rejected dense moving chart is replaced by4 icon-led scenes and8 aggregate actions, not another reduction of20 boxes. Individual task IDs, owner columns, cards and crossing dependency lines are removed. Corresponding prose explains grouping/omission and gives a simple request to reduce detail. Exact original one-line request and other article sections remain intact.",
+    "moving_design_and_legibility": "PASS: Final346x609 PNG directly inspected after parent-requested wording refinements. Four distinct icons, bold stage titles and two short action lines per scene are clearly easier to scan than v5. Canvas400x704; Hangul minimum14px gives12.11px at346px. No observed clipping, line/text collision or ambiguous task numbering. Footer is simply 핵심 흐름 요약; omission explanation resides in article caption.",
+    "github_screenshot": "PASS: Collector documented live GitHub README capture at2026-10-29T01:48:36.813Z. Independently viewed original1165x747 JPEG and final716x555 PNG, checked file SHA hashes and exact crop pixels[63,188,779,743]. Nine types match official README and recorded loaded DOM thumbnail sources. Crop/re-encoding only, not fabricated UI, rearrangement or AI generation. Caption/source/MIT notice correctly identify upstream examples, not user-created results. Overview image, not a claim that tiny nodes are mobile-readable."
+  },
+  "sources": [
+    "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/.claude-plugin/marketplace.json",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/.claude-plugin/plugin.json",
+    "https://github.com/cathrynlavery/diagram-design#install",
+    "https://learn.chatgpt.com/docs/cli/reference",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/export.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/PRIVACY.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/0cf73c3fcc56667ad91a9a04c439ac6ccfabc9d1/skills/diagram-design/SKILL.md",
+    "https://github.com/cathrynlavery/diagram-design#what-it-makes",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/SKILL.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-axonometric-plan.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-venn.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/output-spec.md",
+    "https://academy.claude.com/tutorials/how-to-create-a-skill-with-claude-through-conversation",
+    "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+    "https://learn.chatgpt.com/docs/build-skills",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-swimlane.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/LICENSE",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/THIRD_PARTY_LICENSES.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-process.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-timeline.md"
+  ],
+  "artifact_word_count": 842,
+  "scope": "Independent review of simplified four-scene v6 moving summary, source-grounded selected relationships, explicitly omitted details/owners and revised tutorial prose. Actual final346px raster viewed. Exact one-line prompt, unchanged official screenshot/other diagrams and four byte-exact embedded images verified. Completeness against all20 tasks is deliberately NOT the acceptance criterion. No publication, installed-plugin invocation, upstream-linter or whole-article browser-render claim.",
+  "example_assets": [
+    {
+      "path": "moving-input-memo.txt",
+      "sha256": "2be9310ce87f08bcaa8e59507db9cd7fd353372bf1cd54313dd4e2789e21db6f"
+    },
+    {
+      "path": "moving-task-map.json",
+      "sha256": "ace855137e92008c3fe8c39baf6ae1a18ff6c712d55b6bfa0a2fb6af8f3db5f9"
+    },
+    {
+      "path": "semantic-group-map-v6.json",
+      "sha256": "f9c1e4b5d65533bfa973f23ee262e22c1b2e0e31c5d694e71ba9894c97f36284"
+    },
+    {
+      "path": "process-evidence-v6.json",
+      "sha256": "2fefcf6e9ffcfc49b8c98a4a113e11d4dc310f1e58c6f3823307cc6772fa7ae1"
+    },
+    {
+      "path": "moving-v6-provenance.json",
+      "sha256": "8790edbb4845070d0bfafb4ee37e9836530321356c5af25b8559f6c91b53a509"
+    },
+    {
+      "path": "images/v6-moving-summary.html",
+      "sha256": "8bb84203980e9d5444043d5e01dfdd467066250d20b6d4bccab2230a65acc575"
+    },
+    {
+      "path": "images/v6-moving-summary.svg",
+      "sha256": "3a4ebd2768ea9839bc555011d1473dec7b487f6df9b0d668e649244a8ff226d5"
+    },
+    {
+      "path": "images/v6-moving-summary.png",
+      "sha256": "0ef5c9b849b6e7f28ddc68429268e28f29db75f7b512ddc9521d55670ded7b32"
+    },
+    {
+      "path": "qa/v6/moving-mobile-346.png",
+      "sha256": "edb182ac9ca40f2ab40c2879afab414c909ce8eab78ee9333513a8981cf10b0b"
+    },
+    {
+      "path": "images/04-github-types-original.jpg",
+      "sha256": "8ae5257838e3d57b75737f48600fc52ecb9e214230e749362c4bfd94c8982896"
+    },
+    {
+      "path": "images/04-github-diagram-types.png",
+      "sha256": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954"
+    },
+    {
+      "path": "images/04-github-diagram-types-provenance.json",
+      "sha256": "fde0982222b15fdb1d1fb69171955d9f59db663b890646a89444af55c6aae297"
+    },
+    {
+      "path": "images/v3-room-layout.svg",
+      "sha256": "2ddba2ce3d85c511478bbf6b5ff770e2d89f0413970b6450404998ad7c8feb59"
+    },
+    {
+      "path": "images/v3-shared-time.svg",
+      "sha256": "ce5fadbc3185cd9b33d44925a4c1eb0c120f1cb1cc7564868b375a3019454107"
+    },
+    {
+      "path": "qa/v3/v3-room-layout-mobile-346.png",
+      "sha256": "f4f99d1b28311b400e37646f5fd6dc25291c594a65b1956599338deab45f3e68"
+    },
+    {
+      "path": "qa/v3/v3-shared-time-mobile-346.png",
+      "sha256": "616abf9432418ceb630d34ecae088ae7bb22a74b287e436e999ee1ec865d4a61"
+    }
+  ],
+  "visible_body_word_count_excluding_details": 842,
+  "revision": "v6",
+  "html_sha256": "f922d51586f57c8017f6708fda51f42de8ba8feff4fe4e8573982bd8dc8681a6"
+}

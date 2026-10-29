@@ -1,0 +1,20 @@
+{
+  "articleScroll": 309,
+  "articleWidth": 309,
+  "overflowNodes": [
+    {
+      "id": "aswift_2_host",
+      "insideArticle": false,
+      "right": 815.99609375,
+      "tag": "DIV",
+      "w": 800
+    },
+    {
+      "id": "aswift_3_host",
+      "insideArticle": false,
+      "right": 815.99609375,
+      "tag": "DIV",
+      "w": 800
+    }
+  ]
+}

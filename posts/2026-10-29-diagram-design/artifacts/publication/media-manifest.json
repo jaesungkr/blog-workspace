@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "04-github-diagram-types.png",
+    "alt": "Diagram Design의 GitHub README에 소개된 아홉 가지 그림 유형의 실제 미리보기.",
+    "sha256": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954"
+  },
+  {
+    "filename": "v6-moving-summary.png",
+    "alt": "이사 준비를 일정 맞추기, 짐과 자리 정하기, 포장 마무리, 가구 놓고 짐 풀기의 네 흐름으로 요약한 그림.",
+    "sha256": "0ef5c9b849b6e7f28ddc68429268e28f29db75f7b512ddc9521d55670ded7b32"
+  },
+  {
+    "filename": "v3-room-layout.png",
+    "alt": "가로 3.2m 세로 3.6m인 가상 방에 침대와 책상, 수납장을 배치한 입체 그림.",
+    "sha256": "b9fb9bb84b15a9e5bcab544e70e1d8ec7f1de876749c447fbe9b2986549891c1"
+  },
+  {
+    "filename": "v3-shared-time.png",
+    "alt": "세 사람의 가능한 시작 시각을 원으로 묶고, 모두 가능한 12시를 가운데에 보여주는 그림.",
+    "sha256": "ac8ac0a1c1c7816291ea288bc8cf5ca6236569bfb00a7e05b86915d576da9ee2"
+  }
+]

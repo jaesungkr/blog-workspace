@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "1c91db1c02303886e6675b279b5ff43608095be654156f9f6ceb3bc4872957bd",
+  "archive_size_bytes": 823690,
+  "original_files_preserved": 48,
+  "manifest_entries_verified": 47,
+  "publication_asset_hashes_verified": 4,
+  "preview_embedded_assets_verified": "4: one PNG and three source SVGs",
+  "article_body_exact": true,
+  "secret_pattern_scan": "pass",
+  "blog_check": "7 historical style errors: five level-2 headings and two headings ending in ~다; approved content preserved",
+  "blog_render": "blocked by same errors; supplied standalone preview retained",
+  "diff_check": "Two original license/notice files contain a blank line at EOF; preserved byte-for-byte",
+  "strict_canonical_checks": "unavailable: sanitized evidence only",
+  "live_blog_modified": false,
+  "ci": "No tracked .github workflows"
+}

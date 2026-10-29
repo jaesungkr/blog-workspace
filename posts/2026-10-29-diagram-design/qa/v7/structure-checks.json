@@ -1,0 +1,38 @@
+{
+  "revision": "v7",
+  "pass": true,
+  "exact_seven_replacements_only": true,
+  "unchanged_moving_request": true,
+  "removed_caveats_from_body": true,
+  "short_room_prompt": true,
+  "short_venn_prompt": true,
+  "article_word_units": 816,
+  "article_sha256": "e410cbdc3451d7dc3f569d35760719b9ff0dcc67be2c5fc660e7ba24dcc3bfe4",
+  "html_sha256": "8aa0b2d3675eb5a97a94c4c61031c1fa9f39890fb2fbb970aef14fa9f63308ef",
+  "embedded_images": [
+    {
+      "source": "04-github-diagram-types.png",
+      "byte_exact": true,
+      "sha256": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954"
+    },
+    {
+      "source": "v6-moving-summary.svg",
+      "byte_exact": true,
+      "sha256": "3a4ebd2768ea9839bc555011d1473dec7b487f6df9b0d668e649244a8ff226d5"
+    },
+    {
+      "source": "v3-room-layout.svg",
+      "byte_exact": true,
+      "sha256": "fb7fead33402d2817bd82e6950d8012655d821ad2045d74d16fdfca646debb69"
+    },
+    {
+      "source": "v3-shared-time.svg",
+      "byte_exact": true,
+      "sha256": "4d4483990cd12c31884d6f95bf2d19c0da70c6d59588a84ec77f5fc763169092"
+    }
+  ],
+  "article_image_count": 4,
+  "new_png_visual_review": "Both 346px local Inkscape PNGs directly inspected by author and independent reviewer; no geometry changes",
+  "article_browser_render": "Standalone HTML not browser-verified; native publication QA is recorded separately",
+  "publication_state": "Published initial v6; pending narrow live v7 correction by publisher"
+}

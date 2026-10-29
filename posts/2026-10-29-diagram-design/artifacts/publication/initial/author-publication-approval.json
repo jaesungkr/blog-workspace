@@ -1,0 +1,13 @@
+{
+  "instruction": "좋아 게시해줘. 썸네일 잘 고려해서 내줘. 내가 중요하게 생각하는 글이라서",
+  "approval_time": "2026-10-29T11:50:37+09:00",
+  "target": "https://dop3n.tistory.com",
+  "hashes": {
+    "article-draft.md": "b37be6df7055ae5c7a09a8e15c8a0ab37b2682e288097ad2ef038cc1b466a6bf",
+    "images/04-github-diagram-types.png": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954",
+    "images/v6-moving-summary.png": "0ef5c9b849b6e7f28ddc68429268e28f29db75f7b512ddc9521d55670ded7b32",
+    "images/v3-room-layout.png": "305d2ef25aac03a7066b97e0ce887a796e8327b6b10bb5812ea6f0d564a2d429",
+    "images/v3-shared-time.png": "e03c2e14a3e51471c90e745c0510fa36cafcad9e325037c5a73dcaea4c0e87ed"
+  },
+  "source_review_sha256": "0882ba6c8b3463a512befcdeb7bcf4d4e06c3a8d9ae9c85e45da32e37a24d08d"
+}

@@ -1,0 +1,10 @@
+{
+  "approved_prose_in_native_order": true,
+  "native_image_count": 4,
+  "exact_editor_sha256": "55444eece94bb3dcea22ac9416284bc6c5d145572669cfa7e920863482024b2a",
+  "editor_equals_fragment": true,
+  "excluded_preview_chrome": [
+    "dev.log·스킬소개초안"
+  ],
+  "method": "All approved article paragraphs and h2/h3 headings found in native DOM order; standalone preview chrome label excluded. Exact native editor readback matches fragment."
+}

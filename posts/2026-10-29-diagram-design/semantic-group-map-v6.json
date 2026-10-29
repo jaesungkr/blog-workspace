@@ -1,0 +1,319 @@
+{
+  "candidate_only": false,
+  "revision": "v6",
+  "source": "moving-task-map.json",
+  "fictional": true,
+  "date_known": false,
+  "visual_strategy": "four-scene qualitative progression;8 aggregate action groups;single reading-guide withoutarrowheads, no ownershiplanes or individualtask indices",
+  "stages": [
+    {
+      "name": "일정 맞추기",
+      "icon": "calendar",
+      "groups": [
+        {
+          "label": "날짜 결정 · 운반 예약",
+          "input_ids": [
+            1,
+            2
+          ],
+          "expressed_dependencies": [],
+          "source_relationships_not_explicit": [
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "label": "예약·동선 확인 후 도착 시각 공유",
+          "input_ids": [
+            2,
+            3,
+            4
+          ],
+          "expressed_dependencies": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "짐과 자리 정하기",
+      "icon": "layout",
+      "groups": [
+        {
+          "label": "가져갈 짐 고르기",
+          "input_ids": [
+            6
+          ],
+          "expressed_dependencies": []
+        },
+        {
+          "label": "새집 치수 재고 가구 자리 정하기",
+          "input_ids": [
+            8,
+            9
+          ],
+          "expressed_dependencies": [
+            [
+              8,
+              9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "포장 마무리",
+      "icon": "package",
+      "groups": [
+        {
+          "label": "짐 포장·상자 표시·첫날 가방 준비",
+          "input_ids": [
+            10,
+            11,
+            14
+          ],
+          "expressed_dependencies": []
+        },
+        {
+          "label": "표시·부품 정리 후 운반 순서 공유",
+          "input_ids": [
+            11,
+            13,
+            15
+          ],
+          "expressed_dependencies": [
+            [
+              11,
+              15
+            ],
+            [
+              13,
+              15
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "가구 놓고 짐 풀기",
+      "icon": "house",
+      "groups": [
+        {
+          "label": "큰 가구 배치 후 상자를 방별로 정리",
+          "input_ids": [
+            18,
+            19
+          ],
+          "expressed_dependencies": [
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        {
+          "label": "첫날 가방부터 풀기",
+          "input_ids": [
+            14,
+            20
+          ],
+          "expressed_dependencies": [],
+          "source_relationships_not_explicit": [
+            [
+              14,
+              20
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "source_task_ids_represented": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    18,
+    19,
+    20
+  ],
+  "source_task_ids_omitted": [
+    5,
+    7,
+    12,
+    16,
+    17
+  ],
+  "omitted_tasks": [
+    {
+      "id": 5,
+      "label": "포장 자재 준비하기",
+      "owner": "함께 사는 사람",
+      "phase": 1,
+      "timing": "가장 먼저",
+      "memo_span": "포장 자재는 네가 준비",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        320,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 7,
+      "label": "안 가져갈 짐 정리하기",
+      "owner": "나",
+      "phase": 2,
+      "timing": "일정 확정 후",
+      "memo_span": "안 가져갈 짐 정리한 뒤",
+      "depends_on": [
+        6
+      ],
+      "node_bbox": [
+        24,
+        768,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 12,
+      "label": "배선 사진 찍기",
+      "owner": "함께 사는 사람",
+      "phase": 3,
+      "timing": "옮기기 전",
+      "memo_span": "배선 사진이랑",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        1112,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 16,
+      "label": "출발 전 남은 짐 확인",
+      "owner": "나",
+      "phase": 4,
+      "timing": "이삿날",
+      "memo_span": "당일 나는 출발 전 남은 짐 확인",
+      "depends_on": [],
+      "node_bbox": [
+        24,
+        1560,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 17,
+      "label": "새집에 방 이름 표시",
+      "owner": "함께 사는 사람",
+      "phase": 4,
+      "timing": "이삿날",
+      "memo_span": "새집 방 이름 표시랑",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        1560,
+        152,
+        72
+      ]
+    }
+  ],
+  "all_owner_labels_omitted": true,
+  "dependencies_explicit_in_local_phrases": [
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      18,
+      19
+    ]
+  ],
+  "source_relationships_retained_as_context_not_explicit": [
+    [
+      1,
+      2
+    ],
+    [
+      14,
+      20
+    ]
+  ],
+  "dependencies_not_explicitly_shown": [
+    [
+      1,
+      2
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      9,
+      18
+    ],
+    [
+      11,
+      19
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      19,
+      20
+    ]
+  ],
+  "group_order_note": "Four preparation chunks are an editorial overview, not an assertion that every item in one chunk must finish before every item in the next. No time durations/actual dates are encoded. Packing task10 is grouped with packing phase for intuitive summary rather than retaining previous editorial phase assignment.",
+  "no_all20fidelity_claim": true,
+  "copyable_request_not_execution_log": "위 메모를 diagram-design으로 정리해줘. 처음 보는 사람이 큰 흐름을 알 수 있도록 네 단계, 여덟 행동 묶음 이내로 요약해줘. 담당자와 개별 작업번호는 빼고, 중요한 선후관계만 짧은 문구로 남겨줘. 단순한 그림과 하나의 읽는 흐름으로 표현하고, 날짜는 미정으로 유지해줘. 세부 항목을 생략한 핵심 요약이라고 표시해줘.",
+  "svg_sha256": "3a4ebd2768ea9839bc555011d1473dec7b487f6df9b0d668e649244a8ff226d5",
+  "design_status": "root reviewed and approved direction; parent requested final wording applied"
+}

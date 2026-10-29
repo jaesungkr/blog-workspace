@@ -1,0 +1,104 @@
+{
+  "captured_at_utc": "2026-10-29T01:48:36.813Z",
+  "source_url": "https://github.com/cathrynlavery/diagram-design#what-it-makes",
+  "source_page": "Official GitHub repository README, What it makes section",
+  "capture_method": "Cloud browser screenshot of the genuine live GitHub README. Browser-native JPEG retained as original; final PNG is a crop and lossless re-encoding of those captured pixels.",
+  "original_file": "04-github-types-original.jpg",
+  "original_dimensions": [
+    1165,
+    747
+  ],
+  "final_file": "04-github-diagram-types.png",
+  "final_dimensions": [
+    716,
+    555
+  ],
+  "crop_box_left_top_right_bottom": [
+    63,
+    188,
+    779,
+    743
+  ],
+  "pixel_verification": "Final PNG pixel bytes exactly equal the stated crop from the original JPEG decode.",
+  "content": "First three rows of the actual README table: Architecture, IT current-state, Flowchart; Sequence, State machine, ER/data model; Timeline, Swimlane, Quadrant.",
+  "alterations": "Crop only; no rearrangement, compositing, retouching, recoloring, redrawing, synthetic UI, overlays, or AI generation.",
+  "deliberate_scope": "Format-preview thumbnails. Type names and subtitles are readable at approximately 716 px body width; not intended for reading every tiny node label.",
+  "caption_ko": "GitHub 공식 README에 소개된 그림 예시 중 일부.",
+  "alt_ko": "Diagram Design의 GitHub README에 있는 아키텍처, 플로차트, 시퀀스, 스윔레인 등 아홉 가지 그림 형식의 실제 미리보기 표",
+  "license": {
+    "name": "MIT",
+    "copyright": "Copyright (c) 2025 Cathryn Lavery",
+    "url": "https://github.com/cathrynlavery/diagram-design/blob/main/LICENSE",
+    "root_license_blob_sha": "5270ecfc40942fc2da652a7a2f3e687fc6851ba3",
+    "local_license": "LICENSE-diagram-design.txt",
+    "check": "Root LICENSE rechecked on 2026-10-29; no additional LICENSE/COPYING/NOTICE files in docs/, docs/screenshots/, or docs/screenshots/thumbs/. Upstream THIRD_PARTY_LICENSES.md retained. This is a screenshot of official README examples, not a claim of a user-authored result."
+  },
+  "loaded_dom_images": [
+    {
+      "alt": "Architecture",
+      "complete": true,
+      "naturalHeight": 673,
+      "naturalWidth": 1400,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/architecture.webp"
+    },
+    {
+      "alt": "IT current-state",
+      "complete": true,
+      "naturalHeight": 313,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/it-state.webp"
+    },
+    {
+      "alt": "Flowchart",
+      "complete": true,
+      "naturalHeight": 360,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/flowchart.webp"
+    },
+    {
+      "alt": "Sequence",
+      "complete": true,
+      "naturalHeight": 350,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/sequence.webp"
+    },
+    {
+      "alt": "State machine",
+      "complete": true,
+      "naturalHeight": 276,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/state.webp"
+    },
+    {
+      "alt": "ER",
+      "complete": true,
+      "naturalHeight": 288,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/er.webp"
+    },
+    {
+      "alt": "Timeline",
+      "complete": true,
+      "naturalHeight": 252,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/timeline.webp"
+    },
+    {
+      "alt": "Swimlane",
+      "complete": true,
+      "naturalHeight": 288,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/swimlane.webp"
+    },
+    {
+      "alt": "Quadrant",
+      "complete": true,
+      "naturalHeight": 300,
+      "naturalWidth": 600,
+      "src": "https://github.com/cathrynlavery/diagram-design/raw/main/docs/screenshots/thumbs/quadrant.webp"
+    }
+  ],
+  "original_sha256": "8ae5257838e3d57b75737f48600fc52ecb9e214230e749362c4bfd94c8982896",
+  "final_sha256": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954",
+  "library": "To be saved once by draft_diagram_skill_article to avoid duplicate Library items."
+}

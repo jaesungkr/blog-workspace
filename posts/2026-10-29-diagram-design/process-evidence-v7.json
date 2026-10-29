@@ -1,0 +1,51 @@
+{
+  "revision": "v7",
+  "input_file": "moving-input-memo.txt",
+  "source_task_map": "moving-task-map.json",
+  "synthesis_map": "semantic-group-map-v6.json",
+  "production_method": "AI directly applied official skill/reference guidance to new HTML/SVG; local Inkscape rasterization; no installed-plugin/API invocation",
+  "copyable_prompt_examples": [
+    "https://github.com/cathrynlavery/diagram-design",
+    "이 저장소를 살펴보고, diagram-design을 내가 쓸 수 있는 스킬로 준비해줘. 지금 환경에서 직접 추가할 수 있으면 추가해주고, 안 된다면 필요한 설정만 쉽게 알려줘.",
+    "diagram-design으로 위 이사 메모를 그림으로 정리해줘.",
+    "세부 할 일을 전부 넣기보다, 처음 보는 사람도 이해할 수 있게 큰 흐름만 남겨줘. 비슷한 일은 묶고 중요한 순서만 보여줘.",
+    "diagram-design으로 작은 방에 침대랑 책상, 수납장을 배치해줘.",
+    "diagram-design으로 세 사람이 같이 만날 수 있는 시간을 한눈에 정리해줘."
+  ],
+  "short_moving_request": "diagram-design으로 위 이사 메모를 그림으로 정리해줘.",
+  "request_provenance": "Educational request kept exactly as user requested; not claimed as an exact historical generation-call transcript",
+  "summary_scope": {
+    "stages": 4,
+    "action_groups": 8,
+    "source_task_ids_represented": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      18,
+      19,
+      20
+    ],
+    "source_task_ids_omitted": [
+      5,
+      7,
+      12,
+      16,
+      17
+    ],
+    "owner_labels_omitted": true
+  },
+  "screenshots_fabricated": false,
+  "new_diagram_generation_performed": false,
+  "plugin_installation_or_invocation_performed": false,
+  "revision_evidence": "revision-v7-replacements.json",
+  "text_only_asset_rerender_performed": true
+}

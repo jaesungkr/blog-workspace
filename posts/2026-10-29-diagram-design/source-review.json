@@ -1,0 +1,134 @@
+{
+  "reviewed_at_utc": "2026-10-29T03:24:47Z",
+  "artifact": "article-draft.md",
+  "artifact_sha256": "e410cbdc3451d7dc3f569d35760719b9ff0dcc67be2c5fc660e7ba24dcc3bfe4",
+  "status": "PASS",
+  "mandatory_fixes": [],
+  "checks": {
+    "html_png": "PASS: Remaining HTML/SVG/PNG and style summary is supported by official sources. Removed email/how-to details are no longer treated as article claims. No export-button, auto-PNG or native-PDF guarantee.",
+    "privacy": "NOT IN ARTICLE: User-requested privacy paragraph removed; no contrary all-local or no-network claim is introduced.",
+    "user_experience": "PASS: New intro follows the trusted user-provided wording about team-lead recommendation, frequent team/personal use and wanting to recommend it. Other personal use claims remain from prior trusted transcript; no invented private material or quantified benefit.",
+    "chatgpt_web": "PASS: No categorical statement that ChatGPT web cannot use skills or plugins.",
+    "publication": "OUT OF SCOPE: No publication action or live-state verification performed by this reviewer. Publisher records are separate; local PASS does not assert a completed live update.",
+    "generated_examples": "PASS: Original source-instruction application provenance remains. v7 only removes ancillary caution text from room/Venn SVG descriptions/footers and standaloneHTML; geometry is unchanged and PNGs were rerendered. Educational short prompts are not claimed as exact historical generation inputs. Moving summary and genuine screenshot unchanged.",
+    "diagram_text_and_arrows": "PASS: All visible group phrases match the synthesis map and original memo. Six explicitly ordered local relationships2->4,3->4,8->9,11->15,13->15,18->19 are source-supported. Contextual1->2 and14->20 are not overcounted as explicit ordering. No dependency arrowheads; the single vertical line is a reading guide, not an all-to-all prerequisite claim. Missing details are acceptable and declared.",
+    "svg_integrity": "PASS: Four article data-URI images decode byte-for-byte to sources. Room/Venn nontext XML structure and geometry exactly match archived v6. Their standaloneHTML inlineSVGs equal sourceSVGs. Genuine GitHub screenshot and moving summary hashes unchanged.",
+    "visual_scope": "PASS: Both new final346px room/Venn PNGs directly inspected; no clipping/overlap or readability regression after text removal. Moving and genuine screenshot prior visual review carries forward unchanged. No whole-article or live-publication visual verification by this reviewer.",
+    "moving_schedule_and_safety": "PASS: No concrete date, duration, legal deadline or professional moving-plan completeness is introduced. Source memo retains unknown moving date. Four scenes are a qualitative preparation overview; grouping is not asserted as a strict dependency between every task.",
+    "production_records": "PASS: revision-v7-replacements.json, examples-provenance.json, varied-examples-provenance.json, process-evidence-v7.json, production-notes.md and qa/v7/structure-checks.json align with7 narrow prose edits, textual SVG changes and actual Inkscape PNG rendering. Native publication/preview QA is explicitly recorded elsewhere.",
+    "actual_process_evidence": "PASS: process-evidence-v7.json lists the new concise educational requests while preserving the explicit non-transcript status. Room dimensions remain in surrounding example context; meeting start-time inputs remain before the prompt. No claim that a bare short sentence alone generated the exact shown details.",
+    "visual_type_style_format": "PASS: The verified45 visual types remain separate from HTML/SVG/PNG file formats and light/dark/full editorial styles. Six usage groups are explicitly editorial; Korean descriptions correspond to supported types. Simplification does not add unsupported formats.",
+    "room_geometry": "PASS carried forward by exact XML geometry comparison:3.2x3.6m room, three contained/disjoint furniture footprints and2:1 projection are unchanged. Removed caution is not needed to support the remaining fictional-layout claims; no real-world suitability guarantee added.",
+    "venn_membership": "PASS carried forward by exact geometry/content comparison: all5 candidate times, set memberships and common start12 remain unchanged. Only a duration caveat was removed; article still describes same-day possible start times and does not invent a meeting duration.",
+    "simple_setup_request": "PASS: A copyable request gives the repository URL and asks the AI to prepare the existing skill, add it only if its current environment permits, otherwise explain necessary settings. The next sentence preserves that distinction. Official Claude conversation-based skill creation and OpenAI skill-building documentation support natural-language assistance; the article does not promise automatic persistent installation in every web chat.",
+    "user_simplification_request": "PASS: Applying exactly the7 manifest replacements to archived v6 reproduces the current article byte-for-byte. Room and meeting prompts now use ordinary language without requiring diagram terminology. Two requested caveats are removed. No unrelated introduction, screenshot, moving summary/request, guide-table or ending edits.",
+    "moving_design_and_legibility": "PASS: Final346x609 PNG directly inspected after parent-requested wording refinements. Four distinct icons, bold stage titles and two short action lines per scene are clearly easier to scan than v5. Canvas400x704; Hangul minimum14px gives12.11px at346px. No observed clipping, line/text collision or ambiguous task numbering. Footer is simply 핵심 흐름 요약; omission explanation resides in article caption.",
+    "github_screenshot": "PASS: Collector documented live GitHub README capture at2026-10-29T01:48:36.813Z. Independently viewed original1165x747 JPEG and final716x555 PNG, checked file SHA hashes and exact crop pixels[63,188,779,743]. Nine types match official README and recorded loaded DOM thumbnail sources. Crop/re-encoding only, not fabricated UI, rearrangement or AI generation. Caption/source/MIT notice correctly identify upstream examples, not user-created results. Overview image, not a claim that tiny nodes are mobile-readable."
+  },
+  "sources": [
+    "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/.claude-plugin/marketplace.json",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/.claude-plugin/plugin.json",
+    "https://github.com/cathrynlavery/diagram-design#install",
+    "https://learn.chatgpt.com/docs/cli/reference",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/export.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/PRIVACY.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/0cf73c3fcc56667ad91a9a04c439ac6ccfabc9d1/skills/diagram-design/SKILL.md",
+    "https://github.com/cathrynlavery/diagram-design#what-it-makes",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/SKILL.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-axonometric-plan.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-venn.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/output-spec.md",
+    "https://academy.claude.com/tutorials/how-to-create-a-skill-with-claude-through-conversation",
+    "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+    "https://learn.chatgpt.com/docs/build-skills",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-swimlane.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/LICENSE",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/THIRD_PARTY_LICENSES.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-process.md",
+    "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/type-timeline.md"
+  ],
+  "artifact_word_count": 816,
+  "scope": "Independent local source/asset review of narrowly scoped v7: exactly7 approved prose replacements, two natural-language illustrative prompts and removal of unnecessary caveats from room/Venn text. New346px PNGs directly viewed; SVG geometry unchanged; four embeddings exact. This is not verification of the live publication, native preview or Git bundle. No publication/Git action performed by this reviewer.",
+  "example_assets": [
+    {
+      "path": "revision-v7-replacements.json",
+      "sha256": "c262b254b98a3ace42b6c7e8b9c1166cefb012e7b88646470cfb4b35f00c3f2e"
+    },
+    {
+      "path": "moving-input-memo.txt",
+      "sha256": "2be9310ce87f08bcaa8e59507db9cd7fd353372bf1cd54313dd4e2789e21db6f"
+    },
+    {
+      "path": "semantic-group-map-v6.json",
+      "sha256": "f9c1e4b5d65533bfa973f23ee262e22c1b2e0e31c5d694e71ba9894c97f36284"
+    },
+    {
+      "path": "process-evidence-v7.json",
+      "sha256": "e27d3598bd31c13053f6552c1ab2a1e96a27aafd928081a20ef5023c89b59d33"
+    },
+    {
+      "path": "varied-examples-provenance.json",
+      "sha256": "e6c11233897a9d9072cfd131c109cd812c8cdcf767cad970aec50e901430cd40"
+    },
+    {
+      "path": "images/v6-moving-summary.svg",
+      "sha256": "3a4ebd2768ea9839bc555011d1473dec7b487f6df9b0d668e649244a8ff226d5"
+    },
+    {
+      "path": "images/v6-moving-summary.png",
+      "sha256": "0ef5c9b849b6e7f28ddc68429268e28f29db75f7b512ddc9521d55670ded7b32"
+    },
+    {
+      "path": "qa/v6/moving-mobile-346.png",
+      "sha256": "edb182ac9ca40f2ab40c2879afab414c909ce8eab78ee9333513a8981cf10b0b"
+    },
+    {
+      "path": "images/04-github-types-original.jpg",
+      "sha256": "8ae5257838e3d57b75737f48600fc52ecb9e214230e749362c4bfd94c8982896"
+    },
+    {
+      "path": "images/04-github-diagram-types.png",
+      "sha256": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954"
+    },
+    {
+      "path": "images/04-github-diagram-types-provenance.json",
+      "sha256": "fde0982222b15fdb1d1fb69171955d9f59db663b890646a89444af55c6aae297"
+    },
+    {
+      "path": "images/v3-room-layout.html",
+      "sha256": "e93e76fbb1f705dfc7ce47a345e0759358fef7d1cfacb97796f54a8ade578adb"
+    },
+    {
+      "path": "images/v3-room-layout.svg",
+      "sha256": "fb7fead33402d2817bd82e6950d8012655d821ad2045d74d16fdfca646debb69"
+    },
+    {
+      "path": "images/v3-room-layout.png",
+      "sha256": "b9fb9bb84b15a9e5bcab544e70e1d8ec7f1de876749c447fbe9b2986549891c1"
+    },
+    {
+      "path": "qa/v7/v3-room-layout-mobile-346.png",
+      "sha256": "c12efc0baa2f7849b5c7c8083f5acefe18f9af8aa499b8a523d7cdee1bdb7439"
+    },
+    {
+      "path": "images/v3-shared-time.html",
+      "sha256": "f8ff8a43adc71dde1bafc5e17d39f4707d84146f623f028a0e46efb1e150063a"
+    },
+    {
+      "path": "images/v3-shared-time.svg",
+      "sha256": "4d4483990cd12c31884d6f95bf2d19c0da70c6d59588a84ec77f5fc763169092"
+    },
+    {
+      "path": "images/v3-shared-time.png",
+      "sha256": "ac8ac0a1c1c7816291ea288bc8cf5ca6236569bfb00a7e05b86915d576da9ee2"
+    },
+    {
+      "path": "qa/v7/v3-shared-time-mobile-346.png",
+      "sha256": "71c9f555422df9708101cff65e79b22ed88ce4b4758eafcdf6eba8b782095ec1"
+    }
+  ],
+  "visible_body_word_count_excluding_details": 816,
+  "revision": "v7",
+  "html_sha256": "8aa0b2d3675eb5a97a94c4c61031c1fa9f39890fb2fbb970aef14fa9f63308ef"
+}

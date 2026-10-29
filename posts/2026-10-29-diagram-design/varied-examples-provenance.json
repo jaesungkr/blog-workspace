@@ -1,0 +1,147 @@
+{
+  "revision": "v7 text-only revision of v3",
+  "method": "Read official upstream instructions and directly applied them to authored standalone HTML, then extracted its inline SVG and rendered using local Inkscape. No installed-plugin invocation, model API invocation, fabricated UI capture, upstream exporter or upstream linter claimed.",
+  "source_base": "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/skills/diagram-design/",
+  "sources_read": [
+    "SKILL.md",
+    "references/style-guide.md",
+    "references/type-axonometric-plan.md",
+    "references/type-exploded.md",
+    "references/type-venn.md",
+    "references/output-spec.md",
+    "references/layout-budget.md"
+  ],
+  "source_date": "2026-10-29",
+  "skill_version": "2.6",
+  "existing_project_palette": "default light palette retained from established article",
+  "font_source": "system/offline",
+  "size": "fit, compact 400-wide artwork; standalone HTML preserves 400px min-width with local scroller; article embedding is separately checked at346px",
+  "examples": [
+    {
+      "key": "v3-room-layout",
+      "html": "images/v3-room-layout.html",
+      "svg": "images/v3-room-layout.svg",
+      "svg_sha256": "fb7fead33402d2817bd82e6950d8012655d821ad2045d74d16fdfca646debb69",
+      "visual_type": "Axonometric plan",
+      "input": "가상의 방은 안쪽 바닥 기준 3.2m × 3.6m입니다. 침대는 1.0m × 2.0m로 왼쪽에, 책상은 1.2m × 0.6m로 뒤쪽에, 낮은 수납장은 0.5m × 1.0m로 오른쪽에 놓습니다. 높이는 침대 0.45m, 책상 0.75m, 수납장 1.2m로 가정합니다. 앞쪽은 입구 쪽입니다. 실제 집이나 제품의 치수가 아닌 배치 설명용 조건입니다.",
+      "copyable_request_not_execution_log": "diagram-design으로 작은 방에 침대랑 책상, 수납장을 배치해줘.",
+      "model_units_per_metre": 40,
+      "room_inner_model_rect": [
+        0,
+        0,
+        128,
+        144
+      ],
+      "projection": "(208+x-y,160+(x+y)/2-z)",
+      "furniture": [
+        {
+          "name": "침대",
+          "model_rect": [
+            12,
+            56,
+            52,
+            136
+          ],
+          "height": 18
+        },
+        {
+          "name": "책상",
+          "model_rect": [
+            70,
+            12,
+            118,
+            36
+          ],
+          "height": 30
+        },
+        {
+          "name": "낮은 수납장",
+          "model_rect": [
+            106,
+            82,
+            126,
+            122
+          ],
+          "height": 48
+        }
+      ],
+      "omitted_for_view": "two near walls; no windows or exact door design invented",
+      "limitations": "fictional concept layout, not an architectural survey, clearance/safety assessment or purchasing recommendation",
+      "png_sha256": "b9fb9bb84b15a9e5bcab544e70e1d8ec7f1de876749c447fbe9b2986549891c1",
+      "latest_mobile_visual_review": "qa/v7/v3-room-layout-mobile-346.png"
+    },
+    {
+      "key": "v3-shared-time",
+      "html": "images/v3-shared-time.html",
+      "svg": "images/v3-shared-time.svg",
+      "svg_sha256": "4d4483990cd12c31884d6f95bf2d19c0da70c6d59588a84ec77f5fc763169092",
+      "visual_type": "Venn",
+      "input": "같은 가상 날짜에 만날 시작 시각을 고르고 있습니다. 나는 10·12·14시, 친구 A는 12·14·16시, 친구 B는 12·16·18시에 시작할 수 있습니다. 각 후보는 하루 안의 시각이며, 약속 길이는 아직 정하지 않았습니다.",
+      "copyable_request_not_execution_log": "diagram-design으로 세 사람이 같이 만날 수 있는 시간을 한눈에 정리해줘.",
+      "sets": {
+        "나": [
+          10,
+          12,
+          14
+        ],
+        "친구 A": [
+          12,
+          14,
+          16
+        ],
+        "친구 B": [
+          12,
+          16,
+          18
+        ]
+      },
+      "regions": {
+        "10": [
+          "나"
+        ],
+        "12": [
+          "나",
+          "친구 A",
+          "친구 B"
+        ],
+        "14": [
+          "나",
+          "친구 A"
+        ],
+        "16": [
+          "친구 A",
+          "친구 B"
+        ],
+        "18": [
+          "친구 B"
+        ]
+      },
+      "common_start_times": [
+        12
+      ],
+      "meeting_duration": "unknown",
+      "same_fictional_day": true,
+      "equal_set_cardinality": 3,
+      "empty_regions": [
+        "친구 A만",
+        "나와친구 B만"
+      ],
+      "png_sha256": "ac8ac0a1c1c7816291ea288bc8cf5ca6236569bfb00a7e05b86915d576da9ee2",
+      "latest_mobile_visual_review": "qa/v7/v3-shared-time-mobile-346.png"
+    }
+  ],
+  "render_verification": {
+    "pending": false,
+    "renderer": "Inkscape local SVG rasterization",
+    "widths": [
+      800,
+      346
+    ],
+    "actual_images_visually_inspected": true,
+    "checks": "qa/v3/varied-example-checks.json",
+    "source_truth": "standalone HTML;SVG extracted from inline node",
+    "upstream_export_or_linter_run": false,
+    "browser_html_rendered": false
+  },
+  "revision_method": "Remove user-rejected caveats only; no geometry/model changes; local Inkscape PNG rerender. Short copyable prompts are illustrative, not historical execution transcripts."
+}

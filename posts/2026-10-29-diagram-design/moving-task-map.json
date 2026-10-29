@@ -1,0 +1,367 @@
+{
+  "fictional": true,
+  "date_known": false,
+  "task_count": 20,
+  "memo": "이사 준비 메모. 날짜는 아직 안 정했음. 나는 서로 가능한 날을 모아서 날짜부터 정하고 운반 일정 예약할게. 같이 사는 사람은 새집 치수 재고 가구 자리 정하기. 양쪽 집에서 짐 나르는 동선도 봐줘. 도착 시각 공유는 예약이랑 동선 확인 끝나면 내가. 아, 포장 자재는 네가 준비. 나는 가져갈 짐 고르고 안 가져갈 짐 정리한 뒤 잘 안 쓰는 짐부터 포장. 가구 자리를 정해둬야 이삿날 안 헤매겠지. 상자에 방 이름 쓰는 건 내가, 배선 사진이랑 분리 부품 챙기는 건 네가. 첫날 쓸 물건 가방은 내가 따로. 운반 순서는 네가 공유하되 상자 표시랑 부품 정리 끝나고 배치도도 같이 보내자. 당일 나는 출발 전 남은 짐 확인. 새집 방 이름 표시랑 큰 가구 배치는 네가. 큰 가구 자리 잡으면 내가 상자를 방별로 놓고 첫날 물건부터 풀게.",
+  "phases": [
+    {
+      "name": "일정부터 맞추기",
+      "when": "가장 먼저",
+      "note": [
+        "예약과 동선이 정해져야",
+        "도착 시각을 공유할 수 있어요."
+      ]
+    },
+    {
+      "name": "짐과 공간 정리",
+      "when": "일정 확정 후",
+      "note": [
+        "정한 가구 자리는 15번 운반 순서와",
+        "18번 실제 배치에 다시 사용해요."
+      ]
+    },
+    {
+      "name": "포장 마무리",
+      "when": "옮기기 전",
+      "note": [
+        "방 표시와 부품 정리 후 순서를 공유해요.",
+        "9번 가구 배치도도 함께 전달해요."
+      ]
+    },
+    {
+      "name": "옮기고 자리 잡기",
+      "when": "이삿날",
+      "note": [
+        "11번 상자 표시대로 방에 나눠 놓고,",
+        "14번 첫날 가방부터 풀어요."
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "label": "날짜 정하기",
+      "owner": "나",
+      "phase": 1,
+      "timing": "가장 먼저",
+      "memo_span": "나는 서로 가능한 날을 모아서 날짜부터 정하고",
+      "depends_on": [],
+      "node_bbox": [
+        24,
+        216,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 2,
+      "label": "운반 일정 예약하기",
+      "owner": "나",
+      "phase": 1,
+      "timing": "가장 먼저",
+      "memo_span": "운반 일정 예약할게",
+      "depends_on": [
+        1
+      ],
+      "node_bbox": [
+        24,
+        320,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 3,
+      "label": "양쪽 집 운반 동선 확인",
+      "owner": "함께 사는 사람",
+      "phase": 1,
+      "timing": "가장 먼저",
+      "memo_span": "양쪽 집에서 짐 나르는 동선도 봐줘",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        216,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 4,
+      "label": "도착 시각 공유하기",
+      "owner": "나",
+      "phase": 1,
+      "timing": "가장 먼저",
+      "memo_span": "도착 시각 공유는 예약이랑 동선 확인 끝나면 내가",
+      "depends_on": [
+        2,
+        3
+      ],
+      "node_bbox": [
+        24,
+        424,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 5,
+      "label": "포장 자재 준비하기",
+      "owner": "함께 사는 사람",
+      "phase": 1,
+      "timing": "가장 먼저",
+      "memo_span": "포장 자재는 네가 준비",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        320,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 6,
+      "label": "가져갈 짐 고르기",
+      "owner": "나",
+      "phase": 2,
+      "timing": "일정 확정 후",
+      "memo_span": "나는 가져갈 짐 고르고",
+      "depends_on": [],
+      "node_bbox": [
+        24,
+        664,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 7,
+      "label": "안 가져갈 짐 정리하기",
+      "owner": "나",
+      "phase": 2,
+      "timing": "일정 확정 후",
+      "memo_span": "안 가져갈 짐 정리한 뒤",
+      "depends_on": [
+        6
+      ],
+      "node_bbox": [
+        24,
+        768,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 8,
+      "label": "새집 치수 재기",
+      "owner": "함께 사는 사람",
+      "phase": 2,
+      "timing": "일정 확정 후",
+      "memo_span": "같이 사는 사람은 새집 치수 재고",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        664,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 9,
+      "label": "가구 자리 정하기",
+      "owner": "함께 사는 사람",
+      "phase": 2,
+      "timing": "일정 확정 후",
+      "memo_span": "가구 자리 정하기",
+      "depends_on": [
+        8
+      ],
+      "node_bbox": [
+        224,
+        768,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 10,
+      "label": "잘 안 쓰는 짐 먼저 포장",
+      "owner": "나",
+      "phase": 2,
+      "timing": "일정 확정 후",
+      "memo_span": "잘 안 쓰는 짐부터 포장",
+      "depends_on": [
+        7
+      ],
+      "node_bbox": [
+        24,
+        872,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 11,
+      "label": "상자에 방 이름 표시",
+      "owner": "나",
+      "phase": 3,
+      "timing": "옮기기 전",
+      "memo_span": "상자에 방 이름 쓰는 건 내가",
+      "depends_on": [],
+      "node_bbox": [
+        24,
+        1112,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 12,
+      "label": "배선 사진 찍기",
+      "owner": "함께 사는 사람",
+      "phase": 3,
+      "timing": "옮기기 전",
+      "memo_span": "배선 사진이랑",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        1112,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 13,
+      "label": "분리 부품 챙기기",
+      "owner": "함께 사는 사람",
+      "phase": 3,
+      "timing": "옮기기 전",
+      "memo_span": "분리 부품 챙기는 건 네가",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        1216,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 14,
+      "label": "첫날 쓸 물건 가방에 따로",
+      "owner": "나",
+      "phase": 3,
+      "timing": "옮기기 전",
+      "memo_span": "첫날 쓸 물건 가방은 내가 따로",
+      "depends_on": [],
+      "node_bbox": [
+        24,
+        1216,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 15,
+      "label": "운반 순서 공유하기",
+      "owner": "함께 사는 사람",
+      "phase": 3,
+      "timing": "옮기기 전",
+      "memo_span": "운반 순서는 네가 공유하되 상자 표시랑 부품 정리 끝나고 배치도도 같이 보내자",
+      "depends_on": [
+        11,
+        13,
+        9
+      ],
+      "node_bbox": [
+        224,
+        1320,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 16,
+      "label": "출발 전 남은 짐 확인",
+      "owner": "나",
+      "phase": 4,
+      "timing": "이삿날",
+      "memo_span": "당일 나는 출발 전 남은 짐 확인",
+      "depends_on": [],
+      "node_bbox": [
+        24,
+        1560,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 17,
+      "label": "새집에 방 이름 표시",
+      "owner": "함께 사는 사람",
+      "phase": 4,
+      "timing": "이삿날",
+      "memo_span": "새집 방 이름 표시랑",
+      "depends_on": [],
+      "node_bbox": [
+        224,
+        1560,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 18,
+      "label": "큰 가구 배치하기",
+      "owner": "함께 사는 사람",
+      "phase": 4,
+      "timing": "이삿날",
+      "memo_span": "큰 가구 배치는 네가",
+      "depends_on": [
+        9
+      ],
+      "node_bbox": [
+        224,
+        1664,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 19,
+      "label": "상자를 방별로 놓기",
+      "owner": "나",
+      "phase": 4,
+      "timing": "이삿날",
+      "memo_span": "큰 가구 자리 잡으면 내가 상자를 방별로 놓고",
+      "depends_on": [
+        18,
+        11
+      ],
+      "node_bbox": [
+        24,
+        1664,
+        152,
+        72
+      ]
+    },
+    {
+      "id": 20,
+      "label": "첫날 물건부터 풀기",
+      "owner": "나",
+      "phase": 4,
+      "timing": "이삿날",
+      "memo_span": "첫날 물건부터 풀게",
+      "depends_on": [
+        19,
+        14
+      ],
+      "node_bbox": [
+        24,
+        1768,
+        152,
+        72
+      ]
+    }
+  ],
+  "reading_order": "four timing chunks; two responsibility lanes per chunk; arrows only for relevant dependencies",
+  "cross_phase_dependencies": "Referenced in the two-line notes below each phase; no crossing long wires"
+}
