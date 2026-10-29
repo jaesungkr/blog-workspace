@@ -31,6 +31,28 @@ This is the repository's default complete-post workflow when selected by
 for this workflow; keep the global implicit-invocation policy unchanged. Do
 not silently migrate an existing `format: rich-post` bundle.
 
+## Preserve the canonical article format
+
+Always render publication HTML with this skill's `render_rich_post_v2.py` and
+finalizer. Do not substitute a custom `build_preview.py`, hand-written HTML,
+or another Markdown converter, even if the prose matches. The canonical
+`.devlog-rich` article, section spacing/backgrounds, automatic TOC (two or more
+major sections), table wrappers, media wrappers and theme variables are part
+of the approved blog format. Keep preview and submitted fragment tied to the
+actual renderer/CSS hashes. A source revision called “v2” is not proof that
+this workflow was used.
+
+Use Markdown `>` for copyable request/input examples and attributed quotations;
+all such blockquotes receive the same neutral light/dark box treatment. This
+is presentation, not automatic classification as a command: keep context and
+attribution in the prose, never add a “prompt” label to quotations. Ordinary
+explanation stays in paragraphs; executable code stays in fenced code blocks.
+Do not copy the default box CSS into new `assets/post.css` files. Existing
+article overrides remain historical, and scoped exceptions are allowed only
+for an observed issue. Check the canonical-template and prompt-box gate in
+`references/final-page-qa-v2.md` before publishing. Workflow changes do not
+republish old articles or authorize rewriting approved prose to satisfy lint.
+
 ## Direct specialist dependencies
 
 Load these stages directly; no base workspace orchestrator is required.

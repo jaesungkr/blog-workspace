@@ -90,3 +90,31 @@ captures, inspect the cover, or make visual repairs unless explicitly requested.
 If the editor preview does not show the eventual cover, record that limitation
 without adding a later live-page gate. Do not equate an editor save click with
 publication success or report omitted checks as passed.
+
+## Canonical template and quote/input boxes
+
+Before publication, verify the actual fragment comes from the canonical
+renderer, not merely HTML with copied class names. Retain renderer/CSS hashes
+and exact reviewed fragment parity. Confirm one `.devlog-rich` wrapper,
+`.devlog-rich__section` blocks, `is-alt` alternation unless explicitly set
+plain, `.devlog-rich__toc` with unique targets when there are at least two
+major sections, `.rich-table-wrap` around tables, and native media wrappers.
+A missing template is a formatting defect: rerender without changing prose.
+
+Inspect every request/memo/quotation block at 1280 and 360 in light and dark.
+Confirm its background, thin border/left accent, inner padding and readable
+text are actually computed in the Tistory preview, including hostile skin
+rules; a class name alone is insufficient. Require text/background contrast
+at least 4.5:1, no clipping or internal horizontal overflow, and unchanged
+visible text/links. Long inputs and URLs must wrap. Distinguish page-injected
+ad overflow from article overflow and report it rather than hiding it with
+new global CSS. Record actual coverage; local computed-style tests are not
+native browser or independent visual passes.
+
+Regression checks: `python3 -m unittest discover -s tests -v` checks template
+structure, unchanged quote content and light/dark color-pair contrast. When a
+local Chromium runtime is usable, run
+`RUN_RICH_BROWSER_TESTS=1 python3 -m unittest discover -s tests -p test_rich_prompt_defaults.py -v`
+for computed styles and long-input wrapping in 1280/360 iframe viewports with
+competing skin declarations. Keep actual native-preview inspection mandatory;
+a local browser unavailable/timeout is a limitation, not a visual pass.
