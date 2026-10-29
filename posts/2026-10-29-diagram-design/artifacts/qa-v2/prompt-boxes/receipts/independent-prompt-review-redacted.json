@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "post161 only; six prompt/memo blockquotes, four native preview conditions, 24 screenshots independently inspected",
+  "prose_tables_captions_normalized_equal": true,
+  "links_exact": true,
+  "image_tokens_exact": true,
+  "editor_normalized_exact": true,
+  "submission_sha256": "1b0c07c6fd8d8f2f0a11968e70aa65cf059eb46f44a38a3298d9c0ac8f025b9c",
+  "css_change": "Only article-scoped blockquote rules replaced prior dark foreground-only override. No global selector changes.",
+  "visual": "All six passages now clearly boxed with blue left rule, rounded outline, background and inner padding. Both themes readable, long memo fully visible in mobile quote1; no clipping or text overlap in inspected affected regions.",
+  "computed_summary": {
+    "mobile-dark-metrics": {
+      "theme": "scroll-smooth dark",
+      "viewport": 360,
+      "quotes": 6,
+      "min_contrast": 9.94,
+      "all_no_internal_overflow": true,
+      "bg": "rgb(37, 38, 41)",
+      "text": "rgb(209, 209, 214)",
+      "border": "",
+      "left": "2.5px solid rgb(102, 179, 255)",
+      "padding": "16px"
+    },
+    "pc-dark-metrics": {
+      "theme": "scroll-smooth dark",
+      "viewport": 1280,
+      "quotes": 6,
+      "min_contrast": 9.94,
+      "all_no_internal_overflow": true,
+      "bg": "rgb(37, 38, 41)",
+      "text": "rgb(209, 209, 214)",
+      "border": "",
+      "left": "2.5px solid rgb(102, 179, 255)",
+      "padding": "18px 20px"
+    },
+    "mobile-light-metrics": {
+      "theme": "scroll-smooth",
+      "viewport": 360,
+      "quotes": 6,
+      "min_contrast": 11.69,
+      "all_no_internal_overflow": true,
+      "bg": "rgb(246, 246, 246)",
+      "text": "rgb(51, 51, 51)",
+      "border": "",
+      "left": "2.5px solid rgb(0, 102, 204)",
+      "padding": "16px"
+    },
+    "pc-light-metrics": {
+      "theme": "scroll-smooth",
+      "viewport": 1280,
+      "quotes": 6,
+      "min_contrast": 11.69,
+      "all_no_internal_overflow": true,
+      "bg": "rgb(246, 246, 246)",
+      "text": "rgb(51, 51, 51)",
+      "border": "",
+      "left": "2.5px solid rgb(0, 102, 204)",
+      "padding": "18px 20px"
+    }
+  },
+  "limitations": [
+    "Narrow delta QA, not a new whole-post review.",
+    "Read-only shared native screenshots/metrics; no browser mutation or save by reviewer.",
+    "Raw non-style markup not byte-identical due editor normalization; normalized visible text, links and original native image tokens independently compared."
+  ]
+}

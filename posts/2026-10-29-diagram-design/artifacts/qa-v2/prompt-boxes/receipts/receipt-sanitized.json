@@ -1,0 +1,21 @@
+{
+  "post_id": 161,
+  "scope": "Only six existing prompt/input blockquote styles in post161; canonical renderer post-local CSS extension; no prose, other post or global skin changes",
+  "saved_at_utc": "2026-10-29T05:43:44Z",
+  "status": "saved_verified",
+  "submission_sha256": "1b0c07c6fd8d8f2f0a11968e70aa65cf059eb46f44a38a3298d9c0ac8f025b9c",
+  "title": "설명을 그려주는 AI 스킬, diagram-design",
+  "publication_date": "2026-10-29 12:09",
+  "metadata_preserved": [
+    "title",
+    "url",
+    "publication_date",
+    "public_visibility",
+    "thumbnail_exact",
+    "native_images",
+    "category"
+  ],
+  "review": "PASS, all six quote blocks in PC1280/mobile360 light/dark, 24 screenshots inspected independently",
+  "saved_public_readback": "six rendered prompt boxes and prose/link/table parity verified",
+  "proof_local": "output/prompt-block-fix/saved-proof.png"
+}

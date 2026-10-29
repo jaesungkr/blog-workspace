@@ -1,0 +1,54 @@
+{
+  "receipt_zip_size": 3685,
+  "receipt_zip_sha256": "a314c3a84ccd28cfc3f1c7e519a3ef7b51f36fa40ce17d5aa0510a9e69fe95ec",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "158b33bbdff8ec40e5981000dbb524639a8d7e99d58a69f26d85464105b204bc"
+    },
+    {
+      "path": "native-replacement-fragment.html",
+      "sha256": "9dea1e53d9cf35fc375239dc4d9b2998c8a703db8f4dca682b177a4a18e15f84"
+    },
+    {
+      "path": "post.css",
+      "sha256": "867c3987f117464b8c2ee4fb697f5806cd24abe09b635d263e3915847eef0a19"
+    },
+    {
+      "path": "provenance-parity.json",
+      "sha256": "6b1544e2314a64e6d5240813795ce0bfcc122934729911a5b1e17d5e9dea4c36"
+    },
+    {
+      "path": "receipts/before-style-observation.json",
+      "sha256": "5b3d5682a62b734f066ee5aeae03ed7231f48e66dcb5b1e8c99bd2a0ebd5df49"
+    },
+    {
+      "path": "receipts/binding-parity.json",
+      "sha256": "3b227cffa037b9a29ff92dea0bfd223cc435c76716a526103a8a0eae750580af"
+    },
+    {
+      "path": "receipts/independent-prompt-review-redacted.json",
+      "sha256": "488f18bcf1d68e3a49d2eca7c26ddac0a5e43dc12e603f940bb1414e2e3c2c8b"
+    },
+    {
+      "path": "receipts/receipt-sanitized.json",
+      "sha256": "37c231aad43278e488fdcfd7952f667b4949d9b5a9239f26bfc93c759fb21a9e"
+    },
+    {
+      "path": "receipts/saved-parity.json",
+      "sha256": "c073512c88ca05f8c1099c2b73698a9447e3ba7467572bdafb43e07da172d3a6"
+    },
+    {
+      "path": "receipts/style-check-summary.json",
+      "sha256": "68c911d34b69a7be3631532c8dfb8677c3581bdc82c9970b75a1a94f1eafc4e2"
+    },
+    {
+      "path": "render-prompt-boxes.py",
+      "sha256": "c6e471ff3cab5044aa03cdac5b77a724fdadea91a611ebceab65cc1a1430055f"
+    },
+    {
+      "path": "renderer-input.md",
+      "sha256": "7d3afd97043c5111f8171d6e1f054b3a43becf3716f9f3a8e49c0beaefc89c82"
+    }
+  ]
+}

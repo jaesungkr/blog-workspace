@@ -1,0 +1,69 @@
+{
+  "post_id": 161,
+  "source_sha256": "e410cbdc3451d7dc3f569d35760719b9ff0dcc67be2c5fc660e7ba24dcc3bfe4",
+  "renderer": "render_rich_post_v2.render_outputs",
+  "renderer_sha256": "ff20392d99ceafa4615fc7a5f1cf4828ed0e8f12eb738c0288b111f5c16a4a51",
+  "css_sha256": "017972d95240fa5dd385178d6ba28cd7a978eed114a3779033c902e080822866",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "fragment_sha256": "9dea1e53d9cf35fc375239dc4d9b2998c8a703db8f4dca682b177a4a18e15f84",
+  "visible_text_excluding_template_toc": "pass",
+  "original_links_order_and_targets": "pass",
+  "table_cells_order_and_values": "pass",
+  "image_alt_order": "pass",
+  "image_count": 4,
+  "media": [
+    {
+      "id": "post-161-image-1",
+      "alt": "Diagram Design의 GitHub README에 소개된 아홉 가지 그림 유형의 실제 미리보기.",
+      "caption": "",
+      "width": 716,
+      "height": 555,
+      "display_width": 716,
+      "publish_path": "images/04-github-diagram-types.png",
+      "tistory_embed": "<!--REPLACE_NATIVE_post-161-image-1-->",
+      "sha256": "16f0a710febe1d41f56dbbf205236768fca5045751026b1731060ba55747b954"
+    },
+    {
+      "id": "post-161-image-2",
+      "alt": "이사 준비를 일정 맞추기, 짐과 자리 정하기, 포장 마무리, 가구 놓고 짐 풀기의 네 흐름으로 요약한 그림.",
+      "caption": "",
+      "width": 800,
+      "height": 1408,
+      "display_width": 800,
+      "publish_path": "images/v6-moving-summary.png",
+      "tistory_embed": "<!--REPLACE_NATIVE_post-161-image-2-->",
+      "sha256": "0ef5c9b849b6e7f28ddc68429268e28f29db75f7b512ddc9521d55670ded7b32"
+    },
+    {
+      "id": "post-161-image-3",
+      "alt": "가로 3.2m 세로 3.6m인 가상 방에 침대와 책상, 수납장을 배치한 입체 그림.",
+      "caption": "",
+      "width": 800,
+      "height": 992,
+      "display_width": 800,
+      "publish_path": "images/v3-room-layout.png",
+      "tistory_embed": "<!--REPLACE_NATIVE_post-161-image-3-->",
+      "sha256": "b9fb9bb84b15a9e5bcab544e70e1d8ec7f1de876749c447fbe9b2986549891c1"
+    },
+    {
+      "id": "post-161-image-4",
+      "alt": "세 사람의 가능한 시작 시각을 원으로 묶고, 모두 가능한 12시를 가운데에 보여주는 그림.",
+      "caption": "",
+      "width": 800,
+      "height": 1072,
+      "display_width": 800,
+      "publish_path": "images/v3-shared-time.png",
+      "tistory_embed": "<!--REPLACE_NATIVE_post-161-image-4-->",
+      "sha256": "ac8ac0a1c1c7816291ea288bc8cf5ca6236569bfb00a7e05b86915d576da9ee2"
+    }
+  ],
+  "status": "saved existing post; verified sanitized receipts archived",
+  "validation_boundary": "Actual canonical renderer API invoked, not CLI/finalizer pass. Preserve approved prose; do not fabricate canonical source/media/QA records. Automatic TOC repeats existing headings as template navigation. Captions retain original inline formatting and links as original paragraphs; generated caption slots are empty.",
+  "post_css_sha256": "867c3987f117464b8c2ee4fb697f5806cd24abe09b635d263e3915847eef0a19",
+  "previous_committed_fragment_sha256": "279cec8c9ec717e8c67f36433aed3ab3538b917e002b251842a1271c6457aa6f",
+  "article_markup_after_style_byte_identical": true,
+  "blockquote_count": 6,
+  "scope": "post 161 only; supersedes dark-only foreground rule with theme-aware prompt boxes",
+  "native_browser_verification": "See receipts/independent-prompt-review-redacted.json",
+  "submitted_native_fragment_sha256": "1b0c07c6fd8d8f2f0a11968e70aa65cf059eb46f44a38a3298d9c0ac8f025b9c"
+}
