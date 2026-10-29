@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "57eac79429bbc3e032d11afa9d11105fa5e12df08d45a3a34ec846f1f67c2168",
+  "archive_size_bytes": 272602,
+  "transfer_blob": "463194fcbd7c3a12ea4559d5fcb9952b139b59a8",
+  "original_files_preserved": 16,
+  "manifest_entries_verified": 15,
+  "publication_asset_hashes_verified": 4,
+  "preview_embedded_assets_verified": 3,
+  "article_body_exact": true,
+  "secret_pattern_scan": "pass",
+  "blog_check": "7 historical style mismatches: six level-2 headings and missing final ### 참고 자료 section; preserved",
+  "blog_render": "blocked by same style mismatches; supplied standalone HTML preserved",
+  "strict_canonical_checks": "unavailable; custom renderer and sanitized evidence only",
+  "live_blog_modified": false
+}

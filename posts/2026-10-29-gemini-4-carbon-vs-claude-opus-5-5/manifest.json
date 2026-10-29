@@ -1,0 +1,77 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 702,
+    "sha256": "1ad7732f0d1848c913ea181b43ea20468fe153e2d996739d473ea5cfb438d26e"
+  },
+  {
+    "path": "article-draft.md",
+    "bytes": 9862,
+    "sha256": "b97dbf1ccbe042ad264fb5517224e86092f0153bfa396352c394777c84528061"
+  },
+  {
+    "path": "asset-manifest.json",
+    "bytes": 1399,
+    "sha256": "8a55f9b228c539c200b3a42c3dcc41f07358a724e60dac496573326fd89c5bcd"
+  },
+  {
+    "path": "build_preview.py",
+    "bytes": 11315,
+    "sha256": "69ed99de52079ba6cb207ec33aae426a373fd13850f0e33f878cd782e774095e"
+  },
+  {
+    "path": "gemini-carbon-article-review.html",
+    "bytes": 172735,
+    "sha256": "b67bfa82620a374acb4e5ad9dbf2766fb4e0751ec45f9c8201fce6353b6181f9"
+  },
+  {
+    "path": "gemini-carbon-article.md",
+    "bytes": 9862,
+    "sha256": "b97dbf1ccbe042ad264fb5517224e86092f0153bfa396352c394777c84528061"
+  },
+  {
+    "path": "images/00-thumbnail-square.jpg",
+    "bytes": 48553,
+    "sha256": "1c05102abbeff6b9fb1d6a8dcaec8bac78f05b6f4cbb8d48dc2eecd53e8e9a75"
+  },
+  {
+    "path": "images/01-google-announcement.jpg",
+    "bytes": 17272,
+    "sha256": "5c34cdce12d5f5f32c1d620f2d5ee44c185b3f901ef72a98c8639f82e425d070"
+  },
+  {
+    "path": "images/02-arena-text.jpg",
+    "bytes": 42022,
+    "sha256": "96ae4f9b3e66e7b3b84e82a66d95dd013c30d10c3350a3d09b4cf41dc42da01e"
+  },
+  {
+    "path": "images/03-arena-webdev.jpg",
+    "bytes": 56241,
+    "sha256": "a29756af886b08e72aed71c300753fe21ceb039df1b1fb2d18acb4a0cea7f717"
+  },
+  {
+    "path": "publication/git-safe/independent-preview-signoff.json",
+    "bytes": 2259,
+    "sha256": "4a2d380fbfeecff6cee5f2a1934fd504131ec5bea5f7e1adcc63448db7d4bfb6"
+  },
+  {
+    "path": "publication/git-safe/native-parity.json",
+    "bytes": 1247,
+    "sha256": "41823019790a5633a3a5997a14af72ebc8e9f574ca3555c643a5a4fa4d8920a8"
+  },
+  {
+    "path": "publication/git-safe/publication-receipt.json",
+    "bytes": 906,
+    "sha256": "373719e1bbb017b1d801cdbdb848bdb5b82cac3f7e3309fc15d5ffcf52bf2512"
+  },
+  {
+    "path": "publication/thumbnail-provenance.json",
+    "bytes": 545,
+    "sha256": "c45551bf953e79de86906615f573be2d9a3800d3815894ef9855db424280e8b3"
+  },
+  {
+    "path": "source-review.json",
+    "bytes": 8435,
+    "sha256": "42b7ec98a6fca7c373e12452af6565d310590999a577c6a36fa32af2e817092c"
+  }
+]

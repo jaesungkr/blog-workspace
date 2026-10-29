@@ -1,0 +1,38 @@
+[
+  {
+    "path": "images/01-google-announcement.jpg",
+    "sha256": "5c34cdce12d5f5f32c1d620f2d5ee44c185b3f901ef72a98c8639f82e425d070",
+    "size": [
+      730,
+      175
+    ],
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "kind": "genuine public webpage screenshot crop",
+    "capture_date_utc": "2026-10-29",
+    "rights": "Source site rights retained; used as attributed excerpt for commentary, not claimed public domain."
+  },
+  {
+    "path": "images/02-arena-text.jpg",
+    "sha256": "96ae4f9b3e66e7b3b84e82a66d95dd013c30d10c3350a3d09b4cf41dc42da01e",
+    "size": [
+      1055,
+      395
+    ],
+    "source_url": "https://arena.ai/leaderboard/chat/text",
+    "kind": "genuine public webpage screenshot crop",
+    "capture_date_utc": "2026-10-29",
+    "rights": "Source site rights retained; used as attributed excerpt for commentary, not claimed public domain."
+  },
+  {
+    "path": "images/03-arena-webdev.jpg",
+    "sha256": "a29756af886b08e72aed71c300753fe21ceb039df1b1fb2d18acb4a0cea7f717",
+    "size": [
+      1055,
+      525
+    ],
+    "source_url": "https://arena.ai/leaderboard/code/webdev",
+    "kind": "genuine public webpage screenshot crop",
+    "capture_date_utc": "2026-10-29",
+    "rights": "Source site rights retained; used as attributed excerpt for commentary, not claimed public domain."
+  }
+]

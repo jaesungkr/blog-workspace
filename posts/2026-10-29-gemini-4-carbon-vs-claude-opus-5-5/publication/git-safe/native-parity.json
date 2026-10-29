@@ -1,0 +1,51 @@
+{
+  "approved_markdown_sha256": "b97dbf1ccbe042ad264fb5517224e86092f0153bfa396352c394777c84528061",
+  "approved_review_html_sha256": "b67bfa82620a374acb4e5ad9dbf2766fb4e0751ec45f9c8201fce6353b6181f9",
+  "native_payload_sha256": "8f70e92474c9e4c5edc0ef492ee1befc664cd980918ead1c4ba7673d4bb5cb89",
+  "native_dom_readback_exact": true,
+  "native_image_blocks": 3,
+  "tables": 2,
+  "source_changes": "Formatting and native media only; v2 approved prose unchanged",
+  "desktop_layout": {
+    "body": {
+      "client": 800,
+      "scroll": 800
+    },
+    "doc": {
+      "client": 1261,
+      "scroll": 1261
+    },
+    "tables": [
+      {
+        "client": 800,
+        "overflow": "auto",
+        "scroll": 800
+      },
+      {
+        "client": 800,
+        "overflow": "auto",
+        "scroll": 800
+      }
+    ]
+  },
+  "private_editor_backup_excluded": true,
+  "mobile_layout_observed": {
+    "viewport_width": 360,
+    "document_client_width": 341,
+    "document_scroll_width": 341,
+    "body_client_width": 309,
+    "body_scroll_width": 309,
+    "tables": [
+      {
+        "client": 309,
+        "scroll": 620,
+        "overflow": "auto"
+      },
+      {
+        "client": 309,
+        "scroll": 620,
+        "overflow": "auto"
+      }
+    ]
+  }
+}

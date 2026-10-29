@@ -1,0 +1,74 @@
+{
+  "revision": "v2-inclusive-intro",
+  "reviewed_at_utc": "2026-10-29T04:34:38Z",
+  "artifact": "article-draft.md",
+  "artifact_sha256": "b97dbf1ccbe042ad264fb5517224e86092f0153bfa396352c394777c84528061",
+  "html_artifact": "gemini-carbon-article-review.html",
+  "html_sha256": "b67bfa82620a374acb4e5ad9dbf2766fb4e0751ec45f9c8201fce6353b6181f9",
+  "artifact_word_count": 994,
+  "status": "PASS",
+  "mandatory_fixes": [],
+  "scope": "Independent primary-source fact/prose/table review and direct inspection of3 genuine screenshot assets. Static HTML/embedded-byte checks. Not model hands-on, API testing, whole-page browser rendering, publication or Git review.",
+  "fixed_before_pass": [
+    "FrontierSWE label changed from code fixing to software development to reflect its broader implementation/research/optimization scope.",
+    "Rollout sentence changed to an attributed announced plan rather than an independently observed start of access.",
+    "Google screenshot switched to short heading crop; alt corrected to title only because date is not visible in that crop."
+  ],
+  "checks": {
+    "model_identity_and_availability": "PASS: Google official Oct28 announcement identifies Carbon and staged cyber-defender/trusted-partner rollout, with developers/businesses/consumers coming soon. Article does not claim public Gemini-app/API access or import Argon access into Carbon.",
+    "benchmark_table": "PASS: 8 rows across 2 tables. Primary benchmark table now Carbon / Opus / Astra; all values and bold maxima match source evidence. Argon is omitted only from this table, intentionally retained in the Arena table as previous-generation context. AA Index is points, not percent. Independent AA confirms index and Terminal-Bench values; no all-model coding-champion claim.",
+    "benchmark_conditions": "PASS: Article distinguishes mixed-source Google comparison from a single independent same-condition experiment. Highest/best publicly available reasoning settings stated. OSWorld2.1 is labeled82-task offline subset and Gemini maximum over3runs. FrontierSWE is broader software-development work, not only bug fixing.",
+    "arena_method_and_scope": "PASS: Official FAQ supports anonymous pairwise preference voting, not objective correctness. Text and WebDev are treated separately; neither score is converted to a success percentage or averaged across categories. WebDev does not stand for every coding task.",
+    "arena_values_uncertainty": "PASS: CarbonHigh Text1528 rawrank1 preliminary rankspread1-2. WebDev Carbon1768±15/2230votes rank4spread2-6, AstraMax1773±10/7210, OpusMax1810±13/3473, ArgonHigh1679±11/3437. Overlapping Carbon/Astra score ranges are not treated as settled superiority. Livebrowser displayedOct28; article correctly says checkedOct29 rather than equating crawl/render dates.",
+    "price": "PASS: Official introductory API price$2/$10 per1M input/output distinguished from later$4/$20 and consumer subscription. No invented introductory expiry, universal low-cost claim or current public availability. Token unit explanation is appropriately simple.",
+    "community": "PASS: Independently opened HN and Reddit announcement discussions. HN includes concerns over announce-before-access; Reddit comments explicitly ask for cost metrics and seeing practical results. Article calls them some reactions, not representative sentiment percentages or verified Carbon use. Argon sketchbook misattribution excluded.",
+    "voice_and_experience": "PASS: Natural general-AI-user opening rather than assuming readers use Opus; conclusion selects by website/terminal work. Public-evaluation, preference and access qualifications remain in place. No invented Carbon usage or broad claim of superiority.",
+    "source_use": "PASS: Claims distributed among Google announcement/methods, independent AA, Arena methodology/leaderboards and community originals. Announcement-dependent identity/access/price text is concise; no long translated reproduction or lengthy verbatim quote. Short Google title crop replaces larger subtitle/author excerpt. Benchmark values are checked as data.",
+    "screenshots": "PASS: Directly viewed all3 final crops. Google image is heading-only, Arena captures retain exact visible model variants/ranks/scores and source dates. Files exactly match capture-worker provenance hashes. No generated UI, changed page content or public-domain/MIT ownership assertion. Mobile readers have native text/tables for detailed numbers; screenshots serve source evidence.",
+    "html_integrity": "PASS: All prose/headings/captions from Markdown are present verbatim after inline formatting conversion. 3 embedded dataURI screenshot assets match originals byte-for-byte (plus one empty image placeholder for the local zoom dialog), 2 tables match Markdown. Static responsive/scroll styles remain. Whole-article browser render unverified and not claimed.",
+    "publication": "NOT PERFORMED BY THIS REVIEWER: user has authorized a separate publishing workflow; this is local source/asset review only, not live publication, external-account or Git QA.",
+    "new_arithmetic": "PASS: Carbon Terminal-Bench 65.2 minus Opus 59.6 = 5.6 percentage points; Opus OSWorld 87.2 minus Carbon 81.5 = 5.7 percentage points. No relative-percent/gain confusion.",
+    "comparison_scope": "PASS: Intro and conclusion compare the cited public evaluations, not universal model superiority or first-hand productivity. Conditions remain near the table, Arena is preference rather than accuracy, Carbon access is still limited, and final choice remains conditional on task and future real use. Main focus is Opus; Astra and Argon roles are explicit.",
+    "argon_baseline_source": "PASS: Newly opened AA comparison directly confirms Index 59 vs 50 and rounded Terminal-Bench 65% vs 57%; precise 65.2%/57.1% also match the independently reviewed official comparison table and benchmark source.",
+    "narrow_v2_diff": "PASS: Compared actual v1-hash source with current Markdown: exactly two paragraph replacements. All table rows and image references unchanged; previous numerical/source findings remain applicable. Updated prose asks a broad reader question and gives task-based interpretation without introducing unsupported factual claims or claiming hands-on use."
+  },
+  "sources": [
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://deepmind.google/models/evals-methodology/gemini-4-carbon/",
+    "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon__evals-table.width-1200.format-webp.webp",
+    "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+    "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+    "https://www.frontierswe.com/blog/v2",
+    "https://arena.ai/faq/",
+    "https://arena.ai/leaderboard/chat/text",
+    "https://arena.ai/leaderboard/code/webdev",
+    "https://arena.ai/blog/ranking-method",
+    "https://news.ycombinator.com/item?id=50276792",
+    "https://www.reddit.com/r/ClaudeAI/comments/1xhu9ez/google_introduced_gemini_4_carbon_allegedly_the/",
+    "https://artificialanalysis.ai/models/comparisons/gemini-4-carbon-vs-gemini-4-argon"
+  ],
+  "assets": [
+    {
+      "path": "images/01-google-announcement.jpg",
+      "sha256": "5c34cdce12d5f5f32c1d620f2d5ee44c185b3f901ef72a98c8639f82e425d070",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+      "path": "images/02-arena-text.jpg",
+      "sha256": "96ae4f9b3e66e7b3b84e82a66d95dd013c30d10c3350a3d09b4cf41dc42da01e",
+      "source_url": "https://arena.ai/leaderboard/chat/text"
+    },
+    {
+      "path": "images/03-arena-webdev.jpg",
+      "sha256": "a29756af886b08e72aed71c300753fe21ceb039df1b1fb2d18acb4a0cea7f717",
+      "source_url": "https://arena.ai/leaderboard/code/webdev"
+    }
+  ],
+  "evidence_packets": [
+    "../gemini-carbon-research/research-packet.md",
+    "../gemini-carbon-research/community-notes.md",
+    "../gemini-carbon/arena/source-packet.md",
+    "../gemini-carbon/arena/provenance.json"
+  ],
+  "revision_scope": "Two-paragraph editorial change only: introduction addresses any AI user, and conclusion frames choice by future task rather than existing Opus usage. Title, numerical tables, links, screenshot assets and all other prose unchanged from independently reviewed v1."
+}

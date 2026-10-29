@@ -1,0 +1,15 @@
+{
+  "path": "output/gemini-carbon-comparison/images/00-thumbnail-square.jpg",
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+  "capture_utc": "2026-10-29T04:51:09Z",
+  "kind": "actual browser screenshot clip",
+  "clip": {
+    "x": 210,
+    "y": 5,
+    "width": 730,
+    "height": 730
+  },
+  "sha256": "1c05102abbeff6b9fb1d6a8dcaec8bac78f05b6f4cbb8d48dc2eecd53e8e9a75",
+  "usage": "thumbnail only; body remains 3 original screenshots",
+  "no_padding_or_dom_changes": true
+}

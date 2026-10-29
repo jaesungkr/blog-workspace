@@ -1,0 +1,61 @@
+{
+  "normalized_prose_tables_captions_equal": true,
+  "links_exact": true,
+  "native_alts_exact": true,
+  "links_count": 15,
+  "md_sha256": "b97dbf1ccbe042ad264fb5517224e86092f0153bfa396352c394777c84528061",
+  "native_dom_sha256": "f9f3ca0c9ba920a6dd8dea6e67666c9fd178bcc8a235c9e5aebc423f5a5e2685",
+  "editor_readback_exact": true,
+  "status": "PASS",
+  "scope": "Independent native preview QA; source factual review is separate",
+  "screenshots": {
+    "pc-native-light": [
+      0,
+      11
+    ],
+    "pc-native-dark": [
+      0,
+      11
+    ],
+    "mobile-native-light": [
+      0,
+      17
+    ],
+    "mobile-native-dark": [
+      0,
+      17
+    ]
+  },
+  "visually_inspected_screenshot_count": 60,
+  "coverage": "All six sections, introduction, both tables and captions, all three images, final dated note; overlaps cover sticky header and desktop related-post overlay.",
+  "visual_findings": "Readable light/dark prose, appropriate paragraph/heading spacing, images proportional and contained. Arena image fine text is small on mobile but key results duplicated in prose and native tables.",
+  "native_readback_note": "Exact payload equality after removing leading 1\\n CodeMirror UI line-number prefix, not content.",
+  "layout_evidence": {
+    "viewport_width": 360,
+    "document_client_width": 341,
+    "document_scroll_width": 341,
+    "body_client_width": 309,
+    "body_scroll_width": 309,
+    "tables": [
+      {
+        "client": 309,
+        "scroll": 620,
+        "overflow": "auto"
+      },
+      {
+        "client": 309,
+        "scroll": 620,
+        "overflow": "auto"
+      }
+    ]
+  },
+  "limitations": [
+    "Horizontal-scroll containment and scrollbar verified; no supplied screenshot of table scrolled to rightmost endpoint, so interactive gesture behavior not independently tested.",
+    "No browser control, edits, save, or postpublication inspection performed."
+  ],
+  "thumbnail": {
+    "evidence": "qa/publish-settings-final.png",
+    "result": "PASS: actual selected square representative shows full Gemini 4 Carbon: our next frontier model heading legibly at small size; unlike original cropped title.",
+    "source": "Actual official Google announcement browser capture, thumbnail only; body three images unchanged."
+  }
+}
