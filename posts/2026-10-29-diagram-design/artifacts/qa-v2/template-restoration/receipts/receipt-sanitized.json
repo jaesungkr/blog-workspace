@@ -1,0 +1,32 @@
+{
+  "post_id": 161,
+  "title": "설명을 그려주는 AI 스킬, diagram-design",
+  "original_publish_date": "2026-10-29 12:09",
+  "visibility": "public",
+  "original_thumbnail_style_sha256": "b73ae8d9f9ce8dad0067dd6735101a221c75611ef97c5722834f096788b10cd8",
+  "original_native_sha256": "f9f3e58eedda52571b5f062202bbded476b5a7a2e4796d5e2b400f1ff0170d9a",
+  "category": "AI 이해·활용",
+  "scope": "format-only canonical renderer restoration; same post IDs, no global skin edits",
+  "state": "saved_existing_post_verified",
+  "saved_at_utc": "2026-10-29T05:22:51Z",
+  "submitted_fragment_sha256": "502a32655405c98a791b48fcba5d5604e97eda706164cdfa3356285f7916c07a",
+  "preserved": {
+    "title": true,
+    "date": true,
+    "url": true,
+    "public_visibility": true,
+    "thumbnail_exact": true,
+    "all_native_image_blocks": true,
+    "prose": true,
+    "links": true,
+    "table_cells": true
+  },
+  "native_public": {
+    "sections": 7,
+    "toc": 1,
+    "images": 4
+  },
+  "review": "PASS_WITH_REVIEW_SCOPE_LIMITATIONS; see independent-rich-review-redacted.json",
+  "proof": "saved-proof.png",
+  "css_fix": "canonical post-scoped dark blockquote foreground only; no global skin change"
+}

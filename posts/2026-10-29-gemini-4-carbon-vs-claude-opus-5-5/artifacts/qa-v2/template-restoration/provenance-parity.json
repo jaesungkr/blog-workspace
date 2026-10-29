@@ -1,0 +1,52 @@
+{
+  "post_id": 162,
+  "source_sha256": "b97dbf1ccbe042ad264fb5517224e86092f0153bfa396352c394777c84528061",
+  "renderer": "render_rich_post_v2.render_outputs",
+  "renderer_sha256": "ff20392d99ceafa4615fc7a5f1cf4828ed0e8f12eb738c0288b111f5c16a4a51",
+  "css_sha256": "017972d95240fa5dd385178d6ba28cd7a978eed114a3779033c902e080822866",
+  "markdown_renderer_sha256": "121bce90eb80bfaf2e29b14b795ac48e648e5c6adc15a4af9be6890e4b497cd4",
+  "fragment_sha256": "914a28de4cd74d8e4109ccf73eb9f4399ddca56a306eba6a605d18581f968f1a",
+  "visible_text_excluding_template_toc": "pass",
+  "original_links_order_and_targets": "pass",
+  "table_cells_order_and_values": "pass",
+  "image_alt_order": "pass",
+  "image_count": 3,
+  "media": [
+    {
+      "id": "post-162-image-1",
+      "alt": "구글의 Gemini 4 Carbon 공식 발표 제목",
+      "caption": "",
+      "width": 730,
+      "height": 175,
+      "display_width": 730,
+      "publish_path": "images/01-google-announcement.jpg",
+      "tistory_embed": "<!--REPLACE_NATIVE_post-162-image-1-->",
+      "sha256": "5c34cdce12d5f5f32c1d620f2d5ee44c185b3f901ef72a98c8639f82e425d070"
+    },
+    {
+      "id": "post-162-image-2",
+      "alt": "Text Arena에서 Gemini 4 Carbon High가 1위로 표시된 실제 순위 화면",
+      "caption": "",
+      "width": 1055,
+      "height": 395,
+      "display_width": 916,
+      "publish_path": "images/02-arena-text.jpg",
+      "tistory_embed": "<!--REPLACE_NATIVE_post-162-image-2-->",
+      "sha256": "96ae4f9b3e66e7b3b84e82a66d95dd013c30d10c3350a3d09b4cf41dc42da01e"
+    },
+    {
+      "id": "post-162-image-3",
+      "alt": "WebDev Arena에서 Opus 5.5 Max 1위와 Carbon High 4위를 보여주는 실제 화면",
+      "caption": "",
+      "width": 1055,
+      "height": 525,
+      "display_width": 916,
+      "publish_path": "images/03-arena-webdev.jpg",
+      "tistory_embed": "<!--REPLACE_NATIVE_post-162-image-3-->",
+      "sha256": "a29756af886b08e72aed71c300753fe21ceb039df1b1fb2d18acb4a0cea7f717"
+    }
+  ],
+  "status": "canonical render archived; native binding and saved-post evidence supplied in receipts/",
+  "validation_boundary": "Actual canonical renderer API invoked, not CLI/finalizer pass. Preserve approved prose; do not fabricate canonical source/media/QA records. Automatic TOC repeats existing headings as template navigation. Captions retain original inline formatting and links as original paragraphs; generated caption slots are empty.",
+  "submitted_native_fragment_sha256": "bf858d1df287553f6dc7ad19f4ce7cd52f2e426e9184d1e009e9f160f076887a"
+}

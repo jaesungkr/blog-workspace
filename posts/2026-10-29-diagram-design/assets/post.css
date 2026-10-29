@@ -1,0 +1,5 @@
+/* hELLO dark preview sets prompt blockquotes to #666 (contrast 2.465–2.873:1).
+   Use the canonical dark body color for this article's existing prompts. */
+.dark .devlog-rich blockquote {
+  color: var(--rich-body) !important;
+}

@@ -1,0 +1,48 @@
+{
+  "ads": [
+    {
+      "id": "aswift_1_host",
+      "right": 0,
+      "width": 0
+    },
+    {
+      "id": "aswift_1",
+      "right": 0,
+      "width": 0
+    },
+    {
+      "id": "aswift_2_host",
+      "right": 815.99609375,
+      "width": 800
+    },
+    {
+      "id": "aswift_3_host",
+      "right": 815.99609375,
+      "width": 800
+    },
+    {
+      "id": "aswift_4_host",
+      "right": 0,
+      "width": 0
+    },
+    {
+      "id": "aswift_4",
+      "right": 0,
+      "width": 0
+    },
+    {
+      "id": "aswift_0_host",
+      "right": 0,
+      "width": 0
+    },
+    {
+      "id": "aswift_0",
+      "right": 0,
+      "width": 0
+    }
+  ],
+  "articleWidth": 309,
+  "bodyOverflow": "hidden",
+  "docWidth": 816,
+  "viewport": 360
+}

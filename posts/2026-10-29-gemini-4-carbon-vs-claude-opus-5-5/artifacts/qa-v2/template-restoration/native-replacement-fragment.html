@@ -1,0 +1,471 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>구글이 10월 28일 <strong>Gemini 4 Carbon</strong>을 발표했습니다. 어떤 AI를 쓰고 있든 새 모델이 나오면 궁금해집니다. 기존 모델보다 무엇이 좋아졌는지, 내가 하는 일에도 도움이 될지가 궁금하죠.</p>
+<p>이번에는 <strong>Carbon과 Opus 5.5를 중심으로</strong>, <strong>GPT-6 Astra</strong>도 함께 비교했습니다. 종합 점수에서는 Carbon이 앞섰지만, 웹 제작 결과물에 대한 평가는 Opus 5.5가 더 높았습니다. 어려운 개발 과제에서는 Astra가 앞서는 항목도 있었고요. 어떤 일을 맡기느냐에 따라 결과가 갈렸습니다.</p>
+<p>공개된 시험 점수와 Arena 순위, 가격을 차례로 살펴보겠습니다. 이전 모델인 Gemini 4 Argon은 Carbon이 얼마나 좋아졌는지 확인하는 기준으로만 덧붙였습니다.</p>
+<div class="devlog-rich__figure" data-media-id="post-162-image-1" style="--rich-media-width:730px"><div class="devlog-rich__native-image devlog-rich__image"><!--REPLACE_NATIVE_post-162-image-1--></div><p class="devlog-rich__caption"></p></div>
+<p><em>구글의 2026년 10월 28일 공식 발표 화면. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" style="color:#1a73e8;text-decoration:none;" target="_blank">발표 원문</a></em></p>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#1-gemini-4-carbon-무엇이-달라졌나">1. Gemini 4 Carbon, 무엇이 달라졌나</a></li>
+<li><a href="#2-carbon-vs-opus-55-성능-비교">2. Carbon vs Opus 5.5, 성능 비교</a></li>
+<li><a href="#3-arena-비교-text는-carbon-웹-제작은-opus-55">3. Arena 비교: Text는 Carbon, 웹 제작은 Opus 5.5</a></li>
+<li><a href="#4-가격과-사용-가능-여부">4. 가격과 사용 가능 여부</a></li>
+<li><a href="#5-발표-이후-커뮤니티-반응">5. 발표 이후 커뮤니티 반응</a></li>
+<li><a href="#6-carbon과-opus-55-어떤-모델을-고를까">6. Carbon과 Opus 5.5, 어떤 모델을 고를까</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="1-gemini-4-carbon-무엇이-달라졌나">
+<h2 id="1-gemini-4-carbon-무엇이-달라졌나">1. Gemini 4 Carbon, 무엇이 달라졌나</h2>
+<p>Carbon은 구글의 새로운 상위 AI 모델입니다. 구글은 여러 단계를 거치는 개발 작업을 오래 이어가는 능력과 보안 문제를 찾고 수정하는 능력을 강조했습니다. 코드를 한 번 작성하는 데서 끝나는 것이 아니라, 문제가 생기면 원인을 찾고 다시 고치며 작업을 이어가는 쪽입니다.</p>
+<p>다만 <strong>발표와 일반 사용 시작은 구분해야 합니다.</strong> 구글은 일부 사이버 보안 담당자에게 먼저 제공하고, 개발자와 일반 사용자에게는 순차적으로 확대하겠다고 밝혔습니다. 아직 누구나 Gemini 앱에서 선택해 쓸 수 있는 단계는 아닙니다. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" style="color:#1a73e8;text-decoration:none;" target="_blank">구글 발표</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="2-carbon-vs-opus-55-성능-비교">
+<h2 id="2-carbon-vs-opus-55-성능-비교">2. Carbon vs Opus 5.5, 성능 비교</h2>
+<p>먼저 눈에 들어온 건 Artificial Analysis의 <strong>Intelligence Index 59점</strong>입니다. 여러 모델을 평가하는 외부 업체의 종합 지표로, 업무·코딩·과학·일반 지식에 걸친 9개 시험을 묶습니다. Carbon은 이 지표에서 1위에 올랐습니다. <a href="https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index" style="color:#1a73e8;text-decoration:none;" target="_blank">Artificial Analysis 평가</a></p>
+<p>아래는 구글의 공개 비교표에서 성격이 다른 평가 네 가지를 골라 정리한 결과입니다. Carbon과 Opus 5.5를 나란히 놓고, Astra도 함께 확인했습니다. 굵은 숫자는 <strong>세 모델 중</strong> 가장 높은 값입니다.</p>
+<div class="rich-table-wrap"><table><thead><tr><th>평가</th><th>Gemini 4 Carbon</th><th>Claude Opus 5.5</th><th>GPT-6 Astra</th></tr></thead><tbody><tr><td>종합 역량 · AA Index v5</td><td><strong>59</strong></td><td>58</td><td>57</td></tr><tr><td>터미널 작업 · Terminal-Bench 4.0</td><td><strong>65.2%</strong></td><td>59.6%</td><td>59.1%</td></tr><tr><td>소프트웨어 개발 · FrontierSWE 2.0</td><td>61.2%</td><td>62.3%</td><td><strong>65.5%</strong></td></tr><tr><td>PC 화면 조작 · OSWorld 2.1 오프라인</td><td>81.5%</td><td><strong>87.2%</strong></td><td>80.9%</td></tr></tbody></table></div>
+<p><em>구글 공개 비교표 기준으로, 항목별 출처와 실행 조건이 다릅니다. Gemini는 최고 추론 설정, 경쟁 모델은 공개된 최고·최선 가용 설정을 사용했습니다. OSWorld는 인터넷을 쓰지 않는 82개 과제이며, Gemini 수치는 3회 실행 중 최고 결과입니다. <a href="https://deepmind.google/models/evals-methodology/gemini-4-carbon/" style="color:#1a73e8;text-decoration:none;" target="_blank">평가 방법</a></em></p>
+<p><strong>Carbon과 Opus 5.5의 차이는 한 방향으로 정리되지 않습니다.</strong> 종합 점수는 Carbon이 1점 높고, 명령어로 파일이나 프로그램을 다루는 터미널 작업에서는 5.6%p 앞섰습니다. 반면 PC 화면을 보고 버튼을 누르거나 앱을 조작하는 평가에서는 Opus 5.5가 5.7%p 높았습니다.</p>
+<p>긴 개발 과제를 수행하는 FrontierSWE에서는 Carbon 61.2%, Opus 5.5 62.3%로 차이가 작았습니다. 이 항목의 세 모델 중 최고점은 Astra의 65.5%였습니다. 종합 점수가 높다고 개발 작업에서도 항상 앞서는 것은 아닌 셈입니다.</p>
+<p>이전 Argon과 비교하면 발전 폭이 더 뚜렷합니다. 종합 점수는 50점에서 59점, 터미널 작업은 57.1%에서 65.2%로 올랐습니다. <a href="https://artificialanalysis.ai/models/comparisons/gemini-4-carbon-vs-gemini-4-argon" style="color:#1a73e8;text-decoration:none;" target="_blank">Carbon·Argon 비교</a></p>
+<p>터미널 작업 점수도 전체 모델 중 1위라는 뜻은 아닙니다. Artificial Analysis의 해당 시험에는 Carbon보다 높은 Kimi 모델도 있습니다. 비교 대상을 어디까지 잡느냐에 따라 결론이 달라집니다. <a href="https://artificialanalysis.ai/evaluations/terminalbench-4-0" style="color:#1a73e8;text-decoration:none;" target="_blank">Terminal-Bench 순위</a></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="3-arena-비교-text는-carbon-웹-제작은-opus-55">
+<h2 id="3-arena-비교-text는-carbon-웹-제작은-opus-55">3. Arena 비교: Text는 Carbon, 웹 제작은 Opus 5.5</h2>
+<p>시험 점수와 함께 보는 곳이 <strong>Arena</strong>입니다. 모델 이름을 가린 두 결과를 보여주고, 사용자가 더 마음에 드는 쪽을 고릅니다. 이런 선택을 모아 상대 점수를 계산하므로, 정답률보다는 사람들이 어떤 결과를 더 선호했는지에 가까운 평가입니다. <a href="https://arena.ai/faq/" style="color:#1a73e8;text-decoration:none;" target="_blank">Arena 소개</a></p>
+<p>10월 29일 확인한 <strong>Text Arena 전체 순위에서 Carbon은 1위, 1,528점</strong>이었습니다. 수학·코딩·글쓰기 등 여러 텍스트 요청을 아우르는 부문입니다. 아직 초기 집계로 표시돼 있고, 불확실성을 반영한 순위 범위는 1~2위입니다. <a href="https://arena.ai/leaderboard/chat/text" style="color:#1a73e8;text-decoration:none;" target="_blank">Text Arena</a></p>
+<div class="devlog-rich__figure" data-media-id="post-162-image-2" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image"><!--REPLACE_NATIVE_post-162-image-2--></div><p class="devlog-rich__caption"></p></div>
+<p><em>Text Arena 전체 순위. 10월 29일 캡처했으며 화면의 집계 날짜는 10월 28일입니다. <a href="https://arena.ai/leaderboard/chat/text" style="color:#1a73e8;text-decoration:none;" target="_blank">현재 순위</a></em></p>
+<p>반면 웹사이트와 웹앱 결과물을 비교하는 <strong>WebDev Arena에서는 4위</strong>였습니다.</p>
+<div class="devlog-rich__figure" data-media-id="post-162-image-3" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image"><!--REPLACE_NATIVE_post-162-image-3--></div><p class="devlog-rich__caption"></p></div>
+<p><em>웹 제작 결과물의 선호도를 비교하는 WebDev Arena. 10월 29일 캡처, 화면 집계 날짜는 10월 28일. <a href="https://arena.ai/leaderboard/code/webdev" style="color:#1a73e8;text-decoration:none;" target="_blank">현재 순위</a></em></p>
+<div class="rich-table-wrap"><table><thead><tr><th>WebDev 전체 순위</th><th>모델 · 추론 설정</th><th>점수</th><th>투표 수</th></tr></thead><tbody><tr><td>1위</td><td>Claude Opus 5.5 · Max</td><td>1,810 ±13</td><td>3,473</td></tr><tr><td>2위</td><td>GPT-6 Astra · Max</td><td>1,773 ±10</td><td>7,210</td></tr><tr><td>4위</td><td>Gemini 4 Carbon · High</td><td>1,768 ±15</td><td>2,230</td></tr><tr><td>11위</td><td>Gemini 4 Argon · High</td><td>1,679 ±11</td><td>3,437</td></tr></tbody></table></div>
+<p><em>2026년 10월 29일 확인한 <a href="https://arena.ai/leaderboard/code/webdev" style="color:#1a73e8;text-decoration:none;" target="_blank">WebDev Arena 전체 순위</a>. 비교 대상 네 모델만 추렸으며, Carbon은 초기 집계(Preliminary)입니다. 표의 순위는 전체 순위를 그대로 썼습니다.</em></p>
+<p>Carbon과 Astra의 차이는 5점입니다. 두 모델의 점수 범위가 겹치고 Carbon의 순위 범위도 2~6위라서, 숫자만으로 확실한 우열을 정하기는 이릅니다. 이때 ± 표시는 통계적인 오차 범위이며, 1,768점이 정답률 76.8% 같은 의미는 아닙니다. <a href="https://arena.ai/blog/ranking-method" style="color:#1a73e8;text-decoration:none;" target="_blank">순위 계산 방식</a></p>
+<p>그래도 읽을 수 있는 방향은 있습니다. <strong>Carbon은 이전 Gemini보다 웹 제작 평가가 크게 좋아졌고, 현재 웹 제작 선두는 Opus 5.5입니다.</strong> Text 1위와 WebDev 4위가 동시에 나오는 이유도 결국 보는 작업이 다르기 때문입니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="4-가격과-사용-가능-여부">
+<h2 id="4-가격과-사용-가능-여부">4. 가격과 사용 가능 여부</h2>
+<p>구글이 발표한 Carbon의 API 출시 초기 가격은 입력 100만 토큰당 <strong>2달러</strong>, 출력은 <strong>10달러</strong>입니다. 초기 기간이 끝나면 <strong>4달러·20달러</strong>로 바뀝니다. 토큰은 AI가 읽거나 만들어낸 글의 양을 세는 단위이고, 이 가격은 Gemini 앱의 월 구독료와는 별개입니다. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" style="color:#1a73e8;text-decoration:none;" target="_blank">공식 가격 안내</a></p>
+<p>초기 가격만 보면 눈길이 가지만, 아직 일반 공개 전인 만큼 지금 당장 구독을 옮길 근거로 삼기는 어렵습니다. 실제 사용할 수 있게 됐을 때 응답 속도와 사용 한도, 내 작업에서의 결과를 함께 봐야겠습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="5-발표-이후-커뮤니티-반응">
+<h2 id="5-발표-이후-커뮤니티-반응">5. 발표 이후 커뮤니티 반응</h2>
+<p>발표 직후 <a href="https://news.ycombinator.com/item?id=50276792" style="color:#1a73e8;text-decoration:none;" target="_blank">Hacker News 토론</a>에서는 언제, 어디서 쓸 수 있느냐는 이야기가 이어졌습니다. <a href="https://www.reddit.com/r/ClaudeAI/comments/1xhu9ez/google_introduced_gemini_4_carbon_allegedly_the/" style="color:#1a73e8;text-decoration:none;" target="_blank">Reddit의 Claude 커뮤니티</a>에도 점수뿐 아니라 비용을 함께 봐야 한다거나, 실제로 작업하는 모습을 보고 싶다는 댓글이 있었습니다.</p>
+<p>발표를 접한 일부 반응이지만 공감되는 지점입니다. 매일 사용하는 입장에서는 점수 몇 점보다 내가 맡긴 일을 제대로 끝내는지, 얼마나 기다려야 하는지가 더 중요하니까요.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="6-carbon과-opus-55-어떤-모델을-고를까">
+<h2 id="6-carbon과-opus-55-어떤-모델을-고를까">6. Carbon과 Opus 5.5, 어떤 모델을 고를까</h2>
+<p>공개된 결과만 놓고 보면 <strong>종합 역량과 터미널 작업은 Carbon</strong>, <strong>웹 제작 결과물의 선호도와 PC 화면 조작은 Opus 5.5</strong> 쪽에 무게가 실립니다. 여기에 개발 과제 성능을 중시한다면 <strong>GPT-6 Astra</strong>도 빼놓기 어렵습니다.</p>
+<p>웹사이트 제작이 목적이라면 현재 Arena에서 앞선 Opus 5.5의 결과를, 터미널 작업이 많다면 Carbon의 강점을 눈여겨볼 만합니다. 지금 어떤 모델을 쓰는지보다 앞으로 어떤 일을 맡길지가 선택의 기준이 되겠습니다.</p>
+<p>다만 Carbon은 아직 일반 공개 전입니다. <strong>지금의 결론은 ‘Opus 5.5를 대체했다’보다는 ‘작업에 따라 맞붙을 강력한 비교 대상이 나왔다’에 가깝습니다.</strong> 공개 이후에는 이 점수 차이가 실제 작업 시간과 완성도에서도 이어지는지가 관건이겠습니다.</p>
+<p><em>발표 자료와 공개 평가를 기준으로 작성했습니다. 확인일: 2026년 10월 29일.</em></p>
+</section>
+</article>

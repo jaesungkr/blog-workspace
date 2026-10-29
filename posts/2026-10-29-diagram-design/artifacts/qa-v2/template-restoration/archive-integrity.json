@@ -1,0 +1,75 @@
+{
+  "receipt_zip_size": 15928,
+  "receipt_zip_sha256": "ea9de064011ddb698070a5e3e9057a8c6c8831b040652aa270e11236bee39fc3",
+  "receipt_transfer_blob": "795d08b7757c9c74d2721e110f82965758eac872",
+  "historical_tracked_files_byte_identical": 56,
+  "live_review": "supplied sanitized evidence, not a new executor browser run",
+  "strict_cli_finalizer": "not run/passed; canonical API formatting restoration with retained historical editorial mismatches",
+  "files": [
+    {
+      "path": "artifacts/qa-v2/template-restoration/README.md",
+      "sha256": "5df4b025ed96518007d1def74a37f6fcbad5e17104af871316a9738b8a346e58",
+      "bytes": 1617
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/native-replacement-fragment.html",
+      "sha256": "279cec8c9ec717e8c67f36433aed3ab3538b917e002b251842a1271c6457aa6f",
+      "bytes": 20842
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/provenance-parity.json",
+      "sha256": "228a7260b1386bf70ca00946cc1c11ceb39a001e90a454e45f54868ba967bcae",
+      "bytes": 3789
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/README.md",
+      "sha256": "791ebcc6844ec7aa1bf59baff1c1f5652f133438686f838309638d7e26823e11",
+      "bytes": 1204
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/binding-parity.json",
+      "sha256": "a1f37a4cf456168b0bff689d55ea91be385dfd9e06b3529a87691cbeb5b87d72",
+      "bytes": 150
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/independent-rich-review-redacted.json",
+      "sha256": "b94dec80169876223ab135f37a857065c8da6536fb12556e8fff579c644f2f25",
+      "bytes": 1852
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/mobile-dark-metrics.json",
+      "sha256": "b33e643a50ff5e492722a14c3c075ed40857696d7c2d41c18b2f052d45622d9c",
+      "bytes": 8256
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/mobile-light-metrics.json",
+      "sha256": "52e06f30cee3ca2c29a0ee9696734db868ce222f2c1b6a6073b8a745b09516d0",
+      "bytes": 8240
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/pc-dark-metrics.json",
+      "sha256": "b0346fddc02df2f6a1e9dca7614544d9053d86110e8eb7d4eec65d57ac955944",
+      "bytes": 8167
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/receipt-sanitized.json",
+      "sha256": "700aa98d15d71deefb93df74d5bc094c85f01e7843b909d83faa690308545322",
+      "bytes": 1196
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/receipts/saved-parity.json",
+      "sha256": "21655c00c122d94959cca12329345c56b1124953b0f1afbed1cb04afdcca38ad",
+      "bytes": 92
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/render-restoration.py",
+      "sha256": "9c28ceee6f863200ee06651a0a9e21c461d2492fc4d94814ab424fa1dda6ab29",
+      "bytes": 4192
+    },
+    {
+      "path": "artifacts/qa-v2/template-restoration/renderer-input.md",
+      "sha256": "7d3afd97043c5111f8171d6e1f054b3a43becf3716f9f3a8e49c0beaefc89c82",
+      "bytes": 7693
+    }
+  ]
+}

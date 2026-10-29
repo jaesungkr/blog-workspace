@@ -1,0 +1,36 @@
+{
+  "original_to_submission_prose_and_cells_equal": true,
+  "original_to_submission_external_links_exact": true,
+  "original_native_image_tokens_exact": true,
+  "editor_normalized_exact": true,
+  "submission_sha256": "bf858d1df287553f6dc7ad19f4ce7cd52f2e426e9184d1e009e9f160f076887a",
+  "status": "PASS_WITH_EXTERNAL_PREVIEW_AND_SCOPE_LIMITATIONS",
+  "post": 162,
+  "visual_scope": {
+    "full_flow": "PC1280 light final-qa/pc-light00..11; mobile360 dark final-qa/mobile-dark00..16",
+    "representative_other_themes": "PC dark pricing/community, mobile light intro and table rightmost columns; not all paragraphs repeated in all four conditions"
+  },
+  "template_match": {
+    "paragraph_font": "Noto Sans KR 17px",
+    "paragraph_margin_bottom": "19.55px",
+    "pc_section_padding": "56px 32px",
+    "mobile_section_padding": "48px 20px",
+    "image_radius": "18px",
+    "pc_image_widths": [
+      730,
+      736,
+      736
+    ],
+    "mobile_image_width": 269.26,
+    "alternating_section_backgrounds": true,
+    "toc_present": true
+  },
+  "mobile_table": "Contained620px tables in269px inner reading container. Actual supplied left/right-scrolled screenshots verify first-table rightmost columns accessible.",
+  "limitations": [
+    "Mobile document scrollWidth816 versus viewport360; article309. final-qa/ad-overflow-redacted.json independently read: aswift_2_host and aswift_3_host each800px/right815.996, body overflow hidden. External ad overflow limitation, not article overflow; whole-document no-overflow NOT asserted.",
+    "TOC shows duplicate numbering because heading labels already numbered; minor nonblocking cosmetic issue retained canonical.",
+    "Skin hero background contains screenshot text behind white title, making title busier; existing skin/header not modified by restoration.",
+    "Direct reviewer browser tabs unavailable; native screenshots and computed metrics reviewed read-only.",
+    "No save or publish performed."
+  ]
+}

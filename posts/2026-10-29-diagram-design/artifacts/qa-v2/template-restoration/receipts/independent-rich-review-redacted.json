@@ -1,0 +1,38 @@
+{
+  "original_to_submission_prose_and_cells_equal": true,
+  "original_to_submission_external_links_exact": true,
+  "original_native_image_tokens_exact": true,
+  "editor_normalized_exact": true,
+  "submission_sha256": "502a32655405c98a791b48fcba5d5604e97eda706164cdfa3356285f7916c07a",
+  "status": "PASS_WITH_REVIEW_SCOPE_LIMITATIONS",
+  "post": 161,
+  "visual_scope": {
+    "full_flow": "PC1280 dark (files mislabeled pc-light00..09 plus pc-dark-venn/final/lasttable/conclusion), mobile360 light00..14",
+    "representative_other_themes": "Earlier PC light and mobile dark selected regions; not every paragraph repeated in all four conditions"
+  },
+  "template_match": {
+    "paragraph_font": "Noto Sans KR 17px",
+    "paragraph_margin_bottom": "19.55px",
+    "paragraph_line_height_approx": "29.22px rendered; canonical1.72",
+    "pc_section_padding": "56px 32px",
+    "mobile_section_padding": "48px 20px",
+    "image_radius": "18px",
+    "pc_image_widths": [
+      716,
+      736,
+      736,
+      736
+    ],
+    "mobile_reading_width": 269.26,
+    "alternating_section_backgrounds": true,
+    "toc_present": true
+  },
+  "resolved_blocker": "Dark blockquote low contrast fixed in final scoped canonical CSS, actual PC prompt now legible.",
+  "limitations": [
+    "Browser tab30 unavailable in reviewer surface; read-only supplied native screenshots/metrics used.",
+    "Mobile earlier external AdSense overflow816 observed; final mobile-dark metric docWidth341. Article width309 and inner reading269.",
+    "TOC target IDs verified by publisher; srcdoc-preview navigation artifact prevents treating preview click as published-link proof.",
+    "Mobile-dark-fixed-prompt screenshot actually shows Venn bottom/table, not prompt; prompt fix verified PC and final CSS/readback, not direct mobile prompt crop.",
+    "No save or publish performed."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "post_id": 162,
+  "title": "Gemini 4 Carbon vs Claude Opus 5.5 - AI 모델 비교",
+  "original_publish_date": "2026-10-29 13:53",
+  "visibility": "public",
+  "original_thumbnail_style_sha256": "bc713ee0ddda1d37b6d5dbf477116d745aa39b0aef4ab9db0081537b409c2ab5",
+  "original_native_sha256": "503b88182e8d4a91adae2d8b18b187f4737e963947f6925e7ca2832072abe94b",
+  "category": "AI 모델·비교",
+  "scope": "format-only canonical renderer restoration; same post IDs, no global skin edits",
+  "state": "saved_existing_post_verified",
+  "saved_at_utc": "2026-10-29T05:29:12Z",
+  "submitted_fragment_sha256": "bf858d1df287553f6dc7ad19f4ce7cd52f2e426e9184d1e009e9f160f076887a",
+  "preserved": {
+    "title": true,
+    "date": true,
+    "url": true,
+    "public_visibility": true,
+    "thumbnail_exact": true,
+    "all_native_image_blocks": true,
+    "prose": true,
+    "links": true,
+    "table_cells": true
+  },
+  "native_public": {
+    "sections": 8,
+    "toc": 1,
+    "images": 3
+  },
+  "review": "PASS_WITH_EXTERNAL_PREVIEW_AND_SCOPE_LIMITATIONS; see independent-rich-review-redacted.json",
+  "proof": "saved-proof.png",
+  "css_fix": "none; exact canonical renderer output; no global skin change"
+}
