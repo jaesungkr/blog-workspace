@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "scope": "Independent pre-save native article parity and visual QA; no save/publish performed",
+  "approved_md_sha256": "fc99617f9eab1ffcc82385208d616d3cf9fdb7fd8572ac5e37fddfa295f050d8",
+  "native_fragment_sha256": "d719890c3541b74b66a5549e412157f6a827815df1d557a0173d5f543880c454",
+  "final_editor_normalized_equal": true,
+  "normalization": "NBSP to space, remove ZWSP, trim",
+  "parity_evidence": "independent-parity-redacted.json",
+  "prose_tables_captions_exact": true,
+  "links_exact_count": 18,
+  "alts_exact_count": 4,
+  "visual_coverage": {
+    "PC1280_light": "pc-light-final-00..14",
+    "PC1280_dark": "pc-dark-upper-00..09 plus pc-dark-00..06",
+    "mobile360_light": "mobile-light-00..18",
+    "mobile360_dark": "mobile-dark-00..18"
+  },
+  "screenshots_dimensions": [
+    1844,
+    1183
+  ],
+  "layout": {
+    "article_client_scroll_pc": [
+      800,
+      800
+    ],
+    "article_client_scroll_mobile": [
+      309,
+      309
+    ],
+    "images_pc_width": 736.015625,
+    "images_mobile_width": 269.2578125,
+    "image_natural_sizes": [
+      [
+        1180,
+        757
+      ],
+      [
+        1165,
+        747
+      ],
+      [
+        1165,
+        747
+      ],
+      [
+        1180,
+        757
+      ]
+    ],
+    "no_image_upscale": true,
+    "mobile_tables_container_scroll": [
+      269,
+      620
+    ],
+    "mobile_tables_overflow": "auto",
+    "rightmost_table_column_visually_verified": "mobile-table-right.png"
+  },
+  "visual_findings": [
+    "All article sections, four images and ordered captions covered in both widths and themes",
+    "Effort time table preserves 1 minute 30 seconds / 4 / 11 / 67 minutes",
+    "Inline /model and /effort commands readable; source has no command block requirement",
+    "Alternating section backgrounds and paragraph spacing readable in both themes"
+  ],
+  "limitations": [
+    "Evidence supplied by sole browser owner and inspected independently, not reviewer-operated browser",
+    "Existing skin previous-post floating card overlaps some screenshot lower-left areas; overlapping captures expose affected prose",
+    "Mobile screenshot fine print is small, with essential values repeated in native prose/tables",
+    "No post-save visual QA or publication metadata/thumbnail gate in this review"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "input_zip_bytes": 369141,
+  "input_zip_sha256": "611f963674ba13c6bb36d52b3d078dc284535141d77f4942bba716ab94c10b30",
+  "approved_source_sha256": "fc99617f9eab1ffcc82385208d616d3cf9fdb7fd8572ac5e37fddfa295f050d8",
+  "archived_article_sha256": "d5055c701b377dfb49453c4245ccb629637d48155ea11e7c1d67dabb680c37e9",
+  "only_source_change": "status: reviewing -> published",
+  "media": [
+    {
+      "path": "assets/official-model-comparison.jpg",
+      "sha256": "28e09c3df13c475c41d8360f0a0bdbae29b0d088482bd607982d4238351e4022",
+      "bytes": 115118
+    },
+    {
+      "path": "assets/official-effort-help.jpg",
+      "sha256": "5e1c35c4234289b8652e143bca38b55c2965804bbee6c01bc00411c38c0dc03c",
+      "bytes": 110310
+    },
+    {
+      "path": "assets/official-effort-app-low.jpg",
+      "sha256": "9c302c89b518aa07e804106d3637e09e1dca56ae3fb9a971eb8b6131fbedeef8",
+      "bytes": 79911
+    },
+    {
+      "path": "assets/official-effort-app-max.jpg",
+      "sha256": "d78a3e481a22397102415b81e48b102564b7a3aa2c7b60a524012971423bfaeb",
+      "bytes": 79823
+    }
+  ],
+  "media_directives_match": true,
+  "sensitive_identifier_and_signed_url_scan": "pass",
+  "publication_record": "../publication-receipt-redacted.json",
+  "native_preview_record": "../independent-preview-signoff.json",
+  "limitations": [
+    "Sanitized archive intentionally lacks native signed attachment blocks and strict finalizer records.",
+    "Local Chromium unavailable and remote-media DNS failure were reported by prior workflow; no local visual/CDN pass claimed here.",
+    "workflow-v2.json preserves historical draft routing; publication-receipt-redacted.json and article status record final publication."
+  ]
+}

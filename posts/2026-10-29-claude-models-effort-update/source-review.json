@@ -1,0 +1,78 @@
+{
+  "reviewed_at": "2026-10-29T07:11:30Z",
+  "reviewer": "research_claude_effort_refresh",
+  "scope": "Independent technical source review; draft only, no publication",
+  "draft_file": "output/claude-effort-refresh/article-draft.md",
+  "draft_sha256": "fc99617f9eab1ffcc82385208d616d3cf9fdb7fd8572ac5e37fddfa295f050d8",
+  "body_result": "PASS",
+  "overall_result": "PASS",
+  "checks": {
+    "current_models": "PASS",
+    "five_effort_levels": "PASS",
+    "app_thinking_off_scope": "PASS",
+    "code_defaults": "PASS",
+    "api_defaults": "PASS",
+    "fable_pro_usage_credits": "PASS",
+    "model_vs_effort_heuristic_not_guarantee": "PASS",
+    "source_attribution": "PASS",
+    "unsupported_old_advice_removed": "PASS",
+    "source_based_not_claimed_personal_test": "PASS",
+    "same_model_effort_example": "PASS",
+    "effort_example_media_captions": "PASS",
+    "final_media_directives": "PASS"
+  },
+  "mandatory_fixes": [
+    {
+      "file": "screenshots-provenance.json",
+      "field": "official-model-comparison.jpg.caption",
+      "issue": "API-only default and token-price screenshot must explicitly say Claude API, not imply app/Code settings.",
+      "suggested": "Claude API 기준 모델 비교표입니다. 앱·Claude Code의 기본 Effort는 다를 수 있습니다. 2026년 10월 29일 확인.",
+      "status": "RESOLVED",
+      "verified_caption": "Anthropic 공식 API 문서의 최신 모델 비교표. 화면의 기본 Effort는 API 기준이며, 앱·Claude Code와 다를 수 있습니다. 2026년 10월 29일 확인."
+    }
+  ],
+  "images_inspected": [
+    "official-model-comparison.jpg",
+    "official-effort-help.jpg",
+    "official-effort-app-low.jpg",
+    "official-effort-app-max.jpg"
+  ],
+  "image_observations": [
+    "Model screenshot visibly contains API token prices and default effort; Haiku price says starting from, not flat.",
+    "Effort screenshot is official support documentation, not actual application selector. Caption presently describes official usage guidance without claiming it is actual UI."
+  ],
+  "notes": [
+    "No body factual fixes required.",
+    "Examples are clearly presented as selection guidance, not measured tests.",
+    "The API section does not generalize Sonnet high to app/Code.",
+    "Author may retain current concise practical scope; no need to add benchmarks/API payloads."
+  ],
+  "sources": [
+    "https://platform.claude.com/docs/en/models/overview",
+    "https://platform.claude.com/docs/en/build-with-claude/effort",
+    "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings",
+    "https://code.claude.com/docs/en/model-config",
+    "https://claude.com/resources/articles/claude-model-and-effort-level-in-claude-code",
+    "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan",
+    "https://claude.dev/blog/spending-your-effort/"
+  ],
+  "final_verified_at": "2026-10-29T07:11:30Z",
+  "media_manifest_sha256": "153b5070bcce9c208d5d6e3610f41461a4d84c04120f8b538386497b0fd3b3a9",
+  "previous_draft_sha256": "76156db95dbf8b6eb29c2da31e2dd2d18b771266630bce556422d5ca40ece9c2",
+  "effort_example_review": {
+    "source_date": "2026-09-25",
+    "model": "Opus 5.5",
+    "task": "Underspecified personal fitness and workout tracker app",
+    "reported_times_minutes": {
+      "low": 1.5,
+      "medium": 4,
+      "high": 11,
+      "max": 67
+    },
+    "xhigh": "not published in this example",
+    "measurement_scope": "Published task example; not claimed to be average latency or a fully controlled repeated benchmark",
+    "results": "Low log and simple graph; Max includes heat chart; no invented medium/high-specific features",
+    "new_media": "PASS: independently viewed Low and Max screenshot pixels; selected effort labels and time labels visible. Captions match visible content; heatmap claim attributed only to original prose."
+  },
+  "effort_example_manifest_sha256": "1e4b0d2e38b91632e1eec9586bb826a393051be963566b3c805004a064f387e0"
+}

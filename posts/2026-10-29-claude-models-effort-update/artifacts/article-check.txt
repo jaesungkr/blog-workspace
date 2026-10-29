@@ -1,0 +1,7 @@
+[ERROR] posts/2026-10-29-claude-models-effort-update/article.md: 프론트매터에 `sources` 키가 없습니다.
+[ERROR] posts/2026-10-29-claude-models-effort-update/article.md: 본문 소제목은 `###`를 사용하세요: 같은 앱을 만들면 얼마나 달라질까?
+[ERROR] posts/2026-10-29-claude-models-effort-update/article.md: 소제목이 `~다`로 끝납니다: Claude Code와 API는 기본값이 같지 않을 수 있습니다
+[ERROR] posts/2026-10-29-claude-models-effort-update/article.md: em dash(`—`) 대신 하이픈을 사용하세요.
+[ERROR] posts/2026-10-29-claude-models-effort-update/article.md: AI 모델 · 비교 글의 마지막 절에 `### 참고 자료`를 추가하세요.
+[ERROR] posts/2026-10-29-claude-models-effort-update/article.md: ready 상태의 수익형 글에는 사용한 sources가 필요합니다.
+검사 완료: 1개 글, 오류 6개, 경고 0개

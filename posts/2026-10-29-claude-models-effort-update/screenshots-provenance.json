@@ -1,0 +1,42 @@
+[
+  {
+    "file": "official-model-comparison.jpg",
+    "source_url": "https://platform.claude.com/docs/en/models/overview",
+    "captured_at": "2026-10-29T06:09:50Z",
+    "sha256": "28e09c3df13c475c41d8360f0a0bdbae29b0d088482bd607982d4238351e4022",
+    "bytes": 115118,
+    "alt": "Anthropic 공식 문서의 Claude Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5 비교표",
+    "caption": "Anthropic 공식 API 문서의 최신 모델 비교표. 화면의 기본 Effort는 API 기준이며, 앱·Claude Code와 다를 수 있습니다. 2026년 10월 29일 확인.",
+    "placement": "현재 모델 비교 섹션",
+    "claim_ids": [
+      "current-lineup",
+      "api-price",
+      "api-default-effort"
+    ],
+    "provenance": "Actual cloud-browser viewport screenshot of public official Anthropic documentation. No UI fabrication or content modification. Browser rendered mixed Korean table labels and English documentation.",
+    "rights": "Anthropic official copyrighted documentation excerpt for commentary/tutorial with source attribution; no open-license or copyright-free claim. Limited viewport excerpt, not full article.",
+    "qa": "Viewed saved JPEG pixels; initial clip captures were discarded and replaced with viewport screenshots.",
+    "width": 1180,
+    "height": 757
+  },
+  {
+    "file": "official-effort-help.jpg",
+    "source_url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings#h_8143ecc568",
+    "captured_at": "2026-10-29T06:09:50Z",
+    "sha256": "5e1c35c4234289b8652e143bca38b55c2965804bbee6c01bc00411c38c0dc03c",
+    "bytes": 110310,
+    "alt": "Claude 공식 도움말의 Effort 변경 순서와 Low부터 Max까지의 설명",
+    "caption": "Claude 앱에서는 모델 이름 → Effort에서 조절합니다. 모델별 권장값은 Default로 표시됩니다.",
+    "placement": "Effort 설정 방법 섹션",
+    "claim_ids": [
+      "app-effort-navigation",
+      "effort-levels",
+      "default-label"
+    ],
+    "provenance": "Actual cloud-browser viewport screenshot of public official Anthropic documentation. No UI fabrication or content modification. Browser rendered mixed Korean table labels and English documentation.",
+    "rights": "Anthropic official copyrighted documentation excerpt for commentary/tutorial with source attribution; no open-license or copyright-free claim. Limited viewport excerpt, not full article.",
+    "qa": "Viewed saved JPEG pixels; initial clip captures were discarded and replaced with viewport screenshots.",
+    "width": 1180,
+    "height": 757
+  }
+]

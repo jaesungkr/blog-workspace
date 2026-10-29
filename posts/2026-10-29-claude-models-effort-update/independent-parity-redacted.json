@@ -1,0 +1,10 @@
+{
+  "canonical_render_to_native_prose_caption_tables": true,
+  "links_exact": true,
+  "alts_exact": true,
+  "links_count": 18,
+  "images": 4,
+  "md_sha256": "fc99617f9eab1ffcc82385208d616d3cf9fdb7fd8572ac5e37fddfa295f050d8",
+  "native_html_sha256": "0f43c5eed58fb9cfa8f406af8e884c4969d92d9e0a0ac368fd45d5705dfaddc1",
+  "markdown_to_canonical_body_excluding_media_captions": true
+}

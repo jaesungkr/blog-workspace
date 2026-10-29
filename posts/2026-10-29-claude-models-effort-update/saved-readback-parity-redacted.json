@@ -1,0 +1,9 @@
+{
+  "saved_article_text_matches_reviewed_preview_excluding_site_injected_ad_labels": true,
+  "raw_text_exact": false,
+  "site_injected_labels": {
+    "웹툴추천 받기": 3,
+    "모델캐스팅 신청": 1
+  },
+  "method": "Local comparison of already captured save-result DOM; no additional live QA or page changes"
+}

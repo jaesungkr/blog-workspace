@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "lead_id": "claude-models-official",
+  "items": [
+    {
+      "id": "claude-models-official",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C9"
+      ],
+      "actor": "capture_claude_effort_examples",
+      "source_url": "https://platform.claude.com/docs/en/models/overview",
+      "raw_path": "assets/official-model-comparison.jpg",
+      "publish_path": "assets/official-model-comparison.jpg",
+      "rights": "Anthropic official copyrighted documentation excerpt for commentary/tutorial with source attribution; no open-license or copyright-free claim. Limited viewport excerpt, not full article.",
+      "alt": "Anthropic 공식 문서의 Claude Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5 비교표",
+      "caption": "Anthropic 공식 API 문서의 최신 모델 비교표. 화면의 기본 Effort는 API 기준이며, 앱·Claude Code와 다를 수 있습니다. 2026년 10월 29일 확인.",
+      "processing": [],
+      "redactions": [],
+      "width": 1180,
+      "height": 757,
+      "placement": "현재 모델 비교 섹션",
+      "sha256": "28e09c3df13c475c41d8360f0a0bdbae29b0d088482bd607982d4238351e4022",
+      "status": "validated"
+    },
+    {
+      "id": "claude-effort-official",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C6",
+        "C3"
+      ],
+      "actor": "capture_claude_effort_examples",
+      "source_url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings#h_8143ecc568",
+      "raw_path": "assets/official-effort-help.jpg",
+      "publish_path": "assets/official-effort-help.jpg",
+      "rights": "Anthropic official copyrighted documentation excerpt for commentary/tutorial with source attribution; no open-license or copyright-free claim. Limited viewport excerpt, not full article.",
+      "alt": "Claude 공식 도움말의 Effort 변경 순서와 Low부터 Max까지의 설명",
+      "caption": "Claude 앱에서는 모델 이름 → Effort에서 조절합니다. 모델별 권장값은 Default로 표시됩니다.",
+      "processing": [],
+      "redactions": [],
+      "width": 1180,
+      "height": 757,
+      "placement": "Effort 설정 방법 섹션",
+      "sha256": "5e1c35c4234289b8652e143bca38b55c2965804bbee6c01bc00411c38c0dc03c",
+      "status": "validated"
+    },
+    {
+      "id": "effort-app-low",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "C12"
+      ],
+      "actor": "capture_claude_effort_examples",
+      "source_url": "https://claude.dev/blog/spending-your-effort/#building-with-effort",
+      "raw_path": "assets/official-effort-app-low.jpg",
+      "publish_path": "assets/official-effort-app-low.jpg",
+      "rights": "Anthropic PBC copyrighted official demo screenshot excerpt for commentary, source attribution required; no open-license assertion.",
+      "alt": "Opus 5.5 Low Effort 운동 앱 결과: 공식 사례 1.5분",
+      "caption": "공식 데모에서 캡처한 Low 결과. 운동 기록과 간단한 그래프를 보여주며, 원문에 표시된 제작 시간은 1분 30초입니다.",
+      "processing": [],
+      "redactions": [],
+      "width": 1165,
+      "height": 747,
+      "placement": "같은 앱을 만들면 얼마나 달라질까? 표와 설명 뒤",
+      "sha256": "9c302c89b518aa07e804106d3637e09e1dca56ae3fb9a971eb8b6131fbedeef8",
+      "status": "validated"
+    },
+    {
+      "id": "effort-app-max",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "C12"
+      ],
+      "actor": "capture_claude_effort_examples",
+      "source_url": "https://claude.dev/blog/spending-your-effort/#building-with-effort",
+      "raw_path": "assets/official-effort-app-max.jpg",
+      "publish_path": "assets/official-effort-app-max.jpg",
+      "rights": "Anthropic PBC copyrighted official demo screenshot excerpt for commentary, source attribution required; no open-license assertion.",
+      "alt": "Opus 5.5 Max Effort 운동 앱 결과: 공식 사례 67분",
+      "caption": "공식 데모에서 캡처한 Max 결과의 Progress 화면. 그래프와 기록, 여러 메뉴가 보이며, 원문에 표시된 제작 시간은 67분입니다.",
+      "processing": [],
+      "redactions": [],
+      "width": 1165,
+      "height": 747,
+      "placement": "같은 앱을 만들면 얼마나 달라질까? 표와 설명 뒤",
+      "sha256": "d78a3e481a22397102415b81e48b102564b7a3aa2c7b60a524012971423bfaeb",
+      "status": "validated"
+    }
+  ]
+}

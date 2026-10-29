@@ -1,0 +1,23 @@
+{
+  "post_dir": "/workspace/claude-effort-review/posts/2026-10-29-claude-models-effort-update",
+  "media_count": 0,
+  "directive_count": 4,
+  "require_publish_urls": true,
+  "require_final_pass": true,
+  "require_remote_verification": false,
+  "errors": [
+    "missing media.json",
+    "media.json `version` must be 2",
+    "media.json `items` must be a non-empty array",
+    "media.json `lead_id` must reference a registered item",
+    "exactly one media item must use role `lead` and match lead_id",
+    "claude-models-official: article directive is not registered",
+    "effort-app-low: article directive is not registered",
+    "effort-app-max: article directive is not registered",
+    "claude-effort-official: article directive is not registered",
+    "missing artifacts/qa-v2/source-pass.json",
+    "paste-ready output requires a current final-page pass"
+  ],
+  "warnings": [],
+  "status": "revision_required"
+}

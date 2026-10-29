@@ -1,0 +1,42 @@
+[
+  {
+    "file": "official-effort-app-low.jpg",
+    "source_url": "https://claude.dev/blog/spending-your-effort/#building-with-effort",
+    "article_date": "2026-09-25",
+    "capture_date": "2026-10-29",
+    "sha256": "9c302c89b518aa07e804106d3637e09e1dca56ae3fb9a971eb8b6131fbedeef8",
+    "bytes": 79911,
+    "width": 1165,
+    "height": 747,
+    "alt": "Opus 5.5 Low Effort 운동 앱 결과: 공식 사례 1.5분",
+    "caption": "공식 데모에서 캡처한 Low 결과. 운동 기록과 간단한 그래프를 보여주며, 원문에 표시된 제작 시간은 1분 30초입니다.",
+    "placement": "같은 앱을 만들면 얼마나 달라질까? 표와 설명 뒤",
+    "claim_ids": [
+      "same-opus-5-5-workout-app",
+      "official-example-effort-time"
+    ],
+    "rights": "Anthropic PBC copyrighted official demo screenshot excerpt for commentary, source attribution required; no open-license assertion.",
+    "provenance": "Actual browser capture of official embedded demo, no fabricated UI or pixel modification. Selector preserves all four effort/time labels. Demo auto-plays seeded examples and dates depend on capture day. Not our benchmark run.",
+    "visible_content": "Liftlog log entry, weekly volume chart and personal records"
+  },
+  {
+    "file": "official-effort-app-max.jpg",
+    "source_url": "https://claude.dev/blog/spending-your-effort/#building-with-effort",
+    "article_date": "2026-09-25",
+    "capture_date": "2026-10-29",
+    "sha256": "d78a3e481a22397102415b81e48b102564b7a3aa2c7b60a524012971423bfaeb",
+    "bytes": 79823,
+    "width": 1165,
+    "height": 747,
+    "alt": "Opus 5.5 Max Effort 운동 앱 결과: 공식 사례 67분",
+    "caption": "공식 데모에서 캡처한 Max 결과의 Progress 화면. 그래프와 기록, 여러 메뉴가 보이며, 원문에 표시된 제작 시간은 67분입니다.",
+    "placement": "같은 앱을 만들면 얼마나 달라질까? 표와 설명 뒤",
+    "claim_ids": [
+      "same-opus-5-5-workout-app",
+      "official-example-effort-time"
+    ],
+    "rights": "Anthropic PBC copyrighted official demo screenshot excerpt for commentary, source attribution required; no open-license assertion.",
+    "provenance": "Actual browser capture of official embedded demo, no fabricated UI or pixel modification. Selector preserves all four effort/time labels. Demo auto-plays seeded examples and dates depend on capture day. Not our benchmark run.",
+    "visible_content": "Iron Ledger Progress panel: estimated 1-rep max graph, records and navigation; heatmap NOT in this capture."
+  }
+]
