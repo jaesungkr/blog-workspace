@@ -1,0 +1,26 @@
+{
+  "reviewed_at_utc": "2026-10-29T09:33:40Z",
+  "reviewer": "research_higgsfield_article_refresh",
+  "artifact": "output/higgsfield-refresh/article-draft.md",
+  "sha256": "8eed234dd2cbeda1c70d01e9179be275160f718a563addfe21620dbff5949343",
+  "scope": "Independent narrow review of new market-position introduction; previous v2 factual review remains applicable to unchanged body. Not rendered visual QA.",
+  "status": "intro_source_and_copy_pass_render_pending",
+  "checks": {
+    "market_position": "PASS: describes sizeable creative platform, no unverified number-one model quality or market share rank.",
+    "metric": "PASS: Oct23 2026 company-issued release explicitly says more than40million global users; exact date and company attribution retained. Not relabelled active/paid users.",
+    "freshness": "PASS: uses latest Oct23 primary release rather than older About25m or Aug17 30m.",
+    "practical_appeal": "PASS: multi-model choice plus camera direction, image editing, templates verified in official product help; reduced site-switching framed as workflow interpretation, not measured comparative superiority.",
+    "scope_control": "PASS: two short added paragraphs only, no funding/ARR catalogue or extensive defence against leading label.",
+    "readability": "PASS: definition then market scale then why worth considering leads to task table.",
+    "rendered_desktop_mobile": "NOT RUN: final canonical HTML firstscreen spacing and mobile layout remain rendering agent responsibility.",
+    "publication": "NOT RUN: draft only."
+  },
+  "blocking_findings": [],
+  "sources": [
+    "https://www.prnewswire.com/news-releases/higgsfield-extends-series-b-with-new-investment-from-tcv-and-nvidia-302918071.html",
+    "https://higgsfield.ai/creator-hub/help-center/tools/which-higgsfield-tool-should-i-use",
+    "https://higgsfield.ai/creator-hub/help-center/tools/how-do-i-use-cinema-studio",
+    "https://higgsfield.ai/creator-hub/help-center/tools/how-do-i-use-marketing-studio-to-create-video-ads",
+    "https://higgsfield.ai/image-editing"
+  ]
+}

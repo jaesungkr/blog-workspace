@@ -1,0 +1,31 @@
+{
+  "captured_at_utc": "2026-10-29T08:19:00Z",
+  "source_page": "https://higgsfield.ai/blog/new-marketing-studio-higgsfield",
+  "rights_note": "Higgsfield 공식 가이드의 제품 설명용 예시. 자유 이용/퍼블릭 도메인으로 확인된 자료가 아니므로 출처를 표시하고 해당 기능 설명 범위의 최소 이미지로 사용. 우리의 생성 결과가 아님.",
+  "assets": [
+    {
+      "id": "marketing-input",
+      "path": "images/marketing-input-official.jpg",
+      "dimensions": [1280,1280],
+      "sha256": "d00dcd3f9d18385fe055fcbae451b5a0d1277643f09614a9a215b1890cc2bab5",
+      "original_url": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1920,quality=85/https://cdn.sanity.io/images/s479xw3z/production/d3e039028fb87aabfde943cb03a9fbd4d531f4c9-1280x1280.jpg",
+      "alt": "Higgsfield 공식 가이드에서 UGC 영상 제작에 사용한 AERLINE 캔 제품 사진",
+      "caption": "입력: 제품이 잘 보이는 사진 한 장. Higgsfield 공식 제작 예시입니다.",
+      "method": "공식 가이드의 이미지 요소 downloadMedia로 원본 저장. 변형 없음.",
+      "visual_review": "캔 제품 전체가 선명하게 보이고 개인 정보 없음. 원래 webp 이름으로 다운로드했으나 실제 JPEG임을 확인해 jpg로 저장."
+    },
+    {
+      "id": "marketing-result",
+      "path": "images/marketing-result-official.jpg",
+      "dimensions": [426,757],
+      "sha256": "34ee987898b704ba00adc8256f450c5b9420f860abe9323b4850a7aeccddd6af",
+      "original_url": "https://cdn.sanity.io/files/s479xw3z/production/7b4ec64c0727b46f2c62d02ee1364f68fb8bd347.mp4",
+      "alt": "같은 AERLINE 캔을 사람이 손에 든 Higgsfield 공식 UGC 영상의 한 장면",
+      "caption": "결과: 사람이 같은 제품을 소개하는 15초 영상. 공식 예제 영상의 한 장면이며, 이 글에서 직접 생성한 결과는 아닙니다.",
+      "method": "공식 가이드에서 확인한 video src를 브라우저로 열고 종료 프레임을 screenshot clip으로 캡처. 검은 바깥 여백만 제외, 영상과 15초 재생 컨트롤 유지.",
+      "visual_review": "입력과 같은 AERLINE 캔 확인. 0:15/0:15 제어 바 존재. 내용 변조/합성/AI 편집 없음."
+    }
+  ],
+  "excluded_assets": ["marketing-recreate-official.webp", "marketing-product-official.webp", "marketing-input-official.webp"],
+  "ui_capture_limitation": "현재 앱 UI는 홈/Video/Marketing Studio/단일 preset 경로 모두 Chromium error 9. DOM은 초기 읽기 성공했으나 실제 UI 스크린샷 확보 실패. 공식 가이드 입력/결과 자료로 대체. 보안·봇 차단 증거는 없음. 생성·업로드·결제 없음."
+}

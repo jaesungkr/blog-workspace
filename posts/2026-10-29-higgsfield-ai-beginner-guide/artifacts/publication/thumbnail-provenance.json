@@ -1,0 +1,17 @@
+{
+  "file": "thumbnail-studio-official.webp",
+  "captured_at_utc": "2026-10-29T09:59:00Z",
+  "source_page": "https://higgsfield.ai/ai-video",
+  "source_element": "How it looks",
+  "original_url": "https://images.higgs.ai/?default=1&output=jpg&url=https%3A%2F%2Fstatic.higgsfield.ai%2Fai-video%2Fstudio-v3.webp&w=1920&q=85",
+  "dimensions": [
+    1280,
+    818
+  ],
+  "alt": "Higgsfield 공식 소개의 영상 제작 화면, 프롬프트와 모델 설정 옆에 여러 장면의 결과가 보입니다",
+  "caption": "Higgsfield 공식 영상 제작 화면 예시",
+  "method": "공식 소개 페이지 이미지 요소 downloadMedia로 다운로드. 변형 없음.",
+  "review": "직접 시각 검수. 로그인/개인정보 없음. 프롬프트, 모델, 시작/종료 프레임과 서로 다른 결과가 함께 보임. 스포츠 선수 단독 사진 아님. 공식 설명용 UI 예시이며 비용 숫자나 모델을 현재 계정 상태로 해석하지 않음.",
+  "rights": "공식 기능 소개 이미지. 자유 라이선스 확인 없음. 출처 표시한 기능 설명용 썸네일에 한정. 우리의 생성 결과로 표시하지 않음.",
+  "sha256": "db3ee6383129f35d1a7167ca2e04a3c411bda02ada0a7e6ad1937be74c5abd3a"
+}

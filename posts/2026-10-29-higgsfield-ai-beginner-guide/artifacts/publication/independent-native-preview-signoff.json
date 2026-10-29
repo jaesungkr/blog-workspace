@@ -1,0 +1,76 @@
+{
+  "status": "PASS_VISUAL_AND_PARITY_WITH_REMOTE_BYTE_LIMITATION",
+  "strict_finalizer_pass": false,
+  "post": 136,
+  "approved_md_sha256": "8eed234dd2cbeda1c70d01e9179be275160f718a563addfe21620dbff5949343",
+  "bound_fragment_sha256": "70566700e4d05840299af17b87273f45be75675df8c6968bf517032f47b6c3b5",
+  "scope": "Independent pre-save supplied actual native DOM/screenshots; reviewer did not edit or save",
+  "parity": {
+    "markdown_to_canonical_normalized_body": true,
+    "bound_fragment_to_native_body_excluding_native_image_markup": true,
+    "links_exact_count": 31,
+    "canonical_alts_exact_count": 4,
+    "all_four_captions_preserved": true,
+    "all_four_images_loaded": true
+  },
+  "visual_coverage": {
+    "pc1280_light": "pc1280-light-01..11.png",
+    "pc1280_dark": "pc-dark-01..11.png",
+    "mobile360_light": "mobile-light-01..15.png",
+    "mobile360_dark": "mobile-dark-01..15.png",
+    "evidence_dir": "private-editor/qa"
+  },
+  "layout": {
+    "pc_article_width_scroll": [
+      800,
+      800
+    ],
+    "mobile_article_width_scroll": [
+      309.2578125,
+      309
+    ],
+    "pc_image_widths": [
+      736.015625,
+      736.015625,
+      420,
+      360
+    ],
+    "mobile_image_widths": [
+      269.2578125,
+      269.2578125,
+      269.2578125,
+      269.2578125
+    ],
+    "no_upscale": true,
+    "quotes_light_fg_bg": [
+      "rgb(51,51,51)",
+      "rgb(246,246,246)"
+    ],
+    "quotes_dark_fg_bg": [
+      "rgb(209,209,214)",
+      "rgb(37,38,41)"
+    ],
+    "quote_contrast_visually_readable": true,
+    "mobile_table_rightmost_column_visually_verified": true,
+    "mobile_table_client_scroll_scrollLeft": [
+      269,
+      620,
+      350
+    ]
+  },
+  "publish_settings_visual": {
+    "approved_title_matches": true,
+    "public_selected": true,
+    "original_date_displayed": "2026-09-20 18:52",
+    "existing_url_preserved_visually": true,
+    "thumbnail": "Official UI square selection shows central two creation examples; recognizable at small size; tiny UI labels not expected readable"
+  },
+  "limitations": [
+    "Remote image byte verification INCONCLUSIVE due publisher-reported DNS restriction; no strict finalizer PASS claimed",
+    "Browser tab51 unavailable to reviewer (Tab not found in browser1); sole publisher supplied actual captures",
+    "Initial light1355 set superseded by reviewed exact1280 set",
+    "Native help/previous-post overlays obscure some edges; overlapping screenshots reveal article content",
+    "Review establishes article containment, not independently measured whole-document overflow",
+    "No post-save visual check or external save performed"
+  ]
+}

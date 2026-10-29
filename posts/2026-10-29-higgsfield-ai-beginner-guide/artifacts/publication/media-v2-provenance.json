@@ -1,0 +1,30 @@
+{
+  "captured_at_utc": "2026-10-29T08:54:00Z",
+  "source_page": "https://higgsfield.ai/blog/edit-photos-with-ai-higgsfield",
+  "section": "How to Use These Tools: Step by Step Guide — Edit Text",
+  "method": "공식 가이드 main img 요소의 downloadMedia로 실제 게시된 전/후 이미지를 저장. 원본 변경 없이 검수.",
+  "rights_note": "Higgsfield 공식 기능 설명 자료. 자유 라이선스 또는 퍼블릭 도메인 확인 없음. 출처를 표시하고 기능 설명에 필요한 비교 자료로 사용. 우리 실행 결과가 아님.",
+  "assets": [
+    {
+      "id": "edit-text-before",
+      "path": "images-v2/edit-text-before.png",
+      "dimensions": [1920,1071],
+      "sha256": "a1262457ebb18639a53c3ee24b32fa39924d106a8d436ead0e9471f9c756d8f5",
+      "original_url": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1920,quality=85/https://cdn.sanity.io/images/s479xw3z/production/a37e60db7fd49a4d4c4336c96bdcd262f44b349f-5504x3072.png",
+      "alt": "편집 전, 분홍색 상의에 MVP라고 적힌 Higgsfield 공식 예시 이미지",
+      "caption": "편집 전: 상의에 MVP라고 적혀 있습니다."
+    },
+    {
+      "id": "edit-text-after",
+      "path": "images-v2/edit-text-after.png",
+      "dimensions": [1920,1071],
+      "sha256": "13160f8ff009b053ac5f760a1d6a9abb9dab3dae0671056383c65bf6e9debde6",
+      "original_url": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1920,quality=85/https://cdn.sanity.io/images/s479xw3z/production/338bdddeab92f66a48d1b5a5f4e1bfe5b6be6bde-5504x3072.png",
+      "alt": "편집 후, 같은 상의 문구가 GOAL로 바뀐 Higgsfield 공식 Edit Text 예시",
+      "caption": "편집 후: 이미지 속 문구를 GOAL로 바꾼 공식 Edit Text 예시입니다."
+    }
+  ],
+  "visual_review": "두 이미지를 직접 열어 비교. 구도, 사람, 배경이 유지되고 상의 문구가 MVP에서 GOAL로 바뀜. 개인정보/계정 UI 없음. 한국어 편집 성능 또는 항상 완벽하게 보존된다는 증거로 사용하지 않음.",
+  "recommended_layout": "전/후 2열 비교, 모바일에서는 각 이미지 너비 전체로 배치. 그룹 아래 공식 예시와 출처 링크 명시.",
+  "operations": "읽기 전용 자료 다운로드. 생성/업로드/크레딧 사용/결제 없음. Library는 최종 글과 함께 부모가 저장."
+}

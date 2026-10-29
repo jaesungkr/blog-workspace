@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "lead_id": "edit-text-before",
+  "items": [
+    {
+      "id": "marketing-input",
+      "kind": "image",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C2"
+      ],
+      "actor": "Higgsfield 공식 예시; 캡처는 capture_higgsfield_beginner_flow",
+      "source_url": "https://higgsfield.ai/blog/new-marketing-studio-higgsfield",
+      "raw_path": "assets/marketing-input.jpg",
+      "publish_path": "assets/marketing-input.jpg",
+      "rights": "Higgsfield 공식 가이드의 제품 설명용 예시. 자유 이용/퍼블릭 도메인으로 확인된 자료가 아니므로 출처를 표시하고 해당 기능 설명 범위의 최소 이미지로 사용. 우리의 생성 결과가 아님.",
+      "alt": "Higgsfield 공식 가이드에서 UGC 영상 제작에 사용한 AERLINE 캔 제품 사진",
+      "caption": "입력: 힉스필드 공식 UGC 예시에 사용한 제품 사진.",
+      "processing": [
+        "공식 가이드의 이미지 요소 downloadMedia로 원본 저장. 변형 없음."
+      ],
+      "redactions": [],
+      "width": 1280,
+      "height": 1280,
+      "display_width": 420,
+      "placement": "제품 사진으로 광고 만들기",
+      "sha256": "d00dcd3f9d18385fe055fcbae451b5a0d1277643f09614a9a215b1890cc2bab5",
+      "status": "validated",
+      "tistory_url": "",
+      "publication_binding_note": "Native attachment binding retained only in private publication backup."
+    },
+    {
+      "id": "marketing-result",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "claim_ids": [
+        "C2"
+      ],
+      "actor": "Higgsfield 공식 예시; 캡처는 capture_higgsfield_beginner_flow",
+      "source_url": "https://higgsfield.ai/blog/new-marketing-studio-higgsfield",
+      "raw_path": "assets/marketing-result.jpg",
+      "publish_path": "assets/marketing-result.jpg",
+      "rights": "Higgsfield 공식 가이드의 제품 설명용 예시. 자유 이용/퍼블릭 도메인으로 확인된 자료가 아니므로 출처를 표시하고 해당 기능 설명 범위의 최소 이미지로 사용. 우리의 생성 결과가 아님.",
+      "alt": "같은 AERLINE 캔을 사람이 손에 든 Higgsfield 공식 UGC 영상의 한 장면",
+      "caption": "결과: 같은 제품을 사람이 소개하는 공식 예제 영상의 한 장면.",
+      "processing": [
+        "공식 가이드에서 확인한 video src를 브라우저로 열고 종료 프레임을 screenshot clip으로 캡처. 검은 바깥 여백만 제외, 영상과 15초 재생 컨트롤 유지."
+      ],
+      "redactions": [],
+      "width": 426,
+      "height": 757,
+      "display_width": 360,
+      "placement": "제품 사진으로 광고 만들기",
+      "sha256": "34ee987898b704ba00adc8256f450c5b9420f860abe9323b4850a7aeccddd6af",
+      "status": "validated",
+      "tistory_url": "",
+      "publication_binding_note": "Native attachment binding retained only in private publication backup."
+    },
+    {
+      "id": "edit-text-before",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C12"
+      ],
+      "actor": "Higgsfield 공식 예시",
+      "source_url": "https://higgsfield.ai/blog/edit-photos-with-ai-higgsfield",
+      "raw_path": "assets/edit-text-before.png",
+      "publish_path": "assets/edit-text-before.png",
+      "rights": "Higgsfield 공식 기능 설명 자료. 자유 라이선스 또는 퍼블릭 도메인 확인 없음. 출처를 표시하고 기능 설명에 필요한 비교 자료로 사용. 우리 실행 결과가 아님.",
+      "alt": "편집 전, 분홍색 상의에 MVP라고 적힌 Higgsfield 공식 예시 이미지",
+      "caption": "편집 전: 상의에 MVP라고 적혀 있습니다.",
+      "processing": [
+        "공식 가이드 main img 요소의 downloadMedia로 실제 게시된 전/후 이미지를 저장. 원본 변경 없이 검수."
+      ],
+      "redactions": [],
+      "width": 1920,
+      "height": 1071,
+      "display_width": 760,
+      "placement": "그림을 새로 만들거나 사진 일부 고치기",
+      "sha256": "a1262457ebb18639a53c3ee24b32fa39924d106a8d436ead0e9471f9c756d8f5",
+      "status": "validated",
+      "tistory_url": "",
+      "publication_binding_note": "Native attachment binding retained only in private publication backup."
+    },
+    {
+      "id": "edit-text-after",
+      "kind": "image",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "C12"
+      ],
+      "actor": "Higgsfield 공식 예시",
+      "source_url": "https://higgsfield.ai/blog/edit-photos-with-ai-higgsfield",
+      "raw_path": "assets/edit-text-after.png",
+      "publish_path": "assets/edit-text-after.png",
+      "rights": "Higgsfield 공식 기능 설명 자료. 자유 라이선스 또는 퍼블릭 도메인 확인 없음. 출처를 표시하고 기능 설명에 필요한 비교 자료로 사용. 우리 실행 결과가 아님.",
+      "alt": "편집 후, 같은 상의 문구가 GOAL로 바뀐 Higgsfield 공식 Edit Text 예시",
+      "caption": "편집 후: 이미지 속 문구를 GOAL로 바꾼 공식 Edit Text 예시입니다.",
+      "processing": [
+        "공식 가이드 main img 요소의 downloadMedia로 실제 게시된 전/후 이미지를 저장. 원본 변경 없이 검수."
+      ],
+      "redactions": [],
+      "width": 1920,
+      "height": 1071,
+      "display_width": 760,
+      "placement": "그림을 새로 만들거나 사진 일부 고치기",
+      "sha256": "13160f8ff009b053ac5f760a1d6a9abb9dab3dae0671056383c65bf6e9debde6",
+      "status": "validated",
+      "tistory_url": "",
+      "publication_binding_note": "Native attachment binding retained only in private publication backup."
+    }
+  ]
+}
