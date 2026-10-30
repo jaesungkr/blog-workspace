@@ -136,3 +136,7 @@
 - 렌더 재검증: 최종 `dist/about-dev-log.html`과 시각 검수본이 바이트 단위로 일치했습니다. 최종 파일을 다시 로드한 결과 데스크톱 1280px·모바일 390px 모두 가로 넘침이 없고, H3 9개와 목록 6개가 유지됐습니다.
 - 아직 남은 위험: 실제 Tistory 스킨이 브라우저 검토용 셸과 글꼴·본문 최대 폭에서 조금 다를 수 있습니다.
 - 사람이 티스토리에서 확인할 항목: 대표 이미지를 제목 아래에 업로드하고, HTML 붙여넣기 후 목록 마커·제목 간격·문의 이메일 줄바꿈을 미리보기에서 최종 확인합니다.
+
+## 2026-10-31 published notice80 archive update
+
+The preceding audit and saved previews describe the historical August draft, not approved About v3. The current article body is copied unchanged from the approved public source; provenance, original publication time and archive limitations are recorded in `artifacts/public-notice-update-2026-10-31/`. No new editorial, image or browser QA pass is claimed.

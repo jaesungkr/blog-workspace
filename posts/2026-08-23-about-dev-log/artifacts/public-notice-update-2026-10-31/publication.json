@@ -1,0 +1,21 @@
+{
+  "status": "existing_notices_updated_public_text_confirmed",
+  "scope": "Archive update of existing notice80 only; notice79 pending resolution of missing canonical repository path.",
+  "notices": [
+    {
+      "id": 80,
+      "url": "https://dop3n.tistory.com/notice/80",
+      "source": "../../article.md",
+      "version": "v3",
+      "source_sha256": "3afe1c2ea9ee3aba80a7a284ddfd6fb48abbea6e8e8e6e469c37d28ae7d4591f",
+      "original_publication": "2026-07-31 15:57 KST",
+      "source_hash_method": "SHA256 of standalone H1, two newlines and exact article body after frontmatter"
+    }
+  ],
+  "verification": "Publisher confirmed exact editor copy-back before saving and updated public text at both unchanged notice URLs.",
+  "advertising_settings_changed": false,
+  "public_contact_email": "kr.jaesung@gmail.com",
+  "private_editing_records_included": false,
+  "git_delivery": "Authorized archive delivery; resulting commit and verified remote SHA reported separately.",
+  "archive_validation": "Approved source hashes and public-file secret pattern scan passed; no fresh browser QA or publication claimed."
+}
