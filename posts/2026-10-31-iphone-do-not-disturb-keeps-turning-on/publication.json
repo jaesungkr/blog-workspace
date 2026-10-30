@@ -15,9 +15,9 @@
   ],
   "submitted_fragment_sha256": "5b477b731e7a8ce2e5b61ad9f62dcd0779e79fc89a4f660b33997b250be190dc",
   "advertising_settings_changed": false,
-  "git_commit_or_push": false,
+  "git_commit_or_push": true,
   "verification_scope": "Native PC and 375px prepublication preview; minimal public title/body/image loading check. Local formal finalizer remains unpassed due environment limitations.",
-  "git_delivery": "authorized; archive commit and push pending execution",
+  "git_delivery": "completed: archive commit 6582e6998f724e96956e7c53342025b0e9bbdc93 pushed to origin/master and verified by fetch and ancestry check",
   "archive_validation": {
     "file_count": 7,
     "integrity": "passed ZIP size/SHA256/paths/CRC, JSON, PNG decoding and media hashes/dimensions/references, unchanged article bytes, credential/signed-URL/native-attachment pattern scan",
@@ -30,5 +30,6 @@
       "Source-pass, remote-media and final-page QA records absent"
     ],
     "verification_scope": "Archive-local checks only; original publication verification fields are producer records; no live-site changes or new QA claimed"
-  }
+  },
+  "archive_commit": "6582e6998f724e96956e7c53342025b0e9bbdc93"
 }
