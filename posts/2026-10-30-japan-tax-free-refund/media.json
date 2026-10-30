@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "lead_id": "before-after-refund",
+  "items": [
+    {
+      "id": "before-after-refund",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "source_url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00028.html",
+      "publish_path": "assets/before-after-refund.png",
+      "rights": "Original explanatory diagram based on cited official facts; editable source preserved.",
+      "alt": "2026년 11월 1일 구매분부터 세금 포함 결제, 수하물 위탁 전 세관 확인, 매장 또는 환급업체의 환급으로 바뀌는 일본 면세 절차",
+      "caption": "구매일을 기준으로 달라지는 면세 절차입니다. 일본 관광청 안내를 바탕으로 재구성했습니다.",
+      "display_width": 620
+    }
+  ]
+}
