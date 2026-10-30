@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-30",
+  "scope": "Tistory representative thumbnails only. Article body, title, URL, publication date and category unchanged.",
+  "verification": "All five replacement thumbnails were visually confirmed in public category listings.",
+  "rights": "Contextual screenshots of official product/report/project pages, not public-domain or unrestricted stock. Product names and branding remain their owners' property. REA repository identifies MIT; Archify repository exposes Apache-2.0 and MIT licenses. Those repository licenses do not imply blanket rights to GitHub UI.",
+  "posts": [
+    {
+      "post_id": 158,
+      "post_url": "https://dop3n.tistory.com/158",
+      "asset": "assets/post-158-yes24-brand-square.jpg",
+      "source_url": "https://ticket.yes24.com/UserGuide/FAQ",
+      "change": "Cropped FAQ/title screenshot replaced by centered official YES24 brand",
+      "bytes": 2547,
+      "sha256": "1a60b52a6f6d89ea0e6183bc91afb7eba1273954909e8e64e30605c1cbd0830a"
+    },
+    {
+      "post_id": 156,
+      "post_url": "https://dop3n.tistory.com/156",
+      "asset": "assets/post-156-cohere-report-square.jpg",
+      "source_url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "change": "Headline cropped at both sides replaced by square official report screenshot retaining entire headline",
+      "bytes": 88742,
+      "sha256": "c60af2dd8b1756e34856c16bc2e9a84e461d534dd16665211ee264b79edeb80c"
+    },
+    {
+      "post_id": 152,
+      "post_url": "https://dop3n.tistory.com/152",
+      "asset": "assets/post-152-kimi-k31-official-hero.jpg",
+      "source_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "change": "Unidentifiable Chinese input-field crop replaced by official K3.1 Pro hero",
+      "bytes": 39899,
+      "sha256": "b49eb1e403d2085d1fd1d2edea628060698b59c8c040e4271e2ba00484cb0cfb"
+    },
+    {
+      "post_id": 146,
+      "post_url": "https://dop3n.tistory.com/146",
+      "asset": "assets/post-146-rea-official-project-square.jpg",
+      "source_url": "https://github.com/morluto/rea",
+      "change": "Obsolete dinosaur/game-themed thumbnail replaced by current official project README",
+      "bytes": 101102,
+      "sha256": "8e32a84678ae0a6969e6bd1d985163cae6513d76626035d402c6659f3ac3f3e1"
+    },
+    {
+      "post_id": 135,
+      "post_url": "https://dop3n.tistory.com/135",
+      "asset": "assets/post-135-archify-official-viewport.jpg",
+      "source_url": "https://github.com/tt-a1i/archify",
+      "change": "Tiny top-positioned logo replaced by large official README logo with diagram example visible",
+      "bytes": 82925,
+      "sha256": "5fc3ccbcef012b47f996f8380ac2f6ba5ccc77f9dec03f395e0495c4c3401e64"
+    }
+  ]
+}
