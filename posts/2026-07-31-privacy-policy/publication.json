@@ -1,0 +1,32 @@
+{
+  "status": "existing_notices_updated_public_text_confirmed",
+  "scope": "First repository archive of existing public notice79 only; no new live notice.",
+  "notices": [
+    {
+      "id": 79,
+      "url": "https://dop3n.tistory.com/notice/79",
+      "source": "article.md",
+      "version": "minimal-final",
+      "source_sha256": "666a749110e59781f46abb6a9b116182cd492374faf80e392f023f8a32648e60",
+      "original_publication": "2026-07-31 15:52 KST",
+      "policy_last_modified": "2026-10-31",
+      "source_hash_method": "SHA256 of standalone H1, two newlines and exact article body after frontmatter"
+    }
+  ],
+  "verification": "Publisher confirmed exact editor copy-back before saving and updated public text at both unchanged notice URLs.",
+  "advertising_settings_changed": false,
+  "public_contact_email": "kr.jaesung@gmail.com",
+  "private_editing_records_included": false,
+  "git_delivery": "Authorized archive delivery; resulting commit and verified remote SHA reported separately.",
+  "archive_validation": {
+    "approved_source_sha256": "666a749110e59781f46abb6a9b116182cd492374faf80e392f023f8a32648e60",
+    "integrity": "Passed approved body reconstruction hash, UTF-8/JSON parsing, public source reference coverage and credential/signed URL/native attachment/analytics ID pattern scan",
+    "blog_check": "14 errors, 0 warnings; minimal notice archive does not satisfy complete-post schema",
+    "limitations": [
+      "No brief.md, evidence.md, audit.md, assets or artifacts directories",
+      "No tags, summary, hero_image or sources frontmatter; public sources are retained in sources.md",
+      "Approved policy begins with its own introduction rather than the standard blog greeting",
+      "No new browser, editorial or visual QA was performed; supplied publisher verification retained as provenance"
+    ]
+  }
+}
