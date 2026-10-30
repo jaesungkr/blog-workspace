@@ -8,7 +8,7 @@
   "verified_images": 3,
   "thumbnail": "app-selection.png",
   "publication": "public",
-  "git_push": "authorized; archive commit and push pending execution",
+  "git_push": "completed: archive commit b4e50f01d17953fa030445cc0d1ebfa694fa65ab pushed to origin/master and verified by fetch and ancestry check",
   "verification": [
     "public title and full text checked",
     "all three official screenshots loaded after scroll",
@@ -31,5 +31,6 @@
       "remote-media, source-pass and final-page QA records absent"
     ],
     "scope": "Archive only; no live-site, advertising or global-template changes."
-  }
+  },
+  "archive_commit": "b4e50f01d17953fa030445cc0d1ebfa694fa65ab"
 }
