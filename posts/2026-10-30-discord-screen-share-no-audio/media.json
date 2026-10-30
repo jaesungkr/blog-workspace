@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "lead_id": "app-selection",
+  "items": [
+    {
+      "id": "stream-volume",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "status": "captured",
+      "claim_ids": [
+        "stream-volume"
+      ],
+      "alt": "Mute 체크박스와 Stream Volume 슬라이더가 있는 방송 메뉴",
+      "caption": "방송 화면을 우클릭했을 때의 음소거·음량 메뉴. Discord 공식 도움말 이미지입니다.",
+      "placement": "immediately after associated settings instructions",
+      "rights": "Official UI excerpt for settings commentary with adjacent source attribution; not represented as public domain",
+      "publish_path": "assets/stream-volume.png",
+      "sha256": "4c09c66ecaf8eb95d10cd5c3c3b5c44a7e3d37c2df46c25c82b9ab6c1269d65c",
+      "width": 226,
+      "height": 212,
+      "processing": [],
+      "redactions": [],
+      "source_url": "https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share"
+    },
+    {
+      "id": "app-selection",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "lead",
+      "status": "captured",
+      "claim_ids": [
+        "app-selection"
+      ],
+      "alt": "앱 소리도 함께 공유하는 옵션을 강조한 Discord 공식 데스크톱 화면",
+      "caption": "Discord 공식 데스크톱 예시. 빨간 표시 안의 Also share application audio가 오디오 포함 항목입니다.",
+      "placement": "immediately after associated settings instructions",
+      "rights": "Official UI excerpt for settings commentary with adjacent source attribution; not represented as public domain",
+      "publish_path": "assets/app-selection.png",
+      "sha256": "88dd6a5e710bd2f7824a8908e2a661d872defbcf87cb4da957640bf2382ae739",
+      "width": 1600,
+      "height": 1016,
+      "display_width": 800,
+      "processing": [],
+      "redactions": [],
+      "source_url": "https://discord.com/blog/how-to-stream-to-discord-from-desktop-or-mobile"
+    },
+    {
+      "id": "windows-volume-mixer",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "status": "captured",
+      "claim_ids": [
+        "windows-volume-mixer"
+      ],
+      "alt": "Windows 11 볼륨 믹서의 출력 장치와 앱별 음량 영역",
+      "caption": "Microsoft 공식 볼륨 믹서 예시. 앱 목록에서 문제가 생긴 게임·브라우저를 확인합니다.",
+      "placement": "immediately after associated settings instructions",
+      "rights": "Official UI excerpt for settings commentary with adjacent source attribution; not represented as public domain",
+      "publish_path": "assets/windows-volume-mixer.png",
+      "sha256": "629dee5a0764de3d2b12a87347f4fd027f7d9bcce098e95df60d00b3eca10d30",
+      "width": 500,
+      "height": 358,
+      "display_width": 500,
+      "processing": [],
+      "redactions": [],
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/audio/fix-sound-or-audio-problems-in-windows"
+    }
+  ]
+}

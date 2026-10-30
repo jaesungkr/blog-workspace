@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Windows 디스코드 공유 화면은 보이지만 앱 소리가 안 들리는 사용자",
+  "decision_note": "시청자 방송음량/송출자 오디오포함/Windows 원본앱 믹서 위치를 공식 스크린샷 3개로 설명. 짧은 진단표가 관계를 충분히 보여 diagram-design 및 생성 인포그래픽 생략. post166 게시 완료. 공개 아카이브의 master 커밋·푸시 승인됨.",
+  "publication_mode": "codex-browser",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": true,
+  "include_768": false,
+  "second_remote_fetch": false
+}

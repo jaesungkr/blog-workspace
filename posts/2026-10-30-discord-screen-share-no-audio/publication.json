@@ -1,0 +1,35 @@
+{
+  "url": "https://dop3n.tistory.com/entry/디스코드-화면공유-소리-안-들릴-때",
+  "post_id": 166,
+  "title": "디스코드 화면공유, 화면은 나오는데 소리가 안 들린다면?",
+  "category": "AI·개발/앱·기기",
+  "published_at_display": "2026-10-31 00:12 KST",
+  "source_review_version": 3,
+  "verified_images": 3,
+  "thumbnail": "app-selection.png",
+  "publication": "public",
+  "git_push": "authorized; archive commit and push pending execution",
+  "verification": [
+    "public title and full text checked",
+    "all three official screenshots loaded after scroll",
+    "desktop 1068px preview visually checked",
+    "mobile 375px preview visually checked; article width=scrollWidth=328px; image widths 226/288/288px",
+    "no advertising settings changed"
+  ],
+  "archive_note": "Public sanitized nine-file archive of already-published post166; publication verification entries are preserved producer records. Private editor records and signed URLs excluded.",
+  "archive_validation": {
+    "files": 9,
+    "integrity": "passed: ZIP checksum, safe paths, UTF-8/JSON parsing, PNG decoding, media SHA256/dimensions, local paths and directives; article body preserved",
+    "publication_gate": "not passed for this minimal sanitized archive; not a new publication candidate",
+    "blog_check_limitations": [
+      "audit.md and artifacts directory absent",
+      "tags, summary and sources frontmatter absent",
+      "supplied live category is outside repository taxonomy"
+    ],
+    "rich_post_check_limitations": [
+      "media status captured; native Tistory URLs and embeds excluded",
+      "remote-media, source-pass and final-page QA records absent"
+    ],
+    "scope": "Archive only; no live-site, advertising or global-template changes."
+  }
+}
