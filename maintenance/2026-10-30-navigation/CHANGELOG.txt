@@ -1,0 +1,16 @@
+2026-10-30: Authorized reader navigation changes applied to dop3n.tistory.com.
+- Added labeled category menu button, retaining existing sidebar toggle.
+- Renamed rendered top-level category label All to 전체 글.
+- Added home-only AI 모델 비교 and AI 실전 활용 links to existing category URLs.
+- Scoped inline CSS only; no external CSS file, advertisement settings/code, tracking scripts, article bodies, or post 12 edited.
+Validation:
+- Original HTML 113616 characters; patched HTML 115281 characters. Editor copied text exactly matched patch before apply.
+- All pre-existing script elements unchanged; article-rendering region unchanged.
+- Tistory native mobile preview: content width 395px, scrollWidth 395px. Menu 44px high; shortcut links 40px high. Menu opened and dismissed.
+- Native PC preview rendered both links and menu.
+- Live desktop: width 1173px, scrollWidth 1173px; menu opens (aria-expanded=true, category x=0), dismisses (false).
+- Live home shortcut keyboard activation reaches both exact category destinations; home-only navigation absent on category page.
+- First pointer-navigation attempt encountered existing Google vignette intermediate state; no ad settings/code changed. Subsequent keyboard link activation reached both destinations.
+- Mobile validation is Tistory native preview, not a physical mobile device.
+- This record describes live navigation validation before the separately authorized public archive. Private backups are excluded.
+Rollback requires the privately retained original skin and separate authorization; no full skin is included in this archive.

@@ -1,0 +1,31 @@
+--- skin.html.before
++++ skin.html.after
+@@ -64 +64,9 @@
++    <!-- dev.log reader navigation: scoped presentation only -->
++    <style>
++      #top .devlog-menu-trigger { display:inline-flex; align-items:center; gap:6px; padding:3px 8px 3px 3px; border:1px solid #e5e7eb; border-radius:24px; background:#fff; color:#222; font-size:14px; font-weight:600; flex-shrink:0; cursor:pointer; }
++      .dark #top .devlog-menu-trigger { background:#262626; color:#f5f5f5; border-color:#525252; }
++      #global-header .devlog-home-links { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:12px; padding:0 16px; }
++      #global-header .devlog-home-links a { display:inline-flex; align-items:center; min-height:40px; padding:6px 14px; border:1px solid currentColor; border-radius:20px; font-size:14px; font-weight:600; line-height:1.4; white-space:nowrap; }
++      #top .devlog-menu-trigger:focus-visible, #global-header .devlog-home-links a:focus-visible { outline:2px solid #2563eb; outline-offset:3px; }
++    </style>
+   </head>
+@@ -75,2 +83,8 @@
+                 <div class="tit font-bold text-3xl" data-empty="검색어가 없어요 :(" x-init="$store.header.title = `[##_page_title_##]`" x-text="$store.header.title"></div><span class="desc font-bold text-sm">[##_title_##]</span>
++                <template x-if="document.body.id === 'tt-body-index'">
++                  <nav class="devlog-home-links" aria-label="AI 글 바로가기">
++                    <a href="/category/AI%C2%B7%EA%B0%9C%EB%B0%9C/AI%20%EB%AA%A8%EB%8D%B8%C2%B7%EB%B9%84%EA%B5%90">AI 모델 비교</a>
++                    <a href="/category/AI%C2%B7%EA%B0%9C%EB%B0%9C/AI%20%EC%9D%B4%ED%95%B4%C2%B7%ED%99%9C%EC%9A%A9">AI 실전 활용</a>
++                  </nav>
++                </template>
+               </div>
+@@ -1648,3 +1662,3 @@
+               <s_sidebar_element><!-- 카테고리-->
+-                <li class="el" id="category" x-data="category">[##_category_list_##]</li>
++                <li class="el" id="category" x-data="category" x-init="$nextTick(() =&gt; { const link = $el.querySelector('a'); if (link &amp;&amp; link.textContent.trim() === 'All') link.textContent = '전체 글'; })">[##_category_list_##]</li>
+               </s_sidebar_element>
+@@ -1747,3 +1761,3 @@
+         <aside class="w-full box-border px-4 h-14 top-0 fixed flex justify-between items-center z-[90] <s_if_var_sidebar>xl:w-c</s_if_var_sidebar>" id="top" x-data="top" @scroll.window="toggle" :class='open ? "backdrop-blur bg-h-100/50 dark:bg-h-800/80" : "bg-transparent"'>
+-          <div class="img"><img class="thumb lazyload rounded-full w-9 h-9 cursor-pointer object-cover <s_if_var_sidebar>xl:invisible</s_if_var_sidebar>" @click="sidebar = ! sidebar" data-src="[##_image_##]" data-sizes="auto" alt="[##_blogger_##]" width="36" height="36"></div>
++          <div class="img <s_if_var_sidebar>xl:invisible</s_if_var_sidebar>"><button class="devlog-menu-trigger" type="button" @click="sidebar = ! sidebar" aria-label="카테고리 메뉴" :aria-expanded="sidebar"><img class="thumb lazyload rounded-full w-9 h-9 object-cover" data-src="[##_image_##]" data-sizes="auto" alt="" width="36" height="36"><span>메뉴</span></button></div>
+           <div class="tit max-w-[calc(80vw-152px)] h-5" x-show="open" x-transition:enter="transition ease-linear duration-100" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-linear duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
