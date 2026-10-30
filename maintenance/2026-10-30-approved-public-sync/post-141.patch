@@ -1,11 +1,5 @@
 --- a/posts/2026-09-29-opus-5-5-vs-gpt-6-astra/article.md
 +++ b/posts/2026-09-29-opus-5-5-vs-gpt-6-astra/article.md
-@@ -45,6 +45,8 @@
- Fable 5.1은 Anthropic이 특히 어려운 추론과 장시간 에이전트 작업에 권하는 모델입니다. [공식 문서](https://platform.claude.com/docs/en/models/fable-5-1/overview)에서도 일반적인 작업은 Opus로 시작하고, 추론 강도를 높여도 자체 평가를 통과하지 못할 때 Fable을 검토하도록 안내합니다. 이 문서가 비교 대상으로 삼은 Opus는 Opus 5입니다.
- 
- 아래 가격은 API에서 토큰 100만 개를 처리할 때의 표준 요금이며, 앱의 월 구독료와는 다릅니다. 추론 강도(effort)는 모델이 답을 찾는 데 얼마나 많은 연산을 쓸지 조절하는 설정입니다.
+@@ -47,0 +48,2 @@
 +
 +설정 단계별 차이와 바꾸는 위치는 [Claude 모델 비교와 Effort 설정](https://dop3n.tistory.com/entry/Claude-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90-%EB%B0%8F-Effort)에 정리했습니다.
- 
- | 항목 | Claude Opus 5.5 | GPT-6 Astra | Claude Fable 5.1 |
- |---|---:|---:|---:|
