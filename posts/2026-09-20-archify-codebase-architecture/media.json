@@ -1,43 +1,63 @@
 {
   "version": 2,
-  "lead_id": "archify-pipeline",
+  "lead_id": "archify-cache-miss",
   "items": [
     {
-      "id": "archify-pipeline",
+      "id": "archify-cache-miss",
       "kind": "screenshot",
-      "origin": "first_party",
+      "origin": "official",
       "role": "lead",
-      "claim_ids": [
-        "C01",
-        "C04",
-        "C06",
-        "C08"
-      ],
-      "actor": "Codex",
-      "captured_at": "2026-09-20",
-      "environment": "macOS, Node.js v26.0.0, Google Chrome, Archify main commit 72c750bb070d95171dbb2244e5b62b1b7da69c12",
-      "source_url": "https://github.com/tt-a1i/archify",
-      "raw_path": "artifacts/captures/archify-pipeline-2048x1320-dark.png",
-      "publish_path": "assets/archify-pipeline.png",
-      "tistory_url": "https://blog.kakaocdn.net/dna/c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1793458799&allow_ip=&allow_referer=&signature=9dKAl8ieTld4P39DtsRTMN%2FIZ0Q%3D",
-      "width": 2048,
-      "height": 1320,
-      "display_width": 916,
-      "mobile_scroll_width": 760,
-      "placement": "after:opening",
-      "rights": "Codex가 작성한 한국어 JSON IR을 MIT 라이선스 Archify로 렌더링하고 자동 브라우저 검사에서 캡처한 first-party 결과 화면",
-      "alt": "코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인",
-      "caption": "Archify로 직접 만든 한국어 결과 화면입니다. 에이전트가 JSON IR을 작성하고, 로컬 검증기와 렌더러가 자체 포함 HTML을 전달하는 흐름을 보여 줍니다.",
+      "source_url": "https://archify.si/gallery/artifacts/cache-miss.sequence",
+      "publish_path": "assets/cache-miss-overview.jpg",
+      "rights": "Official product example for limited explanatory review with source attribution; separate free reuse license not verified",
+      "alt": "Archify 공식 캐시 미스 예제의 인증, 캐시 조회, 데이터베이스 조회와 응답 순서",
+      "caption": "공식 캐시 미스 예제입니다. 캐시 조회 뒤 값이 없으면 데이터베이스를 조회하는 흐름을 보여 줍니다.",
       "processing": [
-        "authored a seven-node Korean Architecture JSON from verified product behavior",
-        "validated and delivered with Archify showcase quality",
-        "captured the exact delivered HTML at 2048x1320 in dark theme",
-        "copied the PNG without crop, annotation, or visual alteration"
+        "Browser screenshot crop only; no UI/content alteration"
       ],
-      "redactions": [],
-      "sha256": "f95599e5bbff414c917e39f8dd58ba078ea41acd834afb122241da52a9aa4218",
-      "status": "validated",
-      "tistory_embed": "[##_Image|kage@c3QxiW/dJMcaf9tyCA/AAAAAAAAAAAAAAAAAAAAAPEqMXySJmW9dcTSwrsddeyPssZwMDvoFOflwEJ5cJbr/img.png|alignCenter|width=\"100%\" alt=\"코드 저장소에서 AI 에이전트와 JSON IR, 검증기, 렌더러를 거쳐 대화형 HTML 파일이 만들어지는 Archify 파이프라인\"|_##]"
+      "width": 1145,
+      "height": 710,
+      "display_width": 916,
+      "mobile_scroll_width": 900,
+      "sha256": "052f5f4be897dc5692e0830ed8cd06a025d440108976348bcdc629ad184d02cb"
+    },
+    {
+      "id": "archify-api-focus",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "source_url": "https://archify.si/gallery/artifacts/cache-miss.sequence#focus=api",
+      "publish_path": "assets/cache-miss-api-focus.jpg",
+      "rights": "Official product example for limited explanatory review with source attribution; separate free reuse license not verified",
+      "alt": "Archify 공식 예제에서 API를 선택해 인증과 캐시, 데이터베이스 연결 목록을 연 화면",
+      "caption": "API를 선택한 화면입니다. 왼쪽 패널에서 관련 요청과 연결 대상을 확인할 수 있습니다.",
+      "processing": [
+        "Browser screenshot crop only; no UI/content alteration"
+      ],
+      "width": 1145,
+      "height": 710,
+      "display_width": 916,
+      "mobile_scroll_width": 900,
+      "sha256": "1e8a64c676a02dda45a4aadc35505dee7b61c154550f7801eecfa529ff134477"
+    },
+    {
+      "id": "archify-explainer",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "action",
+      "source_url": "https://archify.si/cases/explainer/tls-first-visit",
+      "publish_path": "assets/tls-explainer.jpg",
+      "rights": "Official product example for limited explanatory review with source attribution; separate free reuse license not verified",
+      "alt": "Archify HTTPS 첫 방문 공식 예제에서 결론 카드와 단계별 설명 및 다이어그램 상단",
+      "caption": "공식 한 페이지 답변 예제의 상단입니다. 결론 아래에 단계별 설명과 다이어그램을 함께 배치합니다.",
+      "processing": [
+        "Browser screenshot crop only; no UI/content alteration"
+      ],
+      "width": 1165,
+      "height": 747,
+      "display_width": 916,
+      "mobile_scroll_width": 900,
+      "sha256": "4fc538117d8770cf31029740973abd59e83696ba772f68103dd25b582332d65b"
     }
   ]
 }

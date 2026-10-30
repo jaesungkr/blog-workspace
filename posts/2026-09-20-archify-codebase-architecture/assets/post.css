@@ -1,0 +1,19 @@
+/* Post-scoped fix: the genuine pale Archify brand screenshot makes hELLO's
+   white thumbnail-cover title low contrast. Keep this article's title/date
+   dark in both themes; no skin settings or image pixels are changed. */
+body:has(.devlog-rich) #post > #header[data-header-style="thumbnail"] .info,
+body:has(.devlog-rich) #post > #header[data-header-style="thumbnail"] .info h1,
+body:has(.devlog-rich) #post > #header[data-header-style="thumbnail"] .info .desc,
+body:has(.devlog-rich) #post > #header[data-header-style="thumbnail"] .info .desc a,
+body:has(.devlog-rich) #post > #header[data-header-style="thumbnail"] .info time {
+  color: #1d1d1f !important;
+  text-shadow: none !important;
+}
+@media (max-width: 735px) {
+  .devlog-rich [data-media-id="archify-cache-miss"] > .devlog-rich__caption::after {
+    content: "이미지는 좌우로 밀어 볼 수 있어요.";
+    display: block;
+    margin-top: 0.5em;
+    color: var(--rich-body);
+  }
+}
