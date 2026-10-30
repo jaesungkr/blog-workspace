@@ -1,0 +1,34 @@
+{
+  "status": "published",
+  "post_id": 167,
+  "url": "https://dop3n.tistory.com/entry/아이폰-방해금지-모드-껐는데-자꾸-켜질-때",
+  "title": "아이폰 방해금지 모드, 껐는데 왜 자꾸 켜질까?",
+  "published_at_local": "2026-10-31T00:47:00+09:00",
+  "verified_at": "2026-10-30T15:49:20Z",
+  "cover": "assets/share-across-devices.png",
+  "body_images": 3,
+  "public_images_loaded": 3,
+  "public_image_natural_widths": [
+    640,
+    489,
+    640
+  ],
+  "submitted_fragment_sha256": "5b477b731e7a8ce2e5b61ad9f62dcd0779e79fc89a4f660b33997b250be190dc",
+  "advertising_settings_changed": false,
+  "git_commit_or_push": false,
+  "verification_scope": "Native PC and 375px prepublication preview; minimal public title/body/image loading check. Local formal finalizer remains unpassed due environment limitations.",
+  "git_delivery": "authorized; archive commit and push pending execution",
+  "archive_validation": {
+    "file_count": 7,
+    "integrity": "passed ZIP size/SHA256/paths/CRC, JSON, PNG decoding and media hashes/dimensions/references, unchanged article bytes, credential/signed-URL/native-attachment pattern scan",
+    "publication_checks": "not passed; minimal public archive, not a new publication candidate",
+    "limitations": [
+      "Missing brief.md, evidence.md, audit.md, artifacts and workflow-v2.json",
+      "Missing tags, summary, published_url and sources frontmatter; supplied category differs from repository taxonomy",
+      "Allowlisted media omits full workflow status/claim_ids/placement/processing/redactions and Tistory URLs",
+      "Intentional first-body-image lead_id differs from actual hero_image and publication cover",
+      "Source-pass, remote-media and final-page QA records absent"
+    ],
+    "verification_scope": "Archive-local checks only; original publication verification fields are producer records; no live-site changes or new QA claimed"
+  }
+}
