@@ -149,6 +149,8 @@ OpenAI는 [2026년 9월 29일 DevDay](https://openai.com/index/devday-2026-recap
 ```
 medium에서는 Sol이 Opus를 2.2%p 앞서지만, max에서는 Opus가 Sol보다 6.4%p 높습니다. %p는 두 비율의 차이를 나타내는 퍼센트포인트입니다. 따라서 “Sol이 자동화에서 Opus보다 좋다”는 설명은 중간 설정에 한정해야 합니다. 최대 설정에서 더 높은 점수를 원하는지, 낮은 비용으로 반복 실행하려는지에 따라 선택이 달라집니다.
 
+Claude의 추론 설정을 어디까지 높일지 고민된다면 [Effort별 차이와 선택 방법](https://dop3n.tistory.com/entry/Claude-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90-%EB%B0%8F-Effort)도 함께 참고할 수 있습니다.
+
 두 설정 사이의 변화도 확인할 수 있도록 Sol과 Opus의 전체 결과를 정리했습니다. 각 칸은 **점수 / 과제당 비용**입니다.
 
 | 추론 설정 | Sol 6.1 | Opus 5.5 · fallback 포함 |
@@ -182,6 +184,8 @@ Opus 출시 자료에 있는 코딩 비교표는 새 Sol 6.1이 아닌 **GPT-5.6
 컴퓨터 화면을 보고 조작하는 **OSWorld 2.0**의 max 결과에서는, Sol의 과제당 비용이 $1.27이고 Astra는 $9.44였습니다. 앞의 공식 비교표처럼 점수 차이가 비교적 작은 상황에서 비용은 약 7분의 1로 낮아진 셈입니다. 여기서 점수는 부분적으로 수행한 작업에도 점수를 주는 *partial reward* 방식이므로, 전체 작업을 완전히 끝낸 비율과는 구분해야 합니다.
 
 반면 **Terminal-Bench Science 0.1**의 max 결과에서는 Sol이 이전 버전보다 크게 개선됐어도 Opus와 Astra에는 미치지 못했습니다. 과제당 비용은 Sol $5.47, Opus $23.21, Astra $23.80이었습니다. OpenAI도 가장 어려운 과학 연구에는 여전히 Astra를 권장합니다. 일상적인 코드 수정과 고난도 연구를 같은 기준으로 묶어 선택하기 어려운 이유입니다.
+
+Astra와 Opus를 직접 비교한 성능·비용 차이는 [Opus 5.5 vs GPT-6 Astra 비교글](https://dop3n.tistory.com/entry/Opus-55-vs-GPT-6-Astra-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90)에서 더 자세히 다뤘습니다.
 
 사실 오류율도 개선됐지만, “Sol의 모든 답변 중 4.1%가 틀린다”는 뜻은 아닙니다. 이 평가는 사용자가 오류를 보고했던 어려운 질문을 비식별화해 만든 특정 문제 묶음입니다. xhigh에서 Astra와 거의 같은 오류율을 얻었으며 과제당 비용은 Sol $0.10, Astra $0.60이었습니다. 일반적인 질문 전체의 오류율로 확대해서 해석하면 안 됩니다. [OpenAI 컴퓨터 사용·과학·사실성 평가](https://openai.com/ko-KR/index/introducing-gpt-6-1-sol/)
 

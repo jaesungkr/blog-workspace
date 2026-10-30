@@ -46,6 +46,8 @@ Fable 5.1은 Anthropic이 특히 어려운 추론과 장시간 에이전트 작�
 
 아래 가격은 API에서 토큰 100만 개를 처리할 때의 표준 요금이며, 앱의 월 구독료와는 다릅니다. 추론 강도(effort)는 모델이 답을 찾는 데 얼마나 많은 연산을 쓸지 조절하는 설정입니다.
 
+설정 단계별 차이와 바꾸는 위치는 [Claude 모델 비교와 Effort 설정](https://dop3n.tistory.com/entry/Claude-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90-%EB%B0%8F-Effort)에 정리했습니다.
+
 | 항목 | Claude Opus 5.5 | GPT-6 Astra | Claude Fable 5.1 |
 |---|---:|---:|---:|
 | 입력 / 출력 요금 | **$4 / $20** | $10 / $50 | $10 / $50 |
