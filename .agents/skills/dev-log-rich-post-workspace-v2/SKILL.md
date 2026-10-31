@@ -246,14 +246,20 @@ as evidence.
    and repeated claim or action ownership. For broad explainers, the audit must
    also record the title-created question map, excluded adjacent topics, and
    topic-link test decisions.
-   The normal prose-polish stage does not replace this pass.
+   The normal prose-polish stage does not replace this pass. Finish every new
+   or materially revised source with the
+   [final connected-Korean read](references/editorial-voice-v2.md#final-connected-korean-read)
+   as the last writing step, after structure and density edits. Record actual
+   paired-sentence/paragraph before-and-after evidence (or a justified unchanged
+   passage), not merely “polished”.
    Run the analyzer before and after as an inventory, never a score. A zero
    signal count does not pass a heading, paragraph, or article. Record the
    heading rewrites, representative deletions or merges, ownership decisions,
    protected facts and caveats, and unresolved concerns in `audit.md`.
 6. Hand the still-`reviewing` bundle to an independent source reviewer. The
    reviewer must first cold-read `article.md` without the prior approvals or
-   audit conclusions, including separate first-screen and
+   audit conclusions, describing how adjacent thoughts connect under the
+   final connected-Korean gate, including separate first-screen and
    title-plus-headings-only passes. For an experiment or software explainer,
    have the reviewer state from the article alone what was supplied, what each
    tool found, what was checked separately, and why that check belongs here.
@@ -419,3 +425,4 @@ recommendation title that assumes an unknown folk association or search habit,
 an unexplained nutrient or mechanism before its useful consequence, competing
 target readers, evidence detail that hides the recommendation, or a generic
 public disclaimer that lowers trust without changing the reader's decision.
+

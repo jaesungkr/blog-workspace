@@ -462,6 +462,51 @@ press release, lecture script, generated checklist, or perfectly balanced
 three-part cadence. Revise only where the wording hides the article's actual
 judgment. Do not add spontaneity for its own sake.
 
+## Final connected-Korean read
+
+After structure, density, and normal prose polish are complete, read the whole
+current source in order as the last writing step before source review or draft
+handoff. Earlier checks can leave individually correct sentences that do not
+sound natural together; an analyzer inventory or a “polished” label cannot
+establish this pass.
+
+Read adjacent sentences together inside each paragraph, then each paragraph's
+ending with the next opening. Check what the second thought does to the first
+and whether particles, references, word choice, and cadence express that
+relationship. Repair the passage, not isolated words. A genuine additive
+relationship may need `또한` or `도`; do not mistake the ban on connector-only
+repairs for a ban on useful connectors, or insert them where no relation exists.
+
+Use the author's corrections as contextual calibration, not substitution rules:
+
+- When a concern ending in `곤란하니까요` is followed by a second parallel
+  concern, `또한 … 와닿지도 않습니다` can carry the addition more naturally
+  than an unmarked `… 와닿지는 않습니다`. Read both complete sentences to
+  decide whether addition, contrast, or another relationship is actually meant.
+- In ordinary software work, `개발 작업` may fit where `개발 과제` sounds like
+  a university assignment. Keep `과제` when an actual assignment or defined
+  challenge is meant; this is a register decision, not a banned-word list.
+
+Keep enough context for the fact and its consequence to make sense. Join
+choppy single-sentence fragments when they carry one thought; do not replace
+them with formal labels such as `확인할 항목으로 남습니다`. State the actual
+remaining question or action naturally. Remove obvious disclaimer filler and
+habitual repeated phrasing without deleting a consequential limit. Preserve
+meaning, numbers, conditions, citations, quotations, and test authorship.
+
+In `audit.md`, quote representative actual before/after sentence pairs or
+paragraph boundaries and explain the relationship repaired and the meaning
+preserved. Include the neighboring wording, not only a token replacement.
+If no repair is needed, quote a representative inspected passage and explain
+why its flow works; do not invent a change to satisfy the record. This evidence
+samples a complete read, not permission to inspect only the sampled passages.
+
+The independent reviewer must first read the source without these notes and
+describe, using actual passages, how one thought leads into the next and where
+the reading catches. A list of labels such as “natural / pass” or analyzer zero
+is not a cold-read account. Return awkward seams or register to prose polish,
+then repeat this final read after the revision before recording the source pass.
+
 ## Required audit and independent gate
 
 Record:
@@ -491,3 +536,4 @@ The independent reviewer must cold-read `article.md` before reading these
 notes. A polished article still fails when the reviewer can point to an
 awkward heading, generic roadmap, empty paragraph, repeated takeaway, or
 over-balanced rhythm that the audit declared acceptable without evidence.
+

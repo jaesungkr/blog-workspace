@@ -135,5 +135,13 @@ The record binds the lifecycle-normalized article, `brief.md`, and
 `evidence.md`. It intentionally does not bind `audit.md` or the final media
 bytes. A material source edit makes the record stale automatically.
 
-Do not treat the command as the editorial review itself. Run it only after the
-reviewer has inspected the actual bundle and resolved every publishable issue.
+Do not treat the command as the editorial review itself. Before recording the
+pass, verify the final connected-Korean read in
+`editorial-voice-v2.md#final-connected-korean-read`: actual neighboring passages
+and before/after repairs (or a justified unchanged passage) in the audit, plus
+the reviewer's independent cold-read account of how those thoughts connect.
+An analyzer result or a completion label cannot substitute for either. Run
+the command only after the reviewer has inspected the current bundle and
+resolved every publishable issue. A material rewrite requires a fresh final
+read and source review; do not reuse an earlier polish sign-off for new prose.
+

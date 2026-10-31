@@ -76,7 +76,9 @@ not enabled.
 
 1. Initialize the bundle and fill `workflow-v2.json`.
 2. Research, capture raw evidence when routed, draft, run the v2 editorial
-   voice-and-density gate, and polish.
+   voice-and-density gate, and polish. End writing with the
+   [final connected-Korean read](editorial-voice-v2.md#final-connected-korean-read)
+   and its passage-level evidence before source review or a draft handoff.
 3. Run an independent cold-read source review and write `source-pass.json`.
 4. Finish publication media and local light/dark preflight.
 5. Present the complete local candidate and images to the author. Record the
@@ -102,7 +104,7 @@ other articles merely because they share an expired URL pattern.
 
 | Change | Repeat |
 |---|---|
-| Title, article body, table, link, usage step | Source pass and final page |
+| Title, article body, table, link, usage step | For material prose edits, final connected-Korean read first; then source pass and final page |
 | Brief or evidence | Source pass and final page |
 | CSS, display size, media file, caption | Final page |
 | Native attachment block or observed Tistory URL | Remote record and final page |
@@ -112,3 +114,12 @@ other articles merely because they share an expired URL pattern.
 
 Never start remote staging before the source pass. This ordering prevents a
 late editorial revision from invalidating expensive browser evidence.
+
+Any material writing or reviewer-requested rewrite reruns the final
+connected-Korean read on the revised source and its surrounding transitions;
+the old polish note cannot approve new wording. Do not silently rewrite an
+author-approved source to apply this gate. Preserve it unless the author
+requests revision; an authorized revision follows the changed-candidate
+approval rule above. This is the last writing step, not another routine
+editorial pass after release QA or publication.
+
