@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Fable 5.1 또는 Opus 5.5를 쓰며 새 5.2의 필요성과 실제 비용·사용법을 알고 싶은 한국어 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": true,
+  "high_risk_remote_media": false,
+  "include_390": true,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Archive recovery of the published source and validated media. No new publication or source revision. Temporary signed image access parameters are removed from this public archive.",
+  "publication_mode": "codex-browser"
+}

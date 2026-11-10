@@ -1,0 +1,22 @@
+{
+  "status": "published",
+  "post_id": 175,
+  "url": "https://dop3n.tistory.com/entry/Fable-52-vs-Fable-51-vs-Opus-55-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "visibility": "public",
+  "category": "AI·개발/AI 모델·비교",
+  "observed_publication_time": "2026-11-10T12:09+09:00",
+  "publication_time_precision": "minute from Tistory management UI",
+  "archive_recovered_on": "2026-11-10",
+  "original_publication_confirmed_by": "Matching Tistory management-list title, article URL, and publication time recorded at publication.",
+  "source_article_sha256": "9fe0e1dc088454747e3a1e9dfef01be70ba28484298ba388291ce1cd0b0232e6",
+  "source_content_sha256": "a96944375d230151b69aafa2f6737908030478d282b1fd655f2a152aa0198f7e",
+  "submitted_or_revised_fragment_sha256": "4e8d89f75b1a98826e13942952c54fd5cf29f85c1b44ae165ac190943749182c",
+  "public_sanitized_fragment_sha256": "38c22cae68fa314148c7f6c846c164a010235e3b08daa304622e573d9fcd9d5f",
+  "latest_revision": {
+    "revision": "출력 단가가 두 배인 → 출력 단가가 2배인",
+    "saved_native_html_sha256": "84e98b70d9dc5830687ceead0adddf3a49b5a01c5a2a6e57d741245c149ca5ab",
+    "original_publication_preserved": true,
+    "recorded_at": "2026-11-10T03:31:11.533578+00:00"
+  },
+  "postpublication_visual_qa": "Not repeated for archive recovery."
+}

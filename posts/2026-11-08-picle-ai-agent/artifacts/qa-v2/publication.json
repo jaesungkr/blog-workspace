@@ -1,0 +1,40 @@
+{
+  "status": "published",
+  "post_id": 174,
+  "url": "https://dop3n.tistory.com/entry/%ED%94%BC%ED%81%B4-AI%EB%8A%94-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EB%8C%80%EC%8B%A0%ED%95%A0%EA%B9%8C-%EC%B4%88%EB%8C%80-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%EC%8B%A4%EC%A0%9C-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80",
+  "title": "피클 AI는 어디까지 대신할까? 초대 조건과 실제 활용 사례",
+  "visibility": "public",
+  "category": {
+    "id": 847698,
+    "label": "AI·개발 > 테크·산업",
+    "source_taxonomy": "Trends > AI 뉴스 · 테크 · 산업",
+    "mapping_note": "Existing live category matching approved topic; source taxonomy unchanged."
+  },
+  "published_at": "2026-11-08T23:56+09:00",
+  "publication_time_precision": "minute, as displayed by the Tistory post list",
+  "archive_recovered_on": "2026-11-10",
+  "original_publication_confirmed_by": "Matching Tistory management-list title, article URL, and publication time recorded at publication.",
+  "source_article_sha256": "3d96c35dde6f97f1d2017a75a6b946507ae11a64283f6bc5854956f27ec43b31",
+  "source_content_sha256": "eda5292abe749272bc64f7d4e36562601210f8c4ba9ecddd787a66dd5241b0be",
+  "submitted_or_revised_fragment_sha256": "02f7630b84afb2419ef0bad5628f13645fa9f36a77c3e27b2cc1510f38d9d1b7",
+  "public_sanitized_fragment_sha256": "e5ade17506e99de17a3a1e41d50cc9b00c00f810bf6817e7168a38545ae5e93a",
+  "latest_revision": {
+    "representative_image": {
+      "source_page": "https://pickle.com/press-kit",
+      "source_url": "https://pickle.com/press-kit-files/pickle-characters-group.png",
+      "path": "assets/pickle-official-characters-thumbnail.png",
+      "description": "Official five-character group on a white background. The central green character remains clear in centered crops. No text or personal information.",
+      "width": 4096,
+      "height": 1490,
+      "bytes": 2647814,
+      "sha256": "ec3a1881884c22903a10a6c1e9cd1c059ae7d9094a1b05fc97860df96c8b6757",
+      "edited": false,
+      "body_inserted": false
+    },
+    "body_image_count": 3,
+    "body_text_preserved": true,
+    "body_html_normalized_by_editor": true,
+    "recorded_at": "2026-11-08T15:17:24.638599+00:00"
+  },
+  "postpublication_visual_qa": "Not repeated for archive recovery."
+}

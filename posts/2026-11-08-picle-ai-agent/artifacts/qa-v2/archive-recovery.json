@@ -1,0 +1,31 @@
+{
+  "archive_recovered_on": "2026-11-10",
+  "base_commit": "64ce9628bd0f02e53429a15d1b83a7a6c77f9042",
+  "source_article_preserved_byte_for_byte": true,
+  "validated_asset_sha256": {
+    "assets/picle-explore.png": "177133387f58aff740b15915d8bd739a13fdbb5ce725d2ce9080127912393089",
+    "assets/picle-chat-redacted.png": "572a21faf97b2411fcf32e7fd434d7a90c570e5c5e233d8fc0370687f96ea5bf",
+    "assets/picle-settings-redacted.png": "2ef03b152e3031ca194fdf3f1b7d15cfebf3f85cf1e99dd14e60f5932c00f8e1"
+  },
+  "historical_source_validation": {
+    "result": "pass",
+    "checked_at": "2026-11-08T14:15:41.509690Z",
+    "article_content_sha256": "eda5292abe749272bc64f7d4e36562601210f8c4ba9ecddd787a66dd5241b0be"
+  },
+  "historical_final_page_record_sha256": "c0a44067cb872fd43320f906e0f3071d3323b2e57cbe39500b79a67efc48ad44",
+  "historical_final_page_result": null,
+  "sanitization": "Temporary image credential/signature/expiry query parameters removed from public HTML and media manifest. Exact originals retained outside Git. Library identifiers omitted. Rebind image attachments and revalidate before any future republication.",
+  "scope_exclusions": [
+    "Unpublished drafts",
+    "Earlier prose revisions",
+    "Private source screenshots",
+    "Unrelated working-tree changes",
+    "Temporary helper scripts",
+    "Library transfer receipts"
+  ],
+  "limitations": [
+    "This recovery does not repeat the historical source or live page review.",
+    "Sanitized public HTML is an archive, not the exact authenticated publication payload.",
+    "Historical gate hashes must not be reused as a new release approval after sanitation."
+  ]
+}

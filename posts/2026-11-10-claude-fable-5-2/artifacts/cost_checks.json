@@ -1,0 +1,21 @@
+{
+  "actor": "Codex arithmetic audit, no model execution",
+  "date": "2026-11-10",
+  "input_tokens": 100000,
+  "output_tokens": 10000,
+  "excluded": "cache, tools, retries, subscriptions",
+  "fixed_usage_cost_usd": {
+    "Fable 5.1": 1.5,
+    "Fable 5.2": 1.2,
+    "Fable 5.2 fast": 2.4,
+    "Opus 5.5": 0.6
+  },
+  "base_price_reduction_percent": 20.0,
+  "frontiercode_gain_percentage_points": 16.7,
+  "frontierswe_gain_percentage_points": 13.6,
+  "aa_high_to_max_index_gain": 3,
+  "aa_high_to_max_cost_ratio": 2.9229074889867843,
+  "aa_high_to_max_time_ratio": 2.621468926553672,
+  "frontiercode_vs_opus_percentage_points": 3.6,
+  "frontierswe_vs_opus_percentage_points": 7.6
+}

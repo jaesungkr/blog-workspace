@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "피클과 생활형 에이전트를 처음 접하는 한국 아이폰 사용자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Archive recovery of the published source and validated media. No new publication or source revision. Temporary signed image access parameters are removed from this public archive.",
+  "publication_mode": "codex-browser"
+}

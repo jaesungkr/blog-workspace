@@ -1,0 +1,21 @@
+{
+  "base_commit": "64ce9628bd0f02e53429a15d1b83a7a6c77f9042",
+  "recovered_on": "2026-11-10",
+  "source_body_preserved_byte_for_byte": true,
+  "metadata_changes": [
+    "status ready to published",
+    "verified published_url recorded"
+  ],
+  "source_content_sha256": "c0603c56ac6ff0549345120ee8ab0154a859bbd1abc35539d70b9e9a80ed07e8",
+  "historical_source_validation": "pass",
+  "historical_final_page_validation": "pass",
+  "historical_fragment_hash_matches_local_file": true,
+  "assets_sha256": {
+    "assets/sonnet-terminal-bench.png": "4ce63ec34091e9a79dace605eeb46e4d22ade6bd71d264a466d5e75a03127212",
+    "assets/sol-effort-v1.png": "548c1ec93decd0dfd03720c86254488018e1be18a8633fd3d4f545198d4ee59d"
+  },
+  "existing_generic_check_failure": "AI 모델 · 비교 글의 마지막 절에 `### 참고 자료`를 추가하세요.",
+  "source_preserved_despite_check_failure": true,
+  "sanitization": "Temporary signed image access query parameters removed. The public TXT is not the exact authenticated publication payload. Rebind media and revalidate before republication.",
+  "scope": "Archive recovery, not a new publication or fresh QA approval."
+}

@@ -1,0 +1,35 @@
+{
+  "archive_recovered_on": "2026-11-10",
+  "base_commit": "64ce9628bd0f02e53429a15d1b83a7a6c77f9042",
+  "source_article_preserved_byte_for_byte": true,
+  "validated_asset_sha256": {
+    "assets/fable-52-official-hero.jpg": "0f31bcfbee825feadccfcfe841dd71e082448e8de0c430a508c43d8ac81fc47f",
+    "assets/fable-52-benchmarks-v2.jpg": "97e0bc65f10333f5f552ad44e23c8258d4117b8175ddb6a8d15b069e16d1e31e",
+    "assets/fable-52-fermat.jpg": "c8aa627ddbcdc44a5e5f580edff44e62295f9e5cb2576a511aa93978f75de03d",
+    "assets/fable-52-coding-cost.jpg": "3b6a6555240b413ee0075f381dfd30cbdaa9f26d3dacfef29871c089bacc3a10",
+    "assets/fable-52-electronics.jpg": "2eb1c53467bb75785d2137404850bd1c7967f4bc54e83b75e3aee0b44440abe9",
+    "assets/fable-52-electronics-design.jpg": "983736ce6dd831c11a6f94c13ee48abc0072820fea4c1e4862bdca224aeb9e5e",
+    "assets/fable-52-availability.jpg": "88b9eb7ca49557a3c68af8599106be61edf4715a8586ed7ae46fd65724cff0bb"
+  },
+  "historical_source_validation": {
+    "result": "pass",
+    "checked_at": "2026-11-10T03:27:19.728755Z",
+    "article_content_sha256": "a96944375d230151b69aafa2f6737908030478d282b1fd655f2a152aa0198f7e"
+  },
+  "historical_final_page_record_sha256": "5ab780cfa210aa2d80e1f475251ecfc4e9bde37ba7d916a7a6a2b98d9a7ffd28",
+  "historical_final_page_result": null,
+  "sanitization": "Temporary image credential/signature/expiry query parameters removed from public HTML and media manifest. Exact originals retained outside Git. Library identifiers omitted. Rebind image attachments and revalidate before any future republication.",
+  "scope_exclusions": [
+    "Unpublished drafts",
+    "Earlier prose revisions",
+    "Private source screenshots",
+    "Unrelated working-tree changes",
+    "Temporary helper scripts",
+    "Library transfer receipts"
+  ],
+  "limitations": [
+    "This recovery does not repeat the historical source or live page review.",
+    "Sanitized public HTML is an archive, not the exact authenticated publication payload.",
+    "Historical gate hashes must not be reused as a new release approval after sanitation."
+  ]
+}

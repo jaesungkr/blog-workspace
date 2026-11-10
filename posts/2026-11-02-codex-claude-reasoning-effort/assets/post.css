@@ -1,0 +1,5 @@
+/* Native hELLO preview: keep article links on the reviewed light/dark palette.
+   The skin's coral link rule otherwise overrides the TOC color on white. */
+.devlog-rich a {
+  color: var(--rich-link) !important;
+}

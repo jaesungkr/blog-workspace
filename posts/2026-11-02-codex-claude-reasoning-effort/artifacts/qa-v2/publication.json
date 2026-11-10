@@ -1,0 +1,14 @@
+{
+  "status": "published",
+  "title": "AI 추론 레벨 비교",
+  "url": "https://dop3n.tistory.com/entry/AI-%EC%B6%94%EB%A1%A0-%EB%A0%88%EB%B2%A8-%EB%B9%84%EA%B5%90",
+  "completion_reported_at": "2026-11-02T05:15:59.223090+00:00",
+  "publication_time_note": "Completion-report timestamp; exact native publication time not asserted.",
+  "submitted_fragment_sha256": "9a08563862becd256362a62eb79af79146e1cbd92961d170d62f86432b0f4ed7",
+  "public_sanitized_fragment_sha256": "82a882250741720caad5abcaed355799c58598dcec63a1e19c86559a7e7c2215",
+  "source_article_sha256": "3d268b093d9e9fc784803553584b554a2b9a145d266fe8e087e948f5c5f32329",
+  "original_approved_source_sha256": "381bb63e31e0224d5f97e5e4ec12779111cae08944821ca67c17afa3c787bd57",
+  "lifecycle_update_only": true,
+  "archive_recovered_on": "2026-11-10",
+  "postpublication_visual_qa": "Not repeated for archive recovery."
+}

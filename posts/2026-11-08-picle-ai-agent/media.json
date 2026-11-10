@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "lead_id": "explore",
+  "items": [
+    {
+      "id": "explore",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "lead",
+      "claim_ids": [
+        "C-explore"
+      ],
+      "actor": "Author supplied screenshot; Codex inspected and applied authorized name redaction where required.",
+      "source": "author-provided source",
+      "publish_path": "assets/picle-explore.png",
+      "rights": "User supplied the screenshots and authorized their inclusion in this article. Product UI rights remain with Pickle.",
+      "alt": "피클 둘러보기 화면에 사이트 탈퇴, 전화 체험, 구매 후기 작성 카드와 부탁하기 버튼이 보입니다.",
+      "caption": "둘러보기에서 맡길 만한 일을 고르고 부탁할 수 있습니다.",
+      "placement": "도입부의 둘러보기 카드 설명 바로 다음",
+      "processing": [
+        "Original PNG copied without pixel changes."
+      ],
+      "redactions": [],
+      "width": 942,
+      "height": 2048,
+      "display_width": 420,
+      "sha256": "177133387f58aff740b15915d8bd739a13fdbb5ce725d2ce9080127912393089",
+      "status": "validated",
+      "tistory_url": "https://blog.kakaocdn.net/dna/dEF0D3/dJMcad5aaOH/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WlrQEEIA1c7m-fFKLPXbuBgfarVtuqAj68VP89rFUfb1SQv7g9WW-ystiUUZKcUAbuuBuGRqe32XnTx315-_vq/img.png",
+      "tistory_embed": "[##_Image|kage@dEF0D3/dJMcad5aaOH/AAAAAAAAAAAAAAAAAAAAACNIMGscA3yLkjwhefiUTlRul8gqZ2fZt_keb-YtBjoo/img.png|CDM|1.3|{\"originWidth\":942,\"originHeight\":2048,\"style\":\"alignCenter\",\"alt\":\"피클 둘러보기 화면에 사이트 탈퇴, 전화 체험, 구매 후기 작성 카드와 부탁하기 버튼이 보입니다.\",\"filename\":\"picle-explore.png\"}_##]"
+    },
+    {
+      "id": "chat",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "concept",
+      "claim_ids": [
+        "C-chat"
+      ],
+      "actor": "Author supplied screenshot; Codex inspected and applied authorized name redaction where required.",
+      "source": "author-provided source",
+      "publish_path": "assets/picle-chat-redacted.png",
+      "rights": "User supplied the screenshots and authorized their inclusion in this article. Product UI rights remain with Pickle.",
+      "alt": "피클 대화 화면에 나들이와 날씨 제안, 출처 링크, 메시지 입력창과 전화 버튼이 보입니다.",
+      "caption": "나들이 장소와 날씨를 제안하고, 관련 링크를 함께 보여주는 대화 화면입니다.",
+      "placement": "먼저 건네는 제안, 피클끼리 나누는 대화 절에서 대화 화면 설명 다음",
+      "processing": [
+        "Decoded JPEG pixels retained outside the authorized box. Opaque mosaic generated without original name pixels. Saved lossless PNG. Outside-region changed pixels: 0."
+      ],
+      "redactions": [
+        "Name in salutation fully covered, box (296,261)-(350,292)."
+      ],
+      "width": 706,
+      "height": 1536,
+      "display_width": 420,
+      "sha256": "572a21faf97b2411fcf32e7fd434d7a90c570e5c5e233d8fc0370687f96ea5bf",
+      "status": "validated",
+      "tistory_url": "https://blog.kakaocdn.net/dna/VvzuG/dJMcajdgXyW/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VoWJKaH-WH8DxEG6DcdYWwk8BNOp9LCuECxcy0FQeXGOVEUG8nnwFeBQWMggesVrBhp6sEYwOLBNtF30DC1AP-/img.png",
+      "tistory_embed": "[##_Image|kage@VvzuG/dJMcajdgXyW/AAAAAAAAAAAAAAAAAAAAABzPHR9gZC881oehxbEUHCCHXrUGUwFCbxePd9Zvh04h/img.png|CDM|1.3|{\"originWidth\":706,\"originHeight\":1536,\"style\":\"alignCenter\",\"alt\":\"피클 대화 화면에 나들이와 날씨 제안, 출처 링크, 메시지 입력창과 전화 버튼이 보입니다.\",\"filename\":\"picle-chat-redacted.png\"}_##]"
+    },
+    {
+      "id": "settings",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "action",
+      "claim_ids": [
+        "C-settings"
+      ],
+      "actor": "Author supplied screenshot; Codex inspected and applied authorized name redaction where required.",
+      "source": "author-provided source",
+      "publish_path": "assets/picle-settings-redacted.png",
+      "rights": "User supplied the screenshots and authorized their inclusion in this article. Product UI rights remain with Pickle.",
+      "alt": "나의 피클 화면에 일일 사용량, 한도 초기화 티켓, 연결된 앱과 결제 수단, 정보 공개 범위 설정이 보입니다.",
+      "caption": "사용량과 연결된 앱, 결제 수단을 확인합니다.",
+      "placement": "한국 무료 한도와 초기화 티켓 가격 절에서 공식 사용량 설명 다음",
+      "processing": [
+        "Original PNG pixels retained outside the authorized box. Opaque mosaic generated without original name pixels. Outside-region changed pixels: 0."
+      ],
+      "redactions": [
+        "Full account name covered, box (165,1088)-(269,1134)."
+      ],
+      "width": 942,
+      "height": 2048,
+      "display_width": 480,
+      "sha256": "2ef03b152e3031ca194fdf3f1b7d15cfebf3f85cf1e99dd14e60f5932c00f8e1",
+      "status": "validated",
+      "tistory_url": "https://blog.kakaocdn.net/dna/b1w7iP/dJMcad5aaOz/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UKc0MhaerDB3me4wQIykg255bhA7E_JLB-0uVOFAMtBByhPCO3oKgxmB96xnctLN-bnSkVdQ-N7Lby5G80kYj4/img.png",
+      "tistory_embed": "[##_Image|kage@b1w7iP/dJMcad5aaOz/AAAAAAAAAAAAAAAAAAAAAHG_nsI2hnMF5iCUMe9hZgkMKD_T1ykb3vKpv289m2VZ/img.png|CDM|1.3|{\"originWidth\":942,\"originHeight\":2048,\"style\":\"alignCenter\",\"alt\":\"나의 피클 화면에 일일 사용량, 한도 초기화 티켓, 연결된 앱과 결제 수단, 정보 공개 범위 설정이 보입니다.\",\"filename\":\"picle-settings-redacted.png\"}_##]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "Codex와 Claude에서 모델과 노력 수준을 고르며 시간·비용·결과 차이를 알고 싶은 한국어 사용자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": true,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Historical archive recovery of the approved and published article. Source body and validated publication images retained. Temporary image access signatures removed from public archive; no new publication.",
+  "publication_mode": "codex-browser"
+}

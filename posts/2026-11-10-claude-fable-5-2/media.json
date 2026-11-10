@@ -1,0 +1,222 @@
+{
+  "version": 2,
+  "lead_id": "lead",
+  "items": [
+    {
+      "id": "lead",
+      "raw_path": "artifacts/captures/raw/official-hero.jpg",
+      "width": 1200,
+      "height": 675,
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "captured_at": "2026-11-10T01:37:36.166988+00:00",
+      "alt": "Fable 5.2와 Mythos 5.2 이름이 지구 곡선 위에 표시된 공식 발표 화면",
+      "caption": "Anthropic의 2026년 11월 9일 발표 페이지. 출처: Anthropic.",
+      "rights": "Official website screenshot used as attributed editorial excerpt. No open license claimed.",
+      "sha256": "0f31bcfbee825feadccfcfe841dd71e082448e8de0c430a508c43d8ac81fc47f",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "C-release"
+      ],
+      "actor": "Anthropic",
+      "publish_path": "assets/fable-52-official-hero.jpg",
+      "tistory_url": "https://blog.kakaocdn.net/dna/DJ1WA/dJMcadcYflY/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Vve3vrjJv6zspTEzCKuGuMFJoenpzyhgC7GyMcweDH-q4oISVGUI1A7tgok7BJlO2a23wN-IliHN7Nuighk_FA/img.jpg",
+      "display_width": 916,
+      "placement": "after:opening",
+      "processing": [
+        "rectangular crop only; [0, 80, 1200, 675]"
+      ],
+      "redactions": [],
+      "status": "validated",
+      "validation_record": "artifacts/qa-v2/media-review.md",
+      "tistory_embed": "[##_Image|kage@DJ1WA/dJMcadcYflY/AAAAAAAAAAAAAAAAAAAAAP53ltLaIowYxHnvn9iZd-aEl_F3QAT5tUxGaidgSN4w/img.jpg|CDM|1.3|{\"originWidth\":1200,\"originHeight\":675,\"style\":\"alignCenter\",\"filename\":\"fable-52-official-hero.jpg\",\"alt\":\"Fable 5.2와 Mythos 5.2 이름이 지구 곡선 위에 표시된 공식 발표 화면\"}_##]"
+    },
+    {
+      "id": "benchmarks",
+      "raw_path": "artifacts/captures/raw/official-benchmarks-v2.jpg",
+      "width": 1104,
+      "height": 263,
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2#evaluations",
+      "captured_at": "2026-11-10T01:42:57.476416+00:00",
+      "alt": "Fable 5.2와 이전 모델·경쟁 모델의 코딩 및 업무 벤치마크 공식 비교표",
+      "caption": "공식 비교표의 코딩·업무 평가 세 항목. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.",
+      "rights": "Official website screenshot used as attributed editorial excerpt. No open license claimed.",
+      "sha256": "97e0bc65f10333f5f552ad44e23c8258d4117b8175ddb6a8d15b069e16d1e31e",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "C-benchmark",
+        "C-counter"
+      ],
+      "actor": "Anthropic",
+      "publish_path": "assets/fable-52-benchmarks-v2.jpg",
+      "tistory_url": "https://blog.kakaocdn.net/dna/84tqQ/dJMcafoAmCx/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Wo1Jd4ox4jkIQuUkUWYQqZeH_Uztxm3RroG9rf4zkYmOa50r7spwH_RVaL-0CtR3cw-hKm-cM_LQ87kQt1NZvE/img.jpg",
+      "display_width": 916,
+      "placement": "after:relevant-explanation",
+      "processing": [
+        "rectangular crop only; [48, 277, 1104, 263]"
+      ],
+      "redactions": [],
+      "status": "validated",
+      "validation_record": "artifacts/qa-v2/media-review.md",
+      "mobile_scroll_width": 916,
+      "tistory_embed": "[##_Image|kage@84tqQ/dJMcafoAmCx/AAAAAAAAAAAAAAAAAAAAAPxc22qYNBVFoT3uUrkP83w9T5KRmAF-XfOLNoP36LqP/img.jpg|CDM|1.3|{\"originWidth\":1104,\"originHeight\":263,\"style\":\"alignCenter\",\"filename\":\"fable-52-benchmarks-v2.jpg\",\"alt\":\"Fable 5.2와 이전 모델·경쟁 모델의 코딩 및 업무 벤치마크 공식 비교표\"}_##]"
+    },
+    {
+      "id": "fermat",
+      "raw_path": "artifacts/captures/raw/official-fermat.jpg",
+      "width": 1840,
+      "height": 1430,
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2#mathematics",
+      "captured_at": "2026-11-10T02:18:21.707810+00:00",
+      "alt": "페르마의 마지막 정리 형식화에서 Fable 5.2와 Opus 5.5의 30시간 진행률을 비교한 공식 그래프",
+      "rights": "Official attributed editorial excerpt; no open license claimed.",
+      "sha256": "c8aa627ddbcdc44a5e5f580edff44e62295f9e5cb2576a511aa93978f75de03d",
+      "mobile_scroll_width": 916,
+      "caption": "Fable 5.2와 Opus 5.5의 형식화 진행률. 약 1,000개 에이전트, 모델별 한 번의 실행 결과입니다. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "C-fermat"
+      ],
+      "actor": "Anthropic",
+      "publish_path": "assets/fable-52-fermat.jpg",
+      "tistory_url": "https://blog.kakaocdn.net/dna/dlf7ua/dJMcadcYfl0/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VmVpGrM6sGdEYOZhfcyJjNU-PUZbsHatzTX_TsCNh2J74q2mxEtnO2T3fwo2o6OVXFI5gJDlvkHGY2B5vWhAxj/img.jpg",
+      "display_width": 916,
+      "placement": "after:relevant-explanation",
+      "processing": [
+        "rectangular crop and JPEG encoding only; [280, 310, 1840, 1430]"
+      ],
+      "redactions": [],
+      "status": "validated",
+      "validation_record": "artifacts/qa-v2/media-review.md",
+      "tistory_embed": "[##_Image|kage@dlf7ua/dJMcadcYfl0/AAAAAAAAAAAAAAAAAAAAAN5eGPgtiHoKTHoaT02vObkFGyuFLG11LPoTpz-i_oT7/img.jpg|CDM|1.3|{\"originWidth\":1840,\"originHeight\":1430,\"style\":\"alignCenter\",\"filename\":\"fable-52-fermat.jpg\",\"alt\":\"페르마의 마지막 정리 형식화에서 Fable 5.2와 Opus 5.5의 30시간 진행률을 비교한 공식 그래프\"}_##]"
+    },
+    {
+      "id": "coding-cost",
+      "raw_path": "artifacts/captures/raw/official-coding-cost.jpg",
+      "width": 918,
+      "height": 638,
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2#evaluations",
+      "captured_at": "2026-11-10T01:39:04.768186+00:00",
+      "alt": "FrontierCode 2.0 점수와 작업당 달러 비용을 비교한 그래프",
+      "caption": "Anthropic의 FrontierCode 2.0 결과. 가로축은 로그 눈금의 작업당 비용입니다. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.",
+      "rights": "Official website screenshot used as attributed editorial excerpt. No open license claimed.",
+      "sha256": "3b6a6555240b413ee0075f381dfd30cbdaa9f26d3dacfef29871c089bacc3a10",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "C-efficiency"
+      ],
+      "actor": "Anthropic",
+      "publish_path": "assets/fable-52-coding-cost.jpg",
+      "tistory_url": "https://blog.kakaocdn.net/dna/pd2ex/dJMcafoAmCy/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UNB23K65hWZhehjgvm94RsEJEgCLJWcAR1jEAZ8VKhpC3eFW_uj0tmr2BBpIoaXWW7DBeSoepQCzIXsfyV-cbJ/img.jpg",
+      "display_width": 916,
+      "placement": "after:relevant-explanation",
+      "processing": [
+        "rectangular crop only; [141, 37, 918, 638]"
+      ],
+      "redactions": [],
+      "status": "validated",
+      "validation_record": "artifacts/qa-v2/media-review.md",
+      "mobile_scroll_width": 916,
+      "tistory_embed": "[##_Image|kage@pd2ex/dJMcafoAmCy/AAAAAAAAAAAAAAAAAAAAAGy5MBFrOMvHmdh44IOfYep0Sc__Rhq9MtlqUorT3edw/img.jpg|CDM|1.3|{\"originWidth\":918,\"originHeight\":638,\"style\":\"alignCenter\",\"filename\":\"fable-52-coding-cost.jpg\",\"alt\":\"FrontierCode 2.0 점수와 작업당 달러 비용을 비교한 그래프\"}_##]"
+    },
+    {
+      "id": "electronics",
+      "raw_path": "artifacts/captures/raw/official-electronics.jpg",
+      "width": 918,
+      "height": 598,
+      "source_url": "https://www.anthropic.com/research/claude-electronics-design",
+      "captured_at": "2026-11-10T01:40:07.321272+00:00",
+      "alt": "휴대용 가상 반려동물 기기, 음성 비서 허브, USB 스피커폰",
+      "caption": "Fable 5.2가 설계하고 Diode 엔지니어가 제작한 세 시제품. 출처: Anthropic·Diode.",
+      "rights": "Official website screenshot used as attributed editorial excerpt. No open license claimed.",
+      "sha256": "2eb1c53467bb75785d2137404850bd1c7967f4bc54e83b75e3aee0b44440abe9",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "result",
+      "claim_ids": [
+        "C-hardware"
+      ],
+      "actor": "Anthropic / Diode",
+      "publish_path": "assets/fable-52-electronics.jpg",
+      "tistory_url": "https://blog.kakaocdn.net/dna/tTB8x/dJMcah0MFLg/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XrdKGcNP2C4Vps964G5f53y0rvKgeLGpYswhuaIzTqNrar6YX29A4-mmsGhqAux1PI4MVcvsdGPwzdiY1YXojW/img.jpg",
+      "display_width": 916,
+      "placement": "after:relevant-explanation",
+      "processing": [
+        "rectangular crop only; [141, 134, 918, 598]"
+      ],
+      "redactions": [],
+      "status": "validated",
+      "validation_record": "artifacts/qa-v2/media-review.md",
+      "tistory_embed": "[##_Image|kage@tTB8x/dJMcah0MFLg/AAAAAAAAAAAAAAAAAAAAAM7YAQuzZ3aoMp0C40jSpL1HUbyJhAYlxw4NfxJBX7_J/img.jpg|CDM|1.3|{\"originWidth\":918,\"originHeight\":598,\"style\":\"alignCenter\",\"filename\":\"fable-52-electronics.jpg\",\"alt\":\"휴대용 가상 반려동물 기기, 음성 비서 허브, USB 스피커폰\"}_##]"
+    },
+    {
+      "id": "electronics-design",
+      "raw_path": "artifacts/captures/raw/official-electronics-design.jpg",
+      "width": 918,
+      "height": 545,
+      "source_url": "https://www.anthropic.com/research/claude-electronics-design#keeping-track-of-constraints-and-downstream-effects",
+      "captured_at": "2026-11-10T01:40:45.186211+00:00",
+      "alt": "음성 비서 허브의 CAD 외형, 회로기판, 코드, 조립 구조와 완성품",
+      "caption": "음성 비서 허브의 설계 자료와 완성된 시제품. 출처: Anthropic·Diode.",
+      "rights": "Official website screenshot used as attributed editorial excerpt. No open license claimed.",
+      "sha256": "983736ce6dd831c11a6f94c13ee48abc0072820fea4c1e4862bdca224aeb9e5e",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "result",
+      "claim_ids": [
+        "C-hardware"
+      ],
+      "actor": "Anthropic / Diode",
+      "publish_path": "assets/fable-52-electronics-design.jpg",
+      "tistory_url": "https://blog.kakaocdn.net/dna/xqHCw/dJMcah0MFLh/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1X9ZTpLk8DyDVVJZw6RW_Z01qY9_geb9u-UQTFIfYYfop5tE8hjb_xtmwP1lLHltmK2mRn9bw26UDJL3o1glviY/img.jpg",
+      "display_width": 916,
+      "placement": "after:relevant-explanation",
+      "processing": [
+        "rectangular crop only; [141, 154, 918, 545]"
+      ],
+      "redactions": [],
+      "status": "validated",
+      "validation_record": "artifacts/qa-v2/media-review.md",
+      "tistory_embed": "[##_Image|kage@xqHCw/dJMcah0MFLh/AAAAAAAAAAAAAAAAAAAAADBfFR82U2uW9piIge9KNxlh50JzUimMvyu84AUKFo8d/img.jpg|CDM|1.3|{\"originWidth\":918,\"originHeight\":545,\"style\":\"alignCenter\",\"filename\":\"fable-52-electronics-design.jpg\",\"alt\":\"음성 비서 허브의 CAD 외형, 회로기판, 코드, 조립 구조와 완성품\"}_##]"
+    },
+    {
+      "id": "availability",
+      "raw_path": "artifacts/captures/raw/official-availability.jpg",
+      "width": 760,
+      "height": 530,
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2#availability",
+      "captured_at": "2026-11-10T01:41:24.855609+00:00",
+      "alt": "Fable 5.2 제공 플랫폼과 API 모델 이름, Mythos 접근 조건을 설명하는 공식 안내",
+      "caption": "2026년 11월 10일 확인한 이용 안내. 출시 주간 프로모션은 기간과 조건을 확인해야 합니다. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.",
+      "rights": "Official website screenshot used as attributed editorial excerpt. No open license claimed.",
+      "sha256": "88b9eb7ca49557a3c68af8599106be61edf4715a8586ed7ae46fd65724cff0bb",
+      "kind": "screenshot",
+      "origin": "official",
+      "role": "result",
+      "claim_ids": [
+        "C-access",
+        "C-spec"
+      ],
+      "actor": "Anthropic",
+      "publish_path": "assets/fable-52-availability.jpg",
+      "tistory_url": "https://blog.kakaocdn.net/dna/ca4d14/dJMcah0MFLi/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1WJ0trfEWUvnxR9ypySJMa4_ENW8OhYzlwoVkJpTf_h1LdevkCbFwS_Y2FJrzWAX_P4eYCoAv9CYWqLXEMKra2Z/img.jpg",
+      "display_width": 760,
+      "placement": "after:relevant-explanation",
+      "processing": [
+        "rectangular crop only; [225, 105, 760, 530]"
+      ],
+      "redactions": [],
+      "status": "validated",
+      "validation_record": "artifacts/qa-v2/media-review.md",
+      "mobile_scroll_width": 760,
+      "tistory_embed": "[##_Image|kage@ca4d14/dJMcah0MFLi/AAAAAAAAAAAAAAAAAAAAAEDngIA6yE2arKGapMC8DXPhjiYW241cAFJVqZFvzCuk/img.jpg|CDM|1.3|{\"originWidth\":760,\"originHeight\":530,\"style\":\"alignCenter\",\"filename\":\"fable-52-availability.jpg\",\"alt\":\"Fable 5.2 제공 플랫폼과 API 모델 이름, Mythos 접근 조건을 설명하는 공식 안내\"}_##]"
+    }
+  ]
+}
