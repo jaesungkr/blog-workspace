@@ -1,0 +1,124 @@
+<div class="contents_style"><p data-ke-size="size16">파이썬의&nbsp;lambda는 Lisp에서 건너온 키워드다. 그 원조 언어는&nbsp;print("hello")를&nbsp;(print "hello")라고 쓴다. 함수 이름까지 괄호 안으로 들어가고, 코드의 시작과 끝이 전부 괄호다.&nbsp;<b>1958년에 태어난 이 괄호의 언어는 프로그램을 짜는 언어이자, 언어 자체를 고쳐 쓰는 언어다.</b>&nbsp;68년을 버틴 힘이 여기서 나오고, 최근 개발자 Elia Scotto의 "Why Lisp"라는 입문 글이 새로 올라와 회자됐다.<br />&nbsp;</p>
+<h4 data-ke-size="size20">1. Fortran 다음으로 오래된 현역 언어</h4>
+<p data-ke-size="size16">Lisp은 1958년 MIT의 존 매카시(John McCarthy)가 만들었다. 이름부터 LISt Processing, 리스트 처리의 줄임말이다. 지금도 쓰이는 고수준 언어 중에서는 Fortran 다음으로 오래됐고, if-else 조건문, 가비지 컬렉션, 재귀, 일급 함수처럼 오늘날 당연하게 쓰는 개념 상당수가 여기서 먼저 나왔다.<br />태생은 AI 언어다. 매카시는 "인공지능"이라는 용어를 만든 당사자이고, 전제 목록에서 결론을 이끌어내는 기계를 실험하려고 Lisp을 설계했다. 다만&nbsp;<b>그 시대의 AI와 지금의 AI는 계보가 다르다.</b>&nbsp;당시 주류였던 기호주의(symbolic) AI는 사람이 지식과 규칙을 기호로 적어 넣으면 컴퓨터가 그 규칙을 따라 논리를 전개하는 방식이다. "모든 사람은 죽는다, 소크라테스는 사람이다, 그러므로 소크라테스는 죽는다"처럼 추론 과정을 사람이 읽을 수 있다. 기호와 리스트를 다루는 데 최적화된 Lisp이 이 진영의 공용어였고, 1980년대 AI 붐 때는 Symbolics처럼 Lisp 전용 컴퓨터를 파는 회사까지 나왔다.<br />지금의 AI는 반대편에서 왔다. 신경망은 사람이 규칙을 쓰는 대신 대량의 데이터에서 패턴을 통계적으로 학습하고, 그 실체가 거대한 행렬 연산이라 GPU와 Python&middot;C++ 생태계가 표준이 됐다. 1980년대 말 기호주의 진영이 성과 한계로 위축되면서(이른바 AI 겨울) Lisp 머신 시장도 함께 사라졌다. 그러니 요즘 Lisp이 다시 언급되는 건 AI 때문이 아니라 언어 자체의 설계 때문이다.<br />단일 언어라기보다 방언(dialect)의 가족에 가깝다. Common Lisp, Scheme, Racket, JVM 위에서 도는 Clojure, 에디터 Emacs를 움직이는 Emacs Lisp, 그리고 AutoCAD의 AutoLISP까지 전부 Lisp 계열이다.<br />박물관 언어도 아니다. 문법 검사 서비스 Grammarly의 핵심 문법 엔진은 Common Lisp으로 짜여 초당 1,000문장 이상을 처리한다고 자사 엔지니어링 블로그가 밝혔고, 구글이 2010년 인수해 항공권 검색의 기반이 된 ITA Software도 Common Lisp으로 개발됐다. 커뮤니티 사이트 Hacker News는 폴 그레이엄이 만든 Lisp 방언 Arc로 돌아가고, Reddit도 2005년 파이썬으로 옮기기 전까지는 Common Lisp이었다. 1억 명 넘는 고객을 둔 남미 디지털 은행 Nubank는 핵심 시스템을 Clojure로 운영하며, 2020년에는 Clojure를 만든 회사 Cognitect를 아예 인수했다.<br />&nbsp;</p>
+<h4 data-ke-size="size20">2. 리스트 하나로 끝나는 문법</h4>
+<p data-ke-size="size16">Lisp 코드는 전부 S-표현식(symbolic expression)이다. S-표현식은 딱 두 가지다. 숫자나 문자열 같은 원자(atom), 그리고 그것들을 괄호로 묶은 리스트.<br />규칙도 하나다. 리스트의 첫 자리가 함수, 나머지가 인자다. 함수를 앞에 쓰는 이 방식을 전위 표기법이라 부른다.</p>
+<div style="color: #000000; text-align: start;">
+<div>&nbsp;</div>
+<div>lisp</div>
+<div>
+<pre class="python" style="color: #eaecf0;" data-ke-language="python"><code>(+ 1 2)          ; 3. + 함수에 인자 1과 2를 넘긴다
+(* 2 (+ 3 4))    ; 14. 괄호 구조가 곧 연산 순서다
+(print "hello")  ; print("hello")에 해당
+
+(defun square (x)  ; 함수 정의
+  (* x x))
+
+(square 4)       ; 16</code></pre>
+</div>
+</div>
+<p data-ke-size="size16">연산자 우선순위 규칙을 외울 필요가 없다. 괄호가 곧 실행 순서라서 파서가 보는 구조와 사람이 보는 구조가 같다. 처음엔 괄호가 어지럽지만, 익숙해지면 문법 예외가 없다는 점이 장점으로 바뀐다.<br />핵심은 그다음이다. 리스트 앞에 인용 기호&nbsp;'&nbsp;하나만 붙이면 같은 코드가 평가되지 않는 데이터가 된다.</p>
+<div style="color: #000000; text-align: start;">
+<div>&nbsp;</div>
+<div>lisp</div>
+<div>
+<pre class="lsl" style="color: #eaecf0;"><code>(+ 1 2)     ; 코드로 취급 &rarr; 3
+'(+ 1 2)    ; 데이터로 취급 &rarr; (+ 1 2)라는 리스트 그대로</code></pre>
+</div>
+</div>
+<p data-ke-size="size16"><b>코드와 데이터가 같은 리스트 구조를 쓴다.</b>&nbsp;이 성질을 동형성(homoiconicity)이라 부르는데, Lisp이 받는 주목의 절반이 여기서 나온다.<br />&nbsp;</p>
+<h4 data-ke-size="size20">3. 언어 자체를 뜯어고치는 매크로</h4>
+<p data-ke-size="size16">코드가 데이터라면, 데이터를 다루듯 코드를 다루는 프로그램을 쓸 수 있다. 그 도구가 매크로다. C의 매크로가 텍스트 치환 수준이라면, Lisp 매크로는 인자를 평가하지 않은 코드 조각 그대로 받아 새 코드로 변환한 뒤 컴파일러에 넘긴다.<br />Scotto의 글에 나온 예시가 직관적이다. Common Lisp에는 C 스타일의&nbsp;while&nbsp;문이 없는데, 없으면 만들면 된다.</p>
+<div style="color: #000000; text-align: start;">
+<div>&nbsp;</div>
+<div>lisp</div>
+<div>
+<pre class="hy" style="color: #eaecf0;"><code>(defmacro while (condition &amp;body body)
+  `(loop while ,condition do
+     (progn ,@body)))
+
+;; 이제 while이 언어의 일부처럼 동작한다
+(let ((counter 3))
+  (while (&gt; counter 0)
+    (print counter)
+    (decf counter)))</code></pre>
+</div>
+</div>
+<p data-ke-size="size16">라이브러리 함수를 추가한 게 아니라 새 제어 구문을 언어에 심었다. Lisp이 "프로그래밍 가능한 프로그래밍 언어"로 불리는 이유다. 이 방식을 밀고 나가면 문제 영역 전용 언어, 즉 DSL(domain-specific language)이 된다. Emacs가 Emacs Lisp 위에서 PDF 리더, 이메일 클라이언트, Git 클라이언트로까지 확장된 것도, AutoCAD가 Lisp을 자동화 언어로 품은 것도 같은 원리다.<br />&nbsp;</p>
+<h4 data-ke-size="size20">4. 껐다 켜지 않는 개발, REPL</h4>
+<p data-ke-size="size16">Lisp의 또 다른 정체성은 살아 있는 시스템이다. 보통 언어는 수정, 컴파일, 실행, 확인을 반복한다. Lisp 개발자는 프로세스를 하나 띄워 REPL(Read-Eval-Print Loop, 코드를 입력하면 즉시 평가해 결과를 돌려주는 대화형 환경)로 접속한 뒤, 실행 중인 그 프로세스 안에 코드를 계속 주입한다.<br />함수를 고치면 돌아가던 프로그램이 그 자리에서 새 정의를 집어 쓴다. 프로세스를 몇 주씩 켜 둔 채 개발하는 일이 흔하고, 이 방식에는 REPL 주도 개발이라는 이름까지 붙어 있다. 파이썬 개발자라면 Jupyter 노트북에서 셀을 고쳐 다시 실행하는 경험을 떠올리면 가깝다. Lisp에서는 그 경험이 노트북 밖 언어 전체, 심지어 운영 중인 서버에까지 적용된다.&nbsp;<br />&nbsp;</p>
+<h4 data-ke-size="size20">5. 파이썬과 갈리는 지점</h4>
+<p data-ke-size="size16">두 언어의 설계 철학을 나란히 놓으면 이렇다.</p>
+<div style="color: #000000; text-align: start;">
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>구분</td>
+<td>Python</td>
+<td>Lisp (Common Lisp 기준)</td>
+</tr>
+<tr>
+<td>문법</td>
+<td>들여쓰기 블록, 중위 표기<span>&nbsp;</span>1 + 2</td>
+<td>괄호 리스트, 전위 표기<span>&nbsp;</span>(+ 1 2)</td>
+</tr>
+<tr>
+<td>코드와 데이터</td>
+<td>분리, 메타프로그래밍 제한적</td>
+<td>동일 구조, 매크로로 언어 확장</td>
+</tr>
+<tr>
+<td>개발 방식</td>
+<td>수정 후 재실행, REPL은 보조</td>
+<td>살아 있는 프로세스에 코드 주입</td>
+</tr>
+<tr>
+<td>생태계</td>
+<td>PyPI 수십만 패키지, 전 분야</td>
+<td>Quicklisp 1천여 개 라이브러리</td>
+</tr>
+<tr>
+<td>진입 장벽</td>
+<td>낮음, 교육용 표준</td>
+<td>높음, 사고방식 전환 필요</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">같은 함수를 나란히 놓으면 차이가 보인다.</p>
+<div style="color: #000000; text-align: start;">
+<div>&nbsp;</div>
+<div>python</div>
+<div>
+<pre class="ruby" style="color: #eaecf0;"><code>def average(numbers):
+    return sum(numbers) / len(numbers)</code></pre>
+</div>
+</div>
+<div style="color: #000000; text-align: start;">
+<div>&nbsp;</div>
+<div>lisp</div>
+<div>
+<pre class="scheme" style="color: #eaecf0;"><code>(defun average (numbers)
+  (/ (reduce #'+ numbers) (length numbers)))</code></pre>
+</div>
+</div>
+<p data-ke-size="size16">파이썬은 읽기 쉬운 문법과 방대한 라이브러리로 무엇이든 빨리 만드는 쪽을 택했고, Lisp은 문법을 리스트 하나로 좁힌 대신 언어를 문제에 맞게 변형하는 힘을 택했다. 파이썬이 받아 간 건 람다만이 아니다. 일급 함수, 동적 타이핑, 가비지 컬렉션 모두 Lisp이 먼저였다.&nbsp;<b>파이썬을 대체할 언어가 아니라, 파이썬이 어디서 왔는지 보여주는 언어에 가깝다.</b><br />&nbsp;</p>
+<h4 data-ke-size="size20">6. 40년째 Lisp으로 돌아가는 AutoCAD</h4>
+<p data-ke-size="size16">CAD 사용자에게 Lisp은 이론이 아니라 매일 쓰는 도구다. Autodesk는 1986년 1월 AutoCAD 버전 2.18에 AutoLISP을 탑재했다. David Betz가 만든 XLISP 초기 버전에서 파생한 방언이다. 언어 자체 개발은 1995년 Release 13까지 이어지다 이후 VBA와 .NET, ObjectARX 같은 환경으로 무게가 옮겨 갔지만, AutoLISP은 지금도 AutoCAD 사용자 커스터마이징의 표준 언어로 남아 있다.&nbsp;<br />CAD와 Lisp의 궁합에는 이유가 있다. Autodesk 공식 문서는 설계가 여러 해법을 반복해 시도하는 비정형 프로세스라서 Lisp이 첫 API로 유독 적합했다고 설명한다. 대화형으로 실험을 반복하는 Lisp의 개발 방식이 도면 작업의 흐름과 맞았다.&nbsp;<br />실제 쓰임새는 반복 작업 자동화다. 도면 객체 일괄 수정, 수량과 면적 산출, 객체 번호 매기기 같은 일을 몇 줄짜리 .lsp 파일이 대신한다. 명령행에서 계산기처럼 쓸 수도 있다. 거리 입력을 요구하는 프롬프트에&nbsp;(/ (* pi 12) 2)를 치면 18.8496이 그대로 입력된다. 새 명령을 만드는 것도 간단하다.&nbsp;</p>
+<div style="color: #000000; text-align: start;">
+<div>&nbsp;</div>
+<div>lisp</div>
+<div>
+<pre class="lisp" style="color: #eaecf0;"><code>;; ZE라는 명령을 정의한다. 실행하면 도면 전체로 줌 아웃한다
+(defun c:ZE ()
+  (command "zoom" "extents")
+  (princ))</code></pre>
+</div>
+</div>
+<p data-ke-size="size16">c:&nbsp;접두사가 붙은 함수는 그대로 AutoCAD 명령이 된다. 대화상자가 필요하면 동반 언어인 DCL(Dialog Control Language)로 만들고, AutoCAD 2000부터는 IDE와 디버거를 갖춘 Visual LISP으로 개발 환경도 확장됐다.&nbsp;<br />주목할 변화는 최근에 있었다. 2023년 출시된 AutoCAD LT 2024부터 보급형 LT 제품군에도 AutoLISP이 처음으로 들어갔다. 수십 년간 쌓인 기존 자동화 자산을 LT 사용자도 그대로 가져다 쓸 수 있게 됐다. 1986년 언어가 2020년대에 적용 범위를 오히려 넓혔다.<br />&nbsp;</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1536" data-origin-height="1024"><span data-url="https://blog.kakaocdn.net/dna/8Jekg/dJMcaccIwDv/AAAAAAAAAAAAAAAAAAAAAEkEFWXS6SxvDXIeYNTum6s74Sx_sJoXmxQC9oOVB6qg/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=62Qz%2FP5lmn9mjyTPbWBx%2FSw61I4%3D" data-phocus="https://blog.kakaocdn.net/dna/8Jekg/dJMcaccIwDv/AAAAAAAAAAAAAAAAAAAAAEkEFWXS6SxvDXIeYNTum6s74Sx_sJoXmxQC9oOVB6qg/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=62Qz%2FP5lmn9mjyTPbWBx%2FSw61I4%3D" data-alt="Lisp - AI 생성 이미지"><img src="https://blog.kakaocdn.net/dna/8Jekg/dJMcaccIwDv/AAAAAAAAAAAAAAAAAAAAAEkEFWXS6SxvDXIeYNTum6s74Sx_sJoXmxQC9oOVB6qg/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=62Qz%2FP5lmn9mjyTPbWBx%2FSw61I4%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F8Jekg%2FdJMcaccIwDv%2FAAAAAAAAAAAAAAAAAAAAAEkEFWXS6SxvDXIeYNTum6s74Sx_sJoXmxQC9oOVB6qg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D62Qz%252FP5lmn9mjyTPbWBx%252FSw61I4%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="750" height="500" data-origin-width="1536" data-origin-height="1024"/></span><figcaption>Lisp - AI 생성 이미지</figcaption>
+</figure>
+</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">7. 그래도 분명한 한계 존재</h4>
+<p data-ke-size="size16">학습 곡선이 가파르다. Scotto 본인도 괄호 문법, 패키지와 심벌, REPL 사용법에 더해 알고리즘을 구성하는 사고방식 자체를 새로 배워야 했다고 인정한다. 생태계는 파이썬과 비교가 어려운 규모이고, Lisp 개발자 채용 풀도 좁아 회사 입장에서는 도입을 망설일 이유가 된다.&nbsp;<br />폴 그레이엄은 이 간극을 Blub 역설로 설명했다. 덜 강력한 언어만 써 본 프로그래머에게는 자기 언어에 무엇이 빠져 있는지 인지할 개념 자체가 없다는 이야기다. 매크로의 가치는 매크로를 써 보기 전에는 체감이 안 된다. Scotto조차 Lisp이 주류가 되는 시대는 오지 않았고 아마 앞으로도 오지 않을 거라고 못 박는다. 그가 그럼에도 배울 가치가 있다고 말하는 근거는 특정 기능 하나가 아니라 확장성, REPL, 살아 있는 시스템이 합쳐진 조합이다.&nbsp;<br /><span style="color: #000000;">주력 언어를 바꿀 이유는 여전히 없다. 다만 파이썬에서 lambda를 칠 때, AutoCAD에서 .lsp 파일을 불러올 때, 그 한 줄 뒤에 68년짜리 계보가 붙어 있다는 걸 아는 것과 모르는 것은 다르다고 생각해 이번 글을 작성하게 되었다.</span></p></div>

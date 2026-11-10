@@ -1,0 +1,38 @@
+{
+  "post_id": 38,
+  "public_url": "https://dop3n.tistory.com/entry/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4-Sonnet-%EB%AA%A8%EB%8D%B8%EC%97%90-%EC%A7%91%EC%B0%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+  "title": "개발자들이 Sonnet 모델에 집착하는 이유 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"Claude Sonnet. AI 생성 이미지 (ChatGPT)\"",
+      "after": "\"caption\":\"Claude Sonnet.\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": true,
+      "height": 853,
+      "width": 1280
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n개발자들이 Sonnet 모델에 집착하는 이유\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-07-07 15:34\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "118a522dd840fa962adebf1a271cc1634aae979bc4f622900cfd20f636e5a600",
+  "submitted_sha256": "92fbd6d3f92f4a4179d56b7068fb9724916525ddcdaad6b473e79e1a73471205",
+  "publication_slug": "개발자들이-Sonnet-모델에-집착하는-이유",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:54:45.039Z"
+}

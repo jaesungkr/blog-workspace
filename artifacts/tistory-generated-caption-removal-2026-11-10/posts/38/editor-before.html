@@ -1,0 +1,93 @@
+<p data-ke-size="size16">OpenRouter의 2026년 6월 집계에서 지능 지수 1위 모델은 Claude Opus 4.8이다. 그런데 같은 플랫폼의 사용량 순위에서 이 모델은 7위에 그쳤다. 가장 똑똑하다고 공인된 모델을 두고, <b>수백만 개발자가 매일 더 많은 토큰을 흘려보내는 곳은 한 단계 아래의 Sonnet이다. </b>(<span data-state="closed"><a href="https://openrouter.ai/state-of-ai"><span><span>OpenRouter)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">채팅으로 Claude를 쓰는 입장에서는 이상해 보인다. 모델 메뉴에서 제일 좋은 것을 고르면 그만인데, 개발자 커뮤니티와 기술 블로그는 온통 Sonnet 이야기뿐이다. 이 간극은 취향이 아니라 비용 구조에서 나온다. 개발자가 모델을 고르는 방식을 알면 집착의 이유가 그대로 보인다.</p>
+<p>[##_Image|kage@EGJ9F/dJMcabkACGy/AAAAAAAAAAAAAAAAAAAAAKYhho1sUdJf6emC4s7a67QgyEonxL2g6e0EBGGMQRx5/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=QhEfjBtJdN1Ve1E7FwxfFVEBXi0%3D|CDM|1.3|{"originWidth":1536,"originHeight":1024,"style":"alignCenter","width":621,"height":414,"caption":"Claude Sonnet. AI 생성 이미지 (ChatGPT)","filename":"ChatGPT Image 2026년 7월 7일 오후 03_47_32.png"}_##]</p>
+<h4 data-ke-size="size20">1. 채팅은 정액제, 개발은 종량제다</h4>
+<p data-ke-size="size16">일반 사용자에게 모델 선택은 품질 선택이다. 구독료가 고정이라 좋은 모델을 고를수록 이득이다. 개발자는 반대다. API는 토큰(모델이 글을 읽고 쓰는 최소 단위) 개수로 과금되고, 코드를 읽고 고치는 에이전트 작업 한 건이 수십만 토큰을 소모한다. <b>모델 선택이 곧 단가 결정이다.</b></p>
+<p data-ke-size="size16">Anthropic 공식 가격 기준으로 현행 모델 단가는 다음과 같다. (<span data-state="closed"><a href="https://amnic.com/blogs/anthropic-api-pricing"><span><span>Amnic)</span></span><span></span></a></span></p>
+<div>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>모델</td>
+<td>입력 (100만 토큰당)</td>
+<td>출력 (100만 토큰당)</td>
+</tr>
+<tr>
+<td>Fable 5</td>
+<td>$10</td>
+<td>$50</td>
+</tr>
+<tr>
+<td>Opus 4.8</td>
+<td>$5</td>
+<td>$25</td>
+</tr>
+<tr>
+<td>Sonnet 5</td>
+<td>$3</td>
+<td>$15</td>
+</tr>
+<tr>
+<td>Sonnet 4.6</td>
+<td>$3</td>
+<td>$15</td>
+</tr>
+<tr>
+<td>Haiku 4.5</td>
+<td>$1</td>
+<td>$5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">Sonnet 5는 2026년 8월 31일까지 $2/$10 프로모션 가격이 적용된다. 같은 작업이면 Sonnet이 Opus보다 40% 싸고, 최상위 Fable 5는 Opus의 다시 2배다. (<span data-state="closed"><a href="https://www.anthropic.com/claude/opus"><span><span>Anthropic)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">체감 단가로 바꿔 보면, 전형적인 에이전트 작업 프로파일로 버그 수정 1건을 계산한 예시에서 Sonnet 4.6은 $0.54, Opus 4.8은 $0.90, Fable 5는 $1.80이 나온다. 월 10억 출력 토큰 규모라면 Sonnet이 처리할 수 있는 일을 Opus에 맡기는 것만으로 매달 1만 달러가 더 나간다는 계산도 있다. 개발팀에서 이 차이는 취향이 아니라 예산 회의 안건이다. (<span data-state="closed"><a href="https://calculatequick.com/ai/claude-token-cost-calculator/"><span><span>CalculateQuick</span></span><span></span></a></span><span data-state="closed"><a href="https://www.finout.io/blog/claude-opus-4.8-pricing-2026-everything-you-need-to-know"><span><span>Finout)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">Fable 5가 뒷전인 이유도 여기서 갈린다. 성능은 최상위지만 가격이 Opus의 2배인 데다, 안전 분류기가 붙어 있어 요청이 거부될 수 있다. 자동으로 돌아가야 하는 파이프라인의 기본값으로 쓰기에는 부담스러운 조건이다. (<span data-state="closed"><a href="https://www.cloudzero.com/blog/claude-opus-4-8-pricing/"><span><span>CloudZero)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">2. 성능 차이는 6점, 가격 차이는 40%다</h4>
+<p data-ke-size="size16">싸다는 것만으로는 집착을 설명하지 못한다. 핵심은 성능 격차가 가격 격차보다 훨씬 작다는 데 있다. Anthropic이 2026년 6월 30일 Sonnet 5를 출시하며 공개한 수치를 보면 이렇다. (<span data-state="closed"><a href="https://llm-stats.com/blog/research/claude-sonnet-5-vs-claude-opus-4-8"><span><span>Claude Sonnet 5 vs Claude Opus 4.8: The Complete Comparison +2)</span></span><span></span></a></span></p>
+<div>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>벤치마크</td>
+<td>Sonnet 5</td>
+<td>Opus 4.8</td>
+</tr>
+<tr>
+<td>SWE-bench Pro (어려운 코딩)</td>
+<td>63.2%</td>
+<td>69.2%</td>
+</tr>
+<tr>
+<td>SWE-bench Verified (코딩)</td>
+<td>85.2%</td>
+<td>88.6%</td>
+</tr>
+<tr>
+<td>Terminal-Bench 2.1 (터미널 작업)</td>
+<td>80.4%</td>
+<td>74.6%</td>
+</tr>
+<tr>
+<td>GDPval-AA v2 (지식 노동, Elo)</td>
+<td>1618</td>
+<td>1615</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">가장 어려운 코딩 벤치마크에서 격차는 6점이다. 터미널 기반 작업에서는 오히려 Sonnet이 앞서고, 문서 분석 같은 지식 노동에서는 사실상 동률이다. Cursor가 자사 프로덕션 환경에서 직접 돌린 평가에서도 두 모델의 차이는 2.6점에 그쳤다. <span data-state="closed"><a href="https://codingfleet.com/blog/claude-sonnet-5-vs-claude-opus-4-8/"><span><span>(CodingFleet</span></span><span></span></a></span><span data-state="closed"><a href="https://www.morphllm.com/claude-benchmarks"><span><span>Morph)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">물론 함정도 있다. Sonnet 5의 새 토크나이저는 같은 텍스트를 30% 안팎 더 많은 토큰으로 쪼개기 때문에, 단가가 싸다고 청구서가 그 비율만큼 줄어드는 것은 아니다. 그래도 격차의 방향 자체는 바뀌지 않는다. <b>대부분의 작업에서 Sonnet은 Opus의 90% 안팎을 60% 가격에 해낸다.</b> (<span data-state="closed"><a href="https://codingfleet.com/blog/claude-sonnet-5-vs-claude-opus-4-8/"><span><span>CodingFleet)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">3. 구독 플랜에서는 한도가 지갑이다</h4>
+<p data-ke-size="size16">API 대신 Pro나 Max 구독으로 Claude Code를 쓰는 개발자에게는 돈 대신 사용량 한도가 걸린다. 여기서도 결론은 같다. Anthropic 공식 문서 기준으로 Opus는 턴당 소모량이 Sonnet의 몇 배라서, <b>일상 작업에 Opus를 쓰는 것은 한도를 가장 빨리 비우는 방법이다.</b> (<span data-state="closed"><a href="https://code.claude.com/docs/en/model-config"><span><span>Claude Code Docs)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">Anthropic 스스로도 이 사용법을 권장한다. 공식 가이드의 기본값은 대부분의 코딩에 Sonnet, 정말 막히는 문제와 아키텍처 판단에만 Opus다. 계획은 Opus로 세우고 실행은 Sonnet이 맡는 opusplan이라는 하이브리드 모드가 Claude Code에 아예 내장되어 있을 정도다. 채팅 쪽도 마찬가지라서, 2026년 6월부터 Free와 Pro 플랜의 기본 모델은 Sonnet 5다. (<span data-state="closed"><a href="https://code.claude.com/docs/en/model-config"><span><span>Claude Code Docs</span></span><span></span></a></span><span data-state="closed"><a href="https://blog.corenexis.com/claude-sonnet-5-benchmarks"><span><span>Core Nexis)</span></span><span></span></a></span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">4. 집착의 기원은 2024년의 3.5 Sonnet이다</h4>
+<p data-ke-size="size16">Sonnet 선호는 이번 세대에 생긴 습관이 아니다. 출발점은 2024년 6월의 Claude 3.5 Sonnet이다. 당시 최상위 모델이던 Claude 3 Opus보다 주요 벤치마크에서 앞서면서 가격은 5분의 1, 속도는 2배였다. <b>중간 등급 모델이 자사 플래그십을 꺾은 첫 사건이었고</b>, 예고까지 됐던 3.5 Opus는 끝내 출시되지 않았다.</p>
+<p data-ke-size="size16">이후 코딩 도구들이 Sonnet을 기본 모델로 채택하면서 "코딩은 Sonnet"이라는 공식이 굳었다. 발전 속도도 이 인식을 뒷받침한다. SWE-bench Verified 기준으로 3.5 Sonnet은 33.4%에서 출발해 그해 10월 업그레이드에서 49.0%를 찍었고, 2년 뒤 Sonnet 5는 85.2%에 도달했다. 그리고 2026년 6월, Sonnet 5는 Sonnet 계열 최초로 현행 Opus 플래그십을 일부 벤치마크에서 추월했다. <span data-state="closed"><a href="https://emergent.sh/learn/claude-sonnet-5-vs-opus-4-8"><span><span>Emergent</span></span><span></span></a></span><span data-state="closed"><a href="https://www.morphllm.com/claude-benchmarks"><span><span>Morph</span></span><span></span></a></span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">5. 실무의 답은 라우팅이다</h4>
+<p data-ke-size="size16">그렇다고 개발자들이 Opus를 안 쓰는 것은 아니다. 어려운 멀티 파일 리팩토링이나 복잡한 디버깅처럼 6점의 격차가 실제 결과를 가르는 영역은 분명히 있다. 그래서 업계 표준은 라우팅이다. <b>Sonnet을 기본값으로 두고, 깊은 추론이 결과를 바꾸는 소수의 작업만 Opus로 올려 보낸다.</b> 이렇게 운용하는 팀이 Opus를 전면 기본값으로 쓰는 팀과 거의 같은 품질을 훨씬 적은 비용으로 얻는다는 분석도 있다. <span data-state="closed"><a href="https://www.finout.io/blog/claude-opus-4.8-pricing-2026-everything-you-need-to-know"><span><span>Finout</span></span><span></span></a></span></p>
+<p data-ke-size="size16">실제 팀 개발 환경에서 Sonnet을 메인으로 두고 라우팅 규칙에 따라 Opus를 섞어 쓰는 구성을 직접 운용해 보면, 체감상 Opus가 필요한 순간은 생각보다 드물다. 결국 개발자의 Sonnet 집착은 성능 타협이 아니라 단가 계산의 결과다. 돌아보면 이 구성도 모델에 대한 확신보다 청구서와 한도가 먼저 만든 습관이었던 것 같다.</p>

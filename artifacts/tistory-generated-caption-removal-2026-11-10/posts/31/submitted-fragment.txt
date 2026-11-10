@@ -1,0 +1,264 @@
+<p data-ke-size="size16">한국인은 2024년 한 해 1인당 라면 79.2개를 먹었다. 나흘에 한 번꼴이다. 세계 2위이고, 중량까지 따지면 세계 1위일 수 있다.</p>
+<p data-ke-size="size16">이 숫자 하나에 라면의 모든 게 들어 있다. 라면은 한국인에게 그냥 간편식이 아니라 60년 넘게 식탁을 지킨 음식이고, 동시에 "몸에 나쁘다"는 오해와 진실이 뒤엉킨 음식이다. 이 글은 라면의 시작(꿀꿀이죽에서 삼양라면까지), 60년 판매 순위의 반전 드라마, 방부제 오해의 진실 등 라면에 대해 상세히 다룬다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">1. 라면의 시작은 '꿀꿀이죽'이었다</h3>
+<p data-ke-size="size16">한국 라면은 배고픔에서 태어났다. 1963년, 삼양식품 창업주 전중윤이 서울 남대문시장에서 노동자들이 '꿀꿀이죽'을 먹으려 줄 선 모습을 본 게 출발점이다. 꿀꿀이죽은 미군 부대에서 나온 잔반에 이런저런 찌꺼기를 섞어 끓인 것으로, 위생도 영양도 형편없었다.</p>
+<p data-ke-size="size16">전중윤은 1959년 일본 출장에서 맛본 인스턴트 라멘을 떠올렸다. 값싸고 배부른 이 음식이 식량난에 맞다고 판단해 일본 묘조식품(明星食品)을 찾아가 제조 기술을 부탁했다. 묘조는 처음엔 거절했지만 결국 기술을 무상 제공했고, 생산 설비는 정부 차관 자금으로 들여왔다(출처: 나무위키&middot;삼양식품 사사 종합).</p>
+<p data-ke-size="size16">그렇게 <b>1963년 9월 15일, 대한민국 최초의 라면 '삼양라면'이 출시됐다.</b> 첫 판매가는 10원. 짜장면이 20원이던 시절이라 저렴했지만, 최빈국 기준으로는 만만한 값이 아니었다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">정부가 라면을 밀어줬다</h4>
+<p data-ke-size="size16">초기 반응은 냉담했다. 쌀 중심 식생활이 하루아침에 바뀌지 않았고, 라면을 옷감이나 실로 오해한 사람도 있었다. 판을 바꾼 건 정부다. 1960년대 쌀 부족을 해결하려던 정부의 '혼&middot;분식 장려정책'이 밀가루 음식 소비를 밀어붙였고, 라면이 그 물결을 탔다. 무료 시식회까지 겹치며 판매가 폭발했다.</p>
+<div>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>연도</td>
+<td>라면 판매량</td>
+<td>비고</td>
+</tr>
+<tr>
+<td>1966년</td>
+<td>240만 개</td>
+<td>혼&middot;분식 정책 초기</td>
+</tr>
+<tr>
+<td>1969년</td>
+<td>1,500만 개</td>
+<td>3년 만에 300배 이상</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">출처: 국가기록원 '기록으로 만나는 대한민국'. 몇 년 사이 300배가 넘는 성장이었다.</p>
+<p>[##_Image|kage@b56MJu/dJMcagGaDkU/AAAAAAAAAAAAAAAAAAAAAO1W7OcAVx4qaXRhidXAxvJtNRPEfvjW_fo0Yf4OLEVY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=7LJCT17v7O3YGyBmhYNIhaW8sX0%3D|CDM|1.3|{"originWidth":1536,"originHeight":1024,"style":"alignCenter","width":611,"height":407,"caption":"","filename":"ChatGPT Image 2026년 7월 3일 오후 10_58_54.png"}_##]</p>
+<h3 data-ke-size="size23">2. 60년 역사에서 1위 라면은 단 셋뿐이었다</h3>
+<p data-ke-size="size16">수백 종의 라면이 나왔다 사라졌지만, 시장 점유율 1위에 올라 본 브랜드는 삼양라면, 안성탕면, 신라면 셋뿐이다(출처: 농심 브랜드관&middot;언론 보도 종합).</p>
+<div>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>시기</td>
+<td>1위 브랜드</td>
+<td>제조사</td>
+</tr>
+<tr>
+<td>1963~1986년</td>
+<td>삼양라면</td>
+<td>삼양식품</td>
+</tr>
+<tr>
+<td>1987~1990년</td>
+<td>안성탕면</td>
+<td>농심</td>
+</tr>
+<tr>
+<td>1991년~현재</td>
+<td>신라면</td>
+<td>농심</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">삼양라면은 원조의 힘으로 20년 넘게 왕좌를 지켰다. 1960년대 삼양식품의 시장 점유율은 80%가 넘었다. 이 철옹성을 무너뜨린 게 만년 2위 농심이다. 1983년 출시한 안성탕면이 대히트를 치며, <b>1985년 3월 회사 점유율에서 농심 40.4% 대 삼양 39.6%로 사상 첫 역전</b>이 일어났다(출처: 시장조사기관 자료, 식품음료신문 인용). 브랜드 단위로는 1987년 안성탕면이 삼양라면을 제치고 1위에 올랐다.</p>
+<p data-ke-size="size16">그리고 1986년 태어난 신라면이 1991년 1위를 차지한 뒤, 지금까지 35년째 한 번도 자리를 내주지 않았다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">1990년 라면 순위표가 재밌다</h4>
+<p data-ke-size="size16">당시 언론은 농심의 지배력을 "다섯 마리 용"이라 불렀다. 1990년 점유율 순위를 보면 이유를 안다.</p>
+<div>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>순위</td>
+<td>제품</td>
+<td>점유율</td>
+</tr>
+<tr>
+<td>1위</td>
+<td>안성탕면</td>
+<td>15.5%</td>
+</tr>
+<tr>
+<td>2위</td>
+<td>신라면</td>
+<td>14.0%</td>
+</tr>
+<tr>
+<td>3위</td>
+<td>육개장사발면</td>
+<td>6.9%</td>
+</tr>
+<tr>
+<td>4위</td>
+<td>너구리</td>
+<td>5.8%</td>
+</tr>
+<tr>
+<td>5위</td>
+<td>짜파게티</td>
+<td>4.9%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">출처: AC닐슨, 1990년 8월 언론 보도. 1~5위가 전부 농심이다. 6위가 돼서야 다른 회사(빙그레 우리집라면, 4.7%)가 나온다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">알면 재밌는 라면 추가 내용</h4>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>우지 파동이 판을 굳혔다.</b> 1989년 삼양식품이 '공업용 우지(소기름)로 면을 튀겼다'는 검찰 발표로 치명타를 입었다. 1997년 대법원에서 무죄가 확정됐지만, 이미 시장은 농심 천하로 재편된 뒤였다.</li>
+<li><b>신라면 누적 판매량은 425억 개에 이를 전망이다(2025년 말 기준 추정, 식품업계 발표).</b> 면발을 다 이으면 지구와 태양 사이를 여섯 번 왕복하는 길이다.</li>
+<li><b>라면 수출의 시초는 1969년이다.</b> 삼양식품이 베트남에 처음 수출했고, 월남 파병 군인들의 보급 식량으로 쓰였다(출처: 식품음료신문).</li>
+<li><b>신라면의 매운맛은 시대를 탔다.</b><span style="letter-spacing: 0px;"> 1986년 서울 아시안게임을 앞두고 "한국인의 매운맛"이 유행어처럼 번지던 시기였고, 순한 국물 일색이던 시장에서 매운맛을 전면에 내건 첫 제품이 신라면이었다.</span></li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">3. 한국인에게 라면은 '가장 싼 한 끼'였다</h3>
+<p data-ke-size="size16">라면 소비 통계는 한국의 라면관을 그대로 보여 준다. 한국은 2020년까지 1인당 소비량 세계 1위였다가 2021년부터 베트남에 자리를 내줬다.</p>
+<div>
+<table style="border-collapse: collapse; width: 71.8569%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 16.1628%;">순위</td>
+<td style="width: 21.0465%;">국가</td>
+<td style="width: 37.4488%;">1인당 연간 소비량(2024)</td>
+</tr>
+<tr>
+<td style="width: 16.1628%;">1위</td>
+<td style="width: 21.0465%;">베트남</td>
+<td style="width: 37.4488%;">81개</td>
+</tr>
+<tr>
+<td style="width: 16.1628%;">2위</td>
+<td style="width: 21.0465%;">한국</td>
+<td style="width: 37.4488%;">79개</td>
+</tr>
+<tr>
+<td style="width: 16.1628%;">3위</td>
+<td style="width: 21.0465%;">태국</td>
+<td style="width: 37.4488%;">57개</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">출처: 세계인스턴트라면협회(WINA), 2024년 기준. 흥미로운 건 소비의 '성격'이다. 라면업계 설명에 따르면 베트남&middot;동남아에서 라면은 용량 적은 '간식'이라 개수가 많은 반면, 한국은 라면이 '한 끼 식사'다. 그래서 중량 기준으로는 한국이 세계 1위일 가능성이 크다.</p>
+<p data-ke-size="size16">이 차이가 핵심이다. 한국에서 라면은 배를 채우는 음식이었고, 지금도 그렇다. 자취생의 끼니, 야근 후 야식, 국밥집 사리까지. 라면이 '소울푸드'로 불리는 이유다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">이제는 수출 효자다</h4>
+<p data-ke-size="size16">라면의 위상은 국내를 넘었다. 2025년 1~9월 라면 수출액은 11억 1,600만 달러(약 1조 6,000억 원)로 전년 동기 대비 24.7% 늘었다(출처: 한국농수산식품유통공사). 신라면과 불닭볶음면이 이 성장을 이끈다. 배고픔에서 시작한 음식이 60여 년 만에 K-푸드 대표 주자가 됐다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">4. 라면에 방부제는 없다 - 넣을 이유가 없어서다</h3>
+<p data-ke-size="size16">"유통기한이 6개월이나 되는데 방부제 범벅 아니냐"는 오해가 가장 흔하다. 결론부터: <b>라면에 방부제(보존료)는 들어가지 않는다.</b> 못 넣는 게 아니라, 넣을 이유가 없다.</p>
+<p data-ke-size="size16">원리는 수분이다. 곰팡이 같은 미생물은 식품의 수분 함량이 약 12% 이상이어야 번식한다. 그런데 라면은 면과 분말스프 모두 튀김&middot;건조 과정에서 수분을 4~6% 수준까지 날린 건조식품이다(출처: 농심 라면연구소, 이뉴스투데이). 미생물이 살 수 없는 환경이니 미생물을 막는 약품이 필요 없다. 쌀이나 밀가루에 방부제를 넣지 않는 것과 같은 이치다. 삼양식품도 "찌고 튀기는 과정에서 살균되고 수분이 낮게 유지돼 방부제를 쓸 필요가 없다"고 같은 설명을 한다(출처: 아시아경제).</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">그럼 유통기한 6개월은 왜 있나</h4>
+<p data-ke-size="size16">방부제가 없는데 유통기한이 있는 이유는 미생물이 아니라 <b>기름의 산패</b> 때문이다. 유탕면을 튀긴 팜유가 공기&middot;햇빛과 만나면 서서히 산화한다. 라면 포장이 빛과 공기를 완전히 차단하도록 만들어진 이유가 이것이다.</p>
+<p data-ke-size="size16">정직하게 짚을 부분이 하나 있다. 방부제는 없지만 <b>산화방지제는 들어간다.</b> 기름 산패를 늦추기 위해 토코페롤(비타민E)이나 녹차 추출 항산화 성분을 쓴다(출처: 농심 공식 자료). 방부제(미생물 억제)와 산화방지제(기름 산패 지연)는 목적이 다른 별개의 첨가물이다. "라면은 첨가물이 하나도 없는 식품"이라고 하면 그것도 과장이고, "방부제 범벅"이라고 하면 그건 틀렸다. 사실은 그 중간, "보존료 0, 항산화제는 소량"이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">5. 라면의 진짜 문제는 '나트륨'이 아니라 '불균형'이다</h3>
+<p data-ke-size="size16">라면이 몸에 나쁘다는 통념부터 정리한다. 결론은 이렇다. 라면 한 개의 나트륨은 생각보다 특별히 높지 않다. 진짜 문제는 영양 불균형이다.</p>
+<p data-ke-size="size16">봉지라면 한 개(국물형)의 나트륨 평균은 약 1,730mg이다. WHO 1일 권고량 2,000mg의 90% 수준이다(출처: 소셜타임스 라면 8종 분석). 높긴 하다. 그런데 다른 한식과 비교하면 얘기가 달라진다.</p>
+<div>
+<table style="border-collapse: collapse; width: 100%; height: 118px;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr style="height: 17px;">
+<td style="height: 17px;">음식</td>
+<td style="height: 17px;">1그릇 나트륨</td>
+<td style="height: 17px;">비고</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">육개장</td>
+<td style="height: 21px;">3,272mg</td>
+<td style="height: 21px;">라면의 약 1.9배</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">칼국수</td>
+<td style="height: 21px;">2,671mg</td>
+<td style="height: 21px;">&nbsp;</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">냉면</td>
+<td style="height: 21px;">2,622mg</td>
+<td style="height: 21px;">&nbsp;</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">라면(봉지)</td>
+<td style="height: 21px;">약 1,730mg</td>
+<td style="height: 21px;">중위권 수준</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">출처: 나무위키 라면 문서 종합. 라면만 나트륨 폭탄 취급하는 건 공정하지 않다. 문제는 나트륨을 국물로 다 마시는 습관이다.</p>
+<p data-ke-size="size16">진짜 약점은 따로 있다. 라면은 유탕면(기름에 튀긴 면)이라 포화지방이 높고, 단백질은 부족하다. 라면 8종 평균 단백질은 10.37g으로, 성인 1일 기준치(남 60~65g)에 크게 못 미친다(출처: 소셜타임스). 즉 라면 한 개는 열량과 지방, 나트륨만 채우고 단백질&middot;비타민은 비운다. 허기는 달래지만 영양은 채우지 못하는 음식이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">6. 라면은 여드름을 악화시킬 수 있다&nbsp;</h3>
+<p data-ke-size="size16">라면과 여드름은 실제로 관련이 있다. 근거는 서울대병원 피부과 서대헌 교수팀 연구다. 여드름 환자 783명과 정상인 502명을 비교한 이 연구는 국제학술지(유럽 피부과학회지)에 실렸다.</p>
+<p data-ke-size="size16">핵심은 <b>당부하지수(GL, glycemic load)</b> 다. GL은 음식이 혈당을 얼마나 빨리 올리는지 나타내는 값이다. 연구 결과, 정상인은 채소&middot;콩 등 GL 10 미만 음식을 많이 먹은 반면, 여드름 환자는 햄버거&middot;라면&middot;콜라 등 GL 20 이상 인스턴트 식품을 유의하게 많이 먹었다. 이 식품들은 여드름 발병&middot;악화 위험을 <b>최소 17%에서 최대 50% 이상</b> 높였다(출처: 서울대병원 병원뉴스).</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">왜 정제 탄수화물이 여드름을 만드는가</h4>
+<p data-ke-size="size16">메커니즘은 이렇게 작동한다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li>라면 같은 정제 탄수화물을 먹으면 혈당이 급격히 오른다.</li>
+<li>몸이 인슐린을 대량 분비한다.</li>
+<li>인슐린이 <b>인슐린유사성장인자-1(IGF-1)</b> 을 끌어올린다.</li>
+<li>IGF-1이 피지선을 자극해 피지 분비를 늘리고 염증을 촉진한다.</li>
+<li>늘어난 피지와 염증이 모공을 막아 여드름이 된다.</li>
+</ol>
+<p data-ke-size="size16">즉 라면이 여드름을 만드는 경로는 '기름진 음식이라서'만이 아니라 '혈당을 빠르게 올리는 정제 탄수화물이라서'가 더 크다. 여기에 유탕면의 포화지방이 염증을 더한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">7. 봉지 vs 컵, 여드름엔 뭐가 더 나쁠까 - 답은 '둘 다 비슷하다'</h3>
+<p data-ke-size="size16">가장 많이 묻는 질문이다. 결론부터: <b>봉지냐 컵이냐의 차이는 여드름 관점에서 크지 않다.</b> 봉지와 컵을 가르는 것보다 유탕면이냐 건면이냐, 국물을 먹느냐가 훨씬 결정적이다.</p>
+<p data-ke-size="size16">먼저 봉지와 컵의 실제 차이를 보자. 같은 브랜드라도 둘은 처음부터 다르게 설계된다.</p>
+<div>
+<table style="border-collapse: collapse; width: 100%; height: 105px;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr style="height: 21px;">
+<td style="height: 21px;">구분</td>
+<td style="height: 21px;">봉지라면</td>
+<td style="height: 21px;">컵라면</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">면 두께</td>
+<td style="height: 21px;">굵음(끓는 물 전제)</td>
+<td style="height: 21px;">얇음(뜨거운 물만으로 익어야)</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">튀김 기공</td>
+<td style="height: 21px;">상대적으로 성김</td>
+<td style="height: 21px;">더 촘촘함(빠른 복원)</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">칼로리</td>
+<td style="height: 21px;">기준</td>
+<td style="height: 21px;">20~60kcal 더 높음</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px;">조미 강도</td>
+<td style="height: 21px;">기준</td>
+<td style="height: 21px;">더 셈(국물이 더 짬)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">출처: 헬스코어데일리&middot;ardentnews 종합(오뚜기 참깨라면, 농심 너구리&middot;짜파게티 실측 비교 인용). 컵라면이 칼로리와 나트륨, 조미 강도가 조금씩 높다. 짧은 시간에 익히고 맛을 내려고 배합을 다르게 가져간 결과다.</p>
+<p data-ke-size="size16">이 차이만 보면 "컵라면이 여드름에 조금 더 불리하다"고 <b>추정</b>할 수 있다. 칼로리와 나트륨이 높으니까. 다만 이건 성분 차이에서 끌어낸 추정이지, 봉지와 컵을 직접 비교한 여드름 연구는 확인되지 않았다.</p>
+<p data-ke-size="size16">그런데 여드름 기전으로 돌아가 보면 이 차이는 사소하다. 여드름의 핵심 방아쇠는 <b>정제 탄수화물의 GL과 포화지방</b>인데, 봉지든 컵이든 둘 다 정제 밀가루를 기름에 튀긴 유탕면이다. GL도 포화지방도 근본적으로 같은 급이다. 컵라면이 20~60kcal 더 높다고 여드름 위험이 유의하게 갈린다고 보긴 어렵다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">정말 차이를 만드는 두 가지</h4>
+<p data-ke-size="size16">봉지/컵 대신 여기를 봐야 한다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>유탕면 vs 건면</b>: 건면은 기름에 튀기지 않고 열풍으로 말린다. 그래서 포화지방과 칼로리가 낮다. 피부가 걱정되면 봉지&middot;컵을 고민하기 전에 건면을 고르는 게 훨씬 효과가 크다.</li>
+<li><b>국물을 먹느냐</b>: 나트륨과 지방, 정제 탄수화물이 녹아 나온 국물을 다 마시면 GL 부담이 커진다. 국물을 남기는 것만으로 실질 섭취가 크게 준다.</li>
+</ul>
+<p data-ke-size="size16">즉 "봉지 대신 컵을 피하자"가 아니라 "유탕면 대신 건면, 국물은 남기자"가 근거에 맞는 결론이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">8. 그래도 라면을 잘 먹는 법</h3>
+<p data-ke-size="size16">라면을 끊으라는 얘기가 아니다. 나흘에 한 번 먹는 국민 음식을 죄악시할 필요는 없다. 몇 가지 습관만 바꾸면 부담을 확실히 줄인다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>국물을 남긴다.</b> 나트륨 대부분은 면이 아니라 국물에 녹아 있다. 절반만 남겨도 소금 섭취가 크게 준다.</li>
+<li><b>계란을 넣는다.</b> 라면에 없는 단백질을 채운다. 계란 하나의 지방은 1일 권장량의 약 11% 수준이라 부담이 적다.</li>
+<li><b>채소를 더한다.</b> 파&middot;양파의 칼륨이 나트륨 배출을 돕고, 부족한 비타민을 채운다.</li>
+<li><b>건면을 고른다.</b> 지방과 칼로리를 낮추는 가장 직접적인 방법이다.</li>
+</ul>
+<p data-ke-size="size16"><b>피부가 걱정되면 빈도를 조절한다.</b> GL이 문제이므로, 매일보다 간격을 두는 게 낫다.</p>
+<p data-ke-size="size16">라면은 배고픔에서 태어나 국민 음식이 됐고, 이제는 수출 효자다. 방부제 범벅이라는 오해와 달리 보존료는 한 톨도 없고, 진짜 약점은 나트륨보다 영양 불균형이다. 여드름과의 관계도 분명 있지만, 그 원인은 봉지냐 컵이냐가 아니라 정제 탄수화물과 지방, 그리고 국물을 다 마시는 습관에 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">적고보니 라면이 먹고싶다.</p>

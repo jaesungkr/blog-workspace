@@ -1,0 +1,44 @@
+{
+  "post_id": 30,
+  "public_url": "https://dop3n.tistory.com/entry/%EC%98%A4%ED%94%88%EC%9B%A8%EC%9D%B4%ED%8A%B8-LLM-%EB%AA%A8%EB%8D%B8-VibeThinker-3B%EC%99%80-Qwen3-4B-Thinking-%EB%B9%84%EA%B5%90",
+  "title": "오픈웨이트 LLM 모델 VibeThinker-3B와 Qwen3-4B-Thinking 비교 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"AI 생성 이미지 (ChatGPT)\"",
+      "after": "\"caption\":\"\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n오픈웨이트 LLM 모델 VibeThinker-3B와 Qwen3-4B-Thinking 비교\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-07-02 23:52\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "40ca63d158fec35ec7a41b0155a93e2c6f8f8e82252636c0854909ec263ec742",
+  "submitted_sha256": "9a7cbe51e7f4e9fc9491f197ae6c3bda7366256e9ceda7fe82c2c72a73a2030a",
+  "publication_slug": "오픈웨이트-LLM-모델-VibeThinker-3B와-Qwen3-4B-Thinking-비교",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:56:22.676Z"
+}

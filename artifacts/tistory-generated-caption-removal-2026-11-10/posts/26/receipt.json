@@ -1,0 +1,38 @@
+{
+  "post_id": 26,
+  "public_url": "https://dop3n.tistory.com/entry/%EA%B9%80%EC%9D%BC%EC%84%B1-%EC%82%AC%EC%A7%84-%EC%B0%A2%EA%B3%A0-%ED%83%88%EB%AA%A8-%EC%A1%B0%EB%A1%B1%EA%B9%8C%EC%A7%80-34%EB%85%84-%EB%A7%8C%EC%97%90-%EA%B3%B5%EA%B0%9C%EB%90%9C-%EB%82%A8%EB%B6%81-%ED%95%B5%ED%98%91%EC%83%81-%ED%9A%8C%EC%9D%98%EB%A1%9D",
+  "title": "김일성 사진 찢고 탈모 조롱까지 - 34년 만에 공개된 남북 핵협상 회의록 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"북한, 한국 국기, AI 생성 이미지 (ChatGPT)\"",
+      "after": "\"caption\":\"북한, 한국 국기\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n김일성 사진 찢고 탈모 조롱까지 - 34년 만에 공개된 남북 핵협상 회의록\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-06-30 14:38\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "b6e0d3497fcfe623a4a579f809504ad01e12b6f50feea088c66909946c93d107",
+  "submitted_sha256": "1b12211cdcf7f04f5292df2c4a9796ab17ea5fd39dbbb98edb5e5ef2bd08cfdc",
+  "publication_slug": "김일성-사진-찢고-탈모-조롱까지-34년-만에-공개된-남북-핵협상-회의록",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:57:45.611Z"
+}

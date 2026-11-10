@@ -1,0 +1,1384 @@
+{
+  "verified_at_utc": "2026-11-10T12:59:07.169675+00:00",
+  "edited_posts": 28,
+  "removed_visible_labels": 30,
+  "standalone_span_posts": 13,
+  "standalone_span_labels": 15,
+  "native_figcaption_posts": 15,
+  "native_figcaption_labels": 15,
+  "posts_passing_preservation_checks": 28,
+  "public_image_elements_preserved": 37,
+  "verification_scope": "HTTP-rendered article HTML; normalized visible text, image source path/alt/count, title, canonical URL, and original publication dates. Does not assert full visual or image-load validation. Native Tistory save serialization differences tracked separately.",
+  "all_posts": [
+    {
+      "post_id": 25,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-06-30T12:12:56+09:00",
+        "og:regDate": "20260630121256",
+        "article:modified_time": "2026-10-24T21:00:45+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-06-30T12:12:56+09:00",
+        "og:regDate": "20260630121256",
+        "article:modified_time": "2026-11-10T21:57:59+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 6. 30. 12:12"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 6. 30. 12:12"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 26,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-06-30T14:38:56+09:00",
+        "og:regDate": "20260630023856",
+        "article:modified_time": "2026-10-24T21:00:45+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-06-30T14:38:56+09:00",
+        "og:regDate": "20260630023856",
+        "article:modified_time": "2026-11-10T21:57:43+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 6. 30. 14:38"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.05"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 6. 30. 14:38"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.05"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 27,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 3,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-06-30T22:00:22+09:00",
+        "og:regDate": "20260630100022",
+        "article:modified_time": "2026-09-29T01:08:34+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-06-30T22:00:22+09:00",
+        "og:regDate": "20260630100022",
+        "article:modified_time": "2026-11-10T21:57:27+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 6. 30. 22:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.01"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 6. 30. 22:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.01"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 28,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-01T14:00:49+09:00",
+        "og:regDate": "20260701020049",
+        "article:modified_time": "2026-07-18T17:00:58+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-01T14:00:49+09:00",
+        "og:regDate": "20260701020049",
+        "article:modified_time": "2026-11-10T21:57:07+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 1. 14:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.07"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 1. 14:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.07"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 29,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-01T23:00:49+09:00",
+        "og:regDate": "20260701110049",
+        "article:modified_time": "2026-07-18T17:00:40+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-01T23:00:49+09:00",
+        "og:regDate": "20260701110049",
+        "article:modified_time": "2026-11-10T21:56:33+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 1. 23:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.26"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 1. 23:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.26"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 30,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-02T23:52:18+09:00",
+        "og:regDate": "20260702115218",
+        "article:modified_time": "2026-07-18T17:00:30+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-02T23:52:18+09:00",
+        "og:regDate": "20260702115218",
+        "article:modified_time": "2026-11-10T21:56:20+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 2. 23:52"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.25"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.04"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 2. 23:52"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.25"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.04"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 31,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-03T23:00:19+09:00",
+        "og:regDate": "20260703110019",
+        "article:modified_time": "2026-10-24T20:57:00+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-03T23:00:19+09:00",
+        "og:regDate": "20260703110019",
+        "article:modified_time": "2026-11-10T21:56:07+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 3. 23:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.18"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 3. 23:00"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.18"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 32,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-04T01:01:56+09:00",
+        "og:regDate": "20260704010156",
+        "article:modified_time": "2026-09-29T01:06:06+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-04T01:01:56+09:00",
+        "og:regDate": "20260704010156",
+        "article:modified_time": "2026-11-10T21:55:51+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 4. 01:01"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.02"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.08"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 4. 01:01"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.02"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.08"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 34,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-05T01:22:51+09:00",
+        "og:regDate": "20260705012251",
+        "article:modified_time": "2026-10-24T21:00:45+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-05T01:22:51+09:00",
+        "og:regDate": "20260705012251",
+        "article:modified_time": "2026-11-10T21:55:12+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 5. 01:22"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 5. 01:22"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.30"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 35,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-05T21:23:59+09:00",
+        "og:regDate": "20260705092359",
+        "article:modified_time": "2026-10-24T21:00:42+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-05T21:23:59+09:00",
+        "og:regDate": "20260705092359",
+        "article:modified_time": "2026-11-10T21:54:58+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 5. 21:23"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.11"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.06"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 5. 21:23"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.11"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.06"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 38,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-07T15:34:06+09:00",
+        "og:regDate": "20260707033406",
+        "article:modified_time": "2026-07-18T16:57:52+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-07T15:34:06+09:00",
+        "og:regDate": "20260707033406",
+        "article:modified_time": "2026-11-10T21:54:43+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 7. 15:34"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.01"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.08"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 7. 15:34"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.01"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.08"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 41,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-08T23:25:07+09:00",
+        "og:regDate": "20260708112507",
+        "article:modified_time": "2026-09-29T01:00:06+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-08T23:25:07+09:00",
+        "og:regDate": "20260708112507",
+        "article:modified_time": "2026-11-10T21:54:31+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 8. 23:25"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.04"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.13"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 8. 23:25"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.04"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.13"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 42,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-09T13:39:46+09:00",
+        "og:regDate": "20260709013946",
+        "article:modified_time": "2026-07-18T16:57:02+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-09T13:39:46+09:00",
+        "og:regDate": "20260709013946",
+        "article:modified_time": "2026-11-10T21:53:52+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 9. 13:39"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.08"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.09"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 9. 13:39"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.08"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.09"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 43,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-09T20:11:05+09:00",
+        "og:regDate": "20260709081105",
+        "article:modified_time": "2026-07-18T16:56:49+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-09T20:11:05+09:00",
+        "og:regDate": "20260709081105",
+        "article:modified_time": "2026-11-10T21:53:38+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 9. 20:11"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.17"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 9. 20:11"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.17"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 44,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-07-11T23:46:04+09:00",
+        "og:regDate": "20260711114604",
+        "article:modified_time": "2026-10-24T21:00:17+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-07-11T23:46:04+09:00",
+        "og:regDate": "20260711114604",
+        "article:modified_time": "2026-11-10T21:53:24+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 7. 11. 23:46"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.06"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.16"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 7. 11. 23:46"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.06"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.16"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 87,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-08T22:16:22+09:00",
+        "og:regDate": "20260808101622",
+        "article:modified_time": "2026-10-24T12:42:16+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-08T22:16:22+09:00",
+        "og:regDate": "20260808101622",
+        "article:modified_time": "2026-11-10T21:52:23+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 8. 22:16"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.22"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.19"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 8. 22:16"
+        },
+        {
+          "class": "date",
+          "text": "2026.06.22"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.19"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 89,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-09T03:31:01+09:00",
+        "og:regDate": "20260809033101",
+        "article:modified_time": "2026-10-24T21:00:02+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-09T03:31:01+09:00",
+        "og:regDate": "20260809033101",
+        "article:modified_time": "2026-11-10T21:52:04+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 9. 03:31"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.26"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 9. 03:31"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.26"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 96,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-10T18:15:49+09:00",
+        "og:regDate": "20260810052837",
+        "article:modified_time": "2026-10-24T20:57:00+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-10T18:15:49+09:00",
+        "og:regDate": "20260810052837",
+        "article:modified_time": "2026-11-10T21:51:51+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 10. 18:15"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.17"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 10. 18:15"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.17"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": true,
+      "passed": true
+    },
+    {
+      "post_id": 102,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-16T02:22:49+09:00",
+        "og:regDate": "20260815085940",
+        "article:modified_time": "2026-10-24T12:38:17+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-16T02:22:49+09:00",
+        "og:regDate": "20260815085940",
+        "article:modified_time": "2026-11-10T21:51:08+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 16. 02:22"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.30"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.29"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 16. 02:22"
+        },
+        {
+          "class": "date",
+          "text": "2026.07.30"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.29"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 103,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 2,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-17T23:54:25+09:00",
+        "og:regDate": "20260817111810",
+        "article:modified_time": "2026-10-24T12:38:00+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-17T23:54:25+09:00",
+        "og:regDate": "20260817111810",
+        "article:modified_time": "2026-11-10T21:46:52+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 17. 23:54"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.10.28"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 17. 23:54"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.10.28"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 110,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 2,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-21T17:51:10+09:00",
+        "og:regDate": "20260821053521",
+        "article:modified_time": "2026-10-24T12:35:31+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-21T17:51:10+09:00",
+        "og:regDate": "20260821053521",
+        "article:modified_time": "2026-11-10T21:46:39+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 21. 17:51"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.22"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 21. 17:51"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.09"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.22"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 113,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 2,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-22T21:32:51+09:00",
+        "og:regDate": "20260822084655",
+        "article:modified_time": "2026-10-24T12:33:54+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-22T21:32:51+09:00",
+        "og:regDate": "20260822084655",
+        "article:modified_time": "2026-11-10T21:46:25+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 22. 21:32"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.21"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.29"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 22. 21:32"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.21"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.29"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 117,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-28T00:18:54+09:00",
+        "og:regDate": "20260827105532",
+        "article:modified_time": "2026-10-24T12:33:33+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-28T00:18:54+09:00",
+        "og:regDate": "20260827105532",
+        "article:modified_time": "2026-11-10T21:40:02+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 28. 00:18"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.25"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.03"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 28. 00:18"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.25"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.03"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 120,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-08-29T00:05:51+09:00",
+        "og:regDate": "20260828110642",
+        "article:modified_time": "2026-10-24T12:33:11+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-08-29T00:05:51+09:00",
+        "og:regDate": "20260828110642",
+        "article:modified_time": "2026-11-10T21:45:51+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 8. 29. 00:05"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.16"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.15"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 8. 29. 00:05"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.16"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.15"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 126,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 2,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-09-03T00:47:59+09:00",
+        "og:regDate": "20260903122449",
+        "article:modified_time": "2026-10-24T12:32:12+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-09-03T00:47:59+09:00",
+        "og:regDate": "20260903122449",
+        "article:modified_time": "2026-11-10T21:45:35+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 9. 3. 00:47"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.28"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.06"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 9. 3. 00:47"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.28"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.06"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 127,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 4,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-09-06T10:53:39+09:00",
+        "og:regDate": "20260906100013",
+        "article:modified_time": "2026-10-30T22:17:08+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-09-06T10:53:39+09:00",
+        "og:regDate": "20260906100013",
+        "article:modified_time": "2026-11-10T21:45:21+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 9. 6. 10:53"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.03"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.23"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 9. 6. 10:53"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.03"
+        },
+        {
+          "class": "date",
+          "text": "2026.09.23"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 131,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-09-15T23:59:19+09:00",
+        "og:regDate": "20260915115919",
+        "article:modified_time": "2026-10-24T11:10:42+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-09-15T23:59:19+09:00",
+        "og:regDate": "20260915115919",
+        "article:modified_time": "2026-11-10T21:44:46+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 9. 15. 23:59"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.29"
+        },
+        {
+          "class": "date",
+          "text": "2026.10.28"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 9. 15. 23:59"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.29"
+        },
+        {
+          "class": "date",
+          "text": "2026.10.28"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    },
+    {
+      "post_id": 132,
+      "visible_text_matches_label_only_change": true,
+      "image_source_alt_count_unchanged": true,
+      "image_count": 1,
+      "remaining_target_labels": 0,
+      "title_unchanged": true,
+      "canonical_unchanged": true,
+      "publication_metadata_before": {
+        "article:published_time": "2026-09-17T00:14:11+09:00",
+        "og:regDate": "20260916115855",
+        "article:modified_time": "2026-10-24T20:57:00+09:00"
+      },
+      "publication_metadata_after": {
+        "article:published_time": "2026-09-17T00:14:11+09:00",
+        "og:regDate": "20260916115855",
+        "article:modified_time": "2026-11-10T21:43:52+09:00"
+      },
+      "time_elements_before": [
+        {
+          "class": "date",
+          "text": "2026. 9. 17. 00:14"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.10"
+        },
+        {
+          "class": "date",
+          "text": "2026.10.28"
+        }
+      ],
+      "time_elements_after": [
+        {
+          "class": "date",
+          "text": "2026. 9. 17. 00:14"
+        },
+        {
+          "class": "date",
+          "text": "2026.08.10"
+        },
+        {
+          "class": "date",
+          "text": "2026.10.28"
+        }
+      ],
+      "publication_metadata_unchanged": true,
+      "raw_article_unchanged_except_targets": false,
+      "passed": true
+    }
+  ],
+  "final_sitewide_scan": {
+    "completed_at_utc": "2026-11-10T13:01:15.072160+00:00",
+    "fresh_sitemap_matches_original": true,
+    "published_posts": 146,
+    "fetched_successfully": 146,
+    "errors": [],
+    "remaining_candidate_posts": 0,
+    "remaining_visible_labels": 0,
+    "pattern_scope": "Visible article leaf elements: 생성 이미지, 생성이미지, AI 생성, AI generated, and nearby 인공지능/image wording. Metadata and scripts/styles excluded."
+  }
+}

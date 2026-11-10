@@ -1,0 +1,211 @@
+<div class="contents_style"><div>
+<style>
+.devlog-dark-compatible {
+  --devlog-text: #333333;
+  --devlog-muted: #636366;
+  --devlog-link: #0066cc;
+  --devlog-border: #d1d1d6;
+  --devlog-soft-bg: #f5f5f7;
+  --devlog-code-bg: #f5f5f7;
+  --devlog-code-text: #2c2c2e;
+  color: var(--devlog-text);
+  color-scheme: light;
+}
+
+.dark .devlog-dark-compatible,
+[data-theme="dark"] .devlog-dark-compatible,
+.theme-dark .devlog-dark-compatible {
+  --devlog-text: #f2f2f7;
+  --devlog-muted: #aeaeb2;
+  --devlog-link: #64a8ff;
+  --devlog-border: #48484a;
+  --devlog-soft-bg: #2c2c2e;
+  --devlog-code-bg: #1c1c1e;
+  --devlog-code-text: #f2f2f7;
+  color-scheme: dark;
+}
+
+.devlog-dark-compatible :where(p, h2, h3, h4, h5, h6, span, b, strong, em, li, td, th, blockquote) {
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible :where(p, td, th) {
+  overflow-wrap: anywhere;
+}
+
+.devlog-dark-compatible a,
+.devlog-dark-compatible a[style] {
+  color: var(--devlog-link) !important;
+  text-decoration-color: currentColor;
+}
+
+.devlog-dark-compatible a :where(span, b, strong, em) {
+  color: inherit !important;
+}
+
+.devlog-dark-compatible table {
+  border-color: var(--devlog-border) !important;
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible th,
+.devlog-dark-compatible td {
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible tbody tr:first-child > :is(th, td) {
+  background: var(--devlog-soft-bg) !important;
+  font-weight: 700;
+}
+
+.devlog-dark-compatible .devlog-table-scroll {
+  max-width: 100%;
+  margin: 1em 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-dark-compatible .devlog-table-scroll > table {
+  width: max-content !important;
+  min-width: 640px;
+  margin: 0 !important;
+}
+
+.devlog-dark-compatible blockquote {
+  background: var(--devlog-soft-bg) !important;
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible pre,
+.devlog-dark-compatible pre[style] {
+  background: var(--devlog-code-bg) !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  border-color: var(--devlog-border) !important;
+  overflow-x: auto;
+}
+
+.devlog-dark-compatible pre code,
+.devlog-dark-compatible pre code[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+}
+
+.devlog-dark-compatible pre code *,
+.devlog-dark-compatible pre code *[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  text-shadow: none !important;
+}
+
+.devlog-dark-compatible :where(ul, ol) {
+  padding-left: 1.5em;
+}
+
+.devlog-dark-compatible ul {
+  list-style: disc outside !important;
+}
+
+.devlog-dark-compatible ol {
+  list-style: decimal outside !important;
+}
+
+.devlog-dark-compatible li {
+  display: list-item;
+}
+
+.devlog-dark-compatible li + li {
+  margin-top: 0.45em;
+}
+
+.devlog-dark-compatible :where(ul, ol) + p {
+  margin-top: 1em;
+}
+
+.devlog-dark-compatible li::marker {
+  color: var(--devlog-muted);
+}
+
+.devlog-dark-compatible img {
+  filter: none !important;
+}
+</style>
+</div>
+<article class="devlog-dark-compatible">
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">최근 "새마을금고 5곳 중 1곳이 비상금을 다 썼다"는 보도가 나왔다. 돈을 지금 빼야 하는 것 아니냐는 불안도 같이 돈다. 한마디로 곧 뱅크런이냐는 질문이다. </span><br /><span style="color: var(--devlog-text);">결론부터. 좋지 않은 상황은 맞지만, 지금 당장 새마을금고 전체가 무너지는 상황은 아니다. 오히려 2025년 실적은 한 해 전보다 나아졌다. 예금은 1인당 1억 원까지 보호받는다. 그러니 불안해서 예금을 빼야 하나 고민할 일은 아니다.</span><br /><span style="color: var(--devlog-text);">단, 딱 하나 확인할 게 있다. 내 통장이 '예금'인지 '출자금'인지다. 출자금은 예금과 달리 보호받지 못한다.</span></p>
+<h2 data-ke-size="size26">&nbsp;</h2>
+<h2 data-ke-size="size26">1. 곧 망하나 - 아니다, 2025년엔 오히려 나아졌다</h2>
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">가장 궁금한 것부터. 지금 뱅크런 직전이냐고 묻는다면, 지표상으로는 아니다.</span><br /><span style="color: var(--devlog-text);">2024년 새마을금고는 1조 7,382억 원의 순손실을 냈다. 역대 최대 적자다. 그런데 이건 장사를 망쳐서가 아니라, 부동산 PF(프로젝트파이낸싱) 부실에 대비해 충당금을 한꺼번에 크게 쌓았기 때문이다. 충당금은 떼일 것에 대비해 미리 비용으로 잡아 두는 돈이다.</span><br /><span style="color: var(--devlog-text);">그리고 2025년에는 흐름이 돌아섰다.</span></p>
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td><span style="color: var(--devlog-text);">지표</span></td>
+<td><span style="color: var(--devlog-text);">2024년</span></td>
+<td><span style="color: var(--devlog-text);">2025년</span></td>
+</tr>
+<tr>
+<td><span style="color: var(--devlog-text);">순손실</span></td>
+<td><span style="color: var(--devlog-text);">1조 7,382억</span></td>
+<td><span style="color: var(--devlog-text);">1조 2,658억 (약 4,700억 감소)</span></td>
+</tr>
+<tr>
+<td><span style="color: var(--devlog-text);">연체율(연말)</span></td>
+<td><span style="color: var(--devlog-text);">6.81%</span></td>
+<td><span style="color: var(--devlog-text);">5.08% (2023년 수준 회복)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">(행정안전부 영업실적 발표 기준)</span><br /><span style="color: var(--devlog-text);">게다가 예금은 보호받는다. 2025년 9월부터 예금자보호 한도가 1억 원으로 올랐고, 새마을금고도 대상이다. 2023년 인출 사태 때도 정부가 나서서 막았다. 예금만 놓고 보면 과하게 불안해할 상황은 아니다.</span><br />&nbsp;</p>
+<h2 data-ke-size="size26"><span style="color: var(--devlog-text);">2. 그럼 왜 시끄러운가 - 일부 금고의 비상금이 말랐다</span></h2>
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">문제는 평균이 아니라 편차다. 전체는 회복 중이어도, 체력이 바닥난 금고가 늘고 있다.</span><br /><span style="color: var(--devlog-text);">핵심 수치는 두 개다. 첫째, 전국 1,153곳 중 257곳(22.3%)이 최근 3년 사이 자율 적립금을 전부 소진했다. 적립금은 금고가 스스로 쌓아 둔 비상금이다. 다섯 곳 중 한 곳이 이 비상금을 비웠다는 뜻이다. 둘째, 부채가 자산보다 커진 완전자본잠식 금고가 2024년 말 12곳에서 2025년 6월 23곳으로 두 배가 됐다.</span><br /><span style="color: var(--devlog-text);">다만 이게 곧 부실은 아니다. 업계도 "잉여금 소진이 바로 부실로 이어지진 않지만 기초 체력이 떨어진 건 맞다"고 본다. 중앙회는 자본잠식 23곳 중 4곳 합병을 끝냈고 나머지도 정리한다는 계획이다.</span><br /><span style="color: var(--devlog-text);">정리하면, 전체가 무너지는 신호가 아니라 '약한 금고와 튼튼한 금고의 격차가 벌어지는' 신호다. 그래서 '새마을금고가 위험한가'보다 '내 금고가 어느 쪽인가'가 맞는 질문이다.</span></p>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1536" data-origin-height="1024"><span data-url="https://blog.kakaocdn.net/dna/XOuya/dJMcacqaFte/AAAAAAAAAAAAAAAAAAAAAB6Gr-wo8S-E1CUqSs7ViRJMvV1LznawIF8zsYBwIxAm/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=iGxZUvZAY3c9zyF3GkyHoXbPL9M%3D" data-phocus="https://blog.kakaocdn.net/dna/XOuya/dJMcacqaFte/AAAAAAAAAAAAAAAAAAAAAB6Gr-wo8S-E1CUqSs7ViRJMvV1LznawIF8zsYBwIxAm/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=iGxZUvZAY3c9zyF3GkyHoXbPL9M%3D"><img src="https://blog.kakaocdn.net/dna/XOuya/dJMcacqaFte/AAAAAAAAAAAAAAAAAAAAAB6Gr-wo8S-E1CUqSs7ViRJMvV1LznawIF8zsYBwIxAm/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=iGxZUvZAY3c9zyF3GkyHoXbPL9M%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FXOuya%2FdJMcacqaFte%2FAAAAAAAAAAAAAAAAAAAAAB6Gr-wo8S-E1CUqSs7ViRJMvV1LznawIF8zsYBwIxAm%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DiGxZUvZAY3c9zyF3GkyHoXbPL9M%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="663" height="442" data-origin-width="1536" data-origin-height="1024"/></span></figure>
+
+<h2 data-ke-size="size26"><span style="color: var(--devlog-text);">3. 그래서 확인할 건 하나 - 예금인가, 출자금인가</span></h2>
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">여기가 이 글의 핵심이다. 같은 새마을금고에 돈을 넣었어도, 그게 예금이냐 출자금이냐에 따라 안전성이 완전히 갈린다.</span><br /><span style="color: var(--devlog-text);">출자금은 예금이 아니다. 금고의 자본금, 즉 주식을 사서 조합원이 되는 것과 같다. 그래서 금고가 잘되면 배당을 받지만, 어려워지면 손실을 함께 떠안는다. 세금우대가 된다고 해서 무심코 만든 출자금 통장이 여기 해당한다.</span></p>
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td><span style="color: var(--devlog-text);">구분</span></td>
+<td><span style="color: var(--devlog-text);">예금&middot;적금</span></td>
+<td><span style="color: var(--devlog-text);">출자금</span></td>
+</tr>
+<tr>
+<td><span style="color: var(--devlog-text);">성격</span></td>
+<td><span style="color: var(--devlog-text);">맡긴 돈</span></td>
+<td><span style="color: var(--devlog-text);">자본금(주식과 유사)</span></td>
+</tr>
+<tr>
+<td><span style="color: var(--devlog-text);">보호</span></td>
+<td><span style="color: var(--devlog-text);">1억 원까지 보호</span></td>
+<td><span style="color: var(--devlog-text);">보호 대상 아님</span></td>
+</tr>
+<tr>
+<td><span style="color: var(--devlog-text);">금고 부실 시</span></td>
+<td><span style="color: var(--devlog-text);">우선 변제</span></td>
+<td><span style="color: var(--devlog-text);">가장 후순위</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">즉 예금이라면 1억 원 안에서 안심해도 된다. 하지만 출자금이라면, 그 금고가 어려워질 때 가장 나중에 돌려받거나 못 받을 수도 있다.</span><br /><span style="color: var(--devlog-text);">확인 순서는 간단하다.</span></p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><span style="color: var(--devlog-text);">내 통장이 예금인지 출자금인지 본다.</span></li>
+<li><span style="color: var(--devlog-text);">예금이면 1억 원 한도 안에서 관리한다. 넘으면 금고를 나눈다.</span></li>
+<li><span style="color: var(--devlog-text);">출자금이고 불안하면 해지를 검토한다. 단, 해지는 지점 방문이 필요하고 결산이 끝난 다음 해 2~3월 이후에 지급된다. 올해 신청해야 내년 초에 받는다.</span></li>
+<li><span style="color: var(--devlog-text);">가입한 금고 상태가 궁금하면 새마을금고 홈페이지 공시에서 연체율과 순이익을 확인한다.</span></li>
+</ol>
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">결국 할 일은 하나다. 내 통장이 예금인지 출자금인지 확인하는 것. 예금이면 1억 원까지 안전하고, 출자금이면 그 금고가 어디쯤 있는지 한 번 보면 된다.&nbsp;</span><br />&nbsp;</p>
+<h2 data-ke-size="size26"><span style="color: var(--devlog-text);">4. 출자금 통장 확인 방법</span></h2>
+<p data-ke-size="size16"><span style="color: var(--devlog-text);">MG새마을금고 어플 &rarr; 우측 하단 '전체메뉴' &rarr; 전체계좌조회 &rarr;&nbsp;출자금 탭 확인</span></p>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1206" data-origin-height="2622"><span data-url="https://blog.kakaocdn.net/dna/mUSaV/dJMcahrt8gZ/AAAAAAAAAAAAAAAAAAAAAEh55-UMbYPlPBdYDquFL2vPjVaDGkrt63OTkbVPbVx2/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=k3pLTaPPXOfLS7Ct%2FP0pod35dQg%3D" data-phocus="https://blog.kakaocdn.net/dna/mUSaV/dJMcahrt8gZ/AAAAAAAAAAAAAAAAAAAAAEh55-UMbYPlPBdYDquFL2vPjVaDGkrt63OTkbVPbVx2/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=k3pLTaPPXOfLS7Ct%2FP0pod35dQg%3D" data-alt="MG새마을금고 어플 전체메뉴 화면"><img src="https://blog.kakaocdn.net/dna/mUSaV/dJMcahrt8gZ/AAAAAAAAAAAAAAAAAAAAAEh55-UMbYPlPBdYDquFL2vPjVaDGkrt63OTkbVPbVx2/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=k3pLTaPPXOfLS7Ct%2FP0pod35dQg%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FmUSaV%2FdJMcahrt8gZ%2FAAAAAAAAAAAAAAAAAAAAAEh55-UMbYPlPBdYDquFL2vPjVaDGkrt63OTkbVPbVx2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3Dk3pLTaPPXOfLS7Ct%252FP0pod35dQg%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="516" height="1122" data-origin-width="1206" data-origin-height="2622"/></span><figcaption>MG새마을금고 어플 전체메뉴 화면</figcaption>
+</figure>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1206" data-origin-height="2622"><span data-url="https://blog.kakaocdn.net/dna/bS86Ke/dJMcaa6X3O9/AAAAAAAAAAAAAAAAAAAAAG4V-vP1-Km8JoeMTYbZ3WOPde_LXEGQ57BVSSMlPZQi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=uIDKLwiTGgQrD2TarE86n5A8Zmg%3D" data-phocus="https://blog.kakaocdn.net/dna/bS86Ke/dJMcaa6X3O9/AAAAAAAAAAAAAAAAAAAAAG4V-vP1-Km8JoeMTYbZ3WOPde_LXEGQ57BVSSMlPZQi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=uIDKLwiTGgQrD2TarE86n5A8Zmg%3D" data-alt="MG새마을금고 어플 출자금 계좌 확인 화면"><img src="https://blog.kakaocdn.net/dna/bS86Ke/dJMcaa6X3O9/AAAAAAAAAAAAAAAAAAAAAG4V-vP1-Km8JoeMTYbZ3WOPde_LXEGQ57BVSSMlPZQi/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=uIDKLwiTGgQrD2TarE86n5A8Zmg%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbS86Ke%2FdJMcaa6X3O9%2FAAAAAAAAAAAAAAAAAAAAAG4V-vP1-Km8JoeMTYbZ3WOPde_LXEGQ57BVSSMlPZQi%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DuIDKLwiTGgQrD2TarE86n5A8Zmg%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="536" height="1165" data-origin-width="1206" data-origin-height="2622"/></span><figcaption>MG새마을금고 어플 출자금 계좌 확인 화면</figcaption>
+</figure>
+
+<p data-ke-size="size16">&nbsp;<br />&nbsp;</p>
+</article></div>

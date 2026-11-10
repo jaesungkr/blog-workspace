@@ -1,0 +1,42 @@
+{
+  "post_id": 126,
+  "public_url": "https://dop3n.tistory.com/entry/Fable-51-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "title": "Fable 5.1 vs Fable 5 - 클로드 모델 비교 — dev.log",
+  "removed_html": [
+    "<span class=\"devlog-rich__credit\">&middot; 생성 이미지</span>",
+    "<span class=\"devlog-rich__credit\">&middot; 생성 이미지</span>"
+  ],
+  "label_count_before": 2,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 2,
+  "native_image_count_after": 2,
+  "preview_images": [
+    {
+      "alt": "아이보리·금색의 Fable 5.1과 차콜·보라색의 Fable 5를 중앙 VS로 나란히 비교한 이미지",
+      "complete": true,
+      "height": 720,
+      "width": 1280
+    },
+    {
+      "alt": "Fable 5.1의 공식 평가 우위, 캐시 읽기 가격 하락, max 과제당 비용 상승을 한 축에서 비교한 인포그래픽",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\nFable 5.1 vs Fable 5 - 클로드 모델 비교\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\nIT 인터넷더보기\n발행일\n2026-09-03 00:47\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "8d474722b942da8bc08a1a50c0bee9da75a0512a2946c506dd95dee38723c716",
+  "submitted_sha256": "cba1157463a2e7a9509b5af2021d4d9646be7a13646ed272aaf8332f56f053ee",
+  "publication_slug": "Fable-51-vs-Fable-5-클로드-모델-비교",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:45:37.361Z"
+}

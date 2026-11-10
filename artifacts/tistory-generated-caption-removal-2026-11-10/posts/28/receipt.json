@@ -1,0 +1,38 @@
+{
+  "post_id": 28,
+  "public_url": "https://dop3n.tistory.com/entry/%EA%B5%AC%EA%B8%80%EC%97%90-8496%EC%96%B5-%EA%B3%BC%EC%A7%95%EA%B8%88-%EC%98%88%EA%B3%A0-%EA%B3%B5%EC%A0%95%EC%9C%84-%EC%95%B1%EB%A7%88%EC%BC%93-%EC%A0%9C%EC%9E%AC-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+  "title": "구글에 8496억 과징금 예고, 공정위 앱마켓 제재 총정리 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"AI 생성 이미지 (Claude)\"",
+      "after": "\"caption\":\"\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n구글에 8496억 과징금 예고, 공정위 앱마켓 제재 총정리\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-07-01 14:00\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "47b3fa36ac6615323ff5e6321b92ca48027bbceef919d9ec1194b4260a5ddec2",
+  "submitted_sha256": "1bde8936989079ea179ead188c818db5badd3dc33ef44213b09dc72a74ef081a",
+  "publication_slug": "구글에-8496억-과징금-예고-공정위-앱마켓-제재-총정리",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:57:09.861Z"
+}

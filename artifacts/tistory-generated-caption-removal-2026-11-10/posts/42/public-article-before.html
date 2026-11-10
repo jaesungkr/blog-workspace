@@ -1,0 +1,189 @@
+<div class="contents_style"><p data-ke-size="size16">ChatGPT에는 텍스트로 채팅하는 것 말고, 음성으로 대화하는 기능이 있다. 앱에서 마이크 버튼을 누르면 AI와 전화하듯 말을 주고받는 모드다. 2026년 7월 8일, OpenAI가 이 음성 기능의 심장을 통째로 갈아끼웠다. 새 모델의 이름은 <b>GPT-Live</b>다.</p>
+<p data-ke-size="size16">발표문의 핵심은 한 문장이다. <b>GPT-Live는 듣는 것과 말하는 것을 동시에 한다.</b></p>
+<p data-ke-size="size16">"그게 뭐가 대단한데?"라는 생각이 들 수 있다. 사람은 원래 그렇게 대화하기 때문이다. 상대가 말하는 동안 "응", "그렇지" 하고 맞장구치고, 필요하면 중간에 끼어들고, 상대가 생각을 정리하는 침묵은 조용히 기다려준다. 그런데 지금까지의 AI는 이걸 못 했다. 왜 못 했는지, 이번에 어떻게 해결했는지, 그리고 이 발표에서 진짜 주목할 지점이 어디인지 차근차근 정리한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">1. 지금까지의 음성 AI는 "무전기"였다</h2>
+<p data-ke-size="size16">기존 AI 음성 대화를 한 단어로 표현하면 무전기다. 무전기는 한 번에 한 사람만 말할 수 있다. 내가 말을 끝내고 버튼에서 손을 떼야 상대가 말할 수 있다. 반면 전화는 양쪽이 동시에 말하고 들을 수 있다. 통신 용어로 무전기 방식을 <b>반이중(half-duplex)</b>, 전화 방식을 전이중(full-duplex, 풀듀플렉스)이라고 부른다.</p>
+<p data-ke-size="size16">OpenAI의 음성 기술은 지금까지 두 번 구조를 갈아엎었고, 이번이 세 번째다.</p>
+<table style="border-collapse: collapse; width: 100%; height: 97px;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr style="height: 17px;">
+<td style="height: 17px; width: 27.4419%;">세대</td>
+<td style="height: 17px; width: 15.6977%;">시기(연도)</td>
+<td style="height: 17px; width: 30.4651%;">방식</td>
+<td style="height: 17px; width: 26.2791%;">비유</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px; width: 27.4419%;">1세대</td>
+<td style="height: 21px; width: 15.6977%;">2023</td>
+<td style="height: 21px; width: 30.4651%;">3개 모델 릴레이</td>
+<td style="height: 21px; width: 26.2791%;">통역사 3명을 거치는 전화</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px; width: 27.4419%;">2세대 (Advanced Voice Mode)</td>
+<td style="height: 21px; width: 15.6977%;">2024</td>
+<td style="height: 21px; width: 30.4651%;">하나의 모델이 음성을 직접 처리</td>
+<td style="height: 21px; width: 26.2791%;">성능 좋아진 무전기</td>
+</tr>
+<tr style="height: 21px;">
+<td style="height: 21px; width: 27.4419%;">3세대 (GPT-Live)</td>
+<td style="height: 21px; width: 15.6977%;">2026</td>
+<td style="height: 21px; width: 30.4651%;">풀듀플렉스</td>
+<td style="height: 21px; width: 26.2791%;">진짜 전화</td>
+</tr>
+</tbody>
+</table>
+<p data-ke-size="size16"><b>1세대</b>는 릴레이 구조였다. 내 음성을 텍스트로 받아 적는 모델, 그 텍스트를 읽고 답변을 만드는 모델, 답변 텍스트를 다시 음성으로 읽어주는 모델. 세 모델이 바통을 넘기는 구조다. 문제는 두 가지였다. 첫째, 느리다. 둘째, 음성을 텍스트로 바꾸는 순간 목소리에 담긴 정보가 증발한다. "잘~한다"와 "잘한다"는 텍스트로는 같지만 의미가 정반대다.</p>
+<p data-ke-size="size16"><b>2세대</b>인 Advanced Voice Mode(2024년 공개된 ChatGPT의 고급 음성 모드)는 하나의 모델이 음성을 직접 듣고 직접 말하도록 만들었다. 훨씬 빨라졌고 억양도 이해하게 됐다. 하지만 여전히 무전기였다. "내 차례, 네 차례"를 엄격히 구분했고, 더 큰 문제는 <b>내 차례가 끝났는지를 침묵으로 판단</b>했다는 점이다. 그래서 이런 일이 벌어졌다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>생각하느라 잠깐 말을 멈추면 &rarr; AI가 말 끝난 줄 알고 끼어든다.</li>
+<li>옆에서 차 지나가는 소리가 나면 &rarr; AI가 헷갈린다.</li>
+<li>AI가 말하는 동안 나는 &rarr; 조용히 기다려야 한다.</li>
+</ul>
+<p data-ke-size="size16">이 음성 모드를 써본 사람이라면 "말 좀 끝까지 듣고 대답해"라고 짜증 낸 경험이 있을 것이다. 성격이 급해서가 아니라 구조가 그렇게 생겼던 것이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. GPT-Live는 1초에 여러 번 "판단"한다</h2>
+<p data-ke-size="size16">GPT-Live는 이 무전기 구조를 버렸다. 메시지를 하나씩 받아 처리하는 대신, <b>귀는 계속 열어두고 입은 필요할 때 여는</b> 구조다. 그리고 1초에도 여러 번, 다음 다섯 가지 중 무엇을 할지 판단한다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li>말할 것인가</li>
+<li>계속 들을 것인가</li>
+<li>잠시 멈출 것인가</li>
+<li>끼어들 것인가</li>
+<li>다른 기능(웹 검색 등)을 호출할 것인가</li>
+</ol>
+<p data-ke-size="size16">이 구조가 만드는 행동 변화가 재미있다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>사용자가 말하는 동안 "음", "그렇군요" 같은 맞장구를 친다.</li>
+<li>생각을 정리하는 침묵을 "말 끝남"이 아니라 "기다려야 할 시간"으로 구분한다.</li>
+<li>"조용히 듣고만 있어"라고 하면 실제로 오래 침묵하면서 내용만 흡수한다.</li>
+<li>"천천히 말해줘"라고 하면 정말 천천히 말한다.</li>
+</ul>
+<p data-ke-size="size16">그리고 이 구조 덕분에 완전히 새로운 기능이 하나 열린다. <b>실시간 동시통역</b>이다. 상대가 말하는 도중에 번역을 얹으려면 듣기와 말하기를 동시에 해야 한다. 무전기 구조에서는 원리적으로 불가능했던 일이다. 언론 시연에서 발표자가 말하는 동안 모델이 번역을 실시간으로 따라 붙였고, 현장에서 직접 본 외신(TechRadar)은 실제로 쓸모 있는 기능이라고 평가했다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 진짜 핵심: "말하는 담당"과 "생각하는 담당"을 분리했다</h2>
+<p data-ke-size="size16">개인적으로 이번 발표에서 가장 중요한 설계는 풀듀플렉스보다 이쪽이라고 본다.</p>
+<p data-ke-size="size16">지금까지 음성 AI에는 고질병이 있었다. <b>대화는 자연스러운데 머리가 나쁘다.</b> 실시간으로 대답하려면 작고 빠른 모델을 써야 하는데, 작고 빠른 모델은 텍스트 채팅에서 쓰는 최상위 모델보다 지능이 한참 떨어진다. 같은 ChatGPT인데 타이핑으로 물으면 척척 답하던 질문을, 음성으로 물으면 얕은 답이 돌아오는 이유가 이것이다.</p>
+<p data-ke-size="size16">이 문제를 정확히 짚은 사람이 Simon Willison이다. 파이썬 웹 프레임워크 Django의 공동 개발자이자, AI 업계에서 가장 많이 읽히는 개발 블로그를 운영하는 인물이다. 그는 기존 ChatGPT 음성 모드가 2024년 지식에 멈춰 있는 구형 모델 기반이라 아이디어 회의 상대로 쓰기 어려웠고, 그래서 사용을 거의 접었다고 썼다. 몇 주간 GPT-Live를 미리 써본 뒤에는 매우 인상적이라는 평가로 돌아섰다.</p>
+<p data-ke-size="size16">GPT-Live는 이 문제를 역할 분담으로 푼다.</p>
+<pre class="bash" data-ke-language="bash"><code>사용자 &harr; GPT-Live &middot;&middot;&middot;&middot; 대화 담당 (맞장구, 타이밍, 말투)
+              &darr; 어려운 질문은 넘김
+         GPT-5.5 &middot;&middot;&middot;&middot; 생각 담당 (검색, 추론, 복잡한 작업)</code></pre>
+<p data-ke-size="size16">GPT-5.5는 OpenAI의 현재 최상위 텍스트 모델이다. GPT-Live는 대화의 흐름만 책임지고, 웹 검색이나 깊은 추론이 필요한 질문이 들어오면 뒤에서 GPT-5.5에게 넘긴다. 중요한 건 그 사이에도 <b>대화가 끊기지 않는다</b>는 점이다. 어색한 침묵 대신 "확인해볼게요" 하고 자연스럽게 시간을 벌고, 답이 준비되면 대화에 다시 녹여낸다.</p>
+<p data-ke-size="size16">비유하면 이렇다. 유능한 비서와 통화하고 있는데, 그 비서 옆에 박사급 연구팀이 앉아 있는 구조다. 비서는 나와 대화를 이어가면서 어려운 질문은 쪽지로 연구팀에 넘기고, 답이 오면 자기 말투로 전달한다.</p>
+<p data-ke-size="size16">이 구조의 전략적 의미는 명확하다. <b>대화 담당과 생각 담당을 분리했기 때문에, 더 똑똑한 새 모델이 나오면 뒷단만 교체하면 된다.</b> 음성 모델을 새로 만들지 않아도 음성 경험의 지능이 계속 올라간다. OpenAI도 새 모델이 나올 때마다 뒷단을 계속 교체하겠다고 명시했다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 평가 결과</h2>
+<p data-ke-size="size16">OpenAI는 두 갈래로 평가했다. "대화가 자연스러운가"와 "똑똑한가"는 별개의 능력이기 때문이다.</p>
+<p data-ke-size="size16"><b>대화 품질</b>: 사람들에게 기존 음성 모드와 GPT-Live로 각각 5~10분씩 대화하게 한 뒤 어느 쪽이 나은지 물었다. 전체 선호도, 말 주고받는 타이밍, 끼어들기, 대화 흐름 등 모든 항목에서 GPT-Live가 확실한 우위를 보였다.</p>
+<p data-ke-size="size16"><b>지능</b>: AI 업계에는 모델의 능력을 재는 표준 시험들이 있다. 이를 벤치마크라고 부른다.</p>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>시험</td>
+<td>무엇을 재나</td>
+<td>결과</td>
+</tr>
+<tr>
+<td>GPQA</td>
+<td>박사급 과학 문제 풀이</td>
+<td>기존 음성 모드 대비 큰 폭 우위</td>
+</tr>
+<tr>
+<td>BrowseComp</td>
+<td>웹을 뒤져 찾기 어려운 정보를 찾아내는 능력</td>
+<td>기존 음성 모드 대비 큰 폭 향상</td>
+</tr>
+<tr>
+<td>&tau;&sup3;-Voice Telecom</td>
+<td>통신사 고객센터 상담 같은 현실적 업무 대화</td>
+<td>기존 음성 모드 대비 우위</td>
+</tr>
+</tbody>
+</table>
+<p data-ke-size="size16">음성 모드에서 박사급 시험 점수가 나오는 이유는 앞서 본 역할 분담 구조 덕분이다. 어려운 문제는 어차피 뒤에 있는 GPT-5.5가 푼다.</p>
+<p data-ke-size="size16">다만 짚을 점이 있다. 응답 속도나 끼어들기 정확도가 기존 대비 수치로 얼마나 나아졌는지는 공개하지 않았고, 위 점수들은 OpenAI 자체 평가다.&nbsp;</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-filename="ChatGPT Image 2026년 7월 9일 오후 01_32_22.png" data-origin-width="1536" data-origin-height="1024"><span data-url="https://blog.kakaocdn.net/dna/ozHMw/dJMcaf1v59K/AAAAAAAAAAAAAAAAAAAAAICKE032ltIH2-NfSM2xg9RdArpBrdpqoDQgYrki-LfW/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=8pRR9c2GmyfweZjgcVZVq2y1IGA%3D" data-phocus="https://blog.kakaocdn.net/dna/ozHMw/dJMcaf1v59K/AAAAAAAAAAAAAAAAAAAAAICKE032ltIH2-NfSM2xg9RdArpBrdpqoDQgYrki-LfW/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=8pRR9c2GmyfweZjgcVZVq2y1IGA%3D" data-alt="ChatGPT - AI 생성 이미지"><img src="https://blog.kakaocdn.net/dna/ozHMw/dJMcaf1v59K/AAAAAAAAAAAAAAAAAAAAAICKE032ltIH2-NfSM2xg9RdArpBrdpqoDQgYrki-LfW/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=8pRR9c2GmyfweZjgcVZVq2y1IGA%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FozHMw%2FdJMcaf1v59K%2FAAAAAAAAAAAAAAAAAAAAAICKE032ltIH2-NfSM2xg9RdArpBrdpqoDQgYrki-LfW%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D8pRR9c2GmyfweZjgcVZVq2y1IGA%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="555" height="370" data-filename="ChatGPT Image 2026년 7월 9일 오후 01_32_22.png" data-origin-width="1536" data-origin-height="1024"/></span><figcaption>ChatGPT - AI 생성 이미지</figcaption>
+</figure>
+</p>
+<h2 data-ke-size="size26">5. 사용자 입장에서 바뀌는 것</h2>
+<p data-ke-size="size16">매주 1억 5천만 명 이상이 ChatGPT의 음성 기능을 쓴다. 이번 업데이트로 체감할 변화를 정리한다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>적용 방법</b>: 따로 설정할 것 없다. ChatGPT 앱에서 음성 버튼을 누르면 새 모델이 적용된다. 유료 구독자는 GPT-Live-1, 무료 사용자는 경량판인 GPT-Live-1 mini를 쓴다.</li>
+<li><b>답변 깊이 선택</b>: Instant(즉답) / Medium / High(깊은 추론) 중 고를 수 있다. High로 갈수록 뒤에서 더 오래 생각하고 답한다.</li>
+<li><b>9개 목소리 리마스터</b>: 기존 목소리들을 새 모델에 맞게 다시 다듬었다.</li>
+<li><b>소음 대응</b>: 지나가는 차, 옆 사람 대화가 있어도 사용자 목소리에 집중한다.</li>
+<li><b>화면 카드</b>: 날씨, 주식, 스포츠 점수 같은 정보는 말로만 하지 않고 화면에 카드로 띄워준다.</li>
+<li><b>호출어</b>: 시연에서 OpenAI 직원들이 "Hey Chat"이라고 부르면 모델이 반응했다. "시리야"의 ChatGPT 버전이다.</li>
+</ul>
+<p data-ke-size="size16">ChatGPT 음성 기능 총괄인 Atty Eleti는 기자 브리핑에서 산책하며 30~40분씩 대화해왔다고 밝혔다. 그러면서 장기적으로는 음성이 컴퓨터를 다루는 기본 인터페이스가 될 수 있다고 주장했다. OpenAI가 올해 AI 이어버드(무선 이어폰) 하드웨어를 낸다는 보도와 겹쳐 보면 그림이 읽힌다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">6. 현장 반응에서 건진 재미있는 이야기들</h2>
+<p data-ke-size="size16">신제품 발표는 공식 자료보다 사용자 반응이 재미있다. 해외 개발자 커뮤니티 Hacker News(전 세계 개발자들이 새 기술이 나올 때마다 몰려와 토론하는 게시판. 이하 해커뉴스)의 GPT-Live 스레드에서 건진 이야기들이다.</p>
+<p data-ke-size="size16"><b>말 끊고 웃어버리는 버그</b>. 미리 써본 사용자의 제보다. 자기가 아직 말하는 중인데 모델이 끼어들어서, 농담도 아닌 말에 웃곤 했다는 것이다. 제보자는 그 느낌을 "무례하고 깔보는 것 같았다"라고 표현했다. 흥미로운 지점은 이것이 <b>풀듀플렉스라서 생긴 새로운 종류의 실수</b>라는 점이다. 무전기 방식 모델은 애초에 남의 말에 끼어들 능력 자체가 없어서 이런 실수를 할 기회도 없었다. 사람처럼 대화할 수 있게 되니, 사람처럼 무례할 수도 있게 됐다.</p>
+<p data-ke-size="size16"><b>박사급 AI가 타이머는 못 맞춘다</b>. 음성 모드로 1마일 달리기 기록을 재려다 실패한 영상이 화제가 됐고, OpenAI CEO Sam Altman이 직접 해명하는 클립까지 돌았다. 요지는 음성 모드에 아직 타이머 같은 도구 접근 권한이 없고, 1년 안에 넣겠다는 것이다. 박사급 과학 문제를 푸는 시스템이 스톱워치를 못 돌린다는 대비가 웃프다. 해커뉴스에서도 같은 아쉬움이 반복해서 나왔다. 대화하면서 문서를 열고 메모를 남기는 것이 자연스러운 다음 단계인데, 아직 어느 회사 음성 AI도 이걸 제대로 못 한다.</p>
+<p data-ke-size="size16"><b>힌디어 데모의 미국인 억양</b>. 기자 시연에서 실시간 번역을 힌디어로 보여줬는데, 힌디어가 강한 미국 억양에 책 읽는 듯한 딱딱한 말투였다고 TechCrunch가 보도했다. OpenAI도 일부 언어에서는 억양이나 유창성에 빈틈이 있을 수 있다고 인정했다. 한국어 품질이 어느 수준인지는 직접 확인해볼 지점이다.</p>
+<p data-ke-size="size16"><b>내 음성 데이터는 어떻게 되나</b>. 브리핑에서 나온 내용 기준으로, 음성 대화 오디오는 30일간 보관되며 사용자가 공유를 선택하지 않는 한 모델 학습에 쓰이지 않는다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">7. 사실 OpenAI가 첫 주자가 아니다</h2>
+<p data-ke-size="size16">이번 발표를 "OpenAI가 새 지평을 열었다"로 읽으면 곤란하다. 동시에 말하고 듣는 AI 자체는 경쟁사들이 먼저 내놨다.</p>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 15.8139%;">제품</td>
+<td style="width: 19.0698%;">회사</td>
+<td style="width: 65%;">상황</td>
+</tr>
+<tr>
+<td style="width: 15.8139%;">Gemini Live</td>
+<td style="width: 19.0698%;">Google</td>
+<td style="width: 65%;">1년 넘게 전부터 풀듀플렉스 지원. 카메라로 보여주며 대화하는 기능까지 있다 (GPT-Live는 아직 없음)</td>
+</tr>
+<tr>
+<td style="width: 15.8139%;">Seeduplex</td>
+<td style="width: 19.0698%;">ByteDance (틱톡 모회사)</td>
+<td style="width: 65%;">2026년 4월 공개. 중국 국민 AI 앱 Doubao에 탑재. 잘못 끼어드는 비율을 기존 대비 절반으로 줄였다고 주장</td>
+</tr>
+<tr>
+<td style="width: 15.8139%;">PersonaPlex</td>
+<td style="width: 19.0698%;">NVIDIA</td>
+<td style="width: 65%;">2026년 1월 공개. 목소리와 캐릭터를 바꿔 끼울 수 있는 풀듀플렉스 모델</td>
+</tr>
+</tbody>
+</table>
+<p data-ke-size="size16">해커뉴스에서도 "Gemini Live는 이미 오래전부터 이걸 했다"는 반응이 나왔다. 95세 네덜란드인 할머니에게 시켜봤더니 영어와 네덜란드어를 자연스럽게 오가고, 청력 문제로 반복을 요청해도 잘 대응했다는 후기가 대표적이다.</p>
+<p data-ke-size="size16">그렇다면 OpenAI의 진짜 무기는 무엇인가. 두 가지다. 첫째, <b>매주 1억 5천만 명이라는 배포 규모</b>. 기능이 비슷하면 사용자가 이미 모여 있는 쪽이 이긴다. 둘째, <b>최상위 모델과의 연결</b>. 앞서 본 역할 분담 구조 덕분에 대화 뒤에 GPT-5.5급 지능이 붙는다. 동시에 말하고 듣는 기술 자체는 이제 업계 기본기가 됐고, 승부처는 "누가 더 자연스럽게 말하나"에서 "누가 대화하면서 실제 일을 처리해주나"로 옮겨가고 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">8. 자연스러워질수록 위험해진다 &mdash; 안전장치</h2>
+<p data-ke-size="size16">음성 대화는 텍스트와 위험의 성격이 다르다. 말은 실시간으로 흘러가기 때문에 "답변을 다 만들어놓고 검토한 뒤 내보내기"가 불가능하다. OpenAI가 이번에 만든 장치들이 그 지점을 겨냥한다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>말하는 도중 작동하는 안전장치</b>: 위험한 방향의 답변이 감지되면 말하는 중에도 더 안전한 답변으로 방향을 틀고, 필요하면 상담 자원을 안내하며, 고위험 상황에서는 대화를 종료한다.</li>
+<li><b>청소년 보호</b>: 나이에 맞는 응답을 모델에 직접 학습시켰다. 부모가 자녀의 음성 기능 사용 여부를 설정할 수 있고, 자해 징후 같은 고위험 상황에서는 연결된 부모에게 알림이 갈 수 있다.</li>
+<li><b>목소리 사칭 차단</b>: 미리 정해진 목소리만 쓴다. 실존 인물의 목소리를 흉내 내는 것을 막는 장치를 뒀다.</li>
+<li><b>정서적 의존 모니터링</b>: AI에 정서적으로 기대는 사용 패턴을 출시 이후 장기간 추적하겠다고 밝혔다.</li>
+</ul>
+<p data-ke-size="size16">마지막 항목이 눈에 띈다. 자연스러움을 높이는 것 자체가 위험을 만든다는 사실을 OpenAI가 인지하고 있다는 뜻이다. 사람 같은 목소리는 신뢰를 쉽게 얻는다. 그리고 쉽게 얻은 신뢰는 쉽게 악용될 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">9. 이 방향이 맞는가 &mdash; 커뮤니티의 논쟁</h2>
+<p data-ke-size="size16">해커뉴스 스레드에서 기술 이야기만큼 분량을 차지한 것이 방향성 논쟁이다. 양쪽 논리가 명확해서 옮겨둘 가치가 있다.</p>
+<p data-ke-size="size16"><b>반대 진영</b>: 인간관계는 우리가 가진 가장 가치 있는 것인데, 기술이 그 사이를 중개하다가 이제 대체하려 한다. AI와 대화하는 1분은 원래 다른 사람과 대화했을 1분이다. 항상 맞장구쳐주는 AI에 익숙해지면, 나와 생각이 다른 사람과 대화하는 능력을 잃는다. 보안 메신저 Signal의 대표 Meredith Whittaker가 "챗봇은 당신의 친구가 아니다"라고 경고해온 것과 같은 맥락이다.</p>
+<p data-ke-size="size16"><b>찬성 진영</b>: 사람 대신으로 쓰면 문제지만, 도구를 다루는 새로운 방식으로 보면 훌륭하다. 운전 중 아이디어 정리, 운동하면서 공부, 손이 자유롭지 않은 상황의 검색은 텍스트가 채울 수 없는 영역이다. 친구로 쓸지 도구로 쓸지는 사용자가 정하는 것이다.</p>
+<p data-ke-size="size16">기록해둘 만한 장면이 하나 있다. OpenAI 직원이 스레드에 등장해 피드백을 받겠다고 하자, 첫 질문이 "이 기술이 외로움 문제를 악화시키면 개인적으로 책임을 느낄 것인가"였다. 회사는 "우리는 AI 친구를 만드는 것이 아니다"라고 선을 긋는다. 다만 시장이 그 선을 지켜줄지는 별개의 문제다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">10. 정리</h2>
+<p data-ke-size="size16">이번 발표의 의미를 세 줄로 요약한다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><b>핵심은 역할 분담이다.</b> GPT-Live가 대화를, GPT-5.5가 생각을 맡는다. 더 똑똑한 모델이 나오면 뒷단만 교체된다. 이 구조가 발표의 본체다.</li>
+<li><b>동시에 말하고 듣는 기술은 이미 업계 표준 경쟁이다.</b> Google, ByteDance, NVIDIA가 먼저 움직였다. OpenAI의 무기는 기술 자체가 아니라 사용자 규모와 최상위 모델 접근성이다.</li>
+<li><b>남은 숙제는 도구 사용이다.</b> 타이머 하나 못 맞추는 상태에서 "음성이 컴퓨터의 기본 인터페이스"라는 비전까지는 거리가 있다. 대화하면서 실제 작업을 실행하는 단계가 다음 승부처다.</li>
+</ol>
+<p data-ke-size="size16">개발자용 API(외부 서비스에서 이 기능을 갖다 쓸 수 있게 하는 통로)는 추후 공개 예정이다. 공개되면 한국어 실시간 번역 품질과, 어려운 질문을 뒷단에 넘겼을 때 대화가 얼마나 자연스럽게 시간을 버는지 직접 측정해볼 계획이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>참고 링크</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><a href="https://openai.com/index/introducing-gpt-live/">OpenAI 공식 발표 &mdash; Introducing GPT-Live</a></li>
+<li><a href="https://news.hada.io/topic?id=31254">GeekNews &mdash; OpenAI, GPT-Live 공개 (한국어 요약)</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48834405">Hacker News 토론 스레드</a></li>
+<li><a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/">Simon Willison &mdash; Introducing GPT-Live</a></li>
+<li><a href="https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/">TechCrunch &mdash; OpenAI releases new voice models</a></li>
+<li><a href="https://venturebeat.com/technology/openai-launches-gpt-live-a-full-duplex-voice-upgrade-that-lets-chatgpt-talk-more-like-a-person">VentureBeat &mdash; OpenAI launches GPT-Live</a></li>
+</ul></div>

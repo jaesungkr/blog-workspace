@@ -1,0 +1,38 @@
+{
+  "post_id": 43,
+  "public_url": "https://dop3n.tistory.com/entry/SpaceXAI%EC%9D%98-%EC%B2%AB-%EC%9E%91%ED%92%88-Grok-45",
+  "title": "SpaceXAI의 첫 작품 - Grok 4.5 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"Grok 4.5 - AI 생성 이미지\"",
+      "after": "\"caption\":\"Grok 4.5\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": true,
+      "height": 853,
+      "width": 1280
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\nSpaceXAI의 첫 작품 - Grok 4.5\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-07-09 20:11\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "1b6c7d6c4cfdc5f03bc03bf4b286e5abf122d42c5fdba57363d615e156521553",
+  "submitted_sha256": "3b5790dd28092c257cc7e42770975e2649a6d5a54657e3873df39b36f534b1d2",
+  "publication_slug": "SpaceXAI의-첫-작품-Grok-45",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:53:40.595Z"
+}

@@ -1,0 +1,35 @@
+{
+  "post_id": 131,
+  "public_url": "https://dop3n.tistory.com/entry/%EB%B3%B5%EC%9D%84-%EA%B5%AC%ED%95%9C-%EC%95%BC%EB%B2%A0%EC%8A%A4",
+  "title": "복을 구한 야베스 — dev.log",
+  "removed_html": [
+    "<span class=\"devlog-rich__credit\">&middot; 생성 이미지</span>"
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "족보를 나타내는 종이와 흙 인형 행렬 사이에서 한 인물이 무릎을 꿇고, 종이가 넓은 땅으로 이어지는 모습을 만든 미니어처",
+      "complete": true,
+      "height": 720,
+      "width": 1280
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n복을 구한 야베스\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n일상더보기\n발행일\n2026-09-15 23:59\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "ee004de95158cd97df610079c9fe8869ce068f3f0d7e38c60cf96a61328dd442",
+  "submitted_sha256": "9118bd59441f0bc56e549c5cad403d85554bf8b74743ca7d3331fb7a3bfc2ebc",
+  "publication_slug": "복을-구한-야베스",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:45:07.846Z"
+}

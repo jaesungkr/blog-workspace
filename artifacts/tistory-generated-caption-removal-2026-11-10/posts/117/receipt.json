@@ -1,0 +1,31 @@
+{
+  "post_id": 117,
+  "public_url": "https://dop3n.tistory.com/117",
+  "title": "GLM-5.3-Flash 비교 - Ox Alpha 정체 공개 뒤 다시 본 성능과 가격",
+  "edited_at_utc": "2026-11-10T12:41:04.475288+00:00",
+  "removed_html": [
+    "<span class=\"devlog-rich__credit\">&middot; 생성 이미지</span>"
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview": {
+    "caption_retained": true,
+    "label_absent": true,
+    "image_loaded": true,
+    "image_width": 1280,
+    "image_height": 720
+  },
+  "publication_metadata": {
+    "visibility": "public",
+    "date": "2026-08-28 00:18",
+    "url_slug": "GLM-53-Flash-비교-Ox-Alpha-정체-공개-뒤-다시-본-성능과-가격",
+    "unchanged": true
+  },
+  "save_confirmation": "UI returned to https://dop3n.tistory.com/manage/posts/ after clicking 공개 발행",
+  "before_sha256": "a6588d4b2d6d3e31bfd852ffb43d58cec9972c28349333c29142b9becaa1ef93",
+  "submitted_sha256": "2e984d369642123aadb4fc8cf10df0fec395bae204344167e539a7a640ae2399"
+}

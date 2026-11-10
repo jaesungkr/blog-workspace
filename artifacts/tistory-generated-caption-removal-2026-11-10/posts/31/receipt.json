@@ -1,0 +1,38 @@
+{
+  "post_id": 31,
+  "public_url": "https://dop3n.tistory.com/entry/%ED%95%9C%EA%B5%AD%EC%9D%B8%EC%9D%80-%EB%82%98%ED%9D%98%EC%97%90-%ED%95%9C-%EB%B2%88-%EB%9D%BC%EB%A9%B4%EC%9D%84-%EB%A8%B9%EB%8A%94%EB%8B%A4-%EB%9D%BC%EB%A9%B4%EC%9D%98-%EC%97%AD%EC%82%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%98%A4%ED%95%B4",
+  "title": "한국인은 나흘에 한 번 라면을 먹는다 - 라면의 역사 그리고 오해 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"AI 생성 이미지 (ChatGPT)\"",
+      "after": "\"caption\":\"\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": true,
+      "height": 853,
+      "width": 1280
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n한국인은 나흘에 한 번 라면을 먹는다 - 라면의 역사 그리고 오해\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-07-03 23:00\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "016545c30efea628fcc13d58f61b5bb2abb04dc2a436acdb419e37afb84d49e5",
+  "submitted_sha256": "f62fcc32f9665f91584757b57147a65c1d686553c84d9ba7122d476af2e918b0",
+  "publication_slug": "한국인은-나흘에-한-번-라면을-먹는다-라면의-역사-그리고-오해",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:56:09.160Z"
+}

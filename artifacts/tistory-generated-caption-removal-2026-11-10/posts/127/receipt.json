@@ -1,0 +1,53 @@
+{
+  "post_id": 127,
+  "public_url": "https://dop3n.tistory.com/entry/GPT-6-Astra-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+  "title": "GPT-6 Astra vs. Fable 5.1 - AI 모델 비교 — dev.log",
+  "removed_html": [
+    "<span class=\"devlog-rich__credit\">&middot; 생성 이미지</span>"
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 4,
+  "native_image_count_after": 4,
+  "preview_images": [
+    {
+      "alt": "GPT-6 Astra의 금색 커서와 Fable 5.1의 보라색 문서 조형물을 같은 비중으로 배치한 비교 이미지",
+      "complete": true,
+      "height": 720,
+      "width": 1280
+    },
+    {
+      "alt": "검은 별 무늬 배경에 GPT와 Astra가 표시된 OpenAI 발표 화면",
+      "complete": true,
+      "height": 720,
+      "width": 1280
+    },
+    {
+      "alt": "푸른 하늘 배경에 Claude Fable 5.1과 Mythos 5.1이 표시된 출시 화면",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "과학 연구 작업 해결률을 세로축, API 비용을 가로축으로 표시한 Astra와 Fable 비교 그래프",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\nGPT-6 Astra vs. Fable 5.1 - AI 모델 비교\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\nIT 인터넷더보기\n발행일\n2026-09-06 10:53\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "db5f7d0f0605fc1cf4103411f425f6368fd18b24a46e4d42f619bc87715b67bf",
+  "submitted_sha256": "64c1dee27ed47226db1405caf89325abebde517b1573c05554d0db22e3f08f5a",
+  "publication_slug": "GPT-6-Astra-vs-Fable-51-AI-모델-비교",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:45:23.603Z"
+}

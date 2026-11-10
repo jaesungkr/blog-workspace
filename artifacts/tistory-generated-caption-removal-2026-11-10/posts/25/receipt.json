@@ -1,0 +1,38 @@
+{
+  "post_id": 25,
+  "public_url": "https://dop3n.tistory.com/entry/2026-%EC%9B%94%EB%93%9C%EC%BB%B5-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EB%8C%80-%EC%9D%BC%EB%B3%B8-2-1-%EC%9D%BC%EB%B3%B8-16%EA%B0%95-%EC%A2%8C%EC%A0%88",
+  "title": "2026 월드컵 브라질 대 일본 2-1, 일본 16강 좌절 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"Japan in World Cup - AI generated\"",
+      "after": "\"caption\":\"Japan in World Cup\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": true,
+      "height": 698,
+      "width": 1280
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n2026 월드컵 브라질 대 일본 2-1, 일본 16강 좌절\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-06-30 12:12\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "c1b2dff0dee5a61d22fda31278153fefcc7d9c41c00b1810b80a0b9d969ef8b7",
+  "submitted_sha256": "6aabfb39238d43d21426be3868a675c5a55ca6bb43cc62f1445884ca3d9e523a",
+  "publication_slug": "2026-월드컵-브라질-대-일본-2-1-일본-16강-좌절",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:58:01.549Z"
+}

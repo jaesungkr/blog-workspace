@@ -1,0 +1,388 @@
+<div class="contents_style"><div>
+<style>
+.devlog-dark-compatible {
+  --devlog-text: #333333;
+  --devlog-muted: #636366;
+  --devlog-link: #0066cc;
+  --devlog-border: #d1d1d6;
+  --devlog-soft-bg: #f5f5f7;
+  --devlog-code-bg: #f5f5f7;
+  --devlog-code-text: #2c2c2e;
+  color: var(--devlog-text);
+  color-scheme: light;
+}
+
+.dark .devlog-dark-compatible,
+[data-theme="dark"] .devlog-dark-compatible,
+.theme-dark .devlog-dark-compatible {
+  --devlog-text: #f2f2f7;
+  --devlog-muted: #aeaeb2;
+  --devlog-link: #64a8ff;
+  --devlog-border: #48484a;
+  --devlog-soft-bg: #2c2c2e;
+  --devlog-code-bg: #1c1c1e;
+  --devlog-code-text: #f2f2f7;
+  color-scheme: dark;
+}
+
+.devlog-dark-compatible :where(p, h2, h3, h4, h5, h6, span, b, strong, em, li, td, th, blockquote) {
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible :where(p, td, th) {
+  overflow-wrap: anywhere;
+}
+
+.devlog-dark-compatible a,
+.devlog-dark-compatible a[style] {
+  color: var(--devlog-link) !important;
+  text-decoration-color: currentColor;
+}
+
+.devlog-dark-compatible a :where(span, b, strong, em) {
+  color: inherit !important;
+}
+
+.devlog-dark-compatible table {
+  border-color: var(--devlog-border) !important;
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible th,
+.devlog-dark-compatible td {
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible tbody tr:first-child > :is(th, td) {
+  background: var(--devlog-soft-bg) !important;
+  font-weight: 700;
+}
+
+.devlog-dark-compatible .devlog-table-scroll {
+  max-width: 100%;
+  margin: 1em 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-dark-compatible .devlog-table-scroll > table {
+  width: max-content !important;
+  min-width: 640px;
+  margin: 0 !important;
+}
+
+.devlog-dark-compatible blockquote {
+  background: var(--devlog-soft-bg) !important;
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible pre,
+.devlog-dark-compatible pre[style] {
+  background: var(--devlog-code-bg) !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  border-color: var(--devlog-border) !important;
+  overflow-x: auto;
+}
+
+.devlog-dark-compatible pre code,
+.devlog-dark-compatible pre code[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+}
+
+.devlog-dark-compatible pre code *,
+.devlog-dark-compatible pre code *[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  text-shadow: none !important;
+}
+
+.devlog-dark-compatible :where(ul, ol) {
+  padding-left: 1.5em;
+}
+
+.devlog-dark-compatible ul {
+  list-style: disc outside !important;
+}
+
+.devlog-dark-compatible ol {
+  list-style: decimal outside !important;
+}
+
+.devlog-dark-compatible li {
+  display: list-item;
+}
+
+.devlog-dark-compatible li + li {
+  margin-top: 0.45em;
+}
+
+.devlog-dark-compatible :where(ul, ol) + p {
+  margin-top: 1em;
+}
+
+.devlog-dark-compatible li::marker {
+  color: var(--devlog-muted);
+}
+
+.devlog-dark-compatible img {
+  filter: none !important;
+}
+</style>
+</div>
+<article class="devlog-dark-compatible">
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16"><a href="https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48" target="_blank" rel="noopener">지난 글</a>에서 <span style="color: var(--devlog-text); text-align: start;">Sonnet 5와 Opus 4.8을 비교했습니다. 이번에는 그 위 체급입니다. Anthropic이 2026년 6월 9일 출시한 Claude Fable 5는 Opus 위에 새로 생긴 'Mythos 클래스'의 첫 일반 공개 모델입니다. 출시 3일 만에 미국 정부 수출통제로 전면 중단됐다가 7월 1일 복구되는 소동까지 겪었습니다.<span>&nbsp;</span></span></p>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">1. Fable 5는 무엇인가</h2>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="15:1-15:126;595-720" data-ke-size="size16"><b>정의.</b><span>&nbsp;</span>Fable 5는 Anthropic의 새 최상위 티어 'Mythos 클래스'를 일반 사용자가 쓸 수 있게 만든 모델입니다. 기존 Haiku &rarr; Sonnet &rarr; Opus 3단 사다리 위에 네 번째 단이 생겼습니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="17:1-17:70;722-791" data-ke-size="size16"><b>구조.</b><span>&nbsp;</span>Fable 5와 Mythos 5는 동일한 가중치를 공유합니다. 차이는 추론 시점에 붙는 안전 계층 하나입니다.</p>
+<ul style="list-style-type: disc; color: var(--devlog-text); text-align: start;" data-sourcepos="19:1-20:83;793-953" data-ke-list-type="disc">
+<li data-sourcepos="19:1-19:78;793-870"><b>Fable 5</b>: 사이버보안, 생물&middot;화학, 모델 증류(distillation) 영역에 안전 분류기를 적용한 일반 공개 버전입니다.</li>
+<li data-sourcepos="20:1-20:83;871-953"><b>Mythos 5</b>: 해당 안전장치를 일부 해제한 버전입니다. Project Glasswing을 통해 승인된 방어 보안 조직에만 제공합니다.</li>
+</ul>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="22:1-22:274;955-1228" data-ke-size="size16"><b>작동 원리.</b><span>&nbsp;</span>Fable 5의 분류기가 요청을 차단하면 모델이 거부로 끝나지 않고 Opus 4.8로 폴백해 답을 생성합니다. Anthropic은 이 전환이 전체 세션의 5% 미만에서 발생하고, 사용자에게 통지되며, 폴백 응답에는 Fable 요율이 아닌 Opus 요율이 청구된다고 밝혔습니다. API에서는 거부가 에러가 아니라 HTTP 200에<span>&nbsp;</span>stop_reason: "refusal"로 돌아오고,<span>&nbsp;</span>fallbacks<span>&nbsp;</span>파라미터(베타)로 서버 측 자동 재시도를 설정할 수 있습니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="24:1-24:105;1230-1334" data-ke-size="size16">이 구조가 이번 비교의 핵심 전제입니다. Fable 5를 쓴다는 것은 사실상 "Fable 5 + Opus 4.8 폴백" 조합을 쓴다는 뜻입니다. 두 모델은 양자택일이 아니라 한 쌍입니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">2. 타임라인</h2>
+<div class="devlog-table-scroll">
+<table style="color: var(--devlog-text); text-align: start; border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 13.023255%;">날짜</td>
+<td style="width: 86.860465%;">사건</td>
+</tr>
+<tr>
+<td style="width: 13.023255%;">6/9</td>
+<td style="width: 86.860465%;">Fable 5, Mythos 5 동시 출시</td>
+</tr>
+<tr>
+<td style="width: 13.023255%;">6/12</td>
+<td style="width: 86.860465%;">미국 정부 수출통제 발동. Amazon 연구진이 Fable 5 안전장치 우회 기법을 보고한 것이 계기. 실시간 국적 검증이 불가능해 Anthropic이 전 사용자 접근을 중단</td>
+</tr>
+<tr>
+<td style="width: 13.023255%;">6/30</td>
+<td style="width: 86.860465%;">수출통제 해제 발표. Anthropic 검증 결과, 보고된 우회로 노출된 행동은 방어적 보안 작업 수준이었고 동일 취약점 식별은 Opus 4.8, GPT-5.5 등 하위 모델도 가능했다. 해당 패턴을 차단하는 개선된 분류기를 추가 훈련</td>
+</tr>
+<tr>
+<td style="width: 13.023255%;">7/1</td>
+<td style="width: 86.860465%;">글로벌 재개. Pro/Max/Team/일부 Enterprise 플랜에서 주간 사용 한도의 50%까지 Fable 5 포함 제공</td>
+</tr>
+<tr>
+<td style="width: 13.023255%;">7/12</td>
+<td style="width: 86.860465%;">프로모션 종료. 이후 usage credit 방식으로 전환</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">3. 벤치마크: 격차는 난이도에 비례</h2>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">Anthropic 공식 발표와 독립 평가를 종합한 수치입니다.</p>
+<div class="devlog-table-scroll">
+<table style="color: var(--devlog-text); text-align: start; border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 24.302326%;">벤치마크</td>
+<td style="width: 11.744186%;">Fable 5</td>
+<td style="width: 15.697675%;">Opus 4.8</td>
+<td style="width: 48.139534%;">비고</td>
+</tr>
+<tr>
+<td style="width: 24.302326%;">SWE-bench Pro</td>
+<td style="width: 11.744186%;">80.3%</td>
+<td style="width: 15.697675%;">69.2%</td>
+<td style="width: 48.139534%;">GPT-5.5는 58.6%</td>
+</tr>
+<tr>
+<td style="width: 24.302326%;">FrontierCode Diamond</td>
+<td style="width: 11.744186%;">29.3%</td>
+<td style="width: 15.697675%;">13.4%</td>
+<td style="width: 48.139534%;">최고 난도 에이전틱 코딩. 2배 이상 격차</td>
+</tr>
+<tr>
+<td style="width: 24.302326%;">HLE (도구 사용)</td>
+<td style="width: 11.744186%;">64.5%</td>
+<td style="width: 15.697675%;">57.9%</td>
+<td style="width: 48.139534%;">지식 작업</td>
+</tr>
+<tr>
+<td style="width: 24.302326%;">Terminal-Bench 2.1</td>
+<td style="width: 11.744186%;">84.3</td>
+<td style="width: 15.697675%;">82.7</td>
+<td style="width: 48.139534%;">아래 해석 참조</td>
+</tr>
+<tr>
+<td style="width: 24.302326%;">GDPval-AA</td>
+<td style="width: 11.744186%;">1932 Elo</td>
+<td style="width: 15.697675%;">약 -42 Elo 차이</td>
+<td style="width: 48.139534%;">전문 지식노동. 리더보드 1위지만 격차는 좁음</td>
+</tr>
+<tr>
+<td style="width: 24.302326%;">Artificial Analysis Index</td>
+<td style="width: 11.744186%;">65</td>
+<td style="width: 15.697675%;">&mdash;</td>
+<td style="width: 48.139534%;">GPT-5.5(60), Gemini 3.1 Pro Preview(57)보다 높음</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16"><b>해석 시 유의점은 세 가지입니다.</b></p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="53:1-53:140;2359-2498" data-ke-size="size16">첫째, 격차는 균일하지 않습니다. 코딩, 특히 장기 에이전틱 작업에서 가장 크고, 지식노동(GDPval-AA)에서는 42 Elo 수준으로 좁습니다. Anthropic 스스로 "작업이 길고 복잡할수록 Fable 5의 우위가 커진다"고 프레이밍했습니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="55:1-55:138;2500-2637" data-ke-size="size16">둘째, 하네스 변경이 수치에 섞여 있습니다. Opus 4.8의 Terminal-Bench 점수는 하네스를 Terminus-2에서 mini-SWE-agent로 바꾸면서 74.6에서 82.7로 올랐습니다. 과거 기사와 단순 비교하면 오독하게 됩니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="57:1-57:164;2639-2802" data-ke-size="size16">셋째, 안전 분류기가 벤치마크 점수를 깎습니다. Terminal-Bench에서 Fable 5는 시행의 20.9%에서 안전 거부에 걸려 84.3을 기록했습니다. 동일 가중치인 Mythos 5는 88.0입니다. 즉 Fable 5의 순수 능력은 측정치보다 높고, 그 차이는 안전 계층의 비용입니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="59:1-59:84;2804-2887" data-ke-size="size16">대부분의 수치가 Anthropic 자체 발표 기반이라는 점도 남습니다. 방향성 지표로 취급하고, 자기 워크로드에서 검증한 뒤 전환하는 것이 맞습니다.</p>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-filename="ChatGPT Image 2026년 7월 8일 오후 11_18_42.png" data-origin-width="1536" data-origin-height="1024"><span data-url="https://blog.kakaocdn.net/dna/EmQu2/dJMcafUPo9e/AAAAAAAAAAAAAAAAAAAAAHYwYWb7b1wOPyLn4Fc0grgk8cUkYYJhtB4Ms3sbwdY6/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=6BEjUvwSgfkple4CsBEdSd811SU%3D" data-phocus="https://blog.kakaocdn.net/dna/EmQu2/dJMcafUPo9e/AAAAAAAAAAAAAAAAAAAAAHYwYWb7b1wOPyLn4Fc0grgk8cUkYYJhtB4Ms3sbwdY6/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=6BEjUvwSgfkple4CsBEdSd811SU%3D" data-alt="Fable 5 vs. Opus 4.8"><img src="https://blog.kakaocdn.net/dna/EmQu2/dJMcafUPo9e/AAAAAAAAAAAAAAAAAAAAAHYwYWb7b1wOPyLn4Fc0grgk8cUkYYJhtB4Ms3sbwdY6/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=6BEjUvwSgfkple4CsBEdSd811SU%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FEmQu2%2FdJMcafUPo9e%2FAAAAAAAAAAAAAAAAAAAAAHYwYWb7b1wOPyLn4Fc0grgk8cUkYYJhtB4Ms3sbwdY6%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D6BEjUvwSgfkple4CsBEdSd811SU%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="633" height="422" data-filename="ChatGPT Image 2026년 7월 8일 오후 11_18_42.png" data-origin-width="1536" data-origin-height="1024"/></span><figcaption>Fable 5 vs. Opus 4.8</figcaption>
+</figure>
+
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">4. 실전 테스트</h2>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16"><span style="color: var(--devlog-text); text-align: start;"><span style="color: var(--devlog-text); text-align: start;">단일 프롬프트 앱 빌드 대결: </span>동일 프롬프트, 동일 디자인 요구사항으로 헬스 대시보드 앱을 빌드시켰습니다. API 실시간 연동, 건강 추적, 문서 편집, 캘린더까지 포함한 과제입니다.</span></p>
+<div class="devlog-table-scroll">
+<table style="color: var(--devlog-text); text-align: start; border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>항목</td>
+<td>Fable 5</td>
+<td>Opus 4.8</td>
+</tr>
+<tr>
+<td>완료 시간</td>
+<td>약 30분</td>
+<td>1시간 이상</td>
+</tr>
+<tr>
+<td>토큰 사용량</td>
+<td>약 50,000</td>
+<td>약 2배</td>
+</tr>
+<tr>
+<td>안정성</td>
+<td>조용히 실행, 완주</td>
+<td>에러 발생, 크래시 반복</td>
+</tr>
+<tr>
+<td>디자인 시스템</td>
+<td>브랜딩&middot;타이포&middot;컬러&middot;UI 컴포넌트를 일관되게 생성</td>
+<td>장황한 중간 피드백, 결과물 응집력 부족</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16"><span style="color: var(--devlog-text); text-align: start;">주목할 지점은 속도의 역전입니다. Fable 5는 응답 하나하나는 느린 모델인데, 전체 작업은 절반 시간에 절반 토큰으로 끝냈습니다. 에러와 재시도가 없으면 총비용이 내려간다는 실증 사례입니다.</span></p>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">&nbsp;</p>
+<h3 style="color: var(--devlog-text); text-align: start;" data-ke-size="size23">반대 증거: 격차가 사라지는 경우</h3>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">The New Stack은 pandas 실제 이슈(#32265) 기반 추론 테스트와 코딩 테스트를 동일 프롬프트로 돌렸는데, 두 모델의 결과가 사실상 수렴했습니다. 청구서만 달랐습니다. 필자의 추정은 두 모델이 같은 회사, 같은 훈련 철학, 겹치는 데이터로 만들어진 형제 모델이라 잘 정의된 과제에서는 같은 패턴에 도달한다는 것입니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="106:1-106:168;4469-4636" data-ke-size="size16">같은 테스트에서 또 하나 중요한 관찰이 나왔습니다. Claude Code에서 Fable 5로 작업하던 중 안전 분류기에 걸려 세션이 Opus 4.8로 자동 전환됐고, 최종 결과물의 어느 부분을 어느 모델이 작성했는지 구분할 수 없었습니다. Fable 5 도입 시 실제로 마주하게 될 운영 특성입니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="108:1-108:122;4638-4759" data-ke-size="size16"><b>종합.</b><span>&nbsp;</span>잘 스코프된 단일 과제에서는 두 모델이 수렴합니다. 격차는 과제가 길어지고, 파일이 많아지고, 모델이 스스로 계획-실행-검증을 반복해야 할 때 벌어집니다. 벤치마크 패턴과 실전 테스트 패턴이 일치합니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="108:1-108:122;4638-4759" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">5. 비용 분석: 명목 2배 &ne; 실효 2배</h2>
+<div class="devlog-table-scroll">
+<table style="color: var(--devlog-text); text-align: start; border-collapse: collapse; width: 100%; height: 100px;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>항목</td>
+<td>Fable 5</td>
+<td>Opus 4.8</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;">입력 (per 1M tokens)</td>
+<td style="height: 18px;">$10</td>
+<td style="height: 18px;">$5</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;">출력 (per 1M tokens)</td>
+<td style="height: 18px;">$50</td>
+<td style="height: 18px;">$25</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;">컨텍스트 윈도우</td>
+<td style="height: 18px;">1M</td>
+<td style="height: 18px;">1M</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;">최대 출력</td>
+<td style="height: 18px;">128K</td>
+<td style="height: 18px;">&mdash;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;">데이터 보존</td>
+<td style="height: 18px;">30일 의무 (Covered Model)</td>
+<td style="height: 18px;">ZDR 지원</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">실효 비용은 두 방향으로 갈립니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="122:1-122:158;5011-5168" data-ke-size="size16"><b>비싸지는 경우.</b><span>&nbsp;</span>Fable 5는 복잡한 문제에서 사고 토큰을 더 쓰는 경향이 있습니다. 실제 과제 기준 실효 비용이 단가 차이(2배)를 넘어 3~5배가 된다는 관측이 있습니다. 단일 함수 리팩토링이나 짧은 질의처럼 Opus로 충분한 작업을 Fable에 주면 순수 낭비입니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="124:1-124:111;5170-5280" data-ke-size="size16"><b>싸지는 경우.</b><span>&nbsp;</span>AI Foundations 테스트처럼 Opus가 에러-재시도 루프에 빠지는 작업에서는 Fable 5가 절반 토큰으로 완주했습니다. 재시도 비용까지 합산하면 총비용이 역전됩니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="126:1-126:127;5282-5408" data-ke-size="size16">결론은 단가표가 아니라 완주율이 비용을 결정한다는 것입니다. 판단 기준을 이렇게 잡을 수 있습니다: Opus 4.8이 한 번에 완료하는 작업이면 Opus가 쌉니다. Opus가 두 번 이상 실패하는 작업이면 Fable이 쌉니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">6. 속도: 지연시간과 처리량을 분리해서 봐야 한다</h2>
+<ul style="list-style-type: disc; color: var(--devlog-text); text-align: start;" data-sourcepos="130:1-131:80;5444-5633" data-ke-list-type="disc">
+<li data-sourcepos="130:1-130:110;5444-5553"><b>응답 지연(latency)</b>: Opus 4.8이 코딩 과제에서 3~15초 수준일 때, Fable 5는 60초에서 수 분이 걸립니다. 멀티스텝 비동기 실행은 30분에서 수 시간까지 갑니다.</li>
+<li data-sourcepos="131:1-131:80;5554-5633"><b>총 처리 시간(throughput)</b>: 위 4-1 테스트처럼 복잡한 과제 전체로 보면 Fable 5가 절반 시간에 끝낼 수 있습니다.</li>
+</ul>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="133:1-133:227;5635-5861" data-ke-size="size16">이것은 버그가 아니라 설계 의도입니다. Fable 5는 확장된 사고, 도구 실행, 자체 검증, 반복 수정을 거친 뒤 응답하는 위임형 모델입니다. 대화형으로 쓰면 스피너만 보게 되고, 통째로 맡기는 방식으로 쓰면 설계 의도대로 작동합니다. 실무 팁 하나를 덧붙이면, Fable 5 작업은 서로 다른 문제 3~4개를 병렬로 걸어두고 첫 결과를 리뷰하는 동안 나머지가 완료되게 운용하면 대기 시간이 사라집니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="133:1-133:227;5635-5861" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">7. 도입 전 확인할 제약</h2>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16"><b>데이터 보존.</b><span>&nbsp;</span>Fable 5는 안전 분류기 운영을 위해 프롬프트&middot;출력의 30일 보존이 의무입니다(학습에는 사용하지 않음). ZDR(Zero Data Retention)이 불가능합니다. 소스코드나 개인정보에 ZDR을 요구하는 계약&middot;규제 환경이라면 벤치마크와 무관하게 Fable 5가 막힙니다. Opus 4.8은 ZDR을 지원합니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="139:1-139:199;6072-6270" data-ke-size="size16"><b>분류기 오탐.</b><span>&nbsp;</span>보안 연구, 생물&middot;화학, 취약점 분석에 가까운 워크로드는 일부 응답이 Opus 4.8 폴백으로 처리됩니다. 안티치트 업무처럼 리버싱&middot;탐지 우회 분석이 섞이는 도메인이라면 이 전환 빈도를 사전에 측정해볼 필요가 있습니다. 출시 직후 분류기가 과민하다는 평가(Karpathy 포함)가 있었고, 7월 복구판에는 개선 분류기가 추가됐습니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="141:1-141:124;6272-6395" data-ke-size="size16"><b>통합 변경.</b><span>&nbsp;</span>API 통합 시 세 가지가 바뀝니다:<span>&nbsp;</span>stop_reason: "refusal"<span>&nbsp;</span>처리, 다른 모델로의 재시도(서버 측<span>&nbsp;</span>fallbacks<span>&nbsp;</span>파라미터 또는 SDK 미들웨어), 폴백 시 과금 규칙입니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">8. 실행 가이드: 라우팅 전략</h2>
+<p style="color: var(--devlog-text); text-align: start;" data-ke-size="size16"><b>기본 규칙.</b><span>&nbsp;</span>검토 프로세스 하에서 작업을 안정적으로 완료하는 가장 싼 모델에서 시작합니다. Opus 4.8이 기본값입니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="147:1-147:22;6493-6514" data-ke-size="size16"><b>Fable 5로 승격하는 조건:</b></p>
+<ul style="list-style-type: disc; color: var(--devlog-text); text-align: start;" data-sourcepos="148:1-151:41;6515-6760" data-ke-list-type="disc">
+<li data-sourcepos="148:1-148:131;6515-6645">멀티파일 리팩토링, 대규모 마이그레이션 등 코드베이스 전체를 작업 기억에 유지해야 하는 과제 (Stripe는 5,000만 라인 Ruby 코드베이스 마이그레이션을 하루에 완료했다고 보고했습니다. 수작업 추정 2개월 이상 분량입니다)</li>
+<li data-sourcepos="149:1-149:36;6646-6681">모듈 경계를 넘는 디버깅 &mdash; 증상과 원인이 멀리 떨어진 경우</li>
+<li data-sourcepos="150:1-150:38;6682-6719">계획-실행-자체검증-반복을 무감독으로 돌리는 장시간 비동기 실행</li>
+<li data-sourcepos="151:1-151:41;6720-6760">Opus 4.8이 반복적으로 실패하거나 계획을 잃는 것이 확인된 과제</li>
+</ul>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="153:1-153:23;6762-6784" data-ke-size="size16"><b>Opus 4.8에 고정하는 조건:</b></p>
+<ul style="list-style-type: disc; color: var(--devlog-text); text-align: start;" data-sourcepos="154:1-157:20;6785-6896" data-ke-list-type="disc">
+<li data-sourcepos="154:1-154:29;6785-6813">잘 스코프된 일상 작업 (격차가 수렴하는 구간)</li>
+<li data-sourcepos="155:1-155:44;6814-6857">지연시간이 중요한 대화형&middot;고빈도 트래픽 (2배 단가가 볼륨으로 복리 증가)</li>
+<li data-sourcepos="156:1-156:19;6858-6876">ZDR이 계약 요건인 워크로드</li>
+<li data-sourcepos="157:1-157:20;6877-6896">분류기 오탐이 잦은 민감 도메인</li>
+</ul>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="159:1-159:141;6898-7038" data-ke-size="size16"><b>조건이 바뀌면 결론도 바뀝니다.</b><span>&nbsp;</span>Fable 5 단가가 인하되거나 ZDR이 열리면 승격 임계값이 내려갑니다. 반대로 워크로드가 짧은 과제 위주라면 상위 티어의 존재 자체가 무의미합니다. 이 판단은 벤치마크가 아니라 자기 작업 로그로 해야 합니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="159:1-159:141;6898-7038" data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">&nbsp;</h2>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">참고 자료</h2>
+<ul style="list-style-type: disc; color: var(--devlog-text); text-align: start;" data-ke-list-type="disc">
+<li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic &mdash; Claude Fable 5 and Claude Mythos 5</a></li>
+<li><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic &mdash; Redeploying Claude Fable 5</a></li>
+<li><a href="https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5">Claude Platform Docs &mdash; Introducing Claude Fable 5 and Claude Mythos 5</a></li>
+<li><a href="https://www.youtube.com/watch?v=r4AMAzNqZVc">AI Foundations &mdash; Claude Fable 5 vs Opus 4.8... this is insane</a></li>
+<li><a href="https://www.youtube.com/watch?v=1TNSJ1gLzFk">I Tested The Banned AI Model: Fable 5 vs Opus 4.8</a></li>
+<li><a href="https://www.youtube.com/watch?v=TzJCly4YgDQ">AI for Mortals &mdash; I Made Opus 4.8 and Fable 5 Build the Same App (RAW RESULTS)</a></li>
+<li><a href="https://www.youtube.com/watch?v=tB6MupMYQI0">Claude Fable 5: Better Than Opus 4.8?</a></li>
+<li><a href="https://thenewstack.io/fable-5-opus-comparison/">The New Stack &mdash; Fable 5 vs Opus 4.8: The real stakes, not the spec sheet</a></li>
+<li><a href="https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html">CNBC &mdash; Anthropic says Trump admin has lifted export controls</a></li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">상위 모델 비교</h2>
+<p data-ke-size="size16"><a href="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695" target="_blank" rel="noopener">Opus 5 vs Fable 5 - 클로드 모델 비교</a></p>
+<figure id="og_1784978177672" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="Opus 5 vs Fable 5 - 클로드 모델 비교" data-og-description="안녕하세요. dev.log입니다.지난달까지만 해도 Claude에서 가장 어려운 작업은 Fable 5에 맡기는 것이 자연스러웠습니다. 그런데 2026년 7월 24일 출시된 Opus 5가 여러 코딩&middot;지식 노동 벤치마크에서 Fable" data-og-host="dop3n.tistory.com" data-og-source-url="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695" data-og-url="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90" data-og-image="https://blog.kakaocdn.net/dna/b6pAgB/dJMb9bwfGQ5/AAAAAAAAAAAAAAAAAAAAAKW9KllhDS7g6kUhwdliB-OkrQvf6kzQEQfVMo0WtVOU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=hbEF76DUYR%2FMEZIBukWqzs8v%2BiY%3D"><a href="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695" target="_blank" rel="noopener" data-source-url="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695">
+<div class="og-image" style="background-image: url('https://blog.kakaocdn.net/dna/b6pAgB/dJMb9bwfGQ5/AAAAAAAAAAAAAAAAAAAAAKW9KllhDS7g6kUhwdliB-OkrQvf6kzQEQfVMo0WtVOU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=hbEF76DUYR%2FMEZIBukWqzs8v%2BiY%3D');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">Opus 5 vs Fable 5 - 클로드 모델 비교</p>
+<p class="og-desc" data-ke-size="size16">안녕하세요. dev.log입니다.지난달까지만 해도 Claude에서 가장 어려운 작업은 Fable 5에 맡기는 것이 자연스러웠습니다. 그런데 2026년 7월 24일 출시된 Opus 5가 여러 코딩&middot;지식 노동 벤치마크에서 Fable</p>
+<p class="og-host" data-ke-size="size16">dop3n.tistory.com</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">관련 글</h2>
+<p data-ke-size="size16"><a href="https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48" target="_blank" rel="noopener">Sonnet 5 vs. Opus 4.8 - 클로드 모델 비교</a></p>
+<figure id="og_1783521243884" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="Sonnet 5 vs Opus 4.8 - 클로드 모델 비교" data-og-description="Anthropic이 2026년 6월 30일 Claude Sonnet 5를 출시했습니다. 이 글은 Claude 공식 발표 및 여러 테스트 결과들을 종합하여 작성하였습니다. 이 글의 결론을 먼저 말하면 이렇습니다.대부분의 일상적 에이" data-og-host="dop3n.tistory.com" data-og-source-url="https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48" data-og-url="https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48" data-og-image="https://blog.kakaocdn.net/dna/LWc7N/dJMb85v0J2C/AAAAAAAAAAAAAAAAAAAAAHL7G1dqeU2Rxr0F4AiQD7e6ndmC2iHzCoyE2pQtNEUD/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=FzMeyKRk8XBYaf50pIPU%2Bf27icY%3D"><a href="https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48" target="_blank" rel="noopener" data-source-url="https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48">
+<div class="og-image" style="background-image: url('https://blog.kakaocdn.net/dna/LWc7N/dJMb85v0J2C/AAAAAAAAAAAAAAAAAAAAAHL7G1dqeU2Rxr0F4AiQD7e6ndmC2iHzCoyE2pQtNEUD/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=FzMeyKRk8XBYaf50pIPU%2Bf27icY%3D');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">Sonnet 5 vs Opus 4.8 - 클로드 모델 비교</p>
+<p class="og-desc" data-ke-size="size16">Anthropic이 2026년 6월 30일 Claude Sonnet 5를 출시했습니다. 이 글은 Claude 공식 발표 및 여러 테스트 결과들을 종합하여 작성하였습니다. 이 글의 결론을 먼저 말하면 이렇습니다.대부분의 일상적 에이</p>
+<p class="og-host" data-ke-size="size16">dop3n.tistory.com</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+</article></div>

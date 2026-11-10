@@ -1,0 +1,56 @@
+{
+  "post_id": 27,
+  "public_url": "https://dop3n.tistory.com/entry/%EC%83%88%EB%A7%88%EC%9D%84%EA%B8%88%EA%B3%A0-%EA%B3%A7-%EB%A7%9D%ED%95%9C%EB%8B%A4-%EA%B0%9C%EC%9D%B8%EC%9D%B4-%ED%99%95%EC%9D%B8%ED%95%A0-%EA%B1%B4-%EC%B6%9C%EC%9E%90%EA%B8%88%EC%9D%B4%EB%8B%A4",
+  "title": "새마을금고 곧 망한다? 개인이 확인할 건 출자금이다 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"AI 생성 이미지 (ChatGPT)\"",
+      "after": "\"caption\":\"\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 3,
+  "native_image_count_after": 3,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": true,
+      "height": 853,
+      "width": 1280
+    },
+    {
+      "alt": "",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n새마을금고 곧 망한다? 개인이 확인할 건 출자금이다\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-06-30 22:00\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "0ea4c6098163c46a948f5aa74353871552c90dd70e6fb3dcdf223be8785e9efc",
+  "submitted_sha256": "76dd737b9acf129d50591ead852f3548c077f077b50e48d0b70d4c93e53141ea",
+  "publication_slug": "새마을금고-곧-망한다-개인이-확인할-건-출자금이다",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:57:29.578Z"
+}

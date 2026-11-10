@@ -1,0 +1,122 @@
+<div class="contents_style"><p data-ke-size="size16">일론 머스크는 Grok 4.5를 공개하며 "Opus급 모델인데 더 빠르고, 토큰 효율이 좋고, 더 싸다"고 썼다. 하루 뒤 독립 평가 기관 Artificial Analysis가 매긴 순위는 168개 모델 중 4위. 주장의 절반은 숫자가 받쳐 주고, 나머지 절반은 과장이다.<span data-state="closed"></span></p>
+<p data-ke-size="size16">SpaceXAI(스페이스X가 xAI를 인수하며 재편한 AI 조직)는 현지 시간 7월 8일 Grok 4.5를 공개했다. 1.5조 파라미터의 새 V9 파운데이션 위에서, 코딩 에디터 Cursor와 함께 훈련한 모델이다. 벤치마크 순위표만 보면 평범한 4위지만, 가격이 메리트가 있다.<span data-state="closed"></span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">1. 헤드라인은 성능이 아니라 가격이다</h4>
+<p data-ke-size="size16">100만 토큰당 API 가격을 상위 모델과 비교하면 이렇다. Grok 4.5와 Opus 4.8은 각 사 공식 가격, GPT 5.6 Luna는 Axios 보도 기준이다.</p>
+<div>
+<table style="border-collapse: collapse; width: 100%; height: 72px;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr style="height: 21px;">
+<td style="height: 21px;">모델</td>
+<td style="height: 21px;">입력($/1M)</td>
+<td style="height: 21px;">출력($/1M)</td>
+</tr>
+<tr style="height: 17px;">
+<td style="height: 17px;">Grok 4.5</td>
+<td style="height: 17px;">2.00</td>
+<td style="height: 17px;">6.00</td>
+</tr>
+<tr style="height: 17px;">
+<td style="height: 17px;">Claude Opus 4.8</td>
+<td style="height: 17px;">5.00</td>
+<td style="height: 17px;">25.00</td>
+</tr>
+<tr style="height: 17px;">
+<td style="height: 17px;">GPT 5.6 Luna</td>
+<td style="height: 17px;">1.00</td>
+<td style="height: 17px;">6.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">출력 토큰 기준으로 Opus 4.8의 4분의 1 수준이다. 여기에 xAI는 토큰 효율을 얹는다. 자체 발표 기준으로 SWE-Bench Pro 과제 하나를 푸는 데 Grok 4.5는 평균 15,954 출력 토큰, Opus 4.8(max)은 67,020 토큰을 쓴다. <b>단가가 4분의 1인데 문제당 토큰도 4.2배 적게 쓴다는 주장이라, 성립한다면 체감 비용 격차는 가격표보다 훨씬 커진다.</b> 다만 이 효율 수치는 아직 xAI 자체 발표다.&nbsp;<span data-state="closed"></span></p>
+<p data-ke-size="size16">독립 집계는 방향이 같다. Artificial Analysis 기준 인텔리전스 인덱스 과제당 비용이 0.31달러로, 같은 지수에서 점수가 더 낮은 Claude Sonnet 5(max)의 5분의 1 수준이다. 전체 평가에서 생성한 토큰량도 6,000만 개로 평균(7,200만 개)보다 적었다.&nbsp;</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-filename="ChatGPT Image 2026년 7월 9일 오후 08_09_15.png" data-origin-width="1536" data-origin-height="1024"><span data-url="https://blog.kakaocdn.net/dna/bnv0n3/dJMcabSmoPp/AAAAAAAAAAAAAAAAAAAAAMZ0Jb1yheIn-xmNu8bUYs133hxfWEUbRbEb2yFWNFki/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=LxRNSdJUZnBrvl10%2FXX4tFxcLM8%3D" data-phocus="https://blog.kakaocdn.net/dna/bnv0n3/dJMcabSmoPp/AAAAAAAAAAAAAAAAAAAAAMZ0Jb1yheIn-xmNu8bUYs133hxfWEUbRbEb2yFWNFki/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=LxRNSdJUZnBrvl10%2FXX4tFxcLM8%3D" data-alt="Grok 4.5"><img src="https://blog.kakaocdn.net/dna/bnv0n3/dJMcabSmoPp/AAAAAAAAAAAAAAAAAAAAAMZ0Jb1yheIn-xmNu8bUYs133hxfWEUbRbEb2yFWNFki/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=LxRNSdJUZnBrvl10%2FXX4tFxcLM8%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbnv0n3%2FdJMcabSmoPp%2FAAAAAAAAAAAAAAAAAAAAAMZ0Jb1yheIn-xmNu8bUYs133hxfWEUbRbEb2yFWNFki%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DLxRNSdJUZnBrvl10%252FXX4tFxcLM8%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="713" height="475" data-filename="ChatGPT Image 2026년 7월 9일 오후 08_09_15.png" data-origin-width="1536" data-origin-height="1024"/></span><figcaption>Grok 4.5</figcaption>
+</figure>
+</p>
+<h4 data-ke-size="size20">2. 독립 평가 - 종합 4위, 에이전틱은 1위</h4>
+<p data-ke-size="size16">Artificial Analysis 인텔리전스 인덱스에서 Grok 4.5는 54점으로 4위다. 앞에는 Fable 5(60), Opus 4.8(56), GPT-5.5(55)뿐이다. 직전 모델 Grok 4.3의 38점에서 16점을 올렸고, 오픈웨이트 모델 전부와 구글 Gemini 라인업 전체를 넘어섰다.&nbsp;<span data-state="closed"></span></p>
+<p data-ke-size="size16">종합 점수보다 눈에 띄는 건 에이전틱(agentic - 모델이 도구를 호출하며 여러 단계 작업을 스스로 끝내는 방식) 계열이다.</p>
+<div>
+<table style="border-collapse: collapse; width: 100.465%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 41.3953%;">항목</td>
+<td style="width: 24.0795%;">Grok 4.5</td>
+<td style="width: 34.874%;">비교 대상</td>
+</tr>
+<tr>
+<td style="width: 41.3953%;">Intelligence Index</td>
+<td style="width: 24.0795%;">54 (4위)</td>
+<td style="width: 34.874%;">Fable 5 60 / Opus 4.8 56</td>
+</tr>
+<tr>
+<td style="width: 41.3953%;">GDPval-AA v2 (지식노동)</td>
+<td style="width: 24.0795%;">Elo 1543</td>
+<td style="width: 34.874%;">Opus 4.8 1600 / GPT-5.5 1494</td>
+</tr>
+<tr>
+<td style="width: 41.3953%;">&tau;&sup3;-Banking (에이전틱 CS)</td>
+<td style="width: 24.0795%;">33% (전체 1위)</td>
+<td style="width: 34.874%;">GPT-5.5 31%</td>
+</tr>
+<tr>
+<td style="width: 41.3953%;">AutomationBench-AA (SaaS 자동화)</td>
+<td style="width: 24.0795%;">51.4% (전체 1위)</td>
+<td style="width: 34.874%;">Fable 5 48.6% / Opus 4.8 48.5%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16"><b>은행 고객 응대 시나리오(&tau;&sup3;-Banking)와 실제 SaaS 워크플로 자동화(AutomationBench-AA) 두 벤치마크에서는 측정된 모든 모델 중 1위를 기록했고, AutomationBench에서는 처음으로 50% 선을 넘긴 모델이 됐다.</b> 코딩 에이전트 인덱스에서도 Grok Build(xAI의 Claude Code 대응 제품) 기준 76점으로 Codex의 GPT-5.5와 동률인데, 비용은 더 낮다.&nbsp;<span data-state="closed"></span></p>
+<p data-ke-size="size16">속도는 Artificial Analysis 측정 기준 초당 86.7토큰이고, 첫 토큰까지는 16.66초가 걸린다. 기본값이 고강도 추론(high)이라 응답 시작은 느린 편이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">3. 자체 차트에서도 '오퍼스 압승'은 아니다</h4>
+<p data-ke-size="size16">머스크의 "Opus급" 표현은 체급 설명으로는 맞다. 다만 xAI가 출시 페이지에 직접 올린 차트에서도 결과는 갈린다. 아래는 xAI 자체 발표 수치다.</p>
+<div>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 27.7907%;">벤치마크</td>
+<td style="width: 23.2558%;">Grok 4.5</td>
+<td style="width: 21.9768%;">Opus 4.8(max)</td>
+<td style="width: 26.9767%;">1위 모델</td>
+</tr>
+<tr>
+<td style="width: 27.7907%;">SWE Marathon</td>
+<td style="width: 23.2558%;">29.0%</td>
+<td style="width: 21.9768%;">26.0%</td>
+<td style="width: 26.9767%;">Grok 4.5</td>
+</tr>
+<tr>
+<td style="width: 27.7907%;">Terminal Bench 2.1</td>
+<td style="width: 23.2558%;">83.3%</td>
+<td style="width: 21.9768%;">78.9%</td>
+<td style="width: 26.9767%;">Fable 5 (84.3%)</td>
+</tr>
+<tr>
+<td style="width: 27.7907%;">SWE-Bench Pro</td>
+<td style="width: 23.2558%;">64.7%</td>
+<td style="width: 21.9768%;">69.2%</td>
+<td style="width: 26.9767%;">Fable 5 (80.4%)</td>
+</tr>
+<tr>
+<td style="width: 27.7907%;">DeepSWE 1.1</td>
+<td style="width: 23.2558%;">53%</td>
+<td style="width: 21.9768%;">59%</td>
+<td style="width: 26.9767%;">Fable 5 (70%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16"><b>자체 차트로도 Opus 4.8에 2승 2패이고, 5개 코딩 벤치마크 중 4개의 1위는 Fable 5다.</b> "오퍼스급"은 성립하지만 "오퍼스를 이겼다"는 xAI가 공개한 차트로도 온전히 성립하지 않고, 이 수치들은 아직 제3자 검증 전의 자체 발표라는 점도 남는다.<span data-state="closed"></span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">4. 아는 건 늘었는데 틀릴 때 더 당당해졌다</h4>
+<p data-ke-size="size16">약점도 뚜렷하다. Artificial Analysis의 지식 평가(AA-Omniscience)에서 정확도는 35%에서 52%로 올랐지만, 환각률(hallucination - 모르는 내용을 아는 것처럼 답하는 비율)은 25%에서 54%로 뛰었다. 모델이 커지면 아는 것도 늘지만 자기 지식을 과신하는 경향도 함께 커지는 패턴인데, 이번 릴리스도 그대로 따라갔다. 코딩 에이전트로 쓸 때보다, 사실 확인이 필요한 리서치 용도로 쓸 때 걸리는 대목이다.<span data-state="closed"></span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20">5. 이 모델의 정체성은 Cursor다</h4>
+<p data-ke-size="size16">Grok 4.5를 둘러싼 배경이 모델 자체만큼 흥미롭다.</p>
+<p data-ke-size="size16">스페이스X는 2026년 2월 xAI를 흡수해 SpaceXAI로 재편했고, 6월에는 코딩 에디터 Cursor를 600억 달러에 인수하기로 합의했다. Grok 4.5는 상장과 Cursor 인수 이후 나온 첫 모델이다. 훈련 방식이 그 인수의 결과물이다. <b>정적인 코드 데이터가 아니라 Cursor의 실제 개발자 세션 데이터, 즉 디버깅 흐름, 여러 파일에 걸친 수정 내역, 사용자가 AI 출력을 고친 기록을 보강 훈련에 넣었다.</b> 대부분의 코딩 모델이 학습하는 신호와 결이 다르다.&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">써 보고 싶은 마음과 못 미더운 마음이 반반이다. 이 가격에 이 정도 성능이면 코딩 에이전트로는 충분히 매력적인데, 모델이 커지면서 환각률이 25%에서 54%로 뛰었다는 대목이.. 자신 있게 틀리는 모델만큼 골치 아픈 게 없다.</p></div>

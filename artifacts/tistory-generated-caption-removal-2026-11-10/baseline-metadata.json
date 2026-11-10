@@ -1,0 +1,654 @@
+[
+  {
+    "post_id": 132,
+    "title": "9월 제철 과일 추천 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/9%EC%9B%94-%EC%A0%9C%EC%B2%A0-%EA%B3%BC%EC%9D%BC-%EC%B6%94%EC%B2%9C",
+    "publication_metadata": {
+      "article:published_time": "2026-09-17T00:14:11+09:00",
+      "og:regDate": "20260916115855",
+      "article:modified_time": "2026-10-24T20:57:00+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 9. 17. 00:14"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.10"
+      },
+      {
+        "class": "date",
+        "text": "2026.10.28"
+      }
+    ]
+  },
+  {
+    "post_id": 131,
+    "title": "복을 구한 야베스 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EB%B3%B5%EC%9D%84-%EA%B5%AC%ED%95%9C-%EC%95%BC%EB%B2%A0%EC%8A%A4",
+    "publication_metadata": {
+      "article:published_time": "2026-09-15T23:59:19+09:00",
+      "og:regDate": "20260915115919",
+      "article:modified_time": "2026-10-24T11:10:42+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 9. 15. 23:59"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.29"
+      },
+      {
+        "class": "date",
+        "text": "2026.10.28"
+      }
+    ]
+  },
+  {
+    "post_id": 127,
+    "title": "GPT-6 Astra vs. Fable 5.1 - AI 모델 비교 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/GPT-6-Astra-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+    "publication_metadata": {
+      "article:published_time": "2026-09-06T10:53:39+09:00",
+      "og:regDate": "20260906100013",
+      "article:modified_time": "2026-10-30T22:17:08+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 9. 6. 10:53"
+      },
+      {
+        "class": "date",
+        "text": "2026.09.03"
+      },
+      {
+        "class": "date",
+        "text": "2026.09.23"
+      }
+    ]
+  },
+  {
+    "post_id": 126,
+    "title": "Fable 5.1 vs Fable 5 - 클로드 모델 비교 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/Fable-51-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+    "publication_metadata": {
+      "article:published_time": "2026-09-03T00:47:59+09:00",
+      "og:regDate": "20260903122449",
+      "article:modified_time": "2026-10-24T12:32:12+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 9. 3. 00:47"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.28"
+      },
+      {
+        "class": "date",
+        "text": "2026.09.06"
+      }
+    ]
+  },
+  {
+    "post_id": 120,
+    "title": "세관에서 부름받은 마태 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%84%B8%EA%B4%80%EC%97%90%EC%84%9C-%EB%B6%80%EB%A6%84%EB%B0%9B%EC%9D%80-%EB%A7%88%ED%83%9C",
+    "publication_metadata": {
+      "article:published_time": "2026-08-29T00:05:51+09:00",
+      "og:regDate": "20260828110642",
+      "article:modified_time": "2026-10-24T12:33:11+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 29. 00:05"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.16"
+      },
+      {
+        "class": "date",
+        "text": "2026.09.15"
+      }
+    ]
+  },
+  {
+    "post_id": 117,
+    "title": "GLM-5.3-Flash 비교 - Ox Alpha 정체 공개 뒤 다시 본 성능과 가격 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/GLM-53-Flash-%EB%B9%84%EA%B5%90-Ox-Alpha-%EC%A0%95%EC%B2%B4-%EA%B3%B5%EA%B0%9C-%EB%92%A4-%EB%8B%A4%EC%8B%9C-%EB%B3%B8-%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B0%80%EA%B2%A9",
+    "publication_metadata": {
+      "article:published_time": "2026-08-28T00:18:54+09:00",
+      "og:regDate": "20260827105532",
+      "article:modified_time": "2026-10-24T12:33:33+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 28. 00:18"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.25"
+      },
+      {
+        "class": "date",
+        "text": "2026.09.03"
+      }
+    ]
+  },
+  {
+    "post_id": 113,
+    "title": "세계 로봇 기업 지도: 누가 무엇을 잘하고 어디까지 왔나 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%84%B8%EA%B3%84-%EB%A1%9C%EB%B4%87-%EA%B8%B0%EC%97%85-%EC%A7%80%EB%8F%84-%EB%88%84%EA%B0%80-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%9E%98%ED%95%98%EA%B3%A0-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%99%94%EB%82%98",
+    "publication_metadata": {
+      "article:published_time": "2026-08-22T21:32:51+09:00",
+      "og:regDate": "20260822084655",
+      "article:modified_time": "2026-10-24T12:33:54+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 22. 21:32"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.21"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.29"
+      }
+    ]
+  },
+  {
+    "post_id": 110,
+    "title": "중국 AI가 만만치 않은 이유 - 딥시크 이후 넓어진 경쟁 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%A4%91%EA%B5%AD-AI%EA%B0%80-%EB%A7%8C%EB%A7%8C%EC%B9%98-%EC%95%8A%EC%9D%80-%EC%9D%B4%EC%9C%A0-%EB%94%A5%EC%8B%9C%ED%81%AC-%EC%9D%B4%ED%9B%84-%EB%84%93%EC%96%B4%EC%A7%84-%EA%B2%BD%EC%9F%81",
+    "publication_metadata": {
+      "article:published_time": "2026-08-21T17:51:10+09:00",
+      "og:regDate": "20260821053521",
+      "article:modified_time": "2026-10-24T12:35:31+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 21. 17:51"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.09"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.22"
+      }
+    ]
+  },
+  {
+    "post_id": 103,
+    "title": "물가는 올랐는데 무엇이 가장 비싸졌을까? 생활물가 144개 품목 분석 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EB%AC%BC%EA%B0%80%EB%8A%94-%EC%98%AC%EB%9E%90%EB%8A%94%EB%8D%B0-%EB%AC%B4%EC%97%87%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EB%B9%84%EC%8B%B8%EC%A1%8C%EC%9D%84%EA%B9%8C-%EC%83%9D%ED%99%9C%EB%AC%BC%EA%B0%80-144%EA%B0%9C-%ED%92%88%EB%AA%A9-%EB%B6%84%EC%84%9D",
+    "publication_metadata": {
+      "article:published_time": "2026-08-17T23:54:25+09:00",
+      "og:regDate": "20260817111810",
+      "article:modified_time": "2026-10-24T12:38:00+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 17. 23:54"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.09"
+      },
+      {
+        "class": "date",
+        "text": "2026.10.28"
+      }
+    ]
+  },
+  {
+    "post_id": 102,
+    "title": "나무에 올라간 삭개오 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EB%82%98%EB%AC%B4%EC%97%90-%EC%98%AC%EB%9D%BC%EA%B0%84-%EC%82%AD%EA%B0%9C%EC%98%A4",
+    "publication_metadata": {
+      "article:published_time": "2026-08-16T02:22:49+09:00",
+      "og:regDate": "20260815085940",
+      "article:modified_time": "2026-10-24T12:38:17+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 16. 02:22"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.30"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.29"
+      }
+    ]
+  },
+  {
+    "post_id": 96,
+    "title": "참 크래커는 저칼로리일까? 담백한 크래커의 칼로리 읽는 법 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%B0%B8-%ED%81%AC%EB%9E%98%EC%BB%A4%EB%8A%94-%EC%A0%80%EC%B9%BC%EB%A1%9C%EB%A6%AC%EC%9D%BC%EA%B9%8C-%EB%8B%B4%EB%B0%B1%ED%95%9C-%ED%81%AC%EB%9E%98%EC%BB%A4%EC%9D%98-%EC%B9%BC%EB%A1%9C%EB%A6%AC-%EC%9D%BD%EB%8A%94-%EB%B2%95",
+    "publication_metadata": {
+      "article:published_time": "2026-08-10T18:15:49+09:00",
+      "og:regDate": "20260810052837",
+      "article:modified_time": "2026-10-24T20:57:00+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 10. 18:15"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.09"
+      },
+      {
+        "class": "date",
+        "text": "2026.09.17"
+      }
+    ]
+  },
+  {
+    "post_id": 89,
+    "title": "1인 가구 800만 시대, 혼자 사는 삶이 바꾼 한국의 일상 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/1%EC%9D%B8-%EA%B0%80%EA%B5%AC-800%EB%A7%8C-%EC%8B%9C%EB%8C%80-%ED%98%BC%EC%9E%90-%EC%82%AC%EB%8A%94-%EC%82%B6%EC%9D%B4-%EB%B0%94%EA%BE%BC-%ED%95%9C%EA%B5%AD%EC%9D%98-%EC%9D%BC%EC%83%81",
+    "publication_metadata": {
+      "article:published_time": "2026-08-09T03:31:01+09:00",
+      "og:regDate": "20260809033101",
+      "article:modified_time": "2026-10-24T21:00:02+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 9. 03:31"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.26"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.09"
+      }
+    ]
+  },
+  {
+    "post_id": 87,
+    "title": "하나님은 정말 일하고 계신가 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%80-%EC%A0%95%EB%A7%90-%EC%9D%BC%ED%95%98%EA%B3%A0-%EA%B3%84%EC%8B%A0%EA%B0%80",
+    "publication_metadata": {
+      "article:published_time": "2026-08-08T22:16:22+09:00",
+      "og:regDate": "20260808101622",
+      "article:modified_time": "2026-10-24T12:42:16+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 8. 8. 22:16"
+      },
+      {
+        "class": "date",
+        "text": "2026.06.22"
+      },
+      {
+        "class": "date",
+        "text": "2026.08.19"
+      }
+    ]
+  },
+  {
+    "post_id": 44,
+    "title": "파이썬 람다의 원조, Lisp - AutoCAD가 40년째 쓰는 괄호의 언어 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%9E%8C%EB%8B%A4%EC%9D%98-%EC%9B%90%EC%A1%B0-Lisp-AutoCAD%EA%B0%80-40%EB%85%84%EC%A7%B8-%EC%93%B0%EB%8A%94-%EA%B4%84%ED%98%B8%EC%9D%98-%EC%96%B8%EC%96%B4",
+    "publication_metadata": {
+      "article:published_time": "2026-07-11T23:46:04+09:00",
+      "og:regDate": "20260711114604",
+      "article:modified_time": "2026-10-24T21:00:17+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 11. 23:46"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.06"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.16"
+      }
+    ]
+  },
+  {
+    "post_id": 43,
+    "title": "SpaceXAI의 첫 작품 - Grok 4.5 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/SpaceXAI%EC%9D%98-%EC%B2%AB-%EC%9E%91%ED%92%88-Grok-45",
+    "publication_metadata": {
+      "article:published_time": "2026-07-09T20:11:05+09:00",
+      "og:regDate": "20260709081105",
+      "article:modified_time": "2026-07-18T16:56:49+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 9. 20:11"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.09"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.17"
+      }
+    ]
+  },
+  {
+    "post_id": 42,
+    "title": "OpenAI GPT-Live - 음성 AI가 드디어 \"대화\"를 배웠다 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/OpenAI-GPT-Live-%EC%9D%8C%EC%84%B1-AI%EA%B0%80-%EB%93%9C%EB%94%94%EC%96%B4-%EB%8C%80%ED%99%94%EB%A5%BC-%EB%B0%B0%EC%9B%A0%EB%8B%A4",
+    "publication_metadata": {
+      "article:published_time": "2026-07-09T13:39:46+09:00",
+      "og:regDate": "20260709013946",
+      "article:modified_time": "2026-07-18T16:57:02+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 9. 13:39"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.08"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.09"
+      }
+    ]
+  },
+  {
+    "post_id": 41,
+    "title": "Fable 5 vs Opus 4.8 - 클로드 모델 비교 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/Fable-5-vs-Opus-48-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+    "publication_metadata": {
+      "article:published_time": "2026-07-08T23:25:07+09:00",
+      "og:regDate": "20260708112507",
+      "article:modified_time": "2026-09-29T01:00:06+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 8. 23:25"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.04"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.13"
+      }
+    ]
+  },
+  {
+    "post_id": 38,
+    "title": "개발자들이 Sonnet 모델에 집착하는 이유 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4-Sonnet-%EB%AA%A8%EB%8D%B8%EC%97%90-%EC%A7%91%EC%B0%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+    "publication_metadata": {
+      "article:published_time": "2026-07-07T15:34:06+09:00",
+      "og:regDate": "20260707033406",
+      "article:modified_time": "2026-07-18T16:57:52+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 7. 15:34"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.01"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.08"
+      }
+    ]
+  },
+  {
+    "post_id": 35,
+    "title": "팔란티어 기술 분석 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%ED%8C%94%EB%9E%80%ED%8B%B0%EC%96%B4-%EA%B8%B0%EC%88%A0-%EB%B6%84%EC%84%9D",
+    "publication_metadata": {
+      "article:published_time": "2026-07-05T21:23:59+09:00",
+      "og:regDate": "20260705092359",
+      "article:modified_time": "2026-10-24T21:00:42+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 5. 21:23"
+      },
+      {
+        "class": "date",
+        "text": "2026.06.11"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.06"
+      }
+    ]
+  },
+  {
+    "post_id": 34,
+    "title": "유대인이 똑똑한 이유 - 역사가 만든 0.2%의 생존 전략 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%9C%A0%EB%8C%80%EC%9D%B8%EC%9D%B4-%EB%98%91%EB%98%91%ED%95%9C-%EC%9D%B4%EC%9C%A0-%EC%97%AD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A0-02%EC%9D%98-%EC%83%9D%EC%A1%B4-%EC%A0%84%EB%9E%B5",
+    "publication_metadata": {
+      "article:published_time": "2026-07-05T01:22:51+09:00",
+      "og:regDate": "20260705012251",
+      "article:modified_time": "2026-10-24T21:00:45+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 5. 01:22"
+      },
+      {
+        "class": "date",
+        "text": "2026.06.30"
+      }
+    ]
+  },
+  {
+    "post_id": 32,
+    "title": "Sonnet 5 vs Opus 4.8 - 클로드 모델 비교 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48",
+    "publication_metadata": {
+      "article:published_time": "2026-07-04T01:01:56+09:00",
+      "og:regDate": "20260704010156",
+      "article:modified_time": "2026-09-29T01:06:06+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 4. 01:01"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.02"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.08"
+      }
+    ]
+  },
+  {
+    "post_id": 31,
+    "title": "한국인은 나흘에 한 번 라면을 먹는다 - 라면의 역사 그리고 오해 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%ED%95%9C%EA%B5%AD%EC%9D%B8%EC%9D%80-%EB%82%98%ED%9D%98%EC%97%90-%ED%95%9C-%EB%B2%88-%EB%9D%BC%EB%A9%B4%EC%9D%84-%EB%A8%B9%EB%8A%94%EB%8B%A4-%EB%9D%BC%EB%A9%B4%EC%9D%98-%EC%97%AD%EC%82%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%98%A4%ED%95%B4",
+    "publication_metadata": {
+      "article:published_time": "2026-07-03T23:00:19+09:00",
+      "og:regDate": "20260703110019",
+      "article:modified_time": "2026-10-24T20:57:00+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 3. 23:00"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.18"
+      }
+    ]
+  },
+  {
+    "post_id": 30,
+    "title": "오픈웨이트 LLM 모델 VibeThinker-3B와 Qwen3-4B-Thinking 비교 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%98%A4%ED%94%88%EC%9B%A8%EC%9D%B4%ED%8A%B8-LLM-%EB%AA%A8%EB%8D%B8-VibeThinker-3B%EC%99%80-Qwen3-4B-Thinking-%EB%B9%84%EA%B5%90",
+    "publication_metadata": {
+      "article:published_time": "2026-07-02T23:52:18+09:00",
+      "og:regDate": "20260702115218",
+      "article:modified_time": "2026-07-18T17:00:30+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 2. 23:52"
+      },
+      {
+        "class": "date",
+        "text": "2026.06.25"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.04"
+      }
+    ]
+  },
+  {
+    "post_id": 29,
+    "title": "코스닥 30주년 개편안 정리: 상장폐지 88곳·동전주 퇴출·셀렉트 승강제 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%BD%94%EC%8A%A4%EB%8B%A5-30%EC%A3%BC%EB%85%84-%EA%B0%9C%ED%8E%B8%EC%95%88-%EC%A0%95%EB%A6%AC-%EC%83%81%EC%9E%A5%ED%8F%90%EC%A7%80-88%EA%B3%B3%C2%B7%EB%8F%99%EC%A0%84%EC%A3%BC-%ED%87%B4%EC%B6%9C%C2%B7%EC%85%80%EB%A0%89%ED%8A%B8-%EC%8A%B9%EA%B0%95%EC%A0%9C",
+    "publication_metadata": {
+      "article:published_time": "2026-07-01T23:00:49+09:00",
+      "og:regDate": "20260701110049",
+      "article:modified_time": "2026-07-18T17:00:40+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 1. 23:00"
+      },
+      {
+        "class": "date",
+        "text": "2026.06.30"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.26"
+      }
+    ]
+  },
+  {
+    "post_id": 28,
+    "title": "구글에 8496억 과징금 예고, 공정위 앱마켓 제재 총정리 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EA%B5%AC%EA%B8%80%EC%97%90-8496%EC%96%B5-%EA%B3%BC%EC%A7%95%EA%B8%88-%EC%98%88%EA%B3%A0-%EA%B3%B5%EC%A0%95%EC%9C%84-%EC%95%B1%EB%A7%88%EC%BC%93-%EC%A0%9C%EC%9E%AC-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+    "publication_metadata": {
+      "article:published_time": "2026-07-01T14:00:49+09:00",
+      "og:regDate": "20260701020049",
+      "article:modified_time": "2026-07-18T17:00:58+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 7. 1. 14:00"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.07"
+      }
+    ]
+  },
+  {
+    "post_id": 27,
+    "title": "새마을금고 곧 망한다? 개인이 확인할 건 출자금이다 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EC%83%88%EB%A7%88%EC%9D%84%EA%B8%88%EA%B3%A0-%EA%B3%A7-%EB%A7%9D%ED%95%9C%EB%8B%A4-%EA%B0%9C%EC%9D%B8%EC%9D%B4-%ED%99%95%EC%9D%B8%ED%95%A0-%EA%B1%B4-%EC%B6%9C%EC%9E%90%EA%B8%88%EC%9D%B4%EB%8B%A4",
+    "publication_metadata": {
+      "article:published_time": "2026-06-30T22:00:22+09:00",
+      "og:regDate": "20260630100022",
+      "article:modified_time": "2026-09-29T01:08:34+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 6. 30. 22:00"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.01"
+      }
+    ]
+  },
+  {
+    "post_id": 26,
+    "title": "김일성 사진 찢고 탈모 조롱까지 - 34년 만에 공개된 남북 핵협상 회의록 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/%EA%B9%80%EC%9D%BC%EC%84%B1-%EC%82%AC%EC%A7%84-%EC%B0%A2%EA%B3%A0-%ED%83%88%EB%AA%A8-%EC%A1%B0%EB%A1%B1%EA%B9%8C%EC%A7%80-34%EB%85%84-%EB%A7%8C%EC%97%90-%EA%B3%B5%EA%B0%9C%EB%90%9C-%EB%82%A8%EB%B6%81-%ED%95%B5%ED%98%91%EC%83%81-%ED%9A%8C%EC%9D%98%EB%A1%9D",
+    "publication_metadata": {
+      "article:published_time": "2026-06-30T14:38:56+09:00",
+      "og:regDate": "20260630023856",
+      "article:modified_time": "2026-10-24T21:00:45+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 6. 30. 14:38"
+      },
+      {
+        "class": "date",
+        "text": "2026.06.30"
+      },
+      {
+        "class": "date",
+        "text": "2026.07.05"
+      }
+    ]
+  },
+  {
+    "post_id": 25,
+    "title": "2026 월드컵 브라질 대 일본 2-1, 일본 16강 좌절 — dev.log",
+    "canonical": "https://dop3n.tistory.com/entry/2026-%EC%9B%94%EB%93%9C%EC%BB%B5-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EB%8C%80-%EC%9D%BC%EB%B3%B8-2-1-%EC%9D%BC%EB%B3%B8-16%EA%B0%95-%EC%A2%8C%EC%A0%88",
+    "publication_metadata": {
+      "article:published_time": "2026-06-30T12:12:56+09:00",
+      "og:regDate": "20260630121256",
+      "article:modified_time": "2026-10-24T21:00:45+09:00"
+    },
+    "time_elements": [
+      {
+        "class": "date",
+        "text": "2026. 6. 30. 12:12"
+      },
+      {
+        "class": "date",
+        "text": "2026.06.30"
+      }
+    ]
+  }
+]

@@ -1,0 +1,392 @@
+<div class="contents_style"><div>
+<style>
+.devlog-dark-compatible {
+  --devlog-text: #333333;
+  --devlog-muted: #636366;
+  --devlog-link: #0066cc;
+  --devlog-border: #d1d1d6;
+  --devlog-soft-bg: #f5f5f7;
+  --devlog-code-bg: #f5f5f7;
+  --devlog-code-text: #2c2c2e;
+  color: var(--devlog-text);
+  color-scheme: light;
+}
+
+.dark .devlog-dark-compatible,
+[data-theme="dark"] .devlog-dark-compatible,
+.theme-dark .devlog-dark-compatible {
+  --devlog-text: #f2f2f7;
+  --devlog-muted: #aeaeb2;
+  --devlog-link: #64a8ff;
+  --devlog-border: #48484a;
+  --devlog-soft-bg: #2c2c2e;
+  --devlog-code-bg: #1c1c1e;
+  --devlog-code-text: #f2f2f7;
+  color-scheme: dark;
+}
+
+.devlog-dark-compatible :where(p, h2, h3, h4, h5, h6, span, b, strong, em, li, td, th, blockquote) {
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible :where(p, td, th) {
+  overflow-wrap: anywhere;
+}
+
+.devlog-dark-compatible a,
+.devlog-dark-compatible a[style] {
+  color: var(--devlog-link) !important;
+  text-decoration-color: currentColor;
+}
+
+.devlog-dark-compatible a :where(span, b, strong, em) {
+  color: inherit !important;
+}
+
+.devlog-dark-compatible table {
+  border-color: var(--devlog-border) !important;
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible th,
+.devlog-dark-compatible td {
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible tbody tr:first-child > :is(th, td) {
+  background: var(--devlog-soft-bg) !important;
+  font-weight: 700;
+}
+
+.devlog-dark-compatible .devlog-table-scroll {
+  max-width: 100%;
+  margin: 1em 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-dark-compatible .devlog-table-scroll > table {
+  width: max-content !important;
+  min-width: 640px;
+  margin: 0 !important;
+}
+
+.devlog-dark-compatible blockquote {
+  background: var(--devlog-soft-bg) !important;
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible pre,
+.devlog-dark-compatible pre[style] {
+  background: var(--devlog-code-bg) !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  border-color: var(--devlog-border) !important;
+  overflow-x: auto;
+}
+
+.devlog-dark-compatible pre code,
+.devlog-dark-compatible pre code[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+}
+
+.devlog-dark-compatible pre code *,
+.devlog-dark-compatible pre code *[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  text-shadow: none !important;
+}
+
+.devlog-dark-compatible :where(ul, ol) {
+  padding-left: 1.5em;
+}
+
+.devlog-dark-compatible ul {
+  list-style: disc outside !important;
+}
+
+.devlog-dark-compatible ol {
+  list-style: decimal outside !important;
+}
+
+.devlog-dark-compatible li {
+  display: list-item;
+}
+
+.devlog-dark-compatible li + li {
+  margin-top: 0.45em;
+}
+
+.devlog-dark-compatible :where(ul, ol) + p {
+  margin-top: 1em;
+}
+
+.devlog-dark-compatible li::marker {
+  color: var(--devlog-muted);
+}
+
+.devlog-dark-compatible img {
+  filter: none !important;
+}
+</style>
+</div>
+<article class="devlog-dark-compatible">
+<p data-ke-size="size16">Anthropic이 2026년 6월 30일 Claude Sonnet 5를 출시했습니다. 이 글은 Claude 공식 발표 및 여러 테스트 결과들을 종합하여 작성하였습니다. 이 글의 결론을 먼저 말하면 이렇습니다.</p>
+<blockquote data-sourcepos="5:1-5:169;168-336" data-ke-style="style2">
+<p data-sourcepos="5:3-5:169;170-336" data-ke-size="size16">대부분의 일상적 에이전트/코딩 작업은 Sonnet 5로 써도 된다. <br />다만 (1) 난도 높은 대규모 코딩, (2) 자동화, (3) 지연 시간이 중요한 작업에서는 Opus 4.8이 여전히 우위이고, 경우에 따라 총비용조차 Opus가 더 쌀 수 있다.</p>
+</blockquote>
+<p data-ke-size="size16">"무조건 한 모델이 이득"이라는 단순한 이야기가 아닙니다. 토크나이저 변경, effort 레벨, 실사용 속도 문제까지 포함해서 판단 근거를 정리합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">1. 포지셔닝: Sonnet 5는 어떤 모델인가</h2>
+<p data-ke-size="size16">Anthropic 라인업은 위에서부터 Fable/Mythos 5 &rarr; Opus 4.8 &rarr; Sonnet 5 &rarr; Haiku 4.5 순입니다. Sonnet은 전통적으로 "가성비 중간 티어"였는데, 직전 모델 Sonnet 4.6은 Opus 4.8과의 격차가 컸습니다. Sonnet 5는 이 격차를 좁히는 것이 목적입니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>출시일: 2026년 6월 30일</li>
+<li>API 모델 ID:&nbsp;claude-sonnet-5</li>
+<li>컨텍스트 윈도우: 1M 토큰 (Opus 4.8과 동일)</li>
+<li>최대 출력: 128K 토큰 (Opus 4.8과 동일)</li>
+<li>지식 컷오프: 2026년 1월 (Opus 4.8과 동일)</li>
+<li>Free/Pro 플랜의 기본 모델로 채택</li>
+</ul>
+<p data-ke-size="size16">스펙시트만 보면 Opus 4.8과 거의 동일하고, 차이는 성능과 가격에 있습니다.<br />&nbsp;</p>
+<h2 data-ke-size="size26">2. 벤치마크: 어디서 이기고 어디서 지는가</h2>
+<p data-ke-size="size16">아래 수치는&nbsp;<b>Anthropic 공식 발표 및 시스템 카드 기준(자체 보고 수치)</b>&nbsp;입니다. 서드파티 검증 결과는 5장에서 따로 다룹니다.</p>
+<div style="color: var(--devlog-text); text-align: start;" data-sourcepos="30:1-38:65;978-1509">
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>벤치마크</td>
+<td>Sonnet 5</td>
+<td>Sonnet 4.6</td>
+<td>Opus 4.8</td>
+<td>판정</td>
+</tr>
+<tr>
+<td>SWE-bench Pro (에이전틱 코딩)</td>
+<td>63.2%</td>
+<td>58.1%</td>
+<td><b>69.2%</b></td>
+<td>Opus 우위 (6.0%p)</td>
+</tr>
+<tr>
+<td>Terminal-Bench 2.1</td>
+<td>80.4%</td>
+<td>67.0%</td>
+<td>82.7%</td>
+<td>근소한 차이 (2.3%p)</td>
+</tr>
+<tr>
+<td>HLE, 도구 사용 (멀티 분야 추론)</td>
+<td>57.4%</td>
+<td>46.8%</td>
+<td><b>57.9%</b></td>
+<td>사실상 동률</td>
+</tr>
+<tr>
+<td>HLE, 도구 미사용</td>
+<td>43.2%</td>
+<td>-</td>
+<td><b>49.8%</b></td>
+<td>Opus 우위</td>
+</tr>
+<tr>
+<td>OSWorld-Verified (컴퓨터 사용)</td>
+<td>81.2%</td>
+<td>78.5%</td>
+<td><b>83.4%</b></td>
+<td>Opus 우위 (2.2%p)</td>
+</tr>
+<tr>
+<td>GDPval-AA v2 (지식 노동, Elo)</td>
+<td><b>1618</b></td>
+<td>1395</td>
+<td>1615</td>
+<td>Sonnet 5 역전</td>
+</tr>
+<tr>
+<td>BrowseComp (에이전트 검색, 단일)</td>
+<td>84.7%</td>
+<td>76.2%</td>
+<td>~동급</td>
+<td>동급을 더 싸게 달성</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p data-ke-size="size16">정리하면 이렇습니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>Sonnet 5가 이기거나 동률</b>: 지식 노동(GDPval), 도구 사용 추론(HLE with tools), 에이전트 검색(BrowseComp)</li>
+<li><b>Opus 4.8이 확실히 우위</b>: 난이도 높은 코딩(SWE-bench Pro 6%p 차), 도구 없는 순수 추론, 컴퓨터 사용</li>
+<li>서드파티 비교 자료에 따르면 올림피아드급 수학(USAMO)에서는 Opus 96.7 vs Sonnet 79.5로 격차가 크게 벌어집니다. 순수 추론 최상단은 여전히 Opus 영역입니다.</li>
+</ul>
+<p data-ke-size="size16">Sonnet 4.6과 비교하면 전 항목에서 개선이라 세대 간 비교는 논쟁의 여지가 없습니다. 실질적인 질문은 "Sonnet 5 vs Opus 4.8, 언제 무엇을 쓸 것인가"입니다.</p>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1536" data-origin-height="1024"><span data-url="https://blog.kakaocdn.net/dna/EPcSb/dJMcajiwXIq/AAAAAAAAAAAAAAAAAAAAAFyPc3qfo8TJD1QCGCRQ47wA5k1eLrTrQLFFLnWr7OdY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=rO6fi1KgSEyZEhUiW%2Be3xHsLg9o%3D" data-phocus="https://blog.kakaocdn.net/dna/EPcSb/dJMcajiwXIq/AAAAAAAAAAAAAAAAAAAAAFyPc3qfo8TJD1QCGCRQ47wA5k1eLrTrQLFFLnWr7OdY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=rO6fi1KgSEyZEhUiW%2Be3xHsLg9o%3D" data-alt="Opus 4.8 vs. Sonnet 5"><img src="https://blog.kakaocdn.net/dna/EPcSb/dJMcajiwXIq/AAAAAAAAAAAAAAAAAAAAAFyPc3qfo8TJD1QCGCRQ47wA5k1eLrTrQLFFLnWr7OdY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=rO6fi1KgSEyZEhUiW%2Be3xHsLg9o%3D" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FEPcSb%2FdJMcajiwXIq%2FAAAAAAAAAAAAAAAAAAAAAFyPc3qfo8TJD1QCGCRQ47wA5k1eLrTrQLFFLnWr7OdY%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DrO6fi1KgSEyZEhUiW%252Be3xHsLg9o%253D" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="551" height="367" data-origin-width="1536" data-origin-height="1024"/></span><figcaption>Opus 4.8 vs. Sonnet 5</figcaption>
+</figure>
+
+<h2 data-ke-size="size26">3. 가격: 표면상 60% 저렴, 그러나 두 가지 함정</h2>
+<h3 data-ke-size="size23">3-1. 명목 가격</h3>
+<div style="color: var(--devlog-text); text-align: start;" data-sourcepos="54:1-57:25;1950-2086">
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 84.186046%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 25%;">구분 (100만 토큰당)</td>
+<td style="width: 30%;">Sonnet 5 <span style="color: var(--devlog-text); text-align: start;">프로모션 (~2026/8/31)</span></td>
+<td style="width: 14.186046%;">Sonnet 5 표준</td>
+<td style="width: 15.022034%;">Opus 4.8</td>
+</tr>
+<tr>
+<td style="width: 25%;">입력</td>
+<td style="width: 30%;">$2</td>
+<td style="width: 14.186046%;">$3</td>
+<td style="width: 15.022034%;">$5</td>
+</tr>
+<tr>
+<td style="width: 25%;">출력</td>
+<td style="width: 30%;">$10</td>
+<td style="width: 14.186046%;">$15</td>
+<td style="width: 15.022034%;">$25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p data-ke-size="size16">표준가 기준 입력 40%, 출력 40% 수준입니다. 출력 중심의 에이전트 워크로드라면 Opus에서 하루 $1,000이 들던 작업이 Sonnet 5에서 약 $400 수준으로 내려온다는 계산이 나옵니다.<br />&nbsp;</p>
+<h3 data-ke-size="size23">3-2. 함정 1: 토크나이저 변경</h3>
+<p data-ke-size="size16">Sonnet 5는 Opus 4.7에서 도입된&nbsp;<b>신규 토크나이저</b>를 사용합니다. 동일한 텍스트가 콘텐츠 유형에 따라 기존 대비 약&nbsp;<b>1.0~1.35배</b>&nbsp;더 많은 토큰으로 매핑됩니다. 즉:</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Sonnet 4.6 시절의 토큰 사용량 추정치를 그대로 재사용하면 청구액 예측이 틀립니다.</li>
+<li>프로모션 가격($2/$10)은 사실상 "Sonnet 4.6 &rarr; 5 전환이 비용 중립이 되도록" 설계된 것입니다. 9월 1일 표준가 전환 후에는 작업당 실효 비용이 Sonnet 4.6보다 오히려 높아질 수 있습니다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">3-3. 함정 2: Sonnet 5는 토큰을 더 씁니다</h3>
+<p data-ke-size="size16">같은 작업에서 Sonnet 5가 Opus 4.8보다 토큰을 더 소비하는 경향이 여러 테스트에서 관찰됩니다. 단가가 절반이라도 사용량이 1.3배면 실제 절감폭은 계산과 달라집니다. 이 부분은 5장의 실사용 사례에서 구체적으로 확인합니다.<br />&nbsp;</p>
+<h2 data-ke-size="size26">4. effort 파라미터: 이번 릴리스의 실질적 핵심</h2>
+<p data-ke-size="size16">Sonnet 5에서 가장 실용적인 변화는&nbsp;effort&nbsp;파라미터입니다. low / medium / high(기본값) / xhigh / max 레벨로 모델이 작업에 투입하는 사고량(토큰)을 조절합니다.<br />Anthropic 공식 마이그레이션 가이드의 교차 매핑이 유용합니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>Sonnet 5 medium &asymp; Sonnet 4.6 high</b>&nbsp;(같은 지능을 더 싸게)</li>
+<li><b>Sonnet 5 high &asymp; Sonnet 4.6 max</b></li>
+</ul>
+<p data-ke-size="size16">BrowseComp 비용-성능 곡선에서 Sonnet 5는 Sonnet 4.6 대비 전 구간 우위이고, max effort에서는 Opus 4.8과 사실상 동등한 통과율을 더 낮은 비용으로 달성합니다. 반면 OSWorld(컴퓨터 사용)에서는&nbsp;<b>모든 effort 구간에서 Opus 4.8이 한 단계 위</b>를 유지합니다.<br />여기서 중요한 반전이 하나 있습니다.&nbsp;<b>Opus 4.8은 토큰 효율이 높아서, Sonnet 5를 xhigh/max로 올려 쓰면 작업당 비용이 Opus와 비슷하거나 역전될 수 있습니다.</b>&nbsp;CodeRabbit의 코드 리뷰 테스트에서도 effort를 max로 올리는 것은 "비용이 약 2배 늘지만 버그를 유의미하게 더 찾지는 못하는 최악의 선택"으로 평가됐습니다. 결론적으로 두 모델은 이제 별개의 티어가 아니라&nbsp;<b>하나의 비용-성능 곡선 위에 놓인 선택지</b>이고, 곡선의 어느 지점을 쓸지는 작업 난도에 따라 갈립니다.<br />&nbsp;</p>
+<h2 data-ke-size="size26">5. 실사용 테스트</h2>
+<p data-ke-size="size16">벤치마크는 Anthropic 자체 보고 수치이므로, 출시 직후 나온 독립 테스트들을 교차 확인했습니다. 결과가 환경에 따라 상당히 갈립니다.</p>
+<h3 data-ke-size="size23">5-1. Claude Code에서: 기대에 부합</h3>
+<p data-ke-size="size16">한 테스트에서 동일 프롬프트(물리 기반 웹게임 원샷 생성 + 자동 검증 루프)를 Claude Code에서 병렬 실행한 결과:</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Sonnet 5: 약 13,000 토큰,&nbsp;<b>$0.13</b>, Playwright 자동 테스트로 성공 기준 5개 전부 검증</li>
+<li>Opus 4.8: 약 9,800 토큰,&nbsp;<b>$0.25</b>, 프리뷰 패널로 직접 검증</li>
+</ul>
+<p data-ke-size="size16">Sonnet 5가 토큰은 약 30% 더 썼지만, 단가가 Opus의 40% 수준이라 총비용은 절반이었습니다. 3-3에서 언급한 "토큰을 더 쓴다"가 실제로 나타났지만 이 케이스에서는 단가 차이가 사용량 차이를 상쇄한 것입니다. 결과물 품질은 세부 디테일(추진 방향 시각 피드백 등)에서 Opus가 근소하게 나은 정도로 유의미한 차이가 없었습니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="102:1-102:231;4053-4283" data-ke-size="size16">Endor Labs의 보안 벤치마크(실제 코드베이스의 취약점을 추론만으로 수정하는 테스트)에서도 Claude Code + Sonnet 5 조합은 기능 해결 83.2%로 상위권이었습니다. 특히 치팅 &mdash; 학습 데이터에 포함된 공식 패치를 추론 없이 암기한 대로 재생하는 것 &mdash; 이 8건으로 Fable 5(38건) 대비 크게 낮아 "유난히 정직한 모델"이라는 평가를 받았습니다. 점수에 암기 거품이 적다는 의미입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">5-2. Cursor에서: 심각한 속도 문제 보고</h3>
+<p data-ke-size="size16">반대로 Cursor 환경 테스트에서는 전혀 다른 그림이 나왔습니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Mario 스타일 플랫포머: Opus 4.8 약 5분 vs Sonnet 5&nbsp;<b>22분</b></li>
+<li>단순 보이드(flock) 애니메이션: Opus 약 2분/50K 토큰 vs Sonnet 5 약 20분, 단순 작업에 서브에이전트(Sonnet 4.5)를 4회 이상 불필요하게 스폰</li>
+<li>Miro 스타일 캔버스(PRD 기반): Opus 약 40분에 완성도 높은 결과 vs Sonnet 5 약 1시간에 완성도 낮은 결과</li>
+</ul>
+<p data-ke-size="size16">이것이 모델 자체 문제인지 Cursor 하네스와의 궁합 문제인지는 아직 불분명합니다. Endor Labs도 Cursor + Sonnet 5 조합이 "훨씬 느리게 돌고 타임아웃이 잦다"고 별도 언급했습니다.&nbsp;<b>현시점 가설: Sonnet 5는 Claude Code에 최적화되어 있고, 서드파티 하네스에서는 과도한 사고/서브에이전트 사용으로 시간과 토큰을 낭비하는 경향이 있습니다.</b>&nbsp;검증된 사실이 아니라 초기 사용자 보고 기반의 추정입니다.<br />&nbsp;</p>
+<h3 data-ke-size="size23">5-3. 행동 특성</h3>
+<p data-ke-size="size16">Anthropic 공식 프롬프팅 가이드와 CodeRabbit 리뷰가 공통으로 지적하는 특성:</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>기능 구현 전에 테스트부터 작성하는 습관</li>
+<li>이미 동작하는 해법을 계속 다듬는 경향 (토큰 소비 증가 요인)</li>
+<li>지시를 이전 모델보다 더 문자 그대로 따름 &mdash; "고심각도만 보고해"라고 하면 실제로 저심각도 발견을 보고서에서 뺍니다. 기존 하네스에서 recall이 떨어져 보이면 능력 저하가 아니라 지시 준수 강화일 가능성이 높습니다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">5-4. 마이그레이션 시 주의점 (API)</h3>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>adaptive thinking이 기본 활성화,&nbsp;budget_tokens&nbsp;방식의 수동 extended thinking은 제거</li>
+<li>기본값이 아닌 temperature / top_p / top_k 지정 시 400 오류 반환</li>
+<li>실시간 사이버 가드레일이 기본 활성화 &mdash; 고위험 사이버보안 요청은 HTTP 200으로 거부 응답이 올 수 있으므로 자동화 파이프라인에서 거부 상태 처리가 필요합니다</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">6. 안전성: 한 가지 유의점</h2>
+<p data-ke-size="size16">시스템 카드 기준으로 Sonnet 5는 Sonnet 4.6보다 환각&middot;아첨(sycophancy) 비율이 낮고, 프롬프트 인젝션 저항성이 개선됐습니다. 다만 자동 행동 감사(automated behavioral audit)에서&nbsp;<b>Opus 4.8과 Mythos Preview보다는 오정렬(misaligned) 행동 비율이 다소 높게</b>&nbsp;측정됐습니다. 고객 대면 에이전트나 무감독 자동화에 투입한다면 이 차이는 벤치마크 점수에는 안 보이지만 운영에서 드러나는 항목입니다.</p>
+<blockquote data-ke-style="style2">오정렬(misalignment): 개발자가 의도한 대로 행동하지 않는 것을 말합니다. 능력 부족(문제를 못 푸는 것)과는 다른 축입니다. Anthropic의 자동 행동 감사는 모델을 수백 가지 시나리오에 넣고 다음과 같은 행동이 나오는 빈도를 측정합니다.<br />기만(deception): 자기가 한 일을 사실과 다르게 보고. 예: 테스트를 안 돌렸는데 "전부 통과했습니다"라고 답하는 경우<br />악용 협조(cooperation with misuse): 유해한 요청을 거부해야 할 상황에서 도와주는 경우<br />지시 우회: 명시된 제약을 몰래 벗어나 목표를 달성하려는 경우</blockquote>
+<p data-ke-size="size16"><br />사이버 능력은 의도적으로 낮게 유지됐습니다. Firefox 147 취약점 익스플로잇 개발 평가에서 완전 동작 익스플로잇 생성률 0.0%로, Opus/Mythos급과 명확히 구분됩니다.<br />&nbsp;</p>
+<h2 data-ke-size="size26">7. 결론: 라우팅 전략</h2>
+<div style="color: var(--devlog-text); text-align: start;" data-sourcepos="138:1-146:81;5509-6025">
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 45.930232%;">상황</td>
+<td style="width: 53.953488%;"><b>추천</b></td>
+</tr>
+<tr>
+<td style="width: 45.930232%;">반복 실행되는 에이전트, 자동화 파이프라인, 검색/리서치 루프</td>
+<td style="width: 53.953488%;"><b>Sonnet 5 (medium~high)</b><span>&nbsp;</span>&mdash; 이전에 Opus를 쓰던 이유가 "더 싼 게 없어서"였다면 전환 대상 1순위</td>
+</tr>
+<tr>
+<td style="width: 45.930232%;">일상 코딩, Claude Code 기본 모델</td>
+<td style="width: 53.953488%;"><b>Sonnet 5 (high, 기본값)</b></td>
+</tr>
+<tr>
+<td style="width: 45.930232%;">대규모 리팩토링, 멀티파일 난도 높은 SWE 작업</td>
+<td style="width: 53.953488%;"><b>Opus 4.8</b><span>&nbsp;</span>&mdash; SWE-bench Pro 6%p 격차는 실무에서 체감됩니다</td>
+</tr>
+<tr>
+<td style="width: 45.930232%;">컴퓨터 사용(브라우저 조작) 에이전트</td>
+<td style="width: 53.953488%;"><b>Opus 4.8</b><span>&nbsp;</span>&mdash; 전 effort 구간에서 우위</td>
+</tr>
+<tr>
+<td style="width: 45.930232%;">고난도 수학/순수 추론</td>
+<td style="width: 53.953488%;"><b>Opus 4.8 이상</b></td>
+</tr>
+<tr>
+<td style="width: 45.930232%;">Cursor 등 서드파티 하네스</td>
+<td style="width: 53.953488%;"><b>당분간 Opus 4.8 유지 후 관망</b><span>&nbsp;</span>&mdash; 속도/서브에이전트 이슈 보고 다수</td>
+</tr>
+<tr>
+<td style="width: 45.930232%;">Sonnet 5를 xhigh/max로 올려야 풀리는 작업</td>
+<td style="width: 53.953488%;"><b>차라리 Opus 4.8</b><span>&nbsp;</span>&mdash; 토큰 효율 때문에 총비용이 역전될 수 있음</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p data-ke-size="size16"><b>그래서 싸다는 것인가, 비싸다는 것인가.</b><span>&nbsp;</span>비교 대상에 따라 답이 갈립니다. Opus 4.8 대비로는 명확히 쌉니다 &mdash; medium~high effort의 일반적 작업 기준 작업당 비용이 대략 절반입니다. 다만 두 가지 예외가 있습니다. (1) 전작 Sonnet 4.6 대비로는 토크나이저 변경(1.0~1.35배) 때문에 8월31일 한시적 할인 종료 이후에는 작업당 실효 비용이 오히려 비싸질 수 있고, (2) xhigh/max effort가 필요한 고난도 작업에서는 토큰 효율이 좋은 Opus가 총비용에서 역전할 수 있습니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="162:1-162:166;7339-7504" data-ke-size="size16">한 문장으로 요약하면:<span>&nbsp;</span><b>Sonnet 5는 "Opus가 필요 없는 작업에 Opus 요금을 내고 있던" 워크로드를 위한 모델입니다.</b><span>&nbsp;</span>그 경계선이 어디인지는 각자의 워크로드로 직접 확인해야 하고, 8월 31일 프로모션 종료 전에 토크나이저 변경분을 포함한 실효 비용을 측정해두는 것을 권합니다.</p>
+<p style="color: var(--devlog-text); text-align: start;" data-sourcepos="162:1-162:166;7339-7504" data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">참고 자료</h2>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_self"><span>Introducing Claude Sonnet 5 &mdash; Anthropic 공식 발표</span></a></li>
+<li><a href="https://www.anthropic.com/claude-sonnet-5-system-card" target="_self"><span>Claude Sonnet 5 System Card (PDF)</span></a></li>
+<li><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-sonnet-5" target="_self"><span>Prompting Claude Sonnet 5 &mdash; 공식 프롬프팅 가이드</span></a></li>
+<li><a href="https://discuss.pytorch.kr/t/anthropic-opus-sonnet-claude-sonnet-5/11015" target="_self"><span>Anthropic, Opus급 성능에 근접한 가장 에이전틱한 Sonnet 모델 Claude Sonnet 5 출시 &mdash; PyTorchKR</span></a></li>
+<li><a href="https://llm-stats.com/blog/research/claude-sonnet-5-vs-claude-opus-4-8" target="_self"><span>Claude Sonnet 5 vs Claude Opus 4.8: The Complete Comparison &mdash; LLM Stats</span></a></li>
+<li><a href="https://www.coderabbit.ai/blog/claude-sonnet-5-review" target="_self"><span>Claude Sonnet 5 review: Should you switch? &mdash; CodeRabbit</span></a></li>
+<li><a href="https://www.endorlabs.com/learn/claude-sonnet-5-with-claude-code-strong-on-function-average-on-security-and-unusually-honest" target="_self"><span>Claude Sonnet 5 with Claude Code: strong on function, average on security, and unusually honest &mdash; Endor Labs</span></a></li>
+<li><a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/" target="_self"><span>Anthropic launches Claude Sonnet 5 as a cheaper way to run agents &mdash; TechCrunch</span></a></li>
+</ul>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">&nbsp;</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 style="color: var(--devlog-text); text-align: start;" data-ke-size="size26">상위 모델 비교</h2>
+<p data-ke-size="size16"><a href="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695" target="_blank" rel="noopener">Opus 5 vs. Fable 5 - 클로드 모델 비교</a></p>
+<figure id="og_1784978239330" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="Opus 5 vs Fable 5 - 클로드 모델 비교" data-og-description="안녕하세요. dev.log입니다.지난달까지만 해도 Claude에서 가장 어려운 작업은 Fable 5에 맡기는 것이 자연스러웠습니다. 그런데 2026년 7월 24일 출시된 Opus 5가 여러 코딩&middot;지식 노동 벤치마크에서 Fable" data-og-host="dop3n.tistory.com" data-og-source-url="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695" data-og-url="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90" data-og-image="https://blog.kakaocdn.net/dna/b6pAgB/dJMb9bwfGQ5/AAAAAAAAAAAAAAAAAAAAAKW9KllhDS7g6kUhwdliB-OkrQvf6kzQEQfVMo0WtVOU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=hbEF76DUYR%2FMEZIBukWqzs8v%2BiY%3D"><a href="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695" target="_blank" rel="noopener" data-source-url="https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90?category=847695">
+<div class="og-image" style="background-image: url('https://blog.kakaocdn.net/dna/b6pAgB/dJMb9bwfGQ5/AAAAAAAAAAAAAAAAAAAAAKW9KllhDS7g6kUhwdliB-OkrQvf6kzQEQfVMo0WtVOU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=hbEF76DUYR%2FMEZIBukWqzs8v%2BiY%3D');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">Opus 5 vs Fable 5 - 클로드 모델 비교</p>
+<p class="og-desc" data-ke-size="size16">안녕하세요. dev.log입니다.지난달까지만 해도 Claude에서 가장 어려운 작업은 Fable 5에 맡기는 것이 자연스러웠습니다. 그런데 2026년 7월 24일 출시된 Opus 5가 여러 코딩&middot;지식 노동 벤치마크에서 Fable</p>
+<p class="og-host" data-ke-size="size16">dop3n.tistory.com</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><span style="color: var(--devlog-text); text-align: start;"><br /></span><a style="color: #0070d1; text-align: start;" href="https://dop3n.tistory.com/entry/Fable-5-vs-Opus-48-클로드-모델-비교">Fable 5 vs. Opus 4.8 - 클로드 모델 비교</a></p>
+<figure id="og_1783520938663" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="Fable 5 vs Opus 4.8 - 클로드 모델 비교" data-og-description="지난 글에서 Sonnet 5와 Opus 4.8을 비교했습니다. 이번에는 그 위 체급입니다. Anthropic이 2026년 6월 9일 출시한 Claude Fable 5는 Opus 위에 새로 생긴 'Mythos 클래스'의 첫 일반 공개 모델입니다. 출시 3일 만" data-og-host="dop3n.tistory.com" data-og-source-url="https://dop3n.tistory.com/entry/Fable-5-vs-Opus-48-클로드-모델-비교" data-og-url="https://dop3n.tistory.com/entry/Fable-5-vs-Opus-48-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90" data-og-image="https://blog.kakaocdn.net/dna/zHe2M/dJMb83kEJET/AAAAAAAAAAAAAAAAAAAAADekHAaDRl_sPZJWbAIWWtDm0v1NJ-ohgY182MamNaAd/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=FkL%2BX%2BW%2FBgDLO4jP%2Bse%2BJ5u9eHU%3D"><a href="https://dop3n.tistory.com/entry/Fable-5-vs-Opus-48-클로드-모델-비교" target="_blank" rel="noopener" data-source-url="https://dop3n.tistory.com/entry/Fable-5-vs-Opus-48-클로드-모델-비교">
+<div class="og-image" style="background-image: url('https://blog.kakaocdn.net/dna/zHe2M/dJMb83kEJET/AAAAAAAAAAAAAAAAAAAAADekHAaDRl_sPZJWbAIWWtDm0v1NJ-ohgY182MamNaAd/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=FkL%2BX%2BW%2FBgDLO4jP%2Bse%2BJ5u9eHU%3D');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">Fable 5 vs Opus 4.8 - 클로드 모델 비교</p>
+<p class="og-desc" data-ke-size="size16">지난 글에서 Sonnet 5와 Opus 4.8을 비교했습니다. 이번에는 그 위 체급입니다. Anthropic이 2026년 6월 9일 출시한 Claude Fable 5는 Opus 위에 새로 생긴 'Mythos 클래스'의 첫 일반 공개 모델입니다. 출시 3일 만</p>
+<p class="og-host" data-ke-size="size16">dop3n.tistory.com</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+</article></div>

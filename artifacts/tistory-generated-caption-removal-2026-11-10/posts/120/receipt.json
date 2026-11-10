@@ -1,0 +1,35 @@
+{
+  "post_id": 120,
+  "public_url": "https://dop3n.tistory.com/entry/%EC%84%B8%EA%B4%80%EC%97%90%EC%84%9C-%EB%B6%80%EB%A6%84%EB%B0%9B%EC%9D%80-%EB%A7%88%ED%83%9C",
+  "title": "세관에서 부름받은 마태 — dev.log",
+  "removed_html": [
+    "<span class=\"devlog-rich__credit\">&middot; 생성 이미지</span>"
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "동전과 저울이 놓인 세관에서 일어나 햇빛 든 길로 향하는 마태의 종이 부조 장면",
+      "complete": true,
+      "height": 720,
+      "width": 1280
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n세관에서 부름받은 마태\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n일상더보기\n발행일\n2026-08-29 00:05\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "bbf6f8e877d0f106022db2174345a91bc2c03947f6ffbefe86c60b3a3cce1a6d",
+  "submitted_sha256": "841e605ddc330eb26a82c7f82361dc08a7b60a900108c54352de43e1e5713be5",
+  "publication_slug": "세관에서-부름받은-마태",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:45:53.657Z"
+}

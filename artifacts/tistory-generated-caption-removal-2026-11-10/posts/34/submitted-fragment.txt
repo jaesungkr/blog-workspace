@@ -1,0 +1,366 @@
+<div>
+<style>
+.devlog-dark-compatible {
+  --devlog-text: #333333;
+  --devlog-muted: #636366;
+  --devlog-link: #0066cc;
+  --devlog-border: #d1d1d6;
+  --devlog-soft-bg: #f5f5f7;
+  --devlog-code-bg: #f5f5f7;
+  --devlog-code-text: #2c2c2e;
+  color: var(--devlog-text);
+  color-scheme: light;
+}
+
+.dark .devlog-dark-compatible,
+[data-theme="dark"] .devlog-dark-compatible,
+.theme-dark .devlog-dark-compatible {
+  --devlog-text: #f2f2f7;
+  --devlog-muted: #aeaeb2;
+  --devlog-link: #64a8ff;
+  --devlog-border: #48484a;
+  --devlog-soft-bg: #2c2c2e;
+  --devlog-code-bg: #1c1c1e;
+  --devlog-code-text: #f2f2f7;
+  color-scheme: dark;
+}
+
+.devlog-dark-compatible :where(p, h2, h3, h4, h5, h6, span, b, strong, em, li, td, th, blockquote) {
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible :where(p, td, th) {
+  overflow-wrap: anywhere;
+}
+
+.devlog-dark-compatible a,
+.devlog-dark-compatible a[style] {
+  color: var(--devlog-link) !important;
+  text-decoration-color: currentColor;
+}
+
+.devlog-dark-compatible a :where(span, b, strong, em) {
+  color: inherit !important;
+}
+
+.devlog-dark-compatible table {
+  border-color: var(--devlog-border) !important;
+  color: var(--devlog-text) !important;
+}
+
+.devlog-dark-compatible th,
+.devlog-dark-compatible td {
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible tbody tr:first-child > :is(th, td) {
+  background: var(--devlog-soft-bg) !important;
+  font-weight: 700;
+}
+
+.devlog-dark-compatible .devlog-table-scroll {
+  max-width: 100%;
+  margin: 1em 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-dark-compatible .devlog-table-scroll > table {
+  width: max-content !important;
+  min-width: 640px;
+  margin: 0 !important;
+}
+
+.devlog-dark-compatible blockquote {
+  background: var(--devlog-soft-bg) !important;
+  border-color: var(--devlog-border) !important;
+}
+
+.devlog-dark-compatible pre,
+.devlog-dark-compatible pre[style] {
+  background: var(--devlog-code-bg) !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  border-color: var(--devlog-border) !important;
+  overflow-x: auto;
+}
+
+.devlog-dark-compatible pre code,
+.devlog-dark-compatible pre code[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+}
+
+.devlog-dark-compatible pre code *,
+.devlog-dark-compatible pre code *[style] {
+  background: transparent !important;
+  color: var(--devlog-code-text) !important;
+  -webkit-text-fill-color: var(--devlog-code-text) !important;
+  text-shadow: none !important;
+}
+
+.devlog-dark-compatible :where(ul, ol) {
+  padding-left: 1.5em;
+}
+
+.devlog-dark-compatible ul {
+  list-style: disc outside !important;
+}
+
+.devlog-dark-compatible ol {
+  list-style: decimal outside !important;
+}
+
+.devlog-dark-compatible li {
+  display: list-item;
+}
+
+.devlog-dark-compatible li + li {
+  margin-top: 0.45em;
+}
+
+.devlog-dark-compatible :where(ul, ol) + p {
+  margin-top: 1em;
+}
+
+.devlog-dark-compatible li::marker {
+  color: var(--devlog-muted);
+}
+
+.devlog-dark-compatible img {
+  filter: none !important;
+}
+</style>
+</div>
+<article class="devlog-dark-compatible">
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">2,600년 동안 나라 없이 떠돌던<span>&nbsp;</span></span><span data-newtext-seq="20">민족이 1948년에 나라를 다시 세웠다. 세계사에 이런 사례는 유대인<span>&nbsp;</span></span><span data-newtext-seq="59">하나뿐이다. 지금 뉴스에 나오는 이스라엘 전쟁도, 미국 정치 이야기에<span>&nbsp;</span></span><span data-newtext-seq="98">유대인이 자꾸 등장하는 것도 전부 이 2,600년에서 출발한다.&nbsp;</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">1.<span> </span><span data-newtext-seq="6">유대인, 유대교, 이스라엘은 다른 말이다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="1">유대인, 유대교, 이스라엘이 헷갈리면 뒤의 이야기가 다 꼬인다.&nbsp;</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>단어</td>
+<td>뜻</td>
+</tr>
+<tr>
+<td><span data-newtext-seq="5">유대인</span><span></span></td>
+<td><span data-newtext-seq="5">민족. 한민족처럼<span>&nbsp;</span></span><span data-newtext-seq="43">혈통과 문화로 묶인 사람들</span></td>
+</tr>
+<tr>
+<td><span data-newtext-seq="43">유대교</span><span></span></td>
+<td><span data-newtext-seq="43">그 민족이 믿는 종교.<span>&nbsp;</span></span><span data-newtext-seq="81">기독교의 뿌리가 된 종교다</span></td>
+</tr>
+<tr>
+<td><span data-newtext-seq="81">이스라엘</span><span></span></td>
+<td><span data-newtext-seq="81">1948년에 세워진<span>&nbsp;</span></span><span data-newtext-seq="118">나라. 유대인이 세웠다</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">그러면 누가 유대인인가. 전통 기준은<span>&nbsp;</span></span><span data-newtext-seq="21">의외로 단순한데, 어머니가 유대인이면 유대인이다. 아버지만 유대인이면<span>&nbsp;</span></span><span data-newtext-seq="60">종교법상 유대인이 아니다. 아이의 어머니가 누구인지는 확실하지만<span>&nbsp;</span></span><span data-newtext-seq="96">아버지는 그렇지 않던 시대에 만들어진 기준이다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">전 세계 유대인은 약<span>&nbsp;</span></span><span data-newtext-seq="12">1,500만 명이다(2022년 기준, Berman Jewish<span>&nbsp;</span></span><span data-newtext-seq="47">Databank 집계). 서울 인구 950만보다 조금 많은 수준으로,<span>&nbsp;</span></span><span data-newtext-seq="86"><b>세계 인구의 0.2%</b>에 불과하다. 이 작은 집단이 어떻게 세계사의<span>&nbsp;</span></span><span data-newtext-seq="123">중심에 자꾸 등장하는지가 이 글의 주제다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">2.<span>&nbsp;</span><span data-newtext-seq="6">시작은 기원전,<span>&nbsp;</span></span><span data-newtext-seq="15">나라를 두 번 잃었다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">유대인은 원래 지금의 이스라엘 땅에 자기 왕국을<span>&nbsp;</span></span><span data-newtext-seq="27">갖고 있었다. 문제는 그 땅이 이집트와 메소포타미아라는 두 강대국<span>&nbsp;</span></span><span data-newtext-seq="64">사이에 낀 길목이었다는 점이다. 강대국이 팽창할 때마다 얻어맞는<span>&nbsp;</span></span><span data-newtext-seq="100">위치였다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">그래서 나라를 두 번 잃는다. 기원전 722년에 북쪽<span>&nbsp;</span></span><span data-newtext-seq="30">왕국이 아시리아 제국에 망했고, 기원전 586년에는 남쪽 왕국이<span>&nbsp;</span></span><span data-newtext-seq="66">바빌로니아 제국에 망했다. 당시에는 전쟁에서 이기면 진 쪽 주민을<span>&nbsp;</span></span><span data-newtext-seq="103">통째로 끌고 가는 관습이 있었는데, 이때 유대인들이 바빌론(지금의<span>&nbsp;</span></span><span data-newtext-seq="140">이라크 지역)으로 끌려간 사건을 '바빌론 유수'라고 부른다.<span>&nbsp;</span></span><span data-newtext-seq="174">유수는 잡아 가둔다는 뜻이다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">끌려간<span>&nbsp;</span></span><span data-newtext-seq="17">유대인들을 약 50년 뒤에 풀어준 사람이 페르시아 제국의 고레스<span>&nbsp;</span></span><span data-newtext-seq="53">대왕이다. 페르시아는 지금의 이란이다. 즉 지금 서로 미사일을 겨누는<span>&nbsp;</span></span><span data-newtext-seq="92">이란과 이스라엘의 첫 만남은 '해방자와 해방된 자'였다. 1978년<span>&nbsp;</span></span><span data-newtext-seq="130">세계를 휩쓴 보니엠(Boney M.)의 노래 'Rivers of<span>&nbsp;</span></span><span data-newtext-seq="166">Babylon'이 바로 이 바빌론에<span>&nbsp;</span></span><span data-newtext-seq="186">끌려간 유대인들의<span>&nbsp;</span></span><span data-newtext-seq="196">노래(구약성서 시편<span>&nbsp;</span></span><span data-newtext-seq="207">137편)를 가사로 만든<span>&nbsp;</span></span><span data-newtext-seq="221">곡이다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">3.<span>&nbsp;</span><span data-newtext-seq="6">로마에 두<span>&nbsp;</span></span><span data-newtext-seq="12">번 반란했다가<span>&nbsp;</span></span><span data-newtext-seq="20">아예 쫓겨났다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">고</span><span data-newtext-seq="1">향에 돌아온<span>&nbsp;</span></span><span data-newtext-seq="8">유대인들은 이후<span>&nbsp;</span></span><span data-newtext-seq="17">그리스, 로마의 지배를 차례로<span>&nbsp;</span></span><span data-newtext-seq="34">받는다. 그리고<span>&nbsp;</span></span><span data-newtext-seq="43">로마 지배기에<span>&nbsp;</span></span><span data-newtext-seq="51">결정적 사건이<span>&nbsp;</span></span><span data-newtext-seq="59">터진다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">유대인들은<span>&nbsp;</span></span><span data-newtext-seq="6">로마를 상대로 두 번<span>&nbsp;</span></span><span data-newtext-seq="18">독립 전쟁을<span>&nbsp;</span></span><span data-newtext-seq="25">일으켰고 두 번 다<span>&nbsp;</span></span><span data-newtext-seq="36">졌다. 첫 번째<span>&nbsp;</span></span><span data-newtext-seq="45">반란(66~70년) 때 로마는<span>&nbsp;</span></span><span data-newtext-seq="62">예루살렘을 함락하고<span>&nbsp;</span></span><span data-newtext-seq="73">유대교의 중심인<span>&nbsp;</span></span><span data-newtext-seq="82">성전을 부숴버렸다.<span>&nbsp;</span></span><span data-newtext-seq="93">이때 서쪽 벽 하나만<span>&nbsp;</span></span><span data-newtext-seq="105">남았는데, 그게 지금도<span>&nbsp;</span></span><span data-newtext-seq="118">유대인들이 찾아가<span>&nbsp;</span></span><span data-newtext-seq="128">기도하는 '통곡의<span>&nbsp;</span></span><span data-newtext-seq="138">벽'이다. 두 번째<span>&nbsp;</span></span><span data-newtext-seq="149">반란(132~135년)이 진압되자 로마<span>&nbsp;</span></span><span data-newtext-seq="171">황제는 아예<span>&nbsp;</span></span><span data-newtext-seq="178">유대인의 예루살렘 거주<span>&nbsp;</span></span><span data-newtext-seq="191">자체를 금지했다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">갈<span>&nbsp;</span></span><span data-newtext-seq="2">곳을 잃은<span>&nbsp;</span></span><span data-newtext-seq="8">유대인들은 유럽, 중동,<span>&nbsp;</span></span><span data-newtext-seq="22">멀리는 중국까지<span>&nbsp;</span></span><span data-newtext-seq="31">흩어졌다. 이렇게<span>&nbsp;</span></span><span data-newtext-seq="41">민족이 고향을 잃고<span>&nbsp;</span></span><span data-newtext-seq="52">세계에 흩어져 사는<span>&nbsp;</span></span><span data-newtext-seq="63">것을<span>&nbsp;</span></span><span data-newtext-seq="66">'디아스포라(diaspora)'라고 부른다.<span>&nbsp;</span></span><span data-newtext-seq="91">그리스어로<span>&nbsp;</span></span><span data-newtext-seq="97">'흩뿌려짐'이라는 뜻이다. 이때부터<span>&nbsp;</span></span><span data-newtext-seq="117">1948년까지 약 1,800년,<span>&nbsp;</span></span><span data-newtext-seq="135">유대인은 나라 없는<span>&nbsp;</span></span><span data-newtext-seq="146">민족으로 산다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">4.<span>&nbsp;</span><span data-newtext-seq="6">유럽에서 미움받은 이유는<span>&nbsp;</span></span><span data-newtext-seq="20">"예수를 죽인<span>&nbsp;</span></span><span data-newtext-seq="28">민족"이라는 낙인이다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">흩어</span><span data-newtext-seq="2">진 유대인 다수가 정착한<span>&nbsp;</span></span><span data-newtext-seq="16">곳이 유럽이다.<span>&nbsp;</span></span><span data-newtext-seq="25">그런데 유럽은<span>&nbsp;</span></span><span data-newtext-seq="33">기독교 세계였고, 여기서<span>&nbsp;</span></span><span data-newtext-seq="47">비극이 시작된다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">배경</span><span data-newtext-seq="2"><span>&nbsp;</span>설명이 필요하다.<span>&nbsp;</span></span><span data-newtext-seq="13">유대교에는 '메시아'라는<span>&nbsp;</span></span><span data-newtext-seq="27">개념이 있다.<span>&nbsp;</span></span><span data-newtext-seq="35">언젠가 신이 보낼 구원자를 뜻한다.<span>&nbsp;</span></span><span data-newtext-seq="55">기독교는 "그 메시아가<span>&nbsp;</span></span><span data-newtext-seq="68">예수다"라고 믿는 종교고,<span>&nbsp;</span></span><b><span data-newtext-seq="83">유대교는 "예수는 메시아가<span>&nbsp;</span></span><span data-newtext-seq="98">아니며 메시아는 아직<span>&nbsp;</span></span><span data-newtext-seq="110">오지 않았다"는<span>&nbsp;</span></span></b><span data-newtext-seq="119"><b>입장</b>이다. 그래서 기독교<span>&nbsp;</span></span><span data-newtext-seq="133">유럽의 눈에 유대인은<span>&nbsp;</span></span><span data-newtext-seq="145">이상한 존재였다. 우리<span>&nbsp;</span></span><span data-newtext-seq="158">구원자를 믿지 않는<span>&nbsp;</span></span><span data-newtext-seq="169">민족, 심지어 성경<span>&nbsp;</span></span><span data-newtext-seq="180">기록상 예수의<span>&nbsp;</span></span><span data-newtext-seq="188">처형을 요구한<span>&nbsp;</span></span><span data-newtext-seq="196">민족이었다. 실제 십자가형을<span>&nbsp;</span></span><span data-newtext-seq="212">집행한 것은<span>&nbsp;</span></span><span data-newtext-seq="219">로마군이었지만, "유대인이<span>&nbsp;</span></span><span data-newtext-seq="234">예수를 죽였다"는 낙인이<span>&nbsp;</span></span><span data-newtext-seq="248">유럽에 1,000년<span>&nbsp;</span></span><span data-newtext-seq="259">넘게 박힌다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">낙</span><span data-newtext-seq="1">인은 제도가<span>&nbsp;</span></span><span data-newtext-seq="8">됐다. 중세 유럽에서<span>&nbsp;</span></span><span data-newtext-seq="20">유대인은 땅을 소유할 수<span>&nbsp;</span></span><span data-newtext-seq="34">없었고, '게토'라 불리는<span>&nbsp;</span></span><span data-newtext-seq="49">지정 구역에만 살아야<span>&nbsp;</span></span><span data-newtext-seq="61">했고, 가질 수 있는<span>&nbsp;</span></span><span data-newtext-seq="73">직업도 제한됐다. 그러면<span>&nbsp;</span></span><span data-newtext-seq="87">유대인은 뭘<span>&nbsp;</span></span><span data-newtext-seq="94">먹고살았는가. 남들이 안 하는<span>&nbsp;</span></span><span data-newtext-seq="111">일을 했다. 당시<span>&nbsp;</span></span><span data-newtext-seq="121">기독교는 돈을<span>&nbsp;</span></span><span data-newtext-seq="129">빌려주고 이자를 받는<span>&nbsp;</span></span><span data-newtext-seq="141">일을 죄악으로<span>&nbsp;</span></span><span data-newtext-seq="149">여겨<span>&nbsp;</span></span><span data-newtext-seq="152">기피했는데, 땅도<span>&nbsp;</span></span><span data-newtext-seq="162">없고 직업<span>&nbsp;</span></span><span data-newtext-seq="168">선택권도 없던<span>&nbsp;</span></span><span data-newtext-seq="176">유대인이 이<span>&nbsp;</span></span><span data-newtext-seq="183">대부업을<span>&nbsp;</span></span><span data-newtext-seq="188">떠맡았다. 그리고 이<span>&nbsp;</span></span><span data-newtext-seq="200">직업이 다시<span>&nbsp;</span></span><span data-newtext-seq="207">"돈만 밝히는<span>&nbsp;</span></span><span data-newtext-seq="215">유대인"이라는 새 혐오의<span>&nbsp;</span></span><span data-newtext-seq="229">근거가 됐다. 차별이<span>&nbsp;</span></span><span data-newtext-seq="241">직업을 만들고, 그 직업이<span>&nbsp;</span></span><span data-newtext-seq="256">차별을 강화하는<span>&nbsp;</span></span><span data-newtext-seq="265">악순환이다. 셰익스피어<span>&nbsp;</span></span><span data-newtext-seq="278">『베니스의 상인』의 악덕<span>&nbsp;</span></span><span data-newtext-seq="292">사채업자 샤일록이 유대인으로<span>&nbsp;</span></span><span data-newtext-seq="308">설정된 것도 이 시대 인식의<span>&nbsp;</span></span><span data-newtext-seq="324">산물이다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">5.<span>&nbsp;</span><span data-newtext-seq="6">정작<span>&nbsp;</span></span><span data-newtext-seq="9">이슬람 세계에서는 잘<span>&nbsp;</span></span><span data-newtext-seq="21">살았다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">의외의 사실 하나.<span>&nbsp;</span></span><span data-newtext-seq="11">유대인이 역사적으로 편하게<span>&nbsp;</span></span><span data-newtext-seq="26">산 곳은 기독교 유럽이<span>&nbsp;</span></span><span data-newtext-seq="39">아니라 이슬람 지배<span>&nbsp;</span></span><span data-newtext-seq="50">지역이었다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">711년부터<span>&nbsp;</span></span><span data-newtext-seq="7">1492년까지 약 780년간<span>&nbsp;</span></span><span data-newtext-seq="23">이슬람 세력이 스페인을<span>&nbsp;</span></span><span data-newtext-seq="36">지배했는데, 이 시기<span>&nbsp;</span></span><span data-newtext-seq="48">스페인의 유대인<span>&nbsp;</span></span><span data-newtext-seq="57">공동체는<span>&nbsp;</span></span><span data-newtext-seq="62">번영했다. 이유는 종교적<span>&nbsp;</span></span><span data-newtext-seq="76">거리다. 이슬람도<span>&nbsp;</span></span><span data-newtext-seq="86">유대교도 돼지고기를 안 먹고<span>&nbsp;</span></span><span data-newtext-seq="102">피를 금하는 등<span>&nbsp;</span></span><span data-newtext-seq="111">생활 규범이<span>&nbsp;</span></span><span data-newtext-seq="118">비슷해 같이<span>&nbsp;</span></span><span data-newtext-seq="125">살기 편했고,<span>&nbsp;</span></span><span data-newtext-seq="133">기독교 유럽 같은<span>&nbsp;</span></span><span data-newtext-seq="143">"예수를 죽인<span>&nbsp;</span></span><span data-newtext-seq="151">민족" 낙인도 없었다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">이 경험 차이가<span>&nbsp;</span></span><span data-newtext-seq="9">지금도 유대인<span>&nbsp;</span></span><span data-newtext-seq="17">내부의 두 집단(아슈케나짐, 세파르딤)으로 남아<span>&nbsp;</span></span><span data-newtext-seq="31">있다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 100%; height: 72px;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr style="height: 18px;">
+<td style="height: 18px;">구분</td>
+<td style="height: 18px;">아슈케나짐</td>
+<td style="height: 18px;">세파르딤</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;"><span data-newtext-seq="44">어디 살던<span>&nbsp;</span></span><span data-newtext-seq="50">유대인인가</span></td>
+<td style="height: 18px;"><span data-newtext-seq="50">독일&middot;동유럽<span>&nbsp;</span></span><span></span></td>
+<td style="height: 18px;"><span data-newtext-seq="65">스페인, 이후<span>&nbsp;</span></span><span data-newtext-seq="75">중동&middot;북아프리카</span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;"><span data-newtext-seq="75">역사 경험</span><span></span></td>
+<td style="height: 18px;"><span data-newtext-seq="75">게토,<span>&nbsp;</span></span><span data-newtext-seq="100">학살, 홀로코스트</span></td>
+<td style="height: 18px;"><span data-newtext-seq="112">상대적으로 온건한 공존</span><span></span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px;"><span data-newtext-seq="129">특징</span><span></span></td>
+<td style="height: 18px;"><span data-newtext-seq="129">박해의 기억이 짙다<span>&nbsp;</span></span><span></span></td>
+<td style="height: 18px;"><span data-newtext-seq="145">문화가 상대적으로<span>&nbsp;</span></span><span data-newtext-seq="157">밝다는 평가</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">뒤에서 이스라엘을<span>&nbsp;</span></span><span data-newtext-seq="10">세우는 주역은 박해를<span>&nbsp;</span></span><span data-newtext-seq="22">제일 심하게 겪은 동유럽<span>&nbsp;</span></span><span data-newtext-seq="36">아슈케나짐이다. 당한 게 많은 쪽이<span> 이스라엘을</span></span><span data-newtext-seq="56"> 건국했다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">6.<span>&nbsp;</span><span data-newtext-seq="6">재판 하나가<span>&nbsp;</span></span><span data-newtext-seq="13">"우리 나라를 만들자"는<span>&nbsp;</span></span><span data-newtext-seq="27">운동에 불을 붙였다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">시간을<span>&nbsp;</span></span><span data-newtext-seq="4">훌쩍 넘겨 1894년 프랑스.<span>&nbsp;</span></span><span data-newtext-seq="21">이스라엘 건국의 방아쇠가<span>&nbsp;</span></span><span data-newtext-seq="35">여기서 당겨진다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">프랑스</span><span data-newtext-seq="3">군 장교 드레퓌스가 독일<span>&nbsp;</span></span><span data-newtext-seq="17">스파이로 몰려 유죄 판결을<span>&nbsp;</span></span><span data-newtext-seq="32">받았다. 증거는 부실했고,<span>&nbsp;</span></span><span data-newtext-seq="47">그가 범인으로 지목된<span>&nbsp;</span></span><span data-newtext-seq="59">실질적 이유는 하나,<span>&nbsp;</span></span><span data-newtext-seq="71">유대인이라는 것이었다.<span>&nbsp;</span></span><span data-newtext-seq="84">나중에 진범이 드러났는데도<span>&nbsp;</span></span><span data-newtext-seq="99">군부는 판결을<span>&nbsp;</span></span><span data-newtext-seq="107">바로 뒤집지 않았다. 이것이<span>&nbsp;</span></span><span data-newtext-seq="123">유명한 '드레퓌스<span>&nbsp;</span></span><span data-newtext-seq="133">사건'이다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">이<span>&nbsp;</span></span><span data-newtext-seq="2">재판을 취재하던 기자<span>&nbsp;</span></span><span data-newtext-seq="14">중에 테오도르<span>&nbsp;</span></span><span data-newtext-seq="22">헤르츨이라는 유대인이<span>&nbsp;</span></span><span data-newtext-seq="34">있었다. 그는<span>&nbsp;</span></span><span data-newtext-seq="42">충격을 받는다.<span>&nbsp;</span></span><span data-newtext-seq="51">프랑스가 어떤<span>&nbsp;</span></span><span data-newtext-seq="59">나라인가. 1789년<span>&nbsp;</span></span><span data-newtext-seq="71">혁명으로 유럽에서<span>&nbsp;</span></span><span data-newtext-seq="81">처음 유대인에게 시민권을<span>&nbsp;</span></span><span data-newtext-seq="95">준, 인권의 상징<span>&nbsp;</span></span><span data-newtext-seq="105">같은 나라다.<span>&nbsp;</span></span><span data-newtext-seq="113">그런<span>&nbsp;</span></span><span data-newtext-seq="116">나라에서조차 유대인이라는 이유만으로<span>&nbsp;</span></span><span data-newtext-seq="136">누명을 쓴다면,<span>&nbsp;</span></span><span data-newtext-seq="145">유럽 어디에도<span>&nbsp;</span></span><span data-newtext-seq="153">유대인이 안전하게 살<span>&nbsp;</span></span><span data-newtext-seq="165">곳은 없다는 결론이<span>&nbsp;</span></span><span data-newtext-seq="176">나온다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">그래서<span>&nbsp;</span></span><span data-newtext-seq="4">헤르츨은 1896년<span>&nbsp;</span></span><span data-newtext-seq="15">『유대인<span>&nbsp;</span></span><span data-newtext-seq="20">국가』라는 책을 쓰고,<span>&nbsp;</span></span><span data-newtext-seq="33">이듬해 첫 국제<span>&nbsp;</span></span><span data-newtext-seq="42">대회를 열어 운동을<span>&nbsp;</span></span><span data-newtext-seq="53">조직한다. "유대인이<span>&nbsp;</span></span><span data-newtext-seq="65">안전하려면 유대인의<span>&nbsp;</span></span><span data-newtext-seq="76">나라가 있어야 한다"는 이<span>&nbsp;</span></span><span data-newtext-seq="91">운동이<span>&nbsp;</span></span><span data-newtext-seq="95">'<b>시온주의</b>(Zionism)'다. 시온은<span>&nbsp;</span></span><span data-newtext-seq="117">예루살렘에 있는 언덕<span>&nbsp;</span></span><span data-newtext-seq="129">이름으로,<span>&nbsp;</span></span><span data-newtext-seq="135">유대인들이 고향을 부를 때 쓰던<span>&nbsp;</span></span><span data-newtext-seq="153">상징어다. 우리말로 옮기면<span>&nbsp;</span></span><span data-newtext-seq="168">'고향으로 돌아가 나라를<span>&nbsp;</span></span><span data-newtext-seq="182">세우자 운동'<span>&nbsp;</span></span><span data-newtext-seq="190">정도가 된다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">7.<span>&nbsp;</span><span data-newtext-seq="6">1948년<span>&nbsp;</span></span><span data-newtext-seq="12">5월 14일,<span>&nbsp;</span></span><span data-newtext-seq="20">나라가 생겼고 그날 밤<span>&nbsp;</span></span><span data-newtext-seq="33">전쟁이 터졌다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">시온주</span><span data-newtext-seq="3">의 운동이 실제<span>&nbsp;</span></span><span data-newtext-seq="12">건국까지 가는 데는<span>&nbsp;</span></span><span data-newtext-seq="23">강대국 영국의 도움과<span>&nbsp;</span></span><span data-newtext-seq="35">두 번의<span>&nbsp;</span></span><span data-newtext-seq="40">세계대전이 얽힌다.&nbsp;</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<div class="devlog-table-scroll">
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td>연도</td>
+<td>사건</td>
+<td><span data-newtext-seq="59">뜻</span></td>
+</tr>
+<tr>
+<td><span data-newtext-seq="38">1917년</span><span></span></td>
+<td><span data-newtext-seq="38">영국의<span>&nbsp;</span></span><span data-newtext-seq="50">밸푸어 선언</span></td>
+<td><span data-newtext-seq="59">"팔레스타인에 유대인의 터전을<span>&nbsp;</span></span><span data-newtext-seq="76">세우는 걸<span>&nbsp;</span></span><span data-newtext-seq="82">지지한다"는 공식 문서</span></td>
+</tr>
+<tr>
+<td><span data-newtext-seq="98"></span><span data-newtext-seq="99">1939~1945년</span></td>
+<td><span data-newtext-seq="99">홀로코스트<span>&nbsp;</span></span><span></span></td>
+<td><span data-newtext-seq="118">나치 독일이 유대인 약<span>&nbsp;</span></span><span data-newtext-seq="133">600만 명 학살<span>&nbsp;</span></span></td>
+</tr>
+<tr>
+<td><span data-newtext-seq="147">1947년</span><span></span></td>
+<td><span data-newtext-seq="147">UN 분할안 통과<span>&nbsp;</span></span><span></span></td>
+<td><span data-newtext-seq="165">팔레스타인 땅을<span>&nbsp;</span></span><span data-newtext-seq="176">유대 국가와 아랍<span>&nbsp;</span></span><span data-newtext-seq="186">국가로 나누자는 안</span></td>
+</tr>
+<tr>
+<td><span data-newtext-seq="201">1948년 5월<span>&nbsp;</span></span><span data-newtext-seq="210">14일</span></td>
+<td><span data-newtext-seq="210">이스라엘<span>&nbsp;</span></span><span data-newtext-seq="221">독립 선언</span></td>
+<td><span data-newtext-seq="221">당일<span>&nbsp;</span></span><span data-newtext-seq="232">밤 주변 아랍<span>&nbsp;</span></span><span data-newtext-seq="240">국가들이 침공, 제1차<span>&nbsp;</span></span><span data-newtext-seq="253">중동전쟁</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">각<span>&nbsp;</span></span><span data-newtext-seq="2">단계에 사연이 있다. 밸푸어 선언은<span>&nbsp;</span></span><span data-newtext-seq="22">순수한 호의가<span>&nbsp;</span></span><span data-newtext-seq="30">아니었다. 1차 대전<span>&nbsp;</span></span><span data-newtext-seq="42">중이던 영국은 전쟁 자금이<span>&nbsp;</span></span><span data-newtext-seq="57">필요했고, 선언문 자체가 유대계<span>&nbsp;</span></span><span data-newtext-seq="75">금융 명문 로스차일드 가문<span>&nbsp;</span></span><span data-newtext-seq="90">앞으로 보낸 편지였다. 유대계<span>&nbsp;</span></span><span data-newtext-seq="107">자본을 자기편에<span>&nbsp;</span></span><span data-newtext-seq="116">묶어두려는 계산이 깔려 있었다는 해석이<span>&nbsp;</span></span><span data-newtext-seq="138">일반적이다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">홀로코스트</span><span data-newtext-seq="5">는 건국을 앞당긴<span>&nbsp;</span></span><span data-newtext-seq="15">결정적 비극이다. 유럽<span>&nbsp;</span></span><span data-newtext-seq="28">유대인 950만<span>&nbsp;</span></span><span data-newtext-seq="37">중 600만이<span>&nbsp;</span></span><span data-newtext-seq="45">학살당했고, 살아남은<span>&nbsp;</span></span><span data-newtext-seq="57">사람들은 유럽에 남을<span>&nbsp;</span></span><span data-newtext-seq="69">이유가 없었다.<span>&nbsp;</span></span><span data-newtext-seq="78">"유럽에서는 살 수 없다"던<span>&nbsp;</span></span><span data-newtext-seq="94">헤르츨의 50년 전<span>&nbsp;</span></span><span data-newtext-seq="105">경고가 최악의 형태로<span>&nbsp;</span></span><span data-newtext-seq="117">증명된 셈이라,<span>&nbsp;</span></span><span data-newtext-seq="126">국제사회도 유대 국가 건설에<span>&nbsp;</span></span><span data-newtext-seq="142">죄책감 섞인 동의를<span>&nbsp;</span></span><span data-newtext-seq="153">보냈다. 1947년 UN<span>&nbsp;</span></span><span data-newtext-seq="167">분할안이 통과된 배경이다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">문제는 그 땅에<span>&nbsp;</span></span><span data-newtext-seq="9">이미 아랍계<span>&nbsp;</span></span><span data-newtext-seq="16">주민(팔레스타인인)이 살고 있었다는<span>&nbsp;</span></span><span data-newtext-seq="36">점이다. 유대 측은<span>&nbsp;</span></span><span data-newtext-seq="47">분할안을 받아들였지만<span>&nbsp;</span></span><span data-newtext-seq="59">아랍 측은 거부했다.<span>&nbsp;</span></span><span data-newtext-seq="71">원래 살던 땅의 절반<span>&nbsp;</span></span><span data-newtext-seq="83">이상을 내주는<span>&nbsp;</span></span><span data-newtext-seq="91">안을 받을 수 없었던<span>&nbsp;</span></span><span data-newtext-seq="103">것이다. 결국<span>&nbsp;</span></span><span data-newtext-seq="111">1948년 5월 14일<span>&nbsp;</span></span><span data-newtext-seq="124">이스라엘이 독립을 선언하자<span>&nbsp;</span></span><span data-newtext-seq="139">그날 밤 주변 아랍<span>&nbsp;</span></span><span data-newtext-seq="150">국가들이 일제히<span>&nbsp;</span></span><span data-newtext-seq="159">침공했고,<span>&nbsp;</span></span><span data-newtext-seq="165">이스라엘이 이 전쟁에서 이기면서 나라를<span>&nbsp;</span></span><span data-newtext-seq="187">지켰다. 지금까지<span>&nbsp;</span></span><span data-newtext-seq="197">이어지는<span>&nbsp;</span></span><span data-newtext-seq="202">이스라엘-팔레스타인 분쟁은 이날<span>&nbsp;</span></span><span data-newtext-seq="220">시작된 싸움의<span>&nbsp;</span></span><span data-newtext-seq="228">연장전이다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">8.<span>&nbsp;</span><span data-newtext-seq="6">"유대인이 세계를<span>&nbsp;</span></span><span data-newtext-seq="16">지배한다"는 절반은 사실,<span>&nbsp;</span></span><span data-newtext-seq="31">절반은 음모론이다</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">유대</span><span data-newtext-seq="2">인 이야기에<span>&nbsp;</span></span><span data-newtext-seq="9">꼭 따라붙는 주제다.<span>&nbsp;</span></span><span data-newtext-seq="21">사실과 음모론의<span>&nbsp;</span></span><span data-newtext-seq="30">경계를 긋는다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><b><span data-newtext-seq="2">사실인 부분.</span></b><span data-newtext-seq="2"><span>&nbsp;</span>미국 내<span>&nbsp;</span></span><span data-newtext-seq="17">유대인의 영향력은<span>&nbsp;</span></span><span data-newtext-seq="27">실재한다. 아인슈타인,<span>&nbsp;</span></span><span data-newtext-seq="40">프로이트, 스티븐<span>&nbsp;</span></span><span data-newtext-seq="50">스필버그, 마크<span>&nbsp;</span></span><span data-newtext-seq="59">저커버그가 다 유대계고,<span>&nbsp;</span></span><span data-newtext-seq="73">골드만삭스 같은 월가 금융사<span>&nbsp;</span></span><span data-newtext-seq="89">창업자들도 유대계다.<span>&nbsp;</span></span><span data-newtext-seq="101">노벨상 수상자의 약<span>&nbsp;</span></span><span data-newtext-seq="112">20%가 유대계라는 집계도<span>&nbsp;</span></span><span data-newtext-seq="127">여러 기관에서 반복<span>&nbsp;</span></span><span data-newtext-seq="138">확인된다. 인구<span>&nbsp;</span></span><span data-newtext-seq="147">0.2%임을 감안하면 압도적<span>&nbsp;</span></span><span data-newtext-seq="163">비율이다. 미국 정치권에<span>&nbsp;</span></span><span data-newtext-seq="177">대한 유대계의<span>&nbsp;</span></span><span data-newtext-seq="185">로비력도 학술 연구<span>&nbsp;</span></span><span data-newtext-seq="196">대상일 만큼 실체가<span>&nbsp;</span></span><span data-newtext-seq="207">있는데, 미국<span>&nbsp;</span></span><span data-newtext-seq="215">정치학자 미어샤이머와<span>&nbsp;</span></span><span data-newtext-seq="227">월트가 2007년<span>&nbsp;</span></span><span data-newtext-seq="237">『이스라엘 로비』라는<span>&nbsp;</span></span><span data-newtext-seq="249">책으로 이를 분석해 큰<span>&nbsp;</span></span><span data-newtext-seq="262">논쟁을 일으킨 바 있다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><b><span data-newtext-seq="2">음모론인 부분.</span></b><span data-newtext-seq="2"><span>&nbsp;</span>"유대인이<span>&nbsp;</span></span><span data-newtext-seq="19">배후에서 세계 경제와<span>&nbsp;</span></span><span data-newtext-seq="31">언론을 조종한다"는 식의<span>&nbsp;</span></span><span data-newtext-seq="45">주장이다. 이런 서사는<span>&nbsp;</span></span><span data-newtext-seq="58">20세기 초에 조작된<span>&nbsp;</span></span><span data-newtext-seq="70">가짜 문서 『시온<span>&nbsp;</span></span><span data-newtext-seq="80">의정서』에서 시작해 나치의<span>&nbsp;</span></span><span data-newtext-seq="95">학살 명분으로<span>&nbsp;</span></span><span data-newtext-seq="103">쓰인 계보가 있다.<span>&nbsp;</span></span><span data-newtext-seq="114">성취가 크다는 사실과<span>&nbsp;</span></span><span data-newtext-seq="126">배후에서 조종한다는 주장은<span>&nbsp;</span></span><span data-newtext-seq="141">전혀 다른 이야기고,<span>&nbsp;</span></span><span data-newtext-seq="153">후자를 받아들이는<span>&nbsp;</span></span><span data-newtext-seq="163">순간 분석이<span>&nbsp;</span></span><span data-newtext-seq="170">아니라 혐오가 된다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">그</span><span data-newtext-seq="1">러면 그 성취는<span>&nbsp;</span></span><span data-newtext-seq="10">어디서 왔는가. 검증 가능한<span>&nbsp;</span></span><span data-newtext-seq="26">요인은 세 가지다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><span data-newtext-seq="2">나치를 피해<span>&nbsp;</span></span><span data-newtext-seq="9">아인슈타인급 두뇌들이<span>&nbsp;</span></span><span data-newtext-seq="21">1930~40년대에 대거 미국으로<span>&nbsp;</span></span><span data-newtext-seq="40">건너갔다.</span></li>
+<li><span data-newtext-seq="40">중세부터<span>&nbsp;</span></span><span data-newtext-seq="53">강제로 금융&middot;전문직에<span>&nbsp;</span></span><span data-newtext-seq="65">몰린 역사가<span>&nbsp;</span></span><span data-newtext-seq="72">역설적으로 전문성 축적이<span>&nbsp;</span></span><span data-newtext-seq="86">됐다.</span></li>
+<li><span data-newtext-seq="86">정답 암기가<span>&nbsp;</span></span><span data-newtext-seq="99">아니라 질문과 논쟁으로<span>&nbsp;</span></span><span data-newtext-seq="112">배우는 교육 전통이<span>&nbsp;</span></span><span data-newtext-seq="123">있다. 유대 경전을 둘이<span>&nbsp;</span></span><span data-newtext-seq="137">짝지어 서로 따지며<span>&nbsp;</span></span><span data-newtext-seq="148">공부하는<span>&nbsp;</span></span><span data-newtext-seq="153">방식(하브루타)이 대표적이다.</span></li>
+</ul>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">참</span><span data-newtext-seq="1">고로 유대계 노벨상<span>&nbsp;</span></span><span data-newtext-seq="12">수상자 대부분은 이스라엘이<span>&nbsp;</span></span><span data-newtext-seq="27">아니라 미국&middot;유럽에서<span>&nbsp;</span></span><span data-newtext-seq="39">태어나고 교육받았다.</span><span data-newtext-seq="72"></span></p>
+[##_Image|kage@Z9Qww/dJMcahkMMtq/AAAAAAAAAAAAAAAAAAAAAOyuAo9By73SWgjbPUSOmB6IqatvMzhuH3nlHUi_nQE7/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=M6BZXPLQG86IG%2FPad%2FcB35k4yS0%3D|CDM|1.3|{"originWidth":1536,"originHeight":1024,"style":"alignCenter","width":687,"height":458,"caption":"유대인 관련"}_##]</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<h3 data-ke-size="size23">9.<span>&nbsp;</span><span data-newtext-seq="6">정리 - 박해가 만든<span>&nbsp;</span></span><span data-newtext-seq="18">민족, 박해가 세운<span>&nbsp;</span></span><span data-newtext-seq="29">나라</span></h3>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">이 글 전체를<span>&nbsp;</span></span><span data-newtext-seq="8">한 문장으로<span>&nbsp;</span></span><span data-newtext-seq="15">줄이면 이렇다.<span>&nbsp;</span></span><span data-newtext-seq="24">유대인의 지적 성취는<span>&nbsp;</span></span><span data-newtext-seq="36">우수한 혈통의 증거가<span>&nbsp;</span></span><span data-newtext-seq="48">아니라, 2,600년<span>&nbsp;</span></span><span data-newtext-seq="60">박해가 강제로<span>&nbsp;</span></span><span data-newtext-seq="68">만든 생존<span>&nbsp;</span></span><span data-newtext-seq="74">전략의 결과다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">경</span><span data-newtext-seq="1">로를<span>&nbsp;</span></span><span data-newtext-seq="4">되짚으면 인과가<span>&nbsp;</span></span><span data-newtext-seq="13">보인다. 바빌론에<span>&nbsp;</span></span><span data-newtext-seq="23">끌려가 나라를<span>&nbsp;</span></span><span data-newtext-seq="31">잃자 남은 것은<span>&nbsp;</span></span><span data-newtext-seq="40">경전뿐이었고, 그래서<span>&nbsp;</span></span><span data-newtext-seq="52">글을 읽고<span>&nbsp;</span></span><span data-newtext-seq="58">따지는 교육<span>&nbsp;</span></span><span data-newtext-seq="65">전통이 생겼다.<span>&nbsp;</span></span><span data-newtext-seq="74">중세 유럽이<span>&nbsp;</span></span><span data-newtext-seq="81">땅과 직업을<span>&nbsp;</span></span><span data-newtext-seq="88">빼앗자 남은<span>&nbsp;</span></span><span data-newtext-seq="95">선택지는 금융과<span>&nbsp;</span></span><span data-newtext-seq="104">전문직뿐이었고, 그래서<span>&nbsp;</span></span><span data-newtext-seq="117">머리에 담는<span>&nbsp;</span></span><span data-newtext-seq="124">자산이 유일한<span>&nbsp;</span></span><span data-newtext-seq="132">자산이 됐다.<span>&nbsp;</span></span><span data-newtext-seq="140">언제 쫓겨날지<span>&nbsp;</span></span><span data-newtext-seq="148">모르는 민족에게<span>&nbsp;</span></span><span data-newtext-seq="157">부동산은 못<span>&nbsp;</span></span><span data-newtext-seq="164">가져가도 지식은<span>&nbsp;</span></span><span data-newtext-seq="173">가져갈 수<span>&nbsp;</span></span><span data-newtext-seq="179">있었다. 나치가<span>&nbsp;</span></span><span data-newtext-seq="188">유럽에서 몰아내자<span>&nbsp;</span></span><span data-newtext-seq="198">그 두뇌들이<span>&nbsp;</span></span><span data-newtext-seq="205">미국으로 건너가<span>&nbsp;</span></span><span data-newtext-seq="214">꽃을 피웠다.<span>&nbsp;</span></span><span data-newtext-seq="222">노벨상 20%라는<span>&nbsp;</span></span><span data-newtext-seq="232">숫자는 이 강제된<span>&nbsp;</span></span><span data-newtext-seq="242">선택들이 쌓인<span>&nbsp;</span></span><span data-newtext-seq="250">결과인 셈이다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="0">그러니<span>&nbsp;</span></span><span data-newtext-seq="4">"유대인은 왜<span>&nbsp;</span></span><span data-newtext-seq="12">똑똑한가"라는 질문의<span>&nbsp;</span></span><span data-newtext-seq="24">답은 유전자가<span>&nbsp;</span></span><span data-newtext-seq="32">아니라 역사에<span>&nbsp;</span></span><span data-newtext-seq="40">있다. 유대계<span>&nbsp;</span></span><span data-newtext-seq="48">노벨상 수상자<span>&nbsp;</span></span><span data-newtext-seq="56">대부분이 이스라엘이<span>&nbsp;</span></span><span data-newtext-seq="67">아닌 미국&middot;유럽<span>&nbsp;</span></span><span data-newtext-seq="76">태생이라는 사실이 그<span>&nbsp;</span></span><span data-newtext-seq="88">방증이다. 같은<span>&nbsp;</span></span><span data-newtext-seq="97">혈통이라도 환경이 다르면<span>&nbsp;</span></span><span data-newtext-seq="111">결과가 다르다.</span></p>
+</div>
+<div style="color: var(--devlog-text); text-align: start;">
+<p data-ke-size="size16"><span data-newtext-seq="19">한국도 땅 대신<span>&nbsp;</span></span><span data-newtext-seq="28">교육에 전부를<span>&nbsp;</span></span><span data-newtext-seq="36">걸어온 나라다. 자원<span>&nbsp;</span></span><span data-newtext-seq="48">없는 민족이 머리로<span>&nbsp;</span></span><span data-newtext-seq="59">살아남는다는 전략은<span>&nbsp;</span></span><span data-newtext-seq="70">우리에게도 낯설지 않은 것 같다.</span></p>
+</div>
+</article>

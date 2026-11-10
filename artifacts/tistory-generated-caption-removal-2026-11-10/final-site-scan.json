@@ -1,0 +1,1178 @@
+{
+  "sitemap_url": "https://dop3n.tistory.com/sitemap.xml",
+  "sitemap_total_urls": 166,
+  "published_post_urls": 146,
+  "fetched_successfully": 146,
+  "errors": [],
+  "candidate_posts": [],
+  "all_posts": [
+    {
+      "url": "https://dop3n.tistory.com/entry/AI%EC%97%90%EA%B2%8C-%EC%BD%94%EB%94%A9%EC%9D%84-%EB%A7%A1%EA%B2%BC%EB%8A%94%EB%8D%B0-%EC%99%9C-%EB%8D%94-%ED%94%BC%EA%B3%A4%ED%95%A0%EA%B9%8C",
+      "post_id": 176,
+      "title": "AI에게 코딩을 맡겼는데, 왜 더 피곤할까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Fable-52-vs-Fable-51-vs-Opus-55-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 175,
+      "title": "Fable 5.2 vs Fable 5.1 vs Opus 5.5 - 클로드 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%94%BC%ED%81%B4-AI%EB%8A%94-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EB%8C%80%EC%8B%A0%ED%95%A0%EA%B9%8C-%EC%B4%88%EB%8C%80-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%EC%8B%A4%EC%A0%9C-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80",
+      "post_id": 174,
+      "title": "피클 AI는 어디까지 대신할까? 초대 조건과 실제 활용 사례 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/AI%EC%99%80-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B2%8C%EC%9E%84-%EB%A7%8C%EB%93%A4%EA%B8%B0-2-%EA%B3%A0%EC%96%91%EC%9D%B4%EB%A1%9C-%EB%B0%94%EB%80%90-%EA%B2%8C%EC%9E%84%EC%9D%84-%EB%8B%A4%EB%93%AC%EB%8A%94-%EC%A4%91",
+      "post_id": 173,
+      "title": "AI와 모바일 게임 만들기 (2) 고양이로 바뀐 게임을 다듬는 중 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/AI%EC%99%80-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B2%8C%EC%9E%84-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%EA%B5%AC%EC%83%81%EB%B6%80%ED%84%B0-%EC%B2%AB-%ED%83%88%EC%B6%9C%EA%B9%8C%EC%A7%80",
+      "post_id": 172,
+      "title": "AI와 모바일 게임 만들기 (1) 구상부터 첫 탈출까지 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/AI-%EC%B6%94%EB%A1%A0-%EB%A0%88%EB%B2%A8-%EB%B9%84%EA%B5%90",
+      "post_id": 171,
+      "title": "AI 추론 레벨 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%9A%94%ED%95%9C%EB%B3%B5%EC%9D%8C-2115-22",
+      "post_id": 170,
+      "title": "요한복음 21:15-22, 비교와의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%84%A4%EB%AA%85%EC%9D%B4-%EC%9B%80%EC%A7%81%EC%9D%B4%EB%8A%94-AI-%EC%8A%A4%ED%82%AC-Anatomy",
+      "post_id": 169,
+      "title": "설명이 움직이는 AI 스킬, Anatomy — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Claude-Haiku-55-vs-GPT-6-Luna-%EC%96%BC%EB%A7%88%EB%82%98-%EC%93%B8-%EB%A7%8C%ED%95%98%EA%B3%A0-%EC%96%BC%EB%A7%88%EB%82%98-%EC%8C%80%EA%B9%8C",
+      "post_id": 168,
+      "title": "Claude Haiku 5.5 vs GPT-6 Luna, 얼마나 쓸 만하고 얼마나 쌀까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%95%84%EC%9D%B4%ED%8F%B0-%EB%B0%A9%ED%95%B4%EA%B8%88%EC%A7%80-%EB%AA%A8%EB%93%9C-%EA%BB%90%EB%8A%94%EB%8D%B0-%EC%9E%90%EA%BE%B8-%EC%BC%9C%EC%A7%88-%EB%95%8C",
+      "post_id": 167,
+      "title": "아이폰 방해금지 모드, 껐는데 왜 자꾸 켜질까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%94%94%EC%8A%A4%EC%BD%94%EB%93%9C-%ED%99%94%EB%A9%B4%EA%B3%B5%EC%9C%A0-%EC%86%8C%EB%A6%AC-%EC%95%88-%EB%93%A4%EB%A6%B4-%EB%95%8C",
+      "post_id": 166,
+      "title": "디스코드 화면공유, 화면은 나오는데 소리가 안 들린다면? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/ChatGPT-Pro-%EC%82%AC%EC%9A%A9%EB%9F%89-2%EB%B0%B0-%EC%B6%94%EA%B0%80-%EC%9A%94%EA%B8%88-%EC%97%86%EC%9D%B4-%EB%8A%98%EC%96%B4%EB%82%9C-%ED%98%9C%ED%83%9D",
+      "post_id": 165,
+      "title": "ChatGPT Pro 사용량 2배! 추가 요금 없이 늘어난 혜택 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/11%EC%9B%94-%EC%9D%BC%EB%B3%B8%EC%97%AC%ED%96%89-%EC%A0%84-%ED%95%84%EB%8F%85-%EB%8B%AC%EB%9D%BC%EC%A7%80%EB%8A%94-%EB%A9%B4%EC%84%B8-%EC%87%BC%ED%95%91%EA%B3%BC-%ED%99%98%EA%B8%89-%EB%B0%A9%EB%B2%95",
+      "post_id": 164,
+      "title": "11월 이후 일본여행 필독! 달라지는 면세 쇼핑과 환급 방법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/ChatGPT-API-%ED%81%AC%EB%A0%88%EB%94%A7-%EB%AC%B4%EB%A3%8C-%EC%A7%80%EA%B8%89-%EB%A7%A4%EC%9B%94-%EC%B5%9C%EB%8C%80-500%EB%8B%AC%EB%9F%AC-%EB%B0%9B%EB%8A%94-%EB%B2%95",
+      "post_id": 163,
+      "title": "ChatGPT API 크레딧 무료 지급! 매월 최대 500달러 받는 법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Gemini-4-Carbon-vs-Claude-Opus-55-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 162,
+      "title": "Gemini 4 Carbon vs Claude Opus 5.5 - AI 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%84%A4%EB%AA%85%EC%9D%84-%EA%B7%B8%EB%A0%A4%EC%A3%BC%EB%8A%94-AI-%EC%8A%A4%ED%82%AC-diagram-design",
+      "post_id": 161,
+      "title": "설명을 그려주는 AI 스킬, diagram-design — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%99%95%EC%8B%A0%EC%9D%B4-%EC%97%86%EC%97%88%EB%8D%98-%EA%B8%B0%EB%93%9C%EC%98%A8",
+      "post_id": 160,
+      "title": "확신이 없었던 기드온 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%95%84%EC%9D%B4%ED%8F%B0-%ED%8C%9D%EC%97%85%EC%B0%BD%EC%9D%B4-%EC%95%88-%EC%97%B4%EB%A6%B4-%EB%95%8C",
+      "post_id": 159,
+      "title": "아이폰 팝업창이 안 열릴 때 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%98%88%EC%8A%A424-%ED%8B%B0%EC%BC%93-%EA%B2%B0%EC%A0%9C%EB%90%90%EB%8A%94%EB%8D%B0-%EC%98%88%EB%A7%A4-%EB%82%B4%EC%97%AD%EC%9D%B4-%EC%97%86%EC%9D%84-%EB%95%8C",
+      "post_id": 158,
+      "title": "예스24 티켓, 결제됐는데 예매 내역이 없을 때 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/11%EC%9B%94-%EC%A0%9C%EC%B2%A0%EA%B3%BC%EC%9D%BC-%EB%AD%98-%EB%A8%B9%EC%9D%84%EA%B9%8C",
+      "post_id": 157,
+      "title": "11월 제철과일, 뭘 먹을까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%82%B4-%EC%84%9C%EB%B2%84%EC%9D%98-AI-%EC%A0%95%EB%A7%90-%EC%95%88%EC%A0%84%ED%95%A0%EA%B9%8C",
+      "post_id": 156,
+      "title": "내 서버의 AI, 정말 안전할까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%95%9C-%EB%B2%88-%EB%B3%B4%EC%97%AC-%EC%A3%BC%EB%A9%B4-%EB%8B%A4%EC%9D%8C%EB%B6%80%ED%84%B0-%EB%A7%A1%EA%B8%B8-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%ED%99%94%EB%A9%B4-%EB%85%B9%ED%99%94%EB%A1%9C-AI-%EC%8A%A4%ED%82%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0",
+      "post_id": 155,
+      "title": "한 번 보여 주면 다음부터 맡길 수 있을까? 화면 녹화로 AI 스킬 만들기 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GPT-61-Terra-vs-Claude-Opus-55-%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B0%80%EA%B2%A9%EC%9C%BC%EB%A1%9C-%EB%B3%B8-%EC%84%A0%ED%83%9D",
+      "post_id": 154,
+      "title": "GPT-6.1 Terra vs Claude Opus 5.5, 성능과 가격으로 본 선택 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/AI-%EC%98%81%EC%83%81-%EC%A0%9C%EC%9E%91-%ED%88%B4-%EB%B9%84%EA%B5%90-Kling%C2%B7Wan%C2%B7Seedance%EC%99%80-%EC%B6%94%EC%B2%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8",
+      "post_id": 153,
+      "title": "AI 영상 제작 툴 비교: Kling·Wan·Seedance와 추천 사이트 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Kimi-K31-Pro%EB%9E%80-%EB%AC%B8%EC%84%9C%C2%B7%EC%BD%94%EB%94%A9-AI%EC%9D%98-%EC%9E%A5%EC%A0%90%EA%B3%BC-Opus-55-%EB%B9%84%EA%B5%90",
+      "post_id": 152,
+      "title": "Kimi K3.1 Pro란? 문서·코딩 AI의 장점과 Opus 5.5 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Claude-Duet%EA%B3%BC-ChatGPT-Dots-AI%EC%97%90%EA%B2%8C-%EA%B3%84%EC%86%8D-%EC%97%85%EB%AC%B4%EB%A5%BC-%EB%A7%A1%EA%B8%B0%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "post_id": 151,
+      "title": "Claude Duet과 ChatGPT Dots, AI에게 계속 업무를 맡기는 방법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Gemini-4-Argon-vs-GPT-6-Astra-%EB%82%B4-%EC%9E%91%EC%97%85%EC%97%90%EB%8A%94-%EC%96%B4%EB%96%A4-AI%EA%B0%80-%EB%A7%9E%EC%9D%84%EA%B9%8C",
+      "post_id": 150,
+      "title": "Gemini 4 Argon vs GPT-6 Astra, 내 작업에는 어떤 AI가 맞을까 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/ai-pdf-summary-verification",
+      "post_id": 149,
+      "title": "AI에게 PDF 요약을 맡겨도 될까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%A7%88%ED%83%9C%EB%B3%B5%EC%9D%8C-527-30-%EC%A0%95%EC%9A%95%EA%B3%BC%EC%9D%98-%EC%8B%B8%EC%9B%80",
+      "post_id": 148,
+      "title": "마태복음 5:27-30, 정욕과의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/REA%EB%9E%80-AI%EB%A1%9C-%EC%95%B1%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC%EB%A5%BC-%EC%95%8C%EC%95%84%EB%82%B4%EB%8A%94-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EB%8F%84%EA%B5%AC",
+      "post_id": 146,
+      "title": "REA란? 메모 앱으로 이해하는 소프트웨어 역공학 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%97%B4%EC%99%95%EA%B8%B0%EC%83%81-191-13-%EB%82%99%EC%8B%AC%EA%B3%BC%EC%9D%98-%EC%8B%B8%EC%9B%80",
+      "post_id": 147,
+      "title": "열왕기상 19:1-13, 낙심과의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%B0%BD%EC%84%B8%EA%B8%B0-41-14-%EB%B6%84%EB%85%B8%EC%99%80%EC%9D%98-%EC%8B%B8%EC%9B%80",
+      "post_id": 145,
+      "title": "창세기 4:1-14, 분노와의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GPT-61-Sol-vs-Claude-Opus-55-%EC%83%88-GPT-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B0%80%EA%B2%A9",
+      "post_id": 144,
+      "title": "GPT-6.1 Sol vs Claude Opus 5.5 - 새 GPT 모델의 성능과 가격 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Opus-55-vs-GPT-6-Astra-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 141,
+      "title": "Opus 5.5 vs GPT-6 Astra - AI 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Sonnet-55-vs-GPT-6-Sol-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 143,
+      "title": "Sonnet 5.5 vs GPT-6 Sol - AI 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Drifty-%EA%B3%A0%EC%96%91%EC%9D%B4-AI-%EC%8B%9C%EA%B0%84-%EA%B4%80%EB%A6%AC-%EC%95%B1",
+      "post_id": 140,
+      "title": "Drifty, 고양이 AI 시간 관리 앱 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%82%AC%EB%AC%B4%EC%97%98%EC%83%81-138-14-%EC%A1%B0%EA%B8%89%ED%95%A8%EA%B3%BC%EC%9D%98-%EC%8B%B8%EC%9B%80",
+      "post_id": 139,
+      "title": "사무엘상 13:8-14, 조급함과의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Grok-47-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 138,
+      "title": "Grok 4.7 vs. Fable 5.1 - AI 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%B0%BD%EC%84%B8%EA%B8%B0-37-21-%EC%88%98%EC%B9%98%EC%8B%AC%EA%B3%BC%EC%9D%98-%EC%8B%B8%EC%9B%80",
+      "post_id": 137,
+      "title": "창세기 3:7-21, 수치심과의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%9E%89%EC%8A%A4%ED%95%84%EB%93%9C-AI%EB%9E%80-%EA%B4%91%EA%B3%A0%C2%B7%EC%88%8F%ED%8F%BC-%EC%A0%9C%EC%9E%91-%EA%B8%B0%EB%8A%A5%EA%B3%BC-%EC%A3%BC%EB%AA%A9%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+      "post_id": 136,
+      "title": "힉스필드 AI 사용법, 무엇을 만들 수 있을까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Archify%EB%9E%80-AI%EA%B0%80-%EC%9D%BD%EC%9D%80-%EC%BD%94%EB%93%9C-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EA%B2%80%EC%A6%9D-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "post_id": 135,
+      "title": "코드 구조를 그림으로 보여주는 AI 스킬, Archify — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%8B%A4%EB%8B%88%EC%97%98-428-37-%EA%B5%90%EB%A7%8C%EA%B3%BC%EC%9D%98-%EC%8B%B8%EC%9B%80",
+      "post_id": 134,
+      "title": "다니엘 4:28-37, 교만과의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%A0%9C%EB%B8%8CJev-InstructGPT-%EC%97%B0%EA%B5%AC%EC%9E%90%EA%B0%80-%EB%A7%8C%EB%93%A0-%ED%8C%90%EB%8B%A8-%EC%A0%84%EC%9A%A9-AI",
+      "post_id": 133,
+      "title": "제브(Jev), InstructGPT 연구자가 만든 판단 전용 AI — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/9%EC%9B%94-%EC%A0%9C%EC%B2%A0-%EA%B3%BC%EC%9D%BC-%EC%B6%94%EC%B2%9C",
+      "post_id": 132,
+      "title": "9월 제철 과일 추천 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%B3%B5%EC%9D%84-%EA%B5%AC%ED%95%9C-%EC%95%BC%EB%B2%A0%EC%8A%A4",
+      "post_id": 131,
+      "title": "복을 구한 야베스 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%A7%88%ED%83%9C%EB%B3%B5%EC%9D%8C-625-34-%EC%97%BC%EB%A0%A4%EC%99%80%EC%9D%98-%EC%8B%B8%EC%9B%80",
+      "post_id": 130,
+      "title": "마태복음 6:25-34, 염려와의 싸움 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Github-vs-Cursor-Origin-%EC%BD%94%EB%93%9C-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B9%84%EA%B5%90",
+      "post_id": 129,
+      "title": "Github vs. Cursor Origin, 코드 저장소 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GPT-6-Astra-vs-Fable-51-AI-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 127,
+      "title": "GPT-6 Astra vs. Fable 5.1 - AI 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Fable-51-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 126,
+      "title": "Fable 5.1 vs Fable 5 - 클로드 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%98%A4%ED%94%88%ED%81%B4%EB%A1%9C-20%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B0%9C%EC%9D%B8-AI%EC%9D%98-%EC%8B%9C%EC%9E%91%EA%B3%BC-%EC%9A%B4%EC%98%81%EC%9D%B4-%EB%8B%AC%EB%9D%BC%EC%A7%84-%EC%9D%B4%EC%9C%A0",
+      "post_id": 125,
+      "title": "오픈클로 2.0, 메일과 파일까지 다루는 개인 AI — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%96%B4%EC%85%88%EB%B8%94%EB%A6%AC%EC%96%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-ARM64-%EC%BD%94%EB%93%9C%EB%A1%9C-%EC%9D%BD%EB%8A%94-%EC%82%AC%EC%9A%A9%EC%B2%98%EC%99%80-%EC%9E%A5%EB%8B%A8%EC%A0%90",
+      "post_id": 124,
+      "title": "어셈블리어란 무엇인가, ARM64 코드로 읽는 사용처와 장단점 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%97%AC%EC%88%98-%EB%8C%80%EB%91%90%EB%9D%BC%EB%8F%84-%EC%84%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%91%90%EB%9D%BC%EB%A6%AC-%EA%B5%90%ED%9A%8C",
+      "post_id": 122,
+      "title": "여수 대두라도 섬, 그리고 두라리 교회 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%B9%8C-%EA%B2%8C%EC%9D%B4%EC%B8%A0%EC%9D%98-AI-%EA%B2%BD%EA%B3%A0-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EB%B3%B4%ED%98%B8%EC%99%80-%EB%A1%9C%EB%B4%87%EC%84%B8%EB%8A%94-%EB%8B%B5%EC%9D%B4-%EB%90%A0%EA%B9%8C",
+      "post_id": 119,
+      "title": "빌 게이츠의 AI 경고, 일자리 보호와 로봇세는 답이 될까 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%84%B8%EA%B4%80%EC%97%90%EC%84%9C-%EB%B6%80%EB%A6%84%EB%B0%9B%EC%9D%80-%EB%A7%88%ED%83%9C",
+      "post_id": 120,
+      "title": "세관에서 부름받은 마태 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GLM-53-Flash-%EB%B9%84%EA%B5%90-Ox-Alpha-%EC%A0%95%EC%B2%B4-%EA%B3%B5%EA%B0%9C-%EB%92%A4-%EB%8B%A4%EC%8B%9C-%EB%B3%B8-%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B0%80%EA%B2%A9",
+      "post_id": 117,
+      "title": "GLM-5.3-Flash 비교 - Ox Alpha 정체 공개 뒤 다시 본 성능과 가격 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%B6%9C%EC%95%A0%EA%B5%BD%EA%B8%B0-179-12-%EC%84%9C%EB%A1%9C%EC%9D%98-%ED%8C%94%EC%9D%84-%EB%B6%99%EB%93%9C%EB%8A%94-%EC%A0%9C%EC%9E%90",
+      "post_id": 118,
+      "title": "출애굽기 17:9-12, 서로의 팔을 붙드는 제자 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%9E%A1%EB%8B%B4%EA%B8%80-2",
+      "post_id": 116,
+      "title": "잡담글 2 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Ox-Alpha-%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EB%A5%BC-%EB%8B%AC%EA%B5%B0-%EB%AC%B4%EB%A3%8C-%EB%AF%B8%EC%8A%A4%ED%84%B0%EB%A6%AC-AI",
+      "post_id": 115,
+      "title": "Ox Alpha, 실리콘밸리를 달군 무료 미스터리 AI — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%AC%B8%EB%93%9D",
+      "post_id": 114,
+      "title": "문득 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%84%B8%EA%B3%84-%EB%A1%9C%EB%B4%87-%EA%B8%B0%EC%97%85-%EC%A7%80%EB%8F%84-%EB%88%84%EA%B0%80-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%9E%98%ED%95%98%EA%B3%A0-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%99%94%EB%82%98",
+      "post_id": 113,
+      "title": "세계 로봇 기업 지도: 누가 무엇을 잘하고 어디까지 왔나 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Git-worktree-%EC%82%AC%EC%9A%A9%EB%B2%95-Claude-Code%C2%B7Codex%EC%9D%98-%EC%9E%91%EC%97%85-%ED%8F%B4%EB%8D%94%EB%A5%BC-%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C-%EB%82%98%EB%88%84%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "post_id": 111,
+      "title": "Git worktree 사용법 - Claude Code·Codex의 작업 폴더를 안전하게 나누는 방법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%A4%91%EA%B5%AD-AI%EA%B0%80-%EB%A7%8C%EB%A7%8C%EC%B9%98-%EC%95%8A%EC%9D%80-%EC%9D%B4%EC%9C%A0-%EB%94%A5%EC%8B%9C%ED%81%AC-%EC%9D%B4%ED%9B%84-%EB%84%93%EC%96%B4%EC%A7%84-%EA%B2%BD%EC%9F%81",
+      "post_id": 110,
+      "title": "중국 AI가 만만치 않은 이유 - 딥시크 이후 넓어진 경쟁 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GitHub-%EC%9E%A5%EC%95%A0-%EB%8C%80%EC%9D%91-%EC%BD%94%EB%93%9C-%EB%B0%96%EC%9D%98-%EB%A6%AC%EB%B7%B0%C2%B7%EB%B9%8C%EB%93%9C%C2%B7%EB%B0%B0%ED%8F%AC%EA%B9%8C%EC%A7%80-%EC%A0%90%EA%B2%80%ED%95%98%EB%8A%94-%EB%B2%95",
+      "post_id": 109,
+      "title": "GitHub 장애 대응, 코드 밖의 리뷰·빌드·배포까지 점검하는 법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%85%80%EB%A1%9C%EC%97%90%EC%84%9C-%EA%B0%A4%EB%9F%AD%EC%8B%9C-S25-%EC%97%A3%EC%A7%80-%EC%A4%91%EA%B3%A0%ED%8F%B0-%ED%8C%90%EB%A7%A4-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0",
+      "post_id": 108,
+      "title": "셀로에서 갤럭시 S25 엣지 중고폰 판매 솔직 후기 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%82%B4%EA%B0%80-%EC%95%84%EB%8A%94-%EC%88%98%EB%85%80%EB%8B%98%EB%93%A4%EC%9D%80-%EC%A3%84%EB%8B%A4-%EB%B6%88%EA%B5%AC%EB%8D%A9%EC%9D%B4%EC%97%90-%EB%93%A4%EC%96%B4%EA%B0%88-%EC%98%88%EC%A0%95%EC%9D%B4%EC%8B%A0-%EA%B1%B8%EA%B9%8C",
+      "post_id": 106,
+      "title": "내가 아는 수녀님들은 죄다 불구덩이에 들어갈 예정이신 걸까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%B2%A0%EB%93%9C%EB%A1%9C%EC%A0%84%EC%84%9C-21-17-%EA%B3%B5%EC%82%AC-%EC%A4%91%EC%9E%85%EB%8B%88%EB%8B%A4",
+      "post_id": 105,
+      "title": "베드로전서 2:1-17, 공사 중입니다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Xirp-%EC%97%AC%EB%9F%AC-AI-%EC%BD%94%EB%94%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC-%ED%95%9C%EA%B3%B3%EC%97%90%EC%84%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94-%EC%8A%A4%ED%8F%AC%ED%8B%B0%ED%8C%8C%EC%9D%B4-%EA%B0%9C%EB%B0%9C-%EB%8F%84%EA%B5%AC",
+      "post_id": 104,
+      "title": "Xirp, 스포티파이가 만든 AI 코딩 세션 관리 앱 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%AC%BC%EA%B0%80%EB%8A%94-%EC%98%AC%EB%9E%90%EB%8A%94%EB%8D%B0-%EB%AC%B4%EC%97%87%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EB%B9%84%EC%8B%B8%EC%A1%8C%EC%9D%84%EA%B9%8C-%EC%83%9D%ED%99%9C%EB%AC%BC%EA%B0%80-144%EA%B0%9C-%ED%92%88%EB%AA%A9-%EB%B6%84%EC%84%9D",
+      "post_id": 103,
+      "title": "물가는 올랐는데 무엇이 가장 비싸졌을까? 생활물가 144개 품목 분석 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%82%98%EB%AC%B4%EC%97%90-%EC%98%AC%EB%9D%BC%EA%B0%84-%EC%82%AD%EA%B0%9C%EC%98%A4",
+      "post_id": 102,
+      "title": "나무에 올라간 삭개오 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Unsloth-Desktop%EC%9D%B4%EB%9E%80-%EC%BD%94%EB%94%A9-%EC%97%86%EC%9D%B4-%EB%82%B4-PC%EC%97%90%EC%84%9C-AI%EB%A5%BC-%ED%95%99%EC%8A%B5%ED%95%98%EB%8A%94-%EC%95%B1",
+      "post_id": 100,
+      "title": "Unsloth Desktop이란? 코딩 없이 내 PC에서 AI를 학습하는 앱 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Grok-Bot-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%9D%BC%EB%A1%A0-%EB%A8%B8%EC%8A%A4%ED%81%AC%EC%9D%98-%EC%95%A0%EC%B0%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8",
+      "post_id": 99,
+      "title": "Grok Bot 사용법, 일론 머스크의 애착 에이전트 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%8B%9C%EB%A6%AC-%EB%8C%80%EC%8B%A0-%ED%81%B4%EB%A1%9C%EB%93%9C%EB%A1%9C-%EC%95%84%EC%9D%B4%ED%8F%B0-%EC%93%B0%EA%B8%B0",
+      "post_id": 98,
+      "title": "시리 대신 클로드로 아이폰 쓰기 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%94%94%EB%AA%A8%EB%8D%B0%EC%A0%84%EC%84%9C-66-8-%EC%96%BC%EB%A7%88%EB%A9%B4-%EB%8F%BC",
+      "post_id": 97,
+      "title": "디모데전서 6:6-8, 얼마면 돼? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%B0%B8-%ED%81%AC%EB%9E%98%EC%BB%A4%EB%8A%94-%EC%A0%80%EC%B9%BC%EB%A1%9C%EB%A6%AC%EC%9D%BC%EA%B9%8C-%EB%8B%B4%EB%B0%B1%ED%95%9C-%ED%81%AC%EB%9E%98%EC%BB%A4%EC%9D%98-%EC%B9%BC%EB%A1%9C%EB%A6%AC-%EC%9D%BD%EB%8A%94-%EB%B2%95",
+      "post_id": 96,
+      "title": "참 크래커는 저칼로리일까? 담백한 크래커의 칼로리 읽는 법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B2%8C%EC%9E%84%C2%B7%EB%94%94%EC%8A%A4%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%9D%B4%EC%96%B4%ED%8F%B0-%EC%9D%8C%EC%A7%88%EC%9D%B4-%EB%82%98%EB%B9%A0%EC%A7%80%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%ED%95%B4%EA%B2%B0-%EC%88%9C%EC%84%9C",
+      "post_id": 95,
+      "title": "게임·디스코드에서 블루투스 이어폰 음질이 나빠지는 이유와 해결 순서 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Vercel-%EC%82%AC%EC%9A%A9%EB%B2%95-GitHub-%EC%B2%AB-%EB%B0%B0%ED%8F%AC%EB%B6%80%ED%84%B0-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98%C2%B7%EB%8F%84%EB%A9%94%EC%9D%B8%EA%B9%8C%EC%A7%80",
+      "post_id": 94,
+      "title": "Vercel 사용법, GitHub 첫 배포부터 환경 변수·도메인까지 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B7%B8%EB%A6%AD%EC%9A%94%EA%B1%B0%ED%8A%B8%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83-%EC%98%81%EC%96%91%EB%B6%80%ED%84%B0-%EA%B3%A0%EB%A5%B4%EB%8A%94-%EB%B2%95%EA%B9%8C%EC%A7%80",
+      "post_id": 92,
+      "title": "그릭요거트의 모든 것, 영양부터 고르는 법까지 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B2%BD%EA%B8%B0%EB%8F%84-%EB%B6%80%EB%8F%84%EC%84%A4-%EC%82%AC%EC%8B%A4%EC%9D%BC%EA%B9%8C-7%EC%A1%B0-%EC%9B%90-%EB%85%BC%EB%9E%80%EA%B3%BC-%EC%9E%AC%EC%A0%95-%EC%9C%84%EA%B8%B0%EC%9D%98-%ED%95%B5%EC%8B%AC",
+      "post_id": 90,
+      "title": "경기도 부도설, 사실일까? 7조 원 논란과 재정 위기의 핵심 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/1%EC%9D%B8-%EA%B0%80%EA%B5%AC-800%EB%A7%8C-%EC%8B%9C%EB%8C%80-%ED%98%BC%EC%9E%90-%EC%82%AC%EB%8A%94-%EC%82%B6%EC%9D%B4-%EB%B0%94%EA%BE%BC-%ED%95%9C%EA%B5%AD%EC%9D%98-%EC%9D%BC%EC%83%81",
+      "post_id": 89,
+      "title": "1인 가구 800만 시대, 혼자 사는 삶이 바꾼 한국의 일상 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GPT-56-Sol-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%B0%8F-Luna-%EB%AC%B4%EC%A0%9C%ED%95%9C-%EB%AC%B4%EB%A3%8C",
+      "post_id": 88,
+      "title": "GPT-5.6 Sol 업데이트 및 Luna 무제한 무료 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%80-%EC%A0%95%EB%A7%90-%EC%9D%BC%ED%95%98%EA%B3%A0-%EA%B3%84%EC%8B%A0%EA%B0%80",
+      "post_id": 87,
+      "title": "하나님은 정말 일하고 계신가 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0-API-%ED%99%9C%EC%9A%A9%EA%B8%B0-%EC%A0%84%EA%B5%AD-%ED%99%94%EC%9E%AC-%ED%98%84%ED%99%A9-29%EB%A7%8C-%EA%B1%B4%EC%9D%84-%EB%B0%9B%EC%95%84%EB%B3%B4%EB%8B%88",
+      "post_id": 86,
+      "title": "공공데이터 API 활용기, 전국 화재 현황 29만 건을 받아보니 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/17%EB%85%84-%ED%9D%A1%EC%97%B0%EC%9E%90%EC%9D%98-%EA%B8%88%EC%97%B0-5%EC%9D%BC%EC%B0%A8-%ED%9B%84%EA%B8%B0",
+      "post_id": 85,
+      "title": "17년 흡연자의 금연 5일차 후기 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Qwen38-Max-%EC%84%B1%EB%8A%A5-%EB%B9%84%EA%B5%90-%EC%A4%91%EA%B5%AD-AI%EC%9D%98-%EC%B6%94%EA%B2%A9%EC%9D%80-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%99%94%EB%82%98",
+      "post_id": 84,
+      "title": "Qwen3.8-Max 성능 비교, 중국 AI의 추격은 어디까지 왔나 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%B0%BD%EC%84%B8%EA%B8%B0-126-28-%EC%B0%BD%EC%A1%B0%EC%84%B8%EA%B3%84%EB%A5%BC-%EB%8F%8C%EB%B3%B4%EA%B3%A0-%EB%8B%A4%EC%8A%A4%EB%A6%AC%EB%9D%BC",
+      "post_id": 83,
+      "title": "창세기 1:26-28, 창조세계를 돌보고 다스리라 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GitHub-Stacked-Pull-Request-%EC%82%AC%EC%9A%A9%EB%B2%95-%ED%81%B0-%EB%B3%80%EA%B2%BD%EC%9D%84-%EC%9E%91%EC%9D%80-PR%EB%A1%9C-%EC%8C%93%EB%8A%94-%EC%88%9C%EC%84%9C",
+      "post_id": 82,
+      "title": "GitHub Stacked Pull Request 사용법, 큰 변경을 작은 PR로 쌓는 순서 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%B9%B4%EC%B9%B4%EC%98%A4-Kanana-2-%EA%B2%BD%EB%9F%89-%EB%AA%A8%EB%8D%B8-%EC%96%B4%EB%94%94%EC%97%90-%EC%93%B0%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C",
+      "post_id": 81,
+      "title": "카카오 Kanana-2 경량 모델, 어디에 쓰면 좋을까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%8A%A4%ED%82%AC-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B0%A9%EB%B2%95-SkillOpt%EB%A5%BC-API-%ED%82%A4-%EC%97%86%EC%9D%B4-%EC%A7%81%EC%A0%91-%EB%8F%8C%EB%A0%A4%EB%B3%B4%EA%B8%B0",
+      "post_id": 77,
+      "title": "스킬 최적화 방법 - SkillOpt를 API 키 없이 직접 돌려보기 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%B2%A0%EB%93%9C%EB%A1%9C%EB%A5%BC-%EC%98%88%EC%88%98%EB%8B%98%EA%BB%98-%EB%8D%B0%EB%A0%A4%EC%98%A8-%EC%95%88%EB%93%9C%EB%A0%88",
+      "post_id": 76,
+      "title": "베드로를 예수님께 데려온 안드레 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Kimi-K3-%EB%AA%A8%EB%8D%B8-%EC%84%B1%EB%8A%A5",
+      "post_id": 75,
+      "title": "Kimi K3란? 중국 AI 모델의 특징·성능과 현실적인 사용법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/SkillOpt-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98-%EB%B0%98%EB%B3%B5-%EC%8B%A4%EC%88%98%EB%A5%BC-%EC%8A%A4%ED%82%AC%EB%A1%9C-%EA%B3%A0%EC%B9%98%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "post_id": 72,
+      "title": "SkillOpt 사용법: 에이전트의 반복 실수를 스킬로 고치는 방법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%84%B8-%EB%B2%88-%EB%B6%80%EC%9D%B8%ED%95%98%EA%B3%A0-%EB%8B%A4%EC%8B%9C-%EC%84%A0-%EB%B2%A0%EB%93%9C%EB%A1%9C",
+      "post_id": 71,
+      "title": "세 번 부인하고 다시 선 베드로 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%9D%B8%EC%A0%9D%EC%85%98%EC%9D%B4%EB%9E%80-%EB%AC%B8%EC%84%9C-%EC%86%8D-%EC%88%A8%EC%9D%80-%EB%AA%85%EB%A0%B9-6%ED%9A%8C-%EC%8B%A4%ED%97%98%EA%B3%BC-%EB%B0%A9%EC%96%B4-%EB%B0%A9%EB%B2%95",
+      "post_id": 70,
+      "title": "프롬프트 인젝션이란? - 실 테스트 및 방어 방법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/WSL-Containers-Docker-Desktop-%EC%97%86%EC%9D%B4-Windows%EC%97%90%EC%84%9C-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%8B%A4%ED%96%89",
+      "post_id": 69,
+      "title": "WSL2 Docker 설치: Docker Desktop 없이 Ubuntu에서 컨테이너 실행 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/ccshare-%EC%82%AC%EC%9A%A9%EB%B2%95-manycode%EB%A1%9C-%EB%B0%94%EB%80%90-%EB%A9%80%ED%8B%B0%ED%94%8C%EB%A0%88%EC%9D%B4-Claude-Code",
+      "post_id": 68,
+      "title": "ccshare 사용법 - manycode로 바뀐 멀티플레이 Claude Code — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%B0%A4%EC%97%90-%EC%B0%BE%EC%95%84%EC%98%A8-%EB%8B%88%EA%B3%A0%EB%8D%B0%EB%AA%A8",
+      "post_id": 67,
+      "title": "밤에 찾아온 니고데모 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%97%A1413-15-%EC%98%81%EC%A0%81-%EC%9C%A0%EC%95%84%EA%B8%B0%EB%A5%BC-%EB%84%98%EC%96%B4-%EA%B7%B8%EB%A6%AC%EC%8A%A4%EB%8F%84%EC%9D%98-%EC%9E%A5%EC%84%B1%ED%95%9C-%EB%B6%84%EB%9F%89%EA%B9%8C%EC%A7%80",
+      "post_id": 66,
+      "title": "엡 4:13-15, 영적 유아기를 넘어 그리스도의 장성한 분량까지 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/PER-PBR-EPS-%EB%9C%BB%EA%B3%BC-%ED%99%9C%EC%9A%A9-%EC%97%85%EC%A2%85%EB%B3%B4%EB%8B%A4-%EB%A8%BC%EC%A0%80-%EB%B3%BC-%EC%84%B8-%EA%B0%80%EC%A7%80-%EA%B8%B0%EC%A4%80",
+      "post_id": 65,
+      "title": "PER, PBR, EPS 뜻과 활용 - 업종보다 먼저 볼 세 가지 기준 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%A7%89%EB%8B%AC%EB%9D%BC-%EB%A7%88%EB%A6%AC%EC%95%84-%EC%84%B1%EA%B2%BD-%EC%9D%B8%EB%AC%BC-%EC%95%8C%EC%95%84%EA%B0%80%EA%B8%B0-2",
+      "post_id": 64,
+      "title": "부활을 전한 막달라 마리아 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/DuckDB-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0-CSV%C2%B7Parquet%C2%B7Pandas-%EB%B6%84%EC%84%9D%EA%B9%8C%EC%A7%80",
+      "post_id": 63,
+      "title": "DuckDB 사용법 총정리 - 설치부터 CSV·Parquet·Pandas 분석까지 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Orca-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%97%AC%EB%9F%AC-CLI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC-%EC%9B%8C%ED%81%AC%ED%8A%B8%EB%A6%AC%EB%A1%9C-%EB%B3%91%EB%A0%AC-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "post_id": 62,
+      "title": "Orca 사용법, 설치부터 첫 병렬 작업까지 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Opus-5-vs-Fable-5-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 61,
+      "title": "Opus 5 vs Fable 5 - 클로드 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%8F%84%EB%A7%88-%EC%84%B1%EA%B2%BD-%EC%9D%B8%EB%AC%BC-%EC%95%8C%EC%95%84%EA%B0%80%EA%B8%B0-1",
+      "post_id": 60,
+      "title": "의심을 넘어 고백한 도마 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%A0%EC%82%AC%EB%8F%84-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8B%A4%EC%A0%84-3-%EB%B0%98%EB%8C%80-%EB%9C%BB%EB%8F%84-%EB%B9%84%EC%8A%B7%ED%95%98%EB%8B%A4%EB%8A%94-%EC%9E%84%EB%B2%A0%EB%94%A9-%EB%84%A4-%EA%B0%80%EC%A7%80-%EB%B3%B4%EC%99%84%EB%B2%95",
+      "post_id": 59,
+      "title": "텍스트 유사도 파이썬 실전 (3) - 반대 뜻도 비슷하다는 임베딩, 네 가지 보완법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/GPT-56-Sol-vs-Fable-5-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 57,
+      "title": "GPT-5.6 Sol vs Fable 5 - 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/AI-%ED%8C%8C%EC%9D%B8%ED%8A%9C%EB%8B%9D-1-AI%EB%A5%BC-%EC%A7%81%EC%A0%91-%EA%B0%80%EB%A5%B4%EC%B9%98%EB%A9%B4-%EB%AC%B4%EC%97%87%EC%9D%B4-%EB%8B%AC%EB%9D%BC%EC%A7%88%EA%B9%8C",
+      "post_id": 56,
+      "title": "AI 파인튜닝 (1) - AI를 직접 가르치면 무엇이 달라질까 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%A1%9C%EB%A7%88%EC%84%9C-828-30-%EA%B7%B8%EB%A6%AC%EC%8A%A4%EB%8F%84%EB%A5%BC-%EB%8B%AE%EC%9D%80-%EC%96%BC%EA%B5%B4",
+      "post_id": 55,
+      "title": "로마서 8:28-30, 그리스도를 닮은 얼굴 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/8%EC%9B%94-%EC%A0%9C%EC%B2%A0-%EA%B3%BC%EC%9D%BC-%EC%B6%94%EC%B2%9C-%EC%97%AC%EB%A6%84%EC%9D%B4-%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90-%EB%A7%9B%EB%B3%BC-%EC%84%B8-%EA%B0%80%EC%A7%80",
+      "post_id": 54,
+      "title": "8월 제철 과일 추천, 여름이 가기 전에 맛볼 세 가지 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%9A%B0%EB%B2%A0%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-%EB%B3%B4%EB%9D%BC%EC%83%89-%EC%B0%B8%EB%A7%88%EC%9D%98-%EC%97%AD%EC%82%AC%C2%B7%EC%98%81%EC%96%91%C2%B7%ED%95%84%EB%A6%AC%ED%95%80-%EB%AC%B8%ED%99%94%C2%B7%EC%9D%B8%EA%B8%B0-%EB%B0%B0%EA%B2%BD",
+      "post_id": 53,
+      "title": "우베란 무엇일까? 보라색 참마의 역사·영양·필리핀 문화·인기 배경 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%A0%EC%82%AC%EB%8F%84-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8B%A4%EC%A0%84-2-%EA%B0%99%EC%9D%80-%EB%AC%B8%EC%9E%A5-12%EC%8C%8D%EC%9C%BC%EB%A1%9C-%EC%A7%81%EC%A0%91-%EB%B9%84%EA%B5%90%ED%95%9C-%EA%B2%B0%EA%B3%BC",
+      "post_id": 52,
+      "title": "텍스트 유사도 파이썬 실전 (2) - 같은 문장 12쌍으로 직접 비교한 결과 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Pandas-%EC%B0%BD%EC%8B%9C%EC%9E%90%EA%B0%80-%EB%A7%90%ED%95%98%EB%8A%94-AI-%EC%BD%94%EB%94%A9%EC%9D%98-%ED%95%A8%EC%A0%95-B-%EC%BD%94%EB%93%9C-%EC%8A%AC%EB%A1%AD-%EB%8C%80%ED%8F%AC-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%88%98%EB%A0%81",
+      "post_id": 51,
+      "title": "Pandas 창시자가 말하는 AI 코딩의 함정 - B+ 코드, 슬롭 대포, 에이전트 수렁 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%91%90-%EB%AC%B8%EC%9E%A5%EC%9D%B4-%EB%B9%84%EC%8A%B7%ED%95%9C%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B0%80-%EC%95%8C%EC%95%84%EB%82%B4%EB%8A%94-%EB%B2%95-1-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%A0%EC%82%AC%EB%8F%84-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9B%90%EB%A6%AC-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "post_id": 50,
+      "title": "두 문장이 비슷한지 컴퓨터가 알아내는 법 (1) - 텍스트 유사도 개념과 원리 총정리 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%9A%A5%EA%B8%B0-1%EC%9E%A542%EC%9E%A5-%EC%89%AC%EC%9A%B4%EB%A7%90-%EC%84%B1%EA%B2%BD",
+      "post_id": 49,
+      "title": "욥기 쉽게 읽기, 42장의 줄거리와 친구들의 말 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/ChatGPT-56-vs-%ED%81%B4%EB%A1%9C%EB%93%9C-vs-Grok-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 47,
+      "title": "ChatGPT 5.6 vs 클로드 vs Grok 모델 비교 - 12개 AI에게 같은 앱 4개를 만들게 하고 테스트를 진행했다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%8B%A4%EB%8B%88%EC%97%98-11-15-%EC%84%B8%EC%83%81%EC%97%90-%EB%AC%BC%EB%93%A4%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%82%AC%EB%9E%8C%EB%93%A4",
+      "post_id": 45,
+      "title": "다니엘 1:1-15, 세상에 물들지 않은 사람들 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%9E%8C%EB%8B%A4%EC%9D%98-%EC%9B%90%EC%A1%B0-Lisp-AutoCAD%EA%B0%80-40%EB%85%84%EC%A7%B8-%EC%93%B0%EB%8A%94-%EA%B4%84%ED%98%B8%EC%9D%98-%EC%96%B8%EC%96%B4",
+      "post_id": 44,
+      "title": "파이썬 람다의 원조, Lisp - AutoCAD가 40년째 쓰는 괄호의 언어 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/SpaceXAI%EC%9D%98-%EC%B2%AB-%EC%9E%91%ED%92%88-Grok-45",
+      "post_id": 43,
+      "title": "SpaceXAI의 첫 작품 - Grok 4.5 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/OpenAI-GPT-Live-%EC%9D%8C%EC%84%B1-AI%EA%B0%80-%EB%93%9C%EB%94%94%EC%96%B4-%EB%8C%80%ED%99%94%EB%A5%BC-%EB%B0%B0%EC%9B%A0%EB%8B%A4",
+      "post_id": 42,
+      "title": "OpenAI GPT-Live - 음성 AI가 드디어 \"대화\"를 배웠다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Fable-5-vs-Opus-48-%ED%81%B4%EB%A1%9C%EB%93%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90",
+      "post_id": 41,
+      "title": "Fable 5 vs Opus 4.8 - 클로드 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%A0%80%EC%BB%A4%EB%B2%84%EA%B7%B8-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B0%9C%EC%A0%84-%EA%B8%B0%EB%8C%80%EB%B3%B4%EB%8B%A4-%EB%8A%90%EB%A0%B8%EB%8B%A4",
+      "post_id": 39,
+      "title": "저커버그 \"AI 에이전트 발전, 기대보다 느렸다\" — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4-Sonnet-%EB%AA%A8%EB%8D%B8%EC%97%90-%EC%A7%91%EC%B0%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+      "post_id": 38,
+      "title": "개발자들이 Sonnet 모델에 집착하는 이유 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Claude-Code-%EB%B9%84%EC%9A%A9-%EC%A4%84%EC%9D%B4%EA%B8%B0-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A1%9C-pxpipe-%EC%9B%90%EB%A6%AC%EC%99%80-%ED%95%9C%EA%B3%84",
+      "post_id": 37,
+      "title": "Claude Code 비용 줄이기, 코드를 이미지로 - pxpipe 원리와 한계 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%9A%94%ED%95%9C%EB%B3%B5%EC%9D%8C-1334-35-%EC%84%B8%EC%83%81%EC%9D%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4",
+      "post_id": 36,
+      "title": "요한복음 13:34-35, 세상이 알아보는 사람들 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%8C%94%EB%9E%80%ED%8B%B0%EC%96%B4-%EA%B8%B0%EC%88%A0-%EB%B6%84%EC%84%9D",
+      "post_id": 35,
+      "title": "팔란티어 기술 분석 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%9C%A0%EB%8C%80%EC%9D%B8%EC%9D%B4-%EB%98%91%EB%98%91%ED%95%9C-%EC%9D%B4%EC%9C%A0-%EC%97%AD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A0-02%EC%9D%98-%EC%83%9D%EC%A1%B4-%EC%A0%84%EB%9E%B5",
+      "post_id": 34,
+      "title": "유대인이 똑똑한 이유 - 역사가 만든 0.2%의 생존 전략 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Claude-Sonnet-5-vs-Opus-48",
+      "post_id": 32,
+      "title": "Sonnet 5 vs Opus 4.8 - 클로드 모델 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%ED%95%9C%EA%B5%AD%EC%9D%B8%EC%9D%80-%EB%82%98%ED%9D%98%EC%97%90-%ED%95%9C-%EB%B2%88-%EB%9D%BC%EB%A9%B4%EC%9D%84-%EB%A8%B9%EB%8A%94%EB%8B%A4-%EB%9D%BC%EB%A9%B4%EC%9D%98-%EC%97%AD%EC%82%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%98%A4%ED%95%B4",
+      "post_id": 31,
+      "title": "한국인은 나흘에 한 번 라면을 먹는다 - 라면의 역사 그리고 오해 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%98%A4%ED%94%88%EC%9B%A8%EC%9D%B4%ED%8A%B8-LLM-%EB%AA%A8%EB%8D%B8-VibeThinker-3B%EC%99%80-Qwen3-4B-Thinking-%EB%B9%84%EA%B5%90",
+      "post_id": 30,
+      "title": "오픈웨이트 LLM 모델 VibeThinker-3B와 Qwen3-4B-Thinking 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%BD%94%EC%8A%A4%EB%8B%A5-30%EC%A3%BC%EB%85%84-%EA%B0%9C%ED%8E%B8%EC%95%88-%EC%A0%95%EB%A6%AC-%EC%83%81%EC%9E%A5%ED%8F%90%EC%A7%80-88%EA%B3%B3%C2%B7%EB%8F%99%EC%A0%84%EC%A3%BC-%ED%87%B4%EC%B6%9C%C2%B7%EC%85%80%EB%A0%89%ED%8A%B8-%EC%8A%B9%EA%B0%95%EC%A0%9C",
+      "post_id": 29,
+      "title": "코스닥 30주년 개편안 정리: 상장폐지 88곳·동전주 퇴출·셀렉트 승강제 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B5%AC%EA%B8%80%EC%97%90-8496%EC%96%B5-%EA%B3%BC%EC%A7%95%EA%B8%88-%EC%98%88%EA%B3%A0-%EA%B3%B5%EC%A0%95%EC%9C%84-%EC%95%B1%EB%A7%88%EC%BC%93-%EC%A0%9C%EC%9E%AC-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "post_id": 28,
+      "title": "구글에 8496억 과징금 예고, 공정위 앱마켓 제재 총정리 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%83%88%EB%A7%88%EC%9D%84%EA%B8%88%EA%B3%A0-%EA%B3%A7-%EB%A7%9D%ED%95%9C%EB%8B%A4-%EA%B0%9C%EC%9D%B8%EC%9D%B4-%ED%99%95%EC%9D%B8%ED%95%A0-%EA%B1%B4-%EC%B6%9C%EC%9E%90%EA%B8%88%EC%9D%B4%EB%8B%A4",
+      "post_id": 27,
+      "title": "새마을금고 곧 망한다? 개인이 확인할 건 출자금이다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B9%80%EC%9D%BC%EC%84%B1-%EC%82%AC%EC%A7%84-%EC%B0%A2%EA%B3%A0-%ED%83%88%EB%AA%A8-%EC%A1%B0%EB%A1%B1%EA%B9%8C%EC%A7%80-34%EB%85%84-%EB%A7%8C%EC%97%90-%EA%B3%B5%EA%B0%9C%EB%90%9C-%EB%82%A8%EB%B6%81-%ED%95%B5%ED%98%91%EC%83%81-%ED%9A%8C%EC%9D%98%EB%A1%9D",
+      "post_id": 26,
+      "title": "김일성 사진 찢고 탈모 조롱까지 - 34년 만에 공개된 남북 핵협상 회의록 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/2026-%EC%9B%94%EB%93%9C%EC%BB%B5-%EB%B8%8C%EB%9D%BC%EC%A7%88-%EB%8C%80-%EC%9D%BC%EB%B3%B8-2-1-%EC%9D%BC%EB%B3%B8-16%EA%B0%95-%EC%A2%8C%EC%A0%88",
+      "post_id": 25,
+      "title": "2026 월드컵 브라질 대 일본 2-1, 일본 16강 좌절 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%E1%84%86%E1%85%A1%E1%84%90%E1%85%A2%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8B%E1%85%B3%E1%86%B7-2531-46",
+      "post_id": 24,
+      "title": "마태복음 25:31-46, 내 곁의 작은 한 사람이 바로 예수님입니다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/VibeThinker-3B-3B-%EB%AA%A8%EB%8D%B8%EC%9D%B4-%EC%A0%95%EB%A7%90-%ED%81%B0-%EB%AA%A8%EB%8D%B8%EA%B8%89%EC%9D%BC%EA%B9%8C",
+      "post_id": 21,
+      "title": "VibeThinker-3B 사용 후기 - 맥북 실험과 한국어 한계 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%A7%88%EB%AC%B8-%EC%B0%B0%EB%82%98%EC%9D%98-%EC%82%B6%EC%9D%B4-%EC%98%81%EC%9B%90%EC%9D%84-%EA%B2%B0%EC%A0%95%ED%95%98%EB%8A%94-%EA%B2%8C-%EB%B6%88%EA%B3%B5%ED%8F%89%ED%95%98%EB%8B%A4%EB%8A%94-%EC%83%9D%EA%B0%81",
+      "post_id": 20,
+      "title": "[질문] 찰나의 삶이 영원을 결정하는 게 불공평하다는 생각 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%E1%84%86%E1%85%A1%E1%84%90%E1%85%A2%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8B%E1%85%B3%E1%86%B7-2514-30",
+      "post_id": 19,
+      "title": "마태복음 25:14-30, 아무것도 하지 않는 믿음은 없다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Claude-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90-%EB%B0%8F-Effort",
+      "post_id": 18,
+      "title": "Claude 모델 비교와 Effort 설정, 무엇을 고를까? — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%A7%88%ED%83%9C%EB%B3%B5%EC%9D%8C-251-13",
+      "post_id": 17,
+      "title": "마태복음 25:1-13, 빌려올 수 없는 믿음, 나만의 등불을 켜다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Claude-Code-%EC%9E%85%EB%AC%B8-%EB%8C%80%ED%99%94%EA%B0%80-%EC%95%84%EB%8B%88%EB%9D%BC-%EC%9C%84%EC%9E%84%EC%9D%B4%EB%8B%A4",
+      "post_id": 16,
+      "title": "Claude Code 입문 - 대화가 아니라 위임이다 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EB%A7%88%EA%B0%80%EB%B3%B5%EC%9D%8C-426-29",
+      "post_id": 15,
+      "title": "마가복음 4:26-29, 보이지 않는 곳에서 자라나는 하나님 나라 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/LLM%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%8A%94%EA%B0%80-%E2%80%94-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Claude%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%EC%93%B0%EB%8A%94%EA%B0%80",
+      "post_id": 14,
+      "title": "LLM 입문 - 원리부터 배우자 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/Slink-%E2%80%94-%EC%9E%91%EC%97%85%ED%91%9C%EC%8B%9C%EC%A4%84%EC%97%90%EC%84%9C-%EC%95%B1-%EC%88%A8%EA%B8%B0%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8",
+      "post_id": 13,
+      "title": "윈도우 작업표시줄 앱 숨기기 — Slink 무료 유틸리티 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EA%B2%8C%EC%9E%84-%EB%82%B4-%ED%95%9C%EA%B8%80-%EC%B1%84%ED%8C%85-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95",
+      "post_id": 12,
+      "title": "게임 내 한글 채팅 오류 해결 방법 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/UCSS-VPN-%EC%A4%91%EA%B5%AD-%EC%9C%A0%ED%95%99%EC%83%9D%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%91%EA%B5%ADVPN",
+      "post_id": 3,
+      "title": "UCSS VPN - 중국 유학생이 사용하는 중국VPN — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    },
+    {
+      "url": "https://dop3n.tistory.com/entry/%EC%A4%91%EA%B5%AD-VPN-%EC%B6%94%EC%B2%9C-%EB%B0%8F-%EB%B9%84%EA%B5%90",
+      "post_id": 2,
+      "title": "중국 VPN 추천 및 비교 — dev.log",
+      "article_selector": ".contents_style",
+      "candidate_count": 0,
+      "candidates": []
+    }
+  ]
+}

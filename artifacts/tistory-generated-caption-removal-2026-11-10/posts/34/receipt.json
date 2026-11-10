@@ -1,0 +1,44 @@
+{
+  "post_id": 34,
+  "public_url": "https://dop3n.tistory.com/entry/%EC%9C%A0%EB%8C%80%EC%9D%B8%EC%9D%B4-%EB%98%91%EB%98%91%ED%95%9C-%EC%9D%B4%EC%9C%A0-%EC%97%AD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A0-02%EC%9D%98-%EC%83%9D%EC%A1%B4-%EC%A0%84%EB%9E%B5",
+  "title": "유대인이 똑똑한 이유 - 역사가 만든 0.2%의 생존 전략 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"유대인 관련 AI 생성 이미지 (ChatGPT)\"",
+      "after": "\"caption\":\"유대인 관련\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n유대인이 똑똑한 이유 - 역사가 만든 0.2%의 생존 전략\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-07-05 01:22\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "137e9055f0cde9774e2e8bea902c319326ab0b9465d65576d6ee57919d0166a3",
+  "submitted_sha256": "f5273f00b788a7606e219ad5c72bf5067b5acb45d734d2b4eb1bda14c295cb22",
+  "publication_slug": "유대인이-똑똑한-이유-역사가-만든-02의-생존-전략",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:55:14.469Z"
+}

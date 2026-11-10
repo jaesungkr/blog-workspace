@@ -1,0 +1,38 @@
+{
+  "post_id": 44,
+  "public_url": "https://dop3n.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%9E%8C%EB%8B%A4%EC%9D%98-%EC%9B%90%EC%A1%B0-Lisp-AutoCAD%EA%B0%80-40%EB%85%84%EC%A7%B8-%EC%93%B0%EB%8A%94-%EA%B4%84%ED%98%B8%EC%9D%98-%EC%96%B8%EC%96%B4",
+  "title": "파이썬 람다의 원조, Lisp - AutoCAD가 40년째 쓰는 괄호의 언어 — dev.log",
+  "replacements": [
+    {
+      "before": "\"caption\":\"Lisp - AI 생성 이미지\"",
+      "after": "\"caption\":\"Lisp\""
+    }
+  ],
+  "label_count_before": 1,
+  "label_count_after": 0,
+  "editor_copyback_exact": true,
+  "other_editor_html_byte_identical": true,
+  "native_image_count_before": 1,
+  "native_image_count_after": 1,
+  "preview_images": [
+    {
+      "alt": "",
+      "complete": false,
+      "height": 0,
+      "width": 0
+    },
+    {
+      "alt": "dop3n",
+      "complete": true,
+      "height": 512,
+      "width": 512
+    }
+  ],
+  "preview_label_absent": true,
+  "publication_settings_text": "발행정보 입력폼\n발행\nCCL 설정\n파이썬 람다의 원조, Lisp - AutoCAD가 40년째 쓰는 괄호의 언어\n기본\n공개공개(보호)비공개\n댓글 허용더보기\n홈주제\n선택 안 함더보기\n발행일\n2026-07-11 23:46\n현재\n예약\nURL\nhttps://dop3n.tistory.com/entry/\n삭제\n취소공개 발행",
+  "before_sha256": "098ae9ea6e9c756b31f86f3fe935acec779e8bb4b7f1a901125f445f34212934",
+  "submitted_sha256": "9a524dd4d85189a4b52c1256cddd86f3b877d41f77212cdd9df378c4f5c960d1",
+  "publication_slug": "파이썬-람다의-원조-Lisp-AutoCAD가-40년째-쓰는-괄호의-언어",
+  "save_confirmation": "Returned to original public entry URL after 공개 발행",
+  "edited_at_utc": "2026-11-10T12:53:26.929Z"
+}
