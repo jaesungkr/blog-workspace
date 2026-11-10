@@ -28,6 +28,8 @@ Codex나 Claude에서 모델을 고르고 나면 추론 레벨도 고민하게 �
 
 Sonnet을 max로 쓰는 것과 Opus를 high로 쓰는 것 중 어느 쪽이 나을지도 궁금합니다. 설정 이름만으로는 선뜻 고르기 어렵습니다. 공개된 평가에서 점수와 비용을 함께 보면 이 차이에 조금 더 감을 잡을 수 있습니다.
 
+Claude의 모델 선택 기준과 설정 방법은 [모델 비교와 Effort 설정 글](https://dop3n.tistory.com/entry/Claude-모델-비교-및-Effort)에 정리했습니다.
+
 ### Sonnet max vs Opus high
 
 독립 평가기관 Artificial Analysis(AA)의 결과에서는 **Sonnet 5.5 max가 Opus 5.5 high보다 종합 점수가 높았고, 비용은 약 2.9배 들었습니다.**

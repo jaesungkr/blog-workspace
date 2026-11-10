@@ -1,10 +1,11 @@
 {
   "base_commit": "64ce9628bd0f02e53429a15d1b83a7a6c77f9042",
   "recovered_on": "2026-11-10",
-  "source_body_preserved_byte_for_byte": true,
+  "source_body_preserved_byte_for_byte": false,
   "metadata_changes": [
     "status ready to published",
-    "verified published_url recorded"
+    "verified published_url recorded",
+    "Latest published internal link synchronized; original submitted source retained separately"
   ],
   "source_content_sha256": "c0603c56ac6ff0549345120ee8ab0154a859bbd1abc35539d70b9e9a80ed07e8",
   "historical_source_validation": "pass",
@@ -17,5 +18,17 @@
   "existing_generic_check_failure": "AI 모델 · 비교 글의 마지막 절에 `### 참고 자료`를 추가하세요.",
   "source_preserved_despite_check_failure": true,
   "sanitization": "Temporary signed image access query parameters removed. The public TXT is not the exact authenticated publication payload. Rebind media and revalidate before republication.",
-  "scope": "Archive recovery, not a new publication or fresh QA approval."
+  "scope": "Archive recovery, not a new publication or fresh QA approval.",
+  "initial_submitted_source_preserved_at": "artifacts/publication-original/article.md",
+  "current_source_update": {
+    "reason": "Current published article contains one later internal-link paragraph after the introduction. Archive synchronized to that verified public state.",
+    "added_markdown": "Claude의 모델 선택 기준과 설정 방법은 [모델 비교와 Effort 설정 글](https://dop3n.tistory.com/entry/Claude-모델-비교-및-Effort)에 정리했습니다.",
+    "link": "https://dop3n.tistory.com/entry/Claude-모델-비교-및-Effort",
+    "before_sha256": "3d268b093d9e9fc784803553584b554a2b9a145d266fe8e087e948f5c5f32329",
+    "after_sha256": "10428c670b6516ff155a6dc121e2a1b5708d2d59a1384b089ea99aa85af4dc41",
+    "only_one_paragraph_added": true,
+    "current_public_html_sha256": "dae6cc484a7c0054d303f9fb1fd1d3867be1f79ec8308fc93e596484b73d67c4",
+    "public_sanitized_html_sha256": "00e5d9db9ce250026e1ceeb590353c03bb134c71d728072b45e41a204d498f58",
+    "live_post_modified": false
+  }
 }

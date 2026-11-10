@@ -6,9 +6,12 @@
   "publication_time_note": "Completion-report timestamp; exact native publication time not asserted.",
   "submitted_fragment_sha256": "9a08563862becd256362a62eb79af79146e1cbd92961d170d62f86432b0f4ed7",
   "public_sanitized_fragment_sha256": "82a882250741720caad5abcaed355799c58598dcec63a1e19c86559a7e7c2215",
-  "source_article_sha256": "3d268b093d9e9fc784803553584b554a2b9a145d266fe8e087e948f5c5f32329",
+  "source_article_sha256": "10428c670b6516ff155a6dc121e2a1b5708d2d59a1384b089ea99aa85af4dc41",
   "original_approved_source_sha256": "381bb63e31e0224d5f97e5e4ec12779111cae08944821ca67c17afa3c787bd57",
-  "lifecycle_update_only": true,
+  "lifecycle_update_only": false,
   "archive_recovered_on": "2026-11-10",
-  "postpublication_visual_qa": "Not repeated for archive recovery."
+  "postpublication_visual_qa": "Not repeated for archive recovery.",
+  "post_id": 171,
+  "latest_archive_sync": "One later published internal-link paragraph added to archive; no live change.",
+  "latest_public_article_sha256": "dae6cc484a7c0054d303f9fb1fd1d3867be1f79ec8308fc93e596484b73d67c4"
 }

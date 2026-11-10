@@ -1,0 +1,16 @@
+{
+  "status": "published",
+  "post_id": 172,
+  "title": "AI와 모바일 게임 만들기 (1) 구상부터 첫 탈출까지",
+  "url": "https://dop3n.tistory.com/172",
+  "archive_recovered_on": "2026-11-10",
+  "current_public_article_sha256": "23695a8eeec9505fd64e2fd5c4a1a3c4ed5434696df03d4b9572c23d4ff8787c",
+  "public_sanitized_article_sha256": "6345f052467830455059ecf236a66befc6339e4c7a62875447d455c5e98f0228",
+  "source_article_sha256": "0a164b45f7cdc47af17d84f227ed53e881e04ad18cd6be30531464ec3a47fa44",
+  "image_count": 6,
+  "recovery_method": "Final Markdown reconstructed from the current published article, excluding the generated table of contents. Final reviewed HTML has identical prose and captions except the later approved cross-link sentence. Original top-level draft was stale and not used.",
+  "original_draft_not_used": true,
+  "reviewed_image_hashes_match": 6,
+  "current_body_source_sha256": "23695a8eeec9505fd64e2fd5c4a1a3c4ed5434696df03d4b9572c23d4ff8787c",
+  "body_reconstruction": "Final Markdown reconstructed from the current published article, excluding the generated table of contents. Final reviewed HTML has identical prose and captions except the later approved cross-link sentence. Original top-level draft was stale and not used."
+}

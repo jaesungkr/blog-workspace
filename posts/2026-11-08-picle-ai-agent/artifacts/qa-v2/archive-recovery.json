@@ -27,5 +27,11 @@
     "This recovery does not repeat the historical source or live page review.",
     "Sanitized public HTML is an archive, not the exact authenticated publication payload.",
     "Historical gate hashes must not be reused as a new release approval after sanitation."
-  ]
+  ],
+  "latest_saved_editor_html": {
+    "original_sha256": "67cf9eb03a4d4557423272e37262c126ad89148b89a1375fd5f6f3234d8413b0",
+    "sanitized_sha256": "a5e18ad7d4ae65cafec672f5a02800cae9598160d4c9bfa2f21493dea4991eda",
+    "path": "delivery/saved-editor-sanitized.html",
+    "note": "Recorded saved editor HTML. Temporary access query parameters removed for public archive."
+  }
 }

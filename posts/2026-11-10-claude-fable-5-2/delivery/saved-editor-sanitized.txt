@@ -1,0 +1,694 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">오랜만에 Fable의 새 버전이 나왔습니다. <b>Fable 5.2</b>는 2026년 11월 9일 공개됐고, 9월 1일에 나왔던 5.1 이후 두 달 만입니다. 긴 코드 수정이나 자료 조사를 맡길 때는 답의 품질만큼 기다리는 시간과 비용도 신경 쓰입니다. 이번에는 코딩 성능이 좋아지면서 프로그램에서 모델을 호출해 쓰는 API의 기본 단가도 20% 내려갔습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">5.2 발표</a> &middot; <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank" rel="noopener">5.1 출시 정보</a></p>
+<p data-ke-size="size16">Fable 5.1을 쓰던 분이라면 반가운 변화입니다. 그런데 Opus 5.5로도 일을 잘 처리하고 있다면, 입력&middot;출력 단가가 2배인 Fable이 필요한지도 궁금해집니다. <b>평소 문서&middot;코드 작업은 Opus 5.5에서 시작하고, 추론을 더 시켜도 해결하지 못하는 오래 걸리는 작업에 Fable 5.2를 쓰는 편이 합리적입니다.</b> Anthropic의 선택 지침도 이 방향이며, 공개 평가에서 어디까지 뒷받침되는지 살펴봤습니다. 자료는 11월 10일 확인 기준입니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2" target="_blank" rel="noopener">모델 선택 지침</a></p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="lead">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@DJ1WA/dJMcadcYflY/AAAAAAAAAAAAAAAAAAAAAP53ltLaIowYxHnvn9iZd-aEl_F3QAT5tUxGaidgSN4w/img.jpg|CDM|1.3|{"originWidth":1200,"originHeight":675,"style":"alignCenter","alt":"Fable 5.2와 Mythos 5.2 이름이 지구 곡선 위에 표시된 공식 발표 화면","filename":"fable-52-official-hero.jpg"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">Anthropic의 2026년 11월 9일 발표 페이지. 출처: Anthropic.</p>
+</div>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#fable-51에서-달라진-점">Fable 5.1에서 달라진 점</a></li>
+<li><a href="#fable-51opus-55와-코딩-성능-비교">Fable 5.1&middot;Opus 5.5와 코딩 성능 비교</a></li>
+<li><a href="#페르마의-마지막-정리를-약-30시간에-형식화">페르마의 마지막 정리를 약 30시간에 형식화</a></li>
+<li><a href="#설계한-회로가-실제-기기로-이어진-사례">설계한 회로가 실제 기기로 이어진 사례</a></li>
+<li><a href="#추론-설정을-올리면-무엇이-달라질까">추론 설정을 올리면 무엇이 달라질까</a></li>
+<li><a href="#api-단가는-20-인하">API 단가는 20% 인하</a></li>
+<li><a href="#내-요금제에서-fable-52를-쓰려면">내 요금제에서 Fable 5.2를 쓰려면</a></li>
+<li><a href="#fable-51-api에서-옮길-때-확인할-것">Fable 5.1 API에서 옮길 때 확인할 것</a></li>
+<li><a href="#fable-52와-opus-55의-쓰임새">Fable 5.2와 Opus 5.5의 쓰임새</a></li>
+<li><a href="#참고-자료">참고 자료</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="fable-51에서-달라진-점">
+<h2 id="fable-51에서-달라진-점" data-ke-size="size26">Fable 5.1에서 달라진 점</h2>
+<p data-ke-size="size16">Fable은 여러 시간 동안 도구를 사용하며 코드를 고치거나, 자료 조사부터 문서&middot;스프레드시트 완성까지 이어 가는 상위 모델입니다. Opus 5.5도 문서&middot;코드&middot;도구 작업을 맡길 수 있는 범용 상위 모델입니다. 여기서 에이전트 작업은 AI가 도구를 실행하고 결과를 확인하며 다음 행동을 이어 가는 방식을 말합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/overview" target="_blank" rel="noopener">Fable의 용도</a></p>
+<p data-ke-size="size16">5.1에서 5.2로 바뀌며 개선된 부분은 <b>복잡한 과제를 해결하는 성능과 처리 효율</b>입니다. 추론 강도는 답을 내기 전에 얼마나 많은 계산을 할지 정하는 옵션이며, medium은 중간 강도입니다. 공식 발표에 따르면 기본 출력 생성 속도는 최대 30% 빨라졌고, 같은 medium 설정에서 어려운 작업을 더 적은 토큰으로 처리했습니다. 토큰은 글과 자료를 잘게 나눈 처리 단위입니다.</p>
+<p data-ke-size="size16">텍스트&middot;이미지를 받아 텍스트를 출력하는 방식, 한 번에 다루는 문맥 100만 토큰, 최대 출력 12만 8천 토큰은 그대로입니다. 지식 기준일도 두 모델 모두 2026년 6월입니다. 문맥 크기는 한 요청에 함께 참고할 수 있는 자료의 양을 뜻합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank" rel="noopener">5.1&middot;5.2 사양 비교</a></p>
+<p data-ke-size="size16">함께 발표된 <b>Mythos 5.2</b>는 Fable과 같은 기반 모델을 사용합니다. Fable에는 사이버보안과 생물학 분야의 악용을 막는 안전장치가 적용돼 있고, Mythos는 검증 프로그램을 통과한 조직에 제공됩니다. 공식 성능표의 취약점 탐지&middot;단백질 설계 행은 Mythos 결과이므로, 아래에서는 Fable로 공개된 평가를 비교했습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/overview" target="_blank" rel="noopener">모델과 접근 조건</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="fable-51opus-55와-코딩-성능-비교">
+<h2 id="fable-51opus-55와-코딩-성능-비교" data-ke-size="size26">Fable 5.1&middot;Opus 5.5와 코딩 성능 비교</h2>
+<p data-ke-size="size16">코딩 모델은 짧은 함수를 한 번에 작성하는 능력과 큰 프로젝트를 끝까지 수정하는 능력을 함께 봐야 합니다. Anthropic의 <b>FrontierCode 2.0</b>은 모델이 만든 코드 변경을 오픈소스 프로젝트 관리자가 받아들일 만한지 평가합니다. <b>FrontierSWE v2</b>도 여러 단계를 거치는 소프트웨어 개발 작업을 다룹니다.</p>
+<p data-ke-size="size16">아래는 Anthropic이 발표한 비교입니다. 점수가 높을수록 좋으며, 별도 표시가 없는 값은 각 모델에서 가능한 가장 높은 추론 설정을 사용했습니다. 제조사가 다르면 같은 설정 이름도 실제 계산량은 다릅니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>공식 평가</th>
+<th>Fable 5.2</th>
+<th>Fable 5.1</th>
+<th>Opus 5.5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>코드 변경 &middot; FrontierCode 2.0</td>
+<td>49.1%</td>
+<td>32.4%</td>
+<td>45.5%</td>
+</tr>
+<tr>
+<td>개발 과제 &middot; FrontierSWE v2</td>
+<td>69.9%</td>
+<td>56.3%</td>
+<td>62.3%</td>
+</tr>
+<tr>
+<td>업무 자동화 &middot; AutomationBench</td>
+<td>51.4%</td>
+<td>31.4%</td>
+<td>42.5%</td>
+</tr>
+<tr>
+<td>차트 읽기 &middot; Chartography</td>
+<td>73.4%</td>
+<td>44.8%</td>
+<td>64.4%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">FrontierCode의 Fable 두 모델은 xhigh 설정입니다. Chartography는 도구 없이 측정했습니다. 자동화는 여러 업무 도구를 사용해 과제를 처리하는 평가이고, 차트 읽기는 그림 속 수치와 관계를 해석하는 평가입니다. 아래 화면은 공식 표의 코딩&middot;업무 자동화 부분입니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">공식 비교표와 측정 조건</a></p>
+<div class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="benchmarks">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@84tqQ/dJMcafoAmCx/AAAAAAAAAAAAAAAAAAAAAPxc22qYNBVFoT3uUrkP83w9T5KRmAF-XfOLNoP36LqP/img.jpg|CDM|1.3|{"originWidth":1104,"originHeight":263,"style":"alignCenter","alt":"Fable 5.2와 이전 모델&middot;경쟁 모델의 코딩 및 업무 벤치마크 공식 비교표","filename":"fable-52-benchmarks-v2.jpg"}_##]</div>
+</div>
+<p class="devlog-rich__caption" data-ke-size="size16">공식 비교표의 코딩&middot;업무 평가 세 항목. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.</p>
+</div>
+<p data-ke-size="size16">이전 Fable과의 차이가 특히 큽니다. FrontierCode에서 16.7%p, FrontierSWE에서 13.6%p 올라갔습니다. %p는 두 비율의 차이인 퍼센트포인트입니다. Opus 5.5와의 차이는 각각 3.6%p와 7.6%p입니다. 두 코딩 평가 모두 5.1에서의 개선 폭이 Opus와의 격차보다 큽니다.</p>
+<p data-ke-size="size16">다만 업무 자동화에서는 같은 공식 표에 있는 Gemini 4 Carbon이 53.9%로 Fable보다 높았습니다. 평가마다 문제와 실행 조건이 다르므로, 한 모델이 모든 업무에서 가장 좋다고 묶기보다는 어떤 종류의 과제를 해결했는지를 봐야 합니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="페르마의-마지막-정리를-약-30시간에-형식화">
+<h2 id="페르마의-마지막-정리를-약-30시간에-형식화" data-ke-size="size26">페르마의 마지막 정리를 약 30시간에 형식화</h2>
+<p data-ke-size="size16">긴 작업을 여러 에이전트가 나눠 맡는 능력은 수학 실험에서도 드러났습니다. 페르마의 마지막 정리는 1995년에 증명됐고, 이번 실험은 그 증명을 컴퓨터가 단계마다 검사할 수 있는 Lean 코드로 옮기는 <b>형식화</b>를 다뤘습니다. Anthropic은 Fable 5.2 초기 버전의 에이전트 1,000개가 이 작업을 <b>28.7시간, 약 30시간</b>에 완료했다고 보고했습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/" target="_blank" rel="noopener">실험 상세</a></p>
+<p data-ke-size="size16">에이전트들은 인터넷이 차단된 환경에서 작업했습니다. 연구진은 Lean과 수학 라이브러리 Mathlib, 증명할 명제 60개, 증명 경로의 짧은 개요와 정의, 이전 실험에서 증명한 보조정리 47개를 제공했습니다. 에이전트들은 이 자료를 바탕으로 일을 나누고 결과를 공유했으며, 연구자가 증명 방향을 계속 지휘하지는 않았습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/" target="_blank" rel="noopener">제공 자료와 실행 환경</a></p>
+<p data-ke-size="size16">앞선 실험에서는 Fable 5.1과 비슷한 수준의 내부 연구 모델을 사용하는 수십 개 에이전트가 연구자의 도움과 전용 협업 도구를 이용해 11일 만에 형식화를 마쳤습니다. 인원과 도구가 달랐으므로 완료 시간도 이 조건과 함께 봐야 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/research/formalizing-fermats-last-theorem" target="_blank" rel="noopener">이전 실험</a></p>
+<p data-ke-size="size16">이번에 같은 1,000개 에이전트 구성으로 실행한 Opus 5.5는 18시간에 진행률 26%였고, 30시간까지도 추가 진전이 거의 없었습니다. Fable과 Opus는 각각 한 번 실행했으며, 모두 18시간 시점의 저장 상태에서 재개해 12시간을 더 작업했습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">Fable&middot;Opus 비교 조건</a></p>
+<div class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="fermat">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@dlf7ua/dJMcadcYfl0/AAAAAAAAAAAAAAAAAAAAAN5eGPgtiHoKTHoaT02vObkFGyuFLG11LPoTpz-i_oT7/img.jpg|CDM|1.3|{"originWidth":1840,"originHeight":1430,"style":"alignCenter","alt":"페르마의 마지막 정리 형식화에서 Fable 5.2와 Opus 5.5의 30시간 진행률을 비교한 공식 그래프","filename":"fable-52-fermat.jpg"}_##]</div>
+</div>
+<p class="devlog-rich__caption" data-ke-size="size16">Fable 5.2와 Opus 5.5의 형식화 진행률. 약 1,000개 에이전트, 모델별 한 번의 실행 결과입니다. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.</p>
+</div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="설계한-회로가-실제-기기로-이어진-사례">
+<h2 id="설계한-회로가-실제-기기로-이어진-사례" data-ke-size="size26">설계한 회로가 실제 기기로 이어진 사례</h2>
+<p data-ke-size="size16">이번 발표에서 눈길을 끄는 사례는 전자기기 설계입니다. Anthropic은 회로 설계 회사 Diode와 함께 Fable 5.2에 스피커폰, 음성 비서 허브, 휴대용 가상 반려동물을 만들도록 했습니다. AI는 부품을 고르고 회로와 외장을 설계했으며 기기 안에서 실행되는 소프트웨어도 작성했습니다. 실제 회로기판 제작과 조립은 Diode의 엔지니어가 맡았습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/research/claude-electronics-design" target="_blank" rel="noopener">전자기기 설계 연구</a></p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="electronics">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@tTB8x/dJMcah0MFLg/AAAAAAAAAAAAAAAAAAAAAM7YAQuzZ3aoMp0C40jSpL1HUbyJhAYlxw4NfxJBX7_J/img.jpg|CDM|1.3|{"originWidth":918,"originHeight":598,"style":"alignCenter","alt":"휴대용 가상 반려동물 기기, 음성 비서 허브, USB 스피커폰","filename":"fable-52-electronics.jpg"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">Fable 5.2가 설계하고 Diode 엔지니어가 제작한 세 시제품. 출처: Anthropic&middot;Diode.</p>
+</div>
+<p data-ke-size="size16">전자기기는 회로도만 맞는다고 완성되지 않습니다. 부품이 케이스 안에 들어가야 하고, 조립할 순서도 가능해야 하며, 공장이 생산할 수 있는 모양이어야 합니다. 연구 기록에서 Fable은 스피커폰 기판을 그대로 내리면 스위치가 케이스에 걸린다는 점을 확인하고, 기판을 기울여 넣는 방법을 조립 안내에 반영했습니다. 설계 파일의 숫자를 실제 제작 순서와 연결한 사례입니다.</p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="electronics-design">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@xqHCw/dJMcah0MFLh/AAAAAAAAAAAAAAAAAAAAADBfFR82U2uW9piIge9KNxlh50JzUimMvyu84AUKFo8d/img.jpg|CDM|1.3|{"originWidth":918,"originHeight":545,"style":"alignCenter","alt":"음성 비서 허브의 CAD 외형, 회로기판, 코드, 조립 구조와 완성품","filename":"fable-52-electronics-design.jpg"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">음성 비서 허브의 설계 자료와 완성된 시제품. 출처: Anthropic&middot;Diode.</p>
+</div>
+<p data-ke-size="size16">완성된 세 기기는 회로를 수정하지 않고 동작했다고 연구진은 설명합니다. 다만 초기 시제품이라 장기간 사용했을 때의 내구성이나 상용 인증 통과 여부는 아직 확인되지 않았습니다. AI가 여러 제약을 함께 다루며 실제 작동하는 시제품까지 설계했다는 데 의미가 있습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/research/claude-electronics-design" target="_blank" rel="noopener">설계 과정과 남은 한계</a></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="추론-설정을-올리면-무엇이-달라질까">
+<h2 id="추론-설정을-올리면-무엇이-달라질까" data-ke-size="size26">추론 설정을 올리면 무엇이 달라질까</h2>
+<p data-ke-size="size16">외부 평가 기관인 <b>Artificial Analysis</b>도 Fable을 측정했습니다. 이곳의 <b>Intelligence Index v5.0.1</b>은 코딩, 문서 업무, 추론 등을 다루는 9개 평가를 합친 지수입니다. 점수가 높을수록 이 평가 묶음에서 성능이 좋다는 뜻입니다. 아래 값은 정답률을 나타내는 백분율이 아닙니다. <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noopener">평가 구성</a></p>
+<p data-ke-size="size16">11월 10일 리더보드에서 Fable 5.2는 max 설정으로 가장 높은 지수를 기록했습니다. Fable의 중간 설정인 medium, 높은 설정인 high도 함께 놓으면 성능을 더 얻기 위해 얼마나 기다리고 지출했는지 보입니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>독립 평가 &middot; 모델과 설정</th>
+<th>종합 지수</th>
+<th>과제당 비용</th>
+<th>과제당 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fable 5.1 &middot; max</td>
+<td>49</td>
+<td>$12.99</td>
+<td>22.5분</td>
+</tr>
+<tr>
+<td>Fable 5.2 &middot; medium</td>
+<td>56</td>
+<td>$3.80</td>
+<td>8.3분</td>
+</tr>
+<tr>
+<td>Fable 5.2 &middot; high</td>
+<td>62</td>
+<td>$9.08</td>
+<td>17.7분</td>
+</tr>
+<tr>
+<td>Fable 5.2 &middot; max</td>
+<td>65</td>
+<td>$26.54</td>
+<td>46.4분</td>
+</tr>
+<tr>
+<td>Opus 5.5 &middot; medium</td>
+<td>48</td>
+<td>$2.45</td>
+<td>7.2분</td>
+</tr>
+<tr>
+<td>Opus 5.5 &middot; max</td>
+<td>59</td>
+<td>$10.04</td>
+<td>25.2분</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">Fable 결과에는 기본 fallback 구성이 포함돼 있습니다. Fallback은 안전장치가 제한한 요청을 지정된 다른 Opus 모델로 넘기는 대체 처리입니다. 비용은 입력&middot;캐시&middot;추론&middot;답변 토큰을 반영해 평가별 비중으로 계산한 과제당 평균입니다. 시간도 해당 평가의 평균이며, 일상적인 채팅 한 번의 대기시간과는 구분해야 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener">Artificial Analysis 리더보드</a> &middot; <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/claude-fable-5-1" target="_blank" rel="noopener">Fable 5.1의 같은 지수 버전 결과</a></p>
+<p data-ke-size="size16">Fable 5.1 max와 비교하면 5.2의 high는 지수가 더 높으면서 과제당 비용과 시간이 모두 줄었습니다. 같은 max끼리는 5.2의 지수가 높지만 비용과 시간도 늘었습니다. 필요한 성능에 도달하는 설정을 기준으로 비교하면 5.2의 효율 개선이 잘 드러납니다.</p>
+<p data-ke-size="size16">여기서는 Fable high가 Opus max보다 높은 지수를 기록하면서 평균 비용과 시간도 낮았습니다. 반면 Fable을 high에서 max로 올리면 지수는 3점 오르고 비용은 약 2.9배, 시간은 약 2.6배가 됩니다. Opus도 medium에서는 $2.45와 7.2분으로 더 가볍게 실행됐습니다. 같은 표 안에서도 Opus medium은 비용과 시간을 아끼고, Fable high는 더 높은 지수를 얻는 선택으로 나뉩니다.</p>
+<p data-ke-size="size16">평가가 바뀌면 비용의 순서도 바뀝니다. 금융&middot;코딩&middot;법률&middot;세무 과제를 묶은 <b>Vals Index 2.2</b>에서는 Fable 5.2가 71.31%, Opus 5.5가 70.14%였습니다. 표시된 테스트당 비용은 각각 $17.94와 $24.77이었습니다. 이 평가에서는 Fable이 더 적은 비용으로 조금 높은 점수를 냈습니다. AA와 Vals는 과제 구성과 실행 조건이 달라 각각의 표 안에서 비교해야 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.vals.ai/benchmarks/vals_index" target="_blank" rel="noopener">Vals Index, 11월 9일 갱신</a></p>
+<p data-ke-size="size16">설정을 고를 때는 이용 환경부터 나누면 됩니다. <b>Claude 앱과 Claude Code는 기본 medium</b>, <b>직접 API를 호출할 때는 기본 high</b>입니다. API 문서는 high에서 성능 개선의 상당 부분을 얻을 수 있다고 설명합니다. 오래 걸리는 코딩&middot;에이전트 과제에서 추가 개선이 확인되면 xhigh로 올리고, max는 시간과 토큰 사용량보다 최대 성능이 중요한 드문 작업에 남겨 두도록 권합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2" target="_blank" rel="noopener">추론 설정 권장값</a></p>
+<p data-ke-size="size16">또 하나 달라진 동작이 있습니다. 5.2에서는 medium 이상으로 설정한 뒤 프롬프트에 &ldquo;생각하지 말고 바로 답해 줘&rdquo;라고 적어도 추론을 줄이지 않을 수 있습니다. 쉬운 요청에서 지연과 비용을 줄이려면 effort 자체를 낮춰야 합니다. 다만 low&middot;medium에서는 긴 과제 도중 남은 일만 정리하고 멈추는 사례가 더 자주 나타났다고 공식 문서가 설명합니다. 반복적으로 이런 문제가 생기는 작업은 설정을 올릴 이유가 됩니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2" target="_blank" rel="noopener">추론과 중도 종료 동작</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="api-단가는-20-인하">
+<h2 id="api-단가는-20-인하" data-ke-size="size26">API 단가는 20% 인하</h2>
+<p data-ke-size="size16">API 요금은 처리한 토큰 양으로 계산합니다. 입력은 모델에 보낸 내용, 출력은 추론과 답변을 생성한 양에 해당합니다. Claude나 ChatGPT의 월 구독료와는 별도입니다.</p>
+<p data-ke-size="size16">Fable 5.2의 기본 API 요금은 Fable 5.1보다 입력과 출력 모두 20% 낮아졌습니다. 아래는 미국 달러 기준 100만 토큰당 가격입니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/overview" target="_blank" rel="noopener">Fable 5.2 요금</a> &middot; <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Fable 5.1 발표 요금</a></p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>API 모드</th>
+<th>입력 100만 토큰</th>
+<th>출력 100만 토큰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fable 5.1 &middot; 일반</td>
+<td>$10</td>
+<td>$50</td>
+</tr>
+<tr>
+<td>Fable 5.2 &middot; 일반</td>
+<td>$8</td>
+<td>$40</td>
+</tr>
+<tr>
+<td>Fable 5.2 &middot; fast</td>
+<td>$16</td>
+<td>$80</td>
+</tr>
+<tr>
+<td>Opus 5.5 &middot; 일반</td>
+<td>$4</td>
+<td>$20</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">입력 10만 토큰과 출력 1만 토큰을 쓴다고 가정해 계산하면 Fable 5.1은 $1.50, Fable 5.2는 $1.20, Fable 5.2 fast는 $2.40, Opus 5.5는 $0.60입니다. 캐시&middot;도구&middot;재시도 비용을 빼고 같은 처리량으로 계산한 예시입니다. 실제 작업에서는 모델이 사용하는 토큰 양이 달라집니다.</p>
+<p data-ke-size="size16">공식 코딩 비용 그래프도 그 차이를 보여 줍니다. FrontierCode에서 Fable high는 Opus max와 비슷한 점수에 도달하면서 과제당 비용은 약 절반이었습니다. 기본 토큰 단가로는 Fable이 더 비싸도, 특정 과제를 끝내는 데 사용한 양까지 포함하면 비용이 낮아질 수 있습니다.</p>
+<div class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="coding-cost">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@pd2ex/dJMcafoAmCy/AAAAAAAAAAAAAAAAAAAAAGy5MBFrOMvHmdh44IOfYep0Sc__Rhq9MtlqUorT3edw/img.jpg|CDM|1.3|{"originWidth":918,"originHeight":638,"style":"alignCenter","alt":"FrontierCode 2.0 점수와 작업당 달러 비용을 비교한 그래프","filename":"fable-52-coding-cost.jpg"}_##]</div>
+</div>
+<p class="devlog-rich__caption" data-ke-size="size16">Anthropic의 FrontierCode 2.0 결과. 가로축은 로그 눈금의 작업당 비용입니다. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.</p>
+</div>
+<p data-ke-size="size16">추가 비용을 내고 출력 속도를 높이는 fast 모드도 생겼습니다. 토큰 생성 속도를 최대 2.5배 높이는 대신 단가는 일반 모드의 2배입니다. 이 수치는 토큰을 만들어 내는 속도이므로, 검색이나 도구 실행까지 포함한 전체 작업 시간이 같은 비율로 줄어드는지는 작업에 따라 달라집니다. <a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">출력 속도와 fast 모드</a></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="내-요금제에서-fable-52를-쓰려면">
+<h2 id="내-요금제에서-fable-52를-쓰려면" data-ke-size="size26">내 요금제에서 Fable 5.2를 쓰려면</h2>
+<p data-ke-size="size16">Fable 5.2는 Claude의 유료 요금제에서 사용할 수 있습니다. 웹&middot;모바일&middot;데스크톱 앱에서는 모델 선택 메뉴에서 <b>Fable 5.2</b>를 고르면 됩니다. Claude Code는 <b>2.1.321 이상</b>, Cowork는 최신 Claude Desktop이 필요합니다. Team&middot;Enterprise에서는 조직 소유자가 허용한 모델을 이용할 수 있으므로, 메뉴에 보이지 않으면 관리자에게 Fable 5.2 활성화 여부를 확인해야 합니다. 프로그램에서 직접 호출할 때의 API 모델 이름은 <code style="background: #f0f0f0; border-radius: 3px; padding: 2px 5px; font-family: Menlo,Consolas,monospace; font-size: 0.92em;">claude-fable-5-2</code>입니다. <a style="color: #1a73e8; text-decoration: none;" href="https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan" target="_blank" rel="noopener">이용 경로와 버전</a></p>
+<p data-ke-size="size16">요금제에서 사용할 수 있다는 것과 추가 비용 없이 포함된다는 것은 구분해야 합니다. 평소 적용되는 조건은 다음과 같습니다.</p>
+<div class="rich-table-wrap">
+<table data-ke-align="alignLeft">
+<thead>
+<tr>
+<th>이용 중인 요금제</th>
+<th>Fable 사용 비용과 한도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Max&middot;Ultra, Team 프리미엄 좌석</td>
+<td>주간 사용 한도의 최대 50%까지 포함. 한도 이후에는 사용량 크레딧으로 계속 이용 가능</td>
+</tr>
+<tr>
+<td>Pro&middot;Team 표준 좌석</td>
+<td>기본적으로 별도 사용량 크레딧으로 과금. 아래 출시 혜택 기간에는 예외 적용</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>계약&middot;좌석 유형에 따라 포함 여부와 과금 방식이 다름</td>
+</tr>
+<tr>
+<td>Claude API</td>
+<td>구독 한도와 별개로 API 사용량에 따라 과금</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">사용량 크레딧은 구독에 포함된 한도 밖의 이용료를 내는 방식입니다. Fable은 다른 Claude 모델보다 주간 한도를 빨리 소모합니다. 현재 잔여량과 크레딧 사용 여부는 Claude의 <b>Settings &rarr; Usage</b>에서 확인할 수 있습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan" target="_blank" rel="noopener">요금제별 기본 조건</a></p>
+<p data-ke-size="size16">출시 혜택도 있습니다. Pro와 Team 표준 좌석에는 11월 9일부터 11월 16일 오후 11시 59분(미국 태평양 시간)까지 기존 주간 사용 한도 중 최대 50%를 Fable에 쓸 수 있습니다. 사용량 초기화 혜택에는 구독 시작 시점 등 별도 조건이 있으므로, 자신의 요금제에서 확인해야 합니다. Free 플랜은 대상에 포함되지 않습니다. 기간이 끝나거나 50%를 모두 쓰면, 사용량 크레딧을 켠 계정은 해당 크레딧으로 과금됩니다. <a style="color: #1a73e8; text-decoration: none;" href="https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers" target="_blank" rel="noopener">출시 혜택과 적용 조건</a></p>
+<div class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 760px; --rich-mobile-scroll-width: 760px;" data-media-id="availability">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@ca4d14/dJMcah0MFLi/AAAAAAAAAAAAAAAAAAAAAEDngIA6yE2arKGapMC8DXPhjiYW241cAFJVqZFvzCuk/img.jpg|CDM|1.3|{"originWidth":760,"originHeight":530,"style":"alignCenter","alt":"Fable 5.2 제공 플랫폼과 API 모델 이름, Mythos 접근 조건을 설명하는 공식 안내","filename":"fable-52-availability.jpg"}_##]</div>
+</div>
+<p class="devlog-rich__caption" data-ke-size="size16">2026년 11월 10일 확인한 이용 안내. 출시 주간 프로모션은 기간과 조건을 확인해야 합니다. 모바일에서는 좌우로 밀어 확인할 수 있습니다. 출처: Anthropic.</p>
+</div>
+<p data-ke-size="size16">회사 자료를 다룬다면 보관 조건도 확인해야 합니다. Fable 5.2는 기본적으로 안전 모니터링을 위해 30일 데이터 보관이 필요하며, 데이터를 보관하지 않는 ZDR 적용에는 Anthropic의 별도 승인이 필요합니다. 사내 규정상 보관이 허용되지 않는 자료라면 승인된 사용 환경부터 확인해야 합니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/overview" target="_blank" rel="noopener">모델별 데이터 보관 조건</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="fable-51-api에서-옮길-때-확인할-것">
+<h2 id="fable-51-api에서-옮길-때-확인할-것" data-ke-size="size26">Fable 5.1 API에서 옮길 때 확인할 것</h2>
+<p data-ke-size="size16">Claude 앱이나 Claude Code에서 모델을 선택하는 사용자와, 직접 API 요청을 만드는 개발자는 이전 과정이 다릅니다. 5.2에서는 모델이 이미 만든 추론 내용 앞의 system&middot;tools&middot;과거 메시지를 바꿨는지 검사하는 규칙이 모든 계정에 적용됩니다. 예전 메시지를 편집한 뒤 그 추론 내용을 다시 보내면 기본 동작에서 400 오류가 날 수 있습니다. 5.1에서 오래된 계정으로 동작하던 코드도 여기에 걸릴 수 있습니다. <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2" target="_blank" rel="noopener">5.1에서 바뀐 API 검사</a></p>
+<p data-ke-size="size16">직접 연동한 코드는 대화 앞부분을 수정하지 않고 새 메시지만 덧붙이는지 확인해야 합니다. 반면 Claude 앱&middot;Claude Code&middot;Claude Agent SDK가 요청을 만들어 주는 경우에는 이 검사 변경에 따로 대응할 필요가 없습니다. 또한 5.2에서 Opus 5.5나 Fable 5.1로 대화 중 전환하면 5.2의 내부 추론 내용은 이어받지 못합니다. 대화 기록을 가공하거나 모델을 번갈아 쓰는 서비스라면 <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/migration-guide" target="_blank" rel="noopener">공식 이전 가이드</a>를 먼저 확인하는 편이 좋습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="fable-52와-opus-55의-쓰임새">
+<h2 id="fable-52와-opus-55의-쓰임새" data-ke-size="size26">Fable 5.2와 Opus 5.5의 쓰임새</h2>
+<p data-ke-size="size16"><b>기존 Fable 5.1로 긴 작업을 맡기고 있었다면 5.2로 옮길 이유가 분명해졌습니다.</b> 문맥 크기와 입출력 형식은 유지하면서 공식 코딩 점수는 올랐고 단가는 내려갔습니다. 독립 평가에서도 5.2 high가 5.1 max보다 높은 지수를 더 적은 비용과 시간으로 얻었습니다. 직접 만든 API 연동은 앞서 설명한 호환성 조건도 확인해야 합니다.</p>
+<p data-ke-size="size16">Opus 5.5를 쓰고 있다면 작업의 난도가 선택을 가릅니다. 짧은 문서 정리나 평소 코드 수정은 기본 단가와 낮은 추론 설정의 비용이 작은 Opus에서 시작할 만합니다. 여러 파일을 바꾸는 대규모 수정, 긴 조사와 계산을 거쳐 결과물을 완성하는 일처럼 Opus의 추론 강도를 높여도 해결이 어려운 과제에는 Fable 5.2가 더 설득력 있습니다. 공개된 코딩&middot;에이전트 평가가 이 선택을 뒷받침합니다.</p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="참고-자료">
+<h2 id="참고-자료" data-ke-size="size26">참고 자료</h2>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">Anthropic: Claude Fable 5.2&middot;Mythos 5.2 공식 발표와 평가표</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/overview" target="_blank" rel="noopener">Claude Platform: 모델 사양&middot;가격&middot;데이터 보관</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank" rel="noopener">Claude Platform: Fable 5.1 사양</a> &middot; <a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/migration-guide" target="_blank" rel="noopener">5.2 이전 가이드</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2" target="_blank" rel="noopener">Claude Platform: 5.2의 동작 변화와 대체 처리</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/" target="_blank" rel="noopener">Anthropic: 페르마 정리 형식화의 제공 자료와 협업 구성</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://www.anthropic.com/research/claude-electronics-design" target="_blank" rel="noopener">Anthropic: 실제 전자기기를 설계한 연구와 한계</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan" target="_blank" rel="noopener">Claude Help Center: 요금제별 Fable 이용 조건</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers" target="_blank" rel="noopener">Claude Help Center: 출시 혜택과 대상 요금제</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener">Artificial Analysis: 모델 리더보드</a> &middot; <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noopener">Fable 5.2의 평가 구성</a> &middot; <a style="color: #1a73e8; text-decoration: none;" href="https://artificialanalysis.ai/models/claude-fable-5-1" target="_blank" rel="noopener">Fable 5.1의 현재 평가</a></li>
+<li><a style="color: #1a73e8; text-decoration: none;" href="https://www.vals.ai/benchmarks/vals_index" target="_blank" rel="noopener">Vals AI: Vals Index의 성능과 테스트당 비용</a></li>
+</ul>
+</section>
+</article>

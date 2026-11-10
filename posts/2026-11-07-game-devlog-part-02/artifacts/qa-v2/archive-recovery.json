@@ -1,0 +1,21 @@
+{
+  "recovered_on": "2026-11-10",
+  "method": "Latest saved revision article-body.md preserved byte-for-byte; current published visible text was verified to match. Earlier main draft was not used.",
+  "asset_sha256": {
+    "assets/v64-home-current-20261108-004142.jpg": "7775f3742f8fd40533c02d3fce829e1c16f0dddd32432fdfa0a5989b9ba4eb6b",
+    "assets/v40-native-home.png": "0d5829e1d261726278dde6c694446aa7930f308e208704d8dd561cc59cd82e2f",
+    "assets/runway-closeup-yaw-0.png": "c405fa79ad630680cb5c006f3f248c6698e41c1084147f5113f133beae2c34c4",
+    "assets/v64-cat-combat-qa.png": "c74893f49b8d304ce349075a1993a4363d5b3523ca541cfe111fa68ea46cc364",
+    "assets/v64-two-eyes-boss-qa.png": "c2b871a1f63f804033bb26a80e849ef68ccd4048044a0fb7d6ac9e5ef85968f4"
+  },
+  "public_html_sanitized": true,
+  "raw_originals_excluded": true,
+  "scope": "Public article archive recovery only. No new publication or new QA-gate approval.",
+  "current_body_verification": {
+    "date": "2026-11-10",
+    "result": "pass",
+    "comparison": "Markdown prose and manifest captions match current published visible text exactly after removing whitespace and the generated table of contents.",
+    "normalized_characters": 1426,
+    "all_image_bytes_and_dimensions_verified": true
+  }
+}

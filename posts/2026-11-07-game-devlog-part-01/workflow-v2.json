@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "evidence-rich",
+  "scope": "complete",
+  "primary_reader": "개발 중인 해저 게임의 변화 과정을 읽는 기존 블로그 독자",
+  "direct_capture": true,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": false,
+  "high_risk_remote_media": false,
+  "include_390": false,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "Archive recovery from the final published source. Earlier drafts were not used. See publication.json for reconstruction and historical validation limitations.",
+  "publication_mode": "codex-browser"
+}

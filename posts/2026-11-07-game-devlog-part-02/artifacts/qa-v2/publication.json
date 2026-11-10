@@ -1,0 +1,65 @@
+{
+  "status": "published",
+  "post_id": 173,
+  "title": "AI와 모바일 게임 만들기 (2) 고양이로 바뀐 게임을 다듬는 중",
+  "url": "https://dop3n.tistory.com/173",
+  "archive_recovered_on": "2026-11-10",
+  "current_public_article_sha256": "3ace87abbd35d574772b894c1af9727349b4e6e3bfd5c9048e7886008666b8d5",
+  "public_sanitized_article_sha256": "f366326d924fe148c1b71c212a16ba695b31bd97b45dd7ffd1fb6ffe7edbf04e",
+  "source_article_sha256": "280db0ee02875b8ea5d8e3c7fee72930c80960a30d13b42190d733595d5837cb",
+  "image_count": 5,
+  "recovery_method": "Latest saved revision article-body.md preserved byte-for-byte; current published visible text was verified to match. Earlier main draft was not used.",
+  "original_draft_not_used": true,
+  "current_visible_text_matches_latest_revision": true,
+  "latest_revision_body_sha256": "108d200fc1f9ccafcdf119471cbe56f737b5fddc15a32ae2a5860f0bda80698c",
+  "submitted_fragment_sha256": "3c38fe73d2798d0aacf992154081c7275d8604320d7c6fb196b5df47f7ecb354",
+  "public_sanitized_fragment_sha256": "0e1aa0ae3a7c1a09f9aae1bbd7278308a9db01fb5b5eff29069d49929f2a1076",
+  "revision_saved_at": "2026-11-08T08:38:31.601533+00:00",
+  "published_at": "2026-11-08 02:28 KST",
+  "historical_native_preview_qa": {
+    "method": "Official CUA Tistory preview manual inspection",
+    "desktop_viewport": [
+      1060,
+      684
+    ],
+    "desktop_article_width": 980,
+    "desktop_article_scroll_width": 980,
+    "mobile_viewport": [
+      360,
+      640
+    ],
+    "mobile_document_width": 345,
+    "mobile_document_scroll_width": 345,
+    "mobile_article_width": 313,
+    "mobile_article_scroll_width": 313,
+    "themes_observed": [
+      "light",
+      "dark"
+    ],
+    "all_five_images_loaded": true,
+    "image_natural_sizes": [
+      [
+        1280,
+        764
+      ],
+      [
+        1280,
+        720
+      ],
+      [
+        1280,
+        720
+      ],
+      [
+        1280,
+        720
+      ],
+      [
+        1280,
+        720
+      ]
+    ],
+    "post_publication_visual_qa": "Not run; author-owned per repository workflow"
+  },
+  "formal_automatic_finalizer": "Unavailable in this cloud snapshot. Not claimed passed; prior user-authorized manual exception used."
+}

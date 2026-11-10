@@ -1,0 +1,22 @@
+{
+  "recovered_on": "2026-11-10",
+  "method": "Final Markdown reconstructed from the current published article, excluding the generated table of contents. Final reviewed HTML has identical prose and captions except the later approved cross-link sentence. Original top-level draft was stale and not used.",
+  "asset_sha256": {
+    "assets/A3-landscape-gameplay-layout.png": "7022dc1a2382486073f2a2e98f0854ce8d8e4a3b974bed7f3d6d41a4dc45a207",
+    "assets/A-character-candidates.png": "451c02c248bf0308ff942c533ccf9c25e10301930d073d0f781eaee276d35a99",
+    "assets/shallows-gameplay.png": "b5070881d107386d7d9e363c7cd1609a36bce033a5386e020536daf61b00e47a",
+    "assets/mac-v5-wreck.png": "c93f6a93a4e2689465a89e57b25736fa6435a0a354e4272eea8d2bf4c626c4e7",
+    "assets/mac-v6-three-weapons.png": "f63890155b89a320c99fca6f76b5b4f7f01795cae2ccd3e29cae6f5bffe50a80",
+    "assets/mac-v6-escape-result.png": "cc6b89945b66b23553f672417dbd8fd94379f948067191a39f000d35cde3fa4a"
+  },
+  "public_html_sanitized": true,
+  "raw_originals_excluded": true,
+  "scope": "Public article archive recovery only. No new publication or new QA-gate approval.",
+  "current_body_verification": {
+    "date": "2026-11-10",
+    "result": "pass",
+    "comparison": "Markdown prose and manifest captions match current published visible text exactly after removing whitespace and the generated table of contents.",
+    "normalized_characters": 2195,
+    "all_image_bytes_and_dimensions_verified": true
+  }
+}
