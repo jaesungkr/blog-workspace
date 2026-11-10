@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "lead_id": "context-hero",
+  "items": [
+    {
+      "id": "context-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Codex image generation",
+      "source": "artifacts/qa-v2/hero/final-prompt-v1.txt",
+      "publish_path": "assets/ai-context-queue-hero-v1.png",
+      "rights": "Original AI-generated artwork made for this article without external reference images.",
+      "alt": "여러 코드 변경 카드가 모인 대기열에서 손이 한 장을 골라 파란 검토판에 올리는 모습입니다.",
+      "caption": "여러 작업의 결과를 모아 한 건씩 검토하는 모습을 표현했습니다.",
+      "placement": "도입의 대상 독자와 첫 행동 설명 다음",
+      "processing": [
+        "Original generated PNG retained without pixel edits."
+      ],
+      "redactions": [],
+      "width": 1672,
+      "height": 941,
+      "display_width": 916,
+      "status": "validated",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fbe1UUu%2FdJMcaiMaZAT%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1VGTgvjw2BsJKlI41-6TTUpeVri5DvC3oSRaIBw5qTbN_FuJrCYRa8Uk30c4gS7N42B_j0_x6kfrbeAkKQU037z%2Fimg.png",
+      "sha256": "d6f25c1ce3fbb47d38692afc1ae1467f895a530aed8ba60a8bbb6814f1d68dda",
+      "tistory_embed": "[##_Image|kage@be1UUu/dJMcaiMaZAT/AAAAAAAAAAAAAAAAAAAAADdW-mFzu0WJfM92OWIfb3pHLnXqdxOX7c73XKaIUFH-/img.png|CDM|1.3|{\"originWidth\":1672,\"originHeight\":941,\"style\":\"alignCenter\",\"filename\":\"ai-context-queue-hero-v1.png\",\"alt\":\"여러 코드 변경 카드가 모인 대기열에서 손이 한 장을 골라 파란 검토판에 올리는 모습입니다.\"}_##]"
+    },
+    {
+      "id": "decision-flow",
+      "kind": "image",
+      "origin": "generated",
+      "role": "concept",
+      "claim_ids": [
+        "C05"
+      ],
+      "actor": "Codex deterministic diagram design",
+      "source": "artifacts/qa-v2/infographic/decision-flow-v1.html",
+      "publish_path": "assets/decision-flow-v1.jpg",
+      "rights": "Original explanatory diagram composed for this article.",
+      "alt": "AI 작업에서 내 판단 대기, 한 건 검토, 결정과 다음 행동 기록으로 이어지고 추가 작업은 AI로 돌아가며 끝난 카드는 완료로 내려갑니다.",
+      "caption": "결정이 필요한 카드를 한 건씩 검토하고, 다음 행동을 기록한 뒤 추가 작업으로 돌려보내거나 완료합니다.",
+      "placement": "질문이 올 때마다 대화창을 옮기던 방식에서 절의 전후 비교 다음",
+      "processing": [
+        "Self-contained inline SVG rendered and exported to JPEG through CUA Chrome."
+      ],
+      "redactions": [],
+      "width": 640,
+      "height": 944,
+      "display_width": 480,
+      "status": "validated",
+      "tistory_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcVE9Z8%2FdJMcaiMaZAF%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Wmxmcz5zXTCfl893m6Opu5DowlcF6e9uWOgjuVJqcCijjY6dEhjlKLJBq33ZA_XsghCuQMhfXpF5fUGdeejtzm%2Fimg.jpg",
+      "sha256": "60a9a2cc25fd15aba1a4f08eb84b757ca631ed0a0e800de8ae3ae6a506538b56",
+      "tistory_embed": "[##_Image|kage@cVE9Z8/dJMcaiMaZAF/AAAAAAAAAAAAAAAAAAAAAMCIAsVHnuKdbyP6ZpOYRUKh66tH9CxvvPy9tk8bA-8e/img.jpg|CDM|1.3|{\"originWidth\":640,\"originHeight\":944,\"style\":\"alignCenter\",\"filename\":\"decision-flow-v1.jpg\",\"alt\":\"AI 작업에서 내 판단 대기, 한 건 검토, 결정과 다음 행동 기록으로 이어지고 추가 작업은 AI로 돌아가며 끝난 카드는 완료로 내려갑니다.\"}_##]"
+    }
+  ]
+}

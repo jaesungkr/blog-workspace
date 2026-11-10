@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "creator": "dev-log-hero-image",
+  "stage_result": "candidate",
+  "independent_validation": "pending",
+  "actual_tool": "image_gen.imagegen",
+  "generation_mode": "built-in image generation",
+  "model": "not exposed by tool",
+  "seed": "not exposed by tool",
+  "prompt": "artifacts/qa-v2/hero/final-prompt-v1.txt",
+  "local_path": "assets/ai-context-queue-hero-v1.png",
+  "actual_mime": "image/png",
+  "width": 1672,
+  "height": 941,
+  "bytes": 2192733,
+  "sha256": "d6f25c1ce3fbb47d38692afc1ae1467f895a530aed8ba60a8bbb6814f1d68dda",
+  "requested_ratio": "16:9",
+  "observed_ratio": 1.7768331562167907,
+  "claim_ids": [
+    "C05"
+  ],
+  "role": "concept",
+  "origin": "generated",
+  "rights": "Original AI-generated explanatory artwork for this article; no external reference image used.",
+  "placement": "대표 이미지 - 원문 소개 문단 다음, 첫 소제목 앞의 {{media:context-hero}}",
+  "alt": "여러 코딩 작업의 변경 카드가 모인 대기열에서 손이 한 장만 골라 파란 검토판에 올리는 장면.",
+  "caption": "여러 작업의 결과를 한곳에 모으고 한 건씩 검토하는 과정을 표현한 생성 이미지입니다.",
+  "recognition_cue": "Three parallel fanfold ribbons with physical code-diff plus/minus change marks feed a single paper-card queue; one human hand selects only one card onto a blue review plate.",
+  "essential_embedded_marks": "Only exact + and − change symbols and abstract indented rules. No linguistic text, pseudo-code, brand name, title, or app UI.",
+  "reference_role": "Repository image-guide/image-art-direction; no visual reference image supplied.",
+  "correction_count": 0,
+  "byte_integrity": {
+    "all_png_chunk_crc_valid": true,
+    "IEND_verified": true,
+    "fully_decompressed_scanline_bytes": 4720997,
+    "format": "RGB8, non-interlaced",
+    "base64_transfer": "The original data URL was decoded into the bundle in ordered chunks without re-encoding."
+  },
+  "creator_inspection": {
+    "full_resolution": "Generated original and saved PNG inspected. Hand/paper geometry, contact, printed marks, texture, crop and hierarchy are coherent.",
+    "browser_same_raster_widths": [
+      1152,
+      320
+    ],
+    "browser_natural_dimensions": [
+      1672,
+      941
+    ],
+    "thumbnail": "At 320 CSS px the multiple paper streams, waiting cards, single selected card, hand and blue inspection surface remain distinct.",
+    "known_risk": "Diff symbols identify coding review rather than any named product. No model/product logo is intended. Independent reviewer must judge topic specificity.",
+    "evidence": "artifacts/qa-v2/hero/creator-full-and-thumbnail-v1.jpg"
+  },
+  "source_pass": "artifacts/qa-v2/source-pass.json",
+  "source_pass_current_before_creation": true,
+  "preserved_source_hashes": {
+    "article_content_sha256": "0fcf826456f28a94279c87e90795125ce8acd28afa1165ead3e56c5de6e60118",
+    "brief_sha256": "160694dc21ea25a832c3017fa90b9d0090d3a6a95e86bba3d1a97312fe4a2e63",
+    "evidence_sha256": "16e9dabb817b7acc104b034c2635ebd9cdfb7a2ab8d35d417724dea370b2f973"
+  },
+  "export": "Generated tool returned PNG data URL; original decoded bytes persisted under assets. Creator QA display used documented CUA Chrome screenshot (JPEG), not a derived publication PNG."
+}

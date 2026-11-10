@@ -1,0 +1,73 @@
+{
+  "claim_id": "C05",
+  "evidence": "evidence.md C05, article.md 내 답이 필요한 작업을 한곳으로 모으기, artifacts/task-card-template.md",
+  "labels": [
+    {
+      "text": "AI 작업",
+      "claim_ids": [
+        "C05"
+      ],
+      "kind": "dev.log explanation; not an app screenshot or measured result"
+    },
+    {
+      "text": "내 판단 대기",
+      "claim_ids": [
+        "C05"
+      ],
+      "kind": "dev.log explanation; not an app screenshot or measured result"
+    },
+    {
+      "text": "한 건 검토",
+      "claim_ids": [
+        "C05"
+      ],
+      "kind": "dev.log explanation; not an app screenshot or measured result"
+    },
+    {
+      "text": "결정·다음 행동 기록",
+      "claim_ids": [
+        "C05"
+      ],
+      "kind": "dev.log explanation; not an app screenshot or measured result"
+    },
+    {
+      "text": "추가 작업",
+      "claim_ids": [
+        "C05"
+      ],
+      "kind": "dev.log explanation; not an app screenshot or measured result"
+    },
+    {
+      "text": "완료",
+      "claim_ids": [
+        "C05"
+      ],
+      "kind": "dev.log explanation; not an app screenshot or measured result"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AI 작업",
+      "to": "내 판단 대기"
+    },
+    {
+      "from": "내 판단 대기",
+      "to": "한 건 검토"
+    },
+    {
+      "from": "한 건 검토",
+      "to": "결정·다음 행동 기록"
+    },
+    {
+      "from": "결정·다음 행동 기록",
+      "to": "AI 작업",
+      "label": "추가 작업",
+      "includes": "Insufficient evidence follows this same route; no extra branch"
+    },
+    {
+      "from": "결정·다음 행동 기록",
+      "to": "완료"
+    }
+  ],
+  "visible_copy_check": "Exact six strings verified in exported SVG and read in full/mobile raster. No extra visible text."
+}

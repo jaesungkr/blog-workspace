@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-11-10T11:50:34.691351Z",
+  "checked_by": "Codex independent source reviewer",
+  "article_content_sha256": "5b431033323908fd659fab634f7f4541f73b5d99495053084612ba820352dc61",
+  "brief_sha256": "96c78a54432c513799f4fb654d010d40cd5da17517c2c115502479c3a3a865de",
+  "evidence_sha256": "9a15fb9a79ae6fc54f267d91f6fccb25c36cd65b4f2cc31489340a4fbf401955",
+  "note": "Minimal affected source review of author-requested restored title/opening and exact GeekNews wording. Adoption body unchanged. See source-review-final-wording.md. Source only; not page/media/publication approval."
+}

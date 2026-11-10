@@ -1,0 +1,36 @@
+/* This post has one two-column task-card example. Keep both cells readable
+   inside narrow article gutters rather than inheriting the wide-table floor. */
+.devlog-rich .rich-table-wrap table {
+  min-width: 0;
+  table-layout: fixed;
+}
+.devlog-rich .rich-table-wrap th:first-child,
+.devlog-rich .rich-table-wrap td:first-child {
+  width: 28%;
+}
+@media (max-width: 735px) {
+  .devlog-rich .rich-table-wrap th,
+  .devlog-rich .rich-table-wrap td {
+    padding: 10px;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Separate the two reusable example messages from surrounding prose. */
+.devlog-rich__section > blockquote {
+  padding: 18px 20px;
+  border-left: 3px solid var(--rich-link);
+  background: var(--rich-surface);
+  overflow-wrap: anywhere;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.devlog-rich__section > blockquote p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--rich-body);
+}
+@media (max-width: 735px) {
+  .devlog-rich__section > blockquote { padding: 16px; }
+}

@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "candidate_status": "creator_inspected; independent validation pending",
+  "creator": "diagram-design",
+  "actual_tools": [
+    "Python standard library for deterministic HTML and records",
+    "diagram-design/scripts/self_check.py --offline",
+    "diagram-design/scripts/export_svg.py --system-fonts",
+    "CUA Chrome extension browser 1; tab.screenshot({clip:{x:0,y:0,width:640,height:944}})",
+    "exec_command require_escalated to persist unchanged screenshot bytes",
+    "sips decode only for ink-bound inspection derivative"
+  ],
+  "raster": {
+    "path": "assets/decision-flow-v1.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 33045,
+    "width": 640,
+    "height": 944,
+    "sha256": "60a9a2cc25fd15aba1a4f08eb84b757ca631ed0a0e800de8ae3ae6a506538b56",
+    "requested_ratio": "fit portrait; no fixed ratio",
+    "observed_ratio": "640:944 (40:59)",
+    "export_device_pixel_ratio": 1,
+    "export_css_bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 944
+    },
+    "reencoded_or_resized": false
+  },
+  "source": {
+    "html": {
+      "path": "artifacts/qa-v2/infographic/decision-flow-v1.html",
+      "sha256": "c624599085b9eb3defa26e36f6fc4f968fd4dd09436180708b6227d3d3011106"
+    },
+    "svg": {
+      "path": "artifacts/qa-v2/infographic/decision-flow-v1.svg",
+      "sha256": "33fe2a515fbb36814c5f18f00a1737a548142b55b06c780646df49dce58b6e65"
+    },
+    "viewBox": [
+      0,
+      0,
+      640,
+      944
+    ]
+  },
+  "source_freeze": {
+    "parent_verified_article_content_hash": "0fcf826456f28a94279c87e90795125ce8acd28afa1165ead3e56c5de6e60118",
+    "current_raw_article_file_sha256": "6df917bb37830d6f39553a98a6c1d3929991dc5d665b53eaf5fd1351f279f1c9",
+    "brief_file_sha256": "160694dc21ea25a832c3017fa90b9d0090d3a6a95e86bba3d1a97312fe4a2e63",
+    "evidence_file_sha256": "16e9dabb817b7acc104b034c2635ebd9cdfb7a2ab8d35d417724dea370b2f973"
+  },
+  "font": {
+    "requested_family": "Apple SD Gothic Neo, Noto Sans KR, system-ui, sans-serif",
+    "computed_family": "\"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif",
+    "font_status": "loaded",
+    "local_first_family_file": "/System/Library/Fonts/AppleSDGothicNeo.ttc",
+    "observed_glyphs": "All frozen Hangul, AI and middle dot rendered correctly. Computed family is a stack, not per-glyph renderer introspection.",
+    "main_source_px": 36,
+    "record_and_return_source_px": 32,
+    "main_at_312px": 17.55,
+    "record_and_return_at_312px": 15.6
+  },
+  "intended_width": {
+    "desktop_max_css_px": 640,
+    "article_body_max_css_px": 760,
+    "mobile_page_css_px": 360,
+    "mobile_content_css_px": 312,
+    "narrow_skin_gutters_css_px": 24,
+    "mobile_image_height_css_px": 460.1953125,
+    "mobile_scroll_width_css_px": 360
+  },
+  "placement": {
+    "media_id": "decision-flow",
+    "after_paragraph_ending": "사람의 판단이 들어가는 위치를 보여 줍니다.",
+    "caption": "결정이 필요한 카드를 한 건씩 검토하고, 다음 행동을 기록한 뒤 추가 작업으로 돌려보내거나 완료합니다.",
+    "alt": "AI 작업을 내 판단 대기에 모아 한 건씩 검토하고, 결정과 다음 행동을 기록한 뒤 추가 작업으로 돌려보내거나 완료하는 흐름"
+  },
+  "scope": {
+    "primary_nodes": 5,
+    "arrows": 5,
+    "accent_nodes": 1,
+    "factual_claim_ids": [
+      "C05"
+    ],
+    "no_metrics": true,
+    "no_added_branch": true,
+    "no_painted_title": true,
+    "headline_height_share": 0
+  },
+  "creator_inspection": {
+    "full_path": "artifacts/qa-v2/infographic/creator-full-v1.jpg",
+    "mobile_path": "artifacts/qa-v2/infographic/creator-mobile-360-v1.jpg",
+    "inspection_page": "artifacts/qa-v2/infographic/raster-inspection-v1.html",
+    "painted_bounds": "artifacts/qa-v2/infographic/painted-bounds-v1.json",
+    "result": "No clipping, collision, broken glyph, confusing crossing, or mobile overflow observed. Every string read at 312px width.",
+    "corrections": []
+  },
+  "export_notes": [
+    "Python Playwright availability check returned false. export_png.py was not run; no runtime dependencies installed.",
+    "Canonical v2 rules permit documented CUA export instead. Screenshot bytes are JPEG, preserved with .jpg extension.",
+    "Direct CUA fs.writeFile was blocked by read-only sandbox EPERM and did not execute. Saving the same bytes via explicit require_escalated exec_command was approved and succeeded.",
+    "Temporary viewport override reset and task tab closed."
+  ],
+  "independent_validation": "pending; creator does not set media validated or article ready",
+  "authorizations": "Local draft only. No upload, publication, Git commit or push."
+}

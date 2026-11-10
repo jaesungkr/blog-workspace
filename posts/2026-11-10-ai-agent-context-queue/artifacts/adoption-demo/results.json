@@ -1,0 +1,21 @@
+{
+  "kind": "synthetic_rule_verification",
+  "actor": "Codex",
+  "input_cards": 3,
+  "before_queue": [
+    "T01",
+    "T02"
+  ],
+  "after_simulated_return": [
+    "T02"
+  ],
+  "excluded_in_progress": [
+    "T03"
+  ],
+  "source_cards_unchanged": true,
+  "agent_cli_invoked": false,
+  "messages_delivered": false,
+  "product_tests_run": false,
+  "productivity_measured": false,
+  "passed": true
+}

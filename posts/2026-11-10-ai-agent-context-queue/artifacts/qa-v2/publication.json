@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "status": "published",
+  "post_id": 176,
+  "published_url": "https://dop3n.tistory.com/entry/AI%EC%97%90%EA%B2%8C-%EC%BD%94%EB%94%A9%EC%9D%84-%EB%A7%A1%EA%B2%BC%EB%8A%94%EB%8D%B0-%EC%99%9C-%EB%8D%94-%ED%94%BC%EA%B3%A4%ED%95%A0%EA%B9%8C",
+  "observed_publication_time": "2026-11-10T21:09:00+09:00",
+  "time_precision": "minute",
+  "timezone": "Asia/Seoul",
+  "publication_confirmation": {
+    "reported_by": "Publishing operator",
+    "method": "Actual Chrome manager success state and matching published-post list",
+    "cover_displayed": false
+  },
+  "approval": {
+    "scope": "Author-approved final title, opening wording, article body, and publication",
+    "automatic_final_page_gate_not_claimed": true
+  },
+  "submitted_fragment": {
+    "renderer": "canonical rich-post-v2 renderer",
+    "sha256": "fd40631b595a892df4ddbca9c46fbfee6bfcd53a2bd02b67af32860cc04645a8",
+    "utf8_bytes": 31272,
+    "characters": 22315,
+    "clipboard_byte_identity": "confirmed by publishing operator",
+    "exact_private_backup_retained": true,
+    "public_archive": "delivery/ai-agent-context-queue-tistory-fragment-sanitized.txt",
+    "public_archive_is_exact_submission": false,
+    "reason": "Public archive removes CDN URL signing parameters and private workspace references."
+  },
+  "source": {
+    "pre_publication_article_sha256": "600d95197bdc5fb513cb83a412e2b7ecda8621dcd134554351df37b06ef2292a",
+    "article_content_sha256": "5b431033323908fd659fab634f7f4541f73b5d99495053084612ba820352dc61",
+    "original_source_pass_file_sha256": "1708d86b95757ecde9e29a937db6e3ab1c49aac31036a5196a07c0a7541e544b",
+    "body_changed_for_archive": false
+  },
+  "qa": {
+    "source_review": "pass",
+    "cdn_get": "pass, two images, independently executed on Mac",
+    "cdn_record": "artifacts/qa-v2/remote-media-publication-sanitized.json",
+    "manual_browser_preview": {
+      "reported_by": "Publishing operator",
+      "result": "body, two images, alt text and captions checked; no observed overflow",
+      "mobile": {
+        "requested_width": 360,
+        "article_client_width": 313,
+        "article_scroll_width": 313,
+        "quote_client_width": 269,
+        "quote_scroll_width": 269,
+        "quote_count": 4,
+        "themes": [
+          "light",
+          "dark"
+        ]
+      },
+      "desktop": {
+        "requested_width": 1280,
+        "actual_preview_width": 1060,
+        "article_client_width": 980,
+        "article_scroll_width": 980,
+        "quote_client_width": 756,
+        "quote_scroll_width": 756
+      },
+      "quote_colors": {
+        "light_background": [
+          246,
+          246,
+          246
+        ],
+        "light_text": [
+          51,
+          51,
+          51
+        ],
+        "dark_background": [
+          37,
+          38,
+          41
+        ],
+        "dark_text": [
+          209,
+          209,
+          214
+        ]
+      }
+    },
+    "automatic_final_page_capture": "not performed in the available browser workflow",
+    "final_page_json": "not generated",
+    "finalizer": "failed because final-page.json was missing; no automated pass claimed",
+    "post_publication_visual_qa": "not performed, per author workflow"
+  },
+  "archive_limitations": [
+    "Historical review-only and publication-stop statements in planning/audit records are superseded by this later authorized publication.",
+    "Signed CDN bindings and exact submitted HTML are retained privately. This sanitized public bundle must be rebound and revalidated before any republishing.",
+    "Only the article lifecycle and URL changed after approval. Figure pixels and approved prose are unchanged."
+  ]
+}

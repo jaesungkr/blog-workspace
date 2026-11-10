@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-11-10T06:42:23.903936+00:00",
+  "checked_by": "Codex independent reviewer independent source review",
+  "candidate": "assets/ai-context-queue-hero-v1.png",
+  "width": 1672,
+  "height": 941,
+  "bytes": 2192733,
+  "sha256": "d6f25c1ce3fbb47d38692afc1ae1467f895a530aed8ba60a8bbb6814f1d68dda",
+  "full_size_inspected": true,
+  "thumbnail_inspected": true,
+  "thumbnail_width": 360,
+  "thumbnail_height": 203,
+  "subject_swap": "pass",
+  "report": "artifacts/qa-v2/hero/independent-review-v1.md",
+  "scope": "hero only; article remains reviewing"
+}
