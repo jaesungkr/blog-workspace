@@ -8,7 +8,7 @@ status: published
 format: rich-post-v2
 tags: [Fable 5.2, GPT-6 Astra, Claude, GPT, Arena, AI 모델 비교]
 summary: "최상위 GPT와 클로드를 공식 벤치마크, Arena, 실제 평가 비용으로 비교했습니다. Fable의 성능 우위와 추론 설정에 따라 달라지는 비용을 함께 살펴봅니다."
-hero_image: assets/fable-5-2-vs-gpt-6-astra-hero-v1.png
+hero_image: assets/fable-5-2-vs-gpt-6-astra-hero-v2-review.png
 published_url: "https://dop3n.tistory.com/entry/Fable-52-vs-GPT-6-Astra-클로드-GPT-모델-비교"
 sources:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2

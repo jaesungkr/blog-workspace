@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-11-11T03:35:52.738909Z",
+  "checked_by": "/root/write_astra_claude_comparison/verify_official_model_specs",
+  "article_content_sha256": "8a4dc90344b567b25d071981efe6481c670a1915482eb833ff97efaef76ae230",
+  "brief_sha256": "7243a398119da4f527845935b456957dac4a53ca19519935f1100f75225d2ef1",
+  "evidence_sha256": "9809d9e9fb16d61837cfe26dfd11e5b018511ce2f7c0a6e0864b521cc852c495",
+  "note": ""
+}

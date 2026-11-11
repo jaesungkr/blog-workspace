@@ -1,0 +1,32 @@
+{
+  "scope": "hero-only replacement",
+  "body_outside_first_native_image_block": "byte-identical",
+  "submitted_sha256": "cba87bd63ff49a4c8851c466f89df1f0b34dc142f866ee5ed0726722a8b401f6",
+  "before_sha256": "d241e117c73b943d8e8f4069d05dcb5b3080d8ccf7359447f37f383fd8e2aec7",
+  "public_archive_sha256": "cba87bd63ff49a4c8851c466f89df1f0b34dc142f866ee5ed0726722a8b401f6",
+  "archive_note": "Exact submitted HTML is retained in private local backup and the authorized Library item. Submitted HTML contains no signed CDN query parameters, so the Git publication TXT is byte-identical. Observed preview CDN URL is archived without credential/expiry/signature query parameters.",
+  "submitted_library_file_id": "libfile_fde3_f-44ae4214c5b08191a65df15cbc0999cc_16b735367fd48191b1260375fdb9940e",
+  "preview_observation": {
+    "new_lead_loaded": true,
+    "natural_width": 1280,
+    "natural_height": 720,
+    "reported_by": "/root/redesign_comparison_thumbnail",
+    "separate_representative_image": "new image selected; screenshot confirmed by publication worker",
+    "layout_checks_reported": [
+      "desktop body",
+      "360px light",
+      "360px dark",
+      "representative image selector"
+    ]
+  },
+  "publication_status": "published",
+  "confirmed_at": "2026-11-11T05:15:14.745768+00:00",
+  "confirmation": "Publication worker observed saving then redirect to Tistory manage/posts with matching article link. Existing title, URL, original publication date and public status preserved.",
+  "post_id": 177,
+  "url": "https://dop3n.tistory.com/entry/Fable-52-vs-GPT-6-Astra-클로드-GPT-모델-비교",
+  "validation": {
+    "blog_py": "0 errors, 0 warnings",
+    "git_diff_check": "pass",
+    "strict_v2": "Existing missing remote-media/final-page historical gates remain unresolved; not represented as passed. No new validation errors."
+  }
+}
