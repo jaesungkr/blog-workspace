@@ -1,0 +1,25 @@
+{
+  "ready_state": "complete",
+  "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-11-fable-5-2-vs-gpt-6-astra/artifacts/review/fable-5-2-vs-gpt-6-astra-review.html",
+  "inner_width": 390,
+  "inner_height": 844,
+  "client_width": 390,
+  "client_height": 844,
+  "scroll_width": 390,
+  "scroll_height": 8743,
+  "h1_count": 1,
+  "toc_anchor_count": 7,
+  "toc_targets_unique": true,
+  "image_count": 2,
+  "images_loaded": true,
+  "images": [
+    {
+      "complete": true,
+      "natural_width": 1671
+    },
+    {
+      "complete": true,
+      "natural_width": 1104
+    }
+  ]
+}

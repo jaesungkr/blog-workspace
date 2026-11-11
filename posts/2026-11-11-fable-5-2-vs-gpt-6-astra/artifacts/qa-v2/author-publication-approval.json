@@ -1,0 +1,10 @@
+{
+  "instruction": "제목만 기존에 쓰던방식에 조금 더 맞춰서 게시해줘",
+  "target": "https://dop3n.tistory.com",
+  "source_message_id": "Sentinel_ffac2dbcd9dc8191aec732384b879df0",
+  "recorded_at": "2026-11-11T04:45:09.188624+00:00",
+  "media_sha256": {
+    "lead": "f72e66a7d8065a97d7a427a27fcdacc8011de602e36b41560dd41809651cae1e",
+    "benchmarks": "97e0bc65f10333f5f552ad44e23c8258d4117b8175ddb6a8d15b069e16d1e31e"
+  }
+}

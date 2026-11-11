@@ -1,0 +1,19 @@
+{
+  "status": "published",
+  "post_id": 177,
+  "url": "https://dop3n.tistory.com/entry/Fable-52-vs-GPT-6-Astra-클로드-GPT-모델-비교",
+  "title": "Fable 5.2 vs GPT-6 Astra - 클로드 GPT 모델 비교",
+  "observed_list_time": "2026-11-11 13:44",
+  "submitted_fragment_sha256": "634e4e880ffdb3c17c46121fbe9aa6e1bb23bc7f9cf2484de50c5e912acc9849",
+  "confirmation": "Tistory management post list after public publish, count 160 to 161; matching title and URL, ID 177",
+  "prepublication_checks": [
+    "Native two-image preview observed",
+    "Title/category checked",
+    "PC and 360px mobile light preview inspected"
+  ],
+  "limitations": [
+    "Strict finalizer blocked: missing remote-media and independent final-page records; not represented as passed",
+    "Dark-mode final-page and independent final review not performed in recovery publication"
+  ],
+  "postpublication_visual_qa": "omitted by standing author preference"
+}

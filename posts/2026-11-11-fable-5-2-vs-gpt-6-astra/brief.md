@@ -1,0 +1,11 @@
+# 기획
+- 독자: Astra를 쓰거나 GPT·Claude의 최상위 모델을 고르는 한국 독자.
+- 질문: Fable5.2가 Astra보다 좋은가, 바꿀 비용을 감수할 만한가.
+- 결론: 공개 평가에서는 Fable 우세, high부터 검토. 최고 설정 비용은 Astra가 낮음.
+- first-party contribution: 11월11일 Arena 분야별 대조, 공식 단가의 동일 토큰량 계산, AA 동일 버전 설정별 비용·시간 교차 해석. 모델 실행 체험 없음.
+- 근거 한계: 벤더 평가 구분, Arena WebDev 소표본 및 분야 한정, AA 작업비 일반 질문으로 환산 금지.
+- 기존 글: https://dop3n.tistory.com/175 Fable5.2 vs5.1 vs Opus5.5 후속.
+- 순서: 대상 식별 → 공식 코딩·업무 → Arena 분야별 → AA 성능·비용 → API 계산 → 선택.
+- 인포그래픽: 별도 없음. 정확한 숫자 비교는 표, 원본 평가 이미지는 출처와 함께.
+- 제목 후보: Fable5.2 vs GPT-6 Astra - GPT와 클로드, 성능·가격·Arena 비교 / Fable5.2 vs Astra - 클로드로 넘어갈 만할까 / GPT와 클로드 최고 모델 비교
+- 비교 조건: 각 모델의 실제 제공 추론 설정을 표시, 동일 effort라는 주장 금지.
