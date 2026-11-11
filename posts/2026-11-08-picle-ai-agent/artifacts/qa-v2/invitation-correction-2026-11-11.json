@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-11",
+  "post_id": 174,
+  "url": "https://dop3n.tistory.com/174",
+  "status": "published_revision",
+  "publication_confirmation": "Publishing worker reported saved UI and rendered correction confirmed.",
+  "scope": [
+    "intro invitation correction attributed to reader report",
+    "invitation versus usage-reset distinction"
+  ],
+  "verification_limit": "Invitation flow not independently verified by official documentation or an actual signup; explicitly disclosed in article.",
+  "archive_kind": "Reconstructed text synchronization of existing sanitized archive, not exact submitted fragment",
+  "files": {
+    "article.md": "9cd20a3f82b7902c97d9324d1a541e62bf0dcfed008106caa52846a7b9af299d",
+    "delivery/picle-ai-agent-tistory-fragment-sanitized.txt": "9ab9c321a91190c7b2157354461f460c5bbae0e41fcd2ea645e196e2fd6199cd",
+    "delivery/saved-editor-sanitized.html": "d6eb75b241b38b7704a3be859c3b0fac4eaa97ae39de2505b138cb9249c862d9"
+  },
+  "prior_publication_record_preserved": true,
+  "submitted_before_sha256": "dcbf62972f353756d8b108b6ae25f9ac33cc97162114a44f4b992fc674c94e91",
+  "submitted_after_sha256": "dd6ad1d6855f7104cb391e48016f4c405870547ce3e92d9066eb796450a46834",
+  "public_body_text_sha256": "510ac4a79acb2e1056c2b192ecc7f4c2a1e8faddb363fb96ea93f279b17860cd",
+  "live_images": "Publishing worker confirmed all three body images loaded on public page."
+}
