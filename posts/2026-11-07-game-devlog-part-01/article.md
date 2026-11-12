@@ -77,4 +77,6 @@ summary: "AI와 함께 모바일 게임을 구상하고 문어 시제품에서 �
 
 {{media:latest-rock-crab}}
 
+{{media:normal-combat-nov09}}
+
 이어지는 이야기는 [2편: 고양이로 바뀐 게임을 다듬는 중](https://dop3n.tistory.com/entry/AI%EC%99%80-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B2%8C%EC%9E%84-%EB%A7%8C%EB%93%A4%EA%B8%B0-2-%EA%B3%A0%EC%96%91%EC%9D%B4%EB%A1%9C-%EB%B0%94%EB%80%90-%EA%B2%8C%EC%9E%84%EC%9D%84-%EB%8B%A4%EB%93%AC%EB%8A%94-%EC%A4%91)에서 읽을 수 있습니다.

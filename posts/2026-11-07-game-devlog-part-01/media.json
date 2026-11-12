@@ -184,6 +184,31 @@
       "status": "validated",
       "tistory_embed": "[##_Image|kage@UvpDS/dJMcabNkWfa/AAAAAAAAAAAAAAAAAAAAADswQ8G-ruGbAnDnOg5BN-OL-q2leIa8wG5Fom5Z4qoC/img.png|alignCenter|width=\"100%\" alt=\"고양이 주인공과 청암 대왕게가 등장하는 최근 실제 게임 전투 화면\"|_##]",
       "tistory_url": "https://blog.kakaocdn.net/dna/UvpDS/dJMcabNkWfa/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1X-JW6L9_szncT4wFf1qYbBScE36WdKSd4EgnhTVPvq2HOQnPsPNDdBGlGQ2ljcsSXE9gktciAC6oaA8jQdTLKd/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=FBBpKlck6D3V2MccJVLItA%2FWevU%3D"
+    },
+    {
+      "id": "normal-combat-nov09",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "result",
+      "claim_ids": [
+        "normal-combat-nov09"
+      ],
+      "actor": "기존 게임 개발 테스트 캡처",
+      "provenance_note": "Library libfile_4585ab1ad70c8191abad29fe9ae8dfa9. 2026-11-09 등록된 실제 게임 화면. 11월 11일 최신 보스 화면과 다른 버전이며 새로 촬영하지 않음.",
+      "publish_path": "assets/normal-combat-2026-11-09.jpg",
+      "rights": "사용자 게임 개발 결과물",
+      "alt": "11월 9일 고양이 주인공과 작은 게들이 등장하는 일반 전투 화면",
+      "caption": "11월 9일 전투 화면입니다. 난파선 주변에서 작은 게들과 싸우는 모습입니다.",
+      "placement": "1편 하단 기존 2편 링크 바로 위",
+      "processing": [],
+      "redactions": [],
+      "width": 1600,
+      "height": 956,
+      "display_width": 916,
+      "sha256": "8a315ca4a689f50ac697b79683ab07d94a7cfcd5806861060953ab0c1d33b2d2",
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@1viQX/dJMcad5cXP9/AAAAAAAAAAAAAAAAAAAAADRML7GDj3MqrzbkLKCHI9N7l-_6DP42FM17qSXoqaQy/img.jpg|alignCenter|width=\"100%\" alt=\"11월 9일 고양이 주인공과 작은 게들이 등장하는 일반 전투 화면\"|_##]",
+      "tistory_url": "https://blog.kakaocdn.net/dna/1viQX/dJMcad5cXP9/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XOZ_LjqMQD7bDTAUl2CIcPB5FNBtZxlzbjg1-wYOGTAIARWCrBgL37OV7bugFNKYJqP7LIotl8cQCV7mt-kRGH/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=zA%2B0HhIJLLGADDDpSHbEJyIeQKQ%3D"
     }
   ]
 }

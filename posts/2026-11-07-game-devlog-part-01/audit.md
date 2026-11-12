@@ -10,3 +10,9 @@
 ## 2026-11-12 최신 결과물 미리보기 추가
 
 기존 본문 HTML을 그대로 보존하고 하단 2편 링크 직전에 실제 청암 대왕게 전투 사진 1장과 최근 개발 화면이라는 안내를 추가했다. 2편 당시 화면으로 오해하지 않도록 구분. 기존 썸네일·발행일·URL 유지. 새 이미지 wrapper는 정본 v2 figure_markup 사용. Chrome 실제 desktop light/dark·360px mobile 확인 및 원본 HTML exact preservation 검증. 역사적 bundle/플랫폼 제약을 update-2026-11-12/publication-update.json에 명시. 공개 저장 성공, 공개 후 QA 없음.
+
+
+## 2026-11-12 일반 전투 사진 추가
+- 사용자가 어항 대신 기존 보스 장면과 다른 전투 화면 요청. Library 실제 11월 9일 화면을 날짜 명시하여 추가. 최신 빌드로 주장하지 않음.
+- 원문·기존 보스 이미지·2편 링크 보존. canonical figure_markup 사용. 데스크톱 Tistory preview 실물 확인 및 공개 저장 관리목록 복귀 확인.
+- 전체 mobile/dark 자동 gate 재실행 아님. 과거 bundle 미완결 검증 제약은 이전 기록 유지.

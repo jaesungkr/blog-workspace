@@ -1,0 +1,510 @@
+<div>
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+/* Article-scoped repair for the observed missing quotation box.
+   The canonical renderer loads this exception; shared skills/CSS stay unchanged. */
+.devlog-rich__section[aria-labelledby="공격-버튼을-없애고-나서"] > blockquote {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 20px 22px;
+  min-width: 0;
+  border: 1px solid var(--rich-border);
+  border-left: 4px solid var(--rich-muted);
+  border-radius: 10px;
+  background: var(--rich-alt);
+  color: var(--rich-body);
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}
+@media (max-width: 735px) {
+  .devlog-rich__section[aria-labelledby="공격-버튼을-없애고-나서"] > blockquote {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+</style>
+</div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">그동안 블로그에 글이 좀 뜸했습니다. 요즘 AI와 함께 모바일 게임을 만들고 있습니다. 바닷속을 돌아다니며 적을 잡고, 찾은 장비를 챙겨 돌아오는 게임입니다. 제가 만들고 싶은 모습을 설명하면 AI가 구현하고, 나온 버전을 직접 해 보면서 다시 고칠 점을 이야기하고 있습니다.</p>
+<p data-ke-size="size16">아직 만드는 중이지만 이 과정도 블로그에 함께 남겨 볼까 합니다. 처음 실행했을 때는 문어를 움직여 게를 때리는 정도였는데, 그 짧은 플레이에서도 생각과 다른 부분이 꽤 보였습니다.</p>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#한-판이-끝나도-장비가-남는-게임">한 판이 끝나도 장비가 남는 게임</a></li>
+<li><a href="#공격-버튼을-없애고-나서">공격 버튼을 없애고 나서</a></li>
+<li><a href="#장비를-챙겨-돌아오기까지">장비를 챙겨 돌아오기까지</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="한-판이-끝나도-장비가-남는-게임">
+<h2 id="한-판이-끝나도-장비가-남는-게임" data-ke-size="size26">한 판이 끝나도 장비가 남는 게임</h2>
+<p data-ke-size="size16">처음부터 넣고 싶었던 것은 다음 판으로 이어지는 보상이었습니다. 한 판 안에서 무기를 강화하는 재미도 있지만, 그때 얻은 장비를 가지고 다시 시작할 수 있으면 좋겠다고 생각했습니다.</p>
+<p data-ke-size="size16">대신 장비를 주웠다고 바로 보관되지는 않게 정했습니다. 무사히 탈출해야 가져올 수 있고, 실패하면 이번에 얻은 장비와 처음 들고 간 장비를 모두 잃습니다. 그러면 좋은 장비를 얻은 뒤에도 선택이 남습니다. 더 강해졌으니 탐험을 이어 갈지, 잃기 전에 돌아갈지 고민하는 게임을 만들고 싶었습니다.</p>
+<p data-ke-size="size16">배경은 바닷속, 처음 주인공은 작은 문어였습니다. 우선 혼자 할 수 있는 가로 화면 게임을 만들고 iOS를 먼저 목표로 잡았습니다. 작업 중에는 &lsquo;Little Tide&rsquo;라고 부르고 있지만, 이름도 아직 정하지 않았습니다.</p>
+<p data-ke-size="size16">코드를 만들기 전에는 캐릭터와 배경부터 보고 싶었습니다. AI에게 여러 분위기의 그림을 받아 밝은 해저를 골랐고, 지형은 각이 조금 살아 있는 미니어처 같은 모습으로 정했습니다.</p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="concept">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@bn1otJ/dJMcafvbbFR/AAAAAAAAAAAAAAAAAAAAAAxjZuxaGqflcu_ZImfUGhZAwXYV1uelBzK7PbM4BFXM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=zpDasNGiky0TpkU%2FBB6YQXl1IVM%3D|CDM|1.3|{"originWidth":1672,"originHeight":941,"style":"alignCenter","alt":"밝은 해저와 문어, 게, 난파선이 배치된 초기 가로 화면 콘셉트","filename":"A3-landscape-gameplay-layout.png"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">처음 잡았던 해저와 문어의 분위기입니다. AI로 만든 콘셉트 이미지이며, 실제 플레이 화면은 아닙니다.</p>
+</div>
+<p data-ke-size="size16">문어도 세 가지를 놓고 비교했습니다. 아래 시안 중에서는 A3를 골랐고, 머리를 조금 더 둥글게 다듬어 달라고 했습니다.</p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="octopus-candidates">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@oloFM/dJMcafvbbFP/AAAAAAAAAAAAAAAAAAAAAFyBQ3A3HtRh_wk52mQD2UfywBqFZ2Vo49r9gdcHtBKq/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=Vhc3tJb%2BpSKh9TTXKXJDWZrRHSI%3D|CDM|1.3|{"originWidth":1672,"originHeight":941,"style":"alignCenter","alt":"A1&middot;A2&middot;A3 문어 캐릭터의 머리와 몸 형태를 비교한 AI 콘셉트 시트","filename":"A-character-candidates.png"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">처음 비교했던 문어 세 시안입니다. A3를 고른 뒤 머리를 더 둥글게 다듬었습니다. AI로 만든 콘셉트 이미지입니다.</p>
+</div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="공격-버튼을-없애고-나서">
+<h2 id="공격-버튼을-없애고-나서" data-ke-size="size26">공격 버튼을 없애고 나서</h2>
+<p data-ke-size="size16">처음 받은 버전에는 문어와 게 몇 마리가 있었습니다. 방향키로 문어를 움직이고 스페이스 키를 누르면 집게로 공격할 수 있었습니다. 아직 장비를 모으거나 탈출하는 기능은 없는 초기 시제품이었습니다.</p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="first-prototype">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@yKjhO/dJMcacytGmg/AAAAAAAAAAAAAAAAAAAAAKN_0rdWRGt5uiBhmubOMB7D7V_7a_R3JRoBb7W92unN/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=Mnl%2FgVt5aD2u5sXQPmgvYdKH9Oo%3D|CDM|1.3|{"originWidth":981,"originHeight":490,"style":"alignCenter","alt":"초기 문어 시제품에서 게를 향해 스페이스 키 집게 공격을 하는 실제 화면","filename":"shallows-gameplay.png"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">처음 실행한 전투 시제품입니다. 이때는 스페이스 키로 집게를 사용했고, 탈출과 저장은 아직 없었습니다.</p>
+</div>
+<p data-ke-size="size16">집게가 조금 빗나가기는 해도 이동과 공격은 됐습니다. 그런데 직접 해 보고 나니 이렇게 묻게 됐습니다.</p>
+<blockquote data-ke-style="style1">이건 프로토타입인거지? 원래 의도했던 게임하고 좀 다른거같아서</blockquote>
+<p data-ke-size="size16">제가 생각했던 플레이는 넓은 곳을 돌아다니는 데서 시작했습니다. 어디로 갈지 고르고, 적을 만나면 싸우고, 강해지면 더 멀리 가는 모습입니다. 첫 버전처럼 게 가까이 다가가 매번 공격 버튼을 누르는 조작은 바꾸고 싶었습니다.</p>
+<p data-ke-size="size16">그래서 범위 안에 적이 들어오면 자동으로 공격하도록 요청했습니다. 공격할 때마다 키를 누르는 대신, 적에게 얼마나 다가가고 어느 쪽으로 피할지를 이동으로 고르게 한 것입니다. 맵에는 정원과 난파선도 들어갔습니다.</p>
+<p data-ke-size="size16">자동 공격으로 바꾼 뒤에도 손볼 곳은 있었습니다. 이동이 느렸고, 자동 공격 범위가 좁아 적에게 너무 가까이 가야 했습니다. 문어를 조금 더 멀리서 보고 싶다는 생각도 들었습니다. 주변에 무엇이 있는지 보여야 어디로 움직일지 고를 수 있으니까요.</p>
+<p data-ke-size="size16">이동 속도와 공격 범위를 키우고 시야를 넓혔는데, 이번에는 화면이 울렁거렸습니다. 문어가 가는 방향을 미리 보여 주려고 카메라가 앞쪽으로 움직이고, 멈춘 뒤에도 조금 밀려오는 동작이 들어가 있었습니다. 제가 원한 것은 주변이 넓게 보이는 화면이었는데, 카메라 움직임까지 커지면서 어지러웠습니다.</p>
+<p data-ke-size="size16">진행 방향으로 쏠리는 움직임과 멈춘 뒤의 밀림을 빼고 카메라 높이와 각도를 고정했습니다. 다시 해 보니 멀미가 나던 현상은 나아졌고, 속도도 이 정도면 좋았습니다. 디자인은 더 다듬어 달라고 했습니다. 처음 골랐던 그림에 비해 실제 문어와 배경은 아직 많이 투박했습니다.</p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="early-play">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@bdYnlG/dJMcafvbbFM/AAAAAAAAAAAAAAAAAAAAAGGqos5teE1rq2pnOCFa6GOySRAPQNdk_y46VCGkedWn/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=o2ZDzRez4eLvZfv5CYWq1i%2Bk57w%3D|CDM|1.3|{"originWidth":1600,"originHeight":900,"style":"alignCenter","alt":"초기 자동 공격 버전의 난파선 구역과 공격 반경, 조개, 미니맵","filename":"mac-v5-wreck.png"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">11월 1일 v5의 난파선 구역입니다. 자동 공격과 넓어진 맵을 볼 수 있습니다. 문어 주위의 원이 공격 범위이며, 아트와 영어 안내는 개발 중인 모습입니다.</p>
+</div>
+</section>
+<section class="devlog-rich__section" aria-labelledby="장비를-챙겨-돌아오기까지">
+<h2 id="장비를-챙겨-돌아오기까지" data-ke-size="size26">장비를 챙겨 돌아오기까지</h2>
+<p data-ke-size="size16">움직임을 조정하는 동안, 처음 구상했던 장비 수집과 탈출도 들어갔습니다. 아래는 그 무렵의 화면입니다. 출발할 때 가져간 장비와 탐험하면서 발견한 장비를 따로 보여 주고, 발견한 장비에는 탈출해야 보관된다는 안내를 붙였습니다.</p>
+<div class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="run-equipment">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@Is0r0/dJMcafvbbFK/AAAAAAAAAAAAAAAAAAAAAPJvbLIgtfyruoADXllj-EQe7SjJYfe5AuttNfce6PV8/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=GSkJuMbkyHIA7BfX0hSXtBpcwfQ%3D|CDM|1.3|{"originWidth":1600,"originHeight":900,"style":"alignCenter","alt":"초기 문어 게임에서 해저 지도, 탈출 안내, 출발 장비와 발견 장비를 함께 표시한 실제 테스트 화면","filename":"mac-v6-three-weapons.png"}_##]</div>
+</div>
+<p class="devlog-rich__caption" data-ke-size="size16">맵과 탈출 위치를 함께 보이게 정리하던 초기 화면입니다. 아래에는 출발 장비와 탈출 시 보관할 장비를 구분해 표시했습니다. 모바일에서는 이미지를 좌우로 움직여 안내를 읽을 수 있습니다.</p>
+</div>
+<p data-ke-size="size16">출발 장비와 새로 얻은 장비를 구분해 두면 이번 탐험에서 무엇을 얻었는지 알 수 있습니다. 장비는 탈출해 보관하되, 한 판 안에서 올린 강화 단계는 다음 출격 때 초기화되도록 했습니다.</p>
+<div class="devlog-rich__figure devlog-rich__figure--scroll-mobile" style="--rich-media-width: 916px; --rich-mobile-scroll-width: 916px;" data-media-id="extraction-result">
+<div class="devlog-rich__media-scroll" tabindex="0" role="region" aria-label="스크린샷 가로 스크롤">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@2B0Gz/dJMcacytGmf/AAAAAAAAAAAAAAAAAAAAAM1OPm0cCYRuXxpzWyJxyCbuVqFK4jOQra4JcQQEcEoc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=9ly4GDayEm%2Fn%2BrsXN3RFBkVcKCU%3D|CDM|1.3|{"originWidth":1600,"originHeight":900,"style":"alignCenter","alt":"초기 탈출 성공 결과에 보관 조개와 발견 장비 수를 표시한 게임 화면","filename":"mac-v6-escape-result.png"}_##]</div>
+</div>
+<p class="devlog-rich__caption" data-ke-size="size16">장비와 탈출을 연결하던 초기 버전의 결과 화면입니다. 이번 출격에서 가져온 조개와 장비, 창고에 남긴 수량을 확인하도록 만들었습니다. 모바일에서는 이미지를 좌우로 움직여 안내를 읽을 수 있습니다.</p>
+</div>
+<p data-ke-size="size16">탈출 성공 화면에서는 가져온 조개와 장비를 확인할 수 있게 됐습니다. 문어로 게를 공격하던 첫 버전에서, 이제는 한 판을 마치고 다음 출격에 쓸 장비를 남기는 데까지 온 것입니다.</p>
+<p data-ke-size="size16">그다음에는 장비를 얻는 방식도 다시 정했습니다. 출발할 때는 주무기 하나를 고르고, 플레이 중에는 공격 속도나 치명타 같은 능력을 키우되 새 무기는 보스를 잡았을 때 얻는 귀한 보상으로 두고 싶었습니다.</p>
+<p data-ke-size="size16">이때까지는 작은 문어로 게임의 기본 흐름을 만들어 보던 단계였습니다. 이후에는 주인공도 바뀌었고, 한 판을 더 길게 해 보면서 성장 방식과 화면 안내에서 고칠 점이 나왔습니다. 다음 글은 지금의 고양이 주인공이 들어간 화면과 함께 이어 보겠습니다.</p>
+<p data-ke-size="size16">참고로, 그 뒤로 개발을 이어 온 최근 전투 화면도 한 장 덧붙입니다. 지금은 고양이 주인공으로 이런 보스와 싸우고 있습니다.</p>
+<div class="devlog-rich__figure" style="--rich-media-width: 916px;" data-media-id="latest-rock-crab">
+<div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@UvpDS/dJMcabNkWfa/AAAAAAAAAAAAAAAAAAAAADswQ8G-ruGbAnDnOg5BN-OL-q2leIa8wG5Fom5Z4qoC/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1796050799&amp;allow_ip=&amp;allow_referer=&amp;signature=RNTginPCpbzNuknaTSQ9R4IEnX8%3D|CDM|1.3|{"originWidth":1600,"originHeight":900,"style":"alignCenter","width":null,"alt":"고양이 주인공과 청암 대왕게가 등장하는 최근 실제 게임 전투 화면"}_##]</div>
+<p class="devlog-rich__caption" data-ke-size="size16">최근 개발 버전의 실제 전투 화면입니다. 청암 대왕게 보스와 고양이 주인공을 볼 수 있습니다.</p>
+</div>
+<div class="devlog-rich__figure" data-media-id="normal-combat-nov09" style="--rich-media-width:916px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@1viQX/dJMcad5cXP9/AAAAAAAAAAAAAAAAAAAAADRML7GDj3MqrzbkLKCHI9N7l-_6DP42FM17qSXoqaQy/img.jpg|alignCenter|width="100%" alt="11월 9일 고양이 주인공과 작은 게들이 등장하는 일반 전투 화면"|_##]</div><p class="devlog-rich__caption">11월 9일 전투 화면입니다. 난파선 주변에서 작은 게들과 싸우는 모습입니다.</p></div>
+<p data-ke-size="size16">이어지는 이야기는 <a href="https://dop3n.tistory.com/entry/AI%EC%99%80-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B2%8C%EC%9E%84-%EB%A7%8C%EB%93%A4%EA%B8%B0-2-%EA%B3%A0%EC%96%91%EC%9D%B4%EB%A1%9C-%EB%B0%94%EB%80%90-%EA%B2%8C%EC%9E%84%EC%9D%84-%EB%8B%A4%EB%93%AC%EB%8A%94-%EC%A4%91">2편: 고양이로 바뀐 게임을 다듬는 중</a>에서 읽을 수 있습니다.</p>
+</section>
+</article>
