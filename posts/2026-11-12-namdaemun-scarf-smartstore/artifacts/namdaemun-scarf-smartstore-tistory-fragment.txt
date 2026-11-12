@@ -1,0 +1,439 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>손님에게 물건을 사지 말라고 하는데, 오히려 사람들이 더 찾아가는 가게가 있습니다. 요즘 SNS에서 화제인 남대문 스카프 아저씨, ‘스카프리오’ 이야기입니다. 특유의 입담으로 유명해진 이분이 <strong>네이버 스마트스토어도 열었습니다.</strong> 남대문까지 가기 어려웠던 분들은 온라인으로 스카프를 살 수 있게 된 셈입니다.</p>
+<blockquote><strong>스카프리오 바로가기</strong><br><br><strong><a href="https://m.smartstore.naver.com/snspace" style="color:#1a73e8;text-decoration:none;" target="_blank">네이버 스마트스토어에서 상품 보기 →</a></strong><br><br><strong><a href="https://www.instagram.com/nam_dadaguri/" style="color:#1a73e8;text-decoration:none;" target="_blank">남대문 다다구리 인스타그램 보기 →</a></strong></blockquote>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#스카프리오의-온라인-가게">스카프리오의 온라인 가게</a></li>
+<li><a href="#온라인에서는-스카프-6장을-한-세트로">온라인에서는 스카프 6장을 한 세트로</a></li>
+<li><a href="#인스타그램은-남대문-다다구리">인스타그램은 ‘남대문 다다구리’</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="스카프리오의-온라인-가게">
+<h2 id="스카프리오의-온라인-가게">스카프리오의 온라인 가게</h2>
+<p>스카프 아저씨가 운영하는 곳은 남대문시장의 <strong>한양사</strong>입니다. 손님에게 과소비하지 말라고 농담을 건네는 영상이 퍼지면서, 스카프만큼이나 사장님을 보러 오는 사람도 많아졌습니다.</p>
+<p>매장에 사람이 몰리고 온라인 판매를 원하는 요청이 이어지자, 11월 11일 인스타그램 ‘남대문 다다구리’를 통해 스마트스토어 개설 소식을 알렸습니다. 상품 안내에도 ‘과소비 절대 금지’라는 문구가 들어갔다고 하니, 온라인에서도 그 분위기는 그대로입니다. <a href="https://www.huffingtonpost.kr/article/262005" style="color:#1a73e8;text-decoration:none;" target="_blank">온라인 판매 소식</a></p>
+<p><strong><a href="https://m.smartstore.naver.com/snspace" style="color:#1a73e8;text-decoration:none;" target="_blank">스카프리오 네이버 스마트스토어 바로가기</a></strong></p>
+<p>주소는 <strong>m.smartstore.naver.com/snspace</strong>입니다.</p>
+<div class="devlog-rich__figure" data-media-id="store-screen" style="--rich-media-width:580px"><div class="devlog-rich__native-image devlog-rich__image">[##_Image|kage@IS2rc/dJMcaguaec4/AAAAAAAAAAAAAAAAAAAAAIP3z6acNIEpkwAXI3tKEjw_1mW8IwDdLMRW_cdRRN3o/img.jpg|CDM|1.3|{"originWidth":580,"originHeight":340,"style":"alignCenter","filename":"store-news-capture-v2.jpg","alt":"보도에 소개된 스카프리오 스마트스토어 상품 화면"}_##]</div><p class="devlog-rich__caption">파이낸셜뉴스 11월 12일 보도에 실린 스마트스토어 화면을 캡처했습니다. 현재 재고 화면은 아닙니다. 원출처: 네이버 스마트스토어 / 보도: 파이낸셜뉴스.</p></div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="온라인에서는-스카프-6장을-한-세트로">
+<h2 id="온라인에서는-스카프-6장을-한-세트로">온라인에서는 스카프 6장을 한 세트로</h2>
+<p>2026년 11월 12일 보도에 소개된 판매 구성은 <strong>스카프 6장에 1만원</strong>입니다. 배송비 3천원을 더하면 한 세트에 <strong>1만3천원</strong>입니다.</p>
+<p>무늬나 색을 하나씩 고르는 방식은 아니고, 사장님이 여섯 장을 골라 보내는 구성입니다. 어떤 스카프가 올지 기다리는 재미는 있겠지만, 꼭 원하는 색이나 패턴이 있다면 주문 전에 이 점을 확인하시는 게 좋겠습니다. <a href="https://www.mk.co.kr/news/culture/12206050" style="color:#1a73e8;text-decoration:none;" target="_blank">가격과 판매 구성</a></p>
+<p>다만 11월 12일에는 이미 품절됐다는 보도가 나왔습니다. 현재 주문할 수 있는지, 다시 판매를 시작했는지는 위 스마트스토어에서 확인해 주세요. 가격과 구성도 다시 판매할 때 달라질 수 있습니다.</p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="인스타그램은-남대문-다다구리">
+<h2 id="인스타그램은-남대문-다다구리">인스타그램은 ‘남대문 다다구리’</h2>
+<p>스카프 아저씨의 인스타그램 계정은 <strong>@nam_dadaguri</strong>입니다. 계정 이름은 <strong>남대문 다다구리</strong>로, 근황과 매장 운영 소식 등을 올리는 곳입니다. 뉴시스와 SBS 보도에서도 같은 아이디가 확인됩니다. <a href="https://files.newsis.com/view/NISX20261109_0003861129" style="color:#1a73e8;text-decoration:none;" target="_blank">계정 확인에 참고한 보도</a></p>
+<p><strong><a href="https://www.instagram.com/nam_dadaguri/" style="color:#1a73e8;text-decoration:none;" target="_blank">남대문 다다구리 인스타그램 바로가기</a></strong></p>
+<p>영상으로만 보다가 온라인 가게 소식이 궁금하셨다면, 스마트스토어와 인스타그램을 함께 확인해 보시면 됩니다. 구매는 스마트스토어에서, 새로운 소식은 남대문 다다구리 계정에서 보실 수 있습니다.</p>
+</section>
+</article>

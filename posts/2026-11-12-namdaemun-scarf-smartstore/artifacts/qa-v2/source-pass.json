@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-11-12T08:59:29.439963Z",
+  "checked_by": "root",
+  "article_content_sha256": "3e4b0b34ef1f0f9a2ce6cdef6e31ce048e6e5f20f4907961b5f3177914ae4690",
+  "brief_sha256": "9e73a2ea57cb88602a079724d5a1125dacb44c8162d99788df0f40437b1b5a88",
+  "evidence_sha256": "31970dce97e36978d35e2b0537b5db5399d4ad560069d26ae2fb4a0d66baf862",
+  "note": "Root reviewed approved copy, top links, dated availability and caption source; continue publication."
+}
