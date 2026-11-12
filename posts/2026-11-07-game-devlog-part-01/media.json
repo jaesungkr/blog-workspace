@@ -159,6 +159,31 @@
       "sha256": "cc6b89945b66b23553f672417dbd8fd94379f948067191a39f000d35cde3fa4a",
       "status": "captured",
       "mobile_scroll_width": 916
+    },
+    {
+      "id": "latest-rock-crab",
+      "kind": "screenshot",
+      "origin": "user_supplied",
+      "role": "result",
+      "claim_ids": [
+        "latest-rock-crab"
+      ],
+      "actor": "기존 게임 개발 테스트 캡처",
+      "provenance_note": "사용자가 최신 결과물로 지정한 Library screenshot; 본 수정에서 새로 실행하지 않음",
+      "publish_path": "assets/latest-rock-crab-combat.png",
+      "rights": "사용자 게임 개발 결과물",
+      "alt": "고양이 주인공과 청암 대왕게가 등장하는 최근 실제 게임 전투 화면",
+      "caption": "최근 개발 버전의 실제 전투 화면입니다. 청암 대왕게 보스와 고양이 주인공을 볼 수 있습니다.",
+      "placement": "1편 하단 기존 2편 링크 바로 위",
+      "processing": [],
+      "redactions": [],
+      "width": 1600,
+      "height": 900,
+      "display_width": 916,
+      "sha256": "2fbcc73eb91cba3f9923851d69648d1568d59dd8ed175133d3fea28a757bf834",
+      "status": "validated",
+      "tistory_embed": "[##_Image|kage@UvpDS/dJMcabNkWfa/AAAAAAAAAAAAAAAAAAAAADswQ8G-ruGbAnDnOg5BN-OL-q2leIa8wG5Fom5Z4qoC/img.png|alignCenter|width=\"100%\" alt=\"고양이 주인공과 청암 대왕게가 등장하는 최근 실제 게임 전투 화면\"|_##]",
+      "tistory_url": "https://blog.kakaocdn.net/dna/UvpDS/dJMcabNkWfa/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1X-JW6L9_szncT4wFf1qYbBScE36WdKSd4EgnhTVPvq2HOQnPsPNDdBGlGQ2ljcsSXE9gktciAC6oaA8jQdTLKd/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=FBBpKlck6D3V2MccJVLItA%2FWevU%3D"
     }
   ]
 }

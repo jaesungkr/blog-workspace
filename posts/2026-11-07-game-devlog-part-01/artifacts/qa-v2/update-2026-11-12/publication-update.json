@@ -1,0 +1,22 @@
+{
+  "status": "published",
+  "post_id": 172,
+  "url": "https://dop3n.tistory.com/172",
+  "change": "Append latest real combat screenshot immediately before preserved part-2 link",
+  "original_body_preserved": true,
+  "image_source": "Library 02-rock-crab-combat.png",
+  "image_sha256": "2fbcc73eb91cba3f9923851d69648d1568d59dd8ed175133d3fea28a757bf834",
+  "submitted_sha256": "c1c5a43d71885b3ac5309231f187dc7ba7c13204e55a00aba54c9d090a6a31af",
+  "exact_editor_match": true,
+  "review": [
+    "Actual Tistory desktop light and dark preview",
+    "Actual 360px mobile preview; image container width and scrollWidth both 273px",
+    "Native image loaded at 1280x720 with correct alt",
+    "Original part-2 href preserved"
+  ],
+  "retained_publication_date": "2026-11-08 02:09",
+  "confirmed_at": "2026-11-12T02:26:17.383982+00:00",
+  "confirmation": "Save returned to management post list",
+  "scope_exception": "Surgical append preserves historical live HTML; added media wrapper produced by canonical v2 figure_markup. Historical archive did not have complete current gates. macOS-only final capture unavailable on cloud Linux; no fabricated final pass.",
+  "post_publication_qa": "Not performed per workflow"
+}
