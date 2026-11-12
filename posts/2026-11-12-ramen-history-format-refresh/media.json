@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "lead_id": "ramen-hero",
+  "items": [
+    {
+      "id": "ramen-hero",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "status": "validated",
+      "claim_ids": [
+        "C01"
+      ],
+      "alt": "밝은 나무 식탁 위 냄비에 담긴 라면과 계란, 파",
+      "caption": "우리 식탁에 익숙한 라면 한 그릇.",
+      "placement": "기존 이미지와 같은 위치, 1절 끝과 2절 사이",
+      "rights": "User-authorized AI-generated illustration; no third-party brand assets",
+      "publish_path": "assets/ramen-hero.png",
+      "sha256": "c78c5b45901ecb1f0a47a95a8b4950ab873b684fe2dc78c5bb217f29eb73efb5",
+      "processing": [],
+      "redactions": [],
+      "width": 1672,
+      "height": 941,
+      "tistory_url": "https://blog.kakaocdn.net/dna/brUf79/dJMcackWIuz/AAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1Wri2ylLQfqJ_Xx0RxQCgS-eIxWjJkMbDtzkAzFus10WEAfXmiNWrKCnVdyDTOYuvbPapr4myQMs8gzSLI9TD2t/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1796050799&allow_ip=&allow_referer=&signature=Y4apS1ebey%2FjYXfrhX%2B%2FG3Fu5FU%3D",
+      "tistory_embed": "[##_Image|kage@brUf79/dJMcackWIuz/AAAAAAAAAAAAAAAAAAAAAOuSsC3f9v_Y67OyRSCwbxbNFwqc1Avqz1jCkFWlo3ae/img.png|alignCenter|width=\"100%\" alt=\"밝은 나무 식탁 위 냄비에 담긴 라면과 계란, 파\"|_##]"
+    }
+  ]
+}

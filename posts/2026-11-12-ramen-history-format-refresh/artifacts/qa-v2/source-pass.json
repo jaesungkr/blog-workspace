@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "result": "pass",
+  "checked_at": "2026-11-12T00:55:51.383220Z",
+  "checked_by": "ramen_blog independent preservation review",
+  "article_content_sha256": "905dc826a1402037660a2bb7af4b65d948de270466d4d014afc70edb9361a2ad",
+  "brief_sha256": "fbd4d219ac0a318b19b327994ab8d310e17a1008e3dfe297e9115d81a246ec89",
+  "evidence_sha256": "2335347bfff50edea728419a8b789f2597350519b7e8f2b6743ef53fb73b2f14",
+  "note": "Format-only review of converter output against original. Existing factual claims not newly verified. All body wording preserved; new image caption separate."
+}

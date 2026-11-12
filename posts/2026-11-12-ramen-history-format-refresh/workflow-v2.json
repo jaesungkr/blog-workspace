@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "기존 라면 글 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": true,
+  "infographic": false,
+  "complex_layout": true,
+  "high_risk_remote_media": false,
+  "include_390": true,
+  "include_768": true,
+  "second_remote_fetch": false,
+  "decision_note": "기존 게시물 문구를 보존하는 HTML 형식 갱신. 이미지 1개를 교체하며 이미지 설명 캡션만 추가. 사용자 지정 클라우드 Chrome에서 기존 글 수정.",
+  "publication_mode": "codex-browser"
+}

@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-11-12T01:04:48.609270+00:00",
+  "canonical_final_capture": "blocked: macOS-only; local Linux Chromium socket restrictions",
+  "canonical_finalizer": "failed: missing final-page.json; not marked pass",
+  "browser_review": {
+    "tool": "cloud Chrome CUA",
+    "desktop_preview": "observed",
+    "mobile_360": "observed",
+    "mobile_dark": "observed",
+    "tables": 6,
+    "image_natural_dimensions": [
+      1280,
+      720
+    ],
+    "alt": "verified",
+    "body_overflow_360": "clientWidth=313 scrollWidth=313; tables horizontally scroll within container",
+    "editor_fragment_byte_identical": true
+  },
+  "limitations": [
+    "not a canonical complete full-page light/dark 1280/360/390/768 capture pass",
+    "new cover image selected and viewed in publication dialog; not full responsive cover QA"
+  ]
+}
