@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "lead_id": "lead",
+  "items": [
+    {
+      "id": "lead",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "asset_source_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+      "raw_path": "artifacts/captures/lead.jpg",
+      "publish_path": "assets/lead.png",
+      "width": 1300,
+      "height": 731,
+      "display_width": 916,
+      "alt": "Google의 Gemini 4 Hydrogen 공식 대표 이미지",
+      "caption": "Gemini 4 Hydrogen의 대표 이미지입니다.",
+      "rights": "Copyright Google. Official announcement artwork reproduced for sourced editorial reporting; not original blog artwork.",
+      "captured_at": "2026-11-13",
+      "processing": [
+        "downloaded official original",
+        "JPEG decoded and converted to PNG for renderer compatibility"
+      ],
+      "sha256": "0da1da92eb61ccb083707f134524d7e511c47f2d5a1ecf569888c6b254e2c857",
+      "status": "validated",
+      "claim_ids": [
+        "C-MEDIA-01"
+      ],
+      "placement": "after:opening",
+      "redactions": []
+    },
+    {
+      "id": "benchmarks",
+      "kind": "image",
+      "origin": "official",
+      "role": "comparison",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "asset_source_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/gemini-4-hydrogen_benchmarks_table.gif",
+      "raw_path": "artifacts/captures/benchmarks.gif",
+      "publish_path": "assets/benchmarks.png",
+      "width": 1920,
+      "height": 947,
+      "display_width": 916,
+      "alt": "Google이 발표한 Hydrogen, Claude Sonnet 5.5, GPT-6.1 Terra 벤치마크 비교표",
+      "caption": "코딩·업무 자동화·PC 조작을 비교한 구글의 성능표입니다.",
+      "rights": "Copyright Google. Official announcement artwork reproduced for sourced editorial reporting; not original blog artwork.",
+      "captured_at": "2026-11-13",
+      "processing": [
+        "downloaded official original",
+        "lossless single-frame GIF to PNG conversion"
+      ],
+      "sha256": "4b4a83f94e21666c8723e78eca5f48314c047b91c18903438479a6d87c780686",
+      "status": "validated",
+      "claim_ids": [
+        "C-MEDIA-02"
+      ],
+      "placement": "after:performance",
+      "redactions": []
+    },
+    {
+      "id": "thinking",
+      "kind": "image",
+      "origin": "official",
+      "role": "comparison",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "asset_source_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/gemini-4-hydrogen_aa-index_score-time_graph.gif",
+      "raw_path": "artifacts/captures/thinking.gif",
+      "publish_path": "assets/thinking.png",
+      "width": 3840,
+      "height": 2160,
+      "display_width": 916,
+      "alt": "사고 수준별 AA Index 점수와 작업당 소요 시간을 비교한 Google 공식 그래프",
+      "caption": "추론 설정별 종합 점수와 작업당 시간을 비교한 그래프입니다.",
+      "rights": "Copyright Google. Official announcement artwork reproduced for sourced editorial reporting; not original blog artwork.",
+      "captured_at": "2026-11-13",
+      "processing": [
+        "downloaded official original",
+        "lossless single-frame GIF to PNG conversion"
+      ],
+      "sha256": "ea378912d94db3455a5b902db393f9e06650e321c600a664ac1f13d996dee7e8",
+      "status": "validated",
+      "claim_ids": [
+        "C-MEDIA-03"
+      ],
+      "placement": "after:thinking",
+      "redactions": []
+    }
+  ]
+}
