@@ -1,0 +1,17 @@
+{
+  "source_article_sha256": "1c0841b7957ba8b2e319157261ec97a74419f130ea8c58d65189fcc4a3f5a906",
+  "source_html_sha256": "16561a26a8fa1e137c8369a62f33de8d46c3d6b78eb28d453cece9d0195d0430",
+  "pdf_sha256": "7f134504aa681bad2ff683dd035b2791bd1515701e57f99ca96ef8005bfa18b3",
+  "pdf_bytes": 1670422,
+  "page_points": [
+    420,
+    760
+  ],
+  "pdf_only_changes": [
+    "print typography/spacing/pagination",
+    "table min-width removed so every column fits",
+    "HTML-only swipe-table hint removed"
+  ],
+  "source_html_unchanged": true,
+  "images_embedded": 3
+}

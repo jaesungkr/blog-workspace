@@ -1,9 +1,9 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-11-14T13:38:49.761080Z",
-  "checked_by": "Codex independent_article_review exam context revision",
-  "article_content_sha256": "dc498c0a5142d75cd9fc94731f5b2ddda36594c3c4b1a3d5e12f3afe05f93e95",
+  "checked_at": "2026-11-14T14:14:19.307762Z",
+  "checked_by": "Codex independent_article_review approved closing",
+  "article_content_sha256": "8313eeb146cba4415b2bd269922ca2b9a3484c6e4b893c45e4deca53b13df863",
   "brief_sha256": "a1701be45c03f033cff8b1e1acaeb7e3e5f383fba11232f574675f527db0d07a",
   "evidence_sha256": "5837c6c8e506abc784f17b5bc70d138ea68fc365b1a64800d705c7030cef220b",
   "note": ""

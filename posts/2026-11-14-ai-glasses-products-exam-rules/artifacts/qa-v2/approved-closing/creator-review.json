@@ -1,0 +1,9 @@
+{
+  "article_sha256": "1c0841b7957ba8b2e319157261ec97a74419f130ea8c58d65189fcc4a3f5a906",
+  "pdf_sha256": "7f134504aa681bad2ff683dd035b2791bd1515701e57f99ca96ef8005bfa18b3",
+  "pdf_pages": 7,
+  "pdf_text_integrity": "Hangul/digit/dollar-sign multiset 2777/2777; no missing/extra characters",
+  "creator_visual_review": "PDF contact sheet and full last page inspected. Three images visible; tables fit; closing on last page with no overlap or clipping.",
+  "html_metrics": "light/dark 1280/360/390: page overflow 0; H1 1; 3 images; unique TOC targets",
+  "publication_gate": "local draft preflight only; native upload/remote fetch/Tistory preview unavailable while login expired"
+}

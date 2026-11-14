@@ -4,11 +4,11 @@
   "canonical_css_sha256": "08af6301a39dc3575c0a3539cf126c6d621c7c1575e58a6483b696c5dfa117f3",
   "modification": "preview image src only converted from relative local files to identical embedded bytes; canonical CSS/prose/DOM retained",
   "files": {
-    "ai-glasses-products-exam-rules-tistory-fragment.txt": "6da172abeae01d20c511d57d87de2899532e19d85904d19deb472bd38165c076",
-    "ai-glasses-products-exam-rules-mobile-review.pdf": "2880e957ad24290de29e67a467f840fda403c2593344e23e4b3ca4d12ef48fcc",
-    "읽어주세요.txt": "2b22c04bcd2e76fabac603f3a982a6aba7ac132e77a8110fece600e9407a7b7a",
-    "ai-glasses-products-exam-rules-draft.md": "da43b0297cae9f36c3cd32b67d9e391770318a4fedda095ad3384049ba5ea764",
-    "ai-glasses-products-exam-rules-review-dark.html": "6e5c44ab1eb1ae0591e06308445bc5be87f96a60531e76836aa54518ac73ab2b",
-    "ai-glasses-products-exam-rules-review-light.html": "a009510622445d4e7a86427e0bb7324f5c001f49f46427b01be55060b64b8a91"
+    "ai-glasses-products-exam-rules-tistory-fragment.txt": "f560cb43f53d2068bcaeedc5cf78c2cfb09e64f0e7204d09a936bb3ffb7e8e2a",
+    "ai-glasses-products-exam-rules-mobile-review.pdf": "7f134504aa681bad2ff683dd035b2791bd1515701e57f99ca96ef8005bfa18b3",
+    "읽어주세요.txt": "fd7ed09d1e49d31d2abba094f765867f6906bfe59f6fe60d0754576197f6bf01",
+    "ai-glasses-products-exam-rules-draft.md": "1c0841b7957ba8b2e319157261ec97a74419f130ea8c58d65189fcc4a3f5a906",
+    "ai-glasses-products-exam-rules-review-dark.html": "028ac1dfac5b2d91341467a6b1f152826926c2374a0ef9e15cee54986a5224ee",
+    "ai-glasses-products-exam-rules-review-light.html": "16561a26a8fa1e137c8369a62f33de8d46c3d6b78eb28d453cece9d0195d0430"
   }
 }

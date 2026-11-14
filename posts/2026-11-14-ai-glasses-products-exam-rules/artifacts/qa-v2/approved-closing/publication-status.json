@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-14T14:15:04.973507+00:00",
+  "target_blog": "https://dop3n.tistory.com",
+  "browser": "Chrome existing publication tab",
+  "observed_state": "Kakao QR login expired modal: 로그인 유효 시간이 만료되었습니다. 처음부터 다시 시도해 주세요.",
+  "authenticated_editor_access": false,
+  "image_upload_started": false,
+  "publication_attempted": false,
+  "published_url": null,
+  "next_step": "Existing login handoff retained. No duplicate login request or repeated QR refresh."
+}
