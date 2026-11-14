@@ -1,0 +1,19 @@
+{
+  "natural": [
+    874,
+    492
+  ],
+  "bounds": {
+    "x": 20,
+    "y": 309.3125,
+    "width": 320,
+    "height": 181,
+    "top": 309.3125,
+    "right": 340,
+    "bottom": 490.3125,
+    "left": 20
+  },
+  "display": "block",
+  "opacity": "1",
+  "visibility": "visible"
+}

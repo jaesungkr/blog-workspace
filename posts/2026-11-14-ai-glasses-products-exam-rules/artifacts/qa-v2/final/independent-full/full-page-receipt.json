@@ -1,0 +1,122 @@
+[
+  {
+    "theme": "light",
+    "width": 1280,
+    "html_sha256": "66ad9e5b898d849a0c83d0b65c88599de0ead8c38bee37eadfc0d4dfe3588c51",
+    "overflow": 0,
+    "images_loaded": true,
+    "tables": [
+      {
+        "client": 760,
+        "scroll": 760,
+        "overflow": "auto"
+      },
+      {
+        "client": 760,
+        "scroll": 760,
+        "overflow": "auto"
+      }
+    ],
+    "full": "light-1280-full.png"
+  },
+  {
+    "theme": "light",
+    "width": 360,
+    "html_sha256": "66ad9e5b898d849a0c83d0b65c88599de0ead8c38bee37eadfc0d4dfe3588c51",
+    "overflow": 0,
+    "images_loaded": true,
+    "tables": [
+      {
+        "client": 320,
+        "scroll": 620,
+        "overflow": "auto"
+      },
+      {
+        "client": 320,
+        "scroll": 620,
+        "overflow": "auto"
+      }
+    ],
+    "full": "light-360-full.png"
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "html_sha256": "66ad9e5b898d849a0c83d0b65c88599de0ead8c38bee37eadfc0d4dfe3588c51",
+    "overflow": 0,
+    "images_loaded": true,
+    "tables": [
+      {
+        "client": 350,
+        "scroll": 620,
+        "overflow": "auto"
+      },
+      {
+        "client": 350,
+        "scroll": 620,
+        "overflow": "auto"
+      }
+    ],
+    "full": "light-390-full.png"
+  },
+  {
+    "theme": "dark",
+    "width": 1280,
+    "html_sha256": "7256577a501cf30101e6064c9984a0ba04878140e5aaeb0c5444374e58d63b11",
+    "overflow": 0,
+    "images_loaded": true,
+    "tables": [
+      {
+        "client": 760,
+        "scroll": 760,
+        "overflow": "auto"
+      },
+      {
+        "client": 760,
+        "scroll": 760,
+        "overflow": "auto"
+      }
+    ],
+    "full": "dark-1280-full.png"
+  },
+  {
+    "theme": "dark",
+    "width": 360,
+    "html_sha256": "7256577a501cf30101e6064c9984a0ba04878140e5aaeb0c5444374e58d63b11",
+    "overflow": 0,
+    "images_loaded": true,
+    "tables": [
+      {
+        "client": 320,
+        "scroll": 620,
+        "overflow": "auto"
+      },
+      {
+        "client": 320,
+        "scroll": 620,
+        "overflow": "auto"
+      }
+    ],
+    "full": "dark-360-full.png"
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "html_sha256": "7256577a501cf30101e6064c9984a0ba04878140e5aaeb0c5444374e58d63b11",
+    "overflow": 0,
+    "images_loaded": true,
+    "tables": [
+      {
+        "client": 350,
+        "scroll": 620,
+        "overflow": "auto"
+      },
+      {
+        "client": 350,
+        "scroll": 620,
+        "overflow": "auto"
+      }
+    ],
+    "full": "dark-390-full.png"
+  }
+]

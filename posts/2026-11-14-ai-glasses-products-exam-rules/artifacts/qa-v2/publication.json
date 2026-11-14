@@ -1,0 +1,63 @@
+{
+  "published_url": "https://dop3n.tistory.com/entry/AI-%EC%95%88%EA%B2%BD-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90-%ED%95%9C%EA%B5%AD%EC%97%90%EC%84%9C-%EC%82%B4-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%A0%9C%ED%92%88%EA%B3%BC-%EC%8B%9C%ED%97%98%EC%9E%A5-%EA%B7%9C%EC%A0%95",
+  "confirmed_by": "Chrome CUA successful navigation to manage/posts and matching new post link",
+  "post_list_date": "2026-11-15 01:03 Asia/Seoul",
+  "recorded_at": "2026-11-14T16:04:12.985312+00:00",
+  "submitted_fragment_sha256": "de9bc6b1e78c6b3786b301c857ce2c667d0b7bcc393fa0143dd2726723ffb628",
+  "approval_record_sha256": "b9d57680449614decec19ea3137bbdc2ad6f32ce772949696f1a2e85db3c1938",
+  "title": "AI 안경 가격 비교, 한국에서 살 수 있는 제품과 시험장 규정",
+  "live_category": "AI·개발/테크·산업",
+  "visibility": "public selected in confirmed publication form",
+  "post_publication_qa": "Completed as explicitly requested by author",
+  "post_id": 180,
+  "public_body_exact_after_whitespace_normalization": true,
+  "public_link_count": 33,
+  "public_link_order_and_targets_match_submitted_fragment": true,
+  "public_images": [
+    {
+      "id": "ray-ban-gen3",
+      "natural_dimensions": [
+        874,
+        492
+      ]
+    },
+    {
+      "id": "even-g2",
+      "natural_dimensions": [
+        1280,
+        710
+      ]
+    },
+    {
+      "id": "samsung-eyewear",
+      "natural_dimensions": [
+        1000,
+        374
+      ]
+    }
+  ],
+  "public_alts_match": true,
+  "public_photos_visually_inspected": true,
+  "lazy_loading_observation": "Even/Samsung initially 0 dimensions before scrolling; all three loaded after scroll. Even image visually rechecked after lazy loading.",
+  "public_mobile": {
+    "viewport": 360,
+    "article_width": 313,
+    "article_overflow": 0,
+    "image_display_width": 273,
+    "table_width": 273,
+    "table_scroll_width": 620
+  },
+  "public_dark_mode": {
+    "observed": true,
+    "html_class": "scroll-smooth dark",
+    "article_background": "rgb(30,31,33)",
+    "article_text": "rgb(245,245,247)",
+    "visual": "Even image/body and mobile lead/caption rendered normally; light mode restored afterward"
+  },
+  "public_source_target_sample": {
+    "MBC original article": "opened in Chrome; title and 2026-10-30 article confirmed"
+  },
+  "link_scope": "All 33 DOM hrefs/order verified against submitted artifact; representative MBC target reopened. No claim that every third-party destination was re-fetched after publication.",
+  "viewport_restored": true,
+  "live_tab_kept": true
+}
