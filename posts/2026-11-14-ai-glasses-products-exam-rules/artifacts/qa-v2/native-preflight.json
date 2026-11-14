@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-11-14T15:58:46.275902+00:00",
+  "actor": "Codex creator via Chrome CUA",
+  "target": "same new Tistory editor",
+  "category_mapping": "archive Trends / AI 뉴스 · 테크 · 산업 -> currently available live category AI·개발 / 테크·산업 (847698)",
+  "input_fragment_sha256": "de9bc6b1e78c6b3786b301c857ce2c667d0b7bcc393fa0143dd2726723ffb628",
+  "editor_copy_exact_match": true,
+  "editor_characters": 21931,
+  "native_images": 3,
+  "alts_match_manifest": true,
+  "image_natural_dimensions": [
+    [
+      874,
+      492
+    ],
+    [
+      1280,
+      710
+    ],
+    [
+      1000,
+      374
+    ]
+  ],
+  "toc_targets": 5,
+  "nested_native_figures": false,
+  "profiles": [
+    {
+      "width": 1280,
+      "article_width": 800,
+      "article_horizontal_overflow": 0
+    },
+    {
+      "width": 360,
+      "article_width": 328,
+      "article_horizontal_overflow": 0,
+      "image_width": 288,
+      "tables_client_width": 288,
+      "tables_scroll_width": 620,
+      "horizontal_scroll_observed": true
+    }
+  ],
+  "visual_inspection": "Desktop article scrolled from introduction through exam sections; mobile title, lead photo/caption, TOC, function table both left and right, Even image/caption, price table, Samsung image/caption, exam prose and ending text checked. Native recognition, three approved alts and inline source links preserved.",
+  "theme_limitation": "Preview theme button click produced no html.dark change; native preview dark state not claimed. Independent canonical remote light/dark pass is separate. Author explicitly requests post-publication public inspection, including actual images/links; verify public theme behavior there.",
+  "cover": "Preview displays title/date/category on plain header; native first uploaded image recognized as representative; no title-over-cover image in this preview."
+}

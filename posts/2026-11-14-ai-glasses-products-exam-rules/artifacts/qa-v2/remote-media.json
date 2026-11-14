@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "status": "pass",
+  "record_id": "70b0e885-3cab-497b-bcb2-6dff3186e3d7",
+  "recorded_at": "2026-11-14T15:55:25.281732Z",
+  "recorded_by": "Codex native publication creator",
+  "media_sha256": "7431dbe63530a9cc9510a35aceeeb58222b376c96488c11629106fa094a5366f",
+  "fetcher_sha256": "76157b95545059a94bd63b5fffef725f04adce02a99421f85d46604f09b67c6e",
+  "fetcher_files": {
+    "remote_media_v2.py": "456673462670a65ac95b453cd41cc8dc0e6b365913bb3a4986e4c69d5e3d118f",
+    "rich_post_v2_common.py": "cc972f1d0978a6d4e052986ed6b8bf5450b394a5deafb052dd8bfd72c58da27f"
+  },
+  "policy": {
+    "max_bytes": 33554432,
+    "timeout_seconds": 20,
+    "deadline_scope": "dns_redirect_headers_body",
+    "max_redirects": 5,
+    "accept_encoding": "identity"
+  },
+  "items": [
+    {
+      "id": "ray-ban-gen3",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbOhjuq%2FdJMcadj33fI%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UcKgGleAnAlFTcVY9ebwNnJlmUczTmILw0G2d9Kk4fqkPJ3enFbNF8BVTcYhvN-b4G9W30RPRgX6qks-NYrczX%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DmyE4pq8gwULIovJZS0gTSxdgeCk%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbOhjuq%2FdJMcadj33fI%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UcKgGleAnAlFTcVY9ebwNnJlmUczTmILw0G2d9Kk4fqkPJ3enFbNF8BVTcYhvN-b4G9W30RPRgX6qks-NYrczX%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DmyE4pq8gwULIovJZS0gTSxdgeCk%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-11-14T15:55:25.130312Z",
+      "http_status": 200,
+      "content_type": "image/webp",
+      "content_encoding": "",
+      "header_content_length": 40406,
+      "byte_length": 40406,
+      "sha256": "d5f45cc2d51f316ebf968b73f9d2549bf6e59f1d362230f4d725e5290e80a9e3",
+      "format": "webp",
+      "width": 874,
+      "height": 492,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sat, 14 Nov 2026 15:52:27 GMT"
+    },
+    {
+      "id": "even-g2",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbGswch%2FdJMcaiyUtmv%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XdvvQsdTRj3rVKXukXE9lQFduhm7tGn0iJSsM9mdOc8XfO3VeEy6eDRYh4jEbJm7OgjGtf1BVevnKovxx_-qsJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DvEu8Lt9JmLy1U%252FxTtn2S6aSiUoA%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbGswch%2FdJMcaiyUtmv%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XdvvQsdTRj3rVKXukXE9lQFduhm7tGn0iJSsM9mdOc8XfO3VeEy6eDRYh4jEbJm7OgjGtf1BVevnKovxx_-qsJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DvEu8Lt9JmLy1U%252FxTtn2S6aSiUoA%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-11-14T15:55:25.216395Z",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "header_content_length": 136146,
+      "byte_length": 136146,
+      "sha256": "ab3a2005dd56741e14f782025af95ef28a790b9a6970019b6b8cc27846e34040",
+      "format": "jpeg",
+      "width": 1280,
+      "height": 710,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sat, 14 Nov 2026 15:52:27 GMT"
+    },
+    {
+      "id": "samsung-eyewear",
+      "requested_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBPfVT%2FdJMcadj33fJ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V0ctGFWXkSZmhRijKNeLOM2i-KiH0XaF0pvZ66OW9r2JW5FmfwPotEnjl3Q1lBknk6oA0KpUBvCHhQfeVTmVTz%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D7C2N9ihKl1lgHJBoJFNwiSfOf2s%253D",
+      "final_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBPfVT%2FdJMcadj33fJ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V0ctGFWXkSZmhRijKNeLOM2i-KiH0XaF0pvZ66OW9r2JW5FmfwPotEnjl3Q1lBknk6oA0KpUBvCHhQfeVTmVTz%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D7C2N9ihKl1lgHJBoJFNwiSfOf2s%253D",
+      "redirect_chain": [],
+      "observed_at": "2026-11-14T15:55:25.281468Z",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "content_encoding": "",
+      "header_content_length": 63241,
+      "byte_length": 63241,
+      "sha256": "7aa87e678562fd32f77a7c99e4a397cbb2a021e0569d6a831a167d53004edb1e",
+      "format": "jpeg",
+      "width": 1000,
+      "height": 374,
+      "frame_count": 1,
+      "duration_seconds": 0.0,
+      "etag": null,
+      "last_modified": "Sat, 14 Nov 2026 15:52:27 GMT"
+    }
+  ]
+}

@@ -13,6 +13,12 @@
   "approval_scope": "requested honorific polish and publication with the same title, facts and photos; no new permission requested",
   "latest_additional_instruction": "사용자가 승인한 결말을 그대로 추가하고 기존 승인에 따라 Chrome 로그인 상태를 확인해 가능하면 게시한다. 로그인이 필요하면 중복 요청하지 않고 정확한 상태를 보고한다.",
   "latest_scope": "same title and images; polite prose plus requested MBC legal/policy context",
-  "updated_at": "2026-11-14T14:15:04.973274+00:00",
-  "approved_closing": "AI 안경은 앞으로 더 작고 자연스러워질 것 같습니다. 기술이 빠르게 발전하는 만큼, 일상에서 편리하게 활용하면서도 시험의 공정성이나 사생활처럼 함께 고민해야 할 문제들도 차근차근 풀어갈 수 있었으면 좋겠습니다."
+  "updated_at": "2026-11-14T15:58:46.275561+00:00",
+  "approved_closing": "AI 안경은 앞으로 더 작고 자연스러워질 것 같습니다. 기술이 빠르게 발전하는 만큼, 일상에서 편리하게 활용하면서도 시험의 공정성이나 사생활처럼 함께 고민해야 할 문제들도 차근차근 풀어갈 수 있었으면 좋겠습니다.",
+  "mode_change_confirmation_approval": {
+    "instruction": "응 그건 항상 뜨는거야 앞으로 무시해도돼",
+    "message_id": "Sentinel_015647790edc8191b6751a2283f517fe",
+    "applies_to": "Tistory basic-to-HTML mode confirmation of the same approved article; source and upload backups preserved"
+  },
+  "browser_preference": "Chrome explicitly requested by author; overrides skill IAB default"
 }

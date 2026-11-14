@@ -1,0 +1,143 @@
+{
+  "version": 2,
+  "status": "pass",
+  "mode": "final-light",
+  "checked_at": "2026-11-14T15:56:34.214656Z",
+  "checked_by": "Codex independent_article_review final native-bound page",
+  "tool_sha256": "e4bf8ec6facb4d95dfb964706dccb34586998a8c978d0081655b084cd8012429",
+  "preview_path": "artifacts/qa-v2/final-rendered/ai-glasses-products-exam-rules-rich-preview.html",
+  "preview_sha256": "66ad9e5b898d849a0c83d0b65c88599de0ead8c38bee37eadfc0d4dfe3588c51",
+  "screenshot_root": "artifacts/qa-v2/final/light",
+  "receipt_path": "artifacts/qa-v2/final/light/browser-capture.json",
+  "browser_version": "Chrome/157.0.8103.51",
+  "protocol_version": "1.3",
+  "session": "66d98565-b52c-427c-a5c1-ce0bdec9ffc2",
+  "viewports": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/artifacts/qa-v2/final-rendered/ai-glasses-products-exam-rules-rich-preview.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6017,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbOhjuq%2FdJMcadj33fI%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UcKgGleAnAlFTcVY9ebwNnJlmUczTmILw0G2d9Kk4fqkPJ3enFbNF8BVTcYhvN-b4G9W30RPRgX6qks-NYrczX%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DmyE4pq8gwULIovJZS0gTSxdgeCk%253D",
+          "complete": true,
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbGswch%2FdJMcaiyUtmv%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XdvvQsdTRj3rVKXukXE9lQFduhm7tGn0iJSsM9mdOc8XfO3VeEy6eDRYh4jEbJm7OgjGtf1BVevnKovxx_-qsJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DvEu8Lt9JmLy1U%252FxTtn2S6aSiUoA%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 710
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBPfVT%2FdJMcadj33fJ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V0ctGFWXkSZmhRijKNeLOM2i-KiH0XaF0pvZ66OW9r2JW5FmfwPotEnjl3Q1lBknk6oA0KpUBvCHhQfeVTmVTz%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D7C2N9ihKl1lgHJBoJFNwiSfOf2s%253D",
+          "complete": true,
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "screenshot_sha256": "8a74f934f0b15b350d75812ef188e5008a72a63105b412469c3c53796df706a0",
+      "screenshot_pixel_width": 1280,
+      "screenshot_pixel_height": 900,
+      "width": 1280,
+      "height": 900,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/desktop-1280.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/artifacts/qa-v2/final-rendered/ai-glasses-products-exam-rules-rich-preview.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7507,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbOhjuq%2FdJMcadj33fI%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UcKgGleAnAlFTcVY9ebwNnJlmUczTmILw0G2d9Kk4fqkPJ3enFbNF8BVTcYhvN-b4G9W30RPRgX6qks-NYrczX%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DmyE4pq8gwULIovJZS0gTSxdgeCk%253D",
+          "complete": true,
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbGswch%2FdJMcaiyUtmv%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XdvvQsdTRj3rVKXukXE9lQFduhm7tGn0iJSsM9mdOc8XfO3VeEy6eDRYh4jEbJm7OgjGtf1BVevnKovxx_-qsJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DvEu8Lt9JmLy1U%252FxTtn2S6aSiUoA%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 710
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBPfVT%2FdJMcadj33fJ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V0ctGFWXkSZmhRijKNeLOM2i-KiH0XaF0pvZ66OW9r2JW5FmfwPotEnjl3Q1lBknk6oA0KpUBvCHhQfeVTmVTz%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D7C2N9ihKl1lgHJBoJFNwiSfOf2s%253D",
+          "complete": true,
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "screenshot_sha256": "32a2e398959c7066a27d4f57e3376b2f3e75575594d8cc12dd3e2ee904615a23",
+      "screenshot_pixel_width": 360,
+      "screenshot_pixel_height": 800,
+      "width": 360,
+      "height": 800,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-360.png"
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/artifacts/qa-v2/final-rendered/ai-glasses-products-exam-rules-rich-preview.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 7272,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbOhjuq%2FdJMcadj33fI%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1UcKgGleAnAlFTcVY9ebwNnJlmUczTmILw0G2d9Kk4fqkPJ3enFbNF8BVTcYhvN-b4G9W30RPRgX6qks-NYrczX%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DmyE4pq8gwULIovJZS0gTSxdgeCk%253D",
+          "complete": true,
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbGswch%2FdJMcaiyUtmv%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1XdvvQsdTRj3rVKXukXE9lQFduhm7tGn0iJSsM9mdOc8XfO3VeEy6eDRYh4jEbJm7OgjGtf1BVevnKovxx_-qsJ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DvEu8Lt9JmLy1U%252FxTtn2S6aSiUoA%253D",
+          "complete": true,
+          "natural_width": 1280,
+          "natural_height": 710
+        },
+        {
+          "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbBPfVT%2FdJMcadj33fJ%2FAAAAAAAAAAAAAAAAAAAAAH0jbLXtr-KI2v6FaKE2S1V0ctGFWXkSZmhRijKNeLOM2i-KiH0XaF0pvZ66OW9r2JW5FmfwPotEnjl3Q1lBknk6oA0KpUBvCHhQfeVTmVTz%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3D7C2N9ihKl1lgHJBoJFNwiSfOf2s%253D",
+          "complete": true,
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "screenshot_sha256": "d3c2ee28eb52957b46ba4f60e624b6d3de3b7f8be8154d28395418ef662987b2",
+      "screenshot_pixel_width": 390,
+      "screenshot_pixel_height": 844,
+      "width": 390,
+      "height": 844,
+      "status": "pass",
+      "screenshot": "artifacts/qa-v2/final/light/mobile-390.png"
+    }
+  ]
+}

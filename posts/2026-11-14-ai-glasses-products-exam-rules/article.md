@@ -4,7 +4,7 @@ slug: ai-glasses-products-exam-rules
 date: 2026-11-14
 category: "Trends"
 subcategory: "AI 뉴스 · 테크 · 산업"
-status: reviewing
+status: ready
 format: rich-post-v2
 tags: [AI 안경, 스마트안경, 레이밴 메타, Even G2, 수능, SAT]
 summary: "판매 중인 AI 안경의 기능과 한국·해외 가격을 비교하고, 수능·국내 TOEIC Speaking/Writing의 대응과 미국 SAT·ETS 국제시험의 규정을 구분합니다."
