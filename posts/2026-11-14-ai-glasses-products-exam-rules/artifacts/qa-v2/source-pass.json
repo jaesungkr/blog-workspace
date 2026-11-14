@@ -1,10 +1,10 @@
 {
   "version": 2,
   "result": "pass",
-  "checked_at": "2026-11-14T13:13:19.975970Z",
-  "checked_by": "Codex independent_article_review MBC update",
-  "article_content_sha256": "70f49465f36e7f890ae9bf00993968e716cdfcfb46276f0e107f91dc60c7df84",
-  "brief_sha256": "c11717ffe522eaacbc4986c2465663f19090db64003357e3382b8b6eca8eeb9c",
-  "evidence_sha256": "c18e100287ce6639ec76b1918e90c85413c0d9462994db3001eaba230b642e01",
+  "checked_at": "2026-11-14T13:38:49.761080Z",
+  "checked_by": "Codex independent_article_review exam context revision",
+  "article_content_sha256": "dc498c0a5142d75cd9fc94731f5b2ddda36594c3c4b1a3d5e12f3afe05f93e95",
+  "brief_sha256": "a1701be45c03f033cff8b1e1acaeb7e3e5f383fba11232f574675f527db0d07a",
+  "evidence_sha256": "5837c6c8e506abc784f17b5bc70d138ea68fc365b1a64800d705c7030cef220b",
   "note": ""
 }

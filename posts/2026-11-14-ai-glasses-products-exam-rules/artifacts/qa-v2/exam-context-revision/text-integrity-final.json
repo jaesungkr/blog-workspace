@@ -1,0 +1,8 @@
+{
+  "method": "Compare multiset of Hangul, digits and dollar signs, including rendered ordered-list markers, after removing page labels and footer; extraction reading order can differ. Visual review is separate.",
+  "source_character_count": 2690,
+  "pdf_character_count": 2690,
+  "missing": {},
+  "extra": {},
+  "pass": true
+}

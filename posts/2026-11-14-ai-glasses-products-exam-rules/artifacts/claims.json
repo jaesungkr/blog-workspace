@@ -27,7 +27,10 @@
     "mbc-reel": "https://www.instagram.com/reel/DfGZOc_CoYX/",
     "mbc-report": "https://imnews.imbc.com/replay/2026/nwtoday/article/6861857_37012.html",
     "criminal-act-137": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1031930675",
-    "higher-education-act-34": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1026851231"
+    "higher-education-act-34": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1026851231",
+    "sat-overview": "https://satsuite.collegeboard.org/sat",
+    "ets-toefl": "https://www.ets.org/toefl.html",
+    "ets-privacy": "https://www.ets.org/legal/privacy.html"
   },
   "claims": [
     {
@@ -143,14 +146,14 @@
       "id": "E02",
       "claim": "SAT 스마트/인터넷/AI 안경 금지와 안경 검사 요구 준수",
       "source_id": "sat",
-      "basis_and_limit": "Section2. 승인 편의지원 예외 보존, 모든 안경을 금지한다고 쓰지 않음.",
+      "basis_and_limit": "Section2. 승인 편의지원 예외 보존, 모든 안경을 금지한다고 쓰지 않음. 미국대학입학평가로소개하되국제응시도가능하므로미국내시행에만한정하지않는다.",
       "status": "verified_official_document"
     },
     {
       "id": "E03",
       "claim": "TOEFL 센터 일반안경 시각검사와 전자/청취/촬영기기 금지, 위반 제재",
       "source_id": "ets",
-      "basis_and_limit": "2026-07~2027-06판, 인쇄8~9쪽/PDF 8~9페이지. AI안경 전용 도입정책이라고 쓰지 않음. Home Edition 범위 제외.",
+      "basis_and_limit": "2026-07~2027-06판, 인쇄8~9쪽/PDF 8~9페이지. AI안경 전용 도입정책이라고 쓰지 않음. Home Edition 범위 제외. 미국기관ETS의국제영어시험으로서술한다. 미국정부시험이나미국내수전용시험으로표현하지않는다.",
       "status": "verified_official_document"
     },
     {

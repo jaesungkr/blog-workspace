@@ -1,0 +1,34 @@
+{
+  "actor": "Codex main creator",
+  "browser": "User-preferred Mac Chrome via CUA",
+  "current_html_sha256": "6e5c44ab1eb1ae0591e06308445bc5be87f96a60531e76836aa54518ac73ab2b",
+  "article_sha256": "da43b0297cae9f36c3cd32b67d9e391770318a4fedda095ad3384049ba5ea764",
+  "observed_viewports": [
+    [
+      1710,
+      895
+    ],
+    [
+      1280,
+      900
+    ],
+    [
+      360,
+      800
+    ]
+  ],
+  "visual_result": "Current dark preview showed actual black glasses and caption at desktop/mobile; no media/CSS changes",
+  "mobile_lead": {
+    "natural_width": 874,
+    "natural_height": 492,
+    "x": 20,
+    "y": 438.3359375,
+    "width": 320,
+    "height": 181.0078125
+  },
+  "limitation": "Separate independent headless full/focused dark captures were blank; both observations retained. This is local lead paint QA, not Tistory native/CDN QA.",
+  "viewport_reset": true,
+  "qa_tab_closed": true,
+  "login_handoff_retained": true,
+  "checked_at": "2026-11-14T13:42:30.421315+00:00"
+}

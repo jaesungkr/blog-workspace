@@ -2,8 +2,8 @@
   "instruction_received_via": "trusted parent delegation of the latest human instruction",
   "author_instruction": "전체 문장을 자연스러운 정중한 ~입니다/~합니다 글로 통일하고 문장과 단락 연결을 최종 폴리싱한 뒤 블로그에 게시해 주세요. 수능 반입/제출 구분 등 수정한 사실과 출처 유지, 사진과 제목도 기존 승인 범위 유지. 사용자는 실제 게시를 명시 승인했습니다.",
   "target_blog": "https://dop3n.tistory.com",
-  "source_pass_sha256": "c68fda31cd5c81439306b802c4ebe999c9f0dbb13b0307b1b4399d2496c49b54",
-  "article_sha256": "7ab39d14b76a07584657102ee48a7766eec37c2d370ba59c89aa5c9df0ae844e",
+  "source_pass_sha256": "761aa30dc7415ccedc46d099c4a80b4e954405e0e280fe43efb5cef2e58e4d7f",
+  "article_sha256": "da43b0297cae9f36c3cd32b67d9e391770318a4fedda095ad3384049ba5ea764",
   "media_sha256": {
     "ray-ban-gen3": "637414dbd4078eb2ce1f21f5308ee0519621f55aa6bcc8bdde0b49a86e35213b",
     "even-g2": "8dadecfbd6527898fe0b0f28a8978feef3a9318fdb78ac40adaa18d848eeccb6",
@@ -11,7 +11,7 @@
   },
   "recorded_at": "2026-11-14T22:01:19.718322+09:00",
   "approval_scope": "requested honorific polish and publication with the same title, facts and photos; no new permission requested",
-  "latest_additional_instruction": "사용자 추가 요청으로 MBC 인스타 릴 실제 내용 및 본보도·공식 근거를 확인해 게시 전에 반영하고, 정확한 반영 여부 확인 후 게시를 이어간다.",
+  "latest_additional_instruction": "일반 구매 목적·시험장 반입 체크 부분은 삭제하고, 수능 등 국내 시험 대응은 유지하며 SAT는 미국 맥락, TOEFL은 미국 ETS 주관 국제 영어시험으로 설명한다. 검증 후 로그인 세션 가용하면 게시하고 없으면 수정 검토본을 갱신한다.",
   "latest_scope": "same title and images; polite prose plus requested MBC legal/policy context",
-  "updated_at": "2026-11-14T13:13:20.005149+00:00"
+  "updated_at": "2026-11-14T13:39:56.409980+00:00"
 }
