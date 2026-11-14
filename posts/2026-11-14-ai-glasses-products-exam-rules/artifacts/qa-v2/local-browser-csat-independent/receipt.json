@@ -1,0 +1,493 @@
+{
+  "scope": "local draft QA, not native Tistory or final remote gate",
+  "actor": "Codex csat-independent",
+  "checked_at": "2026-11-14T12:20:16.185433+00:00",
+  "records": [
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/delivery/ai-glasses-products-exam-rules-review-light.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6308,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "natural_width": 2360,
+          "natural_height": 1310
+        },
+        {
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "theme": "light",
+      "width": 1280,
+      "height": 900,
+      "screenshot": "light-1280-full.png",
+      "preview_sha256": "0d974d4e4d26214171739b2730730e0391406d762c2a43335f5e90adb9c00532",
+      "sections": [
+        {
+          "y": 179.390625,
+          "height": 972.28125
+        },
+        {
+          "y": 1151.671875,
+          "height": 302.53125
+        },
+        {
+          "y": 1454.203125,
+          "height": 1391.734375
+        },
+        {
+          "y": 2845.9375,
+          "height": 956.484375
+        },
+        {
+          "y": 3802.421875,
+          "height": 934.21875
+        },
+        {
+          "y": 4736.640625,
+          "height": 1184.453125
+        },
+        {
+          "y": 5921.09375,
+          "height": 387
+        }
+      ],
+      "tables": [
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/delivery/ai-glasses-products-exam-rules-review-light.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7712,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "natural_width": 2360,
+          "natural_height": 1310
+        },
+        {
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "screenshot": "light-360-full.png",
+      "preview_sha256": "0d974d4e4d26214171739b2730730e0391406d762c2a43335f5e90adb9c00532",
+      "sections": [
+        {
+          "y": 210.171875,
+          "height": 854.75
+        },
+        {
+          "y": 1064.921875,
+          "height": 294.53125
+        },
+        {
+          "y": 1359.453125,
+          "height": 1513.90625
+        },
+        {
+          "y": 2873.359375,
+          "height": 1358.296875
+        },
+        {
+          "y": 4231.65625,
+          "height": 1025.578125
+        },
+        {
+          "y": 5257.234375,
+          "height": 1883.84375
+        },
+        {
+          "y": 7141.078125,
+          "height": 570.640625
+        }
+      ],
+      "tables": [
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/delivery/ai-glasses-products-exam-rules-review-light.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 7493,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "natural_width": 2360,
+          "natural_height": 1310
+        },
+        {
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "screenshot": "light-390-full.png",
+      "preview_sha256": "0d974d4e4d26214171739b2730730e0391406d762c2a43335f5e90adb9c00532",
+      "sections": [
+        {
+          "y": 210.171875,
+          "height": 871.640625
+        },
+        {
+          "y": 1081.8125,
+          "height": 294.53125
+        },
+        {
+          "y": 1376.34375,
+          "height": 1501.3125
+        },
+        {
+          "y": 2877.65625,
+          "height": 1329.0625
+        },
+        {
+          "y": 4206.71875,
+          "height": 1007.5625
+        },
+        {
+          "y": 5214.28125,
+          "height": 1766.90625
+        },
+        {
+          "y": 6981.1875,
+          "height": 512.171875
+        }
+      ],
+      "tables": [
+        {
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/delivery/ai-glasses-products-exam-rules-review-dark.html",
+      "inner_width": 1280,
+      "inner_height": 900,
+      "client_width": 1280,
+      "client_height": 900,
+      "scroll_width": 1280,
+      "scroll_height": 6308,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "natural_width": 2360,
+          "natural_height": 1310
+        },
+        {
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "theme": "dark",
+      "width": 1280,
+      "height": 900,
+      "screenshot": "dark-1280-full.png",
+      "preview_sha256": "29dc993953d2542ea767c7a2db85a2666be57dbd2100ef2173600a6b9fa81e2d",
+      "sections": [
+        {
+          "y": 179.390625,
+          "height": 972.28125
+        },
+        {
+          "y": 1151.671875,
+          "height": 302.53125
+        },
+        {
+          "y": 1454.203125,
+          "height": 1391.734375
+        },
+        {
+          "y": 2845.9375,
+          "height": 956.484375
+        },
+        {
+          "y": 3802.421875,
+          "height": 934.21875
+        },
+        {
+          "y": 4736.640625,
+          "height": 1184.453125
+        },
+        {
+          "y": 5921.09375,
+          "height": 387
+        }
+      ],
+      "tables": [
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 760,
+          "scrollWidth": 760,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/delivery/ai-glasses-products-exam-rules-review-dark.html",
+      "inner_width": 360,
+      "inner_height": 800,
+      "client_width": 360,
+      "client_height": 800,
+      "scroll_width": 360,
+      "scroll_height": 7712,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "natural_width": 2360,
+          "natural_height": 1310
+        },
+        {
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "screenshot": "dark-360-full.png",
+      "preview_sha256": "29dc993953d2542ea767c7a2db85a2666be57dbd2100ef2173600a6b9fa81e2d",
+      "sections": [
+        {
+          "y": 210.171875,
+          "height": 854.75
+        },
+        {
+          "y": 1064.921875,
+          "height": 294.53125
+        },
+        {
+          "y": 1359.453125,
+          "height": 1513.90625
+        },
+        {
+          "y": 2873.359375,
+          "height": 1358.296875
+        },
+        {
+          "y": 4231.65625,
+          "height": 1025.578125
+        },
+        {
+          "y": 5257.234375,
+          "height": 1883.84375
+        },
+        {
+          "y": 7141.078125,
+          "height": 570.640625
+        }
+      ],
+      "tables": [
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 320,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "ready_state": "complete",
+      "location": "file:///Users/ja2sng/dev/blog-workspace/posts/2026-11-14-ai-glasses-products-exam-rules/delivery/ai-glasses-products-exam-rules-review-dark.html",
+      "inner_width": 390,
+      "inner_height": 844,
+      "client_width": 390,
+      "client_height": 844,
+      "scroll_width": 390,
+      "scroll_height": 7493,
+      "h1_count": 1,
+      "toc_anchor_count": 5,
+      "toc_targets_unique": true,
+      "image_count": 3,
+      "images_loaded": true,
+      "images": [
+        {
+          "natural_width": 874,
+          "natural_height": 492
+        },
+        {
+          "natural_width": 2360,
+          "natural_height": 1310
+        },
+        {
+          "natural_width": 1000,
+          "natural_height": 374
+        }
+      ],
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "screenshot": "dark-390-full.png",
+      "preview_sha256": "29dc993953d2542ea767c7a2db85a2666be57dbd2100ef2173600a6b9fa81e2d",
+      "sections": [
+        {
+          "y": 210.171875,
+          "height": 871.640625
+        },
+        {
+          "y": 1081.8125,
+          "height": 294.53125
+        },
+        {
+          "y": 1376.34375,
+          "height": 1501.3125
+        },
+        {
+          "y": 2877.65625,
+          "height": 1329.0625
+        },
+        {
+          "y": 4206.71875,
+          "height": 1007.5625
+        },
+        {
+          "y": 5214.28125,
+          "height": 1766.90625
+        },
+        {
+          "y": 6981.1875,
+          "height": 512.171875
+        }
+      ],
+      "tables": [
+        {
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 620,
+          "overflow": "auto"
+        }
+      ]
+    }
+  ]
+}

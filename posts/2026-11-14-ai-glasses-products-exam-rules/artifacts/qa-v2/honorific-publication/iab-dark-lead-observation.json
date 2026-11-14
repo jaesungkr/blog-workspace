@@ -1,0 +1,20 @@
+{
+  "actor": "Codex main creator",
+  "surface": "Codex in-app browser",
+  "source_html_sha256": "edf64849d36950a582e7c22959a10e4cd63bed44a063e64584517e7da59b0124",
+  "observation": "Black Ray-Ban glasses visibly painted at default desktop1280 and 360x800 with polite caption. Pixels inspected in screenshot output. No source/CSS/media changes.",
+  "mobile_lead": {
+    "natural_width": 874,
+    "natural_height": 492,
+    "x": 20,
+    "y": 334.8046875,
+    "width": 320,
+    "height": 181.0078125
+  },
+  "scope": "Only lead paint investigation; not a native Tistory preview or full in-app page pass. Other local image and table observations remain separate.",
+  "headless_limitation": "Independent dark full/focused blank and separate diagnostic baseline normal are both retained; no claim that decode wait fixes every capture.",
+  "viewport_restored": true,
+  "local_tab_closed": true,
+  "login_handoff_tab_retained": true,
+  "checked_at": "2026-11-14T13:05:46.503686+00:00"
+}

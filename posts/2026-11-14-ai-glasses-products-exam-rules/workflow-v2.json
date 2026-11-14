@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "profile": "standard-rich",
+  "scope": "complete",
+  "primary_reader": "AI 안경 구매와 시험장 반입 가능 여부를 알고 싶은 한국 일반 독자",
+  "direct_capture": false,
+  "gif": false,
+  "generated_lead": false,
+  "infographic": false,
+  "complex_layout": true,
+  "high_risk_remote_media": false,
+  "include_390": true,
+  "include_768": false,
+  "second_remote_fetch": false,
+  "decision_note": "공식 판매/예약, 한국/해외, 카메라/화면/소리와 시험별 금지 문구를 분리한다. 직접 착용 시험은 하지 않는다. max-txt2img와 diagram-design을 검토했으나 기능 표와 공식 제품 사진이 같은 차이를 더 정확히 보여 주므로 인포그래픽은 생략한다. 최신 사용자 요청으로 전체 존대어 폴리싱 후 티스토리 게시와 Git 기록을 진행한다. 제목과 공식 사진은 유지한다.",
+  "publication_mode": "codex-browser"
+}

@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "lead_id": "ray-ban-gen3",
+  "items": [
+    {
+      "id": "ray-ban-gen3",
+      "kind": "image",
+      "origin": "official",
+      "role": "lead",
+      "claim_ids": [
+        "P02"
+      ],
+      "source_url": "https://www.meta.com/kr/ai-glasses/compare/",
+      "source_asset_url": "https://lookaside.fbsbx.com/elementpath/media/?media_id=1819129649405668&transcode_extension=webp&version=1793739296",
+      "publish_path": "assets/ray-ban-meta-gen3-official.webp",
+      "rights": "저작권은 해당 제조사(Meta/Even Realities/삼성전자)에 있다. 제품 식별·비교를 위한 최소 공식 자료 인용. 원출처 링크 보존. 공개 라이선스나 독점권은 주장하지 않는다.",
+      "alt": "검은색 Ray-Ban Meta Gen 3의 전면과 프레임 양끝의 모듈",
+      "caption": "Ray-Ban Meta Gen 3입니다. 카메라와 스피커를 갖췄으며 렌즈 속 화면은 없습니다.",
+      "placement": "도입 뒤",
+      "processing": [],
+      "redactions": [],
+      "width": 874,
+      "height": 492,
+      "display_width": 874,
+      "sha256": "637414dbd4078eb2ce1f21f5308ee0519621f55aa6bcc8bdde0b49a86e35213b",
+      "status": "validated",
+      "tistory_url": ""
+    },
+    {
+      "id": "even-g2",
+      "kind": "image",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "P09",
+        "P10"
+      ],
+      "source_url": "https://www.evenrealities.com/smart-glasses",
+      "source_asset_url": "https://cdn.sanity.io/images/wfyhg2qw/production/0c9b825d9715f15f5825cf114f1d633e8cb3a6b6-2360x1310.jpg?auto=format&fit=max&q=100&w=2360",
+      "publish_path": "assets/even-g2-official.jpg",
+      "rights": "저작권은 해당 제조사(Meta/Even Realities/삼성전자)에 있다. 제품 식별·비교를 위한 최소 공식 자료 인용. 원출처 링크 보존. 공개 라이선스나 독점권은 주장하지 않는다.",
+      "alt": "대화 상대를 보면서 초록색 글자를 읽는 Even G2 홍보 화면",
+      "caption": "Even G2가 대화 중 메모를 표시하는 모습을 설명한 이미지입니다. 글자는 제조사의 연출 화면입니다.",
+      "placement": "소리로 듣는 안경, 글자로 보는 안경 끝",
+      "processing": [],
+      "redactions": [],
+      "width": 2360,
+      "height": 1310,
+      "display_width": 916,
+      "sha256": "8dadecfbd6527898fe0b0f28a8978feef3a9318fdb78ac40adaa18d848eeccb6",
+      "status": "validated",
+      "tistory_url": ""
+    },
+    {
+      "id": "samsung-eyewear",
+      "kind": "image",
+      "origin": "official",
+      "role": "comparison",
+      "claim_ids": [
+        "P12"
+      ],
+      "source_url": "https://news.samsung.com/kr/삼성전자-구글·젠틀몬스터·워비파커와-협업한-인",
+      "source_asset_url": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/11/12135044/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B5%AC%EA%B8%80-%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%ED%8A%B8-%EC%95%84%EC%9D%B4%EC%9B%A8%EC%96%B4-7.jpg",
+      "publish_path": "assets/samsung-gentle-monster-official.jpg",
+      "rights": "저작권은 해당 제조사(Meta/Even Realities/삼성전자)에 있다. 제품 식별·비교를 위한 최소 공식 자료 인용. 원출처 링크 보존. 공개 라이선스나 독점권은 주장하지 않는다.",
+      "alt": "서로 다른 프레임 모양으로 나온 젠틀몬스터 인텔리전트 아이웨어 여섯 디자인",
+      "caption": "한국에는 젠틀몬스터 컬렉션이 출시될 예정입니다. 11월 14일 현재는 예약 단계입니다.",
+      "placement": "삼성·구글 안경은 예약 중 두 번째 문단 뒤",
+      "processing": [],
+      "redactions": [],
+      "width": 1000,
+      "height": 374,
+      "display_width": 916,
+      "sha256": "db1fe75d7d27673d233521bc429c564d8212d3c588a5e0aaf7c8e1329479906a",
+      "status": "validated",
+      "tistory_url": ""
+    }
+  ]
+}

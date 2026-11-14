@@ -1,0 +1,6 @@
+python3 scripts/blog.py check posts/2026-11-14-ai-glasses-products-exam-rules
+검사 완료: 1개 글, 오류 0개, 경고 0개
+
+python3 .agents/skills/dev-log-rich-post-workspace-v2/scripts/check_rich_post_v2.py posts/2026-11-14-ai-glasses-products-exam-rules
+rich-post-v2: pass
+media 3 · directives 3

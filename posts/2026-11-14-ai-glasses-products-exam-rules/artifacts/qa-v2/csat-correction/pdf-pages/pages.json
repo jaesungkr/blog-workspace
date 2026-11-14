@@ -1,0 +1,54 @@
+{
+  "pages" : 7,
+  "records" : [
+    {
+      "image" : "page-01.png",
+      "textCharacters" : 502,
+      "height" : 760.07996000000003,
+      "page" : 1,
+      "width" : 420
+    },
+    {
+      "image" : "page-02.png",
+      "textCharacters" : 639,
+      "height" : 760.07996000000003,
+      "page" : 2,
+      "width" : 420
+    },
+    {
+      "width" : 420,
+      "textCharacters" : 551,
+      "page" : 3,
+      "height" : 760.07996000000003,
+      "image" : "page-03.png"
+    },
+    {
+      "height" : 760.07996000000003,
+      "page" : 4,
+      "image" : "page-04.png",
+      "width" : 420,
+      "textCharacters" : 885
+    },
+    {
+      "width" : 420,
+      "page" : 5,
+      "textCharacters" : 634,
+      "height" : 760.07996000000003,
+      "image" : "page-05.png"
+    },
+    {
+      "height" : 760.07996000000003,
+      "textCharacters" : 916,
+      "image" : "page-06.png",
+      "page" : 6,
+      "width" : 420
+    },
+    {
+      "height" : 760.07996000000003,
+      "textCharacters" : 940,
+      "image" : "page-07.png",
+      "width" : 420,
+      "page" : 7
+    }
+  ]
+}

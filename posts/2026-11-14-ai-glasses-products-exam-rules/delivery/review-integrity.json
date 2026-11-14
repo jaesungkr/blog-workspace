@@ -1,0 +1,14 @@
+{
+  "canonical_renderer": ".agents/skills/dev-log-rich-post-workspace-v2/scripts/render_rich_post_v2.py",
+  "renderer_sha256": "ff20392d99ceafa4615fc7a5f1cf4828ed0e8f12eb738c0288b111f5c16a4a51",
+  "canonical_css_sha256": "08af6301a39dc3575c0a3539cf126c6d621c7c1575e58a6483b696c5dfa117f3",
+  "modification": "preview image src only converted from relative local files to identical embedded bytes; canonical CSS/prose/DOM retained",
+  "files": {
+    "ai-glasses-products-exam-rules-tistory-fragment.txt": "b4310e19f1332e19792321753d1491bf1d8de31d3c200ebbd3756cabce796f1d",
+    "ai-glasses-products-exam-rules-mobile-review.pdf": "503877242aee63c1b1df2671781253dba81a125629e70058cffc4848ddd1adcf",
+    "읽어주세요.txt": "11802fbe7f12a8eb24f09cdf172c22fabc7b2ce70028f7b7a1f747e0e355bcd5",
+    "ai-glasses-products-exam-rules-draft.md": "7ab39d14b76a07584657102ee48a7766eec37c2d370ba59c89aa5c9df0ae844e",
+    "ai-glasses-products-exam-rules-review-dark.html": "d3e59a229cce24bf6903280f82ae183351126b80f6bb44558efe1e482e9c2a5f",
+    "ai-glasses-products-exam-rules-review-light.html": "02b6a5f912a294f0deb018253529fed5e26878bf9349813a6c94c068fa92f9da"
+  }
+}

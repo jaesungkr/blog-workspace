@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-11-14T13:10:20.297144+00:00",
+  "reel_url": "https://www.instagram.com/reel/DfGZOc_CoYX/",
+  "account": "mbcnews_official",
+  "verified_badge_observed": true,
+  "displayed_date": "10월 29일",
+  "caption": "스마트안경 걸리면 '징역 5년'‥응시 제한도 3년",
+  "duration_seconds": 71.744,
+  "observations": [
+    "caption and video frames actually observed in Codex IAB public page",
+    "video currentTime16.419 and35.068 and46.313 observed while playing",
+    "earlier ended state71.744 observed and replay clicked via visible play icon"
+  ],
+  "limitations": [
+    "No full audio transcription; no claim of inspecting every frame",
+    "Web fetch throttled",
+    "No Instagram video or images copied into article"
+  ],
+  "primary_law_browser_observation": [
+    "Criminal Act137 current2026-10-02 exact official displayed text",
+    "Higher Education Act34(5) current2026-09-11 exact official displayed text"
+  ]
+}

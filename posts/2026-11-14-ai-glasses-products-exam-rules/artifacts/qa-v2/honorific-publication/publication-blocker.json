@@ -1,0 +1,23 @@
+{
+  "status": "blocked_on_login",
+  "target": "Tistory editor for https://dop3n.tistory.com",
+  "observed": "Kakao stored account selection returned to a password entry form",
+  "actions_completed": [
+    "Opened intended blog manage URL in Codex in-app browser",
+    "Selected Kakao sign-in and the stored account",
+    "Asked author to log in directly; no password requested in chat"
+  ],
+  "mutations_not_started": [
+    "Tistory image upload",
+    "Tistory draft creation",
+    "Tistory publication"
+  ],
+  "remaining": [
+    "Author completes login in retained in-app tab",
+    "Native attachment binding and preview",
+    "Remote media and independent final-page gates",
+    "Finalizer and publication",
+    "Explicitly requested public-page verification"
+  ],
+  "recorded_at": "2026-11-14T22:01:19.718567+09:00"
+}

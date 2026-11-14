@@ -1,0 +1,17 @@
+{
+  "instruction_received_via": "trusted parent delegation of the latest human instruction",
+  "author_instruction": "전체 문장을 자연스러운 정중한 ~입니다/~합니다 글로 통일하고 문장과 단락 연결을 최종 폴리싱한 뒤 블로그에 게시해 주세요. 수능 반입/제출 구분 등 수정한 사실과 출처 유지, 사진과 제목도 기존 승인 범위 유지. 사용자는 실제 게시를 명시 승인했습니다.",
+  "target_blog": "https://dop3n.tistory.com",
+  "source_pass_sha256": "c68fda31cd5c81439306b802c4ebe999c9f0dbb13b0307b1b4399d2496c49b54",
+  "article_sha256": "7ab39d14b76a07584657102ee48a7766eec37c2d370ba59c89aa5c9df0ae844e",
+  "media_sha256": {
+    "ray-ban-gen3": "637414dbd4078eb2ce1f21f5308ee0519621f55aa6bcc8bdde0b49a86e35213b",
+    "even-g2": "8dadecfbd6527898fe0b0f28a8978feef3a9318fdb78ac40adaa18d848eeccb6",
+    "samsung-eyewear": "db1fe75d7d27673d233521bc429c564d8212d3c588a5e0aaf7c8e1329479906a"
+  },
+  "recorded_at": "2026-11-14T22:01:19.718322+09:00",
+  "approval_scope": "requested honorific polish and publication with the same title, facts and photos; no new permission requested",
+  "latest_additional_instruction": "사용자 추가 요청으로 MBC 인스타 릴 실제 내용 및 본보도·공식 근거를 확인해 게시 전에 반영하고, 정확한 반영 여부 확인 후 게시를 이어간다.",
+  "latest_scope": "same title and images; polite prose plus requested MBC legal/policy context",
+  "updated_at": "2026-11-14T13:13:20.005149+00:00"
+}

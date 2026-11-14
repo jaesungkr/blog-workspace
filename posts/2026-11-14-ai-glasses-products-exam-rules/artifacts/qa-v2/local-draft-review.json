@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "scope": "CSAT condition correction; local draft only",
+  "article_sha256": "f52fc3d90a94d80f5b78ad0285b4902974025fc8fad3cf76886df868709ab9b7",
+  "source_review": "artifacts/qa-v2/csat-correction/source-review.md",
+  "pdf_review": "artifacts/qa-v2/csat-correction/pdf-review.md",
+  "viewports": [
+    1280,
+    360,
+    390
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "creator_receipt": "artifacts/qa-v2/local-browser-csat-creator/receipt.json",
+  "independent_receipt": "artifacts/qa-v2/local-browser-csat-independent/receipt.json",
+  "pdf_pages": 7,
+  "text_integrity_count": 2867,
+  "publication": "not performed",
+  "lifecycle": "reviewing"
+}

@@ -1,0 +1,9 @@
+{
+  "title_and_headings_unchanged": true,
+  "all_url_occurrences_preserved": true,
+  "url_occurrences": 30,
+  "numeric_tokens_preserved": true,
+  "image_bytes_match_manifest": true,
+  "actor": "Codex",
+  "scope": "invariant check; independent semantic source review recorded separately"
+}
