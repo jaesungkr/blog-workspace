@@ -1,0 +1,15 @@
+{
+  "url": "https://dop3n.tistory.com/185",
+  "published_at": "2026-11-20T18:26:16+09:00",
+  "modified_at": "2026-11-22T16:23:14+09:00",
+  "visibility": "public",
+  "representative_image": "assets/cover.jpg",
+  "representative_placement": "representative-only",
+  "html": "Public article fragment with local image paths",
+  "assets_sha256": {
+    "cover.jpg": "dcee8d9204418df7e7c67ccbca6f8ff33974e86ef7d95e3c421f65eb35e4ec69",
+    "fuji.jpg": "cebb78cd5e0d677d6cfb2aa904c7cc5ba4732ccb6936a645f5f22ecbe7ac53f9",
+    "mandarin.jpg": "a50a52272dd272677a64d8b4061081c924239bf6cfa84565e58ef63962c44646",
+    "strawberry.jpg": "4a681b69cb75f0e9ecb266758ccdf4091e741b9520170f8110ba62db8af7d4dc"
+  }
+}
