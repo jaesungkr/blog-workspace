@@ -1,0 +1,484 @@
+<div><style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Markdown blockquotes are neutral quote/input boxes. No prompt labels are added. */
+.devlog-rich .devlog-rich__section > blockquote {
+  box-sizing: border-box !important;
+  width: min(100%, var(--rich-reading)) !important;
+  max-width: 100% !important;
+  margin: 24px auto !important;
+  padding: 18px 20px !important;
+  border: 1px solid var(--rich-border) !important;
+  border-left: 3px solid var(--rich-link) !important;
+  border-radius: 12px !important;
+  background: var(--rich-pre-bg) !important;
+  color: var(--rich-body) !important;
+  font-size: 17px !important;
+  font-style: normal !important;
+  line-height: 1.72 !important;
+  text-align: left !important;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: anywhere !important;
+}
+@media (max-width: 735px) {
+  .devlog-rich .devlog-rich__section > blockquote {
+    padding: 16px !important;
+  }
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+
+</style></div>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p data-ke-size="size16">안녕하세요. dev.log입니다.</p>
+<p data-ke-size="size16">서울드림교회 창립 17주년 예배에서 김여호수아 목사님은 아이들이 예배드릴 공간을 마련하려고 특별헌금 날짜부터 잡았던 일을 돌아보셨습니다. 목사님은 성도들에게 먼저 함께 기도하자고 하셨습니다. 그리고 17년 전 예배드릴 곳을 찾으며 보냈던 시간을 떠올리셨습니다. 설교는 그때의 기다림에서 예루살렘에 남아 성령을 기다렸던 제자들의 이야기로 이어졌습니다.</p>
+</section>
+<section class="devlog-rich__section is-toc"><nav class="devlog-rich__toc" aria-label="글 목차">
+<p class="devlog-rich__toc-title" data-ke-size="size16">목차</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><a href="#본문-사도행전-242-47-쉬운성경">본문 | 사도행전 2:42-47 (쉬운성경)</a></li>
+<li><a href="#설교-요약-김여호수아-목사님">설교 요약 - 김여호수아 목사님</a></li>
+<li><a href="#thoughts">Thoughts</a></li>
+</ol>
+</nav></section>
+<section class="devlog-rich__section" aria-labelledby="본문-사도행전-242-47-쉬운성경">
+<h2 id="본문-사도행전-242-47-쉬운성경" data-ke-size="size26">본문 | 사도행전 2:42-47 (쉬운성경)</h2>
+<p data-ke-size="size16">세례를 받은 사람들은 그 뒤에 어떻게 살았을까요? 본문은 성전 뜰과 각자의 집에서 그들이 함께 보낸 시간을 보여 줍니다.</p>
+<blockquote data-ke-style="style1">42 사람들은 사도들의 가르침을 받으며 서로 교제하고, 빵을 나누어 먹고 기도하는 일에 힘썼습니다.<br /><br />43 사도들을 통해 많은 기적과 표적이 나타났습니다. 그러자 모든 사람들에게 두려운 마음이 생겼습니다.<br /><br />44 믿는 사람들은 다 함께 모여 모든 물건을 공동으로 사용하며 살아갔습니다.<br /><br />45 그들은 재산과 모든 소유를 팔아서 필요한 사람들에게 나누어 주었습니다.<br /><br />46 그들은 날마다 한마음으로 성전 뜰에 모였습니다. 그리고 집집마다 돌아가며 함께 모여 기쁘고 순수한 마음으로 식사를 같이 하였습니다.<br /><br />47 그들은 하나님을 찬양하였으며, 모든 사람에게서 칭찬을 받았습니다. 주님께서는 구원받는 사람을 날마다 늘어나게 하셨습니다.</blockquote>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="설교-요약-김여호수아-목사님">
+<h2 id="설교-요약-김여호수아-목사님" data-ke-size="size26">설교 요약 - 김여호수아 목사님</h2>
+<p data-ke-size="size16"><b>첫 예배를 드릴 곳을 찾기까지</b></p>
+<p data-ke-size="size16">개척을 준비하던 김여호수아 목사님은 다른 교회를 찾아가 예배가 없는 시간에 예배당을 빌릴 수 있는지 물었지만 거절당했습니다. 한 성도가 작은 사무실을 내주겠다고 했을 때도 기대가 컸지만 결국 그곳은 쓰지 못했습니다.</p>
+<p data-ke-size="size16">그 무렵 다른 건물에서는 예배실을 사무실로 바꾸려던 계획이 무산돼 다시 예배실로 복구하는 공사가 한창이었습니다. 서울드림교회는 새로 단장한 그곳을 주일에 몇 시간씩 빌려 첫 예배를 드렸습니다. 돌이켜 보니 어디서 예배를 드릴지 몰라 초조해하던 동안에도 하나님께서 필요한 자리를 준비하고 계셨다는 고백이었습니다.</p>
+<p data-ke-size="size16"><b>예루살렘에 남아 기도한 사람들</b></p>
+<p data-ke-size="size16">부활하신 예수님은 제자들에게 예루살렘을 떠나지 말고 하나님 아버지께서 약속하신 성령을 기다리라고 하셨습니다. 설교에서 말하는 ‘성령 세례’는 오순절에 그 약속대로 성령이 제자들에게 오신 일을 가리킵니다. 제자들은 성령이 주시는 힘으로 예수님의 죽음과 부활을 전하게 됩니다.</p>
+<p data-ke-size="size16">예루살렘은 예수님이 붙잡히셨을 때 제자들이 겁에 질려 달아난 곳이었습니다. 베드로도 그곳에서 예수님을 모른다고 세 번이나 말했습니다. 그런 제자들이 살아나신 예수님을 직접 만났습니다. 앞으로 무슨 일이 일어날지는 다 알지 못했지만, 그분의 말씀을 믿고 예루살렘에 남아 함께 기도했습니다.</p>
+<p data-ke-size="size16">오순절에 제자들이 한곳에 모여 있을 때, 세찬 바람이 부는 듯한 소리가 집 안을 가득 채웠습니다. 불꽃처럼 보이는 혀 모양이 갈라져 각 사람 위에 내려앉았습니다. 성령이 임하자 제자들은 여러 언어로 말하기 시작했습니다. 소리를 듣고 모여든 사람들은 갈릴리 출신 제자들이 하나님의 큰일을 전하는 것을 저마다 자기 고향 말로 듣고 놀랐습니다.</p>
+<p data-ke-size="size16">베드로는 하나님께서 약속하신 대로 성령을 보내 주셨다고 설명했습니다. 이어 십자가에 못 박힌 예수님을 하나님께서 다시 살리시고 주님과 그리스도로 세우셨다고 전했습니다. 사람들은 그 말을 듣고 마음이 찔려 이제 어떻게 해야 하느냐고 물었습니다. 베드로는 죄에서 돌이켜 예수님의 이름으로 세례를 받으라고 대답했습니다. 그러면 죄를 용서받고 성령을 선물로 받을 것이라고 했습니다. 그날 약 삼천 명이 말씀을 받아들이고 세례를 받았습니다. 목사님은 성령께서 이렇게 시작하신 교회에서 세 가지 모습을 짚으셨습니다.</p>
+<p data-ke-size="size16"><b>1. 예배에서 예수님을 만나고 싶은 교회</b></p>
+<p data-ke-size="size16">새로 믿게 된 사람들은 예수님의 십자가를 통해 어떻게 죄를 용서받았는지, 그분의 부활이 자신들에게 어떤 뜻인지 더 알고 싶었습니다. 그래서 날마다 모여 사도들의 가르침을 듣고, 함께 떡을 떼고 기도했습니다.</p>
+<p data-ke-size="size16">개척 초기에 김여호수아 목사님은 처음 온 분들에게 긴 설교가 부담스러울까 걱정돼 신도배 목사님에게 설교를 줄여 달라고 하셨습니다. 그러다 어느 때부터 신 목사님의 설교를 들으며 눈물을 흘렸습니다. 하나님께서 자신에게 말씀하신다고 느꼈습니다. 함께 목회하며 자신도 다시 말씀을 기다리는 예배자가 되었다는 고백이었습니다. 목사님은 성도들에게 교회에 익숙해진 지금도 예배에서 하나님을 만나고 싶은지 물으셨습니다.</p>
+<p data-ke-size="size16"><b>2. 서로를 가족으로 여기고 필요한 것을 나누는 교회</b></p>
+<p data-ke-size="size16">목사님은 44-45절을 읽으며 성도들이 도움이 필요한 사람을 볼 때마다 자기 것을 내어주었다는 점을 짚으셨습니다. 성령이 오신 뒤에는 교회 안의 형제자매가 가족처럼 소중해졌고, 그들에게 무엇이 필요한지도 눈에 들어오기 시작했습니다.</p>
+<p data-ke-size="size16">서울드림교회의 드림빌더스 사역에서도 그런 나눔이 이어졌습니다. 한 성도는 아이들이 지낼 집을 무상으로 내주었습니다. 다른 성도들은 가구와 겨울옷을 마련하고 학비를 보탰습니다. 지금은 사역이 교회 예산만으로 감당하기 어려울 만큼 커졌다고 합니다. 목사님은 아이들에게 필요한 것을 보고 기꺼이 나설 성도들이 있다고 믿기에 사역을 이어가겠다고 하셨습니다.</p>
+<p data-ke-size="size16"><b>3. 한 사람이 예수님을 믿도록 기도하는 교회</b></p>
+<p data-ke-size="size16">목사님은 43절을 읽으며 병든 사람을 불쌍히 여기신 예수님의 마음을 이야기하셨습니다. 다른 사람의 아픔을 그만큼 깊이 느낄 때 그를 위해 간절히 기도하게 된다는 말씀입니다. 이어 아버님이 예수님을 믿게 해 달라고 오랫동안 기도한 한 가족의 이야기를 들려주셨습니다.</p>
+<p data-ke-size="size16">설교 전날 열린 임직 행사 때, 한 임직자가 김 목사님에게 문자를 보냈습니다. 그날은 임직자의 아버님이 돌아가신 지 2년이 되는 날이었습니다. 아버님이 입원해 계실 때 목사님이 병실을 찾아가셨고, 아버님은 그 자리에서 예수님을 영접하고 세례를 받으셨습니다. 그때를 기억하며 전한 감사 인사였습니다.</p>
+<p data-ke-size="size16">목사님은 그 세례에 앞서 가족이 드렸던 기도를 이렇게 전하셨습니다. “하나님, 제발, 제발 우리 아버지 하나님 좀 믿게 도와주세요.” 가족은 오랜 세월 아버님의 이름을 부를 때마다 그렇게 애타는 마음으로 기도했다고 합니다. 목사님은 자신이 병실을 찾기 전에 이미 주님께서 가족의 기도를 들으시고 아버님의 마음을 열어 주셨다고 말씀하셨습니다.</p>
+<p data-ke-size="size16">47절에서 날마다 구원받는 사람을 더하신 분은 주님이셨습니다. 목사님은 개척 초기에 예수님을 믿게 된 분들이 있어 매달 세례를 베풀던 때를 떠올리셨습니다. 서울드림교회가 다시 그런 교회가 되기를 바라며, 성도들에게 아직 예수님을 모르는 한 사람을 마음에 품고 그 이름을 부르며 기도하자고 권하셨습니다.</p>
+<p data-ke-size="size16"><a style="color: #1a73e8; text-decoration: none;" href="https://www.youtube.com/watch?v=mJTZaoHrr_E" target="_blank" rel="noopener">설교 영상 | 예수님께서 꿈꾸시는 바로 그 교회 - 서울드림교회 김여호수아 목사님</a></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="thoughts">
+<h2 id="thoughts" data-ke-size="size26">Thoughts</h2>
+<p data-ke-size="size16">제가 다니는 서울드림교회는 지금 새 예배 공간을 찾고 있습니다. 그런 가운데 교회 창립 17주년을 맞아 김여호수아 목사님의 설교를 들었습니다. 한동안 우리 교회는 상문고 강당을 빌려 예배를 드렸습니다. 교회에서 강당을 쓰기 위해 학교 시설 공사에 비용을 들였지만, 평일에는 공간을 쓸 수 없었고 일부 교실도 이용할 수 없었습니다. 쓰레기 문제로 배달 음식을 시킬 수도 없었습니다.</p>
+<p data-ke-size="size16">학교 공간을 빌려 쓰다 보니 교회에서 안내문을 붙이기 어려웠습니다. 저는 교회 소식이나 필요한 정보가 있을 때마다 지인에게 물어봤습니다. 처음 오는 분들은 학교 안쪽에 있는 강당을 찾기 힘들어했고, 주차할 자리도 넉넉하지 않았습니다. 저는 우리 교회를 좋아하면서도 공간 문제만큼은 한동안 납득하기 어려웠습니다. 그때는 가족이 함께 다니지 않았다면 교회를 옮겼을지도 모르겠다고 생각할 만큼 답답했습니다.</p>
+<p data-ke-size="size16">제가 보기에 우리 교회는 규모에 비해 국내외에서 여러 선교 활동을 꾸준히 해 왔습니다. 평소 교회 재정이 선교에 적지 않게 쓰인다는 점도 알고 있고, 교회가 선교를 우선하는 마음도 이해합니다.</p>
+<p data-ke-size="size16">더 어려운 환경에서도 예배드리는 분들이 계신데, 내가 배부른 소리를 하는 건 아닐까 혼자 생각해 본 적도 있습니다. 그러다 주변 교회들을 떠올려 봤습니다. 처음 온 분도 예배 장소를 쉽게 찾고 누구나 교회 소식을 쉽게 알 수 있으면 좋겠다는 게 그렇게 지나친 바람은 아니겠다는 생각이 들었습니다.</p>
+<p data-ke-size="size16">이번 설교에서 두 목사님이 첫 예배를 준비하며 겪은 일을 듣고 나니, 그동안 답답하게만 여겼던 결정들이 조금 다르게 보였습니다. 김 목사님은 다른 교회에 예배당을 빌려 달라고 부탁했다가 거절당했고, 기대했던 작은 사무실도 쓰지 못하셨습니다. 그렇게 여러 곳을 찾아다닌 끝에 주일에 몇 시간씩 쓸 수 있는 예배실을 빌려 첫 예배를 드렸다고 합니다. 제가 지금 다니는 교회의 첫 예배 자리를 마련하기까지 두 분이 들인 수고를 생각하니 마음이 따뜻해지고 고마웠습니다. 두 목사님이 하나님과 동행하며 교회를 세워 오시는 동안, 예배 공간을 두고 결정을 내릴 때마다 제가 몰랐던 사정과 고민도 있었겠구나 싶었습니다. 그렇게 생각하니 마음이 조금 풀렸습니다.</p>
+<p data-ke-size="size16">성경은 질문마다 정답을 알려 주기 위해 쓰인 문답집이 아닙니다. 그래서 같은 본문도 목사님마다 다르게 해석하고 전할 수 있습니다. 그만큼 말씀을 전하는 사람에게 영향을 많이 받는 것 같습니다. 목회자도 사람이라 유혹에 흔들릴 수 있고, 믿고 따르던 목회자가 넘어질 때 성도들은 그 일로 믿음까지 흔들리기도 합니다. 그래서 저는 어떤 목사님께 말씀을 배우고 그 가르침을 따르느냐가 무척 중요하다고 생각합니다.</p>
+<p data-ke-size="size16">새 예배 공간을 찾는다는 소식을 처음 들었을 때는 왜 이제야 찾나 싶었습니다. 이번 설교를 듣고 나서는 첫 예배를 드릴 곳을 찾아다니셨던 두 목사님을 자꾸 떠올리게 됩니다. 그때부터 이어져 온 교회에서 지금 제가 말씀을 배우고, 성도들과 함께 예배드리고 있다는 게 새삼 감사합니다.</p>
+</section>
+</article>
