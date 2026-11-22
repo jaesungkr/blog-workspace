@@ -1,0 +1,13 @@
+{
+  "url": "https://dop3n.tistory.com/187",
+  "published_at": "2026-11-22T19:57+09:00",
+  "visibility": "public",
+  "html": "Approved Tistory fragment with local image paths; not an editor export",
+  "assets_sha256": {
+    "01-advertiser-start.png": "d50c8a66c969f98af2ef3bb235c48178b6ecf1d549dcf389dc9f5e4faaabbcc6",
+    "02-ad-preview.png": "a063b1aea165f0b5bd7dacd521cc2d5ffbca8851f1b5bc126dabc586fb2478df",
+    "03-recommended-campaign.png": "c4fe866f51eafcb9bbf8a5decb21bd0b496003aadf6c62d8ab31fb2b1742f528",
+    "04-daily-budget-minimum.png": "ae93cb8c4926b526d814fe61362321af69bfc875eaf169090666486dc0dfbc56",
+    "05-campaign-targeting.png": "cc68451d643413ca35f9997782ce8d1ac0b7c2a9b84ad01c78f7ed49e7f54de5"
+  }
+}

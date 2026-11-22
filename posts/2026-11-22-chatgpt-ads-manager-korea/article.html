@@ -1,0 +1,482 @@
+<style>
+.devlog-rich,
+.devlog-rich * {
+  box-sizing: border-box;
+}
+
+/* v2: source-frozen article surface validated by one final light/dark gate. */
+.devlog-rich {
+  --rich-canvas: 980px;
+  --rich-reading: 760px;
+  --rich-surface: #ffffff;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #1d1d1f;
+  --rich-body: #333333;
+  --rich-muted: #636366;
+  --rich-link: #0066cc;
+  --rich-border: #e0e0e0;
+  --rich-alt: #f5f5f7;
+  --rich-code-bg: #f0f0f0;
+  --rich-code-text: #333333;
+  --rich-pre-bg: #f6f6f6;
+  width: min(100%, var(--rich-canvas));
+  margin: 0 auto;
+  background: var(--rich-surface);
+  color: var(--rich-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  line-height: 1.47;
+}
+
+/* hELLO 스킨의 다크모드(html.dark) 대응 */
+.dark .devlog-rich {
+  --rich-surface: #1e1f21;
+  --rich-image-surface: #f5f5f7;
+  --rich-text: #f5f5f7;
+  --rich-body: #d1d1d6;
+  --rich-muted: #a1a1aa;
+  --rich-link: #66b3ff;
+  --rich-border: #3a3a3c;
+  --rich-alt: #2a2b2e;
+  --rich-code-bg: #333438;
+  --rich-code-text: #f5f5f7;
+  --rich-pre-bg: #252629;
+}
+
+.devlog-rich a {
+  color: var(--rich-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.devlog-rich a:hover {
+  text-decoration: underline;
+}
+
+/* Native benchmark figures retain readable labels in both publication themes. */
+.devlog-rich__benchmark {
+  width: min(100%, var(--rich-reading));
+  margin: 32px auto;
+  padding: 24px 20px;
+  border: 1px solid var(--rich-border);
+  border-radius: 14px;
+  background: var(--rich-surface);
+  color: var(--rich-body);
+}
+.devlog-rich__benchmark-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--rich-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.devlog-rich__benchmark-axis,
+.devlog-rich__benchmark-cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--rich-muted);
+}
+.devlog-rich__benchmark-group { margin: 24px 0; }
+.devlog-rich__benchmark-group-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.devlog-rich__benchmark-row { margin: 0 0 16px; }
+.devlog-rich__benchmark-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.devlog-rich__benchmark-label strong { flex-shrink: 0; }
+.devlog-rich__benchmark-track {
+  height: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--rich-border);
+}
+.devlog-rich__benchmark-track > span { display: block; height: 100%; }
+.devlog-rich__benchmark-track .is-sol { background: #c18a20; }
+.devlog-rich__benchmark-track .is-opus { background: #426be0; }
+.devlog-rich__benchmark-track .is-astra { background: #9365cf; }
+.devlog-rich__benchmark-track .is-neutral { background: #85858e; }
+.devlog-rich__benchmark > .devlog-rich__caption { margin-bottom: 0; }
+
+.devlog-rich__section {
+  padding: 56px 32px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__section.is-alt {
+  background: var(--rich-alt);
+}
+
+.devlog-rich__section.is-intro {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.devlog-rich__section.is-toc {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.devlog-rich__section > p,
+.devlog-rich__section > h2,
+.devlog-rich__section > h3,
+.devlog-rich__section > h4,
+.devlog-rich__section > ul,
+.devlog-rich__section > ol,
+.devlog-rich__section > blockquote,
+.devlog-rich__section > .rich-table-wrap,
+.devlog-rich__toc {
+  width: min(100%, var(--rich-reading));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Markdown conversion puts a margin directly on <pre>. Override only code
+   blocks so their left and right edges follow the reading column in Tistory. */
+.devlog-rich__section > pre {
+  width: min(100%, var(--rich-reading)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.devlog-rich__section > h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--rich-text);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  word-break: keep-all;
+  scroll-margin-top: 24px;
+}
+
+.devlog-rich__section > h3,
+.devlog-rich__section > h4 {
+  color: var(--rich-text);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.devlog-rich__section > p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  color: var(--rich-body);
+  font-size: 17px;
+  letter-spacing: -0.018em;
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.devlog-rich__section > ul,
+.devlog-rich__section > ol {
+  color: var(--rich-body);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+
+/* Tistory skins often reset list markers globally. Restore them inside the
+   rich fragment so Markdown bullets remain visible after HTML paste. */
+.devlog-rich__section > ul {
+  list-style: disc outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ol,
+.devlog-rich__toc ol {
+  list-style: decimal outside !important;
+  padding-left: 1.45em !important;
+}
+
+.devlog-rich__section > ul > li,
+.devlog-rich__section > ol > li,
+.devlog-rich__toc li {
+  display: list-item !important;
+}
+
+.devlog-rich__section > ul > li + li,
+.devlog-rich__section > ol > li + li {
+  margin-top: 0.4em !important;
+}
+
+.devlog-rich__section > ul + p,
+.devlog-rich__section > ol + p {
+  margin-top: 1.15em !important;
+}
+
+.devlog-rich :not(pre) > code {
+  background: var(--rich-code-bg);
+  color: var(--rich-code-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Markdown blockquotes are neutral quote/input boxes. No prompt labels are added. */
+.devlog-rich .devlog-rich__section > blockquote {
+  box-sizing: border-box !important;
+  width: min(100%, var(--rich-reading)) !important;
+  max-width: 100% !important;
+  margin: 24px auto !important;
+  padding: 18px 20px !important;
+  border: 1px solid var(--rich-border) !important;
+  border-left: 3px solid var(--rich-link) !important;
+  border-radius: 12px !important;
+  background: var(--rich-pre-bg) !important;
+  color: var(--rich-body) !important;
+  font-size: 17px !important;
+  font-style: normal !important;
+  line-height: 1.72 !important;
+  text-align: left !important;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: anywhere !important;
+}
+@media (max-width: 735px) {
+  .devlog-rich .devlog-rich__section > blockquote {
+    padding: 16px !important;
+  }
+}
+
+.devlog-rich__toc {
+  padding: 24px 26px;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-surface);
+}
+
+.devlog-rich__toc-title {
+  margin: 0 0 12px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.devlog-rich__toc ol {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.devlog-rich__figure {
+  width: min(100%, var(--rich-media-width, 916px));
+  margin: 36px auto;
+}
+
+.devlog-rich__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__media-scroll {
+  width: 100%;
+}
+.devlog-rich__native-image.devlog-rich__image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.devlog-rich__native-image figure.imageblock {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.devlog-rich__native-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rich-border);
+  border-radius: 18px;
+  background: var(--rich-image-surface);
+}
+
+.devlog-rich__poster {
+  display: none;
+}
+
+.devlog-rich__caption {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  color: var(--rich-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.devlog-rich__credit {
+  white-space: normal;
+}
+
+.devlog-rich .rich-table-wrap {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.devlog-rich .rich-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--rich-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.devlog-rich .rich-table-wrap th,
+.devlog-rich .rich-table-wrap td {
+  padding: 11px 13px;
+  border: 1px solid var(--rich-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: keep-all;
+}
+
+.devlog-rich .rich-table-wrap th {
+  background: var(--rich-alt);
+  color: var(--rich-text);
+  font-weight: 700;
+}
+
+.devlog-rich pre {
+  max-width: var(--rich-reading);
+  overflow-x: auto;
+  background: var(--rich-pre-bg);
+  color: var(--rich-body);
+}
+
+/* Tistory/Markdown inline styles must not pin the article to light colors. */
+.dark .devlog-rich a[style] {
+  color: var(--rich-link) !important;
+}
+
+.dark .devlog-rich :not(pre) > code[style] {
+  background: var(--rich-code-bg) !important;
+  color: var(--rich-code-text) !important;
+}
+
+.dark .devlog-rich pre[style] {
+  background: var(--rich-pre-bg) !important;
+  border-color: var(--rich-border) !important;
+  color: var(--rich-body) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .devlog-rich__motion {
+    display: none;
+  }
+
+  .devlog-rich__poster {
+    display: block;
+  }
+}
+
+@media (max-width: 735px) {
+  .devlog-rich {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .devlog-rich__section,
+  .devlog-rich__section.is-intro {
+    padding: 48px 20px;
+  }
+
+  .devlog-rich__section.is-toc {
+    padding: 28px 20px 40px;
+  }
+
+  .devlog-rich__section > h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .devlog-rich__toc {
+    padding: 20px;
+  }
+
+  .devlog-rich__figure {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__media-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .devlog-rich__figure--scroll-mobile .devlog-rich__image {
+    width: var(--rich-mobile-scroll-width, 720px);
+    max-width: none;
+  }
+}
+
+/* This two-column budget table fits at the article's mobile width. */
+.devlog-rich .rich-table-wrap table {
+  min-width: 0;
+}
+
+</style>
+<article class="devlog-rich">
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p>제 사이트를 ChatGPT에 광고하려면 어디서 시작하고 예산은 얼마부터 잡아야 할까요? 한국에 광고와 청구를 담당할 법인을 둔 광고주는 OpenAI의 Ads Manager 베타에서 직접 캠페인을 설정할 수 있습니다. 저도 dev.log를 홍보하려고 광고 설정 화면을 열어 봤습니다. <strong>제 계정의 일일 예산 입력란에는 최소 25,000원이 표시됐습니다.</strong> 같은 일일 예산으로 7일을 잡으면 175,000원입니다. 설정 화면과 광고 미리보기까지만 살펴봤고, 캠페인 설정을 완료하거나 광고를 집행하지는 않았습니다. <a href="https://help.openai.com/en/articles/20001206-ads-manager-beta-overview" style="color:#1a73e8;text-decoration:none;" target="_blank">Ads Manager 베타 개요</a> · <a href="https://help.openai.com/en/articles/20001245-ads-manager-availability" style="color:#1a73e8;text-decoration:none;" target="_blank">국가별 이용 조건</a></p>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#1-광고주-페이지에서-시작">1. 광고주 페이지에서 시작</a></li>
+<li><a href="#2-사이트-광고-미리보기">2. 사이트 광고 미리보기</a></li>
+<li><a href="#3-추천-캠페인에서-목표와-도착-주소-확인">3. 추천 캠페인에서 목표와 도착 주소 확인</a></li>
+<li><a href="#4-일일-예산-입력란에-표시된-최소-25000원">4. 일일 예산 입력란에 표시된 최소 25,000원</a></li>
+<li><a href="#5-첫-캠페인에서-지역과-플랫폼-설정">5. 첫 캠페인에서 지역과 플랫폼 설정</a></li>
+<li><a href="#chatgpt-이용자에게-광고가-표시되는-곳">ChatGPT 이용자에게 광고가 표시되는 곳</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="1-광고주-페이지에서-시작">
+<h2 id="1-광고주-페이지에서-시작">1. 광고주 페이지에서 시작</h2>
+<p><a href="https://ads.openai.com/" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 광고주 페이지</a>에서 ‘지금 시작하기’를 찾으면 됩니다. OpenAI는 2026년 5월 5일 발표에서 광고주가 캠페인을 직접 만들고 관리하는 셀프서비스 Ads Manager 베타를 공개했습니다. 2026년 11월 22일(한국시간)에 확인한 도움말에는 한국이 셀프서비스 지원 국가에 포함돼 있습니다. 국가 기준은 실제로 광고를 집행하고 청구를 받는 법인의 소재지입니다. <a href="https://openai.com/index/new-ways-to-buy-chatgpt-ads/" style="color:#1a73e8;text-decoration:none;" target="_blank">베타 발표</a> · <a href="https://help.openai.com/en/articles/20001245-ads-manager-availability" style="color:#1a73e8;text-decoration:none;" target="_blank">국가별 이용 조건</a></p>
+<figure class="devlog-rich__figure" data-media-id="01-advertiser-start" style="--rich-media-width:916px"><img class="devlog-rich__image" src="assets/01-advertiser-start.png" alt="ChatGPT 광고주 안내 페이지의 지금 시작하기 버튼" width="1263" height="812" loading="eager" decoding="async"><figcaption class="devlog-rich__caption">광고주 페이지에서 ‘지금 시작하기’를 누르면 광고 설정을 시작할 수 있습니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="2-사이트-광고-미리보기">
+<h2 id="2-사이트-광고-미리보기">2. 사이트 광고 미리보기</h2>
+<p>‘ChatGPT 광고가 준비되었습니다’ 화면에는 dev.log의 GPT-6.2 비교 글을 소개하는 광고 미리보기가 나왔습니다. ‘세부 정보 검토’를 열면 캠페인에서 어떤 목표와 예산을 잡았는지 살펴볼 수 있습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="02-ad-preview" style="--rich-media-width:784px"><img class="devlog-rich__image" src="assets/02-ad-preview.png" alt="dev.log의 GPT-6.2 비교 글이 표시된 ChatGPT 광고 미리보기" width="784" height="730" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">dev.log의 GPT-6.2 비교 글을 소개하는 광고 미리보기입니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section" aria-labelledby="3-추천-캠페인에서-목표와-도착-주소-확인">
+<h2 id="3-추천-캠페인에서-목표와-도착-주소-확인">3. 추천 캠페인에서 목표와 도착 주소 확인</h2>
+<p>추천 캠페인에는 노출 위치가 한국, 목표가 클릭, 입찰 전략이 자동 입찰로 표시됐습니다. 추천 평균 일일 예산은 70,000원이었습니다. 홍보하려던 사이트 주소가 도착 주소에 들어 있는지 확인한 뒤 예산 편집 화면을 열었습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="03-recommended-campaign" style="--rich-media-width:813px"><img class="devlog-rich__image" src="assets/03-recommended-campaign.png" alt="한국, 클릭, 자동 입찰, 평균 일일 70,000원이 표시된 추천 캠페인" width="813" height="970" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">추천 캠페인에는 한국, 클릭 목표, 자동 입찰, 평균 일일 예산 70,000원이 표시됐습니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="4-일일-예산-입력란에-표시된-최소-25000원">
+<h2 id="4-일일-예산-입력란에-표시된-최소-25000원">4. 일일 예산 입력란에 표시된 최소 25,000원</h2>
+<p>캠페인 세부 정보 편집 화면에서 원화 일일 예산에 10,000원을 넣자 최소 25,000원을 입력하라는 안내가 나왔습니다. 예산 유형에는 캠페인 총액 옵션도 있었습니다. 화면에서 확인한 일일 예산 하한을 7일에 적용하면 아래와 같습니다.</p>
+<figure class="devlog-rich__figure" data-media-id="04-daily-budget-minimum" style="--rich-media-width:706px"><img class="devlog-rich__image" src="assets/04-daily-budget-minimum.png" alt="일일 예산 10,000원 입력 시 최소 25,000원을 안내하는 편집 화면" width="706" height="867" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">일일 예산에 10,000원을 넣자 최소 25,000원을 입력하라는 안내가 나왔습니다.</figcaption></figure>
+<div class="rich-table-wrap"><table><thead><tr><th>항목</th><th>금액</th></tr></thead><tbody><tr><td>제 계정에 표시된 일일 예산 하한</td><td>25,000원</td></tr><tr><td>같은 일일 예산으로 7일을 잡았을 때</td><td>175,000원</td></tr></tbody></table></div>
+<p>OpenAI는 일일 예산을 <strong>광고 계정 시간대 기준 일요일부터 토요일까지의 하루 평균</strong>으로 설명합니다. 실제 일별 지출은 광고가 얼마나 노출되고 클릭되는지 등 캠페인 집행 상황에 따라 달라질 수 있습니다. Ads Manager에서 캠페인을 만들거나 예산을 편집할 때는 적용되는 하루 최대 지출액과 7일 최대 지출액이 함께 표시됩니다. 도움말은 일일 예산 하한이 시장과 통화에 따라 달라진다고 안내합니다. 위의 175,000원은 같은 일일 예산을 7일에 적용한 예시입니다. 캠페인 일정과 실제 청구액은 별도로 확인해야 합니다. <a href="https://help.openai.com/en/articles/20001413-daily-budgets" style="color:#1a73e8;text-decoration:none;" target="_blank">OpenAI 일일 예산 안내</a></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="5-첫-캠페인에서-지역과-플랫폼-설정">
+<h2 id="5-첫-캠페인에서-지역과-플랫폼-설정">5. 첫 캠페인에서 지역과 플랫폼 설정</h2>
+<p>‘첫 캠페인 설정’에서는 노출할 지역과 제외할 지역을 정할 수 있습니다. 대상 플랫폼 목록에는 Android 앱·웹, 데스크톱 웹, iOS 앱·웹이 따로 표시됩니다. 이 화면에서 검토 단계로 넘어가는 버튼은 ‘다음: 검토’입니다.</p>
+<figure class="devlog-rich__figure" data-media-id="05-campaign-targeting" style="--rich-media-width:897px"><img class="devlog-rich__image" src="assets/05-campaign-targeting.png" alt="첫 캠페인 설정의 지역 제외 항목, 플랫폼 목록, 다음 검토 버튼" width="897" height="946" loading="lazy" decoding="async"><figcaption class="devlog-rich__caption">첫 캠페인 설정에서 노출 위치와 플랫폼을 고른 뒤 ‘다음: 검토’로 이어집니다.</figcaption></figure>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="chatgpt-이용자에게-광고가-표시되는-곳">
+<h2 id="chatgpt-이용자에게-광고가-표시되는-곳">ChatGPT 이용자에게 광고가 표시되는 곳</h2>
+<p>한국에서 ChatGPT 이용자에게 광고가 나오기 시작한 시점은 OpenAI가 2026년 8월 11일 업데이트에서 공개했습니다. OpenAI의 10월 21일 안내에 따르면 이용자 쪽 광고는 Free와 Go 요금제에 표시됩니다. 광고가 표시될 때는 후원 표시가 붙고, ChatGPT 답변과 시각적으로 구분됩니다. <a href="https://openai.com/index/testing-ads-in-chatgpt/" style="color:#1a73e8;text-decoration:none;" target="_blank">한국 출시 업데이트</a> · <a href="https://openai.com/index/chatgpt-ads-expands-26-new-countries/" style="color:#1a73e8;text-decoration:none;" target="_blank">노출 요금제 안내</a></p>
+</section>
+</article>
