@@ -10,6 +10,11 @@ framework that belongs on this blog.
 
 ## Start every blog task here
 
+- By default, continue drafting, revisions, authorized publication and Git delivery
+  for one article in the same Codex session, within the approved model and scope.
+  A coordinating assistant returns the task to that session instead of publishing
+  independently. If continuity or the approved format cannot be preserved, report
+  the mismatch before using another route.
 - Use `.agents/skills/dev-log-rich-post-workspace-v2/SKILL.md` as the default
   orchestrator for new complete posts and revisions of v2 posts. This
   repository instruction selects v2 even when the user does not name a skill.

@@ -45,10 +45,14 @@
 
 ## Output compatibility
 
-- Default new posts to rendered Tistory Markdown, consistent with the latest
-  site-wide rule.
-- If the user says the post must match an older Reflections article, use plain
-  text for prose and Markdown only for the comparison table.
+- Keep the approved wording and order in Markdown. For publication, use the
+  v2 HTML fragment and Tistory HTML mode. Before saving, compare the preview
+  with a published 말씀 묵상 article. Check the intro inside `article.devlog-rich`,
+  linked 목차, section H2s, sermon subheadings, numbered blockquote and Thoughts.
+- For new 말씀 묵상 posts, use `hero_placement: representative-only`. Select the
+  approved image in the publication dialog and verify it independently. The
+  body must contain zero images, including native attachment blocks, even if
+  an older reference has a lead image. Keep older bundles as published.
 - Confirm preacher names, scripture range, and Bible translation before
   finalizing when the source material does not make them certain.
 

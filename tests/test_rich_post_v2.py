@@ -140,6 +140,31 @@ summary: "v2 게이트를 검증합니다."
             encoding="utf-8",
         )
 
+    def test_meditation_thumbnail_stays_outside_the_fragment(self):
+        article = self.post / "article.md"
+        source = article.read_text().replace("category: Log", "category: Reflections").replace(
+            'subcategory: "개발 · 디지털"', 'subcategory: "말씀 묵상"\nhero_placement: representative-only'
+        )
+        source = source.replace("{{media:lead}}", "").replace("공식 페이지에서 시작합니다.",
+            "> 42 첫 구절\n> 43 다음 구절\n\n#### 작은 제목")
+        article.write_text(source)
+        path = self.post / "media.json"
+        media = json.loads(path.read_text())
+        media["items"][0]["placement"] = "representative-only"
+        path.write_text(json.dumps(media))
+        result = validate_bundle(self.post)
+        self.assertEqual([], result["errors"])
+        preview, fragment = render_outputs(result, self.post)
+        self.assertIn("<img ", preview.split("</header>")[0])
+        self.assertNotIn("<img ", fragment)
+        self.assertNotIn("[##_Image", fragment)
+        self.assertIn("<strong>작은 제목</strong>", fragment)
+        self.assertIn("첫 구절<br><br>43", fragment)
+        article.write_text(source + "\n{{media:lead}}\n")
+        self.assertTrue(any("zero body images" in e for e in validate_bundle(self.post)["errors"]))
+        article.write_text(source.replace("category: Reflections", "category: Log"))
+        self.assertTrue(any("scoped to" in e for e in validate_bundle(self.post)["errors"]))
+
     def tearDown(self):
         self.temp.cleanup()
 

@@ -5,6 +5,13 @@
 Use `media.json` version 2. Keep one validated non-GIF lead and one standalone
 `{{media:id}}` directive for each published item except a GIF poster.
 
+For 말씀 묵상 with `hero_placement: representative-only`, register just the lead
+with `placement: representative-only` and no body directive. Use the publication
+dialog's representative-image control, bind its observed CDN source with
+`set-url`, and keep that observation private. The standalone preview shows the
+thumbnail outside the article for media QA. The publication fragment omits it.
+Archive the public asset and placement in the publication record.
+
 Each item records its stable ID, kind, origin, role, claim IDs, actor when
 applicable, source, raw and publish paths, rights, alt, caption, processing,
 redactions, dimensions, display width when needed, SHA-256, status, and final

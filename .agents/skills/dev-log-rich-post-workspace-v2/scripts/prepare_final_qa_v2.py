@@ -13,6 +13,7 @@ from rich_post_v2_common import (
     atomic_write_json,
     is_tistory_media_url,
     native_attachment_error,
+    representative_only,
     validate_bundle,
     validate_remote_media_records,
     validate_source_pass,
@@ -39,7 +40,7 @@ def main() -> int:
     for item in items if isinstance(items, list) else []:
         if not isinstance(item, dict):
             continue
-        if result["workflow"].get("publication_mode") == "codex-browser":
+        if result["workflow"].get("publication_mode") == "codex-browser" and not representative_only(result["meta"]):
             native_error = native_attachment_error(item)
             if native_error:
                 errors.append(f"{item.get('id', 'unknown')}: {native_error}")

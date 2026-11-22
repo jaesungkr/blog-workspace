@@ -42,6 +42,14 @@ images, responsive layout, themes, or title/cover contrast. If publication
 succeeded but Git delivery failed, record that split state and resume from it;
 do not publish a duplicate or claim the article is still unpublished.
 
+Before archiving a published post, locate its bundle by post ID or public URL.
+Keep the final Markdown, submitted HTML fragment, published assets and public
+publication metadata together. Record representative-only placement and asset
+hashes. Inspect the staged files for private evidence, signed URLs, editor
+data and credentials; keep those out of the public repository. For an already
+published article confirmed by the author, resume Git delivery from the
+existing release materials without reopening Tistory.
+
 Return the live article URL as the primary final link and the exact submitted
 TXT as a backup. If a completion screenshot is needed, capture the already
 observed success state without starting a new inspection pass. When the

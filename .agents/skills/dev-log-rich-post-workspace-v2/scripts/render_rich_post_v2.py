@@ -18,6 +18,7 @@ from rich_post_v2_common import (
     REPO_ROOT,
     SKILL_DIR,
     iter_fence_lines,
+    representative_only,
     text_sha256,
     validate_bundle,
 )
@@ -335,9 +336,21 @@ def build_article(
         parts.append(
             f'<h2 id="{section["id"]}">{inline(section["title"])}</h2>'
         )
+        lines = section["lines"]
+        if representative_only(result["meta"]):
+            # Match the sermon subheads and inter-verse spacing of published meditations.
+            formatted = []
+            for line, outside in iter_fence_lines(lines):
+                if outside and line.startswith("#### "):
+                    line = f"**{line[5:]}**"
+                if (outside and re.match(r"^>\s+\d+\s", line)
+                        and formatted and re.match(r"^>\s+\d+\s", formatted[-1])):
+                    formatted.append(">")
+                formatted.append(line)
+            lines = formatted
         parts.append(
             render_lines(
-                section["lines"],
+                lines,
                 items_by_id,
                 lead_id,
                 mode,
@@ -354,6 +367,7 @@ def preview_document(
     fragment: str,
     meta: dict[str, Any],
     preview_theme: str = "light",
+    thumbnail: str = "",
 ) -> str:
     title = html.escape(meta.get("title", "dev.log rich post"))
     category = html.escape(meta.get("category", "dev.log"))
@@ -389,7 +403,7 @@ def preview_document(
 <body>
   <header class="rich-preview-header">
     <p>{category}</p>
-    <h1>{title}</h1>
+    <h1>{title}</h1>{thumbnail}
   </header>
   {fragment}
 </body>
@@ -412,8 +426,13 @@ def render_outputs(
     )
     preview_fragment = build_article(result, preview_mode, output_dir, css)
     tistory_fragment = build_article(result, "fragment", output_dir, css)
+    thumbnail = ""
+    if representative_only(result["meta"]):
+        lead = result["items_by_id"][result["manifest"]["lead_id"]]
+        src = html.escape(media_src(lead, preview_mode, result["post_dir"], output_dir), quote=True)
+        thumbnail = f'<img src="{src}" alt="{html.escape(lead["alt"], quote=True)}" width="170" />'
     return (
-        preview_document(preview_fragment, result["meta"], preview_theme),
+        preview_document(preview_fragment, result["meta"], preview_theme, thumbnail),
         tistory_fragment + "\n",
     )
 

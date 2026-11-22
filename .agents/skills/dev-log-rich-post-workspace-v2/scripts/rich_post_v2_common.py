@@ -257,6 +257,12 @@ def native_attachment_alt_error(item: dict[str, Any]) -> str | None:
     return None
 
 
+def representative_only(meta: dict[str, Any]) -> bool:
+    return (meta.get("category") == "Reflections"
+            and meta.get("subcategory") == "말씀 묵상"
+            and meta.get("hero_placement") == "representative-only")
+
+
 def native_attachment_error(item: dict[str, Any]) -> str | None:
     reference = native_tistory_reference(item.get("tistory_embed"))
     if reference is None:
@@ -1924,7 +1930,11 @@ def validate_qa_data(
         native_blocks = re.findall(r"\[##_Image\|[\s\S]*?_##\]", fragment_markup)
         if any(native_tistory_reference(block) is None for block in native_blocks):
             errors.append("reviewed Tistory fragment has an invalid native image block")
-        if (not fragment_sources and not native_blocks) or not all(
+        meta, _ = split_frontmatter(article_path.read_text(encoding="utf-8"))
+        if representative_only(meta):
+            if re.search(r"<(?:img|picture)\b|\[##_Image", fragment_markup, re.I):
+                errors.append("representative-only fragment must contain zero body images")
+        elif (not fragment_sources and not native_blocks) or not all(
             is_tistory_media_url(source) for source in fragment_sources
         ):
             errors.append(
@@ -2255,6 +2265,11 @@ def validate_bundle(
     directives = DIRECTIVE_RE.findall(publication_body)
     if len(all_tokens) != len(directives):
         errors.append("every media directive must be standalone and use a valid kebab-case ID")
+    cover_only = representative_only(meta)
+    if meta.get("hero_placement") == "representative-only" and not cover_only:
+        errors.append("representative-only is scoped to Reflections/말씀 묵상")
+    if cover_only and (all_tokens or re.search(r"<(?:img|picture)\b|\[##_Image", publication_body, re.I)):
+        errors.append("representative-only articles must contain zero body images")
     directive_counts = Counter(directives)
     for item_id, count in directive_counts.items():
         if count > 1:
@@ -2509,7 +2524,7 @@ def validate_bundle(
             native_error = native_attachment_error(raw_item)
             if native_error:
                 errors.append(f"{item_id}: {native_error}")
-        elif require_publish_urls and workflow.get("publication_mode") == "codex-browser":
+        elif require_publish_urls and workflow.get("publication_mode") == "codex-browser" and not cover_only:
             errors.append(f"{item_id}: browser publication requires tistory_embed")
 
         if kind == "gif":
@@ -2549,7 +2564,10 @@ def validate_bundle(
             errors.append("lead media cannot be a GIF")
         if lead.get("role") != "lead":
             errors.append("lead media item must use role `lead`")
-        if lead_id not in directive_counts:
+        if cover_only:
+            if len(items) != 1 or lead.get("placement") != "representative-only":
+                errors.append("register only the representative-only lead in media.json")
+        elif lead_id not in directive_counts:
             errors.append("lead media must appear in article.md")
         hero_image = meta.get("hero_image")
         if hero_image != lead.get("publish_path"):
@@ -2633,6 +2651,8 @@ def validate_bundle(
         if item_id not in items_by_id:
             errors.append(f"{item_id}: article directive is not registered")
     used_ids = set(directives) | poster_ids
+    if cover_only and isinstance(lead_id, str):
+        used_ids.add(lead_id)
     for item_id in items_by_id:
         if item_id not in used_ids:
             errors.append(f"{item_id}: registered media is unused")

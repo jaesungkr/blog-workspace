@@ -58,6 +58,8 @@ def main() -> int:
         )
         if count != 1:
             raise ValueError("cannot add v2 format after planning status")
+        if args.category == "Reflections" and args.subcategory == "말씀 묵상":
+            article = article.replace("format: rich-post-v2", "format: rich-post-v2\nhero_placement: representative-only", 1)
         article_path.write_text(article, encoding="utf-8")
 
         workflow = json.loads(

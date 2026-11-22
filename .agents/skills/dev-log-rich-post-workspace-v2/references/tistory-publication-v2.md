@@ -36,6 +36,14 @@ human action blocks progress, keep the browser tab for resumption and explain
 that exact action. Never request credentials in chat. Once the author finishes
 login, resume the same publication rather than requesting approval again.
 
+Before opening the editor, compare the canonical fragment with an actual
+published article in the same category. Check wrapper, intro, TOC targets,
+heading hierarchy and body/thumbnail placement. For 말씀 묵상 apply the
+[Reflections format](../../../../standards/reflections-guide.md#output-compatibility).
+Select HTML mode and compare the preview text and order with the approved
+source, excluding navigation. If the format, editor mode or approved text
+differs, stop before saving and report the difference.
+
 ## Attach and assemble in one target editor
 
 1. Open the intended existing post or a new editor for this approved article.

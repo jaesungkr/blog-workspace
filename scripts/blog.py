@@ -266,7 +266,11 @@ def check_post(post_dir: Path) -> list[Diagnostic]:
 
     headings = HEADING_RE.findall(body)
     for hashes, heading in headings:
-        if len(hashes) != 3:
+        sermon_subheading = (
+            len(hashes) == 4 and category == "Reflections" and subcategory == "말씀 묵상"
+            and scalar(meta, "hero_placement") == "representative-only"
+        )
+        if len(hashes) != 3 and not sermon_subheading:
             add(
                 diagnostics,
                 "ERROR",
