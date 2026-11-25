@@ -5,7 +5,7 @@
   "visibility": "public",
   "snapshot": "Published prose reduced to Markdown, not the Tistory editor HTML; original inline illustration as served from Tistory.",
   "sha256": {
-    "article.md": "4a678def34399764f0bb7f84386a67e9b36b26d9c591829e2f8a0826e9daa32c",
+    "article.md": "607b77ef73e7004fadbae0cb6a9eaada4a8019ad356f5c3471bd06fac8a14c79",
     "assets/exam-fairness.png": "38a9605a6eb38dc7a795aa6c20e3d6bd2b147dc8b437b6a4fd5ff05162d86e74"
   }
 }
