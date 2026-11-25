@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "lead_id": "lead",
+  "items": [
+    {
+      "id": "lead",
+      "kind": "image",
+      "origin": "generated",
+      "role": "lead",
+      "source_url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF#quickstart",
+      "claim_ids": [
+        "C-MEM"
+      ],
+      "actor": "dev.log",
+      "raw_path": "assets/nariq-memory.png",
+      "publish_path": "assets/nariq-memory.png",
+      "width": 1200,
+      "height": 800,
+      "display_width": 916,
+      "placement": "after:opening",
+      "alt": "NariQ 3비트 언어 모델 파일은 10.12GB이며, 이미지 프로젝터를 포함해 262,144토큰을 쓸 때 개발팀이 추산한 실행 메모리는 약 30GB입니다.",
+      "caption": "개발팀 모델 카드에 공개된 파일 용량과 전체 문맥 실행 조건을 같은 눈금으로 표시했습니다.",
+      "rights": "Original explanatory graphic for dev.log based on attributed public numerical data.",
+      "processing": [
+        "Editable vector layout, rendered in Korean, 1200 by 800 PNG."
+      ],
+      "redactions": [],
+      "sha256": "333f21d3fb8148b732cd99c17fbe2d904850582817b44c8328aadfdafc2cb5c2",
+      "status": "validated"
+    }
+  ]
+}

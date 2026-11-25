@@ -1,0 +1,33 @@
+{
+  "url": "https://dop3n.tistory.com/entry/NariQ%EB%9E%80-Qwen38-27B%EB%A5%BC-10GB%EB%A1%9C-%EC%A4%84%EC%9D%B8-%EB%B0%A9%EB%B2%95%EA%B3%BC-%EC%8B%A4%EC%A0%9C-%EC%8B%A4%ED%96%89-%EC%A1%B0%EA%B1%B4",
+  "visibility": "public",
+  "date_kst": "2026-11-25",
+  "snapshot": "Published article source, article-scoped responsive correction, original body illustration, and the official model-card screenshot used only as cover.",
+  "verification": {
+    "editor_exact_copy": true,
+    "preview_mobile_document_width_matches_viewport": true,
+    "public_tables": 2,
+    "public_toc_links": 6,
+    "public_lead_image_pixels": [
+      1200,
+      800
+    ]
+  },
+  "sha256": {
+    "article.md": "41f29593463d80b3697e1df14c3be0815500ddd55583bf116e45f836b8534f3e",
+    "assets/post.css": "3ff85c1bb4a45fb5d573917c6e252b672d388c858d3344accf225bab64a24c06",
+    "assets/nariq-memory.png": "333f21d3fb8148b732cd99c17fbe2d904850582817b44c8328aadfdafc2cb5c2",
+    "assets/nariq-hugging-face-cover.jpg": "ff3d00fb12b70009c4c2081637bbd7cc226bbff2a2d57703ccef673713fa72ad"
+  },
+  "published_at_kst": "2026-11-25 20:51",
+  "cover": {
+    "path": "assets/nariq-hugging-face-cover.jpg",
+    "source_url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+    "dimensions": [
+      690,
+      610
+    ],
+    "placement": "representative image only",
+    "verified_on_published_page": true
+  }
+}
