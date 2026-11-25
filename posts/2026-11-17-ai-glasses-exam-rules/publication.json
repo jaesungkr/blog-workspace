@@ -1,11 +1,11 @@
 {
   "url": "https://dop3n.tistory.com/181",
   "published_at": "2026-11-17T22:08:30+09:00",
-  "revised_date_kst": "2026-11-23",
+  "revised_date_kst": "2026-11-25",
   "visibility": "public",
   "snapshot": "Published prose reduced to Markdown, not the Tistory editor HTML; original inline illustration as served from Tistory.",
   "sha256": {
-    "article.md": "296373e7a6d1d6ee29a9405c48db093d8b2f6a00991093541c3fe2ed232e8cec",
+    "article.md": "4a678def34399764f0bb7f84386a67e9b36b26d9c591829e2f8a0826e9daa32c",
     "assets/exam-fairness.png": "38a9605a6eb38dc7a795aa6c20e3d6bd2b147dc8b437b6a4fd5ff05162d86e74"
   }
 }
