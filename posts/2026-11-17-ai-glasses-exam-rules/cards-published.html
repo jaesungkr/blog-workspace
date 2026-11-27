@@ -75,6 +75,21 @@
   .devlog-rich .exam181-card .exam181-sources { padding: 10px 15px; gap: 4px 12px; }
 }
 
+
+/* Keep only the native body photo within the reading column. */
+.devlog-rich figure.imageblock:has(img[alt="답안지 위에 놓인 스마트안경과 연필"]) {
+  width: min(100%, 640px) !important;
+  max-width: 640px !important;
+  margin-inline: auto !important;
+  transform: none !important;
+}
+.devlog-rich figure.imageblock:has(img[alt="답안지 위에 놓인 스마트안경과 연필"]) > span,
+.devlog-rich figure.imageblock:has(img[alt="답안지 위에 놓인 스마트안경과 연필"]) img {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
 </style>
 <section class="devlog-rich__section is-intro">
 <p>안녕하세요. dev.log입니다.</p>
