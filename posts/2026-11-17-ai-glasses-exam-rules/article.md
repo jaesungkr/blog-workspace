@@ -24,7 +24,7 @@ url: https://dop3n.tistory.com/181
 
 서울여대 논술고사에서는 부득이하게 가져온 전자기기의 전원을 완전히 끄고 제출하도록 했습니다. 단추가 많은 옷과 후드티는 착용을 자제해 달라고 권고했습니다. 다른 대학의 논술·면접은 지원 대학 입학처에서, 공무원 채용시험과 다른 어학시험은 해당 회차 공고에서 반입 금지 물품과 제출 시각을 확인합니다. [서울여대 논술고사 공지](https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&wr_id=29299)
 
-![시험 답안지와 안경, 공정성을 상징하는 저울을 배치한 일러스트](assets/exam-fairness.png)
+![답안지 위에 놓인 스마트안경과 연필](assets/exam-smart-glasses.png)
 
 ## 고교 기말고사에서 확인하는 물품과 복장
 
@@ -60,13 +60,15 @@ url: https://dop3n.tistory.com/181
 
 ## 발표·변경 이력
 
-- **2026.11.26 · 토익 정기시험** 11월 29일 제584회부터 일반 안경을 검사해 안경테에 스티커를 붙이고, 책상 위 물품을 네 종류로 제한합니다. [한국토익위원회 공지](https://exam.toeic.co.kr/news/noticeView.php?noticeCode=10110)
-- **11.25 · 인천 임용·수능 시험지** 인천교육청은 11월 28일 중등교사 임용 1차 입실 마감을 **08:20에서 08:10으로** 앞당겼습니다. 교육부는 수능 시험지 보관 기간을 1년에서 5년으로 늘리는 규정 개정을 추진한다고 밝혔습니다. [인천 변경 공고](https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?bbsAllTy=exam&bbsAllView=Y&mi=12237&nttSn=3389550) · [교육부 발표](https://www.korea.kr/news/policyNewsView.do?newsId=148976496)
-- **11.24 · 고교 기말고사·경비지도사** 교육부는 전국 고교 2학기 기말고사부터 전자기기 수거와 매 교시 안경·복장 점검을 우선 적용한다고 밝혔습니다. 고용노동부는 11월 21일 대책을 처음 적용한 경비지도사 시험에서 전자기기 관련 위반 6건을 적발했다고 발표했습니다. [교육부](https://www.korea.kr/news/policyNewsView.do?newsId=148976387) · [고용노동부](https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=20295)
-- **11.23 · 수능 신고 포상금·대구 기말고사** 국민권익위는 포상금을 **건당 1억~5억 원**으로 확대한다고 밝혔습니다. 신고 내용이 실제 부정행위로 확인돼야 지급 대상이 됩니다. 대구시교육청은 지역 고교 2학기 기말고사부터 전자기기를 걷고 매 교시 안경과 복장을 점검하도록 안내했습니다. [국민권익위](https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790415) · [대구시교육청](https://www.dge.go.kr/pr/na/ntt/selectNttInfo.do?mi=9870&nttSn=2224703)
-- **11.20 · 수능·대학별고사** 교육부는 5교시까지 수능 전자기기 관련 적발 111건을 집계했습니다. 범정부 대응팀은 이날 출범했고, 교육부와 대교협은 논술·면접 등 대학별고사의 긴급 대응체계를 마련했습니다. [수능 집계](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107732&lev=0&m=020402&s=moe) · [범정부 대응팀](https://www.opm.go.kr/opm/news/press-release.do?articleNo=164260&mode=view) · [대학별고사 안내](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107745&lev=0&m=020402&opType=N&page=1&s=moe)
-- **11.20 · 인천 중등교사 임용 1차** 11월 28일 시험의 입실 마감을 당초 08:20으로 공고하고 매 교시 시작 전 스마트안경 소지·착용 여부를 확인하도록 했습니다. [인천교육청 최초 공고 PDF](https://www.ice.go.kr/upload/ice/na/bbs_1777/2026/11/d805080018564e09a3351943a3bb70c3.pdf)
-- **11.19 · 수능 신고·국가기술자격** 국민권익위는 11월 20일부터 2027년 1월 19일까지 집중신고를 받는다고 발표했습니다. 당시에는 신고로 행정처분이 이뤄지면 건당 최대 1억 원을 지급하는 방안을 추진했습니다. 고용노동부는 국가기술자격시험 부정행위자의 응시 제한을 3년에서 10년으로 늘리는 방안을 발표했습니다. [당시 포상금 안내](https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789970) · [국가기술자격 발표](https://www.korea.kr/news/policyNewsView.do?newsId=148976081)
-- **11.17 · 수능 현장 점검** 정부는 11월 19일 수능에서 안경을 확인하고 옷 단추에 스티커를 붙이도록 했습니다. 부정행위자의 응시 제한을 1년에서 10년으로 늘리는 방안은 국회와 협의하겠다고 밝혔습니다. [정부 담화](https://www.korea.kr/news/policyNewsView.do?newsId=148975916)
-- **11.16 · 국가자격시험 조사** 고용노동부와 한국산업인력공단은 세무사 시험 부정행위 의심 사례를 계기로 공단이 올해 시행한 국가자격시험을 조사하고 연내 종합대책을 마련하겠다고 발표했습니다. [고용노동부·공단 발표](https://www.korea.kr/news/policyNewsView.do?newsId=148975783)
-- **11.06 · 수능 스마트안경 제재** 교육부는 스마트안경을 제출하지 않고 소지하면 시험이 무효가 된다고 안내했습니다. 시험 중 사용한 경우에는 착용만 했더라도 다음 해 응시자격까지 정지됩니다. [교육부 제재 안내](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=340&boardSeq=107580&lev=0&m=031101&opType=N&page=1&s=moe)
+| 날짜 | 발표·변경 내용 |
+| --- | --- |
+| 2026.11.26 | **토익 정기시험** 11월 29일 제584회부터 일반 안경을 검사해 안경테에 스티커를 붙이고, 책상 위 물품을 네 종류로 제한합니다. [한국토익위원회 공지](https://exam.toeic.co.kr/news/noticeView.php?noticeCode=10110) |
+| 2026.11.25 | **인천 임용·수능 시험지** 인천교육청은 11월 28일 중등교사 임용 1차 입실 마감을 **08:20에서 08:10으로** 앞당겼습니다. 교육부는 수능 시험지 보관 기간을 1년에서 5년으로 늘리는 규정 개정을 추진한다고 밝혔습니다. [인천 변경 공고](https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?bbsAllTy=exam&bbsAllView=Y&mi=12237&nttSn=3389550) · [교육부 발표](https://www.korea.kr/news/policyNewsView.do?newsId=148976496) |
+| 2026.11.24 | **고교 기말고사·경비지도사** 교육부는 전국 고교 2학기 기말고사부터 전자기기 수거와 매 교시 안경·복장 점검을 우선 적용한다고 밝혔습니다. 고용노동부는 11월 21일 대책을 처음 적용한 경비지도사 시험에서 전자기기 관련 위반 6건을 적발했다고 발표했습니다. [교육부](https://www.korea.kr/news/policyNewsView.do?newsId=148976387) · [고용노동부](https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=20295) |
+| 2026.11.23 | **수능 신고 포상금·대구 기말고사** 국민권익위는 포상금을 **건당 1억~5억 원**으로 확대한다고 밝혔습니다. 신고 내용이 실제 부정행위로 확인돼야 지급 대상이 됩니다. 대구시교육청은 지역 고교 2학기 기말고사부터 전자기기를 걷고 매 교시 안경과 복장을 점검하도록 안내했습니다. [국민권익위](https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790415) · [대구시교육청](https://www.dge.go.kr/pr/na/ntt/selectNttInfo.do?mi=9870&nttSn=2224703) |
+| 2026.11.20 | **수능·대학별고사** 교육부는 5교시까지 수능 전자기기 관련 적발 111건을 집계했습니다. 범정부 대응팀은 이날 출범했고, 교육부와 대교협은 논술·면접 등 대학별고사의 긴급 대응체계를 마련했습니다. [수능 집계](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107732&lev=0&m=020402&s=moe) · [범정부 대응팀](https://www.opm.go.kr/opm/news/press-release.do?articleNo=164260&mode=view) · [대학별고사 안내](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107745&lev=0&m=020402&opType=N&page=1&s=moe) |
+| 2026.11.20 | **인천 중등교사 임용 1차** 11월 28일 시험의 입실 마감을 당초 08:20으로 공고하고 매 교시 시작 전 스마트안경 소지·착용 여부를 확인하도록 했습니다. [인천교육청 최초 공고 PDF](https://www.ice.go.kr/upload/ice/na/bbs_1777/2026/11/d805080018564e09a3351943a3bb70c3.pdf) |
+| 2026.11.19 | **수능 신고·국가기술자격** 국민권익위는 11월 20일부터 2027년 1월 19일까지 집중신고를 받는다고 발표했습니다. 당시에는 신고로 행정처분이 이뤄지면 건당 최대 1억 원을 지급하는 방안을 추진했습니다. 고용노동부는 국가기술자격시험 부정행위자의 응시 제한을 3년에서 10년으로 늘리는 방안을 발표했습니다. [당시 포상금 안내](https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789970) · [국가기술자격 발표](https://www.korea.kr/news/policyNewsView.do?newsId=148976081) |
+| 2026.11.17 | **수능 현장 점검** 정부는 11월 19일 수능에서 안경을 확인하고 옷 단추에 스티커를 붙이도록 했습니다. 부정행위자의 응시 제한을 1년에서 10년으로 늘리는 방안은 국회와 협의하겠다고 밝혔습니다. [정부 담화](https://www.korea.kr/news/policyNewsView.do?newsId=148975916) |
+| 2026.11.16 | **국가자격시험 조사** 고용노동부와 한국산업인력공단은 세무사 시험 부정행위 의심 사례를 계기로 공단이 올해 시행한 국가자격시험을 조사하고 연내 종합대책을 마련하겠다고 발표했습니다. [고용노동부·공단 발표](https://www.korea.kr/news/policyNewsView.do?newsId=148975783) |
+| 2026.11.06 | **수능 스마트안경 제재** 교육부는 스마트안경을 제출하지 않고 소지하면 시험이 무효가 된다고 안내했습니다. 시험 중 사용한 경우에는 착용만 했더라도 다음 해 응시자격까지 정지됩니다. [교육부 제재 안내](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=340&boardSeq=107580&lev=0&m=031101&opType=N&page=1&s=moe) |
