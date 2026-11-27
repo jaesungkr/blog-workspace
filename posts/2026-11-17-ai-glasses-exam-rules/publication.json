@@ -3,9 +3,9 @@
   "published_at": "2026-11-17T22:08:30+09:00",
   "revised_date_kst": "2026-11-27",
   "visibility": "public",
-  "snapshot": "Published prose and timeline preserved in Markdown. The native Tistory body image and representative thumbnail both use the archived concept photo.",
+  "snapshot": "Published Markdown snapshot with exam-specific lists and jump links. The history table, native Tistory body image and representative thumbnail are unchanged.",
   "sha256": {
-    "article.md": "02539d5dce92aff90006029f2d4e798f7d97d91e984fb07a06bc810b70c35c72",
+    "article.md": "8f8ec4774fde5cb3eea6fd967b261d061ae2d425a513c5f15b85ed7dcbe82d7e",
     "assets/exam-smart-glasses.png": "5661756921681ad3677b7dfea7f34e865b7ee2a77fef0799de1fee4da9b1d130"
   },
   "representative_image": "assets/exam-smart-glasses.png"
