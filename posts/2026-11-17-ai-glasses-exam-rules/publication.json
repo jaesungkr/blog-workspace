@@ -3,12 +3,22 @@
   "published_at": "2026-11-17T22:08:30+09:00",
   "revised_date_kst": "2026-11-27",
   "visibility": "public",
-  "snapshot": "Published article content, including the revised introduction, in Markdown; the supplemental HTML preserves the six-card layout, hELLO heading override and 640 px maximum on the native body photo. Preserve the existing native Tistory photo token, representative thumbnail and timeline when republishing.",
+  "snapshot": "Published article content in Markdown, including the revised introduction and 11-row timeline; the supplemental HTML preserves the six-card layout, hELLO heading override and 640 px maximum on the native body photo, and includes the approved timeline. Preserve the existing native Tistory photo token and representative thumbnail when republishing.",
   "sha256": {
-    "article.md": "194a9ea92ff1008f7b727480d9146a6512444d4dfecf129e79e652a43e812fab",
+    "article.md": "06a4656692d876a1317db4ddd0ef893f3f1b7f34cc5ade7e930133d03a966ced",
     "assets/exam-smart-glasses.png": "5661756921681ad3677b7dfea7f34e865b7ee2a77fef0799de1fee4da9b1d130",
-    "cards-published.html": "4b85cd88e670836d811c8f6368c9cff30134e5cb766934234b222ea9d648158c"
+    "cards-published.html": "ad3dc2bf0d9c823ec3e8eab10ac1ee931807c9bab4a032af8c590c78130c6646"
   },
   "representative_image": "assets/exam-smart-glasses.png",
-  "layout_source": "cards-published.html"
+  "layout_source": "cards-published.html",
+  "latest_revision_verification": {
+    "confirmed_by": "Dot public-page readback",
+    "date_kst": "2026-11-27",
+    "history_rows": 11,
+    "new_row_occurrences": 1,
+    "new_row_source_links": 2,
+    "published_at_display_kst": "2026-11-17 22:08",
+    "body_photo_width_px": 640,
+    "representative_image_preserved": true
+  }
 }
