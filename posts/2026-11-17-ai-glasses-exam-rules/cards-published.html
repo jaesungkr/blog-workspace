@@ -1,0 +1,124 @@
+<style>
+.devlog-rich .exam181-card {
+  --card-paper: #fff;
+  --card-band: #edf4f1;
+  --card-edge: #b5c9c1;
+  --card-ink: #182d26;
+  --card-soft: #495f56;
+  --card-mark: #205644;
+  --card-rule: #dce5e0;
+  --card-note: #f5f7f6;
+  width: min(100%, var(--rich-reading, 760px));
+  margin: 24px auto 32px;
+  border: 1px solid var(--card-edge);
+  border-radius: 12px;
+  background: var(--card-paper);
+  color: var(--card-ink);
+  font-family: "Noto Sans CJK KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+.dark .devlog-rich .exam181-card {
+  --card-paper: #212724;
+  --card-band: #293c34;
+  --card-edge: #546c60;
+  --card-ink: #edf4ef;
+  --card-soft: #c0d2c7;
+  --card-mark: #a8ddbb;
+  --card-rule: #46574e;
+  --card-note: #2b322e;
+}
+.devlog-rich .exam181-card .exam181-head {
+  display: flex; align-items: center; gap: 14px;
+  padding: 18px 24px; border-radius: 11px 11px 0 0;
+  border-bottom: 1px solid var(--card-edge); background: var(--card-band);
+}
+.devlog-rich .exam181-head .exam181-no {
+  flex: 0 0 auto; display: grid; place-items: center; min-width: 34px; height: 34px;
+  border: 1px solid var(--card-mark); border-radius: 7px;
+  font: 700 15px/1 ui-monospace, monospace; color: var(--card-mark);
+}
+.devlog-rich .exam181-card .exam181-head :is(h2,h3) {
+  margin: 0; padding: 0; color: var(--card-ink);
+  font: 750 27px/1.35 "Noto Sans CJK KR", sans-serif !important; letter-spacing: -.045em;
+  word-break: keep-all; scroll-margin-top: 40px;
+}
+.devlog-rich .exam181-card .exam181-body { padding: 17px 25px 18px; }
+.devlog-rich .exam181-card .exam181-group + .exam181-group { margin-top: 15px; }
+.devlog-rich .exam181-group h4 {
+  margin: 0 0 5px; color: var(--card-mark); font: 700 14px/1.5 "Noto Sans CJK KR", sans-serif;
+}
+.devlog-rich .exam181-card .exam181-body :is(p,li) {
+  margin: 0; color: var(--card-ink); font-size: 16px; line-height: 1.65;
+  letter-spacing: -.025em; word-break: keep-all; overflow-wrap: anywhere;
+}
+.devlog-rich .exam181-body strong { color: var(--card-ink); font-weight: 700; }
+.devlog-rich .exam181-body ul { margin: 4px 0 0; padding-left: 21px; list-style: disc outside; }
+.devlog-rich .exam181-body li { display: list-item; }
+.devlog-rich .exam181-body li::marker { color: var(--card-mark); font-size: .8em; }
+.devlog-rich .exam181-card .exam181-notice {
+  padding: 10px 14px; border-inline-start: 3px solid var(--card-edge); background: var(--card-note);
+}
+.devlog-rich .exam181-card .exam181-sources {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 14px; margin: 0;
+  padding: 10px 25px 12px; border-top: 1px solid var(--card-rule); color: var(--card-soft);
+  font: 500 13px/1.6 "Noto Sans CJK KR",sans-serif;
+}
+.devlog-rich .exam181-sources a { color: var(--card-mark); text-decoration: underline; text-underline-offset: 3px; }
+.devlog-rich .exam181-sources strong { color: var(--card-soft); }
+@media(max-width:600px){
+  .devlog-rich .exam181-card { margin: 18px auto 24px; }
+  .devlog-rich .exam181-card .exam181-head { padding: 15px; gap: 10px; }
+  .devlog-rich .exam181-card .exam181-head :is(h2,h3) { font-size: 22px !important; }
+  .devlog-rich .exam181-card .exam181-body { padding: 15px; }
+  .devlog-rich .exam181-card .exam181-body :is(li,p) { font-size: 15px; }
+  .devlog-rich .exam181-card .exam181-sources { padding: 10px 15px; gap: 4px 12px; }
+}
+
+</style>
+<section class="devlog-rich__section is-intro">
+<p>안녕하세요. dev.log입니다.</p>
+<p><a href="#인천-중등교사-임용-1차" style="color:#1a73e8;text-decoration:none;">11월 28일 인천 임용</a>은 <strong>오전 8시 10분까지 입실</strong>합니다. <a href="#토익-정기시험" style="color:#1a73e8;text-decoration:none;">11월 29일 토익 정기시험</a>에는 <strong>샤프 대신 일반 연필</strong>을 준비합니다.</p>
+<p><a href="#서울여대-논술고사" style="color:#1a73e8;text-decoration:none;">서울여대 논술</a> · <a href="#한국산업인력공단-국가자격시험" style="color:#1a73e8;text-decoration:none;">국가자격시험</a> · <a href="#고교-2학기-기말고사" style="color:#1a73e8;text-decoration:none;">고교 기말고사</a> · <a href="#수능-안경-검사와-스마트안경-제재" style="color:#1a73e8;text-decoration:none;">수능</a></p>
+<p>2026년 11월 27일 한국시간 기준입니다.</p>
+</section>
+<section class="devlog-rich__section is-toc">
+<nav class="devlog-rich__toc" aria-label="글 목차"><p class="devlog-rich__toc-title">목차</p><ol>
+<li><a href="#시험별로-챙길-물건">시험별로 챙길 물건</a></li>
+<li><a href="#수능-안경-검사와-스마트안경-제재">수능 안경 검사와 스마트안경 제재</a></li>
+<li><a href="#수능-111건과-경비지도사-6건의-집계-기준">수능 111건과 경비지도사 6건의 집계 기준</a></li>
+<li><a href="#추진-중인-응시-제한과-시험지-보관-기간">추진 중인 응시 제한과 시험지 보관 기간</a></li>
+<li><a href="#수능-부정행위-신고-기간과-포상금">수능 부정행위 신고 기간과 포상금</a></li>
+<li><a href="#발표변경-이력">발표·변경 이력</a></li>
+</ol></nav></section>
+<section class="devlog-rich__section" aria-labelledby="시험별로-챙길-물건">
+<h2 id="시험별로-챙길-물건">시험별로 챙길 물건</h2>
+<div class="exam181-card" role="group" aria-labelledby="인천-중등교사-임용-1차"><div class="exam181-head"><span class="exam181-no" aria-hidden="true">01</span><h3 id="인천-중등교사-임용-1차">인천 중등교사 임용 1차</h3></div><div class="exam181-body"><div class="exam181-group"><h4>입실과 기기 제출</h4><ul><li><strong>입실 마감</strong>은 11월 28일 <strong>오전 8시 10분</strong>입니다. 스마트안경 등을 확인하기 위해 마감이 10분 앞당겨졌습니다. 인천의 국립·공립·사립 응시자 모두에게 적용됩니다.</li><li><strong>가져온 전자기기</strong>는 전원을 끄고 1교시 시작 전에 감독관에게 제출합니다. 매 교시 시작 전에는 스마트안경을 가지고 있거나 착용했는지 확인합니다.</li></ul></div></div><div class="exam181-sources"><strong>출처</strong><a href="https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?bbsAllTy=exam&amp;bbsAllView=Y&amp;mi=12237&amp;nttSn=3389550" target="_blank" rel="noopener">인천교육청 11월 25일 변경 공고</a><a href="https://www.ice.go.kr/upload/ice/na/bbs_1777/2026/11/d805080018564e09a3351943a3bb70c3.pdf" target="_blank" rel="noopener">11월 20일 응시자 유의사항 PDF</a></div></div>
+<div class="exam181-card" role="group" aria-labelledby="토익-정기시험"><div class="exam181-head"><span class="exam181-no" aria-hidden="true">02</span><h3 id="토익-정기시험">토익 정기시험</h3></div><div class="exam181-body"><div class="exam181-group"><h4>책상 위 준비물</h4><p>11월 29일 제584회부터 책상 위에 둘 수 있는 물건은 다음 네 종류입니다.</p><ul><li><strong>아날로그 손목시계</strong>는 <strong>손목에서 풀어 책상에 둡니다.</strong></li><li><strong>신분증</strong>은 한국토익위원회가 인정하는 것으로 준비합니다.</li><li><strong>일반 연필</strong>은 최대 2자루입니다. 개인 샤프는 가져갈 수 없습니다.</li><li><strong>지우개</strong>는 커버를 벗긴 것 1개만 둘 수 있습니다.</li></ul></div><div class="exam181-group"><h4>안경 검사</h4><p>일반 안경은 감독관이 검사한 뒤 안경테에 보안 스티커를 붙입니다.</p></div><div class="exam181-group exam181-notice"><h4>제재와 적용 범위</h4><p>입실 통제와 기기 제출 안내 후에도 AI 안경 등 AI 스마트기기를 소지하거나 사용한 사실이 확인되면 퇴실 처리하며, 해당 성적은 무효가 되고 <strong>4년간 응시가 제한됩니다.</strong> 토익스피킹·라이팅은 각 시험의 수험자 안내를 확인해야 합니다.</p></div></div><div class="exam181-sources"><strong>출처</strong><a href="https://exam.toeic.co.kr/news/noticeView.php?noticeCode=10110" target="_blank" rel="noopener">한국토익위원회 공지</a><a href="https://exam.toeic.co.kr/receipt/examSchList.php" target="_blank" rel="noopener">정기시험 일정</a><a href="https://exam.toeic.co.kr/news/noticeView.php?noticeCode=10050" target="_blank" rel="noopener">한국토익위원회 시험관리규정 제14조</a></div></div>
+<div class="exam181-card" role="group" aria-labelledby="서울여대-논술고사"><div class="exam181-head"><span class="exam181-no" aria-hidden="true">03</span><h3 id="서울여대-논술고사">서울여대 논술고사</h3></div><div class="exam181-body"><div class="exam181-group"><h4>준비물</h4><p>서울여대의 2027학년도 논술고사 안내입니다.</p><ul><li><strong>시계</strong>는 아날로그 손목시계만 허용하며, <strong>시험 내내 손목에 찹니다.</strong></li><li><strong>답안 작성과 수정</strong>에는 학교에서 나눠 주는 펜과 수정테이프를 씁니다.</li></ul></div><div class="exam181-group"><h4>전자기기와 복장</h4><ul><li><strong>전자기기</strong>를 부득이하게 가져왔다면 전원을 완전히 끄고 감독관의 안내에 따라 제출합니다.</li><li><strong>단추가 많은 옷과 후드티</strong>는 착용을 자제하도록 권고했습니다.</li></ul></div></div><div class="exam181-sources"><strong>출처</strong><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=29299" target="_blank" rel="noopener">서울여대 논술고사 공지</a></div></div>
+<div class="exam181-card" role="group" aria-labelledby="한국산업인력공단-국가자격시험"><div class="exam181-head"><span class="exam181-no" aria-hidden="true">04</span><h3 id="한국산업인력공단-국가자격시험">한국산업인력공단 국가자격시험</h3></div><div class="exam181-body"><div class="exam181-group"><h4>준비물과 기기 제출</h4><ul><li><strong>준비물</strong>은 응시할 자격 종목과 회차의 공고에서 확인합니다.</li><li><strong>휴대전화 등 전자기기</strong>는 시험 전에 전원을 완전히 끄고 감독관의 확인을 받아 제출합니다.</li></ul></div></div><div class="exam181-sources"><strong>출처</strong><a href="https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=20295" target="_blank" rel="noopener">고용노동부·공단 안내</a></div></div>
+<p>다른 대학의 논술·면접은 지원 대학 입학처에서, 공무원 채용시험과 다른 어학시험은 해당 회차 공고에서 반입 금지 물품과 제출 시각을 확인합니다.</p>
+<!-- KEEP_EXISTING_181_NATIVE_PHOTO_BLOCK -->
+<div class="exam181-card" role="group" aria-labelledby="고교-2학기-기말고사"><div class="exam181-head"><span class="exam181-no" aria-hidden="true">05</span><h3 id="고교-2학기-기말고사">고교 2학기 기말고사</h3></div><div class="exam181-body"><div class="exam181-group"><h4>준비물과 현장 점검</h4><p>교육부는 2026학년도 2학기 기말고사부터 전국 고등학교에 다음 대책을 우선 적용한다고 밝혔습니다. 중학교는 이 방안을 참고해 감독을 강화합니다.</p><ul><li><strong>필기구</strong>는 학교에서 나눠 줍니다. 개인 필기구 중에는 흑색 연필만 휴대할 수 있습니다.</li><li><strong>전자기기</strong>는 시험 전에 학교에서 걷습니다. 입실 전이나 시험 직후에는 금속탐지기로 전자기기 소지 여부를 확인할 계획입니다.</li><li><strong>안경과 복장</strong>은 매 교시 감독관이 확인합니다. 단추 없는 옷을 권장하며, 단추가 있으면 스티커를 제공합니다.</li></ul></div><div class="exam181-group exam181-notice"><h4>이미 시험을 시작한 고3</h4><p><strong>이미 기말고사를 시작한 일부 고3</strong>은 학교가 필기구를 일괄 지급하기 어려우면 개인 필기구를 쓸 수 있습니다. 이 경우 매 교시 필기구를 점검합니다. 금속탐지기는 부정행위가 의심되거나 학생이 시험실에 다시 들어올 때 등에 쓰도록 했습니다.</p></div><div class="exam181-group"><h4>적발 시 조치</h4><p>교육부는 스마트기기 소지·사용이 적발되면 당일 전 과목을 0점 처리하는 방안도 발표했습니다. 고등학교에는 최대 퇴학까지 징계할 수 있도록 권고할 계획입니다.</p></div><div class="exam181-group"><h4>대구 지역 안내</h4><p>대구시교육청은 11월 23일 지역 고교에 시험용 필기구와 금속탐지기를 지원한다고 밝혔습니다. 대구에서는 부정행위가 의심되는 경우 등에 한해 금속탐지기를 몸에 닿지 않게 사용하도록 안내했습니다.</p></div></div><div class="exam181-sources"><strong>출처</strong><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148976387" target="_blank" rel="noopener">교육부 고3 적용 안내와 징계 방안</a><a href="https://www.dge.go.kr/pr/na/ntt/selectNttInfo.do?mi=9870&amp;nttSn=2224703" target="_blank" rel="noopener">대구시교육청 보도자료</a></div></div>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="수능-안경-검사와-스마트안경-제재">
+<div class="exam181-card" role="group" aria-labelledby="수능-안경-검사와-스마트안경-제재"><div class="exam181-head"><span class="exam181-no" aria-hidden="true">06</span><h2 id="수능-안경-검사와-스마트안경-제재">수능 안경 검사와 스마트안경 제재</h2></div><div class="exam181-body"><div class="exam181-group"><h4>현장 확인</h4><p>11월 19일 치른 2027학년도 수능에서는 일반 안경을 쓸 수 있었습니다. 단추형 카메라에 대비해 옷 단추에는 스티커를 붙이도록 했습니다. 단추 없는 옷을 입고 장신구 착용을 줄이는 것은 권고 사항이었습니다.</p><ul><li><strong>1교시 전</strong>에는 안경을 내려놓고 검사받도록 했습니다. 반입이 금지된 스마트안경을 가져왔다면 이때 감독관에게 제출해야 했습니다.</li><li><strong>매 교시</strong> 감독관이 수험생이 쓰고 있는 안경을 확인하도록 했습니다.</li><li><strong>3교시 전</strong>에는 수험생의 휴대물품 전체를 다시 점검하도록 했습니다.</li></ul></div><div class="exam181-group exam181-notice"><h4>스마트안경 제재</h4><p>교육부가 안내한 스마트안경 제재는 적발 상황에 따라 달랐습니다.</p><ul><li><strong>제출하지 않은 스마트안경</strong>을 소지하다 적발되면 해당 시험은 무효입니다.</li><li><strong>시험 중 사용</strong>하면 해당 시험이 무효가 되고 다음 해 수능 응시자격도 정지됩니다. 착용만 한 경우도 사용에 포함됩니다.</li><li><strong>감독관의 확인 요구에 불응</strong>하면 심의를 거쳐 시험 무효와 다음 해 응시자격 정지 여부를 결정합니다.</li></ul></div></div><div class="exam181-sources"><strong>출처</strong><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148975916" target="_blank" rel="noopener">정부 수능 담화</a><a href="https://www.opm.go.kr/opm/news/press-release.do?articleNo=164227&amp;mode=view" target="_blank" rel="noopener">관계부처 합동 안내</a><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=340&amp;boardSeq=107580&amp;lev=0&amp;m=031101&amp;opType=N&amp;page=1&amp;s=moe" target="_blank" rel="noopener">교육부 스마트안경 제재 안내</a></div></div>
+</section>
+<section class="devlog-rich__section" aria-labelledby="수능-111건과-경비지도사-6건의-집계-기준">
+<h2 id="수능-111건과-경비지도사-6건의-집계-기준">수능 111건과 경비지도사 6건의 집계 기준</h2>
+<p>교육부가 11월 20일 발표한 <strong>수능 111건</strong>은 5교시까지 보고된 전자기기 관련 적발 건수입니다. 이 가운데 시험 중 스마트기기를 실제 사용한 사례는 <strong>5건</strong>이고, 그중 스마트안경 사용은 <strong>1건</strong>입니다. 전날 발표한 98명은 4교시까지의 잠정 집계였습니다. 정부는 11월 20일 범정부 대응팀을 꾸렸습니다. 시험장에서 남긴 기록을 분석해 부정행위가 의심되는 사례는 수사를 의뢰할 방침입니다. <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=107732&amp;lev=0&amp;m=020402&amp;s=moe" style="color:#1a73e8;text-decoration:none;" target="_blank">교육부 적발 현황</a> · <a href="https://www.yna.co.kr/view/AKR20261120075451530?section=society%2Fall" style="color:#1a73e8;text-decoration:none;" target="_blank">연합뉴스 집계 내역</a> · <a href="https://www.opm.go.kr/opm/news/press-release.do?articleNo=164260&amp;mode=view" style="color:#1a73e8;text-decoration:none;" target="_blank">국무조정실 발표</a></p>
+<p>한국산업인력공단은 11월 21일 경비지도사 시험에 새 대책을 처음 적용했습니다. 응시자 11,554명 가운데 적발한 <strong>전자기기 관련 위반은 6건</strong>입니다. 태블릿이나 스마트워치를 소지하거나 휴대전화 전원을 끄지 않은 경우가 포함됐습니다. <a href="https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=20295" style="color:#1a73e8;text-decoration:none;" target="_blank">고용노동부 11월 24일 발표</a></p>
+<p>공단은 세무사 시험에서 제기된 의혹을 계기로 2026년에 공단이 시행한 국가자격시험 전 종목을 조사하고 있습니다. 고용노동부와 공단은 해당 세무사 시험의 부정행위자에게 시험 무효, 합격 취소, 5년간 응시 제한과 고발 등의 조치를 추진한다고 밝혔습니다. <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148975783" style="color:#1a73e8;text-decoration:none;" target="_blank">세무사 시험 관련 발표</a></p>
+</section>
+<section class="devlog-rich__section is-alt" aria-labelledby="추진-중인-응시-제한과-시험지-보관-기간">
+<h2 id="추진-중인-응시-제한과-시험지-보관-기간">추진 중인 응시 제한과 시험지 보관 기간</h2>
+<ul><li><strong>수능 응시 제한</strong>을 1년에서 10년으로 늘리는 방안은 정부가 국회와 협의하겠다고 밝혔습니다. <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148975916" style="color:#1a73e8;text-decoration:none;" target="_blank">수능 제도 개선 발표</a></li><li>고용노동부는 <strong>국가기술자격시험 응시 제한</strong>을 현행 3년에서 10년으로 늘리는 방안을 제안했습니다. <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148976081" style="color:#1a73e8;text-decoration:none;" target="_blank">국가기술자격 제도 개선 발표</a></li></ul>
+<p>두 방안 모두 법 개정이 필요합니다.</p>
+<p>교육부는 수능 시험지 보관 기간도 현행 1년에서 5년으로 연장하는 규정 개정을 추진합니다. 직전 <strong>2026학년도</strong> 수능 시험장 1,310개교 중 1,077개교가 당시 시험지를 보관하고 있었습니다. 교육부는 남아 있는 시험지를 제보 내용 확인에 활용할 계획입니다. <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148976496" style="color:#1a73e8;text-decoration:none;" target="_blank">교육부 11월 25일 발표</a></p>
+</section>
+<section class="devlog-rich__section" aria-labelledby="수능-부정행위-신고-기간과-포상금">
+<h2 id="수능-부정행위-신고-기간과-포상금">수능 부정행위 신고 기간과 포상금</h2>
+<p>첨단 전자기기를 이용한 수능 부정행위는 국민권익위에 신고할 수 있습니다.</p>
+<ul><li><strong>집중신고 기간</strong>은 2026년 11월 20일부터 2027년 1월 19일까지입니다. <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789970" style="color:#1a73e8;text-decoration:none;" target="_blank">집중신고 안내</a></li><li><strong>청렴포털</strong>에서 직접 신고하거나 변호사를 통해 이름을 밝히지 않고 대리신고할 수 있습니다. <a href="https://www.clean.go.kr" style="color:#1a73e8;text-decoration:none;" target="_blank">청렴포털 신고</a></li><li><strong>포상금</strong>은 신고 내용이 실제 부정행위로 확인돼야 지급 대상이 됩니다. 국민권익위는 11월 23일 종전 건당 최대 1억 원에서 건당 1억~5억 원으로 확대한다고 발표했습니다. <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790415" style="color:#1a73e8;text-decoration:none;" target="_blank">국민권익위 포상금 발표</a></li></ul>
+</section>
+<!-- KEEP_EXISTING_181_HISTORY_SECTION -->
