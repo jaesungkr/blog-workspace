@@ -1,17 +1,29 @@
 {
   "url": "https://dop3n.tistory.com/181",
   "published_at": "2026-11-17T22:08:30+09:00",
-  "revised_date_kst": "2026-11-27",
+  "revised_date_kst": "2026-11-28",
   "visibility": "public",
   "snapshot": "Published article content in Markdown, including the revised introduction and 11-row timeline; the supplemental HTML preserves the six-card layout, hELLO heading override and 640 px maximum on the native body photo, and includes the approved timeline. Preserve the existing native Tistory photo token and representative thumbnail when republishing.",
   "sha256": {
-    "article.md": "06a4656692d876a1317db4ddd0ef893f3f1b7f34cc5ade7e930133d03a966ced",
+    "article.md": "62e7b035c631c97b4de728b37e40b9b4f39ad5c552d81724c217878fff55cbd6",
     "assets/exam-smart-glasses.png": "5661756921681ad3677b7dfea7f34e865b7ee2a77fef0799de1fee4da9b1d130",
-    "cards-published.html": "ad3dc2bf0d9c823ec3e8eab10ac1ee931807c9bab4a032af8c590c78130c6646"
+    "cards-published.html": "2d03a1205fe7aee4b177e7229539c8032f5000282fc9af84e437e2c06ea0f5ba"
   },
   "representative_image": "assets/exam-smart-glasses.png",
   "layout_source": "cards-published.html",
   "latest_revision_verification": {
+    "confirmed_by": "Dot public-page readback",
+    "date_kst": "2026-11-28",
+    "change": "TOEIC Speaking and Writing notice in the regular TOEIC card",
+    "official_notice_links": 1,
+    "exam_cards": 6,
+    "history_rows": 11,
+    "body_photo_width_px": 640,
+    "representative_image_preserved": true,
+    "og_representative_image_id": "dm3bmU",
+    "published_at": "2026-11-17T22:08:30+09:00"
+  },
+  "previous_revision_verification": {
     "confirmed_by": "Dot public-page readback",
     "date_kst": "2026-11-27",
     "history_rows": 11,

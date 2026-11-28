@@ -33,7 +33,7 @@ url: https://dop3n.tistory.com/181
 
 일반 안경은 감독관이 검사한 뒤 안경테에 보안 스티커를 붙입니다.
 
-입실 통제와 기기 제출 안내 후에도 AI 안경 등 AI 스마트기기를 소지하거나 사용한 사실이 확인되면 퇴실 처리하며, 해당 성적은 무효가 되고 4년간 응시가 제한됩니다. 토익스피킹·라이팅은 각 시험의 수험자 안내를 확인해야 합니다. [한국토익위원회 시험관리규정 제14조](https://exam.toeic.co.kr/news/noticeView.php?noticeCode=10050)
+입실 통제와 기기 제출 안내 후에도 AI 안경 등 AI 스마트기기를 소지하거나 사용한 사실이 확인되면 퇴실 처리하며, 해당 성적은 무효가 되고 4년간 응시가 제한됩니다. 토익스피킹·라이팅은 11월 28일 정기시험부터 감독자가 안경을 확인하고 봉인 씰을 붙입니다. 책상에는 시험센터가 제공하는 메모지와 사인펜, 규정 신분증만 둘 수 있습니다. [토익스피킹·라이팅 공식 공지](https://www.toeicswt.co.kr/news/noticeView.php?noticeCode=10111&currentPage=1) [한국토익위원회 시험관리규정 제14조](https://exam.toeic.co.kr/news/noticeView.php?noticeCode=10050)
 
 ### 서울여대 논술고사
 
