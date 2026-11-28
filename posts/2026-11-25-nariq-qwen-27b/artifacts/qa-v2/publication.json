@@ -7,19 +7,35 @@
     "editor_exact_copy": true,
     "preview_mobile_document_width_matches_viewport": true,
     "public_tables": 2,
-    "public_toc_links": 6,
+    "public_toc_links": 3,
     "public_lead_image_pixels": [
       1200,
       800
-    ]
+    ],
+    "restructure": {
+      "verified_by": "Dot",
+      "editor_replacements_read_back": 3,
+      "public_sections": [
+        "10GB로 줄여도 코딩 성능은 비슷할까",
+        "내 컴퓨터에서 어떤 파일을 고르면 될까",
+        "참고 링크"
+      ],
+      "all_public_toc_targets_resolved": true,
+      "legacy_anchors_preserved": 5,
+      "table_values_unchanged": true,
+      "original_table_html_reused": true,
+      "toc_ol_style_attributes_preserved": true,
+      "original_body_photo_and_thumbnail_preserved": true,
+      "canonical_url_and_original_publication_time_preserved": true
+    }
   },
   "sha256": {
-    "article.md": "41f29593463d80b3697e1df14c3be0815500ddd55583bf116e45f836b8534f3e",
+    "article.md": "2e70b21380e223a900cb420d66f277737ced153a1ff41f77a239e184adeaff24",
     "assets/post.css": "3ff85c1bb4a45fb5d573917c6e252b672d388c858d3344accf225bab64a24c06",
     "assets/nariq-memory.png": "333f21d3fb8148b732cd99c17fbe2d904850582817b44c8328aadfdafc2cb5c2",
     "assets/nariq-hugging-face-cover.jpg": "ff3d00fb12b70009c4c2081637bbd7cc226bbff2a2d57703ccef673713fa72ad"
   },
-  "published_at_kst": "2026-11-25 20:51",
+  "published_at_kst": "2026-11-25T20:51:24+09:00",
   "cover": {
     "path": "assets/nariq-hugging-face-cover.jpg",
     "source_url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
